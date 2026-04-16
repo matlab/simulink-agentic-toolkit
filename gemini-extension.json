@@ -1,0 +1,5 @@
+{
+  "name": "simulink-agentic-toolkit",
+  "version": "0.1.0",
+  "description": "Model-Based Design skills and MCP tools for Simulink. Gives AI agents the ability to read, build, edit, and test Simulink models."
+}

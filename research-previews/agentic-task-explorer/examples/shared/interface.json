@@ -1,0 +1,147 @@
+{
+  "system": "StabilityControlSystem",
+  "version": "2.1",
+  "sample_time_s": 0.01,
+  "ports": {
+    "inputs": [
+      {
+        "name": "YawRate_degps",
+        "description": "Measured vehicle yaw rate from gyroscope",
+        "datatype": "double",
+        "unit": "deg/s",
+        "range": [-120.0, 120.0],
+        "default": 0.0
+      },
+      {
+        "name": "SteeringAngle_deg",
+        "description": "Steering wheel angle from steering angle sensor",
+        "datatype": "double",
+        "unit": "deg",
+        "range": [-720.0, 720.0],
+        "default": 0.0
+      },
+      {
+        "name": "VehicleSpeed_mps",
+        "description": "Longitudinal vehicle speed from wheel speed sensors",
+        "datatype": "double",
+        "unit": "m/s",
+        "range": [0.0, 90.0],
+        "default": 0.0
+      },
+      {
+        "name": "LateralAccel_mps2",
+        "description": "Measured lateral acceleration from accelerometer",
+        "datatype": "double",
+        "unit": "m/s^2",
+        "range": [-15.0, 15.0],
+        "default": 0.0
+      },
+      {
+        "name": "WheelSpeed_FL_radps",
+        "description": "Front-left wheel rotational speed",
+        "datatype": "double",
+        "unit": "rad/s",
+        "range": [0.0, 200.0],
+        "default": 0.0
+      },
+      {
+        "name": "WheelSpeed_FR_radps",
+        "description": "Front-right wheel rotational speed",
+        "datatype": "double",
+        "unit": "rad/s",
+        "range": [0.0, 200.0],
+        "default": 0.0
+      },
+      {
+        "name": "WheelSpeed_RL_radps",
+        "description": "Rear-left wheel rotational speed",
+        "datatype": "double",
+        "unit": "rad/s",
+        "range": [0.0, 200.0],
+        "default": 0.0
+      },
+      {
+        "name": "WheelSpeed_RR_radps",
+        "description": "Rear-right wheel rotational speed",
+        "datatype": "double",
+        "unit": "rad/s",
+        "range": [0.0, 200.0],
+        "default": 0.0
+      },
+      {
+        "name": "SpeedDeratingBP_mps",
+        "description": "Breakpoint vector (vehicle speed in m/s) for the intervention authority derating lookup table (REQ-SCS-007)",
+        "datatype": "double[]",
+        "unit": "m/s",
+        "range": [0.0, 70.0],
+        "default": [0.0, 5.56, 16.67, 44.44, 55.56, 70.0]
+      },
+      {
+        "name": "SpeedDeratingTable",
+        "description": "Table values (derating factor 0-1) for the intervention authority derating lookup table (REQ-SCS-007)",
+        "datatype": "double[]",
+        "unit": "none",
+        "range": [0.0, 1.0],
+        "default": [0.3, 0.3, 1.0, 1.0, 0.6, 0.6]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "BrakeTorque_FL_Nm",
+        "description": "Commanded brake torque for front-left wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      },
+      {
+        "name": "BrakeTorque_FR_Nm",
+        "description": "Commanded brake torque for front-right wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      },
+      {
+        "name": "BrakeTorque_RL_Nm",
+        "description": "Commanded brake torque for rear-left wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      },
+      {
+        "name": "BrakeTorque_RR_Nm",
+        "description": "Commanded brake torque for rear-right wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      },
+      {
+        "name": "SCS_Active",
+        "description": "Flag indicating stability control is actively intervening",
+        "datatype": "boolean",
+        "unit": "none",
+        "range": [0, 1],
+        "default": 0
+      },
+      {
+        "name": "YawRateError_degps",
+        "description": "Computed yaw rate error (measured minus reference)",
+        "datatype": "double",
+        "unit": "deg/s",
+        "range": [-60.0, 60.0],
+        "default": 0.0
+      },
+      {
+        "name": "DeratingFactor",
+        "description": "Current speed-dependent intervention authority derating factor (0-1), where 1.0 = full authority (REQ-SCS-007)",
+        "datatype": "double",
+        "unit": "none",
+        "range": [0.0, 1.0],
+        "default": 1.0
+      }
+    ]
+  }
+}

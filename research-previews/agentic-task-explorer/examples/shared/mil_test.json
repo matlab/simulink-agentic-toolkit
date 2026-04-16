@@ -1,0 +1,130 @@
+{
+  "test_suite": "StabilityControlSystem_MIL",
+  "version": "2.1",
+  "model": "StabilityControlSystem.slx",
+  "test_cases": [
+    {
+      "id": "TC-SCS-001",
+      "title": "Yaw Rate Sensor Sampling Verification",
+      "description": "Verify yaw rate input is sampled at 100 Hz by checking output updates every 10 ms.",
+      "requirement_ids": ["REQ-SCS-001"],
+      "inputs": {
+        "YawRate_degps": {"type": "sine", "amplitude": 10.0, "frequency_hz": 5.0},
+        "VehicleSpeed_mps": {"type": "constant", "value": 20.0},
+        "SteeringAngle_deg": {"type": "constant", "value": 0.0}
+      },
+      "duration_s": 2.0,
+      "pass_criteria": [
+        "YawRateError_degps updates at every simulation step (0.01 s)"
+      ]
+    },
+    {
+      "id": "TC-SCS-002",
+      "title": "Yaw Rate Error Computation Accuracy",
+      "description": "Apply known steering input at constant speed and verify yaw rate error matches expected bicycle model deviation.",
+      "requirement_ids": ["REQ-SCS-002"],
+      "inputs": {
+        "YawRate_degps": {"type": "constant", "value": 12.0},
+        "SteeringAngle_deg": {"type": "step", "initial": 0.0, "final": 45.0, "step_time_s": 0.5},
+        "VehicleSpeed_mps": {"type": "constant", "value": 15.0},
+        "LateralAccel_mps2": {"type": "constant", "value": 2.5}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "YawRateError_degps is within +/- 0.5 deg/s of analytically computed reference error"
+      ]
+    },
+    {
+      "id": "TC-SCS-003",
+      "title": "Differential Braking Activation Threshold",
+      "description": "Inject yaw rate error exceeding 4 deg/s for more than 20 ms and verify brake torque commands are issued.",
+      "requirement_ids": ["REQ-SCS-003"],
+      "inputs": {
+        "YawRate_degps": {"type": "step", "initial": 0.0, "final": 15.0, "step_time_s": 0.5},
+        "SteeringAngle_deg": {"type": "constant", "value": 10.0},
+        "VehicleSpeed_mps": {"type": "constant", "value": 25.0},
+        "LateralAccel_mps2": {"type": "constant", "value": 1.0}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "SCS_Active becomes true within 30 ms of yaw rate error exceeding 4 deg/s",
+        "At least one of BrakeTorque_FL/FR/RL/RR_Nm is non-zero during intervention"
+      ]
+    },
+    {
+      "id": "TC-SCS-004",
+      "title": "Brake Torque Slip Ratio Limiting",
+      "description": "During stability intervention, verify no wheel exceeds 15% slip ratio.",
+      "requirement_ids": ["REQ-SCS-005"],
+      "inputs": {
+        "YawRate_degps": {"type": "step", "initial": 0.0, "final": 20.0, "step_time_s": 0.3},
+        "SteeringAngle_deg": {"type": "constant", "value": 30.0},
+        "VehicleSpeed_mps": {"type": "constant", "value": 30.0},
+        "LateralAccel_mps2": {"type": "constant", "value": 5.0},
+        "WheelSpeed_FL_radps": {"type": "constant", "value": 85.7},
+        "WheelSpeed_FR_radps": {"type": "constant", "value": 85.7},
+        "WheelSpeed_RL_radps": {"type": "constant", "value": 85.7},
+        "WheelSpeed_RR_radps": {"type": "constant", "value": 85.7}
+      },
+      "duration_s": 5.0,
+      "pass_criteria": [
+        "Computed slip ratio for all four wheels remains below 0.15 throughout intervention"
+      ]
+    },
+    {
+      "id": "TC-SCS-005",
+      "title": "Low Speed Intervention Derating",
+      "description": "At parking speed (3 m/s ~ 11 km/h), verify the corrective yaw moment is derated to 30% of the controller output and the derating factor output reads 0.3.",
+      "requirement_ids": ["REQ-SCS-007"],
+      "inputs": {
+        "YawRate_degps": {"type": "step", "initial": 0.0, "final": 15.0, "step_time_s": 0.5},
+        "SteeringAngle_deg": {"type": "constant", "value": 10.0},
+        "VehicleSpeed_mps": {"type": "constant", "value": 3.0},
+        "LateralAccel_mps2": {"type": "constant", "value": 1.0}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "DeratingFactor output is 0.3 throughout the simulation",
+        "Brake torque commands are 30% of the values that would be commanded at full authority"
+      ]
+    },
+    {
+      "id": "TC-SCS-006",
+      "title": "Full Authority at Moderate Speed",
+      "description": "At 30 m/s (108 km/h), verify the derating factor is 1.0 and the corrective yaw moment is passed through at full authority.",
+      "requirement_ids": ["REQ-SCS-007"],
+      "inputs": {
+        "YawRate_degps": {"type": "step", "initial": 0.0, "final": 15.0, "step_time_s": 0.5},
+        "SteeringAngle_deg": {"type": "constant", "value": 10.0},
+        "VehicleSpeed_mps": {"type": "constant", "value": 30.0},
+        "LateralAccel_mps2": {"type": "constant", "value": 1.0}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "DeratingFactor output is 1.0 throughout the simulation",
+        "Brake torque commands match full-authority controller output"
+      ]
+    },
+    {
+      "id": "TC-SCS-007",
+      "title": "High Speed Intervention Derating (Autobahn)",
+      "description": "At 60 m/s (216 km/h), verify the corrective yaw moment is derated to 60% and the derating factor output reads 0.6.",
+      "requirement_ids": ["REQ-SCS-007"],
+      "inputs": {
+        "YawRate_degps": {"type": "step", "initial": 0.0, "final": 15.0, "step_time_s": 0.5},
+        "SteeringAngle_deg": {"type": "constant", "value": 10.0},
+        "VehicleSpeed_mps": {"type": "constant", "value": 60.0},
+        "LateralAccel_mps2": {"type": "constant", "value": 1.0}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "DeratingFactor output is 0.6 throughout the simulation",
+        "Brake torque commands are 60% of the values that would be commanded at full authority"
+      ]
+    }
+  ],
+  "_traceability_notes": {
+    "REQ-SCS-004": "NO TEST LINKED — Lateral acceleration limiting has no dedicated test case",
+    "REQ-SCS-006": "NO TEST LINKED — Real-time execution constraint has no dedicated test case"
+  }
+}

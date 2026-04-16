@@ -1,0 +1,83 @@
+{
+  "system": "StabilityControlSystem",
+  "version": "2.1",
+  "sample_time_s": 0.01,
+  "ports": {
+    "inputs": [
+      {
+        "name": "SteeringAngle",
+        "description": "Steering wheel angle from steering angle sensor",
+        "datatype": "double",
+        "unit": "deg",
+        "range": [-720.0, 720.0],
+        "default": 0.0
+      },
+      {
+        "name": "VehicleSpeed",
+        "description": "Longitudinal vehicle speed from wheel speed sensors",
+        "datatype": "double",
+        "unit": "m/s",
+        "range": [0.0, 90.0],
+        "default": 0.0
+      },
+      {
+        "name": "YawRate",
+        "description": "Measured vehicle yaw rate from gyroscope",
+        "datatype": "double",
+        "unit": "deg/s",
+        "range": [-120.0, 120.0],
+        "default": 0.0
+      },
+      {
+        "name": "LateralAcceleration",
+        "description": "Measured lateral acceleration from accelerometer",
+        "datatype": "double",
+        "unit": "m/s^2",
+        "range": [-15.0, 15.0],
+        "default": 0.0
+      },
+      {
+        "name": "WheelSpeeds",
+        "description": "Wheel rotational speed vector [FL, FR, RL, RR]",
+        "datatype": "double[4]",
+        "unit": "rad/s",
+        "range": [0.0, 200.0],
+        "default": [0.0, 0.0, 0.0, 0.0]
+      }
+    ],
+    "outputs": [
+      {
+        "name": "FrontLeftBrakeTorque",
+        "description": "Commanded brake torque for front-left wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      },
+      {
+        "name": "FrontRightBrakeTorque",
+        "description": "Commanded brake torque for front-right wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      },
+      {
+        "name": "RearLeftBrakeTorque",
+        "description": "Commanded brake torque for rear-left wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      },
+      {
+        "name": "RearRightBrakeTorque",
+        "description": "Commanded brake torque for rear-right wheel",
+        "datatype": "double",
+        "unit": "Nm",
+        "range": [0.0, 4000.0],
+        "default": 0.0
+      }
+    ]
+  }
+}

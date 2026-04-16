@@ -1,0 +1,35 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "simulink-agentic-toolkit",
+  "owner": {
+    "name": "MathWorks"
+  },
+  "plugins": [
+    {
+      "name": "toolkit",
+      "version": "0.3.0",
+      "description": "Setup and management for the Simulink Agentic Toolkit",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "setup", "configuration"],
+      "source": "./",
+      "category": "development",
+      "strict": false,
+      "skills": "./skills-catalog/toolkit/"
+    },
+    {
+      "name": "model-based-design-core",
+      "version": "0.1.0",
+      "description": "Foundational Model-Based Design capabilities for the Simulink product family",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "matlab", "model-based-design"],
+      "source": "./",
+      "category": "development",
+      "strict": false,
+      "skills": "./skills-catalog/model-based-design-core/"
+    }
+  ]
+}

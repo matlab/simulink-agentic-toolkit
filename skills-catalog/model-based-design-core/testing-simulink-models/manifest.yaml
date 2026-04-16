@@ -1,0 +1,13 @@
+# manifest.yaml — Tooling metadata for testing-simulink-models
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "1.0"
+matlab-release: ">=R2023a"
+requires-tools:
+  - model_test
+requires-skills: []
+requires-products:
+  - Simulink
+  - Simulink Test
+toolkit: simulink-agentic-toolkit

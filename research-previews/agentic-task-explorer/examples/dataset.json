@@ -1,0 +1,11 @@
+{
+  "id": "example_collection",
+  "name": "Example Collection",
+  "description": "Example tasks for Agentic Task Explorer",
+  "task_id_prefix": "D",
+  "supported_filters": [
+    "tags"
+  ],
+  "shared_root": "shared",
+  "task_root": "tasks"
+}

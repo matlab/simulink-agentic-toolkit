@@ -1,0 +1,62 @@
+{
+  "tool": "Simulink Coverage",
+  "model": "StabilityControlSystem.slx",
+  "timestamp": "2025-11-14T10:05:43Z",
+  "test_suite": "StabilityControlSystem_MIL",
+  "test_cases_executed": ["TC-SCS-001", "TC-SCS-002", "TC-SCS-003", "TC-SCS-004", "TC-SCS-005", "TC-SCS-006", "TC-SCS-007"],
+  "coverage_types": ["Decision", "Condition", "MCDC"],
+  "model_level_summary": {
+    "decision": 89,
+    "condition": 84,
+    "mcdc": 76
+  },
+  "subsystem_results": [
+    {
+      "path": "StabilityControlSystem/ReferenceYawRateCalculator",
+      "decision": 100,
+      "condition": 100,
+      "mcdc": 100,
+      "status": "Full"
+    },
+    {
+      "path": "StabilityControlSystem/SideslipAngleEstimator",
+      "decision": 100,
+      "condition": 100,
+      "mcdc": 100,
+      "status": "Full"
+    },
+    {
+      "path": "StabilityControlSystem/StabilityController",
+      "decision": 95,
+      "condition": 90,
+      "mcdc": 85,
+      "status": "Acceptable",
+      "gaps": [
+        {
+          "block": "StabilityController/LowSpeedDisable",
+          "type": "Condition",
+          "detail": "Transition at the 10 m/s threshold boundary not exercised — no test case injects VehicleSpeed exactly at the boundary (e.g., 9.9, 10.0, 10.1 m/s)."
+        }
+      ]
+    },
+    {
+      "path": "StabilityControlSystem/BrakeTorqueDistribution",
+      "decision": 75,
+      "condition": 68,
+      "mcdc": 50,
+      "status": "Below threshold",
+      "gaps": [
+        {
+          "block": "BrakeTorqueDistribution/MomentSign",
+          "type": "Decision",
+          "detail": "Decision 'ControlMomentIn > 0' only evaluated to TRUE — no test case injects a negative corrective moment (understeer correction). The FALSE branch is never exercised."
+        },
+        {
+          "block": "BrakeTorqueDistribution/LeftRightSelect",
+          "type": "MCDC",
+          "detail": "Switch condition (MomentSign > 0.5) only exercised in the TRUE position — the opposite-side brake allocation path (u3 = ZeroTorque when moment is negative) is never activated."
+        }
+      ]
+    }
+  ]
+}

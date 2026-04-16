@@ -1,0 +1,132 @@
+{
+  "test_suite": "StabilityControlSystem_MIL",
+  "version": "2.1",
+  "model": "StabilityControlSystem.slx",
+  "test_cases": [
+    {
+      "id": "TC-SCS-001",
+      "title": "Yaw Rate Sensor Sampling Verification",
+      "description": "Verify yaw rate input is sampled at 100 Hz by checking output updates every 10 ms.",
+      "requirement_ids": ["REQ-SCS-001"],
+      "inputs": {
+        "YawRate": {"type": "sine", "amplitude": 10.0, "frequency_hz": 5.0},
+        "VehicleSpeed": {"type": "constant", "value": 20.0},
+        "SteeringAngle": {"type": "constant", "value": 0.0},
+        "LateralAcceleration": {"type": "constant", "value": 0.0},
+        "WheelSpeeds": {"type": "constant", "value": [57.1, 57.1, 57.1, 57.1]}
+      },
+      "duration_s": 2.0,
+      "pass_criteria": [
+        "Brake torque outputs update at every simulation step (0.01 s)"
+      ]
+    },
+    {
+      "id": "TC-SCS-002",
+      "title": "Reference Yaw Rate Computation Accuracy",
+      "description": "Apply known steering input at constant speed and verify the reference yaw rate calculation matches the expected bicycle model output.",
+      "requirement_ids": ["REQ-SCS-002"],
+      "inputs": {
+        "YawRate": {"type": "constant", "value": 12.0},
+        "SteeringAngle": {"type": "step", "initial": 0.0, "final": 45.0, "step_time_s": 0.5},
+        "VehicleSpeed": {"type": "constant", "value": 15.0},
+        "LateralAcceleration": {"type": "constant", "value": 2.5},
+        "WheelSpeeds": {"type": "constant", "value": [42.9, 42.9, 42.9, 42.9]}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "Brake torque outputs respond consistently with bicycle-model reference yaw rate computation"
+      ]
+    },
+    {
+      "id": "TC-SCS-003",
+      "title": "Corrective Braking Activation",
+      "description": "Inject a yaw rate deviation from the reference and verify brake torque commands are issued to counteract the instability.",
+      "requirement_ids": ["REQ-SCS-003"],
+      "inputs": {
+        "YawRate": {"type": "step", "initial": 0.0, "final": 15.0, "step_time_s": 0.5},
+        "SteeringAngle": {"type": "constant", "value": 10.0},
+        "VehicleSpeed": {"type": "constant", "value": 25.0},
+        "LateralAcceleration": {"type": "constant", "value": 1.0},
+        "WheelSpeeds": {"type": "constant", "value": [71.4, 71.4, 71.4, 71.4]}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "At least one brake torque output becomes non-zero during the yaw rate deviation",
+        "Brake torque reduces toward zero as yaw rate error is corrected"
+      ]
+    },
+    {
+      "id": "TC-SCS-004",
+      "title": "Low-Speed Disable Verification",
+      "description": "At vehicle speed below 10 m/s, verify the stability controller outputs zero brake torque regardless of yaw rate error.",
+      "requirement_ids": ["REQ-SCS-005"],
+      "inputs": {
+        "YawRate": {"type": "step", "initial": 0.0, "final": 20.0, "step_time_s": 0.3},
+        "SteeringAngle": {"type": "constant", "value": 30.0},
+        "VehicleSpeed": {"type": "constant", "value": 8.0},
+        "LateralAcceleration": {"type": "constant", "value": 0.5},
+        "WheelSpeeds": {"type": "constant", "value": [22.9, 22.9, 22.9, 22.9]}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "All four brake torque outputs remain zero throughout the simulation"
+      ]
+    },
+    {
+      "id": "TC-SCS-005",
+      "title": "Sideslip Contribution to Control Moment",
+      "description": "Verify that sideslip angle estimation contributes to the corrective yaw moment by comparing controller output with and without lateral acceleration input.",
+      "requirement_ids": ["REQ-SCS-004"],
+      "inputs": {
+        "YawRate": {"type": "step", "initial": 0.0, "final": 10.0, "step_time_s": 0.5},
+        "SteeringAngle": {"type": "constant", "value": 15.0},
+        "VehicleSpeed": {"type": "constant", "value": 25.0},
+        "LateralAcceleration": {"type": "step", "initial": 0.0, "final": 5.0, "step_time_s": 1.0},
+        "WheelSpeeds": {"type": "constant", "value": [71.4, 71.4, 71.4, 71.4]}
+      },
+      "duration_s": 5.0,
+      "pass_criteria": [
+        "Brake torque outputs differ from the case where LateralAcceleration is held at zero, confirming sideslip contribution"
+      ]
+    },
+    {
+      "id": "TC-SCS-006",
+      "title": "Positive Moment Brake Distribution",
+      "description": "During a positive corrective yaw moment, verify brake torque is applied to the correct wheels per the distribution logic.",
+      "requirement_ids": ["REQ-SCS-007"],
+      "inputs": {
+        "YawRate": {"type": "step", "initial": 0.0, "final": 15.0, "step_time_s": 0.5},
+        "SteeringAngle": {"type": "constant", "value": 10.0},
+        "VehicleSpeed": {"type": "constant", "value": 30.0},
+        "LateralAcceleration": {"type": "constant", "value": 1.0},
+        "WheelSpeeds": {"type": "constant", "value": [85.7, 85.7, 85.7, 85.7]}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "When corrective moment is positive, brake torque is applied to the appropriate side per LeftRightSelect logic",
+        "The opposite side outputs zero torque"
+      ]
+    },
+    {
+      "id": "TC-SCS-007",
+      "title": "High-Speed Stability Intervention",
+      "description": "At highway speed (60 m/s), verify the controller correctly computes and distributes corrective yaw moment.",
+      "requirement_ids": ["REQ-SCS-003", "REQ-SCS-007"],
+      "inputs": {
+        "YawRate": {"type": "step", "initial": 0.0, "final": 8.0, "step_time_s": 0.5},
+        "SteeringAngle": {"type": "constant", "value": 5.0},
+        "VehicleSpeed": {"type": "constant", "value": 60.0},
+        "LateralAcceleration": {"type": "constant", "value": 1.0},
+        "WheelSpeeds": {"type": "constant", "value": [171.4, 171.4, 171.4, 171.4]}
+      },
+      "duration_s": 3.0,
+      "pass_criteria": [
+        "Brake torque commands are non-zero during the yaw rate deviation",
+        "Controller output is stable without oscillation at high speed"
+      ]
+    }
+  ],
+  "_traceability_notes": {
+    "REQ-SCS-006": "NO TEST LINKED — Real-time execution constraint (5 ms WCET) cannot be verified in MIL simulation"
+  }
+}

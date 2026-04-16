@@ -1,0 +1,15 @@
+# manifest.yaml — Tooling metadata for specifying-plant-models
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "1.0"
+matlab-release: ">=R2023a"
+requires-tools:
+  - model_overview
+  - model_read
+  - model_query_params
+  - model_resolve_params
+requires-skills: []
+requires-products:
+  - Simulink
+toolkit: simulink-agentic-toolkit

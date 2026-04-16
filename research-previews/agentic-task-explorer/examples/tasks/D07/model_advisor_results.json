@@ -1,0 +1,112 @@
+{
+  "tool": "Simulink Check — Model Advisor",
+  "model": "StabilityControlSystem.slx",
+  "timestamp": "2025-11-14T09:32:17Z",
+  "configuration": "High-Integrity Systems + MAB Guidelines",
+  "summary": {
+    "total_checks": 48,
+    "passed": 44,
+    "warnings": 3,
+    "failed": 1
+  },
+  "results": [
+    {
+      "id": "mathworks.jmaab.jc_0008",
+      "guideline": "jc_0008",
+      "group": "MAB Guidelines",
+      "title": "Definition of signal labels",
+      "description": "Signal lines shall have labels defined at subsystem boundaries.",
+      "status": "Warning",
+      "findings": [
+        {
+          "block_path": "StabilityControlSystem/StabilityController",
+          "detail": "Output signal from port 1 (ControlMomentOut) has no signal label on the line connecting to BrakeTorqueDistribution.",
+          "severity": "Minor"
+        }
+      ]
+    },
+    {
+      "id": "mathworks.maab.jc_0061",
+      "guideline": "jc_0061",
+      "group": "MAB Guidelines",
+      "title": "Display attributes of block names",
+      "description": "Block names shall be descriptive and not use Simulink default names.",
+      "status": "Warning",
+      "findings": [
+        {
+          "block_path": "StabilityControlSystem/BrakeTorqueDistribution/Mux4",
+          "detail": "Block uses name 'Mux4' which includes a numeric suffix. Rename to reflect function (e.g., BrakeTorqueMux).",
+          "severity": "Minor"
+        },
+        {
+          "block_path": "StabilityControlSystem/BrakeTorqueDistribution/Demux4",
+          "detail": "Block uses name 'Demux4' which includes a numeric suffix. Rename to reflect function (e.g., BrakeTorqueDemux).",
+          "severity": "Minor"
+        }
+      ]
+    },
+    {
+      "id": "mathworks.hism.hisl_0026",
+      "guideline": "hisl_0026",
+      "group": "High-Integrity Systems",
+      "title": "Design min/max specification of output interfaces",
+      "description": "Root Outport blocks shall have min and max values specified for range checking.",
+      "status": "Failed",
+      "findings": [
+        {
+          "block_path": "StabilityControlSystem/FrontLeftBrakeTorque",
+          "detail": "Outport has no design min/max specified. For ASIL D (REQ_SCS_003), output ranges must be explicitly defined.",
+          "severity": "Major"
+        },
+        {
+          "block_path": "StabilityControlSystem/FrontRightBrakeTorque",
+          "detail": "Outport has no design min/max specified.",
+          "severity": "Major"
+        },
+        {
+          "block_path": "StabilityControlSystem/RearLeftBrakeTorque",
+          "detail": "Outport has no design min/max specified.",
+          "severity": "Major"
+        },
+        {
+          "block_path": "StabilityControlSystem/RearRightBrakeTorque",
+          "detail": "Outport has no design min/max specified.",
+          "severity": "Major"
+        }
+      ]
+    },
+    {
+      "id": "mathworks.hism.hisl_0024",
+      "guideline": "hisl_0024",
+      "group": "High-Integrity Systems",
+      "title": "Inport interface definition",
+      "description": "Root Inport blocks shall have data type, range, and sample time explicitly specified.",
+      "status": "Warning",
+      "findings": [
+        {
+          "block_path": "StabilityControlSystem/LateralAcceleration",
+          "detail": "Inport data type is 'Inherit: auto'. Interface specifies range [-15.0, 15.0] but the Inport block does not enforce it.",
+          "severity": "Minor"
+        }
+      ]
+    },
+    {
+      "id": "mathworks.hism.hisl_0041",
+      "guideline": "hisl_0041",
+      "group": "High-Integrity Systems",
+      "title": "Solver options",
+      "description": "Fixed-step solver shall be used for safety-critical models intended for code generation.",
+      "status": "Passed",
+      "findings": []
+    },
+    {
+      "id": "mathworks.jmaab.db_0081",
+      "guideline": "db_0081",
+      "group": "MAB Guidelines",
+      "title": "Unconnected signals and blocks",
+      "description": "Model shall not contain unconnected signal lines, input ports, or output ports.",
+      "status": "Passed",
+      "findings": []
+    }
+  ]
+}

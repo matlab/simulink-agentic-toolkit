@@ -1,0 +1,20 @@
+{
+  "name": "simulink-agentic-toolkit",
+  "interface": {
+    "displayName": "Simulink Agentic Toolkit"
+  },
+  "plugins": [
+    {
+      "name": "simulink-agentic-toolkit",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Development"
+    }
+  ]
+}

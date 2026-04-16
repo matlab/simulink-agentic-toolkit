@@ -1,0 +1,70 @@
+{
+  "id": "D07",
+  "title": "Agentic Model Review (Inspection Checklist)",
+  "description": "Agent performs a full inspection checklist against the model, its requirements, and verification artifacts. Combines programmatic checks with AI-driven contextual review. Produces a severity-categorized findings report with evidence.",
+  "classification": {
+    "tags": [
+      "demo"
+    ]
+  },
+  "workspace": {
+    "include_files": [
+      "$/StabilityControlSystem.slx",
+      "requirements.yaml",
+      "mil_test.json",
+      "interface.json",
+      "model_advisor_results.json",
+      "coverage_results.json",
+      "sil_results.json",
+      "inspection_checklist.md"
+    ],
+    "context_variables": {
+      "model_name": "StabilityControlSystem.slx"
+    }
+  },
+  "steps": [
+    {
+      "title": "Present the inspection prompt",
+      "prompt": "Inspect the provided Simulink model, its referenced requirements, and all verification artifacts against the inspection checklist in inspection_checklist.md. For each checklist item, determine whether any findings occur. Categorize findings by severity (Blocker, Major, Minor, Info) and provide evidence (model paths, requirement IDs, test case IDs). Recommend specific, actionable fixes.",
+      "notes": "Agent should read the checklist first, then systematically read the model, requirements, test artifacts, Model Advisor results, coverage results, and SIL results.",
+      "look_for": [
+        "Agent reads inspection_checklist.md to understand what to check",
+        "Agent reads the model (model_overview, model_read)",
+        "Agent reads requirements.yaml and mil_test.json",
+        "Agent reads model_advisor_results.json, coverage_results.json, sil_results.json",
+        "Agent cross-references requirement IDs across all artifacts",
+        "Agent discovers the REQ-SCS vs REQ_SCS traceability mismatch between mil_test.json and requirements.yaml",
+        "Agent identifies REQ_SCS_006 has no linked test case",
+        "Agent checks parameter ranges using interface.json and model_query_params",
+        "Agent produces a structured findings report categorized by severity",
+        "Every finding cites real artifact locations — no fabricated evidence"
+      ],
+      "recovery": "If agent asks for clarification, say: 'Use the inspection_checklist.md file in the workspace. Check every item against the model and all JSON/YAML files.'"
+    }
+  ],
+  "presentation": {
+    "section": "4 — Verify & Quality",
+    "duration": "10-12 min",
+    "order": 7,
+    "background": "A model review is required before release. The agent performs a structured inspection using a standard checklist, checking the model, requirements, and verification artifacts for traceability, robustness, correctness, coverage, and SIL equivalence.",
+    "platforms": [
+      "vscode_amp",
+      "simulink_cli"
+    ],
+    "skills": [
+      "building-simulink-models"
+    ],
+    "good_looks_like": [
+      "Findings categorized by severity: Blocker / Major / Minor / Info",
+      "Each finding includes checklist item reference, evidence (block paths, requirement IDs, test case IDs), and recommended fix",
+      "Agent discovers REQ-SCS-xxx vs REQ_SCS_xxx traceability mismatch between mil_test.json and requirements.yaml",
+      "Agent flags REQ_SCS_006 (5 ms WCET) as having no linked test case",
+      "Agent flags the hisl_0026 failure: all four brake torque outports lack design min/max specification",
+      "Agent identifies BrakeTorqueDistribution coverage gap: MomentSign and LeftRightSelect only exercised for positive moment — no negative-moment (understeer) test exists",
+      "Agent flags the skipped SIL test TC-SCS-007 due to uninstrumented internal signal",
+      "Agent connects findings across artifacts (e.g., missing negative-moment test → low coverage in BrakeTorqueDistribution → untested branch)",
+      "Every finding cites real artifact locations — no fabricated evidence"
+    ],
+    "visible": true
+  }
+}

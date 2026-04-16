@@ -1,0 +1,117 @@
+schema_version: "1.0"
+package: StabilityControlSystem
+
+requirements:
+  - id: REQ_SCS_001
+    summary: >
+      The stability control system shall continuously monitor vehicle yaw rate
+      from the yaw rate sensor at a minimum sample rate of 100 Hz.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Accurate yaw rate measurement is the primary input for detecting vehicle
+      instability and must be sampled fast enough to capture transient dynamics.
+    asil: C
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: null
+
+  - id: REQ_SCS_002
+    summary: >
+      The stability control system shall compare measured yaw rate against a
+      reference yaw rate model derived from steering angle, vehicle speed, and
+      lateral acceleration to compute a yaw rate error signal.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      The yaw rate error quantifies the deviation between desired and actual
+      vehicle behavior, forming the basis for corrective intervention.
+    asil: C
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: REQ_SCS_001
+
+  - id: REQ_SCS_003
+    summary: >
+      When the absolute yaw rate error exceeds 4 deg/s for more than 20 ms,
+      the stability control system shall apply differential brake torque to
+      individual wheels to reduce the yaw rate error toward zero.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Selective braking is the primary actuation mechanism for correcting
+      oversteer and understeer conditions before the driver loses control.
+    asil: D
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: REQ_SCS_002
+
+  - id: REQ_SCS_004
+    summary: >
+      The stability control system shall limit lateral acceleration to a maximum
+      of 0.85g to prevent rollover conditions, reducing engine torque and
+      applying brakes as needed.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Lateral acceleration beyond the rollover threshold endangers occupant
+      safety, especially in vehicles with a high center of gravity.
+    asil: D
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: null
+
+  - id: REQ_SCS_005
+    summary: >
+      The stability control system shall distribute brake torque across all four
+      wheels according to the optimal slip ratio map, ensuring no single wheel
+      locks or exceeds 15% slip ratio during intervention.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Maintaining individual wheel slip within the optimal friction range
+      maximizes braking effectiveness and vehicle controllability during
+      stability interventions.
+    asil: C
+    status: Approved
+    priority: High
+    keywords: [approved]
+    derived_from: REQ_SCS_003
+
+  - id: REQ_SCS_006
+    summary: >
+      The stability control system shall complete all sensor acquisition, control
+      law computation, and actuator command output within a worst-case execution
+      time of 5 ms per control cycle.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Real-time determinism is essential for stability control; exceeding the
+      cycle time budget could result in delayed corrective action during a
+      critical maneuver.
+    asil: B
+    status: Approved
+    priority: High
+    keywords: [approved]
+    derived_from: null
+
+  - id: REQ_SCS_007
+    summary: >
+      The corrective yaw moment shall be derated as a function of vehicle
+      speed using a calibratable 1-D lookup table. At low speeds (below
+      20 km/h), intervention authority shall be reduced to 30% to prevent
+      uncomfortable jerking during parking maneuvers. At high speeds (above
+      200 km/h), authority shall be limited to 60% to avoid destabilizing
+      overcorrection. Full authority (100%) applies in the range 60 to
+      160 km/h. A derating factor output shall indicate the current
+      authority level.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Applying full corrective yaw moment at low speeds causes uncomfortable
+      vehicle jerking during parking; at very high speeds it risks
+      destabilizing overcorrection. A calibratable speed-dependent derating
+      curve allows per-variant tuning while the derating factor output
+      enables downstream monitoring and calibration validation.
+    asil: D
+    status: Draft
+    priority: Critical
+    keywords: [draft, auto-generated]
+    derived_from: REQ_SCS_003

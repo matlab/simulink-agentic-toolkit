@@ -1,0 +1,67 @@
+{
+  "tool": "Simulink Test — SIL Back-to-Back",
+  "model": "StabilityControlSystem.slx",
+  "timestamp": "2025-11-14T10:41:12Z",
+  "code_generator": "Embedded Coder",
+  "comparison_mode": "MIL vs SIL",
+  "tolerance": {
+    "absolute": 1e-6,
+    "relative": 1e-4
+  },
+  "summary": {
+    "total": 7,
+    "passed": 6,
+    "failed": 0,
+    "skipped": 1
+  },
+  "results": [
+    {
+      "test_case": "TC-SCS-001",
+      "title": "Yaw Rate Sensor Sampling Verification",
+      "status": "Passed",
+      "max_absolute_error": 0.0,
+      "signals_compared": ["FrontLeftBrakeTorque", "FrontRightBrakeTorque", "RearLeftBrakeTorque", "RearRightBrakeTorque"]
+    },
+    {
+      "test_case": "TC-SCS-002",
+      "title": "Reference Yaw Rate Computation Accuracy",
+      "status": "Passed",
+      "max_absolute_error": 2.3e-12,
+      "signals_compared": ["FrontLeftBrakeTorque", "FrontRightBrakeTorque", "RearLeftBrakeTorque", "RearRightBrakeTorque"]
+    },
+    {
+      "test_case": "TC-SCS-003",
+      "title": "Corrective Braking Activation",
+      "status": "Passed",
+      "max_absolute_error": 1.1e-10,
+      "signals_compared": ["FrontLeftBrakeTorque", "FrontRightBrakeTorque", "RearLeftBrakeTorque", "RearRightBrakeTorque"]
+    },
+    {
+      "test_case": "TC-SCS-004",
+      "title": "Low-Speed Disable Verification",
+      "status": "Passed",
+      "max_absolute_error": 0.0,
+      "signals_compared": ["FrontLeftBrakeTorque", "FrontRightBrakeTorque", "RearLeftBrakeTorque", "RearRightBrakeTorque"]
+    },
+    {
+      "test_case": "TC-SCS-005",
+      "title": "Sideslip Contribution to Control Moment",
+      "status": "Passed",
+      "max_absolute_error": 4.7e-11,
+      "signals_compared": ["FrontLeftBrakeTorque", "FrontRightBrakeTorque", "RearLeftBrakeTorque", "RearRightBrakeTorque"]
+    },
+    {
+      "test_case": "TC-SCS-006",
+      "title": "Positive Moment Brake Distribution",
+      "status": "Passed",
+      "max_absolute_error": 7.8e-14,
+      "signals_compared": ["FrontLeftBrakeTorque", "FrontRightBrakeTorque", "RearLeftBrakeTorque", "RearRightBrakeTorque"]
+    },
+    {
+      "test_case": "TC-SCS-007",
+      "title": "High-Speed Stability Intervention",
+      "status": "Skipped",
+      "skip_reason": "SIL harness requires internal test-point signal 'StabilityController/TotalControlMoment' for pass/fail criteria, but this signal is not instrumented for SIL logging. Only root-level outputs are compared in the current SIL configuration."
+    }
+  ]
+}

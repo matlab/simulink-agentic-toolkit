@@ -1,0 +1,71 @@
+{
+  "id": "D12",
+  "title": "Restructure Model for Readability",
+  "description": "Agent analyzes a structurally complex model (163 blocks, depth 4, 29 From/Goto blocks), identifies readability issues, proposes a restructuring strategy with functional rationale, and executes restructuring.",
+  "classification": {
+    "tags": [
+      "demo"
+    ]
+  },
+  "workspace": {
+    "include_files": [
+      "StabilityControlSystemMessy.slx",
+      "StabilityControlSystemRestructured.slx"
+    ],
+    "context_variables": {
+      "model_name": "StabilityControlSystemMessy.slx"
+    }
+  },
+  "steps": [
+    {
+      "title": "Analyze the model and propose a restructuring strategy",
+      "prompt": "The given model shall be restructured for a better readability. Start by analyzing the model's structure and identifying the specific structural problems. Propose a restructuring strategy with rationale, but do not make changes yet.",
+      "notes": "The 'do not make changes yet' directive ensures the agent stops after analysis and lets the presenter review findings before proceeding.",
+      "look_for": [
+        "Agent calls model_overview (full hierarchy) — sees 16 subsystems, depth 4, only 4 visible connections",
+        "Agent calls model_read on root — sees 31 blocks dominated by From/Goto blocks",
+        "Agent drills into subsystems — identifies passthrough wrappers and misplaced blocks",
+        "Agent identifies: excessive nesting, global From/Goto replacing direct connections, blocks in wrong subsystems",
+        "Agent proposes a prioritized restructuring strategy with functional rationale",
+        "Agent does NOT start making changes — waits for approval"
+      ],
+      "recovery": "If agent starts making changes immediately, let it continue — it found the problems, which is the key value. Narrate the analysis it performed."
+    },
+    {
+      "title": "Execute the highest-impact restructuring changes",
+      "prompt": "Go ahead and execute the highest-impact changes from your proposed strategy.",
+      "notes": "This triggers execution of the plan from step 1. The agent already has a concrete strategy, so its actions are bounded by what it proposed. This makes execution more deterministic than a single combined prompt.",
+      "look_for": [
+        "Agent uses model_edit to delete From/Goto and reconnect subsystems directly",
+        "Agent uses evaluate_matlab_code to flatten wrapper subsystems (expected — model_edit has no flatten operation)",
+        "Agent deletes misplaced blocks (YawRateFilter, TorqueLimiter, RefYawSmoothing and companions)",
+        "Agent explains structural changes with functional rationale",
+        "Agent verifies the model still compiles after changes"
+      ],
+      "recovery": "If restructuring breaks the model, stop and open StabilityControlSystemRestructured.slx as fallback. If agent tries to do too many operations at once, prompt: 'Do the root-level From/Goto first, then the internal ones.'"
+    }
+  ],
+  "presentation": {
+    "section": "3 — Modify & Restructure",
+    "duration": "8-10 min",
+    "order": 4,
+    "background": "A stability control model has accumulated structural debt: 4 levels of passthrough wrapper subsystems, 29 From/Goto blocks hiding data flow, and blocks placed in wrong subsystems. The agent must restructure it for readability without changing functional behavior.",
+    "platforms": [
+      "vscode_amp",
+      "simulink_cli"
+    ],
+    "skills": [
+      "building-simulink-models"
+    ],
+    "good_looks_like": [
+      "Agent identifies the real structural problems (not surface-level observations)",
+      "Restructuring strategy has functional reasoning ('these belong together because...')",
+      "Clear checkpoint between analysis and execution — presenter can review before proceeding",
+      "Executed changes are correct — model still works after restructuring",
+      "Visible improvement: fewer From/Goto, clearer data flow at root level",
+      "Agent explains which changes have highest impact on readability",
+      "Agent may identify issues beyond the planted problems (unused ports, orphaned constants)"
+    ],
+    "recording": ""
+  }
+}

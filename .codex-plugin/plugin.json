@@ -1,0 +1,17 @@
+{
+  "name": "simulink-agentic-toolkit",
+  "version": "0.1.0",
+  "description": "Model-Based Design skills and MCP tools for Simulink. Gives AI agents the ability to read, build, edit, and test Simulink models.",
+  "author": {
+    "name": "MathWorks"
+  },
+  "license": "MathWorks BSD-3-Clause",
+  "keywords": ["simulink", "matlab", "model-based-design", "mcp"],
+  "skills": "./skills-catalog/model-based-design-core/",
+  "interface": {
+    "displayName": "Simulink Agentic Toolkit",
+    "shortDescription": "Model-Based Design skills and MCP tools for Simulink.",
+    "developerName": "MathWorks",
+    "category": "Development"
+  }
+}

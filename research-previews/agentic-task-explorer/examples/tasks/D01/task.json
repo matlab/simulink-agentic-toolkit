@@ -1,0 +1,92 @@
+{
+  "id": "D01",
+  "title": "Model Understanding & Requirements Generation",
+  "description": "Agent reads a Simulink stability control model, explains its behavior at multiple abstraction levels, generates calibration documentation, and creates formal requirements. Uses Requirements Toolbox (.slreqx) with traceability links when available, otherwise structured YAML format.",
+  "classification": {
+    "tags": [
+      "demo"
+    ]
+  },
+  "workspace": {
+    "include_files": [
+      "$/StabilityControlSystem.slx",
+      "$/requirements.yaml"
+    ],
+    "context_variables": {
+      "model_name": "StabilityControlSystem.slx"
+    }
+  },
+  "steps": [
+    {
+      "title": "Explore the model architecture",
+      "prompt": "Give me an overview of StabilityControlSystem.slx — what does this model do and how is it structured?",
+      "notes": "Agent should call model_overview then model_read to discover subsystems.",
+      "look_for": [
+        "Agent calls model_overview → model_read to discover subsystems",
+        "Agent explains the control strategy: sensor inputs → yaw rate error → PID controller → brake torque distribution",
+        "Agent identifies the main subsystems: YawRateController, BrakeTorqueDistribution, etc."
+      ],
+      "recovery": "If agent gives a shallow answer, prompt: 'Can you drill into the subsystems and explain the signal flow?'"
+    },
+    {
+      "title": "Drill into a subsystem",
+      "prompt": "Explain the StabilityController subsystem in detail — what algorithm does it implement?",
+      "notes": "Agent should use model_read (detailed) on StabilityController (blk_13), then model_query_params and model_resolve_params for actual parameter values.",
+      "look_for": [
+        "Agent uses model_read on StabilityController",
+        "Agent uses model_query_params → model_resolve_params to get actual parameter values",
+        "Agent describes the PID control law: YawRateError → YawRatePID (P=5000, I=1000, D=100) → TotalControlMoment → EnableSwitch → ControlMomentOut"
+      ],
+      "recovery": "If agent doesn't resolve parameter values, prompt: 'What are the actual numeric values for the PID gains?'"
+    },
+    {
+      "title": "Generate calibration documentation",
+      "prompt": "Generate documentation for a calibration engineer. They need to understand the functional concepts and which parameters control what behavior, including tuning guidance.",
+      "notes": "Agent should produce a structured document using create_file.",
+      "look_for": [
+        "Agent produces a structured document using create_file",
+        "Document covers functional overview, parameter descriptions, tuning guidance",
+        "Domain-appropriate language for calibration engineers"
+      ],
+      "recovery": "If output is too generic, prompt: 'Include the actual parameter values from the model and specific tuning recommendations.'"
+    },
+    {
+      "title": "Generate formal requirements and validate",
+      "prompt": "Create formal requirements for how the system detects and corrects yaw instability — from sensing through to brake actuation. Use the generating requirements skill to create them in the appropriate format, and validate them.",
+      "notes": "Key demo moment: Agent synthesizes its model understanding into formal, machine-parseable requirements spanning multiple subsystems. Agent loads the generate-requirement-drafts skill, detects whether Requirements Toolbox is available, and routes accordingly: slreq path creates .slreqx with traceability links to model blocks; YAML path generates a structured requirements YAML file and validates it parses correctly.",
+      "look_for": [
+        "Agent loads generate-requirement-drafts skill",
+        "Agent probes for Requirements Toolbox availability",
+        "Requirements span sensing, control law, and actuation (not just one subsystem)",
+        "Requirements are specific and testable with threshold values",
+        "slreqx path: Agent creates .slreqx with traceability links to model blocks",
+        "YAML path: Agent generates structured YAML requirements file and validates it parses correctly",
+        "If errors: agent reads output, fixes, and re-validates"
+      ],
+      "recovery": "If agent generates prose instead of structured requirements, prompt: 'Create formal requirements linked to the model blocks they were derived from.'"
+    }
+  ],
+  "presentation": {
+    "section": "1 — Understand & Document",
+    "duration": "10-12 min",
+    "order": 1,
+    "background": "A calibration engineer needs to understand a stability control system model, document its parameters for tuning, and produce formal requirements for traceability and compliance.",
+    "platforms": [
+      "vscode_amp",
+      "simulink_cli"
+    ],
+    "skills": [
+      "building-simulink-models",
+      "testing-simulink-models",
+      "generate-requirement-drafts"
+    ],
+    "good_looks_like": [
+      "Agent provides a clear, multi-level explanation of the model (system → subsystem → algorithm)",
+      "Calibration documentation is domain-appropriate with real parameter values",
+      "Requirements are specific, testable, and cover the key model behaviors",
+      "Requirements output uses EARS patterns — all fields populated, marked as draft",
+      "slreqx path: requirement set and link sets saved; YAML path: file validates cleanly",
+      "The whole flow progresses naturally from understanding → documentation → formal requirements"
+    ]
+  }
+}

@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulink Agentic Task Explorer</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 18px;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.5;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #app {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem;
+    }
+
+    /* ── Example Selector ── */
+
+    .selector-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .selector-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #111;
+    }
+
+    /* ── View Toggle ── */
+
+    .view-toggle {
+      display: flex;
+      border: 1px solid #d0d0d0;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .view-toggle-btn {
+      background: transparent;
+      border: none;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.8rem;
+      color: #666;
+      cursor: pointer;
+      transition: background 0.1s ease, color 0.1s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .view-toggle-btn.active {
+      background: #e8edf3;
+      color: #111;
+      font-weight: 600;
+    }
+
+    .view-toggle-btn:hover:not(.active) {
+      background: #f0f0f0;
+    }
+
+    /* ── Section Group ── */
+
+    .section-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .section-header {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 0;
+      margin-bottom: 0.4rem;
+      border-bottom: 2px solid #e0e0e0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-header-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .exit-btn {
+      background: transparent;
+      border: 1px solid #d0d0d0;
+      border-radius: 6px;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.85rem;
+      color: #666;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: background 0.1s ease, color 0.1s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .exit-btn:hover {
+      background: #f0f0f0;
+      color: #333;
+    }
+
+    .exit-btn:active {
+      background: #e0e0e0;
+    }
+
+    .demo-card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-left: 4px solid #6b7280;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 0.75rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .demo-card:hover {
+      border-color: #b0b0b0;
+      background: #f7f9fc;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 1px 4px rgba(0, 0, 0, 0.06);
+      transform: translateY(-2px);
+    }
+
+    .demo-card:active {
+      background: #f0f4f8;
+    }
+
+    .demo-card.card-invalid {
+      border-left-color: #dc3545;
+      background: #fef8f8;
+      cursor: default;
+      opacity: 0.8;
+    }
+
+    .demo-card.card-invalid:hover {
+      transform: none;
+      box-shadow: none;
+      background: #fef8f8;
+      border-color: #e0e0e0;
+      border-left-color: #dc3545;
+    }
+
+    .card-errors {
+      margin-top: 0.4rem;
+      font-size: 0.85rem;
+      color: #b91c1c;
+      line-height: 1.5;
+    }
+
+    .card-error-line {
+      display: block;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-id {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #5a6a7a;
+      flex-shrink: 0;
+    }
+
+    .card-name {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .card-description,
+    .card-description-full {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-description {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-description-full {
+      display: none;
+    }
+
+    .demo-card:hover .card-description {
+      display: none;
+    }
+
+    .demo-card:hover .card-description-full {
+      display: block;
+    }
+
+    .card-meta {
+      font-size: 0.8rem;
+      color: #888;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card-tag {
+      display: inline-block;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: #f1f5f9;
+      color: #475569;
+    }
+
+    /* ── Example View ── */
+
+    .demo-view {
+      animation: fadeIn 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      min-height: calc(100vh - 3rem);
+    }
+
+    .demo-content {
+      flex: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .back-link {
+      font-size: 1rem;
+      color: #2563eb;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 0.4rem 0;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .back-link:hover {
+      color: #1d4ed8;
+    }
+
+    .step-indicator {
+      font-size: 0.9rem;
+      color: #777;
+      font-weight: 500;
+    }
+
+    .demo-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 0.3rem;
+    }
+
+    .demo-meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Recording Links ── */
+
+    .recording-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #2563eb;
+      text-decoration: none;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      transition: background 0.12s, color 0.12s;
+      margin-left: 0.5rem;
+    }
+
+    .recording-link:hover {
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .recording-link .play-icon {
+      font-size: 0.7rem;
+    }
+
+    .step-recording-subline {
+      margin-top: -0.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    /* ── Collapsible Sections ── */
+
+    .collapsible {
+      margin-bottom: 0.8rem;
+    }
+
+    .collapsible-header {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #444;
+      cursor: pointer;
+      padding: 0.5rem 0;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      user-select: none;
+      -webkit-user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .collapsible-header:hover {
+      color: #222;
+    }
+
+    .collapsible-body {
+      display: none;
+      padding: 0.6rem 0 0.6rem 1.2rem;
+    }
+
+    .collapsible.open .collapsible-body {
+      display: block;
+    }
+
+    .collapsible-arrow {
+      display: inline-block;
+      margin-right: 0.5rem;
+      transition: transform 0.15s ease;
+    }
+
+    .collapsible.open .collapsible-arrow {
+      transform: rotate(90deg);
+    }
+
+    .good-looks-list {
+      list-style: disc;
+      padding-left: 1.2rem;
+    }
+
+    .good-looks-list li {
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    /* ── Divider ── */
+
+    .divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 1rem 0;
+    }
+
+    /* ── Background ── */
+
+    .background-text {
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* ── Step ── */
+
+    .step-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 0.8rem;
+    }
+
+    /* ── Prompt Box ── */
+
+    .prompt-box {
+      background: #eef3f9;
+      border: 1px solid #d0dbe8;
+      border-radius: 10px;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .prompt-text {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #111;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      padding-right: 3rem;
+    }
+
+    .copy-btn {
+      position: absolute;
+      bottom: 0.8rem;
+      right: 0.8rem;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 48px;
+      height: 48px;
+      font-size: 1.3rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-tap-highlight-color: transparent;
+      transition: background 0.1s ease;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .copy-btn:hover {
+      background: #f0f0f0;
+    }
+
+    .copy-btn:active {
+      background: #e0e0e0;
+    }
+
+    .copy-btn.copied {
+      background: #d4edda;
+      border-color: #a3d9a5;
+      color: #1a7a2e;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    /* ── Presenter Notes ── */
+
+    .notes-section .collapsible-body {
+      background: #fefcf3;
+      border: 1px solid #f0e6c0;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-top: 0.3rem;
+    }
+
+    .notes-text {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 0.8rem;
+    }
+
+    .notes-text:last-child {
+      margin-bottom: 0;
+    }
+
+    .notes-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #555;
+      margin-bottom: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .look-for-list {
+      list-style: disc;
+      padding-left: 1.2rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .look-for-list li {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 0.25rem;
+    }
+
+    .recovery-text {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* ── Rubrics ── */
+
+    .rubrics-section {
+      margin-top: 0.8rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .rubrics-header {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .rubric-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .rubric-card {
+      background: #f6f8fa;
+      border: 1px solid #e1e4e8;
+      border-left: 3px solid #6b7280;
+      border-radius: 6px;
+      padding: 0.5rem 0.7rem;
+      flex: 1 1 calc(50% - 0.5rem);
+      min-width: 220px;
+      max-width: 100%;
+    }
+
+    .rubric-card[data-category="model"] { border-left-color: #3b82f6; }
+    .rubric-card[data-category="simulation"] { border-left-color: #8b5cf6; }
+    .rubric-card[data-category="parameters"] { border-left-color: #f59e0b; }
+    .rubric-card[data-category="string"] { border-left-color: #6b7280; }
+    .rubric-card[data-category="tool"] { border-left-color: #10b981; }
+    .rubric-card[data-category="json"] { border-left-color: #06b6d4; }
+    .rubric-card[data-category="analysis"] { border-left-color: #ef4444; }
+
+    .rubric-card-top {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .rubric-type-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .rubric-type-badge.type-code { background: #3b82f6; }
+    .rubric-type-badge.type-matlab { background: #e16b2a; }
+    .rubric-type-badge.type-llm { background: #8b5cf6; }
+    .rubric-type-badge.type-llm_score { background: #a855f7; }
+
+    .rubric-name {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .rubric-id-label {
+      font-size: 0.75rem;
+      color: #888;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    }
+
+    .rubric-desc {
+      font-size: 0.78rem;
+      color: #666;
+      line-height: 1.35;
+      margin-bottom: 0.25rem;
+    }
+
+    .rubric-params-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      margin-top: 0.2rem;
+    }
+
+    .rubric-param-tag {
+      font-size: 0.72rem;
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      background: #e8edf3;
+      color: #3d4f5f;
+      padding: 0.1rem 0.4rem;
+      border-radius: 3px;
+    }
+
+    .rubric-weight-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #9a6700;
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      padding: 0.05rem 0.35rem;
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-left: auto;
+    }
+
+    /* ── Step Navigation ── */
+
+    .step-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 0;
+      margin-top: auto;
+      border-top: 1px solid #ddd;
+    }
+
+    .step-btn {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+      cursor: pointer;
+      min-height: 48px;
+      min-width: 48px;
+      display: flex;
+      align-items: center;
+      -webkit-tap-highlight-color: transparent;
+      transition: background 0.1s ease;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .step-btn:hover {
+      background: #f5f5f5;
+    }
+
+    .step-btn:active {
+      background: #e8e8e8;
+    }
+
+    .step-btn.invisible {
+      visibility: hidden;
+    }
+
+    /* ── Stage Button ── */
+
+    .stage-btn {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      -webkit-tap-highlight-color: transparent;
+      transition: background 0.15s ease;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .stage-btn:hover {
+      background: #1d4ed8;
+    }
+
+    .stage-btn:active {
+      background: #1e40af;
+    }
+
+    .stage-btn.staged {
+      background: #16a34a;
+    }
+
+    .stage-btn:disabled {
+      background: #94a3b8;
+      cursor: default;
+    }
+
+    .stage-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.2rem;
+    }
+
+    /* ── Exit Confirmation Modal ── */
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: fadeIn 0.15s ease;
+    }
+
+    .modal-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 380px;
+      width: 90%;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 0.8rem;
+    }
+
+    .modal-body {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .modal-btn {
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: 1px solid #d0d0d0;
+      background: #fff;
+      color: #333;
+      text-align: center;
+      transition: background 0.1s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .modal-btn:hover {
+      background: #f5f5f5;
+    }
+
+    .modal-btn-primary {
+      background: #dc2626;
+      color: #fff;
+      border-color: #dc2626;
+    }
+
+    .modal-btn-primary:hover {
+      background: #b91c1c;
+    }
+
+    .modal-btn-cancel {
+      background: transparent;
+      border-color: transparent;
+      color: #666;
+      font-size: 0.85rem;
+    }
+
+    /* ── Responsive ── */
+
+    @media (min-width: 1024px) {
+      html { font-size: 19px; }
+      #app { padding: 2rem 2rem; }
+    }
+
+    @media (max-width: 768px) {
+      html { font-size: 17px; }
+      #app { padding: 1rem 0.8rem; }
+      .prompt-text { font-size: 1.1rem; }
+    }
+
+    @media (max-width: 480px) {
+      html { font-size: 16px; }
+      #app { padding: 0.8rem 0.6rem; }
+      .demo-name { font-size: 1.3rem; }
+      .prompt-text { font-size: 1rem; }
+      .step-btn { padding: 0.5rem 0.8rem; font-size: 0.9rem; }
+    }
+
+    /* ── Toast notification ── */
+
+    .toast-container {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    .toast {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #e0e0e0;
+      border: 1px solid rgba(0, 200, 255, 0.25);
+      border-radius: 10px;
+      padding: 0.8rem 1.2rem;
+      font-size: 0.85rem;
+      line-height: 1.4;
+      max-width: 380px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 12px rgba(0, 180, 255, 0.1);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      pointer-events: auto;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .toast.hide {
+      opacity: 0;
+      transform: translateX(40px);
+    }
+
+    .toast-icon {
+      color: #00c8ff;
+      margin-right: 0.5rem;
+    }
+
+    .toast-progress {
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      right: 10px;
+      height: 2px;
+      background: rgba(0, 200, 255, 0.3);
+      border-radius: 1px;
+      overflow: hidden;
+    }
+
+    .toast-progress-bar {
+      height: 100%;
+      background: #00c8ff;
+      width: 100%;
+      transform-origin: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script>
+    const DEMOS = __EXAMPLE_DATA__;
+    const RUBRIC_DEFS = __RUBRIC_DEFS__;
+  </script>
+
+  <script>
+    function showToast(message, durationSec) {
+      var container = document.getElementById('toastContainer');
+      var toast = document.createElement('div');
+      toast.className = 'toast';
+      toast.innerHTML = '<span class="toast-icon">&#9889;</span>' + message +
+        '<div class="toast-progress"><div class="toast-progress-bar"></div></div>';
+      container.appendChild(toast);
+      var bar = toast.querySelector('.toast-progress-bar');
+      bar.style.transition = 'transform ' + durationSec + 's linear';
+      requestAnimationFrame(function() {
+        toast.classList.add('show');
+        requestAnimationFrame(function() {
+          bar.style.transform = 'scaleX(0)';
+        });
+      });
+      setTimeout(function() {
+        toast.classList.remove('show');
+        toast.classList.add('hide');
+        setTimeout(function() { toast.remove(); }, 500);
+      }, durationSec * 1000);
+    }
+  </script>
+
+  <script>
+    // uihtml JS-to-MATLAB bridge (set by setup() when hosted in uifigure)
+    var matlabBridge = null;
+    function setup(htmlComponent) {
+      matlabBridge = htmlComponent;
+      // Handle Data messages from MATLAB
+      htmlComponent.addEventListener('DataChanged', function() {
+        var d = htmlComponent.Data;
+        if (!d) return;
+        if (d.navigateTo) {
+          window.__navigateTo = d.navigateTo;
+          if (typeof window.__doNavigate === 'function') {
+            window.__doNavigate(d.navigateTo);
+          }
+        }
+        if (d.toast) {
+          showToast(d.toast, d.toastDuration || 5);
+        }
+      });
+      // Handle case where Data was set before setup ran
+      if (htmlComponent.Data && htmlComponent.Data.navigateTo) {
+        window.__navigateTo = htmlComponent.Data.navigateTo;
+      }
+    }
+  </script>
+
+  <script>
+    (function() {
+      var app = document.getElementById('app');
+      var sortedDemos = DEMOS.slice().sort(function(a, b) { return a.order - b.order; });
+
+      var state = { screen: 'selector', demoIndex: 0, stepIndex: 0, viewMode: localStorage.getItem('presenterViewMode') || 'category' };
+
+      // Deep-link: check hash fragment or Data from MATLAB uihtml
+      var targetId = '';
+      if (location.hash) {
+        targetId = location.hash.replace('#', '');
+      }
+      if (!targetId && window.__navigateTo) {
+        targetId = window.__navigateTo;
+      }
+      if (targetId) {
+        for (var h = 0; h < sortedDemos.length; h++) {
+          if (sortedDemos[h].id === targetId) {
+            state.screen = 'demo';
+            state.demoIndex = h;
+            state.stepIndex = 0;
+            break;
+          }
+        }
+      }
+
+      // Allow late navigation from MATLAB Data property
+      window.__doNavigate = function(demoId) {
+        for (var n = 0; n < sortedDemos.length; n++) {
+          if (sortedDemos[n].id === demoId) {
+            state.screen = 'demo';
+            state.demoIndex = n;
+            state.stepIndex = 0;
+            render();
+            break;
+          }
+        }
+      };
+      var touchStartX = 0;
+      var touchEndX = 0;
+
+      function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+
+      function hasContent(val) {
+        if (val == null) return false;
+        if (Array.isArray(val)) return val.length > 0;
+        if (typeof val === 'string') return val.trim().length > 0;
+        return false;
+      }
+
+      function getSectionColor(section) {
+        if (!section) return '#6b7280';
+        var s = section.toLowerCase();
+        if (s.indexOf('understand') !== -1) return '#3b82f6';
+        if (s.indexOf('modify') !== -1) return '#f59e0b';
+        if (s.indexOf('verify') !== -1 || s.indexOf('quality') !== -1) return '#10b981';
+        return '#6b7280';
+      }
+
+      function demoHasErrors(d) {
+        return d.validation_errors && d.validation_errors.length > 0;
+      }
+
+      function renderDemoCard(d, i, color) {
+        var invalid = demoHasErrors(d);
+        var html = '';
+        html += '<div class="demo-card' + (invalid ? ' card-invalid' : '') + '" data-index="' + i + '" style="border-left-color: ' + (invalid ? '#dc3545' : color) + '">';
+        html += '<div class="card-header">';
+        html += '<span class="card-id">' + escapeHtml(d.id) + '</span>';
+        html += '<span class="card-name">' + (invalid ? '\u274C ' : '') + escapeHtml(d.name) + '</span>';
+        html += '</div>';
+        if (invalid) {
+          html += '<div class="card-errors">';
+          for (var ei = 0; ei < d.validation_errors.length; ei++) {
+            html += '<span class="card-error-line">\u274C ' + escapeHtml(d.validation_errors[ei]) + '</span>';
+          }
+          html += '</div>';
+        } else {
+          if (hasContent(d.description)) {
+            html += '<div class="card-description">' + escapeHtml(d.description) + '</div>';
+            if (d.description.length > 80) {
+              html += '<div class="card-description-full">' + escapeHtml(d.description) + '</div>';
+            }
+          }
+          var cardMeta = [];
+          if (state.viewMode === 'demo' && hasContent(d.section)) {
+            var sectionLabel = d.section.replace(/^\d+\s*[\u2014\u2013\-]\s*/, '');
+            cardMeta.push('<span class="card-tag">' + escapeHtml(sectionLabel) + '</span>');
+          }
+          if (hasContent(d.duration)) {
+            cardMeta.push('<span>' + escapeHtml(d.duration) + '</span>');
+          }
+          if (d.steps && d.steps.length > 0) {
+            cardMeta.push('<span>' + d.steps.length + (d.steps.length === 1 ? ' step' : ' steps') + '</span>');
+          }
+          if (cardMeta.length > 0) {
+            html += '<div class="card-meta">' + cardMeta.join('') + '</div>';
+          }
+        }
+        html += '</div>';
+        return html;
+      }
+
+      function renderSelector() {
+        var isCategory = state.viewMode === 'category';
+        var html = '<div class="selector-header">';
+        html += '<h1 class="selector-title">Simulink Agentic Task Explorer</h1>';
+        html += '<div style="display:flex;align-items:center;gap:0.8rem;">';
+        html += '<div class="view-toggle">';
+        html += '<button class="view-toggle-btn' + (isCategory ? '' : ' active') + '" id="viewDemo">By Example</button>';
+        html += '<button class="view-toggle-btn' + (isCategory ? ' active' : '') + '" id="viewCategory">By Category</button>';
+        html += '</div>';
+        html += '<button class="exit-btn" id="exitBtn">End Session\u2026</button>';
+        html += '</div></div>';
+
+        if (isCategory) {
+          var sections = [];
+          var sectionMap = {};
+          for (var i = 0; i < sortedDemos.length; i++) {
+            var d = sortedDemos[i];
+            var sec = d.section || 'Other';
+            if (!sectionMap[sec]) {
+              sectionMap[sec] = [];
+              sections.push(sec);
+            }
+            sectionMap[sec].push({ demo: d, index: i });
+          }
+          sections.sort(function(a, b) {
+            var na = parseInt(a, 10) || 999;
+            var nb = parseInt(b, 10) || 999;
+            return na - nb;
+          });
+          for (var s = 0; s < sections.length; s++) {
+            var sec = sections[s];
+            var color = getSectionColor(sec);
+            var label = sec.replace(/^\d+\s*[\u2014\u2013\-]\s*/, '');
+            html += '<div class="section-group">';
+            html += '<div class="section-header"><span class="section-header-dot" style="background:' + color + '"></span>' + escapeHtml(label) + '</div>';
+            var items = sectionMap[sec];
+            for (var k = 0; k < items.length; k++) {
+              html += renderDemoCard(items[k].demo, items[k].index, color);
+            }
+            html += '</div>';
+          }
+        } else {
+          for (var i = 0; i < sortedDemos.length; i++) {
+            var d = sortedDemos[i];
+            var color = getSectionColor(d.section);
+            html += renderDemoCard(d, i, color);
+          }
+        }
+
+        app.innerHTML = html;
+
+        var cards = app.querySelectorAll('.demo-card:not(.card-invalid)');
+        for (var j = 0; j < cards.length; j++) {
+          cards[j].addEventListener('click', function() {
+            var idx = parseInt(this.getAttribute('data-index'), 10);
+            state.screen = 'demo';
+            state.demoIndex = idx;
+            state.stepIndex = 0;
+            render();
+          });
+        }
+
+        document.getElementById('viewDemo').addEventListener('click', function() {
+          state.viewMode = 'demo';
+          localStorage.setItem('presenterViewMode', 'demo');
+          render();
+        });
+        document.getElementById('viewCategory').addEventListener('click', function() {
+          state.viewMode = 'category';
+          localStorage.setItem('presenterViewMode', 'category');
+          render();
+        });
+
+        var exitBtn = document.getElementById('exitBtn');
+        if (exitBtn) {
+          exitBtn.addEventListener('click', function() {
+            showExitConfirm();
+          });
+        }
+      }
+
+      function renderDemoView() {
+        var demo = sortedDemos[state.demoIndex];
+        var step = demo.steps[state.stepIndex];
+        var totalSteps = demo.steps.length;
+        var isFirstStep = state.stepIndex === 0;
+        var isSingleStep = totalSteps === 1;
+
+        var html = '<div class="demo-view">';
+
+        // Top bar
+        html += '<div class="top-bar">';
+        html += '<a class="back-link" id="backLink">\u25C0 All Examples</a>';
+        if (!isSingleStep) {
+          html += '<span class="step-indicator">Step ' + (state.stepIndex + 1) + ' of ' + totalSteps + '</span>';
+        }
+        html += '</div>';
+
+        // Stage button row
+        html += '<div class="stage-row">';
+        html += '<button class="stage-btn" id="stageBtn">\u25B6 Stage</button>';
+        html += '</div>';
+
+        // Example content (flex: 1 to push nav to bottom)
+        html += '<div class="demo-content">';
+
+        // Example name + meta
+        html += '<div class="demo-name"><span class="card-id">' + escapeHtml(demo.id) + '</span> ' + escapeHtml(demo.name) + '</div>';
+        var metaParts = [];
+        if (hasContent(demo.section)) metaParts.push(escapeHtml(demo.section));
+        if (hasContent(demo.duration)) metaParts.push(escapeHtml(demo.duration));
+        if (metaParts.length > 0 || demo.recording) {
+          html += '<div class="demo-meta">' + metaParts.join('  \u00b7  ');
+          if (demo.recording) {
+            html += ' <a href="' + escapeHtml(demo.recording) + '" target="_blank" class="recording-link" title="Watch full example recording"><span class="play-icon">\u25B6</span> Watch</a>';
+          }
+          html += '</div>';
+        }
+
+        // What good looks like
+        if (hasContent(demo.good_looks_like)) {
+          html += '<div class="collapsible" id="goodLooksLike">';
+          html += '<div class="collapsible-header"><span class="collapsible-arrow">\u25B8</span> What good looks like</div>';
+          html += '<div class="collapsible-body"><ul class="good-looks-list">';
+          for (var g = 0; g < demo.good_looks_like.length; g++) {
+            html += '<li>' + escapeHtml(demo.good_looks_like[g]) + '</li>';
+          }
+          html += '</ul></div></div>';
+        }
+
+        // Background
+        if (hasContent(demo.background)) {
+          html += '<hr class="divider">';
+          html += '<div class="background-text">' + escapeHtml(demo.background) + '</div>';
+        }
+
+        html += '<hr class="divider">';
+
+        // Step title
+        var stepLabel = 'Step ' + (state.stepIndex + 1);
+        if (hasContent(step.title)) stepLabel += ': ' + escapeHtml(step.title);
+        html += '<div class="step-title">' + stepLabel + '</div>';
+
+        // Step recording (Option B: sub-line)
+        if (step.recording) {
+          html += '<div class="step-recording-subline"><a href="' + escapeHtml(step.recording) + '" target="_blank" class="recording-link" title="Watch recording for this step"><span class="play-icon">\u25B6</span> Watch recording</a></div>';
+        }
+
+        // Prompt box
+        html += '<div class="prompt-box">';
+        html += '<div class="prompt-text" id="promptText">' + escapeHtml(step.prompt) + '</div>';
+        html += '<button class="copy-btn" id="copyBtn" title="Copy prompt">\uD83D\uDCCB</button>';
+        html += '</div>';
+
+        // Rubrics
+        if (step.evaluation && step.evaluation.rubrics && step.evaluation.rubrics.length > 0) {
+          html += '<div class="collapsible rubrics-section">';
+          html += '<div class="collapsible-header"><span class="collapsible-arrow">\u25B8</span> Evaluation Rubrics</div>';
+          html += '<div class="collapsible-body"><div class="rubric-grid">';
+          for (var ri = 0; ri < step.evaluation.rubrics.length; ri++) {
+            var r = step.evaluation.rubrics[ri];
+            if (!r.id) continue;
+            var def = (typeof RUBRIC_DEFS !== 'undefined' && RUBRIC_DEFS[r.id]) ? RUBRIC_DEFS[r.id] : null;
+            var rType = def ? (def.type || '') : '';
+            var rCat = def ? (def.category || '') : '';
+            var rName = def ? (def.name || r.id) : r.id;
+            var rDesc = def ? (def.description || '') : '';
+
+            html += '<div class="rubric-card" data-category="' + escapeHtml(rCat) + '">';
+            html += '<div class="rubric-card-top">';
+            if (rType) {
+              html += '<span class="rubric-type-badge type-' + escapeHtml(rType) + '">' + escapeHtml(rType) + '</span>';
+            }
+            html += '<span class="rubric-name">' + escapeHtml(rName) + '</span>';
+            if (r.weight && r.weight !== 1) {
+              html += '<span class="rubric-weight-badge">\u00d7' + r.weight + '</span>';
+            }
+            html += '</div>';
+            html += '<div class="rubric-id-label">' + escapeHtml(r.id) + '</div>';
+            if (rDesc) {
+              html += '<div class="rubric-desc">' + escapeHtml(rDesc) + '</div>';
+            }
+            if (r.params && typeof r.params === 'object') {
+              var pkeys = Object.keys(r.params);
+              if (pkeys.length > 0) {
+                html += '<div class="rubric-params-list">';
+                for (var pk = 0; pk < pkeys.length; pk++) {
+                  var pv = r.params[pkeys[pk]];
+                  var pvStr = Array.isArray(pv) ? '[' + pv.join(', ') + ']' : JSON.stringify(pv);
+                  html += '<span class="rubric-param-tag">' + escapeHtml(pkeys[pk]) + '=' + escapeHtml(pvStr) + '</span>';
+                }
+                html += '</div>';
+              }
+            }
+            html += '</div>';
+          }
+          html += '</div></div></div>';
+        }
+
+        // Presenter Notes
+        var hasNotes = hasContent(step.notes);
+        var hasLookFor = hasContent(step.look_for);
+        var hasRecovery = hasContent(step.recovery);
+
+        if (hasNotes || hasLookFor || hasRecovery) {
+          html += '<div class="collapsible notes-section" id="presenterNotes">';
+          html += '<div class="collapsible-header"><span class="collapsible-arrow">\u25B8</span> Presenter Notes</div>';
+          html += '<div class="collapsible-body">';
+
+          if (hasNotes) {
+            html += '<div class="notes-text">' + escapeHtml(step.notes) + '</div>';
+          }
+
+          if (hasLookFor) {
+            html += '<div class="notes-label">Look for:</div>';
+            html += '<ul class="look-for-list">';
+            for (var lf = 0; lf < step.look_for.length; lf++) {
+              html += '<li>' + escapeHtml(step.look_for[lf]) + '</li>';
+            }
+            html += '</ul>';
+          }
+
+          if (hasRecovery) {
+            html += '<div class="notes-label">Recovery:</div>';
+            html += '<div class="recovery-text">' + escapeHtml(step.recovery) + '</div>';
+          }
+
+          html += '</div></div>';
+        }
+
+        html += '</div>'; // close demo-content
+
+        // Step navigation
+        if (!isSingleStep) {
+          html += '<div class="step-nav">';
+          if (state.stepIndex > 0) {
+            html += '<button class="step-btn" id="prevBtn">\u25C0 Step ' + state.stepIndex + '</button>';
+          } else {
+            html += '<button class="step-btn invisible" aria-hidden="true"></button>';
+          }
+          if (state.stepIndex < totalSteps - 1) {
+            html += '<button class="step-btn" id="nextBtn">Step ' + (state.stepIndex + 2) + ' \u25B6</button>';
+          } else {
+            html += '<button class="step-btn invisible" aria-hidden="true"></button>';
+          }
+          html += '</div>';
+        }
+
+        html += '</div>';
+        app.innerHTML = html;
+
+        // Event listeners
+        document.getElementById('backLink').addEventListener('click', function(e) {
+          e.preventDefault();
+          state.screen = 'selector';
+          render();
+        });
+
+        var copyBtn = document.getElementById('copyBtn');
+        copyBtn.addEventListener('click', function() {
+          copyPrompt();
+        });
+
+        // Collapsible toggling
+        var collapsibles = app.querySelectorAll('.collapsible-header');
+        for (var c = 0; c < collapsibles.length; c++) {
+          collapsibles[c].addEventListener('click', function() {
+            this.parentElement.classList.toggle('open');
+          });
+        }
+
+        var stageBtn = document.getElementById('stageBtn');
+        stageBtn.addEventListener('click', function() {
+          stageDemo(demo.id, stageBtn);
+        });
+
+        var recordingLinks = app.querySelectorAll('.recording-link');
+        for (var rl = 0; rl < recordingLinks.length; rl++) {
+          recordingLinks[rl].addEventListener('click', function(e) {
+            if (matlabBridge) {
+              e.preventDefault();
+              matlabBridge.sendEventToMATLAB('openURL', this.href);
+            }
+          });
+        }
+
+        var prevBtn = document.getElementById('prevBtn');
+        if (prevBtn) {
+          prevBtn.addEventListener('click', function() { goStep(-1); });
+        }
+        var nextBtn = document.getElementById('nextBtn');
+        if (nextBtn) {
+          nextBtn.addEventListener('click', function() { goStep(1); });
+        }
+      }
+
+      function stageDemo(demoId, btn) {
+        btn.disabled = true;
+        btn.textContent = 'Staging\u2026';
+
+        if (matlabBridge) {
+          matlabBridge.sendEventToMATLAB('stageDemo', JSON.stringify({ demoId: demoId }));
+        }
+
+        setTimeout(function() {
+          btn.classList.add('staged');
+          btn.textContent = 'Staged \u2713';
+          setTimeout(function() {
+            btn.classList.remove('staged');
+            btn.disabled = false;
+            btn.textContent = '\u25B6 Stage';
+          }, 2000);
+        }, 1000);
+      }
+
+      function copyPrompt() {
+        var demo = sortedDemos[state.demoIndex];
+        var step = demo.steps[state.stepIndex];
+        var text = step.prompt;
+        var btn = document.getElementById('copyBtn');
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function() {
+            showCopied(btn);
+          }).catch(function() {
+            fallbackSelect();
+          });
+        } else {
+          fallbackSelect();
+        }
+      }
+
+      function showCopied(btn) {
+        btn.classList.add('copied');
+        btn.textContent = 'Copied \u2713';
+        setTimeout(function() {
+          btn.classList.remove('copied');
+          btn.textContent = '\uD83D\uDCCB';
+        }, 1000);
+      }
+
+      function fallbackSelect() {
+        var promptEl = document.getElementById('promptText');
+        if (promptEl) {
+          var range = document.createRange();
+          range.selectNodeContents(promptEl);
+          var sel = window.getSelection();
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }
+      }
+
+      function goStep(delta) {
+        var demo = sortedDemos[state.demoIndex];
+        var next = state.stepIndex + delta;
+        if (next >= 0 && next < demo.steps.length) {
+          state.stepIndex = next;
+          render();
+          window.scrollTo(0, 0);
+        }
+      }
+
+      function showExitConfirm() {
+        var overlay = document.createElement('div');
+        overlay.className = 'modal-overlay';
+        overlay.innerHTML = '<div class="modal-box">' +
+          '<div class="modal-title">End example session?</div>' +
+          '<div class="modal-body">Choose what to do with the current example environment.</div>' +
+          '<div class="modal-actions">' +
+          '<button class="modal-btn" id="modalClose">Close window only</button>' +
+          '<button class="modal-btn modal-btn-primary" id="modalReset">Reset environment &amp; close</button>' +
+          '<button class="modal-btn modal-btn-cancel" id="modalCancel">Cancel</button>' +
+          '</div></div>';
+        document.body.appendChild(overlay);
+
+        document.getElementById('modalClose').addEventListener('click', function() {
+          if (matlabBridge) {
+            matlabBridge.sendEventToMATLAB('closePresenter', '');
+          }
+          overlay.remove();
+        });
+
+        document.getElementById('modalReset').addEventListener('click', function() {
+          if (matlabBridge) {
+            matlabBridge.sendEventToMATLAB('teardownPresenter', '');
+          }
+          overlay.remove();
+        });
+
+        document.getElementById('modalCancel').addEventListener('click', function() {
+          overlay.remove();
+        });
+
+        overlay.addEventListener('click', function(e) {
+          if (e.target === overlay) {
+            overlay.remove();
+          }
+        });
+      }
+
+      function render() {
+        if (state.screen === 'selector') {
+          renderSelector();
+        } else {
+          renderDemoView();
+        }
+      }
+
+      // Zoom support
+      var zoomLevel = parseFloat(localStorage.getItem('presenterZoom')) || 100;
+      function applyZoom() {
+        document.body.style.zoom = (zoomLevel / 100);
+        localStorage.setItem('presenterZoom', zoomLevel);
+      }
+      applyZoom();
+
+      // Keyboard shortcuts
+      document.addEventListener('keydown', function(e) {
+        // Zoom: Ctrl+Plus, Ctrl+Minus, Ctrl+0
+        if (e.ctrlKey || e.metaKey) {
+          if (e.key === '=' || e.key === '+') {
+            e.preventDefault();
+            zoomLevel = Math.min(200, zoomLevel + 10);
+            applyZoom();
+            return;
+          } else if (e.key === '-') {
+            e.preventDefault();
+            zoomLevel = Math.max(50, zoomLevel - 10);
+            applyZoom();
+            return;
+          } else if (e.key === '0') {
+            e.preventDefault();
+            zoomLevel = 100;
+            applyZoom();
+            return;
+          }
+        }
+
+        if (state.screen === 'selector') {
+          if ((e.key === 'q' || e.key === 'Q') && !e.ctrlKey && !e.metaKey) {
+            showExitConfirm();
+          }
+        } else if (state.screen === 'demo') {
+          if (e.key === 'ArrowRight') {
+            goStep(1);
+          } else if (e.key === 'ArrowLeft') {
+            goStep(-1);
+          } else if (e.key === 'Escape') {
+            state.screen = 'selector';
+            render();
+          } else if (e.key === 'c' || e.key === 'C') {
+            if (!e.ctrlKey && !e.metaKey) {
+              copyPrompt();
+            }
+          } else if (e.key === 'n' || e.key === 'N') {
+            if (!e.ctrlKey && !e.metaKey) {
+              var notes = document.getElementById('presenterNotes');
+              if (notes) {
+                notes.classList.toggle('open');
+              }
+            }
+          }
+        }
+      });
+
+      // Swipe support
+      document.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      document.addEventListener('touchend', function(e) {
+        if (state.screen !== 'demo') return;
+        touchEndX = e.changedTouches[0].screenX;
+        var diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 60) {
+          if (diff > 0) {
+            goStep(1);  // swipe left → next
+          } else {
+            goStep(-1); // swipe right → prev
+          }
+        }
+      }, { passive: true });
+
+      // Initial render
+      render();
+    })();
+  </script>
+</body>
+</html>

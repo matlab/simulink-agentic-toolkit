@@ -1,0 +1,86 @@
+{
+  "id": "D05",
+  "title": "Verify Interface Compliance",
+  "description": "Agent compares the model's actual interface against its external interface definition (interface.json), identifies mismatches in port names, count, datatypes, and units, and fixes the model to match the contract.",
+  "classification": {
+    "tags": [
+      "demo"
+    ]
+  },
+  "workspace": {
+    "include_files": [
+      "$/StabilityControlSystem.slx",
+      "$/interface.json"
+    ],
+    "context_variables": {
+      "model_name": "StabilityControlSystem.slx"
+    }
+  },
+  "steps": [
+    {
+      "title": "Check the model against its interface definition",
+      "prompt": "Compare the interface of StabilityControlSystem.slx against interface.json. Report any mismatches between what the model has and what the interface definition specifies.",
+      "notes": "The agent should read both the interface.json and the model's actual ports (via model_read or model_overview), then produce a structured mismatch report. There are real mismatches — this is not a trick question.",
+      "look_for": [
+        "Agent reads interface.json (platform Read)",
+        "Agent reads the model interface (model_overview or model_read at root level)",
+        "Agent identifies port count mismatch: model has 5 inputs vs interface specifies 10",
+        "Agent identifies port count mismatch: model has 4 outputs vs interface specifies 7",
+        "Agent identifies naming mismatches: model uses 'SteeringAngle' vs interface expects 'SteeringAngle_deg'",
+        "Agent identifies missing ports: SpeedDeratingBP_mps, SpeedDeratingTable (inputs), SCS_Active, YawRateError_degps, DeratingFactor (outputs)",
+        "Agent identifies structural mismatch: model has bundled 'WheelSpeeds' vs interface expects 4 individual wheel speed ports",
+        "Agent produces a clear mismatch report"
+      ],
+      "recovery": "If agent only reports naming differences without noticing missing ports, prompt: 'Are the port counts correct? Are all ports from the interface definition present in the model?'"
+    },
+    {
+      "title": "Fix the model to match the interface definition",
+      "prompt": "Fix the model to match the interface definition. Start with the port naming — rename the existing ports to match the interface.json naming convention. Please align the ports vertically to match existing.",
+      "notes": "Scoping to naming keeps step 2 quick and deterministic. Adding missing ports (derating inputs, diagnostic outputs) is a larger structural change that could be a follow-up prompt or left for the audience to imagine. The naming fix alone is impressive because it shows the agent can make targeted, contract-driven edits.",
+      "look_for": [
+        "Agent uses model_edit configure ops to rename inports and outports",
+        "Agent renames SteeringAngle → SteeringAngle_deg, VehicleSpeed → VehicleSpeed_mps, YawRate → YawRate_degps, LateralAcceleration → LateralAccel_mps2",
+        "Agent renames FrontLeftBrakeTorque → BrakeTorque_FL_Nm, etc.",
+        "Agent may note that WheelSpeeds needs to be split into 4 individual ports (structural change beyond rename)",
+        "Agent may note that missing ports (derating, diagnostics) still need to be added"
+      ],
+      "recovery": "If agent tries to add all missing ports at once, let it proceed — this is actually more impressive. If it gets stuck on WheelSpeeds splitting, say: 'The naming fixes are sufficient for now. We can add the missing ports as a follow-up.'"
+    },
+    {
+      "title": "Add the missing ports",
+      "prompt": "Now tackle the missing ports.",
+      "notes": "Optional step — use if time permits and step 2 went smoothly. The agent should delete the bundled WheelSpeeds inport (unconnected) and add 4 individual wheel speed inports, 2 derating inports, and 3 diagnostic outports. New ports will be unconnected — that's expected.",
+      "look_for": [
+        "Agent checks whether WheelSpeeds is connected (it isn't) and deletes it",
+        "Agent adds 4 individual wheel speed inports matching interface.json names",
+        "Agent adds SpeedDeratingBP_mps and SpeedDeratingTable inports",
+        "Agent adds SCS_Active, YawRateError_degps, DeratingFactor outports",
+        "Agent verifies with model_read that port counts now match (10 in, 7 out)",
+        "Agent may align new ports visually with existing ones"
+      ],
+      "recovery": "If agent tries to connect the new ports to subsystems, let it — but this may take time. If needed: 'The ports are sufficient for now. Wiring them into the algorithm is a follow-up task.'"
+    }
+  ],
+  "presentation": {
+    "section": "4 — Verify & Quality",
+    "duration": "5-8 min",
+    "order": 5,
+    "background": "The interface.json for the stability control system was updated to reflect the new REQ_SCS_007 derating requirement (added derating ports), individual wheel speed inputs (replacing the bundled WheelSpeeds signal), naming conventions with units, and additional diagnostic outputs. The model hasn't been updated to match. The agent verifies compliance and fixes the drift.",
+    "platforms": [
+      "vscode_amp",
+      "simulink_cli"
+    ],
+    "skills": [
+      "building-simulink-models"
+    ],
+    "good_looks_like": [
+      "Agent reads both artifacts and produces a clear, structured mismatch report",
+      "Mismatches categorized by type: naming, missing ports, structural (bundled vs individual)",
+      "Agent correctly identifies all real drift — no fabricated findings",
+      "Port renames are executed correctly and model still compiles",
+      "Agent distinguishes between quick fixes (renaming) and structural changes (splitting WheelSpeeds, adding derating ports)",
+      "The agent acts as an interface contract enforcer — systematic, evidence-based"
+    ],
+    "recording": ""
+  }
+}

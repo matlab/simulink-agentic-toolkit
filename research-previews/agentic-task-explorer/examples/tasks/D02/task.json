@@ -1,0 +1,92 @@
+{
+  "id": "D02",
+  "title": "Spec-Driven Plant Model Creation for Closed-Loop Simulation",
+  "description": "Demonstrate the plant-model-specs skill workflow: agent analyzes a controller's interface, classifies signals using u/w/y/z taxonomy, researches bicycle model physics, creates a quick-mode plant spec, builds the plant model, and validates with closed-loop simulation.",
+  "classification": {
+    "tags": [
+      "demo"
+    ]
+  },
+  "workspace": {
+    "include_files": [
+      "StabilityControlSystem.slx"
+    ],
+    "context_variables": {
+      "model_name": "StabilityControlSystem.slx"
+    }
+  },
+  "steps": [
+    {
+      "title": "Analyze the controller interface and specify the plant model",
+      "prompt": "I've been testing my stability controller open-loop and I want to close the loop with a vehicle dynamics model. I've never built a plant model — can you help me spec one out? I'm thinking a bicycle model would be appropriate. I want to review the spec before you start building.",
+      "notes": "Key demo moment: the u/w/y/z signal classification table and the evidence-driven fidelity decision. The skill's quick mode produces 2 docs (system+architecture combined, implementation+test combined). The agent should use web_search for bicycle model references (Rajamani, etc.).",
+      "look_for": [
+        "Agent loads specifying-plant-models skill",
+        "Agent reads model (model_overview → model_read) to identify controller inputs/outputs",
+        "Agent classifies signals: u (brake torques from controller), w (steering angle from driver), y (yaw rate, lateral accel, vehicle speed to controller), z (sideslip angle, lateral velocity for debugging)",
+        "Agent assesses validation evidence — notes no test data available, justifies simple linear bicycle model fidelity",
+        "Agent uses web_search for bicycle model references (Rajamani, vehicle dynamics textbooks)",
+        "Agent identifies canonical decomposition: Brake Actuator → Vehicle Dynamics (bicycle model) → Sensors",
+        "Agent produces 2 quick-mode spec documents using create_file",
+        "Agent stops and asks for approval before building"
+      ],
+      "recovery": "If agent skips the signal taxonomy, prompt: 'Before writing the spec, classify each interface signal as u (commanded input from controller), w (exogenous), y (measured output to controller), or z (truth/debug output).' If agent tries to build immediately without spec, prompt: 'Let's start with the specification first — use the specifying-plant-models skill to create a proper spec before building.'"
+    },
+    {
+      "title": "Build the plant model from the spec",
+      "prompt": "Looks good. Build it.",
+      "notes": "Agent should use model_edit to create a new model or subsystem with the bicycle model dynamics. The canonical decomposition from the spec should be visible in the model structure (actuator, dynamics, sensor subsystems). The agent should use building-simulink-models skill for model_edit best practices.",
+      "look_for": [
+        "Agent creates a new Simulink model or subsystem for the plant",
+        "Agent builds subsystems matching the spec's canonical decomposition (actuator, dynamics, sensors)",
+        "Agent implements bicycle model equations (lateral velocity, yaw rate states)",
+        "Agent configures physical parameters with values from the spec (vehicle mass, wheelbase, cornering stiffness, etc.)",
+        "Agent sets correct port names, units matching the interface contract",
+        "Agent uses model_edit add_block, connect, configure operations",
+        "Agent creates a parameter initialization script (init_vehicle_params.m) with physical constants from the spec"
+      ],
+      "recovery": "If agent gets stuck on model_edit operations, prompt: 'Focus on getting the structure right first — subsystem boundaries, ports, and key integrators. We can refine parameters later.' If model creation fails, the fallback is to show pre-built artifacts."
+    },
+    {
+      "title": "Validate the plant model and close the loop",
+      "prompt": "Validate it and put it together with my controller to close the loop.",
+      "notes": "Agent should run at least one open-loop sanity check (step-steer → yaw rate response), then create a closed-loop model connecting plant outputs to controller inputs and vice versa. Closed-loop simulation is a natural follow-up but not required in this step — getting the closed-loop model assembled and compilable is the goal.",
+      "look_for": [
+        "Agent creates Gherkin test features and uses model_test for open-loop validation (step-steer response) and closed-loop validation (stability, disturbance rejection)",
+        "Agent verifies yaw rate response has correct sign and reasonable magnitude for a step steer input",
+        "Agent creates a closed-loop model connecting plant outputs to controller inputs and controller outputs to plant inputs",
+        "Agent handles the interface alignment (port names, units, sample times)",
+        "Agent verifies the closed-loop model compiles without algebraic loops"
+      ],
+      "recovery": "If open-loop test fails, prompt: 'Check the sign conventions — make sure a positive steering angle produces the expected yaw rate direction.' If closed-loop has algebraic loops, prompt: 'Try adding a unit delay or zero-order hold at the plant-controller interface to break the algebraic loop.'"
+    }
+  ],
+  "presentation": {
+    "section": "2 — Create",
+    "duration": "~12 min (pre-recorded + live exploration)",
+    "order": 6,
+    "background": "A controls developer has been testing a stability control system open-loop with StabilityControlSystem.slx. They want to close the loop for more realistic testing but have never built a plant model. The agent uses the specifying-plant-models skill in quick mode (bicycle model has 2-3 states) to research, specify, build, and validate a vehicle dynamics plant model. This demo is pre-recorded due to length (30-60 min end-to-end) and shown with narration (~12 min), followed by live artifact exploration.",
+    "platforms": [
+      "vscode_amp",
+      "simulink_cli"
+    ],
+    "skills": [
+      "specifying-plant-models",
+      "building-simulink-models",
+      "testing-simulink-models"
+    ],
+    "good_looks_like": [
+      "Agent follows the specifying-plant-models skill workflow visibly (signal taxonomy, evidence assessment, canonical decomposition)",
+      "u/w/y/z signal classification table is produced and is correct",
+      "Fidelity decision is evidence-driven — agent explains why a simple bicycle model is appropriate",
+      "Quick-mode spec docs are structured and contain: interface contract, physical model equations, parameter table with sources, validation criteria",
+      "Plant model structure in Simulink matches the spec's canonical decomposition",
+      "Open-loop validation passes (step-steer response with correct sign and reasonable magnitude)",
+      "Closed-loop model is assembled and compiles without algebraic loops",
+      "The spec documents become reusable engineering artifacts — not throwaway prompts",
+      "Agent acts as engineering partner: researches, specifies, builds, validates — not just blind model creation",
+      "Open-loop and closed-loop Gherkin tests all pass (5 scenarios, 11 assertions) with physically reasonable values"
+    ],
+    "recording": ""
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "name": "simulink-agentic-toolkit",
+  "display_name": "Simulink Agentic Toolkit",
+  "description": "Model-Based Design skills and MCP tools for Simulink. Gives AI agents the ability to read, build, edit, and test Simulink models.",
+  "version": "0.1.0",
+  "publisher": "mathworks",
+  "skills": [
+    "skills-catalog/model-based-design-core/",
+    "skills-catalog/toolkit/"
+  ]
+}

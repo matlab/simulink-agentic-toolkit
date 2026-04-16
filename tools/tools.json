@@ -1,0 +1,189 @@
+{
+  "schemaVersion": "1.0.0",
+  "tools": [
+    {
+      "name": "model_overview",
+      "title": "Model Overview",
+      "description": "Get a high-level view of the model showing subsystem hierarchy, interfaces, and connections. Use this when first encountering a model to understand the big picture before diving into details.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Focus on specific subsystem. Use 'root' for entire model or a block ID like 'blk_10' for a specific subsystem"
+          },
+          "detail": {
+            "type": "string",
+            "description": "Level of detail: 'tree' (component hierarchy only — no port or signal info), 'interfaces' (component hierarchy + input/output port names for each component), or 'full' (component hierarchy + port names + top-level component signal connections)"
+          }
+        },
+        "required": ["model", "scope", "detail"]
+      }
+    },
+    {
+      "name": "model_read",
+      "title": "Model Read",
+      "description": "Inspect the structure and algorithmic behavior of a Simulink model. Returns block topology, connections, and expressions showing what each block does.\n\nExpression notation: uN(source) = input port N with source block.port in parentheses; yN = output port N; @Param(value) = parameter with actual set-value from the block. Example: y1 = @Gain(Kp) * u1(blk_5.y1) means output 1 = Gain parameter times input 1 (from block 5's output 1). When value is numeric (e.g., @Gain(5000)), you have the final value. When value is a variable reference (e.g., @Gain(Kp)), use model_resolve_params to get the numeric value.\n\nModel Reference, Subsystem Reference, and Library blocks show interfaces only, not internal content.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Starting scope - use 'root' for model top level or a block ID like 'blk_16'"
+          },
+          "depth": {
+            "type": "string",
+            "description": "Hierarchy depth limit as string. '0'=current level only, '1'=one level down, 'inf'=full hierarchy"
+          }
+        },
+        "required": ["model", "scope", "depth"]
+      }
+    },
+    {
+      "name": "model_query_params",
+      "title": "Model Query Params",
+      "description": "Provides random access to any Simulink parameter on blocks, signals, or model configuration. Complements model_read by exposing values not included in the model graph.\n\nUse when you need:\n- Parameters not in model_read expressions (sample times, state names, port dimensions)\n- Model configuration (Solver, StopTime, RelTol, code generation options)\n- Signal properties beyond names (DataLogging, OutDataTypeStr, Min, Max)\n- Targeted verification after model_configure without re-reading the full graph\n\nIf model_read already shows the value in an expression (e.g., @Gain(Kp)), you have the set-value. Use model_resolve_params to resolve variable references to numeric values.\n\nUse compile=true only if certain the parameter requires compilation (e.g., CompiledPortWidths). If unsure, use default; PARAM_UNAVAILABLE error will indicate if compile is needed.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "targets": {
+            "type": "string",
+            "description": "JSON array of target IDs - blocks (blk_5), signals (blk_5.y1 -> blk_8.u1), or config (config:ModelName)"
+          },
+          "params": {
+            "type": "string",
+            "description": "JSON array of param names like '[\"Gain\", \"SampleTime\"]' or '[\"all\"]' for all parameters"
+          },
+          "compile": {
+            "type": "string",
+            "description": "Compile model before querying ('true' or 'false'). Required for compiled params like CompiledPortWidths"
+          }
+        },
+        "required": ["model", "targets", "params", "compile"]
+      }
+    },
+    {
+      "name": "model_resolve_params",
+      "title": "Model Resolve Params",
+      "description": "Resolve variable references from model_read expressions to actual numeric values. When model_read shows @Param(Kp), this tool returns the value of Kp from MATLAB workspaces.\n\nPass expressions exactly as seen in model_read (e.g., \"Kp\", \"cfg.gains.Ki\", \"TableData(1,:)\"). Searches base workspace, model workspace, mask workspaces, and data dictionaries.\n\nResults organized by workspace source; shadowed variables include users list to identify which blocks use each definition.\n\nUnsupported: arithmetic (Kp+Ki), function calls (sqrt(2)), matrix literals ([1 2 3]). Use evaluate_matlab_code for these.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "expressions": {
+            "type": "string",
+            "description": "JSON array of expressions to resolve, e.g. '[\"Kp\", \"cfg.gains.Ki\"]'"
+          }
+        },
+        "required": ["model", "expressions"]
+      }
+    },
+    {
+      "name": "model_edit",
+      "title": "Model Edit",
+      "description": "Make structural changes or configure parameters in a Simulink or System Composer model within ONE scope per call. Use model_read first to get block IDs.\n\nOperations (executed in array order):\n- add_block: {op, type, name?, ref?, params?, position?} - Add block; params are Simulink block parameters (e.g. {Gain: \"2.0\"})\n- connect: {op, target: \"blk_X.y1 -> blk_Y.u1\", params?} - Wire output to input (y=output port, u=input port); for physical ports use blk_X.portName <-> blk_Y.portName; replaces existing connection if destination port occupied; params set signal properties\n- disconnect: {op, target: \"blk_X.y1 -> blk_Y.u1\"} - Remove connection\n- configure: {op, target, params} - Set Simulink parameters or System Composer component properties. Target types: blk_X (block params, e.g. {Gain: \"Kp\"}), blk_X.y1 -> blk_Y.u1 (signal props, e.g. {Name: \"error\"}), or config:ModelName (solver/model settings, e.g. {StopTime: \"10\"})\n- delete: {op, target: \"blk_X\"} - Remove block\n- replace_block: {op, target: \"blk_X\", type, ref?, params?} - Replace block with different type; preserves name, position, connections\n- create_subsystem: {op, name, ref?, interface: {inputs, outputs}} - Create subsystem; connect via #ref.yN/#ref.uN (N = port number from interface)\n\nFor parameter-only changes (no structural edits), use configure operations alone.\n\nChaining: Use \"ref\" to name a new block, \"#ref\" to reference it within the same call:\n  [{op: \"add_block\", type: \"Gain\", ref: \"g1\"}, {op: \"connect\", target: \"blk_5.y1 -> #g1.u1\"}]\n\nResponse \"created\" map shows ref → blk_id. In subsequent calls, use the blk_id (e.g., blk_42) instead of #ref. Use model_query_params to discover valid parameter names. Operations continue on error.\n\nIMPORTANT: The operations parameter MUST be single-line JSON with no newlines.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Where to operate: 'root' or subsystem block ID like 'blk_5'. All ops must be within this scope."
+          },
+          "operations": {
+            "type": "string",
+            "description": "JSON array of operation objects (MUST be single-line, no newlines). Each has 'op' (add_block|connect|disconnect|configure|delete|create_subsystem) and operation-specific fields."
+          }
+        },
+        "required": ["model", "scope", "operations"]
+      }
+    },
+    {
+      "name": "model_test",
+      "title": "Model Test",
+      "description": "Execute behavioral tests against a Simulink model using a Gherkin-format specification file. Auto-creates test artifacts and returns pytest-style results.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "gherkin_file": {
+            "type": "string",
+            "description": "Path to Gherkin test specification file"
+          },
+          "scenarios": {
+            "type": "string",
+            "description": "JSON array of scenario names to run, e.g. '[\"Scenario1\", \"Scenario2\"]'. Use '[]' to run all scenarios."
+          },
+          "verbose": {
+            "type": "string",
+            "description": "Include signal traces on failure ('true' or 'false'). Default: false"
+          },
+          "draft_mode": {
+            "type": "string",
+            "description": "Skip main model compile for faster iteration ('true' or 'false'). Use 'true' by default for rapid test development (~3s vs ~60s). If draft mode fails due to type/bus/dimension issues, re-run with 'false'. Default: false"
+          }
+        },
+        "required": ["model", "gherkin_file", "scenarios", "verbose", "draft_mode"]
+      }
+    }
+  ],
+  "signatures": {
+    "model_overview": {
+      "function": "model_overview",
+      "input": {
+        "order": ["model", "scope", "detail"]
+      }
+    },
+    "model_read": {
+      "function": "model_read",
+      "input": {
+        "order": ["model", "scope", "depth"]
+      }
+    },
+    "model_query_params": {
+      "function": "model_query_params",
+      "input": {
+        "order": ["model", "targets", "params", "compile"]
+      }
+    },
+    "model_resolve_params": {
+      "function": "model_resolve_params",
+      "input": {
+        "order": ["model", "expressions"]
+      }
+    },
+    "model_edit": {
+      "function": "model_edit",
+      "input": {
+        "order": ["model", "scope", "operations"]
+      }
+    },
+    "model_test": {
+      "function": "model_test",
+      "input": {
+        "order": ["model", "gherkin_file", "scenarios", "verbose", "draft_mode"]
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "id": "D14",
+  "title": "Reproduce and Fix a Reported Bug (Test-Driven Development)",
+  "description": "Demonstrate the full SWE agent pipeline — Understand → Reproduce → Localize → Modify → Verify — applied to a reported behavioral bug in brake torque distribution. The agent investigates, creates a failing test, fixes the model, and re-runs the test to confirm.",
+  "classification": {
+    "tags": [
+      "demo"
+    ]
+  },
+  "workspace": {
+    "include_files": [
+      "$/StabilityControlSystemWithBugs.slx"
+    ],
+    "context_variables": {
+      "model_name": "StabilityControlSystemWithBugs.slx"
+    }
+  },
+  "steps": [
+    {
+      "title": "Reproduce and root cause the issue",
+      "prompt": "I'm seeing an issue with the brake torque distribution in StabilityControlSystemWithBugs. The control moment doesn't seem to be distributed correctly across the individual wheel brake torques.\n\nCan you reproduce the issue and root cause it?",
+      "notes": "Agent should read the model, trace the Mux4 wiring, identify the diagonal vs lateral issue, and write a failing test to prove the bug exists — without fixing it yet.",
+      "look_for": [
+        "Agent calls model_overview → model_read on BrakeTorqueDistribution (blk_16)",
+        "Agent traces: ControlMomentIn → RequiredForceDiff → BrakeTorqueBase → LeftRightSelect → Mux4 → outputs",
+        "Agent identifies root cause: u3 and u4 on Mux4 (blk_128) are swapped — diagonal (FL+RR) instead of lateral (FL+RL)",
+        "Agent writes a Gherkin test targeting BrakeTorqueDistribution subsystem",
+        "Agent runs model_test — test fails confirming the bug (RL gets 0, RR gets 218.75)",
+        "Agent does NOT fix the model yet — stops at diagnosis and reproduction"
+      ],
+      "recovery": "If agent jumps to fixing, it's OK — the key demo point (test-first) was still shown. If agent can't find the issue, prompt: 'Look specifically at how the control moment is converted to individual wheel brake torques — trace the Mux4 wiring to the outputs.'"
+    },
+    {
+      "title": "Fix the issue",
+      "prompt": "Fix it.",
+      "notes": "Fix should be minimal: swap Mux4 u3 and u4 connections (2 disconnects + 2 connects) inside BrakeTorqueDistribution (blk_16). Agent should re-run the test automatically after fixing to verify.",
+      "look_for": [
+        "Agent uses model_edit with disconnect + connect to swap Mux4 u3/u4",
+        "Fix is inside BrakeTorqueDistribution (blk_16), not at root level",
+        "Fix is minimal — 4 operations (2 disconnects + 2 connects)",
+        "Agent re-runs model_test — test passes (all assertions green)"
+      ],
+      "recovery": "If agent fixes but doesn't re-run the test, prompt: 'Run the test again to confirm it's fixed.'"
+    }
+  ],
+  "presentation": {
+    "section": "3 — Modify & Restructure",
+    "duration": "8-10 min",
+    "order": 3,
+    "background": "A bug has been reported in the stability control system: the brake torque distribution appears incorrect. The Mux4 wiring sends torque diagonally (FL+RR) instead of laterally (FL+RL), partially canceling the corrective yaw moment. The agent must investigate, reproduce with a test, fix, and verify.",
+    "platforms": [
+      "vscode_amp",
+      "simulink_cli"
+    ],
+    "skills": [
+      "building-simulink-models",
+      "testing-simulink-models"
+    ],
+    "good_looks_like": [
+      "Agent correctly identifies the diagonal vs lateral wiring bug in Mux4 (blk_128)",
+      "Test-first approach: agent writes a failing test before fixing",
+      "Test targets BrakeTorqueDistribution subsystem (not root)",
+      "Test fails on the buggy model, passes on the fixed model",
+      "Fix is minimal: swap 2 Mux connections",
+      "The whole flow is natural: investigate → reproduce → root cause → fix → verify"
+    ],
+    "recording": ""
+  }
+}

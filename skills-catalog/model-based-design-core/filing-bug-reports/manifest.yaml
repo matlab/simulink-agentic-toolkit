@@ -1,0 +1,12 @@
+# manifest.yaml — Tooling metadata for filing-bug-reports
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "1.0"
+matlab-release: ">=R2023a"
+requires-tools:
+  - evaluate_matlab_code
+requires-skills: []
+requires-products:
+  - Simulink
+toolkit: simulink-agentic-toolkit

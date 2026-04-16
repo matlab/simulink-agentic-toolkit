@@ -1,0 +1,108 @@
+schema_version: "1.0"
+package: StabilityControlSystem
+
+requirements:
+  - id: REQ_SCS_001
+    summary: >
+      The stability control system shall continuously monitor vehicle yaw rate
+      from the yaw rate sensor at a minimum sample rate of 100 Hz.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Accurate yaw rate measurement is the primary input for detecting vehicle
+      instability and must be sampled fast enough to capture transient dynamics.
+    asil: C
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: null
+
+  - id: REQ_SCS_002
+    summary: >
+      The stability control system shall compute a reference yaw rate from
+      steering angle and vehicle speed using a bicycle model, and shall
+      compare it against the measured yaw rate to produce a yaw rate error.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      The yaw rate error quantifies the deviation between desired and actual
+      vehicle behavior, forming the basis for corrective intervention.
+    asil: C
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: REQ_SCS_001
+
+  - id: REQ_SCS_003
+    summary: >
+      When yaw rate instability is detected, the stability control system shall
+      generate a corrective yaw moment and apply differential brake torque to
+      individual wheels to reduce the yaw rate error toward zero.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Selective braking is the primary actuation mechanism for correcting
+      oversteer and understeer conditions before the driver loses control.
+    asil: D
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: REQ_SCS_002
+
+  - id: REQ_SCS_004
+    summary: >
+      The stability control system shall estimate the vehicle body sideslip
+      angle from yaw rate, lateral acceleration, and vehicle speed, and shall
+      include this estimate in the corrective yaw moment calculation.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Sideslip angle estimation enables the controller to detect and counteract
+      loss of lateral grip that yaw rate error alone may not fully capture.
+    asil: C
+    status: Approved
+    priority: High
+    keywords: [approved]
+    derived_from: REQ_SCS_003
+
+  - id: REQ_SCS_005
+    summary: >
+      The stability control system shall disable corrective intervention when
+      vehicle speed is at or below 10 m/s to prevent unintended braking during
+      low-speed maneuvers.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      At low speeds the yaw dynamics model is unreliable and corrective braking
+      would cause uncomfortable vehicle behavior during parking.
+    asil: B
+    status: Approved
+    priority: High
+    keywords: [approved]
+    derived_from: REQ_SCS_003
+
+  - id: REQ_SCS_006
+    summary: >
+      The stability control system shall complete all sensor acquisition, control
+      law computation, and actuator command output within a worst-case execution
+      time of 5 ms per control cycle.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Real-time determinism is essential for stability control; exceeding the
+      cycle time budget could result in delayed corrective action during a
+      critical maneuver.
+    asil: B
+    status: Approved
+    priority: High
+    keywords: [approved]
+    derived_from: null
+
+  - id: REQ_SCS_007
+    summary: >
+      The corrective yaw moment shall be distributed to the four wheel brake
+      torque outputs based on the sign of the required moment, applying torque
+      to the appropriate side to counteract the detected instability.
+    description: "Derived from StabilityControlSystem."
+    rationale: >
+      Correct left/right brake torque allocation is essential for generating
+      the intended corrective yaw moment direction.
+    asil: D
+    status: Approved
+    priority: Critical
+    keywords: [approved]
+    derived_from: REQ_SCS_003

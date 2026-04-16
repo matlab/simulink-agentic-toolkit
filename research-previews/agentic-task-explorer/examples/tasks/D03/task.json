@@ -1,0 +1,60 @@
+{
+  "id": "D03",
+  "title": "Requirement-Driven Model Change + Peripheral Updates",
+  "description": "Agent reads a changed requirement (REQ_SCS_007), modifies the model to implement it, and updates all associated peripheral files (interface JSON, MIL test JSON) in a single workflow.",
+  "classification": {
+    "tags": [
+      "demo"
+    ]
+  },
+  "workspace": {
+    "include_files": [
+      "$/StabilityControlSystem.slx",
+      "$/requirements.yaml",
+      "$/interface.json",
+      "$/mil_test.json"
+    ],
+    "context_variables": {
+      "model_name": "StabilityControlSystem.slx"
+    }
+  },
+  "steps": [
+    {
+      "title": "Implement the requirement change",
+      "prompt": "A new requirement REQ_SCS_007 has been added to requirements: \"The corrective yaw moment shall be derated as a function of vehicle speed using a calibratable 1-D lookup table. At low speeds (below 20 km/h), intervention authority shall be reduced to 30% to prevent uncomfortable jerking during parking maneuvers. At high speeds (above 200 km/h), authority shall be limited to 60% to avoid destabilizing overcorrection. Full authority (100%) applies in the range 60 to 160 km/h. A derating factor output shall indicate the current authority level.\" Implement this change in the model and update all peripheral files.",
+      "notes": "Key moment: Multi-artifact atomic workflow — model + interface + tests all updated in one pass. Known issue: Lookup_n-D block NumberOfTableDimensions may not apply correctly via model_edit add_block. If LUT shows ? icon or has 2 input ports, agent should use evaluate_matlab_code with set_param.",
+      "look_for": [
+        "Agent reads the requirements file",
+        "Agent reads the model (model_overview → model_read) to find where to insert",
+        "Agent uses model_edit to add 1-D Lookup Table, Product block, output port inside StabilityController",
+        "Agent configures LUT breakpoints [0, 5.56, 16.67, 44.44, 55.56, 70] m/s and table values [0.3, 0.3, 1.0, 1.0, 0.6, 0.6]",
+        "Agent uses edit_file to update interface.json and mil_test.json",
+        "Agent uses model_read to verify the new structure"
+      ],
+      "recovery": "If agent adds blocks at root level instead of inside StabilityController, prompt: 'The derating should be implemented inside the StabilityController subsystem, between the EnableSwitch and the ControlMomentOut output port'"
+    }
+  ],
+  "presentation": {
+    "section": "3 — Modify & Restructure",
+    "duration": "10 min",
+    "order": 2,
+    "background": "A new requirement REQ_SCS_007 mandates speed-dependent derating of corrective yaw moment. The agent must implement this in the model and update all peripheral artifacts atomically.",
+    "platforms": [
+      "vscode_amp",
+      "simulink_cli"
+    ],
+    "skills": [
+      "building-simulink-models",
+      "testing-simulink-models"
+    ],
+    "good_looks_like": [
+      "1-D Lookup Table block: VehicleSpeedCtrl input → derating factor (0.3 / 1.0 / 0.6)",
+      "Product block: EnableSwitch output × derating factor → ControlMomentOut",
+      "New output port: DeratingFactorOut routed to root-level output",
+      "LUT breakpoints: [0, 5.56, 16.67, 44.44, 55.56, 70] m/s with table values [0.3, 0.3, 1.0, 1.0, 0.6, 0.6]",
+      "interface.json updated with SpeedDeratingBP_mps, SpeedDeratingTable inputs and DeratingFactor output",
+      "mil_test.json updated with derating test cases at low/mid/high speeds linked to REQ-SCS-007"
+    ],
+    "recording": ""
+  }
+}

@@ -1,0 +1,33 @@
+schema_version: "1.0"
+package: ClimateControl
+
+requirements:
+  - id: REQ_CC_001
+    summary: "The climate control system shall regulate cabin air temperature to within TempTolerance (+/- 1.0) degC of the driver-set target temperature under steady-state conditions."
+    description: "Derived from the top-level ClimateControl system architecture."
+    rationale: "Maintaining tight temperature regulation ensures occupant comfort and reduces manual adjustment, which is a driver distraction."
+    asil: QM
+    status: Draft
+    priority: High
+    keywords: [draft, auto-generated, climate-control, performance]
+    derived_from: null
+
+  - id: REQ_CC_002
+    summary: "While the climate system is active, the controller shall modulate blower motor speed based on the difference between measured cabin temperature and target temperature."
+    description: "Derived from ClimateControl/BlowerControl."
+    rationale: "Closed-loop control provides proportional response for fast initial correction and integral action to eliminate steady-state offset."
+    asil: QM
+    status: Draft
+    priority: High
+    keywords: [draft, auto-generated, control]
+    derived_from: REQ_CC_001
+
+  - id: REQ_CC_003
+    summary: "When evaporator surface temperature falls below EvapTempMin (2.0) degC, the compressor clutch shall disengage within CompressorResponseTime (500) ms."
+    description: "Derived from ClimateControl/EvaporatorProtection."
+    rationale: "Ice formation on the evaporator blocks airflow and degrades cooling capacity. The 2.0 degC threshold provides margin above the freezing point while the 500 ms response limit prevents ice nucleation."
+    asil: A
+    status: Draft
+    priority: Critical
+    keywords: [draft, auto-generated, safety, compressor]
+    derived_from: REQ_CC_001
