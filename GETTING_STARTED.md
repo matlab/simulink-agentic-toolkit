@@ -6,7 +6,7 @@ This guide takes you from download to your first agent-driven model interaction.
 
 > For a project overview, tool/skill reference, and documentation links, see the [README](README.md).
 
-> Automated setup has been verified with basic workflows on Claude Code, Sourcegraph Amp, Gemini CLI, and OpenAI Codex. Other platforms are provided as-is and currently untested. Please [report issues](https://github.com/mathworks/simulink-agentic-toolkit/issues) if you encounter problems.
+> Automated setup has been verified with basic workflows on Claude Code, Sourcegraph Amp, Gemini CLI, and OpenAI Codex. Other platforms are provided as-is and currently untested. Please [report issues](https://github.com/matlab/simulink-agentic-toolkit/issues) if you encounter problems.
 
 ---
 
@@ -56,7 +56,7 @@ Setup is re-runnable. Run it again to update the binary, switch MATLAB versions,
 Clone the toolkit to a permanent location outside your project directories (e.g., `~/tools/` or `~/repos/`). Most platforms reference this clone via symbolic links, so the toolkit needs to stay in place after setup.
 
 ```
-git clone https://github.com/mathworks/simulink-agentic-toolkit.git
+git clone https://github.com/matlab/simulink-agentic-toolkit.git
 cd simulink-agentic-toolkit
 ```
 
@@ -112,10 +112,17 @@ This does three things:
 
 Start a **new agent session in any project directory** — Simulink tools and skills are available everywhere.
 
-Ask your agent:
+Open any Simulink model in MATLAB — your own, or a shipped example like `f14`:
+
+```matlab
+openExample("simulink/AddBlockToModelFromLibraryExample")       % only needed for R2023b+
+open_system("f14")
+```
+
+Then ask your agent:
 
 ```
-Open the Simulink model f14 and describe its structure.
+Describe the structure of the currently open model.
 ```
 
 The agent calls `model_overview` and `model_read` via MCP, reads the model hierarchy from MATLAB, and describes the subsystems, connections, and what the model does.
@@ -136,6 +143,8 @@ Setup writes two things: an MCP server configuration (so your agent can talk to 
 | Cursor | `~/.cursor/mcp.json` | `.cursor-plugin/` discovery | Manual |
 
 **How skill symlinks work:** Most platforms discover skills from `~/.agents/skills/`. Setup creates symbolic links from that directory to the individual skill directories in your toolkit clone. When you run `git pull`, the linked skills update automatically. If new skills are added to the toolkit, re-run setup to create the additional symlinks.
+
+> **Where we're headed:** As agent platforms mature their marketplace and plugin systems, the goal is to move toward a simple marketplace-based install for all platforms — add the Simulink Agentic Toolkit marketplace, install the Model Based Design Core plugin, and the plugin handles everything including MCP server installation and configuration. The current clone-and-setup workflow is expected to be a temporary work-around to help provide a good out-of-the-box experience in the meantime.
 
 ### Platform-Specific Notes
 
@@ -165,7 +174,7 @@ If you already have the [MATLAB MCP Core Server](https://github.com/matlab/matla
 Add skills directly via the plugin marketplace:
 
 ```bash
-claude plugin marketplace add "https://github.com/mathworks/simulink-agentic-toolkit"
+claude plugin marketplace add "https://github.com/matlab/simulink-agentic-toolkit"
 claude plugin install model-based-design-core@simulink-agentic-toolkit
 ```
 
@@ -209,10 +218,17 @@ If your agent shows loaded skills or plugins in its UI (e.g., Claude Code's `/sk
 
 ### Try it out
 
-Ask your agent:
+Open any Simulink model in MATLAB — your own, or a shipped example like `f14`:
+
+```matlab
+openExample("simulink/AddBlockToModelFromLibraryExample")       % only needed for R2023b+
+open_system("f14")
+```
+
+Then ask your agent:
 
 ```
-Open the Simulink model f14 and describe its structure.
+Describe the structure of the currently open model.
 ```
 
 ### More examples
@@ -242,6 +258,19 @@ This updates all skills and tools. After pulling:
 1. **Re-run setup** to download the latest MCP server binary to `~/.local/bin/` (`%USERPROFILE%\.local\bin\` on Windows)
 2. **Re-run `satk_initialize`** in MATLAB to pick up any tool changes
 3. **Restart your agent session** to load updated skills
+
+---
+
+## Reporting Bugs
+
+If you run into a bug, use the **filing-bug-reports** skill to generate a report. Ask your agent:
+
+```
+File a bug report for this issue
+```
+
+The skill captures environment details, reproduction steps, and error output automatically. **Be sure to use it in the same chat session where the bug occurred.** If the issue did not occur in a chat session, describe the issue as best you can to the agent, then ask it to file a bug report.
+Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/issues/new?template=bug_report.yml) and paste the generated report in the form.
 
 ---
 

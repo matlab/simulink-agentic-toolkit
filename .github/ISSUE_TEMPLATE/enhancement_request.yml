@@ -1,0 +1,49 @@
+name: Enhancement Request
+description: Suggest a new feature or improvement
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your suggestion! Please describe the enhancement you'd like to see.
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: What are you trying to accomplish? Describe the problem or workflow this enhancement would improve.
+    validations:
+      required: true
+
+  - type: input
+    id: relevant-area
+    attributes:
+      label: Relevant Skill or MCP Tool
+      description: "Which skill or MCP tool is this related to, if any?"
+      placeholder: "e.g., model-based-design-core:testing-simulink-models, model_edit"
+    validations:
+      required: false
+
+  - type: textarea
+    id: proposed-behavior
+    attributes:
+      label: Proposed Behavior
+      description: Describe how you'd like this feature to work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Current Workaround
+      description: How are you solving this today, if at all?
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information, screenshots, or examples.
+    validations:
+      required: false

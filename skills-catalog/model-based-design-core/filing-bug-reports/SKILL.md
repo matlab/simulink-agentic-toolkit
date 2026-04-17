@@ -42,9 +42,9 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
    - Relevant source files: read the files involved in the failure
 
    **SATK-specific** (when Simulink MCP tools are available):
-   - SATK version: check the workspace folder name or `README.md`
+   - SATK version: read the `VERSION` file at the SATK root. If it doesn't exist and a `.git/` folder is present, read the latest commit hash and note "development build (<hash>)". If neither exists, ask the user what version of Simulink Agentic Toolkit they are using
    - MATLAB: `evaluate_matlab_code` → `disp(version); ver('simulink'); disp(pwd); disp(computer('arch'))`
-   - `satk_setup.m` status: `evaluate_matlab_code` → `which('model_read')` (empty = not run)
+   - `satk_initialize.m` status: `evaluate_matlab_code` → `which('model_read')` (empty = not run)
    - Connector: `evaluate_matlab_code` → `try; disp(connector.securePort); catch; disp('not running'); end`
    - MCP config: read `.vscode/mcp.json` for server mode and binary path
 

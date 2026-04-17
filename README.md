@@ -39,37 +39,56 @@ Your agent reads **skills** for domain knowledge, then calls **MCP tools** to in
 
 ## Supported Platforms
 
-| Platform | Manifest | Install Method |
-|----------|----------|----------------|
-| [Claude Code](https://docs.anthropic.com/en/docs/claude-code) | `.claude-plugin/marketplace.json` | Plugin marketplace |
-| [GitHub Copilot](https://github.com/features/copilot) | Shared `.claude-plugin/marketplace.json` | Cross-discovery from Claude plugin |
-| [Cursor](https://www.cursor.com/) | `.cursor-plugin/plugin.json` | Plugin directory |
-| [OpenAI  Codex](https://openai.com/codex) | `.codex-plugin/plugin.json` | Marketplace registry (`.agents/plugins/`) |
-| [Sourcegraph Amp](https://ampcode.com/) | `amp.skills.path` | MCP config via setup + `amp skill add` |
-| [Gemini  CLI](https://github.com/google-gemini/gemini-cli) | `gemini-extension.json` | MCP config only (manual skill setup) |
+| Platform | Setup | Notes |
+|----------|-------|-------|
+| [Claude Code](https://claude.ai/code) | Automated | Also supports [no-clone marketplace install](#claude-code-marketplace-install) (skills only) |
+| [GitHub Copilot](https://github.com/features/copilot) | Automated | |
+| [OpenAI Codex](https://openai.com/codex) | Automated | |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Automated | |
+| [Sourcegraph Amp](https://ampcode.com/) | Automated | |
+| [Cursor](https://www.cursor.com/) | Manual | Untested |
 
----
+> Automated setup has been verified with basic workflows on each platform except Cursor. The toolkit is under active development — please [report issues](https://github.com/matlab/simulink-agentic-toolkit/issues) if you encounter problems.
 
 ## Quick Start
 
-> **Full walkthrough:** See the [Getting Started guide](GETTING_STARTED.md) for detailed instructions, verification steps, and troubleshooting.
+> **Full walkthrough:** See the [Getting Started guide](GETTING_STARTED.md) for detailed instructions, platform-specific notes, verification steps, and troubleshooting.
 
-**Prerequisites:** MATLAB R2023a or later with Simulink, and a supported AI coding agent. The MCP server binary is downloaded from GitHub during setup.
+**Prerequisites:**
+* MATLAB R2023a or later with Simulink
+* Supported AI coding agent
+* Git&trade;
 
-### Claude Code
+The Simulink Agentic Toolkit helps you install and configure the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server), or can be configured to use your existing installation.
+
+### Full Setup (recommended)
+
+Clone the repository, launch your agent from the toolkit directory, and ask it to set up the toolkit.
 
 ```bash
-# Clone the toolkit
-git clone https://github.com/mathworks/simulink-agentic-toolkit.git
+git clone https://github.com/matlab/simulink-agentic-toolkit.git
+cd simulink-agentic-toolkit
 ```
 
-Then launch your agent in the toolkit directory and ask:
+Launch your agent (`claude`, `codex`, `gemini`, etc.) and ask:
 
 ```
 Set up the Simulink Agentic Toolkit
 ```
 
-The setup skill automates everything: detects your platform, installs the MCP server binary, configures your agent, and verifies the installation. See [GETTING_STARTED.md](GETTING_STARTED.md) for detailed instructions for all supported platforms.
+Setup looks for your MATLAB installation(s), downloads the MCP server, writes your agent's global configuration, and registers skills. Once complete, start a new session in any project directory — Simulink tools and skills are available everywhere.
+
+<a id="claude-code-marketplace-install"></a>
+> **Claude Code — no clone required:** If you already have the [MCP server](https://github.com/matlab/matlab-mcp-core-server) configured, you can add skills directly without cloning:
+> ```bash
+> claude plugin marketplace add "https://github.com/matlab/simulink-agentic-toolkit"
+> claude plugin install model-based-design-core@simulink-agentic-toolkit
+> ```
+> This installs skills only. Your existing MCP configuration is not modified. See the [Getting Started guide](GETTING_STARTED.md#adding-skills-only) for details.
+
+### Already Have the MCP Server?
+
+If you installed the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) yourself, you just need skills. See [Adding Skills Only](GETTING_STARTED.md#adding-skills-only) in the Getting Started guide.
 
 ### MATLAB Setup (all platforms)
 
@@ -82,10 +101,17 @@ satk_initialize
 
 ### Verify
 
-Ask your agent:
+In MATLAB, open any Simulink model — your own, or a shipped example like `f14`:
+
+```matlab
+openExample("simulink/AddBlockToModelFromLibraryExample")       % only needed for R2023b+
+open_system("f14")
+```
+
+Then ask your agent:
 
 ```
-Open the Simulink model f14 and describe its structure.
+Describe the structure of the currently open model.
 ```
 
 ---
@@ -140,7 +166,13 @@ simulink-agentic-toolkit/
 
 ## Research Preview: Agentic Task Explorer
 
-The Agentic Task Explorer provides curated example tasks that demonstrate what agents can do with Simulink — model understanding, modification, verification, and testing. Browse tasks by category and difficulty, stage them in an isolated workspace, and run them with your agent.
+The Agentic Task Explorer provides curated, multi-step tasks that demonstrate what agents can do with Simulink — model understanding, creation, modification, testing, bug fixing, and verification. Each task includes Simulink models and supporting files, ready to go.
+
+```matlab
+slAgenticTaskExplorer
+```
+
+Select a task from the interactive UI. The explorer stages it into an isolated workspace with all required files, then opens your coding agent. Each task presents step-by-step prompts — copy each prompt into your coding agent and watch it work.
 
 *This is a research preview. Behavior and interfaces may change.*
 
@@ -178,13 +210,23 @@ Model capability has a significant impact on quality. In our testing, lightweigh
 
 MATLAB and Simulink are registered trademarks of The MathWorks, Inc. See [mathworks.com/trademarks](https://www.mathworks.com/trademarks) for a list of additional trademarks. Other product or brand names may be trademarks or registered trademarks of their respective holders.
 
+## Reporting Bugs
+
+If you encounter a bug, use the **filing-bug-reports** skill to generate a report before opening a GitHub issue. Ask your agent:
+
+```
+File a bug report for this issue
+```
+
+The skill automatically captures environment details, reproduction steps, and error output — producing a complete report in your workspace. Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/issues/new?template=bug_report.yml) and paste the generated report. **Be sure to run the skill in the same session where the bug occurred**, since it uses conversation context to reconstruct what happened. If the issue did not occur in a chat session, describe the issue as best you can to the agent, then ask it to file a bug report.
+
 ## Contributing
 
-We welcome feedback through [GitHub Issues](https://github.com/mathworks/simulink-agentic-toolkit/issues). Pull requests are reviewed for ideas and feedback but are not merged from external contributors. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+We welcome feedback through [GitHub Issues](https://github.com/matlab/simulink-agentic-toolkit/issues). Pull requests are reviewed for ideas and feedback but are not merged from external contributors. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ## Support
 
-MathWorks encourages you to use this repository and provide feedback. To request technical support or submit an enhancement request, [create a GitHub issue](https://github.com/mathworks/simulink-agentic-toolkit/issues) or email [genai-support@mathworks.com](mailto:genai-support@mathworks.com).
+MathWorks encourages you to use this repository and provide feedback. To request technical support or submit an enhancement request, [create a GitHub issue](https://github.com/matlab/simulink-agentic-toolkit/issues) or email [genai-support@mathworks.com](mailto:genai-support@mathworks.com).
 
 #
 When using the Simulink Agentic Toolkit and MATLAB MCP Core Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).

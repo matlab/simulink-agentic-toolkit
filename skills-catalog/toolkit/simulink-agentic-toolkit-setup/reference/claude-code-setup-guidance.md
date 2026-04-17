@@ -17,7 +17,7 @@ MCP server config is managed by `claude mcp add-json` with `-s user` scope. Do N
 ### Step 1: Add the marketplace
 
 ```bash
-claude plugin marketplace add "https://github.com/mathworks/simulink-agentic-toolkit"
+claude plugin marketplace add "https://github.com/matlab/simulink-agentic-toolkit"
 ```
 
 If the marketplace is already registered, this is a no-op. Continue to the next step.

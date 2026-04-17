@@ -1,0 +1,31 @@
+name: Bug Report
+description: Report a bug with the Simulink Agentic Toolkit
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening this issue, ask your agent to generate a bug report:
+
+        > *"File a bug report for this issue"*
+
+        The **filing-bug-reports** skill captures environment details, reproduction steps, error output, and minimal reproductions automatically. Paste the generated report below.
+
+  - type: textarea
+    id: skill-report
+    attributes:
+      label: Bug Report
+      description: |
+        Paste the full contents of the generated `issues/BUG-<NNN>-*.md` file here.
+      placeholder: |
+        Paste the contents of your BUG-<NNN>-<slug>.md file here...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Anything else not captured in the bug report — workarounds tried, related issues, screenshots, etc.
+    validations:
+      required: false

@@ -44,7 +44,7 @@
 
 | Detail | Value |
 |--------|-------|
-| **SATK Version** | *e.g., v0.0.4* |
+| **SATK Version** | *e.g., v2026.xx.yy* |
 | **Agent / Client** | *e.g., Amp (VS Code), Claude Code CLI* |
 | **Agent Workspace Root** | *The directory the agent considers its workspace — where it looks for `.agents/skills/`, `.vscode/mcp.json`, etc.* |
 | **MCP Server Mode** | *e.g., attach-to-existing, launch* |

@@ -1052,6 +1052,7 @@
         html += '</div>';
         html += '<button class="exit-btn" id="exitBtn">End Session\u2026</button>';
         html += '</div></div>';
+        html += '<p style="color:#555;font-size:0.9rem;margin-bottom:1.2rem;line-height:1.5;">Each task stages a Simulink model and supporting files into an isolated workspace, then opens your coding agent. Select a task below, then copy each step\u2019s prompt into your coding agent and watch it work.</p>';
 
         if (isCategory) {
           var sections = [];
@@ -1190,6 +1191,7 @@
         }
 
         // Prompt box
+        html += '<div style="color:#555;font-size:0.8rem;margin-bottom:0.3rem;">Copy this prompt into your coding agent:</div>';
         html += '<div class="prompt-box">';
         html += '<div class="prompt-text" id="promptText">' + escapeHtml(step.prompt) + '</div>';
         html += '<button class="copy-btn" id="copyBtn" title="Copy prompt">\uD83D\uDCCB</button>';

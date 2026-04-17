@@ -1,0 +1,58 @@
+name: Question
+description: Ask a question about setup, compatibility, or usage
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have a question? We're happy to help. Please check the [Getting Started](GETTING_STARTED.md) guide first — your answer may already be there.
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like to know?
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: Describe any steps you've already taken or documentation you've consulted.
+    validations:
+      required: false
+
+  - type: input
+    id: matlab-release
+    attributes:
+      label: MATLAB Release
+      description: "If relevant, run `matlabRelease.Release` in MATLAB and paste the result"
+      placeholder: "R2025b"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: agent-platform
+    attributes:
+      label: Agent Platform
+      description: Which coding agent are you using, if relevant?
+      options:
+        - Claude Code
+        - GitHub Copilot
+        - Cursor
+        - Codex
+        - Amp
+        - Gemini CLI
+        - Other
+    validations:
+      required: false
+
+  - type: input
+    id: agent-platform-other
+    attributes:
+      label: Other Agent Platform
+      description: "If you selected 'Other' above, which agent platform?"
+      placeholder: "e.g., Windsurf, Roo Code"
+    validations:
+      required: false

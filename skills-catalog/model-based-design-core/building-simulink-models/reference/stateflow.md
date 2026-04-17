@@ -49,27 +49,30 @@ sChild = Stateflow.State(s);  % children created inside the subchart
 
 **No cross-subchart transitions.** Never wire children of one subchart to children of another. Route transitions between subcharts at the parent scope; use condition actions to pass context, then dispatch internally via junction. To target a specific child across boundaries, use subchart entry/exit ports.
 
-## Applying Layout
+## Post-Edit Workflow
 
-**Requires R2023b or later.** The Stateflow autolayout pipeline uses `configureDictionary` (introduced R2023b).
+**Always run lint then autolayout after every Stateflow edit.** Unlike `model_edit`, Stateflow API edits do not trigger autolayout automatically.
 
-Use `applySFAutolayout` after building or modifying chart internals. `viewerSID` is the SID of the chart or subchart being laid out.
+1. **Lint:** `utils.sfCheckChart(ch)` (or scoped: `utils.sfCheckChart(ch, subchartState)`)
+   - Returns struct array with `handle`, `name`, `details`. Empty when clean.
+   - Fix innermost first; re-run after each fix to clear hierarchical false positives.
+2. **Layout:** Call `applySFAutolayout` (requires R2023b+). `viewerSID` = SID of chart or subchart.
 
-**Full layout** -- recomputes all positions:
+**Full layout** — recomputes all positions:
 ```matlab
 applySFAutolayout(modelName, dictionary(string.empty, {cell.empty}), viewerSID);
 ```
 
-**Incremental layout** -- positions only new objects. Build in stages: add a group, collect their SIDs, apply, repeat.
+**Incremental layout** — positions only new objects (build in stages: add a group, collect SIDs, apply, repeat):
 ```matlab
 incMap = dictionary;
 incMap(viewerSID) = {{Simulink.ID.getSID(obj1), Simulink.ID.getSID(obj2), ...}};
 applySFAutolayout(modelName, incMap, viewerSID);
 ```
 
-**Incremental layout gotchas:**
-- Use `Stateflow.State(parent)` to establish hierarchy -- do not rely on position containment
-- Make superstates large enough for substates + labels. Positions are absolute -- substates must fit within `[left, top, left+width, top+height]`
-- Position default transition `SourceEndpoint` inside the parent's bounds
-- When adding cross-hierarchy transitions, include the affected superstate's inner transition SIDs in the incremental map
-- When adding a substate to an existing plain superstate (not a subchart), resize the parent first -- Stateflow does not auto-expand. Subcharts have their own internal coordinate space and do not need resizing
+**Incremental gotchas:**
+- Use `Stateflow.State(parent)` to establish hierarchy — don't rely on position containment
+- Make superstates large enough for substates + labels (positions are absolute)
+- Position default transition `SourceEndpoint` inside parent bounds
+- Include affected superstate inner transition SIDs when adding cross-hierarchy transitions
+- Resize plain superstates before adding substates (Stateflow doesn't auto-expand). Subcharts have their own coordinate space and don't need resizing
