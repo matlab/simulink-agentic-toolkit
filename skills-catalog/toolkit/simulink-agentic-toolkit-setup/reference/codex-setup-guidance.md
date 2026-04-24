@@ -53,6 +53,8 @@ tool_timeout_sec = 600
 
 **CRITICAL:** The TOML key must be `mcp_servers` with an underscore. `mcp-servers` is silently ignored.
 
+**CRITICAL (Windows):** Use single-quoted TOML strings for all paths. Double-quoted backslash paths break TOML parsing and disable Codex.
+
 ### Required Extra Fields
 
 `codex mcp add` writes only `command` and `args`. The following fields must be added manually by editing `~/.codex/config.toml` after running `codex mcp add`, or included when writing the TOML block directly:

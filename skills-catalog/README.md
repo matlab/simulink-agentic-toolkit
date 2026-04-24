@@ -7,7 +7,7 @@ The skills catalog organizes agent skills into groups. Each group is a directory
 | Group | Description | Status |
 |-------|-------------|--------|
 | [model-based-design-core](model-based-design-core/) | Core MBD skills for building, testing, and specifying Simulink models | Available |
-| [PRODUCT-GROUP-NAME](PRODUCT-GROUP-NAME/) | Placeholder for additional skill groups (e.g., Verification, Validation & Test or Code Generation) | Placeholder |
+| [toolkit](toolkit/) | Infrastructure skills for installing and configuring the Simulink Agentic Toolkit | Available |
 
 ## How Skills Are Installed
 

@@ -56,12 +56,12 @@ val = getAttribute(req, 'ASIL');
 Links connect model elements to requirements. The link type is auto-assigned based on artifact types.
 
 ```matlab
-% Using block path (string) — most common
-lnk = slreq.createLink("MyModel/Subsystem/Block", req);
-
-% Using block handle
-h = get_param("MyModel/Subsystem", "Handle");
+% Using block handle from blk_X ID (preferred — immune to multiline/whitespace names)
+h = Simulink.ID.getHandle('<ModelName>:<SID>');
 lnk = slreq.createLink(h, req);
+
+% Using block path (only when name is known to be clean)
+lnk = slreq.createLink("MyModel/Subsystem/Block", req);
 ```
 
 **Link direction matters:**
@@ -78,14 +78,16 @@ save(linkSet(lnk));
 ### Linking Multiple Requirements in a Loop
 
 ```matlab
+% Use SIDs from model_read (blk_X → X) for robust block identification
 captureTable = {
-    "REQ_CC_001", "CruiseControl/ThrottleCmd", "Limit throttle to [0,1]";
-    "REQ_CC_002", "CruiseControl/BrakeLogic",  "Disengage on brake";
+    "REQ_CC_001", "CruiseControl:5", "Limit throttle to [0,1]";
+    "REQ_CC_002", "CruiseControl:8", "Disengage on brake";
 };
 
 for i = 1:size(captureTable,1)
     req = add(rs, Id=captureTable{i,1}, Summary=captureTable{i,3});
-    lnk = slreq.createLink(captureTable{i,2}, req);
+    h = Simulink.ID.getHandle(captureTable{i,2});
+    lnk = slreq.createLink(h, req);
 end
 save(rs);
 % Save link sets

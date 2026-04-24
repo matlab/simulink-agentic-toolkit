@@ -3,7 +3,7 @@ name: simulating-simulink-models
 description: Runs Simulink models programmatically for data exploration, parameter sweeps, and custom analysis using sim() with SimulationInput/SimulationOutput. Use when calling sim(), parsim, setExternalInput, setModelParameter, setVariable, or accessing logsout — any task producing simulation results for analysis (not pass/fail tests).
 license: MathWorks BSD-3-Clause
 metadata:
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Simulating Simulink Models with the sim Command
@@ -41,8 +41,9 @@ Use `SimulationInput` methods to configure the simulation:
 % Model-level parameters (StopTime, SolverType, SimulationMode, etc.)
 in = in.setModelParameter('StopTime', '10', 'SolverType', 'Fixed-step');
 
-% Block parameters
-in = in.setBlockParameter('MyModel/Gain', 'Gain', '5');
+% Block parameters — resolve path from blk_X ID (never type block names manually)
+blkPath = Simulink.ID.getFullName('MyModel:5');
+in = in.setBlockParameter(blkPath, 'Gain', '5');
 
 % MATLAB workspace variables used by the model
 in = in.setVariable('Kp', 1.2);

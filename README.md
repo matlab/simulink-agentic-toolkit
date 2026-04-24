@@ -63,6 +63,8 @@ The Simulink Agentic Toolkit helps you install and configure the [MATLAB MCP Cor
 
 ### Full Setup (recommended)
 
+> **Tip:** You can ask your coding agent to do this for you — just say *"Clone and set up the Simulink Agentic Toolkit from https://github.com/matlab/simulink-agentic-toolkit"* and it will handle the steps below.
+
 Clone the repository, launch your agent from the toolkit directory, and ask it to set up the toolkit.
 
 ```bash
@@ -79,16 +81,16 @@ Set up the Simulink Agentic Toolkit
 Setup looks for your MATLAB installation(s), downloads the MCP server, writes your agent's global configuration, and registers skills. Once complete, start a new session in any project directory — Simulink tools and skills are available everywhere.
 
 <a id="claude-code-marketplace-install"></a>
-> **Claude Code — no clone required:** If you already have the [MCP server](https://github.com/matlab/matlab-mcp-core-server) configured, you can add skills directly without cloning:
+> **Claude Code — no clone required:** If you already have the [MCP server](https://github.com/matlab/matlab-mcp-core-server) (v0.8.0+) configured with the toolkit's `tools.json`, you can add skills directly without cloning:
 > ```bash
 > claude plugin marketplace add "https://github.com/matlab/simulink-agentic-toolkit"
 > claude plugin install model-based-design-core@simulink-agentic-toolkit
 > ```
-> This installs skills only. Your existing MCP configuration is not modified. See the [Getting Started guide](GETTING_STARTED.md#adding-skills-only) for details.
+> This installs skills only. Your MCP server must already reference the toolkit's `tools/tools.json` via `--extension-file`. See the [Getting Started guide](GETTING_STARTED.md#adding-skills-only) for details.
 
 ### Already Have the MCP Server?
 
-If you installed the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) yourself, you just need skills. See [Adding Skills Only](GETTING_STARTED.md#adding-skills-only) in the Getting Started guide.
+If you installed the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) yourself, you need skills **and** the toolkit's tool definitions registered with your server. See [Adding Skills Only](GETTING_STARTED.md#adding-skills-only) in the Getting Started guide for requirements.
 
 ### MATLAB Setup (all platforms)
 
@@ -156,7 +158,7 @@ simulink-agentic-toolkit/
 ├── gemini-extension.json     # Gemini CLI MCP config
 ├── skills-catalog/           # Agent skills (not auto-discovered)
 │   ├── model-based-design-core/  # Core MBD skills (6 skills)
-│   └── PRODUCT-GROUP-NAME/      # Placeholder for additional skill groups
+│   └── toolkit/                 # Infrastructure skills (1 skill)
 ├── tools/                    # MCP tool implementations
 ├── satk_initialize.m         # MATLAB setup entry point
 └── research-previews/        # Curated example tasks

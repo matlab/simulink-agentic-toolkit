@@ -3,7 +3,7 @@ name: building-simulink-models
 description: Builds and edits Simulink, System Composer, Stateflow, and Simscape models. Use when modifying model structure, parameters, ports, connections, or Stateflow chart internals.
 license: MathWorks BSD-3-Clause
 metadata:
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Building Models
@@ -45,7 +45,16 @@ The response `created` map shows `ref → blk_id`. In subsequent calls, use the 
 
 ## Guardrails
 
+- **Never manually construct block path strings** from names shown in `model_overview` or `model_read`. Block names can contain invisible newlines and trailing whitespace that cause `hilite_system`, `open_system`, and `get_param` to fail. Instead, resolve paths from `blk_X` IDs:
+  ```matlab
+  % blk_42 → use the number after "blk_" as the SID
+  blockPath = Simulink.ID.getFullName('<ModelName>:42');
+  hilite_system(blockPath)
+  open_system(blockPath)
+  get_param(blockPath, 'BlockType')
+  ```
 - Do not call `Simulink.BlockDiagram.arrangeSystem` or use `set_param` for block positioning unless the user explicitly requests it. `model_edit` has a built-in autolayout engine that runs automatically after each call.
+- Always pass `layout_mode` to `model_edit`. Use `"full"` when populating an empty scope (new model root, or a newly-created subsystem) for optimal block arrangement. Use `"incremental"` when adding blocks to a scope that already has existing blocks (preserves existing positions).
 - Use meaningfully named variables (e.g., `Kp_SpeedController`) instead of hardcoded numeric values. Define variables in model workspace or a `.m` init script.
 - Don't use `evaluate_matlab_code` with `set_param`/`add_block` to bypass `model_edit` — it skips autolayout, undo tracking, and error recovery
 - Use `open_system` rather than `load_system` to open models that are not already open, or when creating new models, unless the user explicitly asks otherwise or the model is a library. This ensures the user can see live edits as they happen.

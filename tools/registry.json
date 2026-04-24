@@ -146,6 +146,11 @@
           "operations": {
             "type": "string",
             "description": "JSON array of operation objects (MUST be single-line, no newlines). Each has 'op' (add_block|connect|disconnect|configure|delete|create_subsystem) and operation-specific fields."
+          },
+          "layout_mode": {
+            "type": "string",
+            "description": "Layout mode for this call: 'full' (use when scope is empty/building from scratch) or 'incremental' (use when adding to existing model). Always provide this parameter.",
+            "enum": ["full", "incremental"]
           }
         },
         "required": ["model", "scope", "operations"]
@@ -184,9 +189,14 @@
           "draft_mode": {
             "type": "string",
             "description": "Skip main model compile for faster iteration ('true' or 'false'). Use 'true' by default for rapid test development (~3s vs ~60s). If draft mode fails due to type/bus/dimension issues, re-run with 'false'. Default: false"
+          },
+          "coverage": {
+            "type": "string",
+            "enum": ["none", "decision"],
+            "description": "Coverage metric to collect: 'none' (default) or 'decision'. Requires Simulink Coverage toolbox."
           }
         },
-        "required": ["model", "gherkin_file", "scenarios", "verbose", "draft_mode"]
+        "required": ["model", "gherkin_file", "scenarios", "verbose", "draft_mode", "coverage"]
       }
     }
   }

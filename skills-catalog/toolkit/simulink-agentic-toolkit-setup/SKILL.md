@@ -3,7 +3,7 @@ name: simulink-agentic-toolkit-setup
 description: Install and configure the Simulink Agentic Toolkit — detect platform, download and install the MCP server binary, register with your AI coding agent, and verify the environment. Supports Claude Code, Cursor, Codex, GitHub Copilot, Amp, and Gemini CLI.
 license: MathWorks BSD-3-Clause
 metadata:
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Simulink Agentic Toolkit Setup
@@ -255,44 +255,12 @@ Echo back the list of skill links created or updated.
 
 ### 3b-platform. Configure agent platform
 
-**Automated setup for each platform:**
-
-#### GitHub Copilot
-
-Uses `~/.vscode/settings.json`. Automate using Python (jq may not be installed):
-
-```python
-import json, os
-settings_path = os.path.expanduser('~/.vscode/settings.json')
-settings = {}
-if os.path.exists(settings_path):
-    with open(settings_path, 'r') as f:
-        settings = json.load(f)
-if 'mcp.servers' not in settings:
-    settings['mcp.servers'] = {}
-settings['mcp.servers']['simulink'] = {
-    'type': 'stdio',
-    'command': os.path.expanduser('~/.local/bin/matlab-mcp-core-server'),
-    'args': ['--matlab-session-mode=existing', '--extension-file=<TOOLKIT_ROOT>/tools/tools.json', '--matlab-root=<MATLAB_ROOT>']
-}
-os.makedirs(os.path.dirname(settings_path), exist_ok=True)
-with open(settings_path, 'w') as f:
-    json.dump(settings, f, indent=2)
-```
-
-Skills are registered via the shared step (3b-shared) — no additional symlinks needed here.
-
-Echo back:
-- File path: `~/.vscode/settings.json`
-- MATLAB entry was added/updated
-
-#### Other platforms
-
 **Read** the platform-specific reference file (located in the `reference/` directory next to this skill file) and follow its instructions exactly. Use the toolkit root to resolve the path: `<TOOLKIT_ROOT>/skills-catalog/toolkit/simulink-agentic-toolkit-setup/reference/<filename>`.
 
 | Platform | Reference file |
 |----------|---------------|
 | Claude Code | `reference/claude-code-setup-guidance.md` |
+| GitHub Copilot | `reference/copilot-setup-guidance.md` |
 | Cursor | `reference/cursor-setup-guidance.md` |
 | OpenAI Codex | `reference/codex-setup-guidance.md` |
 | Sourcegraph Amp | `reference/amp-setup-guidance.md` |

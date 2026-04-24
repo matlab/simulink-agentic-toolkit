@@ -136,7 +136,7 @@ Setup writes two things: an MCP server configuration (so your agent can talk to 
 | Platform | MCP Configuration | Skills Delivery | How To Update Toolkit |
 |----------|------------------|-----------------|-------------------|
 | Claude Code | `claude mcp add-json` (user scope) | Plugin cache | Re-run setup or reinstall plugin |
-| GitHub Copilot | `~/.vscode/settings.json` | `~/.agents/skills/` symlinks | `git pull` in toolkit repo, re-run setup |
+| GitHub Copilot | VS Code user-profile `mcp.json` | `~/.agents/skills/` symlinks | `git pull` in toolkit repo, re-run setup |
 | OpenAI Codex | `~/.codex/config.toml` | `~/.agents/skills/` symlinks | `git pull` in toolkit repo, re-run setup |
 | Gemini CLI | `~/.gemini/settings.json` | `~/.agents/skills/` symlinks | `git pull` in toolkit repo, re-run setup |
 | Sourcegraph Amp | `~/.config/amp/settings.json` | `amp.skills.path` direct ref | `git pull` in toolkit repo, re-run setup |
@@ -150,7 +150,7 @@ Setup writes two things: an MCP server configuration (so your agent can talk to 
 
 **Claude Code** — Setup registers the toolkit via the plugin marketplace and registers the MCP server using `claude mcp add-json` at user scope. Skills are cached by the plugin system.
 
-**GitHub Copilot** — Setup writes global MCP config to `~/.vscode/settings.json` and creates skill symlinks in `~/.agents/skills/`. Reload VS Code after setup completes (Cmd/Ctrl + Shift + P, then "Developer: Reload Window").
+**GitHub Copilot** — Setup writes global MCP config to the VS Code user-profile `mcp.json` (`~/Library/Application Support/Code/User/mcp.json` on macOS, `~/.config/Code/User/mcp.json` on Linux, `%APPDATA%\Code\User\mcp.json` on Windows) and creates skill symlinks in `~/.agents/skills/`. Reload VS Code after setup completes (Cmd/Ctrl + Shift + P, then "Developer: Reload Window").
 
 **OpenAI Codex** — Setup uses `codex mcp add` if available, otherwise writes `~/.codex/config.toml` directly. Skills are installed as global symlinks in `~/.agents/skills/`. After setup, you may want to tune two settings in the `[mcp_servers.simulink]` section of `~/.codex/config.toml`:
 - `tool_timeout_sec = 600` — increases the tool timeout from the default (which is too short for many MATLAB operations like test suites and simulations). Increase further for very long-running tasks.
@@ -167,9 +167,26 @@ Setup writes two things: an MCP server configuration (so your agent can talk to 
 <a id="adding-skills-only"></a>
 ## Adding Skills Only
 
-If you already have the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) installed and configured, you only need skills.
+If you already have the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) installed and configured, you can add just the skills and tool definitions from this toolkit. This requires:
 
-### Claude Code
+- **MATLAB MCP Core Server v0.8.0 or later** (must support `--extension-file`)
+- **`tools.json` registered** in your MCP server configuration (see below)
+
+> **Why both?** Skills teach your agent *how* to work with Simulink, but the MCP server needs `tools.json` to expose the toolkit's tools (model_edit, model_read, etc.). Without it, the agent knows what to do but has no way to do it.
+
+### Step 1: Register `tools.json` with your MCP server
+
+Add the `--extension-file` flag to your existing MCP server configuration, pointing to the toolkit's tool definitions:
+
+```
+--extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
+```
+
+Replace `/path/to/simulink-agentic-toolkit` with the actual path to your toolkit clone. The exact location where you add this flag depends on your platform — see [How Configuration Works per Platform](#how-configuration-works-per-platform) for where each agent stores its MCP server config.
+
+### Step 2: Add skills
+
+#### Claude Code
 
 Add skills directly via the plugin marketplace:
 
@@ -178,12 +195,12 @@ claude plugin marketplace add "https://github.com/matlab/simulink-agentic-toolki
 claude plugin install model-based-design-core@simulink-agentic-toolkit
 ```
 
-Choose your preferred scope (per-project, per-user, or global) when prompted. Your existing MCP configuration is not modified.
+Choose your preferred scope (per-project, per-user, or global) when prompted.
 
 > To also get the setup skill (for managing the MCP server later), additionally run:
 > `claude plugin install toolkit@simulink-agentic-toolkit`
 
-### Other Platforms
+#### Other Platforms
 
 Point your agent's skill or prompt directory at `skills-catalog/model-based-design-core/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
@@ -234,7 +251,7 @@ Describe the structure of the currently open model.
 ### More examples
 
 ```
-Find the block named Kf in f14 and tell me what parameter it uses and what value it resolves to.
+Find the gain block in f14 that uses the parameter Kf, and tell me what value it resolves to.
 ```
 
 ```

@@ -3,7 +3,7 @@ name: generate-requirement-drafts
 description: "Generates draft requirements from Simulink models. Use when drafting or updating requirement artifacts from a model. Prefers Requirements Toolbox (.slreqx) when available; falls back to structured YAML."
 license: MathWorks BSD-3-Clause
 metadata:
-  version: "2.0"
+  version: "2.1"
 ---
 
 # Generate Requirement Drafts
@@ -114,9 +114,9 @@ child = add(req, Id="REQ_CC_002", ...
     Description="Derived from CruiseControl/BrakeLogic.");
 child.Keywords = ["draft","auto-generated","safety","brake"];
 
-% Create traceability links: source=block, dest=requirement → auto Implement
-lnk = slreq.createLink(model + "/ThrottleCmd", req);
-slreq.createLink(model + "/BrakeLogic", child);
+% Create traceability links: use block handle from SID (blk_X → X) for robustness
+lnk = slreq.createLink(Simulink.ID.getHandle(model + ":5"), req);
+slreq.createLink(Simulink.ID.getHandle(model + ":8"), child);
 
 save(rs);
 % Save all link sets

@@ -2,12 +2,19 @@
 
 `model_edit` can add Stateflow Chart blocks and configure block-level parameters, but **cannot** edit chart internals. Use `evaluate_matlab_code` with the Stateflow API for states, transitions, junctions, and data.
 
-Before editing chart internals, call `open_system('ModelName/ChartBlockName')` to navigate the view into the chart so the user can observe changes.
+Before editing chart internals, navigate the view into the chart so the user can observe changes:
+
+```matlab
+% Resolve chart path from blk_X ID (from model_read output)
+chartPath = Simulink.ID.getFullName('<ModelName>:<SID>');
+open_system(chartPath)
+```
 
 ## Accessing the Chart Object
 
 ```matlab
-ch = find(sfroot, "-isa", "Stateflow.Chart", Path="ModelName/ChartBlockName");
+chartPath = Simulink.ID.getFullName('<ModelName>:<SID>');
+ch = find(sfroot, "-isa", "Stateflow.Chart", Path=chartPath);
 ```
 
 ## Wiring Transitions
