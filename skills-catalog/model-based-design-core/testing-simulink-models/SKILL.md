@@ -70,6 +70,16 @@ The component under test must not contain physical modeling ports (PMIOPort / Si
 
 If the model contains Simscape elements, set the model parameter `SimscapeLogType` to `"none"` before running tests. Simscape logging can interfere with test harness signal routing. This is a one-time model configuration, not a simulation command. Use: `set_param('ModelName', 'SimscapeLogType', 'none')`.
 
+## Coverage
+
+Pass `coverage='none'` (default) or `coverage='decision'` when calling `model_test`. The `coverage` parameter is required. Use `'decision'` to collect both execution and decision coverage metrics (requires Simulink Coverage toolbox). Use `'none'` when coverage is not needed.
+
+## Draft Mode
+
+Pass `draft_mode='true'` for rapid test iteration (~3s vs ~60s). Draft mode skips the main model compile and uses a lightweight harness. Use `'true'` by default during test development.
+
+**Limitation:** Draft-mode harness uses double scalar for all inputs and outputs. If the model under test has non-double ports (boolean, integer, single, bus, vector), draft mode will fail with data type mismatch errors. In that case, re-run with `draft_mode='false'`.
+
 ## Directory Warning
 
 Don't change MATLAB's working directory while a model is open. Test harness cache is directory-tied—changing it causes stale harness errors.

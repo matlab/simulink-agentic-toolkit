@@ -20,7 +20,7 @@
     },
     {
       "name": "model-based-design-core",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"

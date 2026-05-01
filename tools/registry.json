@@ -160,7 +160,7 @@
       "matlab_release": ">=R2023a",
       "matlab_function": "model_test",
       "title": "Model Test",
-      "description": "Execute behavioral tests against a Simulink model using a Gherkin-format specification file. Auto-creates test artifacts and returns pytest-style results.",
+      "description": "Execute behavioral tests against a Simulink model using a Gherkin-format specification file. Auto-creates test artifacts and returns pytest-style results. IMPORTANT: Load the 'testing-simulink-models' skill before writing .feature files — the Gherkin format requires TOML front-matter and custom step syntax not found in standard Gherkin.",
       "annotations": {
         "readOnlyHint": false,
         "destructiveHint": false,
