@@ -1,8 +1,17 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Simulink Agentic Toolkit — Agent Instructions
 
 ## Setup
 
-If the user asks to set up the Simulink Agentic Toolkit, use the setup skill at `skills-catalog/toolkit/simulink-agentic-toolkit-setup/SKILL.md`. This automates platform detection, MCP server installation, agent configuration, and verification.
+If the user asks to set up the Simulink Agentic Toolkit, direct them to run the following in MATLAB:
+
+```matlab
+addpath('<path-to-setup-folder>')
+setupAgenticToolkit("install")
+```
+
+This handles platform detection, MCP server download, toolkit installation, agent configuration, and skill registration. Do not attempt to run setup commands on the user's behalf.
 
 ## Domain Skills
 

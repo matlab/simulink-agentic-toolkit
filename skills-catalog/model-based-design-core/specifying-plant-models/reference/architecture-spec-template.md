@@ -1,3 +1,4 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
 # Plant Model Architecture Spec Template
 
 Focus on physics decomposition, port-based interfaces, and equations of motion — not Simulink block details.
@@ -221,6 +222,6 @@ y₁ = g₁(x, u, w, p)
 
 ## Appendix A: Related Documents
 
-- [System Spec](system.md) — Requirements and operating scenarios
-- [Implementation Plan](implementation_plan.md) — Build phases and order
-- [Test Plan](test_plan.md) — Validation maneuvers and criteria
+- [System Spec](system-spec-template.md) — Requirements and operating scenarios
+- [Implementation Plan](implementation-plan-template.md) — Build phases and order
+- [Test Plan](test-plan-template.md) — Validation maneuvers and criteria

@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # System Composer Architecture Model Rules
 
 To create a new blank System Composer Architecture model, use `evaluate_matlab_code` with `systemcomposer.createModel("<ModelName>")`. Then modify with `model_edit`.

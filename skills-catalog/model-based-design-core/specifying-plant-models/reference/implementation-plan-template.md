@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Plant Model Implementation Plan Template
 
 # [Plant Model Name] Implementation Plan

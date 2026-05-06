@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # MBD Algorithm Component Spec Template
 
 **Rarely needed.** Only create when architecture §4 Component Details isn't sufficient for a complex component — e.g., a Stateflow chart with 10+ states, a multi-physics subsystem with coupled dynamics, or a component with complex initialization/reset behavior.

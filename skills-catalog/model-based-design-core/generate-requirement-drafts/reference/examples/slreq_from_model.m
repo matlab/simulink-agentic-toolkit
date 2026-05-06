@@ -7,6 +7,7 @@
 % Prerequisites: MATLAB R2023a+, Simulink, Requirements Toolbox
 % Model: CruiseControl (must be on path or in current folder)
 
+%   Copyright 2026 The MathWorks, Inc.
 %% 1. Load the model
 model = "CruiseControl";
 load_system(model);

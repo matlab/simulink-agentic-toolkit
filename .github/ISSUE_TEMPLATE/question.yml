@@ -1,3 +1,4 @@
+# Copyright 2026 The MathWorks, Inc.
 name: Question
 description: Ask a question about setup, compatibility, or usage
 labels: ["question"]

@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Spec Types Guide
 
 ## Spec Differentiation

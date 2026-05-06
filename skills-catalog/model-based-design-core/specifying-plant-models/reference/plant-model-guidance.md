@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Plant Model Guidance — Quick Reference
 
 > **Usage note:** This is an optional human-facing reference for plant model spec authors.

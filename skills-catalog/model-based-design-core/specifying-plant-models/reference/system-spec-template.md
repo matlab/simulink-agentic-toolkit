@@ -1,3 +1,4 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
 # Plant Model System Spec Template
 
 # [Plant Model Name]
@@ -244,6 +245,6 @@
 
 ## Appendix A: Related Documents
 
-- [Architecture Spec](architecture.md)
-- [Implementation Plan](implementation_plan.md)
-- [Test Plan](test_plan.md)
+- [Architecture Spec](architecture-spec-template.md)
+- [Implementation Plan](implementation-plan-template.md)
+- [Test Plan](test-plan-template.md)

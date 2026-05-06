@@ -1,3 +1,4 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
 # MBD Algorithm Architecture Spec Template
 
 Focus on functional decomposition, signal interfaces, mode logic, and algorithmic behavior — not Simulink block wiring.
@@ -250,9 +251,9 @@ sensor ──→ [Preprocessing] ──→ [Estimator] ──→ [Control Law] �
 
 ## Appendix A: Related Documents
 
-- [System Spec](path) — Requirements and operating scenarios
-- [Implementation Plan](path) — Build phases and order
-- [Test Plan](path) — Test cases and pass/fail criteria
+- [System Spec](system-spec-template.md) — Requirements and operating scenarios
+- [Implementation Plan](implementation-plan-template.md) — Build phases and order
+- [Test Plan](test-plan-template.md) — Test cases and pass/fail criteria
 
 ## Appendix B: API Verification Notes
 

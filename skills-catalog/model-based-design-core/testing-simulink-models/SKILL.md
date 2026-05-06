@@ -3,6 +3,7 @@ name: testing-simulink-models
 description: Creates persistent Gherkin-based pass/fail tests for Simulink models and individual subsystems using model_test. Use when verifying expected behavior, writing regression tests, reproducing issues, or validating bug fixes with structured assertions. Requires Simulink Test.
 license: MathWorks BSD-3-Clause
 metadata:
+  author: MathWorks
   version: "1.0"
 ---
 
@@ -11,6 +12,31 @@ metadata:
 Requires **Simulink Test**. If unavailable, use `simulating-simulink-models` with manual assertions.
 
 Use this skill when you need persistent, reusable pass/fail verification of model behavior.
+
+## When to Use
+
+- Writing persistent pass/fail tests for a Simulink model or subsystem
+- Verifying expected behavior against requirements or acceptance criteria
+- Creating regression tests to catch future breakage
+- Reproducing and validating bug fixes with structured assertions
+- Collecting decision coverage metrics for a component
+
+## When NOT to Use
+
+- **Building or editing model structure** → use `building-simulink-models`
+- **Running simulations for data exploration, sweeps, or custom analysis** → use `simulating-simulink-models`
+- **Querying or resolving parameter values** → use `model_query_params` / `model_resolve_params`
+- **Simulink Test is not installed** → use `simulating-simulink-models` with manual assertions
+- **Component has no inputs or no outputs** → model_test requires at least one Inport and one Outport; use `simulating-simulink-models` instead
+- **Component has physical modeling (Simscape) ports** → test a parent subsystem with signal-based I/O instead
+
+## Workflow
+
+1. **Understand the component:** Use `model_overview` and `model_read` on the target subsystem to identify inputs, outputs, and expected behavior.
+2. **Write the `.feature` file:** Author a Gherkin test following the Syntax Reference below. Start with one scenario covering the primary nominal case.
+3. **Run in draft mode:** Call `model_test` with `draft_mode='true'` for rapid iteration (~3s). Fix syntax or signal errors.
+4. **Run full compilation:** Once draft passes, re-run with `draft_mode='false'` to validate against the actual compiled model (catches type/dimension mismatches).
+5. **Expand coverage:** Add scenarios for edge cases, fault conditions, and boundary behavior. Use `coverage='decision'` to identify untested branches.
 
 ## Syntax Reference
 
@@ -83,3 +109,9 @@ Pass `draft_mode='true'` for rapid test iteration (~3s vs ~60s). Draft mode skip
 ## Directory Warning
 
 Don't change MATLAB's working directory while a model is open. Test harness cache is directory-tied—changing it causes stale harness errors.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

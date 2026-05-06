@@ -3,6 +3,7 @@ name: building-simulink-models
 description: Builds and edits Simulink, System Composer, Stateflow, and Simscape models. Use when modifying model structure, parameters, ports, connections, or Stateflow chart internals.
 license: MathWorks BSD-3-Clause
 metadata:
+  author: MathWorks
   version: "1.1"
 ---
 
@@ -90,3 +91,9 @@ When working with these domains, read the corresponding reference file before ed
 - **Stateflow charts** -> `reference/stateflow.md` — `model_edit` can add Chart blocks but cannot edit chart internals. Use `evaluate_matlab_code` with the Stateflow API for states, transitions, junctions, and data. The reference covers API gotchas, subcharts, lint checks, and layout.
 - **System Composer architecture models** -> `reference/system-composer.md` — Create models with `systemcomposer.createModel`, then use `model_edit`. Components use `type: "SubSystem"`, ports use Bus Element blocks. The reference covers component creation, port wiring, and behavior model generation.
 - **Simscape physical models** -> `reference/simscape.md` — Physical connections use bidirectional `<->` syntax. The reference covers connection semantics, port patterns, and initial target variables.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

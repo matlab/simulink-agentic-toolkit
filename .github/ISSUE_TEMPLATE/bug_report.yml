@@ -1,3 +1,4 @@
+# Copyright 2026 The MathWorks, Inc.
 name: Bug Report
 description: Report a bug with the Simulink Agentic Toolkit
 labels: ["bug"]

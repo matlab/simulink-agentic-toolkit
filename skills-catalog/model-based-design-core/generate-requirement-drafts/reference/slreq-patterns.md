@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Requirements Toolbox API Patterns
 
 Cookbook for programmatic requirements management using `slreq` APIs. All APIs are safe for R2023a+.

@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Simscape Physical Connection Rules
 
 Physical ports (electrical, mechanical, thermal) use bidirectional `<->` syntax.

@@ -3,6 +3,7 @@ name: specifying-plant-models
 description: "Specify plant models for closed-loop simulation: system specs, architecture, build plans, validation plans. Use when creating, updating, or reviewing plant model specifications, planning plant model architecture, or planning plant model validation."
 license: MathWorks BSD-3-Clause
 metadata:
+  author: MathWorks
   version: "1.0"
 ---
 
@@ -172,3 +173,9 @@ Get user approval before building begins.
 - `reference/implementation-plan-template.md` — Build sequence template
 - `reference/test-plan-template.md` — Validation plan template
 - `reference/plant-model-guidance.md` — Optional domain reference (decomposition examples, validation maneuvers, solver guide). Human-facing; do not copy verbatim into specs.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

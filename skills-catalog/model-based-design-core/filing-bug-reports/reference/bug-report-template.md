@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # BUG-<NNN>: [Area] — Action — Unexpected result
 
 **Reporter:** *Name or agent identifier*

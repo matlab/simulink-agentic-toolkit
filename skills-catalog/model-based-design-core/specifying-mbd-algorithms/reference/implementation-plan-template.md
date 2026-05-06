@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # MBD Algorithm Implementation Plan Template
 
 # [Algorithm Name] Implementation Plan

@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Stateflow Chart Editing Rules
 
 `model_edit` can add Stateflow Chart blocks and configure block-level parameters, but **cannot** edit chart internals. Use `evaluate_matlab_code` with the Stateflow API for states, transitions, junctions, and data.

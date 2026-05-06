@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Plant Model Test Plan Template
 
 # [Plant Model Name] Test Plan

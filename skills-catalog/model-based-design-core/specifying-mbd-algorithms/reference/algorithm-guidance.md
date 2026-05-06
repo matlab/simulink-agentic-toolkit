@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Algorithm Guidance — Quick Reference
 
 > **Usage note:** This is an optional human-facing reference for MBD algorithm spec authors.

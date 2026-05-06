@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Adding Tasks to the Agentic Task Explorer
 
 ## Quick Start: Add a Task

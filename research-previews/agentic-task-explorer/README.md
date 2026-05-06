@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Agentic Task Explorer
 
 The Agentic Task Explorer stages and presents structured agentic tasks for live demonstrations and interactive exploration.

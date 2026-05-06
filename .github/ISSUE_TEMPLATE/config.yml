@@ -1,5 +1,6 @@
+# Copyright 2026 The MathWorks, Inc.
 blank_issues_enabled: false
 contact_links:
-  - name: General Inquiry
-    url: mailto:genai-support@mathworks.com
-    about: For general questions not covered by the templates above, email the GenAI support team.
+  - name: Other Inquiries
+    url: https://www.mathworks.com/support/contact_us.html
+    about: For inquiries not covered by the issue templates, contact technical support.

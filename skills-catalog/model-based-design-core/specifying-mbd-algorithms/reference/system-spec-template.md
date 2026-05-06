@@ -1,3 +1,4 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
 # MBD Algorithm System Spec Template
 
 *Template for algorithms authored in Simulink, Stateflow, System Composer, or MATLAB Function blocks — controllers, estimators, signal processors, diagnostics, supervisory logic. Skip sections that don't apply.*
@@ -200,7 +201,8 @@
 
 *Links to related specs, plant model specs, architecture specs, datasheets.*
 
-- [Document name](path)
+- [Architecture Spec](architecture-spec-template.md)
+- [Implementation Plan](implementation-plan-template.md)
 
 ## Appendix B: Research Notes
 

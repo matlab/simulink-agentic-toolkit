@@ -1,3 +1,4 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
 # MBD Algorithm Detailed Spec Template
 
 Create BEFORE architecture when architecture is blocked without this precise definition. Use when the control law, state machine, or interface contract must be worked out first.
@@ -130,5 +131,5 @@ Create BEFORE architecture when architecture is blocked without this precise def
 
 ## Appendix A: Related Documents
 
-- [System Spec](path) — Requirements and scenarios
-- [Architecture Spec](path) — Components that implement this contract
+- [System Spec](system-spec-template.md) — Requirements and scenarios
+- [Architecture Spec](architecture-spec-template.md) — Components that implement this contract

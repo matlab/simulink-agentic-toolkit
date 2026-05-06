@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Structured YAML Requirements Format
 
 Text-file fallback for requirement drafts when Requirements Toolbox is unavailable.

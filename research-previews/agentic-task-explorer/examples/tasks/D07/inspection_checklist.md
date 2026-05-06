@@ -1,3 +1,5 @@
+<!-- Copyright 2026 The MathWorks, Inc. -->
+
 # Inspection Checklist
 
 Inspect the Simulink model, its requirements, and all verification artifacts against this checklist.

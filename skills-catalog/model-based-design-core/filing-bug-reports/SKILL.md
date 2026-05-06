@@ -3,6 +3,7 @@ name: filing-bug-reports
 description: "Generate a standalone bug report that another developer can use to reproduce, investigate, and fix an issue. Use when the user says 'file a bug', 'write a bug report', 'report this issue', or asks to document a defect for handoff."
 license: MathWorks BSD-3-Clause
 metadata:
+  author: MathWorks
   version: "1.0"
 ---
 
@@ -77,4 +78,10 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
 ## References
 
 - `reference/bug-report-template.md` — The output template (always use this structure)
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----
 
