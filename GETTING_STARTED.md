@@ -67,7 +67,7 @@ Setup is re-runnable. Run it again to update the binary, switch MATLAB versions,
 
 ### Step 1: Install the Setup Add-On
 
-Download `agenticToolkitInstaller.mltbx` from the [GitHub release](https://github.com/matlab/simulink-agentic-toolkit/releases) and double-click it in MATLAB to install via the Add-On Manager. If the Add-On Manager fails to launch (common on headless machines or older MATLAB versions), install programmatically:
+Download `agenticToolkitInstaller.mltbx` from the [GitHub release](https://github.com/matlab/simulink-agentic-toolkit/releases) and double-click it in MATLAB to install via the Add-On Manager. If the Add-On Manager fails to launch (common on headless machines, corporate proxies/antivirus, or older MATLAB versions — you may see `ERR_CERT_AUTHORITY_INVALID` or "Unable to open the requested feature"), install programmatically instead:
 
 ```matlab
 matlab.addons.toolbox.installToolbox("agenticToolkitInstaller.mltbx")
@@ -234,6 +234,12 @@ addpath("/path/to/simulink-agentic-toolkit")
 satk_initialize
 ```
 
+If you installed the MCP server binary to a non-default location (e.g., a network share), pass its path explicitly:
+
+```matlab
+satk_initialize(MCPServerPath="//server/share/bin/matlab-mcp-core-server")
+```
+
 Then restart your coding agent session so the MCP server picks up the MATLAB connection.
 
 ---
@@ -246,20 +252,22 @@ If you set up the toolkit using an earlier version (the agent-driven "Set up the
 
 1. **Old toolkit data folder** — delete `~/.simulink-agentic-toolkit/` (macOS/Linux) or `%USERPROFILE%\.simulink-agentic-toolkit\` (Windows). This was the data directory used by the old agent-driven setup.
 
-2. **MCP server binary** — delete `~/.matlab/agentic-toolkits/bin/matlab-mcp-core-server` (macOS/Linux) or `%USERPROFILE%\.matlab\agentic-toolkits\bin\matlab-mcp-core-server.exe` (Windows)
+2. **MCP server binary** — delete `~/.matlab/agentic-toolkits/bin/matlab-mcp-core-server` (macOS/Linux) or `%USERPROFILE%\.matlab\agentic-toolkits\bin\matlab-mcp-core-server.exe` (Windows). Some earlier versions installed the binary to `~/.local/bin/` or `%USERPROFILE%\.local\bin\` instead — check both locations.
 
-3. **MCP Add-On** — delete `~/.local/share/MATLABMCPCoreServerToolkit.mltbx` (macOS/Linux) or `%USERPROFILE%\.local\share\MATLABMCPCoreServerToolkit.mltbx` (Windows). If you already installed the toolbox in MATLAB, you can uninstall it via `matlab.addons.uninstall` — the new setup uses `--setup-matlab` to handle this automatically.
+3. **MCP Add-On** — delete `~/.local/share/MATLABMCPCoreServerToolbox.mltbx` (macOS/Linux) or `%USERPROFILE%\.local\share\MATLABMCPCoreServerToolbox.mltbx` (Windows). If you already installed the toolbox in MATLAB, you can uninstall it via `matlab.addons.uninstall` or manually through the Add-On Manager — the new setup uses `--setup-matlab` to handle this automatically.
 
 4. **Agent MCP configuration** — remove the old `matlab` or `simulink` MCP server entry from your agent's config file. Your config should **not** reference any of the paths above. The location depends on your platform:
-   - Claude Code: `~/.claude.json` (remove the entry from `mcpServers`)
-   - GitHub Copilot: VS Code user-profile `mcp.json` (remove the `matlab` or `simulink` server)
+   - Claude Code: `~/.claude.json` (`%USERPROFILE%\.claude.json` on Windows) — remove the entry from `mcpServers`
+   - GitHub Copilot: VS Code user-profile `mcp.json` (remove the `matlab` or `simulink` server). File location: `~/Library/Application Support/Code/User/mcp.json` (macOS), `~/.config/Code/User/mcp.json` (Linux), `%APPDATA%\Code\User\mcp.json` (Windows)
    - OpenAI Codex: `~/.codex/config.toml` (remove `[mcp_servers.matlab]` or `[mcp_servers.simulink]`)
    - Gemini CLI: `~/.gemini/settings.json` (remove the `mcpServers` entry)
-   - Sourcegraph Amp: `~/.config/amp/settings.json` (remove `amp.mcpServers.matlab` or `amp.mcpServers.simulink`)
+   - Sourcegraph Amp: `~/.config/amp/settings.json` (remove `amp.mcpServers.matlab` or `amp.mcpServers.simulink` **and** `amp.skills.path`)
 
-5. **Skill symlinks** — remove old symlinks from `~/.agents/skills/` and `~/.claude/skills/` that point into your old toolkit clone
+5. **Skill registrations** — remove old symlinks from `~/.agents/skills/` and `~/.claude/skills/` that point into your old toolkit clone. For Amp, also remove the `amp.skills.path` entry in `~/.config/amp/settings.json` if it references your old toolkit path.
 
 6. **Old toolkit clone** — if you cloned the repository just for setup and no longer need it as a reference, you can delete it. The new setup script downloads toolkit files to `~/.matlab/agentic-toolkits/`.
+
+> **Tip:** After removing the items above, you can ask your coding agent to search your home directory for any remaining references to the old toolkit (e.g., "matlab-mcp", "simulink-agentic-toolkit", or old paths like `.local/bin`) to catch anything we missed.
 
 After cleaning up, follow the [Automated Setup](#automated-setup-recommended) instructions above.
 
@@ -384,7 +392,7 @@ Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/i
 
 | Problem | Likely Cause | Fix |
 |---------|-------------|-----|
-| Add-On Manager fails when opening mltbx | CEF/display issue on headless or older MATLAB | Install programmatically: `matlab.addons.toolbox.installToolbox("agenticToolkitInstaller.mltbx")` |
+| Add-On Manager fails when opening mltbx (`ERR_CERT_AUTHORITY_INVALID` or "Unable to open the requested feature") | CEF/display issue — often caused by corporate proxies, antivirus software, or headless environments | Install programmatically instead: `matlab.addons.toolbox.installToolbox("agenticToolkitInstaller.mltbx")` |
 | Agent doesn't list Simulink skills | Skills not registered | Re-run `setupAgenticToolkit("configure")` |
 | MCP tools fail with "Undefined function" | `satk_initialize` not run in current MATLAB session | Run `satk_initialize` in MATLAB |
 | MCP server can't connect to MATLAB | Connector not running or stale connection | Run `satk_initialize` again (it calls `shareMATLABSession` automatically) |
