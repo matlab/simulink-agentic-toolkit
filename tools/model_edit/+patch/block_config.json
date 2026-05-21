@@ -6364,7 +6364,8 @@
         {
             "path": "fl_lib/Electrical/Electrical Sources/AC Voltage Source",
             "aliases": [
-                "ac voltage source"
+                "ac voltage source",
+                "ACVoltageSource"
             ]
         },
         {
@@ -6400,7 +6401,8 @@
         {
             "path": "fl_lib/Electrical/Electrical Sources/DC Voltage Source",
             "aliases": [
-                "dc voltage source"
+                "dc voltage source",
+                "DCVoltageSource"
             ]
         },
         {
@@ -11794,7 +11796,8 @@
         {
             "path": "nesl_utility/Simscape Component",
             "aliases": [
-                "simscape component"
+                "simscape component",
+                "PMComponent"
             ]
         },
         {
@@ -11812,7 +11815,8 @@
         {
             "path": "nesl_utility/Solver Configuration",
             "aliases": [
-                "solver configuration"
+                "solver configuration",
+                "SolverConfiguration"
             ]
         },
         {
@@ -11830,7 +11834,9 @@
         {
             "path": "nesl_utility/Connection Port",
             "aliases": [
-                "connection port"
+                "connection port",
+                "ConnectionPorts",
+                "ConnectionPort"
             ]
         },
         {
@@ -16358,6 +16364,704 @@
             "path": "simulink/User-Defined Functions/Reinitialize Function",
             "aliases": [
                 "reinitialize function"
+            ]
+        },
+
+        {
+            "path": "simulink/Sources/Ramp",
+            "aliases": [
+                "ramp"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Repeating Sequence",
+            "aliases": [
+                "repeating sequence",
+                "repeatingsequence"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Band-Limited White Noise",
+            "aliases": [
+                "band-limited white noise",
+                "band-limitedwhitenoise",
+                "bandlimitedwhitenoise"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Repeating Sequence Stair",
+            "aliases": [
+                "repeating sequence stair",
+                "repeatingsequencestair"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Repeating Sequence Interpolated",
+            "aliases": [
+                "repeating sequence interpolated",
+                "repeatingsequenceinterpolated"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Chirp Signal",
+            "aliases": [
+                "chirp signal",
+                "chirp"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Signal Editor",
+            "aliases": [
+                "signal editor"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Pulse Generator",
+            "aliases": [
+                "pulse generator",
+                "pulse"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Sine Wave",
+            "aliases": [
+                "sine wave",
+                "sinewave",
+                "sine"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Counter Free-Running",
+            "aliases": [
+                "counter free-running",
+                "counter freerunning"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Counter Limited",
+            "aliases": [
+                "counter limited"
+            ]
+        },
+        {
+            "path": "simulink/Sources/Waveform Generator",
+            "aliases": [
+                "waveform generator"
+            ]
+        },
+
+        {
+            "path": "simulink/Logic and Bit Operations/Compare To Constant",
+            "aliases": [
+                "compare to constant",
+                "CompareToConstant"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Compare To Zero",
+            "aliases": [
+                "compare to zero",
+                "CompareToZero"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Interval Test",
+            "aliases": [
+                "interval test",
+                "intervaltest"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Interval Test Dynamic",
+            "aliases": [
+                "interval test dynamic",
+                "intervaltestdynamic"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Detect Change",
+            "aliases": [
+                "detect change"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Detect Decrease",
+            "aliases": [
+                "detect decrease"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Detect Increase",
+            "aliases": [
+                "detect increase"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Detect Rise Positive",
+            "aliases": [
+                "detect rise positive"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Detect Rise Nonnegative",
+            "aliases": [
+                "detect rise nonnegative"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Detect Fall Negative",
+            "aliases": [
+                "detect fall negative"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Detect Fall Nonpositive",
+            "aliases": [
+                "detect fall nonpositive"
+            ]
+        },
+
+        {
+            "path": "simulink/Math Operations/Slider Gain",
+            "aliases": [
+                "slider gain"
+            ]
+        },
+        {
+            "path": "simulink/Math Operations/Weighted Moving Average",
+            "aliases": [
+                "weighted moving average"
+            ]
+        },
+
+        {
+            "path": "simulink/Continuous/PID Controller",
+            "aliases": [
+                "pid controller",
+                "pid"
+            ]
+        },
+        {
+            "path": "simulink/Continuous/PID Controller (2DOF)",
+            "aliases": [
+                "pid controller (2dof)",
+                "pid 2dof",
+                "pid controller 2dof"
+            ]
+        },
+        {
+            "path": "simulink/Continuous/Transfer Fcn",
+            "aliases": [
+                "transfer function"
+            ]
+        },
+        {
+            "path": "simulink/Continuous/State-Space",
+            "aliases": [
+                "state space continuous"
+            ]
+        },
+        {
+            "path": "simulink/Continuous/Zero-Pole",
+            "aliases": [
+                "zero pole continuous"
+            ]
+        },
+
+        {
+            "path": "simulink/Signal Routing/Bus Selector",
+            "aliases": [
+                "bus select"
+            ]
+        },
+
+        {
+            "path": "simulink/Sinks/XY Graph",
+            "aliases": [
+                "xy graph",
+                "xygraph"
+            ]
+        },
+        {
+            "path": "simulink/Sinks/Floating Scope",
+            "aliases": [
+                "floating scope"
+            ]
+        },
+
+        {
+            "path": "simulink/Dashboard/Dashboard Scope",
+            "aliases": [
+                "dashboard scope",
+                "dashboardscope"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Knob",
+            "aliases": [
+                "dashboard knob",
+                "knob"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Gauge",
+            "aliases": [
+                "dashboard gauge",
+                "gauge"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Half Gauge",
+            "aliases": [
+                "half gauge",
+                "halfgauge"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Quarter Gauge",
+            "aliases": [
+                "quarter gauge",
+                "quartergauge"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Linear Gauge",
+            "aliases": [
+                "linear gauge",
+                "lineargauge"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Lamp",
+            "aliases": [
+                "dashboard lamp",
+                "lamp"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Toggle Switch",
+            "aliases": [
+                "toggle switch",
+                "toggleswitch",
+                "toggleswitchblock"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Rocker Switch",
+            "aliases": [
+                "rocker switch",
+                "rockerswitch"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Slider Switch",
+            "aliases": [
+                "slider switch",
+                "sliderswitch",
+                "sliderswitchblock"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Rotary Switch",
+            "aliases": [
+                "rotary switch",
+                "rotaryswitch"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Push Button",
+            "aliases": [
+                "push button",
+                "pushbutton"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Callback Button",
+            "aliases": [
+                "callback button",
+                "callbackbutton"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Slider",
+            "aliases": [
+                "dashboard slider",
+                "slider"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Edit",
+            "aliases": [
+                "dashboard edit"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Display (Dashboard)",
+            "aliases": [
+                "dashboard display",
+                "customtuningwebblock"
+            ]
+        },
+        {
+            "path": "simulink/Dashboard/Horizontal Slider",
+            "aliases": [
+                "horizontal slider"
+            ]
+        },
+
+        {
+            "path": "powerlib/Measurements/Voltage Measurement",
+            "aliases": [
+                "voltage measurement",
+                "voltagemeasurement"
+            ]
+        },
+        {
+            "path": "powerlib/Measurements/Current Measurement",
+            "aliases": [
+                "current measurement",
+                "currentmeasurement"
+            ]
+        },
+        {
+            "path": "powerlib/Measurements/Three-Phase V-I Measurement",
+            "aliases": [
+                "three-phase v-i measurement",
+                "three-phasev-imeasurement"
+            ]
+        },
+        {
+            "path": "powerlib/Measurements/Impedance Measurement",
+            "aliases": [
+                "impedance measurement"
+            ]
+        },
+        {
+            "path": "powerlib/Measurements/Multimeter",
+            "aliases": [
+                "multimeter"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/Universal Bridge",
+            "aliases": [
+                "universal bridge",
+                "universalbridge"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/Diode",
+            "aliases": [
+                "power diode"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/Thyristor",
+            "aliases": [
+                "thyristor"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/MOSFET",
+            "aliases": [
+                "power mosfet"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/IGBT",
+            "aliases": [
+                "igbt",
+                "igbt power"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/GTO",
+            "aliases": [
+                "gto"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/Ideal Switch",
+            "aliases": [
+                "ideal switch"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/IGBT/Diode",
+            "aliases": [
+                "igbt/diode",
+                "igbt diode"
+            ]
+        },
+        {
+            "path": "powerlib/Power Electronics/Three-Level Bridge",
+            "aliases": [
+                "three-level bridge",
+                "threelevelbridge"
+            ]
+        },
+        {
+            "path": "powerlib/powergui",
+            "aliases": [
+                "powergui"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Series RLC Branch",
+            "aliases": [
+                "series rlc branch",
+                "seriesrlcbranch",
+                "series rlc"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Parallel RLC Branch",
+            "aliases": [
+                "parallel rlc branch",
+                "parallelrlcbranch",
+                "parallel rlc"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Series RLC Load",
+            "aliases": [
+                "series rlc load"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Parallel RLC Load",
+            "aliases": [
+                "parallel rlc load"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Series RLC Branch",
+            "aliases": [
+                "three-phase series rlc branch",
+                "3-phase series rlc branch"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Parallel RLC Branch",
+            "aliases": [
+                "three-phase parallel rlc branch",
+                "3-phase parallel rlc branch"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Series RLC Load",
+            "aliases": [
+                "three-phase series rlc load",
+                "3-phase series rlc load"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Parallel RLC Load",
+            "aliases": [
+                "three-phase parallel rlc load",
+                "3-phase parallel rlc load"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Mutual Inductance",
+            "aliases": [
+                "mutual inductance"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Mutual Inductance ZS PN",
+            "aliases": [
+                "three-phase mutual inductance zs pn",
+                "3-phase mutual inductance"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Saturable Transformer",
+            "aliases": [
+                "saturable transformer"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Transformer (Two Windings)",
+            "aliases": [
+                "three-phase transformer (two windings)",
+                "three-phasetransformer(twowindings)",
+                "3-phase transformer two windings"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Transformer (Three Windings)",
+            "aliases": [
+                "three-phase transformer (three windings)",
+                "3-phase transformer three windings"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Linear Transformer",
+            "aliases": [
+                "linear transformer"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Distributed Parameters Line",
+            "aliases": [
+                "distributed parameters line",
+                "distributedparametersline"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/PI Section Line",
+            "aliases": [
+                "pi section line"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Surge Arrester",
+            "aliases": [
+                "surge arrester"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Breaker",
+            "aliases": [
+                "breaker"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Breaker",
+            "aliases": [
+                "three-phase breaker",
+                "3-phase breaker"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Three-Phase Fault",
+            "aliases": [
+                "three-phase fault",
+                "3-phase fault"
+            ]
+        },
+        {
+            "path": "powerlib/Elements/Ground (Neutral)",
+            "aliases": [
+                "ground neutral",
+                "neutral ground"
+            ]
+        },
+        {
+            "path": "powerlib/Electrical Sources/AC Voltage Source",
+            "aliases": [
+                "ac voltage source",
+                "ac source"
+            ]
+        },
+        {
+            "path": "powerlib/Electrical Sources/DC Voltage Source",
+            "aliases": [
+                "dc voltage source power",
+                "dc source power"
+            ]
+        },
+        {
+            "path": "powerlib/Electrical Sources/AC Current Source",
+            "aliases": [
+                "ac current source"
+            ]
+        },
+        {
+            "path": "powerlib/Electrical Sources/Controlled Voltage Source",
+            "aliases": [
+                "controlled voltage source power"
+            ]
+        },
+        {
+            "path": "powerlib/Electrical Sources/Controlled Current Source",
+            "aliases": [
+                "controlled current source power"
+            ]
+        },
+        {
+            "path": "powerlib/Electrical Sources/Three-Phase Source",
+            "aliases": [
+                "three-phase source",
+                "3-phase source"
+            ]
+        },
+        {
+            "path": "powerlib/Electrical Sources/Three-Phase Programmable Voltage Source",
+            "aliases": [
+                "three-phase programmable voltage source",
+                "3-phase programmable voltage source"
+            ]
+        },
+        {
+            "path": "powerlib/Machines/Asynchronous Machine SI Units",
+            "aliases": [
+                "asynchronous machine",
+                "induction motor",
+                "induction machine"
+            ]
+        },
+        {
+            "path": "powerlib/Machines/Synchronous Machine SI Fundamental",
+            "aliases": [
+                "synchronous machine",
+                "synchronous generator"
+            ]
+        },
+        {
+            "path": "powerlib/Machines/Permanent Magnet Synchronous Machine",
+            "aliases": [
+                "permanent magnet synchronous machine",
+                "pmsm"
+            ]
+        },
+        {
+            "path": "powerlib/Machines/DC Machine",
+            "aliases": [
+                "dc machine",
+                "dc motor"
+            ]
+        },
+
+        {
+            "path": "sdl_lib/Couplings & Drives/Torsional Compliance",
+            "aliases": [
+                "torsional compliance",
+                "torsionalcompliance"
+            ]
+        },
+        {
+            "path": "sdl_lib/Couplings & Drives/Rotational Coupling",
+            "aliases": [
+                "rotational coupling"
+            ]
+        },
+        {
+            "path": "sdl_lib/Brakes & Detents/Loaded-Contact Rotational Friction",
+            "aliases": [
+                "loaded-contact rotational friction"
+            ]
+        },
+
+        {
+            "path": "fl_lib/Hydraulic/Hydraulic Elements/Flow Restriction",
+            "aliases": [
+                "flow restriction",
+                "flowrestriction"
+            ]
+        },
+        {
+            "path": "fl_lib/Gas/Sources/Flow Boundary (G)",
+            "aliases": [
+                "flow boundary",
+                "flowboundary"
+            ]
+        },
+        {
+            "path": "SHlib/Thermal Elements/Neighborhood",
+            "aliases": [
+                "neighborhood"
             ]
         }
     ]

@@ -189,8 +189,10 @@ Follow the instructions in the [MATLAB MCP Core Server](https://github.com/matla
 Run the MCP server binary with the `--setup-matlab` command to install the MATLAB-side toolbox:
 
 ```bash
-matlab-mcp-core-server --setup-matlab --matlab-root=/path/to/MATLAB/R20XXx
+matlab-mcp-core-server-glnxa64 --setup-matlab --matlab-root=/path/to/MATLAB/R20XXx
 ```
+
+> **Note:** The binary name includes a platform suffix matching your system architecture: `matlab-mcp-core-server-glnxa64` (Linux), `matlab-mcp-core-server-maca64` (macOS Apple Silicon), `matlab-mcp-core-server-maci64` (macOS Intel), or `matlab-mcp-core-server-win64.exe` (Windows). The automated setup renames this to `matlab-mcp-core-server` when it downloads — if you downloaded manually from GitHub releases, use the full platform-specific name.
 
 This is a one-time step per MATLAB version.
 
