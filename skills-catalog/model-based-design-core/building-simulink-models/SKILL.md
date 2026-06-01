@@ -30,8 +30,9 @@ Use `model_edit` for Simulink, System Composer, and Simscape models (structural 
 2. **Plan the data flow:** For complex edits, sketch inputs → operations → outputs, then map to blocks.
 3. **Edit:** Use `model_edit` with operations scoped to one subsystem level at a time.
 4. **Verify:** Use `model_read` on the scope to confirm the structure matches your intent.
+5. **Check connectivity:** After all edits in a scope are complete, run `model_check` to catch unconnected ports or dangling lines. Fix any `error`-severity issues.
 
-**CRITICAL:** If `model_edit` returns `status: partial`, run `model_read` immediately to determine if corrective action is needed.
+**If `model_edit` returns `status: partial`:** Run both `model_read` and `model_check` immediately — don't wait until all edits are complete.
 
 ## Operation Chaining with `ref`
 
@@ -83,6 +84,15 @@ Use the block's **display name** in the `type` field. Do not construct or guess 
  {"op": "add_block", "type": "Electrical Reference", "name": "Gnd", "ref": "gnd"},
  {"op": "add_block", "type": "Solver Configuration", "name": "Solver", "ref": "sc"}]
 ```
+
+## Review Gate
+
+After completing all edits for a scope, verify:
+
+- No `error`-severity issues from `model_check` (unconnected ports, dangling lines)
+- All `ref` names resolved to `blk_id` in the `created` map — no dangling `#ref` references in subsequent calls
+- Stateflow charts pass lint (`model_check` with `checks='["stateflow_lint"]'`) before layout is applied
+- If `model_edit` returned `status: partial` at any point, confirm the scope is now structurally complete via `model_read`
 
 ## Domain-Specific Rules
 

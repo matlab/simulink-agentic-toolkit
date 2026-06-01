@@ -400,7 +400,7 @@ Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/i
 | MCP server can't connect to MATLAB | Connector not running or stale connection | Run `satk_initialize` again (it calls `shareMATLABSession` automatically) |
 | macOS blocks the MCP server binary | Gatekeeper quarantine | Right-click → Open, or run: `xattr -d com.apple.quarantine ~/.matlab/agentic-toolkits/bin/matlab-mcp-core-server` |
 | "rmiml.selectionLinkHelper" error | Path corruption from other toolboxes | Run `restoredefaultpath` in MATLAB, then re-run `satk_initialize` |
-| `model_test` fails or is unavailable | Simulink Test not installed | Install Simulink Test, or use the other 6 tools which work without it |
+| `model_test` fails or is unavailable | Simulink Test not installed | Install Simulink Test, or use the other 7 tools which work without it |
 | Codex tool calls time out | Default tool timeout too short for MATLAB | Add `tool_timeout_sec = 600` (or higher) to `[mcp_servers.matlab]` in `~/.codex/config.toml` |
 | Simulink fails in Codex on Windows | Missing `WINDIR` environment variable | Add `env_vars = ['WINDIR']` to `[mcp_servers.matlab]` in `~/.codex/config.toml` |
 

@@ -156,6 +156,40 @@
         "required": ["model", "scope", "operations"]
       }
     },
+    "model_check": {
+      "matlab_release": ">=R2023a",
+      "matlab_function": "model_check",
+      "title": "Model Check",
+      "description": "Validate a Simulink model for structural issues. Detects unconnected ports, dangling signal lines, and Stateflow edit-time lint errors. Use after model_edit to catch connectivity problems, or to audit an existing model's structural health.\n\nChecks available:\n- unconnected_ports: blocks with inputs/outputs that have no signal connected\n- unconnected_lines: signal lines missing a source or destination\n- stateflow_lint: edit-time lint diagnostics on Chart and StateTransitionTable blocks\n\nReturns issue list with severity (error/warning), block IDs, and actionable messages. Use scope to focus on a specific subsystem for faster, targeted validation.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Validation scope: 'root' for entire model or a block ID like 'blk_10' for a specific subsystem"
+          },
+          "checks": {
+            "type": "string",
+            "description": "JSON array of check names to run: '[\"all\"]' (default), or selective like '[\"unconnected_ports\", \"unconnected_lines\"]'. Available: unconnected_ports, unconnected_lines, stateflow_lint"
+          },
+          "tokenBudget": {
+            "type": "string",
+            "description": "Maximum output size in characters (default '10000'). Reduce for large models to stay within context limits"
+          }
+        },
+        "required": ["model", "scope", "checks"]
+      }
+    },
     "model_test": {
       "matlab_release": ">=R2023a",
       "matlab_function": "model_test",

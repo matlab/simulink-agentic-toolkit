@@ -8,7 +8,7 @@ Give your AI coding agent the ability to read, build, edit, and test Simulink® 
 
 The Simulink Agentic Toolkit packages MathWorks® Model-Based Design expertise for AI coding agents. It connects agents to Simulink through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), giving them both the **ability** (tools) and the **knowledge** (skills) to work with Simulink models effectively.
 
-- **6 MCP tools** for reading, editing, querying, testing, and checking Simulink models
+- **7 MCP tools** for reading, editing, querying, testing, and checking Simulink models
 - **7 agent skills** encoding MBD best practices for model building, simulation, plant specification, testing, requirements, and more
 - **Automated setup** via a MATLAB&reg; function that installs the MCP server, configures your agent, and registers skills
 - Supports **Claude Code, Copilot, Codex, Amp, and Gemini CLI**
@@ -106,6 +106,7 @@ Describe the structure of the currently open model.
 | `model_overview` | Explore model architecture — see subsystem hierarchy, interfaces, and how major components connect |
 | `model_read` | Understand model behavior — inspect blocks, algorithmic expressions, signal flow, and parameter values |
 | `model_edit` | Build and modify models — add blocks, wire signals, create subsystems, and configure parameters |
+| `model_check` | Validate model structure — detect unconnected ports, dangling lines, and Edit-Time Checks on States and Subcharts |
 | `model_test` | Verify requirements — run human-readable Gherkin tests with automatic harness generation *(requires Simulink Test)* |
 | `model_query_params` | Inspect any parameter — query block settings, signal properties, solver config, and logging flags |
 | `model_resolve_params` | Get actual values — resolve workspace variables like `Kp` to their numeric values across all scopes |

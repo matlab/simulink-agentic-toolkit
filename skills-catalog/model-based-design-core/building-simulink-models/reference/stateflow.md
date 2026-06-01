@@ -62,8 +62,9 @@ sChild = Stateflow.State(s);  % children created inside the subchart
 
 **Always run lint then autolayout after every Stateflow edit.** Unlike `model_edit`, Stateflow API edits do not trigger autolayout automatically.
 
-1. **Lint:** `utils.sfCheckChart(ch)` (or scoped: `utils.sfCheckChart(ch, subchartState)`)
-   - Returns struct array with `handle`, `name`, `details`. Empty when clean.
+1. **Lint:** Run `model_check` with `checks='["stateflow_lint"]'` and `scope` set to the chart's block ID.
+   - Returns issues with severity, block ID, and details. Empty `issues` list when clean.
+   - If an issue requires domain decisions (ambiguous guard conditions, missing data definitions), present it to the user rather than guessing.
    - Fix innermost first; re-run after each fix to clear hierarchical false positives.
 2. **Layout:** Call `applySFAutolayout` (requires R2023b+). `viewerSID` = SID of chart or subchart.
 
