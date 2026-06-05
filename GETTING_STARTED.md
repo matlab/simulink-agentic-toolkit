@@ -162,7 +162,7 @@ Setup writes two things: an MCP server configuration (so your agent can talk to 
 
 ### Platform-Specific Notes
 
-**Claude Code** — Setup writes MCP configuration to `~/.claude.json` and registers skills via the `claude plugin` system (marketplace + plugin install). If the `claude` CLI is not on PATH, setup falls back to skill symlinks in `~/.claude/skills/`.
+**Claude Code** — Setup writes MCP configuration to `~/.claude.json` and registers skills via the `claude plugin` system (marketplace + plugin install). If the `claude` CLI is not on PATH, setup falls back to skill symlinks in `~/.claude/skills/`. The MCP server entry includes `alwaysLoad: true` to ensure tool schemas are loaded at session start (required since Claude Code v2.1.119+ defers schema loading by default). If you configured before this fix, re-run `setupAgenticToolkit("configure", Agents="claude-code")` to update your config.
 
 **GitHub Copilot** — Setup writes global MCP config to the VS Code user-profile `mcp.json` (`~/Library/Application Support/Code/User/mcp.json` on macOS, `~/.config/Code/User/mcp.json` on Linux, `%APPDATA%\Code\User\mcp.json` on Windows) and creates skill symlinks in `~/.agents/skills/`. Reload VS Code after setup completes (Cmd/Ctrl + Shift + P, then "Developer: Reload Window").
 
@@ -216,13 +216,16 @@ The exact location where you add these flags depends on your agent platform — 
 
 ### Step 3: Register Skills
 
-Skills teach your agent MBD best practices. Point your agent's skill or prompt directory at `skills-catalog/model-based-design-core/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+Skills teach your agent MBD best practices. Point your agent's skill or prompt directory at the skill groups in `skills-catalog/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
 For platforms that discover skills from `~/.agents/skills/`, create symlinks:
 
 ```bash
 mkdir -p ~/.agents/skills
 for skill in /path/to/simulink-agentic-toolkit/skills-catalog/model-based-design-core/*/; do
+  ln -s "$skill" ~/.agents/skills/$(basename "$skill")
+done
+for skill in /path/to/simulink-agentic-toolkit/skills-catalog/model-based-system-engineering/*/; do
   ln -s "$skill" ~/.agents/skills/$(basename "$skill")
 done
 ```
@@ -285,11 +288,13 @@ If your agent shows loaded skills or plugins in its UI (e.g., Claude Code's `/sk
 |-------|-------------|
 | **building-simulink-models** | Best practices for structural model changes |
 | **filing-bug-reports** | Generate standalone bug reports for reproducing and fixing issues |
+| **managing-simulink-projects** | MATLAB project management — path setup, file registration, labels, source control |
 | **simulating-simulink-models** | Run simulations for data exploration, parameter sweeps, and custom analysis |
 | **specifying-mbd-algorithms** | Specify algorithms for MBD — system specs, architecture specs, implementation and test plans |
 | **specifying-plant-models** | Specify plant models for closed-loop simulation |
 | **testing-simulink-models** | Test Simulink model behavior |
 | **generate-requirement-drafts** | Requirements generation (Requirements Toolbox or structured YAML) |
+| **building-architecture-models** | Build multi-layer architecture models with System Composer *(requires System Composer)* |
 
 ### Try it out
 
@@ -395,6 +400,7 @@ Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/i
 | Problem | Likely Cause | Fix |
 |---------|-------------|-----|
 | Add-On Manager fails when opening mltbx (`ERR_CERT_AUTHORITY_INVALID` or "Unable to open the requested feature") | CEF/display issue — often caused by corporate proxies, antivirus software, or headless environments | Install programmatically instead: `matlab.addons.toolbox.installToolbox("agenticToolkitInstaller.mltbx")` |
+| Claude Code tools fail with `InputValidationError` or agent calls `ToolSearch` before every tool use | Claude Code v2.1.119+ defers MCP tool schema loading by default | Re-run `setupAgenticToolkit("configure", Agents="claude-code")` to update your config with `alwaysLoad: true`, which restores upfront schema loading |
 | Agent doesn't list Simulink skills | Skills not registered | Re-run `setupAgenticToolkit("configure")` |
 | MCP tools fail with "Undefined function" | `satk_initialize` not run in current MATLAB session | Run `satk_initialize` in MATLAB |
 | MCP server can't connect to MATLAB | Connector not running or stale connection | Run `satk_initialize` again (it calls `shareMATLABSession` automatically) |

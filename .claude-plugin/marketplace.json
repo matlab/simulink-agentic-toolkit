@@ -17,6 +17,19 @@
       "category": "development",
       "strict": false,
       "skills": "./skills-catalog/model-based-design-core/"
+    },
+    {
+      "name": "model-based-system-engineering",
+      "version": "0.1.0",
+      "description": "Model-Based Systems Engineering capabilities for System Composer architecture models",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["system-composer", "mbse", "systems-engineering", "architecture", "simulink"],
+      "source": "./",
+      "category": "development",
+      "strict": false,
+      "skills": "./skills-catalog/model-based-system-engineering/"
     }
   ]
 }

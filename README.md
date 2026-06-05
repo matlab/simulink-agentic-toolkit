@@ -9,7 +9,7 @@ Give your AI coding agent the ability to read, build, edit, and test Simulink® 
 The Simulink Agentic Toolkit packages MathWorks® Model-Based Design expertise for AI coding agents. It connects agents to Simulink through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), giving them both the **ability** (tools) and the **knowledge** (skills) to work with Simulink models effectively.
 
 - **7 MCP tools** for reading, editing, querying, testing, and checking Simulink models
-- **7 agent skills** encoding MBD best practices for model building, simulation, plant specification, testing, requirements, and more
+- **9 agent skills** encoding MBD best practices for model building, simulation, plant specification, testing, requirements, project management, and architecture modeling
 - **Automated setup** via a MATLAB&reg; function that installs the MCP server, configures your agent, and registers skills
 - Supports **Claude Code, Copilot, Codex, Amp, and Gemini CLI**
 
@@ -115,17 +115,26 @@ Describe the structure of the currently open model.
 
 ## Agent Skills
 
-Skills are organized in the [skills catalog](skills-catalog/). The core skill group includes:
+Skills are organized in the [skills catalog](skills-catalog/) by product area.
+
+**Model-Based Design Core** — core MBD skills for building, testing, and specifying Simulink models:
 
 | Skill | What it teaches your agent |
 |-------|---------------------------|
 | `building-simulink-models` | Best practices for structural model changes — adding blocks, wiring, layout |
 | `filing-bug-reports` | Generate standalone bug reports for reproducing, investigating, and fixing issues |
+| `managing-simulink-projects` | MATLAB project management — path setup, file registration, labels, model references, source control |
 | `simulating-simulink-models` | Run simulations for data exploration, parameter sweeps, and custom analysis |
 | `specifying-mbd-algorithms` | Specify algorithms for MBD — system specs, architecture specs, implementation and test plans |
 | `specifying-plant-models` | How to specify plant models for closed-loop simulation |
 | `testing-simulink-models` | How to test model behavior — reproduce issues, verify changes, regression tests |
 | `generate-requirement-drafts` | Requirements generation — prefers Requirements Toolbox (.slreqx) with traceability links when available, falls back to structured YAML |
+
+**Model-Based System Engineering** — MBSE skills for System Composer architecture models:
+
+| Skill | What it teaches your agent |
+|-------|---------------------------|
+| `building-architecture-models` | Build multi-layer system architecture models — components, interfaces, allocations, stereotypes, and requirements traceability *(requires System Composer)* |
 
 ---
 
@@ -134,7 +143,8 @@ Skills are organized in the [skills catalog](skills-catalog/). The core skill gr
 ```
 simulink-agentic-toolkit/
 ├── skills-catalog/           # Agent skills (not auto-discovered)
-│   └── model-based-design-core/  # Core MBD skills (7 skills)
+│   ├── model-based-design-core/          # Core MBD skills (8 skills)
+│   └── model-based-system-engineering/   # MBSE skills (1 skill)
 ├── tools/                    # MCP tool implementations
 ├── satk_initialize.m         # MATLAB session setup entry point
 └── research-previews/        # Curated example tasks
@@ -160,7 +170,8 @@ Select a task from the interactive UI. The explorer stages it into an isolated w
 
 - **MATLAB R2023a or later** with **Simulink**
 - **Simulink Test** *(optional)* — required only for `model_test`
-- **System Composer** *(optional)* — enables architecture modeling and component analysis
+- **System Composer** *(optional)* — enables architecture modeling and component analysis; required for `building-architecture-models` skill
+- **Requirements Toolbox** *(optional)* — enables requirements traceability; used in `building-architecture-models` skill
 - **Simscape** *(optional)* — enables physical modeling domain support
 - **Stateflow** *(optional)* — enables state machine and chart analysis
 - A supported **AI coding agent** (see [Supported Platforms](#supported-platforms))

@@ -9,13 +9,13 @@ metadata:
 
 # Building Models
 
-Use `model_edit` for Simulink, System Composer, and Simscape models (structural changes and parameter configuration). For Stateflow chart internals, use `evaluate_matlab_code` with the Stateflow API (see below).
+Use `model_edit` for all structural changes — Simulink, System Composer, Simscape, and Stateflow chart internals
 
 ## When to Use
 
 - Adding, connecting, deleting, or replacing blocks in a model
 - Configuring block parameters, signal properties, or model settings
-- Creating or editing Stateflow chart internals (states, transitions, junctions)
+- Creating or editing Stateflow chart internals (states, transitions, junctions, data, events, messages, functions)
 - Building System Composer architecture models
 - Wiring Simscape physical connections
 
@@ -43,7 +43,9 @@ Use `ref` to name a block and `#ref` to reference it in later operations within 
  {"op": "connect", "target": "blk_5.y1 -> #g1.u1"}]
 ```
 
-The response `created` map shows `ref → blk_id`. In subsequent calls, use the `blk_id` (e.g., `blk_42`) — `#ref` only works within a single call.
+In SF scope, `#ref` references are portless — no `.y1`/`.u1` suffixes (see `reference/stateflow.md`).
+
+The response `created` map shows `ref → blk_id` (or `ref → sf_X` in SF scope). In subsequent calls, use the returned ID — `#ref` only works within a single call.
 
 ## Guardrails
 
@@ -57,6 +59,7 @@ The response `created` map shows `ref → blk_id`. In subsequent calls, use the 
   ```
 - Do not call `Simulink.BlockDiagram.arrangeSystem` or use `set_param` for block positioning unless the user explicitly requests it. `model_edit` has a built-in autolayout engine that runs automatically after each call.
 - Always pass `layout_mode` to `model_edit`. Use `"full"` when populating an empty scope (new model root, or a newly-created subsystem) for optimal block arrangement. Use `"incremental"` when adding blocks to a scope that already has existing blocks (preserves existing positions).
+- Each `model_edit` call operates in exactly one domain (Simulink, System Composer, or Stateflow) determined by the scope. To add a Chart block and then populate it, use two calls: SL scope for the Chart block, then SF scope for internals. Use `model_read` between calls to discover the chart's `sf_X` scope ID.
 - Use meaningfully named variables (e.g., `Kp_SpeedController`) instead of hardcoded numeric values. Define variables in model workspace or a `.m` init script.
 - Don't use `evaluate_matlab_code` with `set_param`/`add_block` to bypass `model_edit` — it skips autolayout, undo tracking, and error recovery
 - Use `open_system` rather than `load_system` to open models that are not already open, or when creating new models, unless the user explicitly asks otherwise or the model is a library. This ensures the user can see live edits as they happen.
@@ -98,7 +101,7 @@ After completing all edits for a scope, verify:
 
 When working with these domains, read the corresponding reference file before editing:
 
-- **Stateflow charts** -> `reference/stateflow.md` — `model_edit` can add Chart blocks but cannot edit chart internals. Use `evaluate_matlab_code` with the Stateflow API for states, transitions, junctions, and data. The reference covers API gotchas, subcharts, lint checks, and layout.
+- **Stateflow charts** -> `reference/stateflow.md` — `model_edit` edits chart internals natively. Scope to a chart (`sf_X` or chart `blk_X`) and use the same operations: `add_block` for SF elements, portless `connect` for transitions, `configure` for properties. The reference covers SF-specific syntax, scoping, LabelString patterns, and the two-call SL+SF workflow.
 - **System Composer architecture models** -> `reference/system-composer.md` — Create models with `systemcomposer.createModel`, then use `model_edit`. Components use `type: "SubSystem"`, ports use Bus Element blocks. The reference covers component creation, port wiring, and behavior model generation.
 - **Simscape physical models** -> `reference/simscape.md` — Physical connections use bidirectional `<->` syntax. The reference covers connection semantics, port patterns, and initial target variables.
 

@@ -8,6 +8,7 @@ The skills catalog organizes agent skills into groups. Each group is a directory
 | Group | Description | Status |
 |-------|-------------|--------|
 | [model-based-design-core](model-based-design-core/) | Core MBD skills for building, testing, and specifying Simulink models | Available |
+| [model-based-system-engineering](model-based-system-engineering/) | MBSE skills for System Composer architecture models | Available |
 
 ## How Skills Are Installed
 

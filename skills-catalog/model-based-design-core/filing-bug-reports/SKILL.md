@@ -37,8 +37,19 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
 
 2. **Gather environment details programmatically.** Don't ask the user for things you can look up:
    - Agent workspace root, OS, architecture: from your system context
-   - Available skills: list all skills visible to you (from your startup context)
-   - Loaded skills: list which skills you actually invoked during this session
+
+   **Skill state vocabulary.** The skill spec uses progressive disclosure: metadata (name + description) is always in context; the body loads only when triggered. These terms describe the observable states and are agent-agnostic — they hold for any host that implements the Agent Skills standard, not just Claude Code:
+   - *Registered* — the skill appears in the host agent's available-skills list this session.
+   - *Described* — registered AND has a non-empty `description` in metadata. (Default state, no glyph.)
+   - *Name-only* (⊘) — registered with only a name; the `description` field is absent from the agent's registration entry. Record which skills are name-only and stop there. **Do not read SKILL.md files on disk to verify whether descriptions exist** — the available-skills listing is the only state the bug report records. Reading the source frontmatter is cause-investigation, which is out of scope.
+
+     Note: some host agents drop descriptions from the listing automatically when total skill text exceeds an internal budget — for example, Claude Code allocates a character budget that scales with context window size and strips descriptions from least-recently-invoked skills first when the budget is exceeded. Name-only is therefore often expected host behavior in a session with many skills loaded, not a SATK defect. Record the state, but don't frame the bug report as "SATK skill registration is broken" unless the same skill is name-only in a session where the budget clearly isn't exhausted (few skills present, or the host reports no truncation).
+   - *Invoked* (▶) — the skill's body was read into the agent's context this session.
+   - *Unregistered SATK skill* (✗) — a `SKILL.md` exists on disk under the toolkit's `skills-catalog/` but is absent from the available-skills list. ✗ is scoped to SATK only — we don't track unregistered skills from other sources.
+
+   With those definitions:
+   - Skills (stack view): read the available-skills list directly (not prior bug reports or docs) and mark each registered skill per the glossary. For ✗, also consult the SATK skill manifest at the toolkit root and list any SATK skills declared there that aren't in the registered set. Render per the Skills subsection of `reference/bug-report-template.md`.
+   - Skill conflict analysis: only consider SATK `model-based-design-core` skills whose bodies are already in your context, and only if you noticed a conflict between them while doing the work that's plausibly related to this bug. Don't re-read skill bodies to hunt for conflicts; if nothing surfaced naturally, write `N/A — <reason>`.
    - Available MCP tools: list the MCP tools you have access to
    - Relevant source files: read the files involved in the failure
 

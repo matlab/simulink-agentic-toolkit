@@ -1,22 +1,20 @@
 # Copyright 2026 The MathWorks, Inc.
-# manifest.yaml — Tooling metadata for building-simulink-models
+# manifest.yaml — Tooling metadata for building-architecture-models
 schema_version: 1
+author: MathWorks
 license: MathWorks BSD-3-Clause
 scope: cross-product
-version: "1.3"
+version: "0.1.0"
 matlab-release: ">=R2023a"
 requires-tools:
-  - model_edit
   - model_overview
   - model_read
-  - model_check
-  - model_query_params
-  - model_resolve_params
+  - model_edit
+  - evaluate_matlab_code
+  - check_matlab_code
 requires-skills: []
-reference-files:
-  - reference/stateflow.md
-  - reference/system-composer.md
-  - reference/simscape.md
 requires-products:
   - Simulink
+  - System Composer
+  - Requirements Toolbox
 toolkit: simulink-agentic-toolkit

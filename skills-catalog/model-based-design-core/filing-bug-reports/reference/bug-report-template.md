@@ -50,9 +50,42 @@
 | **Agent / Client** | *e.g., Amp (VS Code), Claude Code CLI* |
 | **Agent Workspace Root** | *The directory the agent considers its workspace — where it looks for `.agents/skills/`, `.vscode/mcp.json`, etc.* |
 | **MCP Server Mode** | *e.g., attach-to-existing, launch* |
-| **Available Skills** | *List all skills the agent can see at the time of the bug (from its startup context)* |
-| **Loaded Skills** | *List any skills that were actually loaded/invoked during this session* |
 | **Available MCP Tools** | *List the MCP tools the agent has access to (e.g., model_read, model_edit, etc.)* |
+
+### Skills
+
+*Always render this section. The reporter often can't tell up-front whether skill loading is implicated — the symptom may look like a tool failure or a wrong answer. Capture the state every time and let the investigator rule it in or out. Term definitions (registered, described, name-only, invoked, unregistered SATK skill) are in the **Skill state vocabulary** block of the filing-bug-reports `SKILL.md`.*
+
+*Stack view of registered skills, grouped by namespace. Within each namespace, list described skills (no glyph or ▶) first, then ⊘, then ✗. Namespace order: SATK namespaces first, then other namespaces alphabetically, then any unprefixed group last (label it with whatever the host agent calls these — e.g., its built-in skills). Drop any group that would be empty.*
+
+Skills · *N* &nbsp; ⊘ *N* &nbsp; ▶ *N* &nbsp; ✗ *N*
+
+**\<satk-namespace-1\>** · *N*
+- *described-skill-a, described-skill-b*
+- ⊘ *name-only-skill-a, name-only-skill-b*
+- ✗ *unregistered-satk-skill*
+
+**\<satk-namespace-2\>** · *N*
+- …
+
+**\<other-namespace\>** · *N*
+- …
+
+**\<unprefixed group label\>** · *N*
+- *described-skill-a, described-skill-b, …*
+- ⊘ *name-only-skill*
+
+*⊘ name-only · ▶ invoked · ✗ unregistered SATK*
+
+### Skill Conflict Analysis
+
+*Render only when **all three** are true — (1) you invoked ≥2 skills this task, (2) both bodies were loaded into your context, (3) their instructions actually conflict in a way relevant to this bug. Topical adjacency, domain overlap, and "could trigger on similar phrasing" do NOT qualify — the test is whether the skill bodies conflict. When the gate is not met, write a single line: `N/A — <reason>` (e.g. "fewer than 2 skills invoked", "no instruction conflict among invoked skills"). Do not list candidate skills or speculate.*
+
+*When rendered, use this table — one row per conflict, with verbatim quotes from each skill body:*
+
+| Skill A | Skill B | Conflicting passages |
+|---------|---------|----------------------|
+| *`<namespace>:<name>`* | *`<namespace>:<name>`* | *Skill A says: "<verbatim quote>"<br>Skill B says: "<verbatim quote>"<br>Why this conflict matters to the bug: <one sentence>* |
 
 ### MATLAB (include when Simulink MCP tools are involved)
 

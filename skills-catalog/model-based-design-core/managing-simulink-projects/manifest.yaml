@@ -1,0 +1,20 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for managing-simulink-projects
+schema_version: 1
+author: MathWorks
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "1.0"
+matlab-release: ">=R2023a"
+requires-tools:
+  - evaluate_matlab_code
+requires-skills: []
+reference-files:
+  - reference/path-and-file-management.md
+  - reference/labels-and-automation.md
+  - reference/data-dictionaries.md
+  - reference/model-references.md
+  - reference/source-control-and-caching.md
+requires-products:
+  - Simulink
+toolkit: simulink-agentic-toolkit
