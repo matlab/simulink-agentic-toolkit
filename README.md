@@ -33,7 +33,7 @@ The Simulink Agentic Toolkit packages MathWorks® Model-Based Design expertise f
 └───────────┘
 ```
 
-Your agent reads **skills** for domain knowledge, then calls **MCP tools** to interact with MATLAB and Simulink. The [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) bridges the connection (downloaded during setup).
+Your agent reads **skills** for domain knowledge, then calls **MCP tools** to interact with MATLAB and Simulink. The [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) bridges the connection (downloaded during setup).
 
 ---
 
@@ -71,7 +71,7 @@ This downloads the MCP server binary and toolkit files to `~/.matlab/agentic-too
 
 ### Manual Setup
 
-If you already have the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) installed or prefer full control, you can configure the toolkit manually. See [Manual Setup](GETTING_STARTED.md#manual-setup) in the Getting Started guide.
+If you already have the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) installed or prefer full control, you can configure the toolkit manually. See [Manual Setup](GETTING_STARTED.md#manual-setup) in the Getting Started guide.
 
 ### MATLAB Setup (all platforms)
 
@@ -211,7 +211,7 @@ We welcome feedback through [GitHub Issues](https://github.com/matlab/simulink-a
 
 ## Security Considerations
 
-When using the Simulink Agentic Toolkit and MATLAB MCP Core Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).
+When using the Simulink Agentic Toolkit and MATLAB MCP Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).
 
 ## Licensing and Usage
 
@@ -221,7 +221,7 @@ MCP servers are only permitted to be used with MATLAB and Simulink in accordance
 
 ## Contact Support
 
-MathWorks encourages you to use this repository and provide feedback. To request technical support or submit an enhancement request, [create a GitHub issue](https://github.com/matlab/simulink-agentic-toolkit/issues) or [contact technical support](https://www.mathworks.com/support/contact_us.html). For MATLAB MCP Core Server issues and support, see the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) repository.
+MathWorks encourages you to use this repository and provide feedback. To request technical support or submit an enhancement request, [create a GitHub issue](https://github.com/matlab/simulink-agentic-toolkit/issues) or [contact technical support](https://www.mathworks.com/support/contact_us.html). For MATLAB MCP Server issues and support, see the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) repository.
 
 ---
 

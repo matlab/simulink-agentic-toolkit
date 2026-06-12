@@ -59,7 +59,7 @@ The `setupAgenticToolkit` function handles everything: downloading the MCP serve
 
 ### What Setup Does
 
-1. **Installs the MCP server** — downloads the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) binary and toolkit files to `~/.matlab/agentic-toolkits/` (`%USERPROFILE%\.matlab\agentic-toolkits\` on Windows), then runs `--setup-matlab` to install the MATLAB MCP Core Server Toolbox (one-time per MATLAB version)
+1. **Installs the MCP server** — downloads the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) binary and toolkit files to `~/.matlab/agentic-toolkits/` (`%USERPROFILE%\.matlab\agentic-toolkits\` on Windows), and installs the MATLAB MCP Server Toolbox by downloading the `.mltbx` from the same release and calling `matlab.addons.toolbox.installToolbox`
 2. **Configures your agent** — writes an MCP server entry to your agent's local configuration file (e.g., `~/.claude.json` for Claude Code, `~/.codex/config.toml` for Codex — see [per-platform details](#how-configuration-works-per-platform) for the full list)
 3. **Registers skills** — creates skill symlinks or configures skill paths for your agent platform
 
@@ -107,13 +107,11 @@ This does three things:
 2. Calls `shareMATLABSession` (so the MCP server can connect to this MATLAB session)
 3. Runs `validate_installation` to check that everything is configured correctly
 
-The MATLAB-side MCP components are installed automatically during `setupAgenticToolkit("install")` by running the MCP server binary with `--setup-matlab`. **Restart MATLAB after the first install** (or after upgrading MATLAB) so the new components are on the path. If you need to run this manually, use:
+The MATLAB-side MCP components are installed automatically during `setupAgenticToolkit("install")` by downloading the `MATLABMCPCoreServerToolbox.mltbx` from the [MCP server release](https://github.com/matlab/matlab-mcp-core-server/releases) and installing it via `matlab.addons.toolbox.installToolbox`. **Restart MATLAB after the first install** (or after upgrading MATLAB) so the new components are on the path. If you need to install manually, download the `.mltbx` from the release and run:
 
-```bash
-~/.matlab/agentic-toolkits/bin/matlab-mcp-core-server --setup-matlab --matlab-root=/path/to/MATLAB/R20XXx
+```matlab
+matlab.addons.toolbox.installToolbox("/path/to/MATLABMCPCoreServerToolbox.mltbx")
 ```
-
-Replace `/path/to/MATLAB/R20XXx` with your MATLAB installation path (e.g., `/usr/local/MATLAB/R2025a`). On Windows, use `%USERPROFILE%\.matlab\agentic-toolkits\bin\matlab-mcp-core-server.exe`.
 
 > **Note:** `satk_initialize` must run once per MATLAB session. To automate this, add the following to your [`startup.m`](https://www.mathworks.com/help/matlab/ref/startup.html):
 >
@@ -180,19 +178,28 @@ Setup writes two things: an MCP server configuration (so your agent can talk to 
 
 If you prefer to manage your own MCP server installation and agent configuration, you can set up the toolkit manually. You are responsible for ensuring all components are configured correctly.
 
-### Step 1: Install and Configure the MATLAB MCP Core Server
+### Step 1: Install and Configure the MATLAB MCP Server
 
-Follow the instructions in the [MATLAB MCP Core Server](https://github.com/matlab/matlab-mcp-core-server) repository to install the MCP server binary and configure it with your coding agent.
+Follow the instructions in the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) repository to install the MCP server binary and configure it with your coding agent.
 
 ### Step 2: Install MATLAB-Side Components
 
-Run the MCP server binary with the `--setup-matlab` command to install the MATLAB-side toolbox:
+Download `MATLABMCPCoreServerToolbox.mltbx` from the [MCP server release](https://github.com/matlab/matlab-mcp-core-server/releases) and install it in MATLAB:
 
-```bash
-matlab-mcp-core-server-glnxa64 --setup-matlab --matlab-root=/path/to/MATLAB/R20XXx
+```matlab
+matlab.addons.toolbox.installToolbox("/path/to/MATLABMCPCoreServerToolbox.mltbx")
 ```
 
-> **Note:** The binary name includes a platform suffix matching your system architecture: `matlab-mcp-core-server-glnxa64` (Linux), `matlab-mcp-core-server-maca64` (macOS Apple Silicon), `matlab-mcp-core-server-maci64` (macOS Intel), or `matlab-mcp-core-server-win64.exe` (Windows). The automated setup renames this to `matlab-mcp-core-server` when it downloads — if you downloaded manually from GitHub releases, use the full platform-specific name.
+> **Note:** If you downloaded the binary manually from GitHub releases, the asset name includes a platform suffix that depends on the release version:
+>
+> | Platform | New asset name | Legacy asset name (pre-6/18) |
+> |----------|---------------|------------------------------|
+> | Linux x86_64 | `matlab-mcp-server-linux-x64` | `matlab-mcp-core-server-glnxa64` |
+> | macOS arm64 | `matlab-mcp-server-macos-arm64` | `matlab-mcp-core-server-maca64` |
+> | macOS x86_64 | `matlab-mcp-server-macos-x64` | `matlab-mcp-core-server-maci64` |
+> | Windows x86_64 | `matlab-mcp-server-windows-x64.exe` | `matlab-mcp-core-server-win64.exe` |
+>
+> Rename the downloaded file to `matlab-mcp-server` (or `matlab-mcp-server.exe` on Windows) and place it in `~/.matlab/agentic-toolkits/bin/`. The automated setup handles this automatically.
 
 This is a one-time step per MATLAB version.
 
@@ -242,7 +249,7 @@ satk_initialize
 If you installed the MCP server binary to a non-default location (e.g., a network share), pass its path explicitly:
 
 ```matlab
-satk_initialize(MCPServerPath="//server/share/bin/matlab-mcp-core-server")
+satk_initialize(MCPServerPath="//server/share/bin/matlab-mcp-server")
 ```
 
 Then restart your coding agent session so the MCP server picks up the MATLAB connection.
@@ -257,9 +264,9 @@ If you set up the toolkit using an earlier version (the agent-driven "Set up the
 
 1. **Old toolkit data folder** — delete `~/.simulink-agentic-toolkit/` (macOS/Linux) or `%USERPROFILE%\.simulink-agentic-toolkit\` (Windows). This was the data directory used by the old agent-driven setup.
 
-2. **MCP server binary** — delete `~/.matlab/agentic-toolkits/bin/matlab-mcp-core-server` (macOS/Linux) or `%USERPROFILE%\.matlab\agentic-toolkits\bin\matlab-mcp-core-server.exe` (Windows). Some earlier versions installed the binary to `~/.local/bin/` or `%USERPROFILE%\.local\bin\` instead — check both locations.
+2. **MCP server binary** — delete `~/.matlab/agentic-toolkits/bin/matlab-mcp-server` (macOS/Linux) or `%USERPROFILE%\.matlab\agentic-toolkits\bin\matlab-mcp-server.exe` (Windows). Some earlier versions installed the binary as `matlab-mcp-core-server` or to `~/.local/bin/` or `%USERPROFILE%\.local\bin\` — check both locations and names.
 
-3. **MCP Add-On** — delete `~/.local/share/MATLABMCPCoreServerToolbox.mltbx` (macOS/Linux) or `%USERPROFILE%\.local\share\MATLABMCPCoreServerToolbox.mltbx` (Windows). If you already installed the toolbox in MATLAB, you can uninstall it via `matlab.addons.uninstall` or manually through the Add-On Manager — the new setup uses `--setup-matlab` to handle this automatically.
+3. **MCP Add-On** — delete `~/.local/share/MATLABMCPCoreServerToolbox.mltbx` (macOS/Linux) or `%USERPROFILE%\.local\share\MATLABMCPCoreServerToolbox.mltbx` (Windows). If you already installed the toolbox in MATLAB, you can uninstall it via `matlab.addons.uninstall` or manually through the Add-On Manager — the new setup uninstalls any previous copy automatically before installing the latest `.mltbx`. (The toolbox was previously named "MATLAB MCP Core Server Toolbox" and is now "MATLAB MCP Server Toolbox".)
 
 4. **Agent MCP configuration** — remove the old `matlab` or `simulink` MCP server entry from your agent's config file. Your config should **not** reference any of the paths above. The location depends on your platform:
    - Claude Code: `~/.claude.json` (`%USERPROFILE%\.claude.json` on Windows) — remove the entry from `mcpServers`
@@ -404,7 +411,7 @@ Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/i
 | Agent doesn't list Simulink skills | Skills not registered | Re-run `setupAgenticToolkit("configure")` |
 | MCP tools fail with "Undefined function" | `satk_initialize` not run in current MATLAB session | Run `satk_initialize` in MATLAB |
 | MCP server can't connect to MATLAB | Connector not running or stale connection | Run `satk_initialize` again (it calls `shareMATLABSession` automatically) |
-| macOS blocks the MCP server binary | Gatekeeper quarantine | Right-click → Open, or run: `xattr -d com.apple.quarantine ~/.matlab/agentic-toolkits/bin/matlab-mcp-core-server` |
+| macOS blocks the MCP server binary | Gatekeeper quarantine | Right-click → Open, or run: `xattr -d com.apple.quarantine ~/.matlab/agentic-toolkits/bin/matlab-mcp-server` (use `matlab-mcp-core-server` if you have the legacy binary name) |
 | "rmiml.selectionLinkHelper" error | Path corruption from other toolboxes | Run `restoredefaultpath` in MATLAB, then re-run `satk_initialize` |
 | `model_test` fails or is unavailable | Simulink Test not installed | Install Simulink Test, or use the other 7 tools which work without it |
 | Codex tool calls time out | Default tool timeout too short for MATLAB | Add `tool_timeout_sec = 600` (or higher) to `[mcp_servers.matlab]` in `~/.codex/config.toml` |
@@ -414,7 +421,7 @@ Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/i
 
 ## Server Modes
 
-The MATLAB MCP Core Server supports two modes:
+The MATLAB MCP Server supports two modes:
 
 ### Attach Mode (Recommended)
 

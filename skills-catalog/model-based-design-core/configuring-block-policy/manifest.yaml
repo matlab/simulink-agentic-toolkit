@@ -1,0 +1,14 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for configuring-block-policy
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "1.0"
+matlab-release: ">=R2023a"
+requires-tools:
+  - model_edit
+requires-skills: []
+reference-files: []
+requires-products:
+  - Simulink
+toolkit: simulink-agentic-toolkit
