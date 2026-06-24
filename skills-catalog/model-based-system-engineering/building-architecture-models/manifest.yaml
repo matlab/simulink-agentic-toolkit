@@ -4,7 +4,7 @@ schema_version: 1
 author: MathWorks
 license: MathWorks BSD-3-Clause
 scope: cross-product
-version: "0.1.0"
+version: "0.2.0"
 matlab-release: ">=R2023a"
 requires-tools:
   - model_overview

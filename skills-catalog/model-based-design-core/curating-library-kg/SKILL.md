@@ -4,7 +4,7 @@ description: Guide users through curating the library knowledge index — review
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Curating the Library Knowledge Index
@@ -82,6 +82,7 @@ library.kg.Populate.run(projectRoot);
 
 ## Guardrails
 
+- **Never call `find_system`, `get_param` on library `.slx` files** to discover blocks. Always use the provided API (`LibraryCatalog.getContextSummary()`, `library.kg.Populate.run()`, `library.kg.Query.search()`). These APIs handle parsing, caching, and staleness automatically. 
 - Never modify `.satk/library-cache/*.json` or `.satk/library-kg/*.md` directly — they are auto-generated
 - Persist curation via `library.LibraryCuration.save()` (writes `.satk/library-curation.json`)
 - Always regenerate KG after saving changes

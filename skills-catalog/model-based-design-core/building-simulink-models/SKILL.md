@@ -4,7 +4,7 @@ description: Builds and edits Simulink, System Composer, Stateflow, and Simscape
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.1"
+  version: "1.3"
 ---
 
 # Building Models
@@ -29,19 +29,17 @@ Use `model_edit` for all structural changes — Simulink, System Composer, Simsc
 **Do this FIRST and ALONE — no other tool calls in the same message.**
 
 Check all three files in a single read: `.satk/reuse-libraries.json`, `.satk/block-policy.json`, `.satk/library-kg/index.md`.
-
-- **All three exist → gates pass.** Read `index.md` for planning context, then proceed directly to the Workflow section.
+- **All three exist  → gates pass.** Proceed to the Workflow section.
 - **`.satk/reuse-libraries.json` exists but with `confirmedNone: true` (no custom libraries) → gates pass.** Skip Gates 2 and 3 entirely — block policy and knowledge index are not needed when there are no custom Libraries.
-- **Any missing → run gates sequentially and wait for user to respond for each gate:**
-**Gate 1 — Library declaration:** If `.satk/reuse-libraries.json` is missing, STOP and ask the user about reusable libraries. Do not read reference files, open models, or plan blocks until they respond.
-**Gate 2 — Block policy:** If `.satk/block-policy.json` is missing, STOP and ask the user about policy setup by following `reference/library-setup.md`. Do not proceed until policy is resolved.
-**Gate 3 — Library knowledge index:** If `.satk/library-kg/index.md` is missing, STOP and ask the user about curating the library knowledge index by following `reference/library-setup.md`. Do not proceed until they respond.
+- **Any missing → load the `setup-custom-libraries` skill.** Do not proceed until it completes.
+
 
 No model reading, planning, or editing begins until all three gates pass.
 
 ## Workflow
 
-0. **Ensure Library & Policy Prerequisites:** Read `.satk/reuse-libraries.json`, `.satk/block-policy.json`, and `.satk/library-kg/index.md`. If all three exist, proceed. If `reuse-libraries.json` has `confirmedNone: true`, skip policy and KG checks. If any are missing, run the gates in the "Library & Policy Prerequisites — BLOCKING GATE" section above sequentially — do not proceed until all gates pass. Follow `reference/library-setup.md` for gate resolution details.
+
+0. **Ensure Library & Policy Prerequisites:** Read `.satk/reuse-libraries.json`, `.satk/block-policy.json`, and `.satk/library-kg/index.md`. If all three exist, proceed. If `reuse-libraries.json` has `confirmedNone: true`, skip policy and KG checks. If any are missing, check the gates in the "Library & Policy Prerequisites — BLOCKING GATE" section above. load `setup-custom-libraries`skill for gate resolution details and do not proceed until it is complete.
 1. **Library block lookup:** If `.satk/reuse-libraries.json` declares one or more libraries, list every block type you plan to use, search `.satk/library-kg/index.md` and the relevant category pages to find each of the library blocks that match.
 2. **Read first:** Use `model_read` on the target scope to get block IDs and understand existing topology.
 3. **Plan the data flow:** For complex edits, sketch inputs → operations → outputs, then map to blocks identified in Step 1 & 2.
@@ -60,7 +58,7 @@ Use `ref` to name a block and `#ref` to reference it in later operations within 
  {"op": "connect", "target": "blk_5.y1 -> #g1.u1"}]
 ```
 
-In SF scope, `#ref` references are portless — no `.y1`/`.u1` suffixes (see `reference/stateflow.md`).
+In SF scope, `#ref` references are portless — no `.y1`/`.u1` suffixes (see `references/stateflow.md`).
 
 The response `created` map shows `ref → blk_id` (or `ref → sf_X` in SF scope). In subsequent calls, use the returned ID — `#ref` only works within a single call.
 
@@ -127,9 +125,9 @@ After completing all edits for a scope, verify:
 
 When working with these domains, read the corresponding reference file before editing:
 
-- **Stateflow charts** -> `reference/stateflow.md` — `model_edit` edits chart internals natively. Scope to a chart (`sf_X` or chart `blk_X`) and use the same operations: `add_block` for SF elements, portless `connect` for transitions, `configure` for properties. The reference covers SF-specific syntax, scoping, LabelString patterns, and the two-call SL+SF workflow.
-- **System Composer architecture models** -> `reference/system-composer.md` — Create models with `systemcomposer.createModel`, then use `model_edit`. Components use `type: "SubSystem"`, ports use Bus Element blocks. The reference covers component creation, port wiring, and behavior model generation.
-- **Simscape physical models** -> `reference/simscape.md` — Physical connections use bidirectional `<->` syntax. The reference covers connection semantics, port patterns, and initial target variables.
+- **Stateflow charts** -> `references/stateflow.md` — `model_edit` edits chart internals natively. Scope to a chart (`sf_X` or chart `blk_X`) and use the same operations: `add_block` for SF elements, portless `connect` for transitions, `configure` for properties. The reference covers SF-specific syntax, scoping, LabelString patterns, and the two-call SL+SF workflow.
+- **System Composer architecture models** -> `references/system-composer.md` — Create models with `systemcomposer.createModel`, then use `model_edit`. Components use `type: "SubSystem"`, ports use Bus Element blocks. The reference covers component creation, port wiring, and behavior model generation.
+- **Simscape physical models** -> `references/simscape.md` — Physical connections use bidirectional `<->` syntax. The reference covers connection semantics, port patterns, and initial target variables.
 
 ----
 

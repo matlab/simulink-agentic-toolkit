@@ -4,7 +4,7 @@ description: "Specify plant models for closed-loop simulation: system specs, arc
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Plant Model Specs
@@ -83,11 +83,11 @@ Fidelity must be justified by available evidence — no point modeling dynamics 
 
 ### Step 3: Research the Physics Domain
 
-Use `web_search` and `read_web_page` for standard modeling approaches, reference parameters, and authoritative sources. Consult `reference/plant-model-guidance.md` for cross-domain patterns if needed.
+Use `web_search` and `read_web_page` for standard modeling approaches, reference parameters, and authoritative sources. Consult `references/plant-model-guidance.md` for cross-domain patterns if needed.
 
 ### Step 4: Write System Spec
 
-Use `reference/system-spec-template.md`. Key plant-model sections: operating scenarios, physical model requirements, controller interface contract (u/w/y/z with sample times, data types, units), initialization & operating points, rate & timing alignment, validation evidence, reference sources.
+Use `references/system-spec-template.md`. Key plant-model sections: operating scenarios, physical model requirements, controller interface contract (u/w/y/z with sample times, data types, units), initialization & operating points, rate & timing alignment, validation evidence, reference sources.
 
 **Review gate** before proceeding — verify:
 - Completeness of interface requirements (u, y signals covered)
@@ -101,7 +101,7 @@ Get user review before proceeding.
 
 ### Step 5: Write Architecture Spec
 
-Use `reference/architecture-spec-template.md`. Key plant-model sections: component catalog with physics domain and port interfaces, equations of motion per subsystem, nonlinearities & constraints, numerical considerations (solver, stiffness, algebraic loops), parameter management, uncertainty hooks.
+Use `references/architecture-spec-template.md`. Key plant-model sections: component catalog with physics domain and port interfaces, equations of motion per subsystem, nonlinearities & constraints, numerical considerations (solver, stiffness, algebraic loops), parameter management, uncertainty hooks.
 
 **Review gate** before finalizing — verify:
 - Correct physics decomposition — subsystem boundaries at natural domain boundaries
@@ -115,7 +115,7 @@ Get user review before proceeding.
 
 ### Step 6: Write Implementation Plan + Test Plan
 
-Use `reference/implementation-plan-template.md` and `reference/test-plan-template.md`.
+Use `references/implementation-plan-template.md` and `references/test-plan-template.md`.
 
 **Implementation plan essentials:**
 - Phase 0 (interface contract & stubs) gates all parallel work — freeze ports/units/sign conventions first
@@ -168,11 +168,11 @@ Get user approval before building begins.
 
 ## References
 
-- `reference/system-spec-template.md` — System spec template (what & why)
-- `reference/architecture-spec-template.md` — Architecture template (subsystem decomposition)
-- `reference/implementation-plan-template.md` — Build sequence template
-- `reference/test-plan-template.md` — Validation plan template
-- `reference/plant-model-guidance.md` — Optional domain reference (decomposition examples, validation maneuvers, solver guide). Human-facing; do not copy verbatim into specs.
+- `references/system-spec-template.md` — System spec template (what & why)
+- `references/architecture-spec-template.md` — Architecture template (subsystem decomposition)
+- `references/implementation-plan-template.md` — Build sequence template
+- `references/test-plan-template.md` — Validation plan template
+- `references/plant-model-guidance.md` — Optional domain reference (decomposition examples, validation maneuvers, solver guide). Human-facing; do not copy verbatim into specs.
 
 ----
 

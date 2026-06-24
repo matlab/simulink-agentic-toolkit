@@ -59,11 +59,11 @@ Create and refine System Composer architecture models — from greenfield F/L/P 
 
 | Intent | Reference |
 |--------|-----------|
-| Build a full system architecture from scratch (greenfield) | `reference/flp-reference-workflow.md` — tailor to user's scope and existing artifacts |
-| Add interface dictionaries, stereotypes, views, or analysis | `reference/system-composer-api.md` |
-| Create allocation sets between layers | `reference/system-composer-api.md` § Allocation Sets |
-| Link requirements to architecture components | `reference/requirements-traceability-api.md` |
-| Set up project for architecture work | `reference/matlab-project.md` + `managing-simulink-projects` |
+| Build a full system architecture from scratch (greenfield) | `references/flp-reference-workflow.md` — tailor to user's scope and existing artifacts |
+| Add interface dictionaries, stereotypes, views, or analysis | `references/system-composer-api.md` |
+| Create allocation sets between layers | `references/system-composer-api.md` § Allocation Sets |
+| Link requirements to architecture components | `references/requirements-traceability-api.md` |
+| Set up project for architecture work | `references/matlab-project.md` + `managing-simulink-projects` |
 
 ## Prerequisites
 

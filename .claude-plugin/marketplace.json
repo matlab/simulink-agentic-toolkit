@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.3.1",
+      "version": "0.4.0",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -20,7 +20,7 @@
     },
     {
       "name": "model-based-system-engineering",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "description": "Model-Based Systems Engineering capabilities for System Composer architecture models",
       "author": {
         "name": "MathWorks"

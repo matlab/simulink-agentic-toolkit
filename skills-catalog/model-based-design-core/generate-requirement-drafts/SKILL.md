@@ -4,7 +4,7 @@ description: "Generates draft requirements from Simulink models. Use when drafti
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "2.1"
+  version: "2.2"
 ---
 
 # Generate Requirement Drafts
@@ -96,7 +96,7 @@ disp(hasSlreq)
 
 ### Path A — Requirements Toolbox (`.slreqx`)
 
-Use when probe succeeds. For full API patterns see `reference/slreq-patterns.md`.
+Use when probe succeeds. For full API patterns see `references/slreq-patterns.md`.
 
 ```matlab
 model = "CruiseControl";
@@ -133,7 +133,7 @@ for i = 1:numel(linkSets), save(linkSets(i)); end
 
 ### Path B — Structured YAML fallback
 
-Use when Requirements Toolbox is unavailable. For schema and field rules see `reference/yaml-requirements.md`.
+Use when Requirements Toolbox is unavailable. For schema and field rules see `references/yaml-requirements.md`.
 
 1. Generate a `<model>_requirements.yaml` file from the capture table
 2. Set `status: Draft` and include `draft` in `keywords` for every requirement
@@ -175,10 +175,10 @@ Before finishing, verify (both backends):
 - [ ] `asil` and `priority` use valid enum values (or `Unset` when unknown)
 
 ## References
-- `reference/slreq-patterns.md` — Requirements Toolbox API cookbook
-- `reference/yaml-requirements.md` — Structured YAML schema and field rules
-- `reference/examples/slreq_from_model.m` — End-to-end slreq example
-- `reference/examples/requirements.yaml` — Structured YAML example
+- `references/slreq-patterns.md` — Requirements Toolbox API cookbook
+- `references/yaml-requirements.md` — Structured YAML schema and field rules
+- `references/examples/slreq_from_model.m` — End-to-end slreq example
+- `references/examples/requirements.yaml` — Structured YAML example
 
 ----
 

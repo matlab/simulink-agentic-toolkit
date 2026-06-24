@@ -14,7 +14,7 @@ This is a reference workflow — a pre-defined methodology template showing one 
 
 ## Step 1: Requirements
 
-> Creating requirement sets: see `generate-requirement-drafts/reference/slreq-patterns.md`
+> Creating requirement sets: see `generate-requirement-drafts/references/slreq-patterns.md`
 > Derive links (SN → SR): see [requirements-traceability-api.md § Derive Links](requirements-traceability-api.md#derive-links-stakeholder-needs--system-requirements)
 
 Get or import the system requirements (SRs) the architecture will satisfy:
@@ -28,7 +28,7 @@ Get user review. Ensure the requirements feel complete for the system being buil
 
 ## Step 2: Core Architecture Design
 
-> Structural modeling: use `model_edit` per `building-simulink-models/reference/system-composer.md`
+> Structural modeling: use `model_edit` per `building-simulink-models/references/system-composer.md`
 > Interface dictionaries: see [system-composer-api.md § Interface Dictionaries](system-composer-api.md#interface-dictionaries)
 
 The default build order is top-down: Functional → Logical → Physical. Each layer is an independent model with its own interface dictionary. Customers may choose a different order or subset of layers depending on their process.

@@ -203,7 +203,7 @@ If you encounter a bug, use the **filing-bug-reports** skill to generate a repor
 File a bug report for this issue
 ```
 
-The skill automatically captures environment details, reproduction steps, and error output — producing a complete report in your workspace. Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/issues/new?template=bug_report.yml) and paste the generated report. **Be sure to run the skill in the same session where the bug occurred**, since it uses conversation context to reconstruct what happened. If the issue did not occur in a chat session, describe the issue as best you can to the agent, then ask it to file a bug report.
+The skill automatically captures environment details, reproduction steps, and error output — producing a complete report in your workspace. Then [open a bug report](https://github.com/matlab/simulink-agentic-toolkit/issues/new?template=bug_report.yml) and paste the generated report. **Be sure to run the skill in the same session where the bug occurred**, since it uses conversation context to reconstruct what happened. If the issue did not occur in a chat session, describe the issue as best you can to the agent, then ask it to file a bug report.
 
 ## Contributing
 

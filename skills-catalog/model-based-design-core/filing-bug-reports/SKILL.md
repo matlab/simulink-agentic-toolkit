@@ -4,7 +4,7 @@ description: "Generate a standalone bug report that another developer can use to
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Filing Bug Reports
@@ -48,7 +48,7 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
    - *Unregistered SATK skill* (✗) — a `SKILL.md` exists on disk under the toolkit's `skills-catalog/` but is absent from the available-skills list. ✗ is scoped to SATK only — we don't track unregistered skills from other sources.
 
    With those definitions:
-   - Skills (stack view): read the available-skills list directly (not prior bug reports or docs) and mark each registered skill per the glossary. For ✗, also consult the SATK skill manifest at the toolkit root and list any SATK skills declared there that aren't in the registered set. Render per the Skills subsection of `reference/bug-report-template.md`.
+   - Skills (stack view): read the available-skills list directly (not prior bug reports or docs) and mark each registered skill per the glossary. For ✗, also consult the SATK skill manifest at the toolkit root and list any SATK skills declared there that aren't in the registered set. Render per the Skills subsection of `references/bug-report-template.md`.
    - Skill conflict analysis: only consider SATK `model-based-design-core` skills whose bodies are already in your context, and only if you noticed a conflict between them while doing the work that's plausibly related to this bug. Don't re-read skill bodies to hunt for conflicts; if nothing surfaced naturally, write `N/A — <reason>`.
    - Available MCP tools: list the MCP tools you have access to
    - Relevant source files: read the files involved in the failure
@@ -69,7 +69,7 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
    - Severity / business impact — only if it's ambiguous (an outright crash is obviously high; a formatting nit is obviously low)
    - Context from outside this session — if the user references something you didn't witness
 
-6. **Write the report** using the template in `reference/bug-report-template.md`. Fill every required section. Mark optional sections N/A if not applicable.
+6. **Write the report** using the template in `references/bug-report-template.md`. Fill every required section. Mark optional sections N/A if not applicable.
 
 7. **Review before saving.** Verify:
    - A developer unfamiliar with the project can follow the steps without asking questions
@@ -88,7 +88,7 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
 
 ## References
 
-- `reference/bug-report-template.md` — The output template (always use this structure)
+- `references/bug-report-template.md` — The output template (always use this structure)
 
 ----
 

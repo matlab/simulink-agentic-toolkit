@@ -3,7 +3,7 @@
 schema_version: 1
 license: MathWorks BSD-3-Clause
 scope: cross-product
-version: "2.1"
+version: "2.2"
 matlab-release: ">=R2023a"
 requires-tools:
   - model_overview

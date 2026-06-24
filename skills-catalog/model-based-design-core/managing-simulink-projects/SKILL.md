@@ -8,7 +8,7 @@ description: >-
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Managing Simulink Projects
@@ -74,11 +74,11 @@ Four principles that prevent the most common failures:
 
 | Intent | Reference |
 |--------|-----------|
-| Add files/folders to project, manage project path | `reference/path-and-file-management.md` |
-| Set up labels for automation pipelines | `reference/labels-and-automation.md` |
-| Link data dictionaries to models | `reference/data-dictionaries.md` |
-| Configure model references across folders | `reference/model-references.md` |
-| Configure source control, cache folders, `.gitignore` | `reference/source-control-and-caching.md` |
+| Add files/folders to project, manage project path | `references/path-and-file-management.md` |
+| Set up labels for automation pipelines | `references/labels-and-automation.md` |
+| Link data dictionaries to models | `references/data-dictionaries.md` |
+| Configure model references across folders | `references/model-references.md` |
+| Configure source control, cache folders, `.gitignore` | `references/source-control-and-caching.md` |
 | Diagnose broken references or health check failures | Start with Verification below, then route to the relevant reference |
 
 ## Verification

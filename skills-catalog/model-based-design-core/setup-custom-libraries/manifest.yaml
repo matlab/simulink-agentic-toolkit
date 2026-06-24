@@ -1,5 +1,5 @@
 # Copyright 2026 The MathWorks, Inc.
-# manifest.yaml — Tooling metadata for curating-library-kg
+# manifest.yaml — Tooling metadata for setup-custom-libraries
 schema_version: 1
 license: MathWorks BSD-3-Clause
 scope: cross-product
@@ -7,8 +7,11 @@ version: "1.1"
 matlab-release: ">=R2023a"
 requires-tools:
   - model_edit
-requires-skills: []
-reference-files: []
+requires-skills:
+  - configuring-block-policy
+  - curating-library-kg
+reference-files:
+  - reference/library-setup.md
 requires-products:
   - Simulink
 toolkit: simulink-agentic-toolkit

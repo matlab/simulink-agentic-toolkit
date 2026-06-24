@@ -416,6 +416,7 @@ Then [open a bug report](https://github.com/mathworks/simulink-agentic-toolkit/i
 | `model_test` fails or is unavailable | Simulink Test not installed | Install Simulink Test, or use the other 7 tools which work without it |
 | Codex tool calls time out | Default tool timeout too short for MATLAB | Add `tool_timeout_sec = 600` (or higher) to `[mcp_servers.matlab]` in `~/.codex/config.toml` |
 | Simulink fails in Codex on Windows | Missing `WINDIR` environment variable | Add `env_vars = ['WINDIR']` to `[mcp_servers.matlab]` in `~/.codex/config.toml` |
+| `setupAgenticToolkit("update")` fails on Windows with `Unable to open output file ... matlab-mcp-server.exe for writing` | Running agent sessions hold a write lock on the installed binary | Close any running agent sessions (Claude Code, Copilot, Codex, etc.), restart MATLAB without re-running `satk_initialize` (the connector keeps the binary open via the shared session), then re-run `setupAgenticToolkit("update")`. Newer toolkit versions handle this automatically by renaming the locked binary. |
 
 ---
 

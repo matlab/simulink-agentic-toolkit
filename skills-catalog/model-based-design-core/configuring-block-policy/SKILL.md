@@ -4,7 +4,7 @@ description: Guide users through creating and managing .satk/block-policy.json f
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Configuring Block Policy
@@ -26,7 +26,7 @@ Create or update `.satk/block-policy.json` — the file that controls which bloc
 
 ## Prerequisites
 
-None. Block policy can be configured independently — for custom library blocks, built-in blocks, or both.
+- `.satk/reuse-libraries.json` must exist.
 
 ## Workflow
 

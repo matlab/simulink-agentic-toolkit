@@ -4,7 +4,7 @@ description: "Specify algorithms for Model-Based Design: system specs, architect
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # MBD Algorithm Specs
@@ -67,7 +67,7 @@ Skip when: algorithm is purely logic-based, domain is well-known, or no equation
 
 ### Step 4: Write System Spec
 
-Template: `reference/system-spec-template.md`
+Template: `references/system-spec-template.md`
 
 **Review gate** before proceeding — verify:
 - Clear algorithm objectives with quantitative acceptance criteria
@@ -78,7 +78,7 @@ Template: `reference/system-spec-template.md`
 
 ### Step 5: Write Architecture Spec
 
-Template: `reference/architecture-spec-template.md`
+Template: `references/architecture-spec-template.md`
 
 **Review gate** before finalizing — verify:
 - Dimensional consistency — units match across all interfaces end-to-end
@@ -94,7 +94,7 @@ Template: `reference/architecture-spec-template.md`
 
 ### Step 6: Write Implementation Plan + Test Plan
 
-Templates: `reference/implementation-plan-template.md`, `reference/test-plan-template.md`
+Templates: `references/implementation-plan-template.md`, `references/test-plan-template.md`
 
 **Review gate — Implementation Plan** — verify:
 - Phase 0 interface freeze gates all parallel work
@@ -137,17 +137,17 @@ When updating specs: check affected sections, update them, update "Last Updated"
 
 ## Spec Types
 
-For guidance on when to create optional specs (detailed spec, component spec), see `reference/spec-types.md`. Create a detailed spec when architecture is blocked by: control law definition, state machine definition, or interface contract.
+For guidance on when to create optional specs (detailed spec, component spec), see `references/spec-types.md`. Create a detailed spec when architecture is blocked by: control law definition, state machine definition, or interface contract.
 
 ## References
 
-- `reference/system-spec-template.md` — System spec template (what & why)
-- `reference/architecture-spec-template.md` — Architecture template (functional decomposition)
-- `reference/implementation-plan-template.md` — Build sequence template
-- `reference/test-plan-template.md` — Validation plan template
-- `reference/algorithm-guidance.md` — Optional domain research checklist
-- `reference/detailed-spec-template.md` — Control law, state machine, or interface contract (use when architecture is blocked)
-- `reference/component-spec-template.md` — Complex component internals (rarely needed)
+- `references/system-spec-template.md` — System spec template (what & why)
+- `references/architecture-spec-template.md` — Architecture template (functional decomposition)
+- `references/implementation-plan-template.md` — Build sequence template
+- `references/test-plan-template.md` — Validation plan template
+- `references/algorithm-guidance.md` — Optional domain research checklist
+- `references/detailed-spec-template.md` — Control law, state machine, or interface contract (use when architecture is blocked)
+- `references/component-spec-template.md` — Complex component internals (rarely needed)
 
 ----
 

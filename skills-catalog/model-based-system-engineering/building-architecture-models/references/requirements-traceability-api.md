@@ -4,7 +4,7 @@
 
 > **Execution model:** Execute all patterns in this file via `evaluate_matlab_code`. Do not create `.m` script files unless the user explicitly asks for this. Otherwise, write the code inline and execute it directly.
 
-Architecture-specific patterns for requirements and traceability links. For general slreq API patterns (creating sets, adding requirements, basic linking, saving), see [`generate-requirement-drafts/reference/slreq-patterns.md`](../../../model-based-design-core/generate-requirement-drafts/reference/slreq-patterns.md).
+Architecture-specific patterns for requirements and traceability links. For general slreq API patterns (creating sets, adding requirements, basic linking, saving), see [`generate-requirement-drafts/references/slreq-patterns.md`](../../../model-based-design-core/generate-requirement-drafts/references/slreq-patterns.md).
 
 ---
 

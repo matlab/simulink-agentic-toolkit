@@ -55,7 +55,7 @@ This creates `Plant_impl.slx` with ports matching the architecture component's i
 
 ## When to use `model_edit` vs `evaluate_matlab_code` for System Composer features
 
-For the following SC-specific features, use `evaluate_matlab_code`— see the `building-architecture-models` skill and its [System Composer Scripting reference](../../../model-based-system-engineering/building-architecture-models/reference/system-composer-api.md):
+For the following SC-specific features, use `evaluate_matlab_code`— see the `building-architecture-models` skill and its [System Composer Scripting reference](../../../model-based-system-engineering/building-architecture-models/references/system-composer-api.md):
 - Interface dictionaries (`.sldd`) — creating, linking, assigning to ports
 - Stereotype profiles — creating, applying, setting property values
 - Allocation sets (`.mldatx`) — cross-model traceability

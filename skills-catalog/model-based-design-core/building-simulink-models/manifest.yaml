@@ -14,9 +14,9 @@ requires-tools:
   - model_resolve_params
 requires-skills: []
 reference-files:
-  - reference/stateflow.md
-  - reference/system-composer.md
-  - reference/simscape.md
+  - references/stateflow.md
+  - references/system-composer.md
+  - references/simscape.md
 requires-products:
   - Simulink
 toolkit: simulink-agentic-toolkit

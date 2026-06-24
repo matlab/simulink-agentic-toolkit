@@ -181,10 +181,6 @@
           "checks": {
             "type": "string",
             "description": "JSON array of check names to run: '[\"all\"]' (default), or selective like '[\"unconnected_ports\", \"unconnected_lines\"]'. Available: unconnected_ports, unconnected_lines, stateflow_lint"
-          },
-          "tokenBudget": {
-            "type": "string",
-            "description": "Maximum output size in characters (default '10000'). Reduce for large models to stay within context limits"
           }
         },
         "required": ["model", "scope", "checks"]
