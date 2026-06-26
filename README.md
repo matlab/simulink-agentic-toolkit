@@ -1,21 +1,18 @@
 # Simulink Agentic Toolkit
 
-Give your AI coding agent the ability to read, build, edit, and test Simulink® models using Model-Based Design best practices.
+The Simulink® Agentic Toolkit allows you to use AI agents with Simulink by giving your AI agent the knowledge and context to read, build, edit, and test Simulink® models using Model-Based Design best practices.  It connects agents to Simulink through the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server), giving them the **ability** (tools) and the **knowledge** (skills) to work with Simulink models effectively. Use this toolkit to provide trusted Simulink capabilities to your agent. This toolkit prevents your AI coding agent from hallucinating, missing new features, and wasting time with extra steps that experienced Simulink users would skip.
 
----
+The toolkit provides:
 
-## What It Does
-
-The Simulink Agentic Toolkit packages MathWorks® Model-Based Design expertise for AI coding agents. It connects agents to Simulink through the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), giving them both the **ability** (tools) and the **knowledge** (skills) to work with Simulink models effectively.
-
-- **7 MCP tools** for reading, editing, querying, testing, and checking Simulink models
-- **9 agent skills** encoding MBD best practices for model building, simulation, plant specification, testing, requirements, project management, and architecture modeling
-- **Automated setup** via a MATLAB&reg; function that installs the MCP server, configures your agent, and registers skills
+- **MCP tools** for reading, editing, querying, testing, and checking Simulink models
+- **Agent skills** encoding Model-Based Design best practices for model building, simulation, plant specification, testing, requirements, project management, and architecture modeling
+- **Automated setup** using a MATLAB® function that installs the MATLAB MCP Server, configures your agent, and registers skills
 - Supports **Claude Code, Copilot, Codex, Amp, and Gemini CLI**
 
----
+> To use AI agents with MATLAB, install the [MATLAB Agentic Toolkit](https://github.com/matlab/matlab-agentic-toolkit). Use the automated setup option to install both the toolkits in one step.
 
-## How It Works
+
+## How the Simulink Agentic Toolkit Works
 
 ```
 ┌───────────┐       ┌───────────┐       ┌──────────┐
@@ -35,56 +32,142 @@ The Simulink Agentic Toolkit packages MathWorks® Model-Based Design expertise f
 
 Your agent reads **skills** for domain knowledge, then calls **MCP tools** to interact with MATLAB and Simulink. The [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) bridges the connection (downloaded during setup).
 
----
+
+## Requirements
+
+- **MATLAB R2023a or later** with **Simulink**
+- A supported **AI coding agent** (see [Supported Platforms](README.md#supported-platforms))
+- **Simulink Test** *(optional)* — required only for the `model_test` tool
+- **System Composer** *(optional)* — enables architecture modeling and component analysis
+- **Requirements Toolbox** *(optional)* — enables requirements traceability; used in building-architecture-models skill
+- **Simscape** *(optional)* — enables physical modeling domain support
+- **Stateflow** *(optional)* — enables state machine and chart analysis
 
 ## Supported Platforms
 
-| Platform | Setup | Notes |
-|----------|-------|-------|
-| [Claude Code](https://claude.ai/code) | Automated | |
-| [GitHub Copilot](https://github.com/features/copilot) | Automated | |
-| [OpenAI Codex](https://openai.com/codex) | Automated | |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Automated | |
-| [Sourcegraph Amp](https://ampcode.com/) | Automated | |
+The Simulink Agentic Toolkit works with any AI coding agent that supports skills and MCP. The automated setup has been verified on the platforms listed below. Performance may vary with other coding agents.
 
-> Automated setup has been verified with basic workflows on each platform. The toolkit is under active development — please [report issues](https://github.com/matlab/simulink-agentic-toolkit/issues) if you encounter problems.
+| Platform | Setup |
+|----------|-------|
+| [Claude Code](https://claude.ai/code) | Automated |
+| [GitHub Copilot](https://github.com/features/copilot) | Automated |
+| [OpenAI Codex](https://openai.com/codex) | Automated |
+| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Automated |
+| [Sourcegraph Amp](https://ampcode.com/) | Automated |
 
-## Quick Start
 
-> **Full walkthrough:** See the [Getting Started guide](GETTING_STARTED.md) for detailed instructions, platform-specific notes, verification steps, and troubleshooting.
+## Get Started with the Simulink Agentic Toolkit
 
-**Prerequisites:**
-* MATLAB R2023a or later with Simulink
-* Supported AI coding agent
+These steps show you how to use the Simulink Agentic Toolkit to install the MATLAB MCP Server and add skills to your agent.
+> Note: For detailed instructions on configuration options for this toolkit, platform-specific notes, verification steps, and troubleshooting, see [Configuration and Troubleshooting](Configuration_and_Troubleshooting.md).
 
-### Automated Setup (Recommended)
+### Install Simulink Agentic Toolkit (Automated Setup)
+You can use the Agentic Toolkit installer to set up the Simulink Agentic Toolkit. The installer:
 
-The `setupAgenticToolkit` function handles installation, configuration, updates, and uninstallation for both the MATLAB and Simulink Agentic Toolkits. Download `agenticToolkitInstaller.mltbx` from the [latest release](https://github.com/matlab/simulink-agentic-toolkit/releases), install it in MATLAB, then run:
+* Supports both the MATLAB and Simulink Agentic Toolkits.
+* Supports connecting to an existing MATLAB session (--matlab-session-mode="auto" or "existing").
+* Provides the option to configure your agent for individual projects or globally.
 
-```matlab
-setupAgenticToolkit("install")
-```
+Follow these steps to set up the Simulink Agentic Toolkit.
 
-This downloads the MCP server binary and toolkit files to `~/.matlab/agentic-toolkits/`, then walks you through configuring your first coding agent (MCP server entry + skill registration). To set up additional agents later, run `setupAgenticToolkit("configure")`. To update to the latest version, run `setupAgenticToolkit("update")`. If your organization uses a CLI wrapper, pass `AgentCLI="claude-code=/path/to/wrapper"` during configure.
+1. Download `agenticToolkitInstaller.mltbx` from the [latest release](https://github.com/matlab/simulink-agentic-toolkit/releases).
+2. Open the downloaded file to install the installer add-on. If the Add-On Manager fails to launch (common on headless machines, corporate proxies/antivirus, or older MATLAB versions — you may see this error ERR_CERT_AUTHORITY_INVALID or "Unable to open the requested feature"), install programmatically instead:
 
-> **Existing users:** If you previously set up the toolkit using the agent-driven workflow, you must uninstall that setup first. See [Migrating from a Previous Installation](GETTING_STARTED.md#migrating-from-a-previous-installation) in the Getting Started guide.
+   ```matlab
+   matlab.addons.toolbox.installToolbox("agenticToolkitInstaller.mltbx")
+   ```
+3. After installing, in MATLAB, run:
 
-### Manual Setup
+   ```matlab
+   setupAgenticToolkit("install")
+   ```
 
-If you already have the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) installed or prefer full control, you can configure the toolkit manually. See [Manual Setup](GETTING_STARTED.md#manual-setup) in the Getting Started guide.
+To update to the latest version, run `setupAgenticToolkit("update")`.
 
-### MATLAB Setup (all platforms)
+To uninstall the toolkit, run `setupAgenticToolkit("uninstall")`.
 
-The MCP server connects to a running MATLAB session. Open MATLAB and run:
+> **Existing users:** If you previously set up the toolkit using the agent-driven workflow, you must uninstall that custom installation and global configuration setup. See [Migrating from a Previous Installation](Migrate-from-Previous-Installation.md).
+
+### Alternative Manual Installation Workflow
+
+If you prefer to manage your own MATLAB MCP server installation and agent configuration, or if you are using an agent that is not listed under [Supported Platforms](#supported-platforms), you can set up the toolkit manually, following these steps.
+
+1. Install the MATLAB MCP server from the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) repository.
+
+2. Install MATLAB-side components.
+
+   Download `MATLABMCPCoreServerToolbox.mltbx` from the [MCP server release](https://github.com/matlab/matlab-mcp-core-server/releases) and install it in MATLAB:
+
+   ```matlab
+   matlab.addons.toolbox.installToolbox("/path/to/MATLABMCPCoreServerToolbox.mltbx")
+   ```
+
+   This is a one-time step per MATLAB version.
+
+   > **Note:** If you downloaded the binary manually from GitHub releases, the asset name includes a platform suffix that depends on the release version:
+   >
+   > | Platform | New asset name | Legacy asset name (pre-6/18) |
+   > |----------|---------------|------------------------------|
+   > | Linux x86_64 | `matlab-mcp-server-linux-x64` | `matlab-mcp-core-server-glnxa64` |
+   > | macOS arm64 | `matlab-mcp-server-macos-arm64` | `matlab-mcp-core-server-maca64` |
+   > | macOS x86_64 | `matlab-mcp-server-macos-x64` | `matlab-mcp-core-server-maci64` |
+   > | Windows x86_64 | `matlab-mcp-server-windows-x64.exe` | `matlab-mcp-core-server-win64.exe` |
+   >
+   > Rename the downloaded file to `matlab-mcp-server` (or `matlab-mcp-server.exe` on Windows) and place it in `~/.matlab/agentic-toolkits/bin/`. The automated setup handles this automatically.
+
+3. Add toolkit flags to your agent's MCP server configuration:
+
+   ```
+   --matlab-session-mode=existing
+   --extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
+   ```
+
+4. Register skills by pointing your agent's skill or prompt directory at `skills-catalog/model-based-design-core/`, `skills-catalog/model-based-system-engineering/`, and `skills-catalog/agentic-review/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+
+   For platforms that discover skills from `~/.agents/skills/`, create symlinks:
+
+   ```bash
+   mkdir -p ~/.agents/skills
+   for group in model-based-design-core model-based-system-engineering agentic-review; do
+     for skill in /path/to/simulink-agentic-toolkit/skills-catalog/$group/*/; do
+       ln -s "$skill" ~/.agents/skills/$(basename "$skill")
+     done
+   done
+   ```
+
+### MATLAB Setup
+The MATLAB MCP Server connects to a running MATLAB session. For each session, add the Simulink Agentic Toolkit to the path and initialize it.
 
 ```matlab
 addpath("~/.matlab/agentic-toolkits/simulink")
 satk_initialize
 ```
 
+This does three things:
+
+1. Adds the toolkit's tool directories to the MATLAB path
+2. Calls `shareMATLABSession` so that the MATLAB MCP server can connect to running MATLAB session
+3. Runs `validate_installation` to check that everything is configured correctly
+
+If you installed the MCP server binary to a non-default location (e.g., a network share), pass its path explicitly:
+
+```matlab
+satk_initialize(MCPServerPath="//server/share/bin/matlab-mcp-server")
+```
+
+> **Note:** `satk_initialize` must run once per MATLAB session. To automate this, add the following to your [`startup.m`](https://www.mathworks.com/help/matlab/ref/startup.html):
+>
+> ```matlab
+> % Initialize the Simulink Agentic Toolkit (adjust version/path as needed)
+> if contains(version, 'R2026a')
+>     addpath("~/.matlab/agentic-toolkits/simulink")
+>     satk_initialize
+> end
+> `
+
 ### Verify
 
-In MATLAB, open any Simulink model — your own, or a shipped example like `f14`:
+Check that your agent has loaded skills or plugins on its path (e.g., Claude Code's `/skills` command), confirm the Simulink Agentic Toolkit skills are listed. Open any Simulink model — your own, or a shipped example.
 
 ```matlab
 openExample("simulink/AddBlockToModelFromLibraryExample")       % only needed for R2023b+
@@ -96,121 +179,34 @@ Then ask your agent:
 ```
 Describe the structure of the currently open model.
 ```
-
----
-
 ## MCP Tools
+
+After you install the Simulink Agentic Toolkit, your agent can use the following tools.
 
 | Tool | What your agent can do |
 |------|------------------------|
-| `model_overview` | Explore model architecture — see subsystem hierarchy, interfaces, and how major components connect |
-| `model_read` | Understand model behavior — inspect blocks, algorithmic expressions, signal flow, and parameter values |
-| `model_edit` | Build and modify models — add blocks, wire signals, create subsystems, and configure parameters |
-| `model_check` | Validate model structure — detect unconnected ports, dangling lines, and Edit-Time Checks on States and Subcharts |
-| `model_test` | Verify requirements — run human-readable Gherkin tests with automatic harness generation *(requires Simulink Test)* |
-| `model_query_params` | Inspect any parameter — query block settings, signal properties, solver config, and logging flags |
-| `model_resolve_params` | Get actual values — resolve workspace variables like `Kp` to their numeric values across all scopes |
+| `model_overview` | Explore model architecture. Review subsystem hierarchy, interfaces, and how major components connect |
+| `model_read` | Understand model behavior. Inspect blocks, algorithmic expressions, signal flow, and parameter values |
+| `model_edit` | Build and modify models. Add blocks, wire signals, create subsystems, and configure parameters as needed |
+| `model_check` | Validate model structure. Detect unconnected ports, dangling lines, and Edit-Time Checks on States and Subcharts |
+| `model_test` | Verify requirements. Run human-readable Gherkin tests with automatic harness generation *(requires Simulink Test)* |
+| `model_query_params` | Inspect any parameter. Query block settings, signal properties, solver config, and logging flags |
+| `model_resolve_params` | Get actual values. Resolve workspace variables like `Kp` to their numeric values across all scopes |
+
 
 ---
 
 ## Agent Skills
 
-Skills are organized in the [skills catalog](skills-catalog/) by product area.
+After you install the Simulink Agentic Toolkit, your agent can use the skills in the following groups. To see lists of available skills, see [skills catalog](skills-catalog/README.md).
 
-**Model-Based Design Core** — core MBD skills for building, testing, and specifying Simulink models:
-
-| Skill | What it teaches your agent |
+| Skill Group | Description |
 |-------|---------------------------|
-| `building-simulink-models` | Best practices for structural model changes — adding blocks, wiring, layout |
-| `filing-bug-reports` | Generate standalone bug reports for reproducing, investigating, and fixing issues |
-| `managing-simulink-projects` | MATLAB project management — path setup, file registration, labels, model references, source control |
-| `simulating-simulink-models` | Run simulations for data exploration, parameter sweeps, and custom analysis |
-| `specifying-mbd-algorithms` | Specify algorithms for MBD — system specs, architecture specs, implementation and test plans |
-| `specifying-plant-models` | How to specify plant models for closed-loop simulation |
-| `testing-simulink-models` | How to test model behavior — reproduce issues, verify changes, regression tests |
-| `generate-requirement-drafts` | Requirements generation — prefers Requirements Toolbox (.slreqx) with traceability links when available, falls back to structured YAML |
-
-**Model-Based System Engineering** — MBSE skills for System Composer architecture models:
-
-| Skill | What it teaches your agent |
-|-------|---------------------------|
-| `building-architecture-models` | Build multi-layer system architecture models — components, interfaces, allocations, stereotypes, and requirements traceability *(requires System Composer)* |
-
----
-
-## Repository Structure
-
-```
-simulink-agentic-toolkit/
-├── skills-catalog/           # Agent skills (not auto-discovered)
-│   ├── model-based-design-core/          # Core MBD skills (8 skills)
-│   └── model-based-system-engineering/   # MBSE skills (1 skill)
-├── tools/                    # MCP tool implementations
-├── satk_initialize.m         # MATLAB session setup entry point
-└── research-previews/        # Curated example tasks
-```
-
----
-
-## Research Preview: Agentic Task Explorer
-
-The Agentic Task Explorer provides curated, multi-step tasks that demonstrate what agents can do with Simulink — model understanding, creation, modification, testing, bug fixing, and verification. Each task includes Simulink models and supporting files, ready to go.
-
-```matlab
-slAgenticTaskExplorer
-```
-
-Select a task from the interactive UI. The explorer stages it into an isolated workspace with all required files, then opens your coding agent. Each task presents step-by-step prompts — copy each prompt into your coding agent and watch it work.
-
-*This is a research preview. Behavior and interfaces may change.*
-
----
-
-## Requirements
-
-- **MATLAB R2023a or later** with **Simulink**
-- **Simulink Test** *(optional)* — required only for `model_test`
-- **System Composer** *(optional)* — enables architecture modeling and component analysis; required for `building-architecture-models` skill
-- **Requirements Toolbox** *(optional)* — enables requirements traceability; used in `building-architecture-models` skill
-- **Simscape** *(optional)* — enables physical modeling domain support
-- **Stateflow** *(optional)* — enables state machine and chart analysis
-- A supported **AI coding agent** (see [Supported Platforms](#supported-platforms))
-
----
-
-## AI Model Capability Guidance
-
-This toolkit relies on strong multi-step reasoning, tool use, and coding performance from the AI model.
-
-We have tested the toolkit with higher-capability models, including Claude Opus and Sonnet, OpenAI GPT-5 models, and Gemini Pro models, and have generally seen good results on demanding workflows.
-
-Model capability has a significant impact on quality. In our testing, lightweight or lower-capability models were less reliable for tasks such as model construction and complex edits, and were more likely to produce incomplete or incorrect results. These models may still be sufficient for simpler tasks, but for the best overall experience we recommend using a higher-capability model.
-
----
-
-## Documentation
-
-| Resource | Description |
-|----------|-------------|
-| [Getting Started](GETTING_STARTED.md) | Setup tutorial with per-agent instructions and troubleshooting |
-| [Skills Catalog](skills-catalog/) | Browse all agent skill groups and individual skills |
-
-## Reporting Bugs
-
-If you encounter a bug, use the **filing-bug-reports** skill to generate a report before opening a GitHub issue. Ask your agent:
-
-```
-File a bug report for this issue
-```
-
-The skill automatically captures environment details, reproduction steps, and error output — producing a complete report in your workspace. Then [open a bug report](https://github.com/matlab/simulink-agentic-toolkit/issues/new?template=bug_report.yml) and paste the generated report. **Be sure to run the skill in the same session where the bug occurred**, since it uses conversation context to reconstruct what happened. If the issue did not occur in a chat session, describe the issue as best you can to the agent, then ask it to file a bug report.
-
-## Contributing
-
-We welcome feedback through [GitHub Issues](https://github.com/matlab/simulink-agentic-toolkit/issues). Pull requests are reviewed for ideas and feedback but are not merged from external contributors. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+| [Model-Based Design Core](skills-catalog/model-based-design-core/) | Core Model-Based Design (MBD) skills for building, testing, and specifying Simulink models |
+| [Model-Based System Engineering](skills-catalog/model-based-system-engineering/) | Model-Based System Engineering skills for System Composer architecture models |
+| [Agentic Review](skills-catalog/agentic-review/) | Author custom Model Advisor checks and run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, etc.) |
 
 ## Security Considerations
-
 When using the Simulink Agentic Toolkit and MATLAB MCP Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).
 
 ## Licensing and Usage
@@ -219,10 +215,35 @@ The license is available in the [LICENSE.md](LICENSE.md) file in this GitHub rep
 
 MCP servers are only permitted to be used with MATLAB and Simulink in accordance with the MathWorks Software License Agreement, and must not be shared by multiple users. Contact MathWorks if you need to support shared or centralized server use.
 
-## Contact Support
+## Research Preview: Agentic Task Explorer
 
-MathWorks encourages you to use this repository and provide feedback. To request technical support or submit an enhancement request, [create a GitHub issue](https://github.com/matlab/simulink-agentic-toolkit/issues) or [contact technical support](https://www.mathworks.com/support/contact_us.html). For MATLAB MCP Server issues and support, see the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) repository.
+The Agentic Task Explorer provides curated, multi-step tasks that show what agents can do with Simulink — model understanding, creation, modification, testing, bug fixing, and verification. Each task includes Simulink models and supporting files, ready to go.
+
+```matlab
+slAgenticTaskExplorer
+```
+
+Select a task from the interactive UI. The explorer stages it into an isolated workspace with all required files, then opens your coding agent. Each task presents step-by-step prompts — copy each prompt into your coding agent and watch it work.
+
+*This is a research preview. Behavior and interfaces might change.*
 
 ---
+## Report Bugs
+
+If you encounter a bug, use the **filing-bug-reports** skill to generate a report before opening a GitHub issue. Ask your agent:
+
+```
+File a bug report for this issue
+```
+
+The skill automatically captures environment details, reproduction steps, and error output. **Run the skill in the same session where the bug occurred**, because it uses conversation context to reconstruct what happened. Then [open a bug report](https://github.com/matlab/simulink-agentic-toolkit/issues/new?template=bug_report.yml) and paste the generated report.
+
+---
+
+## Support and Contributions
+
+MathWorks encourages you to use this repository and provide feedback. To request technical support or submit an enhancement request, [create a GitHub issue](https://github.com/matlab/simulink-agentic-toolkit/issues) or [contact technical support](https://www.mathworks.com/support/contact_us.html). For MATLAB MCP Server issues, see the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) repository.
+
+Pull requests are not enabled on this repository. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 Copyright 2025-2026 The MathWorks, Inc.

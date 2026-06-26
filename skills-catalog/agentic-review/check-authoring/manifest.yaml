@@ -1,0 +1,28 @@
+schema_version: 1
+version: "1.0.0"
+license: MathWorks BSD-3-Clause
+scope: product
+toolkit: simulink-agentic-toolkit
+matlab-release: ">=R2023a"
+requires-products:
+  - Simulink
+  - Simulink Check
+optional-products:
+  - Stateflow
+  - Requirements Toolbox
+requires-tools:
+  - check_matlab_code
+  - evaluate_matlab_code
+requires-skills: []
+reference-files:
+  - references/api-blocks.md
+  - references/api-code-analysis.md
+  - references/api-data-resolution.md
+  - references/api-framework.md
+  - references/api-signals.md
+  - references/api-stateflow.md
+  - references/api-system-composer.md
+  - references/pattern-config-param.md
+  - references/pattern-edittime.md
+  - references/pattern-format-template.md
+  - references/pattern-standard.md

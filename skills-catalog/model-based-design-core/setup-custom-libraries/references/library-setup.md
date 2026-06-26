@@ -46,14 +46,14 @@ If `.satk/block-policy.json` already exists, proceed directly.
 
 Policy must be configured before the Knowledge Index.
 
-## Gate 3: Knowledge Index
+## Gate 3: Library Blocks Knowledge Index
 
-If libraries are declared and `.satk/library-kg/index.md` does not exist, provide the user with options to index and wait until the user responds:
+If libraries are declared and `.satk/library-kg/index.md` does not exist, provide the user with options to index their library blocks and wait until the user responds:
 
-If the KG generation produces zero blocks, inform the user and ask for the **folder path** containing all `.slx` sub-library files. Update `reuse-libraries.json` with the discovered files and regenerate.
+If the Knowledge Index generation produces zero blocks, inform the user and ask for the **folder path** containing all `.slx` sub-library files. Update `reuse-libraries.json` with the discovered files and regenerate.
 
-- **Guided setup** — load the `curating-library-kg` skill and follow its interactive workflow (common blocks, categories, descriptions). The skill collects curation data, saves it to `.satk/library-curation.json`, and generates the KG in one pass. Do NOT proceed until the curation workflow completes.
-- **Auto-generate** — single call that parses, caches, and generates the KG:
+- **Guided setup** — load the `curating-library-kg` skill and follow its interactive workflow (common blocks, categories, descriptions). The skill collects curation data, saves it to `.satk/library-curation.json`, and generates the Knowledge Graph in one pass. Do NOT proceed until the curation workflow completes.
+- **Auto-generate** — single call that parses, caches, and generates the Knowledge Graph:
 
 Do not use `find_system`, `load_system`, or `get_param` on library `.slx` files to build or populate the index — Only use the API `library.kg.Populate.run` which handles all parsing, caching, and metadata extraction. 
 
@@ -71,7 +71,7 @@ Before your first `model_edit` call in a session, read the Knowledge Index:
 2. Category pages (e.g., `.satk/library-kg/control.md`) — blocks in a domain
 3. Detail pages (e.g., `.satk/library-kg/blocks/SpeedController.md`) — use/avoid guidance
 
-Use the exact block name from the KG in the `type` field of `add_block`. Do not invent names not listed in the KG. If no library block fits, fall back to built-in Simulink blocks.
+Use the exact block name from the Knowledge graph in the `type` field of `add_block`. Do not invent names not listed in the Knowledge graph. If no library block fits, fall back to built-in Simulink blocks.
 
 ## Block Policy Rules
 
@@ -79,8 +79,8 @@ The `policyMode` in `.satk/block-policy.json` is the source for fallback behavio
 
 | Mode | Behavior |
 |------|----------|
-| `approved_blocks_only` | Only use blocks in the KG. If nothing fits, ask the user. |
+| `approved_blocks_only` | Only use blocks in the Knowledge graph. If nothing fits, ask the user. |
 | `prefer_customer_libraries` | Prefer library blocks, fall back to built-ins when no match. |
 
 - **Off-limits parameters** (marked with a warning in block detail pages) — the agent will not modify these values.
-- **Excluded blocks** — removed from the KG entirely; the agent will never place them.
+- **Excluded blocks** — removed from the Knowledge graph entirely; the agent will never place them.

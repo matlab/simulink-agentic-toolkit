@@ -1,0 +1,21 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for checking-model-compliance
+schema_version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "0.1"
+matlab-release: ">=R2023a"
+requires-tools:
+  - evaluate_matlab_code
+  - model_edit
+requires-skills: []
+requires-products:
+  - Simulink
+  - Simulink Check
+toolkit: simulink-agentic-toolkit
+reference-files:
+  - scripts/detect_default_config.p
+  - scripts/model_advisor_run.p
+  - scripts/model_advisor_resolve_checks.p
+  - scripts/model_advisor_justify.p
+  - references/fix-mode.md

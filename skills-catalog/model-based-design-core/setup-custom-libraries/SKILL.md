@@ -33,11 +33,11 @@ Check all three files: `.satk/reuse-libraries.json`, `.satk/block-policy.json`, 
 - **`.satk/reuse-libraries.json` exists with `confirmedNone: true` → no custom libraries configured.** Ask the user if they want to change that. If not, setup is complete — skip Gates 2 and 3.
 - **Any missing → run gates sequentially:**
 
-Follow `reference/library-setup.md` for all gate resolution details — it is the single source of truth for API calls, examples, and options at each gate.
+Follow `references/library-setup.md` for all gate resolution details — it is the single source of truth for API calls, examples, and options at each gate.
 
 **Gate 1 — Library declaration:** If `.satk/reuse-libraries.json` is missing, STOP and ask the user about reusable libraries. Do not read reference files, open models, or plan blocks until they respond.
-**Gate 2 — Block policy:** If `.satk/block-policy.json` is missing, STOP and ask the user about policy setup by following `reference/library-setup.md`. Do not proceed until policy is resolved.
-**Gate 3 — Library knowledge index:** If `.satk/library-kg/index.md` is missing, STOP and ask the user about curating the library knowledge index by following `reference/library-setup.md`. Do not proceed until they respond.
+**Gate 2 — Block policy:** If `.satk/block-policy.json` is missing, STOP and ask the user about policy setup by following `references/library-setup.md`. Do not proceed until policy is resolved.
+**Gate 3 — Library blocks knowledge index:** If `.satk/library-kg/index.md` is missing, STOP and ask the user whether to index their library blocks so the agent knows which blocks are available during model building. Follow `references/library-setup.md` for options. Do not proceed until they respond.
 
 If user confirms no libraries in Gate 1, save with `confirmedNone: true` and skip Gates 2 and 3.
 
@@ -48,8 +48,8 @@ When `.satk/reuse-libraries.json` already exists with declared libraries: read t
 
 ## Guardrails
 
-- **Never write `.satk/` JSON files manually.**  Always follow the instructions and APIs in `reference/library-setup.md` for each case.
-- **Do not use `find_system`, `load_system`** to discover, validate, or enumerate library contents. All library operations must go through the specified APIs in `reference/library-setup.md`.
+- **Never write `.satk/` JSON files manually.**  Always follow the instructions and APIs in `references/library-setup.md` for each case.
+- **Do not use `find_system`, `load_system`** to discover, validate, or enumerate library contents. All library operations must go through the specified APIs in `references/library-setup.md`.
 - **Each gate requires explicit user input before proceeding.** Do not assume anything, wait for the response before moving to the next gate.
   
 ----
