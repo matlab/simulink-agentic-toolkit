@@ -27,11 +27,11 @@ WHILE violations > 0:
 
 | Priority | Category | Description | Tool |
 |----------|----------|-------------|------|
-| 1 | Toolbox/License prerequisites | Check `license('test', '<feature>')` before fixes requiring specific toolboxes. If unavailable, skip category. | `set_param` |
+| 1 | Toolbox/License prerequisites | Check `license('test', '<feature>')` before fixes requiring specific toolboxes. If unavailable, skip category. | `model_edit` |
 | 2 | Structural fixes | Remove orphaned/dead blocks, add missing blocks, fix unconnected lines/ports. Must resolve before escalating diagnostics. | `model_edit` |
 | 3 | Compile & verify | After structural fixes, compile ONLY if at least one check requires post-compile context. If all remaining checks are pre-compile, skip to priority 4+. If compilation fails, stop and report. | `eval_system` |
-| 4 | Config parameter fixes | Change model configuration parameters (diagnostics, solver, code gen). Use `parameter` field from check output. | `set_param` |
-| 5 | Block parameter fixes | Change individual block parameters (names, data types, port properties, display). | `set_param` / `model_edit` |
+| 4 | Config parameter fixes | Change model configuration parameters (diagnostics, solver, code gen). Use `parameter` field from check output. | `model_edit` |
+| 5 | Block parameter fixes | Change individual block parameters (names, data types, port properties, display). | `model_edit` |
 | 6 | Routing/connection fixes | Reroute signals, reconnect lines, fix signal label propagation. | `model_edit` |
 | 7 | Architecture fixes | Restructure subsystems, split/merge components. Requires explicit user confirmation with impact explanation. | `model_edit` |
 
@@ -58,7 +58,7 @@ WHILE violations > 0:
 
 ## Revert Strategy
 
-- Before applying any batch, record current parameter values via `get_param`
+- Before applying any batch, record current parameter values via `model_query_params`
 - If a batch causes compilation failure or increases violations → revert all changes in that batch
 - For structural changes: use `model_edit` to undo (delete added blocks, restore deleted blocks)
 

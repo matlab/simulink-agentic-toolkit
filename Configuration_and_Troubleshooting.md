@@ -111,7 +111,7 @@ Then select **Agent configurations only** from the interactive prompt. This remo
 | Add-On Manager fails when opening mltbx (`ERR_CERT_AUTHORITY_INVALID` or "Unable to open the requested feature") | CEF/display issue — often caused by corporate proxies, antivirus software, or headless environments | Install programmatically instead: `matlab.addons.toolbox.installToolbox("agenticToolkitInstaller.mltbx")` |
 | Agent doesn't list Simulink skills | Skills not registered | Re-run `setupAgenticToolkit("configure")` |
 | MCP tools fail with "Undefined function" | `satk_initialize` not run in current MATLAB session | Run `satk_initialize` in MATLAB |
-| MCP server can't connect to MATLAB | Connector not running or stale connection | Run `satk_initialize` again (it calls `shareMATLABSession` automatically) |
+| MCP server can't connect to MATLAB | Connector not running or stale connection | Add `--log-folder` and `--log-level` arguments to your MCP server configuration (see [MATLAB MCP Server arguments](https://github.com/matlab/matlab-mcp-server#arguments)), then run `satk_initialize` again (it calls `shareMATLABSession` automatically). Check the generated logs. |
 | macOS blocks the MCP server binary | Gatekeeper quarantine | Right-click → Open, or run: `xattr -d com.apple.quarantine ~/.matlab/agentic-toolkits/bin/matlab-mcp-server` |
 | "rmiml.selectionLinkHelper" error | Path corruption from other toolboxes | Run `restoredefaultpath` in MATLAB, then re-run `satk_initialize` |
 | `model_test` fails or is unavailable | Simulink Test not installed | Install Simulink Test, or use the other 7 tools which work without it |

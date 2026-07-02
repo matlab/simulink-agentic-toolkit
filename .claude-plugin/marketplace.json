@@ -30,6 +30,32 @@
       "category": "development",
       "strict": false,
       "skills": "./skills-catalog/model-based-system-engineering/"
+    },
+    {
+      "name": "verification-validation-and-test",
+      "version": "0.1.0",
+      "description": "Author custom Model Advisor checks and run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR)",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "model-advisor", "verification", "validation", "compliance", "misra", "iso-26262", "do-178c"],
+      "source": "./",
+      "category": "development",
+      "strict": false,
+      "skills": "./skills-catalog/verification-validation-and-test/"
+    },
+    {
+      "name": "code-generation",
+      "version": "0.1.0",
+      "description": "Prepare Simulink models for production code generation, including single-precision conversion",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "code-generation", "embedded-coder", "fixed-point-designer", "single-precision"],
+      "source": "./",
+      "category": "development",
+      "strict": false,
+      "skills": "./skills-catalog/code-generation/"
     }
   ]
 }

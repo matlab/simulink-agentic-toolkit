@@ -32,7 +32,7 @@ Model-Based System Engineering skills for System Composer architecture models
 |-------|---------------------------|
 | `building-architecture-models` | Build multi-layer system architecture models — components, interfaces, allocations, stereotypes, and requirements traceability (requires System Composer) |
 
-### [Agentic Review](agentic-review/) 
+### [Verification, Validation, and Test](verification-validation-and-test/) 
 
 Skills for authoring custom Model Advisor checks and running compliance reviews against industry standards
 
@@ -40,6 +40,14 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 |-------|---------------------------|
 | `check-authoring` | Author custom Model Advisor checks for Simulink and System Composer — DetailStyle callbacks, ResultDetail reporting, edit-time checks, and auto-fix support |
 | `checking-model-compliance` | Run Model Advisor against compliance standards (MISRA, MAB, JMAAB, ISO 26262, DO-178C, AUTOSAR, etc.) and summarize findings with fix suggestions |
+
+### [Code Generation](code-generation/) 
+
+Skills for code generation
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-single-precision-conversion` | Convert a double-precision Simulink system or subsystem to single precision (requires Fixed-Point Designer) |
 
 ---
 
