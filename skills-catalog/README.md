@@ -38,8 +38,10 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 
 | Skill | Description |
 |-------|---------------------------|
-| `check-authoring` | Author custom Model Advisor checks for Simulink and System Composer — DetailStyle callbacks, ResultDetail reporting, edit-time checks, and auto-fix support |
+| `author-modeladvisor-checks` | Author custom Model Advisor checks for Simulink and System Composer — DetailStyle callbacks, ResultDetail reporting, edit-time checks, and auto-fix support |
 | `checking-model-compliance` | Run Model Advisor against compliance standards (MISRA, MAB, JMAAB, ISO 26262, DO-178C, AUTOSAR, etc.) and summarize findings with fix suggestions |
+| `inject-faults` | Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation (requires Simulink Fault Analyzer) |
+| `manage-safety-analysis` | Create and manage FMEA spreadsheets, fault trees, and safety analysis documents using Safety Analysis Manager (requires Simulink Fault Analyzer) |
 
 ### [Code Generation](code-generation/) 
 

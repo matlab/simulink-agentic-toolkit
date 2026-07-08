@@ -38,10 +38,7 @@ Your agent reads **skills** for domain knowledge, then calls **MCP tools** to in
 - **MATLAB R2023a or later** with **Simulink**
 - A supported **AI coding agent** (see [Supported Platforms](README.md#supported-platforms))
 - **Simulink Test** *(optional)* — required only for the `model_test` tool
-- **System Composer** *(optional)* — enables architecture modeling and component analysis
-- **Requirements Toolbox** *(optional)* — enables requirements traceability; used in building-architecture-models skill
-- **Simscape** *(optional)* — enables physical modeling domain support
-- **Stateflow** *(optional)* — enables state machine and chart analysis
+- Some skills require additional toolboxes (e.g., System Composer, Simscape, Stateflow). Check the `requires-products` field in each skill's `manifest.yaml` under [`skills-catalog/`](skills-catalog/) for additional requirements.
 
 ## Supported Platforms
 
@@ -92,17 +89,12 @@ To uninstall the toolkit, run `setupAgenticToolkit("uninstall")`.
 
 If you prefer to manage your own MATLAB MCP server installation and agent configuration, or if you are using an agent that is not listed under [Supported Platforms](#supported-platforms), you can set up the toolkit manually, following these steps.
 
-1. Install the MATLAB MCP server from the [MATLAB MCP Server](https://github.com/matlab/matlab-mcp-core-server) repository.
+1. Download the latest MATLAB MCP server from the [MCP server release](https://github.com/matlab/matlab-mcp-core-server/releases).
+2. Install the MATLAB MCP Server Toolbox by running:
 
-2. Install MATLAB-side components.
-
-   Download `MATLABMCPCoreServerToolbox.mltbx` from the [MCP server release](https://github.com/matlab/matlab-mcp-core-server/releases) and install it in MATLAB:
-
-   ```matlab
-   matlab.addons.toolbox.installToolbox("/path/to/MATLABMCPCoreServerToolbox.mltbx")
+   ```bash
+   ./matlab-mcp-server --setup-matlab
    ```
-
-   This is a one-time step per MATLAB version.
 
    > **Note:** If you downloaded the binary manually from GitHub releases, the asset name includes a platform suffix that depends on the release version:
    >
@@ -115,7 +107,9 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
    >
    > Rename the downloaded file to `matlab-mcp-server` (or `matlab-mcp-server.exe` on Windows) and place it in `~/.matlab/agentic-toolkits/bin/`. The automated setup handles this automatically.
 
-3. Add toolkit flags to your agent's MCP server configuration:
+3. Connect the MATLAB MCP Server to a running MATLAB session. In the command window of the running MATLAB session, run `shareMATLABSession()`.
+
+4. Clone the [Simulink Agentic Toolkit](https://github.com/matlab/simulink-agentic-toolkit) repository, then add toolkit flags to your agent's MCP server configuration:
 
    ```
    --matlab-session-mode=existing

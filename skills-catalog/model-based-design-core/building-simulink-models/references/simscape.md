@@ -19,8 +19,8 @@ Physical ports (electrical, mechanical, thermal) use bidirectional `<->` syntax.
 | **References** (Electrical Reference, Mechanical Translational Reference) | single port | | |
 | **Voltage Sensor** | + (electrical) | - (electrical) | |
 | **Current Sensor** | + (electrical) | I (**physical signal** output) | `RConn2`: - (electrical) |
-| **PS-Simulink Converter** | physical input | | |
-| **Simulink-PS Converter** | | physical output | |
+| **PS-Simulink Converter** | `LConn1`: physical in (`<->`) | | output is `y1` (Simulink signal, `->`) |
+| **Simulink-PS Converter** | | `RConn1`: physical out (`<->`) | input is `u1` (Simulink signal, `->`) |
 | **Solver Configuration** | | single port (connect to any node) | |
 | **Rotational mechanical** (Inertia, Rotational Damper) | R/shaft | C/case | |
 | **DC Motor (PM mode)** | p/+ (electrical) | n/- (electrical) | `LConn2`: R (rotor shaft), `RConn2`: C (case) |

@@ -1,5 +1,5 @@
 ---
-name: check-authoring
+name: author-modeladvisor-checks
 description: >
   Author custom Model Advisor checks for Simulink and System Composer models.
   Use when creating edit-time checks, standard batch checks, config-parameter checks,

@@ -4,12 +4,9 @@ This page shows you how to configure the Simulink® Agentic Toolkit. For an over
 ## Requirements
 
 - **MATLAB R2023a or later** with **Simulink**
-- A supported **AI coding agent** 
+- A supported **AI coding agent**
 - **Simulink Test** *(optional)* — required only for the `model_test` tool
-- **System Composer** *(optional)* — enables architecture modeling and component analysis
-- **Requirements Toolbox** *(optional)* — enables requirements traceability; used in building-architecture-models skill
-- **Simscape** *(optional)* — enables physical modeling domain support
-- **Stateflow** *(optional)* — enables state machine and chart analysis
+- Some skills require additional toolboxes (e.g., System Composer, Simscape, Stateflow). Check the `requires-products` field in each skill's `manifest.yaml` under [`skills-catalog/`](skills-catalog/) for additional requirements.
 
 
 ### Automated Setup Configuration
