@@ -902,6 +902,13 @@
             ]
         },
         {
+            "path": "simulink/Ports & Subsystems/Variant Subsystem",
+            "aliases": [
+                "variant subsystem",
+                "Variant Subsystem"
+            ]
+        },
+        {
             "path": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (2P-G)",
             "aliases": [
                 "interface (2p-g)"

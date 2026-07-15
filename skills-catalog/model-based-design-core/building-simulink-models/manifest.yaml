@@ -1,22 +1,23 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for building-simulink-models
-schema_version: 1
+schema-version: 1.1
 license: MathWorks BSD-3-Clause
 scope: cross-product
 version: "1.3"
+human-description: Builds and edits Simulink, System Composer, Stateflow, and Simscape models. Use when modifying model structure, parameters, ports, connections, or Stateflow chart internals.
 matlab-release: ">=R2023a"
-requires-tools:
+required-tools:
   - model_edit
   - model_overview
   - model_read
   - model_check
   - model_query_params
   - model_resolve_params
-requires-skills: []
+required-skills: []
 reference-files:
   - references/stateflow.md
   - references/system-composer.md
   - references/simscape.md
-requires-products:
+required-products:
   - Simulink
 toolkit: simulink-agentic-toolkit

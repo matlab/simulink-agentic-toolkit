@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -33,7 +33,7 @@
     },
     {
       "name": "verification-validation-and-test",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR), inject faults for robustness testing, and perform safety analysis (FMEA, FHA, FTA)",
       "author": {
         "name": "MathWorks"
@@ -56,6 +56,19 @@
       "category": "development",
       "strict": false,
       "skills": "./skills-catalog/code-generation/"
+    },
+    {
+      "name": "simulink-simulation",
+      "version": "0.1.0",
+      "description": "Create and populate input signal datasets for Simulink model simulation",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "matlab", "simulation", "input-data", "signals", "dataset"],
+      "source": "./",
+      "category": "development",
+      "strict": false,
+      "skills": "./skills-catalog/simulink-simulation/"
     }
   ]
 }

@@ -1,24 +1,25 @@
 ---
 name: author-modeladvisor-checks
 description: >
-  Author custom Model Advisor checks for Simulink and System Composer models.
-  Use when creating edit-time checks, standard batch checks, config-parameter checks,
-  or checks with auto-fix capability. Covers DetailStyle callbacks, ResultDetail reporting,
-  sl_customization registration, and edit-time EdittimeCheck classes.
+  Author or upgrade Model Advisor checks for Simulink and System Composer models.
+  Use when creating new checks (edit-time, standard batch, config-parameter, auto-fix)
+  or converting legacy StyleOne/StyleTwo/StyleThree checks to modern DetailStyle.
+  Covers DetailStyle callbacks, ResultDetail reporting, sl_customization registration,
+  and edit-time EdittimeCheck classes.
 license: MathWorks BSD-3-Clause
-compatibility: ">=R2023a"
 metadata:
   author: MathWorks
-  version: "1.0.0"
+  version: "1.1"
 ---
 
 # Check Authoring
 
-Create custom Model Advisor checks that use modern DetailStyle callbacks and ResultDetail reporting. This skill prevents common authoring mistakes: using deprecated StyleOne/StyleTwo patterns, incorrect registration, missing result formatting, and wrong callback contexts.
+Create or upgrade Model Advisor checks to use modern DetailStyle callbacks and ResultDetail reporting. This skill prevents common authoring mistakes: using deprecated StyleOne/StyleTwo patterns, incorrect registration, missing result formatting, and wrong callback contexts. When upgrading legacy checks, read the existing code, identify the legacy pattern, and rewrite using the modern patterns below.
 
 ## When to Use
 
 - Creating a new Model Advisor check (standard, edit-time, or config-parameter)
+- Converting a legacy StyleOne/StyleTwo/StyleThree check to modern DetailStyle with ResultDetail
 - Adding an edit-time canvas warning for a naming or style rule
 - Validating configuration parameters programmatically with auto-fix
 - Enforcing a modeling convention with auto-fix actions
@@ -33,6 +34,7 @@ Create custom Model Advisor checks that use modern DetailStyle callbacks and Res
 
 ## Workflow
 
+### New Check Workflow
 1. **Determine check pattern** — Choose the check type based on user intent (see Step 1 below)
 2. **Determine API pattern** — Identify which model elements the check inspects (see Step 2 below)
 3. **Read reference files** — Load the selected pattern and API reference files from `references/`
@@ -41,6 +43,9 @@ Create custom Model Advisor checks that use modern DetailStyle callbacks and Res
 6. **Write registration** — Create or append to `sl_customization.m`
 7. **Validate** — Run `check_matlab_code` on each generated `.m` file
 8. **Report** — Show output file locations, placement instructions, and test command
+
+### Legacy Conversion Workflow
+When converting existing StyleOne/StyleTwo/StyleThree checks to DetailStyle, follow `references/workflow-legacy-conversion.md`.
 
 This skill covers check authoring only. To run checks on a model, use the `checking-model-compliance` skill.
 
@@ -52,6 +57,7 @@ This skill covers check authoring only. To run checks on a model, use the `check
 | "edit-time", "live", "real-time", "canvas warning" | Edit-time check | `references/pattern-edittime.md` — EdittimeCheck class with blockDiscovered/finishedTraversal |
 | Config parameters, solver settings, diagnostics, model settings | Config parameter check | `references/pattern-config-param.md` — get_param/set_param with auto-fix action |
 | "custom table", "formatted report", "custom columns" | + FormatTemplate | `references/pattern-format-template.md` — combine with standard or edit-time pattern for custom tables |
+| "convert", "upgrade", "legacy", "StyleOne", "StyleTwo", "StyleThree" | Legacy conversion | `references/workflow-legacy-conversion.md` — infrastructure mapping, strategy choice, and result-layer replacement |
 
 FormatTemplate is an add-on, not standalone.
 

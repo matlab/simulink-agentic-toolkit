@@ -1,0 +1,14 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: MathWorks BSD-3-Clause
+scope: product-specific
+version: "1.0"
+human-description: Generate synthetic input waveforms for Simulink model inports using createInputDataset.
+matlab-release: ">=R2023a"
+required-tools:
+  - evaluate_matlab_code
+  - model_read
+required-skills: []
+required-products:
+  - Simulink
+toolkit: simulink-agentic-toolkit

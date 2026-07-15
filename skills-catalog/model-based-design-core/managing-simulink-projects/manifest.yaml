@@ -1,7 +1,6 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for managing-simulink-projects
 schema_version: 1
-author: MathWorks
 license: MathWorks BSD-3-Clause
 scope: cross-product
 version: "1.1"

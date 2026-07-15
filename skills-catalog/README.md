@@ -43,6 +43,14 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 | `inject-faults` | Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation (requires Simulink Fault Analyzer) |
 | `manage-safety-analysis` | Create and manage FMEA spreadsheets, fault trees, and safety analysis documents using Safety Analysis Manager (requires Simulink Fault Analyzer) |
 
+### [Simulink Simulation](simulink-simulation/) 
+
+Skills for constructing simulation input datasets and configuring simulation workflows
+
+| Skill | Description |
+|-------|---------------------------|
+| `authoring-simulink-inputs` | Create populated input signal datasets for Simulink models using createInputDataset scaffolds with correct metadata |
+
 ### [Code Generation](code-generation/) 
 
 Skills for code generation

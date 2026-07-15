@@ -1,17 +1,18 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for setup-custom-libraries
-schema_version: 1
+schema-version: 1.1
 license: MathWorks BSD-3-Clause
 scope: cross-product
 version: "1.1"
+human-description: Declare, add, or update custom Simulink block libraries and configure block policy and knowledge index. Use when a user wants to register, set up, configure, or add new files to their custom libraries for agent-assisted model building.
 matlab-release: ">=R2023a"
-requires-tools:
+required-tools:
   - model_edit
-requires-skills:
+required-skills:
   - configuring-block-policy
   - curating-library-kg
 reference-files:
-  - reference/library-setup.md
-requires-products:
+  - references/library-setup.md
+required-products:
   - Simulink
 toolkit: simulink-agentic-toolkit

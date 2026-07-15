@@ -116,13 +116,13 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
    --extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
    ```
 
-4. Register skills by pointing your agent's skill or prompt directory at `skills-catalog/model-based-design-core/`, `skills-catalog/model-based-system-engineering/`, `skills-catalog/verification-validation-and-test/`, and `skills-catalog/code-generation/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+4. Register skills by pointing your agent's skill or prompt directory at `skills-catalog/model-based-design-core/`, `skills-catalog/model-based-system-engineering/`, `skills-catalog/simulink-simulation/`, `skills-catalog/verification-validation-and-test/`, and `skills-catalog/code-generation/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
    For platforms that discover skills from `~/.agents/skills/`, create symlinks:
 
    ```bash
    mkdir -p ~/.agents/skills
-   for group in model-based-design-core model-based-system-engineering verification-validation-and-test code-generation; do
+   for group in model-based-design-core model-based-system-engineering simulink-simulation verification-validation-and-test code-generation; do
      for skill in /path/to/simulink-agentic-toolkit/skills-catalog/$group/*/; do
        ln -s "$skill" ~/.agents/skills/$(basename "$skill")
      done
@@ -198,6 +198,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Model-Based Design Core](skills-catalog/model-based-design-core/) | Core Model-Based Design (MBD) skills for building, testing, and specifying Simulink models |
 | [Model-Based System Engineering](skills-catalog/model-based-system-engineering/) | Model-Based System Engineering skills for System Composer architecture models |
 | [Verification, Validation, and Test](skills-catalog/verification-validation-and-test/) | Author custom Model Advisor checks and run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, etc.) |
+| [Simulink Simulation](skills-catalog/simulink-simulation/) | Skills for constructing simulation input datasets and configuring simulation workflows |
 | [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion |
 
 ## Security Considerations

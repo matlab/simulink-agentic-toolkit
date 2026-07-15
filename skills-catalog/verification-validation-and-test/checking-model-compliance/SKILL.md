@@ -57,6 +57,13 @@ Users may have custom Model Advisor checks or custom configuration files (`.json
 
 ## Prerequisites
 
+### Script Invocation
+
+Derive `SKILL_DIR` from the absolute path of this file. All script calls use `project_path` set to `SKILL_DIR/scripts`:
+
+```
+evaluate_matlab_code(code: "model_advisor_run(...)", project_path: "SKILL_DIR/scripts")
+```
 
 Tools provided (always use these — never improvise with raw Model Advisor API):
 - `model_advisor_resolve_checks()` — resolves standard → check IDs

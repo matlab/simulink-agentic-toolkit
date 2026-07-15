@@ -1,19 +1,23 @@
-schema_version: 1
-version: "1.0.0"
+schema-version: 1
+version: "1.1"
 license: MathWorks BSD-3-Clause
 scope: product
 toolkit: simulink-agentic-toolkit
+human-description: >
+  Author or upgrade Model Advisor checks for Simulink and System Composer models.
+  Covers new check creation (edit-time, standard batch, config-parameter, auto-fix)
+  and converting legacy StyleOne/StyleTwo/StyleThree checks to modern DetailStyle.
 matlab-release: ">=R2023a"
-requires-products:
+required-products:
   - Simulink
   - Simulink Check
 optional-products:
   - Stateflow
   - Requirements Toolbox
-requires-tools:
+required-tools:
   - check_matlab_code
   - evaluate_matlab_code
-requires-skills: []
+required-skills: []
 reference-files:
   - references/api-blocks.md
   - references/api-code-analysis.md
@@ -26,3 +30,4 @@ reference-files:
   - references/pattern-edittime.md
   - references/pattern-format-template.md
   - references/pattern-standard.md
+  - references/workflow-legacy-conversion.md

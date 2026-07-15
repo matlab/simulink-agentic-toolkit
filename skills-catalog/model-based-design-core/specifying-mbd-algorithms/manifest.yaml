@@ -9,7 +9,6 @@ requires-tools:
   - model_overview
   - model_read
   - model_query_params
-  - model_resolve_params
 requires-skills: []
 requires-products:
   - Simulink
