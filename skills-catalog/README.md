@@ -50,6 +50,7 @@ Skills for constructing simulation input datasets and configuring simulation wor
 | Skill | Description |
 |-------|---------------------------|
 | `authoring-simulink-inputs` | Create populated input signal datasets for Simulink models using createInputDataset scaffolds with correct metadata |
+| `create-sdi-run` | Import data into the Simulation Data Inspector from files, workspace variables, or a simulation |
 
 ### [Code Generation](code-generation/) 
 

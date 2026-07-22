@@ -8,6 +8,35 @@ This page shows you how to configure the Simulink® Agentic Toolkit. For an over
 - **Simulink Test** *(optional)* — required only for the `model_test` tool
 - Some skills require additional toolboxes (e.g., System Composer, Simscape, Stateflow). Check the `requires-products` field in each skill's `manifest.yaml` under [`skills-catalog/`](skills-catalog/) for additional requirements.
 
+### Installing from Local Files (Offline Computer)
+
+To install Simulink Agentic Toolkit in an offline or air-gapped environment, first download these artifacts on a computer with internet access and transfer them to the target machine or a shared location.
+
+| Artifact | Where to Get It |
+|----------|----------------|
+| MCP server binary | [Latest release](https://github.com/matlab/matlab-mcp-server/releases/latest) — download the binary for your platform (e.g., `matlab-mcp-server-macos-arm64`, `matlab-mcp-server-windows-x64.exe`) |
+| MCP server toolbox | [Latest release](https://github.com/matlab/matlab-mcp-server/releases/latest) — download `MATLABMCPServerToolbox.mltbx` |
+| Simulink Agentic Toolkit | Clone or download from [GitHub](https://github.com/matlab/simulink-agentic-toolkit) |
+| MATLAB Agentic Toolkit | Clone or download from [GitHub](https://github.com/matlab/matlab-agentic-toolkit) (only needed when installing with `Toolkit="matlab"`)|
+
+
+After you download these artifacts, run the `setupAgenticToolkit` command in your MATLAB command window with these name-value arguments.
+
+| Argument | Value |
+|----------|-----------------|
+| `MCPServerLocation` | Path to the MCP server binary download |
+| `MCPToolboxLocation` | Path to the MATLAB toolbox (`.mltbx`) download |
+| `MATLABAgenticToolkitLocation` | Path to the MATLAB Agentic Toolkit repository clone |
+| `SimulinkAgenticToolkitLocation` | Path to the Simulink Agentic Toolkit repository clone |
+
+The installer downloads any artifact you do not provide locally. To prevent internet access and report an error if an artifact is unavailable, set `Offline=true`. For example, use this command to install Simulink Agentic Toolkit from local files.
+
+```matlab
+setupAgenticToolkit("install", Offline=true,  ...
+    MCPServerLocation="/shared/agentic-toolkits/bin/matlab-mcp-server-linux-x64", ...
+    MCPToolboxLocation="/shared/agentic-toolkits/toolboxes/MATLABMCPServerToolbox.mltbx", ...
+    SimulinkAgenticToolkitLocation="/shared/agentic-toolkits/simulink-agentic-toolkit")
+```
 
 ### Automated Setup Configuration
 

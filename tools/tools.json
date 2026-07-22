@@ -175,6 +175,69 @@
       }
     },
     {
+      "name": "model_read_diagnostics",
+      "title": "Model Read Diagnostics",
+      "description": "Retrieve diagnostic messages (errors, warnings, info) from the latest Diagnostic Viewer stage for a loaded Simulink model. Returns structured output with blk_X IDs consistent with model_read.\n\nUse after any operation that triggers compilation, simulation, or code generation (e.g., update diagram via evaluate_matlab_code) to see what went wrong or what warnings were produced. Each message includes severity, originating block ID, message text, and message identifier.\n\nAn empty result means no diagnostics matched the filters — it does NOT prove the model is error-free unless an update/simulation was triggered beforehand.\n\nThis tool never triggers compilation or simulation. It only reads existing diagnostics from the Diagnostic Viewer.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx)"
+          },
+          "severity": {
+            "type": "string",
+            "description": "Filter by severity: 'all' (default), 'error', 'warning', 'info', or a JSON array subset like '[\"error\",\"warning\"]'"
+          },
+          "scope": {
+            "type": "string",
+            "description": "Diagnostic scope: 'root' for entire model (default) or a block ID like 'blk_10' to filter to a subsystem subtree"
+          },
+          "message_id": {
+            "type": "string",
+            "description": "Filter to a specific MATLAB message identifier (e.g. 'Simulink:Engine:SolverConsecutiveZCNum')"
+          },
+          "detail": {
+            "type": "string",
+            "description": "Output detail level: 'full' (default, individual messages with block IDs) or 'summary' (severity counts and message ID grouping)"
+          },
+          "sort_by": {
+            "type": "string",
+            "description": "Sort order for results: 'severity' (default), 'message_id', or 'block_path'"
+          },
+          "limit": {
+            "type": "string",
+            "description": "Max messages per page as string, 1-200 (default '50')"
+          },
+          "offset": {
+            "type": "string",
+            "description": "Paging offset as string, 0-based (default '0')"
+          },
+          "token_limit": {
+            "type": "string",
+            "description": "Max tokens in response as string (default '25000'). Lower to save context budget."
+          }
+        },
+        "required": [
+          "model",
+          "severity",
+          "scope",
+          "message_id",
+          "detail",
+          "sort_by",
+          "limit",
+          "offset",
+          "token_limit"
+        ]
+      }
+    },
+    {
       "name": "model_check",
       "title": "Model Check",
       "description": "Validate a Simulink model for structural issues. Detects unconnected ports, dangling signal lines, and Stateflow edit-time lint errors. Use after model_edit to catch connectivity problems, or to audit an existing model's structural health.\n\nChecks available:\n- unconnected_ports: blocks with inputs/outputs that have no signal connected\n- unconnected_lines: signal lines missing a source or destination\n- stateflow_lint: edit-time lint diagnostics on Chart and StateTransitionTable blocks\n\nReturns issue list with severity (error/warning), block IDs, and actionable messages. Use scope to focus on a specific subsystem for faster, targeted validation.",
@@ -309,6 +372,22 @@
           "scope",
           "operations",
           "layout_mode"
+        ]
+      }
+    },
+    "model_read_diagnostics": {
+      "function": "model_read_diagnostics",
+      "input": {
+        "order": [
+          "model",
+          "severity",
+          "scope",
+          "message_id",
+          "detail",
+          "sort_by",
+          "limit",
+          "offset",
+          "token_limit"
         ]
       }
     },

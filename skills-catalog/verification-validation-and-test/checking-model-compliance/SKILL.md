@@ -1,10 +1,10 @@
 ---
 name: checking-model-compliance
-description: "Checks a Simulink model against a compliance standard (MISRA, MAB, JMAAB, ISO 26262, ISO 25119, DO-178C, DO-254, IEC 61508, IEC 62304, EN 50128, CERT C/CWE, AUTOSAR) using Model Advisor, then summarizes findings and suggests fixes. Use when the user asks whether their model is compliant, wants to run standard checks, or needs a compliance report."
+description: "Use this skill when the user asks to check Simulink model compliance against a standard (MISRA, MAB, JMAAB, ISO 26262, ISO 25119, DO-178C, DO-254, IEC 61508, IEC 62304, EN 50128, CERT C/CWE, AUTOSAR), wants to run Model Advisor checks, or needs a compliance report with fix suggestions. For JMAAB/MAB, supplement deterministic checks with agentic review of uncheckable guidelines."
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "0.4"
+  version: "0.5"
 ---
 
 # Checking Model Compliance
@@ -24,6 +24,7 @@ Runs Model Advisor checks for a named standard (or default configuration) and de
 - **Building or editing model structure** → `building-simulink-models`
 - **Writing behavioral tests** → `testing-simulink-models`
 - **Structural validation only (unconnected ports)** → `model_check` tool directly
+- **General model quality questions** without a named standard (e.g., "is my model well decomposed?") — this requires a different workflow
 
 ## Supported Standards
 
@@ -54,22 +55,18 @@ Users may have custom Model Advisor checks or custom configuration files (`.json
 - **Custom configuration file:** User provides a path → use `model_advisor_run` with `'configuration'` parameter directly (Path B)
 - **Custom check IDs:** User provides specific check IDs → use `model_advisor_run` with `'checks'` parameter directly (skip resolution)
 
-
 ## Prerequisites
 
-### Script Invocation
+All script functions are in the skill's `scripts/` directory. Use `evaluate_matlab_code` with `project_path` set to the skill's `scripts/` folder so MATLAB can find them. Never use `addpath`.
 
-Derive `SKILL_DIR` from the absolute path of this file. All script calls use `project_path` set to `SKILL_DIR/scripts`:
+**Tools provided** (always use these — never improvise with raw Model Advisor API):
 
-```
-evaluate_matlab_code(code: "model_advisor_run(...)", project_path: "SKILL_DIR/scripts")
-```
-
-Tools provided (always use these — never improvise with raw Model Advisor API):
-- `model_advisor_resolve_checks()` — resolves standard → check IDs
-- `model_advisor_run()` — executes checks
-- `model_advisor_justify()` — records justifications
-- `detect_default_config()` — finds active Model Advisor config
+| Function | Inputs | Output | Example |
+|----------|--------|--------|---------|
+| `model_advisor_resolve_checks` | `'standard', '<NAME>'` | struct with `checks`, `checks_count`, `status` | `model_advisor_resolve_checks('standard', 'JMAAB')` |
+| `model_advisor_run` | `system, 'checks', {ids}` or `system, 'configuration', path` | YAML with `findings`, `status`, `check_summary` | `model_advisor_run('MyModel', 'checks', checkIds, 'token_budget', 8000)` |
+| `model_advisor_justify` | `model, checkId, blockPath, text` | struct with status | `model_advisor_justify('MyModel', 'mathworks.jmaab.db_0032', 'MyModel/Sub', 'Waived per review')` |
+| `detect_default_config` | `modelName` | struct with `config_path` or empty | `detect_default_config('MyModel')` |
 
 ## Workflow
 
@@ -114,7 +111,7 @@ model_advisor_run('<system>', 'checks', {<check_ids>})          % inline checks
 model_advisor_run('<system>', 'configuration', '<config_path>') % config file
 ```
 
-Pass `'token_budget', 8000` as a name-value argument to `model_advisor_run` to limit output size. If the response indicates truncation, read the full results from the `full_results` path in the response.
+Use `'token_budget', 8000`. If truncated, read full results from `full_results` path.
 
 ### 5. Analyze Findings
 
@@ -153,11 +150,19 @@ N checks passed.
 - Target 40-60 lines; max ~80
 - Offer "I can list all affected blocks for check X" for detail
 
-After presenting the report, ask: "Would you like me to fix these issues?"
+### 7. Agentic Review of Uncheckable Guidelines (JMAAB/MAB only)
+
+For JMAAB, JMAAB_V6, or MAB standards → after Step 6, load and follow `references/uncheckable-guidelines-review.md`.
+
+Skip this step for other standards (MISRA, ISO 26262, DO-178C, etc.).
+
+### 8. Fix Mode
+
+Ask: "Would you like me to fix these issues?"
 - No → stop (report only)
 - Yes → load and follow `references/fix-mode.md` workflow
 
-### 7. Justification Mode
+### 9. Justification Mode
 
 If user wants to justify/waive/suppress violations → load and follow the Justification section in `references/fix-mode.md`.
 
@@ -203,3 +208,4 @@ If user wants to justify/waive/suppress violations → load and follow the Justi
 | Token budget exceeded | Read full results from `full_results` field |
 | `HASH_NOT_FOUND` (justify) | Model modified since last run — re-run checks for fresh ids |
 | `JUSTIFICATION_FILE_ERROR` | Check file permissions and license |
+

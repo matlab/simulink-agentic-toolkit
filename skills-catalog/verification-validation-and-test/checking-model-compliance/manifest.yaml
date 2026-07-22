@@ -1,21 +1,28 @@
-# Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for checking-model-compliance
-schema_version: 1
+schema-version: 1
 license: MathWorks BSD-3-Clause
 scope: cross-product
-version: "0.1"
+version: "0.5"
+human-description: Check Simulink model compliance against JMAAB, MAB, MISRA, and safety standards.
 matlab-release: ">=R2023a"
-requires-tools:
+required-tools:
   - evaluate_matlab_code
   - model_edit
-requires-skills: []
-requires-products:
-  - Simulink
-  - Simulink Check
-toolkit: simulink-agentic-toolkit
+  - model_overview
+  - model_read
+  - model_query_params
+required-skills: []
 reference-files:
   - scripts/detect_default_config.p
   - scripts/model_advisor_run.p
   - scripts/model_advisor_resolve_checks.p
   - scripts/model_advisor_justify.p
+  - references/semantic-evaluation-index.md
+  - references/uncheckable-guidelines-review.md
   - references/fix-mode.md
+required-products:
+  - Simulink
+  - Simulink Check
+optional-products:
+  - Stateflow
+toolkit: simulink-agentic-toolkit

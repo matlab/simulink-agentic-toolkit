@@ -1,0 +1,17 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: MathWorks BSD-3-Clause
+scope: product-specific
+version: "1.0"
+human-description: Import data into the Simulation Data Inspector from files, workspace variables, or a simulation.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+optional-products: []
+required-tools:
+  - evaluate_matlab_code
+required-skills: []
+reference-files:
+  - references/createrun-signatures.md
+  - references/format-support.md

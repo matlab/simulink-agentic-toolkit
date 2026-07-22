@@ -182,6 +182,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the following
 | `model_read` | Understand model behavior. Inspect blocks, algorithmic expressions, signal flow, and parameter values |
 | `model_edit` | Build and modify models. Add blocks, wire signals, create subsystems, and configure parameters as needed |
 | `model_check` | Validate model structure. Detect unconnected ports, dangling lines, and Edit-Time Checks on States and Subcharts |
+| `model_read_diagnostics` | Read diagnostics. Retrieve errors, warnings, and info messages from the Diagnostic Viewer after compilation, simulation, or code generation |
 | `model_test` | Verify requirements. Run human-readable Gherkin tests with automatic harness generation *(requires Simulink Test)* |
 | `model_query_params` | Inspect any parameter. Query block settings, signal properties, solver config, and logging flags |
 | `model_resolve_params` | Get actual values. Resolve workspace variables like `Kp` to their numeric values across all scopes |
