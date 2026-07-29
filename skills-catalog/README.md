@@ -22,7 +22,6 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 | `simulating-simulink-models` | Run simulations for data exploration, parameter sweeps, and custom analysis |
 | `specifying-mbd-algorithms` | Specify algorithms for Model-Based Design (MBD) including system specs, architecture specs, implementation and test plans |
 | `specifying-plant-models` | Specify plant models for closed-loop simulation |
-| `testing-simulink-models` | Test model behavior, reproduce issues, verify changes, regression tests |
 
 ### [Model-Based System Engineering](model-based-system-engineering/) 
 
@@ -42,6 +41,8 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 | `checking-model-compliance` | Run Model Advisor against compliance standards (MISRA, MAB, JMAAB, ISO 26262, DO-178C, AUTOSAR, etc.) and summarize findings with fix suggestions |
 | `inject-faults` | Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation (requires Simulink Fault Analyzer) |
 | `manage-safety-analysis` | Create and manage FMEA spreadsheets, fault trees, and safety analysis documents using Safety Analysis Manager (requires Simulink Fault Analyzer) |
+| `resolve-design-errors` | Detect Simulink Design Verifier design errors (division-by-zero, overflow, dead logic, out-of-bounds), perform root cause analysis with cascade detection and locality scoring, and propose ranked fixes (requires Simulink Design Verifier and Simulink Check) |
+| `testing-simulink-models` | Test Simulink models via two paths — ephemeral Gherkin-based tests (`model_test`) for quick validation, or persistent Simulink Test cases authored from requirements or behavioral specs |
 
 ### [Simulink Simulation](simulink-simulation/) 
 

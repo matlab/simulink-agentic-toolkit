@@ -1,16 +1,16 @@
 # manifest.yaml — Tooling metadata for inject-faults
-schema_version: 1
+schema-version: 1
 license: MathWorks BSD-3-Clause
 scope: cross-product
 version: "1.0"
-human-description: Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation.
+human-description: "Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation."
 matlab-release: ">=R2023b"
-requires-tools:
+required-tools:
   - evaluate_matlab_code
   - model_overview
   - model_read
   - model_edit
-requires-skills: []
+required-skills: []
 reference-files:
   - references/advanced-operations.md
   - references/fault-behaviors.md
@@ -18,8 +18,9 @@ reference-files:
   - references/simulation-workflows.md
   - references/test-case-integration.md
   - references/triggers-and-conditionals.md
-requires-products:
+required-products:
   - Simulink
   - Simulink Fault Analyzer
+optional-products: []
 toolkit: simulink-agentic-toolkit
 # Copyright 2026 The MathWorks, Inc.

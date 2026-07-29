@@ -130,6 +130,17 @@ setupAgenticToolkit("uninstall")
 
 Then select **Agent configurations only** from the interactive prompt. This removes MCP config entries and skill registrations while keeping installed toolkits and the MCP server intact. Useful when switching agents or cleaning up stale configurations.
 
+### Disable Data Collection
+
+MATLAB MCP Server collects fully anonymized information about your usage of the server and sends it to MathWorks. This data collection helps MathWorks improve products and is on by default. To opt out of data collection, configure the toolkit with the `DisableTelemetry` option set to `true` by running this command in MATLAB:
+
+```matlab
+setupAgenticToolkit("configure", DisableTelemetry=true)
+```
+
+This command opts every configured agent out of data collection. This setting is retained when you update to a new version the toolkit with `setupAgenticToolkit("update")`. If you reconfigure the toolkit for your agent(s) by running `setupAgenticToolkit("configure")`, include `DisableTelemetry=true` again to keep data collection disabled.
+
+---
 
 ## Troubleshooting
 | Problem | Likely Cause | Fix |

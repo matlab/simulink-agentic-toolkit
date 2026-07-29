@@ -4,7 +4,7 @@ description: Builds and edits Simulink, System Composer, Stateflow, and Simscape
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "1.3"
+  version: "1.4"
 ---
 
 # Building Models
@@ -26,21 +26,33 @@ Use `model_edit` for all structural changes — Simulink, System Composer, Simsc
 
 ## Library & Policy Prerequisites — BLOCKING GATE
 
-**Do this FIRST and ALONE — no other tool calls in the same message.**
+**Do this FIRST — evaluate the result before any other tool call.** Do not narrate the gate check to the user; proceed silently based on the result.
 
-Check all three files in a single read: `.satk/reuse-libraries.json`, `.satk/block-policy.json`, `.satk/library-kg/index.md`.
-- **All three exist  → gates pass.** Proceed to the Workflow section.
-- **`.satk/reuse-libraries.json` exists but with `confirmedNone: true` (no custom libraries) → gates pass.** Skip Gates 2 and 3 entirely — block policy and knowledge index are not needed when there are no custom Libraries.
-- **Any missing → load the `setup-custom-libraries` skill.** Do not proceed until it completes.
+Call `library.settingsLookup()` to check for custom library configuration. It returns a struct with resolved absolute paths:
+- `found` — whether a libraries file was located (satk-libraries.json or legacy reuse-libraries.json)
+- `enabled` — whether custom libraries are configured
+- `gatePass` — whether the gate is satisfied (can proceed to build)
+- `kgIndexPath` — absolute path to `library-kg/index.md`
+- `librariesPath` — absolute path to the libraries file
+- `policyPath` — absolute path to `block-policy.json`
+- `dataRoot` — absolute path to the directory containing `.satk/`
+
+**Interpret the result:**
+
+- **`found: false`** → no custom libraries configured. Proceed with standard Simulink blocks.
+- **`gatePass: true, found: true`** → read `kgIndexPath` for block lookup, then plan and edit.
+- **`gatePass: false`** → invoke `setup-custom-libraries` to populate the Knowledge Index.
+
+Display meaningful description of each check and result instead of stating gate Pass/fail.
 
 
-No model reading, planning, or editing begins until all three gates pass.
+No model reading, planning, or editing begins until the gate passes.
 
 ## Workflow
 
 
-0. **Ensure Library & Policy Prerequisites:** Read `.satk/reuse-libraries.json`, `.satk/block-policy.json`, and `.satk/library-kg/index.md`. If all three exist, proceed. If `reuse-libraries.json` has `confirmedNone: true`, skip policy and KG checks. If any are missing, check the gates in the "Library & Policy Prerequisites — BLOCKING GATE" section above. load `setup-custom-libraries`skill for gate resolution details and do not proceed until it is complete.
-1. **Library block lookup:** If `.satk/reuse-libraries.json` declares one or more libraries, list every block type you plan to use, search `.satk/library-kg/index.md` and the relevant category pages to find each of the library blocks that match.
+0. **Ensure Library & Policy Prerequisites:** See BLOCKING GATE above. Do not proceed until gates pass.
+1. **Library block lookup:**  List every block type you plan to use, search `.satk/library-kg/index.md` and the relevant category pages to find each of the library blocks that match.
 2. **Read first:** Use `model_read` on the target scope to get block IDs and understand existing topology.
 3. **Plan the data flow:** For complex edits, sketch inputs → operations → outputs, then map to blocks identified in Step 1 & 2.
 4. **Edit:** Use `model_edit` with operations scoped to one subsystem level at a time.

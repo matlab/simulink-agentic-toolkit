@@ -4,7 +4,7 @@ description: "Common steps for building multi-layer system architecture models u
 license: MathWorks BSD-3-Clause
 metadata:
   author: MathWorks
-  version: "0.2.0"
+  version: "0.2"
 ---
 # Building Architecture Models
 

@@ -1,20 +1,22 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for building-architecture-models
-schema_version: 1
+schema-version: 1
 author: MathWorks
 license: MathWorks BSD-3-Clause
 scope: cross-product
-version: "0.2.0"
+version: "0.2"
+human-description: "Build multi-layer system architecture models using System Composer, including interface dictionaries, allocation sets, stereotypes, and requirements tracing."
 matlab-release: ">=R2023a"
-requires-tools:
+required-tools:
   - model_overview
   - model_read
   - model_edit
   - evaluate_matlab_code
   - check_matlab_code
-requires-skills: []
-requires-products:
+required-skills: []
+required-products:
   - Simulink
   - System Composer
   - Requirements Toolbox
+optional-products: []
 toolkit: simulink-agentic-toolkit

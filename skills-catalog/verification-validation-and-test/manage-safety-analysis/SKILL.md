@@ -56,7 +56,7 @@ Safety Analysis Manager supports two document formats:
 ### Creating a New Spreadsheet (FMEA/FHA/HARA)
 
 1. **Understand the source.** Either:
-   - **From a model:** Use `model_overview` and `model_read` to identify subsystems, signal paths, feedback loops, sensors, and actuators. These become FMEA rows or hazard entries.
+   - **From a model:** Always use `model_overview` to inspect the model structure first. Use `model_read` for deeper subsystem details. Identify subsystems, signal paths, feedback loops, sensors, and actuators. These become FMEA rows or hazard entries.
    - **From requirements:** Read the requirements (via Requirements Toolbox or user-provided text) and derive functional elements, failure modes, and hazards from the specified system behavior.
 2. **Choose a document structure.** Design columns appropriate for the specific system and analysis type. Use a built-in template only if the user explicitly requests one.
 3. **Create and populate.** Build the spreadsheet programmatically using the API.
@@ -97,9 +97,10 @@ Safety Analysis Manager supports two document formats:
 ## Guardrails
 
 ### Always
+- Use `evaluate_matlab_code` with `project_path` set to the skill's `scripts/` folder so MATLAB can find helper scripts (e.g., `fileType`). Never use `addpath`.
 - Verify `.mldatx` files with `fileType(filePath)` before opening — the extension is shared with other tools. Only proceed if it returns `"document"` or `"template"`; if it throws, the file is not a Safety Analysis Manager document.
 - When a model is available, read it with `model_overview` or `model_read` before writing failure modes — ground the analysis in actual structure. When working from requirements alone, derive failure modes from the requirements text instead.
-- Open Safety Analysis Manager with `safetyAnalysisMgr.openManager` after creating or modifying a document so the user can review
+- **Always call `safetyAnalysisMgr.openManager` as the final step** after creating, modifying, or reviewing a document — never skip this. The user cannot see results until the manager is open.
 - Remind the user to save (or save programmatically with confirmation) — new documents have no file until explicitly saved
 
 ### Never

@@ -1,0 +1,41 @@
+- id: assumption_error
+  name: "Restrictions on Signal Ranges"
+  description: >
+    Root-level Inport blocks with minimum and maximum values as constraints and
+    Test Condition blocks in test generation may cause dead logic. For example,
+    if an Inport has range [1..100] and a Switch uses criteria in2 > 0, some
+    branches can become unreachable.
+  yaml_example: |
+    Name: Assumption
+    Inputs:
+      - In1
+      - In2
+      - In3
+    Outputs: Out1
+    ChildrenBlocks:
+      - Name: In1
+        Type: Inport
+        Outputs:
+          Out1: ConditionGreaterThan0.In1
+      - Name: In2
+        Type: Inport
+        Outputs:
+          Out1: ConditionGreaterThan0.In2
+      - Name: In3
+        Type: Inport
+        Outputs:
+          Out1: ConditionGreaterThan0.In3
+      - Name: ConditionGreaterThan0
+        Type: Switch
+        Info:
+          Criteria: "in2 > 0"
+        Inputs:
+          In1: In1.Out1
+          In2: In2.Out1
+          In3: In3.Out1
+        Outputs:
+          Out1: Out1.In1
+      - Name: Out1
+        Type: Outport
+        Inputs:
+          In1: ConditionGreaterThan0.Out1

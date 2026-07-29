@@ -172,6 +172,22 @@ This opens the shipped example model `sldemo_househeat`. Ask your agent:
 ```
 Describe the structure of the currently open model.
 ```
+## Custom Libraries
+
+To use your own custom Simulink block libraries with the toolkit, register them in MATLAB once:
+
+```matlab
+satk.Configuration.setCustomLibraries("C:\path\to\customLibs")
+```
+
+This declares your custom libraries. 
+On the next model-building task or on invocation of the **'setup-custom-libraries'** skill, the agent indexes the libraries into a knowledge base (~3–5 min to complete) storing it in MATLAB's preference directory (prefdir) enabling usage of custom blocks alongside built-in ones.
+
+To remove all custom library configuration:
+
+```matlab
+satk.Configuration.clearConfig()
+```
 ## MCP Tools
 
 After you install the Simulink Agentic Toolkit, your agent can use the following tools.

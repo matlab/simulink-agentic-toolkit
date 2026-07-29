@@ -1,0 +1,26 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for testing-simulink-models
+schema-version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "2.0"
+human-description: Tests Simulink models using either ephemeral Gherkin-based tests (model_test) for quick validation or persistent tests (Simulink Test API) authored from requirements or behavioral specs. Requires Simulink Test.
+matlab-release: ">=R2023a"
+required-tools:
+  - model_test
+  - model_overview
+  - model_read
+required-skills: []
+reference-files:
+  - references/gherkin-based-fast-testing.md
+  - references/simulink-test-authoring.md
+  - references/assessment-format.md
+  - references/test-structure-template.md
+  - references/test-config-template.md
+required-products:
+  - Simulink
+  - Simulink Test
+optional-products:
+  - Requirements Toolbox
+  - Simulink Coverage
+toolkit: simulink-agentic-toolkit

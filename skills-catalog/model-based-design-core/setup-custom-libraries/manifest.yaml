@@ -3,8 +3,8 @@
 schema-version: 1.1
 license: MathWorks BSD-3-Clause
 scope: cross-product
-version: "1.1"
-human-description: Declare, add, or update custom Simulink block libraries and configure block policy and knowledge index. Use when a user wants to register, set up, configure, or add new files to their custom libraries for agent-assisted model building.
+version: "1.2"
+human-description: Register, add, or update existing custom Simulink block libraries and configure block policy and knowledge index. Use when a user wants to register, set up, configure, or add existing .slx library files for agent-assisted model building. Do NOT use when the user wants to create or author a new library from scratch.
 matlab-release: ">=R2023a"
 required-tools:
   - model_edit
@@ -15,4 +15,5 @@ reference-files:
   - references/library-setup.md
 required-products:
   - Simulink
+optional-products: []
 toolkit: simulink-agentic-toolkit

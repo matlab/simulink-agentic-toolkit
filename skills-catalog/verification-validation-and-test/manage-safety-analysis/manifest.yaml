@@ -1,22 +1,24 @@
 # manifest.yaml — Tooling metadata for manage-safety-analysis
-schema_version: 1
+schema-version: 1
 license: MathWorks BSD-3-Clause
 scope: cross-product
-version: "2.0"
+version: "2.1"
+human-description: "Create, populate, and manage safety analysis spreadsheets (FMEA, FHA, HARA) and fault trees (FTA) in Safety Analysis Manager."
 matlab-release: ">=R2023b"
-requires-tools:
+required-tools:
   - evaluate_matlab_code
   - model_overview
   - model_read
-requires-skills: []
+required-skills: []
 reference-files:
   - references/common-api.md
   - references/spreadsheet-api.md
   - references/tree-api.md
 helper-files:
   - scripts/fileType
-requires-products:
+required-products:
   - Simulink
   - Simulink Fault Analyzer
+optional-products: []
 toolkit: simulink-agentic-toolkit
 # Copyright 2026 The MathWorks, Inc.

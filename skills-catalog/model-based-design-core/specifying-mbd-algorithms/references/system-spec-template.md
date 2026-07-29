@@ -145,7 +145,7 @@
 
 *Skip if simulation-only.*
 
-*Constraints that affect model architecture when the algorithm will be deployed via Embedded Coder, HDL Coder, or similar.*
+*Constraints that affect model architecture when the algorithm will be deployed via Embedded Coder, or similar.*
 
 ### Target Hardware
 

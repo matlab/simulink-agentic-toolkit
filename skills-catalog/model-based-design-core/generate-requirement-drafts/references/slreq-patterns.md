@@ -57,6 +57,12 @@ val = getAttribute(req, 'ASIL');
 
 Links connect model elements to requirements. The link type is auto-assigned based on artifact types.
 
+> **Choosing the right API:**
+> - Have an SID (`ModelName:123`, from `blk_X` in model_read output)? → `Simulink.ID.getHandle(sid)` then `slreq.createLink(handle, req)`
+> - Have a block path (`Model/Subsys/Block`)? → `slreq.createLink(path, req)` directly
+>
+> `Simulink.ID.getHandle` accepts ONLY colon-separated SIDs (`ModelName:123`), never slash-separated block paths.
+
 ```matlab
 % Using block handle from blk_X ID (preferred — immune to multiline/whitespace names)
 h = Simulink.ID.getHandle('<ModelName>:<SID>');

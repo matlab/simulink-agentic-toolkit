@@ -1,0 +1,23 @@
+# manifest.yaml — Tooling metadata for resolve-design-errors
+schema-version: 1
+license: MathWorks BSD-3-Clause
+scope: cross-product
+version: "1.3"
+human-description: Detect design errors (division-by-zero, overflow, dead logic, out-of-bounds) in Simulink models using SLDV, then perform root cause analysis with cascade detection, locality scoring, and fix proposals.
+matlab-release: ">=R2023b"
+required-tools:
+  - evaluate_matlab_code
+  - model_overview
+  - model_read
+  - model_edit
+required-skills: []
+reference-files:
+  - scripts/dead_logic_pattern_library/pattern_catalog.yaml
+  - references/api-reference.md
+  - references/fix-strategy.md
+required-products:
+  - Simulink
+  - Simulink Design Verifier
+  - Simulink Check
+toolkit: simulink-agentic-toolkit
+# Copyright 2026 The MathWorks, Inc.

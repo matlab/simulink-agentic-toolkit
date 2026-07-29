@@ -1,0 +1,108 @@
+- id: cascading_dead_logic
+  name: "Cascading Dead Logic"
+  description: >
+    When a particular block has dead logic, this can cause a cascade effect
+    that makes downstream blocks also have dead logic. It is often more useful
+    to review upstream dead logic first.
+  yaml_example: |
+    Name: Cascading
+    Inputs:
+      - In1
+      - In2
+      - In3
+    Outputs: Out1
+    ChildrenBlocks:
+      - Name: Constant
+        Type: Constant
+        Info:
+          Value: ParamA
+        Outputs:
+          Out1: Add.In1
+      - Name: Constant1
+        Type: Constant
+        Info:
+          Value: ParamB
+        Outputs:
+          Out1: Add.In2
+      - Name: Constant2
+        Type: Constant
+        Info:
+          Value: ParamC
+        Outputs:
+          Out1: Add1.In1
+      - Name: Add
+        Type: Sum
+        Info:
+          Equation: out = in1  + in2
+        Inputs:
+          In1: Constant.Out1
+          In2: Constant1.Out1
+        Outputs:
+          Out1: Less Than.In1
+      - Name: Constant3
+        Type: Constant
+        Info:
+          Value: ParamD
+        Outputs:
+          Out1: Add1.In2
+      - Name: Add1
+        Type: Sum
+        Info:
+          Equation: out = in1  + in2
+        Inputs:
+          In1: Constant2.Out1
+          In2: Constant3.Out1
+        Outputs:
+          Out1: Less Than.In2
+      - Name: Less Than
+        Type: RelationalOperator
+        Info:
+          Operation: in1 < in2
+        Inputs:
+          In1: Add.Out1
+          In2: Add1.Out1
+        Outputs:
+          Out1: Logical Operator.In1
+      - Name: In1
+        Type: Inport
+        Outputs:
+          Out1: Switch.In1
+      - Name: Switch
+        Type: Switch
+        Info:
+          Criteria: "in2 > 0"
+        Inputs:
+          In1: In1.Out1
+          In2: Logical Operator.Out1
+          In3: Logical Operator1.Out1
+        Outputs:
+          Out1: Out1.In1
+      - Name: In2
+        Type: Inport
+        Outputs:
+          Out1: Logical Operator1.In1
+      - Name: Logical Operator
+        Type: Logic
+        Info:
+          LogicalOperation: NOT
+        Inputs:
+          In1: Less Than.Out1
+        Outputs:
+          Out1: Switch.In2
+      - Name: In3
+        Type: Inport
+        Outputs:
+          Out1: Logical Operator1.In2
+      - Name: Logical Operator1
+        Type: Logic
+        Info:
+          LogicalOperation: AND
+        Inputs:
+          In1: In2.Out1
+          In2: In3.Out1
+        Outputs:
+          Out1: Switch.In3
+      - Name: Out1
+        Type: Outport
+        Inputs:
+          In1: Switch.Out1

@@ -177,8 +177,8 @@ Before finishing, verify (both backends):
 ## References
 - `references/slreq-patterns.md` — Requirements Toolbox API cookbook
 - `references/yaml-requirements.md` — Structured YAML schema and field rules
-- `references/examples/slreq_from_model.m` — End-to-end slreq example
-- `references/examples/requirements.yaml` — Structured YAML example
+- `assets/slreq_from_model.m` — End-to-end slreq example
+- `assets/requirements.yaml` — Structured YAML example
 
 ----
 
