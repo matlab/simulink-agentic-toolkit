@@ -13,10 +13,10 @@
         "name": "MathWorks"
       },
       "keywords": ["simulink", "matlab", "model-based-design"],
-      "source": "./",
+      "source": "./skills-catalog/model-based-design-core",
       "category": "development",
       "strict": false,
-      "skills": "./skills-catalog/model-based-design-core/"
+      "skills": "./"
     },
     {
       "name": "model-based-system-engineering",
@@ -26,10 +26,10 @@
         "name": "MathWorks"
       },
       "keywords": ["system-composer", "mbse", "systems-engineering", "architecture", "simulink"],
-      "source": "./",
+      "source": "./skills-catalog/model-based-system-engineering",
       "category": "development",
       "strict": false,
-      "skills": "./skills-catalog/model-based-system-engineering/"
+      "skills": "./"
     },
     {
       "name": "verification-validation-and-test",
@@ -39,23 +39,23 @@
         "name": "MathWorks"
       },
       "keywords": ["simulink", "model-advisor", "verification", "validation", "compliance", "misra", "iso-26262", "do-178c", "simulink-test", "testing", "mldatx", "requirements-traceability", "fault-injection", "safety-analysis", "fmea", "fta", "design-error-detection", "simulink-design-verifier", "root-cause-analysis"],
-      "source": "./",
+      "source": "./skills-catalog/verification-validation-and-test",
       "category": "development",
       "strict": false,
-      "skills": "./skills-catalog/verification-validation-and-test/"
+      "skills": "./"
     },
     {
       "name": "code-generation",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "description": "Prepare Simulink models for production code generation, including single-precision conversion",
       "author": {
         "name": "MathWorks"
       },
       "keywords": ["simulink", "code-generation", "embedded-coder", "fixed-point-designer", "single-precision"],
-      "source": "./",
+      "source": "./skills-catalog/code-generation",
       "category": "development",
       "strict": false,
-      "skills": "./skills-catalog/code-generation/"
+      "skills": "./"
     },
     {
       "name": "simulink-simulation",
@@ -65,10 +65,23 @@
         "name": "MathWorks"
       },
       "keywords": ["simulink", "matlab", "simulation", "input-data", "signals", "dataset", "sdi", "data-inspector"],
-      "source": "./",
+      "source": "./skills-catalog/simulink-simulation",
       "category": "development",
       "strict": false,
-      "skills": "./skills-catalog/simulink-simulation/"
+      "skills": "./"
+    },
+    {
+      "name": "control-systems",
+      "version": "0.1.0",
+      "description": "Control system design and analysis for Simulink models",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "control-design", "linearization", "lti", "lpv", "frequency-response"],
+      "source": "./skills-catalog/control-systems",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
     }
   ]
 }

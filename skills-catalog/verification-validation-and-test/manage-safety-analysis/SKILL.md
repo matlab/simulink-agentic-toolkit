@@ -1,9 +1,9 @@
 ---
 name: manage-safety-analysis
 description: "Create, populate, and manage safety analysis spreadsheets (FMEA, FHA, HARA, custom) and fault trees (FTA) in Safety Analysis Manager. Use when the user asks to perform FMEA, hazard analysis, fault tree analysis, safety analysis, or work with Safety Analysis Manager documents. Requires Simulink Fault Analyzer."
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
-  version: "2.0"
+  version: "2.1"
   author: MathWorks
 ---
 

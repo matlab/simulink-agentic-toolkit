@@ -1,7 +1,7 @@
 ---
 name: testing-simulink-models
 description: Tests Simulink models using either ephemeral Gherkin-based tests (model_test) for quick validation or persistent tests (Simulink Test API) authored from requirements or behavioral specs. Requires Simulink Test.
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "2.0"

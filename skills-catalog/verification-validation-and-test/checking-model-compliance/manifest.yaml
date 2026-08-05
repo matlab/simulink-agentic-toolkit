@@ -1,6 +1,6 @@
 # manifest.yaml — Tooling metadata for checking-model-compliance
 schema-version: 1
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
 version: "0.5"
 human-description: Check Simulink model compliance against JMAAB, MAB, MISRA, and safety standards.

@@ -1,7 +1,7 @@
 ---
 name: resolve-design-errors
 description: Use when asked to run Design Error Detection (quick defect scan), find design errors in a Simulink model, perform root cause analysis on DED findings, fix division-by-zero, overflow, dead logic or out-of-bounds defects detected by SLDV, or diagnose why missing coverage cannot be achieved (dead logic blocking coverage objectives). Do NOT use for requirement verification, test generation, Inf/NaN detection, active logic analysis, or coverage measurement.
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.3"

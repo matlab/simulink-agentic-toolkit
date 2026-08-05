@@ -1,6 +1,6 @@
 # manifest.yaml — Tooling metadata for resolve-design-errors
 schema-version: 1
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
 version: "1.3"
 human-description: Detect design errors (division-by-zero, overflow, dead logic, out-of-bounds) in Simulink models using SLDV, then perform root cause analysis with cascade detection, locality scoring, and fix proposals.

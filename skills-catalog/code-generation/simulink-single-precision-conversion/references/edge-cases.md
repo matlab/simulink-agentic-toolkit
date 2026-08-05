@@ -44,6 +44,8 @@ Blocks with `LockScale` set to `'on'` and an explicit `double` output data type 
 
 Blocks generating double-precision operations are reported in `report.CheckInfo.StowawayDblBlks`. These **do not** prevent conversion but indicate signals that remain double after the convert step. After verification, any remaining stowaway doubles indicate incomplete conversion — investigate locked data types, Stateflow chart data, or blocks outside the SUD boundary.
 
+**Fix stowaway doubles at the source, not with hand-inserted casts.** The correct remedy is to change the offending block itself — unlock and retype `DTLockedDblBlks` to single, set Stateflow chart data to single, or widen the SUD scope so the source block is included — then **re-run `convertToSingle`** so the type propagates natively. Do **not** advise inserting `single(...)` casts or Data Type Conversion (DTC) blocks on the boundary signals to paper over the mismatch: that hides the double instead of eliminating it, breaks native single-type propagation, and leaves the underlying block still generating double operations. Manual DTC blocks are a last resort only for a genuine mixed-precision interface the user intends to keep — never as the fix for an incomplete single conversion.
+
 If the stowaway double check itself fails (e.g., due to model compilation errors), `report.CheckInfo.err` is non-empty and `ready` is `false`.
 
 ## Target Language Standard (TLS) Auto-Update

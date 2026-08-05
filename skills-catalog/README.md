@@ -61,6 +61,15 @@ Skills for code generation
 |-------|---------------------------|
 | `simulink-single-precision-conversion` | Convert a double-precision Simulink system or subsystem to single precision (requires Fixed-Point Designer) |
 
+### [Control Systems](control-systems/) 
+
+Control system design and analysis skills for Simulink models
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-linearize` | Linearize Simulink models to obtain LTI or LPV representations (requires Simulink Control Design) |
+| `simulink-frequency-response` | Obtain frequency response from Simulink models using simulation-based estimation (requires Simulink Control Design) |
+
 ---
 
 ## Adding Skills

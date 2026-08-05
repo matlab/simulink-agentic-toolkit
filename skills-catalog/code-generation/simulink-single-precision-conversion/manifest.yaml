@@ -1,18 +1,14 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for simulink-single-precision-conversion
 schema-version: 1
-author: MathWorks
-license: MathWorks BSD-3-Clause
-scope: cross-product
-version: "1.7"
-human-description: "Converts a double-precision Simulink system or subsystem to single precision using Fixed-Point Designer. Use when reducing memory usage for embedded targets or batch-converting models from double to single precision."
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.8"
+human-description: "Convert a double-precision Simulink system to single precision to reduce memory use for embedded targets."
 matlab-release: ">=R2023a"
 required-tools:
   - evaluate_matlab_code
 required-skills: []
-reference-files:
-  - references/edge-cases.md
-  - references/reporting-format.md
 required-products:
   - Fixed-Point Designer
   - Simulink

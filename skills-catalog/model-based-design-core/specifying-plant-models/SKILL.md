@@ -1,7 +1,7 @@
 ---
 name: specifying-plant-models
 description: "Specify plant models for closed-loop simulation: system specs, architecture, build plans, validation plans. Use when creating, updating, or reviewing plant model specifications, planning plant model architecture, or planning plant model validation."
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.1"

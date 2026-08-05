@@ -5,7 +5,7 @@ description: >-
   source control configuration, and project lifecycle. Use when creating projects, adding
   models/dictionaries/requirements to projects, configuring labels for automation, fixing broken
   model references, or setting up source control for Simulink artifacts.
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.1"

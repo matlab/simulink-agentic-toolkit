@@ -3,12 +3,14 @@ schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: product-specific
 version: "1.0"
-human-description: Generate synthetic input waveforms for Simulink model inports using createInputDataset.
+human-description: Linearize Simulink models to obtain LTI or LPV representations.
 matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink Control Design
+  - Control System Toolbox
+optional-products: []
 required-tools:
   - evaluate_matlab_code
   - model_read
 required-skills: []
-required-products:
-  - Simulink
-toolkit: simulink-agentic-toolkit

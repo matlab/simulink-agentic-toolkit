@@ -1,7 +1,7 @@
 ---
 name: checking-model-compliance
 description: "Use this skill when the user asks to check Simulink model compliance against a standard (MISRA, MAB, JMAAB, ISO 26262, ISO 25119, DO-178C, DO-254, IEC 61508, IEC 62304, EN 50128, CERT C/CWE, AUTOSAR), wants to run Model Advisor checks, or needs a compliance report with fix suggestions. For JMAAB/MAB, supplement deterministic checks with agentic review of uncheckable guidelines."
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "0.5"

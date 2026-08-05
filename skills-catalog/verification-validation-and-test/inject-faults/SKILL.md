@@ -1,7 +1,7 @@
 ---
 name: inject-faults
 description: "Add, configure, and manage faults on Simulink, Simscape, and System Composer model signals for robustness analysis and safety validation. Use when injecting faults (stuck, noise, gain, offset) onto block inports/outports, enabling fault simulation, or analyzing fault effects. Covers sensor failures, signal corruptions, actuator faults, FMEA validation, and robustness testing. Requires Simulink Fault Analyzer."
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   version: "1.0"
   author: MathWorks

@@ -1,7 +1,7 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for setup-custom-libraries
 schema-version: 1.1
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
 version: "1.2"
 human-description: Register, add, or update existing custom Simulink block libraries and configure block policy and knowledge index. Use when a user wants to register, set up, configure, or add existing .slx library files for agent-assisted model building. Do NOT use when the user wants to create or author a new library from scratch.

@@ -10,7 +10,7 @@ description: >
   Do NOT use when the user wants to load, import, or read existing data
   from files (MAT, CSV, spreadsheet) — even if that data will be used as
   model input. Do NOT use for running simulations or plotting outputs.
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.0"

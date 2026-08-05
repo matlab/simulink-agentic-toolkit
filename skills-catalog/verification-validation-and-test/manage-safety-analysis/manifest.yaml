@@ -1,6 +1,6 @@
 # manifest.yaml — Tooling metadata for manage-safety-analysis
 schema-version: 1
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
 version: "2.1"
 human-description: "Create, populate, and manage safety analysis spreadsheets (FMEA, FHA, HARA) and fault trees (FTA) in Safety Analysis Manager."

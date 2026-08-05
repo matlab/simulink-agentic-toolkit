@@ -1,7 +1,7 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for simulating-simulink-models
 schema-version: 1
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
 version: "1.1"
 human-description: "Runs Simulink models programmatically for data exploration, parameter sweeps, and custom analysis using sim() with SimulationInput/SimulationOutput."

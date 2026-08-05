@@ -1,7 +1,7 @@
 ---
 name: building-architecture-models
 description: "Common steps for building multi-layer system architecture models using System Composer. Use when implementing architecture models or when interacting  with interface dictionaries, allocation sets, stereotypes, and requirements for architecture components."
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "0.2"

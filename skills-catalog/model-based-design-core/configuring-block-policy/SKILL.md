@@ -1,7 +1,7 @@
 ---
 name: configuring-block-policy
 description: Guide users through creating and managing .satk/block-policy.json for controlling which blocks the agent can use, which are excluded, and which block parameters the agent should not modify. Use when setting up block usage policy for a project.
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.1"

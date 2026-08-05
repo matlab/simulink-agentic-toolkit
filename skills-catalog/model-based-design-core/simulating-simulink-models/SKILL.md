@@ -1,7 +1,7 @@
 ---
 name: simulating-simulink-models
 description: Runs Simulink models programmatically for data exploration, parameter sweeps, and custom analysis using sim() with SimulationInput/SimulationOutput. Use when calling sim(), parsim, setExternalInput, setModelParameter, setVariable, or accessing logsout — any task producing simulation results for analysis (not pass/fail tests).
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.1"

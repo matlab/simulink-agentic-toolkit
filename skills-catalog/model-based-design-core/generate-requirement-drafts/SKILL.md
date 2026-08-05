@@ -1,7 +1,7 @@
 ---
 name: generate-requirement-drafts
 description: "Generates draft requirements from Simulink models. Use when drafting or updating requirement artifacts from a model. Prefers Requirements Toolbox (.slreqx) when available; falls back to structured YAML."
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "2.2"

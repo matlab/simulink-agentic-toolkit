@@ -6,7 +6,7 @@ description: >
   or converting legacy StyleOne/StyleTwo/StyleThree checks to modern DetailStyle.
   Covers DetailStyle callbacks, ResultDetail reporting, sl_customization registration,
   and edit-time EdittimeCheck classes.
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.1"

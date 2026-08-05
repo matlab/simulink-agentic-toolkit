@@ -1,6 +1,6 @@
 # manifest.yaml — Tooling metadata for inject-faults
 schema-version: 1
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
 version: "1.0"
 human-description: "Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation."

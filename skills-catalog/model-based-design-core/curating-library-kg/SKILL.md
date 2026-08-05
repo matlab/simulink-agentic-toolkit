@@ -1,7 +1,7 @@
 ---
 name: curating-library-kg
 description: Guide users through curating the library knowledge index — reviewing block categories, marking common/important blocks, and improving block descriptions via agent inference for better agent block selection.
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "2.1"

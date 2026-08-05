@@ -1,10 +1,10 @@
 ---
 name: simulink-single-precision-conversion
 description: Converts a double-precision Simulink system or subsystem to single precision using DataTypeWorkflow.Single (Fixed-Point Designer). The single conversion replaces all user-specified double-precision data types, as well as output data types that compile to double precision, with single-precision data types. Use this skill when converting Simulink systems to single precision, reducing memory usage of a Simulink system, optimizing for embedded targets. Do NOT use for standalone MATLAB .m code single conversion. 
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata: 
   author: MathWorks
-  version: "1.7"
+  version: "1.8"
 ---
 
 # Single-Precision Conversion for Simulink Models (Fixed-Point Designer)
@@ -27,6 +27,7 @@ settings, signal objects, and bus objects — to single precision. **Boolean, bu
 
 - **Standalone MATLAB `.m` code** — use the `convertToSingle` function with `coder.config('single')` instead
 - **Fixed-point data type optimization** — use `DataTypeWorkflow.Converter` instead
+- **Approximating a function or shrinking Lookup Table blocks with LUTs** — use `simulink-optimize-lookup-tables` instead
 
 ---
 
@@ -44,10 +45,10 @@ Worked example: `openExample("fixedpoint/ConvertSystemToSinglePrecisionExample")
 ### Rules
 
 1. Open with `open_system(modelName)`, **not** `load_system` — the user must see the diagram before/after.
-2. **Never** call `save_system` — saving destroys the double-precision baseline and blocks meaningful re-runs. Leave the model dirty; persist only if the user explicitly asks.
+2. **Never** call `save_system` on your own — saving destroys the double-precision baseline and blocks meaningful re-runs. Leave the model dirty. This holds **even when the user asks you to "make it stick," "persist it," or "do everything end-to-end"** — that is not consent to auto-save. In that case, state plainly that you will *not* save the model yourself, explain that saving overwrites the double-precision baseline, and ask the user to confirm or run `save_system` themselves. Only persist after the user explicitly confirms saving specifically (not merely a general "do it all" request).
 3. The compatibility check runs *inside* `convertToSingle`; read its results from `report.CheckInfo` (it is not a separate call).
-4. Get the user's explicit consent before converting. If the model path, subsystem, or scope is ambiguous, ask.
-5. Always inspect `report.VerifyInfo.StowawayDblBlks` afterward — remaining stowaway doubles mean the conversion is incomplete.
+4. Get the user's explicit consent before converting. If the model path, subsystem, or scope is ambiguous, **ask — do not guess**. When the user says "my model" without naming one, ask which model; never adopt a `.slx` you happen to find in the working directory (an example or fixture file is **not** the user's intended model). Only run the conversion once the user has named the model.
+5. Always inspect `report.VerifyInfo.StowawayDblBlks` afterward — remaining stowaway doubles mean the conversion is incomplete. Fix them **at the source** (retype locked-double blocks, set Stateflow data to single, or widen the SUD scope) and re-run `convertToSingle`. Do **not** recommend hand-inserting `single(...)` casts or Data Type Conversion blocks on the offending signals — that hides the double instead of eliminating it.
 6. Assign the report to a local variable (`report = ...;`) — don't pollute the base workspace or echo the raw struct.
 
 ---
@@ -60,10 +61,10 @@ The tool runs **check → convert → verify**, populating three sub-structs on 
 
 | Field | Description |
 |-------|-------------|
-| `ready` | Logical — `true` if the system can be converted |
+| `ready` | Logical — `true` if the system can be converted - only read `ConvertInfo`/`VerifyInfo` when this is `true`.|
 | `err` | Error info (empty on success) |
-| `IncompatibleBlks` | Blocks not supporting single precision |
-| `UnsupportedBlks` | Blocks unsupported by the conversion tool (with `ErrorMsgs`) |
+| `IncompatibleBlks` | Cell array of `DataTypeWorkflow.Single.Result` — blocks not supporting single precision (see block-name note below) |
+| `UnsupportedBlks` | Cell array of `DataTypeWorkflow.Single.Result` — blocks unsupported by the conversion tool (with `ErrorMsgs`) |
 | `DTLockedDblBlks` | Blocks with locked double data types (do not block conversion) |
 | `StowawayDblBlks` | Blocks generating double operations found during the check |
 | `TLSSettings` | Models whose Target Language Standard was updated to C99 |
@@ -71,6 +72,18 @@ The tool runs **check → convert → verify**, populating three sub-structs on 
 | `SolverSettings` | Models whose variable-step solver was changed to fixed-step |
 | `configSettings` | Config params updated (e.g. `GenerateComments`, `ParameterPrecisionLossMsg`) |
 | `memoryUse.BeforeValue` | Per-parameter memory **table**; column `RuntimeMemory` (bytes) before conversion |
+
+**How to extract block names from the diagnostic list.** `IncompatibleBlks`, `UnsupportedBlks`, `StowawayDblBlks`, and `DTLockedDblBlks` are **cell arrays of `DataTypeWorkflow.Single.Result` objects — not block-path strings.** Get the readable block path from each element's `ID` via `getDisplayName()`. Do **not** call `get_param`, `getfullname`, or `string()` on the elements: that errors with *"The first input to get_param must be of type 'double', 'char' or 'cell'."*:
+
+```matlab
+for k = 1:numel(report.CheckInfo.IncompatibleBlks)
+    r = report.CheckInfo.IncompatibleBlks{k};
+    fprintf('  %s\n', r.ID.getDisplayName());   % e.g. 'myModel/Integrator'
+    if ~isempty(r.ErrorMsgs)
+        fprintf('    %s\n', strjoin(string(r.ErrorMsgs), '; '));
+    end
+end
+```
 
 ### report.ConvertInfo
 

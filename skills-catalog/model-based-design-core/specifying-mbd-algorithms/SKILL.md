@@ -1,7 +1,7 @@
 ---
 name: specifying-mbd-algorithms
 description: "Specify algorithms for Model-Based Design: system specs, architecture specs, implementation plans, test plans. Use when creating specifications for controllers, signal processing, diagnostics, estimators, or other algorithms authored in Simulink, Stateflow, System Composer, or MATLAB Function blocks."
-license: MathWorks BSD-3-Clause
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
   version: "1.1"
