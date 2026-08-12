@@ -50,3 +50,9 @@ WHAT & WHY     PRECISE CONTRACT   HOW IT'S BUILT
 
 ### Component Spec
 **Rarely create.** Only when architecture description isn't sufficient for a complex component.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

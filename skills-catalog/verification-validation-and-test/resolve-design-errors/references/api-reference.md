@@ -81,3 +81,9 @@ computing locality without a full run).
 | `isolateRootCauses` | Collect all upstream blocks from a slice |
 | `computeReach` | Forward slice for locality measurement |
 | `detectCascade` | Validation-based cascade detection |
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

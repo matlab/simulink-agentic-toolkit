@@ -1,12 +1,15 @@
+# Copyright 2026 The MathWorks, Inc.
 schema-version: 1
-version: "1.1"
+version: "1.2"
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
-scope: product
+scope: product-specific
 toolkit: simulink-agentic-toolkit
 human-description: >
   Author or upgrade Model Advisor checks for Simulink and System Composer models.
-  Covers new check creation (edit-time, standard batch, config-parameter, auto-fix)
-  and converting legacy StyleOne/StyleTwo/StyleThree checks to modern DetailStyle.
+  Covers the full lifecycle: guideline authoring, check specification, check
+  implementation, and qualification testing. Supports new check creation (edit-time,
+  standard batch, config-parameter, auto-fix) and converting legacy
+  StyleOne/StyleTwo/StyleThree checks to modern DetailStyle.
 matlab-release: ">=R2023a"
 required-products:
   - Simulink
@@ -17,17 +20,27 @@ optional-products:
 required-tools:
   - check_matlab_code
   - evaluate_matlab_code
+  - model_edit
+  - run_matlab_test_file
 required-skills: []
 reference-files:
-  - references/api-blocks.md
-  - references/api-code-analysis.md
-  - references/api-data-resolution.md
-  - references/api-framework.md
-  - references/api-signals.md
-  - references/api-stateflow.md
-  - references/api-system-composer.md
-  - references/pattern-config-param.md
-  - references/pattern-edittime.md
-  - references/pattern-format-template.md
-  - references/pattern-standard.md
-  - references/workflow-legacy-conversion.md
+  - references/index.md
+  - references/procedures/author-guideline.md
+  - references/procedures/author-check.md
+  - references/procedures/test-check.md
+  - references/templates/guideline.md
+  - references/templates/check-spec.md
+  - references/templates/test-spec.md
+  - references/templates/test-recipes.md
+  - references/patterns/standard.md
+  - references/patterns/edittime.md
+  - references/patterns/config-param.md
+  - references/patterns/format-template.md
+  - references/workflows/legacy-conversion.md
+  - references/apis/blocks.md
+  - references/apis/signals.md
+  - references/apis/stateflow.md
+  - references/apis/data-resolution.md
+  - references/apis/code-analysis.md
+  - references/apis/system-composer.md
+  - references/apis/framework.md

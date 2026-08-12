@@ -65,3 +65,9 @@ end
 - Files must be under the project root folder
 - `addFile` auto-adds the parent folder entry
 - Use `addPath(proj, ...)` not MATLAB's builtin `addpath()` — `runChecks` flags the latter
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

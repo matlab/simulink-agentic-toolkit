@@ -74,3 +74,9 @@ For every proposed fix, explicitly discuss:
 2. **Unaffected paths** — confirm that paths NOT involved in the defect remain unchanged by the fix.
 3. **Re-verification requirement** — state that DED must be re-run after the fix to confirm the defect is resolved and no new defects are introduced.
 4. **Cascade impact** — if fixing a shared root cause, list all downstream findings that will be resolved by the single-point fix.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

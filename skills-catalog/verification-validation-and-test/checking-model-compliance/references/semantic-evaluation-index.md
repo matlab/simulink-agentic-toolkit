@@ -14,3 +14,8 @@ Apply Quick Rules for obvious cases. Consult Semantic Gap hints for borderline/a
 | jc_0491 | a | Stateflow data reuse | No charts or no locals → PASS (N/A); counter with identical pattern everywhere → PASS; variable as counter in one state AND result in another → FAIL | Same role type + different formula → WARNING. AND states sharing local → FAIL (per jc_0722). Substates of same parent OR-state → PASS (one logical unit). |
 | jc_0711 | a1, a2 | Division in Stateflow | No charts or no division → PASS (N/A); division by constant (/3) → PASS; unguarded /variable → FAIL | Guard in chart (if x~=0) → **WARNING** (a2 satisfied but a1 violated: division shouldn't be in chart). **Transition action division with implicit condition guard (e.g., [count >= N]{result = x/count}) → WARNING** (guard exists but division is in action, not protected inline). max(divisor,eps) clamping → safe for a2. |
 
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

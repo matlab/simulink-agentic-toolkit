@@ -47,3 +47,9 @@ proj = openProject(projDir);
 - All project definition file types from `createProject` are XML-based — none support `IgnoredFilePatterns`
 - `listModifiedFiles` returns files with a `SourceControlStatus` property
 - The `ProjectPath` health check catches `addpath()` usage without `addPath()`
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

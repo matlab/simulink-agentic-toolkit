@@ -38,3 +38,9 @@ Some blocks in Simscape allow you to set initial values via **initial target var
 
 This pattern (`<var>`, `<var>_specify`, `<var>_priority`) is universal across all Simscape domains — e.g., `T`/`T_specify` (thermal), `vc`/`vc_specify` (electrical capacitor), `x`/`x_specify` (translational spring), `w`/`w_specify` (rotational inertia).
 Use `model_query_params` to discover which initial target variables a block exposes (if any).
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

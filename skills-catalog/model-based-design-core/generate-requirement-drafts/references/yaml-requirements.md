@@ -59,3 +59,9 @@ Before finishing, verify:
 - `summary` uses EARS patterns, not block-topology restatements
 - `id` values are unique and sequential
 - `derived_from` references an `id` that exists in the same file, or is `null`
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

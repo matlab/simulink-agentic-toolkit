@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.6.0",
+      "version": "0.7.0",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -33,7 +33,7 @@
     },
     {
       "name": "verification-validation-and-test",
-      "version": "0.5.0",
+      "version": "0.6.0",
       "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), and detect design errors with root cause analysis using Simulink Design Verifier",
       "author": {
         "name": "MathWorks"
@@ -66,6 +66,19 @@
       },
       "keywords": ["simulink", "matlab", "simulation", "input-data", "signals", "dataset", "sdi", "data-inspector"],
       "source": "./skills-catalog/simulink-simulation",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "simulink-modeling",
+      "version": "0.1.0",
+      "description": "Configure and integrate C/C++ code into Simulink models via C Function blocks",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "c-function", "custom-code", "legacy-code", "cpp", "integration"],
+      "source": "./skills-catalog/simulink-modeling",
       "category": "development",
       "strict": false,
       "skills": "./"

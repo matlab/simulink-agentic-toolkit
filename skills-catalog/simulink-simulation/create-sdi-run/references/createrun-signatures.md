@@ -23,7 +23,7 @@ The four sources, side by side. All available from R2011b; return values verifie
 
 Signature form (not runnable — `___` stands in for any valid argument list from the table above):
 
-```
+```matlab
 [runID, runIndex, sigIDs] = Simulink.sdi.createRun(___)
 ```
 

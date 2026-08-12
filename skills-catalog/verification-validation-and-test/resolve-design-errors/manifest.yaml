@@ -12,12 +12,13 @@ required-tools:
   - model_edit
 required-skills: []
 reference-files:
-  - scripts/dead_logic_pattern_library/pattern_catalog.yaml
+  - assets/pattern_catalog.yaml
   - references/api-reference.md
   - references/fix-strategy.md
 required-products:
   - Simulink
   - Simulink Design Verifier
   - Simulink Check
+optional-products: []
 toolkit: simulink-agentic-toolkit
 # Copyright 2026 The MathWorks, Inc.

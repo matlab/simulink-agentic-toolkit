@@ -69,3 +69,9 @@ fs = addFaultSet(tc, Name='FaultedSim', SimulationIndex=2);
 ```
 
 `SimulationIndex=1` (default) injects in simulation 1; `SimulationIndex=2` injects in simulation 2.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

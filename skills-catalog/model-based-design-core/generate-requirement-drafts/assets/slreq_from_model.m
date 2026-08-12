@@ -60,3 +60,5 @@ disp("Verification status:");
 disp(getVerificationStatus(rs));
 
 fprintf("Requirement set saved: %s\n", rs.Filename);
+
+% Copyright 2026 The MathWorks, Inc.

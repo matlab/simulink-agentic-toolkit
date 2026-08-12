@@ -1,0 +1,109 @@
+# SLDV Dead Logic Pattern Catalog
+# This file indexes all patterns and can load them dynamically
+
+version: "1.0"
+description: "Pattern library for classifying dead logic as intentional or design error"
+
+categories:
+  intentional:
+    description: "Patterns that represent intentional dead logic - acceptable by design"
+    directory: "Intentional"
+    patterns:
+      - id: defensive_logic
+        file: "intentional_defensive_logic.yaml"
+        name: "Defensive Logic in Library Blocks"
+        summary: "Library blocks with defensive conditions that are redundant in some contexts"
+        severity: "NONE"
+        action: "Accept - Document as intentional defensive programming"
+        
+      - id: negation_guard_stateflow
+        file: "intentional_negation_guard_stateflow.yaml"
+        name: "Negation Guard in Stateflow"
+        summary: "Stateflow guards with negation creating mutually exclusive paths"
+        severity: "NONE"
+        action: "Accept - Guards are intentionally exclusive"
+
+  design_error:
+    description: "Patterns that indicate potential design errors - should be investigated"
+    directory: "DesignError"
+    patterns:        
+      - id: enable_as_input
+        file: "design_error_enable_as_input.yaml"
+        name: "Enable Signal as Input"
+        summary: "Enable signal routed as data input — always true inside subsystem"
+        severity: "MEDIUM"
+        action: "Fix - Remove redundant input and use constant true"
+
+      - id: assumption_error
+        file: "design_error_assumption.yaml"
+        name: "Invalid Assumption"
+        summary: "Logic based on assumptions that don't hold in the model context"
+        severity: "HIGH"
+        action: "Investigate - Check if assumptions are valid"
+        
+      - id: cascading_dead_logic
+        file: "design_error_cascading.yaml"
+        name: "Cascading Dead Logic"
+        summary: "Dead logic that propagates through multiple blocks"
+        severity: "HIGH"
+        action: "Fix - Dead logic at source propagates downstream"
+        
+      - id: conditionally_executed
+        file: "design_error_conditionally_executed.yaml"
+        name: "Conditional Input Branch Execution On"
+        summary: "Conditional input branch execution parameter is set to On"
+        severity: "MEDIUM"
+        action: "Review - Check conditional execution settings"
+        
+      - id: constant_kills_branch
+        file: "design_error_parameter.yaml"
+        name: "Constant Kills Branch"
+        summary: "Fixed constant value feeding Switch/If makes one branch permanently dead"
+        severity: "HIGH"
+        action: "Fix - Review constant value or replace with tunable parameter"
+        
+      - id: short_circuit_and
+        file: "design_error_short_circuit_and.yaml"
+        name: "Short-Circuiting AND"
+        summary: "AND logic where first condition guarantees second is never evaluated"
+        severity: "MEDIUM"
+        action: "Review - May indicate logic error or redundant check"
+        
+      - id: short_circuit_or
+        file: "design_error_short_circuit_or.yaml"
+        name: "Short-Circuiting OR"
+        summary: "OR logic where first condition guarantees second is never evaluated"
+        severity: "MEDIUM"
+        action: "Review - May indicate logic error or redundant check"
+
+analysis_guidelines:
+  - "Compare model YAML structure against pattern examples"
+  - "Look for matching block types and connection patterns"
+  - "Check parameter values against pattern signatures"
+  - "Consider context: library block vs custom logic"
+  - "Check if defensive code comments exist"
+
+classification_rules:
+  intentional_indicators:
+    - "Block is from a reusable library"
+    - "Comments mention 'safety', 'defensive', or 'robust'"
+    - "Logic handles edge cases that are constrained by inputs"
+    - "Enable/disable patterns for feature toggling"
+    - "Guards that are intentionally mutually exclusive"
+    
+  error_indicators:
+    - "Impossible logical conditions (x > 100 AND x < 50)"
+    - "Recently modified blocks with new dead logic"
+    - "Cascading dead logic from upstream blocks"
+    - "Parameters that don't match documented ranges"
+    - "Missing transitions in state machines"
+
+output_format:
+  for_each_finding:
+    - "Block: [name and type from YAML]"
+    - "Pattern Match: [pattern_id from this catalog]"
+    - "Classification: INTENTIONAL or DESIGN_ERROR"
+    - "Confidence: HIGH/MEDIUM/LOW"
+    - "Evidence: [specific YAML parameters/structure that match]"
+    - "Recommendation: [action from matched pattern]"
+# Copyright 2026 The MathWorks, Inc.

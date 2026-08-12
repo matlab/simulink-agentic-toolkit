@@ -61,3 +61,9 @@ For the following SC-specific features, use `evaluate_matlab_code`— see the `b
 - Allocation sets (`.mldatx`) — cross-model traceability
 - Architecture views — property-query-driven filters
 - Roll-up analysis — instantiate, iterate, report
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

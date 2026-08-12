@@ -132,3 +132,9 @@ The `policyMode` in `.satk/block-policy.json` is the source for fallback behavio
 
 - **Off-limits parameters** (protected in block policy) — the agent will not modify these values.
 - **Excluded blocks** — removed from the Knowledge graph entirely; the agent will never place them.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

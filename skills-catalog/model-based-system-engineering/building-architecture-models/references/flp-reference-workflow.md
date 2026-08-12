@@ -100,3 +100,9 @@ Roll up stereotype property values from leaf components through the hierarchy. U
 Depends on Step 4 — no stereotype properties means nothing to analyze. Components with zero estimates silently contribute nothing, which is why views that flag zeroes matter.
 
 Produces: totals at each hierarchy level, margins against SR caps, flags for negative margins.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

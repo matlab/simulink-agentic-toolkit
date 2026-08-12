@@ -101,7 +101,7 @@ The `blockPath` must point to a fault data inport block inside a fault behavior 
 
 Library blocks must use `FaultInport` and `FaultOutport` block types (not standard `Inport`/`Outport`). Inspect an existing `mwfaultlib` block to see the required structure:
 
-```
+```text
 model_read on mwfaultlib/Gain
 % Shows: FaultInport → logic → FaultOutport
 ```
@@ -185,7 +185,7 @@ save_system(faultMdl);
 
 **Matching data types with `OutDataTypeStr`:**
 
-```
+```text
 model_edit on <faultMdl>/<faultName>:
   % For a boolean signal
   configure 'Constant' Value='true' OutDataTypeStr='boolean'

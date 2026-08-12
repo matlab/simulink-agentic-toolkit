@@ -15,8 +15,8 @@ reference-files:
   - references/gherkin-based-fast-testing.md
   - references/simulink-test-authoring.md
   - references/assessment-format.md
-  - references/test-structure-template.md
-  - references/test-config-template.md
+  - assets/test-structure-template.md
+  - assets/test-config-template.md
 required-products:
   - Simulink
   - Simulink Test

@@ -209,3 +209,8 @@ If user wants to justify/waive/suppress violations → load and follow the Justi
 | `HASH_NOT_FOUND` (justify) | Model modified since last run — re-run checks for fresh ids |
 | `JUSTIFICATION_FILE_ERROR` | Check file permissions and license |
 
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

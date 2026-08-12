@@ -38,6 +38,13 @@
         "DataStoreWrite",
         "DataTypeConversion",
         "DataTypeDuplicate",
+        "DateTimeClock",
+        "DateTimeDataTypeConverter",
+        "DateTimeTimeStandardConverter",
+        "DateTimeToCalendarTime",
+        "DateTimeToFormattedString",
+        "FromDateTime",
+        "ToDateTime",
         "DeadZone",
         "Delay",
         "Demux",
@@ -227,8 +234,6 @@
         ],
         "Product": [
             "*",
-            "/",
-            "divide",
             "mult",
             "multiply",
             "times"
@@ -357,6 +362,31 @@
         ],
         "DescriptorStateSpace": [
             "dss"
+        ],
+        "DateTimeClock": [
+            "datetime clock",
+            "date time clock"
+        ],
+        "DateTimeDataTypeConverter": [
+            "datetime data type converter",
+            "datetime type converter"
+        ],
+        "DateTimeTimeStandardConverter": [
+            "datetime time standard converter"
+        ],
+        "DateTimeToCalendarTime": [
+            "datetime to calendar time",
+            "datetime calendar"
+        ],
+        "DateTimeToFormattedString": [
+            "datetime to formatted string",
+            "datetime to string"
+        ],
+        "FromDateTime": [
+            "from datetime"
+        ],
+        "ToDateTime": [
+            "to datetime"
         ],
         "DigitalClock": [
             "discrete clock",
@@ -906,6 +936,14 @@
             "aliases": [
                 "variant subsystem",
                 "Variant Subsystem"
+            ]
+        },
+        {
+            "path": "simulink/Math\nOperations/Divide",
+            "aliases": [
+                "Divide",
+                "divide",
+                "Division"
             ]
         },
         {
@@ -16574,6 +16612,14 @@
                 "zero pole continuous"
             ]
         },
+        {
+            "path": "simulink/Continuous/Integrator,\nSecond-Order",
+            "aliases": [
+                "integrator, second-order",
+                "integrator second-order",
+                "integrator second order"
+            ]
+        },
 
         {
             "path": "simulink/Signal Routing/Bus Selector",
@@ -17099,6 +17145,13 @@
         "DataStoreWrite": "simulink/Signal\nRouting/Data Store\nWrite",
         "DataTypeConversion": "simulink/Signal\nAttributes/Data Type Conversion",
         "DataTypeDuplicate": "simulink/Signal\nAttributes/Data Type\nDuplicate",
+        "DateTimeClock": "simulink/DateTime/DateTime Clock",
+        "DateTimeDataTypeConverter": "simulink/DateTime/DateTime Data Type Converter",
+        "DateTimeTimeStandardConverter": "simulink/DateTime/DateTime Time Standard Converter",
+        "DateTimeToCalendarTime": "simulink/DateTime/DateTime to Calendar Time",
+        "DateTimeToFormattedString": "simulink/DateTime/DateTime to Formatted String",
+        "FromDateTime": "simulink/DateTime/From DateTime",
+        "ToDateTime": "simulink/DateTime/To DateTime",
         "DeadZone": "simulink/Discontinuities/Dead Zone",
         "Delay": "simulink/Discrete/Delay",
         "Demux": "simulink/Signal\nRouting/Demux",
@@ -17169,7 +17222,7 @@
         "Polyval": "simulink/Math\nOperations/Polynomial",
         "PreLookup": "simulink/Lookup\nTables/Prelookup",
         "Probe": "simulink/Signal\nAttributes/Probe",
-        "Product": "simulink/Math\nOperations/Divide",
+        "Product": "simulink/Math\nOperations/Product",
         "PropagationDelay": "simulink/Discrete/Propagation Delay",
         "PythonCode": "simulink/User-Defined\nFunctions/Python Code",
         "Quantizer": "simulink/Discontinuities/Quantizer",

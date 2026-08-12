@@ -1,0 +1,58 @@
+- id: enable_as_input
+  name: "Enable Signal as Subsystem Input"
+  description: >
+    An enable signal of a conditionally activated subsystem is fed to the same
+    subsystem as an input. The input will only ever have the value true when
+    the subsystem executes. This causes dead logic in the subsystem. The
+    recommended fix is to remove the input and use the value true in the model.
+  yaml_example: |
+    Name: mEnableAsInput
+    Inputs:
+      - Input1
+      - Input3
+    Outputs: Output
+    ChildrenBlocks:
+      - Name: Input1
+        Type: Inport
+        Outputs:
+          Out1:
+            - "Subsystem2.In1 []"
+            - "Subsystem2.In3 []"
+      - Name: Input3
+        Type: Inport
+        Outputs:
+          Out1: Subsystem2.In2
+      - Name: Subsystem2
+        Inputs:
+          - Input1
+          - Input3
+        Outputs: Output
+        ChildrenBlocks:
+          - Name: Input1
+            Type: Inport
+            Outputs:
+              Out1: Logical Operator.In1
+          - Name: Input3
+            Type: Inport
+            Outputs:
+              Out1: Logical Operator.In2
+          - Name: Enable
+            Type: EnablePort
+          - Name: Logical Operator
+            Type: Logic
+            Info:
+              LogicalOperation: AND
+            Inputs:
+              In1: Input1.Out1
+              In2: Input3.Out1
+            Outputs:
+              Out1: Output.In1
+          - Name: Output
+            Type: Outport
+            Inputs:
+              In1: Logical Operator.Out1
+      - Name: Output
+        Type: Outport
+        Inputs:
+          In1: Subsystem2.Out1
+# Copyright 2026 The MathWorks, Inc.

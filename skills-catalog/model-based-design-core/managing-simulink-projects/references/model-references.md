@@ -45,3 +45,9 @@ impacted = listImpactedFiles(proj, 'models/plants/PlantModel.slx');
 - `listImpactedFiles` includes the queried file itself in results
 - Same-folder references auto-resolve without path configuration
 - `addPath` is NOT recursive — must add each subfolder explicitly
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

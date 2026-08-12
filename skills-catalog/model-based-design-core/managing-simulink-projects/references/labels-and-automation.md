@@ -69,3 +69,9 @@ cat.LabelDefinitions
   - `.slx` → "Design"
   - `.m` → "Convenience" (or other based on content)
 - Valid DataTypes: `'none'`, `'char'`, `'double'`, `'integer'`, `'logical'` — nothing else
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

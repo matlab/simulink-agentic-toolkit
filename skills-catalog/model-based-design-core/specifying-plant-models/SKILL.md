@@ -87,7 +87,7 @@ Use `web_search` and `read_web_page` for standard modeling approaches, reference
 
 ### Step 4: Write System Spec
 
-Use `references/system-spec-template.md`. Key plant-model sections: operating scenarios, physical model requirements, controller interface contract (u/w/y/z with sample times, data types, units), initialization & operating points, rate & timing alignment, validation evidence, reference sources.
+Use `assets/system-spec-template.md`. Key plant-model sections: operating scenarios, physical model requirements, controller interface contract (u/w/y/z with sample times, data types, units), initialization & operating points, rate & timing alignment, validation evidence, reference sources.
 
 **Review gate** before proceeding — verify:
 - Completeness of interface requirements (u, y signals covered)
@@ -101,7 +101,7 @@ Get user review before proceeding.
 
 ### Step 5: Write Architecture Spec
 
-Use `references/architecture-spec-template.md`. Key plant-model sections: component catalog with physics domain and port interfaces, equations of motion per subsystem, nonlinearities & constraints, numerical considerations (solver, stiffness, algebraic loops), parameter management, uncertainty hooks.
+Use `assets/architecture-spec-template.md`. Key plant-model sections: component catalog with physics domain and port interfaces, equations of motion per subsystem, nonlinearities & constraints, numerical considerations (solver, stiffness, algebraic loops), parameter management, uncertainty hooks.
 
 **Review gate** before finalizing — verify:
 - Correct physics decomposition — subsystem boundaries at natural domain boundaries
@@ -115,7 +115,7 @@ Get user review before proceeding.
 
 ### Step 6: Write Implementation Plan + Test Plan
 
-Use `references/implementation-plan-template.md` and `references/test-plan-template.md`.
+Use `assets/implementation-plan-template.md` and `assets/test-plan-template.md`.
 
 **Implementation plan essentials:**
 - Phase 0 (interface contract & stubs) gates all parallel work — freeze ports/units/sign conventions first
@@ -168,10 +168,10 @@ Get user approval before building begins.
 
 ## References
 
-- `references/system-spec-template.md` — System spec template (what & why)
-- `references/architecture-spec-template.md` — Architecture template (subsystem decomposition)
-- `references/implementation-plan-template.md` — Build sequence template
-- `references/test-plan-template.md` — Validation plan template
+- `assets/system-spec-template.md` — System spec template (what & why)
+- `assets/architecture-spec-template.md` — Architecture template (subsystem decomposition)
+- `assets/implementation-plan-template.md` — Build sequence template
+- `assets/test-plan-template.md` — Validation plan template
 - `references/plant-model-guidance.md` — Optional domain reference (decomposition examples, validation maneuvers, solver guide). Human-facing; do not copy verbatim into specs.
 
 ----

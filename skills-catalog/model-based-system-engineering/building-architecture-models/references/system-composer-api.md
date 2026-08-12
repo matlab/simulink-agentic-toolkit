@@ -320,3 +320,9 @@ allocName = [char(baseName), 'Set'];
 ```
 
 When an SC API errors with a signature-mismatch and the args look right, suspect string-vs-char before anything else.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

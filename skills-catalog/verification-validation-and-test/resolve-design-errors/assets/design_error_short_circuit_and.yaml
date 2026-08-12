@@ -1,0 +1,38 @@
+- id: short_circuit_and
+  name: "Short-Circuiting of an AND Block"
+  description: >
+    Simulink Design Verifier treats logic blocks as if they are short-circuiting
+    when analyzing dead logic. If the same signal is used for earlier inputs of
+    an AND, some later inputs may be dead.
+  yaml_example: |
+    Name: ShortCircutingAnd
+    Inputs:
+      - In3
+      - In4
+    Outputs: Out2
+    ChildrenBlocks:
+      - Name: In3
+        Type: Inport
+        Outputs:
+          Out1:
+            - "Logical Operator1.In2 []"
+            - "Logical Operator1.In1 []"
+      - Name: Logical Operator1
+        Type: Logic
+        Info:
+          LogicalOperation: AND
+        Inputs:
+          In1: In3.Out1
+          In2: In3.Out1
+          In3: In4.Out1
+        Outputs:
+          Out1: Out2.In1
+      - Name: In4
+        Type: Inport
+        Outputs:
+          Out1: Logical Operator1.In3
+      - Name: Out2
+        Type: Outport
+        Inputs:
+          In1: Logical Operator1.Out1
+# Copyright 2026 The MathWorks, Inc.

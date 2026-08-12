@@ -25,3 +25,5 @@ function comp = resolveComponent(arch, path)
         comp = comp.Architecture.getComponent(parts{k});
     end
 end
+
+% Copyright 2026 The MathWorks, Inc.

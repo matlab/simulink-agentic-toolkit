@@ -1,0 +1,60 @@
+- id: negation_guard_stateflow
+  name: "Negation Guard in Stateflow"
+  description: >
+    Consider a state with two outgoing transitions that are evaluated in order.
+    The first transition has guard g, and the second transition has guard !g.
+    Because the second transition is only considered if g evaluates to false,
+    !g will always be true whenever the second is evaluated. The guard !g is
+    redundant and behaviorally equivalent to an unconditional transition.
+  yaml_example: |
+    Name: Negation_gaurd_sf
+    Inputs: pwr
+    Outputs: Out1
+    ChildrenBlocks:
+      - Name: pwr
+        Type: Inport
+        Outputs:
+          Out1: Mode Logic.In1
+      - Name: Mode Logic
+        Type: Chart
+        MermaidRepresentation: |
+          ```mermaid
+          stateDiagram-v2
+            state Mode Logic  {
+              %% Type: Chart
+              %% Input data: on
+              %% Output data: out
+
+              %% Type: State
+              state Clipped  {
+
+                %% Type: State
+                off
+                %% State Actions
+                note right of off
+                  entry:
+                    out = 0;
+                end note
+
+                %% Type: State
+                on
+                %% State Actions
+                note right of on
+                  entry:
+                    out = 1;
+                end note
+
+                state Junction8 <<choice>>
+                [*]-->Junction8
+                Junction8-->off:[!on]
+                Junction8-->on:[on]
+                on-->off:[!on]
+                off-->on:[on]
+              }
+            }
+          ```
+      - Name: Out1
+        Type: Outport
+        Inputs:
+          In1: Mode Logic.Out1
+# Copyright 2026 The MathWorks, Inc.

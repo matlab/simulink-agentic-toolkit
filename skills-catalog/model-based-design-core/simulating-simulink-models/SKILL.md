@@ -1,28 +1,31 @@
 ---
 name: simulating-simulink-models
-description: Runs Simulink models programmatically for data exploration, parameter sweeps, and custom analysis using sim() with SimulationInput/SimulationOutput. Use when calling sim(), parsim, setExternalInput, setModelParameter, setVariable, or accessing logsout — any task producing simulation results for analysis (not pass/fail tests).
+description: Configures Simulink simulations non-destructively using SimulationInput objects — parameter overrides without modifying the model, batch sweeps via parsim, custom input signals via Dataset, and simulation data retrieval via logsout. Use when running sim()/parsim() with setVariable, setBlockParameter, setExternalInput, or when performing parameter sweeps and multi-run analysis. Not needed for one-shot simulations without configuration.
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.1"
+  version: "1.2"
 ---
 
 # Simulating Simulink Models with the sim Command
 
-Use this skill to generate simulation results for analysis. For persistent, reusable pass/fail behavioral testing (especially of individual subsystems), use `testing-simulink-models` instead.
+Use this skill when you need to **configure** a simulation non-destructively — parameter overrides, custom inputs, batch execution, or structured output access. For persistent, reusable pass/fail behavioral testing (especially of individual subsystems), use `testing-simulink-models` instead. For trivial one-shot simulations without configuration, a direct `sim()` call suffices without this skill.
 
 ## When to Use
 
-- Running a Simulink model from a MATLAB script
-- Configuring simulation parameters (StopTime, solver, etc.) programmatically
-- Passing input signals to root-level Inport blocks
-- Accessing logged signal data after simulation
-- Running parameter sweeps or batch simulations
+- Overriding model or block parameters non-destructively (setVariable, setBlockParameter, setModelParameter) — without modifying the .slx file
+- Passing custom input signals to root-level Inport blocks via setExternalInput with a Dataset
+- Running parameter sweeps or batch simulations (SimulationInput arrays, parsim, Fast Restart)
+- Accessing logged signal data (logsout) for analysis after simulation
 
 ## When NOT to Use
 
+- Trivial one-shot simulations without parameter overrides or custom inputs — a direct `sim('ModelName')` call works without this skill
 - Writing declarative Gherkin-based tests → use `testing-simulink-models`
 - Testing an individual subsystem or component → use `testing-simulink-models` (requires Simulink Test; auto-creates a harness, compiles only the subsystem — much faster than `sim()` which always compiles the entire model)
+- Adding, connecting, or deleting blocks → use `building-simulink-models`
+- Checking model structure for unconnected ports → use `model_check` tool directly
+- Generating requirements from model behavior → use `generate-requirement-drafts`
 
 ## Minimal working pattern
 

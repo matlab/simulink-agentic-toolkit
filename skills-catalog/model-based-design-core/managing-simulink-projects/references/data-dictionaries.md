@@ -38,3 +38,9 @@ addPath(proj, 'shared_data');
 - `Simulink.data.dictionary.getOpenDictionaryPaths` shows what's currently loaded
 - Project close auto-closes open dictionaries
 - Design data section is accessed via `getSection(dict, 'Design Data')`
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

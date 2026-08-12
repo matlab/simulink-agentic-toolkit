@@ -116,8 +116,8 @@ Filter scope is determined by which name args are passed: no filter → whole fi
 
 ## References
 
-- `reference/test-structure-template.md` — `.mldatx` YAML structure (suite/case nesting, fields)
-- `reference/test-config-template.md` — sim config option keys
+- `assets/test-structure-template.md` — `.mldatx` YAML structure (suite/case nesting, fields)
+- `assets/test-config-template.md` — sim config option keys
 - `reference/assessment-format.md` — `Assessments` and `LoggedSignals` struct schemas (must read before constructing them)
 
 ----

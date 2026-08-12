@@ -3,8 +3,8 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "1.1"
-human-description: "Runs Simulink models programmatically for data exploration, parameter sweeps, and custom analysis using sim() with SimulationInput/SimulationOutput."
+version: "1.2"
+human-description: "Configures Simulink simulations non-destructively using SimulationInput objects — parameter overrides without modifying the model, batch sweeps via parsim, custom input signals via Dataset, and simulation data retrieval via logsout."
 matlab-release: ">=R2023a"
 required-tools: []
 required-skills: []

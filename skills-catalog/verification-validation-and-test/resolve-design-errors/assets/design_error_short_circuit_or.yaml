@@ -1,0 +1,35 @@
+- id: short_circuit_or
+  name: "Short-Circuiting of an OR Block"
+  description: >
+    Simulink Design Verifier treats logic blocks as if they are short-circuiting
+    when analyzing dead logic. If an earlier OR input is always true (e.g.,
+    a constant 1), later inputs can be dead.
+  yaml_example: |
+    Name: ShortCircutingOr
+    Inputs: In4
+    Outputs: Out2
+    ChildrenBlocks:
+      - Name: Constant
+        Type: Constant
+        Info:
+          Value: "1"
+        Outputs:
+          Out1: Logical Operator1.In1
+      - Name: Logical Operator1
+        Type: Logic
+        Info:
+          LogicalOperation: OR
+        Inputs:
+          In1: Constant.Out1
+          In2: In4.Out1
+        Outputs:
+          Out1: Out2.In1
+      - Name: In4
+        Type: Inport
+        Outputs:
+          Out1: Logical Operator1.In2
+      - Name: Out2
+        Type: Outport
+        Inputs:
+          In1: Logical Operator1.Out1
+# Copyright 2026 The MathWorks, Inc.

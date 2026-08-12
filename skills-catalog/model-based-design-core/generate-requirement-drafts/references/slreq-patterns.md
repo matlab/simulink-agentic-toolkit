@@ -160,3 +160,9 @@ slreq.clear;        % clear all loaded req sets and link sets from memory
 | Over-linking every primitive block | Link at subsystem level unless the requirement is block-specific |
 | Unstable IDs on regeneration | Preserve existing IDs on regeneration; append new IDs sequentially |
 | Model not loaded when linking | Ensure the model is open (`load_system`) before calling `slreq.createLink` with block paths |
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

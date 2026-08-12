@@ -158,3 +158,9 @@ options each when possible — rather than stopping after only some.
 | Applying fixes without presenting findings to user | Always show root cause analysis results first, get approval before fixing |
 | Stopping at a shallow slice | Fall back to `model_read` / `model_overview` (Step 2) |
 | Running on large models without `OutputDir` | Set `OutputDir` to avoid temp-dir clutter |
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

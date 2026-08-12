@@ -67,7 +67,7 @@ Skip when: algorithm is purely logic-based, domain is well-known, or no equation
 
 ### Step 4: Write System Spec
 
-Template: `references/system-spec-template.md`
+Template: `assets/system-spec-template.md`
 
 **Review gate** before proceeding — verify:
 - Clear algorithm objectives with quantitative acceptance criteria
@@ -78,7 +78,7 @@ Template: `references/system-spec-template.md`
 
 ### Step 5: Write Architecture Spec
 
-Template: `references/architecture-spec-template.md`
+Template: `assets/architecture-spec-template.md`
 
 **Review gate** before finalizing — verify:
 - Dimensional consistency — units match across all interfaces end-to-end
@@ -94,7 +94,7 @@ Template: `references/architecture-spec-template.md`
 
 ### Step 6: Write Implementation Plan + Test Plan
 
-Templates: `references/implementation-plan-template.md`, `references/test-plan-template.md`
+Templates: `assets/implementation-plan-template.md`, `assets/test-plan-template.md`
 
 **Review gate — Implementation Plan** — verify:
 - Phase 0 interface freeze gates all parallel work
@@ -141,13 +141,13 @@ For guidance on when to create optional specs (detailed spec, component spec), s
 
 ## References
 
-- `references/system-spec-template.md` — System spec template (what & why)
-- `references/architecture-spec-template.md` — Architecture template (functional decomposition)
-- `references/implementation-plan-template.md` — Build sequence template
-- `references/test-plan-template.md` — Validation plan template
+- `assets/system-spec-template.md` — System spec template (what & why)
+- `assets/architecture-spec-template.md` — Architecture template (functional decomposition)
+- `assets/implementation-plan-template.md` — Build sequence template
+- `assets/test-plan-template.md` — Validation plan template
 - `references/algorithm-guidance.md` — Optional domain research checklist
-- `references/detailed-spec-template.md` — Control law, state machine, or interface contract (use when architecture is blocked)
-- `references/component-spec-template.md` — Complex component internals (rarely needed)
+- `assets/detailed-spec-template.md` — Control law, state machine, or interface contract (use when architecture is blocked)
+- `assets/component-spec-template.md` — Complex component internals (rarely needed)
 
 ----
 

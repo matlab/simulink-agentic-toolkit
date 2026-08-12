@@ -230,3 +230,9 @@ Example — transition guard using `duration` instead of a manual counter:
 - Prefer subcharts (`IsSubchart = true` via configure) over plain superstates when a state has 3+ substates
 - No cross-subchart transitions via `model_edit` — see "Super Transitions"
 - `replace_block` not supported in SF scope — use `delete` + `add_block`, or `configure` to change junction `Type` (e.g., `"HISTORY"`)
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

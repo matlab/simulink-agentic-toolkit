@@ -117,3 +117,9 @@ rs.save();
 - **Avoid `<` and `>` in Description fields.** The Requirements Editor treats them as HTML. Use "not exceeding", "at least", "greater than" instead.
 - **`req.remove()` leaves orphan outLinks.** Clear the link set before removing requirements (shown in the idempotent pattern above).
 - **Model must be open.** `slreq.createLink(comp, req)` requires the model to be loaded. Use `systemcomposer.openModel` before linking.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

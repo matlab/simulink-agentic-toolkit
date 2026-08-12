@@ -27,3 +27,9 @@ addPath(proj, 'architecture');
 ```
 
 Without this, SC APIs either throw "file not found" or silently create artifacts in the current directory instead of the intended location.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

@@ -1,0 +1,60 @@
+- id: conditional_branch_execution
+  name: "Conditional Branch Execution Dead Logic"
+  description: >
+    A block lies exclusively on an input branch of a Switch or Multiport Switch
+    whose Conditional input branch execution parameter is set to On. Because
+    the controlling condition never selects that branch, the blocks on this
+    branch are never executed and are reported as dead logic. The root cause is
+    execution semantics (conditional branch execution), not incorrect value
+    ranges.
+  yaml_example: |
+    Name: ConditionallyExecuted
+    Inputs:
+      - In4
+      - In5
+      - In6
+    Outputs: Out2
+    ChildrenBlocks:
+      - Name: In4
+        Type: Inport
+        Outputs:
+          Out1: Switch1.In1
+      - Name: Constant
+        Type: Constant
+        Info:
+          Value: "1"
+        Outputs:
+          Out1: Switch1.In2
+      - Name: In5
+        Type: Inport
+        Outputs:
+          Out1: LogicalOperator1.In1
+      - Name: In6
+        Type: Inport
+        Outputs:
+          Out1: LogicalOperator1.In2
+      - Name: LogicalOperator1
+        Type: Logic
+        Info:
+          LogicalOperation: AND
+        Inputs:
+          In1: In5.Out1
+          In2: In6.Out1
+        Outputs:
+          Out1: Switch1.In3   # Only used on conditional branch
+      - Name: Switch1
+        Type: Switch
+        Info:
+          Criteria: "in2 > 0"
+          ConditionalInputBranchExecution: "on"  # key for this pattern
+        Inputs:
+          In1: In4.Out1
+          In2: Constant.Out1
+          In3: LogicalOperator1.Out1
+        Outputs:
+          Out1: Out2.In1
+      - Name: Out2
+        Type: Outport
+        Inputs:
+          In1: Switch1.Out1
+# Copyright 2026 The MathWorks, Inc.

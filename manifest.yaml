@@ -1,0 +1,78 @@
+# Copyright 2026 The MathWorks, Inc.
+schema_version: 1
+
+display-name: "Simulink Agentic Toolkit"
+description: "AI skills and MCP tools for Simulink Model-Based Design workflows"
+
+dependencies:
+  - repo: https://github.com/matlab/matlab-mcp-server
+    default-version: latest
+
+mcp-server-extensions:
+  - name: simulink-agentic-toolkit
+    server: matlab
+    path: tools/tools.json
+
+matlab-packages:
+  - name: simulink-agentic-toolkit
+    source: <repo>/releases/download/<version>/simulink-agentic-toolkit.mltbx
+
+skill-groups:
+  - name: model-based-design-core
+    display-name: "Model-Based Design Core"
+    description: "Building, simulating, specifying, and managing Simulink models, plus requirement drafts and bug reports"
+    path: skills-catalog/model-based-design-core
+    required: true
+    requires-products:
+      - Simulink
+
+  - name: simulink-modeling
+    display-name: "Simulink Modeling"
+    description: "Configuring and integrating C/C++ code into Simulink models via C Function blocks"
+    path: skills-catalog/simulink-modeling
+    requires-products:
+      - Simulink
+
+  - name: verification-validation-and-test
+    display-name: "Verification, Validation & Test"
+    description: "Model testing, compliance checking, Model Advisor authoring, fault injection, safety analysis, and design-error resolution"
+    path: skills-catalog/verification-validation-and-test
+    requires-products:
+      - Simulink
+      - Simulink Test
+      - Simulink Check
+      - Simulink Design Verifier
+      - Simulink Fault Analyzer
+
+  - name: model-based-system-engineering
+    display-name: "Model-Based System Engineering"
+    description: "System Composer architecture models, interface dictionaries, allocation, and requirements"
+    path: skills-catalog/model-based-system-engineering
+    requires-products:
+      - Simulink
+      - System Composer
+      - Requirements Toolbox
+
+  - name: simulink-simulation
+    display-name: "Simulink Simulation"
+    description: "Authoring simulation inputs and creating Simulation Data Inspector runs"
+    path: skills-catalog/simulink-simulation
+    requires-products:
+      - Simulink
+
+  - name: control-systems
+    display-name: "Control Systems"
+    description: "Frequency-response analysis and linearization of Simulink models"
+    path: skills-catalog/control-systems
+    requires-products:
+      - Simulink
+      - Simulink Control Design
+      - Control System Toolbox
+
+  - name: code-generation
+    display-name: "Code Generation"
+    description: "Single-precision conversion and embedded code generation workflows"
+    path: skills-catalog/code-generation
+    requires-products:
+      - Simulink
+      - Fixed-Point Designer

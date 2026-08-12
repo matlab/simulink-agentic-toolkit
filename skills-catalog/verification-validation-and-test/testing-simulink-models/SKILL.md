@@ -82,8 +82,8 @@ This skill provides two testing approaches. Choose based on task context:
 - `references/gherkin-based-fast-testing.md` — Gherkin syntax, draft mode, coverage, Simscape constraints
 - `references/simulink-test-authoring.md` — API manual: setup, constraints, test_create entry shapes, edit/read/run signatures
 - `references/assessment-format.md` — LoggedSignals and Assessments struct formats
-- `references/test-structure-template.md` — Test structure proposal template (requirement-driven path)
-- `references/test-config-template.md` — Test configuration proposal template (requirement-driven path)
+- `assets/test-structure-template.md` — Test structure proposal template (requirement-driven path)
+- `assets/test-config-template.md` — Test configuration proposal template (requirement-driven path)
 
 ----
 

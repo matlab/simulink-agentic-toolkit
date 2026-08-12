@@ -43,3 +43,9 @@ When researching algorithm design and interface conventions, prefer (in order):
 5. **Component datasheets** — For hardware-interfacing algorithms (sensor characteristics, actuator response curves)
 
 Avoid unvetted blog posts, forum answers, or AI-generated content as primary design sources.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

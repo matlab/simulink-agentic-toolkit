@@ -67,3 +67,8 @@ Append after the deterministic Compliance Report with a `---` divider:
 | 0.5-0.6 | Judgment call — subjective, context-dependent |
 | <0.5 | Low confidence — flag for human review, do not issue FAIL |
 
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

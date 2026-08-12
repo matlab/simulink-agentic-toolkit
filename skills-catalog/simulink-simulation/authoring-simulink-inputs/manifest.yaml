@@ -11,4 +11,5 @@ required-tools:
 required-skills: []
 required-products:
   - Simulink
+optional-products: []
 toolkit: simulink-agentic-toolkit

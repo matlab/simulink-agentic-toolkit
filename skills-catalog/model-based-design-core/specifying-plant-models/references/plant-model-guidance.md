@@ -43,3 +43,9 @@ When researching plant model physics and parameters, prefer (in order):
 5. **Component datasheets** — For electrical, thermal, and mechanical component parameters
 
 Avoid unvetted blog posts, forum answers, or AI-generated content as primary parameter sources.
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

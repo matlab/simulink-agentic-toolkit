@@ -88,3 +88,9 @@ Enter when user wants to justify/waive/suppress/accept violations rather than fi
 - **Violations without `id` cannot be justified** — inform user of GUI fallback
 - **Model changes invalidate hashes** — re-run checks first to get fresh ids
 - **Justification file is version-controllable** — recommend committing alongside model
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----

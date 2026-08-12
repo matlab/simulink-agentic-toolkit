@@ -1,7 +1,6 @@
 # Copyright 2026 The MathWorks, Inc.
 # manifest.yaml — Tooling metadata for building-architecture-models
 schema-version: 1
-author: MathWorks
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
 version: "0.2"

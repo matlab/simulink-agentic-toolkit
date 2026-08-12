@@ -54,4 +54,3 @@ If Embedded Coder is not installed, mention the readiness check as an optional f
 Copyright 2026 The MathWorks, Inc.
 
 ----
-

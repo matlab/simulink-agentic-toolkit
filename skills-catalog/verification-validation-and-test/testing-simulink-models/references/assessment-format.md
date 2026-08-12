@@ -142,3 +142,9 @@ Type="conditional", Condition="t >= 5", Expression="speed >= 50"
 % Comparison with cast (mixed types)
 "double(sensor_raw) >= 0 & double(sensor_raw) <= 255"
 ```
+
+----
+
+Copyright 2026 The MathWorks, Inc.
+
+----
