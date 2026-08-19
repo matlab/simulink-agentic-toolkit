@@ -216,6 +216,8 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Model-Based System Engineering](skills-catalog/model-based-system-engineering/) | Model-Based System Engineering skills for System Composer architecture models |
 | [Verification, Validation, and Test](skills-catalog/verification-validation-and-test/) | Author custom Model Advisor checks and run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, etc.) |
 | [Simulink Simulation](skills-catalog/simulink-simulation/) | Skills for constructing simulation input datasets and configuring simulation workflows |
+| [Simulink Modeling](skills-catalog/simulink-modeling/) | Configure and integrate C/C++ code into Simulink models via C Function blocks |
+| [Control Systems](skills-catalog/control-systems/) | Control system design and analysis skills for Simulink models |
 | [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion |
 
 ## Security Considerations

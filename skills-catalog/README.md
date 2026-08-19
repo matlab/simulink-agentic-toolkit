@@ -53,7 +53,7 @@ Skills for constructing simulation input datasets and configuring simulation wor
 | `authoring-simulink-inputs` | Create populated input signal datasets for Simulink models using createInputDataset scaffolds with correct metadata |
 | `create-sdi-run` | Import data into the Simulation Data Inspector from files, workspace variables, or a simulation |
 
-### [Code Generation](code-generation/) 
+### [Code Generation](code-generation/)
 
 Skills for code generation
 
@@ -61,7 +61,15 @@ Skills for code generation
 |-------|---------------------------|
 | `simulink-single-precision-conversion` | Convert a double-precision Simulink system or subsystem to single precision (requires Fixed-Point Designer) |
 
-### [Control Systems](control-systems/) 
+### [Simulink Modeling](simulink-modeling/)
+
+Configure and integrate C/C++ code into Simulink models via C Function blocks
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-use-c-function-block` | Configure Simulink C Function blocks programmatically using the SymbolSpec API |
+
+### [Control Systems](control-systems/)
 
 Control system design and analysis skills for Simulink models
 
@@ -69,6 +77,7 @@ Control system design and analysis skills for Simulink models
 |-------|---------------------------|
 | `simulink-linearize` | Linearize Simulink models to obtain LTI or LPV representations (requires Simulink Control Design) |
 | `simulink-frequency-response` | Obtain frequency response from Simulink models using simulation-based estimation (requires Simulink Control Design) |
+| `simulink-control-motors` | Implement motor control with FOC, sensorless, six-step, and field weakening for PMSM, BLDC, induction, and SynRM motors (requires Motor Control Blockset) |
 
 ---
 

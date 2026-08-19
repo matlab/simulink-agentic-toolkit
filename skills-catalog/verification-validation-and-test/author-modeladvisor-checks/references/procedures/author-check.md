@@ -23,6 +23,12 @@ Create or upgrade Model Advisor checks to use modern DetailStyle callbacks and R
 - Enforcing a modeling convention with auto-fix actions
 - Checking System Composer architecture models (components, ports, connectors, interfaces, stereotypes)
 
+## CRITICAL — NEVER Use Deprecated Callback Styles
+
+ALL new checks MUST use `'DetailStyle'` callback registration with the `(system, CheckObj)` signature. NEVER use `'StyleOne'`, `'StyleTwo'`, or `'StyleThree'` for new check creation. These legacy styles are ONLY referenced when converting existing legacy checks to DetailStyle.
+
+If you find yourself writing `rec.CallbackStyle = 'StyleOne'` or `setCallbackFcn(@cb, 'None', 'StyleOne')` for a new check, STOP — you are using a deprecated pattern. Use `setCallbackFcn(@cb, 'None', 'DetailStyle')` instead.
+
 ## Steps
 
 ### 1. Choose the Check Pattern
@@ -64,11 +70,11 @@ State chosen pattern, API(s), check ID, and file names. If the pattern choice is
 
 ### 5. Write Check Definition
 
-Generate the `.m` file(s) following the conventions below. Use `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), passing `project_path`, to write the file — do NOT use Write/Edit tools.
+Generate the `.m` file(s) following the conventions below. Use `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), passing `project_path`, to write the file — do NOT use Write/Edit tools. Rationale: MATLAB file I/O ensures files land in the correct project directory with proper encoding, and keeps all artifacts co-located with the MATLAB session's working folder — Write/Edit tools cannot reliably target the `project_path` context.
 
 ### 6. Write Registration
 
-Create or append to `sl_customization.m` using `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), always passing `project_path` — do NOT use Write/Edit tools.
+Create or append to `sl_customization.m` using `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), always passing `project_path` — do NOT use Write/Edit tools. (Same rationale: ensures correct directory targeting and encoding.)
 
 ### 7. Validate
 

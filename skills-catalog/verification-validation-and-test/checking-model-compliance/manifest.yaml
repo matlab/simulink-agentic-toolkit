@@ -3,8 +3,8 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "0.5"
-human-description: Check Simulink model compliance against JMAAB, MAB, MISRA, and safety standards.
+version: "0.6"
+human-description: Check Simulink model compliance against various modeling standards and check sets.
 matlab-release: ">=R2023a"
 required-tools:
   - evaluate_matlab_code

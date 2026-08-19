@@ -12,7 +12,7 @@ description: >
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.2"
+  version: "1.2.1"
 ---
 
 # Author Model Advisor Check

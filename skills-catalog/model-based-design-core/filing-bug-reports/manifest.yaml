@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "1.1"
+version: "1.2"
 human-description: "Generate a standalone bug report that another developer can use to reproduce, investigate, and fix an issue."
 matlab-release: ">=R2023a"
 required-tools:

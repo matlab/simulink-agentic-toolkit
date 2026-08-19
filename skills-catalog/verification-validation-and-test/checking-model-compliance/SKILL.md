@@ -1,10 +1,10 @@
 ---
 name: checking-model-compliance
-description: "Use this skill when the user asks to check Simulink model compliance against a standard (MISRA, MAB, JMAAB, ISO 26262, ISO 25119, DO-178C, DO-254, IEC 61508, IEC 62304, EN 50128, CERT C/CWE, AUTOSAR), wants to run Model Advisor checks, or needs a compliance report with fix suggestions. For JMAAB/MAB, supplement deterministic checks with agentic review of uncheckable guidelines."
+description: "Use this skill when the user asks to check Simulink model compliance against a standard (MISRA, MAB, JMAAB, ISO, DO, IEC, EN, CERT C/CWE, AUTOSAR, Simulink Code Inspector (SLCI)), wants to run Model Advisor checks, or needs a compliance report with fix suggestions. For JMAAB/MAB, supplement deterministic checks with agentic review of uncheckable guidelines."
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "0.5"
+  version: "0.6"
 ---
 
 # Checking Model Compliance
@@ -44,6 +44,7 @@ Runs Model Advisor checks for a named standard (or default configuration) and de
 | EN 50128/EN 50657 | `EN_50128`, `EN 50128`, `EN_50657` |
 | Secure Coding (CERT C, CWE) | `SECURITY`, `CERT_C`, `CWE`, `secure coding` |
 | AUTOSAR | `AUTOSAR` |
+| Simulink Code Inspector (SLCI) | `SLCI`, `Simulink Code Inspector` |
 
 **Equivalent check sets (run once, report for both):**
 - ISO 26262, IEC 61508, IEC 62304, EN 50128/EN 50657, ISO 25119
@@ -122,6 +123,8 @@ Classify from YAML response:
 
 ### 6. Present Compliance Report
 
+For **non-MAB/JMAAB standards**, use this template:
+
 ```
 ## Compliance Summary: <Standard>
 Model: <model> [Scope: <subsystem> if scoped]
@@ -143,6 +146,55 @@ N checks passed.
 [5-7 prioritized actions max]
 ```
 
+For **MAB, JMAAB, or JMAAB_V6 standards**, use this template instead (includes the uncheckable guidelines review as an integral part of the report):
+
+```
+## Compliance Summary: <Standard>
+Model: <model> [Scope: <subsystem> if scoped]
+Result: X passed, Y warnings, Z failures
+
+### Critical Findings (must fix)
+| Check | Blocks | Fix Type | Action |
+|-------|--------|----------|--------|
+| name  | N      | param/insert/config/routing/arch | what to change |
+
+### Warnings (should fix)
+| Check | Blocks | Fix Type | Action |
+|-------|--------|----------|--------|
+
+### Passed
+N checks passed.
+
+---
+
+### Agentic Review of Uncheckable Guidelines (LLM-based — not deterministic)
+
+> **Note:** This is a semantic evaluation performed by an AI agent, not a deterministic Model Advisor check.
+
+**Model:** <model_name>
+**Judgment:** PASS | WARNING | FAIL
+**Confidence:** 0.XX
+
+#### Critical (must fix)
+| Guideline | Blocks | Fix Type | Action | Confidence |
+|-----------|--------|----------|--------|------------|
+
+#### Warnings (should fix)
+| Guideline | Blocks | Fix Type | Action | Confidence |
+|-----------|--------|----------|--------|------------|
+
+### Evidence
+[2-3 sentences citing specific model data]
+
+### Recommendation
+[Top 3-5 prioritized actions, or "No action required."]
+
+---
+
+### Suggested Next Steps
+[5-7 prioritized actions max, combining both deterministic and uncheckable findings]
+```
+
 **Fix Type values:** `param` (block parameter), `insert` (add block), `config` (model config), `routing` (reconnect signals), `arch` (restructure — recommend only)
 
 **Conciseness rules:**
@@ -150,11 +202,21 @@ N checks passed.
 - Target 40-60 lines; max ~80
 - Offer "I can list all affected blocks for check X" for detail
 
-### 7. Agentic Review of Uncheckable Guidelines (JMAAB/MAB only)
+### 7. Performing the Uncheckable Guidelines Review (JMAAB/MAB only)
 
-For JMAAB, JMAAB_V6, or MAB standards → after Step 6, load and follow `references/uncheckable-guidelines-review.md`.
+This section explains HOW to fill in the "Agentic Review of Uncheckable Guidelines" section that is part of the MAB/JMAAB report template above. **You MUST complete this before presenting the report to the user.**
 
-Skip this step for other standards (MISRA, ISO 26262, DO-178C, etc.).
+Skip this step ONLY for other standards (MISRA, ISO 26262, DO-178C, etc.).
+For JMAAB, JMAAB_V6, or MAB standards → load and follow `references/uncheckable-guidelines-review.md`.
+
+**What to do:** Evaluate guidelines that Model Advisor cannot fully verify — guidelines where semantic judgment is required or no check exists at all. Load `references/semantic-evaluation-index.md` to get the list of uncheckable guidelines, then:
+
+1. From the Model Advisor results, identify which checked guidelines appear in the semantic evaluation index
+2. For those guidelines, extract model data using MCP tools (`model_overview`, `model_read`, `model_query_params`)
+3. Apply the Quick Rules from the index for each applicable guideline
+4. For borderline cases, use the Semantic Gap column to calibrate judgment
+
+**Judgment:** worst verdict across findings (FAIL > WARNING > PASS). Confidence 0.0-1.0. Do NOT issue FAIL if confidence < 0.5.
 
 ### 8. Fix Mode
 
@@ -169,6 +231,7 @@ If user wants to justify/waive/suppress violations → load and follow the Justi
 ## Guardrails
 
 ### Always
+- For JMAAB/JMAAB_V6/MAB: ALWAYS perform Step 7 (Uncheckable Guidelines Review) — the report is incomplete without it
 - Show standard name + check count before running
 - Include block paths in findings
 - Follow Fix Order strictly (structural → diagnostic) to prevent cascading false failures

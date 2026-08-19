@@ -55,7 +55,7 @@ For screenshots vs text tables, follow the criteria in [templates/guideline.md](
 
 ### 4. Write the Guideline Document (via MATLAB file I/O)
 
-Follow the template in [templates/guideline.md](../templates/guideline.md). Use `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), passing `project_path`, to save the file — do NOT use Write/Edit tools.
+Follow the template in [templates/guideline.md](../templates/guideline.md). Use `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), passing `project_path`, to save the file — do NOT use Write/Edit tools. Rationale: MATLAB file I/O ensures files land in the correct project directory with proper encoding, and keeps all artifacts co-located with the MATLAB session's working folder — Write/Edit tools cannot reliably target the `project_path` context.
 
 **Optional:** Exceptions subsection — ONLY when the user explicitly states exceptions in their input. NEVER invent or infer exceptions.
 

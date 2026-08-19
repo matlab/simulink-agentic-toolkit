@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.7.0",
+      "version": "0.7.1",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -33,12 +33,12 @@
     },
     {
       "name": "verification-validation-and-test",
-      "version": "0.6.0",
-      "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), and detect design errors with root cause analysis using Simulink Design Verifier",
+      "version": "0.7.0",
+      "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR, SLCI), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), and detect design errors with root cause analysis using Simulink Design Verifier",
       "author": {
         "name": "MathWorks"
       },
-      "keywords": ["simulink", "model-advisor", "verification", "validation", "compliance", "misra", "iso-26262", "do-178c", "simulink-test", "testing", "mldatx", "requirements-traceability", "fault-injection", "safety-analysis", "fmea", "fta", "design-error-detection", "simulink-design-verifier", "root-cause-analysis"],
+      "keywords": ["simulink", "model-advisor", "verification", "validation", "compliance", "misra", "iso-26262", "do-178c", "slci", "simulink-code-inspector", "simulink-test", "testing", "mldatx", "requirements-traceability", "fault-injection", "safety-analysis", "fmea", "fta", "design-error-detection", "simulink-design-verifier", "root-cause-analysis"],
       "source": "./skills-catalog/verification-validation-and-test",
       "category": "development",
       "strict": false,
@@ -90,7 +90,7 @@
       "author": {
         "name": "MathWorks"
       },
-      "keywords": ["simulink", "control-design", "linearization", "lti", "lpv", "frequency-response"],
+      "keywords": ["simulink", "control-design", "linearization", "lti", "lpv", "frequency-response", "motor-control"],
       "source": "./skills-catalog/control-systems",
       "category": "development",
       "strict": false,

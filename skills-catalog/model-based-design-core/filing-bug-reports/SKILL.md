@@ -4,7 +4,7 @@ description: "Generate a standalone bug report that another developer can use to
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.1"
+  version: "1.2"
 ---
 
 # Filing Bug Reports
@@ -59,6 +59,7 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
    - `satk_initialize.m` status: `evaluate_matlab_code` → `which('model_read')` (empty = not run)
    - Connector: `evaluate_matlab_code` → `try; disp(connector.securePort); catch; disp('not running'); end`
    - MCP config: read `.vscode/mcp.json` for server mode and binary path
+   - If this is a layout issue and satk status is ok: `evaluate_matlab_code` → `layout.LayoutStateManager.instance().getAnonymizedLayoutSnapshotsPath()` but ask user if they agree to share anonymized layout information first. If you get user permission, do not read the contents of the file at the path returned by getAnonymizedLayoutSnapshotsPath, instead use a tool call to append this very large file directly to the final bug report.
 
 3. **Reproduce the bug.** Re-run the failing operation to confirm it's reproducible and capture exact output. If it passes on retry, note it as intermittent and try to identify what differs.
 

@@ -1,6 +1,6 @@
 # Copyright 2026 The MathWorks, Inc.
 schema-version: 1
-version: "1.2"
+version: "1.2.1"
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: product-specific
 toolkit: simulink-agentic-toolkit

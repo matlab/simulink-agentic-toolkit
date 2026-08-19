@@ -40,7 +40,7 @@ If information is ambiguous or missing, **use reasonable defaults and proceed** 
 
 ### 2. Present the Test Plan
 
-Generate and present a structured test plan following the format in [templates/test-spec.md](../templates/test-spec.md). Save the test spec `.md` file using `evaluate_matlab_code` with MATLAB file I/O (passing `project_path`) — do NOT use Write/Edit tools. The template defines the header fields, test case selection rules, and expected outcome values.
+Generate and present a structured test plan following the format in [templates/test-spec.md](../templates/test-spec.md). Save the test spec `.md` file using `evaluate_matlab_code` with MATLAB file I/O (passing `project_path`) — do NOT use Write/Edit tools. Rationale: MATLAB file I/O ensures files land in the correct project directory with proper encoding, and keeps all artifacts co-located with the MATLAB session's working folder — Write/Edit tools cannot reliably target the `project_path` context. The template defines the header fields, test case selection rules, and expected outcome values.
 
 ### 3. Create Test Models
 
@@ -48,7 +48,7 @@ For each model in the plan, create and save as `.slx` in the output directory. M
 
 ### 4. Generate Self-Contained Test Class
 
-Generate a single `.m` file using `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), always passing `project_path` — do NOT use Write/Edit tools. Follow the skeleton and recipes in [templates/test-recipes.md](../templates/test-recipes.md). Each test method loads a pre-built model by path, calls `tc.runCheck(modelName)`, and asserts with standard `matlab.unittest` verifications. Emit only the local-function helpers the test actually calls.
+Generate a single `.m` file using `evaluate_matlab_code` with MATLAB file I/O (fopen/fwrite/fclose), always passing `project_path` — do NOT use Write/Edit tools. (Same rationale: ensures correct directory targeting and encoding.) Follow the skeleton and recipes in [templates/test-recipes.md](../templates/test-recipes.md). Each test method loads a pre-built model by path, calls `tc.runCheck(modelName)`, and asserts with standard `matlab.unittest` verifications. Emit only the local-function helpers the test actually calls.
 
 See [templates/test-recipes.md](../templates/test-recipes.md) for:
 - Recipe 1: `runCheck` with registration guard and R2023a-R2024a ResultDetails fallback

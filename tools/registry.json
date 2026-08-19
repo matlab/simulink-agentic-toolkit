@@ -5,7 +5,7 @@
       "matlab_release": ">=R2023a",
       "matlab_function": "model_overview",
       "title": "Model Overview",
-      "description": "Get a high-level view of the model showing subsystem hierarchy, interfaces, and connections. Use this when first encountering a model to understand the big picture before diving into details.",
+      "description": "Get a high-level view of the model showing subsystem hierarchy, interfaces, and connections. Use this when first encountering a model to understand the big picture before diving into details. The output of this function will contain syntax [x | y/z] where x=#blocks, y=#inputs, z=#outputs",
       "annotations": {
         "readOnlyHint": true,
         "destructiveHint": false,

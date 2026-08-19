@@ -1,0 +1,88 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for simulink-control-motors
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "1.0"
+human-description: "Build motor control drives for PMSM, BLDC, induction, and SynRM motors using Motor Control Blockset. Covers FOC, sensorless control, six-step, field weakening, MTPA/MTPV, gain tuning, and embedded code generation."
+matlab-release: ">=R2025a"
+required-tools:
+  - evaluate_matlab_code
+  - model_edit
+  - model_read
+  - model_overview
+  - model_query_params
+required-skills:
+  - building-simulink-models
+reference-files:
+  - references/common/ROUTER-mcb.md
+  - references/common/COMMON-mcb.md
+  - references/common/api-and-tooling.md
+  - references/common/critical-constraints.md
+  - references/common/critical-constraints-domain.md
+  - references/common/tool-routing.md
+  - references/common/mcb-examples.md
+  - references/common/detailed-workflows.md
+  - references/design/architecture-patterns.md
+  - references/design/beginner-path.md
+  - references/design/application-catalog.md
+  - references/design/constraint-curves.md
+  - references/design/composition-rules-combining.md
+  - references/wiring/wiring-topologies.md
+  - references/wiring/wiring-topologies-advanced.md
+  - references/wiring/composition-rules.md
+  - references/wiring/composition-rules-infrastructure.md
+  - references/wiring/composition-rules-integration.md
+  - references/block-config/block-configurations.md
+  - references/block-config/block-configurations-bldc.md
+  - references/block-config/block-configurations-utility.md
+  - references/shared/gain-formulas.md
+  - references/shared/simscape-plant-patterns.md
+  - references/shared/solver-settings-by-plant.md
+  - references/tuning/parameter-computation.md
+  - references/tuning/parameter-computation-motors.md
+  - references/diagnostics/model-sanity-check.md
+  - references/diagnostics/model-sanity-check-infrastructure.md
+  - references/diagnostics/model-sanity-check-control.md
+  - references/diagnostics/model-sanity-check-domain.md
+  - references/diagnostics/recovery-protocol.md
+  - references/diagnostics/validation-checks.md
+  - references/diagnostics/auto_fix/ERROR_PATTERNS.md
+  - references/diagnostics/auto_fix/auto-fix-recipes.md
+  - references/configurations/acim-indirect-rfoc.md
+  - references/configurations/acim-simscape-rfoc.md
+  - references/configurations/acim-vf-openloop.md
+  - references/configurations/bldc-hall-sixstep.md
+  - references/configurations/bldc-sensorless-bemf.md
+  - references/configurations/nonlinear-gain-scheduled.md
+  - references/configurations/position-cascade-foc.md
+  - references/configurations/overmodulation-foc.md
+  - references/configurations/dtc-svpwm-pmsm.md
+  - references/configurations/hfi-smo-hybrid.md
+  - references/configurations/dual-motor-sync.md
+  - references/configurations/wind-turbine-pmsg.md
+  - references/configurations/adrc-speed.md
+  - references/configurations/backstepping-speed.md
+  - references/configurations/deadbeat-current.md
+  - references/configurations/sliding-mode-speed.md
+  - references/sensorless/sensorless-blocks.md
+  - references/sensorless/hfi-scheduler.md
+  - references/estimation/estimation-procedures.md
+  - references/estimation/estimation-to-tuning.md
+  - references/plants/block-configurations-plants.md
+  - references/plants/acim-configuration.md
+  - references/plants/plant-model-converters.md
+  - references/nonlinear-data/pmsmlut-structure.md
+  - references/workflows/wf-linear-motor-commissioning.md
+  - references/workflows/wf-nonlinear-motor-commissioning.md
+  - references/workflows/wf-motor-characterization.md
+  - references/workflows/wf-sensorless-observer-integration.md
+  - references/workflows/wf-virtual-dyno-validation.md
+required-products:
+  - Motor Control Blockset
+  - Simulink
+optional-products:
+  - Simscape Electrical
+  - Embedded Coder
+toolkit: simulink-agentic-toolkit
+
