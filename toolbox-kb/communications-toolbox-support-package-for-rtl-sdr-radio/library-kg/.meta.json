@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:08",
+  "generatedAtDatenum": 740213.74454798608,
+  "generatorVersion": 4,
+  "libraries": [
+    "Communications Toolbox Support Package for RTL-SDR Radio"
+  ],
+  "blockCount": 1,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Communications_Toolbox_Support_Package_for_RTL_SDR_Radio": {
+      "blockCount": 1
+    }
+  }
+}

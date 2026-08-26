@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "Constant",
+    "Terminator"
+  ],
+  "categories": [
+    {
+      "name": "assessment",
+      "description": "Blocks for MATLAB Grader and courseware auto-assessment templates",
+      "keywords": [
+        "grader",
+        "course",
+        "assessment",
+        "student",
+        "template"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Constant",
+      "value": "assessment"
+    },
+    {
+      "block": "Terminator",
+      "value": "assessment"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Constant",
+      "value": "Provide a constant value for course assessment grading templates — use as a placeholder signal source in auto-graded student assignment models"
+    },
+    {
+      "block": "Terminator",
+      "value": "Terminate an unconnected signal in course assessment models — use to suppress unconnected port warnings in auto-graded student assignment templates"
+    }
+  ]
+}

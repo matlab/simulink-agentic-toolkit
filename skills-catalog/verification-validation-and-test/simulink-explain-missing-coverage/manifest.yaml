@@ -1,0 +1,32 @@
+# manifest.yaml — Tooling metadata for simulink-explain-missing-coverage
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "0.1"
+human-description: Explain why Simulink Coverage objectives are missing on an existing coverage result — separate provably-dead outcomes (SLDV) from reachable-but-untested ones, trace each to its controllable inputs (Model Slicer), and recommend a test, a coverage filter, or a design review. Never collects coverage.
+matlab-release: ">=R2023a"
+required-tools:
+  - evaluate_matlab_code
+  - model_read
+  - model_overview
+required-skills: []
+reference-files:
+  - scripts/resolveCoverageData.m
+  - scripts/getCoverageSummary.m
+  - scripts/detectDeadLogicObjectives.m
+  - scripts/markSldvDeadLogic.m
+  - scripts/traceObjectiveInputs.m
+  - references/dead-logic-analysis.md
+  - references/explaining-and-resolving.md
+  - references/coverage-filter-api.md
+  - references/requirements-tracing.md
+  - references/script-outputs.md
+required-products:
+  - Simulink
+  - Simulink Coverage
+  - Simulink Design Verifier
+  - Simulink Check
+optional-products:
+  - Requirements Toolbox
+toolkit: simulink-agentic-toolkit
+# Copyright 2026 The MathWorks, Inc.

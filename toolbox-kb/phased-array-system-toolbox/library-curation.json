@@ -1,0 +1,776 @@
+{
+  "commonBlocks": [
+    "Linear FM Waveform",
+    "FMCW Waveform",
+    "Matched Filter",
+    "CFAR Detector",
+    "Range Doppler Response",
+    "Free Space",
+    "Transmitter",
+    "Receiver Preamp",
+    "Narrowband Receive Array",
+    "Phase Shift Beamformer",
+    "MUSIC Spectrum",
+    "Motion Platform"
+  ],
+  "categories": [
+    {
+      "name": "beamforming",
+      "description": "Spatial filtering algorithms that combine array element signals to enhance desired direction",
+      "keywords": [
+        "beamformer",
+        "spatial",
+        "filter",
+        "steer",
+        "MVDR",
+        "LCMV"
+      ]
+    },
+    {
+      "name": "detection-estimation",
+      "description": "Target detection, matched filtering, CFAR, and range-Doppler processing",
+      "keywords": [
+        "detection",
+        "CFAR",
+        "matched-filter",
+        "range",
+        "Doppler",
+        "SNR"
+      ]
+    },
+    {
+      "name": "direction-finding",
+      "description": "Direction of arrival estimation and spatial spectrum analysis",
+      "keywords": [
+        "DOA",
+        "MUSIC",
+        "ESPRIT",
+        "monopulse",
+        "spectrum",
+        "angle"
+      ]
+    },
+    {
+      "name": "environment-propagation",
+      "description": "Signal propagation, target RCS modeling, and platform motion",
+      "keywords": [
+        "free-space",
+        "propagation",
+        "target",
+        "RCS",
+        "platform",
+        "channel"
+      ]
+    },
+    {
+      "name": "localization",
+      "description": "Position estimation from TOA, TDOA, and bistatic measurements",
+      "keywords": [
+        "localization",
+        "TOA",
+        "TDOA",
+        "position",
+        "bistatic",
+        "emitter"
+      ]
+    },
+    {
+      "name": "stap",
+      "description": "Space-time adaptive processing for airborne clutter suppression",
+      "keywords": [
+        "STAP",
+        "clutter",
+        "DPCA",
+        "ADPCA",
+        "MTI",
+        "airborne"
+      ]
+    },
+    {
+      "name": "transmit-receive",
+      "description": "Array transmit and receive blocks, steering vectors, and front-end components",
+      "keywords": [
+        "transmitter",
+        "receiver",
+        "array",
+        "steering",
+        "preamp"
+      ]
+    },
+    {
+      "name": "waveforms",
+      "description": "Radar waveform generators for pulsed and continuous-wave systems",
+      "keywords": [
+        "waveform",
+        "chirp",
+        "FMCW",
+        "LFM",
+        "pulse",
+        "FM"
+      ]
+    },
+    {
+      "name": "visualization",
+      "description": "Intensity scope displays for range, Doppler, and angle versus time",
+      "keywords": [
+        "scope",
+        "intensity",
+        "display",
+        "visualization",
+        "RTI"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "2-D CFAR Detector",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "ADPCA Canceller",
+      "value": "stap"
+    },
+    {
+      "block": "Angle Doppler Response",
+      "value": "stap"
+    },
+    {
+      "block": "Angle-Time Intensity Scope",
+      "value": "visualization"
+    },
+    {
+      "block": "Azimuth Broadside Converter",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Backscatter Radar Target",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Beamscan Spectrum",
+      "value": "direction-finding"
+    },
+    {
+      "block": "Beamspace ESPRIT DOA",
+      "value": "direction-finding"
+    },
+    {
+      "block": "Bistatic Position Estimator",
+      "value": "localization"
+    },
+    {
+      "block": "CFAR Detector",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Cube Slicer",
+      "value": "stap"
+    },
+    {
+      "block": "Custom FM Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "DPCA Canceller",
+      "value": "stap"
+    },
+    {
+      "block": "Dechirp Mixer",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Doppler Estimator",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Doppler-Time Intensity Scope",
+      "value": "visualization"
+    },
+    {
+      "block": "ESPRIT DOA",
+      "value": "direction-finding"
+    },
+    {
+      "block": "FMCW Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "Free Space",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Frost Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "GCC DOA and TOA",
+      "value": "direction-finding"
+    },
+    {
+      "block": "GLRT Detector",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "GSC Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "LCMV Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "LOS Channel",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "LRT Detector",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Linear FM Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "MFSK Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "MUSIC Spectrum",
+      "value": "direction-finding"
+    },
+    {
+      "block": "MVDR Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "MVDR Spectrum",
+      "value": "direction-finding"
+    },
+    {
+      "block": "Matched Filter",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Monopulse Estimator",
+      "value": "direction-finding"
+    },
+    {
+      "block": "Monopulse Feed",
+      "value": "direction-finding"
+    },
+    {
+      "block": "Motion Platform",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Narrowband Receive Array",
+      "value": "transmit-receive"
+    },
+    {
+      "block": "Narrowband Transmit Array",
+      "value": "transmit-receive"
+    },
+    {
+      "block": "Nonlinear FM Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "Phase Shift Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "Phase-Coded Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "Pulse Integrator",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Radar Target",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Range Angle Calculator",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Range Angle Response",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Range Doppler Response",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Range Estimator",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Range Response",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Range-Angle Position Estimator",
+      "value": "localization"
+    },
+    {
+      "block": "Range-Time Intensity Scope",
+      "value": "visualization"
+    },
+    {
+      "block": "Receiver",
+      "value": "transmit-receive"
+    },
+    {
+      "block": "Receiver Preamp",
+      "value": "transmit-receive"
+    },
+    {
+      "block": "Rectangular Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "Root MUSIC DOA",
+      "value": "direction-finding"
+    },
+    {
+      "block": "Root WSF DOA",
+      "value": "direction-finding"
+    },
+    {
+      "block": "SMI Beamformer",
+      "value": "stap"
+    },
+    {
+      "block": "Scattering MIMO Channel",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Steering Vector",
+      "value": "transmit-receive"
+    },
+    {
+      "block": "Stepped FM Waveform",
+      "value": "waveforms"
+    },
+    {
+      "block": "Stretch Processor",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Subband MVDR Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "Subband Phase Shift Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "TDOA Estimator",
+      "value": "localization"
+    },
+    {
+      "block": "TDOA Position Estimator",
+      "value": "localization"
+    },
+    {
+      "block": "TOA Estimator",
+      "value": "localization"
+    },
+    {
+      "block": "TOA Position Estimator",
+      "value": "localization"
+    },
+    {
+      "block": "TSOA Position Estimator",
+      "value": "localization"
+    },
+    {
+      "block": "Time Delay Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "Time Delay LCMV Beamformer",
+      "value": "beamforming"
+    },
+    {
+      "block": "Time Varying Gain",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Transmitter",
+      "value": "transmit-receive"
+    },
+    {
+      "block": "ULA Beamscan Spectrum",
+      "value": "direction-finding"
+    },
+    {
+      "block": "ULA MUSIC Spectrum",
+      "value": "direction-finding"
+    },
+    {
+      "block": "ULA MVDR Spectrum",
+      "value": "direction-finding"
+    },
+    {
+      "block": "ULA Sum and Difference Monopulse",
+      "value": "direction-finding"
+    },
+    {
+      "block": "URA Sum and Difference Monopulse",
+      "value": "direction-finding"
+    },
+    {
+      "block": "Whitening Matrix",
+      "value": "detection-estimation"
+    },
+    {
+      "block": "Wideband Backscatter Radar Target",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Wideband Free Space",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Wideband LOS Channel",
+      "value": "environment-propagation"
+    },
+    {
+      "block": "Wideband Receive Array",
+      "value": "transmit-receive"
+    },
+    {
+      "block": "Wideband Transmit Array",
+      "value": "transmit-receive"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "2-D CFAR Detector",
+      "value": "Detect targets in range-Doppler or range-angle maps using 2-D constant false alarm rate processing"
+    },
+    {
+      "block": "ADPCA Canceller",
+      "value": "Suppress ground clutter using adaptive DPCA for moving target indication from airborne radar"
+    },
+    {
+      "block": "Angle Doppler Response",
+      "value": "Compute angle-Doppler map to visualize clutter ridges and target separation"
+    },
+    {
+      "block": "Angle-Time Intensity Scope",
+      "value": "Display angle-versus-time intensity plot for monitoring spatial signal dynamics"
+    },
+    {
+      "block": "Azimuth Broadside Converter",
+      "value": "Convert between azimuth angle and broadside angle for linear array calculations"
+    },
+    {
+      "block": "Backscatter Radar Target",
+      "value": "Model a narrowband radar target with angle-dependent radar cross section"
+    },
+    {
+      "block": "Beamscan Spectrum",
+      "value": "Estimate spatial spectrum by scanning conventional beamformer across all angles"
+    },
+    {
+      "block": "Beamspace ESPRIT DOA",
+      "value": "Estimate direction of arrival using ESPRIT in reduced beamspace for computational efficiency"
+    },
+    {
+      "block": "Bistatic Position Estimator",
+      "value": "Estimate target position from bistatic range measurements using multiple transmitter-receiver pairs"
+    },
+    {
+      "block": "CFAR Detector",
+      "value": "Detect targets using constant false alarm rate processing with adaptive threshold estimation"
+    },
+    {
+      "block": "Cube Slicer",
+      "value": "Extract a slice from a space-time data cube for STAP or beamforming processing"
+    },
+    {
+      "block": "Custom FM Waveform",
+      "value": "Generate a frequency-modulated waveform with user-defined frequency sweep profile"
+    },
+    {
+      "block": "DPCA Canceller",
+      "value": "Suppress ground clutter using displaced phase center antenna cancellation for airborne MTI"
+    },
+    {
+      "block": "Dechirp Mixer",
+      "value": "Mix a received chirp signal with a reference to convert range into frequency for stretch processing"
+    },
+    {
+      "block": "Doppler Estimator",
+      "value": "Estimate target Doppler shift from detection indices in range-Doppler processing"
+    },
+    {
+      "block": "Doppler-Time Intensity Scope",
+      "value": "Display Doppler-versus-time intensity plot for monitoring velocity dynamics"
+    },
+    {
+      "block": "ESPRIT DOA",
+      "value": "Estimate direction of arrival using the ESPRIT algorithm with shift-invariant array structure"
+    },
+    {
+      "block": "FMCW Waveform",
+      "value": "Generate a frequency-modulated continuous wave signal for automotive or short-range radar"
+    },
+    {
+      "block": "Free Space",
+      "value": "Model narrowband signal propagation through free space with path loss and time delay"
+    },
+    {
+      "block": "Frost Beamformer",
+      "value": "Apply Frost constrained adaptive beamforming to suppress interference while preserving the look direction"
+    },
+    {
+      "block": "GCC DOA and TOA",
+      "value": "Estimate direction and time of arrival using generalized cross-correlation between sensor pairs"
+    },
+    {
+      "block": "GLRT Detector",
+      "value": "Detect targets using the generalized likelihood ratio test when signal parameters are unknown"
+    },
+    {
+      "block": "GSC Beamformer",
+      "value": "Apply generalized sidelobe canceller beamforming for robust adaptive interference rejection"
+    },
+    {
+      "block": "LCMV Beamformer",
+      "value": "Apply linearly constrained minimum variance beamforming with multiple spatial constraints"
+    },
+    {
+      "block": "LOS Channel",
+      "value": "Model a line-of-sight propagation channel with atmospheric and weather effects"
+    },
+    {
+      "block": "LRT Detector",
+      "value": "Detect targets using the likelihood ratio test when noise statistics are known"
+    },
+    {
+      "block": "Linear FM Waveform",
+      "value": "Generate a linear frequency-modulated chirp pulse for radar range resolution"
+    },
+    {
+      "block": "MFSK Waveform",
+      "value": "Generate a multiple frequency-shift keying waveform for simultaneous range and Doppler measurement"
+    },
+    {
+      "block": "MUSIC Spectrum",
+      "value": "Estimate spatial spectrum using the MUSIC algorithm for high-resolution DOA estimation"
+    },
+    {
+      "block": "MVDR Beamformer",
+      "value": "Apply minimum variance distortionless response beamforming for optimal narrowband interference suppression"
+    },
+    {
+      "block": "MVDR Spectrum",
+      "value": "Estimate spatial spectrum using MVDR for adaptive spatial filtering with better resolution than beamscan"
+    },
+    {
+      "block": "Matched Filter",
+      "value": "Apply matched filtering to maximize SNR of a known radar waveform in received data"
+    },
+    {
+      "block": "Monopulse Estimator",
+      "value": "Estimate precise angular position of a target using sum and difference beam ratio"
+    },
+    {
+      "block": "Monopulse Feed",
+      "value": "Generate sum and difference channel outputs from an array for monopulse angle estimation"
+    },
+    {
+      "block": "Motion Platform",
+      "value": "Model platform motion to provide position, velocity, and orientation for moving sensors or targets"
+    },
+    {
+      "block": "Narrowband Receive Array",
+      "value": "Collect narrowband signals across array elements with spatial phase shifts from incident direction"
+    },
+    {
+      "block": "Narrowband Transmit Array",
+      "value": "Radiate narrowband signals from array elements with specified steering weights"
+    },
+    {
+      "block": "Nonlinear FM Waveform",
+      "value": "Generate a nonlinear FM chirp with reduced range sidelobes without windowing losses"
+    },
+    {
+      "block": "Phase Shift Beamformer",
+      "value": "Apply conventional phase-shift beamforming to steer the array toward a specified direction"
+    },
+    {
+      "block": "Phase-Coded Waveform",
+      "value": "Generate a phase-coded pulse using Barker or polyphase codes for pulse compression"
+    },
+    {
+      "block": "Pulse Integrator",
+      "value": "Coherently or noncoherently integrate multiple radar pulses to improve detection SNR"
+    },
+    {
+      "block": "Radar Target",
+      "value": "Model a point radar target with specified radar cross section for reflection simulation"
+    },
+    {
+      "block": "Range Angle Calculator",
+      "value": "Compute range and angle between two platforms from their position vectors"
+    },
+    {
+      "block": "Range Angle Response",
+      "value": "Compute a joint range-angle map from array data for target localization"
+    },
+    {
+      "block": "Range Doppler Response",
+      "value": "Compute range-Doppler map from pulse data for simultaneous range and velocity estimation"
+    },
+    {
+      "block": "Range Estimator",
+      "value": "Estimate target range from detection indices in range-processed data"
+    },
+    {
+      "block": "Range Response",
+      "value": "Compute range response from time-domain pulse data via matched filtering or dechirp"
+    },
+    {
+      "block": "Range-Angle Position Estimator",
+      "value": "Estimate target position from joint range and angle measurements"
+    },
+    {
+      "block": "Range-Time Intensity Scope",
+      "value": "Display range-versus-time intensity plot for monitoring target range tracks"
+    },
+    {
+      "block": "Receiver",
+      "value": "Model a radar or communications receiver with gain and noise figure"
+    },
+    {
+      "block": "Receiver Preamp",
+      "value": "Model a receiver front-end preamplifier with gain, noise figure, and dynamic range limits"
+    },
+    {
+      "block": "Rectangular Waveform",
+      "value": "Generate a simple rectangular radar pulse for basic pulsed radar systems"
+    },
+    {
+      "block": "Root MUSIC DOA",
+      "value": "Estimate DOA by polynomial rooting of the MUSIC pseudo-spectrum for ULA geometries"
+    },
+    {
+      "block": "Root WSF DOA",
+      "value": "Estimate DOA using weighted subspace fitting with polynomial rooting for improved accuracy"
+    },
+    {
+      "block": "SMI Beamformer",
+      "value": "Apply sample matrix inversion space-time beamforming for joint angle-Doppler filtering"
+    },
+    {
+      "block": "Scattering MIMO Channel",
+      "value": "Model a MIMO propagation channel with multiple scatterers for multipath simulation"
+    },
+    {
+      "block": "Steering Vector",
+      "value": "Compute the array steering vector for a given direction to use in beamforming or DOA"
+    },
+    {
+      "block": "Stepped FM Waveform",
+      "value": "Generate a stepped-frequency waveform for high range resolution with narrowband processing"
+    },
+    {
+      "block": "Stretch Processor",
+      "value": "Process dechirped wideband signals to extract range information via spectral analysis"
+    },
+    {
+      "block": "Subband MVDR Beamformer",
+      "value": "Apply MVDR beamforming in subbands for wideband signal enhancement"
+    },
+    {
+      "block": "Subband Phase Shift Beamformer",
+      "value": "Apply phase-shift beamforming in subbands for wideband beam steering"
+    },
+    {
+      "block": "TDOA Estimator",
+      "value": "Estimate time difference of arrival between sensor pairs from received signals"
+    },
+    {
+      "block": "TDOA Position Estimator",
+      "value": "Estimate emitter position from time difference of arrival measurements at multiple sensors"
+    },
+    {
+      "block": "TOA Estimator",
+      "value": "Estimate time of arrival of a signal at each sensor"
+    },
+    {
+      "block": "TOA Position Estimator",
+      "value": "Estimate emitter position from time of arrival measurements at multiple sensors"
+    },
+    {
+      "block": "TSOA Position Estimator",
+      "value": "Estimate emitter position from time sum of arrival measurements in a bistatic configuration"
+    },
+    {
+      "block": "Time Delay Beamformer",
+      "value": "Apply true-time-delay beamforming for wideband signals without beam squinting"
+    },
+    {
+      "block": "Time Delay LCMV Beamformer",
+      "value": "Apply time-delay LCMV beamforming for wideband constrained adaptive processing"
+    },
+    {
+      "block": "Time Varying Gain",
+      "value": "Apply range-dependent gain to compensate for propagation loss in received radar signals"
+    },
+    {
+      "block": "Transmitter",
+      "value": "Model a radar or communications transmitter with specified peak power and gain"
+    },
+    {
+      "block": "ULA Beamscan Spectrum",
+      "value": "Estimate spatial spectrum for a uniform linear array using conventional beamscan"
+    },
+    {
+      "block": "ULA MUSIC Spectrum",
+      "value": "Estimate spatial spectrum for a uniform linear array using the MUSIC algorithm"
+    },
+    {
+      "block": "ULA MVDR Spectrum",
+      "value": "Estimate spatial spectrum for a uniform linear array using MVDR beamforming"
+    },
+    {
+      "block": "ULA Sum and Difference Monopulse",
+      "value": "Estimate azimuth angle using sum-difference monopulse with a uniform linear array"
+    },
+    {
+      "block": "URA Sum and Difference Monopulse",
+      "value": "Estimate azimuth and elevation angles using sum-difference monopulse with a uniform rectangular array"
+    },
+    {
+      "block": "Whitening Matrix",
+      "value": "Compute the whitening transformation to decorrelate noise and interference in array data"
+    },
+    {
+      "block": "Wideband Backscatter Radar Target",
+      "value": "Model a wideband radar target with frequency-dependent backscatter response"
+    },
+    {
+      "block": "Wideband Free Space",
+      "value": "Model wideband signal propagation through free space preserving signal bandwidth"
+    },
+    {
+      "block": "Wideband LOS Channel",
+      "value": "Model wideband line-of-sight propagation with frequency-dependent atmospheric attenuation"
+    },
+    {
+      "block": "Wideband Receive Array",
+      "value": "Collect wideband signals across array elements preserving signal bandwidth"
+    },
+    {
+      "block": "Wideband Transmit Array",
+      "value": "Radiate wideband signals from array elements with specified beamforming weights"
+    }
+  ]
+}

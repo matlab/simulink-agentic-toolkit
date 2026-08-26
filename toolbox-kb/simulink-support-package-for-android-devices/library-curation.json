@@ -1,0 +1,63 @@
+{
+  "commonBlocks": [
+    "Sensors",
+    "Communication"
+  ],
+  "categories": [
+    {
+      "name": "android",
+      "description": "Android device peripheral and sensor access",
+      "keywords": [
+        "android",
+        "sensor",
+        "camera",
+        "bluetooth",
+        "mobile"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Advanced ",
+      "value": "android"
+    },
+    {
+      "block": "Audio & Video",
+      "value": "android"
+    },
+    {
+      "block": "Communication",
+      "value": "android"
+    },
+    {
+      "block": "Sensors",
+      "value": "android"
+    },
+    {
+      "block": "User Interface",
+      "value": "android"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Advanced ",
+      "value": "Access advanced Android features — use for background services, native interfaces, or platform-specific capabilities on Android devices"
+    },
+    {
+      "block": "Audio & Video",
+      "value": "Access audio and video hardware on Android — use for camera capture, audio recording, or media playback in Android-deployed models"
+    },
+    {
+      "block": "Communication",
+      "value": "Access communication interfaces on Android — use for WiFi, Bluetooth, or network data exchange in Android-deployed models"
+    },
+    {
+      "block": "Sensors",
+      "value": "Access onboard sensors on Android devices — use for reading accelerometer, gyroscope, GPS, or other phone sensors"
+    },
+    {
+      "block": "User Interface",
+      "value": "Create user interface elements on Android — use for displaying data, buttons, or sliders on the Android device screen"
+    }
+  ]
+}

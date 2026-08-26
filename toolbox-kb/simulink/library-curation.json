@@ -1,0 +1,1761 @@
+{
+  "commonBlocks": [
+    "Gain",
+    "Sum",
+    "Product",
+    "Integrator",
+    "Unit Delay",
+    "Discrete-Time Integrator",
+    "Transfer Fcn",
+    "Saturation",
+    "Logical Operator",
+    "Relational Operator",
+    "Data Type Conversion",
+    "MATLAB Function",
+    "Abs",
+    "1-D Lookup Table"
+  ],
+  "categories": [
+    {
+      "name": "continuous",
+      "description": "Continuous-time dynamic system blocks for integrators, derivatives, transfer functions, and state-space systems",
+      "keywords": [
+        "integrator",
+        "transfer function",
+        "state-space",
+        "derivative",
+        "PID"
+      ]
+    },
+    {
+      "name": "discrete",
+      "description": "Discrete-time processing blocks for delays, digital filters, sample-and-hold, and sampled-data controllers",
+      "keywords": [
+        "delay",
+        "sample",
+        "discrete filter",
+        "zero-order hold",
+        "accumulator"
+      ]
+    },
+    {
+      "name": "math-operations",
+      "description": "Arithmetic, algebraic, and elementary math operations for signal computation and transformation",
+      "keywords": [
+        "gain",
+        "sum",
+        "product",
+        "sqrt",
+        "absolute value"
+      ]
+    },
+    {
+      "name": "trigonometry",
+      "description": "Trigonometric and hyperbolic function blocks for angle computation and coordinate transformation",
+      "keywords": [
+        "sine",
+        "cosine",
+        "tangent",
+        "atan2",
+        "CORDIC"
+      ]
+    },
+    {
+      "name": "logic-and-bit-operations",
+      "description": "Boolean logic, relational comparison, bitwise manipulation, and signal change detection blocks",
+      "keywords": [
+        "AND",
+        "OR",
+        "compare",
+        "relational",
+        "bitwise"
+      ]
+    },
+    {
+      "name": "lookup-tables",
+      "description": "Table-based interpolation and function approximation blocks for calibration and data mapping",
+      "keywords": [
+        "interpolation",
+        "breakpoint",
+        "calibration",
+        "table",
+        "prelookup"
+      ]
+    },
+    {
+      "name": "signal-attributes",
+      "description": "Data type conversion, signal property specification, and rate transition blocks",
+      "keywords": [
+        "data type",
+        "conversion",
+        "rate transition",
+        "probe",
+        "signal specification"
+      ]
+    },
+    {
+      "name": "discontinuities",
+      "description": "Nonlinear elements with discontinuous behavior such as saturation, dead zones, and relay switches",
+      "keywords": [
+        "saturation",
+        "dead zone",
+        "rate limiter",
+        "relay",
+        "backlash"
+      ]
+    },
+    {
+      "name": "messages-and-events",
+      "description": "Asynchronous message passing, event scheduling, and queue management blocks",
+      "keywords": [
+        "message",
+        "queue",
+        "send",
+        "receive",
+        "event"
+      ]
+    },
+    {
+      "name": "model-verification",
+      "description": "Runtime assertion and bounds checking blocks for verifying model behavior during simulation",
+      "keywords": [
+        "assertion",
+        "bounds check",
+        "range",
+        "gradient",
+        "verification"
+      ]
+    },
+    {
+      "name": "user-defined-functions",
+      "description": "Blocks for embedding custom algorithms written in MATLAB, C, C++, or as S-functions",
+      "keywords": [
+        "MATLAB function",
+        "S-function",
+        "C code",
+        "custom algorithm",
+        "Python"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "1-D Lookup Table",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "2-D Lookup Table",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "3-D Lookup Table",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Abs",
+      "value": "math-operations"
+    },
+    {
+      "block": "Accumulator",
+      "value": "discrete"
+    },
+    {
+      "block": "Acos",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Acosh",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Add",
+      "value": "math-operations"
+    },
+    {
+      "block": "Add Constant",
+      "value": "math-operations"
+    },
+    {
+      "block": "Algebraic Constraint",
+      "value": "math-operations"
+    },
+    {
+      "block": "Asin",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Asinh",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Assertion",
+      "value": "model-verification"
+    },
+    {
+      "block": "Assignment",
+      "value": "math-operations"
+    },
+    {
+      "block": "Atan",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Atan2",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Atan2 Cordic",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Atanh",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Backlash",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Bias",
+      "value": "math-operations"
+    },
+    {
+      "block": "Bit Clear",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit Set",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit to Integer Converter",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bitwise Operator",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "C Caller",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "C Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Ceil",
+      "value": "math-operations"
+    },
+    {
+      "block": "Combinatorial  Logic",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Complex to Magnitude-Angle",
+      "value": "math-operations"
+    },
+    {
+      "block": "Complex to Real-Imag",
+      "value": "math-operations"
+    },
+    {
+      "block": "Conj",
+      "value": "math-operations"
+    },
+    {
+      "block": "Cos",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Cos Cordic",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Cos+jSin",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Cosh",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Cosine",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Coulomb & Viscous Friction",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Dead Zone Dynamic",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Decrement Real World",
+      "value": "discrete"
+    },
+    {
+      "block": "Decrement Stored Integer",
+      "value": "discrete"
+    },
+    {
+      "block": "Decrement Time To Zero",
+      "value": "discrete"
+    },
+    {
+      "block": "Decrement To Zero",
+      "value": "discrete"
+    },
+    {
+      "block": "Delay",
+      "value": "discrete"
+    },
+    {
+      "block": "Delay One Step",
+      "value": "discrete"
+    },
+    {
+      "block": "Derivative",
+      "value": "continuous"
+    },
+    {
+      "block": "Descriptor State-Space",
+      "value": "continuous"
+    },
+    {
+      "block": "Detect Change",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Decrease",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Fall Negative",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Fall Nonpositive",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Increase",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Rise Nonnegative",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Rise Positive",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Difference",
+      "value": "discrete"
+    },
+    {
+      "block": "Direct Lookup Table (n-D)",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Discrete Derivative",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete FIR Filter",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete Filter",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete PID Controller",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete PID Controller (2DOF)",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete State-Space",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete Transfer Fcn",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete Zero-Pole",
+      "value": "discrete"
+    },
+    {
+      "block": "Discrete-Time Integrator",
+      "value": "discrete"
+    },
+    {
+      "block": "Divide",
+      "value": "math-operations"
+    },
+    {
+      "block": "Dot Product",
+      "value": "math-operations"
+    },
+    {
+      "block": "Enabled Delay",
+      "value": "discrete"
+    },
+    {
+      "block": "Entity Transport Delay",
+      "value": "continuous"
+    },
+    {
+      "block": "Exp",
+      "value": "math-operations"
+    },
+    {
+      "block": "Extract Bits",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Fcn",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Find Nonzero Elements",
+      "value": "math-operations"
+    },
+    {
+      "block": "First Order Hold",
+      "value": "continuous"
+    },
+    {
+      "block": "Fix",
+      "value": "math-operations"
+    },
+    {
+      "block": "Fixed-Point State-Space",
+      "value": "discrete"
+    },
+    {
+      "block": "Float Extract Bits",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Floor",
+      "value": "math-operations"
+    },
+    {
+      "block": "Function Caller",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Gain",
+      "value": "math-operations"
+    },
+    {
+      "block": "Hermitian",
+      "value": "math-operations"
+    },
+    {
+      "block": "Hit  Crossing",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Hypot",
+      "value": "math-operations"
+    },
+    {
+      "block": "Increment Real World",
+      "value": "discrete"
+    },
+    {
+      "block": "Increment Stored Integer",
+      "value": "discrete"
+    },
+    {
+      "block": "Initialize Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Integer to Bit Converter",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Integrator",
+      "value": "continuous"
+    },
+    {
+      "block": "Integrator Limited",
+      "value": "continuous"
+    },
+    {
+      "block": "Integrator, Second-Order",
+      "value": "continuous"
+    },
+    {
+      "block": "Integrator, Second-Order Limited",
+      "value": "continuous"
+    },
+    {
+      "block": "Interpolation Using Prelookup",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Interpreted MATLAB Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Interval Test",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Interval Test Dynamic",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Level-2 MATLAB S-Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Log",
+      "value": "math-operations"
+    },
+    {
+      "block": "Log10",
+      "value": "math-operations"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Lookup Table Dynamic",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "MATLAB System",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Magnitude Squared",
+      "value": "math-operations"
+    },
+    {
+      "block": "Magnitude-Angle to Complex",
+      "value": "math-operations"
+    },
+    {
+      "block": "Math Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "Matrix Concatenate",
+      "value": "math-operations"
+    },
+    {
+      "block": "Matrix Divide",
+      "value": "math-operations"
+    },
+    {
+      "block": "Matrix Multiply",
+      "value": "math-operations"
+    },
+    {
+      "block": "Max",
+      "value": "math-operations"
+    },
+    {
+      "block": "Max of Elements",
+      "value": "math-operations"
+    },
+    {
+      "block": "Memory",
+      "value": "discrete"
+    },
+    {
+      "block": "Min",
+      "value": "math-operations"
+    },
+    {
+      "block": "Min of Elements",
+      "value": "math-operations"
+    },
+    {
+      "block": "MinMax",
+      "value": "math-operations"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "math-operations"
+    },
+    {
+      "block": "Minus",
+      "value": "math-operations"
+    },
+    {
+      "block": "Mod",
+      "value": "math-operations"
+    },
+    {
+      "block": "Multiply",
+      "value": "math-operations"
+    },
+    {
+      "block": "PID Controller",
+      "value": "continuous"
+    },
+    {
+      "block": "PID Controller (2DOF)",
+      "value": "continuous"
+    },
+    {
+      "block": "PWM",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Permute Dimensions",
+      "value": "math-operations"
+    },
+    {
+      "block": "Plus",
+      "value": "math-operations"
+    },
+    {
+      "block": "Polynomial",
+      "value": "math-operations"
+    },
+    {
+      "block": "Power",
+      "value": "math-operations"
+    },
+    {
+      "block": "Power of 10",
+      "value": "math-operations"
+    },
+    {
+      "block": "Prelookup",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Product",
+      "value": "math-operations"
+    },
+    {
+      "block": "Product of Elements",
+      "value": "math-operations"
+    },
+    {
+      "block": "Propagation Delay",
+      "value": "discrete"
+    },
+    {
+      "block": "Quantizer",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Queue",
+      "value": "messages-and-events"
+    },
+    {
+      "block": "Rate Limiter",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Rate Limiter Dynamic",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Rate Transition",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Real-Imag to Complex",
+      "value": "math-operations"
+    },
+    {
+      "block": "Receive",
+      "value": "messages-and-events"
+    },
+    {
+      "block": "Reciprocal",
+      "value": "math-operations"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "math-operations"
+    },
+    {
+      "block": "Reciprocal Square Root",
+      "value": "math-operations"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Relay",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Rem",
+      "value": "math-operations"
+    },
+    {
+      "block": "Resettable Delay",
+      "value": "discrete"
+    },
+    {
+      "block": "Reshape",
+      "value": "math-operations"
+    },
+    {
+      "block": "Round",
+      "value": "math-operations"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "S-Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "S-Function Builder",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Saturation",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Saturation Dynamic",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Send",
+      "value": "messages-and-events"
+    },
+    {
+      "block": "Sequence Viewer",
+      "value": "messages-and-events"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Sign",
+      "value": "math-operations"
+    },
+    {
+      "block": "Signal Specification",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "math-operations"
+    },
+    {
+      "block": "Signed Square Root",
+      "value": "math-operations"
+    },
+    {
+      "block": "Simulink Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Sin",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Sin Cordic",
+      "value": "trigonometry"
+    },
+    {
+      "block": "SinCos",
+      "value": "trigonometry"
+    },
+    {
+      "block": "SinCos Cordic",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Sine",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Sine Wave Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "Sinh",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "math-operations"
+    },
+    {
+      "block": "Sqrt",
+      "value": "math-operations"
+    },
+    {
+      "block": "Square",
+      "value": "math-operations"
+    },
+    {
+      "block": "Square Root",
+      "value": "math-operations"
+    },
+    {
+      "block": "Squeeze",
+      "value": "math-operations"
+    },
+    {
+      "block": "State-Space",
+      "value": "continuous"
+    },
+    {
+      "block": "Subtract",
+      "value": "math-operations"
+    },
+    {
+      "block": "Sum",
+      "value": "math-operations"
+    },
+    {
+      "block": "Sum of Elements",
+      "value": "math-operations"
+    },
+    {
+      "block": "Tan",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Tanh",
+      "value": "trigonometry"
+    },
+    {
+      "block": "Tapped Delay",
+      "value": "discrete"
+    },
+    {
+      "block": "Transfer Fcn",
+      "value": "continuous"
+    },
+    {
+      "block": "Transfer Fcn Direct Form II",
+      "value": "discrete"
+    },
+    {
+      "block": "Transfer Fcn Direct Form II Time Varying",
+      "value": "discrete"
+    },
+    {
+      "block": "Transfer Fcn First Order",
+      "value": "discrete"
+    },
+    {
+      "block": "Transfer Fcn Lead or Lag",
+      "value": "discrete"
+    },
+    {
+      "block": "Transfer Fcn Real Zero",
+      "value": "discrete"
+    },
+    {
+      "block": "Transport Delay",
+      "value": "continuous"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "math-operations"
+    },
+    {
+      "block": "Unit Delay",
+      "value": "discrete"
+    },
+    {
+      "block": "Variable Integer Delay",
+      "value": "discrete"
+    },
+    {
+      "block": "Variable Pulse Generator",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Variable Time Delay",
+      "value": "continuous"
+    },
+    {
+      "block": "Variable Transport Delay",
+      "value": "continuous"
+    },
+    {
+      "block": "Vector Concatenate",
+      "value": "math-operations"
+    },
+    {
+      "block": "Weighted Sample Time Math",
+      "value": "math-operations"
+    },
+    {
+      "block": "Wrap To Zero",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Zero-Order Hold",
+      "value": "discrete"
+    },
+    {
+      "block": "Zero-Pole",
+      "value": "continuous"
+    },
+    {
+      "block": "ln",
+      "value": "math-operations"
+    },
+    {
+      "block": "n-D Lookup Table",
+      "value": "lookup-tables"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "1-D Lookup Table",
+      "value": "Use when mapping a single input to an output using breakpoint data and interpolation for calibration curves"
+    },
+    {
+      "block": "2-D Lookup Table",
+      "value": "Use when mapping two inputs to an output using a two-dimensional data grid"
+    },
+    {
+      "block": "3-D Lookup Table",
+      "value": "Use when mapping three inputs to an output using a three-dimensional data grid"
+    },
+    {
+      "block": "Abs",
+      "value": "Use when computing the absolute value of a signal to remove sign information or measure magnitude"
+    },
+    {
+      "block": "Accumulator",
+      "value": "Use when summing input values over discrete time steps to create a running total or digital integrator"
+    },
+    {
+      "block": "Acos",
+      "value": "Use when computing the inverse cosine to recover an angle from a cosine ratio"
+    },
+    {
+      "block": "Acosh",
+      "value": "Use when computing the inverse hyperbolic cosine for hyperbolic geometry"
+    },
+    {
+      "block": "Add",
+      "value": "Use when summing two or more signals element-wise to combine contributions from multiple sources"
+    },
+    {
+      "block": "Add Constant",
+      "value": "Use when adding a fixed bias value to a signal as a streamlined alternative to Sum plus Constant"
+    },
+    {
+      "block": "Algebraic Constraint",
+      "value": "Use when solving implicit algebraic equations where the output must satisfy f(x) = 0 at each time step"
+    },
+    {
+      "block": "Asin",
+      "value": "Use when computing the inverse sine to recover an angle from a sine ratio"
+    },
+    {
+      "block": "Asinh",
+      "value": "Use when computing the inverse hyperbolic sine for logarithmic-like compression"
+    },
+    {
+      "block": "Assertion",
+      "value": "Use when halting simulation or generating a warning if a Boolean condition evaluates to false"
+    },
+    {
+      "block": "Assignment",
+      "value": "Use when replacing specific elements of a vector or matrix signal with new values at designated indices"
+    },
+    {
+      "block": "Atan",
+      "value": "Use when computing the inverse tangent to recover an angle from a tangent ratio"
+    },
+    {
+      "block": "Atan2",
+      "value": "Use when computing the four-quadrant inverse tangent from y and x components for full-range angle recovery"
+    },
+    {
+      "block": "Atan2 Cordic",
+      "value": "Use when computing four-quadrant inverse tangent using CORDIC for fixed-point hardware"
+    },
+    {
+      "block": "Atanh",
+      "value": "Use when computing the inverse hyperbolic tangent for signal transformation"
+    },
+    {
+      "block": "Backlash",
+      "value": "Use when modeling mechanical backlash or play in gear trains where output does not respond until input exceeds deadband"
+    },
+    {
+      "block": "Bias",
+      "value": "Use when adding a constant offset to a signal for level shifting or operating point adjustment"
+    },
+    {
+      "block": "Bit Clear",
+      "value": "Use when clearing specific bits in an integer signal for masking or flag manipulation"
+    },
+    {
+      "block": "Bit Set",
+      "value": "Use when setting specific bits in an integer signal for flag activation or register configuration"
+    },
+    {
+      "block": "Bit to Integer Converter",
+      "value": "Use when converting a vector of individual bits into a packed integer word"
+    },
+    {
+      "block": "Bitwise Operator",
+      "value": "Use when performing bitwise AND, OR, XOR, or NOT on integer signals"
+    },
+    {
+      "block": "C Caller",
+      "value": "Use when calling an existing C function from Simulink to integrate legacy C code or external libraries"
+    },
+    {
+      "block": "C Function",
+      "value": "Use when embedding custom C code directly in a block for low-level algorithm implementation"
+    },
+    {
+      "block": "Ceil",
+      "value": "Use when rounding a signal upward to the nearest integer for quantization or index computation"
+    },
+    {
+      "block": "Combinatorial  Logic",
+      "value": "Use when implementing a truth table that maps binary input combinations to specified outputs"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "Use when testing whether a signal is greater than, less than, or equal to a fixed threshold"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "Use when testing whether a signal is positive, negative, zero, or nonzero for condition detection"
+    },
+    {
+      "block": "Complex to Magnitude-Angle",
+      "value": "Use when converting a complex signal into its polar representation of magnitude and phase angle"
+    },
+    {
+      "block": "Complex to Real-Imag",
+      "value": "Use when splitting a complex signal into separate real and imaginary component outputs"
+    },
+    {
+      "block": "Conj",
+      "value": "Use when computing the complex conjugate of a signal for correlation or spectral operations"
+    },
+    {
+      "block": "Cos",
+      "value": "Use when computing the cosine of an angle signal for coordinate transformation or oscillatory modeling"
+    },
+    {
+      "block": "Cos Cordic",
+      "value": "Use when computing cosine using CORDIC algorithm for efficient fixed-point implementation"
+    },
+    {
+      "block": "Cos+jSin",
+      "value": "Use when computing complex exponential as cos(theta) + j*sin(theta) for phasor generation"
+    },
+    {
+      "block": "Cosh",
+      "value": "Use when computing the hyperbolic cosine for catenary curves or signal processing"
+    },
+    {
+      "block": "Cosine",
+      "value": "Use when computing cosine via lookup table for efficient fixed-point trigonometric evaluation"
+    },
+    {
+      "block": "Coulomb & Viscous Friction",
+      "value": "Use when modeling friction forces combining a constant Coulomb component with a velocity-proportional viscous component"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "Use when explicitly converting a signal from one data type to another such as double to integer or fixed-point"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "Use when zeroing out signals within a specified band around zero to model insensitivity regions"
+    },
+    {
+      "block": "Dead Zone Dynamic",
+      "value": "Use when the dead zone limits are determined dynamically by input signals"
+    },
+    {
+      "block": "Decrement Real World",
+      "value": "Use when decreasing a fixed-point signal by one real-world unit for countdown logic"
+    },
+    {
+      "block": "Decrement Stored Integer",
+      "value": "Use when decreasing the stored integer value of a fixed-point signal by one"
+    },
+    {
+      "block": "Decrement Time To Zero",
+      "value": "Use when decreasing a signal by a time-step-scaled amount until it reaches zero for timer countdown"
+    },
+    {
+      "block": "Decrement To Zero",
+      "value": "Use when decreasing a signal by one each step until it reaches zero for down-counter behavior"
+    },
+    {
+      "block": "Delay",
+      "value": "Use when delaying a signal by a configurable number of sample periods with support for variable delay length"
+    },
+    {
+      "block": "Delay One Step",
+      "value": "Use when a simple single-sample delay is needed without additional configuration options"
+    },
+    {
+      "block": "Derivative",
+      "value": "Use when you need to compute the time derivative of a signal for rate-of-change analysis"
+    },
+    {
+      "block": "Descriptor State-Space",
+      "value": "Use when modeling systems with algebraic constraints alongside differential equations in descriptor form"
+    },
+    {
+      "block": "Detect Change",
+      "value": "Use when detecting any change in a signal value between consecutive time steps for event triggering"
+    },
+    {
+      "block": "Detect Decrease",
+      "value": "Use when detecting when a signal value decreases from one time step to the next"
+    },
+    {
+      "block": "Detect Fall Negative",
+      "value": "Use when detecting the instant a signal crosses from nonnegative to strictly negative"
+    },
+    {
+      "block": "Detect Fall Nonpositive",
+      "value": "Use when detecting the instant a signal crosses from positive to nonpositive"
+    },
+    {
+      "block": "Detect Increase",
+      "value": "Use when detecting when a signal value increases from one time step to the next"
+    },
+    {
+      "block": "Detect Rise Nonnegative",
+      "value": "Use when detecting the instant a signal crosses from negative to nonnegative"
+    },
+    {
+      "block": "Detect Rise Positive",
+      "value": "Use when detecting the instant a signal crosses from nonpositive to strictly positive"
+    },
+    {
+      "block": "Difference",
+      "value": "Use when computing the change in a signal between consecutive time steps for discrete differentiation"
+    },
+    {
+      "block": "Direct Lookup Table (n-D)",
+      "value": "Use when indexing directly into an n-dimensional table without interpolation"
+    },
+    {
+      "block": "Discrete Derivative",
+      "value": "Use when approximating the derivative of a discrete-time signal using backward difference"
+    },
+    {
+      "block": "Discrete FIR Filter",
+      "value": "Use when applying a finite impulse response filter defined by tap coefficients for signal smoothing"
+    },
+    {
+      "block": "Discrete Filter",
+      "value": "Use when implementing a general IIR or FIR digital filter with specified coefficients"
+    },
+    {
+      "block": "Discrete PID Controller",
+      "value": "Use when implementing a discrete-time PID controller with configurable sample time"
+    },
+    {
+      "block": "Discrete PID Controller (2DOF)",
+      "value": "Use when implementing a discrete two-degree-of-freedom PID for separate tracking and rejection tuning"
+    },
+    {
+      "block": "Discrete State-Space",
+      "value": "Use when representing discrete-time dynamics in state-space form with matrices A, B, C, D"
+    },
+    {
+      "block": "Discrete Transfer Fcn",
+      "value": "Use when implementing a discrete-time transfer function specified by z-domain polynomials"
+    },
+    {
+      "block": "Discrete Zero-Pole",
+      "value": "Use when representing a discrete transfer function by its zeros, poles, and gain in factored form"
+    },
+    {
+      "block": "Discrete-Time Integrator",
+      "value": "Use when accumulating a signal over discrete time steps with optional reset and saturation"
+    },
+    {
+      "block": "Divide",
+      "value": "Use when dividing one signal by another element-wise or computing the reciprocal of a signal"
+    },
+    {
+      "block": "Dot Product",
+      "value": "Use when computing the inner product of two vectors to measure projection or correlation"
+    },
+    {
+      "block": "Enabled Delay",
+      "value": "Use when delaying a signal only while an enable condition is active, holding the last value when disabled"
+    },
+    {
+      "block": "Entity Transport Delay",
+      "value": "Use when modeling variable transport delays where the delay depends on entity-based scheduling"
+    },
+    {
+      "block": "Exp",
+      "value": "Use when computing the exponential e^x for growth models or exponential transformations"
+    },
+    {
+      "block": "Extract Bits",
+      "value": "Use when extracting a contiguous range of bits from an integer signal for bitfield decoding"
+    },
+    {
+      "block": "Fcn",
+      "value": "Use when applying a simple mathematical expression to input u for lightweight custom computation"
+    },
+    {
+      "block": "Find Nonzero Elements",
+      "value": "Use when locating the indices of nonzero entries in a vector or matrix signal"
+    },
+    {
+      "block": "First Order Hold",
+      "value": "Use when reconstructing continuous signals from discrete samples with first-order interpolation"
+    },
+    {
+      "block": "Fix",
+      "value": "Use when rounding toward zero to truncate fractional parts for integer conversion"
+    },
+    {
+      "block": "Fixed-Point State-Space",
+      "value": "Use when implementing a state-space model with fixed-point arithmetic for embedded deployment"
+    },
+    {
+      "block": "Float Extract Bits",
+      "value": "Use when extracting the sign, exponent, or mantissa fields from a floating-point number"
+    },
+    {
+      "block": "Floor",
+      "value": "Use when rounding a signal downward to the nearest integer for bin assignment or quantization"
+    },
+    {
+      "block": "Function Caller",
+      "value": "Use when invoking a Simulink Function defined elsewhere in the model for modular function reuse"
+    },
+    {
+      "block": "Gain",
+      "value": "Use when multiplying a signal by a constant scalar, vector, or matrix to apply scaling or unit conversion"
+    },
+    {
+      "block": "Hermitian",
+      "value": "Use when computing the conjugate transpose of a complex matrix signal"
+    },
+    {
+      "block": "Hit  Crossing",
+      "value": "Use when detecting the exact time instant a signal crosses a specified threshold value"
+    },
+    {
+      "block": "Hypot",
+      "value": "Use when computing sqrt(x^2 + y^2) with improved numerical accuracy for Euclidean distance"
+    },
+    {
+      "block": "Increment Real World",
+      "value": "Use when increasing a fixed-point signal by one real-world unit for count-up logic"
+    },
+    {
+      "block": "Increment Stored Integer",
+      "value": "Use when increasing the stored integer value of a fixed-point signal by one"
+    },
+    {
+      "block": "Initialize Function",
+      "value": "Use when defining initialization logic that executes once at model startup"
+    },
+    {
+      "block": "Integer to Bit Converter",
+      "value": "Use when unpacking an integer word into a vector of individual bit signals"
+    },
+    {
+      "block": "Integrator",
+      "value": "Use when accumulating a signal over continuous time to model dynamics such as position from velocity"
+    },
+    {
+      "block": "Integrator Limited",
+      "value": "Use when integrating a signal with saturation limits to prevent windup in continuous-time systems"
+    },
+    {
+      "block": "Integrator, Second-Order",
+      "value": "Use when modeling second-order dynamics like mass-spring-damper systems requiring position and velocity states"
+    },
+    {
+      "block": "Integrator, Second-Order Limited",
+      "value": "Use when modeling second-order dynamics with output saturation to enforce physical limits"
+    },
+    {
+      "block": "Interpolation Using Prelookup",
+      "value": "Use when performing table interpolation using precomputed index and fraction from a Prelookup block"
+    },
+    {
+      "block": "Interpreted MATLAB Function",
+      "value": "Use when calling a MATLAB function during simulation for prototyping custom algorithms"
+    },
+    {
+      "block": "Interval Test",
+      "value": "Use when checking whether a signal falls within a fixed lower and upper bound range"
+    },
+    {
+      "block": "Interval Test Dynamic",
+      "value": "Use when checking whether a signal falls within dynamically specified lower and upper bounds"
+    },
+    {
+      "block": "Level-2 MATLAB S-Function",
+      "value": "Use when implementing an advanced custom block with multiple ports using the Level-2 S-function API"
+    },
+    {
+      "block": "Log",
+      "value": "Use when computing the natural logarithm for logarithmic compression or inverse exponential operations"
+    },
+    {
+      "block": "Log10",
+      "value": "Use when computing the base-10 logarithm for decibel calculations or logarithmic scaling"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "Use when performing Boolean AND, OR, NOT, NAND, NOR, XOR, or NXOR operations on logical signals"
+    },
+    {
+      "block": "Lookup Table Dynamic",
+      "value": "Use when table breakpoints and values change during simulation based on input signals"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Use when writing custom algorithms in MATLAB language that support code generation and run within Simulink"
+    },
+    {
+      "block": "MATLAB System",
+      "value": "Use when integrating a MATLAB System object into Simulink for streaming data processing with state management"
+    },
+    {
+      "block": "Magnitude Squared",
+      "value": "Use when computing |x|^2 for power calculations without the cost of a square root"
+    },
+    {
+      "block": "Magnitude-Angle to Complex",
+      "value": "Use when constructing a complex signal from separate magnitude and phase angle inputs"
+    },
+    {
+      "block": "Math Function",
+      "value": "Use when applying common mathematical functions like exp, log, sqrt, power, or reciprocal to a signal"
+    },
+    {
+      "block": "Matrix Concatenate",
+      "value": "Use when joining multiple matrix or vector signals along a specified dimension into a larger array"
+    },
+    {
+      "block": "Matrix Divide",
+      "value": "Use when solving linear systems A*x = B or computing matrix left/right division"
+    },
+    {
+      "block": "Matrix Multiply",
+      "value": "Use when performing matrix multiplication of two compatible matrix signals"
+    },
+    {
+      "block": "Max",
+      "value": "Use when selecting the larger of two input signals element-wise for upper-bound enforcement"
+    },
+    {
+      "block": "Max of Elements",
+      "value": "Use when finding the maximum element within a single vector or matrix signal"
+    },
+    {
+      "block": "Memory",
+      "value": "Use when storing the previous time-step value to break algebraic loops or provide one-step memory"
+    },
+    {
+      "block": "Min",
+      "value": "Use when selecting the smaller of two input signals element-wise for lower-bound enforcement"
+    },
+    {
+      "block": "Min of Elements",
+      "value": "Use when finding the minimum element within a single vector or matrix signal"
+    },
+    {
+      "block": "MinMax",
+      "value": "Use when selecting the minimum or maximum value among multiple input signals element-wise"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "Use when tracking the running minimum or maximum of a signal over time with reset ability"
+    },
+    {
+      "block": "Minus",
+      "value": "Use when subtracting one signal from another as a streamlined difference operation"
+    },
+    {
+      "block": "Mod",
+      "value": "Use when computing the modulus after division for wrapping angles or cyclic indexing"
+    },
+    {
+      "block": "Multiply",
+      "value": "Use when multiplying a signal by a constant gain value using an element-wise multiply variant"
+    },
+    {
+      "block": "PID Controller",
+      "value": "Use when implementing continuous-time PID feedback control for setpoint tracking and disturbance rejection"
+    },
+    {
+      "block": "PID Controller (2DOF)",
+      "value": "Use when implementing two-degree-of-freedom PID that independently weights setpoint tracking and disturbance rejection"
+    },
+    {
+      "block": "PWM",
+      "value": "Use when generating a pulse-width modulated output signal based on a duty cycle input"
+    },
+    {
+      "block": "Permute Dimensions",
+      "value": "Use when rearranging the dimensions of a multidimensional signal to match downstream requirements"
+    },
+    {
+      "block": "Plus",
+      "value": "Use when adding two signals together as a streamlined summation operation"
+    },
+    {
+      "block": "Polynomial",
+      "value": "Use when evaluating a polynomial expression with specified coefficients at each input value"
+    },
+    {
+      "block": "Power",
+      "value": "Use when raising a signal to a specified power exponent for nonlinear transformations"
+    },
+    {
+      "block": "Power of 10",
+      "value": "Use when computing 10^x for decibel-to-linear conversions or logarithmic scale transformations"
+    },
+    {
+      "block": "Prelookup",
+      "value": "Use when precomputing breakpoint index and interpolation fraction to share across multiple lookup tables"
+    },
+    {
+      "block": "Product",
+      "value": "Use when multiplying or dividing two or more signals element-wise or performing matrix multiplication"
+    },
+    {
+      "block": "Product of Elements",
+      "value": "Use when computing the product of all elements in a vector to reduce it to a scalar"
+    },
+    {
+      "block": "Propagation Delay",
+      "value": "Use when modeling a fixed number of clock cycles of latency in digital hardware"
+    },
+    {
+      "block": "Quantizer",
+      "value": "Use when discretizing a continuous signal into equally spaced levels for ADC modeling"
+    },
+    {
+      "block": "Queue",
+      "value": "Use when buffering messages in a FIFO, LIFO, or priority queue for asynchronous processing"
+    },
+    {
+      "block": "Rate Limiter",
+      "value": "Use when constraining how fast a signal can change to model actuator slew rate limits"
+    },
+    {
+      "block": "Rate Limiter Dynamic",
+      "value": "Use when the rising and falling rate limits are determined dynamically by input signals"
+    },
+    {
+      "block": "Rate Transition",
+      "value": "Use when safely transferring data between subsystems running at different sample rates in multirate models"
+    },
+    {
+      "block": "Real-Imag to Complex",
+      "value": "Use when combining separate real and imaginary parts into a single complex-valued signal"
+    },
+    {
+      "block": "Receive",
+      "value": "Use when receiving messages from a message channel for inter-component communication"
+    },
+    {
+      "block": "Reciprocal",
+      "value": "Use when computing the element-wise inverse 1/x of a signal"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "Use when computing 1/sqrt(x) efficiently for normalization or inverse distance calculations"
+    },
+    {
+      "block": "Reciprocal Square Root",
+      "value": "Use when computing 1/sqrt(x) as a dedicated block variant for normalization operations"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "Use when comparing two signals with operators like equal, not-equal, greater-than, or less-than"
+    },
+    {
+      "block": "Relay",
+      "value": "Use when implementing hysteresis switching that turns on at one threshold and off at another"
+    },
+    {
+      "block": "Rem",
+      "value": "Use when computing the remainder after division following MATLAB rem semantics"
+    },
+    {
+      "block": "Resettable Delay",
+      "value": "Use when delaying a signal with the ability to reset the stored state based on a reset trigger"
+    },
+    {
+      "block": "Reshape",
+      "value": "Use when changing the dimensions of a signal without altering its data for interface compatibility"
+    },
+    {
+      "block": "Round",
+      "value": "Use when rounding to the nearest integer using standard rounding rules"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "Use when rounding a signal to the nearest integer using floor, ceil, round, or fix methods"
+    },
+    {
+      "block": "S-Function",
+      "value": "Use when implementing a custom block using an S-function written in C, C++, or MATLAB for maximum flexibility"
+    },
+    {
+      "block": "S-Function Builder",
+      "value": "Use when generating S-function wrapper code from C/C++ source through a graphical interface"
+    },
+    {
+      "block": "Saturation",
+      "value": "Use when clamping a signal between upper and lower bounds to model actuator limits or constraints"
+    },
+    {
+      "block": "Saturation Dynamic",
+      "value": "Use when the saturation limits are determined dynamically by input signals"
+    },
+    {
+      "block": "Send",
+      "value": "Use when sending messages to a message channel for asynchronous inter-component communication"
+    },
+    {
+      "block": "Sequence Viewer",
+      "value": "Use when visualizing the sequence of messages and events exchanged between components during simulation"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "Use when shifting integer bits left or right for multiplication/division by powers of two"
+    },
+    {
+      "block": "Sign",
+      "value": "Use when extracting the sign of a signal as +1, 0, or -1 for direction detection or signum-based control"
+    },
+    {
+      "block": "Signal Specification",
+      "value": "Use when explicitly declaring expected signal attributes like dimensions, data type, and sample time"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "Use when computing the square root while preserving the sign of the input"
+    },
+    {
+      "block": "Signed Square Root",
+      "value": "Use when computing sign-preserving square root as a dedicated block variant"
+    },
+    {
+      "block": "Simulink Function",
+      "value": "Use when defining a callable function within Simulink that can be invoked by Function Caller blocks"
+    },
+    {
+      "block": "Sin",
+      "value": "Use when computing the sine of an angle signal for coordinate transformation"
+    },
+    {
+      "block": "Sin Cordic",
+      "value": "Use when computing sine using CORDIC algorithm for efficient fixed-point implementation"
+    },
+    {
+      "block": "SinCos",
+      "value": "Use when simultaneously computing both sine and cosine of the same angle for efficient coordinate transforms"
+    },
+    {
+      "block": "SinCos Cordic",
+      "value": "Use when computing simultaneous sine and cosine via CORDIC for fixed-point trigonometric operations"
+    },
+    {
+      "block": "Sine",
+      "value": "Use when computing sine via lookup table for efficient fixed-point trigonometric evaluation"
+    },
+    {
+      "block": "Sine Wave Function",
+      "value": "Use when generating a continuous sinusoidal signal as a math operation rather than a source block"
+    },
+    {
+      "block": "Sinh",
+      "value": "Use when computing the hyperbolic sine for signal processing or mathematical modeling"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "Use when interactively adjusting a gain value during simulation via a slider UI for parameter tuning"
+    },
+    {
+      "block": "Sqrt",
+      "value": "Use when computing the square root of a signal for distance calculations or RMS computation"
+    },
+    {
+      "block": "Square",
+      "value": "Use when computing x^2 element-wise for power or energy calculations"
+    },
+    {
+      "block": "Square Root",
+      "value": "Use when computing sqrt(x) as a dedicated block variant for magnitude or distance calculations"
+    },
+    {
+      "block": "Squeeze",
+      "value": "Use when removing singleton dimensions from a multidimensional signal to simplify downstream processing"
+    },
+    {
+      "block": "State-Space",
+      "value": "Use when representing a linear time-invariant system in state-space form with matrices A, B, C, D"
+    },
+    {
+      "block": "Subtract",
+      "value": "Use when computing the difference between two signals for error calculation or comparison"
+    },
+    {
+      "block": "Sum",
+      "value": "Use when adding or subtracting multiple signals with configurable sign list to form error or combined outputs"
+    },
+    {
+      "block": "Sum of Elements",
+      "value": "Use when summing all elements of a vector signal into a single scalar output"
+    },
+    {
+      "block": "Tan",
+      "value": "Use when computing the tangent of an angle for slope calculations or trigonometric identities"
+    },
+    {
+      "block": "Tanh",
+      "value": "Use when computing the hyperbolic tangent for smooth saturation or neural network activation functions"
+    },
+    {
+      "block": "Tapped Delay",
+      "value": "Use when generating a vector of multiple consecutive delayed versions of a signal for FIR filtering"
+    },
+    {
+      "block": "Transfer Fcn",
+      "value": "Use when modeling linear continuous-time dynamics specified by numerator and denominator polynomial coefficients"
+    },
+    {
+      "block": "Transfer Fcn Direct Form II",
+      "value": "Use when implementing a discrete transfer function using Direct Form II structure"
+    },
+    {
+      "block": "Transfer Fcn Direct Form II Time Varying",
+      "value": "Use when implementing a discrete transfer function in Direct Form II with time-varying coefficients"
+    },
+    {
+      "block": "Transfer Fcn First Order",
+      "value": "Use when implementing a first-order discrete low-pass or lag filter with a single pole"
+    },
+    {
+      "block": "Transfer Fcn Lead or Lag",
+      "value": "Use when implementing discrete lead or lag compensation for phase adjustment in control systems"
+    },
+    {
+      "block": "Transfer Fcn Real Zero",
+      "value": "Use when implementing a discrete transfer function with a single real zero for high-frequency emphasis"
+    },
+    {
+      "block": "Transport Delay",
+      "value": "Use when a signal must be delayed by a fixed time duration to model physical transport phenomena"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "Use when computing trigonometric functions like sin, cos, tan, or their inverses on a signal"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "Use when negating a signal to reverse its polarity or compute the additive inverse"
+    },
+    {
+      "block": "Unit Delay",
+      "value": "Use when delaying a signal by exactly one sample period to implement z^-1 operations in discrete control"
+    },
+    {
+      "block": "Variable Integer Delay",
+      "value": "Use when the number of sample periods of delay is determined dynamically by an integer-valued input"
+    },
+    {
+      "block": "Variable Pulse Generator",
+      "value": "Use when generating pulses with variable width and period controlled by input signals"
+    },
+    {
+      "block": "Variable Time Delay",
+      "value": "Use when the transport delay duration changes over time based on another input signal"
+    },
+    {
+      "block": "Variable Transport Delay",
+      "value": "Use when modeling a transport delay whose duration is determined dynamically by a variable input"
+    },
+    {
+      "block": "Vector Concatenate",
+      "value": "Use when joining multiple scalar or vector signals end-to-end into a single longer vector"
+    },
+    {
+      "block": "Weighted Sample Time Math",
+      "value": "Use when performing arithmetic weighted by the sample time for discrete derivative or integral scaling"
+    },
+    {
+      "block": "Wrap To Zero",
+      "value": "Use when resetting a signal to zero once it exceeds a threshold for overflow or counter wrap modeling"
+    },
+    {
+      "block": "Zero-Order Hold",
+      "value": "Use when converting a continuous-time signal to discrete-time by sampling and holding the value constant"
+    },
+    {
+      "block": "Zero-Pole",
+      "value": "Use when representing a continuous transfer function by its zero, pole, and gain factored form"
+    },
+    {
+      "block": "ln",
+      "value": "Use when computing the natural logarithm as a dedicated ln block variant"
+    },
+    {
+      "block": "n-D Lookup Table",
+      "value": "Use when mapping multiple inputs to an output using an n-dimensional data grid for general calibration"
+    }
+  ]
+}

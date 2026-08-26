@@ -1,0 +1,36 @@
+{
+  "libraryName": "Communications Toolbox Support Package for ADALM-PLUTO Radio",
+  "generatedAt": "2026-08-19T14:30:48",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "ADALM-Pluto Radio Receiver",
+      "referenceBlock": "plutoradiolib/ADALM-Pluto Radio Receiver",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADALM-Pluto Radio Transmitter",
+      "referenceBlock": "plutoradiolib/ADALM-Pluto Radio Transmitter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,747 @@
+{
+  "libraryName": "Phased Array System Toolbox",
+  "generatedAt": "2026-08-19T14:31:03",
+  "blockCount": 81,
+  "blocks": [
+    {
+      "name": "Frost Beamformer",
+      "referenceBlock": "phasedbflib/Frost Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GSC Beamformer",
+      "referenceBlock": "phasedbflib/GSC Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LCMV Beamformer",
+      "referenceBlock": "phasedbflib/LCMV Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MVDR Beamformer",
+      "referenceBlock": "phasedbflib/MVDR Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase Shift Beamformer",
+      "referenceBlock": "phasedbflib/Phase Shift Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subband MVDR Beamformer",
+      "referenceBlock": "phasedbflib/Subband MVDR Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subband Phase Shift Beamformer",
+      "referenceBlock": "phasedbflib/Subband Phase Shift Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Time Delay Beamformer",
+      "referenceBlock": "phasedbflib/Time Delay Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Time Delay LCMV Beamformer",
+      "referenceBlock": "phasedbflib/Time Delay LCMV Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dechirp Mixer",
+      "referenceBlock": "phaseddetectlib/Dechirp Mixer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Dechirp",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulse Integrator",
+      "referenceBlock": "phaseddetectlib/Pulse Integrator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Pulse Integrator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Whitening Matrix",
+      "referenceBlock": "phaseddetectlib/Whitening Matrix",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Whitening Matrix",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "2-D CFAR Detector",
+      "referenceBlock": "phaseddetectlib/2-D CFAR Detector",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CFAR Detector",
+      "referenceBlock": "phaseddetectlib/CFAR Detector",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Doppler Estimator",
+      "referenceBlock": "phaseddetectlib/Doppler Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GLRT Detector",
+      "referenceBlock": "phaseddetectlib/GLRT Detector",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "LRT Detector",
+      "referenceBlock": "phaseddetectlib/LRT Detector",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Matched Filter",
+      "referenceBlock": "phaseddetectlib/Matched Filter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Range Angle Response",
+      "referenceBlock": "phaseddetectlib/Range Angle Response",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Range Doppler Response",
+      "referenceBlock": "phaseddetectlib/Range Doppler Response",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Range Estimator",
+      "referenceBlock": "phaseddetectlib/Range Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Range Response",
+      "referenceBlock": "phaseddetectlib/Range Response",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stretch Processor",
+      "referenceBlock": "phaseddetectlib/Stretch Processor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Time Varying Gain",
+      "referenceBlock": "phaseddetectlib/Time Varying Gain",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Beamscan Spectrum",
+      "referenceBlock": "phaseddoalib/Beamscan Spectrum",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Beamspace ESPRIT DOA",
+      "referenceBlock": "phaseddoalib/Beamspace ESPRIT DOA",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ESPRIT DOA",
+      "referenceBlock": "phaseddoalib/ESPRIT DOA",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GCC DOA and TOA",
+      "referenceBlock": "phaseddoalib/GCC DOA and TOA",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MUSIC Spectrum",
+      "referenceBlock": "phaseddoalib/MUSIC Spectrum",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MVDR Spectrum",
+      "referenceBlock": "phaseddoalib/MVDR Spectrum",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Monopulse Estimator",
+      "referenceBlock": "phaseddoalib/Monopulse Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Monopulse Feed",
+      "referenceBlock": "phaseddoalib/Monopulse Feed",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Root MUSIC DOA",
+      "referenceBlock": "phaseddoalib/Root MUSIC DOA",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Root WSF DOA",
+      "referenceBlock": "phaseddoalib/Root WSF DOA",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ULA Beamscan Spectrum",
+      "referenceBlock": "phaseddoalib/ULA Beamscan Spectrum",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ULA MUSIC Spectrum",
+      "referenceBlock": "phaseddoalib/ULA MUSIC Spectrum",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ULA MVDR Spectrum",
+      "referenceBlock": "phaseddoalib/ULA MVDR Spectrum",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ULA Sum and Difference Monopulse",
+      "referenceBlock": "phaseddoalib/ULA Sum and Difference Monopulse",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "URA Sum and Difference Monopulse",
+      "referenceBlock": "phaseddoalib/URA Sum and Difference Monopulse",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Azimuth Broadside Converter",
+      "referenceBlock": "phasedenvlib/Azimuth Broadside Converter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Azimuth/broadside converter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Backscatter Radar Target",
+      "referenceBlock": "phasedenvlib/Backscatter Radar Target",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Free Space",
+      "referenceBlock": "phasedenvlib/Free Space",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LOS Channel",
+      "referenceBlock": "phasedenvlib/LOS Channel",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Motion Platform",
+      "referenceBlock": "phasedenvlib/Motion Platform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radar Target",
+      "referenceBlock": "phasedenvlib/Radar Target",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Range Angle Calculator",
+      "referenceBlock": "phasedenvlib/Range Angle Calculator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Scattering MIMO Channel",
+      "referenceBlock": "phasedenvlib/Scattering MIMO Channel",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wideband Backscatter Radar Target",
+      "referenceBlock": "phasedenvlib/Wideband Backscatter Radar Target",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wideband Free Space",
+      "referenceBlock": "phasedenvlib/Wideband Free Space",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wideband LOS Channel",
+      "referenceBlock": "phasedenvlib/Wideband LOS Channel",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bistatic Position Estimator",
+      "referenceBlock": "phasedloclib/Bistatic Position Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Range-Angle Position Estimator",
+      "referenceBlock": "phasedloclib/Range-Angle Position Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "TDOA Estimator",
+      "referenceBlock": "phasedloclib/TDOA Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "TDOA Position Estimator",
+      "referenceBlock": "phasedloclib/TDOA Position Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "TOA Estimator",
+      "referenceBlock": "phasedloclib/TOA Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "TOA Position Estimator",
+      "referenceBlock": "phasedloclib/TOA Position Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "TSOA Position Estimator",
+      "referenceBlock": "phasedloclib/TSOA Position Estimator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Angle-Time Intensity Scope",
+      "referenceBlock": "phasedsnklib/Angle-Time Intensity Scope",
+      "blockType": "ATIScopeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Doppler-Time Intensity Scope",
+      "referenceBlock": "phasedsnklib/Doppler-Time Intensity Scope",
+      "blockType": "DTIScopeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Range-Time Intensity Scope",
+      "referenceBlock": "phasedsnklib/Range-Time Intensity Scope",
+      "blockType": "RTIScopeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADPCA Canceller",
+      "referenceBlock": "phasedstaplib/ADPCA Canceller",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Angle Doppler Response",
+      "referenceBlock": "phasedstaplib/Angle Doppler Response",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cube Slicer",
+      "referenceBlock": "phasedstaplib/Cube Slicer",
+      "blockType": "Selector",
+      "description": "",
+      "category": "",
+      "maskType": "Data Cube Slicer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DPCA Canceller",
+      "referenceBlock": "phasedstaplib/DPCA Canceller",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SMI Beamformer",
+      "referenceBlock": "phasedstaplib/SMI Beamformer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Narrowband Receive Array",
+      "referenceBlock": "phasedtxrxlib/Narrowband Receive Array",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Narrowband Transmit Array",
+      "referenceBlock": "phasedtxrxlib/Narrowband Transmit Array",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Receiver",
+      "referenceBlock": "phasedtxrxlib/Receiver",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Receiver Preamp",
+      "referenceBlock": "phasedtxrxlib/Receiver Preamp",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Steering Vector",
+      "referenceBlock": "phasedtxrxlib/Steering Vector",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Transmitter",
+      "referenceBlock": "phasedtxrxlib/Transmitter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wideband Receive Array",
+      "referenceBlock": "phasedtxrxlib/Wideband Receive Array",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wideband Transmit Array",
+      "referenceBlock": "phasedtxrxlib/Wideband Transmit Array",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom FM Waveform",
+      "referenceBlock": "phasedwavlib/Custom FM Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FMCW Waveform",
+      "referenceBlock": "phasedwavlib/FMCW Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Linear FM Waveform",
+      "referenceBlock": "phasedwavlib/Linear FM Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MFSK Waveform",
+      "referenceBlock": "phasedwavlib/MFSK Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear FM Waveform",
+      "referenceBlock": "phasedwavlib/Nonlinear FM Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase-Coded Waveform",
+      "referenceBlock": "phasedwavlib/Phase-Coded Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rectangular Waveform",
+      "referenceBlock": "phasedwavlib/Rectangular Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stepped FM Waveform",
+      "referenceBlock": "phasedwavlib/Stepped FM Waveform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:53",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

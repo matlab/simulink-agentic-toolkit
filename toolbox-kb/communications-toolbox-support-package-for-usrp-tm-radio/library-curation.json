@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "SDRu Receiver",
+    "SDRu Transmitter"
+  ],
+  "categories": [
+    {
+      "name": "sdr-hardware",
+      "description": "USRP software-defined radio hardware interface blocks",
+      "keywords": [
+        "usrp",
+        "sdr",
+        "radio",
+        "ettus",
+        "ni"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "SDRu Receiver",
+      "value": "sdr-hardware"
+    },
+    {
+      "block": "SDRu Transmitter",
+      "value": "sdr-hardware"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "SDRu Receiver",
+      "value": "Receive IQ samples from a USRP software-defined radio device in real time — use for high-performance over-the-air signal acquisition in research-grade RF prototyping and wideband spectrum analysis"
+    },
+    {
+      "block": "SDRu Transmitter",
+      "value": "Transmit IQ samples through a USRP software-defined radio device in real time — use for high-performance over-the-air waveform generation in research-grade RF experiments and standards-compliant signal testing"
+    }
+  ]
+}

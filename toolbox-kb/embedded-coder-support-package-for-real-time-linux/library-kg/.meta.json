@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456099537,
+  "generatorVersion": 4,
+  "libraries": [
+    "Embedded Coder Support Package for Real-Time Linux"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Embedded_Coder_Support_Package_for_Real_Time_Linux": {
+      "blockCount": 2
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:13",
+  "generatedAtDatenum": 740213.74459795142,
+  "generatorVersion": 4,
+  "libraries": [
+    "SoC Blockset"
+  ],
+  "blockCount": 112,
+  "categoryCount": 10,
+  "libraryFingerprints": {
+    "SoC_Blockset": {
+      "blockCount": 112
+    }
+  }
+}

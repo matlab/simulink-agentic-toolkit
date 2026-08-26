@@ -1,0 +1,3924 @@
+{
+  "libraryName": "Electrical",
+  "generatedAt": "2026-08-19T14:30:54",
+  "blockCount": 434,
+  "blocks": [
+    {
+      "name": "SIMetrix Cosimulation Interface",
+      "referenceBlock": "ee_lib/Additional Components/Cosimulation/SIMetrix Cosimulation Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SIMetrix Co-Simulation Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BLDC Commutation Logic",
+      "referenceBlock": "ee_sl_lib/BLDC Control/BLDC Commutation Logic",
+      "blockType": "BLDCCommutationLogic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BLDC Current Controller",
+      "referenceBlock": "ee_sl_lib/BLDC Control/BLDC Current Controller",
+      "blockType": "BLDCCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BLDC Current Controller with PWM Generation",
+      "referenceBlock": "ee_sl_lib/BLDC Control/BLDC Current Controller with PWM Generation",
+      "blockType": "BLDCCurrentControllerwithPWMGeneration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bridge Cycloconverter Voltage Controller (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/Converter Control/Bridge Cycloconverter Voltage Controller (Three-Phase)",
+      "blockType": "BridgeCycloconverterVoltageController(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC-DC Voltage Controller",
+      "referenceBlock": "ee_sl_lib/Converter Control/DC-DC Voltage Controller",
+      "blockType": "DC-DCVoltageController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PFC Rectifier Controller (Three-Phase) ",
+      "referenceBlock": "ee_sl_lib/Converter Control/PFC Rectifier Controller (Three-Phase) ",
+      "blockType": "PFCRectifierController(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thyristor Rectifier Voltage Controller (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/Converter Control/Thyristor Rectifier Voltage Controller (Three-Phase)",
+      "blockType": "ThyristorRectifierVoltageController(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Change Detector",
+      "referenceBlock": "ee_sl_lib/General Control/Change Detector",
+      "blockType": "ChangeDetector",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Counter",
+      "referenceBlock": "ee_sl_lib/General Control/Counter",
+      "blockType": "Counter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Filtered Derivative (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Filtered Derivative (Discrete or Continuous)",
+      "blockType": "FilteredDerivative(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fourier Analysis",
+      "referenceBlock": "ee_sl_lib/General Control/Fourier Analysis",
+      "blockType": "FourierAnalysis",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integrator (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Integrator (Discrete or Continuous)",
+      "blockType": "Integrator(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integrator with Wrapped State (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Integrator with Wrapped State (Discrete or Continuous)",
+      "blockType": "IntegratorwithWrappedState(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lead-Lag (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Lead-Lag (Discrete or Continuous)",
+      "blockType": "Lead-Lag(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Low-Pass Filter (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Low-Pass Filter (Discrete or Continuous)",
+      "blockType": "Low-PassFilter(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Low-Pass Filter (Variable Time Constant, Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Low-Pass Filter (Variable Time Constant, Discrete or Continuous)",
+      "blockType": "Low-PassFilter(VariableTimeConstant,DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Model Reference Adaptive Controller",
+      "referenceBlock": "ee_sl_lib/General Control/Model Reference Adaptive Controller",
+      "blockType": "ModelReferenceAdaptiveController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Monostable Flip-Flop",
+      "referenceBlock": "ee_sl_lib/General Control/Monostable Flip-Flop",
+      "blockType": "MonostableFlip-Flop",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moving Average",
+      "referenceBlock": "ee_sl_lib/General Control/Moving Average",
+      "blockType": "MovingAverage",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moving Average (Variable Frequency)",
+      "referenceBlock": "ee_sl_lib/General Control/Moving Average (Variable Frequency)",
+      "blockType": "MovingAverage(VariableFrequency)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "On-Off Delay",
+      "referenceBlock": "ee_sl_lib/General Control/On-Off Delay",
+      "blockType": "On-OffDelay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PI Controller (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/PI Controller (Discrete or Continuous)",
+      "blockType": "PIController(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PI Controller with Integral Anti-Windup (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/PI Controller with Integral Anti-Windup (Discrete or Continuous)",
+      "blockType": "PIControllerwithIntegralAnti-Windup(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Programmable Signal Generator (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/General Control/Programmable Signal Generator (Three-Phase)",
+      "blockType": "ProgrammableSignalGenerator(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RST Controller",
+      "referenceBlock": "ee_sl_lib/General Control/RST Controller",
+      "blockType": "RSTController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Second-Order Low-Pass Filter (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Second-Order Low-Pass Filter (Discrete or Continuous)",
+      "blockType": "Second-OrderLow-PassFilter(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Second-Order Filter",
+      "referenceBlock": "ee_sl_lib/General Control/Second-Order Filter",
+      "blockType": "Second-OrderFilter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial-In Parallel-Out Shift Register",
+      "referenceBlock": "ee_sl_lib/General Control/Serial-In Parallel-Out Shift Register",
+      "blockType": "Serial-InParallel-OutShiftRegister",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Set-Reset Flip-Flop",
+      "referenceBlock": "ee_sl_lib/General Control/Set-Reset Flip-Flop",
+      "blockType": "Set-ResetFlip-Flop",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Sample and Hold",
+      "referenceBlock": "ee_sl_lib/General Control/Signal Sample and Hold",
+      "blockType": "SignalSample-and-Hold",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sine Wave Generator (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/General Control/Sine Wave Generator (Three-Phase)",
+      "blockType": "SineWaveGenerator(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sliding Mode Controller",
+      "referenceBlock": "ee_sl_lib/General Control/Sliding Mode Controller",
+      "blockType": "SlidingModeController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Smith Predictor Controller",
+      "referenceBlock": "ee_sl_lib/General Control/Smith Predictor Controller",
+      "blockType": "SmithPredictorController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stair Generator",
+      "referenceBlock": "ee_sl_lib/General Control/Stair Generator",
+      "blockType": "StairGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "State-Feedback Controller",
+      "referenceBlock": "ee_sl_lib/General Control/State-Feedback Controller",
+      "blockType": "State-FeedbackController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable-Frequency Second-Order Filter",
+      "referenceBlock": "ee_sl_lib/General Control/Variable-Frequency Second-Order Filter",
+      "blockType": "Variable-FrequencySecond-OrderFilter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Washout (Discrete or Continuous)",
+      "referenceBlock": "ee_sl_lib/General Control/Washout (Discrete or Continuous)",
+      "blockType": "Washout(DiscreteorContinuous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Current Controller",
+      "referenceBlock": "ee_sl_lib/General Machine Control/DC Current Controller",
+      "blockType": "DCCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Voltage Controller",
+      "referenceBlock": "ee_sl_lib/General Machine Control/DC Voltage Controller",
+      "blockType": "DCVoltageController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hysteresis Current Controller (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/General Machine Control/Hysteresis Current Controller (Three-Phase)",
+      "blockType": "HysteresisCurrentController(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Velocity Controller",
+      "referenceBlock": "ee_sl_lib/General Machine Control/Velocity Controller",
+      "blockType": "VelocityController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Current Controller",
+      "referenceBlock": "ee_sl_lib/Induction Machine Control/Induction Machine Current Controller",
+      "blockType": "InductionMachineCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Direct Torque Control",
+      "referenceBlock": "ee_sl_lib/Induction Machine Control/Induction Machine Direct Torque Control",
+      "blockType": "InductionMachineDirectTorqueControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Direct Torque Control (Single-Phase)",
+      "referenceBlock": "ee_sl_lib/Induction Machine Control/Induction Machine Direct Torque Control (Single-Phase)",
+      "blockType": "InductionMachineDirectTorqueControl(Single-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Direct Torque Control with Space Vector Modulator",
+      "referenceBlock": "ee_sl_lib/Induction Machine Control/Induction Machine Direct Torque Control with Space Vector Modulator",
+      "blockType": "InductionMachineDirectTorqueControlwithSpaceVectorModulator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Field-Oriented Control",
+      "referenceBlock": "ee_sl_lib/Induction Machine Control/Induction Machine Field-Oriented Control",
+      "blockType": "InductionMachineField-OrientedControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Field-Oriented Control (Single-Phase)",
+      "referenceBlock": "ee_sl_lib/Induction Machine Control/Induction Machine Field-Oriented Control (Single-Phase)",
+      "blockType": "InductionMachineField-OrientedControl(Single-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Scalar Control",
+      "referenceBlock": "ee_sl_lib/Induction Machine Control/Induction Machine Scalar Control",
+      "blockType": "InductionMachineScalarControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clarke Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Clarke Transform",
+      "blockType": "ClarkeTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clarke to Park Angle Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Clarke to Park Angle Transform",
+      "blockType": "ClarketoParkAngleTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Coordinate Transform (Five-Phase)",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Coordinate Transform (Five-Phase)",
+      "blockType": "CoordinateTransform(Five-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Decoupled Transform (Six-Phase, Dual-Star)",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Decoupled Transform (Six-Phase, Dual-Star)",
+      "blockType": "DecoupledTransform(Six-Phase,Dual-Star)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Decoupled Transform (Six-Phase, Symmetrical)",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Decoupled Transform (Six-Phase, Symmetrical)",
+      "blockType": "DecoupledTransform(Six-Phase,Symmetrical)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Clarke Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Inverse Clarke Transform",
+      "blockType": "InverseClarkeTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Park Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Inverse Park Transform",
+      "blockType": "InverseParkTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Coordinate Transform (Five-Phase)",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Inverse Coordinate Transform (Five-Phase)",
+      "blockType": "InverseCoordinateTransform(Five-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Decoupled Transform (Six-Phase, Dual-Star)",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Inverse Decoupled Transform (Six-Phase, Dual-Star)",
+      "blockType": "InverseDecoupledTransform(Six-Phase,Dual-Star)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Decoupled Transform  (Six-Phase, Symmetrical)",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Inverse Decoupled Transform  (Six-Phase, Symmetrical)",
+      "blockType": "InverseDecoupledTransform(Six-Phase,Symmetrical)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Symmetrical-Components Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Inverse Symmetrical-Components Transform",
+      "blockType": "InverseSymmetrical-ComponentsTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Park Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Park Transform",
+      "blockType": "ParkTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Park to Clarke Angle Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Park to Clarke Angle Transform",
+      "blockType": "ParktoClarkeAngleTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Symmetrical-Components Transform",
+      "referenceBlock": "ee_sl_lib/Mathematical Transforms/Symmetrical-Components Transform",
+      "blockType": "Symmetrical-ComponentsTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phasor Measurement Unit (PMU, Three-Phase)",
+      "referenceBlock": "ee_sl_lib/Measurements/Phasor Measurement Unit (PMU, Three-Phase)",
+      "blockType": "PhasorMeasurementUnit(PMU,Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Measurement",
+      "referenceBlock": "ee_sl_lib/Measurements/Power Measurement",
+      "blockType": "PowerMeasurement",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Measurement (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/Measurements/Power Measurement (Three-Phase)",
+      "blockType": "PowerMeasurement(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Measurement (Three-Phase, Instantaneous)",
+      "referenceBlock": "ee_sl_lib/Measurements/Power Measurement (Three-Phase, Instantaneous)",
+      "blockType": "PowerMeasurement(Three-Phase,Instantaneous)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RMS Measurement",
+      "referenceBlock": "ee_sl_lib/Measurements/RMS Measurement",
+      "blockType": "RMSMeasurement",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sequence Analyzer",
+      "referenceBlock": "ee_sl_lib/Measurements/Sequence Analyzer",
+      "blockType": "SequenceAnalyzer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Measurement (PLL)",
+      "referenceBlock": "ee_sl_lib/Measurements/Sinusoidal Measurement (PLL)",
+      "blockType": "SinusoidalMeasurement(PLL)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Measurement (PLL, Three-Phase)",
+      "referenceBlock": "ee_sl_lib/Measurements/Sinusoidal Measurement (PLL, Three-Phase)",
+      "blockType": "SinusoidalMeasurement(PLL,Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Total Harmonic Distortion",
+      "referenceBlock": "ee_sl_lib/Measurements/Total Harmonic Distortion",
+      "blockType": "TotalHarmonicDistortion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Flux Observer",
+      "referenceBlock": "ee_sl_lib/Observers/Induction Machine Flux Observer",
+      "blockType": "InductionMachineFluxObserver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Luenberger Observer",
+      "referenceBlock": "ee_sl_lib/Observers/Luenberger Observer",
+      "blockType": "LuenbergerObserver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quadrature Shaft Decoder",
+      "referenceBlock": "ee_sl_lib/Observers/Quadrature Shaft Decoder",
+      "blockType": "QuadratureShaftDecoder",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resolver-to-Digital Converter",
+      "referenceBlock": "ee_sl_lib/Observers/Resolver-to-Digital Converter",
+      "blockType": "Resolver-to-DigitalConverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM Current Controller",
+      "referenceBlock": "ee_sl_lib/PMSM Control/PMSM Current Controller",
+      "blockType": "PMSMCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM Current Controller with Pre-Control",
+      "referenceBlock": "ee_sl_lib/PMSM Control/PMSM Current Controller with Pre-Control",
+      "blockType": "PMSMCurrentControllerwithPre-Control",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM Current Reference Generator",
+      "referenceBlock": "ee_sl_lib/PMSM Control/PMSM Current Reference Generator",
+      "blockType": "PMSMCurrentReferenceGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM Field-Oriented Control",
+      "referenceBlock": "ee_sl_lib/PMSM Control/PMSM Field-Oriented Control",
+      "blockType": "PMSMField-OrientedControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM Field-Weakening Controller",
+      "referenceBlock": "ee_sl_lib/PMSM Control/PMSM Field-Weakening Controller",
+      "blockType": "PMSMField-WeakeningController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM Torque Estimator",
+      "referenceBlock": "ee_sl_lib/PMSM Control/PMSM Torque Estimator",
+      "blockType": "PMSMTorqueEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "d-q Voltage Limiter",
+      "referenceBlock": "ee_sl_lib/Protection/d-q Voltage Limiter",
+      "blockType": "d-qVoltageLimiter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Gate Signal Generator (Five-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Gate Signal Generator (Five-phase, Two-level)",
+      "blockType": "PWMGateSignalGenerator(Five-phase,Two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Gate Signal Generator (Four-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Gate Signal Generator (Four-phase, Two-level)",
+      "blockType": "PWMGateSignalGenerator(Four-phase,Two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Gate Signal Generator (Three-phase, Three-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Gate Signal Generator (Three-phase, Three-level)",
+      "blockType": "PWMGateSignalGenerator(three-phase,three-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Gate Signal Generator (Three-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Gate Signal Generator (Three-phase, Two-level)",
+      "blockType": "PWMGateSignalGenerator(three-phase,two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Generator",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Generator",
+      "blockType": "PWMGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Generator (Five-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Generator (Five-phase, Two-level)",
+      "blockType": "PWMGenerator(Five-phase,Two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Generator (Four-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Generator (Four-phase, Two-level)",
+      "blockType": "PWMGenerator(Four-phase,Two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Generator (Multilevel)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Generator (Multilevel)",
+      "blockType": "PWMGenerator(Multilevel)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Generator (Three-phase, Three-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Generator (Three-phase, Three-level)",
+      "blockType": "PWMGenerator(three-phase,three-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Generator (Three-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Generator (Three-phase, Two-level)",
+      "blockType": "PWMGenerator(three-phase,two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Generator (Vienna Rectifier)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Generator (Vienna Rectifier)",
+      "blockType": "PWMGenerator(ViennaRectifier)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Timing and Waveform Generator (Five-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Timing and Waveform Generator (Five-phase, Two-level)",
+      "blockType": "PWMTimingandWaveformGenerator(Five-phase,Two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Timing and Waveform Generator (Four-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Timing and Waveform Generator (Four-phase, Two-level)",
+      "blockType": "PWMTimingandWaveformGenerator(Four-phase,Two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Timing and Waveform Generator (Three-phase, Three-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Timing and Waveform Generator (Three-phase, Three-level)",
+      "blockType": "PWMTimingandWaveformGenerator(three-phase,three-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Timing and Waveform Generator (Three-phase, Two-level)",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/PWM Timing and Waveform Generator (Three-phase, Two-level)",
+      "blockType": "PWMTimingandWaveformGenerator(Three-phase,Two-level)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thyristor 12-Pulse Generator",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/Thyristor 12-Pulse Generator",
+      "blockType": "Thyristor12-PulseGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thyristor 6-Pulse Generator",
+      "referenceBlock": "ee_sl_lib/Pulse Width Modulation/Thyristor 6-Pulse Generator",
+      "blockType": "Thyristor6-PulseGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Impedance Scan (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/Renewables Control/Impedance Scan (Three-Phase)",
+      "blockType": "ImpedanceScan(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Solar PV Controller (Three-Phase)",
+      "referenceBlock": "ee_sl_lib/Renewables Control/Solar PV Controller (Three-Phase)",
+      "blockType": "SolarPVController(Three-Phase)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "SM AC10C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC10C",
+      "blockType": "SMAC10C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC11C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC11C",
+      "blockType": "SMAC11C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC1C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC1C",
+      "blockType": "SMAC1C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC2C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC2C",
+      "blockType": "SMAC2C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC3C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC3C",
+      "blockType": "SMAC3C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC4C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC4C",
+      "blockType": "SMAC4C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC5C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC5C",
+      "blockType": "SMAC5C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC6C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC6C",
+      "blockType": "SMAC6C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC7C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC7C",
+      "blockType": "SMAC7C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC8C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC8C",
+      "blockType": "SMAC8C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM AC9C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM AC9C",
+      "blockType": "SMAC9C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM Current Controller",
+      "referenceBlock": "ee_sl_lib/SM Control/SM Current Controller",
+      "blockType": "SMCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM Current Reference Generator",
+      "referenceBlock": "ee_sl_lib/SM Control/SM Current Reference Generator",
+      "blockType": "SMCurrentReferenceGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM DC1C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM DC1C",
+      "blockType": "SMDC1C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM DC2C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM DC2C",
+      "blockType": "SMDC2C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM DC4C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM DC4C",
+      "blockType": "SMDC4C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM Field-Oriented Control",
+      "referenceBlock": "ee_sl_lib/SM Control/SM Field-Oriented Control",
+      "blockType": "SMField-OrientedControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM Governor with Droop",
+      "referenceBlock": "ee_sl_lib/SM Control/SM Governor with Droop",
+      "blockType": "SMGovernorwithDroop",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM PSS1A",
+      "referenceBlock": "ee_sl_lib/SM Control/SM PSS1A",
+      "blockType": "SMPSS1A",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM PSS2C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM PSS2C",
+      "blockType": "SMPSS2C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM PSS7C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM PSS7C",
+      "blockType": "SMPSS7C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST10C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST10C",
+      "blockType": "SMST10C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST1C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST1C",
+      "blockType": "SMST1C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST2C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST2C",
+      "blockType": "SMST2C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST3C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST3C",
+      "blockType": "SMST3C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST4C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST4C",
+      "blockType": "SMST4C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST5C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST5C",
+      "blockType": "SMST5C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST6C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST6C",
+      "blockType": "SMST6C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST7C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST7C",
+      "blockType": "SMST7C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST8C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST8C",
+      "blockType": "SMST8C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SM ST9C",
+      "referenceBlock": "ee_sl_lib/SM Control/SM ST9C",
+      "blockType": "SMST9C",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SRM Commutation Logic",
+      "referenceBlock": "ee_sl_lib/SRM Control/SRM Commutation Logic",
+      "blockType": "SRMCommutationLogic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SRM Current Controller",
+      "referenceBlock": "ee_sl_lib/SRM Control/SRM Current Controller",
+      "blockType": "SRMCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SRM Current Controller with PWM Generation",
+      "referenceBlock": "ee_sl_lib/SRM Control/SRM Current Controller with PWM Generation",
+      "blockType": "SRMCurrentControllerwithPWMGeneration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SRM Hysteresis Current Controller",
+      "referenceBlock": "ee_sl_lib/SRM Control/SRM Hysteresis Current Controller",
+      "blockType": "SRMHysteresisCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controller LCFB1",
+      "referenceBlock": "ee_sl_lib/Turbine-Governors/Controller LCFB1",
+      "blockType": "ControllerLCFB1",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Governor Type 1",
+      "referenceBlock": "ee_sl_lib/Turbine-Governors/Governor Type 1",
+      "blockType": "GovernorType1",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Governor Type 3",
+      "referenceBlock": "ee_sl_lib/Turbine-Governors/Governor Type 3",
+      "blockType": "GovernorType3",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "S-Parameter Rational Fit",
+      "referenceBlock": "ee_lib/Passive/S-Parameter Rational Fit",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "S-Parameter Rational Fit",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SPICE-Imported MOSFET",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/SPICE-Imported MOSFET",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE-Imported MOSFET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Semiconductor Switch Selector",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Semiconductor Switch Selector",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Semiconductor Switch Selector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current-Controlled Switch",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Passives/Current-Controlled Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current-Controlled\nSwitch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE Resistor",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Passives/SPICE Resistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage-Controlled Switch",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Passives/Voltage-Controlled Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Voltage-Controlled\nSwitch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE Diode",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE Diode",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE Diode",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE NIGBT",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE NIGBT",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE NIGBT",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE NJFET",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE NJFET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE NJFET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE NMOS",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE NMOS",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE NMOS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE NPN",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE NPN",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE NPN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE PJFET",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE PJFET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE PJFET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE PMOS",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE PMOS",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE PMOS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPICE PNP",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Semiconductors/SPICE PNP",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPICE PNP",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Current Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/DC Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DC Current Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Voltage Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/DC Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DC Voltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Exponential Current Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Exponential Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Exponential Current\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Exponential Voltage Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Exponential Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Exponential Voltage\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PCCCS",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PCCCS",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PCCCS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PCCCS2",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PCCCS2",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PCCCS2",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PCCVS",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PCCVS",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PCCVS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PCCVS2",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PCCVS2",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PCCVS2",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PVCCS",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PVCCS",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PVCCS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PVCCS2",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PVCCS2",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PVCCS2",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PVCVS",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PVCVS",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PVCVS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PVCVS2",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/PVCVS2",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PVCVS2",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piecewise Linear Current Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Piecewise Linear Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piecewise Linear\nCurrent Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piecewise Linear Voltage Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Piecewise Linear Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piecewise Linear\nVoltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulse Current Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Pulse Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pulse Current Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulse Voltage Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Pulse Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pulse Voltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SFFM Current Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/SFFM Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SFFM Current Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SFFM Voltage Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/SFFM Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SFFM Voltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Current Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Sinusoidal Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sinusoidal Current\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Voltage Source",
+      "referenceBlock": "ee_lib/Additional Components/SPICE Sources/Sinusoidal Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sinusoidal Voltage\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Array of Electrical Nodes",
+      "referenceBlock": "ee_lib/Connectors & References/Array of Electrical Nodes",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Array of Electrical\nNodes",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Busbar",
+      "referenceBlock": "ee_lib/Connectors & References/Busbar",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Busbar",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Busbar (DC)",
+      "referenceBlock": "ee_lib/Connectors & References/Busbar (DC)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Busbar (DC)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cable and Connectors",
+      "referenceBlock": "ee_lib/Connectors & References/Cable and Connectors",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cable and Connectors",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Delta Reference (Three-Phase)",
+      "referenceBlock": "ee_lib/Connectors & References/Delta Reference (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Delta Reference\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Electrical Reference",
+      "referenceBlock": "ee_lib/Connectors & References/Electrical Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Floating Neutral (Three-Phase)",
+      "referenceBlock": "ee_lib/Connectors & References/Floating Neutral (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Floating Neutral\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Floating Reference",
+      "referenceBlock": "ee_lib/Connectors & References/Floating Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Grounded Neutral (Three-Phase)",
+      "referenceBlock": "ee_lib/Connectors & References/Grounded Neutral (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Grounded Neutral\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Neutral Port (Three-Phase)",
+      "referenceBlock": "ee_lib/Connectors & References/Neutral Port (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Neutral Port\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Open Circuit",
+      "referenceBlock": "ee_lib/Connectors & References/Open Circuit",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Open Circuit (Three-Phase)",
+      "referenceBlock": "ee_lib/Connectors & References/Open Circuit (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Open Circuit\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Three-Element Demux",
+      "referenceBlock": "ee_lib/Connectors & References/PS Three-Element Demux",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase Permute",
+      "referenceBlock": "ee_lib/Connectors & References/Phase Permute",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Phase Permute",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase Splitter",
+      "referenceBlock": "ee_lib/Connectors & References/Phase Splitter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Phase Splitter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Converter (Three-Phase, DQ0)",
+      "referenceBlock": "ee_lib/DQ0 Components/Converters/Converter (Three-Phase, DQ0)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Converter\n(Three-Phase, DQ0)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hybrid Excitation PMSM (DQ0)",
+      "referenceBlock": "ee_lib/DQ0 Components/Machines/Hybrid Excitation PMSM (DQ0)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Hybrid Excitation\nPMSM (DQ0)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dynamic Load (Three-Phase, DQ0)",
+      "referenceBlock": "ee_lib/DQ0 Components/Passive/Dynamic Load (Three-Phase, DQ0)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Dynamic Load\n(Three-Phase, DQ0)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnetic Rotor",
+      "referenceBlock": "ee_lib/Electromechanical/Magnetic Rotor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Magnetic Rotor",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Motor & Drive (System Level)",
+      "referenceBlock": "ee_lib/Electromechanical/Motor & Drive (System Level)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Motor & Drive\n(System Level)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotating Air Gap",
+      "referenceBlock": "ee_lib/Electromechanical/Rotating Air Gap",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotating Air Gap",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simplified Generator",
+      "referenceBlock": "ee_lib/Electromechanical/Simplified Generator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Simplified Generator",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Wind Turbine (Mechanical)",
+      "referenceBlock": "ee_lib/Electromechanical/Wind Turbine (Mechanical)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Wind Turbine\n(Mechanical)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FEM-Parameterized Induction Machine (Squirrel Cage)",
+      "referenceBlock": "ee_lib/Electromechanical/Asynchronous/FEM-Parameterized Induction Machine (Squirrel Cage)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "FEM-Parameterized\nInduction Machine\n(Squirrel Cage)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FEM-Parameterized Induction Machine (Wound Rotor)",
+      "referenceBlock": "ee_lib/Electromechanical/Asynchronous/FEM-Parameterized Induction Machine (Wound Rotor)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "FEM-Parameterized\nInduction Machine\n(Wound Rotor)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine (Single-Phase)",
+      "referenceBlock": "ee_lib/Electromechanical/Asynchronous/Induction Machine (Single-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Induction Machine\n(Single-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Measurement",
+      "referenceBlock": "ee_lib/Electromechanical/Asynchronous/Induction Machine Measurement",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Induction Machine\nMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Squirrel Cage",
+      "referenceBlock": "ee_lib/Electromechanical/Asynchronous/Induction Machine Squirrel Cage",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Induction Machine\nSquirrel Cage",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Machine Wound Rotor",
+      "referenceBlock": "ee_lib/Electromechanical/Asynchronous/Induction Machine Wound Rotor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Induction Machine\nWound Rotor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simplified Induction Motor",
+      "referenceBlock": "ee_lib/Electromechanical/Asynchronous/Simplified Induction Motor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Simplified Induction\nMotor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compound Motor",
+      "referenceBlock": "ee_lib/Electromechanical/Brushed Motors/Compound Motor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Compound Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Motor",
+      "referenceBlock": "ee_lib/Electromechanical/Brushed Motors/DC Motor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DC Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RC Servo",
+      "referenceBlock": "ee_lib/Electromechanical/Brushed Motors/RC Servo",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "RC Servo",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Shunt Motor",
+      "referenceBlock": "ee_lib/Electromechanical/Brushed Motors/Shunt Motor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Shunt Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Universal Motor",
+      "referenceBlock": "ee_lib/Electromechanical/Brushed Motors/Universal Motor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Universal Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Machine Inertia",
+      "referenceBlock": "ee_lib/Electromechanical/Mechanical/Machine Inertia",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Machine\nInertia",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Machine Mechanical Power",
+      "referenceBlock": "ee_lib/Electromechanical/Mechanical/Machine Mechanical Power",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Machine Mechanical\nPower",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FEM-Parameterized Linear Actuator",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/FEM-Parameterized Linear Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "FEM-Parameterized\nLinear Actuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FEM-Parameterized Rotary Actuator",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/FEM-Parameterized Rotary Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "FEM-Parameterized\nRotary Actuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Generic Linear Actuator",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/Generic Linear Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Generic Linear\nActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Generic Rotary Actuator",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/Generic Rotary Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Generic Rotary\nActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piezo Bender",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/Piezo Bender",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piezo Bender",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piezo Linear Actuator",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/Piezo Linear Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piezo Linear\nActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piezo Rotary Actuator",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/Piezo Rotary Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piezo Rotary\nActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piezo Stack",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/Piezo Stack",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piezo Stack",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Solenoid",
+      "referenceBlock": "ee_lib/Electromechanical/Mechatronic Actuators/Solenoid",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Solenoid",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BLDC",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/BLDC",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "BLDC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FEM-Parameterized PMSM",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/FEM-Parameterized PMSM",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "FEM-Parameterized\nPMSM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hybrid Excitation PMSM",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/Hybrid Excitation PMSM",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Hybrid Excitation\nPMSM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMLSM",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/PMLSM",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PMLSM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/PMSM",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PMSM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM (Five-Phase)",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/PMSM (Five-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PMSM (Five-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM (Four-Phase)",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/PMSM (Four-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PMSM (Four-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM (Single-Phase)",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/PMSM (Single-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PMSM (Single-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM (Six-Phase, Symmetrical)",
+      "referenceBlock": "ee_lib/Electromechanical/Permanent Magnet/PMSM (Six-Phase, Symmetrical)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PMSM (Six-Phase,\nSymmetrical)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stepper Motor",
+      "referenceBlock": "ee_lib/Electromechanical/Reluctance & Stepper/Stepper Motor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Stepper Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stepper Motor Driver",
+      "referenceBlock": "ee_lib/Electromechanical/Reluctance & Stepper/Stepper Motor Driver",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Stepper Motor Driver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switched Reluctance Machine",
+      "referenceBlock": "ee_lib/Electromechanical/Reluctance & Stepper/Switched Reluctance Machine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Switched Reluctance\nMachine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switched Reluctance Machine (Multi-Phase)",
+      "referenceBlock": "ee_lib/Electromechanical/Reluctance & Stepper/Switched Reluctance Machine (Multi-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Switched Reluctance\nMachine\n(Multi-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Reluctance Machine",
+      "referenceBlock": "ee_lib/Electromechanical/Reluctance & Stepper/Synchronous Reluctance Machine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous\nReluctance Machine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unipolar Stepper Motor",
+      "referenceBlock": "ee_lib/Electromechanical/Reluctance & Stepper/Unipolar Stepper Motor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Unipolar Stepper\nMotor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unipolar Stepper Motor Driver",
+      "referenceBlock": "ee_lib/Electromechanical/Reluctance & Stepper/Unipolar Stepper Motor Driver",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Unipolar Stepper\nMotor Driver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FEM-Parameterized Synchronous Machine",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/FEM-Parameterized Synchronous Machine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "FEM-Parameterized\nSynchronous Machine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simplified Synchronous Machine",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Simplified Synchronous Machine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Simplified\nSynchronous Machine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simplified Synchronous Machine Measurement",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Simplified Synchronous Machine Measurement",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Simplified\nSynchronous Machine\nMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine (Six-Phase)",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine (Six-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\n(Six-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine Field Circuit",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine Field Circuit",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nField Circuit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine GENQEC",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine GENQEC",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nGENQEC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine GENROU",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine GENROU",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nGENROU",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine GENTPJ",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine GENTPJ",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nGENTPJ",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine Measurement",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine Measurement",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine Model 1.0",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine Model 1.0",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nModel 1.0",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine Model 2.1",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine Model 2.1",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nModel 2.1",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine Round Rotor",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine Round Rotor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nRound Rotor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Machine Salient Pole",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Synchronous Machine Salient Pole",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Machine\nSalient Pole",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vectorized Synchronous Machine GENROU",
+      "referenceBlock": "ee_lib/Electromechanical/Synchronous/Vectorized Synchronous Machines/Vectorized Synchronous Machine GENROU",
+      "blockType": "VectorizedSynchronousMachineGENROU",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Band-Limited Op-Amp",
+      "referenceBlock": "ee_lib/Integrated Circuits/Band-Limited Op-Amp",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Band-Limited Op-Amp",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "ee_lib/Integrated Circuits/Comparator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Comparator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled PWM Voltage",
+      "referenceBlock": "ee_lib/Integrated Circuits/Controlled PWM Voltage",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled PWM\nVoltage",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Finite-Gain Op-Amp",
+      "referenceBlock": "ee_lib/Integrated Circuits/Finite-Gain Op-Amp",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Finite-Gain Op-Amp",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fully Differential Op-Amp",
+      "referenceBlock": "ee_lib/Integrated Circuits/Fully Differential Op-Amp",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fully Differential\nOp-Amp",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiplier",
+      "referenceBlock": "ee_lib/Integrated Circuits/Multiplier",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Multiplier",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Operational Transconductance Amplifier",
+      "referenceBlock": "ee_lib/Integrated Circuits/Operational Transconductance Amplifier",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Operational\nTransconductance\nAmplifier",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Push-Pull Output",
+      "referenceBlock": "ee_lib/Integrated Circuits/Push-Pull Output",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Push-Pull Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "ee_lib/Integrated Circuits/Timer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Timer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage-Controlled Oscillator",
+      "referenceBlock": "ee_lib/Integrated Circuits/Voltage-Controlled Oscillator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Voltage-Controlled\nOscillator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMOS AND",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/CMOS AND",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "CMOS AND",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMOS Buffer",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/CMOS Buffer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "CMOS Buffer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMOS NAND",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/CMOS NAND",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "CMOS NAND",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMOS NOR",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/CMOS NOR",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "CMOS NOR",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMOS NOT",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/CMOS NOT",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "CMOS NOT",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMOS OR",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/CMOS OR",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "CMOS OR",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMOS XOR",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/CMOS XOR",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "CMOS XOR",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "D Flip-Flop",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/D Flip-Flop",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "D Flip-Flop",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "D Latch",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/D Latch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "D Latch",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "S-R Latch",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/S-R Latch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "S-R Latch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Schmitt Trigger",
+      "referenceBlock": "ee_lib/Integrated Circuits/Logic/Schmitt Trigger",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Schmitt Trigger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Capacitor",
+      "referenceBlock": "ee_lib/Passive/Capacitor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Capacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Current Load",
+      "referenceBlock": "ee_lib/Passive/Constant Current Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Current\nLoad",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Current Load (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Constant Current Load (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Current\nLoad (Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Power Load",
+      "referenceBlock": "ee_lib/Passive/Constant Power Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Power Load",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Power Load (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Constant Power Load (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Power Load\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Crystal",
+      "referenceBlock": "ee_lib/Passive/Crystal",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Crystal",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Diffusion Resistor",
+      "referenceBlock": "ee_lib/Passive/Diffusion Resistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Diffusion Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dynamic Load",
+      "referenceBlock": "ee_lib/Passive/Dynamic Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Dynamic Load",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dynamic Load (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Dynamic Load (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Dynamic Load\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Eddy Current",
+      "referenceBlock": "ee_lib/Passive/Eddy Current",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Eddy Current",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Incandescent Lamp",
+      "referenceBlock": "ee_lib/Passive/Incandescent Lamp",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Incandescent Lamp",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inductor",
+      "referenceBlock": "ee_lib/Passive/Inductor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnetic Core",
+      "referenceBlock": "ee_lib/Passive/Magnetic Core",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Magnetic Core",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Nonlinear Inductor",
+      "referenceBlock": "ee_lib/Passive/Nonlinear Inductor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Nonlinear Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Reluctance",
+      "referenceBlock": "ee_lib/Passive/Nonlinear Reluctance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Nonlinear Reluctance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Passive Harmonic Filter (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Passive Harmonic Filter (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Passive Harmonic\nFilter (Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Potentiometer",
+      "referenceBlock": "ee_lib/Passive/Potentiometer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Potentiometer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resistor",
+      "referenceBlock": "ee_lib/Passive/Resistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Supercapacitor",
+      "referenceBlock": "ee_lib/Passive/Supercapacitor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Supercapacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Capacitor",
+      "referenceBlock": "ee_lib/Passive/Variable Capacitor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Capacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Inductor",
+      "referenceBlock": "ee_lib/Passive/Variable Inductor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Varistor",
+      "referenceBlock": "ee_lib/Passive/Varistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Varistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Winding",
+      "referenceBlock": "ee_lib/Passive/Winding",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Winding",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AC Cable (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Lines/AC Cable (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "AC Cable\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Coupled Lines (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Lines/Coupled Lines (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Coupled Lines\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Coupled Lines (Pair)",
+      "referenceBlock": "ee_lib/Passive/Lines/Coupled Lines (Pair)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Coupled Lines (Pair)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Cable",
+      "referenceBlock": "ee_lib/Passive/Lines/DC Cable",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DC Cable",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Frequency-Dependent Overhead Line (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Lines/Frequency-Dependent Overhead Line (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Frequency-Dependent\nOverhead Line\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiphase Distributed Parameter Line",
+      "referenceBlock": "ee_lib/Passive/Lines/Multiphase Distributed Parameter Line",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Multiphase\nDistributed\nParameter Line",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiphase Coupled Lines",
+      "referenceBlock": "ee_lib/Passive/Lines/Multiphase Coupled Lines",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Multiphase Coupled\nLines",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transmission Line (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Lines/Transmission Line (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Transmission\nLine\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transmission Line",
+      "referenceBlock": "ee_lib/Passive/Lines/Transmission Line",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Transmission Line",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Delta-Connected Variable Load",
+      "referenceBlock": "ee_lib/Passive/RLC Assemblies/Delta-Connected Variable Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Delta-Connected\nVariable Load",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Delta-Connected Load",
+      "referenceBlock": "ee_lib/Passive/RLC Assemblies/Delta-Connected Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Delta-Connected Load",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RLC (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/RLC Assemblies/RLC (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "RLC (Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wye-Connected Variable Load",
+      "referenceBlock": "ee_lib/Passive/RLC Assemblies/Wye-Connected Variable Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Wye-Connected\nVariable Load",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wye-Connected Variable Load (lagging)",
+      "referenceBlock": "ee_lib/Passive/RLC Assemblies/Wye-Connected Variable Load (lagging)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Wye-Connected\nVariable Load\n(lagging)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wye-Connected Load",
+      "referenceBlock": "ee_lib/Passive/RLC Assemblies/Wye-Connected Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Wye-Connected Load",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cauer Thermal Model",
+      "referenceBlock": "ee_lib/Passive/Thermal/Cauer Thermal Model",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cauer Thermal Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Foster Thermal Model",
+      "referenceBlock": "ee_lib/Passive/Thermal/Foster Thermal Model",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Foster Thermal Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heatsink",
+      "referenceBlock": "ee_lib/Passive/Thermal/Heatsink",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heatsink",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermal Resistor",
+      "referenceBlock": "ee_lib/Passive/Thermal/Thermal Resistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermal Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Center-Tapped Transformer",
+      "referenceBlock": "ee_lib/Passive/Transformers/Center-Tapped Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Center-Tapped\nTransformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Earthing Transformer",
+      "referenceBlock": "ee_lib/Passive/Transformers/Earthing Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Earthing Transformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mutual Inductor",
+      "referenceBlock": "ee_lib/Passive/Transformers/Mutual Inductor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mutual Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Transformer",
+      "referenceBlock": "ee_lib/Passive/Transformers/Nonlinear Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Nonlinear\nTransformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase-Shifting Transformer",
+      "referenceBlock": "ee_lib/Passive/Transformers/Phase-Shifting Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Phase-Shifting\nTransformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tap-Changing Transformer",
+      "referenceBlock": "ee_lib/Passive/Transformers/Tap-Changing Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tap-Changing\nTransformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-Winding Nonlinear Transformer",
+      "referenceBlock": "ee_lib/Passive/Transformers/Three-Winding Nonlinear Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Three-Winding\nNonlinear\nTransformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-Winding Transformer (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Transformers/Three-Winding Transformer (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Three-Winding\nTransformer\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-Winding Mutual Inductor",
+      "referenceBlock": "ee_lib/Passive/Transformers/Three-Winding Mutual Inductor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Three-Winding Mutual\nInductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Two-Winding Transformer (Three-Phase)",
+      "referenceBlock": "ee_lib/Passive/Transformers/Two-Winding Transformer (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Two-Winding\nTransformer\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Zigzag-Delta-Wye Transformer",
+      "referenceBlock": "ee_lib/Passive/Transformers/Zigzag-Delta-Wye Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Zigzag-Delta-Wye\nTransformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current Limiter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Current Limiter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current Limiter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Diode",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Diode",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Diode",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GTO",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/GTO",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "GTO",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gate Driver",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Gate Driver",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gate Driver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Half-Bridge (Ideal, Switching)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Half-Bridge (Ideal, Switching)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Half-Bridge (Ideal,\nSwitching)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Half-Bridge Driver",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Half-Bridge Driver",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Half-Bridge Driver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IGBT (Ideal, Switching)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/IGBT (Ideal, Switching)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "IGBT\n(Ideal,\nSwitching)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Semiconductor Switch",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Ideal Semiconductor Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Semiconductor\nSwitch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MOSFET (Ideal, Switching)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/MOSFET (Ideal, Switching)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "MOSFET\n(Ideal,\nSwitching)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "N-Channel IGBT",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/N-Channel IGBT",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "N-Channel IGBT",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "N-Channel JFET",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/N-Channel JFET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "N-Channel JFET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "N-Channel LDMOS FET",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/N-Channel LDMOS FET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "N-Channel LDMOS FET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "N-Channel MOSFET",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/N-Channel MOSFET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "N-Channel MOSFET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NMOS Capacitor",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/NMOS Capacitor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "NMOS Capacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NPN Bipolar Transistor",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/NPN Bipolar Transistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "NPN Bipolar\nTransistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Optocoupler",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Optocoupler",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Optocoupler",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "P-Channel JFET",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/P-Channel JFET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "P-Channel JFET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "P-Channel LDMOS FET",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/P-Channel LDMOS FET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "P-Channel LDMOS FET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "P-Channel MOSFET",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/P-Channel MOSFET",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "P-Channel MOSFET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMOS Capacitor",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/PMOS Capacitor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PMOS Capacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PNP Bipolar Transistor",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/PNP Bipolar Transistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PNP Bipolar\nTransistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thyristor",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Thyristor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thyristor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thyristor (Piecewise Linear)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Thyristor (Piecewise Linear)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thyristor\n(Piecewise\nLinear)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AC-DC Converter (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/AC-DC Converter (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "AC-DC Converter\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Average-Value Chopper",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Average-Value Chopper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Average-Value\nChopper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Average-Value Inverter (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Average-Value Inverter (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Average-Value\nInverter\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Average-Value Rectifier (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Average-Value Rectifier (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Average-Value\nRectifier\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Average-Value Voltage Source Converter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Average-Value Voltage Source Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Average-Value\nVoltage Source\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Average-Value Voltage Source Converter (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Average-Value Voltage Source Converter (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Average-Value\nVoltage Source\nConverter\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Average-Value DC-DC Converter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Average-Value DC-DC Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Average-Value DC-DC\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bidirectional DC-DC Converter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Bidirectional DC-DC Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Bidirectional DC-DC\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Boost Converter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Boost Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Boost Converter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Buck Converter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Buck Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Buck Converter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Buck-Boost Converter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Buck-Boost Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Buck-Boost Converter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Converter (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Converter (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Converter\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC-DC Converter",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/DC-DC Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DC-DC Converter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Eight-Pulse Gate Multiplexer",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Eight-Pulse Gate Multiplexer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Eight-Pulse Gate\nMultiplexer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Four-Pulse Gate Multiplexer",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Four-Pulse Gate Multiplexer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Four-Pulse Gate\nMultiplexer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Four-Quadrant Chopper",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Four-Quadrant Chopper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Four-Quadrant\nChopper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "H-Bridge",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/H-Bridge",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "H-Bridge",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modular Multilevel Converter (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Modular Multilevel Converter (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Modular Multilevel\nConverter\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modular Multilevel Converter Arm",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Modular Multilevel Converter Arm",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Modular Multilevel\nConverter Arm",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modular Multilevel Converter Leg",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Modular Multilevel Converter Leg",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Modular Multilevel\nConverter Leg",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "One-Quadrant Chopper",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/One-Quadrant Chopper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "One-Quadrant Chopper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rectifier (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Rectifier (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rectifier\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Six-Pulse Gate Multiplexer",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Six-Pulse Gate Multiplexer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Six-Pulse Gate\nMultiplexer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-Level Converter (Three-Phase)",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Three-Level Converter (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Three-Level\nConverter\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Twelve-Pulse Gate Multiplexer",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Twelve-Pulse Gate Multiplexer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Twelve-Pulse Gate\nMultiplexer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Two-Pulse Gate Multiplexer",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Two-Pulse Gate Multiplexer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Two-Pulse Gate\nMultiplexer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Two-Quadrant Chopper",
+      "referenceBlock": "ee_lib/Semiconductors & Converters/Converters/Two-Quadrant Chopper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Two-Quadrant Chopper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Accelerometer",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Accelerometer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Accelerometer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current Sensor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Current Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current Sensor (Three-Phase)",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Current Sensor (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current Sensor\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current and Voltage Sensor (Three-Phase)",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Current and Voltage Sensor (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current and Voltage\nSensor (Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gyro",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Gyro",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gyro",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hall-Effect Rotary Encoder",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Hall-Effect Rotary Encoder",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Hall-Effect Rotary\nEncoder",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Incremental Shaft Encoder",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Incremental Shaft Encoder",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Incremental Shaft\nEncoder",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inductive Rotor Position Sensor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Inductive Rotor Position Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Inductive Rotor\nPosition Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Light-Emitting Diode",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Light-Emitting Diode",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Light-Emitting Diode",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Line Voltage Sensor (Three-Phase)",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Line Voltage Sensor (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Line Voltage Sensor\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Sensor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/PS Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PTC Thermistor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/PTC Thermistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PTC Thermistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Peltier Device",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Peltier Device",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Peltier Device",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase Voltage Sensor (Three-Phase)",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Phase Voltage Sensor (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Phase Voltage Sensor\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Photodiode",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Photodiode",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Photodiode",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Sensor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Power Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Power Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Sensor (Three-Phase)",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Power Sensor (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Power Sensor\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Transducer",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Pressure Transducer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Transducer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Proximity Sensor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Proximity Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Proximity Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resolver",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Resolver",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Resolver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Strain Gauge",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Strain Gauge",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Strain Gauge",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermistor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Thermistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermocouple",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Thermocouple",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermocouple",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage Sensor",
+      "referenceBlock": "ee_lib/Sensors & Transducers/Voltage Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery",
+      "referenceBlock": "ee_lib/Sources/Battery",
+      "blockType": "Battery",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery (Table-Based)",
+      "referenceBlock": "ee_lib/Sources/Battery (Table-Based)",
+      "blockType": "Battery(Table-Based)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Current Source (Three-Phase)",
+      "referenceBlock": "ee_lib/Sources/Controlled Current Source (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Current\nSource\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Voltage Source (Three-Phase)",
+      "referenceBlock": "ee_lib/Sources/Controlled Voltage Source (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Voltage\nSource\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current Source (Three-Phase)",
+      "referenceBlock": "ee_lib/Sources/Current Source (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current\nSource\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current Source",
+      "referenceBlock": "ee_lib/Sources/Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Electrolyzer",
+      "referenceBlock": "ee_lib/Sources/Electrolyzer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Electrolyzer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fuel Cell",
+      "referenceBlock": "ee_lib/Sources/Fuel Cell",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fuel Cell",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Load Flow Source",
+      "referenceBlock": "ee_lib/Sources/Load Flow Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Load Flow Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Negative Supply Rail",
+      "referenceBlock": "ee_lib/Sources/Negative Supply Rail",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Negative Supply Rail",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piecewise Linear Current Source",
+      "referenceBlock": "ee_lib/Sources/Piecewise Linear Current Source",
+      "blockType": "PiecewiseLinearCurrentSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piecewise Linear Voltage Source",
+      "referenceBlock": "ee_lib/Sources/Piecewise Linear Voltage Source",
+      "blockType": "PiecewiseLinearVoltageSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Positive Supply Rail",
+      "referenceBlock": "ee_lib/Sources/Positive Supply Rail",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Positive Supply Rail",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Programmable Voltage Source",
+      "referenceBlock": "ee_lib/Sources/Programmable Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Programmable Voltage\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Programmable Voltage Source (Three-Phase)",
+      "referenceBlock": "ee_lib/Sources/Programmable Voltage Source (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Programmable Voltage\nSource\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulse Current Source",
+      "referenceBlock": "ee_lib/Sources/Pulse Current Source",
+      "blockType": "PulseCurrentSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulse Voltage Source",
+      "referenceBlock": "ee_lib/Sources/Pulse Voltage Source",
+      "blockType": "PulseVoltageSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Solar Cell",
+      "referenceBlock": "ee_lib/Sources/Solar Cell",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Solar Cell",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage Source (Three-Phase)",
+      "referenceBlock": "ee_lib/Sources/Voltage Source (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Voltage\nSource\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage Source",
+      "referenceBlock": "ee_lib/Sources/Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Voltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Circuit Breaker",
+      "referenceBlock": "ee_lib/Switches & Breakers/Circuit Breaker",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Circuit Breaker",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Circuit Breaker (Three-Phase)",
+      "referenceBlock": "ee_lib/Switches & Breakers/Circuit Breaker (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Circuit Breaker\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Circuit Breaker (with arc)",
+      "referenceBlock": "ee_lib/Switches & Breakers/Circuit Breaker (with arc)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Circuit Breaker\n(with arc)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DPDT Switch",
+      "referenceBlock": "ee_lib/Switches & Breakers/DPDT Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DPDT Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DPST Switch",
+      "referenceBlock": "ee_lib/Switches & Breakers/DPST Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DPST Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fuse",
+      "referenceBlock": "ee_lib/Switches & Breakers/Fuse",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fuse",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPDT Switch",
+      "referenceBlock": "ee_lib/Switches & Breakers/SPDT Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPDT Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPDT Switch (Three-Phase)",
+      "referenceBlock": "ee_lib/Switches & Breakers/SPDT Switch (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPDT Switch\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPMT Switch",
+      "referenceBlock": "ee_lib/Switches & Breakers/SPMT Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPMT Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPST Switch",
+      "referenceBlock": "ee_lib/Switches & Breakers/SPST Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPST Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPST Switch (Three-Phase)",
+      "referenceBlock": "ee_lib/Switches & Breakers/SPST Switch (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPST Switch\n(Three-Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPDT Relay",
+      "referenceBlock": "ee_lib/Switches & Breakers/Relays/SPDT Relay",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPDT Relay",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPST Relay",
+      "referenceBlock": "ee_lib/Switches & Breakers/Relays/SPST Relay",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SPST Relay",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Environment Parameters",
+      "referenceBlock": "ee_lib/Utilities/Environment Parameters",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Environment\nParameters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fault",
+      "referenceBlock": "ee_lib/Utilities/Fault",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fault",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fault (Three-Phase)",
+      "referenceBlock": "ee_lib/Utilities/Fault (Three-Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fault (Three-Phase)",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

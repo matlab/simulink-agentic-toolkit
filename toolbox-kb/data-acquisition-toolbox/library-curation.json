@@ -1,0 +1,73 @@
+{
+  "commonBlocks": [
+    "Analog Input",
+    "Analog Output",
+    "Digital Input (Single Sample)",
+    "Digital Output (Single Sample)"
+  ],
+  "categories": [
+    {
+      "name": "data-acquisition",
+      "description": "Hardware DAQ device interface blocks for analog and digital I/O",
+      "keywords": [
+        "daq",
+        "analog",
+        "digital",
+        "acquisition",
+        "hardware"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Analog Input",
+      "value": "data-acquisition"
+    },
+    {
+      "block": "Analog Input (Single Sample)",
+      "value": "data-acquisition"
+    },
+    {
+      "block": "Analog Output",
+      "value": "data-acquisition"
+    },
+    {
+      "block": "Analog Output (Single Sample)",
+      "value": "data-acquisition"
+    },
+    {
+      "block": "Digital Input (Single Sample)",
+      "value": "data-acquisition"
+    },
+    {
+      "block": "Digital Output (Single Sample)",
+      "value": "data-acquisition"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Analog Input",
+      "value": "Acquire buffered analog voltage data from a DAQ device — use to stream multi-sample analog measurements from physical sensors into Simulink at hardware-timed rates"
+    },
+    {
+      "block": "Analog Input (Single Sample)",
+      "value": "Read a single analog voltage sample from a DAQ device each time step — use for slow-rate measurements where one sample per Simulink step is sufficient"
+    },
+    {
+      "block": "Analog Output",
+      "value": "Output buffered analog voltage waveforms to a DAQ device — use to generate continuous analog signals for actuator control or stimulus generation from Simulink"
+    },
+    {
+      "block": "Analog Output (Single Sample)",
+      "value": "Write a single analog voltage value to a DAQ device each time step — use for setpoint-style analog outputs where one value per step drives the hardware"
+    },
+    {
+      "block": "Digital Input (Single Sample)",
+      "value": "Read the state of digital input lines from a DAQ device — use to acquire discrete switch states, trigger signals, or digital sensor outputs"
+    },
+    {
+      "block": "Digital Output (Single Sample)",
+      "value": "Set the state of digital output lines on a DAQ device — use to control relays, indicator LEDs, or digital enable signals from Simulink"
+    }
+  ]
+}

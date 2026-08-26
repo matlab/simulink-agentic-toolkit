@@ -1,0 +1,45 @@
+{
+  "libraryName": "Wireless HDL Toolbox",
+  "generatedAt": "2026-08-19T14:31:18",
+  "blockCount": 3,
+  "blocks": [
+    {
+      "name": "Error Detection and Correction",
+      "referenceBlock": "whdllib/Error Detection and Correction",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Error Dectection and Correction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modulation",
+      "referenceBlock": "whdllib/Modulation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Modulation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "whdllib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Utilities",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

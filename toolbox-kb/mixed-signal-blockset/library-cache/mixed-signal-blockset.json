@@ -1,0 +1,423 @@
+{
+  "libraryName": "Mixed-Signal Blockset",
+  "generatedAt": "2026-08-19T14:31:01",
+  "blockCount": 45,
+  "blocks": [
+    {
+      "name": "Flash ADC",
+      "referenceBlock": "msbAdcArchitectures/Flash ADC",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FlashADC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interleaved ADC",
+      "referenceBlock": "msbAdcArchitectures/Interleaved ADC",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interleaved ADC",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SAR ADC",
+      "referenceBlock": "msbAdcArchitectures/SAR ADC",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SARADC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Continuous Time Delta Sigma Modulator",
+      "referenceBlock": "msbAdcFoundation/Continuous Time Delta Sigma Modulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Continuous Time Delta Sigma Modulator",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "DT Integrator",
+      "referenceBlock": "msbAdcFoundation/DT Integrator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DiscreteTimeIntegrator",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Delta Sigma Modulator",
+      "referenceBlock": "msbAdcFoundation/Delta Sigma Modulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Delta Sigma Modulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quantizer",
+      "referenceBlock": "msbAdcFoundation/Quantizer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Quantizer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Sampling Clock Source",
+      "referenceBlock": "msbAdcFoundation/Sampling Clock Source",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SamplingClockSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC AC Measurement",
+      "referenceBlock": "msbAdcMeasurements/ADC AC Measurement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ADCACMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC DC Measurement",
+      "referenceBlock": "msbAdcMeasurements/ADC DC Measurement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ADCDCMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC Testbench",
+      "referenceBlock": "msbAdcMeasurements/ADC Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ADCTestbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Aperture Jitter Measurement",
+      "referenceBlock": "msbAdcMeasurements/Aperture Jitter Measurement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ApertureJitterMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Baseband PLL",
+      "referenceBlock": "msbPllArchitectures/Baseband PLL",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BasebandPLL",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Fractional N PLL with Accumulator",
+      "referenceBlock": "msbPllArchitectures/Fractional N PLL with Accumulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FractionalNPLLwithAccumulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fractional N PLL with Delta Sigma Modulator",
+      "referenceBlock": "msbPllArchitectures/Fractional N PLL with Delta Sigma Modulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FractionalNPLLwithDeltaSigmaModulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integer N PLL with Dual Modulus Prescaler",
+      "referenceBlock": "msbPllArchitectures/Integer N PLL with Dual Modulus Prescaler",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IntegerNPLLwithDualModulusPrescaler",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integer N PLL with Single Modulus Prescaler",
+      "referenceBlock": "msbPllArchitectures/Integer N PLL with Single Modulus Prescaler",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IntegerNPLLwithSingleModulusPrescaler",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Charge Pump",
+      "referenceBlock": "msbPllFoundation/Charge Pump",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ChargePump",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dual Modulus Prescaler",
+      "referenceBlock": "msbPllFoundation/Dual Modulus Prescaler",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DualModulusPrescaler",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fractional Clock Divider with Accumulator",
+      "referenceBlock": "msbPllFoundation/Fractional Clock Divider with Accumulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FractionalClockDividerWithAccumulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fractional Clock Divider with DSM",
+      "referenceBlock": "msbPllFoundation/Fractional Clock Divider with DSM",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FractionalClockDividerWithDSM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Loop Filter",
+      "referenceBlock": "msbPllFoundation/Loop Filter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LoopFilter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PFD",
+      "referenceBlock": "msbPllFoundation/PFD",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PhaseFrequencyDetector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ring Oscillator VCO",
+      "referenceBlock": "msbPllFoundation/Ring Oscillator VCO",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ring oscillator VCO",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single Modulus Prescaler",
+      "referenceBlock": "msbPllFoundation/Single Modulus Prescaler",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SingleModulusPrescaler",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "VCO",
+      "referenceBlock": "msbPllFoundation/VCO",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VCO",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lock Time Measurement",
+      "referenceBlock": "msbPllMeasurements/Lock Time Measurement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LockTimeMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PFD and Charge Pump Testbench",
+      "referenceBlock": "msbPllMeasurements/PFD and Charge Pump Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PFDChargePumpTestbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PLL Testbench",
+      "referenceBlock": "msbPllMeasurements/PLL Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PLLTestbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase Noise Measurement",
+      "referenceBlock": "msbPllMeasurements/Phase Noise Measurement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PhaseNoiseMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "VCO Testbench",
+      "referenceBlock": "msbPllMeasurements/VCO Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VCOTestbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Binary Vector Conversion",
+      "referenceBlock": "msbUtilities/Binary Vector Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Binary Vector Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clock Jitter Measurement",
+      "referenceBlock": "msbUtilities/Clock Jitter Measurement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ClockJitterMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Linear Circuit Wizard",
+      "referenceBlock": "msbUtilities/Linear Circuit Wizard",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Linear Circuit Wizard",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Operational Amplifier",
+      "referenceBlock": "msbUtilities/Operational Amplifier",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Operational Amplifier",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Slew Rate",
+      "referenceBlock": "msbUtilities/Slew Rate",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SlewRate",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Timing Measurement",
+      "referenceBlock": "msbUtilities/Timing Measurement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TimingMeasurement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clock Generator",
+      "referenceBlock": "msbUtilities/Clock Generator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Eye Diagram",
+      "referenceBlock": "msbUtilities/Eye Diagram",
+      "blockType": "EyeDiagramBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Eye Measurement",
+      "referenceBlock": "msbUtilities/Eye Measurement",
+      "blockType": "EyeMeasurement",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Jitter Measurement",
+      "referenceBlock": "msbUtilities/Jitter Measurement",
+      "blockType": "JitterMeasurement",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Logic Decision",
+      "referenceBlock": "msbUtilities/Logic Decision",
+      "blockType": "LogicDecision",
+      "description": "",
+      "category": "",
+      "maskType": "LogicDecision",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lowpass Resampler",
+      "referenceBlock": "msbUtilities/Lowpass Resampler",
+      "blockType": "Discrete2Continuous",
+      "description": "",
+      "category": "",
+      "maskType": "Lowpass Resampler",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Sampler",
+      "referenceBlock": "msbUtilities/Signal Sampler",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Pulse Delay",
+      "referenceBlock": "msbUtilities/Variable Pulse Delay",
+      "blockType": "VarPlsDelay",
+      "description": "",
+      "category": "",
+      "maskType": "VariablePulseDelay",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

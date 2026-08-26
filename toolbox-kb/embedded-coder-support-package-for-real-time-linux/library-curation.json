@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "CAN Receive block",
+    "CAN Transmit block"
+  ],
+  "categories": [
+    {
+      "name": "can-communication",
+      "description": "CAN bus communication on real-time Linux via SocketCAN",
+      "keywords": [
+        "can",
+        "socketcan",
+        "receive",
+        "transmit",
+        "linux"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "CAN Receive block",
+      "value": "can-communication"
+    },
+    {
+      "block": "CAN Transmit block",
+      "value": "can-communication"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "CAN Receive block",
+      "value": "Receive CAN messages via SocketCAN on real-time Linux — use for reading vehicle bus data on Linux-based embedded targets"
+    },
+    {
+      "block": "CAN Transmit block",
+      "value": "Transmit CAN messages via SocketCAN on real-time Linux — use for sending vehicle bus commands from Linux-based embedded targets"
+    }
+  ]
+}

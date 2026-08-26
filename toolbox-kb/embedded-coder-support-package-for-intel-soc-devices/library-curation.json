@@ -1,0 +1,64 @@
+{
+  "commonBlocks": [
+    "AXI4 Read",
+    "AXI4 Write",
+    "Linux Task"
+  ],
+  "categories": [
+    {
+      "name": "intel-soc",
+      "description": "Processor-FPGA communication and task management on Intel SoC",
+      "keywords": [
+        "intel",
+        "soc",
+        "axi4",
+        "linux",
+        "fpga"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "AXI4 Read",
+      "value": "intel-soc"
+    },
+    {
+      "block": "AXI4 Write",
+      "value": "intel-soc"
+    },
+    {
+      "block": "Linux Task",
+      "value": "intel-soc"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "intel-soc"
+    },
+    {
+      "block": "UDP Send",
+      "value": "intel-soc"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "AXI4 Read",
+      "value": "Read data from FPGA fabric via AXI4 interface on Intel SoC — use for processor-to-FPGA data transfer in Intel Cyclone/Arria SoC designs"
+    },
+    {
+      "block": "AXI4 Write",
+      "value": "Write data to FPGA fabric via AXI4 interface on Intel SoC — use for processor-to-FPGA command or data passing in Intel SoC designs"
+    },
+    {
+      "block": "Linux Task",
+      "value": "Configure a Linux task for execution on Intel SoC ARM core — use for scheduling generated code as a Linux process on the HPS"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP packets on Intel SoC Linux — use for network data input to algorithms running on Intel SoC embedded Linux"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP packets from Intel SoC Linux — use for network data output from algorithms running on Intel SoC embedded Linux"
+    }
+  ]
+}

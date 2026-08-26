@@ -1,0 +1,218 @@
+{
+  "commonBlocks": [
+    "Simulation 3D Scene Configuration",
+    "Simulation 3D Camera",
+    "Simulation 3D Lidar",
+    "Simulation 3D Vehicle with Ground Following"
+  ],
+  "categories": [
+    {
+      "name": "actors",
+      "description": "3D actors and vehicles in the virtual scene",
+      "keywords": [
+        "actor",
+        "vehicle",
+        "pedestrian",
+        "bicyclist",
+        "spawn"
+      ]
+    },
+    {
+      "name": "sensors",
+      "description": "Virtual sensor models for perception testing",
+      "keywords": [
+        "camera",
+        "lidar",
+        "radar",
+        "ultrasonic",
+        "sensor"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Scene utilities and data exchange",
+      "keywords": [
+        "transform",
+        "message",
+        "video",
+        "configuration",
+        "scene"
+      ]
+    },
+    {
+      "name": "hardware-input",
+      "description": "Physical input devices for interactive simulation",
+      "keywords": [
+        "joystick",
+        "spacemouse",
+        "input",
+        "interactive",
+        "manual"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Simulation 3D Actor",
+      "value": "actors"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Get",
+      "value": "utilities"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Set",
+      "value": "utilities"
+    },
+    {
+      "block": "Simulation 3D Bicyclist",
+      "value": "actors"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "sensors"
+    },
+    {
+      "block": "Simulation 3D Camera Get",
+      "value": "utilities"
+    },
+    {
+      "block": "Simulation 3D Fisheye Camera",
+      "value": "sensors"
+    },
+    {
+      "block": "Simulation 3D Joystick",
+      "value": "hardware-input"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "sensors"
+    },
+    {
+      "block": "Simulation 3D Message Get",
+      "value": "utilities"
+    },
+    {
+      "block": "Simulation 3D Message Set",
+      "value": "utilities"
+    },
+    {
+      "block": "Simulation 3D Pedestrian",
+      "value": "actors"
+    },
+    {
+      "block": "Simulation 3D Radar Data Generator",
+      "value": "sensors"
+    },
+    {
+      "block": "Simulation 3D Ray Tracer",
+      "value": "sensors"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "utilities"
+    },
+    {
+      "block": "Simulation 3D SpaceMouse",
+      "value": "hardware-input"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Array",
+      "value": "sensors"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Simulation 3D Vehicle with Ground Following",
+      "value": "actors"
+    },
+    {
+      "block": "Simulation 3D Video Writer",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Simulation 3D Actor",
+      "value": "Spawn a generic 3D actor in the simulation scene — use for placing static or dynamic objects in the virtual environment"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Get",
+      "value": "Read the position and orientation of a 3D actor — use for getting ground-truth pose of objects in the scene"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Set",
+      "value": "Set the position and orientation of a 3D actor — use for programmatically moving objects in the virtual scene"
+    },
+    {
+      "block": "Simulation 3D Bicyclist",
+      "value": "Spawn an animated 3D bicyclist in the scene — use for simulating vulnerable road users in traffic scenarios"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "Attach a virtual camera to capture images in the 3D scene — use for generating synthetic camera data for perception testing"
+    },
+    {
+      "block": "Simulation 3D Camera Get",
+      "value": "Read the viewport camera position and settings — use for querying the observer camera state in the 3D scene"
+    },
+    {
+      "block": "Simulation 3D Fisheye Camera",
+      "value": "Attach a virtual fisheye camera in the 3D scene — use for wide-angle synthetic imagery for surround-view perception testing"
+    },
+    {
+      "block": "Simulation 3D Joystick",
+      "value": "Read joystick input for interactive 3D simulation — use for manual control of vehicles or cameras in the 3D scene"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "Attach a virtual lidar sensor in the 3D scene — use for generating synthetic point cloud data for perception algorithm development"
+    },
+    {
+      "block": "Simulation 3D Message Get",
+      "value": "Receive messages from the 3D simulation engine — use for reading events or custom data from the Unreal Engine scene"
+    },
+    {
+      "block": "Simulation 3D Message Set",
+      "value": "Send messages to the 3D simulation engine — use for triggering events or passing custom data to the Unreal Engine scene"
+    },
+    {
+      "block": "Simulation 3D Pedestrian",
+      "value": "Spawn an animated 3D pedestrian in the scene — use for simulating walking people in traffic or safety scenarios"
+    },
+    {
+      "block": "Simulation 3D Radar Data Generator",
+      "value": "Generate synthetic radar detections from the 3D scene — use for testing radar processing without physical hardware"
+    },
+    {
+      "block": "Simulation 3D Ray Tracer",
+      "value": "Cast rays into the 3D scene and return hit information — use for custom proximity sensing or line-of-sight checks"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "Configure the 3D simulation environment — use for selecting scene, weather, lighting, and rendering options for the virtual world"
+    },
+    {
+      "block": "Simulation 3D SpaceMouse",
+      "value": "Read 3D SpaceMouse input for scene navigation — use for 6-DOF camera or object manipulation in the 3D environment"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Array",
+      "value": "Simulate an array of ultrasonic sensors in the 3D scene — use for testing parking assist or close-range detection algorithms"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Sensor",
+      "value": "Simulate a single ultrasonic sensor in the 3D scene — use for testing proximity detection at close range"
+    },
+    {
+      "block": "Simulation 3D Vehicle with Ground Following",
+      "value": "Spawn a 3D vehicle that follows terrain elevation — use for realistic vehicle visualization on roads with grade changes"
+    },
+    {
+      "block": "Simulation 3D Video Writer",
+      "value": "Record video from the 3D simulation scene — use for capturing rendered footage for review or documentation"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "libraryName": "VNT Ethernet Library",
+  "generatedAt": "2026-08-19T14:31:18",
+  "blockCount": 1,
+  "blocks": [
+    {
+      "name": "Automotive Ethernet ECU Interface",
+      "referenceBlock": "ethernetblkslib/Automotive Ethernet ECU Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Automotive Ethernet ECU Interface",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:54",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:14",
+  "generatedAtDatenum": 740213.74461599533,
+  "generatorVersion": 4,
+  "libraries": [
+    "UAV Toolbox Support Package for PX4 Autopilots"
+  ],
+  "blockCount": 27,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "UAV_Toolbox_Support_Package_for_PX4_Autopilots": {
+      "blockCount": 27
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "libraryName": "UAV Toolbox",
+  "generatedAt": "2026-08-19T14:31:17",
+  "blockCount": 15,
+  "blocks": [
+    {
+      "name": "Guidance Model",
+      "referenceBlock": "uavalgslib/Guidance Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Guidance Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multi-Instance Guidance Model",
+      "referenceBlock": "uavalgslib/Multi-Instance Guidance Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Multi Instance Guidance Model",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Path Manager",
+      "referenceBlock": "uavalgslib/Path Manager",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Path Manager",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fixed-Wing UAV Point Mass",
+      "referenceBlock": "uavalgslib/Fixed-Wing UAV Point Mass",
+      "blockType": "UAVPointMass",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Minimum Jerk Polynomial Trajectory",
+      "referenceBlock": "uavalgslib/Minimum Jerk Polynomial Trajectory",
+      "blockType": "shared_uav_rst.sluav.internal.system.MinJerkPolyTraj",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Minimum Snap Polynomial Trajectory",
+      "referenceBlock": "uavalgslib/Minimum Snap Polynomial Trajectory",
+      "blockType": "shared_uav_rst.sluav.internal.system.MinSnapPolyTraj",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Obstacle Avoidance",
+      "referenceBlock": "uavalgslib/Obstacle Avoidance",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Orbit Follower",
+      "referenceBlock": "uavalgslib/Orbit Follower",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Waypoint Follower",
+      "referenceBlock": "uavalgslib/Waypoint Follower",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MAVLink Blank Message",
+      "referenceBlock": "uavmavlinklib/MAVLink Blank Message",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MAVLink Blank Message",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MAVLink Deserializer",
+      "referenceBlock": "uavmavlinklib/MAVLink Deserializer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MAVLink Deserializer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MAVLink Serializer",
+      "referenceBlock": "uavmavlinklib/MAVLink Serializer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MAVLink Serializer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read UAV Trajectory",
+      "referenceBlock": "uavutilslib/Read UAV Trajectory",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Read UAV Trajectory",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Coordinate Transformation Conversion",
+      "referenceBlock": "uavutilslib/Coordinate Transformation Conversion",
+      "blockType": "robotics.slcore.internal.block.CoordinateTransformationConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UAV Animation",
+      "referenceBlock": "uavutilslib/UAV Animation",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

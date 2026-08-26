@@ -1,0 +1,126 @@
+{
+  "libraryName": "Radar Toolbox",
+  "generatedAt": "2026-08-19T14:31:06",
+  "blockCount": 12,
+  "blocks": [
+    {
+      "name": "Backscatter Bicyclist",
+      "referenceBlock": "radarlib/Backscatter Bicyclist",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Backscatter Bicyclist",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Backscatter Pedestrian",
+      "referenceBlock": "radarlib/Backscatter Pedestrian",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Backscatter Pedestrian",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Barrage Jammer",
+      "referenceBlock": "radarlib/Barrage Jammer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Gamma Clutter",
+      "referenceBlock": "radarlib/Constant Gamma Clutter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DBSCAN Clustering",
+      "referenceBlock": "radarlib/DBSCAN Clustering",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detection Concatenation",
+      "referenceBlock": "radarlib/Detection Concatenation",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GPU Constant Gamma Clutter",
+      "referenceBlock": "radarlib/GPU Constant Gamma Clutter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulse Compression Library",
+      "referenceBlock": "radarlib/Pulse Compression Library",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulse Waveform Library",
+      "referenceBlock": "radarlib/Pulse Waveform Library",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radar Data Generator",
+      "referenceBlock": "radarlib/Radar Data Generator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Two-Ray Channel",
+      "referenceBlock": "radarlib/Two-Ray Channel",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wideband Two-Ray Channel",
+      "referenceBlock": "radarlib/Wideband Two-Ray Channel",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

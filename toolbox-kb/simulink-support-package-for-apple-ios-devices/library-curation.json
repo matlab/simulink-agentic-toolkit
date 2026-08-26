@@ -1,0 +1,63 @@
+{
+  "commonBlocks": [
+    "Sensors",
+    "Communication"
+  ],
+  "categories": [
+    {
+      "name": "ios",
+      "description": "iOS device peripheral and sensor access",
+      "keywords": [
+        "ios",
+        "apple",
+        "sensor",
+        "camera",
+        "mobile"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Advanced ",
+      "value": "ios"
+    },
+    {
+      "block": "Audio & Video",
+      "value": "ios"
+    },
+    {
+      "block": "Communication",
+      "value": "ios"
+    },
+    {
+      "block": "Sensors",
+      "value": "ios"
+    },
+    {
+      "block": "User Interface",
+      "value": "ios"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Advanced ",
+      "value": "Access advanced iOS features — use for background services, Core ML integration, or platform-specific capabilities on Apple devices"
+    },
+    {
+      "block": "Audio & Video",
+      "value": "Access audio and video hardware on iOS — use for camera capture, audio recording, or media playback in iOS-deployed models"
+    },
+    {
+      "block": "Communication",
+      "value": "Access communication interfaces on iOS — use for WiFi, Bluetooth, or network data exchange in iOS-deployed models"
+    },
+    {
+      "block": "Sensors",
+      "value": "Access onboard sensors on iOS devices — use for reading accelerometer, gyroscope, GPS, or other iPhone/iPad sensors"
+    },
+    {
+      "block": "User Interface",
+      "value": "Create user interface elements on iOS — use for displaying data, buttons, or sliders on the iOS device screen"
+    }
+  ]
+}

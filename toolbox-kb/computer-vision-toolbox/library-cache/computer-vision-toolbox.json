@@ -1,0 +1,135 @@
+{
+  "libraryName": "Computer Vision Toolbox",
+  "generatedAt": "2026-08-19T14:30:49",
+  "blockCount": 13,
+  "blocks": [
+    {
+      "name": "Analysis & Enhancement",
+      "referenceBlock": "visionlib/Analysis & Enhancement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Analysis & Enhancement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Conversions",
+      "referenceBlock": "visionlib/Conversions",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Conversions",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Demos",
+      "referenceBlock": "visionlib/Demos",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Demos",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Filtering",
+      "referenceBlock": "visionlib/Filtering",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Filtering",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Geometric Transformations",
+      "referenceBlock": "visionlib/Geometric Transformations",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Geometric Transformations",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Info",
+      "referenceBlock": "visionlib/Info",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Info",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Morphological Operations",
+      "referenceBlock": "visionlib/Morphological Operations",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Morphological Operations",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinks",
+      "referenceBlock": "visionlib/Sinks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sinks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sources",
+      "referenceBlock": "visionlib/Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sources",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Statistics",
+      "referenceBlock": "visionlib/Statistics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Statistics",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Text & Graphics",
+      "referenceBlock": "visionlib/Text & Graphics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Text & Graphics",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transforms",
+      "referenceBlock": "visionlib/Transforms",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transforms",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "visionlib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Utilities",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

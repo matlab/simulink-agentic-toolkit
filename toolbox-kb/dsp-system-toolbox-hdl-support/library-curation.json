@@ -1,0 +1,71 @@
+{
+  "commonBlocks": [
+    "Filtering",
+    "Signal Operations"
+  ],
+  "categories": [
+    {
+      "name": "hdl-dsp-support",
+      "description": "HDL-compatible DSP System Toolbox blocks for FPGA implementation",
+      "keywords": [
+        "hdl",
+        "fpga",
+        "dsp",
+        "filter",
+        "streaming"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Filtering",
+      "value": "hdl-dsp-support"
+    },
+    {
+      "block": "Signal Management",
+      "value": "hdl-dsp-support"
+    },
+    {
+      "block": "Signal Operations",
+      "value": "hdl-dsp-support"
+    },
+    {
+      "block": "Sinks",
+      "value": "hdl-dsp-support"
+    },
+    {
+      "block": "Sources",
+      "value": "hdl-dsp-support"
+    },
+    {
+      "block": "Statistics",
+      "value": "hdl-dsp-support"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Filtering",
+      "value": "HDL-optimized DSP filters with streaming interfaces — use for hardware-targeted filtering when DSP System Toolbox algorithms must run on FPGA"
+    },
+    {
+      "block": "Signal Management",
+      "value": "HDL-compatible signal buffering and frame management blocks — use for signal alignment and rate adaptation in FPGA DSP pipelines"
+    },
+    {
+      "block": "Signal Operations",
+      "value": "HDL-optimized signal processing operations — use for time-domain signal manipulation in hardware-targeted designs"
+    },
+    {
+      "block": "Sinks",
+      "value": "HDL-compatible signal display and capture blocks — use for debugging and verification within HDL-targeted DSP subsystems"
+    },
+    {
+      "block": "Sources",
+      "value": "HDL-compatible signal generators for stimulus and test — use to provide input waveforms within HDL-targeted subsystems"
+    },
+    {
+      "block": "Statistics",
+      "value": "HDL-optimized statistical computations on streaming data — use for running mean, variance, or histogram in FPGA signal processing"
+    }
+  ]
+}

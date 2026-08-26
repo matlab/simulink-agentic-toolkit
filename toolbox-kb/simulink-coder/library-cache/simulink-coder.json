@@ -1,0 +1,45 @@
+{
+  "libraryName": "Simulink Coder",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 3,
+  "blocks": [
+    {
+      "name": "Asynchronous",
+      "referenceBlock": "rtwlib/Asynchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Asynchronous Library",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Code",
+      "referenceBlock": "rtwlib/Custom Code",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "User Custom Code",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "S-Function Target",
+      "referenceBlock": "rtwlib/S-Function Target",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "S-Function Target",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.744559456,
+  "generatorVersion": 4,
+  "libraries": [
+    "Embedded Coder Support Package for AURIX TC3x"
+  ],
+  "blockCount": 10,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Embedded_Coder_Support_Package_for_AURIX_TC3x": {
+      "blockCount": 10
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "libraryName": "Simulink Desktop Real-Time",
+  "generatedAt": "2026-08-19T14:31:13",
+  "blockCount": 21,
+  "blocks": [
+    {
+      "name": "Examples",
+      "referenceBlock": "sldrtlib/Examples",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Examples",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Servo Output",
+      "referenceBlock": "sldrtlib/Servo Output",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Servo Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "sldrtlib/Analog Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Analog Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Output",
+      "referenceBlock": "sldrtlib/Analog Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Analog Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Counter Input",
+      "referenceBlock": "sldrtlib/Counter Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Counter Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "sldrtlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "sldrtlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Encoder Input",
+      "referenceBlock": "sldrtlib/Encoder Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Encoder Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Frequency Output",
+      "referenceBlock": "sldrtlib/Frequency Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Frequency Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Other Input",
+      "referenceBlock": "sldrtlib/Other Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Other Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Other Output",
+      "referenceBlock": "sldrtlib/Other Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Other Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Packet Input",
+      "referenceBlock": "sldrtlib/Packet Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Packet Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Packet Output",
+      "referenceBlock": "sldrtlib/Packet Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Packet Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real-Time Synchronization",
+      "referenceBlock": "sldrtlib/Real-Time Synchronization",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Synchronization",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream Input",
+      "referenceBlock": "sldrtlib/Stream Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Stream Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream Output",
+      "referenceBlock": "sldrtlib/Stream Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Stream Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Input",
+      "referenceBlock": "sldrtlib/Video Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Video Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ThingSpeak Input",
+      "referenceBlock": "sldrtlib/Internet of Things/ThingSpeak Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time ThingSpeak Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ThingSpeak Output",
+      "referenceBlock": "sldrtlib/Internet of Things/ThingSpeak Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time ThingSpeak Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Execution Time",
+      "referenceBlock": "sldrtlib/Target Profiling/Execution Time",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Task Execution Time",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Timestamp",
+      "referenceBlock": "sldrtlib/Target Profiling/Timestamp",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Desktop Real-Time Timestamp",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

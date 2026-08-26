@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74457898154,
+  "generatorVersion": 4,
+  "libraries": [
+    "Robust Control Toolbox"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Robust_Control_Toolbox": {
+      "blockCount": 2
+    }
+  }
+}

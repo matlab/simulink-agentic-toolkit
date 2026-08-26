@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74457776616,
+  "generatorVersion": 4,
+  "libraries": [
+    "RF Blockset Models for Analog Devices RF Transceivers"
+  ],
+  "blockCount": 33,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "RF_Blockset_Models_for_Analog_Devices_RF_Transceivers": {
+      "blockCount": 33
+    }
+  }
+}

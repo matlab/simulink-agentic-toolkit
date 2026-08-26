@@ -1,0 +1,5211 @@
+{
+  "libraryName": "C2000 Microcontroller Blockset",
+  "generatedAt": "2026-08-19T14:30:48",
+  "blockCount": 577,
+  "blocks": [
+    {
+      "name": "ADC",
+      "referenceBlock": "c2802xlib/ADC",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ADC Type 3-5",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Input",
+      "referenceBlock": "c2802xlib/AnalogIO Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2802x/03x/06x AnalogIO Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Output",
+      "referenceBlock": "c2802xlib/AnalogIO Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2802x/03x/06x AnalogIO Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2802xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "COMP",
+      "referenceBlock": "c2802xlib/COMP",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2802x/03x/06x/M3x COMP",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2802xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2802x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2802xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2802x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2802xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2802xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2802xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2802xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2802xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2802xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2802xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2802xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2802xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2802xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2802xlib/ePWM",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ePWM Type 1-5",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2803xlib/Blockset Name2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2803xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Input",
+      "referenceBlock": "c2803xlib/AnalogIO Input",
+      "blockType": "C2802x/03x/06xAnalogIOInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Output",
+      "referenceBlock": "c2803xlib/AnalogIO Output",
+      "blockType": "C2802x/03x/06xAnalogIOOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2803xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2803xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c2803xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c2803xlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c2803xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "COMP",
+      "referenceBlock": "c2803xlib/COMP",
+      "blockType": "C2802x/03x/06x/M3xCOMP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2803xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2803x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2803xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2803x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "HRCAP",
+      "referenceBlock": "c2803xlib/HRCAP",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2803xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2803xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LIN Receive",
+      "referenceBlock": "c2803xlib/LIN Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2803x LIN Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LIN Transmit",
+      "referenceBlock": "c2803xlib/LIN Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2803x LIN Transmit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2803xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2803xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2803xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2803xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2803xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2803xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2803xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2803xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2803xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2803xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2805xlib/Blockset Name2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2805xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2805xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2805xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c2805xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c2805xlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c2805xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2805xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2805x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2805xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2805x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2805xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2805xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2805xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2805xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2805xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2805xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2805xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2805xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2805xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2805xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2805xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2805xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2806xlib/Blockset Name2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c2806xlib/CLA Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "c28x CLA Subsystem",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2806xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Input",
+      "referenceBlock": "c2806xlib/AnalogIO Input",
+      "blockType": "C2802x/03x/06xAnalogIOInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Output",
+      "referenceBlock": "c2806xlib/AnalogIO Output",
+      "blockType": "C2802x/03x/06xAnalogIOOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2806xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2806xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c2806xlib/CLA Math",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CLA Math",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c2806xlib/CLA Task",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CLA_System",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "COMP",
+      "referenceBlock": "c2806xlib/COMP",
+      "blockType": "C2802x/03x/06x/M3xCOMP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2806xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2806x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2806xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2806x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "HRCAP",
+      "referenceBlock": "c2806xlib/HRCAP",
+      "blockType": "codertarget.tic2000.blocks.HRCAPBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2806xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2806xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2806xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2806xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2806xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2806xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2806xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2806xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2806xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2806xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2806xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2806xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c280xlib/ADC",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ADC Type 1-2",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c280xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c280xlib/CAN Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x CAN Receive",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c280xlib/CAN Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x CAN Transmit",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c280xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C280x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c280xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C280x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c280xlib/I2C Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x I2C Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c280xlib/I2C Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x I2C Transmit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c280xlib/SCI Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x SCI Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c280xlib/SCI Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x SCI Transmit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c280xlib/SPI Controller Transfer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c280xlib/SPI Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c280xlib/SPI Transmit",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c280xlib/Software Interrupt Trigger",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Software Interrupt Trigger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c280xlib/Watchdog",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x WatchDog",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c280xlib/eCAP",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x/C29x eCAP",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c280xlib/ePWM",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ePWM Type 0",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c280xlib/eQEP",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x eQEP",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c281xlib/ADC",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ADC Type 0",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c281xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c281xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c281xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAP",
+      "referenceBlock": "c281xlib/CAP",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C281x CAP",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c281xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C281x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c281xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C281x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM",
+      "referenceBlock": "c281xlib/PWM",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C281x PWM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "QEP",
+      "referenceBlock": "c281xlib/QEP",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C281x QEP",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c281xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c281xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c281xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c281xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c281xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c281xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "c281xlib/Timer",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C281x EV Timer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c281xlib/Watchdog",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x WatchDog",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2833xlib/ADC",
+      "blockType": "ADCType1-2",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2833xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2833xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2833xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2833xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2833x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2833xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2833x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2833xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2833xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2833xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2833xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2833xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2833xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2833xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2833xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2833xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2833xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2833xlib/ePWM",
+      "blockType": "ePWMType0",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2833xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2834xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2834xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2834xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2834xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2833x/C2834x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2834xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2833x/C2834x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2834xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2834xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2834xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2834xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2834xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2834xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2834xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2834xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2834xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2834xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2834xlib/ePWM",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C2834x ePWM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2834xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c280013xlib/Blockset Name2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c280013xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c280013xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c280013xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c280013xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c280013xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F280013x GPIO Digital Input",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c280013xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F280013x GPIO Digital Output",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c280013xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c280013xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c280013xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c280013xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c280013xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c280013xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c280013xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c280013xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c280013xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c280013xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c280013xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c280013xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c280015xlib/Blockset Name2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c280015xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c280015xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c280015xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c280015xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c280015xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F280015x GPIO Digital Input",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c280015xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F280015x GPIO Digital Output",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c280015xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c280015xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "MCAN Interrupt Status",
+      "referenceBlock": "c280015xlib/MCAN Interrupt Status",
+      "blockType": "codertarget.armM4.blocks.MCANInterruptStatus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Receive",
+      "referenceBlock": "c280015xlib/MCAN Receive",
+      "blockType": "codertarget.armM4.blocks.CANFDRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Transmit",
+      "referenceBlock": "c280015xlib/MCAN Transmit",
+      "blockType": "codertarget.armM4.blocks.CANFDWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c280015xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c280015xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c280015xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c280015xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c280015xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c280015xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c280015xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c280015xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c280015xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c280015xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c28002xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c28002xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c28002xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c28002xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c28002xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c28002xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28002x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c28002xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28002x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c28002xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c28002xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c28002xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c28002xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c28002xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c28002xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c28002xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c28002xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c28002xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c28002xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c28002xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c28002xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c28003xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c28003xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c28003xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c28003xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c28003xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c28003xlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c28003xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c28003xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c28003xlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c28003xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28003x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c28003xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28003x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c28003xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c28003xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MCAN Interrupt Status",
+      "referenceBlock": "c28003xlib/MCAN Interrupt Status",
+      "blockType": "codertarget.armM4.blocks.MCANInterruptStatus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Receive",
+      "referenceBlock": "c28003xlib/MCAN Receive",
+      "blockType": "codertarget.armM4.blocks.CANFDRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Transmit",
+      "referenceBlock": "c28003xlib/MCAN Transmit",
+      "blockType": "codertarget.armM4.blocks.CANFDWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c28003xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c28003xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c28003xlib/SDFM",
+      "blockType": "codertarget.tic2000.blocks.SDFM38x",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c28003xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c28003xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c28003xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c28003xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c28003xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c28003xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c28003xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c28003xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c28004xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c28004xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c28004xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c28004xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c28004xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c28004xlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c28004xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c28004xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c28004xlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c28004xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28004x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c28004xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28004x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c28004xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c28004xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c28004xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c28004xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c28004xlib/SDFM",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c28004xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c28004xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c28004xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c28004xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c28004xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c28004xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c28004xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c28004xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2807xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2807xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2807xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2807xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c2807xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c2807xlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c2807xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c2807xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c2807xlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2807xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2807x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2807xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2807x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2807xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2807xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2807xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2807xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c2807xlib/SDFM",
+      "blockType": "codertarget.tic2000.blocks.SDFMBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2807xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2807xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2807xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2807xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2807xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2807xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2807xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2807xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2837xDlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2837xDlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2837xDlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2837xDlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c2837xDlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c2837xDlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c2837xDlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c2837xDlib/CMPSS",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c2837xDlib/DAC",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2837xDlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2837x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2837xDlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2837x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2837xDlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2837xDlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IPC Receive",
+      "referenceBlock": "c2837xDlib/IPC Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x IPC Receive",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "IPC Transmit",
+      "referenceBlock": "c2837xDlib/IPC Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x IPC Transmit",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2837xDlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2837xDlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c2837xDlib/SDFM",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2837xDlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2837xDlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2837xDlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2837xDlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2837xDlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2837xDlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2837xDlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2837xDlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2837xSlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2837xSlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2837xSlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2837xSlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c2837xSlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c2837xSlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c2837xSlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c2837xSlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c2837xSlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2837xSlib/Digital Input",
+      "blockType": "F2837xGPIODigitalInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2837xSlib/Digital Output",
+      "blockType": "F2837xGPIODigitalOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2837xSlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2837xSlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2837xSlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2837xSlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c2837xSlib/SDFM",
+      "blockType": "codertarget.tic2000.blocks.SDFMBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2837xSlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2837xSlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2837xSlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2837xSlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2837xSlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2837xSlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2837xSlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2837xSlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c2838xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2838xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c2838xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c2838xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c2838xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c2838xlib/CLA Subsystem",
+      "blockType": "c28xCLASubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c2838xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c2838xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c2838xlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2838xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2838x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2838xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2838x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c2838xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c2838xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IPC Receive",
+      "referenceBlock": "c2838xlib/IPC Receive",
+      "blockType": "C28xIPCReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "IPC Transmit",
+      "referenceBlock": "c2838xlib/IPC Transmit",
+      "blockType": "C28xIPCTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "MCAN Interrupt Status",
+      "referenceBlock": "c2838xlib/MCAN Interrupt Status",
+      "blockType": "codertarget.armM4.blocks.MCANInterruptStatus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Receive",
+      "referenceBlock": "c2838xlib/MCAN Receive",
+      "blockType": "codertarget.armM4.blocks.CANFDRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Transmit",
+      "referenceBlock": "c2838xlib/MCAN Transmit",
+      "blockType": "codertarget.armM4.blocks.CANFDWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c2838xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c2838xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c2838xlib/SDFM",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c2838xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c2838xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c2838xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c2838xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c2838xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c2838xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c2838xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c2838xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART Receive",
+      "referenceBlock": "c2838x_M4_lib/UART Receive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UARTReceive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART Transmit",
+      "referenceBlock": "c2838x_M4_lib/UART Transmit",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UARTSend",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2838x_M4_lib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c2838x_M4_lib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2838xM4 GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c2838x_M4_lib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2838xM4 GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "c2838x_M4_lib/Hardware Interrupt",
+      "blockType": "ARMCortex-MInterruptBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IPC Receive",
+      "referenceBlock": "c2838x_M4_lib/IPC Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2838x-M4 IPC Receive",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "IPC Transmit",
+      "referenceBlock": "c2838x_M4_lib/IPC Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F2838x-M4 IPC Transmit",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "MCAN Interrupt Status",
+      "referenceBlock": "c2838x_M4_lib/MCAN Interrupt Status",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MCAN Receive",
+      "referenceBlock": "c2838x_M4_lib/MCAN Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MCAN Transmit",
+      "referenceBlock": "c2838x_M4_lib/MCAN Transmit",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Receive",
+      "referenceBlock": "c2838x_M4_lib/TCP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Send",
+      "referenceBlock": "c2838x_M4_lib/TCP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "c2838x_M4_lib/UDP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "c2838x_M4_lib/UDP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2838xparentlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "f28M35x_C28x_lib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Input",
+      "referenceBlock": "f28M35x_C28x_lib/AnalogIO Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28M3x AnalogIO Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Output",
+      "referenceBlock": "f28M35x_C28x_lib/AnalogIO Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28M3x AnalogIO Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "f28M35x_C28x_lib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "COMP",
+      "referenceBlock": "f28M35x_C28x_lib/COMP",
+      "blockType": "C2802x/03x/06x/M3xCOMP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "f28M35x_C28x_lib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28M35x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "f28M35x_C28x_lib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28M35x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "f28M35x_C28x_lib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "f28M35x_C28x_lib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "f28M35x_C28x_lib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "f28M35x_C28x_lib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "f28M35x_C28x_lib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "f28M35x_C28x_lib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "f28M35x_C28x_lib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "f28M35x_C28x_lib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "f28M35x_C28x_lib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "f28M35x_C28x_lib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "f28M35x_C28x_lib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "f28M35x_M3_lib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "f28M35x_M3_lib/Digital Input",
+      "blockType": "ConcertoM3GPIOInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "f28M35x_M3_lib/Digital Output",
+      "blockType": "ConcertoM3GPIOOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "f28M35x_M3_lib/Hardware Interrupt",
+      "blockType": "ARMCortex-MInterruptBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Receive",
+      "referenceBlock": "f28M35x_M3_lib/TCP Receive",
+      "blockType": "concerto.TcpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Send",
+      "referenceBlock": "f28M35x_M3_lib/TCP Send",
+      "blockType": "TcpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART Receive",
+      "referenceBlock": "f28M35x_M3_lib/UART Receive",
+      "blockType": "UARTReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART Transmit",
+      "referenceBlock": "f28M35x_M3_lib/UART Transmit",
+      "blockType": "UARTSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "f28M35x_M3_lib/UDP Receive",
+      "blockType": "UdpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "f28M35x_M3_lib/UDP Send",
+      "blockType": "UdpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "f28M35xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "f28M36x_C28x_lib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Input",
+      "referenceBlock": "f28M36x_C28x_lib/AnalogIO Input",
+      "blockType": "F28M3xAnalogIOInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AnalogIO Output",
+      "referenceBlock": "f28M36x_C28x_lib/AnalogIO Output",
+      "blockType": "F28M3xAnalogIOOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "f28M36x_C28x_lib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "COMP",
+      "referenceBlock": "f28M36x_C28x_lib/COMP",
+      "blockType": "C2802x/03x/06x/M3xCOMP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "f28M36x_C28x_lib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28M36x GPIO Digital Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "f28M36x_C28x_lib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28M36x GPIO Digital Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "f28M36x_C28x_lib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "f28M36x_C28x_lib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "f28M36x_C28x_lib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "f28M36x_C28x_lib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "f28M36x_C28x_lib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "f28M36x_C28x_lib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "f28M36x_C28x_lib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "f28M36x_C28x_lib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "f28M36x_C28x_lib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "f28M36x_C28x_lib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "f28M36x_C28x_lib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART Receive",
+      "referenceBlock": "f28M36x_M3_lib/UART Receive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UARTReceive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART Transmit",
+      "referenceBlock": "f28M36x_M3_lib/UART Transmit",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UARTSend",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "f28M36x_M3_lib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "f28M36x_M3_lib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Concerto M3 GPIO Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "f28M36x_M3_lib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Concerto M3 GPIO Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "f28M36x_M3_lib/Hardware Interrupt",
+      "blockType": "ARMCortex-MInterruptBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Receive",
+      "referenceBlock": "f28M36x_M3_lib/TCP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Send",
+      "referenceBlock": "f28M36x_M3_lib/TCP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "f28M36x_M3_lib/UDP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "f28M36x_M3_lib/UDP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "f28M36xlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c28P55xlib/Blockset Name2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c28P55xlib/CLA Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "c28x CLA Subsystem",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c28P55xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c28P55xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c28P55xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c28P55xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c28P55xlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c28P55xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28p55x GPIO Digital Input",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c28P55xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28p55x GPIO Digital Output",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c28P55xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c28P55xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Interrupt Status",
+      "referenceBlock": "c28P55xlib/MCAN Interrupt Status",
+      "blockType": "codertarget.armM4.blocks.MCANInterruptStatus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Receive",
+      "referenceBlock": "c28P55xlib/MCAN Receive",
+      "blockType": "codertarget.armM4.blocks.CANFDRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Transmit",
+      "referenceBlock": "c28P55xlib/MCAN Transmit",
+      "blockType": "codertarget.armM4.blocks.CANFDWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c28P55xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c28P55xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c28P55xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c28P55xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c28P55xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c28P55xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c28P55xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c28P55xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c28P55xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c28P55xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c28P65xlib/Blockset Name2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "CLA Subsystem",
+      "referenceBlock": "c28P65xlib/CLA Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "c28x CLA Subsystem",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c28P65xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "c28P65xlib/CAN Receive",
+      "blockType": "C28xCANReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "c28P65xlib/CAN Transmit",
+      "blockType": "C28xCANTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "CLA Math",
+      "referenceBlock": "c28P65xlib/CLA Math",
+      "blockType": "CLAMath",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "CLA Task",
+      "referenceBlock": "c28P65xlib/CLA Task",
+      "blockType": "CLA_System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c28P65xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c28P65xlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c28P65xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28p65x GPIO Digital Input",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c28P65xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F28p65x GPIO Digital Output",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c28P65xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c28P65xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "IPC Receive",
+      "referenceBlock": "c28P65xlib/IPC Receive",
+      "blockType": "C28xIPCReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "IPC Transmit",
+      "referenceBlock": "c28P65xlib/IPC Transmit",
+      "blockType": "C28xIPCTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "MCAN Interrupt Status",
+      "referenceBlock": "c28P65xlib/MCAN Interrupt Status",
+      "blockType": "codertarget.armM4.blocks.MCANInterruptStatus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Receive",
+      "referenceBlock": "c28P65xlib/MCAN Receive",
+      "blockType": "codertarget.armM4.blocks.CANFDRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "MCAN Transmit",
+      "referenceBlock": "c28P65xlib/MCAN Transmit",
+      "blockType": "codertarget.armM4.blocks.CANFDWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "SCI Receive",
+      "referenceBlock": "c28P65xlib/SCI Receive",
+      "blockType": "C28xSCIReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "SCI Transmit",
+      "referenceBlock": "c28P65xlib/SCI Transmit",
+      "blockType": "C28xSCITransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c28P65xlib/SDFM",
+      "blockType": "codertarget.tic2000.blocks.SDFM38x",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c28P65xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c28P65xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "c28P65xlib/SPI Transmit",
+      "blockType": "codertarget.tic2000.blocks.SPIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Software Interrupt Trigger",
+      "referenceBlock": "c28P65xlib/Software Interrupt Trigger",
+      "blockType": "SoftwareInterruptTrigger",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c28P65xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c28P65xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c28P65xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c28P65xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "F29H85x",
+      "referenceBlock": "c29H85xlib/F29H85x",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Library Name",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "c29H85xlib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "c29xHardwareInterrupt",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "UART Receive",
+      "referenceBlock": "c29H85xlib/UART Receive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UARTReceive",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "UART Transmit",
+      "referenceBlock": "c29H85xlib/UART Transmit",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UARTSend",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "ADC",
+      "referenceBlock": "c29H85xlib/ADC",
+      "blockType": "ADCType3-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "CMPSS",
+      "referenceBlock": "c29H85xlib/CMPSS",
+      "blockType": "codertarget.tic2000.blocks.CMPSSBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "DAC",
+      "referenceBlock": "c29H85xlib/DAC",
+      "blockType": "codertarget.tic2000.blocks.DACWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "c29H85xlib/Digital Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F29H85x GPIO Digital Input",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "c29H85xlib/Digital Output",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "F29H85x GPIO Digital Output",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "I2C Receive",
+      "referenceBlock": "c29H85xlib/I2C Receive",
+      "blockType": "C28xI2CReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Transmit",
+      "referenceBlock": "c29H85xlib/I2C Transmit",
+      "blockType": "C28xI2CTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAN Interrupt Status",
+      "referenceBlock": "c29H85xlib/MCAN Interrupt Status",
+      "blockType": "codertarget.armM4.blocks.MCANInterruptStatus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAN Receive",
+      "referenceBlock": "c29H85xlib/MCAN Receive",
+      "blockType": "codertarget.armM4.blocks.CANFDRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAN Transmit",
+      "referenceBlock": "c29H85xlib/MCAN Transmit",
+      "blockType": "codertarget.armM4.blocks.CANFDWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SDFM",
+      "referenceBlock": "c29H85xlib/SDFM",
+      "blockType": "codertarget.tic2000.blocks.SDFM38x",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "c29H85xlib/SPI Controller Transfer",
+      "blockType": "codertarget.tic2000.blocks.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "c29H85xlib/SPI Receive",
+      "blockType": "codertarget.tic2000.blocks.SPIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Watchdog",
+      "referenceBlock": "c29H85xlib/Watchdog",
+      "blockType": "C28xWatchDog",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "eCAP",
+      "referenceBlock": "c29H85xlib/eCAP",
+      "blockType": "C28x/C29xeCAP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "ePWM",
+      "referenceBlock": "c29H85xlib/ePWM",
+      "blockType": "ePWMType1-5",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "eQEP",
+      "referenceBlock": "c29H85xlib/eQEP",
+      "blockType": "C28xeQEP",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Absolute IQN",
+      "referenceBlock": "tiiqmathlib/Absolute IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Absolute IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Arctangent IQN",
+      "referenceBlock": "tiiqmathlib/Arctangent IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Arctangent IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "tiiqmathlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Float to IQN",
+      "referenceBlock": "tiiqmathlib/Float to IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Float to IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fractional part IQN x int32",
+      "referenceBlock": "tiiqmathlib/Fractional part IQN x int32",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Fractional part IQN x int32",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fractional part IQN",
+      "referenceBlock": "tiiqmathlib/Fractional part IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Fractional part IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQN / IQN",
+      "referenceBlock": "tiiqmathlib/IQN / IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Division IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQN to Float",
+      "referenceBlock": "tiiqmathlib/IQN to Float",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "IQN to Float",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQN x IQN",
+      "referenceBlock": "tiiqmathlib/IQN x IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "IQN x IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQN x int32",
+      "referenceBlock": "tiiqmathlib/IQN x int32",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "IQN x int32",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQN1 to IQN2",
+      "referenceBlock": "tiiqmathlib/IQN1 to IQN2",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "IQN1 to IQN2",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQN1 x IQN2",
+      "referenceBlock": "tiiqmathlib/IQN1 x IQN2",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "IQN1 x IQN2",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integer part IQN x int32",
+      "referenceBlock": "tiiqmathlib/Integer part IQN x int32",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Integer part IQN x int32",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integer part IQN",
+      "referenceBlock": "tiiqmathlib/Integer part IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Integer part IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnitude IQN",
+      "referenceBlock": "tiiqmathlib/Magnitude IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Magnitude IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Saturate IQN",
+      "referenceBlock": "tiiqmathlib/Saturate IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Saturate IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Square Root IQN",
+      "referenceBlock": "tiiqmathlib/Square Root IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Square Root IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trig Fcn IQN",
+      "referenceBlock": "tiiqmathlib/Trig Fcn IQN",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Trig Fcn IQN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2000optimizedblks/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADXL34x",
+      "referenceBlock": "c2000sensorslib/ADXL34x",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BME280",
+      "referenceBlock": "c2000sensorslib/BME280",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BMI160",
+      "referenceBlock": "c2000sensorslib/BMI160",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BMM150",
+      "referenceBlock": "c2000sensorslib/BMM150",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BMP280",
+      "referenceBlock": "c2000sensorslib/BMP280",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LIS3DH",
+      "referenceBlock": "c2000sensorslib/LIS3DH",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "sensors",
+      "referenceBlock": "c2000sensorslib/sensors",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "c2000lib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Configuration",
+      "referenceBlock": "c2000lib/Host Communication/Serial Configuration",
+      "blockType": "system.SerialConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Receive",
+      "referenceBlock": "c2000lib/Host Communication/Serial Receive",
+      "blockType": "system.SerialReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Send",
+      "referenceBlock": "c2000lib/Host Communication/Serial Send",
+      "blockType": "system.SerialSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Memory Allocate",
+      "referenceBlock": "c2000lib/Memory Operations/Memory Allocate",
+      "blockType": "MemoryAllocate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Memory Copy",
+      "referenceBlock": "c2000lib/Memory Operations/Memory Copy",
+      "blockType": "MemoryCopy",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Register ReadWrite",
+      "referenceBlock": "c2000lib/Memory Operations/Register ReadWrite",
+      "blockType": "codertarget.tic2000.blocks.RegisterRWBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "C28x Hardware Interrupt",
+      "referenceBlock": "c2000lib/Scheduling/C28x Hardware Interrupt",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "C28x Interrupt Block",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CLA Task Manager",
+      "referenceBlock": "c2000lib/Scheduling/CLA Task Manager",
+      "blockType": "TaskManager",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Event Source",
+      "referenceBlock": "c2000lib/Scheduling/Event Source",
+      "blockType": "EventSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "c2000lib/Scheduling/Hardware Interrupt",
+      "blockType": "HardwareInterrupt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Profiler",
+      "referenceBlock": "c2000lib/Scheduling/Hardware Profiler",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Hardware Profiler",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Idle Task",
+      "referenceBlock": "c2000lib/Scheduling/Idle Task",
+      "blockType": "IdleTask",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Trigger CPU<->CLA",
+      "referenceBlock": "c2000lib/Scheduling/Software Trigger CPU<->CLA",
+      "blockType": "SoftwareTriggerCPU<->CLA",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Task Manager",
+      "referenceBlock": "c2000lib/Scheduling/Task Manager",
+      "blockType": "TaskManager",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Byte Pack",
+      "referenceBlock": "c2000lib/Target Communication/Byte Pack",
+      "blockType": "Bytepack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Byte Unpack",
+      "referenceBlock": "c2000lib/Target Communication/Byte Unpack",
+      "blockType": "ByteUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Pack",
+      "referenceBlock": "c2000lib/Target Communication/CAN FD Pack",
+      "blockType": "CANFDPack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Unpack",
+      "referenceBlock": "c2000lib/Target Communication/CAN FD Unpack",
+      "blockType": "CANFDUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Pack",
+      "referenceBlock": "c2000lib/Target Communication/CAN Pack",
+      "blockType": "CANPack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Unpack",
+      "referenceBlock": "c2000lib/Target Communication/CAN Unpack",
+      "blockType": "CANUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interprocess Data Read",
+      "referenceBlock": "c2000lib/Target Communication/Interprocess Data Read",
+      "blockType": "InterprocessDataRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interprocess Data Write",
+      "referenceBlock": "c2000lib/Target Communication/Interprocess Data Write",
+      "blockType": "InterprocessDataWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Protocol Decoder",
+      "referenceBlock": "c2000lib/Target Communication/Protocol Decoder",
+      "blockType": "matlabshared.embedded_utilities.blocks.ProtocolDecoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Protocol Encoder",
+      "referenceBlock": "c2000lib/Target Communication/Protocol Encoder",
+      "blockType": "matlabshared.embedded_utilities.blocks.ProtocolEncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Configuration",
+      "referenceBlock": "c2000lib/Test Bench Blocks/Serial Configuration",
+      "blockType": "system.SerialConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Receive",
+      "referenceBlock": "c2000lib/Test Bench Blocks/Serial Receive",
+      "blockType": "system.SerialReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Send",
+      "referenceBlock": "c2000lib/Test Bench Blocks/Serial Send",
+      "blockType": "system.SerialSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:09",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

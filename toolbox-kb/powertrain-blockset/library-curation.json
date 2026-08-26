@@ -1,0 +1,594 @@
+{
+  "commonBlocks": [
+    "Mapped SI Engine",
+    "Mapped Motor",
+    "Vehicle Body 1DOF Longitudinal",
+    "Drive Cycle Source",
+    "Longitudinal Driver",
+    "Open Differential",
+    "Torque Converter"
+  ],
+  "categories": [
+    {
+      "name": "coupling-drivetrain",
+      "description": "Clutches, gears, differentials, and shafts",
+      "keywords": [
+        "clutch",
+        "gear",
+        "differential",
+        "torsional",
+        "inertia",
+        "chain"
+      ]
+    },
+    {
+      "name": "wheels-brakes",
+      "description": "Wheel and brake models",
+      "keywords": [
+        "wheel",
+        "brake",
+        "disc",
+        "drum",
+        "longitudinal"
+      ]
+    },
+    {
+      "name": "electrical",
+      "description": "Battery, alternator, and power electronics",
+      "keywords": [
+        "battery",
+        "alternator",
+        "dc-dc",
+        "starter",
+        "inverter"
+      ]
+    },
+    {
+      "name": "engine",
+      "description": "ICE engine models and controllers",
+      "keywords": [
+        "engine",
+        "ci",
+        "si",
+        "mapped",
+        "compressor",
+        "turbine",
+        "flow"
+      ]
+    },
+    {
+      "name": "motor-inverter",
+      "description": "Electric motor and inverter models",
+      "keywords": [
+        "motor",
+        "pmsm",
+        "induction",
+        "controller",
+        "flux"
+      ]
+    },
+    {
+      "name": "transmission",
+      "description": "Transmission systems and controllers",
+      "keywords": [
+        "transmission",
+        "cvt",
+        "dct",
+        "amt",
+        "torque converter"
+      ]
+    },
+    {
+      "name": "vehicle-scenario",
+      "description": "Vehicle body, driver, and drive cycle",
+      "keywords": [
+        "vehicle",
+        "body",
+        "driver",
+        "drive cycle",
+        "motorcycle",
+        "road load"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "AMT Controller",
+      "value": "transmission"
+    },
+    {
+      "block": "Automated Manual Transmission",
+      "value": "transmission"
+    },
+    {
+      "block": "Bidirectional DC-DC",
+      "value": "electrical"
+    },
+    {
+      "block": "Boost Drive Shaft",
+      "value": "engine"
+    },
+    {
+      "block": "CI Controller",
+      "value": "engine"
+    },
+    {
+      "block": "CI Core Engine",
+      "value": "engine"
+    },
+    {
+      "block": "CVT Controller",
+      "value": "transmission"
+    },
+    {
+      "block": "Compressor",
+      "value": "engine"
+    },
+    {
+      "block": "Connection Port",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Continuously Variable Transmission",
+      "value": "transmission"
+    },
+    {
+      "block": "Control Volume System",
+      "value": "engine"
+    },
+    {
+      "block": "DCT Controller",
+      "value": "transmission"
+    },
+    {
+      "block": "Datasheet Battery",
+      "value": "electrical"
+    },
+    {
+      "block": "Disc Clutch",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Drive Cycle Source",
+      "value": "vehicle-scenario"
+    },
+    {
+      "block": "Dual Clutch Transmission",
+      "value": "transmission"
+    },
+    {
+      "block": "Equivalent Circuit Battery",
+      "value": "electrical"
+    },
+    {
+      "block": "Equivalent Consumption Minimization Strategy",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Estimation Equivalent Circuit Battery",
+      "value": "electrical"
+    },
+    {
+      "block": "Flow Boundary",
+      "value": "engine"
+    },
+    {
+      "block": "Flow Restriction",
+      "value": "engine"
+    },
+    {
+      "block": "Flux-Based PM Controller",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Flux-Based PMSM",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Gearbox",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Heat Exchanger",
+      "value": "engine"
+    },
+    {
+      "block": "IM Controller",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Ideal Fixed Gear Transmission",
+      "value": "transmission"
+    },
+    {
+      "block": "Induction Motor",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Interior PM Controller",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Interior PMSM",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Limited Slip Differential",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Longitudinal Driver",
+      "value": "vehicle-scenario"
+    },
+    {
+      "block": "Longitudinal Wheel - Disc Brake",
+      "value": "wheels-brakes"
+    },
+    {
+      "block": "Longitudinal Wheel - Drum Brake",
+      "value": "wheels-brakes"
+    },
+    {
+      "block": "Longitudinal Wheel - Mapped Brake",
+      "value": "wheels-brakes"
+    },
+    {
+      "block": "Longitudinal Wheel - No Brake",
+      "value": "wheels-brakes"
+    },
+    {
+      "block": "Mapped CI Engine",
+      "value": "engine"
+    },
+    {
+      "block": "Mapped Core Engine",
+      "value": "engine"
+    },
+    {
+      "block": "Mapped Motor",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Mapped SI Engine",
+      "value": "engine"
+    },
+    {
+      "block": "Motorcycle Body Longitudinal In-Plane",
+      "value": "vehicle-scenario"
+    },
+    {
+      "block": "Motorcycle Chain",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Open Differential",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Planetary Gear",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Reduced Lundell Alternator",
+      "value": "electrical"
+    },
+    {
+      "block": "Rotational Inertia",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "SI Controller",
+      "value": "engine"
+    },
+    {
+      "block": "SI Core Engine",
+      "value": "engine"
+    },
+    {
+      "block": "Simple Engine",
+      "value": "engine"
+    },
+    {
+      "block": "Split Torsional Compliance",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Starter",
+      "value": "electrical"
+    },
+    {
+      "block": "Surface Mount PM Controller",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Surface Mount PMSM",
+      "value": "motor-inverter"
+    },
+    {
+      "block": "Three-Phase Voltage Source Inverter",
+      "value": "electrical"
+    },
+    {
+      "block": "Torque Converter",
+      "value": "transmission"
+    },
+    {
+      "block": "Torsional Compliance",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Transfer Case",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Turbine",
+      "value": "engine"
+    },
+    {
+      "block": "Two-Way Connection",
+      "value": "coupling-drivetrain"
+    },
+    {
+      "block": "Vehicle Body 1DOF Longitudinal",
+      "value": "vehicle-scenario"
+    },
+    {
+      "block": "Vehicle Body 3DOF Longitudinal",
+      "value": "vehicle-scenario"
+    },
+    {
+      "block": "Vehicle Body Total Road Load",
+      "value": "vehicle-scenario"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "AMT Controller",
+      "value": "Automated manual transmission controller — use for shift scheduling and clutch control in AMT"
+    },
+    {
+      "block": "Automated Manual Transmission",
+      "value": "Complete AMT system — use for simulating automated manual gearbox with clutch actuator"
+    },
+    {
+      "block": "Bidirectional DC-DC",
+      "value": "Model a bidirectional DC-DC converter — use for simulating voltage conversion between battery and motor in HEVs"
+    },
+    {
+      "block": "Boost Drive Shaft",
+      "value": "Model turbocharger drive shaft — use for connecting compressor and turbine with inertia and friction"
+    },
+    {
+      "block": "CI Controller",
+      "value": "Diesel engine controller — use for fuel injection timing and quantity control in CI engines"
+    },
+    {
+      "block": "CI Core Engine",
+      "value": "Model compression-ignition engine core — use for detailed diesel engine combustion and torque simulation"
+    },
+    {
+      "block": "CVT Controller",
+      "value": "CVT ratio controller — use for controlling continuously variable transmission ratio"
+    },
+    {
+      "block": "Compressor",
+      "value": "Model turbocharger compressor — use for simulating boost pressure generation from exhaust energy"
+    },
+    {
+      "block": "Connection Port",
+      "value": "Physical connection port — use for connecting Simscape physical signals at subsystem boundaries"
+    },
+    {
+      "block": "Continuously Variable Transmission",
+      "value": "Complete CVT system — use for simulating belt or chain CVT with ratio control"
+    },
+    {
+      "block": "Control Volume System",
+      "value": "Model a gas control volume — use for simulating intake/exhaust manifold pressure and temperature dynamics"
+    },
+    {
+      "block": "DCT Controller",
+      "value": "Dual-clutch transmission controller — use for shift scheduling and clutch coordination in DCT"
+    },
+    {
+      "block": "Datasheet Battery",
+      "value": "Model battery from datasheet parameters — use for quick battery modeling from manufacturer specifications"
+    },
+    {
+      "block": "Disc Clutch",
+      "value": "Model a friction disc clutch — use for simulating engagement/disengagement and torque transfer in transmissions"
+    },
+    {
+      "block": "Drive Cycle Source",
+      "value": "Provide standard drive cycle profiles — use for feeding velocity targets from regulatory or custom drive cycles"
+    },
+    {
+      "block": "Dual Clutch Transmission",
+      "value": "Complete DCT system — use for simulating dual-clutch gearbox with seamless shifts"
+    },
+    {
+      "block": "Equivalent Circuit Battery",
+      "value": "Model battery with RC equivalent circuit — use for simulating voltage, SOC, and thermal dynamics"
+    },
+    {
+      "block": "Equivalent Consumption Minimization Strategy",
+      "value": "ECMS energy management — use for optimal power split between engine and motor in hybrid vehicles"
+    },
+    {
+      "block": "Estimation Equivalent Circuit Battery",
+      "value": "Battery model with SOC estimation — use for simulating battery management system state estimation"
+    },
+    {
+      "block": "Flow Boundary",
+      "value": "Define a flow boundary condition — use for specifying ambient pressure and temperature at system boundaries"
+    },
+    {
+      "block": "Flow Restriction",
+      "value": "Model a gas flow restriction — use for simulating throttle valves and orifices in intake/exhaust paths"
+    },
+    {
+      "block": "Flux-Based PM Controller",
+      "value": "Flux-based PM motor controller — use for advanced MTPA control using flux linkage maps"
+    },
+    {
+      "block": "Flux-Based PMSM",
+      "value": "Flux-based permanent magnet motor — use for high-fidelity motor simulation with magnetic saturation"
+    },
+    {
+      "block": "Gearbox",
+      "value": "Model a multi-ratio gearbox — use for simulating manual or automated gear selection with efficiency losses"
+    },
+    {
+      "block": "Heat Exchanger",
+      "value": "Model a heat exchanger — use for simulating intercooler or radiator thermal performance"
+    },
+    {
+      "block": "IM Controller",
+      "value": "Induction motor controller — use for field-oriented control of induction traction motors"
+    },
+    {
+      "block": "Ideal Fixed Gear Transmission",
+      "value": "Simple fixed-ratio gearbox — use for fast simulation when shift dynamics are not needed"
+    },
+    {
+      "block": "Induction Motor",
+      "value": "Induction motor model — use for simulating AC induction traction motor dynamics"
+    },
+    {
+      "block": "Interior PM Controller",
+      "value": "Interior PMSM controller — use for field-oriented control of interior permanent magnet motors"
+    },
+    {
+      "block": "Interior PMSM",
+      "value": "Interior permanent magnet motor — use for simulating IPM traction motor with reluctance torque"
+    },
+    {
+      "block": "Limited Slip Differential",
+      "value": "Model a limited-slip differential — use for simulating torque biasing between driven wheels"
+    },
+    {
+      "block": "Longitudinal Driver",
+      "value": "Driver model for speed tracking — use for simulating accelerator and brake pedal inputs to follow a drive cycle"
+    },
+    {
+      "block": "Longitudinal Wheel - Disc Brake",
+      "value": "Model wheel with disc brake — use for simulating tire-road interaction with hydraulic disc braking"
+    },
+    {
+      "block": "Longitudinal Wheel - Drum Brake",
+      "value": "Model wheel with drum brake — use for simulating tire-road interaction with drum braking"
+    },
+    {
+      "block": "Longitudinal Wheel - Mapped Brake",
+      "value": "Model wheel with mapped brake — use for simulating tire-road interaction with lookup-based braking"
+    },
+    {
+      "block": "Longitudinal Wheel - No Brake",
+      "value": "Model wheel without brake — use for simulating unbraked driven wheels with tire slip dynamics"
+    },
+    {
+      "block": "Mapped CI Engine",
+      "value": "Complete mapped diesel engine system — use for fast simulation of diesel powertrain with controller"
+    },
+    {
+      "block": "Mapped Core Engine",
+      "value": "Model engine using mapped data — use for fast lookup-based engine torque and fuel simulation"
+    },
+    {
+      "block": "Mapped Motor",
+      "value": "Lookup-based motor model — use for fast motor simulation from efficiency and torque maps"
+    },
+    {
+      "block": "Mapped SI Engine",
+      "value": "Complete mapped gasoline engine system — use for fast simulation of gasoline powertrain with controller"
+    },
+    {
+      "block": "Motorcycle Body Longitudinal In-Plane",
+      "value": "Motorcycle longitudinal dynamics — use for simulating motorcycle acceleration, braking, and pitch motion"
+    },
+    {
+      "block": "Motorcycle Chain",
+      "value": "Model chain drive dynamics — use for simulating sprocket-chain power transmission in motorcycles"
+    },
+    {
+      "block": "Open Differential",
+      "value": "Model an open differential — use for simulating equal-torque split between driven wheels"
+    },
+    {
+      "block": "Planetary Gear",
+      "value": "Model a planetary gear set — use for simulating automatic transmission gear ratios with sun, ring, and carrier"
+    },
+    {
+      "block": "Reduced Lundell Alternator",
+      "value": "Model a vehicle alternator — use for simulating electrical load and charging system interaction"
+    },
+    {
+      "block": "Rotational Inertia",
+      "value": "Model a rotational inertia element — use for representing flywheels and rotating mass in drivetrain"
+    },
+    {
+      "block": "SI Controller",
+      "value": "Gasoline engine controller — use for throttle, spark, and fuel control in SI engines"
+    },
+    {
+      "block": "SI Core Engine",
+      "value": "Model spark-ignition engine core — use for detailed gasoline engine combustion and torque simulation"
+    },
+    {
+      "block": "Simple Engine",
+      "value": "Simplified engine model — use for vehicle-level studies where detailed combustion is unnecessary"
+    },
+    {
+      "block": "Split Torsional Compliance",
+      "value": "Model split shaft compliance — use for simulating flexible coupling between drivetrain components with branching"
+    },
+    {
+      "block": "Starter",
+      "value": "Model engine starter motor — use for simulating cranking torque during engine start"
+    },
+    {
+      "block": "Surface Mount PM Controller",
+      "value": "Surface-mount PMSM controller — use for field-oriented control of surface permanent magnet motors"
+    },
+    {
+      "block": "Surface Mount PMSM",
+      "value": "Surface-mount PM motor — use for simulating SPM traction motor dynamics"
+    },
+    {
+      "block": "Three-Phase Voltage Source Inverter",
+      "value": "Three-phase inverter model — use for simulating PWM power electronics driving traction motors"
+    },
+    {
+      "block": "Torque Converter",
+      "value": "Model hydrodynamic torque converter — use for simulating fluid coupling between engine and automatic transmission"
+    },
+    {
+      "block": "Torsional Compliance",
+      "value": "Model shaft torsional flexibility — use for simulating driveline vibration and compliance between components"
+    },
+    {
+      "block": "Transfer Case",
+      "value": "Model a transfer case — use for simulating torque distribution between front and rear axles in AWD"
+    },
+    {
+      "block": "Turbine",
+      "value": "Model turbocharger turbine — use for simulating exhaust energy extraction to drive the compressor"
+    },
+    {
+      "block": "Two-Way Connection",
+      "value": "Bidirectional signal connection — use for interfacing torque-speed signals between powertrain blocks"
+    },
+    {
+      "block": "Vehicle Body 1DOF Longitudinal",
+      "value": "Single-DOF vehicle body — use for basic vehicle speed simulation with road load"
+    },
+    {
+      "block": "Vehicle Body 3DOF Longitudinal",
+      "value": "Three-DOF vehicle body — use for simulating vehicle longitudinal dynamics with pitch and heave"
+    },
+    {
+      "block": "Vehicle Body Total Road Load",
+      "value": "Vehicle road load model — use for computing aerodynamic drag, rolling resistance, and grade force"
+    }
+  ]
+}

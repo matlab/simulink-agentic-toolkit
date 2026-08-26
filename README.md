@@ -116,13 +116,13 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
    --extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
    ```
 
-4. Register skills by pointing your agent's skill or prompt directory at `skills-catalog/model-based-design-core/`, `skills-catalog/model-based-system-engineering/`, `skills-catalog/simulink-simulation/`, `skills-catalog/verification-validation-and-test/`, and `skills-catalog/code-generation/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, and `code-generation/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
    For platforms that discover skills from `~/.agents/skills/`, create symlinks:
 
    ```bash
    mkdir -p ~/.agents/skills
-   for group in model-based-design-core model-based-system-engineering simulink-simulation verification-validation-and-test code-generation; do
+   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing code-generation; do
      for skill in /path/to/simulink-agentic-toolkit/skills-catalog/$group/*/; do
        ln -s "$skill" ~/.agents/skills/$(basename "$skill")
      done
@@ -172,7 +172,19 @@ This opens the shipped example model `sldemo_househeat`. Ask your agent:
 ```
 Describe the structure of the currently open model.
 ```
-## Custom Libraries
+## Library Configuration
+
+### Toolbox Libraries
+
+Use `satk.Configuration.setLibrary` to activate pre-built knowledge bases for installed MathWorks toolboxes:
+
+```matlab
+satk.Configuration.setLibrary('all')                                          % Activate all installed toolbox KBs
+satk.Configuration.setLibrary({'Aerospace Blockset', 'Simscape'})  % Activate specific toolboxes by name
+satk.Configuration.setLibrary('none')                                         % Deactivate all toolbox KBs
+```
+
+### Custom Libraries
 
 To use your own custom Simulink block libraries with the toolkit, register them in MATLAB once:
 
@@ -183,7 +195,9 @@ satk.Configuration.setCustomLibraries("C:\path\to\customLibs")
 This declares your custom libraries. 
 On the next model-building task or on invocation of the **'setup-custom-libraries'** skill, the agent indexes the libraries into a knowledge base (~3–5 min to complete) storing it in MATLAB's preference directory (prefdir) enabling usage of custom blocks alongside built-in ones.
 
-To remove all custom library configuration:
+### Clearing Configuration
+
+To remove all library configuration:
 
 ```matlab
 satk.Configuration.clearConfig()
@@ -218,6 +232,8 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Simulink Simulation](skills-catalog/simulink-simulation/) | Skills for constructing simulation input datasets and configuring simulation workflows |
 | [Simulink Modeling](skills-catalog/simulink-modeling/) | Configure and integrate C/C++ code into Simulink models via C Function blocks |
 | [Control Systems](skills-catalog/control-systems/) | Control system design and analysis skills for Simulink models |
+| [Simulink Environment Fundamentals](skills-catalog/simulink-environment-fundamentals/) | Core Simulink environment capabilities, including discovering shipped example models |
+| [Signal Processing](skills-catalog/signal-processing/) | Frame-based streaming DSP models in Simulink using DSP System Toolbox |
 | [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion |
 
 ## Security Considerations

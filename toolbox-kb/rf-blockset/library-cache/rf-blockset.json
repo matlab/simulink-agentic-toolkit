@@ -1,0 +1,630 @@
+{
+  "libraryName": "RF Blockset",
+  "generatedAt": "2026-08-19T14:31:05",
+  "blockCount": 68,
+  "blocks": [
+    {
+      "name": "Amplifier",
+      "referenceBlock": "simrfV2elements/Amplifier",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Amplifier",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Antenna",
+      "referenceBlock": "simrfV2elements/Antenna",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Antenna",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Attenuator",
+      "referenceBlock": "simrfV2elements/Attenuator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Attenuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "C",
+      "referenceBlock": "simrfV2elements/C",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Capacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Filter",
+      "referenceBlock": "simrfV2elements/Filter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Filter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IMT Mixer",
+      "referenceBlock": "simrfV2elements/IMT Mixer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IMT Mixer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Transformer",
+      "referenceBlock": "simrfV2elements/Ideal Transformer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Transformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "L",
+      "referenceBlock": "simrfV2elements/L",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LC Ladder",
+      "referenceBlock": "simrfV2elements/LC Ladder",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LC Ladder",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mixer",
+      "referenceBlock": "simrfV2elements/Mixer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Mixer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mutual Inductor",
+      "referenceBlock": "simrfV2elements/Mutual Inductor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Mutual\nInductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase Shift",
+      "referenceBlock": "simrfV2elements/Phase Shift",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Phase Shift",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Amplifier",
+      "referenceBlock": "simrfV2elements/Power Amplifier",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Power Amplifier with Memory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "R",
+      "referenceBlock": "simrfV2elements/R",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "S-parameters",
+      "referenceBlock": "simrfV2elements/S-parameters",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "S-parameters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Combiner",
+      "referenceBlock": "simrfV2elements/Signal Combiner",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Signal Combiner",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-Winding Transformer",
+      "referenceBlock": "simrfV2elements/Three-Winding Transformer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Three-Winding\nTransformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transmission Line",
+      "referenceBlock": "simrfV2elements/Transmission Line",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transmission Line",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "VGA",
+      "referenceBlock": "simrfV2elements/VGA",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VGA",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Attenuator",
+      "referenceBlock": "simrfV2elements/Variable Attenuator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Attenuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Capacitor",
+      "referenceBlock": "simrfV2elements/Variable Capacitor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Capacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Inductor",
+      "referenceBlock": "simrfV2elements/Variable Inductor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Phase Shift",
+      "referenceBlock": "simrfV2elements/Variable Phase Shift",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Phase",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Resistor",
+      "referenceBlock": "simrfV2elements/Variable Resistor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Z",
+      "referenceBlock": "simrfV2elements/Z",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Impedance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gnd",
+      "referenceBlock": "simrfV2elements/Gnd",
+      "blockType": "Reference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Circulator",
+      "referenceBlock": "simrfV2junction1/Circulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Circulators",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Coupler",
+      "referenceBlock": "simrfV2junction1/Coupler",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Couplers",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Divider",
+      "referenceBlock": "simrfV2junction1/Divider",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Dividers",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Potentiometer",
+      "referenceBlock": "simrfV2junction1/Potentiometer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Potentiometer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPDT",
+      "referenceBlock": "simrfV2junction1/SPDT",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Switch SPDT",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPST",
+      "referenceBlock": "simrfV2junction1/SPST",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Switch SPST",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SPnT",
+      "referenceBlock": "simrfV2junction1/SPnT",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Switch single pole multiple throw (SPnT)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "simrfV2junction1/Switch",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Switch Two Terminal",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Continuous Wave",
+      "referenceBlock": "simrfV2sources1/Continuous Wave",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CW Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Noise",
+      "referenceBlock": "simrfV2sources1/Noise",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Noise Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoid",
+      "referenceBlock": "simrfV2sources1/Sinusoid",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sinusoidal Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Channel",
+      "referenceBlock": "simrfV2systems/Channel",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Channel",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Demodulator",
+      "referenceBlock": "simrfV2systems/Demodulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Demodulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQ Demodulator",
+      "referenceBlock": "simrfV2systems/IQ Demodulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IQ Demodulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IQ Modulator",
+      "referenceBlock": "simrfV2systems/IQ Modulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IQ Modulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modulator",
+      "referenceBlock": "simrfV2systems/Modulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Modulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IIP2 Testbench",
+      "referenceBlock": "simrfV2testbenches/IIP2 Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Input 2nd Intercept Point Testbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IIP3 Testbench",
+      "referenceBlock": "simrfV2testbenches/IIP3 Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Input 3rd Intercept Point Testbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Noise Figure Testbench",
+      "referenceBlock": "simrfV2testbenches/Noise Figure Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Noise Figure Testbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "simrfV2testbenches/Noise Figure Testbench/Enabled Subsystem/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "OIP2 Testbench",
+      "referenceBlock": "simrfV2testbenches/OIP2 Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Output 2nd Intercept Point Testbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "OIP3 Testbench",
+      "referenceBlock": "simrfV2testbenches/OIP3 Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Output 3rd Intercept Point Testbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "S-Parameter Testbench",
+      "referenceBlock": "simrfV2testbenches/S-Parameter Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "S-parameter Testbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transducer Gain Testbench",
+      "referenceBlock": "simrfV2testbenches/Transducer Gain Testbench",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transducer Gain Testbench",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Enable",
+      "referenceBlock": "simrfV2testbenches/Noise Figure Testbench/Enabled Subsystem/Enable",
+      "blockType": "EnablePort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Configuration",
+      "referenceBlock": "simrfV2util1/Configuration",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Configuration",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inport",
+      "referenceBlock": "simrfV2util1/Inport",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Inport",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Outport",
+      "referenceBlock": "simrfV2util1/Outport",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Outport",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Connection Label",
+      "referenceBlock": "simrfV2util1/Connection Label",
+      "blockType": "ConnectionLabel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spectrum Analyzer",
+      "referenceBlock": "simrfV2util1/Spectrum Analyzer",
+      "blockType": "SpectrumAnalyzer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Connection Port",
+      "referenceBlock": "simrfV2util1/Connection Port",
+      "blockType": "PMIOPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Amplifiers",
+      "referenceBlock": "rfphysmodels1/Amplifiers",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Amplifiers",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Black Box Elements",
+      "referenceBlock": "rfphysmodels1/Black Box Elements",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Black Box Elements",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ladder Filters",
+      "referenceBlock": "rfphysmodels1/Ladder Filters",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ladder Filters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mixers",
+      "referenceBlock": "rfphysmodels1/Mixers",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Mixers",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transmission Lines",
+      "referenceBlock": "rfphysmodels1/Transmission Lines",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transmission Lines",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RF Budget",
+      "referenceBlock": "rfmathmodels2/RF Budget",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "RF Budget",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Amplifier",
+      "referenceBlock": "rfmathmodels2/Amplifier",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Filter",
+      "referenceBlock": "rfmathmodels2/Filter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mixer",
+      "referenceBlock": "rfmathmodels2/Mixer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Amplifier",
+      "referenceBlock": "rfmathmodels2/Power Amplifier",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sparameters",
+      "referenceBlock": "rfmathmodels2/Sparameters",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

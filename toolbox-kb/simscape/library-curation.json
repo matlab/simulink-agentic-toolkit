@@ -1,0 +1,2169 @@
+{
+  "commonBlocks": [
+    "Resistor",
+    "Capacitor",
+    "Inductor",
+    "DC Voltage Source",
+    "Electrical Reference",
+    "Mass",
+    "Inertia",
+    "Translational Spring",
+    "Rotational Damper",
+    "Thermal Mass",
+    "PS Gain",
+    "PS Add"
+  ],
+  "categories": [
+    {
+      "name": "electrical-elements",
+      "description": "Passive and active electrical circuit components including resistors, capacitors, inductors, and transformers",
+      "keywords": [
+        "resistor",
+        "capacitor",
+        "inductor",
+        "diode",
+        "transformer"
+      ]
+    },
+    {
+      "name": "electrical-sources-sensors",
+      "description": "Voltage and current sources for circuit excitation, and sensors for measuring electrical quantities",
+      "keywords": [
+        "voltage source",
+        "current source",
+        "sensor",
+        "measurement",
+        "excitation"
+      ]
+    },
+    {
+      "name": "mechanical-rotational",
+      "description": "Rotational mechanical elements including springs, dampers, inertias, friction, and references",
+      "keywords": [
+        "rotational",
+        "inertia",
+        "torque",
+        "spring",
+        "damper"
+      ]
+    },
+    {
+      "name": "mechanical-translational",
+      "description": "Translational mechanical elements including springs, dampers, masses, friction, and references",
+      "keywords": [
+        "translational",
+        "mass",
+        "force",
+        "spring",
+        "damper"
+      ]
+    },
+    {
+      "name": "mechanical-mechanisms",
+      "description": "Gear boxes, levers, crank mechanisms, and interfaces to Simscape Multibody",
+      "keywords": [
+        "gear",
+        "lever",
+        "mechanism",
+        "crank",
+        "multibody"
+      ]
+    },
+    {
+      "name": "magnetic-domain",
+      "description": "Magnetic circuit elements including reluctances, flux sources, and electromagnetic converters",
+      "keywords": [
+        "reluctance",
+        "flux",
+        "magnetic",
+        "coil",
+        "MMF"
+      ]
+    },
+    {
+      "name": "thermal-domain",
+      "description": "Heat transfer elements, thermal mass, temperature and heat flow sources and sensors",
+      "keywords": [
+        "thermal",
+        "heat transfer",
+        "temperature",
+        "conduction",
+        "convection"
+      ]
+    },
+    {
+      "name": "gas-domain",
+      "description": "Compressible gas flow elements, chambers, pipes, sensors, sources, and utilities",
+      "keywords": [
+        "gas",
+        "compressible",
+        "pneumatic",
+        "chamber",
+        "pipe"
+      ]
+    },
+    {
+      "name": "isothermal-liquid-domain",
+      "description": "Incompressible isothermal liquid flow elements, actuators, sensors, and sources",
+      "keywords": [
+        "hydraulic",
+        "liquid",
+        "isothermal",
+        "pressure",
+        "cylinder"
+      ]
+    },
+    {
+      "name": "thermal-liquid-domain",
+      "description": "Liquid flow elements with thermal energy transport, sensors, and sources",
+      "keywords": [
+        "thermal liquid",
+        "cooling",
+        "heat exchanger",
+        "flow",
+        "pipe"
+      ]
+    },
+    {
+      "name": "moist-air-domain",
+      "description": "Psychrometric moist air flow elements, moisture control, sensors, and sources",
+      "keywords": [
+        "moist air",
+        "humidity",
+        "HVAC",
+        "psychrometric",
+        "condensation"
+      ]
+    },
+    {
+      "name": "two-phase-fluid-domain",
+      "description": "Two-phase fluid flow elements with phase change, vapor quality, sensors, and sources",
+      "keywords": [
+        "two-phase",
+        "refrigerant",
+        "evaporator",
+        "condenser",
+        "vapor"
+      ]
+    },
+    {
+      "name": "physical-signal-math",
+      "description": "Arithmetic operations, nonlinear functions, and logic for physical signals",
+      "keywords": [
+        "math",
+        "gain",
+        "add",
+        "saturation",
+        "nonlinear"
+      ]
+    },
+    {
+      "name": "physical-signal-dynamics",
+      "description": "Integrators, transfer functions, state-space models, delays, and lookup tables for physical signals",
+      "keywords": [
+        "integrator",
+        "transfer function",
+        "lookup table",
+        "delay",
+        "filter"
+      ]
+    },
+    {
+      "name": "physical-signal-sources",
+      "description": "Physical signal generators, terminators, and periodic estimators",
+      "keywords": [
+        "constant",
+        "step",
+        "sine wave",
+        "ramp",
+        "source"
+      ]
+    },
+    {
+      "name": "rotational-across-based",
+      "description": "Position-aware rotational elements with across-based formulation for angle tracking",
+      "keywords": [
+        "across-based",
+        "angle",
+        "rotational",
+        "position",
+        "actuator"
+      ]
+    },
+    {
+      "name": "translational-position-based",
+      "description": "Position-aware translational elements with position-based formulation for displacement tracking",
+      "keywords": [
+        "position-based",
+        "displacement",
+        "translational",
+        "length",
+        "actuator"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "AC Current Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "AC Voltage Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Absolute Reference (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Absolute Reference (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Absolute Reference (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Absolute Reference (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Cam and Follower (AB-PB)",
+      "value": "mechanical-mechanisms"
+    },
+    {
+      "block": "Cap (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Cap (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Cap (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Cap (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Cap (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Capacitor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Conductive Heat Transfer",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Constant Volume Chamber (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Constant Volume Chamber (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Constant Volume Chamber (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Constant Volume Chamber (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Constant Volume Chamber (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Controlled Current Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Controlled Flux Source",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Controlled Heat Flow Rate Source",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Controlled MMF Source",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Controlled Temperature Source",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Controlled Voltage Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Convective Heat Transfer",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Current Sensor",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Current-Controlled Current Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Current-Controlled Voltage Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "DC Current Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "DC Voltage Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Diode",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Electrical Reference",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Electromagnetic Converter",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Floating Reference",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Flow Rate Sensor (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Flow Rate Sensor (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Flow Rate Sensor (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Flow Rate Sensor (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Flow Rate Sensor (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Flow Rate Source (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Flow Rate Source (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Flow Rate Source (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Flow Rate Source (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Flow Rate Source (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Flow Resistance (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Flow Resistance (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Flow Resistance (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Flow Resistance (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Flow Resistance (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Flux Sensor",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Flux Source",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Fundamental Reluctance",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Gas Properties (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Gear Box",
+      "value": "mechanical-mechanisms"
+    },
+    {
+      "block": "Gyrator",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Heat Flow Rate Sensor",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Heat Flow Rate Source",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Ideal Angular Velocity Source",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Ideal Force Sensor",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Ideal Force Source",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Ideal Rotational Motion Sensor",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Ideal Torque Sensor",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Ideal Torque Source",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Ideal Transformer",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Ideal Translational Motion Sensor",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Ideal Translational Velocity Source",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Inductor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Inertia",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Inertia (AB)",
+      "value": "rotational-across-based"
+    },
+    {
+      "block": "Infinite Flow Resistance (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Infinite Flow Resistance (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Infinite Flow Resistance (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Infinite Flow Resistance (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Infinite Flow Resistance (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Infinite Resistance",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Infinite Thermal Resistance",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Interface (AB-Rotational)",
+      "value": "rotational-across-based"
+    },
+    {
+      "block": "Interface (PB-Translational)",
+      "value": "translational-position-based"
+    },
+    {
+      "block": "Isothermal Liquid Properties (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Laminar Leakage (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Lever",
+      "value": "mechanical-mechanisms"
+    },
+    {
+      "block": "Liquid Properties Sensor (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Local Restriction (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Local Restriction (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Local Restriction (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Local Restriction (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Local Restriction (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "MMF Sensor",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "MMF Source",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Mach Number Sensor (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Magnetic Reference",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Mass",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Mass (PB)",
+      "value": "translational-position-based"
+    },
+    {
+      "block": "Measurement Selector (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Mechanical Rotational Reference",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Mechanical Translational Reference",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Memristor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Moist Air Properties (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Moisture & Trace Gas Sensor (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Moisture Separator (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Moisture Source (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Mutual Inductor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Op-Amp",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Open Circuit",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "PS Abs",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Add",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Asynchronous Sample & Hold",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Bias",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Ceil",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Concatenate",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Constant",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Constant Delay",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Constant Offset Estimator",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Counter",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Dead Zone",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Divide",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Dot Product",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Fix",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Floor",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Gain",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Harmonic Estimator (Amplitude, Phase)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Harmonic Estimator (Real, Imaginary)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Integrator",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Lookup Table (1D)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Lookup Table (2D)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Lookup Table (3D)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Lookup Table (4D)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Math Function",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Max",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Min",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Product",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS RMS Estimator",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Ramp",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Random Number",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Repeating Sequence",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Round",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Saturation",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Scattered Lookup Table (2D)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Scattered Lookup Table (3D)",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Selector",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Sign",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Signal Specification",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Sine Wave",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS State-Space",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Step",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Subtract",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Sum of Elements",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Switch",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Terminator",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Three-Element Demux",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "PS Transfer Function",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Uniform Random Number",
+      "value": "physical-signal-sources"
+    },
+    {
+      "block": "PS Variable Delay",
+      "value": "physical-signal-dynamics"
+    },
+    {
+      "block": "PS Vector Norm",
+      "value": "physical-signal-math"
+    },
+    {
+      "block": "Perfect Insulator",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Permanent Magnet",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Phase-Change Thermal Mass",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Pipe (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Pipe (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Pipe (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Pipe (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Pipe (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Pressure & Temperature Sensor (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Pressure & Temperature Sensor (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Pressure & Temperature Sensor (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Pressure Sensor (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Pressure Source (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Pressure Source (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Pressure Source (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Pressure Source (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Pressure Source (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Pressure, Temperature & Internal Energy Sensor (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Radiative Heat Transfer",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Reluctance",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Reluctance Force Actuator",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Reservoir (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Reservoir (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Reservoir (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Reservoir (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Reservoir (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Resistor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Rotational Damper",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Rotational Damper (AB)",
+      "value": "rotational-across-based"
+    },
+    {
+      "block": "Rotational Electromechanical Converter",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Rotational Free End",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Rotational Friction",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Rotational Hard Stop",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Rotational Inerter",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Rotational Mechanical Converter (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Rotational Mechanical Converter (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Rotational Mechanical Converter (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Rotational Mechanical Converter (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Rotational Mechanical Converter (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Rotational Multibody Interface",
+      "value": "mechanical-mechanisms"
+    },
+    {
+      "block": "Rotational Spring",
+      "value": "mechanical-rotational"
+    },
+    {
+      "block": "Rotational Spring (AB)",
+      "value": "rotational-across-based"
+    },
+    {
+      "block": "Rotational World (AB)",
+      "value": "rotational-across-based"
+    },
+    {
+      "block": "Saturation Properties Sensor (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Slider-Crank",
+      "value": "mechanical-mechanisms"
+    },
+    {
+      "block": "Switch",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Temperature Sensor",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Temperature Source",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Thermal Liquid Settings (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Thermal Mass",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Thermal Reference",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Thermal Resistance",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Thermal Resistor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Trace Gas Source (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Translational Damper",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Translational Damper (PB)",
+      "value": "translational-position-based"
+    },
+    {
+      "block": "Translational Electromechanical Converter",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Translational Free End",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Translational Friction",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Translational Hard Stop",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Translational Inerter",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Translational Mechanical Converter (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Translational Mechanical Converter (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Translational Mechanical Converter (IL)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Translational Mechanical Converter (IL-PB)",
+      "value": "isothermal-liquid-domain"
+    },
+    {
+      "block": "Translational Mechanical Converter (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Translational Mechanical Converter (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Translational Multibody Interface",
+      "value": "mechanical-mechanisms"
+    },
+    {
+      "block": "Translational Spring",
+      "value": "mechanical-translational"
+    },
+    {
+      "block": "Translational Spring (PB)",
+      "value": "translational-position-based"
+    },
+    {
+      "block": "Translational World (PB)",
+      "value": "translational-position-based"
+    },
+    {
+      "block": "Transport Properties Sensor (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Transport Properties Sensor (G)",
+      "value": "gas-domain"
+    },
+    {
+      "block": "Transport Properties Sensor (MA)",
+      "value": "moist-air-domain"
+    },
+    {
+      "block": "Transport Properties Sensor (TL)",
+      "value": "thermal-liquid-domain"
+    },
+    {
+      "block": "Two-Phase Fluid Properties (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Vapor Quality Sensor (2P)",
+      "value": "two-phase-fluid-domain"
+    },
+    {
+      "block": "Variable Gap Capacitor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Variable Reluctance",
+      "value": "magnetic-domain"
+    },
+    {
+      "block": "Variable Resistor",
+      "value": "electrical-elements"
+    },
+    {
+      "block": "Variable Thermal Resistance",
+      "value": "thermal-domain"
+    },
+    {
+      "block": "Voltage Sensor",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Voltage-Controlled Current Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Voltage-Controlled Voltage Source",
+      "value": "electrical-sources-sensors"
+    },
+    {
+      "block": "Wheel and Axle",
+      "value": "mechanical-mechanisms"
+    },
+    {
+      "block": "Wheel and Axle (AB-PB)",
+      "value": "mechanical-mechanisms"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "AC Current Source",
+      "value": "Use when exciting a circuit with a sinusoidal current at a specified amplitude and frequency"
+    },
+    {
+      "block": "AC Voltage Source",
+      "value": "Use when exciting a circuit with a sinusoidal voltage for AC power or signal analysis"
+    },
+    {
+      "block": "Absolute Reference (2P)",
+      "value": "Use to define the absolute zero-pressure zero-energy reference for a two-phase fluid network"
+    },
+    {
+      "block": "Absolute Reference (G)",
+      "value": "Use to define the absolute zero-pressure zero-temperature reference for a gas network"
+    },
+    {
+      "block": "Absolute Reference (MA)",
+      "value": "Use to define the absolute zero-pressure zero-temperature reference for a moist air network"
+    },
+    {
+      "block": "Absolute Reference (TL)",
+      "value": "Use to define the absolute zero-pressure zero-temperature reference for a thermal liquid network"
+    },
+    {
+      "block": "Cam and Follower (AB-PB)",
+      "value": "Use when modeling a cam profile that converts rotational input to prescribed translational follower motion"
+    },
+    {
+      "block": "Cap (2P)",
+      "value": "Use to terminate an unused two-phase fluid port and prevent unconnected-port warnings"
+    },
+    {
+      "block": "Cap (G)",
+      "value": "Use to terminate an unused gas port and prevent unconnected-port warnings"
+    },
+    {
+      "block": "Cap (IL)",
+      "value": "Use to terminate an unused isothermal liquid port and prevent unconnected-port warnings"
+    },
+    {
+      "block": "Cap (MA)",
+      "value": "Use to terminate an unused moist air port and prevent unconnected-port warnings"
+    },
+    {
+      "block": "Cap (TL)",
+      "value": "Use to terminate an unused thermal liquid port and prevent unconnected-port warnings"
+    },
+    {
+      "block": "Capacitor",
+      "value": "Use when modeling energy storage in an electric field or filtering high-frequency signals in a circuit"
+    },
+    {
+      "block": "Conductive Heat Transfer",
+      "value": "Use when modeling heat conduction through a solid material with specified thermal conductivity and geometry"
+    },
+    {
+      "block": "Constant Volume Chamber (2P)",
+      "value": "Use when modeling a fixed-volume vessel with two-phase fluid accumulation and phase change"
+    },
+    {
+      "block": "Constant Volume Chamber (G)",
+      "value": "Use when modeling a fixed-volume gas accumulator or pressure vessel with compressibility effects"
+    },
+    {
+      "block": "Constant Volume Chamber (IL)",
+      "value": "Use when modeling a fixed-volume liquid accumulator with fluid compressibility"
+    },
+    {
+      "block": "Constant Volume Chamber (MA)",
+      "value": "Use when modeling a fixed-volume air plenum where pressure changes with mass accumulation"
+    },
+    {
+      "block": "Constant Volume Chamber (TL)",
+      "value": "Use when modeling a fixed-volume liquid chamber with both pressure and thermal dynamics"
+    },
+    {
+      "block": "Controlled Current Source",
+      "value": "Use when driving a current whose magnitude is set by an external physical signal input"
+    },
+    {
+      "block": "Controlled Flux Source",
+      "value": "Use when imposing a magnetic flux controlled by an external physical signal"
+    },
+    {
+      "block": "Controlled Heat Flow Rate Source",
+      "value": "Use when injecting a heat flow rate controlled by an external physical signal"
+    },
+    {
+      "block": "Controlled MMF Source",
+      "value": "Use when imposing an MMF controlled by an external physical signal in a magnetic circuit"
+    },
+    {
+      "block": "Controlled Temperature Source",
+      "value": "Use when imposing a temperature controlled by an external physical signal for thermal boundary conditions"
+    },
+    {
+      "block": "Controlled Voltage Source",
+      "value": "Use when driving a voltage whose magnitude is set by an external physical signal input"
+    },
+    {
+      "block": "Convective Heat Transfer",
+      "value": "Use when modeling heat exchange between a surface and a fluid via convection"
+    },
+    {
+      "block": "Current Sensor",
+      "value": "Use when measuring current flow through a branch and converting it to a physical signal for analysis"
+    },
+    {
+      "block": "Current-Controlled Current Source",
+      "value": "Use when generating an output current proportional to a sensed current elsewhere in the circuit"
+    },
+    {
+      "block": "Current-Controlled Voltage Source",
+      "value": "Use when generating an output voltage proportional to a sensed current for transimpedance modeling"
+    },
+    {
+      "block": "DC Current Source",
+      "value": "Use when supplying a constant current to a circuit for bias or steady-state excitation"
+    },
+    {
+      "block": "DC Voltage Source",
+      "value": "Use when supplying a constant voltage such as a battery or regulated power rail"
+    },
+    {
+      "block": "Diode",
+      "value": "Use when modeling unidirectional current flow such as rectification or reverse-polarity protection in power electronics"
+    },
+    {
+      "block": "Electrical Reference",
+      "value": "Use to establish a ground node as the zero-voltage reference in any electrical network"
+    },
+    {
+      "block": "Electromagnetic Converter",
+      "value": "Use when coupling electrical current to magnetic flux through a coil winding in a magnetic circuit"
+    },
+    {
+      "block": "Floating Reference",
+      "value": "Use when you need an isolated reference node that is not connected to the absolute electrical ground"
+    },
+    {
+      "block": "Flow Rate Sensor (2P)",
+      "value": "Use when measuring mass or volumetric flow rate in a two-phase fluid network"
+    },
+    {
+      "block": "Flow Rate Sensor (G)",
+      "value": "Use when measuring mass or volumetric flow rate in a gas network"
+    },
+    {
+      "block": "Flow Rate Sensor (IL)",
+      "value": "Use when measuring volumetric or mass flow rate in an isothermal liquid network"
+    },
+    {
+      "block": "Flow Rate Sensor (MA)",
+      "value": "Use when measuring mass or volumetric flow rate in a moist air network"
+    },
+    {
+      "block": "Flow Rate Sensor (TL)",
+      "value": "Use when measuring mass or volumetric flow rate in a thermal liquid network"
+    },
+    {
+      "block": "Flow Rate Source (2P)",
+      "value": "Use when imposing a specified mass flow rate boundary condition in a two-phase fluid network"
+    },
+    {
+      "block": "Flow Rate Source (G)",
+      "value": "Use when imposing a specified mass flow rate as a boundary condition in a gas network"
+    },
+    {
+      "block": "Flow Rate Source (IL)",
+      "value": "Use when imposing a specified flow rate as a boundary condition in an isothermal liquid network"
+    },
+    {
+      "block": "Flow Rate Source (MA)",
+      "value": "Use when imposing a specified mass flow rate boundary condition in a moist air network"
+    },
+    {
+      "block": "Flow Rate Source (TL)",
+      "value": "Use when imposing a specified mass flow rate boundary condition in a thermal liquid network"
+    },
+    {
+      "block": "Flow Resistance (2P)",
+      "value": "Use when modeling a generic pressure drop in a two-phase fluid flow path"
+    },
+    {
+      "block": "Flow Resistance (G)",
+      "value": "Use when modeling a generic pressure drop element in a gas flow path"
+    },
+    {
+      "block": "Flow Resistance (IL)",
+      "value": "Use when modeling a generic pressure drop in an isothermal liquid flow path"
+    },
+    {
+      "block": "Flow Resistance (MA)",
+      "value": "Use when modeling a generic pressure drop element in a moist air flow path"
+    },
+    {
+      "block": "Flow Resistance (TL)",
+      "value": "Use when modeling a generic pressure drop in a thermal liquid flow path"
+    },
+    {
+      "block": "Flux Sensor",
+      "value": "Use when measuring magnetic flux flowing through a branch of a magnetic circuit"
+    },
+    {
+      "block": "Flux Source",
+      "value": "Use when imposing a constant magnetic flux in a magnetic circuit branch"
+    },
+    {
+      "block": "Fundamental Reluctance",
+      "value": "Use when modeling a basic reluctance element with geometry-based parameterization for magnetic path segments"
+    },
+    {
+      "block": "Gas Properties (G)",
+      "value": "Use to define the working gas mixture properties for all gas domain blocks in the network"
+    },
+    {
+      "block": "Gear Box",
+      "value": "Use when modeling an ideal gear ratio between rotational and translational or two rotational shafts"
+    },
+    {
+      "block": "Gyrator",
+      "value": "Use when converting between voltage and current domains, such as simulating inductance with capacitors in filter design"
+    },
+    {
+      "block": "Heat Flow Rate Sensor",
+      "value": "Use when measuring heat flow rate through a thermal connection and converting it to a physical signal"
+    },
+    {
+      "block": "Heat Flow Rate Source",
+      "value": "Use when injecting a constant heat flow rate between two thermal nodes"
+    },
+    {
+      "block": "Ideal Angular Velocity Source",
+      "value": "Use when imposing a prescribed angular velocity between two rotational ports controlled by a physical signal"
+    },
+    {
+      "block": "Ideal Force Sensor",
+      "value": "Use when measuring force between two translational mechanical nodes without affecting motion"
+    },
+    {
+      "block": "Ideal Force Source",
+      "value": "Use when applying a prescribed force between two translational ports controlled by a physical signal"
+    },
+    {
+      "block": "Ideal Rotational Motion Sensor",
+      "value": "Use when measuring angular velocity or angle between two rotational nodes without loading the system"
+    },
+    {
+      "block": "Ideal Torque Sensor",
+      "value": "Use when measuring torque between two rotational mechanical nodes without affecting motion"
+    },
+    {
+      "block": "Ideal Torque Source",
+      "value": "Use when applying a prescribed torque between two rotational ports controlled by a physical signal"
+    },
+    {
+      "block": "Ideal Transformer",
+      "value": "Use when stepping voltage up or down with ideal turns ratio for power transmission or isolation circuits"
+    },
+    {
+      "block": "Ideal Translational Motion Sensor",
+      "value": "Use when measuring velocity or displacement between two translational nodes without loading the system"
+    },
+    {
+      "block": "Ideal Translational Velocity Source",
+      "value": "Use when imposing a prescribed translational velocity between two ports controlled by a physical signal"
+    },
+    {
+      "block": "Inductor",
+      "value": "Use when modeling energy storage in a magnetic field or smoothing current ripple in power supplies"
+    },
+    {
+      "block": "Inertia",
+      "value": "Use when modeling rotational kinetic energy storage due to mass moment of inertia of a spinning body"
+    },
+    {
+      "block": "Inertia (AB)",
+      "value": "Use when modeling rotational inertia in a position-aware across-based rotational network"
+    },
+    {
+      "block": "Infinite Flow Resistance (2P)",
+      "value": "Use to block two-phase fluid flow between ports while maintaining connection topology"
+    },
+    {
+      "block": "Infinite Flow Resistance (G)",
+      "value": "Use to block gas flow between two ports while maintaining the thermal connection"
+    },
+    {
+      "block": "Infinite Flow Resistance (IL)",
+      "value": "Use to block liquid flow between two isothermal liquid ports"
+    },
+    {
+      "block": "Infinite Flow Resistance (MA)",
+      "value": "Use to block moist air flow between two ports while maintaining the connection topology"
+    },
+    {
+      "block": "Infinite Flow Resistance (TL)",
+      "value": "Use to block thermal liquid flow between two ports while maintaining connection topology"
+    },
+    {
+      "block": "Infinite Resistance",
+      "value": "Use when you need to electrically isolate two nodes while maintaining the physical connection topology"
+    },
+    {
+      "block": "Infinite Thermal Resistance",
+      "value": "Use to thermally isolate two nodes while keeping them connected in the model topology"
+    },
+    {
+      "block": "Interface (AB-Rotational)",
+      "value": "Use when connecting across-based rotational ports to standard one-port rotational mechanical ports"
+    },
+    {
+      "block": "Interface (PB-Translational)",
+      "value": "Use when connecting position-based translational ports to standard one-port translational mechanical ports"
+    },
+    {
+      "block": "Isothermal Liquid Properties (IL)",
+      "value": "Use to define the working fluid properties for all isothermal liquid domain blocks"
+    },
+    {
+      "block": "Laminar Leakage (IL)",
+      "value": "Use when modeling parasitic leakage flow between two fluid chambers through a small clearance gap"
+    },
+    {
+      "block": "Lever",
+      "value": "Use when modeling a rigid lever that transforms translational force and displacement by arm ratio"
+    },
+    {
+      "block": "Liquid Properties Sensor (IL)",
+      "value": "Use when measuring fluid density and bulk modulus at a node in an isothermal liquid system"
+    },
+    {
+      "block": "Local Restriction (2P)",
+      "value": "Use when modeling an orifice or expansion valve in a two-phase fluid system"
+    },
+    {
+      "block": "Local Restriction (G)",
+      "value": "Use when modeling a sudden area change such as an orifice or nozzle in a gas system"
+    },
+    {
+      "block": "Local Restriction (IL)",
+      "value": "Use when modeling a sharp-edged orifice or sudden area change in an isothermal liquid system"
+    },
+    {
+      "block": "Local Restriction (MA)",
+      "value": "Use when modeling a sudden area change or damper in a moist air duct system"
+    },
+    {
+      "block": "Local Restriction (TL)",
+      "value": "Use when modeling an orifice or area change in a thermal liquid system with heat exchange"
+    },
+    {
+      "block": "MMF Sensor",
+      "value": "Use when measuring magnetomotive force across two nodes in a magnetic circuit"
+    },
+    {
+      "block": "MMF Source",
+      "value": "Use when imposing a constant magnetomotive force in a magnetic circuit"
+    },
+    {
+      "block": "Mach Number Sensor (G)",
+      "value": "Use when measuring Mach number to detect compressibility effects or choking conditions"
+    },
+    {
+      "block": "Magnetic Reference",
+      "value": "Use to establish the zero-MMF reference node in a magnetic circuit"
+    },
+    {
+      "block": "Mass",
+      "value": "Use when modeling translational kinetic energy storage due to a body with inertial mass"
+    },
+    {
+      "block": "Mass (PB)",
+      "value": "Use when modeling translational inertia in a position-based translational network"
+    },
+    {
+      "block": "Measurement Selector (MA)",
+      "value": "Use when selecting which measurement outputs to expose from a moist air sensor block"
+    },
+    {
+      "block": "Mechanical Rotational Reference",
+      "value": "Use to define a fixed rotational frame as the zero-velocity ground reference for rotational networks"
+    },
+    {
+      "block": "Mechanical Translational Reference",
+      "value": "Use to define a fixed translational frame as the zero-velocity ground reference"
+    },
+    {
+      "block": "Memristor",
+      "value": "Use when modeling a resistance that depends on charge history for neuromorphic computing or nonlinear memory circuits"
+    },
+    {
+      "block": "Moist Air Properties (MA)",
+      "value": "Use to define the moist air mixture properties for all moist air domain blocks in the network"
+    },
+    {
+      "block": "Moisture & Trace Gas Sensor (MA)",
+      "value": "Use when measuring humidity ratio, relative humidity, or trace gas concentration at a moist air node"
+    },
+    {
+      "block": "Moisture Separator (MA)",
+      "value": "Use when modeling a device that removes condensed moisture from a moist air stream"
+    },
+    {
+      "block": "Moisture Source (MA)",
+      "value": "Use when injecting or removing moisture mass flow at a node in a moist air system"
+    },
+    {
+      "block": "Mutual Inductor",
+      "value": "Use when modeling magnetically coupled inductors such as transformers with leakage or coupled filter stages"
+    },
+    {
+      "block": "Op-Amp",
+      "value": "Use when modeling an ideal operational amplifier for analog signal conditioning, filtering, or amplification circuits"
+    },
+    {
+      "block": "Open Circuit",
+      "value": "Use to cap an unused electrical port and prevent unconnected-port warnings during model validation"
+    },
+    {
+      "block": "PS Abs",
+      "value": "Use when computing the absolute value of a physical signal to ensure non-negative output"
+    },
+    {
+      "block": "PS Add",
+      "value": "Use when summing two physical signals to combine contributions from multiple sources"
+    },
+    {
+      "block": "PS Asynchronous Sample & Hold",
+      "value": "Use when capturing and holding a physical signal value triggered by an asynchronous event"
+    },
+    {
+      "block": "PS Bias",
+      "value": "Use when adding a constant offset to a physical signal"
+    },
+    {
+      "block": "PS Ceil",
+      "value": "Use when rounding a physical signal up to the nearest integer"
+    },
+    {
+      "block": "PS Concatenate",
+      "value": "Use when joining multiple scalar physical signals into a single vector signal"
+    },
+    {
+      "block": "PS Constant",
+      "value": "Use when generating a constant-valued physical signal as an input to other Simscape blocks"
+    },
+    {
+      "block": "PS Constant Delay",
+      "value": "Use when delaying a physical signal by a fixed time interval"
+    },
+    {
+      "block": "PS Constant Offset Estimator",
+      "value": "Use when estimating the DC offset component of a periodic physical signal"
+    },
+    {
+      "block": "PS Counter",
+      "value": "Use when generating an incrementing integer physical signal for counting events or cycles"
+    },
+    {
+      "block": "PS Dead Zone",
+      "value": "Use when suppressing small signal values within a specified band around zero"
+    },
+    {
+      "block": "PS Divide",
+      "value": "Use when computing the ratio of two physical signals"
+    },
+    {
+      "block": "PS Dot Product",
+      "value": "Use when computing the inner product of two vector physical signals"
+    },
+    {
+      "block": "PS Fix",
+      "value": "Use when rounding a physical signal toward zero to the nearest integer"
+    },
+    {
+      "block": "PS Floor",
+      "value": "Use when rounding a physical signal down to the nearest integer"
+    },
+    {
+      "block": "PS Gain",
+      "value": "Use when scaling a physical signal by a constant multiplier"
+    },
+    {
+      "block": "PS Harmonic Estimator (Amplitude, Phase)",
+      "value": "Use when extracting harmonic amplitude and phase from a periodic physical signal"
+    },
+    {
+      "block": "PS Harmonic Estimator (Real, Imaginary)",
+      "value": "Use when extracting real and imaginary Fourier components from a periodic physical signal"
+    },
+    {
+      "block": "PS Integrator",
+      "value": "Use when computing the time integral of a physical signal for accumulation or state tracking"
+    },
+    {
+      "block": "PS Lookup Table (1D)",
+      "value": "Use when mapping a physical signal through a one-dimensional interpolation table"
+    },
+    {
+      "block": "PS Lookup Table (2D)",
+      "value": "Use when mapping two physical signals through a two-dimensional interpolation table"
+    },
+    {
+      "block": "PS Lookup Table (3D)",
+      "value": "Use when mapping three physical signals through a three-dimensional interpolation table"
+    },
+    {
+      "block": "PS Lookup Table (4D)",
+      "value": "Use when mapping four physical signals through a four-dimensional interpolation table"
+    },
+    {
+      "block": "PS Math Function",
+      "value": "Use when applying transcendental math functions like exp, log, sqrt, or power to a physical signal"
+    },
+    {
+      "block": "PS Max",
+      "value": "Use when selecting the larger of two physical signals at each time step"
+    },
+    {
+      "block": "PS Min",
+      "value": "Use when selecting the smaller of two physical signals at each time step"
+    },
+    {
+      "block": "PS Product",
+      "value": "Use when multiplying two physical signals element-wise"
+    },
+    {
+      "block": "PS RMS Estimator",
+      "value": "Use when estimating the root-mean-square value of a periodic physical signal"
+    },
+    {
+      "block": "PS Ramp",
+      "value": "Use when generating a linearly increasing physical signal starting at a specified time"
+    },
+    {
+      "block": "PS Random Number",
+      "value": "Use when generating a normally distributed random physical signal for noise injection"
+    },
+    {
+      "block": "PS Repeating Sequence",
+      "value": "Use when generating a periodic physical signal defined by time-value pairs"
+    },
+    {
+      "block": "PS Round",
+      "value": "Use when rounding a physical signal to the nearest integer"
+    },
+    {
+      "block": "PS Saturation",
+      "value": "Use when clamping a physical signal to upper and lower bounds to prevent values outside a valid range"
+    },
+    {
+      "block": "PS Scattered Lookup Table (2D)",
+      "value": "Use when interpolating from irregularly spaced 2-D data points in the physical signal domain"
+    },
+    {
+      "block": "PS Scattered Lookup Table (3D)",
+      "value": "Use when interpolating from irregularly spaced 3-D data points in the physical signal domain"
+    },
+    {
+      "block": "PS Selector",
+      "value": "Use when extracting specific elements from a vector physical signal by index"
+    },
+    {
+      "block": "PS Sign",
+      "value": "Use when extracting the sign of a physical signal as +1, 0, or -1"
+    },
+    {
+      "block": "PS Signal Specification",
+      "value": "Use when explicitly specifying the size and initial value of a physical signal at a connection point"
+    },
+    {
+      "block": "PS Sine Wave",
+      "value": "Use when generating a sinusoidal physical signal at a specified amplitude and frequency"
+    },
+    {
+      "block": "PS State-Space",
+      "value": "Use when implementing a linear state-space model in the physical signal domain for control or filtering"
+    },
+    {
+      "block": "PS Step",
+      "value": "Use when generating a step change in a physical signal at a specified time for transient excitation"
+    },
+    {
+      "block": "PS Subtract",
+      "value": "Use when computing the difference between two physical signals"
+    },
+    {
+      "block": "PS Sum of Elements",
+      "value": "Use when summing all elements of a vector physical signal into a scalar"
+    },
+    {
+      "block": "PS Switch",
+      "value": "Use when selecting between two physical signals based on a threshold condition"
+    },
+    {
+      "block": "PS Terminator",
+      "value": "Use to terminate an unused physical signal output port to avoid unconnected-line warnings"
+    },
+    {
+      "block": "PS Three-Element Demux",
+      "value": "Use when splitting a three-element vector physical signal into three separate scalar signals"
+    },
+    {
+      "block": "PS Transfer Function",
+      "value": "Use when implementing a linear transfer function in the physical signal domain for filtering or compensation"
+    },
+    {
+      "block": "PS Uniform Random Number",
+      "value": "Use when generating a uniformly distributed random physical signal within specified bounds"
+    },
+    {
+      "block": "PS Variable Delay",
+      "value": "Use when delaying a physical signal by a time interval that varies during simulation"
+    },
+    {
+      "block": "PS Vector Norm",
+      "value": "Use when computing the Euclidean norm of a vector physical signal"
+    },
+    {
+      "block": "Perfect Insulator",
+      "value": "Use to cap an unused thermal port with zero heat flow for topology completeness"
+    },
+    {
+      "block": "Permanent Magnet",
+      "value": "Use when modeling a permanent magnet as a flux source with demagnetization characteristics"
+    },
+    {
+      "block": "Phase-Change Thermal Mass",
+      "value": "Use when modeling thermal energy storage in a material that undergoes phase transition with latent heat"
+    },
+    {
+      "block": "Pipe (2P)",
+      "value": "Use when modeling distributed pressure and thermal losses along a two-phase fluid pipe"
+    },
+    {
+      "block": "Pipe (G)",
+      "value": "Use when modeling distributed pressure loss and thermal effects along a gas pipe segment"
+    },
+    {
+      "block": "Pipe (IL)",
+      "value": "Use when modeling distributed viscous losses along a pipe in an isothermal liquid system"
+    },
+    {
+      "block": "Pipe (MA)",
+      "value": "Use when modeling distributed pressure loss and heat transfer along a moist air duct"
+    },
+    {
+      "block": "Pipe (TL)",
+      "value": "Use when modeling distributed pressure loss and wall heat transfer along a thermal liquid pipe"
+    },
+    {
+      "block": "Pressure & Temperature Sensor (G)",
+      "value": "Use when measuring pressure and temperature at a node in a gas network"
+    },
+    {
+      "block": "Pressure & Temperature Sensor (MA)",
+      "value": "Use when measuring pressure and temperature at a node in a moist air network"
+    },
+    {
+      "block": "Pressure & Temperature Sensor (TL)",
+      "value": "Use when measuring pressure and temperature at a node in a thermal liquid network"
+    },
+    {
+      "block": "Pressure Sensor (IL)",
+      "value": "Use when measuring gauge or absolute pressure at a node in an isothermal liquid network"
+    },
+    {
+      "block": "Pressure Source (2P)",
+      "value": "Use when imposing a specified pressure differential in a two-phase fluid network"
+    },
+    {
+      "block": "Pressure Source (G)",
+      "value": "Use when imposing a specified pressure differential as a boundary condition in a gas network"
+    },
+    {
+      "block": "Pressure Source (IL)",
+      "value": "Use when imposing a specified pressure differential in an isothermal liquid network"
+    },
+    {
+      "block": "Pressure Source (MA)",
+      "value": "Use when imposing a specified pressure differential in a moist air network"
+    },
+    {
+      "block": "Pressure Source (TL)",
+      "value": "Use when imposing a specified pressure differential in a thermal liquid network"
+    },
+    {
+      "block": "Pressure, Temperature & Internal Energy Sensor (2P)",
+      "value": "Use when measuring pressure, temperature, and internal energy at a two-phase fluid node"
+    },
+    {
+      "block": "Radiative Heat Transfer",
+      "value": "Use when modeling heat exchange between surfaces via thermal radiation following Stefan-Boltzmann law"
+    },
+    {
+      "block": "Reluctance",
+      "value": "Use when modeling resistance to magnetic flux in a portion of a magnetic circuit"
+    },
+    {
+      "block": "Reluctance Force Actuator",
+      "value": "Use when computing the force or torque produced by a variable-gap reluctance element"
+    },
+    {
+      "block": "Reservoir (2P)",
+      "value": "Use when modeling a large two-phase fluid volume at fixed boundary conditions"
+    },
+    {
+      "block": "Reservoir (G)",
+      "value": "Use when modeling a large gas volume at fixed boundary conditions such as atmospheric pressure"
+    },
+    {
+      "block": "Reservoir (IL)",
+      "value": "Use when modeling a tank or sump at fixed pressure boundary conditions for isothermal liquid"
+    },
+    {
+      "block": "Reservoir (MA)",
+      "value": "Use when modeling a large open atmosphere or fixed boundary condition for moist air"
+    },
+    {
+      "block": "Reservoir (TL)",
+      "value": "Use when modeling a large liquid volume at fixed temperature and pressure boundary conditions"
+    },
+    {
+      "block": "Resistor",
+      "value": "Use when modeling ohmic losses, voltage division, or current limiting in any electrical circuit"
+    },
+    {
+      "block": "Rotational Damper",
+      "value": "Use when modeling viscous friction that produces torque proportional to angular velocity difference"
+    },
+    {
+      "block": "Rotational Damper (AB)",
+      "value": "Use when modeling viscous rotational damping in an across-based rotational network"
+    },
+    {
+      "block": "Rotational Electromechanical Converter",
+      "value": "Use when coupling electrical and rotational mechanical domains such as in DC motor or generator models"
+    },
+    {
+      "block": "Rotational Free End",
+      "value": "Use to terminate an unused rotational port with zero torque, representing an unconstrained free end"
+    },
+    {
+      "block": "Rotational Friction",
+      "value": "Use when modeling Coulomb and viscous rotational friction with stick-slip transitions"
+    },
+    {
+      "block": "Rotational Hard Stop",
+      "value": "Use when modeling angular travel limits that produce contact torque at the end of rotational range"
+    },
+    {
+      "block": "Rotational Inerter",
+      "value": "Use when modeling a two-terminal rotational inertance device that resists relative angular acceleration"
+    },
+    {
+      "block": "Rotational Mechanical Converter (2P)",
+      "value": "Use when converting two-phase fluid pressure to rotational torque in a turbine or expander"
+    },
+    {
+      "block": "Rotational Mechanical Converter (G)",
+      "value": "Use when converting gas pressure into rotational torque, such as a gas turbine or pneumatic motor"
+    },
+    {
+      "block": "Rotational Mechanical Converter (IL)",
+      "value": "Use when converting hydraulic pressure to rotational torque, such as a hydraulic motor"
+    },
+    {
+      "block": "Rotational Mechanical Converter (MA)",
+      "value": "Use when converting moist air pressure to rotational torque in a pneumatic turbine model"
+    },
+    {
+      "block": "Rotational Mechanical Converter (TL)",
+      "value": "Use when converting thermal liquid pressure to rotational torque with thermal effects"
+    },
+    {
+      "block": "Rotational Multibody Interface",
+      "value": "Use when connecting a 1-D rotational Simscape network to a Simscape Multibody joint"
+    },
+    {
+      "block": "Rotational Spring",
+      "value": "Use when modeling a torsional spring that produces torque proportional to angular displacement difference"
+    },
+    {
+      "block": "Rotational Spring (AB)",
+      "value": "Use when modeling a torsional spring in an across-based rotational network"
+    },
+    {
+      "block": "Rotational World (AB)",
+      "value": "Use to define the absolute stationary reference frame for across-based rotational networks"
+    },
+    {
+      "block": "Saturation Properties Sensor (2P)",
+      "value": "Use when measuring saturation pressure and temperature to determine phase boundaries"
+    },
+    {
+      "block": "Slider-Crank",
+      "value": "Use when converting rotational motion to reciprocating translational motion via a crank mechanism"
+    },
+    {
+      "block": "Switch",
+      "value": "Use when modeling an ideal on-off switching element controlled by an external physical signal"
+    },
+    {
+      "block": "Temperature Sensor",
+      "value": "Use when measuring temperature difference across two thermal nodes and converting it to a physical signal"
+    },
+    {
+      "block": "Temperature Source",
+      "value": "Use when imposing a constant temperature difference between two thermal nodes"
+    },
+    {
+      "block": "Thermal Liquid Settings (TL)",
+      "value": "Use to define the working fluid properties for all thermal liquid domain blocks in the network"
+    },
+    {
+      "block": "Thermal Mass",
+      "value": "Use when modeling thermal energy storage in a body with specified heat capacity"
+    },
+    {
+      "block": "Thermal Reference",
+      "value": "Use to establish absolute zero temperature as the thermal ground reference node"
+    },
+    {
+      "block": "Thermal Resistance",
+      "value": "Use when modeling a generic thermal resistance between two temperature nodes"
+    },
+    {
+      "block": "Thermal Resistor",
+      "value": "Use when modeling thermal effects of electrical components by coupling an electrical port to a thermal port"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (2P)",
+      "value": "Use when measuring density, enthalpy, or entropy at a node in a two-phase fluid system"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (G)",
+      "value": "Use when measuring density, enthalpy, or entropy at a node in a gas system"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (MA)",
+      "value": "Use when measuring density, enthalpy, or entropy at a node in a moist air system"
+    },
+    {
+      "block": "Thermodynamic Properties Sensor (TL)",
+      "value": "Use when measuring density, enthalpy, or specific heat at a node in a thermal liquid system"
+    },
+    {
+      "block": "Trace Gas Source (MA)",
+      "value": "Use when injecting or removing trace gas mass flow at a node in a moist air system"
+    },
+    {
+      "block": "Translational Damper",
+      "value": "Use when modeling a viscous damper that produces force proportional to velocity difference"
+    },
+    {
+      "block": "Translational Damper (PB)",
+      "value": "Use when modeling viscous damping in a position-based translational network"
+    },
+    {
+      "block": "Translational Electromechanical Converter",
+      "value": "Use when coupling electrical and translational mechanical domains such as in solenoid or voice-coil actuator models"
+    },
+    {
+      "block": "Translational Free End",
+      "value": "Use to terminate an unused translational port with zero force, representing an unconstrained free end"
+    },
+    {
+      "block": "Translational Friction",
+      "value": "Use when modeling Coulomb and viscous translational friction with stick-slip behavior"
+    },
+    {
+      "block": "Translational Hard Stop",
+      "value": "Use when modeling linear travel limits that produce contact force at the end of translational range"
+    },
+    {
+      "block": "Translational Inerter",
+      "value": "Use when modeling a two-terminal translational inertance device that resists relative linear acceleration"
+    },
+    {
+      "block": "Translational Mechanical Converter (2P)",
+      "value": "Use when converting two-phase fluid pressure to translational force in a piston compressor"
+    },
+    {
+      "block": "Translational Mechanical Converter (G)",
+      "value": "Use when converting gas pressure into translational force, such as a pneumatic cylinder"
+    },
+    {
+      "block": "Translational Mechanical Converter (IL)",
+      "value": "Use when converting hydraulic pressure to translational force, such as a hydraulic cylinder"
+    },
+    {
+      "block": "Translational Mechanical Converter (IL-PB)",
+      "value": "Use when converting isothermal liquid pressure to translational force with position-based mechanical ports"
+    },
+    {
+      "block": "Translational Mechanical Converter (MA)",
+      "value": "Use when converting moist air pressure to translational force in a pneumatic actuator"
+    },
+    {
+      "block": "Translational Mechanical Converter (TL)",
+      "value": "Use when converting thermal liquid pressure to translational force with thermal effects"
+    },
+    {
+      "block": "Translational Multibody Interface",
+      "value": "Use when connecting a 1-D translational Simscape network to a Simscape Multibody joint"
+    },
+    {
+      "block": "Translational Spring",
+      "value": "Use when modeling a linear spring that produces force proportional to displacement difference"
+    },
+    {
+      "block": "Translational Spring (PB)",
+      "value": "Use when modeling a linear spring in a position-based translational network"
+    },
+    {
+      "block": "Translational World (PB)",
+      "value": "Use to define the absolute stationary reference frame for position-based translational networks"
+    },
+    {
+      "block": "Transport Properties Sensor (2P)",
+      "value": "Use when measuring viscosity and thermal conductivity in a two-phase fluid at a node"
+    },
+    {
+      "block": "Transport Properties Sensor (G)",
+      "value": "Use when measuring viscosity and thermal conductivity of the gas at a node"
+    },
+    {
+      "block": "Transport Properties Sensor (MA)",
+      "value": "Use when measuring viscosity and thermal conductivity of moist air at a node"
+    },
+    {
+      "block": "Transport Properties Sensor (TL)",
+      "value": "Use when measuring viscosity and thermal conductivity of a thermal liquid at a node"
+    },
+    {
+      "block": "Two-Phase Fluid Properties (2P)",
+      "value": "Use to define the working fluid properties for all two-phase fluid domain blocks in the network"
+    },
+    {
+      "block": "Vapor Quality Sensor (2P)",
+      "value": "Use when measuring the vapor mass fraction to determine the liquid-vapor mixture state"
+    },
+    {
+      "block": "Variable Gap Capacitor",
+      "value": "Use when modeling a capacitor whose capacitance changes with mechanical displacement, such as MEMS sensors"
+    },
+    {
+      "block": "Variable Reluctance",
+      "value": "Use when the reluctance changes with displacement, such as in variable-gap magnetic actuators"
+    },
+    {
+      "block": "Variable Resistor",
+      "value": "Use when the resistance value is controlled by an external physical signal for potentiometers or variable loads"
+    },
+    {
+      "block": "Variable Thermal Resistance",
+      "value": "Use when the thermal resistance is controlled by an external physical signal for active thermal management"
+    },
+    {
+      "block": "Voltage Sensor",
+      "value": "Use when measuring potential difference across two nodes and converting it to a physical signal"
+    },
+    {
+      "block": "Voltage-Controlled Current Source",
+      "value": "Use when generating an output current proportional to a sensed voltage for transconductance modeling"
+    },
+    {
+      "block": "Voltage-Controlled Voltage Source",
+      "value": "Use when generating an output voltage proportional to a sensed voltage for dependent source modeling"
+    },
+    {
+      "block": "Wheel and Axle",
+      "value": "Use when converting between rotational and translational motion through a wheel rolling without slip"
+    },
+    {
+      "block": "Wheel and Axle (AB-PB)",
+      "value": "Use when converting across-based rotational motion to position-based translational motion through a wheel"
+    }
+  ]
+}

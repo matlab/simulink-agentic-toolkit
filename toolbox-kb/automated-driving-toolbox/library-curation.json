@@ -1,0 +1,408 @@
+{
+  "commonBlocks": [
+    "Scenario Reader",
+    "Radar Detection Generator",
+    "Vision Detection Generator",
+    "Lidar Point Cloud Generator",
+    "Multi-Object Tracker",
+    "Lateral Controller Stanley",
+    "Longitudinal Controller Stanley",
+    "Bicycle Model - Velocity Input",
+    "Simulation 3D Scene Configuration",
+    "Simulation 3D Camera",
+    "Detection Concatenation"
+  ],
+  "categories": [
+    {
+      "name": "scenario-simulation",
+      "description": "Driving scenario generation, playback, and actor management",
+      "keywords": [
+        "scenario",
+        "reader",
+        "actor",
+        "road",
+        "lane"
+      ]
+    },
+    {
+      "name": "sensor-simulation",
+      "description": "Synthetic sensor models for lidar, radar, camera, and ultrasonic",
+      "keywords": [
+        "sensor",
+        "radar",
+        "lidar",
+        "camera",
+        "detection"
+      ]
+    },
+    {
+      "name": "vehicle-models",
+      "description": "Vehicle dynamics models for lateral and longitudinal motion",
+      "keywords": [
+        "bicycle",
+        "vehicle",
+        "dynamics",
+        "lateral",
+        "model"
+      ]
+    },
+    {
+      "name": "3d-simulation",
+      "description": "Unreal Engine 3D environment visualization and high-fidelity sensing",
+      "keywords": [
+        "3d",
+        "simulation",
+        "unreal",
+        "scene",
+        "rendering"
+      ]
+    },
+    {
+      "name": "vehicle-control",
+      "description": "Lateral and longitudinal vehicle motion controllers",
+      "keywords": [
+        "controller",
+        "stanley",
+        "steering",
+        "throttle",
+        "brake"
+      ]
+    },
+    {
+      "name": "perception",
+      "description": "Object detection, tracking, and multi-sensor fusion",
+      "keywords": [
+        "tracker",
+        "detection",
+        "fusion",
+        "concatenation",
+        "tracking"
+      ]
+    },
+    {
+      "name": "path-planning",
+      "description": "Path smoothing, velocity profiling, and trajectory generation",
+      "keywords": [
+        "path",
+        "smoother",
+        "velocity",
+        "profiler",
+        "trajectory"
+      ]
+    },
+    {
+      "name": "roadrunner",
+      "description": "RoadRunner co-simulation for high-fidelity road environments",
+      "keywords": [
+        "roadrunner",
+        "cosimulation",
+        "scenario",
+        "writer",
+        "reader"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Demos, coordinate transforms, and toolbox information",
+      "keywords": [
+        "demo",
+        "info",
+        "transform",
+        "coordinate",
+        "frame"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Bicycle Model - Force Input",
+      "value": "vehicle-models"
+    },
+    {
+      "block": "Bicycle Model - Velocity Input",
+      "value": "vehicle-models"
+    },
+    {
+      "block": "Cuboid To 3D Simulation",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Demos",
+      "value": "utilities"
+    },
+    {
+      "block": "Detection Concatenation",
+      "value": "perception"
+    },
+    {
+      "block": "Driving Radar Data Generator",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "INS",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "Ideal Ground Truth Sensor",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "Info",
+      "value": "utilities"
+    },
+    {
+      "block": "Lateral Controller Stanley",
+      "value": "vehicle-control"
+    },
+    {
+      "block": "Lidar Point Cloud Generator",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "Longitudinal Controller Stanley",
+      "value": "vehicle-control"
+    },
+    {
+      "block": "Multi-Object Tracker",
+      "value": "perception"
+    },
+    {
+      "block": "Path Smoother Spline",
+      "value": "path-planning"
+    },
+    {
+      "block": "Radar Detection Generator",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "RoadRunner Scenario",
+      "value": "roadrunner"
+    },
+    {
+      "block": "RoadRunner Scenario Reader",
+      "value": "roadrunner"
+    },
+    {
+      "block": "RoadRunner Scenario Writer",
+      "value": "roadrunner"
+    },
+    {
+      "block": "Scenario Reader",
+      "value": "scenario-simulation"
+    },
+    {
+      "block": "Simulation 3D Bicyclist",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Fisheye Camera",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Pedestrian",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Probabilistic Radar",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Probabilistic Radar Configuration",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Array",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Sensor",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Vehicle with Ground Following",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Simulation 3D Vision Detection Generator",
+      "value": "3d-simulation"
+    },
+    {
+      "block": "Ultrasonic Detection Generator",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "Vehicle To World",
+      "value": "utilities"
+    },
+    {
+      "block": "Velocity Profiler",
+      "value": "path-planning"
+    },
+    {
+      "block": "Vision Detection Generator",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "World To Vehicle",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Bicycle Model - Force Input",
+      "value": "Simulate lateral vehicle dynamics using a bicycle model driven by tire forces — use for controller development where longitudinal force and steering force are computed externally"
+    },
+    {
+      "block": "Bicycle Model - Velocity Input",
+      "value": "Simulate lateral vehicle dynamics using a bicycle model driven by velocity and steering angle — use for path-following controller testing where speed is a known input"
+    },
+    {
+      "block": "Cuboid To 3D Simulation",
+      "value": "Convert cuboid actor poses from a driving scenario into 3D simulation coordinates — use to bridge scenario-based testing with Unreal Engine visualization"
+    },
+    {
+      "block": "Demos",
+      "value": "Access demonstration models and examples for automated driving workflows — use as reference implementations for sensor fusion, planning, and control pipelines"
+    },
+    {
+      "block": "Detection Concatenation",
+      "value": "Merge multiple detection arrays from different sensors into a single detection list — use before feeding multi-sensor detections into a tracker or fusion algorithm"
+    },
+    {
+      "block": "Driving Radar Data Generator",
+      "value": "Generate synthetic radar detections with range, velocity, and angle from a driving scenario — use to produce realistic radar returns including multi-path and clutter for sensor fusion testing"
+    },
+    {
+      "block": "INS",
+      "value": "Simulate an inertial navigation system providing position, velocity, and orientation measurements with configurable noise — use for localization algorithm testing with realistic IMU/GPS sensor models"
+    },
+    {
+      "block": "Ideal Ground Truth Sensor",
+      "value": "Output perfect actor positions and velocities from the scenario without sensor noise — use as a baseline reference for evaluating perception algorithm accuracy"
+    },
+    {
+      "block": "Info",
+      "value": "Display Automated Driving Toolbox version and configuration information — use to verify toolbox installation and compatibility"
+    },
+    {
+      "block": "Lateral Controller Stanley",
+      "value": "Compute steering angle using the Stanley lateral control method — use for path-following where the controller minimizes cross-track error and heading error relative to a reference path"
+    },
+    {
+      "block": "Lidar Point Cloud Generator",
+      "value": "Generate synthetic lidar point cloud data from a driving scenario — use to simulate lidar returns including ground plane, obstacles, and ego vehicle occlusion for perception algorithm testing"
+    },
+    {
+      "block": "Longitudinal Controller Stanley",
+      "value": "Compute throttle and brake commands to track a reference speed profile — use with the lateral Stanley controller to achieve combined speed and path tracking for autonomous driving"
+    },
+    {
+      "block": "Multi-Object Tracker",
+      "value": "Track multiple objects over time using detections from one or more sensors — use for persistent object tracking with data association, track management, and state estimation"
+    },
+    {
+      "block": "Path Smoother Spline",
+      "value": "Smooth a coarse waypoint path into a continuous spline trajectory — use to generate drivable paths with bounded curvature from discrete planner outputs"
+    },
+    {
+      "block": "Radar Detection Generator",
+      "value": "Generate synthetic radar object detections from scenario actors — use to test tracking and fusion algorithms with configurable detection probability, false alarms, and range/angle resolution"
+    },
+    {
+      "block": "RoadRunner Scenario",
+      "value": "Co-simulate with a RoadRunner scenario providing high-fidelity road networks and traffic — use when the driving environment requires detailed road geometry, signage, and traffic signals from RoadRunner"
+    },
+    {
+      "block": "RoadRunner Scenario Reader",
+      "value": "Read actor poses and road data from a running RoadRunner co-simulation — use to import real-time traffic participant states into Simulink for closed-loop testing"
+    },
+    {
+      "block": "RoadRunner Scenario Writer",
+      "value": "Send ego vehicle state back to a RoadRunner co-simulation — use to close the loop by updating the ego pose in RoadRunner based on Simulink controller outputs"
+    },
+    {
+      "block": "Scenario Reader",
+      "value": "Read and play back a pre-recorded driving scenario at simulation time — use to feed actor trajectories, road boundaries, and lane markings into a Simulink model from a drivingScenario object"
+    },
+    {
+      "block": "Simulation 3D Bicyclist",
+      "value": "Place and animate a bicyclist actor in the 3D simulation environment — use to create vulnerable road user scenarios for ADAS testing in the Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "Capture RGB images from a virtual camera in the 3D simulation environment — use to generate synthetic camera data with configurable intrinsics for perception algorithm validation"
+    },
+    {
+      "block": "Simulation 3D Fisheye Camera",
+      "value": "Capture wide-angle fisheye images from a virtual camera in the 3D environment — use to simulate surround-view or parking camera systems with barrel distortion"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "Generate lidar point clouds from the 3D simulation environment — use for high-fidelity lidar simulation with ray-traced returns from photorealistic scene geometry"
+    },
+    {
+      "block": "Simulation 3D Pedestrian",
+      "value": "Place and animate a pedestrian actor in the 3D simulation environment — use to create pedestrian crossing or jaywalking scenarios for AEB and path planning testing"
+    },
+    {
+      "block": "Simulation 3D Probabilistic Radar",
+      "value": "Generate probabilistic radar detections from the 3D simulation environment — use for realistic radar simulation with detection probability models and multi-target scenarios"
+    },
+    {
+      "block": "Simulation 3D Probabilistic Radar Configuration",
+      "value": "Configure parameters for the 3D probabilistic radar sensor — use to set detection profiles, false alarm rates, and angular resolution before running 3D radar simulations"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "Configure the Unreal Engine 3D simulation scene including weather, lighting, and road surface — use to set up environmental conditions for sensor robustness testing across rain, fog, and night scenarios"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Array",
+      "value": "Simulate an array of ultrasonic sensors in the 3D environment — use to model multiple parking sensors simultaneously for surround detection in low-speed scenarios"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Sensor",
+      "value": "Simulate a single ultrasonic proximity sensor in the 3D environment — use to generate range measurements from nearby objects for parking assist algorithm development"
+    },
+    {
+      "block": "Simulation 3D Vehicle with Ground Following",
+      "value": "Place and drive a vehicle in the 3D environment with terrain-following suspension — use to visualize ego or traffic vehicles in the Unreal Engine scene with realistic body motion"
+    },
+    {
+      "block": "Simulation 3D Vision Detection Generator",
+      "value": "Generate vision detections from rendered 3D camera images in the Unreal Engine environment — use for high-fidelity vision testing with photorealistic rendering and lighting effects"
+    },
+    {
+      "block": "Ultrasonic Detection Generator",
+      "value": "Generate synthetic ultrasonic proximity detections — use to simulate short-range parking sensors for low-speed maneuvering and obstacle avoidance algorithm testing"
+    },
+    {
+      "block": "Vehicle To World",
+      "value": "Transform coordinates from the ego vehicle body frame to the world frame — use to convert locally-computed trajectories or detections into global coordinates for visualization or map matching"
+    },
+    {
+      "block": "Velocity Profiler",
+      "value": "Compute a feasible velocity profile along a planned path considering acceleration and jerk limits — use to generate comfortable and safe speed trajectories for longitudinal control"
+    },
+    {
+      "block": "Vision Detection Generator",
+      "value": "Generate synthetic camera detections of lanes, vehicles, and objects from a driving scenario — use to test vision-based perception pipelines with configurable detection accuracy and camera intrinsics"
+    },
+    {
+      "block": "World To Vehicle",
+      "value": "Transform coordinates from the world frame to the ego vehicle body frame — use to express global waypoints or detected objects in the vehicle-local coordinate system for control algorithms"
+    }
+  ]
+}

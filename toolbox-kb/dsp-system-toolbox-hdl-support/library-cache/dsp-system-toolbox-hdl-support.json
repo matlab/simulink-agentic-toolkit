@@ -1,0 +1,72 @@
+{
+  "libraryName": "DSP System Toolbox HDL Support",
+  "generatedAt": "2026-08-19T14:30:50",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "Filtering",
+      "referenceBlock": "dsphdlsupportlib/Filtering",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Filtering",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Management",
+      "referenceBlock": "dsphdlsupportlib/Signal Management",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Signal Management",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Operations",
+      "referenceBlock": "dsphdlsupportlib/Signal Operations",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Signal Operations",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinks",
+      "referenceBlock": "dsphdlsupportlib/Sinks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP Sinks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sources",
+      "referenceBlock": "dsphdlsupportlib/Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP Sources",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Statistics",
+      "referenceBlock": "dsphdlsupportlib/Statistics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Statistics",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

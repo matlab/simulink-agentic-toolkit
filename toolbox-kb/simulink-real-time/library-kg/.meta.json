@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:13",
+  "generatedAtDatenum": 740213.74459539354,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Real-Time"
+  ],
+  "blockCount": 86,
+  "categoryCount": 14,
+  "libraryFingerprints": {
+    "Simulink_Real_Time": {
+      "blockCount": 86
+    }
+  }
+}

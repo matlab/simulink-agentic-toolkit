@@ -1,0 +1,72 @@
+{
+  "libraryName": "NVIDIA Jetson and NVIDIA DRIVE",
+  "generatedAt": "2026-08-19T14:31:02",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "Audio and Video",
+      "referenceBlock": "nvidialib/Audio and Video",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Nvidia_network_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GPIO Read",
+      "referenceBlock": "nvidiaBasiclib/GPIO Read",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GPIO Write",
+      "referenceBlock": "nvidiaBasiclib/GPIO Write",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Communication",
+      "referenceBlock": "nvidialib/Communication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Nvidia_comm_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Internet Of Things",
+      "referenceBlock": "nvidialib/Internet Of Things",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Nvidia_network_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network ",
+      "referenceBlock": "nvidialib/Network ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Nvidia_network_lib",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

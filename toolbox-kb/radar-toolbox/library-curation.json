@@ -1,0 +1,143 @@
+{
+  "commonBlocks": [
+    "Radar Data Generator",
+    "Pulse Waveform Library",
+    "Pulse Compression Library",
+    "DBSCAN Clustering"
+  ],
+  "categories": [
+    {
+      "name": "targets-clutter",
+      "description": "Radar target models and environmental clutter",
+      "keywords": [
+        "backscatter",
+        "clutter",
+        "pedestrian",
+        "target",
+        "rcs"
+      ]
+    },
+    {
+      "name": "waveforms-processing",
+      "description": "Waveform generation and signal processing",
+      "keywords": [
+        "pulse",
+        "waveform",
+        "compression",
+        "detection",
+        "clustering"
+      ]
+    },
+    {
+      "name": "channel-propagation",
+      "description": "Propagation channel models and interference",
+      "keywords": [
+        "channel",
+        "propagation",
+        "multipath",
+        "jammer",
+        "tworay"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Backscatter Bicyclist",
+      "value": "targets-clutter"
+    },
+    {
+      "block": "Backscatter Pedestrian",
+      "value": "targets-clutter"
+    },
+    {
+      "block": "Barrage Jammer",
+      "value": "channel-propagation"
+    },
+    {
+      "block": "Constant Gamma Clutter",
+      "value": "targets-clutter"
+    },
+    {
+      "block": "DBSCAN Clustering",
+      "value": "waveforms-processing"
+    },
+    {
+      "block": "Detection Concatenation",
+      "value": "waveforms-processing"
+    },
+    {
+      "block": "GPU Constant Gamma Clutter",
+      "value": "targets-clutter"
+    },
+    {
+      "block": "Pulse Compression Library",
+      "value": "waveforms-processing"
+    },
+    {
+      "block": "Pulse Waveform Library",
+      "value": "waveforms-processing"
+    },
+    {
+      "block": "Radar Data Generator",
+      "value": "targets-clutter"
+    },
+    {
+      "block": "Two-Ray Channel",
+      "value": "channel-propagation"
+    },
+    {
+      "block": "Wideband Two-Ray Channel",
+      "value": "channel-propagation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Backscatter Bicyclist",
+      "value": "Simulate radar backscatter from a moving bicyclist — use for generating realistic micro-Doppler signatures in automotive radar scenarios"
+    },
+    {
+      "block": "Backscatter Pedestrian",
+      "value": "Simulate radar backscatter from a walking pedestrian — use for generating realistic micro-Doppler signatures for vulnerable road user detection"
+    },
+    {
+      "block": "Barrage Jammer",
+      "value": "Generate broadband jamming interference — use for modeling electronic warfare scenarios or testing radar performance under intentional interference"
+    },
+    {
+      "block": "Constant Gamma Clutter",
+      "value": "Generate surface clutter returns with constant gamma reflectivity — use for simulating ground or sea clutter in radar system performance evaluation"
+    },
+    {
+      "block": "DBSCAN Clustering",
+      "value": "Cluster radar detections using density-based spatial clustering — use for grouping point detections into distinct objects without knowing object count"
+    },
+    {
+      "block": "Detection Concatenation",
+      "value": "Merge detection lists from multiple sensors or frames — use for combining radar detections before tracking or fusion processing"
+    },
+    {
+      "block": "GPU Constant Gamma Clutter",
+      "value": "GPU-accelerated surface clutter generation — use for high-fidelity clutter simulation when processing speed is critical in large radar scenarios"
+    },
+    {
+      "block": "Pulse Compression Library",
+      "value": "Apply matched filtering to compress radar pulses — use for improving range resolution and SNR in pulsed radar receivers"
+    },
+    {
+      "block": "Pulse Waveform Library",
+      "value": "Generate configurable radar transmit waveforms — use for creating LFM chirps, phase-coded pulses, or custom waveforms for radar transmitters"
+    },
+    {
+      "block": "Radar Data Generator",
+      "value": "Generate synthetic radar detections from scenario objects — use for rapid prototyping of radar processing algorithms without full signal-level simulation"
+    },
+    {
+      "block": "Two-Ray Channel",
+      "value": "Model narrowband two-ray propagation with ground reflection — use for simulating multipath fading in automotive or low-altitude radar scenarios"
+    },
+    {
+      "block": "Wideband Two-Ray Channel",
+      "value": "Model wideband two-ray propagation with ground reflection — use for simulating frequency-selective multipath in wideband radar systems"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "libraryName": "Image Acquisition Toolbox",
+  "generatedAt": "2026-08-19T14:31:00",
+  "blockCount": 1,
+  "blocks": [
+    {
+      "name": "From Video Device",
+      "referenceBlock": "imaqlib/From Video Device",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "From Video Device",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

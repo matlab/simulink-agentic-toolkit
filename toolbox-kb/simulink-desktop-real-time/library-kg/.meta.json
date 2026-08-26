@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74459398154,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Desktop Real-Time"
+  ],
+  "blockCount": 21,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "Simulink_Desktop_Real_Time": {
+      "blockCount": 21
+    }
+  }
+}

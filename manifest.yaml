@@ -76,3 +76,18 @@ skill-groups:
     requires-products:
       - Simulink
       - Fixed-Point Designer
+
+  - name: simulink-environment-fundamentals
+    display-name: "Simulink Environment Fundamentals"
+    description: "Core Simulink environment capabilities, including discovering shipped example models"
+    path: skills-catalog/simulink-environment-fundamentals
+    requires-products:
+      - Simulink
+
+  - name: signal-processing
+    display-name: "Signal Processing"
+    description: "Frame-based streaming DSP models in Simulink — block selection, frame configuration, tunable filters, buffering, multirate, variable-rate decimation"
+    path: skills-catalog/signal-processing
+    requires-products:
+      - Simulink
+      - DSP System Toolbox

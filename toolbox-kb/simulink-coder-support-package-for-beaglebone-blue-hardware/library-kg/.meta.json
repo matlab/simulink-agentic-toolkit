@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74459009257,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Coder Support Package for BeagleBone Blue Hardware"
+  ],
+  "blockCount": 5,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Simulink_Coder_Support_Package_for_BeagleBone_Blue_Hardware": {
+      "blockCount": 5
+    }
+  }
+}

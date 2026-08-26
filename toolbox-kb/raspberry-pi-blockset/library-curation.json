@@ -1,0 +1,88 @@
+{
+  "commonBlocks": [
+    "Basic",
+    "Sensors",
+    "Communication"
+  ],
+  "categories": [
+    {
+      "name": "raspberry-pi",
+      "description": "Raspberry Pi hardware peripheral and sensor access",
+      "keywords": [
+        "raspberry",
+        "pi",
+        "gpio",
+        "sensor",
+        "iot"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Audio and Video",
+      "value": "raspberry-pi"
+    },
+    {
+      "block": "Basic",
+      "value": "raspberry-pi"
+    },
+    {
+      "block": "Communication",
+      "value": "raspberry-pi"
+    },
+    {
+      "block": "Internet Of Things",
+      "value": "raspberry-pi"
+    },
+    {
+      "block": "Network ",
+      "value": "raspberry-pi"
+    },
+    {
+      "block": "Sense HAT",
+      "value": "raspberry-pi"
+    },
+    {
+      "block": "Sensors",
+      "value": "raspberry-pi"
+    },
+    {
+      "block": "Utilities",
+      "value": "raspberry-pi"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Audio and Video",
+      "value": "Access camera and audio peripherals on Raspberry Pi — use for video capture, image processing, or audio recording/playback on Pi hardware"
+    },
+    {
+      "block": "Basic",
+      "value": "Access basic I/O on Raspberry Pi — use for GPIO read/write, PWM output, or general-purpose digital interfacing on Pi boards"
+    },
+    {
+      "block": "Communication",
+      "value": "Access communication interfaces on Raspberry Pi — use for I2C, SPI, UART, or serial communication with external devices"
+    },
+    {
+      "block": "Internet Of Things",
+      "value": "Access IoT connectivity on Raspberry Pi — use for MQTT, ThingSpeak, or cloud-based data exchange in IoT applications"
+    },
+    {
+      "block": "Network ",
+      "value": "Access network interfaces on Raspberry Pi — use for TCP/IP, UDP, or Ethernet communication in networked embedded systems"
+    },
+    {
+      "block": "Sense HAT",
+      "value": "Access the Raspberry Pi Sense HAT add-on board — use for reading environmental sensors, IMU data, or controlling the 8x8 LED matrix"
+    },
+    {
+      "block": "Sensors",
+      "value": "Access external sensor modules on Raspberry Pi — use for reading temperature, humidity, distance, or other sensor data from connected peripherals"
+    },
+    {
+      "block": "Utilities",
+      "value": "Access utility functions on Raspberry Pi — use for system control, timing, file operations, or shell command execution on the Pi"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "commonBlocks": [
+    "Feed-Forward Equalizer",
+    "Decision Feedback Equalizer w/ CDR",
+    "Clock Data Recovery"
+  ],
+  "categories": [
+    {
+      "name": "serdes-datapath",
+      "description": "High-speed serial link transmitter and receiver datapath blocks",
+      "keywords": [
+        "serdes",
+        "equalizer",
+        "cdr",
+        "receiver",
+        "transmitter"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Automatic Gain Control",
+      "value": "serdes-datapath"
+    },
+    {
+      "block": "Clock Data Recovery",
+      "value": "serdes-datapath"
+    },
+    {
+      "block": "Decision Feedback Equalizer w/ CDR",
+      "value": "serdes-datapath"
+    },
+    {
+      "block": "Feed-Forward Equalizer",
+      "value": "serdes-datapath"
+    },
+    {
+      "block": "Saturating Amplifier",
+      "value": "serdes-datapath"
+    },
+    {
+      "block": "Transparent Pass-Through",
+      "value": "serdes-datapath"
+    },
+    {
+      "block": "Variable Gain Amplifier",
+      "value": "serdes-datapath"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Automatic Gain Control",
+      "value": "Adaptively adjust signal amplitude in a SerDes receiver — use for maintaining consistent signal levels across varying channel loss conditions"
+    },
+    {
+      "block": "Clock Data Recovery",
+      "value": "Extract clock and data from an incoming serial bit stream — use for synchronizing receiver sampling to the optimal eye opening position"
+    },
+    {
+      "block": "Decision Feedback Equalizer w/ CDR",
+      "value": "Equalize inter-symbol interference using post-cursor feedback with integrated clock recovery — use for high-speed serial link receivers requiring both ISI cancellation and timing recovery"
+    },
+    {
+      "block": "Feed-Forward Equalizer",
+      "value": "Apply linear equalization using a tapped delay line — use for pre-emphasis at the transmitter or linear equalization at the receiver to compensate channel loss"
+    },
+    {
+      "block": "Saturating Amplifier",
+      "value": "Amplify a signal with hard saturation limits — use for modeling gain stages that clip at supply rails in SerDes analog front-ends"
+    },
+    {
+      "block": "Transparent Pass-Through",
+      "value": "Pass the signal without modification — use as a placeholder in SerDes datapath when no processing is needed at a particular stage"
+    },
+    {
+      "block": "Variable Gain Amplifier",
+      "value": "Amplify a signal with programmable gain — use for modeling adjustable-gain receiver stages that adapt to different channel loss conditions"
+    }
+  ]
+}

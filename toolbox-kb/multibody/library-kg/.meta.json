@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74457219907,
+  "generatorVersion": 4,
+  "libraries": [
+    "Multibody"
+  ],
+  "blockCount": 10,
+  "categoryCount": 3,
+  "libraryFingerprints": {
+    "Multibody": {
+      "cacheTimestamp": 740213.73348379624,
+      "blockCount": 10
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "libraryName": "Simulink Support Package for Apple iOS Devices",
+  "generatedAt": "2026-08-19T14:31:14",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "Advanced ",
+      "referenceBlock": "ioslib/Advanced ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IOS_Advanced_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Audio & Video",
+      "referenceBlock": "ioslib/Audio & Video",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IOS_Audio_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Communication",
+      "referenceBlock": "ioslib/Communication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IOS_Comunication_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensors",
+      "referenceBlock": "ioslib/Sensors",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IOS_Sensor_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "User Interface",
+      "referenceBlock": "ioslib/User Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IOS_UI_Blocks",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

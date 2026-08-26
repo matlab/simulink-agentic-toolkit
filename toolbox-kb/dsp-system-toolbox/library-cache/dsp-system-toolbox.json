@@ -1,0 +1,171 @@
+{
+  "libraryName": "DSP System Toolbox",
+  "generatedAt": "2026-08-19T14:30:50",
+  "blockCount": 17,
+  "blocks": [
+    {
+      "name": "Deep Signal Anomaly Detector",
+      "referenceBlock": "dspai/Deep Signal Anomaly Detector",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Deep Signal Anomaly Detector",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Dataflow Subsystem",
+      "referenceBlock": "dspdataflow/Dataflow Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Dataflow Subsystem",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Demos",
+      "referenceBlock": "dsplibv4/Demos",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP Demos",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Estimation",
+      "referenceBlock": "dsplibv4/Estimation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Estimation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Frequency Feature Extractor",
+      "referenceBlock": "dspfeatures/Frequency Feature Extractor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "frequencyFeatureExtractor",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Time Feature Extractor",
+      "referenceBlock": "dspfeatures/Time Feature Extractor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "timeFeatureExtractor",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Wavelet Scattering",
+      "referenceBlock": "dspfeatures/Wavelet Scattering",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "waveletscattering",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Filtering",
+      "referenceBlock": "dsplibv4/Filtering",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Filtering",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Info",
+      "referenceBlock": "dsplibv4/Info",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP Info",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Math Functions",
+      "referenceBlock": "dsplibv4/Math Functions",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Math Functions",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quantizers",
+      "referenceBlock": "dsplibv4/Quantizers",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Quantizers",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Management",
+      "referenceBlock": "dsplibv4/Signal Management",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Signal Management",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Operations",
+      "referenceBlock": "dsplibv4/Signal Operations",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Signal Operations",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinks",
+      "referenceBlock": "dsplibv4/Sinks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP Sinks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sources",
+      "referenceBlock": "dsplibv4/Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP Sources",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Statistics",
+      "referenceBlock": "dsplibv4/Statistics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Statistics",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transforms",
+      "referenceBlock": "dsplibv4/Transforms",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transforms",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

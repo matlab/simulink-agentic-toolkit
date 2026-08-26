@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.74454863428,
+  "generatorVersion": 4,
+  "libraries": [
+    "Computer Vision Toolbox"
+  ],
+  "blockCount": 13,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "Computer_Vision_Toolbox": {
+      "blockCount": 13
+    }
+  }
+}

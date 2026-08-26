@@ -1,0 +1,63 @@
+{
+  "libraryName": "Simulink Support Package for Android Devices",
+  "generatedAt": "2026-08-19T14:31:14",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "Advanced ",
+      "referenceBlock": "androidlib/Advanced ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Android_Audio_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Audio & Video",
+      "referenceBlock": "androidlib/Audio & Video",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Android_Audio_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Communication",
+      "referenceBlock": "androidlib/Communication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Android_Comunication_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensors",
+      "referenceBlock": "androidlib/Sensors",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Android_Sensor_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "User Interface",
+      "referenceBlock": "androidlib/User Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Android_Audio_Blocks",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

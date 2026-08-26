@@ -1,0 +1,952 @@
+{
+  "commonBlocks": [
+    "Simple Gear",
+    "Disc Friction Clutch",
+    "Planetary Gear",
+    "Differential",
+    "Torque Converter",
+    "Vehicle Body",
+    "Tire (Magic Formula)",
+    "Torsional Spring-Damper",
+    "Generic Engine",
+    "Motor & Drive",
+    "Shock Absorber",
+    "Longitudinal Vehicle",
+    "Leadscrew"
+  ],
+  "categories": [
+    {
+      "name": "transmissions",
+      "description": "Complete automatic transmission assemblies with planetary gear sets",
+      "keywords": [
+        "transmission",
+        "speed",
+        "planetary",
+        "lepelletier",
+        "automatic"
+      ]
+    },
+    {
+      "name": "brakes-and-detents",
+      "description": "Friction brakes, drum brakes, and position detents for rotation and translation",
+      "keywords": [
+        "brake",
+        "detent",
+        "friction",
+        "band",
+        "drum"
+      ]
+    },
+    {
+      "name": "clutches",
+      "description": "Friction clutches, synchronizers, dog clutches, and one-way clutches",
+      "keywords": [
+        "clutch",
+        "synchronizer",
+        "engagement",
+        "friction",
+        "one-way"
+      ]
+    },
+    {
+      "name": "couplings-and-drives",
+      "description": "Mechanical power transmission elements: belts, chains, cables, joints, and converters",
+      "keywords": [
+        "belt",
+        "chain",
+        "cable",
+        "shaft",
+        "joint"
+      ]
+    },
+    {
+      "name": "springs-and-dampers",
+      "description": "Linear and nonlinear springs and dampers for rotational and translational domains",
+      "keywords": [
+        "spring",
+        "damper",
+        "stiffness",
+        "viscous",
+        "nonlinear"
+      ]
+    },
+    {
+      "name": "engines-and-motors",
+      "description": "Internal combustion engines, electric motors, propellers, and turbines",
+      "keywords": [
+        "engine",
+        "motor",
+        "propeller",
+        "turbine",
+        "combustion"
+      ]
+    },
+    {
+      "name": "gears",
+      "description": "Gear pairs, planetary sets, differentials, and rotational-to-translational converters",
+      "keywords": [
+        "gear",
+        "planetary",
+        "differential",
+        "ratio",
+        "mesh"
+      ]
+    },
+    {
+      "name": "inertias-and-loads",
+      "description": "Variable inertia, variable mass, and unbalanced rotational loads",
+      "keywords": [
+        "inertia",
+        "mass",
+        "load",
+        "unbalanced",
+        "variable"
+      ]
+    },
+    {
+      "name": "sensors",
+      "description": "Power measurement sensors for rotational and translational domains",
+      "keywords": [
+        "sensor",
+        "power",
+        "measurement",
+        "torque",
+        "force"
+      ]
+    },
+    {
+      "name": "sources",
+      "description": "Mechanical excitation sources: sinusoidal, noise, and battery",
+      "keywords": [
+        "source",
+        "sinusoidal",
+        "noise",
+        "battery",
+        "excitation"
+      ]
+    },
+    {
+      "name": "tires-and-vehicles",
+      "description": "Vehicle bodies, tires, and road interaction models for longitudinal dynamics",
+      "keywords": [
+        "tire",
+        "vehicle",
+        "road",
+        "wheel",
+        "body"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "10-Speed",
+      "value": "transmissions"
+    },
+    {
+      "block": "4-Speed CR-CR",
+      "value": "transmissions"
+    },
+    {
+      "block": "4-Speed Ravigneaux",
+      "value": "transmissions"
+    },
+    {
+      "block": "6-Speed Lepelletier",
+      "value": "transmissions"
+    },
+    {
+      "block": "7-Speed Lepelletier",
+      "value": "transmissions"
+    },
+    {
+      "block": "8-Speed",
+      "value": "transmissions"
+    },
+    {
+      "block": "9-Speed",
+      "value": "transmissions"
+    },
+    {
+      "block": "Aerodynamic Propeller",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Air Intake",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Air Spring",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Band Brake",
+      "value": "brakes-and-detents"
+    },
+    {
+      "block": "Battery (System-Level)",
+      "value": "sources"
+    },
+    {
+      "block": "Bearing",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Belt Drive",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Belt Pulley",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Cable",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Chain Drive",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Compound Planetary Gear",
+      "value": "gears"
+    },
+    {
+      "block": "Cone Clutch",
+      "value": "clutches"
+    },
+    {
+      "block": "Crankshaft",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Cycloidal Drive",
+      "value": "gears"
+    },
+    {
+      "block": "Differential",
+      "value": "gears"
+    },
+    {
+      "block": "Disc Brake",
+      "value": "brakes-and-detents"
+    },
+    {
+      "block": "Disc Friction Clutch",
+      "value": "clutches"
+    },
+    {
+      "block": "Dog Clutch",
+      "value": "clutches"
+    },
+    {
+      "block": "Double-Pinion Planetary Gear",
+      "value": "gears"
+    },
+    {
+      "block": "Double-Shoe Brake",
+      "value": "brakes-and-detents"
+    },
+    {
+      "block": "Double-Sided Synchronizer",
+      "value": "clutches"
+    },
+    {
+      "block": "Exhaust Manifold Thermal",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Flexible Shaft",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Force Noise Source",
+      "value": "sources"
+    },
+    {
+      "block": "Fundamental Friction Clutch",
+      "value": "clutches"
+    },
+    {
+      "block": "Generic Engine",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Harmonic Drive",
+      "value": "gears"
+    },
+    {
+      "block": "Ignition Trigger",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Leadscrew",
+      "value": "gears"
+    },
+    {
+      "block": "Limited-Slip Differential",
+      "value": "gears"
+    },
+    {
+      "block": "Loaded-Contact Rotational Friction",
+      "value": "brakes-and-detents"
+    },
+    {
+      "block": "Loaded-Contact Translational Friction",
+      "value": "brakes-and-detents"
+    },
+    {
+      "block": "Logic-Controlled Clutch",
+      "value": "clutches"
+    },
+    {
+      "block": "Longitudinal Vehicle",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Marine Propeller",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Motor & Drive",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Nonlinear Rotational Damper",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Nonlinear Rotational Spring",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Nonlinear Translational Damper",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Nonlinear Translational Spring",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Piston",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Piston Engine",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Planet-Planet",
+      "value": "gears"
+    },
+    {
+      "block": "Planetary Gear",
+      "value": "gears"
+    },
+    {
+      "block": "Rack & Pinion",
+      "value": "gears"
+    },
+    {
+      "block": "Ravigneaux Gear",
+      "value": "gears"
+    },
+    {
+      "block": "Ring-Planet",
+      "value": "gears"
+    },
+    {
+      "block": "Road Profile",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Rod",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Rolling Resistance",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Rope Drum",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Rotational Damper",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Rotational Detent",
+      "value": "brakes-and-detents"
+    },
+    {
+      "block": "Rotational Power Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Rotational Velocity Noise Source",
+      "value": "sources"
+    },
+    {
+      "block": "SI Combustion Cylinder",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Shock Absorber",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Simple Gear",
+      "value": "gears"
+    },
+    {
+      "block": "Simple Gear with Variable Efficiency",
+      "value": "gears"
+    },
+    {
+      "block": "Sinusoidal Force Source",
+      "value": "sources"
+    },
+    {
+      "block": "Sinusoidal Rotational Velocity Source",
+      "value": "sources"
+    },
+    {
+      "block": "Sinusoidal Torque Source",
+      "value": "sources"
+    },
+    {
+      "block": "Sinusoidal Translational Velocity Source",
+      "value": "sources"
+    },
+    {
+      "block": "Spark Ignition Engine",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Sun-Planet",
+      "value": "gears"
+    },
+    {
+      "block": "Sun-Planet Bevel",
+      "value": "gears"
+    },
+    {
+      "block": "Sun-Planet Worm Gear",
+      "value": "gears"
+    },
+    {
+      "block": "Synchronizer",
+      "value": "clutches"
+    },
+    {
+      "block": "Three-Axle Vehicle Body",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Tire (Friction Parameterized)",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Tire (Magic Formula)",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Tire (Simple)",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Tire-Road Interaction (Magic Formula)",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Torque Converter",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Torque Noise Source",
+      "value": "sources"
+    },
+    {
+      "block": "Torsional Spring-Damper",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Translational Damper",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Translational Detent",
+      "value": "brakes-and-detents"
+    },
+    {
+      "block": "Translational Power Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Translational Velocity Noise Source",
+      "value": "sources"
+    },
+    {
+      "block": "Transmission",
+      "value": "gears"
+    },
+    {
+      "block": "Unbalanced Load",
+      "value": "inertias-and-loads"
+    },
+    {
+      "block": "Unidirectional Clutch",
+      "value": "clutches"
+    },
+    {
+      "block": "Universal Joint",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Variable Inertia",
+      "value": "inertias-and-loads"
+    },
+    {
+      "block": "Variable Mass",
+      "value": "inertias-and-loads"
+    },
+    {
+      "block": "Variable Ratio Transmission",
+      "value": "couplings-and-drives"
+    },
+    {
+      "block": "Variable Rotational Damper",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Variable Rotational Spring",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Variable Translational Damper",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Variable Translational Spring",
+      "value": "springs-and-dampers"
+    },
+    {
+      "block": "Vehicle Body",
+      "value": "tires-and-vehicles"
+    },
+    {
+      "block": "Wind Turbine",
+      "value": "engines-and-motors"
+    },
+    {
+      "block": "Worm Gear",
+      "value": "gears"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "10-Speed",
+      "value": "Model a 10-speed automatic planetary transmission — use for modern passenger car or heavy-duty truck powertrain studies with wide gear ratio spread"
+    },
+    {
+      "block": "4-Speed CR-CR",
+      "value": "Model a 4-speed compound-ravigneaux automatic transmission — use for compact automatic gearbox architectures with coupled planetary gear sets"
+    },
+    {
+      "block": "4-Speed Ravigneaux",
+      "value": "Model a 4-speed Ravigneaux automatic transmission — use for front-wheel-drive applications with a single Ravigneaux gear set providing four ratios"
+    },
+    {
+      "block": "6-Speed Lepelletier",
+      "value": "Model a 6-speed Lepelletier automatic transmission — use for modern rear-wheel-drive gearbox designs combining a simple planetary with a Ravigneaux set"
+    },
+    {
+      "block": "7-Speed Lepelletier",
+      "value": "Model a 7-speed Lepelletier automatic transmission — use for premium vehicle powertrain studies needing extended ratio coverage with smooth shifts"
+    },
+    {
+      "block": "8-Speed",
+      "value": "Model an 8-speed automatic planetary transmission — use for fuel-efficient powertrain designs common in luxury and performance vehicles"
+    },
+    {
+      "block": "9-Speed",
+      "value": "Model a 9-speed automatic planetary transmission — use for front-wheel-drive transverse applications requiring wide ratio spread in a compact package"
+    },
+    {
+      "block": "Aerodynamic Propeller",
+      "value": "Model a propeller generating thrust and drag torque from rotational speed and air conditions — use for aircraft propulsion, drone motors, or fan load modeling"
+    },
+    {
+      "block": "Air Intake",
+      "value": "Model engine air intake manifold dynamics including throttle and plenum — use as a subcomponent for detailed engine breathing and volumetric efficiency studies"
+    },
+    {
+      "block": "Air Spring",
+      "value": "Model a pneumatic spring with pressure-dependent stiffness — use for vehicle suspension, cab isolation, or vibration systems where air pressure sets the spring rate"
+    },
+    {
+      "block": "Band Brake",
+      "value": "Model a band-wrapped drum brake generating friction torque from applied force — use for parking brakes, industrial machinery, or transmission holding elements"
+    },
+    {
+      "block": "Battery (System-Level)",
+      "value": "Model a battery as a voltage source with internal resistance and state-of-charge dynamics — use for system-level EV range studies or hybrid energy management"
+    },
+    {
+      "block": "Bearing",
+      "value": "Model a rotational bearing with speed-dependent friction and preload effects — use for shaft support losses, spindle bearings, or rolling element bearing drag"
+    },
+    {
+      "block": "Belt Drive",
+      "value": "Model a flexible belt connecting two pulleys with slip and compliance — use for accessory drives, CVT mechanisms, or industrial belt-driven power transmission"
+    },
+    {
+      "block": "Belt Pulley",
+      "value": "Model a single pulley for belt routing — use as a building block in multi-pulley belt systems, tensioners, or serpentine drive layouts"
+    },
+    {
+      "block": "Cable",
+      "value": "Model a flexible cable transmitting tension between two points — use for throttle cables, parking brake cables, or winch systems with slack and compliance"
+    },
+    {
+      "block": "Chain Drive",
+      "value": "Model a chain connecting two sprockets with backlash and compliance — use for motorcycle final drives, timing chains, or industrial chain-driven mechanisms"
+    },
+    {
+      "block": "Compound Planetary Gear",
+      "value": "Model a compound planetary gear set with multiple planet sets on a shared carrier — use for complex automatic transmissions or multi-ratio gear trains"
+    },
+    {
+      "block": "Cone Clutch",
+      "value": "Model a friction clutch with a conical contact surface — use for manual transmission synchronizers or compact high-torque engagement devices"
+    },
+    {
+      "block": "Crankshaft",
+      "value": "Model a crankshaft converting piston reciprocating motion to rotation — use as a subcomponent in detailed multi-cylinder engine assemblies"
+    },
+    {
+      "block": "Cycloidal Drive",
+      "value": "Model a cycloidal speed reducer with high reduction ratio — use for robotics joints, precision positioning, or compact high-ratio drives"
+    },
+    {
+      "block": "Differential",
+      "value": "Model a standard bevel-gear differential splitting torque between two outputs — use for vehicle axle differentials, allowing speed difference between driven wheels"
+    },
+    {
+      "block": "Disc Brake",
+      "value": "Model a caliper-type disc brake generating friction torque proportional to applied pressure — use for vehicle wheel brakes, dynamometer loads, or safety stops"
+    },
+    {
+      "block": "Disc Friction Clutch",
+      "value": "Model a multi-plate friction clutch with configurable engagement characteristics — use for automatic transmission clutches, launch devices, or torque-limiting couplings"
+    },
+    {
+      "block": "Dog Clutch",
+      "value": "Model a positive-engagement jaw clutch with no slip — use for gear selection in manual transmissions or transfer cases where synchronization is handled externally"
+    },
+    {
+      "block": "Double-Pinion Planetary Gear",
+      "value": "Model a planetary gear set with two planet meshes between sun and ring — use for compound gear trains where double planets provide specific ratio relationships"
+    },
+    {
+      "block": "Double-Shoe Brake",
+      "value": "Model a drum brake with two friction shoes — use for automotive drum brakes where leading and trailing shoe geometry affects braking torque distribution"
+    },
+    {
+      "block": "Double-Sided Synchronizer",
+      "value": "Model a synchronizer that can engage either of two gears — use for manual transmission gear selection where one synchronizer hub serves two adjacent ratios"
+    },
+    {
+      "block": "Exhaust Manifold Thermal",
+      "value": "Model thermal dynamics of an exhaust manifold — use for catalyst warm-up studies, thermal management, or aftertreatment system development"
+    },
+    {
+      "block": "Flexible Shaft",
+      "value": "Model a shaft with distributed torsional compliance and damping — use for driveshafts, long coupling shafts, or studying torsional vibration and resonance"
+    },
+    {
+      "block": "Force Noise Source",
+      "value": "Generate random translational force excitation — use for vibration testing, NVH analysis, or stochastic load simulation in mechanical systems"
+    },
+    {
+      "block": "Fundamental Friction Clutch",
+      "value": "Model a basic friction clutch with fundamental torque-speed characteristics — use as a building block for custom clutch assemblies or for teaching friction engagement dynamics"
+    },
+    {
+      "block": "Generic Engine",
+      "value": "Model an engine with torque output mapped from throttle and speed — use for simplified powertrain studies where detailed combustion modeling is not required"
+    },
+    {
+      "block": "Harmonic Drive",
+      "value": "Model a harmonic drive speed reducer with very high gear ratio in a compact form — use for robotics, aerospace actuators, or precision instruments"
+    },
+    {
+      "block": "Ignition Trigger",
+      "value": "Generate ignition timing signals for spark-ignition engine cylinders — use as a subcomponent to control combustion phasing in detailed engine models"
+    },
+    {
+      "block": "Leadscrew",
+      "value": "Convert rotational motion to translational motion via a helical thread — use for linear actuators, machine tool feeds, or precision positioning mechanisms"
+    },
+    {
+      "block": "Limited-Slip Differential",
+      "value": "Model a differential with torque-biasing capability — use for performance vehicles, off-road drivetrains, or traction control studies where wheel slip must be limited"
+    },
+    {
+      "block": "Loaded-Contact Rotational Friction",
+      "value": "Apply speed-dependent rotational friction whose magnitude scales with a normal load input — use for bearing friction, loaded shaft resistance, or contact-dependent drag"
+    },
+    {
+      "block": "Loaded-Contact Translational Friction",
+      "value": "Apply speed-dependent translational friction whose magnitude scales with a normal load input — use for slider friction, rail guides, or loaded linear contacts"
+    },
+    {
+      "block": "Logic-Controlled Clutch",
+      "value": "Model a clutch that locks or unlocks based on a Boolean control signal — use for simplified transmission modeling, mode switching, or conditional power path engagement"
+    },
+    {
+      "block": "Longitudinal Vehicle",
+      "value": "Model vehicle longitudinal dynamics including aerodynamic drag, rolling resistance, and grade effects — use for drive cycle simulation, fuel economy, or acceleration studies"
+    },
+    {
+      "block": "Marine Propeller",
+      "value": "Model a marine propeller generating thrust and resistance torque in water — use for boat propulsion, ship powertrain, or marine drivetrain studies"
+    },
+    {
+      "block": "Motor & Drive",
+      "value": "Model a generic electric motor with drive electronics as a torque source — use for electrified powertrain studies, EV drivetrain sizing, or hybrid vehicle motor modeling"
+    },
+    {
+      "block": "Nonlinear Rotational Damper",
+      "value": "Model a rotational damper with nonlinear torque-speed characteristics — use for torsional vibration dampers, viscous couplings, or speed-dependent drag"
+    },
+    {
+      "block": "Nonlinear Rotational Spring",
+      "value": "Model a rotational spring with nonlinear torque-angle characteristics — use for backlash-free couplings with progressive stiffness, or limit stops"
+    },
+    {
+      "block": "Nonlinear Translational Damper",
+      "value": "Model a translational damper with nonlinear force-velocity characteristics — use for realistic shock absorbers, hydraulic dampers, or progressive damping"
+    },
+    {
+      "block": "Nonlinear Translational Spring",
+      "value": "Model a translational spring with nonlinear force-displacement characteristics — use for bump stops, progressive springs, or rubber mounts with hardening"
+    },
+    {
+      "block": "Piston",
+      "value": "Model a single piston converting pressure force to linear motion — use as a subcomponent in custom engine assemblies or pneumatic/hydraulic actuator studies"
+    },
+    {
+      "block": "Piston Engine",
+      "value": "Model a multi-cylinder piston engine with torque pulsation and inertia effects — use for detailed powertrain vibration studies or engine mounting analysis"
+    },
+    {
+      "block": "Planet-Planet",
+      "value": "Model the mesh between two planet gears on a compound planetary — use as a subcomponent when building custom compound planetary gear assemblies"
+    },
+    {
+      "block": "Planetary Gear",
+      "value": "Model a simple planetary gear set with sun, planet carrier, and ring — use as the fundamental building block for automatic transmissions or compound gear trains"
+    },
+    {
+      "block": "Rack & Pinion",
+      "value": "Convert rotational motion to translational motion via gear teeth — use for steering systems, linear actuators, or machine tool positioning"
+    },
+    {
+      "block": "Ravigneaux Gear",
+      "value": "Model a Ravigneaux compound planetary gear set with shared carrier — use for compact automatic transmissions providing multiple ratios from a single gear assembly"
+    },
+    {
+      "block": "Ring-Planet",
+      "value": "Model the internal mesh between ring gear and planet gear — use as a subcomponent when building custom planetary gear configurations"
+    },
+    {
+      "block": "Road Profile",
+      "value": "Generate road surface elevation profile for tire and suspension excitation — use for ride comfort analysis, suspension design, or durability studies"
+    },
+    {
+      "block": "Rod",
+      "value": "Model a rigid or compliant connecting rod converting rotational to translational motion — use for linkage mechanisms, piston connecting rods, or pushrod assemblies"
+    },
+    {
+      "block": "Rolling Resistance",
+      "value": "Model tire rolling resistance as a speed and load dependent force — use as a subcomponent for custom tire assemblies or to add rolling losses to simplified models"
+    },
+    {
+      "block": "Rope Drum",
+      "value": "Model a drum that winds rope converting rotation to linear displacement — use for winches, hoists, cranes, or cable-actuated mechanisms"
+    },
+    {
+      "block": "Rotational Damper",
+      "value": "Model a linear rotational viscous damper — use for shaft damping, bearing friction approximation, or torsional vibration reduction between rotating bodies"
+    },
+    {
+      "block": "Rotational Detent",
+      "value": "Apply a position-dependent restoring torque at discrete angular positions — use for indexing mechanisms, selector notches, or rotary switch detents"
+    },
+    {
+      "block": "Rotational Power Sensor",
+      "value": "Measure instantaneous rotational power as the product of torque and angular velocity — use for efficiency calculations, energy flow analysis, or power monitoring"
+    },
+    {
+      "block": "Rotational Velocity Noise Source",
+      "value": "Generate random rotational velocity excitation — use for vibration testing of rotating machinery or stochastic disturbance injection"
+    },
+    {
+      "block": "SI Combustion Cylinder",
+      "value": "Model a single spark-ignition combustion cylinder with pressure and torque output — use as a subcomponent for building detailed multi-cylinder engine assemblies"
+    },
+    {
+      "block": "Shock Absorber",
+      "value": "Model a velocity-dependent translational damper with asymmetric compression and rebound characteristics — use for vehicle suspension dampers or vibration isolation systems"
+    },
+    {
+      "block": "Simple Gear",
+      "value": "Model a fixed-ratio gear pair with optional efficiency loss — use for any constant gear reduction, final drives, or gear meshes in a powertrain"
+    },
+    {
+      "block": "Simple Gear with Variable Efficiency",
+      "value": "Model a fixed-ratio gear pair whose efficiency varies with operating conditions — use when gear losses depend on speed, torque, or temperature"
+    },
+    {
+      "block": "Sinusoidal Force Source",
+      "value": "Generate sinusoidal force excitation — use for forced vibration analysis, frequency response testing, or harmonic load application"
+    },
+    {
+      "block": "Sinusoidal Rotational Velocity Source",
+      "value": "Generate sinusoidal angular velocity — use for frequency-domain testing of rotational systems, resonance sweeps, or harmonic excitation"
+    },
+    {
+      "block": "Sinusoidal Torque Source",
+      "value": "Generate sinusoidal torque excitation — use for torsional vibration analysis, frequency response testing, or rotational harmonic loading"
+    },
+    {
+      "block": "Sinusoidal Translational Velocity Source",
+      "value": "Generate sinusoidal linear velocity — use for frequency-domain testing of translational systems, vibration characterization, or shake testing"
+    },
+    {
+      "block": "Spark Ignition Engine",
+      "value": "Model a spark-ignition gasoline engine with throttle control and torque output — use for gasoline vehicle powertrain studies, fuel economy, or engine control development"
+    },
+    {
+      "block": "Sun-Planet",
+      "value": "Model the external mesh between sun gear and planet gear — use as a subcomponent when building custom planetary gear configurations"
+    },
+    {
+      "block": "Sun-Planet Bevel",
+      "value": "Model a bevel gear mesh between sun and planet in a differential — use as a subcomponent for custom differential or bevel gear assemblies"
+    },
+    {
+      "block": "Sun-Planet Worm Gear",
+      "value": "Model a worm gear mesh between sun and planet — use as a subcomponent for custom self-locking planetary configurations"
+    },
+    {
+      "block": "Synchronizer",
+      "value": "Model a single-sided cone synchronizer for gear engagement — use for manual transmission shift modeling where friction brings shafts to matched speed before dog engagement"
+    },
+    {
+      "block": "Three-Axle Vehicle Body",
+      "value": "Model a three-axle vehicle body with load distribution and pitch dynamics — use for heavy trucks, buses, or multi-axle vehicle ride and handling studies"
+    },
+    {
+      "block": "Tire (Friction Parameterized)",
+      "value": "Model tire longitudinal force using friction-based parameterization — use when tire data is specified as friction coefficients rather than Magic Formula parameters"
+    },
+    {
+      "block": "Tire (Magic Formula)",
+      "value": "Model tire force generation using Pacejka Magic Formula — use for accurate tire-road interaction in vehicle dynamics, handling, and traction studies"
+    },
+    {
+      "block": "Tire (Simple)",
+      "value": "Model tire force with a simplified linear slip relationship — use for system-level powertrain studies where detailed tire modeling is not critical"
+    },
+    {
+      "block": "Tire-Road Interaction (Magic Formula)",
+      "value": "Compute tire-road contact forces using Pacejka Magic Formula slip equations — use as a subcomponent for building custom tire models with full slip-force characteristics"
+    },
+    {
+      "block": "Torque Converter",
+      "value": "Model a hydrodynamic torque converter with torque multiplication and lockup — use for automatic transmission launch devices connecting engine to gearbox"
+    },
+    {
+      "block": "Torque Noise Source",
+      "value": "Generate random torque excitation — use for NVH analysis, torsional vibration testing, or stochastic torque disturbance simulation"
+    },
+    {
+      "block": "Torsional Spring-Damper",
+      "value": "Model a parallel rotational spring and damper between two shafts — use for coupling compliance, drivetrain flexibility, or torsional vibration damping"
+    },
+    {
+      "block": "Translational Damper",
+      "value": "Model a linear translational viscous damper — use for suspension damping, vibration isolation, or energy dissipation in linear motion systems"
+    },
+    {
+      "block": "Translational Detent",
+      "value": "Apply a position-dependent restoring force at discrete linear positions — use for latch mechanisms, ball-detent selectors, or snap-fit positioning"
+    },
+    {
+      "block": "Translational Power Sensor",
+      "value": "Measure instantaneous translational power as the product of force and velocity — use for efficiency calculations, energy flow analysis, or linear power monitoring"
+    },
+    {
+      "block": "Translational Velocity Noise Source",
+      "value": "Generate random translational velocity excitation — use for vibration testing of linear systems or stochastic velocity disturbance injection"
+    },
+    {
+      "block": "Transmission",
+      "value": "Model a multi-speed transmission selecting discrete gear ratios — use for simplified gearbox modeling with ratio changes driven by an external gear command"
+    },
+    {
+      "block": "Unbalanced Load",
+      "value": "Model a rotating mass with center-of-gravity offset generating cyclic forces — use for vibration analysis of shafts with eccentric loads or unbalanced rotors"
+    },
+    {
+      "block": "Unidirectional Clutch",
+      "value": "Model a one-way clutch that transmits torque in only one direction — use for freewheels, overrunning clutches, or automatic transmission sprag elements"
+    },
+    {
+      "block": "Universal Joint",
+      "value": "Model a Cardan-type universal joint with speed variation — use for angled driveshaft connections, steering columns, or power transmission across misaligned axes"
+    },
+    {
+      "block": "Variable Inertia",
+      "value": "Model a rotational inertia whose value changes via an external signal — use for systems with varying payload, fuel consumption effects, or deployable mechanisms"
+    },
+    {
+      "block": "Variable Mass",
+      "value": "Model a translational mass whose value changes via an external signal — use for rocket propulsion, conveyor loading, or systems with mass flow"
+    },
+    {
+      "block": "Variable Ratio Transmission",
+      "value": "Model a continuously variable gear ratio driven by an external signal — use for CVT powertrains, variable-speed drives, or parametric gear ratio studies"
+    },
+    {
+      "block": "Variable Rotational Damper",
+      "value": "Model a rotational damper whose coefficient is set by an external signal — use for adaptive torsional damping, semi-active drivetrain vibration control, or variable viscous couplings"
+    },
+    {
+      "block": "Variable Rotational Spring",
+      "value": "Model a rotational spring whose stiffness is set by an external signal — use for variable-stiffness torsional couplings or adaptive mount systems"
+    },
+    {
+      "block": "Variable Translational Damper",
+      "value": "Model a translational damper whose coefficient is set by an external signal — use for semi-active suspensions, adaptive damping, or magnetorheological damper control"
+    },
+    {
+      "block": "Variable Translational Spring",
+      "value": "Model a translational spring whose stiffness is set by an external signal — use for adaptive suspension, variable-stiffness mounts, or parametric stiffness studies"
+    },
+    {
+      "block": "Vehicle Body",
+      "value": "Model a two-axle vehicle body with longitudinal and pitch dynamics — use for passenger car or light truck drive cycle simulation, braking, and acceleration studies"
+    },
+    {
+      "block": "Wind Turbine",
+      "value": "Model a wind turbine rotor extracting power from wind speed — use for wind energy drivetrain studies, generator sizing, or renewable energy system simulation"
+    },
+    {
+      "block": "Worm Gear",
+      "value": "Model a worm and wheel gear set with high reduction and potential self-locking — use for lifting mechanisms, steering gears, or applications needing irreversibility"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "commonBlocks": [
+    "Task Manager",
+    "Interprocess Data Read",
+    "Interprocess Data Write",
+    "ADC Interface"
+  ],
+  "categories": [
+    {
+      "name": "device-libraries",
+      "description": "Device-specific peripheral block libraries for TC4x variants",
+      "keywords": [
+        "tc46",
+        "tc48",
+        "tc49",
+        "tc4d",
+        "tc4z"
+      ]
+    },
+    {
+      "name": "multicore",
+      "description": "Multi-core scheduling and inter-processor communication",
+      "keywords": [
+        "task",
+        "core",
+        "interprocess",
+        "schedule",
+        "multicore"
+      ]
+    },
+    {
+      "name": "test-bench",
+      "description": "Test bench interfaces for processor-in-the-loop testing",
+      "keywords": [
+        "test",
+        "bench",
+        "interface",
+        "adc",
+        "pil"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ADC Interface",
+      "value": "test-bench"
+    },
+    {
+      "block": "AURIX TC46x",
+      "value": "device-libraries"
+    },
+    {
+      "block": "AURIX TC48x",
+      "value": "device-libraries"
+    },
+    {
+      "block": "AURIX TC49xN",
+      "value": "device-libraries"
+    },
+    {
+      "block": "AURIX TC4Dx",
+      "value": "device-libraries"
+    },
+    {
+      "block": "Digital IO Interface",
+      "value": "test-bench"
+    },
+    {
+      "block": "Event Source",
+      "value": "test-bench"
+    },
+    {
+      "block": "Interprocess Data Channel",
+      "value": "test-bench"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "multicore"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "multicore"
+    },
+    {
+      "block": "PWM Interface",
+      "value": "test-bench"
+    },
+    {
+      "block": "Task Manager",
+      "value": "multicore"
+    },
+    {
+      "block": "Utilities",
+      "value": "device-libraries"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ADC Interface",
+      "value": "Test bench ADC interface for AURIX TC4x — use for injecting analog sensor signals into processor-in-the-loop or SIL test environments"
+    },
+    {
+      "block": "AURIX TC46x",
+      "value": "Peripheral blocks for Infineon AURIX TC46x devices — use for accessing ADC, GPIO, PWM, and timers on TC46x automotive microcontrollers"
+    },
+    {
+      "block": "AURIX TC48x",
+      "value": "Peripheral blocks for Infineon AURIX TC48x devices — use for accessing ADC, GPIO, PWM, and timers on TC48x automotive microcontrollers"
+    },
+    {
+      "block": "AURIX TC49xN",
+      "value": "Peripheral blocks for Infineon AURIX TC49xN devices — use for accessing ADC, GPIO, PWM, and timers on TC49xN automotive microcontrollers"
+    },
+    {
+      "block": "AURIX TC4Dx",
+      "value": "Peripheral blocks for Infineon AURIX TC4Dx devices — use for accessing ADC, GPIO, PWM, and timers on TC4Dx automotive microcontrollers"
+    },
+    {
+      "block": "Digital IO Interface",
+      "value": "Test bench digital I/O interface for AURIX TC4x — use for stimulating or monitoring GPIO signals in processor-in-the-loop tests"
+    },
+    {
+      "block": "Event Source",
+      "value": "Test bench event generator for AURIX TC4x — use for triggering interrupts or timed events in processor-in-the-loop test scenarios"
+    },
+    {
+      "block": "Interprocess Data Channel",
+      "value": "Test bench inter-core data channel for AURIX TC4x — use for monitoring or injecting shared data in multi-core test environments"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "Read shared data between CPU cores on AURIX TC4x — use for receiving variables published by tasks running on other cores"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "Write shared data between CPU cores on AURIX TC4x — use for publishing variables to tasks running on other cores"
+    },
+    {
+      "block": "PWM Interface",
+      "value": "Test bench PWM interface for AURIX TC4x — use for capturing or injecting PWM signals in processor-in-the-loop tests"
+    },
+    {
+      "block": "Task Manager",
+      "value": "Configure multi-core task scheduling on AURIX TC4x — use for assigning and managing real-time tasks across multiple CPU cores"
+    },
+    {
+      "block": "Utilities",
+      "value": "Utility and configuration blocks for AURIX TC4x — use for board setup, clock configuration, or diagnostic functions on TC4x platforms"
+    }
+  ]
+}

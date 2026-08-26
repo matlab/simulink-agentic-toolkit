@@ -1,0 +1,261 @@
+{
+  "libraryName": "Sensor Fusion and Tracking Toolbox",
+  "generatedAt": "2026-08-19T14:31:09",
+  "blockCount": 27,
+  "blocks": [
+    {
+      "name": "Global Nearest Neighbor Multi Object Tracker",
+      "referenceBlock": "motalgorithmslib/Global Nearest Neighbor Multi Object Tracker",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Grid-Based Multi Object Tracker",
+      "referenceBlock": "motalgorithmslib/Grid-Based Multi Object Tracker",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Joint Probabilistic Data Association Multi Object Tracker",
+      "referenceBlock": "motalgorithmslib/Joint Probabilistic Data Association Multi Object Tracker",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Probability Hypothesis Density Tracker",
+      "referenceBlock": "motalgorithmslib/Probability Hypothesis Density Tracker",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Track-Oriented Multi-Hypothesis Tracker",
+      "referenceBlock": "motalgorithmslib/Track-Oriented Multi-Hypothesis Tracker",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Track-To-Track Fuser",
+      "referenceBlock": "motalgorithmslib/Track-To-Track Fuser",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Generalized Optimal Subpattern Assignment Metric",
+      "referenceBlock": "trackmetricslib/Generalized Optimal Subpattern Assignment Metric",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Optimal Subpattern Assignment Metric",
+      "referenceBlock": "trackmetricslib/Optimal Subpattern Assignment Metric",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "JIPDA Track Assigner",
+      "referenceBlock": "jipdatrackercomponentslib/JIPDA Track Assigner",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.components.JIPDATrackAssigner",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "JIPDA Track Initiator",
+      "referenceBlock": "jipdatrackercomponentslib/JIPDA Track Initiator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.components.JIPDATrackInitiator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "JIPDA Track Maintainer",
+      "referenceBlock": "jipdatrackercomponentslib/JIPDA Track Maintainer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.components.JIPDATrackMaintainer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "JIPDA Track Outputter",
+      "referenceBlock": "jipdatrackercomponentslib/JIPDA Track Outputter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.components.JIPDATrackOutputter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "JIPDA Track Predictor",
+      "referenceBlock": "jipdatrackercomponentslib/JIPDA Track Predictor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.components.JIPDATrackPredictor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "JIPDA Track Updater",
+      "referenceBlock": "jipdatrackercomponentslib/JIPDA Track Updater",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.components.JIPDATrackUpdater",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Birth Model",
+      "referenceBlock": "sensorspecslib/Birth Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.BirthModelFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clutter Model",
+      "referenceBlock": "sensorspecslib/Clutter Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.ClutterModelFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detectability Model",
+      "referenceBlock": "sensorspecslib/Detectability Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.DetectabilityModelFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Measurement Model",
+      "referenceBlock": "sensorspecslib/Measurement Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.MeasurementModelFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensor Specification",
+      "referenceBlock": "sensorspecslib/Sensor Specification",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.SensorSpecificationFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "State Transition Model",
+      "referenceBlock": "targetspecslib/State Transition Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.StateTransitionModelFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Survival Model",
+      "referenceBlock": "targetspecslib/Survival Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.SurvivalModelFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Target Specification",
+      "referenceBlock": "targetspecslib/Target Specification",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "fusion.tracker.simulink.TargetSpecificationFactory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fusion Radar Sensor",
+      "referenceBlock": "trackingscenarioandsensormodelslib/Fusion Radar Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Scenario To Platform",
+      "referenceBlock": "trackingscenarioandsensormodelslib/Scenario To Platform",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tracking Scenario Reader",
+      "referenceBlock": "trackingscenarioandsensormodelslib/Tracking Scenario Reader",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detection Concatenation",
+      "referenceBlock": "trackingutilitieslib/Detection Concatenation",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Track Concatenation",
+      "referenceBlock": "trackingutilitieslib/Track Concatenation",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

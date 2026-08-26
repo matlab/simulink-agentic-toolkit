@@ -1,0 +1,164 @@
+{
+  "commonBlocks": [
+    "Sources",
+    "Sinks",
+    "Analysis & Enhancement",
+    "Filtering",
+    "Geometric Transformations",
+    "Text & Graphics"
+  ],
+  "categories": [
+    {
+      "name": "image-processing",
+      "description": "Core image processing: filtering, morphology, geometric transforms, and enhancement",
+      "keywords": [
+        "filter",
+        "morphology",
+        "geometric",
+        "transform",
+        "enhance"
+      ]
+    },
+    {
+      "name": "image-io",
+      "description": "Image and video input/output from files, cameras, and displays",
+      "keywords": [
+        "source",
+        "sink",
+        "camera",
+        "video",
+        "display"
+      ]
+    },
+    {
+      "name": "image-analysis",
+      "description": "Image statistics, frequency transforms, and feature analysis",
+      "keywords": [
+        "statistics",
+        "histogram",
+        "fft",
+        "hough",
+        "feature"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Demos, format conversions, information, and helper operations",
+      "keywords": [
+        "demo",
+        "info",
+        "conversion",
+        "utility",
+        "color"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Analysis & Enhancement",
+      "value": "image-processing"
+    },
+    {
+      "block": "Conversions",
+      "value": "utilities"
+    },
+    {
+      "block": "Demos",
+      "value": "utilities"
+    },
+    {
+      "block": "Filtering",
+      "value": "image-processing"
+    },
+    {
+      "block": "Geometric Transformations",
+      "value": "image-processing"
+    },
+    {
+      "block": "Info",
+      "value": "utilities"
+    },
+    {
+      "block": "Morphological Operations",
+      "value": "image-processing"
+    },
+    {
+      "block": "Sinks",
+      "value": "image-io"
+    },
+    {
+      "block": "Sources",
+      "value": "image-io"
+    },
+    {
+      "block": "Statistics",
+      "value": "image-analysis"
+    },
+    {
+      "block": "Text & Graphics",
+      "value": "image-io"
+    },
+    {
+      "block": "Transforms",
+      "value": "image-analysis"
+    },
+    {
+      "block": "Utilities",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Analysis & Enhancement",
+      "value": "Analyze and enhance images with edge detection, histogram equalization, contrast adjustment, and blob analysis — use for preprocessing steps that improve feature visibility before detection or recognition"
+    },
+    {
+      "block": "Conversions",
+      "value": "Convert between image formats, color spaces (RGB, HSV, YCbCr), and data types — use to transform image data into the representation required by downstream processing blocks"
+    },
+    {
+      "block": "Demos",
+      "value": "Access demonstration models for computer vision workflows — use as reference implementations for object detection, tracking, and image processing pipelines"
+    },
+    {
+      "block": "Filtering",
+      "value": "Apply spatial filters (median, Gaussian, bilateral, custom kernels) to images — use for noise reduction, smoothing, or sharpening as part of an image processing pipeline"
+    },
+    {
+      "block": "Geometric Transformations",
+      "value": "Apply geometric operations (resize, rotate, warp, crop, affine/projective transforms) to images — use for image registration, perspective correction, or preparing images for fixed-size network inputs"
+    },
+    {
+      "block": "Info",
+      "value": "Display Computer Vision Toolbox version and configuration information — use to verify toolbox installation and compatibility"
+    },
+    {
+      "block": "Morphological Operations",
+      "value": "Apply morphological operations (erode, dilate, open, close, top-hat) to binary and grayscale images — use for shape-based filtering, noise removal from binary masks, or object segmentation refinement"
+    },
+    {
+      "block": "Sinks",
+      "value": "Display images and video with annotations in viewer windows — use to visualize intermediate or final results of a vision processing pipeline during simulation"
+    },
+    {
+      "block": "Sources",
+      "value": "Read images and video from files, cameras, or frame generators — use as input to vision processing pipelines for offline analysis or real-time camera capture"
+    },
+    {
+      "block": "Statistics",
+      "value": "Compute image statistics (mean, variance, histogram, min/max, projection) — use for image quality metrics, automatic thresholding, or feature computation in classification pipelines"
+    },
+    {
+      "block": "Text & Graphics",
+      "value": "Overlay text, shapes, bounding boxes, and markers onto images — use to annotate detection results, draw ROIs, or add labels for visualization and debugging"
+    },
+    {
+      "block": "Transforms",
+      "value": "Apply frequency-domain and spatial transforms (FFT, DCT, Radon, Hough) to images — use for frequency analysis, feature extraction, or line/circle detection in structured scenes"
+    },
+    {
+      "block": "Utilities",
+      "value": "Perform common vision operations like image padding, ROI extraction, frame rate conversion, and matrix reshaping — use as helper blocks connecting major vision processing stages"
+    }
+  ]
+}

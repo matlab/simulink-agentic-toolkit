@@ -1,0 +1,321 @@
+{
+  "commonBlocks": [
+    "ad9361_rx",
+    "ad9361_tx",
+    "ad9371_rx",
+    "ad9371_tx",
+    "ad9371_orx"
+  ],
+  "categories": [
+    {
+      "name": "ad9361",
+      "description": "AD9361 transceiver models and testbenches",
+      "keywords": [
+        "ad9361",
+        "receiver",
+        "transmitter",
+        "qpsk"
+      ]
+    },
+    {
+      "name": "ad9371-models",
+      "description": "AD9371 transceiver signal chain models",
+      "keywords": [
+        "ad9371",
+        "rx",
+        "tx",
+        "orx",
+        "snf"
+      ]
+    },
+    {
+      "name": "ad9371-testbenches",
+      "description": "AD9371 verification testbenches",
+      "keywords": [
+        "testbench",
+        "dpd",
+        "loopback",
+        "characterize"
+      ]
+    },
+    {
+      "name": "ad9371-utilities",
+      "description": "AD9371 digital filter and utility blocks",
+      "keywords": [
+        "filter",
+        "decimation",
+        "interpolation",
+        "lo",
+        "signal"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ByPass",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "CW Signal",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "DEC4",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "DEC5",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "DEC5HR",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "External LO1",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "FIR",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "Help",
+      "value": "ad9371-testbenches"
+    },
+    {
+      "block": "Integrated LO",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "LTE signal",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "LTE signal1",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "Power",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "RHB1",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "TFIR",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "THB1",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "THB2",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "TestSignalTX",
+      "value": "ad9371-utilities"
+    },
+    {
+      "block": "ad9361_QPSK",
+      "value": "ad9361"
+    },
+    {
+      "block": "ad9361_RX",
+      "value": "ad9361"
+    },
+    {
+      "block": "ad9361_RX_OOB",
+      "value": "ad9361"
+    },
+    {
+      "block": "ad9361_TX",
+      "value": "ad9361"
+    },
+    {
+      "block": "ad9361_rx",
+      "value": "ad9361"
+    },
+    {
+      "block": "ad9361_tx",
+      "value": "ad9361"
+    },
+    {
+      "block": "ad9371_DPD",
+      "value": "ad9371-testbenches"
+    },
+    {
+      "block": "ad9371_ORX",
+      "value": "ad9371-testbenches"
+    },
+    {
+      "block": "ad9371_RX",
+      "value": "ad9371-testbenches"
+    },
+    {
+      "block": "ad9371_SNF",
+      "value": "ad9371-testbenches"
+    },
+    {
+      "block": "ad9371_TX",
+      "value": "ad9371-testbenches"
+    },
+    {
+      "block": "ad9371_TX_RX",
+      "value": "ad9371-testbenches"
+    },
+    {
+      "block": "ad9371_orx",
+      "value": "ad9371-models"
+    },
+    {
+      "block": "ad9371_rx",
+      "value": "ad9371-models"
+    },
+    {
+      "block": "ad9371_snf",
+      "value": "ad9371-models"
+    },
+    {
+      "block": "ad9371_tx",
+      "value": "ad9371-models"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ByPass",
+      "value": "Signal bypass utility — use for conditionally routing signals around processing stages"
+    },
+    {
+      "block": "CW Signal",
+      "value": "Generate a continuous-wave test signal — use for providing sinusoidal stimulus in RF testbenches"
+    },
+    {
+      "block": "DEC4",
+      "value": "Decimation-by-4 filter — use for digital sample rate reduction in the AD9371 receive path"
+    },
+    {
+      "block": "DEC5",
+      "value": "Decimation-by-5 filter — use for digital sample rate reduction in the AD9371 receive path"
+    },
+    {
+      "block": "DEC5HR",
+      "value": "Decimation-by-5 half-rate filter — use for digital decimation at reduced clock rate"
+    },
+    {
+      "block": "External LO1",
+      "value": "External local oscillator model — use for simulating phase noise and frequency offset from an external LO source"
+    },
+    {
+      "block": "FIR",
+      "value": "FIR decimation filter — use for programmable receive filtering in the AD9371 digital chain"
+    },
+    {
+      "block": "Help",
+      "value": "Display help and documentation links for AD9371 models — use for accessing reference material"
+    },
+    {
+      "block": "Integrated LO",
+      "value": "Integrated local oscillator model — use for simulating the on-chip LO with synthesizer characteristics"
+    },
+    {
+      "block": "LTE signal",
+      "value": "Generate an LTE test waveform — use for stimulating the transceiver with a realistic cellular signal"
+    },
+    {
+      "block": "LTE signal1",
+      "value": "Generate a second LTE test waveform — use for multi-carrier testing scenarios"
+    },
+    {
+      "block": "Power",
+      "value": "Measure signal power — use for computing average or peak power at any point in the RF chain"
+    },
+    {
+      "block": "RHB1",
+      "value": "Receive half-band filter stage 1 — use for sample rate conversion in the AD9371 digital receive chain"
+    },
+    {
+      "block": "TFIR",
+      "value": "FIR interpolation filter — use for programmable transmit filtering in the AD9371 digital chain"
+    },
+    {
+      "block": "THB1",
+      "value": "Transmit half-band filter stage 1 — use for sample rate conversion in the AD9371 digital transmit chain"
+    },
+    {
+      "block": "THB2",
+      "value": "Transmit half-band filter stage 2 — use for additional interpolation in the AD9371 transmit path"
+    },
+    {
+      "block": "TestSignalTX",
+      "value": "Generate a transmit test signal — use for providing configurable stimulus to the TX chain"
+    },
+    {
+      "block": "ad9361_QPSK",
+      "value": "AD9361 QPSK testbench — use for verifying transceiver performance with a QPSK modulated signal"
+    },
+    {
+      "block": "ad9361_RX",
+      "value": "AD9361 receiver testbench — use for characterizing receiver sensitivity, gain, and noise figure"
+    },
+    {
+      "block": "ad9361_RX_OOB",
+      "value": "AD9361 receiver out-of-band testbench — use for evaluating out-of-band rejection and filter performance"
+    },
+    {
+      "block": "ad9361_TX",
+      "value": "AD9361 transmitter testbench — use for characterizing transmitter EVM, spectral mask, and power"
+    },
+    {
+      "block": "ad9361_rx",
+      "value": "Model the AD9361 receiver chain — use for simulating wideband RF receive path with gain, filtering, and ADC effects"
+    },
+    {
+      "block": "ad9361_tx",
+      "value": "Model the AD9361 transmitter chain — use for simulating RF transmit path with DAC, filtering, and PA nonlinearity"
+    },
+    {
+      "block": "ad9371_DPD",
+      "value": "AD9371 digital predistortion testbench — use for verifying DPD linearization of the transmit chain"
+    },
+    {
+      "block": "ad9371_ORX",
+      "value": "AD9371 observation receiver testbench — use for characterizing the ORx feedback path"
+    },
+    {
+      "block": "ad9371_RX",
+      "value": "AD9371 receiver testbench — use for characterizing receiver performance metrics"
+    },
+    {
+      "block": "ad9371_SNF",
+      "value": "AD9371 sniffer receiver testbench — use for verifying sniffer path performance"
+    },
+    {
+      "block": "ad9371_TX",
+      "value": "AD9371 transmitter testbench — use for characterizing transmitter linearity and spectral performance"
+    },
+    {
+      "block": "ad9371_TX_RX",
+      "value": "AD9371 combined TX-RX testbench — use for end-to-end loopback verification of the transceiver"
+    },
+    {
+      "block": "ad9371_orx",
+      "value": "Model the AD9371 observation receiver — use for simulating the ORx path used in DPD feedback"
+    },
+    {
+      "block": "ad9371_rx",
+      "value": "Model the AD9371 receiver chain — use for simulating wideband receive with digital downconversion"
+    },
+    {
+      "block": "ad9371_snf",
+      "value": "Model the AD9371 sniffer receiver — use for simulating the low-power monitoring receiver path"
+    },
+    {
+      "block": "ad9371_tx",
+      "value": "Model the AD9371 transmitter chain — use for simulating wideband transmit with digital predistortion support"
+    }
+  ]
+}

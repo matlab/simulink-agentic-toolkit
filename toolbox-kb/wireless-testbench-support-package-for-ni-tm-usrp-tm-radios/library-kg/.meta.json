@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:15",
+  "generatedAtDatenum": 740213.74461851851,
+  "generatorVersion": 4,
+  "libraries": [
+    "Wireless Testbench Support Package for NI(TM) USRP(TM) Radios"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Wireless_Testbench_Support_Package_for_NI_TM__USRP_TM__Radios": {
+      "blockCount": 2
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "libraryName": "Code Component",
+  "generatedAt": "2026-08-19T14:30:48",
+  "blockCount": 1,
+  "blocks": [
+    {
+      "name": "Co-simulation SDK",
+      "referenceBlock": "CodeComponent/Co-simulation SDK",
+      "blockType": "CoSimServiceBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

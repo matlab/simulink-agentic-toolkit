@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456568283,
+  "generatorVersion": 4,
+  "libraries": [
+    "Fuzzy Logic Toolbox"
+  ],
+  "blockCount": 5,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Fuzzy_Logic_Toolbox": {
+      "blockCount": 5
+    }
+  }
+}

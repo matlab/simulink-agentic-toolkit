@@ -1,0 +1,38 @@
+{
+  "commonBlocks": [
+    "FRDM-KL25Z"
+  ],
+  "categories": [
+    {
+      "name": "nxp-peripherals",
+      "description": "Hardware peripheral access for NXP FRDM-KL25Z board",
+      "keywords": [
+        "frdm",
+        "kl25z",
+        "nxp",
+        "arm",
+        "cortex"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "FRDM-KL25Z",
+      "value": "nxp-peripherals"
+    },
+    {
+      "block": "FRDM-TFC Shield",
+      "value": "nxp-peripherals"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "FRDM-KL25Z",
+      "value": "Access peripheral blocks for the NXP FRDM-KL25Z development board — use for deploying Simulink algorithms to the ARM Cortex-M0+ based KL25Z microcontroller"
+    },
+    {
+      "block": "FRDM-TFC Shield",
+      "value": "Access peripheral blocks for the FRDM-TFC shield — use for line-following robot or motor control applications on the FRDM-KL25Z with TFC hardware"
+    }
+  ]
+}

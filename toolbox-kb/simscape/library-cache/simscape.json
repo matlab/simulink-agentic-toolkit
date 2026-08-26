@@ -1,0 +1,2484 @@
+{
+  "libraryName": "Simscape",
+  "generatedAt": "2026-08-19T14:31:09",
+  "blockCount": 274,
+  "blocks": [
+    {
+      "name": "Capacitor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Capacitor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Capacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Diode",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Diode",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Diode",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Electrical Reference",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Electrical Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Electrical Reference",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Floating Reference",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Floating Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Floating Reference",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Gyrator",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Gyrator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gyrator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Transformer",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Ideal Transformer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Transformer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inductor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Inductor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infinite Resistance",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Infinite Resistance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Infinite Resistance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Memristor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Memristor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Memristor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mutual Inductor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Mutual Inductor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mutual Inductor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Op-Amp",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Op-Amp",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Op-Amp",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Open Circuit",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Open Circuit",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Open Circuit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resistor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Resistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Electromechanical Converter",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Rotational Electromechanical Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational\nElectromechanical\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermal Resistor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Thermal Resistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermal Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Electromechanical Converter",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Translational Electromechanical Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nElectromechanical\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Gap Capacitor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Variable Gap Capacitor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Gap\nCapacitor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Resistor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Elements/Variable Resistor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Resistor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current Sensor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sensors/Current Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage Sensor",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sensors/Voltage Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Voltage Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AC Current Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/AC Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "AC Current Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AC Voltage Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/AC Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "AC Voltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Current Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/Controlled Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Current\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Voltage Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/Controlled Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Voltage\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current-Controlled Current Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/Current-Controlled Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current-Controlled\nCurrent Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current-Controlled Voltage Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/Current-Controlled Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Current-Controlled\nVoltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Current Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/DC Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DC Current Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Voltage Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/DC Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "DC Voltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage-Controlled Current Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/Voltage-Controlled Current Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Voltage-Controlled\nCurrent Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Voltage-Controlled Voltage Source",
+      "referenceBlock": "fl_lib/Electrical/Electrical Sources/Voltage-Controlled Voltage Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Voltage-Controlled\nVoltage Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Absolute Reference (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Absolute Reference (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Absolute Reference\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cap (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Cap (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cap (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Volume Chamber (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Constant Volume Chamber (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Volume\nChamber (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Resistance (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Flow Resistance (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Resistance (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infinite Flow Resistance (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Infinite Flow Resistance (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Infinite Flow\nResistance (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Restriction (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Local Restriction (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Restriction\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Pipe (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reservoir (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Reservoir (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Reservoir (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Mechanical Converter (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Rotational Mechanical Converter (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational\nMechanical Converter\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Mechanical Converter (G)",
+      "referenceBlock": "fl_lib/Gas/Elements/Translational Mechanical Converter (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nMechanical Converter\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Sensor (G)",
+      "referenceBlock": "fl_lib/Gas/Sensors/Flow Rate Sensor (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Sensor (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mach Number Sensor (G)",
+      "referenceBlock": "fl_lib/Gas/Sensors/Mach Number Sensor (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mach Number Sensor\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure & Temperature Sensor (G)",
+      "referenceBlock": "fl_lib/Gas/Sensors/Pressure & Temperature Sensor (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure &\nTemperature Sensor\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermodynamic Properties Sensor (G)",
+      "referenceBlock": "fl_lib/Gas/Sensors/Thermodynamic Properties Sensor (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermodynamic\nProperties Sensor\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transport Properties Sensor (G)",
+      "referenceBlock": "fl_lib/Gas/Sensors/Transport Properties Sensor (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Transport Properties\nSensor (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Source (G)",
+      "referenceBlock": "fl_lib/Gas/Sources/Flow Rate Source (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Source (G)",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Pressure Source (G)",
+      "referenceBlock": "fl_lib/Gas/Sources/Pressure Source (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Source (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gas Properties (G)",
+      "referenceBlock": "fl_lib/Gas/Utilities/Gas Properties (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gas Properties (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cap (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Cap (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cap (IL)",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Constant Volume Chamber (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Constant Volume Chamber (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Volume\nChamber (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Resistance (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Flow Resistance (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Resistance (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infinite Flow Resistance (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Infinite Flow Resistance (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Infinite Flow\nResistance (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Laminar Leakage (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Laminar Leakage (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Laminar Leakage (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Restriction (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Local Restriction (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Restriction\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Pipe (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reservoir (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Reservoir (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Reservoir (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Mechanical Converter (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Rotational Mechanical Converter (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational\nMechanical Converter\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Mechanical Converter (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Translational Mechanical Converter (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nMechanical Converter\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Mechanical Converter (IL-PB)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Elements/Translational Mechanical Converter (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nMechanical Converter\n(IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Sensor (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Sensors/Flow Rate Sensor (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Sensor\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Liquid Properties Sensor (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Sensors/Liquid Properties Sensor (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Liquid Properties\nSensor (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Sensor (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Sensors/Pressure Sensor (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Sensor (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Source (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Sources/Flow Rate Source (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Source\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Source (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Sources/Pressure Source (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Source (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Isothermal Liquid Properties (IL)",
+      "referenceBlock": "fl_lib/Isothermal Liquid/Utilities/Isothermal Liquid Properties (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Isothermal Liquid\nProperties (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Electromagnetic Converter",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Elements/Electromagnetic Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Electromagnetic\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fundamental Reluctance",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Elements/Fundamental Reluctance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fundamental\nReluctance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnetic Reference",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Elements/Magnetic Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Magnetic Reference",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Permanent Magnet",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Elements/Permanent Magnet",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Permanent Magnet",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Reluctance",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Elements/Reluctance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Reluctance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reluctance Force Actuator",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Elements/Reluctance Force Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Reluctance Force\nActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Reluctance",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Elements/Variable Reluctance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Reluctance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flux Sensor",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Sensors/Flux Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flux Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MMF Sensor",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Sensors/MMF Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "MMF Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Flux Source",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Sources/Controlled Flux Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Flux\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled MMF Source",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Sources/Controlled MMF Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled MMF\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flux Source",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Sources/Flux Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flux Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MMF Source",
+      "referenceBlock": "fl_lib/Magnetic/Magnetic Sources/MMF Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "MMF Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Force Sensor",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sensors/Ideal Force Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Force Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Rotational Motion Sensor",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sensors/Ideal Rotational Motion Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Rotational\nMotion Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Torque Sensor",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sensors/Ideal Torque Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Torque Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Translational Motion Sensor",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sensors/Ideal Translational Motion Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Translational\nMotion Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Angular Velocity Source",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sources/Ideal Angular Velocity Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Angular\nVelocity Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Force Source",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sources/Ideal Force Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Force Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Torque Source",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sources/Ideal Torque Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Torque Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Translational Velocity Source",
+      "referenceBlock": "fl_lib/Mechanical/Mechanical Sources/Ideal Translational Velocity Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Translational\nVelocity Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gear Box",
+      "referenceBlock": "fl_lib/Mechanical/Mechanisms/Gear Box",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gear Box",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lever",
+      "referenceBlock": "fl_lib/Mechanical/Mechanisms/Lever",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Lever",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Slider-Crank",
+      "referenceBlock": "fl_lib/Mechanical/Mechanisms/Slider-Crank",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Slider-Crank",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wheel and Axle",
+      "referenceBlock": "fl_lib/Mechanical/Mechanisms/Wheel and Axle",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Wheel and Axle",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Multibody Interface",
+      "referenceBlock": "fl_lib/Mechanical/Multibody Interfaces/Rotational Multibody Interface",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Multibody\nInterface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Multibody Interface",
+      "referenceBlock": "fl_lib/Mechanical/Multibody Interfaces/Translational Multibody Interface",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nMultibody Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inertia",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Inertia",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Inertia",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mechanical Rotational Reference",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Mechanical Rotational Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mechanical\nRotational Reference",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Damper",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Rotational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Damper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Free End",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Rotational Free End",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Free End",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Friction",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Rotational Friction",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Friction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Hard Stop",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Rotational Hard Stop",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Hard Stop",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Inerter",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Rotational Inerter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Inerter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Spring",
+      "referenceBlock": "fl_lib/Mechanical/Rotational Elements/Rotational Spring",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Spring",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mass",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Mass",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mass",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mechanical Translational Reference",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Mechanical Translational Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mechanical\nTranslational\nReference",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Friction",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Translational Friction",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nFriction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Inerter",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Translational Inerter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nInerter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Damper",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Translational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Damper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Free End",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Translational Free End",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Free\nEnd",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Hard Stop",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Translational Hard Stop",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Hard\nStop",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Spring",
+      "referenceBlock": "fl_lib/Mechanical/Translational Elements/Translational Spring",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Spring",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cam and Follower (AB-PB)",
+      "referenceBlock": "fl_lib/Mechanisms/Cam and Follower (AB-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cam and Follower\n(AB-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wheel and Axle (AB-PB)",
+      "referenceBlock": "fl_lib/Mechanisms/Wheel and Axle (AB-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Wheel and Axle\n(AB-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Absolute Reference (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Absolute Reference (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Absolute Reference\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cap (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Cap (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cap (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Volume Chamber (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Constant Volume Chamber (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Volume\nChamber (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Resistance (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Flow Resistance (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Resistance (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infinite Flow Resistance (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Infinite Flow Resistance (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Infinite Flow\nResistance (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Restriction (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Local Restriction (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Restriction\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moisture Separator (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Moisture Separator (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Moisture Separator\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Pipe (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reservoir (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Reservoir (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Reservoir (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Mechanical Converter (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Rotational Mechanical Converter (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational\nMechanical Converter\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Mechanical Converter (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Elements/Translational Mechanical Converter (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nMechanical Converter\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Sensor (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sensors/Flow Rate Sensor (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Sensor\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Measurement Selector (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sensors/Measurement Selector (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Measurement Selector\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moisture & Trace Gas Sensor (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sensors/Moisture & Trace Gas Sensor (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Moisture & Trace Gas\nSensor (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure & Temperature Sensor (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sensors/Pressure & Temperature Sensor (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure &\nTemperature Sensor\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermodynamic Properties Sensor (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sensors/Thermodynamic Properties Sensor (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermodynamic\nProperties Sensor\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transport Properties Sensor (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sensors/Transport Properties Sensor (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Transport Properties\nSensor (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Source (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sources/Flow Rate Source (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Source\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Source (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sources/Pressure Source (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Source (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moisture Source (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sources/Moisture & Trace Gas Sources/Moisture Source (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Moisture Source (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trace Gas Source (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Sources/Moisture & Trace Gas Sources/Trace Gas Source (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Trace Gas Source\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moist Air Properties (MA)",
+      "referenceBlock": "fl_lib/Moist Air/Utilities/Moist Air Properties (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Moist Air Properties\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Constant Delay",
+      "referenceBlock": "fl_lib/Physical Signals/Delays/PS Constant Delay",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Constant Delay",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Variable Delay",
+      "referenceBlock": "fl_lib/Physical Signals/Delays/PS Variable Delay",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Variable Delay",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Asynchronous Sample & Hold",
+      "referenceBlock": "fl_lib/Physical Signals/Discrete/PS Asynchronous Sample & Hold",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Asynchronous\nSample & Hold",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Add",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Add",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Add",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Bias",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Bias",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Bias",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PS Concatenate",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Concatenate",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Concatenate",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PS Divide",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Divide",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Divide",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Dot Product",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Dot Product",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Dot Product",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PS Gain",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Gain",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Gain",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Math Function",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Math Function",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Math Function",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Product",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Product",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Product",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Subtract",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Subtract",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Subtract",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Sum of Elements",
+      "referenceBlock": "fl_lib/Physical Signals/Functions/PS Sum of Elements",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Sum of Elements",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PS Integrator",
+      "referenceBlock": "fl_lib/Physical Signals/Linear Operators/PS Integrator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Integrator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS State-Space",
+      "referenceBlock": "fl_lib/Physical Signals/Linear Operators/PS State-Space",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS State-Space",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "PS Transfer Function",
+      "referenceBlock": "fl_lib/Physical Signals/Linear Operators/PS Transfer Function",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Transfer Function",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Lookup Table (1D)",
+      "referenceBlock": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (1D)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Lookup Table (1D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Lookup Table (2D)",
+      "referenceBlock": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (2D)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Lookup Table (2D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Lookup Table (3D)",
+      "referenceBlock": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (3D)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Lookup Table (3D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Lookup Table (4D)",
+      "referenceBlock": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (4D)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Lookup Table (4D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Scattered Lookup Table (2D)",
+      "referenceBlock": "fl_lib/Physical Signals/Lookup Tables/PS Scattered Lookup Table (2D)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Scattered Lookup\nTable (2D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Scattered Lookup Table (3D)",
+      "referenceBlock": "fl_lib/Physical Signals/Lookup Tables/PS Scattered Lookup Table (3D)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Scattered Lookup\nTable (3D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Abs",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Abs",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Abs",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Ceil",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Ceil",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Ceil",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Dead Zone",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Dead Zone",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Dead Zone",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Fix",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Fix",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Fix",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Floor",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Floor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Floor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Max",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Max",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Max",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Min",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Min",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Min",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Round",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Round",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Round",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Saturation",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Saturation",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Saturation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Selector",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Selector",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Selector",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PS Sign",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Sign",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Sign",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Switch",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Switch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Three-Element Demux",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Three-Element Demux",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Three-Element\nDemux",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Vector Norm",
+      "referenceBlock": "fl_lib/Physical Signals/Nonlinear Operators/PS Vector Norm",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Vector Norm",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PS Constant Offset Estimator",
+      "referenceBlock": "fl_lib/Physical Signals/Periodic Operators/PS Constant Offset Estimator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Constant Offset\nEstimator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Harmonic Estimator (Amplitude, Phase)",
+      "referenceBlock": "fl_lib/Physical Signals/Periodic Operators/PS Harmonic Estimator (Amplitude, Phase)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Harmonic\nEstimator\n(Amplitude, Phase)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Harmonic Estimator (Real, Imaginary)",
+      "referenceBlock": "fl_lib/Physical Signals/Periodic Operators/PS Harmonic Estimator (Real, Imaginary)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Harmonic\nEstimator (Real,\nImaginary)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS RMS Estimator",
+      "referenceBlock": "fl_lib/Physical Signals/Periodic Operators/PS RMS Estimator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS RMS Estimator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Terminator",
+      "referenceBlock": "fl_lib/Physical Signals/Sinks/PS Terminator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Terminator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Constant",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Constant",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Constant",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Counter",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Counter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Counter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Ramp",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Ramp",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Ramp",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Random Number",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Random Number",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Random Number",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Repeating Sequence",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Repeating Sequence",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Repeating\nSequence",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Sine Wave",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Sine Wave",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Sine Wave",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Step",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Step",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Step",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Uniform Random Number",
+      "referenceBlock": "fl_lib/Physical Signals/Sources/PS Uniform Random Number",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Uniform Random\nNumber",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PS Signal Specification",
+      "referenceBlock": "fl_lib/Physical Signals/Utilities/PS Signal Specification",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "PS Signal\nSpecification",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inertia (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Inertia (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Inertia (AB)",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Inertia With Friction (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Inertia With Friction (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Inertia With\nFriction (AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Initial Relative Angle (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Initial Relative Angle (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Initial Relative\nAngle (AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Damper (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Rotational Damper (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Damper\n(AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Friction (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Rotational Friction (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Friction\n(AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Hard Stop (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Rotational Hard Stop (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Hard Stop\n(AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Inerter (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Rotational Inerter (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Inerter\n(AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Spacer (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Rotational Spacer (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Spacer\n(AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Spring (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Rotational Spring (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Spring\n(AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational World (AB)",
+      "referenceBlock": "fl_lib/Rotational/Elements/Rotational World (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational World\n(AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Motion Sensor (AB)",
+      "referenceBlock": "fl_lib/Rotational/Sensors/Rotational Motion Sensor (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Motion\nSensor (AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torque Sensor (AB)",
+      "referenceBlock": "fl_lib/Rotational/Sensors/Torque Sensor (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Torque Sensor (AB)",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Angular Velocity Actuator (AB)",
+      "referenceBlock": "fl_lib/Rotational/Sources/Angular Velocity Actuator (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Angular Velocity\nActuator (AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "External Angular Velocity Source (AB)",
+      "referenceBlock": "fl_lib/Rotational/Sources/External Angular Velocity Source (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "External Angular\nVelocity Source (AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "External Torque Source (AB)",
+      "referenceBlock": "fl_lib/Rotational/Sources/External Torque Source (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "External Torque\nSource (AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relative Angle Actuator (AB)",
+      "referenceBlock": "fl_lib/Rotational/Sources/Relative Angle Actuator (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Relative Angle\nActuator (AB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torque Actuator (AB)",
+      "referenceBlock": "fl_lib/Rotational/Sources/Torque Actuator (AB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Torque Actuator (AB)",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Interface (AB-Rotational)",
+      "referenceBlock": "fl_lib/Rotational/Utilities/Interface (AB-Rotational)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Interface\n(AB-Rotational)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Conductive Heat Transfer",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Conductive Heat Transfer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Conductive Heat\nTransfer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Convective Heat Transfer",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Convective Heat Transfer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Convective Heat\nTransfer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infinite Thermal Resistance",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Infinite Thermal Resistance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Infinite Thermal\nResistance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Perfect Insulator",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Perfect Insulator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Perfect Insulator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase-Change Thermal Mass",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Phase-Change Thermal Mass",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Phase-Change Thermal\nMass",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radiative Heat Transfer",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Radiative Heat Transfer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Radiative Heat\nTransfer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermal Mass",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Thermal Mass",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermal Mass",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermal Reference",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Thermal Reference",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermal Reference",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermal Resistance",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Thermal Resistance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermal Resistance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Thermal Resistance",
+      "referenceBlock": "fl_lib/Thermal/Thermal Elements/Variable Thermal Resistance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Thermal\nResistance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Flow Rate Sensor",
+      "referenceBlock": "fl_lib/Thermal/Thermal Sensors/Heat Flow Rate Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Flow Rate\nSensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Temperature Sensor",
+      "referenceBlock": "fl_lib/Thermal/Thermal Sensors/Temperature Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Temperature Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Temperature Source",
+      "referenceBlock": "fl_lib/Thermal/Thermal Sources/Controlled Temperature Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled\nTemperature Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Heat Flow Rate Source",
+      "referenceBlock": "fl_lib/Thermal/Thermal Sources/Controlled Heat Flow Rate Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Heat Flow\nRate Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Flow Rate Source",
+      "referenceBlock": "fl_lib/Thermal/Thermal Sources/Heat Flow Rate Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Flow Rate\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Temperature Source",
+      "referenceBlock": "fl_lib/Thermal/Thermal Sources/Temperature Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Temperature Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Absolute Reference (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Absolute Reference (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Absolute Reference\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cap (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Cap (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cap (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Volume Chamber (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Constant Volume Chamber (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Volume\nChamber (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Resistance (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Flow Resistance (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Resistance (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infinite Flow Resistance (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Infinite Flow Resistance (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Infinite Flow\nResistance (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Restriction (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Local Restriction (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Restriction\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Pipe (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reservoir (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Reservoir (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Reservoir (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Mechanical Converter (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Rotational Mechanical Converter (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational\nMechanical Converter\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Mechanical Converter (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Elements/Translational Mechanical Converter (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nMechanical Converter\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Sensor (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Sensors/Flow Rate Sensor (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Sensor\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure & Temperature Sensor (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Sensors/Pressure & Temperature Sensor (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure &\nTemperature Sensor\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermodynamic Properties Sensor (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Sensors/Thermodynamic Properties Sensor (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermodynamic\nProperties Sensor\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transport Properties Sensor (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Sensors/Transport Properties Sensor (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Transport Properties\nSensor (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Source (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Sources/Flow Rate Source (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Source\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Source (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Sources/Pressure Source (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Source (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermal Liquid Settings (TL)",
+      "referenceBlock": "fl_lib/Thermal Liquid/Utilities/Thermal Liquid Settings (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermal Liquid\nSettings (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Initial Length (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Initial Length (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Initial Length (PB)",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Mass (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Mass (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mass (PB)",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Mass With Friction (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Mass With Friction (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mass With Friction\n(PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mass With Length (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Mass With Length (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mass With Length\n(PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mass With Length & Friction (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Mass With Length & Friction (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mass With Length &\nFriction (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Friction (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Translational Friction (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nFriction (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Inerter (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Translational Inerter (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nInerter (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Damper (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Translational Damper (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Damper\n(PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Hard Stop (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Translational Hard Stop (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Hard\nStop (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Spacer (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Translational Spacer (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Spacer\n(PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Spring (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Translational Spring (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Spring\n(PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational World (PB)",
+      "referenceBlock": "fl_lib/Translational/Elements/Translational World (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational World\n(PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Force Sensor (PB)",
+      "referenceBlock": "fl_lib/Translational/Sensors/Force Sensor (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Force Sensor (PB)",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Translational Motion Sensor (PB)",
+      "referenceBlock": "fl_lib/Translational/Sensors/Translational Motion Sensor (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Motion\nSensor (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "External Translational Velocity Source (PB)",
+      "referenceBlock": "fl_lib/Translational/Sources/External Translational Velocity Source (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "External\nTranslational\nVelocity Source (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "External Force Source (PB)",
+      "referenceBlock": "fl_lib/Translational/Sources/External Force Source (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "External Force\nSource (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Force Actuator (PB)",
+      "referenceBlock": "fl_lib/Translational/Sources/Force Actuator (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Force Actuator (PB)",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Length Actuator (PB)",
+      "referenceBlock": "fl_lib/Translational/Sources/Length Actuator (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Length Actuator (PB)",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Translational Velocity Actuator (PB)",
+      "referenceBlock": "fl_lib/Translational/Sources/Translational Velocity Actuator (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nVelocity Actuator\n(PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interface (PB-Translational)",
+      "referenceBlock": "fl_lib/Translational/Utilities/Interface (PB-Translational)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Interface\n(PB-Translational)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mechanical Translational Properties (PB)",
+      "referenceBlock": "fl_lib/Translational/Utilities/Mechanical Translational Properties (PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mechanical\nTranslational\nProperties (PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Absolute Reference (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Absolute Reference (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Absolute Reference\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cap (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Cap (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cap (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant Volume Chamber (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Constant Volume Chamber (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Constant Volume\nChamber (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Resistance (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Flow Resistance (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Resistance (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infinite Flow Resistance (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Infinite Flow Resistance (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Infinite Flow\nResistance (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Restriction (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Local Restriction (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Restriction\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Pipe (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reservoir (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Reservoir (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Reservoir (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Mechanical Converter (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Rotational Mechanical Converter (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational\nMechanical Converter\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Mechanical Converter (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Elements/Translational Mechanical Converter (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nMechanical Converter\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Sensor (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sensors/Flow Rate Sensor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Sensor\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure, Temperature & Internal Energy Sensor (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sensors/Pressure, Temperature & Internal Energy Sensor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure,\nTemperature &\nInternal Energy\nSensor (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Saturation Properties Sensor (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sensors/Saturation Properties Sensor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Saturation\nProperties Sensor\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermodynamic Properties Sensor (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sensors/Thermodynamic Properties Sensor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermodynamic\nProperties Sensor\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transport Properties Sensor (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sensors/Transport Properties Sensor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Transport Properties\nSensor (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vapor Quality Sensor (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sensors/Vapor Quality Sensor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Vapor Quality Sensor\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Rate Source (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sources/Flow Rate Source (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Rate Source\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Source (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Sources/Pressure Source (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Source (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Two-Phase Fluid Properties (2P)",
+      "referenceBlock": "fl_lib/Two-Phase Fluid/Utilities/Two-Phase Fluid Properties (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Two-Phase Fluid\nProperties (2P)",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

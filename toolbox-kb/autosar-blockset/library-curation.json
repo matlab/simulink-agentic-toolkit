@@ -1,0 +1,311 @@
+{
+  "commonBlocks": [
+    "Event Receive",
+    "Event Send",
+    "DiagnosticMonitorCaller",
+    "NvMServiceCaller",
+    "Curve",
+    "Map",
+    "Prelookup",
+    "Signal Invalidation"
+  ],
+  "categories": [
+    {
+      "name": "application-routing",
+      "description": "Inter-runnable communication and event-driven data exchange between AUTOSAR software components",
+      "keywords": [
+        "event",
+        "send",
+        "receive",
+        "routing",
+        "communication"
+      ]
+    },
+    {
+      "name": "diagnostics",
+      "description": "Diagnostic Event Manager (DEM) services for fault monitoring, debouncing, and reporting",
+      "keywords": [
+        "diagnostic",
+        "dem",
+        "fault",
+        "monitor",
+        "dtc"
+      ]
+    },
+    {
+      "name": "function-inhibition",
+      "description": "Function Inhibition Manager (FIM) for controlled degradation and safety interlocks",
+      "keywords": [
+        "inhibition",
+        "fim",
+        "control",
+        "available",
+        "permission"
+      ]
+    },
+    {
+      "name": "nvram",
+      "description": "Non-volatile RAM (NvM) services for persistent data storage across power cycles",
+      "keywords": [
+        "nvram",
+        "nvm",
+        "persistent",
+        "storage",
+        "eeprom"
+      ]
+    },
+    {
+      "name": "interpolation",
+      "description": "AUTOSAR fixed-point interpolation and lookup routines for calibration data",
+      "keywords": [
+        "interpolation",
+        "lookup",
+        "curve",
+        "map",
+        "prelookup"
+      ]
+    },
+    {
+      "name": "math-functions",
+      "description": "AUTOSAR Math Function Library (MFL) building blocks for signal generation",
+      "keywords": [
+        "ramp",
+        "math",
+        "mfl",
+        "signal",
+        "generator"
+      ]
+    },
+    {
+      "name": "signal-management",
+      "description": "Signal quality, invalidation, and communication status handling",
+      "keywords": [
+        "invalidation",
+        "signal",
+        "quality",
+        "status",
+        "communication"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Control Function Available Caller",
+      "value": "function-inhibition"
+    },
+    {
+      "block": "Curve",
+      "value": "interpolation"
+    },
+    {
+      "block": "Curve Using Prelookup",
+      "value": "interpolation"
+    },
+    {
+      "block": "Dem Status Inject",
+      "value": "diagnostics"
+    },
+    {
+      "block": "Dem Status Override",
+      "value": "diagnostics"
+    },
+    {
+      "block": "Diagnostic Service Component",
+      "value": "diagnostics"
+    },
+    {
+      "block": "DiagnosticEventAvailableCaller",
+      "value": "diagnostics"
+    },
+    {
+      "block": "DiagnosticInfoCaller",
+      "value": "diagnostics"
+    },
+    {
+      "block": "DiagnosticMonitorCaller",
+      "value": "diagnostics"
+    },
+    {
+      "block": "DiagnosticOperationCycleCaller",
+      "value": "diagnostics"
+    },
+    {
+      "block": "Event Listener",
+      "value": "math-functions"
+    },
+    {
+      "block": "Event Receive",
+      "value": "application-routing"
+    },
+    {
+      "block": "Event Send",
+      "value": "application-routing"
+    },
+    {
+      "block": "Function Inhibition Caller",
+      "value": "function-inhibition"
+    },
+    {
+      "block": "Map",
+      "value": "interpolation"
+    },
+    {
+      "block": "Map Using Prelookup",
+      "value": "interpolation"
+    },
+    {
+      "block": "NVRAM Service Component",
+      "value": "nvram"
+    },
+    {
+      "block": "NvMAdminCaller",
+      "value": "nvram"
+    },
+    {
+      "block": "NvMServiceCaller",
+      "value": "nvram"
+    },
+    {
+      "block": "Prelookup",
+      "value": "interpolation"
+    },
+    {
+      "block": "Ramp",
+      "value": "math-functions"
+    },
+    {
+      "block": "Signal Invalidation",
+      "value": "signal-management"
+    },
+    {
+      "block": "Single Point Interpolation",
+      "value": "interpolation"
+    },
+    {
+      "block": "initialize_subsystem",
+      "value": "math-functions"
+    },
+    {
+      "block": "input_state",
+      "value": "math-functions"
+    },
+    {
+      "block": "state_dsr",
+      "value": "math-functions"
+    },
+    {
+      "block": "state_dsw",
+      "value": "math-functions"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Control Function Available Caller",
+      "value": "Check whether a control function is currently permitted by the FIM — use before executing safety-relevant actuator commands to respect inhibition conditions"
+    },
+    {
+      "block": "Curve",
+      "value": "Look up a 1-D calibration curve (breakpoints + values) — use for simple characteristic lines like sensor transfer functions or temperature-dependent parameters"
+    },
+    {
+      "block": "Curve Using Prelookup",
+      "value": "Interpolate a 1-D curve using pre-computed index and fraction — use when multiple curves share the same axis breakpoints and you want to compute the prelookup only once"
+    },
+    {
+      "block": "Dem Status Inject",
+      "value": "Inject a diagnostic event status into the DEM for testing — use to simulate fault conditions during MIL/SIL validation without triggering real diagnostic monitors"
+    },
+    {
+      "block": "Dem Status Override",
+      "value": "Override the reported status of a diagnostic event in the DEM — use to suppress or force fault states during calibration or integration testing"
+    },
+    {
+      "block": "Diagnostic Service Component",
+      "value": "Provide a complete DEM service interface as a single component — use when modeling a diagnostic manager that processes multiple fault events and reports status to the DCM"
+    },
+    {
+      "block": "DiagnosticEventAvailableCaller",
+      "value": "Query whether a specific diagnostic event is available in the DEM — use as a guard before calling diagnostic monitor or info services to avoid runtime errors"
+    },
+    {
+      "block": "DiagnosticInfoCaller",
+      "value": "Retrieve status information about a diagnostic event from the DEM — use to read fault status (tested, confirmed, pending) for downstream decision logic"
+    },
+    {
+      "block": "DiagnosticMonitorCaller",
+      "value": "Report a pass or fail result for a diagnostic event to the DEM — use inside monitor runnables to set fault detected/not-detected based on measured signals"
+    },
+    {
+      "block": "DiagnosticOperationCycleCaller",
+      "value": "Control operation cycle state in the DEM (start, restart, end) — use to signal driving cycle boundaries that gate when diagnostic debouncing qualifies faults"
+    },
+    {
+      "block": "Event Listener",
+      "value": "Internal event listener that triggers the initialization logic — responds to the initialize event to run startup computations"
+    },
+    {
+      "block": "Event Receive",
+      "value": "Receive asynchronous events from other AUTOSAR software components — use for inter-runnable triggered communication where data arrives on-demand rather than periodically"
+    },
+    {
+      "block": "Event Send",
+      "value": "Send asynchronous events to other AUTOSAR software components — use to trigger runnables or notify subscribers of state changes"
+    },
+    {
+      "block": "Function Inhibition Caller",
+      "value": "Request inhibition or release of a function through the FIM — use to disable degraded features when prerequisite diagnostic events indicate a fault"
+    },
+    {
+      "block": "Map",
+      "value": "Look up a 2-D calibration map (two breakpoint axes + table values) — use for characteristic maps such as base fuel injection or ignition timing vs. speed and load"
+    },
+    {
+      "block": "Map Using Prelookup",
+      "value": "Interpolate a 2-D map using pre-computed index and fraction inputs — use when multiple maps share axes and you want to reuse a single prelookup computation for efficiency"
+    },
+    {
+      "block": "NVRAM Service Component",
+      "value": "Provide a complete NvM service interface as a single component — use when modeling persistent storage logic that reads/writes calibration or adaptation data across ignition cycles"
+    },
+    {
+      "block": "NvMAdminCaller",
+      "value": "Perform administrative NvM operations (set block protection, invalidate, erase) — use for service routines that manage NVRAM block lifecycle beyond normal read/write"
+    },
+    {
+      "block": "NvMServiceCaller",
+      "value": "Read or write a persistent data block through the NvM service — use to store adaptation values, DTCs, or learned parameters that must survive power cycles"
+    },
+    {
+      "block": "Prelookup",
+      "value": "Compute index and fraction from breakpoint data for downstream interpolation blocks — use to share one axis search across multiple Curve/Map Using Prelookup blocks"
+    },
+    {
+      "block": "Ramp",
+      "value": "Generate a ramp signal with configurable slope and initial value — use for rate-limited transitions in actuator commands or soft-start/soft-stop profiles in AUTOSAR MFL functions"
+    },
+    {
+      "block": "Signal Invalidation",
+      "value": "Mark a signal as invalid to indicate communication failure or data unavailability — use in sender-receiver interfaces to propagate signal quality status to receiving components"
+    },
+    {
+      "block": "Single Point Interpolation",
+      "value": "Interpolate a single output value from a calibration axis without prelookup — use for simple 1-D calibration tables where AUTOSAR fixed-point compliance is required"
+    },
+    {
+      "block": "initialize_subsystem",
+      "value": "Internal initialization subsystem for the Ramp block — executes once at startup to set the initial state of the ramp generator"
+    },
+    {
+      "block": "input_state",
+      "value": "Internal constant block providing the initial state value for the Ramp initialization function"
+    },
+    {
+      "block": "state_dsr",
+      "value": "Internal data store read for accessing the Ramp persistent state during initialization"
+    },
+    {
+      "block": "state_dsw",
+      "value": "Internal data store write for setting the Ramp persistent state during initialization"
+    }
+  ]
+}

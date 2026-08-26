@@ -1,0 +1,108 @@
+{
+  "libraryName": "Multibody",
+  "generatedAt": "2026-08-19T14:31:02",
+  "blockCount": 10,
+  "blocks": [
+    {
+      "name": "Belts and Cables",
+      "referenceBlock": "sm_lib/Belts and Cables",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Belts and Cables",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Body Elements",
+      "referenceBlock": "sm_lib/Body Elements",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Body Elements",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constraints",
+      "referenceBlock": "sm_lib/Constraints",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Constraints",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Curves and Surfaces",
+      "referenceBlock": "sm_lib/Curves and Surfaces",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Curves and Surfaces",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Forces and Torques",
+      "referenceBlock": "sm_lib/Forces and Torques",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Forces and\nTorques",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Frames and Transforms",
+      "referenceBlock": "sm_lib/Frames and Transforms",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Frames and\nTransforms",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gears and Couplings",
+      "referenceBlock": "sm_lib/Gears and Couplings",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gears and\nCouplings",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Joints",
+      "referenceBlock": "sm_lib/Joints",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Joints",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simscape Mechanical Interfaces",
+      "referenceBlock": "sm_lib/Simscape Mechanical Interfaces",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simscape Mechanical\nInterfaces",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "sm_lib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Utilities",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

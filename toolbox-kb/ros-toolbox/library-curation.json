@@ -1,0 +1,263 @@
+{
+  "commonBlocks": [
+    "Subscribe",
+    "Publish",
+    "Blank Message",
+    "Get Transform",
+    "Read Image",
+    "Read Point Cloud"
+  ],
+  "categories": [
+    {
+      "name": "messaging",
+      "description": "Topic publish/subscribe and message creation",
+      "keywords": [
+        "publish",
+        "subscribe",
+        "blank",
+        "message",
+        "topic",
+        "header"
+      ]
+    },
+    {
+      "name": "sensor-data",
+      "description": "Sensor data encoding and decoding",
+      "keywords": [
+        "image",
+        "point cloud",
+        "scan",
+        "occupancy",
+        "write",
+        "read"
+      ]
+    },
+    {
+      "name": "services-actions",
+      "description": "ROS service calls and action client/server",
+      "keywords": [
+        "service",
+        "action",
+        "goal",
+        "cancel",
+        "monitor",
+        "call"
+      ]
+    },
+    {
+      "name": "parameters-utilities",
+      "description": "Parameter server access and coordinate utilities",
+      "keywords": [
+        "parameter",
+        "transform",
+        "time",
+        "coordinate",
+        "can"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Apply Transform",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "Blank Message",
+      "value": "messaging"
+    },
+    {
+      "block": "CAN Receive",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "CAN Transmit",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "Call Service",
+      "value": "services-actions"
+    },
+    {
+      "block": "Cancel Action Goal",
+      "value": "services-actions"
+    },
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "Current Time",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "Get Parameter",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "Get Transform",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "Header Assignment",
+      "value": "messaging"
+    },
+    {
+      "block": "Monitor Action Goal",
+      "value": "services-actions"
+    },
+    {
+      "block": "Publish",
+      "value": "messaging"
+    },
+    {
+      "block": "Read Data",
+      "value": "sensor-data"
+    },
+    {
+      "block": "Read Image",
+      "value": "sensor-data"
+    },
+    {
+      "block": "Read Occupancy Grid",
+      "value": "sensor-data"
+    },
+    {
+      "block": "Read Point Cloud",
+      "value": "sensor-data"
+    },
+    {
+      "block": "Read Scan",
+      "value": "sensor-data"
+    },
+    {
+      "block": "Receive Service Request",
+      "value": "services-actions"
+    },
+    {
+      "block": "Send Action Goal",
+      "value": "services-actions"
+    },
+    {
+      "block": "Send Service Response",
+      "value": "services-actions"
+    },
+    {
+      "block": "Set Parameter",
+      "value": "parameters-utilities"
+    },
+    {
+      "block": "Subscribe",
+      "value": "messaging"
+    },
+    {
+      "block": "Write Image",
+      "value": "sensor-data"
+    },
+    {
+      "block": "Write Point Cloud",
+      "value": "sensor-data"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Apply Transform",
+      "value": "Apply a coordinate transform to a message — use for converting sensor data between reference frames via the TF tree"
+    },
+    {
+      "block": "Blank Message",
+      "value": "Create an empty ROS message structure — use for initializing message fields before populating and publishing"
+    },
+    {
+      "block": "CAN Receive",
+      "value": "Receive CAN messages via ROS 2 — use for reading vehicle bus data through the ROS 2 CAN interface"
+    },
+    {
+      "block": "CAN Transmit",
+      "value": "Transmit CAN messages via ROS 2 — use for sending vehicle bus commands through the ROS 2 CAN interface"
+    },
+    {
+      "block": "Call Service",
+      "value": "Call a ROS service and receive its response — use for requesting actions from ROS nodes that provide services"
+    },
+    {
+      "block": "Cancel Action Goal",
+      "value": "Cancel a pending ROS 2 action goal — use for aborting long-running action requests"
+    },
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "Convert between rotation representations — use for translating quaternions, Euler angles, and rotation matrices"
+    },
+    {
+      "block": "Current Time",
+      "value": "Get the current ROS network time — use for synchronizing Simulink with the ROS time server"
+    },
+    {
+      "block": "Get Parameter",
+      "value": "Read a parameter from the ROS parameter server — use for retrieving configuration values shared across nodes"
+    },
+    {
+      "block": "Get Transform",
+      "value": "Query the TF tree for a transform between frames — use for looking up spatial relationships between coordinate frames"
+    },
+    {
+      "block": "Header Assignment",
+      "value": "Assign timestamp and frame ID to a message header — use for stamping messages with timing and coordinate frame info"
+    },
+    {
+      "block": "Monitor Action Goal",
+      "value": "Monitor the status of a ROS 2 action goal — use for tracking progress and receiving feedback from action servers"
+    },
+    {
+      "block": "Publish",
+      "value": "Publish a ROS message to a topic — use for sending data from Simulink to other ROS nodes"
+    },
+    {
+      "block": "Read Data",
+      "value": "Read messages from a ROS bag file — use for replaying recorded sensor data into your model"
+    },
+    {
+      "block": "Read Image",
+      "value": "Extract image matrix from a ROS image message — use for processing camera data received from ROS topics"
+    },
+    {
+      "block": "Read Occupancy Grid",
+      "value": "Extract grid data from a ROS occupancy grid message — use for processing map data from SLAM or navigation nodes"
+    },
+    {
+      "block": "Read Point Cloud",
+      "value": "Extract XYZ data from a ROS point cloud message — use for processing 3D sensor data received from ROS"
+    },
+    {
+      "block": "Read Scan",
+      "value": "Extract range data from a ROS laser scan message — use for processing 2D lidar data from ROS"
+    },
+    {
+      "block": "Receive Service Request",
+      "value": "Receive incoming ROS 2 service requests — use for implementing a service server in Simulink"
+    },
+    {
+      "block": "Send Action Goal",
+      "value": "Send a goal to a ROS 2 action server — use for initiating long-running tasks on action servers"
+    },
+    {
+      "block": "Send Service Response",
+      "value": "Send a response to a ROS 2 service request — use for completing service handling in a Simulink-based server"
+    },
+    {
+      "block": "Set Parameter",
+      "value": "Write a parameter to the ROS parameter server — use for sharing configuration from Simulink to other nodes"
+    },
+    {
+      "block": "Subscribe",
+      "value": "Subscribe to a ROS topic and receive messages — use for bringing external ROS data into your Simulink model"
+    },
+    {
+      "block": "Write Image",
+      "value": "Convert a Simulink image matrix to a ROS image message — use for publishing camera frames to ROS"
+    },
+    {
+      "block": "Write Point Cloud",
+      "value": "Convert point cloud data to a ROS message — use for publishing 3D lidar or depth data to ROS"
+    }
+  ]
+}

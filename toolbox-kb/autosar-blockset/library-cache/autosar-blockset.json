@@ -1,0 +1,261 @@
+{
+  "libraryName": "AUTOSAR Blockset",
+  "generatedAt": "2026-08-19T14:30:46",
+  "blockCount": 27,
+  "blocks": [
+    {
+      "name": "Event Receive",
+      "referenceBlock": "autosarlibaprouting/Event Receive",
+      "blockType": "Receive",
+      "description": "",
+      "category": "",
+      "maskType": "Event Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Event Send",
+      "referenceBlock": "autosarlibaprouting/Event Send",
+      "blockType": "Send",
+      "description": "",
+      "category": "",
+      "maskType": "Event Send",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dem Status Inject",
+      "referenceBlock": "autosarlibdem/Dem Status Inject",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DemStatusInject",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dem Status Override",
+      "referenceBlock": "autosarlibdem/Dem Status Override",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DemStatusOverride",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Diagnostic Service Component",
+      "referenceBlock": "autosarlibdem/Diagnostic Service Component",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Diagnostic Service Component",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DiagnosticEventAvailableCaller",
+      "referenceBlock": "autosarlibdem/DiagnosticEventAvailableCaller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "DiagnosticEventAvailableCaller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DiagnosticInfoCaller",
+      "referenceBlock": "autosarlibdem/DiagnosticInfoCaller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "DiagnosticInfoCaller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DiagnosticMonitorCaller",
+      "referenceBlock": "autosarlibdem/DiagnosticMonitorCaller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "DiagnosticMonitorCaller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DiagnosticOperationCycleCaller",
+      "referenceBlock": "autosarlibdem/DiagnosticOperationCycleCaller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "DiagnosticOperationCycleCaller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Control Function Available Caller",
+      "referenceBlock": "autosarlibfim/Control Function Available Caller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "Control Function Available Caller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Function Inhibition Caller",
+      "referenceBlock": "autosarlibfim/Function Inhibition Caller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "Function Inhibition Caller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NVRAM Service Component",
+      "referenceBlock": "autosarlibnvm/NVRAM Service Component",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NVRAM Service Component",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NvMAdminCaller",
+      "referenceBlock": "autosarlibnvm/NvMAdminCaller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "NvMAdminCaller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NvMServiceCaller",
+      "referenceBlock": "autosarlibnvm/NvMServiceCaller",
+      "blockType": "FunctionCaller",
+      "description": "",
+      "category": "",
+      "maskType": "NvMServiceCaller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single Point Interpolation",
+      "referenceBlock": "autosarlibiflifx/Single Point Interpolation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Single Point Interpolation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Curve",
+      "referenceBlock": "autosarlibiflifx/Curve",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "Curve",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Curve Using Prelookup",
+      "referenceBlock": "autosarlibiflifx/Curve Using Prelookup",
+      "blockType": "Interpolation_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "Curve Using Prelookup",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Map",
+      "referenceBlock": "autosarlibiflifx/Map",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "Map",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Map Using Prelookup",
+      "referenceBlock": "autosarlibiflifx/Map Using Prelookup",
+      "blockType": "Interpolation_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "Map Using Prelookup",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Prelookup",
+      "referenceBlock": "autosarlibiflifx/Prelookup",
+      "blockType": "PreLookup",
+      "description": "",
+      "category": "",
+      "maskType": "Prelookup",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ramp",
+      "referenceBlock": "autosarlibefxmfl/Ramp",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MflRamp",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "initialize_subsystem",
+      "referenceBlock": "autosarlibefxmfl/Ramp/InitializeFunction/initialize_subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Event Listener",
+      "referenceBlock": "autosarlibefxmfl/Ramp/InitializeFunction/Event Listener",
+      "blockType": "EventListener",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "input_state",
+      "referenceBlock": "autosarlibefxmfl/Ramp/InitializeFunction/input_state",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "state_dsr",
+      "referenceBlock": "autosarlibefxmfl/Ramp/InitializeFunction/state_dsr",
+      "blockType": "DataStoreRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "state_dsw",
+      "referenceBlock": "autosarlibefxmfl/Ramp/InitializeFunction/state_dsw",
+      "blockType": "DataStoreWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Invalidation",
+      "referenceBlock": "autosarlibcprouting/Signal Invalidation",
+      "blockType": "SignalInvalidation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:09",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

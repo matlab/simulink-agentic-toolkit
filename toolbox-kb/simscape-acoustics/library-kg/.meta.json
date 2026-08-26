@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74458387727,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simscape Acoustics"
+  ],
+  "blockCount": 39,
+  "categoryCount": 5,
+  "libraryFingerprints": {
+    "Simscape_Acoustics": {
+      "blockCount": 39
+    }
+  }
+}

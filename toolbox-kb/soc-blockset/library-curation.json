@@ -1,0 +1,664 @@
+{
+  "commonBlocks": [
+    "Task Manager",
+    "Register Read",
+    "Register Write",
+    "Stream Read",
+    "Stream Write",
+    "AXI4 Random Access Memory",
+    "Interrupt Channel",
+    "Hardware Interrupt",
+    "Stream Connector",
+    "AXI4-Stream to Software",
+    "Software to AXI4-Stream"
+  ],
+  "categories": [
+    {
+      "name": "fpga-connectivity",
+      "description": "AXI4-Stream and bus connectivity between FPGA and processor domains",
+      "keywords": [
+        "AXI4",
+        "stream",
+        "bus",
+        "FIFO",
+        "connector",
+        "video-stream"
+      ]
+    },
+    {
+      "name": "board-io",
+      "description": "Physical board I/O blocks for switches, buttons, LEDs, and GPIO pins",
+      "keywords": [
+        "DIP",
+        "switch",
+        "LED",
+        "button",
+        "GPIO",
+        "pin"
+      ]
+    },
+    {
+      "name": "test-infrastructure",
+      "description": "Testbench source and sink blocks for verifying hardware interfaces in simulation",
+      "keywords": [
+        "test",
+        "sink",
+        "source",
+        "verify",
+        "testbench",
+        "stimulus"
+      ]
+    },
+    {
+      "name": "memory-interfaces",
+      "description": "Shared memory, DMA, registers, and interrupt channels between FPGA and processor",
+      "keywords": [
+        "memory",
+        "DDR",
+        "DMA",
+        "register",
+        "interrupt",
+        "AXI4"
+      ]
+    },
+    {
+      "name": "peripherals",
+      "description": "Peripheral device interface models for ADC, audio, video, PWM, and digital I/O",
+      "keywords": [
+        "ADC",
+        "audio",
+        "video",
+        "PWM",
+        "peripheral",
+        "capture"
+      ]
+    },
+    {
+      "name": "processor-io",
+      "description": "Processor-side read/write blocks for accessing hardware peripherals and network",
+      "keywords": [
+        "read",
+        "write",
+        "TCP",
+        "UDP",
+        "register",
+        "processor"
+      ]
+    },
+    {
+      "name": "interprocess",
+      "description": "Shared data channels for communication between processor tasks at different rates",
+      "keywords": [
+        "interprocess",
+        "shared",
+        "channel",
+        "IPC",
+        "rate-transition"
+      ]
+    },
+    {
+      "name": "task-scheduling",
+      "description": "Task management, scheduling, triggering, and interrupt-driven execution",
+      "keywords": [
+        "task",
+        "scheduler",
+        "trigger",
+        "interrupt",
+        "priority",
+        "manager"
+      ]
+    },
+    {
+      "name": "io-data",
+      "description": "I/O data injection and capture for testbench-driven SoC verification",
+      "keywords": [
+        "event",
+        "IO",
+        "data",
+        "inject",
+        "capture",
+        "boundary"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ADC Interface",
+      "value": "peripherals"
+    },
+    {
+      "block": "ADC Read",
+      "value": "processor-io"
+    },
+    {
+      "block": "AXI4 Master Sink",
+      "value": "test-infrastructure"
+    },
+    {
+      "block": "AXI4 Master Source",
+      "value": "test-infrastructure"
+    },
+    {
+      "block": "AXI4 Random Access Memory",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "AXI4 Video Frame Buffer",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "AXI4-Stream to Software",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "Audio Capture",
+      "value": "processor-io"
+    },
+    {
+      "block": "Audio Capture Interface",
+      "value": "peripherals"
+    },
+    {
+      "block": "Audio Playback",
+      "value": "processor-io"
+    },
+    {
+      "block": "Audio Playback Interface",
+      "value": "peripherals"
+    },
+    {
+      "block": "DIP Switch",
+      "value": "board-io"
+    },
+    {
+      "block": "Digital IO Interface",
+      "value": "peripherals"
+    },
+    {
+      "block": "Event Source",
+      "value": "io-data"
+    },
+    {
+      "block": "Hardware Interrupt",
+      "value": "task-scheduling"
+    },
+    {
+      "block": "IO Data Sink",
+      "value": "io-data"
+    },
+    {
+      "block": "IO Data Source",
+      "value": "io-data"
+    },
+    {
+      "block": "IO Pin",
+      "value": "board-io"
+    },
+    {
+      "block": "IP Core Register Read",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "Interprocess Data Channel",
+      "value": "interprocess"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "interprocess"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "interprocess"
+    },
+    {
+      "block": "Interrupt Channel",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "LED",
+      "value": "board-io"
+    },
+    {
+      "block": "Memory Traffic Generator",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "PWM Interface",
+      "value": "peripherals"
+    },
+    {
+      "block": "PWM Write",
+      "value": "processor-io"
+    },
+    {
+      "block": "Proxy Task",
+      "value": "task-scheduling"
+    },
+    {
+      "block": "Push Button",
+      "value": "board-io"
+    },
+    {
+      "block": "Register Channel",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "Register Read",
+      "value": "processor-io"
+    },
+    {
+      "block": "Register Write",
+      "value": "processor-io"
+    },
+    {
+      "block": "SoC Bus Creator",
+      "value": "fpga-connectivity"
+    },
+    {
+      "block": "SoC Bus Selector",
+      "value": "fpga-connectivity"
+    },
+    {
+      "block": "Software to AXI4-Stream",
+      "value": "memory-interfaces"
+    },
+    {
+      "block": "Stream Connector",
+      "value": "fpga-connectivity"
+    },
+    {
+      "block": "Stream Data Sink",
+      "value": "test-infrastructure"
+    },
+    {
+      "block": "Stream Data Source",
+      "value": "test-infrastructure"
+    },
+    {
+      "block": "Stream FIFO",
+      "value": "fpga-connectivity"
+    },
+    {
+      "block": "Stream Read",
+      "value": "processor-io"
+    },
+    {
+      "block": "Stream Write",
+      "value": "processor-io"
+    },
+    {
+      "block": "TCP Read",
+      "value": "processor-io"
+    },
+    {
+      "block": "TCP Write",
+      "value": "processor-io"
+    },
+    {
+      "block": "Task Manager",
+      "value": "task-scheduling"
+    },
+    {
+      "block": "Task Trigger",
+      "value": "task-scheduling"
+    },
+    {
+      "block": "Task Trigger Merge",
+      "value": "task-scheduling"
+    },
+    {
+      "block": "Testbench Task",
+      "value": "io-data"
+    },
+    {
+      "block": "UDP Read",
+      "value": "processor-io"
+    },
+    {
+      "block": "UDP Write",
+      "value": "processor-io"
+    },
+    {
+      "block": "Video Capture",
+      "value": "processor-io"
+    },
+    {
+      "block": "Video Capture Interface",
+      "value": "peripherals"
+    },
+    {
+      "block": "Video Display",
+      "value": "processor-io"
+    },
+    {
+      "block": "Video Display Interface",
+      "value": "peripherals"
+    },
+    {
+      "block": "Video Stream Connector",
+      "value": "fpga-connectivity"
+    },
+    {
+      "block": "Video Stream FIFO",
+      "value": "fpga-connectivity"
+    },
+    {
+      "block": "Video Test Sink",
+      "value": "test-infrastructure"
+    },
+    {
+      "block": "Video Test Source",
+      "value": "test-infrastructure"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ADC Interface",
+      "value": "Model an analog-to-digital converter peripheral on the SoC development board"
+    },
+    {
+      "block": "ADC Read",
+      "value": "Read samples from the ADC peripheral in processor software"
+    },
+    {
+      "block": "AXI4 Master Sink",
+      "value": "Verify AXI4 master write transactions by capturing and checking output data"
+    },
+    {
+      "block": "AXI4 Master Source",
+      "value": "Generate AXI4 master read/write transactions for testing memory-mapped interfaces"
+    },
+    {
+      "block": "AXI4 Random Access Memory",
+      "value": "Model shared DDR memory accessible by FPGA logic and processor via AXI4 interface"
+    },
+    {
+      "block": "AXI4 Video Frame Buffer",
+      "value": "Model a video frame buffer in shared memory for FPGA-to-processor video transfer"
+    },
+    {
+      "block": "AXI4-Stream to Software",
+      "value": "Transfer streaming data from FPGA logic to processor software via DMA"
+    },
+    {
+      "block": "Assertion",
+      "value": "Verify that a signal meets expected conditions during simulation"
+    },
+    {
+      "block": "Audio Capture",
+      "value": "Capture audio samples from the audio input peripheral in processor software"
+    },
+    {
+      "block": "Audio Capture Interface",
+      "value": "Model an audio input peripheral for capturing audio samples on the SoC"
+    },
+    {
+      "block": "Audio Playback",
+      "value": "Play audio samples through the audio output peripheral from processor software"
+    },
+    {
+      "block": "Audio Playback Interface",
+      "value": "Model an audio output peripheral for playing audio samples on the SoC"
+    },
+    {
+      "block": "Constant",
+      "value": "Output a constant value signal"
+    },
+    {
+      "block": "Constant1",
+      "value": "Output a constant value signal"
+    },
+    {
+      "block": "DIP Switch",
+      "value": "Read DIP switch positions from the development board for configuration input"
+    },
+    {
+      "block": "Digital IO Interface",
+      "value": "Model digital I/O peripheral pins on the SoC development board"
+    },
+    {
+      "block": "Event Source",
+      "value": "Generate timed events for driving testbench scenarios in SoC simulation"
+    },
+    {
+      "block": "Hardware Interrupt",
+      "value": "Trigger a processor task from a hardware interrupt event"
+    },
+    {
+      "block": "IO Data Sink",
+      "value": "Capture I/O data at task boundaries for verification in SoC simulation"
+    },
+    {
+      "block": "IO Data Source",
+      "value": "Inject I/O test data at task boundaries for stimulating SoC simulation"
+    },
+    {
+      "block": "IO Pin",
+      "value": "Access a general-purpose I/O pin on the SoC development board"
+    },
+    {
+      "block": "IP Core Register Read",
+      "value": "Read a memory-mapped register exposed by an FPGA IP core from processor software"
+    },
+    {
+      "block": "Interprocess Data Channel",
+      "value": "Model a shared data channel between processor tasks running at different rates"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "Read shared data from another processor task via the interprocess channel"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "Write shared data for another processor task via the interprocess channel"
+    },
+    {
+      "block": "Interrupt Channel",
+      "value": "Model a hardware interrupt line from FPGA logic to the processor"
+    },
+    {
+      "block": "LED",
+      "value": "Drive an LED on the development board for visual status indication"
+    },
+    {
+      "block": "Logger",
+      "value": "Log simulation events for debugging and performance analysis"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Execute custom MATLAB code within a Simulink model for algorithmic computation"
+    },
+    {
+      "block": "Memory Traffic Generator",
+      "value": "Simulate background memory traffic to model realistic DDR bandwidth contention"
+    },
+    {
+      "block": "PWM Interface",
+      "value": "Model a PWM output peripheral on the SoC for motor or LED control"
+    },
+    {
+      "block": "PWM Write",
+      "value": "Write duty cycle values to the PWM peripheral from processor software"
+    },
+    {
+      "block": "Power ON",
+      "value": "Generate the initial power-on event to start task manager execution"
+    },
+    {
+      "block": "Proxy Task",
+      "value": "Represent an external task that interacts with the modeled SoC tasks"
+    },
+    {
+      "block": "Push Button",
+      "value": "Read push button state from the development board for user interaction"
+    },
+    {
+      "block": "RTE",
+      "value": "Runtime environment discrete-event engine for task scheduling simulation"
+    },
+    {
+      "block": "Reader",
+      "value": "Read data from a memory or buffer subsystem"
+    },
+    {
+      "block": "Register Channel",
+      "value": "Model a memory-mapped register channel between FPGA logic and processor software"
+    },
+    {
+      "block": "Register Read",
+      "value": "Read a value from a memory-mapped hardware register in processor software"
+    },
+    {
+      "block": "Register Write",
+      "value": "Write a value to a memory-mapped hardware register from processor software"
+    },
+    {
+      "block": "SoC Bus Creator",
+      "value": "Bundle multiple signals into a single SoC bus for hardware-software interface modeling"
+    },
+    {
+      "block": "SoC Bus Selector",
+      "value": "Extract individual signals from an SoC bus for downstream processing"
+    },
+    {
+      "block": "Software to AXI4-Stream",
+      "value": "Transfer data from processor software to FPGA logic via DMA streaming"
+    },
+    {
+      "block": "Stream Connector",
+      "value": "Connect AXI4-Stream interfaces between FPGA logic and processor subsystems"
+    },
+    {
+      "block": "Stream Data Sink",
+      "value": "Capture and verify AXI4-Stream output data in simulation testbenches"
+    },
+    {
+      "block": "Stream Data Source",
+      "value": "Generate AXI4-Stream test input data for simulation testbenches"
+    },
+    {
+      "block": "Stream FIFO",
+      "value": "Buffer streaming data between clock domains or processing stages on the SoC"
+    },
+    {
+      "block": "Stream Read",
+      "value": "Read streaming data from FPGA logic via DMA in processor software"
+    },
+    {
+      "block": "Stream Write",
+      "value": "Write streaming data to FPGA logic via DMA from processor software"
+    },
+    {
+      "block": "Switch",
+      "value": "Route entity inputs to the appropriate processing path"
+    },
+    {
+      "block": "TCP Read",
+      "value": "Receive data over a TCP connection in processor software"
+    },
+    {
+      "block": "TCP Write",
+      "value": "Send data over a TCP connection from processor software"
+    },
+    {
+      "block": "Task Manager",
+      "value": "Schedule and manage multiple processor tasks with priorities and timing"
+    },
+    {
+      "block": "Task Trigger",
+      "value": "Trigger execution of a processor task based on a timer or event"
+    },
+    {
+      "block": "Task Trigger Merge",
+      "value": "Combine multiple trigger sources into a single task activation signal"
+    },
+    {
+      "block": "Terminator",
+      "value": "Terminate an unconnected output port to avoid warnings"
+    },
+    {
+      "block": "Testbench Task",
+      "value": "Define a testbench task that runs alongside the design tasks for verification"
+    },
+    {
+      "block": "ToFcns",
+      "value": "Route calls to Simulink function implementations within the task manager"
+    },
+    {
+      "block": "UDP Read",
+      "value": "Receive UDP packets from the network for host-processor or inter-device communication"
+    },
+    {
+      "block": "UDP Write",
+      "value": "Send UDP packets over the network from the processor or host"
+    },
+    {
+      "block": "Video Capture",
+      "value": "Capture video frames from the camera peripheral in processor software"
+    },
+    {
+      "block": "Video Capture Interface",
+      "value": "Model a camera or video input peripheral on the SoC development board"
+    },
+    {
+      "block": "Video Display",
+      "value": "Display video frames on the output peripheral from processor software"
+    },
+    {
+      "block": "Video Display Interface",
+      "value": "Model a video output peripheral for driving a display from the SoC"
+    },
+    {
+      "block": "Video Stream Connector",
+      "value": "Connect video streaming interfaces between FPGA logic and processor subsystems"
+    },
+    {
+      "block": "Video Stream FIFO",
+      "value": "Buffer video stream data between clock domains with frame-aware flow control"
+    },
+    {
+      "block": "Video Test Sink",
+      "value": "Capture and verify video stream output in simulation testbenches"
+    },
+    {
+      "block": "Video Test Source",
+      "value": "Generate video stream test patterns for simulation testbenches"
+    },
+    {
+      "block": "Writer",
+      "value": "Write data to a memory or buffer subsystem"
+    },
+    {
+      "block": "ddlogger",
+      "value": "Trigger port for data dictionary logging subsystem"
+    },
+    {
+      "block": "event",
+      "value": "Input argument for event type in logging functions"
+    },
+    {
+      "block": "fcnIdx",
+      "value": "Input argument specifying the function index to dispatch"
+    },
+    {
+      "block": "info",
+      "value": "Input argument for additional information in logging functions"
+    },
+    {
+      "block": "isWireless",
+      "value": "Input argument indicating wireless communication mode"
+    },
+    {
+      "block": "mid",
+      "value": "Input argument for memory identifier in logging functions"
+    },
+    {
+      "block": "rteDispatchRT",
+      "value": "Trigger port for dispatching real-time tasks in the runtime environment"
+    },
+    {
+      "block": "rteDispatchRunnable",
+      "value": "Trigger port for dispatching runnable functions in the runtime environment"
+    }
+  ]
+}

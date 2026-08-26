@@ -1,0 +1,98 @@
+{
+  "commonBlocks": [
+    "AXI4-Interface Read",
+    "AXI4-Interface Write",
+    "Linux Task",
+    "UDP Receive",
+    "UDP Send"
+  ],
+  "categories": [
+    {
+      "name": "amd-soc",
+      "description": "AMD/Xilinx SoC blocks for ARM-FPGA partitioning and AXI communication",
+      "keywords": [
+        "zynq",
+        "axi",
+        "fpga",
+        "soc",
+        "arm"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "AXI4-Interface Read",
+      "value": "amd-soc"
+    },
+    {
+      "block": "AXI4-Interface Write",
+      "value": "amd-soc"
+    },
+    {
+      "block": "AXI4-Stream IIO Read",
+      "value": "amd-soc"
+    },
+    {
+      "block": "AXI4-Stream IIO Write",
+      "value": "amd-soc"
+    },
+    {
+      "block": "Blockset Name2",
+      "value": "amd-soc"
+    },
+    {
+      "block": "Linux Task",
+      "value": "amd-soc"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "amd-soc"
+    },
+    {
+      "block": "UDP Send",
+      "value": "amd-soc"
+    },
+    {
+      "block": "VxWorks Task",
+      "value": "amd-soc"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "AXI4-Interface Read",
+      "value": "Read data from the FPGA fabric via an AXI4 memory-mapped interface — use to receive processed results or status registers from HDL IP running on the programmable logic"
+    },
+    {
+      "block": "AXI4-Interface Write",
+      "value": "Write data to the FPGA fabric via an AXI4 memory-mapped interface — use to send parameters or commands from the processor to HDL IP running on the programmable logic"
+    },
+    {
+      "block": "AXI4-Stream IIO Read",
+      "value": "Read streaming data from the FPGA fabric via AXI4-Stream with Linux IIO — use for high-throughput continuous data transfer from PL to PS such as ADC sample streams"
+    },
+    {
+      "block": "AXI4-Stream IIO Write",
+      "value": "Write streaming data to the FPGA fabric via AXI4-Stream with Linux IIO — use for high-throughput continuous data transfer from PS to PL such as DAC output streams"
+    },
+    {
+      "block": "Blockset Name2",
+      "value": "Library identification label — internal library element, not used in application models"
+    },
+    {
+      "block": "Linux Task",
+      "value": "Execute a subsystem as a Linux process task on the ARM core of an AMD/Xilinx SoC — use to partition algorithms that run on the processor side of a Zynq or Versal device"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP datagrams on the SoC processor — use for network communication with a host PC or other networked devices"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP datagrams from the SoC processor — use for telemetry or data transfer to a host PC over Ethernet"
+    },
+    {
+      "block": "VxWorks Task",
+      "value": "Execute a subsystem as a VxWorks task on the processor core — use when the AMD SoC runs VxWorks RTOS instead of Linux"
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "libraryName": "Network Couplers",
+  "generatedAt": "2026-08-19T14:31:02",
+  "blockCount": 15,
+  "blocks": [
+    {
+      "name": "Prediction (discrete->continuous)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Fundamental Components/Prediction (discrete->continuous)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Prediction (discrete->continuous)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Prediction (slow->fast)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Fundamental Components/Prediction (slow->fast)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Prediction (slow->fast)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Smoothing (continuous->discrete)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Fundamental Components/Smoothing (continuous->discrete)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Smoothing (continuous->discrete)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Smoothing (fast->slow)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Fundamental Components/Smoothing (fast->slow)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Smoothing (fast->slow)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Capacitor)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Capacitor)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Capacitor)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Compressible Link)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Compressible Link)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Compressible Link)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Constant Volume Chamber (IL))",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Constant Volume Chamber (IL))",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Constant Volume Chamber (IL))",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Constant Volume Chamber (TL))",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Constant Volume Chamber (TL))",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Constant Volume Chamber (TL))",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Current-Voltage)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Current-Voltage)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Current-Voltage)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Flexible Shaft)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Flexible Shaft)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Flexible Shaft)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Inductor)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Inductor)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Inductor)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Thermal Mass)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Thermal Mass)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Thermal Mass)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Transmission Line)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Transmission Line)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Transmission Line)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Voltage-Current)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Voltage-Current)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Voltage-Current)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network Coupler (Voltage-Voltage)",
+      "referenceBlock": "SimscapeNetworkCouplersLib/Network Coupler (Voltage-Voltage)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Network Coupler (Voltage-Voltage)",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

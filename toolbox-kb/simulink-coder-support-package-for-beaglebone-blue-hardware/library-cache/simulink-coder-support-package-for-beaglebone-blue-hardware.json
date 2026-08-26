@@ -1,0 +1,63 @@
+{
+  "libraryName": "Simulink Coder Support Package for BeagleBone Blue Hardware",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "Actuators",
+      "referenceBlock": "beaglebonebluelib/Actuators",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BeagleBoneBlue_Actuators_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Basic",
+      "referenceBlock": "beaglebonebluelib/Basic",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BeagleBoneBlue_Basic_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Communication",
+      "referenceBlock": "beaglebonebluelib/Communication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BeagleBoneBlue_Communication_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensors",
+      "referenceBlock": "beaglebonebluelib/Sensors",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BeagleBoneBlue_Sensors_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video ",
+      "referenceBlock": "beaglebonebluelib/Video ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BeagleBoneBlue_Video_Blocks",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

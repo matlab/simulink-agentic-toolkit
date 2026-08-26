@@ -1,0 +1,418 @@
+{
+  "commonBlocks": [
+    "Closed-Loop PID Autotuner",
+    "Open-Loop PID Autotuner",
+    "PID Gain Scheduler",
+    "Constraint Enforcement",
+    "Control Barrier Function",
+    "Frequency Response Estimator"
+  ],
+  "categories": [
+    {
+      "name": "adaptive-control",
+      "description": "Adaptive and learning-based controllers",
+      "keywords": [
+        "adaptive",
+        "adrc",
+        "notch",
+        "extremum",
+        "iterative",
+        "mrac"
+      ]
+    },
+    {
+      "name": "pid-autotuning",
+      "description": "Online PID tuning and gain scheduling",
+      "keywords": [
+        "pid",
+        "autotuner",
+        "gain-schedule",
+        "vrft",
+        "tuning"
+      ]
+    },
+    {
+      "name": "constraint-enforcement",
+      "description": "Safety constraint and passivity enforcement",
+      "keywords": [
+        "barrier",
+        "constraint",
+        "lyapunov",
+        "passivity",
+        "safety"
+      ]
+    },
+    {
+      "name": "disturbance-estimation",
+      "description": "Disturbance observers and compensators",
+      "keywords": [
+        "disturbance",
+        "observer",
+        "extended",
+        "ultra-local",
+        "compensator"
+      ]
+    },
+    {
+      "name": "signal-generation",
+      "description": "Test signal generators for identification",
+      "keywords": [
+        "prbs",
+        "sinestream",
+        "superposition",
+        "start-stop",
+        "signal"
+      ]
+    },
+    {
+      "name": "sliding-mode",
+      "description": "Sliding mode robust controllers",
+      "keywords": [
+        "sliding",
+        "mode",
+        "reaching",
+        "state-feedback",
+        "robust"
+      ]
+    },
+    {
+      "name": "linear-analysis-plots",
+      "description": "Real-time linear analysis visualization",
+      "keywords": [
+        "bode",
+        "nichols",
+        "pole-zero",
+        "step",
+        "singular",
+        "plot"
+      ]
+    },
+    {
+      "name": "model-verification",
+      "description": "Assertion blocks for linear analysis requirements",
+      "keywords": [
+        "check",
+        "assert",
+        "margin",
+        "characteristics",
+        "verify"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Active Disturbance Rejection Control",
+      "value": "adaptive-control"
+    },
+    {
+      "block": "Adaptive Notch Filter",
+      "value": "adaptive-control"
+    },
+    {
+      "block": "Bode Plot",
+      "value": "linear-analysis-plots"
+    },
+    {
+      "block": "Change Operating Points",
+      "value": "pid-autotuning"
+    },
+    {
+      "block": "Check Bode  Characteristics",
+      "value": "model-verification"
+    },
+    {
+      "block": "Check Gain and Phase Margins",
+      "value": "model-verification"
+    },
+    {
+      "block": "Check Linear Step Response Characteristics",
+      "value": "model-verification"
+    },
+    {
+      "block": "Check Nichols Characteristics",
+      "value": "model-verification"
+    },
+    {
+      "block": "Check Pole-Zero Characteristics",
+      "value": "model-verification"
+    },
+    {
+      "block": "Check Singular Value Characteristics",
+      "value": "model-verification"
+    },
+    {
+      "block": "Closed-Loop PID Autotuner",
+      "value": "pid-autotuning"
+    },
+    {
+      "block": "Constraint Enforcement",
+      "value": "constraint-enforcement"
+    },
+    {
+      "block": "Control Barrier Function",
+      "value": "constraint-enforcement"
+    },
+    {
+      "block": "Disturbance Compensator",
+      "value": "disturbance-estimation"
+    },
+    {
+      "block": "Extended State Observer",
+      "value": "disturbance-estimation"
+    },
+    {
+      "block": "Extremum Seeking Control",
+      "value": "adaptive-control"
+    },
+    {
+      "block": "Frequency Response Estimator",
+      "value": "signal-generation"
+    },
+    {
+      "block": "Gain and Phase Margin Plot",
+      "value": "linear-analysis-plots"
+    },
+    {
+      "block": "Gain-Scheduled PID Autotuner",
+      "value": "pid-autotuning"
+    },
+    {
+      "block": "High-Order Control Barrier Function",
+      "value": "constraint-enforcement"
+    },
+    {
+      "block": "Iterative Learning Control",
+      "value": "adaptive-control"
+    },
+    {
+      "block": "Linear Sliding Mode Controller (State Feedback)",
+      "value": "sliding-mode"
+    },
+    {
+      "block": "Linear Step Response Plot",
+      "value": "linear-analysis-plots"
+    },
+    {
+      "block": "Model Reference Adaptive Control",
+      "value": "adaptive-control"
+    },
+    {
+      "block": "Nichols Plot",
+      "value": "linear-analysis-plots"
+    },
+    {
+      "block": "Open-Loop PID Autotuner",
+      "value": "pid-autotuning"
+    },
+    {
+      "block": "PID Gain Scheduler",
+      "value": "pid-autotuning"
+    },
+    {
+      "block": "PID Gains Store and Update",
+      "value": "pid-autotuning"
+    },
+    {
+      "block": "PRBS Signal Generator",
+      "value": "signal-generation"
+    },
+    {
+      "block": "Passivity Enforcement",
+      "value": "constraint-enforcement"
+    },
+    {
+      "block": "Pole-Zero Plot",
+      "value": "linear-analysis-plots"
+    },
+    {
+      "block": "Sinestream Signal Generator",
+      "value": "signal-generation"
+    },
+    {
+      "block": "Singular Value Plot",
+      "value": "linear-analysis-plots"
+    },
+    {
+      "block": "Sliding Mode Controller (Reaching Law)",
+      "value": "sliding-mode"
+    },
+    {
+      "block": "Start-Stop Generator",
+      "value": "signal-generation"
+    },
+    {
+      "block": "Superposition Signal Generator",
+      "value": "signal-generation"
+    },
+    {
+      "block": "Trigger-Based  Operating Point Snapshot",
+      "value": "linear-analysis-plots"
+    },
+    {
+      "block": "Ultra-Local Model",
+      "value": "disturbance-estimation"
+    },
+    {
+      "block": "Virtual Reference Feedback Tuning",
+      "value": "pid-autotuning"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Active Disturbance Rejection Control",
+      "value": "Reject unknown disturbances without an explicit plant model — use for robust control when plant dynamics are uncertain or time-varying"
+    },
+    {
+      "block": "Adaptive Notch Filter",
+      "value": "Suppress a varying-frequency disturbance in real time — use for canceling narrowband oscillations whose frequency drifts"
+    },
+    {
+      "block": "Bode Plot",
+      "value": "Display Bode magnitude and phase during simulation — use for visualizing linearized open-loop frequency response"
+    },
+    {
+      "block": "Change Operating Points",
+      "value": "Switch between operating points during autotuning — use for scheduling gain tuning at multiple equilibria"
+    },
+    {
+      "block": "Check Bode  Characteristics",
+      "value": "Assert Bode characteristics meet requirements — use for verification that frequency response stays within bounds"
+    },
+    {
+      "block": "Check Gain and Phase Margins",
+      "value": "Assert stability margins meet requirements — use for verification that gain and phase margins exceed thresholds"
+    },
+    {
+      "block": "Check Linear Step Response Characteristics",
+      "value": "Assert step response meets requirements — use for verification of rise time, overshoot, and settling specs"
+    },
+    {
+      "block": "Check Nichols Characteristics",
+      "value": "Assert Nichols chart meets requirements — use for verification that open-loop response avoids exclusion regions"
+    },
+    {
+      "block": "Check Pole-Zero Characteristics",
+      "value": "Assert pole-zero locations meet requirements — use for verification that poles stay in a specified region"
+    },
+    {
+      "block": "Check Singular Value Characteristics",
+      "value": "Assert singular values meet requirements — use for verification that MIMO gain bounds are satisfied"
+    },
+    {
+      "block": "Closed-Loop PID Autotuner",
+      "value": "Tune PID gains online without opening the loop — use for safe in-service PID tuning with minimal process disruption"
+    },
+    {
+      "block": "Constraint Enforcement",
+      "value": "Modify control actions to satisfy state constraints — use for keeping the system within safe operating bounds"
+    },
+    {
+      "block": "Control Barrier Function",
+      "value": "Enforce safety constraints using barrier certificates — use for guaranteeing set invariance in safety-critical systems"
+    },
+    {
+      "block": "Disturbance Compensator",
+      "value": "Estimate and cancel disturbances acting on the plant — use for feedforward rejection of estimated load disturbances"
+    },
+    {
+      "block": "Extended State Observer",
+      "value": "Estimate plant states and lumped disturbance — use for reconstructing unmeasured states and total disturbance for ADRC"
+    },
+    {
+      "block": "Extremum Seeking Control",
+      "value": "Find the input that maximizes or minimizes an unknown cost — use for real-time optimization without a plant model"
+    },
+    {
+      "block": "Frequency Response Estimator",
+      "value": "Estimate frequency response during simulation — use for online Bode measurement of a running system"
+    },
+    {
+      "block": "Gain and Phase Margin Plot",
+      "value": "Display gain and phase margins during simulation — use for monitoring loop stability margins in real time"
+    },
+    {
+      "block": "Gain-Scheduled PID Autotuner",
+      "value": "Tune PID gains at multiple operating points automatically — use for building gain schedules from online experiments"
+    },
+    {
+      "block": "High-Order Control Barrier Function",
+      "value": "Enforce safety on systems with relative degree greater than one — use for high-order safety constraints on underactuated systems"
+    },
+    {
+      "block": "Iterative Learning Control",
+      "value": "Improve tracking over repeated trials — use for reducing repetitive errors in batch or cyclic processes"
+    },
+    {
+      "block": "Linear Sliding Mode Controller (State Feedback)",
+      "value": "Sliding mode controller with linear sliding surface — use for robust trajectory tracking with state feedback and chattering reduction"
+    },
+    {
+      "block": "Linear Step Response Plot",
+      "value": "Display linearized step response during simulation — use for checking closed-loop transient performance"
+    },
+    {
+      "block": "Model Reference Adaptive Control",
+      "value": "Adapt controller gains to match a reference model — use for maintaining performance as plant parameters change"
+    },
+    {
+      "block": "Nichols Plot",
+      "value": "Display Nichols chart during simulation — use for visualizing open-loop gain-phase relationship"
+    },
+    {
+      "block": "Open-Loop PID Autotuner",
+      "value": "Tune PID gains using an open-loop experiment — use for accurate frequency-response-based PID tuning when the loop can be opened"
+    },
+    {
+      "block": "PID Gain Scheduler",
+      "value": "Interpolate PID gains across operating conditions — use for implementing gain-scheduled PID controllers from stored gain tables"
+    },
+    {
+      "block": "PID Gains Store and Update",
+      "value": "Store and apply tuned PID gains — use for saving autotuner results and deploying them to the controller"
+    },
+    {
+      "block": "PRBS Signal Generator",
+      "value": "Generate pseudo-random binary sequence — use for broadband excitation in system identification and frequency response tests"
+    },
+    {
+      "block": "Passivity Enforcement",
+      "value": "Enforce passivity on control signals — use for guaranteeing stable interaction with unknown passive environments"
+    },
+    {
+      "block": "Pole-Zero Plot",
+      "value": "Display pole-zero map during simulation — use for monitoring system stability and dynamics"
+    },
+    {
+      "block": "Sinestream Signal Generator",
+      "value": "Generate swept or stepped sinusoidal excitation — use for frequency-by-frequency plant identification"
+    },
+    {
+      "block": "Singular Value Plot",
+      "value": "Display singular values during simulation — use for analyzing MIMO system gain across frequency"
+    },
+    {
+      "block": "Sliding Mode Controller (Reaching Law)",
+      "value": "Sliding mode controller using reaching law design — use for robust control with configurable reaching dynamics"
+    },
+    {
+      "block": "Start-Stop Generator",
+      "value": "Generate start and stop triggers for experiments — use for coordinating autotuning experiment timing"
+    },
+    {
+      "block": "Superposition Signal Generator",
+      "value": "Superimpose perturbation on a control signal — use for injecting test signals without disrupting normal operation"
+    },
+    {
+      "block": "Trigger-Based  Operating Point Snapshot",
+      "value": "Capture operating point on a trigger event — use for recording trim conditions during simulation for later linearization"
+    },
+    {
+      "block": "Ultra-Local Model",
+      "value": "Approximate plant as a simple integrator chain — use for model-free control design when only input-output data is available"
+    },
+    {
+      "block": "Virtual Reference Feedback Tuning",
+      "value": "Tune controller from closed-loop data without plant identification — use for data-driven controller design from routine operation data"
+    }
+  ]
+}

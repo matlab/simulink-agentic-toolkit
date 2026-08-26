@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.744579676,
+  "generatorVersion": 4,
+  "libraries": [
+    "Satellite Communications Toolbox"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Satellite_Communications_Toolbox": {
+      "blockCount": 2
+    }
+  }
+}

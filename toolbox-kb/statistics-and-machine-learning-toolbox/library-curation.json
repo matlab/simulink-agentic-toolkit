@@ -1,0 +1,1640 @@
+{
+  "commonBlocks": [
+    "ClassificationTree Predict",
+    "ClassificationSVM Predict",
+    "ClassificationEnsemble Predict",
+    "RegressionTree Predict",
+    "RegressionSVM Predict",
+    "RegressionEnsemble Predict",
+    "Isolation Forest Anomaly Detector",
+    "KNN Search",
+    "IncrementalClassificationLinear Fit",
+    "IncrementalRegressionLinear Fit",
+    "Detect Drift",
+    "Scikit-learn Model Predict"
+  ],
+  "categories": [
+    {
+      "name": "classification",
+      "description": "Batch classification model prediction using pretrained classifiers",
+      "keywords": [
+        "classify",
+        "predict",
+        "label",
+        "SVM",
+        "tree"
+      ]
+    },
+    {
+      "name": "regression",
+      "description": "Batch regression model prediction using pretrained regressors",
+      "keywords": [
+        "regression",
+        "predict",
+        "continuous",
+        "estimate",
+        "GP"
+      ]
+    },
+    {
+      "name": "incremental-classification",
+      "description": "Online incremental classification with streaming data fitting and prediction",
+      "keywords": [
+        "incremental",
+        "online",
+        "streaming",
+        "fit",
+        "SGD"
+      ]
+    },
+    {
+      "name": "incremental-regression",
+      "description": "Online incremental regression with streaming data fitting and prediction",
+      "keywords": [
+        "incremental",
+        "online",
+        "streaming",
+        "regression",
+        "update"
+      ]
+    },
+    {
+      "name": "anomaly-detection",
+      "description": "Anomaly and outlier detection using trained models",
+      "keywords": [
+        "anomaly",
+        "outlier",
+        "isolation",
+        "one-class",
+        "novelty"
+      ]
+    },
+    {
+      "name": "clustering",
+      "description": "Nearest neighbor search and distance-based grouping",
+      "keywords": [
+        "KNN",
+        "nearest-neighbor",
+        "search",
+        "distance",
+        "similarity"
+      ]
+    },
+    {
+      "name": "drift-detection",
+      "description": "Concept drift detection and performance monitoring for deployed models",
+      "keywords": [
+        "drift",
+        "monitoring",
+        "concept-shift",
+        "DDM",
+        "retraining"
+      ]
+    },
+    {
+      "name": "python-interop",
+      "description": "Python model co-execution for scikit-learn and custom prediction functions",
+      "keywords": [
+        "Python",
+        "scikit-learn",
+        "co-execution",
+        "interop",
+        "ONNX"
+      ]
+    },
+    {
+      "name": "internal-utilities",
+      "description": "Internal implementation subsystems used within library blocks",
+      "keywords": [
+        "internal",
+        "subsystem",
+        "helper",
+        "implementation"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Action Port",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Add",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Add1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Add2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Add3",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Assignment",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "BatchIndex",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "BatchWeightsPerClass",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Bias",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "ClassificationDiscriminant Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationECOC Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationEnsemble Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationKNN Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationKernel Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationLinear Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationNaiveBayes Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationNeuralNetwork Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationSVM Predict",
+      "value": "classification"
+    },
+    {
+      "block": "ClassificationTree Predict",
+      "value": "classification"
+    },
+    {
+      "block": "Constant",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant10",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant11",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant12",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant13",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant14",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant15",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant16",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant17",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant3",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant4",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant5",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant6",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant7",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant8",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Constant9",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Custom Python Model Predict",
+      "value": "python-interop"
+    },
+    {
+      "block": "Data Store Read",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read10",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read3",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read4",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read5",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read6",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read7",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read8",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Read9",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write10",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write11",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write12",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write13",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write14",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write15",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write16",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write17",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write18",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write19",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write3",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write4",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write5",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write6",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write7",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write8",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Store Write9",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Type Duplicate",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Data Type Duplicate1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Detect Drift",
+      "value": "drift-detection"
+    },
+    {
+      "block": "DistrNum",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Divide",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Divide1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "For Iterator",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "From",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "From1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "From2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Gain",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Gain1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Gain2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Goto",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "If",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "If1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "IncrementalClassificationECOC Fit",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalClassificationECOC Predict",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalClassificationKernel Fit",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalClassificationKernel Predict",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalClassificationLinear Fit",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalClassificationLinear Predict",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalClassificationNaiveBayes Fit",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalClassificationNaiveBayes Predict",
+      "value": "incremental-classification"
+    },
+    {
+      "block": "IncrementalRegressionKernel Fit",
+      "value": "incremental-regression"
+    },
+    {
+      "block": "IncrementalRegressionKernel Predict",
+      "value": "incremental-regression"
+    },
+    {
+      "block": "IncrementalRegressionLinear Fit",
+      "value": "incremental-regression"
+    },
+    {
+      "block": "IncrementalRegressionLinear Predict",
+      "value": "incremental-regression"
+    },
+    {
+      "block": "IsNaN",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Isolation Forest Anomaly Detector",
+      "value": "anomaly-detection"
+    },
+    {
+      "block": "KNN Search",
+      "value": "clustering"
+    },
+    {
+      "block": "KernelMap",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "LearnRate",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "LearnRateDenominatorHat",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "LogPrior",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Logical Operator1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Logical Operator2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Max",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Minus",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "One-Class SVM Anomaly Detector",
+      "value": "anomaly-detection"
+    },
+    {
+      "block": "Per Observation Loss",
+      "value": "drift-detection"
+    },
+    {
+      "block": "Priors",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Product",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Product1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "RegressionEnsemble Predict",
+      "value": "regression"
+    },
+    {
+      "block": "RegressionGP Predict",
+      "value": "regression"
+    },
+    {
+      "block": "RegressionKernel Predict",
+      "value": "regression"
+    },
+    {
+      "block": "RegressionLinear Predict",
+      "value": "regression"
+    },
+    {
+      "block": "RegressionNeuralNetwork Predict",
+      "value": "regression"
+    },
+    {
+      "block": "RegressionSVM Predict",
+      "value": "regression"
+    },
+    {
+      "block": "RegressionTree Predict",
+      "value": "regression"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Relational Operator1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Relational Operator2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Relational Operator3",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Relational Operator4",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Relational Operator5",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Reshape",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Scikit-learn Model Predict",
+      "value": "python-interop"
+    },
+    {
+      "block": "Selector",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Selector1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Sqrt",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Sqrt2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Square",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Sum of Elements",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Switch",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Switch1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Switch2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Switch3",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Switch4",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Update Metrics",
+      "value": "drift-detection"
+    },
+    {
+      "block": "Variant Subsystem",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "Variant Subsystem1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "VecAssignment",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "WeightsPerClass",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "WeightsPerClassOut",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "XHat",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "breakLoop",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "c",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "c2",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "calcEpsilon",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "chunkWeight",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "chunkWeight1",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "classPosteriorWithPosInf",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "classPosteriorWithoutPosInf",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "count",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "currentBatchSize",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "d",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "getBeta",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "getBias",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "gradBetaTotal",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "gradBiasTotal",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "if candidateBatchSize < currentBatchSize",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "iterIndex",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "logPxc",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "logPxdgc",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "lossScaler",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "lossScalerChangeNeeded",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "lossScalerSmallChunk",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "mapDriftToStatus",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "normal",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "processedCount",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "processedNan",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "rSqrt",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "setYmt",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "standardize",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateConditions",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateCurrentStatus",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateCut",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateDrift",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateIsWarm",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateMeanStd",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateMuHat",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updatePreviousStatus",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateValue",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateVarHat",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "updateWarning",
+      "value": "internal-utilities"
+    },
+    {
+      "block": "xp",
+      "value": "internal-utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Action Port",
+      "value": "Internal subsystem action port for conditional execution"
+    },
+    {
+      "block": "Add",
+      "value": "Internal adder for combining signal values"
+    },
+    {
+      "block": "Add1",
+      "value": "Internal adder for combining signal values"
+    },
+    {
+      "block": "Add2",
+      "value": "Internal adder for combining signal values"
+    },
+    {
+      "block": "Add3",
+      "value": "Internal adder for combining signal values"
+    },
+    {
+      "block": "Assignment",
+      "value": "Internal block for assigning values to specific vector or matrix elements"
+    },
+    {
+      "block": "BatchIndex",
+      "value": "Internal index tracker for batch processing iterations"
+    },
+    {
+      "block": "BatchWeightsPerClass",
+      "value": "Internal storage for per-class batch weights during incremental training"
+    },
+    {
+      "block": "Bias",
+      "value": "Internal bias parameter storage for linear model computations"
+    },
+    {
+      "block": "ClassificationDiscriminant Predict",
+      "value": "Use when you need to classify input data using a pretrained discriminant analysis model for linear or quadratic class boundaries"
+    },
+    {
+      "block": "ClassificationECOC Predict",
+      "value": "Use when you need multi-class classification by combining multiple binary learners via error-correcting output codes"
+    },
+    {
+      "block": "ClassificationEnsemble Predict",
+      "value": "Use when you need robust classification by aggregating predictions from multiple weak learners such as bagged trees or boosted ensembles"
+    },
+    {
+      "block": "ClassificationKNN Predict",
+      "value": "Use when you need to classify input data based on similarity to stored training examples using k-nearest neighbors"
+    },
+    {
+      "block": "ClassificationKernel Predict",
+      "value": "Use when you need to classify data using a pretrained kernel-based model that maps features to high-dimensional space"
+    },
+    {
+      "block": "ClassificationLinear Predict",
+      "value": "Use when you need fast high-dimensional classification with a pretrained linear model such as logistic regression or linear SVM"
+    },
+    {
+      "block": "ClassificationNaiveBayes Predict",
+      "value": "Use when you need probabilistic classification assuming feature independence, ideal for text or sensor categorization"
+    },
+    {
+      "block": "ClassificationNeuralNetwork Predict",
+      "value": "Use when you need to classify data using a pretrained shallow neural network for nonlinear decision boundaries"
+    },
+    {
+      "block": "ClassificationSVM Predict",
+      "value": "Use when you need to classify data using a pretrained support vector machine with kernel-based margin maximization"
+    },
+    {
+      "block": "ClassificationTree Predict",
+      "value": "Use when you need interpretable classification using a pretrained decision tree with explicit splitting rules"
+    },
+    {
+      "block": "Constant",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant1",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant10",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant11",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant12",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant13",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant14",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant15",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant16",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant17",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant2",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant3",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant4",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant5",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant6",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant7",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant8",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Constant9",
+      "value": "Internal constant value source"
+    },
+    {
+      "block": "Custom Python Model Predict",
+      "value": "Use when you need to call a custom Python prediction function from within a Simulink model for co-execution with MATLAB"
+    },
+    {
+      "block": "Data Store Read",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read1",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read10",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read2",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read3",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read4",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read5",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read6",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read7",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read8",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Read9",
+      "value": "Internal data store read for shared state access"
+    },
+    {
+      "block": "Data Store Write",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write1",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write10",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write11",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write12",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write13",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write14",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write15",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write16",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write17",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write18",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write19",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write2",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write3",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write4",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write5",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write6",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write7",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write8",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Store Write9",
+      "value": "Internal data store write for persisting state between time steps"
+    },
+    {
+      "block": "Data Type Duplicate",
+      "value": "Internal block ensuring matching data types between signals"
+    },
+    {
+      "block": "Data Type Duplicate1",
+      "value": "Internal block ensuring matching data types between signals"
+    },
+    {
+      "block": "Detect Drift",
+      "value": "Use when you need to monitor streaming model predictions for concept drift and trigger retraining when data distribution shifts"
+    },
+    {
+      "block": "DistrNum",
+      "value": "Internal distribution number selector for Naive Bayes likelihood computation"
+    },
+    {
+      "block": "Divide",
+      "value": "Internal division operator for normalization or ratio calculations"
+    },
+    {
+      "block": "Divide1",
+      "value": "Internal division operator for normalization or ratio calculations"
+    },
+    {
+      "block": "For Iterator",
+      "value": "Internal loop iterator for batch observation processing"
+    },
+    {
+      "block": "From",
+      "value": "Internal signal routing via tagged connection"
+    },
+    {
+      "block": "From1",
+      "value": "Internal signal routing via tagged connection"
+    },
+    {
+      "block": "From2",
+      "value": "Internal signal routing via tagged connection"
+    },
+    {
+      "block": "Gain",
+      "value": "Internal scalar or matrix multiplication for coefficient application"
+    },
+    {
+      "block": "Gain1",
+      "value": "Internal scalar or matrix multiplication for coefficient application"
+    },
+    {
+      "block": "Gain2",
+      "value": "Internal scalar or matrix multiplication for coefficient application"
+    },
+    {
+      "block": "Goto",
+      "value": "Internal signal routing tag for non-local connections"
+    },
+    {
+      "block": "If",
+      "value": "Internal conditional branching for algorithm flow control"
+    },
+    {
+      "block": "If1",
+      "value": "Internal conditional branching for algorithm flow control"
+    },
+    {
+      "block": "IncrementalClassificationECOC Fit",
+      "value": "Use when you need to update a multi-class ECOC classifier online as new labeled data arrives in a streaming scenario"
+    },
+    {
+      "block": "IncrementalClassificationECOC Predict",
+      "value": "Use when you need to classify streaming data with an incrementally updated ECOC multi-class model"
+    },
+    {
+      "block": "IncrementalClassificationKernel Fit",
+      "value": "Use when you need to update a kernel classifier online with streaming labeled observations"
+    },
+    {
+      "block": "IncrementalClassificationKernel Predict",
+      "value": "Use when you need to classify streaming data with an incrementally updated kernel model"
+    },
+    {
+      "block": "IncrementalClassificationLinear Fit",
+      "value": "Use when you need to update a linear classifier online using SGD as new labeled data streams in"
+    },
+    {
+      "block": "IncrementalClassificationLinear Predict",
+      "value": "Use when you need to classify streaming data with an incrementally updated linear model"
+    },
+    {
+      "block": "IncrementalClassificationNaiveBayes Fit",
+      "value": "Use when you need to update a Naive Bayes classifier online from streaming labeled observations"
+    },
+    {
+      "block": "IncrementalClassificationNaiveBayes Predict",
+      "value": "Use when you need probabilistic classification of streaming data with an incrementally updated Naive Bayes model"
+    },
+    {
+      "block": "IncrementalRegressionKernel Fit",
+      "value": "Use when you need to update a kernel regression model online as new observations stream in"
+    },
+    {
+      "block": "IncrementalRegressionKernel Predict",
+      "value": "Use when you need continuous value prediction from an incrementally updated kernel regression model"
+    },
+    {
+      "block": "IncrementalRegressionLinear Fit",
+      "value": "Use when you need to update a linear regression model online using SGD with streaming data"
+    },
+    {
+      "block": "IncrementalRegressionLinear Predict",
+      "value": "Use when you need continuous value prediction from an incrementally updated linear regression model"
+    },
+    {
+      "block": "IsNaN",
+      "value": "Internal NaN detection for handling missing or invalid data"
+    },
+    {
+      "block": "Isolation Forest Anomaly Detector",
+      "value": "Use when you need to detect anomalies or outliers in multivariate data using an isolation forest that identifies rare observations by random partitioning"
+    },
+    {
+      "block": "KNN Search",
+      "value": "Use when you need to find the k-nearest neighbors of query points for similarity search, classification preprocessing, or density estimation"
+    },
+    {
+      "block": "KernelMap",
+      "value": "Internal kernel feature mapping for random Fourier features transformation"
+    },
+    {
+      "block": "LearnRate",
+      "value": "Internal learning rate parameter for gradient descent updates"
+    },
+    {
+      "block": "LearnRateDenominatorHat",
+      "value": "Internal estimated denominator for adaptive learning rate computation"
+    },
+    {
+      "block": "LogPrior",
+      "value": "Internal log-prior probability storage for Bayesian classification"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "Internal logical operation for condition evaluation"
+    },
+    {
+      "block": "Logical Operator1",
+      "value": "Internal logical operation for condition evaluation"
+    },
+    {
+      "block": "Logical Operator2",
+      "value": "Internal logical operation for condition evaluation"
+    },
+    {
+      "block": "Max",
+      "value": "Internal maximum value computation for clipping or selection"
+    },
+    {
+      "block": "Minus",
+      "value": "Internal subtraction for computing residuals or differences"
+    },
+    {
+      "block": "One-Class SVM Anomaly Detector",
+      "value": "Use when you need to detect anomalies by learning a boundary around normal data using a one-class support vector machine"
+    },
+    {
+      "block": "Per Observation Loss",
+      "value": "Use when you need to compute prediction loss for each individual observation to feed into drift detection or performance monitoring"
+    },
+    {
+      "block": "Priors",
+      "value": "Internal class prior probability storage for Bayesian classifiers"
+    },
+    {
+      "block": "Product",
+      "value": "Internal element-wise or matrix multiplication"
+    },
+    {
+      "block": "Product1",
+      "value": "Internal element-wise or matrix multiplication"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "Internal reciprocal square root for normalization computations"
+    },
+    {
+      "block": "RegressionEnsemble Predict",
+      "value": "Use when you need robust continuous value prediction from a pretrained ensemble of regression trees or boosted models"
+    },
+    {
+      "block": "RegressionGP Predict",
+      "value": "Use when you need regression with uncertainty estimates from a pretrained Gaussian process model"
+    },
+    {
+      "block": "RegressionKernel Predict",
+      "value": "Use when you need nonlinear regression using a pretrained kernel model that maps inputs to high-dimensional feature space"
+    },
+    {
+      "block": "RegressionLinear Predict",
+      "value": "Use when you need fast high-dimensional regression with a pretrained linear model for real-time continuous output estimation"
+    },
+    {
+      "block": "RegressionNeuralNetwork Predict",
+      "value": "Use when you need flexible nonlinear regression using a pretrained shallow neural network"
+    },
+    {
+      "block": "RegressionSVM Predict",
+      "value": "Use when you need regression using a pretrained support vector machine with epsilon-insensitive loss"
+    },
+    {
+      "block": "RegressionTree Predict",
+      "value": "Use when you need interpretable regression using a pretrained decision tree with piecewise constant predictions"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "Internal comparison for threshold or boundary checking"
+    },
+    {
+      "block": "Relational Operator1",
+      "value": "Internal comparison for threshold or boundary checking"
+    },
+    {
+      "block": "Relational Operator2",
+      "value": "Internal comparison for threshold or boundary checking"
+    },
+    {
+      "block": "Relational Operator3",
+      "value": "Internal comparison for threshold or boundary checking"
+    },
+    {
+      "block": "Relational Operator4",
+      "value": "Internal comparison for threshold or boundary checking"
+    },
+    {
+      "block": "Relational Operator5",
+      "value": "Internal comparison for threshold or boundary checking"
+    },
+    {
+      "block": "Reshape",
+      "value": "Internal signal reshaping for dimension compatibility"
+    },
+    {
+      "block": "Scikit-learn Model Predict",
+      "value": "Use when you need to run predictions from a pretrained scikit-learn Python model within a Simulink simulation"
+    },
+    {
+      "block": "Selector",
+      "value": "Internal element or row selection from vector or matrix signals"
+    },
+    {
+      "block": "Selector1",
+      "value": "Internal element or row selection from vector or matrix signals"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "Internal bit shift for efficient power-of-two scaling"
+    },
+    {
+      "block": "Sqrt",
+      "value": "Internal square root computation for distance or standard deviation calculations"
+    },
+    {
+      "block": "Sqrt2",
+      "value": "Internal square root computation for variance-to-stddev conversion"
+    },
+    {
+      "block": "Square",
+      "value": "Internal squaring operation for variance or distance computations"
+    },
+    {
+      "block": "Sum of Elements",
+      "value": "Internal summation across vector elements for aggregation"
+    },
+    {
+      "block": "Switch",
+      "value": "Internal conditional signal selection based on threshold"
+    },
+    {
+      "block": "Switch1",
+      "value": "Internal conditional signal selection based on threshold"
+    },
+    {
+      "block": "Switch2",
+      "value": "Internal conditional signal selection based on threshold"
+    },
+    {
+      "block": "Switch3",
+      "value": "Internal conditional signal selection based on threshold"
+    },
+    {
+      "block": "Switch4",
+      "value": "Internal conditional signal selection based on threshold"
+    },
+    {
+      "block": "Update Metrics",
+      "value": "Use when you need to compute and track classification or regression performance metrics incrementally on streaming data"
+    },
+    {
+      "block": "Variant Subsystem",
+      "value": "Internal variant subsystem for algorithm selection at compile time"
+    },
+    {
+      "block": "Variant Subsystem1",
+      "value": "Internal variant subsystem for algorithm selection at compile time"
+    },
+    {
+      "block": "VecAssignment",
+      "value": "Internal vector element assignment for iterative updates"
+    },
+    {
+      "block": "WeightsPerClass",
+      "value": "Internal per-class weight accumulator for balanced training"
+    },
+    {
+      "block": "WeightsPerClassOut",
+      "value": "Internal per-class weight output for observation weighting"
+    },
+    {
+      "block": "XHat",
+      "value": "Internal standardized feature vector after mean-variance normalization"
+    },
+    {
+      "block": "breakLoop",
+      "value": "Internal loop termination flag for early stopping in iterative solvers"
+    },
+    {
+      "block": "c",
+      "value": "Internal intermediate computation storage"
+    },
+    {
+      "block": "c2",
+      "value": "Internal intermediate computation storage"
+    },
+    {
+      "block": "calcEpsilon",
+      "value": "Internal epsilon threshold calculator for convergence-based stopping in SGD"
+    },
+    {
+      "block": "chunkWeight",
+      "value": "Internal chunk weight accumulator for weighted incremental updates"
+    },
+    {
+      "block": "chunkWeight1",
+      "value": "Internal chunk weight accumulator for weighted incremental updates"
+    },
+    {
+      "block": "classPosteriorWithPosInf",
+      "value": "Internal posterior probability handler when positive infinity log-likelihoods exist"
+    },
+    {
+      "block": "classPosteriorWithoutPosInf",
+      "value": "Internal posterior probability computation for standard finite log-likelihood case"
+    },
+    {
+      "block": "count",
+      "value": "Internal observation counter for tracking processed samples"
+    },
+    {
+      "block": "currentBatchSize",
+      "value": "Internal current batch size tracker for mini-batch SGD training"
+    },
+    {
+      "block": "d",
+      "value": "Internal intermediate variable for algorithmic computation"
+    },
+    {
+      "block": "getBeta",
+      "value": "Internal coefficient vector retrieval for linear model weight updates"
+    },
+    {
+      "block": "getBias",
+      "value": "Internal bias term retrieval for linear model intercept updates"
+    },
+    {
+      "block": "gradBetaTotal",
+      "value": "Internal accumulated gradient for coefficient vector update"
+    },
+    {
+      "block": "gradBiasTotal",
+      "value": "Internal accumulated gradient for bias term update"
+    },
+    {
+      "block": "if candidateBatchSize < currentBatchSize",
+      "value": "Internal batch size adjustment logic for adaptive mini-batch SGD"
+    },
+    {
+      "block": "iterIndex",
+      "value": "Internal iteration index for tracking position within training loop"
+    },
+    {
+      "block": "logPxc",
+      "value": "Internal log-likelihood of continuous features given class for Naive Bayes"
+    },
+    {
+      "block": "logPxdgc",
+      "value": "Internal log-likelihood of discrete features given class for Naive Bayes"
+    },
+    {
+      "block": "lossScaler",
+      "value": "Internal loss scaling factor for gradient magnitude control"
+    },
+    {
+      "block": "lossScalerChangeNeeded",
+      "value": "Internal flag indicating loss scaler adjustment is required"
+    },
+    {
+      "block": "lossScalerSmallChunk",
+      "value": "Internal loss scaler for small data chunks in incremental training"
+    },
+    {
+      "block": "mapDriftToStatus",
+      "value": "Internal mapping from drift metric values to categorical status labels"
+    },
+    {
+      "block": "normal",
+      "value": "Internal normal distribution likelihood evaluator for Naive Bayes features"
+    },
+    {
+      "block": "processedCount",
+      "value": "Internal counter for total processed observations across chunks"
+    },
+    {
+      "block": "processedNan",
+      "value": "Internal counter for observations with NaN values encountered"
+    },
+    {
+      "block": "rSqrt",
+      "value": "Internal reciprocal square root for inverse standard deviation computation"
+    },
+    {
+      "block": "setYmt",
+      "value": "Internal response variable centering for mean-adjusted target computation"
+    },
+    {
+      "block": "standardize",
+      "value": "Internal feature standardization using running mean and variance estimates"
+    },
+    {
+      "block": "updateConditions",
+      "value": "Internal drift detector condition updater for DDM warning and drift thresholds"
+    },
+    {
+      "block": "updateCurrentStatus",
+      "value": "Internal status register update for current drift detection state"
+    },
+    {
+      "block": "updateCut",
+      "value": "Internal cut-point update for HDDM drift boundary computation"
+    },
+    {
+      "block": "updateDrift",
+      "value": "Internal drift flag update when distribution shift exceeds threshold"
+    },
+    {
+      "block": "updateIsWarm",
+      "value": "Internal warmup state tracker ensuring sufficient observations before drift detection"
+    },
+    {
+      "block": "updateMeanStd",
+      "value": "Internal running mean and standard deviation update for DDM statistics"
+    },
+    {
+      "block": "updateMuHat",
+      "value": "Internal running mean estimate update using Welford-style accumulation"
+    },
+    {
+      "block": "updatePreviousStatus",
+      "value": "Internal previous status register for detecting drift state transitions"
+    },
+    {
+      "block": "updateValue",
+      "value": "Internal value accumulator update for HDDM post-cut length monitoring"
+    },
+    {
+      "block": "updateVarHat",
+      "value": "Internal running variance estimate update using Welford-style accumulation"
+    },
+    {
+      "block": "updateWarning",
+      "value": "Internal warning flag update when drift statistics approach threshold"
+    },
+    {
+      "block": "xp",
+      "value": "Internal transformed predictor storage after kernel feature mapping"
+    }
+  ]
+}

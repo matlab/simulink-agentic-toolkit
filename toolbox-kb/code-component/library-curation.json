@@ -1,0 +1,30 @@
+{
+  "commonBlocks": [
+    "Co-simulation SDK"
+  ],
+  "categories": [
+    {
+      "name": "co-simulation",
+      "description": "External tool and code integration via co-simulation interfaces",
+      "keywords": [
+        "cosimulation",
+        "fmi",
+        "fmu",
+        "sdk",
+        "interface"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Co-simulation SDK",
+      "value": "co-simulation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Co-simulation SDK",
+      "value": "Interface Simulink with external co-simulation environments via the Functional Mock-up Interface (FMI) or custom APIs — use to integrate third-party simulation tools, legacy code, or hardware models into a Simulink simulation loop"
+    }
+  ]
+}

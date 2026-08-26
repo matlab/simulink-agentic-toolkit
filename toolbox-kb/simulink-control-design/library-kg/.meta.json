@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.7445927083,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Control Design"
+  ],
+  "blockCount": 40,
+  "categoryCount": 8,
+  "libraryFingerprints": {
+    "Simulink_Control_Design": {
+      "blockCount": 40
+    }
+  }
+}

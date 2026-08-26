@@ -1,0 +1,162 @@
+{
+  "libraryName": "Communications Toolbox",
+  "generatedAt": "2026-08-19T14:30:48",
+  "blockCount": 16,
+  "blocks": [
+    {
+      "name": "Channels",
+      "referenceBlock": "commlibv2/Channels",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Channels",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Comm Filters",
+      "referenceBlock": "commlibv2/Comm Filters",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Comm Filters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Comm Sinks",
+      "referenceBlock": "commlibv2/Comm Sinks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Comm Sinks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Comm Sources",
+      "referenceBlock": "commlibv2/Comm Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Comm Sources",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Demos",
+      "referenceBlock": "commlibv2/Demos",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Comm Demos",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Equalizers",
+      "referenceBlock": "commlibv2/Equalizers",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Equalizers",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Error Detection and Correction",
+      "referenceBlock": "commlibv2/Error Detection and Correction",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Error Detection and Correction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interleaving",
+      "referenceBlock": "commlibv2/Interleaving",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interleaving",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MIMO",
+      "referenceBlock": "commlibv2/MIMO",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MIMO",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modulation",
+      "referenceBlock": "commlibv2/Modulation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Modulation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RF Impairments Correction",
+      "referenceBlock": "commlibv2/RF Impairments Correction",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "RF Impairments",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RF Impairments and Components",
+      "referenceBlock": "commlibv2/RF Impairments and Components",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "RF Impairments",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sequence Operations",
+      "referenceBlock": "commlibv2/Sequence Operations",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sequence Operations",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Source Coding",
+      "referenceBlock": "commlibv2/Source Coding",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Source Coding",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronization",
+      "referenceBlock": "commlibv2/Synchronization",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronization",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utility Blocks",
+      "referenceBlock": "commlibv2/Utility Blocks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Utility Blocks",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

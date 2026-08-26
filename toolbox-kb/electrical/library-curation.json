@@ -1,0 +1,3628 @@
+{
+  "commonBlocks": [
+    "Resistor",
+    "Capacitor",
+    "Inductor",
+    "Voltage Source",
+    "Current Source",
+    "Diode",
+    "N-Channel MOSFET",
+    "N-Channel IGBT",
+    "PMSM",
+    "Induction Machine Squirrel Cage",
+    "Two-Winding Transformer (Three-Phase)",
+    "Converter (Three-Phase)",
+    "Battery",
+    "Current Sensor",
+    "Voltage Sensor",
+    "Electrical Reference",
+    "PI Controller (Discrete or Continuous)",
+    "PWM Generator (Three-phase, Two-level)",
+    "Clarke Transform",
+    "Park Transform",
+    "PMSM Field-Oriented Control",
+    "Solar Cell",
+    "Circuit Breaker (Three-Phase)",
+    "Bus Creator"
+  ],
+  "categories": [
+    {
+      "name": "spice-components",
+      "description": "SPICE-compatible components and dependent sources for netlist import",
+      "keywords": [
+        "spice",
+        "pcccs",
+        "pvcvs",
+        "netlist",
+        "polynomial"
+      ]
+    },
+    {
+      "name": "connectors-and-references",
+      "description": "Electrical references, busbars, connectors, and phase management",
+      "keywords": [
+        "reference",
+        "ground",
+        "busbar",
+        "neutral",
+        "phase"
+      ]
+    },
+    {
+      "name": "electromechanical-machines",
+      "description": "Electric motors, generators, actuators, and machine subcomponents",
+      "keywords": [
+        "motor",
+        "generator",
+        "pmsm",
+        "induction",
+        "actuator"
+      ]
+    },
+    {
+      "name": "integrated-circuits",
+      "description": "Op-amps, logic gates, flip-flops, comparators, and IC building blocks",
+      "keywords": [
+        "opamp",
+        "cmos",
+        "gate",
+        "flip-flop",
+        "comparator"
+      ]
+    },
+    {
+      "name": "passive-components",
+      "description": "Resistors, capacitors, inductors, transformers, cables, and loads",
+      "keywords": [
+        "resistor",
+        "capacitor",
+        "inductor",
+        "transformer",
+        "cable"
+      ]
+    },
+    {
+      "name": "semiconductors-and-converters",
+      "description": "Diodes, transistors, power converters, and switching devices",
+      "keywords": [
+        "diode",
+        "mosfet",
+        "igbt",
+        "converter",
+        "rectifier"
+      ]
+    },
+    {
+      "name": "sensors-and-transducers",
+      "description": "Current, voltage, power, temperature, and motion sensors",
+      "keywords": [
+        "sensor",
+        "current",
+        "voltage",
+        "temperature",
+        "encoder"
+      ]
+    },
+    {
+      "name": "sources",
+      "description": "Voltage and current sources, batteries, fuel cells, and supply rails",
+      "keywords": [
+        "source",
+        "battery",
+        "solar",
+        "fuel",
+        "supply"
+      ]
+    },
+    {
+      "name": "switches-and-breakers",
+      "description": "Circuit breakers, relays, switches, and fuses for protection and switching",
+      "keywords": [
+        "breaker",
+        "switch",
+        "relay",
+        "fuse",
+        "protection"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Environment settings and fault injection for simulation configuration",
+      "keywords": [
+        "environment",
+        "fault",
+        "configuration",
+        "simulation",
+        "parameters"
+      ]
+    },
+    {
+      "name": "control-blocks",
+      "description": "Controllers for machines, converters, and power systems including exciters and governors",
+      "keywords": [
+        "controller",
+        "pi",
+        "foc",
+        "exciter",
+        "governor"
+      ]
+    },
+    {
+      "name": "mathematical-transforms",
+      "description": "Clarke, Park, and sequence transforms for AC machine and power system control",
+      "keywords": [
+        "clarke",
+        "park",
+        "transform",
+        "dq",
+        "sequence"
+      ]
+    },
+    {
+      "name": "measurements-and-observers",
+      "description": "Power, RMS, THD, PLL measurements and state observers",
+      "keywords": [
+        "measurement",
+        "pll",
+        "rms",
+        "observer",
+        "pmu"
+      ]
+    },
+    {
+      "name": "pulse-width-modulation",
+      "description": "PWM generators, gate signal generators, and thyristor pulse generators",
+      "keywords": [
+        "pwm",
+        "modulation",
+        "gate",
+        "carrier",
+        "thyristor"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "AC Cable (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "AC-DC Converter (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Accelerometer",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Array of Electrical Nodes",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Average-Value Chopper",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Average-Value DC-DC Converter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Average-Value Inverter (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Average-Value Rectifier (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Average-Value Voltage Source Converter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Average-Value Voltage Source Converter (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "BLDC",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "BLDC Commutation Logic",
+      "value": "control-blocks"
+    },
+    {
+      "block": "BLDC Current Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "BLDC Current Controller with PWM Generation",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Band-Limited Op-Amp",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Battery",
+      "value": "sources"
+    },
+    {
+      "block": "Battery (Table-Based)",
+      "value": "sources"
+    },
+    {
+      "block": "Bidirectional DC-DC Converter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Boost Converter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Bridge Cycloconverter Voltage Controller (Three-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Buck Converter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Buck-Boost Converter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Busbar",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Busbar (DC)",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "CMOS AND",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "CMOS Buffer",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "CMOS NAND",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "CMOS NOR",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "CMOS NOT",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "CMOS OR",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "CMOS XOR",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Cable and Connectors",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Capacitor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Cauer Thermal Model",
+      "value": "passive-components"
+    },
+    {
+      "block": "Center-Tapped Transformer",
+      "value": "passive-components"
+    },
+    {
+      "block": "Change Detector",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Circuit Breaker",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "Circuit Breaker (Three-Phase)",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "Circuit Breaker (with arc)",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "Clarke Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Clarke to Park Angle Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Comparator",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Compound Motor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Constant Current Load",
+      "value": "passive-components"
+    },
+    {
+      "block": "Constant Current Load (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Constant Power Load",
+      "value": "passive-components"
+    },
+    {
+      "block": "Constant Power Load (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Controlled Current Source (Three-Phase)",
+      "value": "sources"
+    },
+    {
+      "block": "Controlled PWM Voltage",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Controlled Voltage Source (Three-Phase)",
+      "value": "sources"
+    },
+    {
+      "block": "Controller LCFB1",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Converter (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Converter (Three-Phase, DQ0)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Coordinate Transform (Five-Phase)",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Counter",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Coupled Lines (Pair)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Coupled Lines (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Crystal",
+      "value": "passive-components"
+    },
+    {
+      "block": "Current Limiter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Current Sensor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Current Sensor (Three-Phase)",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Current Source",
+      "value": "sources"
+    },
+    {
+      "block": "Current Source (Three-Phase)",
+      "value": "sources"
+    },
+    {
+      "block": "Current and Voltage Sensor (Three-Phase)",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Current-Controlled Switch",
+      "value": "spice-components"
+    },
+    {
+      "block": "D Flip-Flop",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "D Latch",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "DC Cable",
+      "value": "passive-components"
+    },
+    {
+      "block": "DC Current Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "DC Current Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "DC Motor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "DC Voltage Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "DC Voltage Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "DC-DC Converter",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "DC-DC Voltage Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "DPDT Switch",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "DPST Switch",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "Decoupled Transform (Six-Phase, Dual-Star)",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Decoupled Transform (Six-Phase, Symmetrical)",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Delta Reference (Three-Phase)",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Delta-Connected Load",
+      "value": "passive-components"
+    },
+    {
+      "block": "Delta-Connected Variable Load",
+      "value": "passive-components"
+    },
+    {
+      "block": "Diffusion Resistor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Diode",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Dynamic Load",
+      "value": "passive-components"
+    },
+    {
+      "block": "Dynamic Load (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Dynamic Load (Three-Phase, DQ0)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Earthing Transformer",
+      "value": "passive-components"
+    },
+    {
+      "block": "Eddy Current",
+      "value": "passive-components"
+    },
+    {
+      "block": "Eight-Pulse Gate Multiplexer",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Electrical Reference",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Electrolyzer",
+      "value": "sources"
+    },
+    {
+      "block": "Environment Parameters",
+      "value": "utilities"
+    },
+    {
+      "block": "Exponential Current Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "Exponential Voltage Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "FEM-Parameterized Induction Machine (Squirrel Cage)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "FEM-Parameterized Induction Machine (Wound Rotor)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "FEM-Parameterized Linear Actuator",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "FEM-Parameterized PMSM",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "FEM-Parameterized Rotary Actuator",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "FEM-Parameterized Synchronous Machine",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Fault",
+      "value": "utilities"
+    },
+    {
+      "block": "Fault (Three-Phase)",
+      "value": "utilities"
+    },
+    {
+      "block": "Filtered Derivative (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Finite-Gain Op-Amp",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Floating Neutral (Three-Phase)",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Floating Reference",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Foster Thermal Model",
+      "value": "passive-components"
+    },
+    {
+      "block": "Four-Pulse Gate Multiplexer",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Four-Quadrant Chopper",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Fourier Analysis",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Frequency-Dependent Overhead Line (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Fuel Cell",
+      "value": "sources"
+    },
+    {
+      "block": "Fully Differential Op-Amp",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Fuse",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "GTO",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Gate Driver",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Generic Linear Actuator",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Generic Rotary Actuator",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Governor Type 1",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Governor Type 3",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Grounded Neutral (Three-Phase)",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Gyro",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "H-Bridge",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Half-Bridge (Ideal, Switching)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Half-Bridge Driver",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Hall-Effect Rotary Encoder",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Heatsink",
+      "value": "passive-components"
+    },
+    {
+      "block": "Hybrid Excitation PMSM",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Hybrid Excitation PMSM (DQ0)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Hysteresis Current Controller (Three-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "IGBT (Ideal, Switching)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Ideal Semiconductor Switch",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Impedance Scan (Three-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Incandescent Lamp",
+      "value": "passive-components"
+    },
+    {
+      "block": "Incremental Shaft Encoder",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Induction Machine (Single-Phase)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Induction Machine Current Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Induction Machine Direct Torque Control",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Induction Machine Direct Torque Control (Single-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Induction Machine Direct Torque Control with Space Vector Modulator",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Induction Machine Field-Oriented Control",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Induction Machine Field-Oriented Control (Single-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Induction Machine Flux Observer",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Induction Machine Measurement",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Induction Machine Scalar Control",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Induction Machine Squirrel Cage",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Induction Machine Wound Rotor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Inductive Rotor Position Sensor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Inductor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Integrator (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Integrator with Wrapped State (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Inverse Clarke Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Inverse Coordinate Transform (Five-Phase)",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Inverse Decoupled Transform  (Six-Phase, Symmetrical)",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Inverse Decoupled Transform (Six-Phase, Dual-Star)",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Inverse Park Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Inverse Symmetrical-Components Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Lead-Lag (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Light-Emitting Diode",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Line Voltage Sensor (Three-Phase)",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Load Flow Source",
+      "value": "sources"
+    },
+    {
+      "block": "Low-Pass Filter (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Low-Pass Filter (Variable Time Constant, Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Luenberger Observer",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "MOSFET (Ideal, Switching)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Machine Inertia",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Machine Mechanical Power",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Magnetic Core",
+      "value": "passive-components"
+    },
+    {
+      "block": "Magnetic Rotor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Model Reference Adaptive Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Modular Multilevel Converter (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Modular Multilevel Converter Arm",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Modular Multilevel Converter Leg",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Monostable Flip-Flop",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Motor & Drive (System Level)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Moving Average",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Moving Average (Variable Frequency)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Multiphase Coupled Lines",
+      "value": "passive-components"
+    },
+    {
+      "block": "Multiphase Distributed Parameter Line",
+      "value": "passive-components"
+    },
+    {
+      "block": "Multiplier",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Mutual Inductor",
+      "value": "passive-components"
+    },
+    {
+      "block": "N-Channel IGBT",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "N-Channel JFET",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "N-Channel LDMOS FET",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "N-Channel MOSFET",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "NMOS Capacitor",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "NPN Bipolar Transistor",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Negative Supply Rail",
+      "value": "sources"
+    },
+    {
+      "block": "Neutral Port (Three-Phase)",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Nonlinear Inductor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Nonlinear Reluctance",
+      "value": "passive-components"
+    },
+    {
+      "block": "Nonlinear Transformer",
+      "value": "passive-components"
+    },
+    {
+      "block": "On-Off Delay",
+      "value": "control-blocks"
+    },
+    {
+      "block": "One-Quadrant Chopper",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Open Circuit",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Open Circuit (Three-Phase)",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Operational Transconductance Amplifier",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Optocoupler",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "P-Channel JFET",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "P-Channel LDMOS FET",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "P-Channel MOSFET",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "PCCCS",
+      "value": "spice-components"
+    },
+    {
+      "block": "PCCCS2",
+      "value": "spice-components"
+    },
+    {
+      "block": "PCCVS",
+      "value": "spice-components"
+    },
+    {
+      "block": "PCCVS2",
+      "value": "spice-components"
+    },
+    {
+      "block": "PFC Rectifier Controller (Three-Phase) ",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PI Controller (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PI Controller with Integral Anti-Windup (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PMLSM",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "PMOS Capacitor",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "PMSM",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "PMSM (Five-Phase)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "PMSM (Four-Phase)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "PMSM (Single-Phase)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "PMSM (Six-Phase, Symmetrical)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "PMSM Current Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PMSM Current Controller with Pre-Control",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PMSM Current Reference Generator",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PMSM Field-Oriented Control",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PMSM Field-Weakening Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PMSM Torque Estimator",
+      "value": "control-blocks"
+    },
+    {
+      "block": "PNP Bipolar Transistor",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "PS Sensor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "PS Three-Element Demux",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "PTC Thermistor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "PVCCS",
+      "value": "spice-components"
+    },
+    {
+      "block": "PVCCS2",
+      "value": "spice-components"
+    },
+    {
+      "block": "PVCVS",
+      "value": "spice-components"
+    },
+    {
+      "block": "PVCVS2",
+      "value": "spice-components"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Five-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Four-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Three-phase, Three-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Three-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Generator",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Generator (Five-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Generator (Four-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Generator (Multilevel)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Generator (Three-phase, Three-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Generator (Three-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Generator (Vienna Rectifier)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Five-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Four-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Three-phase, Three-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Three-phase, Two-level)",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "Park Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Park to Clarke Angle Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Passive Harmonic Filter (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Peltier Device",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Phase Permute",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Phase Splitter",
+      "value": "connectors-and-references"
+    },
+    {
+      "block": "Phase Voltage Sensor (Three-Phase)",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Phase-Shifting Transformer",
+      "value": "passive-components"
+    },
+    {
+      "block": "Phasor Measurement Unit (PMU, Three-Phase)",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Photodiode",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Piecewise Linear Current Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "Piecewise Linear Voltage Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "Piezo Bender",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Piezo Linear Actuator",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Piezo Rotary Actuator",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Piezo Stack",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Positive Supply Rail",
+      "value": "sources"
+    },
+    {
+      "block": "Potentiometer",
+      "value": "passive-components"
+    },
+    {
+      "block": "Power Measurement",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Power Measurement (Three-Phase)",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Power Measurement (Three-Phase, Instantaneous)",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Power Sensor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Power Sensor (Three-Phase)",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Pressure Transducer",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Programmable Signal Generator (Three-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Programmable Voltage Source",
+      "value": "sources"
+    },
+    {
+      "block": "Programmable Voltage Source (Three-Phase)",
+      "value": "sources"
+    },
+    {
+      "block": "Proximity Sensor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Pulse Current Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "Pulse Voltage Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "Push-Pull Output",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Quadrature Shaft Decoder",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "RC Servo",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "RLC (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "RMS Measurement",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "RST Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Rectifier (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Resistor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Resolver",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Resolver-to-Digital Converter",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Rotating Air Gap",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "S-Parameter Rational Fit",
+      "value": "passive-components"
+    },
+    {
+      "block": "S-R Latch",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "SFFM Current Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "SFFM Voltage Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "SIMetrix Cosimulation Interface",
+      "value": "spice-components"
+    },
+    {
+      "block": "SM AC10C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC11C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC1C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC2C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC3C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC4C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC5C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC6C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC7C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC8C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM AC9C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM Current Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM Current Reference Generator",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM DC1C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM DC2C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM DC4C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM Field-Oriented Control",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM Governor with Droop",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM PSS1A",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM PSS2C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM PSS7C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST10C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST1C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST2C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST3C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST4C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST5C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST6C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST7C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST8C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SM ST9C",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SPDT Relay",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "SPDT Switch",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "SPDT Switch (Three-Phase)",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "SPICE Diode",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE NIGBT",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE NJFET",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE NMOS",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE NPN",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE PJFET",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE PMOS",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE PNP",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE Resistor",
+      "value": "spice-components"
+    },
+    {
+      "block": "SPICE-Imported MOSFET",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "SPMT Switch",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "SPST Relay",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "SPST Switch",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "SPST Switch (Three-Phase)",
+      "value": "switches-and-breakers"
+    },
+    {
+      "block": "SRM Commutation Logic",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SRM Current Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SRM Current Controller with PWM Generation",
+      "value": "control-blocks"
+    },
+    {
+      "block": "SRM Hysteresis Current Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Schmitt Trigger",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Second-Order Filter",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Second-Order Low-Pass Filter (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Semiconductor Switch Selector",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Sequence Analyzer",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Serial-In Parallel-Out Shift Register",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Set-Reset Flip-Flop",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Shunt Motor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Signal Sample and Hold",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Simplified Generator",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Simplified Induction Motor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Simplified Synchronous Machine",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Simplified Synchronous Machine Measurement",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Sine Wave Generator (Three-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Sinusoidal Current Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "Sinusoidal Measurement (PLL)",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Sinusoidal Measurement (PLL, Three-Phase)",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Sinusoidal Voltage Source",
+      "value": "spice-components"
+    },
+    {
+      "block": "Six-Pulse Gate Multiplexer",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Sliding Mode Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Smith Predictor Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Solar Cell",
+      "value": "sources"
+    },
+    {
+      "block": "Solar PV Controller (Three-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Solenoid",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Stair Generator",
+      "value": "control-blocks"
+    },
+    {
+      "block": "State-Feedback Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Stepper Motor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Stepper Motor Driver",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Strain Gauge",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Supercapacitor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Switched Reluctance Machine",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Switched Reluctance Machine (Multi-Phase)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Symmetrical-Components Transform",
+      "value": "mathematical-transforms"
+    },
+    {
+      "block": "Synchronous Machine (Six-Phase)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine Field Circuit",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine GENQEC",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine GENROU",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine GENTPJ",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine Measurement",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine Model 1.0",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine Model 2.1",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine Round Rotor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Machine Salient Pole",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Synchronous Reluctance Machine",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Tap-Changing Transformer",
+      "value": "passive-components"
+    },
+    {
+      "block": "Thermal Resistor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Thermistor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Thermocouple",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Three-Level Converter (Three-Phase)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Three-Winding Mutual Inductor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Three-Winding Nonlinear Transformer",
+      "value": "passive-components"
+    },
+    {
+      "block": "Three-Winding Transformer (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Thyristor",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Thyristor (Piecewise Linear)",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Thyristor 12-Pulse Generator",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "Thyristor 6-Pulse Generator",
+      "value": "pulse-width-modulation"
+    },
+    {
+      "block": "Thyristor Rectifier Voltage Controller (Three-Phase)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Timer",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Total Harmonic Distortion",
+      "value": "measurements-and-observers"
+    },
+    {
+      "block": "Transmission Line",
+      "value": "passive-components"
+    },
+    {
+      "block": "Transmission Line (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Twelve-Pulse Gate Multiplexer",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Two-Pulse Gate Multiplexer",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Two-Quadrant Chopper",
+      "value": "semiconductors-and-converters"
+    },
+    {
+      "block": "Two-Winding Transformer (Three-Phase)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Unipolar Stepper Motor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Unipolar Stepper Motor Driver",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Universal Motor",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Variable Capacitor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Variable Inductor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Variable-Frequency Second-Order Filter",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Varistor",
+      "value": "passive-components"
+    },
+    {
+      "block": "Vectorized Synchronous Machine GENROU",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Velocity Controller",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Voltage Sensor",
+      "value": "sensors-and-transducers"
+    },
+    {
+      "block": "Voltage Source",
+      "value": "sources"
+    },
+    {
+      "block": "Voltage Source (Three-Phase)",
+      "value": "sources"
+    },
+    {
+      "block": "Voltage-Controlled Oscillator",
+      "value": "integrated-circuits"
+    },
+    {
+      "block": "Voltage-Controlled Switch",
+      "value": "spice-components"
+    },
+    {
+      "block": "Washout (Discrete or Continuous)",
+      "value": "control-blocks"
+    },
+    {
+      "block": "Wind Turbine (Mechanical)",
+      "value": "electromechanical-machines"
+    },
+    {
+      "block": "Winding",
+      "value": "passive-components"
+    },
+    {
+      "block": "Wye-Connected Load",
+      "value": "passive-components"
+    },
+    {
+      "block": "Wye-Connected Variable Load",
+      "value": "passive-components"
+    },
+    {
+      "block": "Wye-Connected Variable Load (lagging)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Zigzag-Delta-Wye Transformer",
+      "value": "passive-components"
+    },
+    {
+      "block": "d-q Voltage Limiter",
+      "value": "control-blocks"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "AC Cable (Three-Phase)",
+      "value": "Model a three-phase AC cable with per-unit-length resistance, inductance, and capacitance — use for power distribution cable studies including voltage drop and losses"
+    },
+    {
+      "block": "AC-DC Converter (Three-Phase)",
+      "value": "Model a three-phase AC-DC converter with selectable topology — use for rectifier design, DC bus supply, or power electronics front-end studies"
+    },
+    {
+      "block": "Accelerometer",
+      "value": "Model a MEMS or piezoelectric accelerometer — use for vibration sensing, inertial measurement, or structural health monitoring in electrical systems"
+    },
+    {
+      "block": "Array of Electrical Nodes",
+      "value": "Create an array of electrical connection nodes — use to efficiently connect parallel circuit branches or multi-phase components with vectorized ports"
+    },
+    {
+      "block": "Average-Value Chopper",
+      "value": "Model a DC chopper using average-value representation without switching — use for fast system-level simulation of DC motor drives or battery chargers"
+    },
+    {
+      "block": "Average-Value DC-DC Converter",
+      "value": "Model a DC-DC converter using average-value representation — use for fast system-level simulation of buck, boost, or buck-boost converters without switching ripple"
+    },
+    {
+      "block": "Average-Value Inverter (Three-Phase)",
+      "value": "Model a three-phase inverter using average-value representation — use for fast motor drive or grid-tie inverter studies without switching transients"
+    },
+    {
+      "block": "Average-Value Rectifier (Three-Phase)",
+      "value": "Model a three-phase rectifier using average-value representation — use for fast simulation of AC-DC conversion without individual diode switching events"
+    },
+    {
+      "block": "Average-Value Voltage Source Converter",
+      "value": "Model a voltage source converter using average-value representation — use for fast simulation of grid-connected converters or HVDC studies"
+    },
+    {
+      "block": "Average-Value Voltage Source Converter (Three-Phase)",
+      "value": "Model a three-phase VSC using average-value representation — use for grid integration studies, FACTS devices, or HVDC without switching detail"
+    },
+    {
+      "block": "BLDC",
+      "value": "Model a brushless DC motor with trapezoidal back-EMF — use for BLDC drive design, commutation logic development, or drone/robotics motor simulation"
+    },
+    {
+      "block": "BLDC Commutation Logic",
+      "value": "Generate six-step commutation signals for a BLDC motor from Hall sensor inputs — use as the core commutation logic in trapezoidal BLDC drives"
+    },
+    {
+      "block": "BLDC Current Controller",
+      "value": "Regulate DC bus current for a BLDC drive — use to implement current-mode control for torque regulation in six-step BLDC systems"
+    },
+    {
+      "block": "BLDC Current Controller with PWM Generation",
+      "value": "Regulate BLDC current and generate PWM gate signals — use as a complete current-loop controller with integrated PWM for BLDC drives"
+    },
+    {
+      "block": "Band-Limited Op-Amp",
+      "value": "Model an operational amplifier with finite bandwidth and slew rate — use for realistic analog circuit design where frequency response and slew limiting matter"
+    },
+    {
+      "block": "Battery",
+      "value": "Model a battery with internal resistance and open-circuit voltage — use for EV powertrain, portable electronics, or energy storage system simulation"
+    },
+    {
+      "block": "Battery (Table-Based)",
+      "value": "Model a battery with SOC-dependent characteristics from lookup tables — use for accurate battery behavior over full charge/discharge cycles"
+    },
+    {
+      "block": "Bidirectional DC-DC Converter",
+      "value": "Model a bidirectional DC-DC converter for two-way power flow — use for battery charge/discharge systems, regenerative braking, or energy storage interfaces"
+    },
+    {
+      "block": "Boost Converter",
+      "value": "Model a boost DC-DC converter stepping voltage up — use for PV MPPT converters, battery-to-bus interfaces, or voltage step-up applications"
+    },
+    {
+      "block": "Bridge Cycloconverter Voltage Controller (Three-Phase)",
+      "value": "Control a three-phase bridge cycloconverter output voltage — use for low-frequency high-power AC drive control or large motor speed regulation"
+    },
+    {
+      "block": "Buck Converter",
+      "value": "Model a buck DC-DC converter stepping voltage down — use for point-of-load regulators, LED drivers, or battery charging from higher-voltage sources"
+    },
+    {
+      "block": "Buck-Boost Converter",
+      "value": "Model a buck-boost DC-DC converter with inverted output — use for applications requiring output voltage above or below input voltage"
+    },
+    {
+      "block": "Busbar",
+      "value": "Model an AC busbar as a connection point for multiple three-phase branches — use for power system substation or distribution panel modeling"
+    },
+    {
+      "block": "Busbar (DC)",
+      "value": "Model a DC busbar as a connection point for multiple DC branches — use for DC distribution systems, battery buses, or power electronics DC links"
+    },
+    {
+      "block": "CMOS AND",
+      "value": "Model a CMOS AND gate with realistic switching and propagation delay — use for digital logic circuits with physical voltage levels and timing"
+    },
+    {
+      "block": "CMOS Buffer",
+      "value": "Model a CMOS buffer with drive strength and propagation delay — use for signal buffering, level restoration, or fan-out management in digital circuits"
+    },
+    {
+      "block": "CMOS NAND",
+      "value": "Model a CMOS NAND gate with realistic switching and propagation delay — use for digital logic design with physical electrical characteristics"
+    },
+    {
+      "block": "CMOS NOR",
+      "value": "Model a CMOS NOR gate with realistic switching characteristics — use for digital logic circuits requiring physical voltage levels and timing"
+    },
+    {
+      "block": "CMOS NOT",
+      "value": "Model a CMOS inverter with realistic switching characteristics — use for digital logic circuits or as a building block for gate-level simulation"
+    },
+    {
+      "block": "CMOS OR",
+      "value": "Model a CMOS OR gate with realistic switching and propagation delay — use for digital logic circuits with physical electrical behavior"
+    },
+    {
+      "block": "CMOS XOR",
+      "value": "Model a CMOS XOR gate with realistic switching characteristics — use for parity checking, phase detection, or digital logic with physical timing"
+    },
+    {
+      "block": "Cable and Connectors",
+      "value": "Model a cable with distributed resistance, inductance, and connector impedances — use for wiring harness, interconnect loss, or cable routing studies"
+    },
+    {
+      "block": "Capacitor",
+      "value": "Model an ideal or lossy capacitor — use for energy storage, filtering, coupling, decoupling, or any circuit requiring capacitive behavior"
+    },
+    {
+      "block": "Cauer Thermal Model",
+      "value": "Model thermal dynamics using a Cauer RC network with physical layer correspondence — use for semiconductor or machine thermal analysis with material-based parameters"
+    },
+    {
+      "block": "Center-Tapped Transformer",
+      "value": "Model a transformer with a center-tapped secondary winding — use for full-wave rectifier supplies, balanced audio circuits, or split-rail power generation"
+    },
+    {
+      "block": "Change Detector",
+      "value": "Detect when an input signal changes value — use for event-based triggering, edge detection, or state change notification in control logic"
+    },
+    {
+      "block": "Circuit Breaker",
+      "value": "Model a single-phase circuit breaker with opening and closing dynamics — use for protection studies, fault clearing, or switching transient analysis"
+    },
+    {
+      "block": "Circuit Breaker (Three-Phase)",
+      "value": "Model a three-phase circuit breaker — use for power system protection, fault isolation, or recloser studies in transmission and distribution"
+    },
+    {
+      "block": "Circuit Breaker (with arc)",
+      "value": "Model a circuit breaker including arc voltage during opening — use for detailed interruption studies where arc energy and TRV matter"
+    },
+    {
+      "block": "Clarke Transform",
+      "value": "Transform three-phase abc quantities to stationary alpha-beta frame — use as the first stage in field-oriented control or space vector modulation"
+    },
+    {
+      "block": "Clarke to Park Angle Transform",
+      "value": "Compute the angle transformation from Clarke to Park frame — use for deriving rotor position from alpha-beta quantities in sensorless control"
+    },
+    {
+      "block": "Comparator",
+      "value": "Model a voltage comparator with hysteresis and propagation delay — use for threshold detection, zero-crossing circuits, or ADC front-ends"
+    },
+    {
+      "block": "Compound Motor",
+      "value": "Model a compound-wound DC motor with series and shunt field windings — use for applications requiring both series and shunt motor characteristics"
+    },
+    {
+      "block": "Constant Current Load",
+      "value": "Model a load that draws constant current regardless of voltage — use for LED drivers, battery chargers, or constant-current electronic loads"
+    },
+    {
+      "block": "Constant Current Load (Three-Phase)",
+      "value": "Model a three-phase load drawing constant current — use for power system studies with current-regulated loads or testing source regulation"
+    },
+    {
+      "block": "Constant Power Load",
+      "value": "Model a load that consumes constant power regardless of voltage — use for regulated converters, motor drives seen from the supply, or grid load modeling"
+    },
+    {
+      "block": "Constant Power Load (Three-Phase)",
+      "value": "Model a three-phase constant power load — use for power system studies with regulated loads that maintain constant power draw"
+    },
+    {
+      "block": "Controlled Current Source (Three-Phase)",
+      "value": "Inject three-phase currents controlled by external signals — use for current-source loads, harmonic injection, or custom power source modeling"
+    },
+    {
+      "block": "Controlled PWM Voltage",
+      "value": "Generate a PWM voltage waveform controlled by a duty-cycle input — use for power converter gate drive modeling or PWM-based signal generation"
+    },
+    {
+      "block": "Controlled Voltage Source (Three-Phase)",
+      "value": "Generate three-phase voltages controlled by external signals — use for grid emulation, programmable sources, or custom voltage generation"
+    },
+    {
+      "block": "Controller LCFB1",
+      "value": "Implement a load controller with frequency bias for generator governing — use for automatic generation control or load-frequency regulation"
+    },
+    {
+      "block": "Converter (Three-Phase)",
+      "value": "Model a three-phase power converter with configurable switching devices — use for inverter, rectifier, or active front-end topologies with detailed switching"
+    },
+    {
+      "block": "Converter (Three-Phase, DQ0)",
+      "value": "Model a three-phase voltage source converter in the DQ0 rotating reference frame — use for fast-executing grid-connected inverter studies without switching details"
+    },
+    {
+      "block": "Coordinate Transform (Five-Phase)",
+      "value": "Transform five-phase quantities to orthogonal rotating frames — use for control of five-phase machines with decoupled d-q and harmonic subspaces"
+    },
+    {
+      "block": "Counter",
+      "value": "Count events or clock cycles — use for pulse counting, frequency division, or sequencing logic in power electronics control"
+    },
+    {
+      "block": "Coupled Lines (Pair)",
+      "value": "Model a pair of electromagnetically coupled transmission lines — use for crosstalk analysis, differential pairs, or coupled microstrip studies"
+    },
+    {
+      "block": "Coupled Lines (Three-Phase)",
+      "value": "Model three coupled transmission lines — use for three-phase transmission line studies including mutual coupling between phases"
+    },
+    {
+      "block": "Crystal",
+      "value": "Model a piezoelectric crystal resonator — use for oscillator circuits, frequency reference design, or crystal filter analysis"
+    },
+    {
+      "block": "Current Limiter",
+      "value": "Model a current-limiting device that clamps current to a maximum value — use for protection circuits, inrush limiting, or fault current reduction"
+    },
+    {
+      "block": "Current Sensor",
+      "value": "Measure electrical current without inserting resistance — use for feedback control, protection, or monitoring in any circuit"
+    },
+    {
+      "block": "Current Sensor (Three-Phase)",
+      "value": "Measure three-phase currents simultaneously — use for motor drive control, power measurement, or protection relay inputs"
+    },
+    {
+      "block": "Current Source",
+      "value": "Model an ideal or controlled current source — use for biasing, load representation, or signal injection in electrical circuits"
+    },
+    {
+      "block": "Current Source (Three-Phase)",
+      "value": "Model a three-phase ideal current source — use for representing current-source loads or injecting test currents into power systems"
+    },
+    {
+      "block": "Current and Voltage Sensor (Three-Phase)",
+      "value": "Measure both current and voltage on a three-phase system — use for combined power measurement, relay protection, or control feedback"
+    },
+    {
+      "block": "Current-Controlled Switch",
+      "value": "SPICE-compatible switch controlled by current through a sensing branch — use for SPICE netlist import or current-threshold switching"
+    },
+    {
+      "block": "D Flip-Flop",
+      "value": "Model a D-type flip-flop with set, reset, and clock inputs — use for sequential digital logic, registers, or synchronization circuits"
+    },
+    {
+      "block": "D Latch",
+      "value": "Model a transparent D latch — use for level-sensitive data storage, sample-and-hold logic, or combinational pipeline stages"
+    },
+    {
+      "block": "DC Cable",
+      "value": "Model a DC cable with resistance and inductance — use for DC distribution systems, battery interconnects, or EV charging cable studies"
+    },
+    {
+      "block": "DC Current Controller",
+      "value": "Regulate DC current in a converter or motor drive — use for inner current loops in DC motor drives or battery charging controllers"
+    },
+    {
+      "block": "DC Current Source",
+      "value": "SPICE-compatible DC current source — use in imported SPICE netlists or mixed-mode simulation requiring SPICE source semantics"
+    },
+    {
+      "block": "DC Motor",
+      "value": "Model a permanent-magnet or wound-field DC motor — use for DC drive systems, servo applications, or simple motor modeling with back-EMF and armature dynamics"
+    },
+    {
+      "block": "DC Voltage Controller",
+      "value": "Regulate DC bus voltage via converter control — use for DC link voltage regulation in inverter systems or DC-DC converter output control"
+    },
+    {
+      "block": "DC Voltage Source",
+      "value": "SPICE-compatible DC voltage source — use in imported SPICE netlists or mixed-mode simulation requiring SPICE source semantics"
+    },
+    {
+      "block": "DC-DC Converter",
+      "value": "Model a generic DC-DC converter with selectable topology — use for power supply design, voltage regulation, or energy conversion between DC buses"
+    },
+    {
+      "block": "DC-DC Voltage Controller",
+      "value": "Regulate output voltage of a DC-DC converter — use for closed-loop voltage control of buck, boost, or buck-boost topologies"
+    },
+    {
+      "block": "DPDT Switch",
+      "value": "Model a double-pole double-throw switch — use for polarity reversal, signal routing, or transfer switching between two circuits"
+    },
+    {
+      "block": "DPST Switch",
+      "value": "Model a double-pole single-throw switch — use for simultaneously switching two conductors such as both lines of a single-phase supply"
+    },
+    {
+      "block": "Decoupled Transform (Six-Phase, Dual-Star)",
+      "value": "Transform dual-star six-phase quantities to decoupled subspaces — use for independent control of dual three-phase winding sets"
+    },
+    {
+      "block": "Decoupled Transform (Six-Phase, Symmetrical)",
+      "value": "Transform symmetrical six-phase quantities to decoupled orthogonal subspaces — use for control of six-phase machines with 60-degree displacement"
+    },
+    {
+      "block": "Delta Reference (Three-Phase)",
+      "value": "Provide a delta-connected voltage reference for three-phase systems — use to establish the voltage reference for delta-connected loads or sources"
+    },
+    {
+      "block": "Delta-Connected Load",
+      "value": "Model a balanced or unbalanced delta-connected three-phase load — use for industrial motor equivalents, heater banks, or delta-wired equipment"
+    },
+    {
+      "block": "Delta-Connected Variable Load",
+      "value": "Model a delta-connected three-phase load with variable impedance — use for load-stepping studies, demand variation, or tap-changing load banks"
+    },
+    {
+      "block": "Diffusion Resistor",
+      "value": "Model a resistor with frequency-dependent skin-effect behavior — use for accurate high-frequency conductor modeling or eddy-current resistance"
+    },
+    {
+      "block": "Diode",
+      "value": "Model a semiconductor diode with forward voltage drop and reverse recovery — use for rectifiers, freewheeling paths, voltage clamping, or protection circuits"
+    },
+    {
+      "block": "Dynamic Load",
+      "value": "Model a single-phase dynamic load with voltage and frequency dependent characteristics — use for power system loads that change with operating conditions"
+    },
+    {
+      "block": "Dynamic Load (Three-Phase)",
+      "value": "Model a three-phase dynamic load with voltage and frequency dependence — use for power system stability studies with realistic load behavior"
+    },
+    {
+      "block": "Dynamic Load (Three-Phase, DQ0)",
+      "value": "Model a three-phase dynamic load in the DQ0 reference frame — use for power system stability studies with frequency-dependent load behavior"
+    },
+    {
+      "block": "Earthing Transformer",
+      "value": "Model a zigzag earthing transformer providing a neutral point for delta systems — use for grounding ungrounded three-phase systems"
+    },
+    {
+      "block": "Eddy Current",
+      "value": "Model eddy current losses in a magnetic component — use alongside magnetic cores to capture frequency-dependent iron losses"
+    },
+    {
+      "block": "Eight-Pulse Gate Multiplexer",
+      "value": "Combine gate signals for an eight-pulse converter configuration — use with multi-pulse rectifier topologies for harmonic reduction"
+    },
+    {
+      "block": "Electrical Reference",
+      "value": "Define the electrical ground reference node — use as the zero-potential reference for every electrical circuit in the model"
+    },
+    {
+      "block": "Electrolyzer",
+      "value": "Model an electrolyzer converting electrical energy to hydrogen — use for green hydrogen production studies or power-to-gas system modeling"
+    },
+    {
+      "block": "Environment Parameters",
+      "value": "Set global simulation parameters for Simscape Electrical — use to configure solver settings, ambient temperature, or network parameters"
+    },
+    {
+      "block": "Exponential Current Source",
+      "value": "SPICE-compatible current source with exponential waveform — use for modeling charge/discharge transients in SPICE-originated circuits"
+    },
+    {
+      "block": "Exponential Voltage Source",
+      "value": "SPICE-compatible voltage source with exponential waveform — use for step-response testing with exponential rise/fall in SPICE circuits"
+    },
+    {
+      "block": "FEM-Parameterized Induction Machine (Squirrel Cage)",
+      "value": "Model a squirrel-cage induction machine using flux maps from finite-element analysis — use for high-accuracy motor simulation capturing saturation and spatial harmonics"
+    },
+    {
+      "block": "FEM-Parameterized Induction Machine (Wound Rotor)",
+      "value": "Model a wound-rotor induction machine using FEM-derived flux maps — use for high-accuracy wound-rotor motor studies with saturation effects"
+    },
+    {
+      "block": "FEM-Parameterized Linear Actuator",
+      "value": "Model a linear electromagnetic actuator using FEM-derived force maps — use for solenoid valve, linear motor, or voice coil actuator design with accurate force profiles"
+    },
+    {
+      "block": "FEM-Parameterized PMSM",
+      "value": "Model a PMSM using flux linkage maps from finite-element analysis — use for high-accuracy motor simulation including saturation, cross-coupling, and cogging torque"
+    },
+    {
+      "block": "FEM-Parameterized Rotary Actuator",
+      "value": "Model a limited-angle rotary actuator using FEM-derived torque maps — use for high-accuracy torque motor or rotary solenoid design"
+    },
+    {
+      "block": "FEM-Parameterized Synchronous Machine",
+      "value": "Model a synchronous machine using FEM-derived flux maps — use for high-accuracy generator or motor studies capturing magnetic saturation effects"
+    },
+    {
+      "block": "Fault",
+      "value": "Inject a configurable fault on a single-phase circuit — use for protection system testing, fault analysis, or transient stability studies"
+    },
+    {
+      "block": "Fault (Three-Phase)",
+      "value": "Inject configurable faults on a three-phase system — use for symmetrical and asymmetrical fault studies, relay testing, or stability analysis"
+    },
+    {
+      "block": "Filtered Derivative (Discrete or Continuous)",
+      "value": "Compute a band-limited derivative of a signal — use for rate feedback, damping injection, or speed estimation from position without amplifying noise"
+    },
+    {
+      "block": "Finite-Gain Op-Amp",
+      "value": "Model an operational amplifier with finite DC gain and output resistance — use for studying gain error, offset effects, or non-ideal amplifier behavior"
+    },
+    {
+      "block": "Floating Neutral (Three-Phase)",
+      "value": "Create a floating neutral point for three-phase systems — use when the neutral is not connected to ground in ungrounded wye configurations"
+    },
+    {
+      "block": "Floating Reference",
+      "value": "Define an isolated electrical reference — use for galvanically isolated circuit sections that do not share a common ground"
+    },
+    {
+      "block": "Foster Thermal Model",
+      "value": "Model thermal dynamics using a Foster RC network — use for semiconductor junction temperature estimation from datasheet thermal impedance curves"
+    },
+    {
+      "block": "Four-Pulse Gate Multiplexer",
+      "value": "Combine gate signals for a four-pulse converter — use with single-phase bridge converters or H-bridge topologies"
+    },
+    {
+      "block": "Four-Quadrant Chopper",
+      "value": "Model a full-bridge DC chopper operating in all four torque-speed quadrants — use for bidirectional DC motor drives with regenerative braking"
+    },
+    {
+      "block": "Fourier Analysis",
+      "value": "Extract magnitude and phase of a specific harmonic from a periodic signal — use for THD measurement, harmonic monitoring, or PLL frequency tracking"
+    },
+    {
+      "block": "Frequency-Dependent Overhead Line (Three-Phase)",
+      "value": "Model a three-phase overhead transmission line with frequency-dependent parameters — use for electromagnetic transient studies of long lines"
+    },
+    {
+      "block": "Fuel Cell",
+      "value": "Model a fuel cell generating electricity from hydrogen — use for fuel cell vehicle powertrains, backup power, or distributed generation studies"
+    },
+    {
+      "block": "Fully Differential Op-Amp",
+      "value": "Model a fully differential operational amplifier with common-mode rejection — use for differential signal processing, ADC drivers, or balanced analog circuits"
+    },
+    {
+      "block": "Fuse",
+      "value": "Model a fuse with melting characteristics — use for overcurrent protection studies, coordination analysis, or fault current interruption"
+    },
+    {
+      "block": "GTO",
+      "value": "Model a gate turn-off thyristor — use for high-power converter applications, traction drives, or HVDC systems requiring turn-off capability"
+    },
+    {
+      "block": "Gate Driver",
+      "value": "Model a gate driver circuit providing proper drive signals to power semiconductor switches — use for realistic IGBT or MOSFET driving with delays and levels"
+    },
+    {
+      "block": "Generic Linear Actuator",
+      "value": "Model a generic electromagnetic linear actuator with parameterized force-stroke characteristics — use for solenoid, voice coil, or linear motor system-level studies"
+    },
+    {
+      "block": "Generic Rotary Actuator",
+      "value": "Model a generic electromagnetic rotary actuator with parameterized torque-angle characteristics — use for torque motor or limited-angle actuator system studies"
+    },
+    {
+      "block": "Governor Type 1",
+      "value": "Implement a Type 1 turbine governor model — use for steam or gas turbine speed regulation in power system stability studies"
+    },
+    {
+      "block": "Governor Type 3",
+      "value": "Implement a Type 3 turbine governor model — use for diesel engine or gas turbine governing with detailed fuel system dynamics"
+    },
+    {
+      "block": "Grounded Neutral (Three-Phase)",
+      "value": "Create a grounded neutral point for three-phase systems — use for solidly grounded wye configurations in power distribution"
+    },
+    {
+      "block": "Gyro",
+      "value": "Model a gyroscope sensor measuring angular rate — use for inertial navigation, stabilization, or attitude determination in electromechanical systems"
+    },
+    {
+      "block": "H-Bridge",
+      "value": "Model a full H-bridge with four switching devices — use for single-phase inverters, DC motor drives, or bidirectional DC-DC conversion"
+    },
+    {
+      "block": "Half-Bridge (Ideal, Switching)",
+      "value": "Model an ideal switching half-bridge leg — use as a building block for multi-phase converters or when ideal switch behavior is sufficient"
+    },
+    {
+      "block": "Half-Bridge Driver",
+      "value": "Model a half-bridge gate driver with high-side and low-side outputs — use for driving half-bridge legs with proper dead-time and level shifting"
+    },
+    {
+      "block": "Hall-Effect Rotary Encoder",
+      "value": "Model a Hall-effect encoder providing commutation signals and position — use for BLDC motor commutation, speed measurement, or rotor angle detection"
+    },
+    {
+      "block": "Heatsink",
+      "value": "Model a heatsink thermal resistance and capacitance — use with semiconductor thermal models to study junction temperature under load cycling"
+    },
+    {
+      "block": "Hybrid Excitation PMSM",
+      "value": "Model a PMSM with additional wound-field excitation for extended field-weakening range — use for EV traction motors or variable-flux machine studies"
+    },
+    {
+      "block": "Hybrid Excitation PMSM (DQ0)",
+      "value": "Model a hybrid-excitation permanent magnet synchronous machine in DQ0 frame — use for field-weakening studies of machines with both PM and wound-field excitation"
+    },
+    {
+      "block": "Hysteresis Current Controller (Three-Phase)",
+      "value": "Control three-phase currents using hysteresis band switching — use for simple high-bandwidth current control in motor drives or active filters"
+    },
+    {
+      "block": "IGBT (Ideal, Switching)",
+      "value": "Model an ideal IGBT with on-state voltage drop and switching transitions — use for converter topologies where conduction loss matters but detailed physics does not"
+    },
+    {
+      "block": "Ideal Semiconductor Switch",
+      "value": "Model a generic ideal power switch — use for topology exploration where device-specific characteristics are not yet defined"
+    },
+    {
+      "block": "Impedance Scan (Three-Phase)",
+      "value": "Perform frequency-domain impedance measurement on a three-phase system — use for stability analysis of grid-connected converters or impedance-based design"
+    },
+    {
+      "block": "Incandescent Lamp",
+      "value": "Model an incandescent lamp with nonlinear resistance varying with temperature — use for lighting circuit studies, inrush current analysis, or cold-start effects"
+    },
+    {
+      "block": "Incremental Shaft Encoder",
+      "value": "Model an incremental encoder generating A/B quadrature pulses — use for position and speed measurement in servo drives or motion control"
+    },
+    {
+      "block": "Induction Machine (Single-Phase)",
+      "value": "Model a single-phase induction motor with main and auxiliary windings — use for household appliances, fans, or pump drives with capacitor-start or split-phase starting"
+    },
+    {
+      "block": "Induction Machine Current Controller",
+      "value": "Regulate stator current of an induction machine in rotating frame — use for inner current loop in indirect or direct vector control of induction drives"
+    },
+    {
+      "block": "Induction Machine Direct Torque Control",
+      "value": "Implement direct torque control for a three-phase induction machine — use for high-dynamic torque regulation without a rotor position sensor"
+    },
+    {
+      "block": "Induction Machine Direct Torque Control (Single-Phase)",
+      "value": "Implement DTC for a single-phase induction machine — use for torque control of single-phase motors in appliance or pump applications"
+    },
+    {
+      "block": "Induction Machine Direct Torque Control with Space Vector Modulator",
+      "value": "Implement DTC with SVM for an induction machine — use for constant switching frequency DTC with reduced torque ripple"
+    },
+    {
+      "block": "Induction Machine Field-Oriented Control",
+      "value": "Implement field-oriented control for a three-phase induction machine — use for high-performance speed and torque regulation in industrial drives"
+    },
+    {
+      "block": "Induction Machine Field-Oriented Control (Single-Phase)",
+      "value": "Implement FOC for a single-phase induction machine — use for variable-speed control of single-phase induction motors"
+    },
+    {
+      "block": "Induction Machine Flux Observer",
+      "value": "Estimate rotor or stator flux of an induction machine — use for sensorless field-oriented control or flux monitoring without direct measurement"
+    },
+    {
+      "block": "Induction Machine Measurement",
+      "value": "Measure electrical and mechanical quantities of an induction machine — use to extract torque, speed, power, and current measurements from induction machine blocks"
+    },
+    {
+      "block": "Induction Machine Scalar Control",
+      "value": "Implement V/f scalar control for an induction machine — use for simple open-loop speed control in pumps, fans, or conveyors"
+    },
+    {
+      "block": "Induction Machine Squirrel Cage",
+      "value": "Model a three-phase squirrel-cage induction machine — use for industrial motor drives, pump loads, or variable-frequency drive development"
+    },
+    {
+      "block": "Induction Machine Wound Rotor",
+      "value": "Model a three-phase wound-rotor induction machine — use for slip-ring motors with external rotor resistance, doubly-fed generators, or soft-start applications"
+    },
+    {
+      "block": "Inductive Rotor Position Sensor",
+      "value": "Model an inductive position sensor for rotor angle detection — use for resolver-like position sensing in motor drives without contact"
+    },
+    {
+      "block": "Inductor",
+      "value": "Model an ideal or lossy inductor — use for filtering, energy storage, magnetic coupling, or any circuit requiring inductive behavior"
+    },
+    {
+      "block": "Integrator (Discrete or Continuous)",
+      "value": "Integrate a signal with configurable reset and saturation — use for PI controller integral paths, energy accumulation, or angle from angular velocity"
+    },
+    {
+      "block": "Integrator with Wrapped State (Discrete or Continuous)",
+      "value": "Integrate with state wrapping at specified limits — use for angle integration that wraps at 2*pi or phase accumulation in PLLs"
+    },
+    {
+      "block": "Inverse Clarke Transform",
+      "value": "Transform stationary alpha-beta quantities back to three-phase abc — use to generate phase voltage references from alpha-beta controller outputs"
+    },
+    {
+      "block": "Inverse Coordinate Transform (Five-Phase)",
+      "value": "Transform orthogonal frames back to five-phase quantities — use to generate phase references for five-phase machine drives"
+    },
+    {
+      "block": "Inverse Decoupled Transform  (Six-Phase, Symmetrical)",
+      "value": "Transform decoupled subspaces back to symmetrical six-phase quantities — use to generate phase references for six-phase drives"
+    },
+    {
+      "block": "Inverse Decoupled Transform (Six-Phase, Dual-Star)",
+      "value": "Transform decoupled subspaces back to dual-star six-phase quantities — use to generate voltage references for dual three-phase inverters"
+    },
+    {
+      "block": "Inverse Park Transform",
+      "value": "Transform rotating dq quantities back to stationary alpha-beta frame — use to convert controller outputs to stationary frame for modulation"
+    },
+    {
+      "block": "Inverse Symmetrical-Components Transform",
+      "value": "Convert sequence components back to three-phase abc quantities — use for unbalance compensation or injecting specific sequence currents"
+    },
+    {
+      "block": "Lead-Lag (Discrete or Continuous)",
+      "value": "Implement a lead-lag compensator transfer function — use for phase margin improvement, voltage regulator compensation, or power system stabilizers"
+    },
+    {
+      "block": "Light-Emitting Diode",
+      "value": "Model an LED with voltage-current and optical characteristics — use for indicator circuits, optocoupler transmitters, or lighting system design"
+    },
+    {
+      "block": "Line Voltage Sensor (Three-Phase)",
+      "value": "Measure line-to-line voltages on a three-phase system — use for voltage monitoring, synchronization, or protection in delta-referenced systems"
+    },
+    {
+      "block": "Load Flow Source",
+      "value": "Model a source for power flow initialization in power systems — use to set initial conditions for generators or infinite buses in load flow studies"
+    },
+    {
+      "block": "Low-Pass Filter (Discrete or Continuous)",
+      "value": "Filter a signal with a first-order low-pass response — use for noise attenuation, measurement smoothing, or removing switching ripple from feedback signals"
+    },
+    {
+      "block": "Low-Pass Filter (Variable Time Constant, Discrete or Continuous)",
+      "value": "Filter with a dynamically adjustable time constant — use when filter bandwidth must adapt to operating frequency or conditions"
+    },
+    {
+      "block": "Luenberger Observer",
+      "value": "Implement a Luenberger state observer for linear systems — use for state estimation in motor drives, converters, or control systems with unmeasured states"
+    },
+    {
+      "block": "MOSFET (Ideal, Switching)",
+      "value": "Model an ideal MOSFET with on-resistance and body diode — use for converter simulations where basic conduction loss is needed without detailed device physics"
+    },
+    {
+      "block": "Machine Inertia",
+      "value": "Add rotational inertia to an electromechanical machine port — use to represent flywheel mass, load inertia, or coupling inertia on a machine shaft"
+    },
+    {
+      "block": "Machine Mechanical Power",
+      "value": "Inject or extract mechanical power at a machine shaft — use to model a mechanical load or prime mover connected to an electrical machine"
+    },
+    {
+      "block": "Magnetic Core",
+      "value": "Model a nonlinear magnetic core with saturation and hysteresis — use for transformer core modeling, inductor saturation studies, or magnetic circuit design"
+    },
+    {
+      "block": "Magnetic Rotor",
+      "value": "Model the magnetic rotor assembly of an electric machine — use as a subcomponent for custom machine topologies with explicit rotor field modeling"
+    },
+    {
+      "block": "Model Reference Adaptive Controller",
+      "value": "Implement model-reference adaptive control adjusting gains to match a reference model — use for adaptive speed or position control with uncertain plant parameters"
+    },
+    {
+      "block": "Modular Multilevel Converter (Three-Phase)",
+      "value": "Model a complete three-phase modular multilevel converter — use for HVDC, STATCOM, or high-voltage high-power conversion with many voltage levels"
+    },
+    {
+      "block": "Modular Multilevel Converter Arm",
+      "value": "Model a single arm of a modular multilevel converter — use as a subcomponent for building custom MMC topologies or studying arm balancing"
+    },
+    {
+      "block": "Modular Multilevel Converter Leg",
+      "value": "Model a single leg of a modular multilevel converter — use as a subcomponent for custom MMC configurations or phase-level analysis"
+    },
+    {
+      "block": "Monostable Flip-Flop",
+      "value": "Generate a fixed-duration pulse on each trigger edge — use for debouncing, minimum pulse width enforcement, or timed event generation"
+    },
+    {
+      "block": "Motor & Drive (System Level)",
+      "value": "Model a motor and drive as a combined system-level block with efficiency map — use for vehicle-level or system-level studies where drive detail is not needed"
+    },
+    {
+      "block": "Moving Average",
+      "value": "Compute the moving average of a signal over one fundamental period — use for extracting DC content from switching waveforms or ripple-free power measurements"
+    },
+    {
+      "block": "Moving Average (Variable Frequency)",
+      "value": "Compute moving average with window tracking a variable fundamental frequency — use when grid or machine frequency varies and averaging must stay synchronized"
+    },
+    {
+      "block": "Multiphase Coupled Lines",
+      "value": "Model N coupled transmission lines with mutual electromagnetic coupling — use for multi-conductor cable or bus-bar systems with crosstalk"
+    },
+    {
+      "block": "Multiphase Distributed Parameter Line",
+      "value": "Model a multiphase transmission line with distributed RLCG parameters — use for accurate wave propagation studies in long power or signal lines"
+    },
+    {
+      "block": "Multiplier",
+      "value": "Model an analog multiplier IC producing the product of two voltage inputs — use for modulation, gain control, power computation, or PLL phase detection"
+    },
+    {
+      "block": "Mutual Inductor",
+      "value": "Model two magnetically coupled inductors — use for transformer modeling, coupled filter design, or wireless power transfer coils"
+    },
+    {
+      "block": "N-Channel IGBT",
+      "value": "Model an N-channel IGBT with detailed switching and thermal characteristics — use for accurate loss estimation in high-power inverters, choppers, or motor drives"
+    },
+    {
+      "block": "N-Channel JFET",
+      "value": "Model an N-channel junction FET — use for low-noise analog front-ends, current sources, or voltage-controlled resistors in signal conditioning"
+    },
+    {
+      "block": "N-Channel LDMOS FET",
+      "value": "Model an N-channel laterally diffused MOSFET — use for RF power amplifiers, high-voltage gate drivers, or automotive smart-power ICs"
+    },
+    {
+      "block": "N-Channel MOSFET",
+      "value": "Model an N-channel MOSFET with detailed characteristics — use for power converter switching devices, motor drive legs, or analog circuit design"
+    },
+    {
+      "block": "NMOS Capacitor",
+      "value": "Model an NMOS gate capacitance structure — use for studying charge pump behavior, gate oxide capacitance, or MOS varactor tuning"
+    },
+    {
+      "block": "NPN Bipolar Transistor",
+      "value": "Model an NPN BJT with detailed DC and AC characteristics — use for analog amplifiers, current mirrors, switching circuits, or discrete logic"
+    },
+    {
+      "block": "Negative Supply Rail",
+      "value": "Provide a negative DC voltage reference — use for bipolar power supply rails in op-amp circuits or symmetric analog systems"
+    },
+    {
+      "block": "Neutral Port (Three-Phase)",
+      "value": "Expose the neutral connection of a three-phase component as a physical port — use to access the neutral for grounding or impedance insertion"
+    },
+    {
+      "block": "Nonlinear Inductor",
+      "value": "Model an inductor with current-dependent or flux-dependent inductance — use for saturable reactors, magnetic amplifiers, or core saturation effects"
+    },
+    {
+      "block": "Nonlinear Reluctance",
+      "value": "Model a nonlinear magnetic reluctance element — use as a building block for reluctance network magnetic circuit models with saturation"
+    },
+    {
+      "block": "Nonlinear Transformer",
+      "value": "Model a transformer with nonlinear magnetic core including saturation — use for inrush current studies, ferroresonance analysis, or CT saturation modeling"
+    },
+    {
+      "block": "On-Off Delay",
+      "value": "Implement configurable turn-on and turn-off delays for a Boolean signal — use for debouncing, timed interlocks, or delayed enable logic in protection schemes"
+    },
+    {
+      "block": "One-Quadrant Chopper",
+      "value": "Model a single-quadrant DC chopper for unidirectional speed/voltage control — use for simple DC motor drives or resistive load power regulation"
+    },
+    {
+      "block": "Open Circuit",
+      "value": "Represent an open circuit with no current flow — use to cap unused electrical ports or explicitly model disconnected conditions"
+    },
+    {
+      "block": "Open Circuit (Three-Phase)",
+      "value": "Represent a three-phase open circuit — use to cap unused three-phase ports or model open-phase fault conditions"
+    },
+    {
+      "block": "Operational Transconductance Amplifier",
+      "value": "Model an OTA converting input voltage difference to output current — use for variable-gain amplifiers, Gm-C filters, or current-mode analog circuits"
+    },
+    {
+      "block": "Optocoupler",
+      "value": "Model an optocoupler providing galvanic isolation between circuits — use for isolated feedback in power supplies, safety barriers, or isolated gate drive signals"
+    },
+    {
+      "block": "P-Channel JFET",
+      "value": "Model a P-channel junction FET — use for complementary analog circuits, current sources, or high-impedance input stages"
+    },
+    {
+      "block": "P-Channel LDMOS FET",
+      "value": "Model a P-channel laterally diffused MOSFET — use for complementary high-voltage drivers or P-side high-side switches"
+    },
+    {
+      "block": "P-Channel MOSFET",
+      "value": "Model a P-channel MOSFET — use for high-side switches, complementary output stages, or load switches in power management"
+    },
+    {
+      "block": "PCCCS",
+      "value": "Polynomial current-controlled current source — use for nonlinear dependent sources in analog IC modeling or SPICE behavioral circuits"
+    },
+    {
+      "block": "PCCCS2",
+      "value": "Two-input polynomial current-controlled current source — use for multi-variable nonlinear current dependencies in SPICE-style models"
+    },
+    {
+      "block": "PCCVS",
+      "value": "Polynomial current-controlled voltage source — use for nonlinear transimpedance relationships in analog circuit modeling"
+    },
+    {
+      "block": "PCCVS2",
+      "value": "Two-input polynomial current-controlled voltage source — use for multi-variable nonlinear transimpedance in SPICE-style models"
+    },
+    {
+      "block": "PFC Rectifier Controller (Three-Phase) ",
+      "value": "Control a three-phase power factor correction rectifier — use for unity power factor front-end regulation in AC-DC converters"
+    },
+    {
+      "block": "PI Controller (Discrete or Continuous)",
+      "value": "Implement a proportional-integral controller — use for current, voltage, speed, or position regulation loops in power electronics and drives"
+    },
+    {
+      "block": "PI Controller with Integral Anti-Windup (Discrete or Continuous)",
+      "value": "Implement a PI controller with anti-windup limiting — use for regulators that must handle saturation without integral buildup causing overshoot"
+    },
+    {
+      "block": "PMLSM",
+      "value": "Model a permanent-magnet linear synchronous motor — use for linear motion systems, maglev propulsion, or precision linear stage drives"
+    },
+    {
+      "block": "PMOS Capacitor",
+      "value": "Model a PMOS gate capacitance structure — use for charge pump circuits, MOS varactors, or PMOS-based voltage tuning elements"
+    },
+    {
+      "block": "PMSM",
+      "value": "Model a three-phase permanent magnet synchronous machine — use for EV traction drives, servo motors, or high-performance variable-speed applications"
+    },
+    {
+      "block": "PMSM (Five-Phase)",
+      "value": "Model a five-phase PMSM — use for fault-tolerant drives, high-torque-density applications, or multiphase machine research"
+    },
+    {
+      "block": "PMSM (Four-Phase)",
+      "value": "Model a four-phase PMSM — use for specialized multiphase drives or redundant motor configurations"
+    },
+    {
+      "block": "PMSM (Single-Phase)",
+      "value": "Model a single-phase PMSM — use for small appliance motors, fan drives, or low-cost single-phase applications"
+    },
+    {
+      "block": "PMSM (Six-Phase, Symmetrical)",
+      "value": "Model a six-phase symmetrical PMSM with 60-degree phase displacement — use for high-power traction, marine propulsion, or fault-tolerant drives"
+    },
+    {
+      "block": "PMSM Current Controller",
+      "value": "Regulate d-axis and q-axis stator currents of a PMSM — use as the inner current loop in field-oriented PMSM drives for torque control"
+    },
+    {
+      "block": "PMSM Current Controller with Pre-Control",
+      "value": "Regulate PMSM dq currents with feedforward decoupling — use for improved dynamic response by compensating cross-coupling and back-EMF terms"
+    },
+    {
+      "block": "PMSM Current Reference Generator",
+      "value": "Generate optimal d-q current references for a PMSM — use for maximum-torque-per-ampere operation or field-weakening trajectory generation"
+    },
+    {
+      "block": "PMSM Field-Oriented Control",
+      "value": "Implement complete field-oriented control for a PMSM — use as a ready-to-use FOC controller with speed loop, current loop, and coordinate transforms"
+    },
+    {
+      "block": "PMSM Field-Weakening Controller",
+      "value": "Extend PMSM operation above base speed by injecting negative d-axis current — use for EV traction drives or spindle motors requiring wide speed range"
+    },
+    {
+      "block": "PMSM Torque Estimator",
+      "value": "Estimate electromagnetic torque of a PMSM from measured currents and flux parameters — use for torque monitoring, sensorless control, or efficiency estimation"
+    },
+    {
+      "block": "PNP Bipolar Transistor",
+      "value": "Model a PNP BJT with detailed DC and AC characteristics — use for complementary amplifiers, current sources, or level-shifting circuits"
+    },
+    {
+      "block": "PS Sensor",
+      "value": "Convert a Simscape physical signal to a Simulink signal — use to extract measured values from Simscape networks for Simulink-based control or logging"
+    },
+    {
+      "block": "PS Three-Element Demux",
+      "value": "Split a three-element physical signal into individual scalar physical signals — use to separate three-phase measurement outputs into per-phase signals"
+    },
+    {
+      "block": "PTC Thermistor",
+      "value": "Model a positive temperature coefficient thermistor — use for overcurrent protection, temperature sensing, or self-regulating heater modeling"
+    },
+    {
+      "block": "PVCCS",
+      "value": "Polynomial voltage-controlled current source — use for nonlinear transconductance in analog IC modeling or SPICE behavioral circuits"
+    },
+    {
+      "block": "PVCCS2",
+      "value": "Two-input polynomial voltage-controlled current source — use for multi-variable nonlinear transconductance in SPICE-style models"
+    },
+    {
+      "block": "PVCVS",
+      "value": "Polynomial voltage-controlled voltage source — use for nonlinear voltage gain relationships in analog circuit modeling"
+    },
+    {
+      "block": "PVCVS2",
+      "value": "Two-input polynomial voltage-controlled voltage source — use for multi-variable nonlinear voltage dependencies in SPICE-style models"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Five-phase, Two-level)",
+      "value": "Generate gate signals for a five-phase two-level inverter from duty cycle inputs — use for multiphase drive gate signal generation"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Four-phase, Two-level)",
+      "value": "Generate gate signals for a four-phase two-level inverter from duty cycle inputs — use for four-phase drive switching"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Three-phase, Three-level)",
+      "value": "Generate gate signals for a three-phase three-level converter from duty cycle inputs — use for NPC or T-type converter switching"
+    },
+    {
+      "block": "PWM Gate Signal Generator (Three-phase, Two-level)",
+      "value": "Generate gate signals for a standard three-phase two-level inverter from duty cycle inputs — use for motor drive or grid-tie inverter switching"
+    },
+    {
+      "block": "PWM Generator",
+      "value": "Generate a single-phase PWM signal from a modulation index input — use for single-phase converters, choppers, or general PWM waveform generation"
+    },
+    {
+      "block": "PWM Generator (Five-phase, Two-level)",
+      "value": "Generate five-phase PWM signals using carrier comparison — use for five-phase motor drive modulation with configurable carrier and reference"
+    },
+    {
+      "block": "PWM Generator (Four-phase, Two-level)",
+      "value": "Generate four-phase PWM signals using carrier comparison — use for four-phase drive modulation"
+    },
+    {
+      "block": "PWM Generator (Multilevel)",
+      "value": "Generate PWM signals for multilevel converter topologies — use for cascaded H-bridge, flying capacitor, or other multi-level switching schemes"
+    },
+    {
+      "block": "PWM Generator (Three-phase, Three-level)",
+      "value": "Generate three-phase PWM signals for a three-level converter — use for NPC or T-type inverter modulation with carrier disposition or SVM"
+    },
+    {
+      "block": "PWM Generator (Three-phase, Two-level)",
+      "value": "Generate three-phase PWM signals using carrier comparison or space vector modulation — use for standard three-phase inverter control"
+    },
+    {
+      "block": "PWM Generator (Vienna Rectifier)",
+      "value": "Generate PWM signals for a Vienna-type three-phase rectifier — use for unity power factor rectification with Vienna topology switching"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Five-phase, Two-level)",
+      "value": "Generate timing-accurate PWM waveforms for five-phase converters — use when precise switching timing is needed for center-aligned modulation"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Four-phase, Two-level)",
+      "value": "Generate timing-accurate PWM waveforms for four-phase converters — use for precise dead-time and switching-instant control"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Three-phase, Three-level)",
+      "value": "Generate timing-accurate PWM waveforms for three-level converters — use for precise switching of NPC or T-type topologies"
+    },
+    {
+      "block": "PWM Timing and Waveform Generator (Three-phase, Two-level)",
+      "value": "Generate timing-accurate PWM waveforms for three-phase two-level inverters — use for center-aligned modulation with precise dead-time"
+    },
+    {
+      "block": "Park Transform",
+      "value": "Transform stationary alpha-beta quantities to synchronously rotating dq frame — use for decoupled torque and flux control in AC machine drives"
+    },
+    {
+      "block": "Park to Clarke Angle Transform",
+      "value": "Compute the angle relationship between Park and Clarke frames — use for coordinate system conversions in sensorless or encoder-based control"
+    },
+    {
+      "block": "Passive Harmonic Filter (Three-Phase)",
+      "value": "Model a passive LC harmonic filter tuned to specific frequencies — use for power quality improvement, harmonic mitigation at converter outputs, or THD reduction"
+    },
+    {
+      "block": "Peltier Device",
+      "value": "Model a thermoelectric cooler or generator — use for active thermal management, spot cooling, or thermoelectric energy harvesting"
+    },
+    {
+      "block": "Phase Permute",
+      "value": "Swap the phase sequence of a three-phase connection — use to correct phase order, implement phase rotation, or test reverse-sequence effects"
+    },
+    {
+      "block": "Phase Splitter",
+      "value": "Split a composite three-phase connection into individual single-phase connections — use to access individual phases for measurement or asymmetric loads"
+    },
+    {
+      "block": "Phase Voltage Sensor (Three-Phase)",
+      "value": "Measure phase-to-neutral voltages on a three-phase system — use for voltage monitoring in wye-connected systems or per-phase control"
+    },
+    {
+      "block": "Phase-Shifting Transformer",
+      "value": "Model a transformer with adjustable phase angle between primary and secondary — use for power flow control, multi-pulse rectifier phase shifting, or grid regulation"
+    },
+    {
+      "block": "Phasor Measurement Unit (PMU, Three-Phase)",
+      "value": "Model a PMU extracting synchrophasor measurements from three-phase voltages and currents — use for wide-area monitoring, state estimation, or grid stability analysis"
+    },
+    {
+      "block": "Photodiode",
+      "value": "Model a photodiode converting light to current — use for optical receivers, light sensing, or optocoupler detector modeling"
+    },
+    {
+      "block": "Piecewise Linear Current Source",
+      "value": "Current source with piecewise linear waveform — use for arbitrary current profiles defined by time-value breakpoints"
+    },
+    {
+      "block": "Piecewise Linear Voltage Source",
+      "value": "Voltage source with piecewise linear waveform — use for arbitrary voltage profiles defined by time-value breakpoints"
+    },
+    {
+      "block": "Piezo Bender",
+      "value": "Model a piezoelectric bending actuator — use for micro-positioning, MEMS actuators, or energy harvesting from vibration"
+    },
+    {
+      "block": "Piezo Linear Actuator",
+      "value": "Model a piezoelectric linear actuator — use for nano-positioning stages, fuel injectors, or high-precision linear displacement applications"
+    },
+    {
+      "block": "Piezo Rotary Actuator",
+      "value": "Model a piezoelectric rotary actuator — use for precision angular positioning, optical mirror steering, or ultrasonic motor modeling"
+    },
+    {
+      "block": "Piezo Stack",
+      "value": "Model a piezoelectric stack actuator — use for high-force short-stroke actuation, fuel injectors, or vibration control with stacked piezo elements"
+    },
+    {
+      "block": "Positive Supply Rail",
+      "value": "Provide a positive DC voltage reference — use for power supply rails in analog circuits, digital logic, or reference voltages"
+    },
+    {
+      "block": "Potentiometer",
+      "value": "Model a variable resistor with a wiper position input — use for user-adjustable gain, sensor simulation, or voltage divider circuits with manual control"
+    },
+    {
+      "block": "Power Measurement",
+      "value": "Measure active and reactive power from voltage and current signals — use for single-phase power monitoring, efficiency calculation, or control feedback"
+    },
+    {
+      "block": "Power Measurement (Three-Phase)",
+      "value": "Measure three-phase active and reactive power — use for power system monitoring, generator dispatch, or efficiency analysis in balanced systems"
+    },
+    {
+      "block": "Power Measurement (Three-Phase, Instantaneous)",
+      "value": "Compute instantaneous three-phase power without filtering — use for fast power tracking, transient power analysis, or instantaneous control strategies"
+    },
+    {
+      "block": "Power Sensor",
+      "value": "Measure instantaneous electrical power — use for efficiency monitoring, energy metering, or power factor calculation in single-phase circuits"
+    },
+    {
+      "block": "Power Sensor (Three-Phase)",
+      "value": "Measure three-phase active, reactive, and apparent power — use for power system metering, efficiency analysis, or energy management"
+    },
+    {
+      "block": "Pressure Transducer",
+      "value": "Model a pressure transducer converting mechanical pressure to an electrical signal — use for hydraulic sensing, pneumatic control, or process instrumentation"
+    },
+    {
+      "block": "Programmable Signal Generator (Three-Phase)",
+      "value": "Generate three-phase reference signals with programmable amplitude, frequency, and phase — use for testing controllers, grid emulation, or injection-based methods"
+    },
+    {
+      "block": "Programmable Voltage Source",
+      "value": "Generate voltage waveforms defined by time-value sequences — use for arbitrary test signals, fault injection, or playback of recorded voltage profiles"
+    },
+    {
+      "block": "Programmable Voltage Source (Three-Phase)",
+      "value": "Generate three-phase voltage waveforms with programmable amplitude, frequency, and phase — use for grid emulation, voltage sag testing, or power quality studies"
+    },
+    {
+      "block": "Proximity Sensor",
+      "value": "Model a proximity sensor detecting nearby objects — use for position detection, limit switching, or presence sensing in automated systems"
+    },
+    {
+      "block": "Pulse Current Source",
+      "value": "Pulsed current source with configurable rise/fall and period — use for periodic current pulse trains or transient testing"
+    },
+    {
+      "block": "Pulse Voltage Source",
+      "value": "Pulsed voltage source with configurable rise/fall and period — use for periodic voltage pulse trains or transient testing"
+    },
+    {
+      "block": "Push-Pull Output",
+      "value": "Model a push-pull output stage with complementary transistors — use for power amplifier output modeling, gate driver outputs, or Class-B/AB stages"
+    },
+    {
+      "block": "Quadrature Shaft Decoder",
+      "value": "Decode quadrature encoder signals to position and speed — use for processing A/B encoder pulses into rotor angle and velocity for drive control"
+    },
+    {
+      "block": "RC Servo",
+      "value": "Model a hobby-style RC servo motor with PWM input — use for robotics, model aircraft control surfaces, or simple position-controlled actuator modeling"
+    },
+    {
+      "block": "RLC (Three-Phase)",
+      "value": "Model a three-phase RLC series or parallel branch — use for balanced impedance loads, filter elements, or transmission line terminations"
+    },
+    {
+      "block": "RMS Measurement",
+      "value": "Compute the RMS value of a periodic signal — use for voltage or current magnitude measurement, power quality assessment, or protection threshold detection"
+    },
+    {
+      "block": "RST Controller",
+      "value": "Implement a discrete RST polynomial controller — use for high-performance current or voltage loops designed via pole-placement or model-based methods"
+    },
+    {
+      "block": "Rectifier (Three-Phase)",
+      "value": "Model a three-phase diode bridge rectifier — use for uncontrolled AC-DC conversion, DC bus supply in motor drives, or grid rectification"
+    },
+    {
+      "block": "Resistor",
+      "value": "Model an ideal or temperature-dependent resistor — use for any circuit element requiring resistance: loads, voltage dividers, current sensing, or damping"
+    },
+    {
+      "block": "Resolver",
+      "value": "Model a rotary transformer resolver for absolute angle measurement — use for motor control in harsh environments where optical encoders are unsuitable"
+    },
+    {
+      "block": "Resolver-to-Digital Converter",
+      "value": "Convert resolver sine/cosine signals to digital angle and speed — use for processing resolver outputs into rotor position feedback for motor control"
+    },
+    {
+      "block": "Rotating Air Gap",
+      "value": "Model the magnetic air gap of a rotating machine — use as a subcomponent for custom machine topologies with explicit reluctance network modeling"
+    },
+    {
+      "block": "S-Parameter Rational Fit",
+      "value": "Model an RF component from measured S-parameter data using rational fitting — use for incorporating measured frequency-domain device behavior into time-domain simulation"
+    },
+    {
+      "block": "S-R Latch",
+      "value": "Model a set-reset latch — use for basic memory elements, debouncing circuits, or event capture in digital control logic"
+    },
+    {
+      "block": "SFFM Current Source",
+      "value": "Single-frequency FM current source — use for frequency-modulated current excitation in circuit analyses"
+    },
+    {
+      "block": "SFFM Voltage Source",
+      "value": "Single-frequency FM voltage source — use for frequency-modulated voltage excitation in circuit analyses"
+    },
+    {
+      "block": "SIMetrix Cosimulation Interface",
+      "value": "Interface Simscape Electrical with SIMetrix SPICE simulator for co-simulation — use when existing SPICE netlists must run alongside Simscape models"
+    },
+    {
+      "block": "SM AC10C",
+      "value": "Implement IEEE AC10C excitation system model for synchronous machines — use for generator voltage regulation in power system stability studies"
+    },
+    {
+      "block": "SM AC11C",
+      "value": "Implement IEEE AC11C excitation system model — use for detailed exciter modeling in power system transient stability"
+    },
+    {
+      "block": "SM AC1C",
+      "value": "Implement IEEE AC1C excitation system model — use for thyristor-based exciter regulation in stability studies"
+    },
+    {
+      "block": "SM AC2C",
+      "value": "Implement IEEE AC2C excitation system model — use for high-initial-response excitation in stability studies"
+    },
+    {
+      "block": "SM AC3C",
+      "value": "Implement IEEE AC3C excitation system model — use for self-excited alternator-rectifier excitation in stability"
+    },
+    {
+      "block": "SM AC4C",
+      "value": "Implement IEEE AC4C excitation system model — use for alternator-supplied controlled-rectifier excitation"
+    },
+    {
+      "block": "SM AC5C",
+      "value": "Implement IEEE AC5C excitation system model — use for brushless excitation systems in stability studies"
+    },
+    {
+      "block": "SM AC6C",
+      "value": "Implement IEEE AC6C excitation system model — use for alternator-rectifier excitation with non-controlled rectifier"
+    },
+    {
+      "block": "SM AC7C",
+      "value": "Implement IEEE AC7C excitation system model — use for high-performance excitation with inner-loop regulation"
+    },
+    {
+      "block": "SM AC8C",
+      "value": "Implement IEEE AC8C excitation system model — use for alternator-rectifier excitation with PID voltage regulation"
+    },
+    {
+      "block": "SM AC9C",
+      "value": "Implement IEEE AC9C excitation system model — use for advanced excitation systems in stability simulations"
+    },
+    {
+      "block": "SM Current Controller",
+      "value": "Regulate field current of a synchronous machine — use for direct field current control in excitation system implementations"
+    },
+    {
+      "block": "SM Current Reference Generator",
+      "value": "Generate current references for synchronous machine field-oriented control — use for torque and flux reference generation in SM drives"
+    },
+    {
+      "block": "SM DC1C",
+      "value": "Implement IEEE DC1C excitation system model — use for DC commutator exciter representation in stability studies"
+    },
+    {
+      "block": "SM DC2C",
+      "value": "Implement IEEE DC2C excitation system model — use for DC exciter with stabilizing feedback in stability studies"
+    },
+    {
+      "block": "SM DC4C",
+      "value": "Implement IEEE DC4C excitation system model — use for DC exciter without stabilizer in simplified stability studies"
+    },
+    {
+      "block": "SM Field-Oriented Control",
+      "value": "Implement field-oriented control for a wound-field synchronous machine — use for high-performance SM drives with decoupled torque and flux control"
+    },
+    {
+      "block": "SM Governor with Droop",
+      "value": "Implement a governor with droop characteristic for prime mover control — use for generator frequency regulation and load sharing in multi-machine systems"
+    },
+    {
+      "block": "SM PSS1A",
+      "value": "Implement IEEE PSS1A power system stabilizer — use for damping low-frequency oscillations in synchronous generators via excitation modulation"
+    },
+    {
+      "block": "SM PSS2C",
+      "value": "Implement IEEE PSS2C dual-input power system stabilizer — use for enhanced damping with both speed and power inputs"
+    },
+    {
+      "block": "SM PSS7C",
+      "value": "Implement IEEE PSS7C power system stabilizer — use for advanced stabilizer designs in modern generator excitation systems"
+    },
+    {
+      "block": "SM ST10C",
+      "value": "Implement IEEE ST10C static excitation system model — use for solid-state excitation with high-bandwidth regulation"
+    },
+    {
+      "block": "SM ST1C",
+      "value": "Implement IEEE ST1C static excitation system model — use for potential-source controlled-rectifier excitation in stability"
+    },
+    {
+      "block": "SM ST2C",
+      "value": "Implement IEEE ST2C static excitation system model — use for compound-source rectifier excitation"
+    },
+    {
+      "block": "SM ST3C",
+      "value": "Implement IEEE ST3C static excitation system model — use for potential or compound source excitation with PI regulation"
+    },
+    {
+      "block": "SM ST4C",
+      "value": "Implement IEEE ST4C static excitation system model — use for compound-source excitation with inner voltage regulation loop"
+    },
+    {
+      "block": "SM ST5C",
+      "value": "Implement IEEE ST5C static excitation system model — use for potential-source excitation with rate feedback stabilization"
+    },
+    {
+      "block": "SM ST6C",
+      "value": "Implement IEEE ST6C static excitation system model — use for field-controlled alternator-rectifier excitation"
+    },
+    {
+      "block": "SM ST7C",
+      "value": "Implement IEEE ST7C static excitation system model — use for thyristor-bridge excitation with high ceiling voltage"
+    },
+    {
+      "block": "SM ST8C",
+      "value": "Implement IEEE ST8C static excitation system model — use for static excitation fed from machine terminals with power system stabilizer"
+    },
+    {
+      "block": "SM ST9C",
+      "value": "Implement IEEE ST9C static excitation system model — use for bus-fed static excitation in stability studies"
+    },
+    {
+      "block": "SPDT Relay",
+      "value": "Model a single-pole double-throw electromagnetic relay — use for switching between two circuit paths under electronic control"
+    },
+    {
+      "block": "SPDT Switch",
+      "value": "Model a single-pole double-throw switch — use for source selection, changeover switching, or routing a signal between two paths"
+    },
+    {
+      "block": "SPDT Switch (Three-Phase)",
+      "value": "Model a three-phase SPDT switch — use for three-phase source transfer, bus switching, or redundant supply changeover"
+    },
+    {
+      "block": "SPICE Diode",
+      "value": "SPICE-compatible diode model with standard SPICE parameters — use for importing SPICE diode subcircuits or validating against SPICE reference simulations"
+    },
+    {
+      "block": "SPICE NIGBT",
+      "value": "SPICE-compatible N-channel IGBT model — use for importing SPICE IGBT subcircuits or cross-validating with SPICE tools"
+    },
+    {
+      "block": "SPICE NJFET",
+      "value": "SPICE-compatible N-channel JFET model — use for importing SPICE JFET subcircuits or analog front-end modeling with SPICE parameters"
+    },
+    {
+      "block": "SPICE NMOS",
+      "value": "SPICE-compatible N-channel MOSFET model — use for importing SPICE NMOS subcircuits or digital/analog IC modeling with SPICE parameters"
+    },
+    {
+      "block": "SPICE NPN",
+      "value": "SPICE-compatible NPN bipolar transistor model — use for importing SPICE BJT subcircuits or amplifier modeling with Gummel-Poon parameters"
+    },
+    {
+      "block": "SPICE PJFET",
+      "value": "SPICE-compatible P-channel JFET model — use for importing SPICE PJFET subcircuits or complementary analog circuit modeling"
+    },
+    {
+      "block": "SPICE PMOS",
+      "value": "SPICE-compatible P-channel MOSFET model — use for importing SPICE PMOS subcircuits or CMOS IC modeling with SPICE parameters"
+    },
+    {
+      "block": "SPICE PNP",
+      "value": "SPICE-compatible PNP bipolar transistor model — use for importing SPICE PNP subcircuits or complementary amplifier modeling"
+    },
+    {
+      "block": "SPICE Resistor",
+      "value": "SPICE-compatible resistor with temperature coefficient — use when importing SPICE netlists that require standard SPICE resistor semantics"
+    },
+    {
+      "block": "SPICE-Imported MOSFET",
+      "value": "Model a MOSFET imported from SPICE model data — use when manufacturer SPICE models must be used directly for accuracy validation"
+    },
+    {
+      "block": "SPMT Switch",
+      "value": "Model a single-pole multi-throw switch — use for multi-position selection, tap changing, or routing to one of several destinations"
+    },
+    {
+      "block": "SPST Relay",
+      "value": "Model a single-pole single-throw electromagnetic relay — use for on/off switching of a circuit under electronic control"
+    },
+    {
+      "block": "SPST Switch",
+      "value": "Model a single-pole single-throw switch — use for simple on/off switching, isolation, or connection control"
+    },
+    {
+      "block": "SPST Switch (Three-Phase)",
+      "value": "Model a three-phase SPST switch — use for connecting or disconnecting three-phase loads, generators, or circuit sections"
+    },
+    {
+      "block": "SRM Commutation Logic",
+      "value": "Generate phase excitation signals for a switched reluctance machine based on rotor position — use for basic angle-controlled SRM commutation"
+    },
+    {
+      "block": "SRM Current Controller",
+      "value": "Regulate phase current of a switched reluctance machine — use for torque control via current profiling in SRM drives"
+    },
+    {
+      "block": "SRM Current Controller with PWM Generation",
+      "value": "Regulate SRM phase current and generate PWM switching signals — use as a complete current-loop controller with integrated PWM for SRM drives"
+    },
+    {
+      "block": "SRM Hysteresis Current Controller",
+      "value": "Control SRM phase current using hysteresis band switching — use for simple high-bandwidth current regulation in switched reluctance drives"
+    },
+    {
+      "block": "Schmitt Trigger",
+      "value": "Model a Schmitt trigger with hysteresis — use for noise-immune switching, signal conditioning, or converting slow edges to clean digital transitions"
+    },
+    {
+      "block": "Second-Order Filter",
+      "value": "Implement a configurable second-order transfer function filter — use for bandpass, notch, or resonant filtering in power electronics control"
+    },
+    {
+      "block": "Second-Order Low-Pass Filter (Discrete or Continuous)",
+      "value": "Filter a signal with a second-order low-pass response — use for smoother attenuation with configurable damping ratio and natural frequency"
+    },
+    {
+      "block": "Semiconductor Switch Selector",
+      "value": "Configure the switch type used in converter blocks — use to globally change between ideal, IGBT, or MOSFET switches across a power electronics model"
+    },
+    {
+      "block": "Sequence Analyzer",
+      "value": "Extract positive, negative, and zero sequence magnitudes from three-phase signals — use for unbalance detection, protection, or sequence-based control"
+    },
+    {
+      "block": "Serial-In Parallel-Out Shift Register",
+      "value": "Convert a serial bit stream to parallel output — use for decoding serial communication, PWM pattern generation, or digital control sequencing"
+    },
+    {
+      "block": "Set-Reset Flip-Flop",
+      "value": "Implement an SR flip-flop with set and reset inputs — use for latching fault conditions, hold logic, or memory elements in protection schemes"
+    },
+    {
+      "block": "Shunt Motor",
+      "value": "Model a DC shunt motor with field winding in parallel with armature — use for constant-speed DC drives or field-weakening speed control studies"
+    },
+    {
+      "block": "Signal Sample and Hold",
+      "value": "Sample a signal on trigger and hold until next trigger — use for synchronized measurement capture, ADC modeling, or PWM duty cycle latching"
+    },
+    {
+      "block": "Simplified Generator",
+      "value": "Model a simplified synchronous generator with voltage behind reactance — use for power system studies where detailed machine dynamics are not critical"
+    },
+    {
+      "block": "Simplified Induction Motor",
+      "value": "Model an induction motor with simplified torque-speed characteristic — use for system-level load studies where detailed electromagnetic transients are not needed"
+    },
+    {
+      "block": "Simplified Synchronous Machine",
+      "value": "Model a synchronous machine with simplified voltage-behind-reactance representation — use for large power system studies with many generators"
+    },
+    {
+      "block": "Simplified Synchronous Machine Measurement",
+      "value": "Measure quantities from a Simplified Synchronous Machine — use to extract terminal voltage, current, power, and angle from simplified generator models"
+    },
+    {
+      "block": "Sine Wave Generator (Three-Phase)",
+      "value": "Generate balanced three-phase sinusoidal reference signals — use for inverter reference generation, grid synchronization testing, or AC source emulation"
+    },
+    {
+      "block": "Sinusoidal Current Source",
+      "value": "Sinusoidal current source with SPICE-compatible parameters — use for AC current excitation in SPICE-imported circuits"
+    },
+    {
+      "block": "Sinusoidal Measurement (PLL)",
+      "value": "Extract magnitude, phase, and frequency of a sinusoidal signal using a PLL — use for grid synchronization, phase tracking, or frequency estimation"
+    },
+    {
+      "block": "Sinusoidal Measurement (PLL, Three-Phase)",
+      "value": "Extract magnitude, phase, and frequency from three-phase sinusoidal signals using a PLL — use for grid synchronization in three-phase inverter control"
+    },
+    {
+      "block": "Sinusoidal Voltage Source",
+      "value": "Sinusoidal voltage source with SPICE-compatible parameters — use for AC voltage excitation in SPICE-imported circuits"
+    },
+    {
+      "block": "Six-Pulse Gate Multiplexer",
+      "value": "Combine gate signals for a six-pulse three-phase converter — use with standard three-phase bridge rectifiers or inverters"
+    },
+    {
+      "block": "Sliding Mode Controller",
+      "value": "Implement a sliding mode controller for robust regulation — use for variable structure control of converters or drives under parameter uncertainty"
+    },
+    {
+      "block": "Smith Predictor Controller",
+      "value": "Implement a Smith predictor for processes with significant time delay — use for dead-time compensation in slow electrical or thermal control loops"
+    },
+    {
+      "block": "Solar Cell",
+      "value": "Model a photovoltaic cell with irradiance and temperature dependent I-V characteristics — use for solar panel modeling, MPPT development, or PV system design"
+    },
+    {
+      "block": "Solar PV Controller (Three-Phase)",
+      "value": "Control a three-phase grid-connected PV inverter with MPPT — use for solar energy conversion with maximum power tracking and grid synchronization"
+    },
+    {
+      "block": "Solenoid",
+      "value": "Model an electromagnetic solenoid actuator with force-stroke-current characteristics — use for valve actuators, relay coils, or electromagnetic latch design"
+    },
+    {
+      "block": "Stair Generator",
+      "value": "Generate a staircase reference signal with programmable step timing — use for step-response testing, sweep characterization, or graduated load profiles"
+    },
+    {
+      "block": "State-Feedback Controller",
+      "value": "Implement a full-state feedback controller — use for multivariable regulation of motor drives, converters, or coupled electrical systems"
+    },
+    {
+      "block": "Stepper Motor",
+      "value": "Model a bipolar stepper motor with detent and holding torque — use for positioning systems, CNC machines, or open-loop motion control"
+    },
+    {
+      "block": "Stepper Motor Driver",
+      "value": "Drive a bipolar stepper motor with step and direction inputs — use as a controller for stepper motors with microstepping and current limiting"
+    },
+    {
+      "block": "Strain Gauge",
+      "value": "Model a strain gauge converting mechanical deformation to resistance change — use for force measurement, load cells, or structural monitoring"
+    },
+    {
+      "block": "Supercapacitor",
+      "value": "Model an electrochemical double-layer capacitor with ESR and voltage-dependent capacitance — use for energy storage, regenerative braking buffers, or power backup systems"
+    },
+    {
+      "block": "Switched Reluctance Machine",
+      "value": "Model a switched reluctance machine with nonlinear inductance profiles — use for SRM drive development, traction motors, or high-speed spindle drives"
+    },
+    {
+      "block": "Switched Reluctance Machine (Multi-Phase)",
+      "value": "Model a multi-phase switched reluctance machine — use for SRM drives with more than three phases for smoother torque or fault tolerance"
+    },
+    {
+      "block": "Symmetrical-Components Transform",
+      "value": "Decompose three-phase quantities into positive, negative, and zero sequence components — use for fault analysis, unbalance detection, or sequence-based protection"
+    },
+    {
+      "block": "Synchronous Machine (Six-Phase)",
+      "value": "Model a six-phase synchronous machine — use for high-power generation, ship propulsion, or multiphase generator systems"
+    },
+    {
+      "block": "Synchronous Machine Field Circuit",
+      "value": "Model the field circuit of a synchronous machine for excitation control — use to supply DC field current and study voltage regulation or exciter dynamics"
+    },
+    {
+      "block": "Synchronous Machine GENQEC",
+      "value": "Model a synchronous machine using the GENQEC data format — use for power system stability studies with generator data in GENQEC standard form"
+    },
+    {
+      "block": "Synchronous Machine GENROU",
+      "value": "Model a round-rotor synchronous machine using GENROU parameters — use for power system transient stability studies of turbo-generators"
+    },
+    {
+      "block": "Synchronous Machine GENTPJ",
+      "value": "Model a synchronous machine using GENTPJ parameters — use for advanced stability studies with saturation-dependent subtransient modeling"
+    },
+    {
+      "block": "Synchronous Machine Measurement",
+      "value": "Measure electrical and mechanical quantities of a synchronous machine — use to extract power angle, field current, terminal voltage, and power from SM blocks"
+    },
+    {
+      "block": "Synchronous Machine Model 1.0",
+      "value": "Model a synchronous machine with classical Model 1.0 representation — use for basic transient stability studies with minimal parameter data"
+    },
+    {
+      "block": "Synchronous Machine Model 2.1",
+      "value": "Model a synchronous machine with Model 2.1 representation — use for subtransient stability studies with d-axis and q-axis damper windings"
+    },
+    {
+      "block": "Synchronous Machine Round Rotor",
+      "value": "Model a round-rotor synchronous machine with full electromagnetic detail — use for turbo-generator simulation, excitation studies, or detailed machine analysis"
+    },
+    {
+      "block": "Synchronous Machine Salient Pole",
+      "value": "Model a salient-pole synchronous machine with full electromagnetic detail — use for hydro-generator simulation or salient-pole motor drives"
+    },
+    {
+      "block": "Synchronous Reluctance Machine",
+      "value": "Model a synchronous reluctance machine — use for high-efficiency industrial drives without permanent magnets or for reluctance torque research"
+    },
+    {
+      "block": "Tap-Changing Transformer",
+      "value": "Model a transformer with selectable tap positions for voltage regulation — use for distribution transformers, voltage regulators, or OLTC studies"
+    },
+    {
+      "block": "Thermal Resistor",
+      "value": "Model thermal resistance between two temperature nodes — use for heat path modeling in thermal networks alongside electrical-thermal coupling"
+    },
+    {
+      "block": "Thermistor",
+      "value": "Model a negative temperature coefficient thermistor — use for temperature sensing, thermal compensation, or inrush current limiting"
+    },
+    {
+      "block": "Thermocouple",
+      "value": "Model a thermocouple generating voltage proportional to temperature difference — use for temperature measurement in industrial or high-temperature applications"
+    },
+    {
+      "block": "Three-Level Converter (Three-Phase)",
+      "value": "Model a three-phase three-level NPC or T-type converter — use for medium-voltage drives, grid-tie inverters, or applications needing reduced harmonic content"
+    },
+    {
+      "block": "Three-Winding Mutual Inductor",
+      "value": "Model three magnetically coupled inductors — use for three-winding transformer equivalent circuits or multi-coil coupling studies"
+    },
+    {
+      "block": "Three-Winding Nonlinear Transformer",
+      "value": "Model a three-winding transformer with nonlinear magnetic core — use for multi-output power supplies or distribution transformers with saturation effects"
+    },
+    {
+      "block": "Three-Winding Transformer (Three-Phase)",
+      "value": "Model a three-phase transformer with three windings per phase — use for autotransformers, tertiary stabilizing windings, or multi-voltage-level substations"
+    },
+    {
+      "block": "Thyristor",
+      "value": "Model a silicon-controlled rectifier with gate triggering and natural commutation — use for controlled rectifiers, AC voltage controllers, or legacy power converters"
+    },
+    {
+      "block": "Thyristor (Piecewise Linear)",
+      "value": "Model a thyristor with simplified piecewise linear characteristics — use for faster simulation of large thyristor-based systems"
+    },
+    {
+      "block": "Thyristor 12-Pulse Generator",
+      "value": "Generate firing pulses for a 12-pulse thyristor converter — use for HVDC converters or high-power rectifiers with two six-pulse bridges"
+    },
+    {
+      "block": "Thyristor 6-Pulse Generator",
+      "value": "Generate firing pulses for a standard 6-pulse thyristor bridge — use for controlled rectifiers, DC motor drives, or industrial thyristor converters"
+    },
+    {
+      "block": "Thyristor Rectifier Voltage Controller (Three-Phase)",
+      "value": "Control output voltage of a three-phase thyristor rectifier via firing angle — use for DC motor drives, battery chargers, or industrial rectifier regulation"
+    },
+    {
+      "block": "Timer",
+      "value": "Model a 555-style timer IC for monostable or astable operation — use for generating time delays, oscillations, or PWM signals in analog circuits"
+    },
+    {
+      "block": "Total Harmonic Distortion",
+      "value": "Measure THD of a periodic signal — use for power quality assessment, harmonic compliance checking, or filter performance evaluation"
+    },
+    {
+      "block": "Transmission Line",
+      "value": "Model a single-phase distributed-parameter transmission line — use for wave propagation, reflection studies, or long cable transient analysis"
+    },
+    {
+      "block": "Transmission Line (Three-Phase)",
+      "value": "Model a three-phase distributed-parameter transmission line — use for power system transient studies of overhead lines or underground cables"
+    },
+    {
+      "block": "Twelve-Pulse Gate Multiplexer",
+      "value": "Combine gate signals for a twelve-pulse converter — use for high-power rectifier systems with phase-shifting transformers for harmonic cancellation"
+    },
+    {
+      "block": "Two-Pulse Gate Multiplexer",
+      "value": "Combine gate signals for a two-pulse half-bridge converter — use with single-leg converters or half-bridge topologies"
+    },
+    {
+      "block": "Two-Quadrant Chopper",
+      "value": "Model a two-quadrant DC chopper for motoring and regenerative braking — use for DC motor drives that need bidirectional current flow"
+    },
+    {
+      "block": "Two-Winding Transformer (Three-Phase)",
+      "value": "Model a standard three-phase two-winding transformer — use for power distribution, voltage transformation, or industrial supply modeling"
+    },
+    {
+      "block": "Unipolar Stepper Motor",
+      "value": "Model a unipolar stepper motor with center-tapped windings — use for low-cost positioning systems with simplified drive electronics"
+    },
+    {
+      "block": "Unipolar Stepper Motor Driver",
+      "value": "Drive a unipolar stepper motor with step and direction inputs — use as a controller for unipolar steppers with single-transistor switching per phase"
+    },
+    {
+      "block": "Universal Motor",
+      "value": "Model a series-wound universal motor operating on AC or DC — use for power tool, vacuum cleaner, or appliance motor modeling"
+    },
+    {
+      "block": "Variable Capacitor",
+      "value": "Model a capacitor whose capacitance is set by an external signal — use for varactor tuning, parametric circuits, or time-varying filter studies"
+    },
+    {
+      "block": "Variable Inductor",
+      "value": "Model an inductor whose inductance is set by an external signal — use for tunable filters, saturable reactors under control, or parametric studies"
+    },
+    {
+      "block": "Variable-Frequency Second-Order Filter",
+      "value": "Implement a second-order filter whose center frequency tracks an external signal — use for adaptive filtering that follows varying grid or machine frequency"
+    },
+    {
+      "block": "Varistor",
+      "value": "Model a metal-oxide varistor with nonlinear voltage-current characteristic — use for surge protection, voltage clamping, or transient voltage suppression studies"
+    },
+    {
+      "block": "Vectorized Synchronous Machine GENROU",
+      "value": "Model multiple GENROU synchronous machines as a vectorized array — use for large power system studies with many identical or similar generators"
+    },
+    {
+      "block": "Velocity Controller",
+      "value": "Regulate rotational speed of an electric machine — use as the outer speed loop in cascaded motor drive control with inner current loop"
+    },
+    {
+      "block": "Voltage Sensor",
+      "value": "Measure voltage across two electrical nodes without drawing current — use for monitoring, control feedback, or protection in any circuit"
+    },
+    {
+      "block": "Voltage Source",
+      "value": "Model an ideal or controlled voltage source — use for power supplies, signal generators, or reference voltages in electrical circuits"
+    },
+    {
+      "block": "Voltage Source (Three-Phase)",
+      "value": "Model an ideal three-phase voltage source — use for representing the utility grid, infinite bus, or balanced supply in power system models"
+    },
+    {
+      "block": "Voltage-Controlled Oscillator",
+      "value": "Model a VCO generating frequency proportional to input voltage — use for PLL design, frequency modulation, or clock generation circuits"
+    },
+    {
+      "block": "Voltage-Controlled Switch",
+      "value": "SPICE-compatible switch controlled by voltage across sensing nodes — use for SPICE netlist import or voltage-threshold switching"
+    },
+    {
+      "block": "Washout (Discrete or Continuous)",
+      "value": "Implement a washout high-pass filter — use for removing DC offsets in power system stabilizers or extracting transient components from signals"
+    },
+    {
+      "block": "Wind Turbine (Mechanical)",
+      "value": "Model wind turbine aerodynamics as a mechanical torque source — use for wind energy conversion studies providing shaft torque to a generator model"
+    },
+    {
+      "block": "Winding",
+      "value": "Model an electrical winding on a magnetic core — use as a building block for custom transformer or inductor designs with explicit magnetic circuit models"
+    },
+    {
+      "block": "Wye-Connected Load",
+      "value": "Model a balanced or unbalanced wye-connected three-phase load — use for power system load representation with neutral access"
+    },
+    {
+      "block": "Wye-Connected Variable Load",
+      "value": "Model a wye-connected three-phase load with variable impedance — use for load variation studies or testing generator regulation under changing demand"
+    },
+    {
+      "block": "Wye-Connected Variable Load (lagging)",
+      "value": "Model a wye-connected variable load with lagging power factor — use for inductive load variation studies typical of motor-dominated industrial buses"
+    },
+    {
+      "block": "Zigzag-Delta-Wye Transformer",
+      "value": "Model a complex multi-winding transformer with zigzag, delta, and wye connections — use for specialized grounding transformers or phase-shifting applications"
+    },
+    {
+      "block": "d-q Voltage Limiter",
+      "value": "Limit d-q voltage commands to stay within the inverter voltage hexagon — use to prevent overmodulation and maintain linear control of AC machine drives"
+    }
+  ]
+}

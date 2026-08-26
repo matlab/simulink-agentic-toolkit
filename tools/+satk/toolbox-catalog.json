@@ -1,0 +1,1069 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-20T01:16:57",
+  "toolboxes": [
+    {
+      "name": "AUTOSAR Blockset",
+      "product": "AUTOSAR Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/coder/autosar/blocks/autosarlib.slx",
+      "kbFolder": "autosar-blockset",
+      "blockCount": 27,
+      "categories": []
+    },
+    {
+      "name": "Aerospace Blockset",
+      "product": "Aerospace Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/aeroblks/aeroblks/aerolibv1.slx",
+      "kbFolder": "aerospace-blockset",
+      "blockCount": 222,
+      "categories": []
+    },
+    {
+      "name": "Audio Toolbox",
+      "product": "Audio Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/audio/audio/audiolibv1.slx",
+      "kbFolder": "audio-toolbox",
+      "blockCount": 11,
+      "categories": []
+    },
+    {
+      "name": "Automated Driving Toolbox",
+      "product": "Automated Driving Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/driving/driving/drivingblocks/drivinglib.slx",
+      "kbFolder": "automated-driving-toolbox",
+      "blockCount": 36,
+      "categories": []
+    },
+    {
+      "name": "Automated Driving Toolbox Interface for Eclipse SUMO Traffic Simulator",
+      "product": "Automated Driving Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/driving/supportpackages/eclipsesumo/eclipsesumo/SumoInterfaceLibrary.slx",
+      "kbFolder": "automated-driving-toolbox-interface-for-eclipse-sumo-traffic-simulator",
+      "blockCount": 5,
+      "categories": []
+    },
+    {
+      "name": "Battery",
+      "product": "Simscape Battery",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/battery/library/m/batt_lib.slx",
+      "kbFolder": "battery",
+      "blockCount": 54,
+      "categories": []
+    },
+    {
+      "name": "C2000 Microcontroller Blockset",
+      "product": "C2000 Microcontroller Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/c2b/tic2000/blocks/c2000lib.slx",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "blockCount": 577,
+      "categories": []
+    },
+    {
+      "name": "Code Component",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/multiversion_cosim/cosimsdk/blocks/CodeComponent.slx",
+      "kbFolder": "code-component",
+      "blockCount": 1,
+      "categories": []
+    },
+    {
+      "name": "Communications Toolbox",
+      "product": "Communications Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/comm/comm/commlibv2.slx",
+      "kbFolder": "communications-toolbox",
+      "blockCount": 16,
+      "categories": []
+    },
+    {
+      "name": "Communications Toolbox HDL Support",
+      "product": "Communications Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/comm/comm/commhdllib.slx",
+      "kbFolder": "communications-toolbox-hdl-support",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Communications Toolbox Support Package for ADALM-PLUTO Radio",
+      "product": "Communications Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/shared/sdr/sdrplug/sdrplugins/plutoradio/plutoradiolib.slx",
+      "kbFolder": "communications-toolbox-support-package-for-adalm-pluto-radio",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Communications Toolbox Support Package for RTL-SDR Radio",
+      "product": "Communications Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/shared/sdr/sdrr/sdrr/sdrrlib.slx",
+      "kbFolder": "communications-toolbox-support-package-for-rtl-sdr-radio",
+      "blockCount": 1,
+      "categories": []
+    },
+    {
+      "name": "Communications Toolbox Support Package for USRP(TM) Radio",
+      "product": "Communications Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/shared/sdr/sdru/commsdrhw_v2.slx",
+      "kbFolder": "communications-toolbox-support-package-for-usrp-tm-radio",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Computer Vision Toolbox",
+      "product": "Computer Vision Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/vision/vision/visionlib.slx",
+      "kbFolder": "computer-vision-toolbox",
+      "blockCount": 13,
+      "categories": []
+    },
+    {
+      "name": "Computer Vision Toolbox Interface for OpenCV in Simulink",
+      "product": "Computer Vision Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/simulink/supportpackages/simulinkopencv/converterBlockSet/opencvConverterBlockset.slx",
+      "kbFolder": "computer-vision-toolbox-interface-for-opencv-in-simulink",
+      "blockCount": 4,
+      "categories": []
+    },
+    {
+      "name": "Course Assessment",
+      "product": "",
+      "description": "",
+      "slxRelPath": "toolbox/learning/author/m/assessmentlib/assessmentBlocks.slx",
+      "kbFolder": "course-assessment",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "DDS Blockset",
+      "product": "DDS Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/dds/dds/ddslib.slx",
+      "kbFolder": "dds-blockset",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "DO-178C/DO-331 Primitive Library",
+      "product": "DO Qualification Kit",
+      "description": "",
+      "slxRelPath": "toolbox/qualkits/do/templates/templatessrc/src/do178_project/tools/compatible_blocks/do178Lib.slx",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "blockCount": 138,
+      "categories": []
+    },
+    {
+      "name": "DSP HDL Toolbox",
+      "product": "DSP HDL Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/dsphdl/dsphdl/dsphdllib2.slx",
+      "kbFolder": "dsp-hdl-toolbox",
+      "blockCount": 8,
+      "categories": []
+    },
+    {
+      "name": "DSP System Toolbox",
+      "product": "DSP System Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/dsp/dsp/dsplibv4.slx",
+      "kbFolder": "dsp-system-toolbox",
+      "blockCount": 17,
+      "categories": []
+    },
+    {
+      "name": "DSP System Toolbox HDL Support",
+      "product": "DSP HDL Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/dsp/dsp/dsphdlsupportlib.slx",
+      "kbFolder": "dsp-system-toolbox-hdl-support",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Data Acquisition Toolbox",
+      "product": "Data Acquisition Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/daq/daqblks/daqlib.slx",
+      "kbFolder": "data-acquisition-toolbox",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Deep Learning Toolbox",
+      "product": "Deep Learning Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/nnet/nnet/nnetlib.slx",
+      "kbFolder": "deep-learning-toolbox",
+      "blockCount": 103,
+      "categories": []
+    },
+    {
+      "name": "Driveline",
+      "product": "Simscape Driveline",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/sdl/library/sdl/sdl_lib.slx",
+      "kbFolder": "driveline",
+      "blockCount": 101,
+      "categories": []
+    },
+    {
+      "name": "Electrical",
+      "product": "Simscape Electrical",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/elec/library/m/ee_lib.slx",
+      "kbFolder": "electrical",
+      "blockCount": 434,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/rtw/targets/ecoder/rtweclib.slx",
+      "kbFolder": "embedded-coder",
+      "blockCount": 17,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for AMD SoC Devices",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/zynq/blocks/zynqlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-amd-soc-devices",
+      "blockCount": 9,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for ARM Cortex-A Processors",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/arm_cortex_a/blocks/arm_cortex_a_lib.slx",
+      "kbFolder": "embedded-coder-support-package-for-arm-cortex-a-processors",
+      "blockCount": 4,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for ARM Cortex-M Processors",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/arm_cortex_m/blocks/armcortexmlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-arm-cortex-m-processors",
+      "blockCount": 1,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for ARM Cortex-R Processors",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/tirm57lx/blocks/tirm57lxlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-arm-cortex-r-processors",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for AURIX TC3x",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/aurixtc3x/blocks/aurixtc3xlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-aurix-tc3x",
+      "blockCount": 10,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for AURIX TC4x",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/aurix_target/tc4xx/blocks/aurixtc4xlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-aurix-tc4x",
+      "blockCount": 13,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for BeagleBone Black Hardware",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/beaglebone/blocks/beaglebonelib.slx",
+      "kbFolder": "embedded-coder-support-package-for-beaglebone-black-hardware",
+      "blockCount": 12,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for Infineon AURIX TC4x",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/aurix_target/tc4xx/blocks/aurixtc4xlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-infineon-aurix-tc4x",
+      "blockCount": 13,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for Intel SoC Devices",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/alterasoc/blocks/alterasoclib.slx",
+      "kbFolder": "embedded-coder-support-package-for-intel-soc-devices",
+      "blockCount": 5,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for Qualcomm Hexagon",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/shared/supportpackages/hexagon/blocks/hexagonlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-qualcomm-hexagon",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for Real-Time Linux",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/slrealtime/supportpkgs/slrtlinux/simulink/blocks/slrtlinuxsocketcanlib.slx",
+      "kbFolder": "embedded-coder-support-package-for-real-time-linux",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for Renesas RA Microcontrollers",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/renesas/ra/slLibrary/renesasrablockslib.slx",
+      "kbFolder": "embedded-coder-support-package-for-renesas-ra-microcontrollers",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Embedded Coder Support Package for Renesas RH850 Microcontrollers",
+      "product": "Embedded Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/renesas/rh850/slLibrary/rh850lib.slx",
+      "kbFolder": "embedded-coder-support-package-for-renesas-rh850-microcontrollers",
+      "blockCount": 8,
+      "categories": []
+    },
+    {
+      "name": "Fixed-Point Designer",
+      "product": "Fixed-Point Designer",
+      "description": "",
+      "slxRelPath": "toolbox/fixedpoint/embeddedlib/embeddedlib/embeddedMathLib.slx",
+      "kbFolder": "fixed-point-designer",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Fixed-Point Designer HDL Support",
+      "product": "Fixed-Point Designer",
+      "description": "",
+      "slxRelPath": "toolbox/fixedpoint/embeddedlib/embeddedlib/embeddedMatrixLib.slx",
+      "kbFolder": "fixed-point-designer-hdl-support",
+      "blockCount": 42,
+      "categories": []
+    },
+    {
+      "name": "Simscape Fluids",
+      "product": "Simscape Fluids",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/fluids/library/m/SimscapeFluids_lib.slx",
+      "kbFolder": "simscape-fluids",
+      "blockCount": 224,
+      "categories": []
+    },
+    {
+      "name": "Simscape",
+      "product": "Simscape",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/simscape/library/m/fl_lib.slx",
+      "kbFolder": "simscape",
+      "blockCount": 274,
+      "categories": []
+    },
+    {
+      "name": "Fuzzy Logic Toolbox",
+      "product": "Fuzzy Logic Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/fuzzy/fuzzy/fuzblock.slx",
+      "kbFolder": "fuzzy-logic-toolbox",
+      "blockCount": 5,
+      "categories": []
+    },
+    {
+      "name": "HDL Coder",
+      "product": "HDL Coder",
+      "description": "",
+      "slxRelPath": "toolbox/hdlcoder/hdllib/sl_lib/hdlsllib.slx",
+      "kbFolder": "hdl-coder",
+      "blockCount": 255,
+      "categories": []
+    },
+    {
+      "name": "HDL Verifier",
+      "product": "HDL Verifier",
+      "description": "",
+      "slxRelPath": "toolbox/edalink/edalink/edalink/edalinklib.slx",
+      "kbFolder": "hdl-verifier",
+      "blockCount": 4,
+      "categories": []
+    },
+    {
+      "name": "Image Acquisition Toolbox",
+      "product": "Image Acquisition Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/imaq/imaqblks/imaqblks/imaqlib.slx",
+      "kbFolder": "image-acquisition-toolbox",
+      "blockCount": 1,
+      "categories": []
+    },
+    {
+      "name": "Industrial Communication Toolbox",
+      "product": "Industrial Communication Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/icomm/icomm/icommblks/icommlib.slx",
+      "kbFolder": "industrial-communication-toolbox",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Instrument Control Toolbox",
+      "product": "Instrument Control Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/instrument/instrumentblks/instrumentblks/instrumentlib.slx",
+      "kbFolder": "instrument-control-toolbox",
+      "blockCount": 10,
+      "categories": []
+    },
+    {
+      "name": "MATLAB Coder Support Package for PyTorch and LiteRT Models",
+      "product": "MATLAB Coder",
+      "description": "",
+      "slxRelPath": "toolbox/dlcoder_oss_frameworks/supportpackages/mlir/blocks/dlosslib.slx",
+      "kbFolder": "matlab-coder-support-package-for-pytorch-and-litert-models",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Mixed-Signal Blockset",
+      "product": "Mixed-Signal Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/msblks/msblks/msbMixedSignalBlockset.slx",
+      "kbFolder": "mixed-signal-blockset",
+      "blockCount": 45,
+      "categories": []
+    },
+    {
+      "name": "Mixed-Signal Blockset Models",
+      "product": "Mixed-Signal Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/msblks/supportpackages/msblksmodels/msblksmodels/mixedsignallibs.slx",
+      "kbFolder": "mixed-signal-blockset-models",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Model Predictive Control Toolbox",
+      "product": "Model Predictive Control Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/mpc/mpc/mpclib.slx",
+      "kbFolder": "model-predictive-control-toolbox",
+      "blockCount": 12,
+      "categories": []
+    },
+    {
+      "name": "Multibody",
+      "product": "Simscape Multibody",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/sm/sli/m/sm_lib.slx",
+      "kbFolder": "multibody",
+      "blockCount": 10,
+      "categories": []
+    },
+    {
+      "name": "Multiversion Co-simulation",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/multiversion_cosim/supportpackages/blocks/MultiversionCoSim.slx",
+      "kbFolder": "multiversion-co-simulation",
+      "blockCount": 1,
+      "categories": []
+    },
+    {
+      "name": "NVIDIA Jetson and NVIDIA DRIVE",
+      "product": "MATLAB Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/nvidia/blocks/nvidialib.slx",
+      "kbFolder": "nvidia-jetson-and-nvidia-drive",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Navigation Toolbox",
+      "product": "Navigation Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/nav/navsimulink/navlib.slx",
+      "kbFolder": "navigation-toolbox",
+      "blockCount": 11,
+      "categories": []
+    },
+    {
+      "name": "Network Couplers",
+      "product": "Simscape",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/simscape/couplers/m/SimscapeNetworkCouplersLib.slx",
+      "kbFolder": "network-couplers",
+      "blockCount": 15,
+      "categories": []
+    },
+    {
+      "name": "Offroad Autonomy Library",
+      "product": "Robotics System Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/robotics/supportpackages/offroadautonomy/offslcore/offroadlib.slx",
+      "kbFolder": "offroad-autonomy-library",
+      "blockCount": 9,
+      "categories": []
+    },
+    {
+      "name": "Phased Array System Toolbox",
+      "product": "Phased Array System Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/phased/phased/phasedlib.slx",
+      "kbFolder": "phased-array-system-toolbox",
+      "blockCount": 81,
+      "categories": []
+    },
+    {
+      "name": "Powertrain Blockset",
+      "product": "Powertrain Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/autoblks/autoblks/autolib.slx",
+      "kbFolder": "powertrain-blockset",
+      "blockCount": 62,
+      "categories": []
+    },
+    {
+      "name": "RF Blockset",
+      "product": "RF Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/simrf/simrf_top/simrf_top/simrfV2libs.slx",
+      "kbFolder": "rf-blockset",
+      "blockCount": 68,
+      "categories": []
+    },
+    {
+      "name": "RF Blockset Models for Analog Devices RF Transceivers",
+      "product": "RF Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/rfblks/supportpackages/adiagile/adiagile/adiagilelibs.slx",
+      "kbFolder": "rf-blockset-models-for-analog-devices-rf-transceivers",
+      "blockCount": 33,
+      "categories": []
+    },
+    {
+      "name": "ROS Toolbox",
+      "product": "ROS Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/ros/ros/roslib.slx",
+      "kbFolder": "ros-toolbox",
+      "blockCount": 41,
+      "categories": []
+    },
+    {
+      "name": "Radar Toolbox",
+      "product": "Radar Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/radar/radar/radarlib.slx",
+      "kbFolder": "radar-toolbox",
+      "blockCount": 12,
+      "categories": []
+    },
+    {
+      "name": "Raspberry Pi Blockset",
+      "product": "Raspberry Pi Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/rpib/raspiSL/blocks/raspberrypilib.slx",
+      "kbFolder": "raspberry-pi-blockset",
+      "blockCount": 8,
+      "categories": []
+    },
+    {
+      "name": "Reinforcement Learning",
+      "product": "Reinforcement Learning Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/rl/rl/simulink/libs/rllib.slx",
+      "kbFolder": "reinforcement-learning",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Report Generator",
+      "product": "Simulink Report Generator",
+      "description": "",
+      "slxRelPath": "toolbox/rptgenext/rptgenext/rptgenlib.slx",
+      "kbFolder": "report-generator",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Requirements Toolbox",
+      "product": "Requirements Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/shared/slreq/reqmanage.slx",
+      "kbFolder": "requirements-toolbox",
+      "blockCount": 5,
+      "categories": []
+    },
+    {
+      "name": "Robotics System Toolbox",
+      "product": "Robotics System Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/robotics/robotsimulink/simulinklibrary/robotsyslib.slx",
+      "kbFolder": "robotics-system-toolbox",
+      "blockCount": 41,
+      "categories": []
+    },
+    {
+      "name": "Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators",
+      "product": "Robotics System Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/robotics/supportpackages/urseries/blocks/urlib.slx",
+      "kbFolder": "robotics-system-toolbox-support-package-for-universal-robots-ur-series-manipulators",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Robust Control Toolbox",
+      "product": "Robust Control Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/robust/robust/RCTblocks.slx",
+      "kbFolder": "robust-control-toolbox",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "STM32 Microcontroller Blockset",
+      "product": "STM32 Microcontroller Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/stm32b/stm32target/blocks/stm32lib.slx",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "blockCount": 414,
+      "categories": []
+    },
+    {
+      "name": "Satellite Communications Toolbox",
+      "product": "Satellite Communications Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/satcom/satcomsimulink/satcomlib.slx",
+      "kbFolder": "satellite-communications-toolbox",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Sensor Fusion and Tracking Toolbox",
+      "product": "Sensor Fusion and Tracking Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/fusion/simulink/fusionlib.slx",
+      "kbFolder": "sensor-fusion-and-tracking-toolbox",
+      "blockCount": 27,
+      "categories": []
+    },
+    {
+      "name": "SerDes Toolbox",
+      "product": "SerDes Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/serdes/serdes/serdesTopLevel.slx",
+      "kbFolder": "serdes-toolbox",
+      "blockCount": 7,
+      "categories": []
+    },
+    {
+      "name": "Signal Integrity Toolbox",
+      "product": "Signal Integrity Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/si/simulink/si/siTopLevel.slx",
+      "kbFolder": "signal-integrity-toolbox",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "SimEvents",
+      "product": "SimEvents",
+      "description": "",
+      "slxRelPath": "toolbox/slde/slde/sldelib.slx",
+      "kbFolder": "simevents",
+      "blockCount": 31,
+      "categories": []
+    },
+    {
+      "name": "Simscape Acoustics",
+      "product": "",
+      "description": "",
+      "slxRelPath": "toolbox/simscapeacoustics/acoustic_lib.slx",
+      "kbFolder": "simscape-acoustics",
+      "blockCount": 30,
+      "categories": []
+    },
+    {
+      "name": "Simulink",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/simulink/blocks/library/simulink.slx",
+      "kbFolder": "simulink",
+      "blockCount": 352,
+      "categories": []
+    },
+    {
+      "name": "Simulink 3D Animation",
+      "product": "Simulink 3D Animation",
+      "description": "",
+      "slxRelPath": "toolbox/sl3d/sl3dext/sim3d/sl3dlib.slx",
+      "kbFolder": "simulink-3d-animation",
+      "blockCount": 20,
+      "categories": []
+    },
+    {
+      "name": "Simulink Arduino Libraries for Gizmo Hardware",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/arduinobase/blocks/gizmoLibrary.slx",
+      "kbFolder": "simulink-arduino-libraries-for-gizmo-hardware",
+      "blockCount": 28,
+      "categories": []
+    },
+    {
+      "name": "Simulink Coder",
+      "product": "Simulink Coder",
+      "description": "",
+      "slxRelPath": "toolbox/simulink/blocks/library/simulinkcoder/rtwlib.slx",
+      "kbFolder": "simulink-coder",
+      "blockCount": 3,
+      "categories": []
+    },
+    {
+      "name": "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller",
+      "product": "Simulink Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/vexarmcortex/blocks/vexarmcortexlib.slx",
+      "kbFolder": "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+      "blockCount": 60,
+      "categories": []
+    },
+    {
+      "name": "Simulink Coder Support Package for BBC micro:bit",
+      "product": "Simulink Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/microbit/blocks/microbitblockslib.slx",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "blockCount": 7,
+      "categories": []
+    },
+    {
+      "name": "Simulink Coder Support Package for BeagleBone Blue Hardware",
+      "product": "Simulink Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/beagleboneblue/blocks/beaglebonebluelib.slx",
+      "kbFolder": "simulink-coder-support-package-for-beaglebone-blue-hardware",
+      "blockCount": 5,
+      "categories": []
+    },
+    {
+      "name": "Simulink Coder Support Package for NXP FRDM-K64F Board",
+      "product": "Simulink Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/freedomk64f/blocks/frdmk64flib.slx",
+      "kbFolder": "simulink-coder-support-package-for-nxp-frdm-k64f-board",
+      "blockCount": 16,
+      "categories": []
+    },
+    {
+      "name": "Simulink Coder Support Package for NXP FRDM-KL25Z Board",
+      "product": "Simulink Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/freedomboard/blocks/freedomboardrootlib.slx",
+      "kbFolder": "simulink-coder-support-package-for-nxp-frdm-kl25z-board",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+      "product": "Simulink Coder",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/vexv5/blocks/vexv5lib.slx",
+      "kbFolder": "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+      "blockCount": 65,
+      "categories": []
+    },
+    {
+      "name": "Simulink Control Design",
+      "product": "Simulink Control Design",
+      "description": "",
+      "slxRelPath": "toolbox/slcontrol/slctrlutil/slctrlblks.slx",
+      "kbFolder": "simulink-control-design",
+      "blockCount": 39,
+      "categories": []
+    },
+    {
+      "name": "Simulink Design Optimization",
+      "product": "Simulink Design Optimization",
+      "description": "",
+      "slxRelPath": "toolbox/sldo/sldo/sdolib.slx",
+      "kbFolder": "simulink-design-optimization",
+      "blockCount": 11,
+      "categories": []
+    },
+    {
+      "name": "Simulink Design Verifier",
+      "product": "Simulink Design Verifier",
+      "description": "",
+      "slxRelPath": "toolbox/shared/sldv/sldvlib.slx",
+      "kbFolder": "simulink-design-verifier",
+      "blockCount": 11,
+      "categories": []
+    },
+    {
+      "name": "Simulink Design Verifier Temporal Pattern Blocks",
+      "product": "Simulink Design Verifier",
+      "description": "",
+      "slxRelPath": "toolbox/shared/sldv/sldvpatternlib_withexample.slx",
+      "kbFolder": "simulink-design-verifier-temporal-pattern-blocks",
+      "blockCount": 6,
+      "categories": []
+    },
+    {
+      "name": "Simulink Desktop Real-Time",
+      "product": "Simulink Desktop Real-Time",
+      "description": "",
+      "slxRelPath": "toolbox/sldrt/sldrt/sldrtlib.slx",
+      "kbFolder": "simulink-desktop-real-time",
+      "blockCount": 21,
+      "categories": []
+    },
+    {
+      "name": "Simulink Extras",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/simulink/blocks/library/simulink_extras.slx",
+      "kbFolder": "simulink-extras",
+      "blockCount": 34,
+      "categories": []
+    },
+    {
+      "name": "Simulink Real-Time",
+      "product": "Simulink Real-Time",
+      "description": "",
+      "slxRelPath": "toolbox/slrealtime/simulink/blocks/slrealtimelib.slx",
+      "kbFolder": "simulink-real-time",
+      "blockCount": 82,
+      "categories": []
+    },
+    {
+      "name": "Simulink Support Package for Android Devices",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/android/blocks/androidlib.slx",
+      "kbFolder": "simulink-support-package-for-android-devices",
+      "blockCount": 5,
+      "categories": []
+    },
+    {
+      "name": "Simulink Support Package for Apple iOS Devices",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/ios/blocks/ioslib.slx",
+      "kbFolder": "simulink-support-package-for-apple-ios-devices",
+      "blockCount": 5,
+      "categories": []
+    },
+    {
+      "name": "Simulink Support Package for Arduino Hardware",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/arduinobase/blocks/arduinorootlib.slx",
+      "kbFolder": "simulink-support-package-for-arduino-hardware",
+      "blockCount": 8,
+      "categories": []
+    },
+    {
+      "name": "Simulink Support Package for LEGO MINDSTORMS EV3 Hardware",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/ev3/blocks/legoev3lib.slx",
+      "kbFolder": "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+      "blockCount": 20,
+      "categories": []
+    },
+    {
+      "name": "Simulink Support Package for Parrot Minidrones",
+      "product": "Simulink",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/parrot/blocks/parrotlib.slx",
+      "kbFolder": "simulink-support-package-for-parrot-minidrones",
+      "blockCount": 8,
+      "categories": []
+    },
+    {
+      "name": "Statistics and Machine Learning Toolbox",
+      "product": "Statistics and Machine Learning Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/stats/blocks/statsLibrary.slx",
+      "kbFolder": "statistics-and-machine-learning-toolbox",
+      "blockCount": 1798,
+      "categories": []
+    },
+    {
+      "name": "System Identification Toolbox",
+      "product": "System Identification Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/ident/ident/slident.slx",
+      "kbFolder": "system-identification-toolbox",
+      "blockCount": 12,
+      "categories": []
+    },
+    {
+      "name": "UAV Toolbox",
+      "product": "UAV Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/uav/uavsimulink/core/uavlib.slx",
+      "kbFolder": "uav-toolbox",
+      "blockCount": 15,
+      "categories": []
+    },
+    {
+      "name": "UAV Toolbox Support Package for ArduPilot Autopilots",
+      "product": "UAV Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/ardupilot/core/blocks/ardupilotlib.slx",
+      "kbFolder": "uav-toolbox-support-package-for-ardupilot-autopilots",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "UAV Toolbox Support Package for PX4 Autopilots",
+      "product": "UAV Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/px4/core/blocks/px4lib.slx",
+      "kbFolder": "uav-toolbox-support-package-for-px4-autopilots",
+      "blockCount": 27,
+      "categories": []
+    },
+    {
+      "name": "Utilities",
+      "product": "Simscape",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/simscape/engine/library/m/nesl_utility.slx",
+      "kbFolder": "utilities",
+      "blockCount": 11,
+      "categories": []
+    },
+    {
+      "name": "VNT Ethernet Library",
+      "product": "Vehicle Network Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/shared/vnt/ethernet/ethernetblks/ethernetblkslib.slx",
+      "kbFolder": "vnt-ethernet-library",
+      "blockCount": 1,
+      "categories": []
+    },
+    {
+      "name": "Vehicle Dynamics Blockset",
+      "product": "Vehicle Dynamics Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/vdynblks/vdynblks/vdynlib.slx",
+      "kbFolder": "vehicle-dynamics-blockset",
+      "blockCount": 59,
+      "categories": []
+    },
+    {
+      "name": "Vehicle Network Toolbox",
+      "product": "Vehicle Network Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/vnt/vntblks/vntblks/vntlib.slx",
+      "kbFolder": "vehicle-network-toolbox",
+      "blockCount": 31,
+      "categories": []
+    },
+    {
+      "name": "Vision HDL Toolbox",
+      "product": "Vision HDL Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/visionhdl/visionhdl/visionhdllib.slx",
+      "kbFolder": "vision-hdl-toolbox",
+      "blockCount": 9,
+      "categories": []
+    },
+    {
+      "name": "Wireless HDL Toolbox",
+      "product": "Wireless HDL Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/whdl/whdl/whdllib.slx",
+      "kbFolder": "wireless-hdl-toolbox",
+      "blockCount": 3,
+      "categories": []
+    },
+    {
+      "name": "Wireless Testbench Support Package for NI(TM) USRP(TM) Radios",
+      "product": "Wireless Testbench",
+      "description": "",
+      "slxRelPath": "toolbox/shared/sdr/sdru/commsdrhw_v2.slx",
+      "kbFolder": "wireless-testbench-support-package-for-ni-tm-usrp-tm-radios",
+      "blockCount": 2,
+      "categories": []
+    },
+    {
+      "name": "Fluids",
+      "product": "Simscape Fluids",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/fluids/library/m/SimscapeFluids_lib.slx",
+      "kbFolder": "simscape-fluids",
+      "blockCount": 224,
+      "categories": []
+    },
+    {
+      "name": "Foundation Library",
+      "product": "Simscape",
+      "description": "",
+      "slxRelPath": "toolbox/physmod/simscape/library/m/fl_lib.slx",
+      "kbFolder": "simscape",
+      "blockCount": 274,
+      "categories": []
+    },
+    {
+      "name": "Lidar Toolbox",
+      "product": "Point Cloud Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/pointcloud/simulink/lidarlib.slx",
+      "kbFolder": "lidar-toolbox",
+      "blockCount": 1,
+      "categories": []
+    },
+    {
+      "name": "Motor Control Blockset",
+      "product": "Motor Control Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/mcb/mcb/library/mcblib.slx",
+      "kbFolder": "motor-control-blockset",
+      "blockCount": 80,
+      "categories": []
+    },
+    {
+      "name": "SoC Blockset",
+      "product": "SoC Blockset",
+      "description": "",
+      "slxRelPath": "toolbox/soc/lib/xilinxsoclib.slx",
+      "kbFolder": "soc-blockset",
+      "blockCount": 112,
+      "categories": []
+    }
+  ],
+  "generatedOnRelease": "2026a"
+}

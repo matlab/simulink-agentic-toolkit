@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:13",
+  "generatedAtDatenum": 740213.74459599541,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Support Package for Arduino Hardware"
+  ],
+  "blockCount": 8,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Simulink_Support_Package_for_Arduino_Hardware": {
+      "blockCount": 8
+    }
+  }
+}

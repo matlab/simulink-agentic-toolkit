@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74459069443,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Coder Support Package for NXP FRDM-KL25Z Board"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Simulink_Coder_Support_Package_for_NXP_FRDM_KL25Z_Board": {
+      "blockCount": 2
+    }
+  }
+}

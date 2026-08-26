@@ -1,0 +1,36 @@
+{
+  "libraryName": "Signal Integrity Toolbox",
+  "generatedAt": "2026-08-19T14:31:09",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "Eye Measurement",
+      "referenceBlock": "siUtilities/Eye Measurement",
+      "blockType": "EyeMeasurement",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Jitter Measurement",
+      "referenceBlock": "siUtilities/Jitter Measurement",
+      "blockType": "JitterMeasurement",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

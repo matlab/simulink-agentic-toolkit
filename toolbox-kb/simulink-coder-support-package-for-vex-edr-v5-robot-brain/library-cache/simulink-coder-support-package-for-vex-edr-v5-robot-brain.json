@@ -1,0 +1,603 @@
+{
+  "libraryName": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 65,
+  "blocks": [
+    {
+      "name": "Differential (Tank) Drive",
+      "referenceBlock": "vexv5lib/Drivetrain/Differential (Tank) Drive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VEX V5 Differential Drive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Chart",
+      "referenceBlock": "vexv5lib/Utilities/Chart",
+      "blockType": "Chart",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "vexv5lib/Utilities/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Input",
+      "referenceBlock": "vexv5lib/Utilities/Variable Input",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Slider Gain",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Motor",
+      "referenceBlock": "vexv5lib/Actuators/DC Motor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "vexv5lib/Actuators/Digital Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Servo Motor",
+      "referenceBlock": "vexv5lib/Actuators/Servo Motor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Smart Motor Write",
+      "referenceBlock": "vexv5lib/Actuators/Smart Motor Write",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Competition Switch",
+      "referenceBlock": "vexv5lib/Gamepad/Competition Switch",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "vexv5.CompetitionSwitch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gamepad Button",
+      "referenceBlock": "vexv5lib/Gamepad/Gamepad Button",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "vexv5.GamepadButton",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gamepad Joystick",
+      "referenceBlock": "vexv5lib/Gamepad/Gamepad Joystick",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "vexv5.GamepadJoystick",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Constant",
+      "referenceBlock": "vexv5lib/Logical Operations Library/Compare To Constant",
+      "blockType": "CompareToConstant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Zero",
+      "referenceBlock": "vexv5lib/Logical Operations Library/Compare To Zero",
+      "blockType": "CompareToZero",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logical Operator",
+      "referenceBlock": "vexv5lib/Logical Operations Library/Logical Operator",
+      "blockType": "Logic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logical Operator1",
+      "referenceBlock": "vexv5lib/Logical Operations Library/Logical Operator1",
+      "blockType": "Logic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relational Operator",
+      "referenceBlock": "vexv5lib/Logical Operations Library/Relational Operator",
+      "blockType": "RelationalOperator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Abs",
+      "referenceBlock": "vexv5lib/Math Library/Abs",
+      "blockType": "Abs",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Add",
+      "referenceBlock": "vexv5lib/Math Library/Add",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bias",
+      "referenceBlock": "vexv5lib/Math Library/Bias",
+      "blockType": "Bias",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Divide",
+      "referenceBlock": "vexv5lib/Math Library/Divide",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gain",
+      "referenceBlock": "vexv5lib/Math Library/Gain",
+      "blockType": "Gain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Math Function",
+      "referenceBlock": "vexv5lib/Math Library/Math Function",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MinMax",
+      "referenceBlock": "vexv5lib/Math Library/MinMax",
+      "blockType": "MinMax",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MinMax Running Resettable",
+      "referenceBlock": "vexv5lib/Math Library/MinMax Running Resettable",
+      "blockType": "MinMaxRunningResettable",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Polynomial",
+      "referenceBlock": "vexv5lib/Math Library/Polynomial",
+      "blockType": "Polyval",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Product",
+      "referenceBlock": "vexv5lib/Math Library/Product",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reciprocal Sqrt",
+      "referenceBlock": "vexv5lib/Math Library/Reciprocal Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rounding Function",
+      "referenceBlock": "vexv5lib/Math Library/Rounding Function",
+      "blockType": "Rounding",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sign",
+      "referenceBlock": "vexv5lib/Math Library/Sign",
+      "blockType": "Signum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signed Sqrt",
+      "referenceBlock": "vexv5lib/Math Library/Signed Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sine Wave Function",
+      "referenceBlock": "vexv5lib/Math Library/Sine Wave Function",
+      "blockType": "Sin",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Slider Gain",
+      "referenceBlock": "vexv5lib/Math Library/Slider Gain",
+      "blockType": "SliderGain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sqrt",
+      "referenceBlock": "vexv5lib/Math Library/Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subtract",
+      "referenceBlock": "vexv5lib/Math Library/Subtract",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trigonometric Function",
+      "referenceBlock": "vexv5lib/Math Library/Trigonometric Function",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unary Minus",
+      "referenceBlock": "vexv5lib/Math Library/Unary Minus",
+      "blockType": "UnaryMinus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "vexv5lib/Sensors/Analog Input",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "vexv5lib/Sensors/Digital Input",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Distance Sensor",
+      "referenceBlock": "vexv5lib/Sensors/Distance Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gyroscope",
+      "referenceBlock": "vexv5lib/Sensors/Gyroscope",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inertial Sensor",
+      "referenceBlock": "vexv5lib/Sensors/Inertial Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Optical Sensor",
+      "referenceBlock": "vexv5lib/Sensors/Optical Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Optical Shaft Encoder",
+      "referenceBlock": "vexv5lib/Sensors/Optical Shaft Encoder",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotation Sensor",
+      "referenceBlock": "vexv5lib/Sensors/Rotation Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Smart Motor Read",
+      "referenceBlock": "vexv5lib/Sensors/Smart Motor Read",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ultrasonic Sensor",
+      "referenceBlock": "vexv5lib/Sensors/Ultrasonic Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "V5 GPS Sensor",
+      "referenceBlock": "vexv5lib/Sensors/V5 GPS Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vision Sensor",
+      "referenceBlock": "vexv5lib/Sensors/Vision Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Arcade Module",
+      "referenceBlock": "vexv5lib/Utilities/Arcade Module",
+      "blockType": "Arcade-2MotorsModule",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clock",
+      "referenceBlock": "vexv5lib/Utilities/Clock",
+      "blockType": "Clock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "vexv5lib/Utilities/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Conversion",
+      "referenceBlock": "vexv5lib/Utilities/Data Type Conversion",
+      "blockType": "DataTypeConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Deadband",
+      "referenceBlock": "vexv5lib/Utilities/Deadband",
+      "blockType": "DeadZone",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Display",
+      "referenceBlock": "vexv5lib/Utilities/Display",
+      "blockType": "Display",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Field Simulator",
+      "referenceBlock": "vexv5lib/Utilities/Field Simulator",
+      "blockType": "FieldSimulator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gamepad Simulator",
+      "referenceBlock": "vexv5lib/Utilities/Gamepad Simulator",
+      "blockType": "GamepadSimulator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gear Transmission",
+      "referenceBlock": "vexv5lib/Utilities/Gear Transmission",
+      "blockType": "Reference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ground",
+      "referenceBlock": "vexv5lib/Utilities/Ground",
+      "blockType": "Ground",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Latch",
+      "referenceBlock": "vexv5lib/Utilities/Latch",
+      "blockType": "Latch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Limit Switch Control ",
+      "referenceBlock": "vexv5lib/Utilities/Limit Switch Control ",
+      "blockType": "SaturationDynamic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Manual Switch",
+      "referenceBlock": "vexv5lib/Utilities/Manual Switch",
+      "blockType": "ManualSwitch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Scope",
+      "referenceBlock": "vexv5lib/Utilities/Scope",
+      "blockType": "Scope",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "vexv5lib/Utilities/Switch",
+      "blockType": "Switch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "vexv5lib/Utilities/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Toggle",
+      "referenceBlock": "vexv5lib/Utilities/Toggle",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

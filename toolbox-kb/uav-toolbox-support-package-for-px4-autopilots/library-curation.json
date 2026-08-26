@@ -1,0 +1,275 @@
+{
+  "commonBlocks": [
+    "Vehicle Attitude",
+    "GPS",
+    "PX4 Actuator Write",
+    "PX4 uORB Read",
+    "PX4 uORB Write"
+  ],
+  "categories": [
+    {
+      "name": "sensors",
+      "description": "Onboard sensor data access",
+      "keywords": [
+        "accelerometer",
+        "gyroscope",
+        "gps",
+        "magnetometer",
+        "battery"
+      ]
+    },
+    {
+      "name": "peripherals",
+      "description": "Communication and I/O peripherals",
+      "keywords": [
+        "serial",
+        "i2c",
+        "can",
+        "pwm",
+        "analog"
+      ]
+    },
+    {
+      "name": "uorb-mavlink",
+      "description": "uORB middleware and MAVLink communication",
+      "keywords": [
+        "uorb",
+        "mavlink",
+        "publish",
+        "subscribe",
+        "message"
+      ]
+    },
+    {
+      "name": "control-utilities",
+      "description": "Control commands, parameters, and logging",
+      "keywords": [
+        "thrust",
+        "torque",
+        "parameter",
+        "log",
+        "timestamp"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Accelerometer",
+      "value": "sensors"
+    },
+    {
+      "block": "Battery",
+      "value": "sensors"
+    },
+    {
+      "block": "GPS",
+      "value": "sensors"
+    },
+    {
+      "block": "Gyroscope",
+      "value": "sensors"
+    },
+    {
+      "block": "I2C Controller Read",
+      "value": "peripherals"
+    },
+    {
+      "block": "I2C Controller Write",
+      "value": "peripherals"
+    },
+    {
+      "block": "MAVLink Bridge Sink",
+      "value": "uorb-mavlink"
+    },
+    {
+      "block": "MAVLink Bridge Source",
+      "value": "uorb-mavlink"
+    },
+    {
+      "block": "Magnetometer",
+      "value": "sensors"
+    },
+    {
+      "block": "PX4 Actuator Write",
+      "value": "control-utilities"
+    },
+    {
+      "block": "PX4 Analog Input",
+      "value": "peripherals"
+    },
+    {
+      "block": "PX4 CAN Receive",
+      "value": "peripherals"
+    },
+    {
+      "block": "PX4 CAN Transmit",
+      "value": "peripherals"
+    },
+    {
+      "block": "PX4 PWM Output",
+      "value": "peripherals"
+    },
+    {
+      "block": "PX4 Read Position Setpoint",
+      "value": "control-utilities"
+    },
+    {
+      "block": "PX4 Timestamp",
+      "value": "control-utilities"
+    },
+    {
+      "block": "PX4 ULog",
+      "value": "control-utilities"
+    },
+    {
+      "block": "PX4 Write Parameter",
+      "value": "control-utilities"
+    },
+    {
+      "block": "PX4 Write Thrust & Torque Setpoint",
+      "value": "control-utilities"
+    },
+    {
+      "block": "PX4 uORB Message",
+      "value": "uorb-mavlink"
+    },
+    {
+      "block": "PX4 uORB Read",
+      "value": "uorb-mavlink"
+    },
+    {
+      "block": "PX4 uORB Write",
+      "value": "uorb-mavlink"
+    },
+    {
+      "block": "Radio Control Transmitter",
+      "value": "sensors"
+    },
+    {
+      "block": "Read Parameter",
+      "value": "control-utilities"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "peripherals"
+    },
+    {
+      "block": "Serial Transmit",
+      "value": "peripherals"
+    },
+    {
+      "block": "Vehicle Attitude",
+      "value": "sensors"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Accelerometer",
+      "value": "Read accelerometer data from PX4 IMU — use for accessing raw acceleration measurements in custom estimation or control"
+    },
+    {
+      "block": "Battery",
+      "value": "Read battery voltage and current from PX4 — use for monitoring power state and remaining flight time"
+    },
+    {
+      "block": "GPS",
+      "value": "Read GPS position and velocity from PX4 — use for accessing navigation data in custom position controllers"
+    },
+    {
+      "block": "Gyroscope",
+      "value": "Read gyroscope data from PX4 IMU — use for accessing raw angular rate measurements in custom controllers"
+    },
+    {
+      "block": "I2C Controller Read",
+      "value": "Read from I2C devices connected to PX4 — use for interfacing with external I2C sensors or peripherals on the autopilot"
+    },
+    {
+      "block": "I2C Controller Write",
+      "value": "Write to I2C devices connected to PX4 — use for configuring or commanding external I2C peripherals"
+    },
+    {
+      "block": "MAVLink Bridge Sink",
+      "value": "Send data to a ground station via MAVLink — use for publishing custom telemetry through the PX4 MAVLink communication layer"
+    },
+    {
+      "block": "MAVLink Bridge Source",
+      "value": "Receive data from a ground station via MAVLink — use for accepting commands or parameters through the MAVLink communication layer"
+    },
+    {
+      "block": "Magnetometer",
+      "value": "Read magnetometer data from PX4 — use for accessing magnetic heading in custom attitude estimation"
+    },
+    {
+      "block": "PX4 Actuator Write",
+      "value": "Command individual actuator outputs on PX4 — use for directly controlling motor ESCs or servos in custom control modes"
+    },
+    {
+      "block": "PX4 Analog Input",
+      "value": "Read analog voltage from ADC pins on PX4 hardware — use for sampling external sensor voltages on the autopilot board"
+    },
+    {
+      "block": "PX4 CAN Receive",
+      "value": "Receive CAN bus messages on PX4 — use for reading data from UAVCAN sensors or other CAN devices"
+    },
+    {
+      "block": "PX4 CAN Transmit",
+      "value": "Transmit CAN bus messages from PX4 — use for sending commands to UAVCAN actuators or peripherals"
+    },
+    {
+      "block": "PX4 PWM Output",
+      "value": "Generate PWM signals on PX4 output pins — use for directly driving servos or ESCs bypassing the PX4 mixer"
+    },
+    {
+      "block": "PX4 Read Position Setpoint",
+      "value": "Read the active position setpoint on PX4 — use for monitoring commanded waypoints in custom navigation logic"
+    },
+    {
+      "block": "PX4 Timestamp",
+      "value": "Read the PX4 system timestamp — use for time-stamping events or synchronizing with the autopilot clock"
+    },
+    {
+      "block": "PX4 ULog",
+      "value": "Write data to the PX4 onboard ULog — use for recording custom variables for post-flight analysis and replay"
+    },
+    {
+      "block": "PX4 Write Parameter",
+      "value": "Write a PX4 parameter value at runtime — use for updating configuration or tuning values from within custom modules"
+    },
+    {
+      "block": "PX4 Write Thrust & Torque Setpoint",
+      "value": "Command thrust and torque setpoints to PX4 — use for implementing custom low-level controllers that bypass the PX4 rate controller"
+    },
+    {
+      "block": "PX4 uORB Message",
+      "value": "Define a PX4 uORB message structure — use for creating custom inter-module message types on the PX4 middleware"
+    },
+    {
+      "block": "PX4 uORB Read",
+      "value": "Subscribe to and read a PX4 uORB topic — use for receiving published data from other PX4 modules or sensors"
+    },
+    {
+      "block": "PX4 uORB Write",
+      "value": "Publish data to a PX4 uORB topic — use for broadcasting custom data to other PX4 modules or the ground station"
+    },
+    {
+      "block": "Radio Control Transmitter",
+      "value": "Read RC transmitter channel values on PX4 — use for accessing pilot stick inputs for mode switching or manual override"
+    },
+    {
+      "block": "Read Parameter",
+      "value": "Read a PX4 parameter value at runtime — use for accessing configuration or tuning values in custom control code"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "Receive serial data on PX4 UART — use for reading data from external sensors, companion computers, or GPS modules"
+    },
+    {
+      "block": "Serial Transmit",
+      "value": "Transmit serial data on PX4 UART — use for sending telemetry or commands to external devices"
+    },
+    {
+      "block": "Vehicle Attitude",
+      "value": "Read estimated vehicle attitude from PX4 EKF — use for accessing fused orientation in custom guidance algorithms"
+    }
+  ]
+}

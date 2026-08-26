@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456856481,
+  "generatorVersion": 4,
+  "libraries": [
+    "Image Acquisition Toolbox"
+  ],
+  "blockCount": 1,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Image_Acquisition_Toolbox": {
+      "blockCount": 1
+    }
+  }
+}

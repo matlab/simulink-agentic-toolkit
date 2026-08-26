@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74458836811,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink 3D Animation"
+  ],
+  "blockCount": 21,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "Simulink_3D_Animation": {
+      "blockCount": 21
+    }
+  }
+}

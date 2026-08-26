@@ -1,0 +1,62 @@
+{
+  "commonBlocks": [
+    "System Requirements"
+  ],
+  "categories": [
+    {
+      "name": "requirements",
+      "description": "Requirements management and traceability blocks",
+      "keywords": [
+        "requirements",
+        "traceability",
+        "specification",
+        "link",
+        "system"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": " Demux ",
+      "value": "requirements"
+    },
+    {
+      "block": " Ground ",
+      "value": "requirements"
+    },
+    {
+      "block": " SFunction ",
+      "value": "requirements"
+    },
+    {
+      "block": " Terminator ",
+      "value": "requirements"
+    },
+    {
+      "block": "System Requirements",
+      "value": "requirements"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": " Demux ",
+      "value": "Requirements toolbox internal demux component — used internally by the requirements framework for signal routing"
+    },
+    {
+      "block": " Ground ",
+      "value": "Requirements toolbox internal ground component — used internally by the requirements framework as a signal termination"
+    },
+    {
+      "block": " SFunction ",
+      "value": "Requirements toolbox internal S-Function component — used internally by the requirements framework for custom processing"
+    },
+    {
+      "block": " Terminator ",
+      "value": "Requirements toolbox internal terminator component — used internally by the requirements framework for unused outputs"
+    },
+    {
+      "block": "System Requirements",
+      "value": "Embed and manage requirements within a Simulink model — use for requirements traceability, linking design elements to specifications"
+    }
+  ]
+}

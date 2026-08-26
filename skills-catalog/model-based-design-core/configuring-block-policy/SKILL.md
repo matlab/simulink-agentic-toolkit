@@ -21,7 +21,7 @@ Create or update `.satk/block-policy.json` — the file that controls which bloc
 ## When NOT to Use
 
 - Actively building a model → `building-simulink-models`
-- Improving block descriptions or categories → `curating-library-kg`
+- Improving block descriptions or categories → `simulink-curating-library-kg`
 - Declaring which libraries exist → Library Setup gate in `building-simulink-models`
 
 ## Prerequisites

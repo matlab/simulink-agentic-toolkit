@@ -1,0 +1,90 @@
+{
+  "libraryName": "Simulink Support Package for Arduino Hardware",
+  "generatedAt": "2026-08-19T14:31:14",
+  "blockCount": 8,
+  "blocks": [
+    {
+      "name": "Advanced",
+      "referenceBlock": "arduinorootlib/Advanced",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Wifi_Shield_Blocks",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Arduino Motor Carrier",
+      "referenceBlock": "arduinorootlib/Arduino Motor Carrier",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MKR_Motor_Carrier_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Common",
+      "referenceBlock": "arduinorootlib/Common",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Common_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Communication",
+      "referenceBlock": "arduinorootlib/Communication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Wifi_Shield_Blocks",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Ethernet Shield",
+      "referenceBlock": "arduinorootlib/Ethernet Shield",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Ethernet_Shield_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensors",
+      "referenceBlock": "arduinorootlib/Sensors",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Sensor_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "arduinorootlib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Common_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "WiFi",
+      "referenceBlock": "arduinorootlib/WiFi",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Wifi_Shield_Blocks",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

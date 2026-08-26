@@ -1,0 +1,3744 @@
+{
+  "libraryName": "STM32 Microcontroller Blockset",
+  "generatedAt": "2026-08-19T14:31:08",
+  "blockCount": 414,
+  "blocks": [
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32c0xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32c0xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32f1xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32f1xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Read",
+      "referenceBlock": "stm32f1xxblockslib/CAN Read",
+      "blockType": "stm32cube.blocks.CANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Write",
+      "referenceBlock": "stm32f1xxblockslib/CAN Write",
+      "blockType": "stm32cube.blocks.CANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32f1xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32f1xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32f1xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32f1xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32f1xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32f1xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Audio Out",
+      "referenceBlock": "stm32f1xxblockslib/I2S Audio Out",
+      "blockType": "stm32cube.blocks.I2SDrvBlockWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Mic In",
+      "referenceBlock": "stm32f1xxblockslib/I2S Mic In",
+      "blockType": "stm32cube.blocks.I2SDrvBlockRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32f1xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32f1xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32f1xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32f1xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32f1xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32f1xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32f1xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32f1xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32f2xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32f2xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Read",
+      "referenceBlock": "stm32f2xxblockslib/CAN Read",
+      "blockType": "stm32cube.blocks.CANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Write",
+      "referenceBlock": "stm32f2xxblockslib/CAN Write",
+      "blockType": "stm32cube.blocks.CANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32f2xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32f2xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32f2xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32f2xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32f2xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32f2xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Audio Out",
+      "referenceBlock": "stm32f2xxblockslib/I2S Audio Out",
+      "blockType": "stm32cube.blocks.I2SDrvBlockWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Mic In",
+      "referenceBlock": "stm32f2xxblockslib/I2S Mic In",
+      "blockType": "stm32cube.blocks.I2SDrvBlockRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32f2xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32f2xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32f2xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32f2xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Receive",
+      "referenceBlock": "stm32f2xxblockslib/Tcp Receive",
+      "blockType": "stm32cube.blocks.TcpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Send",
+      "referenceBlock": "stm32f2xxblockslib/Tcp Send",
+      "blockType": "stm32cube.blocks.TcpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32f2xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32f2xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32f2xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32f2xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Udp Receive",
+      "referenceBlock": "stm32f2xxblockslib/Udp Receive",
+      "blockType": "stm32cube.blocks.UdpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Udp Send",
+      "referenceBlock": "stm32f2xxblockslib/Udp Send",
+      "blockType": "stm32cube.blocks.UdpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32f3xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32f3xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Read",
+      "referenceBlock": "stm32f3xxblockslib/CAN Read",
+      "blockType": "stm32cube.blocks.CANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Write",
+      "referenceBlock": "stm32f3xxblockslib/CAN Write",
+      "blockType": "stm32cube.blocks.CANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32f3xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32f3xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32f3xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32f3xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32f3xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "High Resolution Timer",
+      "referenceBlock": "stm32f3xxblockslib/High Resolution Timer",
+      "blockType": "stm32cube.blocks.HRTimer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32f3xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32f3xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Audio Out",
+      "referenceBlock": "stm32f3xxblockslib/I2S Audio Out",
+      "blockType": "stm32cube.blocks.I2SDrvBlockWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Mic In",
+      "referenceBlock": "stm32f3xxblockslib/I2S Mic In",
+      "blockType": "stm32cube.blocks.I2SDrvBlockRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32f3xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32f3xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32f3xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32f3xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32f3xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32f3xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32f3xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32f3xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32f4xxblockslib/Analog to Digital Converter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.AnalogInput",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32f4xxblockslib/Digital Port Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.DigitalPortRead",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32f4xxblockslib/Digital Port Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.DigitalPortWrite",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32f4xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32f4xxblockslib/PWM Output",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.PWMOutput",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Read",
+      "referenceBlock": "stm32f4xxblockslib/CAN Read",
+      "blockType": "stm32cube.blocks.CANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Write",
+      "referenceBlock": "stm32f4xxblockslib/CAN Write",
+      "blockType": "stm32cube.blocks.CANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32f4xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32f4xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32f4xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32f4xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Audio Out",
+      "referenceBlock": "stm32f4xxblockslib/I2S Audio Out",
+      "blockType": "stm32cube.blocks.I2SDrvBlockWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Mic In",
+      "referenceBlock": "stm32f4xxblockslib/I2S Mic In",
+      "blockType": "stm32cube.blocks.I2SDrvBlockRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MQTT Publish",
+      "referenceBlock": "stm32f4xxblockslib/MQTT Publish",
+      "blockType": "stm32cube.blocks.MQTTPublish",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MQTT Subscribe",
+      "referenceBlock": "stm32f4xxblockslib/MQTT Subscribe",
+      "blockType": "stm32cube.blocks.MQTTSubscribe",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32f4xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32f4xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32f4xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Receive",
+      "referenceBlock": "stm32f4xxblockslib/Tcp Receive",
+      "blockType": "stm32cube.blocks.TcpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Send",
+      "referenceBlock": "stm32f4xxblockslib/Tcp Send",
+      "blockType": "stm32cube.blocks.TcpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32f4xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32f4xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32f4xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32f4xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Udp Receive",
+      "referenceBlock": "stm32f4xxblockslib/Udp Receive",
+      "blockType": "stm32cube.blocks.UdpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Udp Send",
+      "referenceBlock": "stm32f4xxblockslib/Udp Send",
+      "blockType": "stm32cube.blocks.UdpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32f7xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32f7xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Read",
+      "referenceBlock": "stm32f7xxblockslib/CAN Read",
+      "blockType": "stm32cube.blocks.CANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Write",
+      "referenceBlock": "stm32f7xxblockslib/CAN Write",
+      "blockType": "stm32cube.blocks.CANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32f7xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32f7xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32f7xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32f7xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32f7xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32f7xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Audio Out",
+      "referenceBlock": "stm32f7xxblockslib/I2S Audio Out",
+      "blockType": "stm32cube.blocks.I2SDrvBlockWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Mic In",
+      "referenceBlock": "stm32f7xxblockslib/I2S Mic In",
+      "blockType": "stm32cube.blocks.I2SDrvBlockRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MODBUS Read",
+      "referenceBlock": "stm32f7xxblockslib/MODBUS Read",
+      "blockType": "stm32cube.blocks.ModbusRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MODBUS Write",
+      "referenceBlock": "stm32f7xxblockslib/MODBUS Write",
+      "blockType": "stm32cube.blocks.ModbusWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MQTT Publish",
+      "referenceBlock": "stm32f7xxblockslib/MQTT Publish",
+      "blockType": "stm32cube.blocks.MQTTPublish",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MQTT Subscribe",
+      "referenceBlock": "stm32f7xxblockslib/MQTT Subscribe",
+      "blockType": "stm32cube.blocks.MQTTSubscribe",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32f7xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32f7xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32f7xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32f7xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Receive",
+      "referenceBlock": "stm32f7xxblockslib/Tcp Receive",
+      "blockType": "stm32cube.blocks.TcpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Send",
+      "referenceBlock": "stm32f7xxblockslib/Tcp Send",
+      "blockType": "stm32cube.blocks.TcpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32f7xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32f7xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32f7xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32f7xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Udp Receive",
+      "referenceBlock": "stm32f7xxblockslib/Udp Receive",
+      "blockType": "stm32cube.blocks.UdpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Udp Send",
+      "referenceBlock": "stm32f7xxblockslib/Udp Send",
+      "blockType": "stm32cube.blocks.UdpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32g0xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32g0xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32g0xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32g0xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32g0xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32g0xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32g0xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Read",
+      "referenceBlock": "stm32g0xxblockslib/FDCAN Read",
+      "blockType": "stm32cube.blocks.FDCANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Write",
+      "referenceBlock": "stm32g0xxblockslib/FDCAN Write",
+      "blockType": "stm32cube.blocks.FDCANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32g0xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32g0xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32g0xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32g0xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32g0xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32g0xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32g0xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32g0xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32g0xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32g0xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32g4xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32g4xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CORDIC co-processor",
+      "referenceBlock": "stm32g4xxblockslib/CORDIC co-processor",
+      "blockType": "stm32cube.blocks.CORDICDriver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32g4xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32g4xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32g4xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32g4xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32g4xxblockslib/Encoder",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Read",
+      "referenceBlock": "stm32g4xxblockslib/FDCAN Read",
+      "blockType": "stm32cube.blocks.FDCANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Write",
+      "referenceBlock": "stm32g4xxblockslib/FDCAN Write",
+      "blockType": "stm32cube.blocks.FDCANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "High Resolution Timer",
+      "referenceBlock": "stm32g4xxblockslib/High Resolution Timer",
+      "blockType": "stm32cube.blocks.HRTimer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32g4xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32g4xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Audio Out",
+      "referenceBlock": "stm32g4xxblockslib/I2S Audio Out",
+      "blockType": "stm32cube.blocks.I2SDrvBlockWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Mic In",
+      "referenceBlock": "stm32g4xxblockslib/I2S Mic In",
+      "blockType": "stm32cube.blocks.I2SDrvBlockRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MODBUS Read",
+      "referenceBlock": "stm32g4xxblockslib/MODBUS Read",
+      "blockType": "stm32cube.blocks.ModbusRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MODBUS Write",
+      "referenceBlock": "stm32g4xxblockslib/MODBUS Write",
+      "blockType": "stm32cube.blocks.ModbusWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32g4xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32g4xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32g4xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32g4xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32g4xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32g4xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32g4xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32g4xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32h5xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32h5xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32h5xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32h5xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32h5xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32h5xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32h5xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Read",
+      "referenceBlock": "stm32h5xxblockslib/FDCAN Read",
+      "blockType": "stm32cube.blocks.FDCANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Write",
+      "referenceBlock": "stm32h5xxblockslib/FDCAN Write",
+      "blockType": "stm32cube.blocks.FDCANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32h5xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32h5xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Audio Out",
+      "referenceBlock": "stm32h5xxblockslib/I2S Audio Out",
+      "blockType": "stm32cube.blocks.I2SDrvBlockWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2S Mic In",
+      "referenceBlock": "stm32h5xxblockslib/I2S Mic In",
+      "blockType": "stm32cube.blocks.I2SDrvBlockRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32h5xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32h5xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32h5xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32h5xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32h5xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32h5xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32h5xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32h5xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32h7rsxxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32h7rsxxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32h7xxblockslib/Analog to Digital Converter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.AnalogInputForH7",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32h7xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CORDIC co-processor",
+      "referenceBlock": "stm32h7xxblockslib/CORDIC co-processor",
+      "blockType": "stm32cube.blocks.CORDICDriver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32h7xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32h7xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32h7xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32h7xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32h7xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Read",
+      "referenceBlock": "stm32h7xxblockslib/FDCAN Read",
+      "blockType": "stm32cube.blocks.FDCANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Write",
+      "referenceBlock": "stm32h7xxblockslib/FDCAN Write",
+      "blockType": "stm32cube.blocks.FDCANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "High Resolution Timer",
+      "referenceBlock": "stm32h7xxblockslib/High Resolution Timer",
+      "blockType": "stm32cube.blocks.HRTimer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32h7xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32h7xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MODBUS Read",
+      "referenceBlock": "stm32h7xxblockslib/MODBUS Read",
+      "blockType": "stm32cube.blocks.ModbusRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MODBUS Write",
+      "referenceBlock": "stm32h7xxblockslib/MODBUS Write",
+      "blockType": "stm32cube.blocks.ModbusWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MQTT Publish",
+      "referenceBlock": "stm32h7xxblockslib/MQTT Publish",
+      "blockType": "stm32cube.blocks.MQTTPublish",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MQTT Subscribe",
+      "referenceBlock": "stm32h7xxblockslib/MQTT Subscribe",
+      "blockType": "stm32cube.blocks.MQTTSubscribe",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32h7xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32h7xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32h7xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32h7xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Receive",
+      "referenceBlock": "stm32h7xxblockslib/Tcp Receive",
+      "blockType": "stm32cube.blocks.TcpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tcp Send",
+      "referenceBlock": "stm32h7xxblockslib/Tcp Send",
+      "blockType": "stm32cube.blocks.TcpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32h7xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32h7xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32h7xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32h7xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Udp Receive",
+      "referenceBlock": "stm32h7xxblockslib/Udp Receive",
+      "blockType": "stm32cube.blocks.UdpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Udp Send",
+      "referenceBlock": "stm32h7xxblockslib/Udp Send",
+      "blockType": "stm32cube.blocks.UdpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32l4xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32l4xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Read",
+      "referenceBlock": "stm32l4xxblockslib/CAN Read",
+      "blockType": "stm32cube.blocks.CANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Write",
+      "referenceBlock": "stm32l4xxblockslib/CAN Write",
+      "blockType": "stm32cube.blocks.CANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32l4xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32l4xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32l4xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32l4xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32l4xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32l4xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32l4xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32l4xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32l4xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32l4xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32l4xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32l4xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32l4xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32l4xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32l4xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32l5xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32l5xxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32l5xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32l5xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32l5xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32l5xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32l5xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Read",
+      "referenceBlock": "stm32l5xxblockslib/FDCAN Read",
+      "blockType": "stm32cube.blocks.FDCANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Write",
+      "referenceBlock": "stm32l5xxblockslib/FDCAN Write",
+      "blockType": "stm32cube.blocks.FDCANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32l5xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32l5xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32l5xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32l5xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32l5xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32l5xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32l5xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32l5xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32l5xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32l5xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32n6xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32n6xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32u0xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32u0xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32u3xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32u3xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32u5xxblockslib/Analog to Digital Converter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.AnalogInputForU5",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32u5xxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CORDIC co-processor",
+      "referenceBlock": "stm32u5xxblockslib/CORDIC co-processor",
+      "blockType": "stm32cube.blocks.CORDICDriver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32u5xxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32u5xxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32u5xxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital to Analog Converter",
+      "referenceBlock": "stm32u5xxblockslib/Digital to Analog Converter",
+      "blockType": "stm32cube.blocks.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32u5xxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Read",
+      "referenceBlock": "stm32u5xxblockslib/FDCAN Read",
+      "blockType": "stm32cube.blocks.FDCANRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "FDCAN Write",
+      "referenceBlock": "stm32u5xxblockslib/FDCAN Write",
+      "blockType": "stm32cube.blocks.FDCANWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32u5xxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32u5xxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32u5xxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32u5xxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32u5xxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32u5xxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32u5xxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32u5xxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32u5xxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32u5xxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "stm32wbxxblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32cube.blocks.HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog to Digital Converter",
+      "referenceBlock": "stm32wbxxblockslib/Analog to Digital Converter",
+      "blockType": "stm32cube.blocks.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Comparator",
+      "referenceBlock": "stm32wbxxblockslib/Comparator",
+      "blockType": "stm32cube.blocks.AnalogComparator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Read",
+      "referenceBlock": "stm32wbxxblockslib/Digital Port Read",
+      "blockType": "stm32cube.blocks.DigitalPortRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Write",
+      "referenceBlock": "stm32wbxxblockslib/Digital Port Write",
+      "blockType": "stm32cube.blocks.DigitalPortWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "stm32wbxxblockslib/Encoder",
+      "blockType": "stm32cube.blocks.EncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32wbxxblockslib/I2C Controller Read",
+      "blockType": "stm32cube.blocks.I2CControllerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32wbxxblockslib/I2C Controller Write",
+      "blockType": "stm32cube.blocks.I2CControllerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32wbxxblockslib/PWM Output",
+      "blockType": "stm32cube.blocks.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32wbxxblockslib/SPI Controller Transfer",
+      "blockType": "stm32cube.blocks.SPIControllerTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Receive",
+      "referenceBlock": "stm32wbxxblockslib/SPI Receive",
+      "blockType": "stm32cube.blocks.SPIControllerReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Transmit",
+      "referenceBlock": "stm32wbxxblockslib/SPI Transmit",
+      "blockType": "stm32cube.blocks.SPIControllerTransmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "stm32wbxxblockslib/Timer",
+      "blockType": "stm32cube.blocks.TimerBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Timer Capture",
+      "referenceBlock": "stm32wbxxblockslib/Timer Capture",
+      "blockType": "stm32cube.blocks.TimerCapture",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UART/USART Read",
+      "referenceBlock": "stm32wbxxblockslib/UART/USART Read",
+      "blockType": "stm32cube.blocks.UARTRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UART/USART Write",
+      "referenceBlock": "stm32wbxxblockslib/UART/USART Write",
+      "blockType": "stm32cube.blocks.UARTWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CCS811 Air Quality Sensor",
+      "referenceBlock": "stm32Environmentalsensorslib/CCS811 Air Quality Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "HTS221 Humidity Sensor",
+      "referenceBlock": "stm32Environmentalsensorslib/HTS221 Humidity Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LPS22HB Pressure Sensor",
+      "referenceBlock": "stm32Environmentalsensorslib/LPS22HB Pressure Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "ADXL34x Accelerometer",
+      "referenceBlock": "stm32IMUsensorslib/ADXL34x Accelerometer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "BMI160 IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/BMI160 IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "BNO055 IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/BNO055 IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "ICM20948 IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/ICM20948 IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LIS3DH Accelerometer Sensor  ",
+      "referenceBlock": "stm32IMUsensorslib/LIS3DH Accelerometer Sensor  ",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LIS3MDL Magnetometer",
+      "referenceBlock": "stm32IMUsensorslib/LIS3MDL Magnetometer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LSM303C IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/LSM303C IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LSM6DS3 IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/LSM6DS3 IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LSM6DS3H IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/LSM6DS3H IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LSM6DSL IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/LSM6DSL IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LSM6DSM IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/LSM6DSM IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LSM6DSO IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/LSM6DSO IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LSM6DSR IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/LSM6DSR IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MPU6050 IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/MPU6050 IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MPU9250 IMU Sensor",
+      "referenceBlock": "stm32IMUsensorslib/MPU9250 IMU Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "VL53L0X Time Of Flight Sensor",
+      "referenceBlock": "stm32IMUsensorslib/VL53L0X Time Of Flight Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": " Utilities",
+      "referenceBlock": "stm32lib/ Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discovery_Utilities_Blocks",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "stm32f7lib/Analog Input",
+      "blockType": "mbed.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Audio Input",
+      "referenceBlock": "stm32f7lib/Audio Input",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32f746gdiscovery.AudioInput",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Audio Output",
+      "referenceBlock": "stm32f7lib/Audio Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "stm32f746gdiscovery.AudioOutput",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Read",
+      "referenceBlock": "stm32f7lib/Digital Read",
+      "blockType": "mbed.DigitalRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Write",
+      "referenceBlock": "stm32f7lib/Digital Write",
+      "blockType": "mbed.DigitalWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "External Interrupt",
+      "referenceBlock": "stm32f7lib/External Interrupt",
+      "blockType": "ExternalInterrupt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32f7lib/I2C Controller Read",
+      "blockType": "mbed.I2CMasterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32f7lib/I2C Controller Write",
+      "blockType": "mbed.I2CMasterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Client Read",
+      "referenceBlock": "stm32f7lib/Modbus RS485 Client Read",
+      "blockType": "mbed.ModbusRS485ClientRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Client Write",
+      "referenceBlock": "stm32f7lib/Modbus RS485 Client Write",
+      "blockType": "mbed.ModbusRS485ClientWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Server Read",
+      "referenceBlock": "stm32f7lib/Modbus RS485 Server Read",
+      "blockType": "mbed.ModbusRS485ServerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Server Write",
+      "referenceBlock": "stm32f7lib/Modbus RS485 Server Write",
+      "blockType": "mbed.ModbusRS485ServerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32f7lib/PWM Output",
+      "blockType": "mbed.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Read",
+      "referenceBlock": "stm32f7lib/SCI Read",
+      "blockType": "mbed.SCIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Write",
+      "referenceBlock": "stm32f7lib/SCI Write",
+      "blockType": "mbed.SCIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32f7lib/SPI Controller Transfer",
+      "blockType": "mbed.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Read",
+      "referenceBlock": "stm32f7lib/SPI Register Read",
+      "blockType": "mbed.SPIRegisterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Write",
+      "referenceBlock": "stm32f7lib/SPI Register Write",
+      "blockType": "mbed.SPIRegisterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "TCP Receive",
+      "referenceBlock": "stm32f7lib/TCP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "TCP Send",
+      "referenceBlock": "stm32f7lib/TCP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "stm32f7lib/UDP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "stm32f7lib/UDP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "stm32f769ilib/Analog Input",
+      "blockType": "mbed.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Audio Input",
+      "referenceBlock": "stm32f769ilib/Audio Input",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Audio Output",
+      "referenceBlock": "stm32f769ilib/Audio Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Read",
+      "referenceBlock": "stm32f769ilib/Digital Read",
+      "blockType": "mbed.DigitalRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Write",
+      "referenceBlock": "stm32f769ilib/Digital Write",
+      "blockType": "mbed.DigitalWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "External Interrupt",
+      "referenceBlock": "stm32f769ilib/External Interrupt",
+      "blockType": "ExternalInterrupt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32f769ilib/I2C Controller Read",
+      "blockType": "mbed.I2CMasterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32f769ilib/I2C Controller Write",
+      "blockType": "mbed.I2CMasterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Client Read",
+      "referenceBlock": "stm32f769ilib/Modbus RS485 Client Read",
+      "blockType": "mbed.ModbusRS485ClientRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Client Write",
+      "referenceBlock": "stm32f769ilib/Modbus RS485 Client Write",
+      "blockType": "mbed.ModbusRS485ClientWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Server Read",
+      "referenceBlock": "stm32f769ilib/Modbus RS485 Server Read",
+      "blockType": "mbed.ModbusRS485ServerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Server Write",
+      "referenceBlock": "stm32f769ilib/Modbus RS485 Server Write",
+      "blockType": "mbed.ModbusRS485ServerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32f769ilib/PWM Output",
+      "blockType": "mbed.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Read",
+      "referenceBlock": "stm32f769ilib/SCI Read",
+      "blockType": "mbed.SCIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Write",
+      "referenceBlock": "stm32f769ilib/SCI Write",
+      "blockType": "mbed.SCIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32f769ilib/SPI Controller Transfer",
+      "blockType": "mbed.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Read",
+      "referenceBlock": "stm32f769ilib/SPI Register Read",
+      "blockType": "mbed.SPIRegisterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Write",
+      "referenceBlock": "stm32f769ilib/SPI Register Write",
+      "blockType": "mbed.SPIRegisterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "TCP Receive",
+      "referenceBlock": "stm32f769ilib/TCP Receive",
+      "blockType": "stm32f746gdiscovery.TcpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "TCP Send",
+      "referenceBlock": "stm32f769ilib/TCP Send",
+      "blockType": "stm32f746gdiscovery.TcpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "stm32f769ilib/UDP Receive",
+      "blockType": "stm32f746gdiscovery.UdpReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "stm32f769ilib/UDP Send",
+      "blockType": "stm32f746gdiscovery.UdpSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "STM32L475VG-Discovery (B-L475E-IOT01A)",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32L475VG-Discovery (B-L475E-IOT01A)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discovery_Utilities_Blocks",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Analog Input",
+      "blockType": "mbed.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog Output",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Analog Output",
+      "blockType": "mbed.AnalogOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Digital Read",
+      "blockType": "mbed.DigitalRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Digital Write",
+      "blockType": "mbed.DigitalWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "External Interrupt",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/External Interrupt",
+      "blockType": "ExternalInterrupt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/I2C Controller Read",
+      "blockType": "mbed.I2CMasterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/I2C Controller Write",
+      "blockType": "mbed.I2CMasterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Client Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Modbus RS485 Client Read",
+      "blockType": "mbed.ModbusRS485ClientRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Client Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Modbus RS485 Client Write",
+      "blockType": "mbed.ModbusRS485ClientWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Server Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Modbus RS485 Server Read",
+      "blockType": "mbed.ModbusRS485ServerRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Modbus RS485 Server Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/Modbus RS485 Server Write",
+      "blockType": "mbed.ModbusRS485ServerWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/PWM Output",
+      "blockType": "mbed.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/SCI Read",
+      "blockType": "mbed.SCIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/SCI Write",
+      "blockType": "mbed.SCIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Controller Transfer",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/SPI Controller Transfer",
+      "blockType": "mbed.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/SPI Register Read",
+      "blockType": "mbed.SPIRegisterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/Common/SPI Register Write",
+      "blockType": "mbed.SPIRegisterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/Analog Input",
+      "blockType": "mbed.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/Digital Read",
+      "blockType": "mbed.DigitalRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/Digital Write",
+      "blockType": "mbed.DigitalWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Master Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/I2C Master Read",
+      "blockType": "mbed.I2CMasterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Master Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/I2C Master Write",
+      "blockType": "mbed.I2CMasterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/PWM Output",
+      "blockType": "mbed.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/SCI Read",
+      "blockType": "mbed.SCIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/SCI Write",
+      "blockType": "mbed.SCIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Master Transfer",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/SPI Master Transfer",
+      "blockType": "mbed.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/SPI Register Read",
+      "blockType": "mbed.SPIRegisterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/MBED Based Sensors/SPI Register Write",
+      "blockType": "mbed.SPIRegisterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/Analog Input",
+      "blockType": "mbed.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/Digital Read",
+      "blockType": "mbed.DigitalRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/Digital Write",
+      "blockType": "mbed.DigitalWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Master Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/I2C Master Read",
+      "blockType": "mbed.I2CMasterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Master Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/I2C Master Write",
+      "blockType": "mbed.I2CMasterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/PWM Output",
+      "blockType": "mbed.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/SCI Read",
+      "blockType": "mbed.SCIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/SCI Write",
+      "blockType": "mbed.SCIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Master Transfer",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/SPI Master Transfer",
+      "blockType": "mbed.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/SPI Register Read",
+      "blockType": "mbed.SPIRegisterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32F7/SPI Register Write",
+      "blockType": "mbed.SPIRegisterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/Analog Input",
+      "blockType": "mbed.AnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/Digital Read",
+      "blockType": "mbed.DigitalRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/Digital Write",
+      "blockType": "mbed.DigitalWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Master Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/I2C Master Read",
+      "blockType": "mbed.I2CMasterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "I2C Master Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/I2C Master Write",
+      "blockType": "mbed.I2CMasterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/PWM Output",
+      "blockType": "mbed.PWMOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/SCI Read",
+      "blockType": "mbed.SCIRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SCI Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/SCI Write",
+      "blockType": "mbed.SCIWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Master Transfer",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/SPI Master Transfer",
+      "blockType": "mbed.SPIMasterTransfer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Read",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/SPI Register Read",
+      "blockType": "mbed.SPIRegisterRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SPI Register Write",
+      "referenceBlock": "stm32nucleodiscoboardslib/STM32H7/SPI Register Write",
+      "blockType": "mbed.SPIRegisterWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "stm32lib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

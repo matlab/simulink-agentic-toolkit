@@ -1,0 +1,38 @@
+{
+  "commonBlocks": [
+    "Uncertain State Space"
+  ],
+  "categories": [
+    {
+      "name": "robust-control",
+      "description": "Uncertain system modeling and robust control visualization",
+      "keywords": [
+        "uncertain",
+        "robust",
+        "state space",
+        "multiplot",
+        "parametric"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "MultiPlot Graph",
+      "value": "robust-control"
+    },
+    {
+      "block": "Uncertain State Space",
+      "value": "robust-control"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "MultiPlot Graph",
+      "value": "Display multiple signals on a single graph with configurable axes — use for visualizing robust control performance metrics or comparing multiple response channels"
+    },
+    {
+      "block": "Uncertain State Space",
+      "value": "Model a state-space system with parametric uncertainty — use for simulating plants with uncertain parameters to test robust controller performance"
+    }
+  ]
+}

@@ -1,0 +1,927 @@
+{
+  "libraryName": "Driveline",
+  "generatedAt": "2026-08-19T14:30:52",
+  "blockCount": 101,
+  "blocks": [
+    {
+      "name": "10-Speed",
+      "referenceBlock": "sdl_lib/Transmissions/10-Speed",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "10-Speed",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Speed CR-CR",
+      "referenceBlock": "sdl_lib/Transmissions/4-Speed CR-CR",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "4-Speed CR-CR",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Speed Ravigneaux",
+      "referenceBlock": "sdl_lib/Transmissions/4-Speed Ravigneaux",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "4-Speed Ravigneaux",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6-Speed Lepelletier",
+      "referenceBlock": "sdl_lib/Transmissions/6-Speed Lepelletier",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6-Speed Lepelletier",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "7-Speed Lepelletier",
+      "referenceBlock": "sdl_lib/Transmissions/7-Speed Lepelletier",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "7-Speed Lepelletier",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "8-Speed",
+      "referenceBlock": "sdl_lib/Transmissions/8-Speed",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "8-Speed",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "9-Speed",
+      "referenceBlock": "sdl_lib/Transmissions/9-Speed",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "9-Speed",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Band Brake",
+      "referenceBlock": "sdl_lib/Brakes & Detents/Rotational/Band Brake",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Band Brake",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Disc Brake",
+      "referenceBlock": "sdl_lib/Brakes & Detents/Rotational/Disc Brake",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Disc Brake",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Shoe Brake",
+      "referenceBlock": "sdl_lib/Brakes & Detents/Rotational/Double-Shoe Brake",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Shoe Brake",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Loaded-Contact Rotational Friction",
+      "referenceBlock": "sdl_lib/Brakes & Detents/Rotational/Loaded-Contact Rotational Friction",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Loaded-Contact\nRotational Friction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Detent",
+      "referenceBlock": "sdl_lib/Brakes & Detents/Rotational/Rotational Detent",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Detent",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Loaded-Contact Translational Friction",
+      "referenceBlock": "sdl_lib/Brakes & Detents/Translational/Loaded-Contact Translational Friction",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Loaded-Contact\nTranslational\nFriction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Detent",
+      "referenceBlock": "sdl_lib/Brakes & Detents/Translational/Translational Detent",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Detent",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cone Clutch",
+      "referenceBlock": "sdl_lib/Clutches/Cone Clutch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cone Clutch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Disc Friction Clutch",
+      "referenceBlock": "sdl_lib/Clutches/Disc Friction Clutch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Disc Friction Clutch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dog Clutch",
+      "referenceBlock": "sdl_lib/Clutches/Dog Clutch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Dog Clutch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Sided Synchronizer",
+      "referenceBlock": "sdl_lib/Clutches/Double-Sided Synchronizer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Sided\nSynchronizer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logic-Controlled Clutch",
+      "referenceBlock": "sdl_lib/Clutches/Logic-Controlled Clutch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Logic-Controlled\nClutch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronizer",
+      "referenceBlock": "sdl_lib/Clutches/Synchronizer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronizer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unidirectional Clutch",
+      "referenceBlock": "sdl_lib/Clutches/Unidirectional Clutch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Unidirectional\nClutch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fundamental Friction Clutch",
+      "referenceBlock": "sdl_lib/Clutches/Fundamental Components/Fundamental Friction Clutch",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fundamental Friction\nClutch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Air Spring",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Air Spring",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Air Spring",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bearing",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Bearing",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Bearing",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Belt Drive",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Belt Drive",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Belt Drive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Belt Pulley",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Belt Pulley",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Belt Pulley",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cable",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Cable",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cable",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Chain Drive",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Chain Drive",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Chain Drive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flexible Shaft",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Flexible Shaft",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flexible Shaft",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rod",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Rod",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rod",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rope Drum",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Rope Drum",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rope Drum",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Shock Absorber",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Shock Absorber",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Shock Absorber",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torque Converter",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Torque Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Torque Converter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torsional Spring-Damper",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Torsional Spring-Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Torsional\nSpring-Damper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Universal Joint",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Universal Joint",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Universal Joint",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Ratio Transmission",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Variable Ratio Transmission",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Ratio\nTransmission",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Translational Damper",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Translational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Nonlinear\nTranslational Damper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Translational Spring",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Translational Spring",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Nonlinear\nTranslational Spring",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Rotational Damper",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Rotational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Nonlinear Rotational\nDamper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Rotational Spring",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Rotational Spring",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Nonlinear Rotational\nSpring",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Damper",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Rotational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Damper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Damper",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Translational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Damper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Translational Damper",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Translational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable\nTranslational Damper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Translational Spring",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Translational Spring",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable\nTranslational Spring",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Rotational Damper",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Rotational Damper",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Rotational\nDamper",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Rotational Spring",
+      "referenceBlock": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Rotational Spring",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Rotational\nSpring",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Aerodynamic Propeller",
+      "referenceBlock": "sdl_lib/Engines & Motors/Aerodynamic Propeller",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Aerodynamic\nPropeller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Generic Engine",
+      "referenceBlock": "sdl_lib/Engines & Motors/Generic Engine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Generic Engine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Marine Propeller",
+      "referenceBlock": "sdl_lib/Engines & Motors/Marine Propeller",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Marine Propeller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Motor & Drive",
+      "referenceBlock": "sdl_lib/Engines & Motors/Motor & Drive",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Motor & Drive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piston",
+      "referenceBlock": "sdl_lib/Engines & Motors/Piston",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piston",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Piston Engine",
+      "referenceBlock": "sdl_lib/Engines & Motors/Piston Engine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Piston Engine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spark Ignition Engine",
+      "referenceBlock": "sdl_lib/Engines & Motors/Spark Ignition Engine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Spark Ignition\nEngine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wind Turbine",
+      "referenceBlock": "sdl_lib/Engines & Motors/Wind Turbine",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Wind Turbine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Air Intake",
+      "referenceBlock": "sdl_lib/Engines & Motors/Engine Subcomponents/Air Intake",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Air Intake",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Crankshaft",
+      "referenceBlock": "sdl_lib/Engines & Motors/Engine Subcomponents/Crankshaft",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Crankshaft",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Exhaust Manifold Thermal",
+      "referenceBlock": "sdl_lib/Engines & Motors/Engine Subcomponents/Exhaust Manifold Thermal",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Exhaust Manifold\nThermal",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ignition Trigger",
+      "referenceBlock": "sdl_lib/Engines & Motors/Engine Subcomponents/Ignition Trigger",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ignition Trigger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SI Combustion Cylinder",
+      "referenceBlock": "sdl_lib/Engines & Motors/Engine Subcomponents/SI Combustion Cylinder",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "SI Combustion\nCylinder",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compound Planetary Gear",
+      "referenceBlock": "sdl_lib/Gears/Compound Planetary Gear",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Compound Planetary\nGear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cycloidal Drive",
+      "referenceBlock": "sdl_lib/Gears/Cycloidal Drive",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cycloidal Drive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Differential",
+      "referenceBlock": "sdl_lib/Gears/Differential",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Differential",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Pinion Planetary Gear",
+      "referenceBlock": "sdl_lib/Gears/Double-Pinion Planetary Gear",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Pinion\nPlanetary Gear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Harmonic Drive",
+      "referenceBlock": "sdl_lib/Gears/Harmonic Drive",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Harmonic Drive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Limited-Slip Differential",
+      "referenceBlock": "sdl_lib/Gears/Limited-Slip Differential",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Limited-Slip\nDifferential",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Planetary Gear",
+      "referenceBlock": "sdl_lib/Gears/Planetary Gear",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Planetary Gear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ravigneaux Gear",
+      "referenceBlock": "sdl_lib/Gears/Ravigneaux Gear",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ravigneaux Gear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Gear",
+      "referenceBlock": "sdl_lib/Gears/Simple Gear",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Simple Gear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Gear with Variable Efficiency",
+      "referenceBlock": "sdl_lib/Gears/Simple Gear with Variable Efficiency",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Simple Gear with\nVariable Efficiency",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transmission",
+      "referenceBlock": "sdl_lib/Gears/Transmission",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Transmission",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Worm Gear",
+      "referenceBlock": "sdl_lib/Gears/Worm Gear",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Worm Gear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Planet-Planet",
+      "referenceBlock": "sdl_lib/Gears/Planetary Subcomponents/Planet-Planet",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Planet-Planet",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ring-Planet",
+      "referenceBlock": "sdl_lib/Gears/Planetary Subcomponents/Ring-Planet",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ring-Planet",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sun-Planet",
+      "referenceBlock": "sdl_lib/Gears/Planetary Subcomponents/Sun-Planet",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sun-Planet",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sun-Planet Bevel",
+      "referenceBlock": "sdl_lib/Gears/Planetary Subcomponents/Sun-Planet Bevel",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sun-Planet Bevel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sun-Planet Worm Gear",
+      "referenceBlock": "sdl_lib/Gears/Planetary Subcomponents/Sun-Planet Worm Gear",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sun-Planet Worm Gear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Leadscrew",
+      "referenceBlock": "sdl_lib/Gears/Rotational- Translational/Leadscrew",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Leadscrew",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rack & Pinion",
+      "referenceBlock": "sdl_lib/Gears/Rotational- Translational/Rack & Pinion",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rack & Pinion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unbalanced Load",
+      "referenceBlock": "sdl_lib/Inertias & Loads/Unbalanced Load",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Unbalanced Load",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Inertia",
+      "referenceBlock": "sdl_lib/Inertias & Loads/Variable Inertia",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Inertia",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Mass",
+      "referenceBlock": "sdl_lib/Inertias & Loads/Variable Mass",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Mass",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Power Sensor",
+      "referenceBlock": "sdl_lib/Sensors/Rotational Power Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Power\nSensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Power Sensor",
+      "referenceBlock": "sdl_lib/Sensors/Translational Power Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational Power\nSensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery (System-Level)",
+      "referenceBlock": "sdl_lib/Sources/Battery (System-Level)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Battery\n(System-Level)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Force Noise Source",
+      "referenceBlock": "sdl_lib/Sources/Force Noise Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Force Noise Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Velocity Noise Source",
+      "referenceBlock": "sdl_lib/Sources/Rotational Velocity Noise Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotational Velocity\nNoise Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Rotational Velocity Source",
+      "referenceBlock": "sdl_lib/Sources/Sinusoidal Rotational Velocity Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sinusoidal\nRotational Velocity\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Translational Velocity Source",
+      "referenceBlock": "sdl_lib/Sources/Sinusoidal Translational Velocity Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sinusoidal\nTranslational\nVelocity Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Force Source",
+      "referenceBlock": "sdl_lib/Sources/Sinusoidal Force Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sinusoidal Force\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinusoidal Torque Source",
+      "referenceBlock": "sdl_lib/Sources/Sinusoidal Torque Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Sinusoidal Torque\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torque Noise Source",
+      "referenceBlock": "sdl_lib/Sources/Torque Noise Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Torque Noise Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Translational Velocity Noise Source",
+      "referenceBlock": "sdl_lib/Sources/Translational Velocity Noise Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Translational\nVelocity Noise\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Longitudinal Vehicle",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Longitudinal Vehicle",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Longitudinal Vehicle",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Road Profile",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Road Profile",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Road Profile",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-Axle Vehicle Body",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Three-Axle Vehicle Body",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Three-Axle Vehicle\nBody",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tire (Friction Parameterized)",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Tire (Friction Parameterized)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tire (Friction\nParameterized)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tire (Magic Formula)",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Tire (Magic Formula)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tire (Magic Formula)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tire (Simple)",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Tire (Simple)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tire (Simple)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle Body",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Vehicle Body",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Vehicle Body",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rolling Resistance",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Tire Subcomponents/Rolling Resistance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rolling Resistance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tire-Road Interaction (Magic Formula)",
+      "referenceBlock": "sdl_lib/Tires & Vehicles/Tire Subcomponents/Tire-Road Interaction (Magic Formula)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tire-Road\nInteraction (Magic\nFormula)",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

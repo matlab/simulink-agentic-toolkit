@@ -1,0 +1,199 @@
+{
+  "commonBlocks": [
+    "Channels",
+    "Modulation",
+    "Error Detection and Correction",
+    "Comm Filters",
+    "Comm Sources",
+    "Comm Sinks"
+  ],
+  "categories": [
+    {
+      "name": "channel-modeling",
+      "description": "Wireless channel models and propagation effects",
+      "keywords": [
+        "channel",
+        "fading",
+        "awgn",
+        "multipath",
+        "propagation"
+      ]
+    },
+    {
+      "name": "modulation-coding",
+      "description": "Modulation, demodulation, error correction, and interleaving",
+      "keywords": [
+        "modulation",
+        "qam",
+        "ofdm",
+        "fec",
+        "ldpc"
+      ]
+    },
+    {
+      "name": "signal-processing",
+      "description": "Filters, equalizers, synchronization, and sequence operations",
+      "keywords": [
+        "filter",
+        "equalizer",
+        "synchronization",
+        "sequence",
+        "spreading"
+      ]
+    },
+    {
+      "name": "rf-hardware",
+      "description": "RF impairment modeling and correction",
+      "keywords": [
+        "rf",
+        "impairment",
+        "iq",
+        "phase",
+        "noise"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Sources, sinks, demos, and helper blocks",
+      "keywords": [
+        "source",
+        "sink",
+        "demo",
+        "utility",
+        "conversion"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Channels",
+      "value": "channel-modeling"
+    },
+    {
+      "block": "Comm Filters",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Comm Sinks",
+      "value": "utilities"
+    },
+    {
+      "block": "Comm Sources",
+      "value": "utilities"
+    },
+    {
+      "block": "Demos",
+      "value": "utilities"
+    },
+    {
+      "block": "Equalizers",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Error Detection and Correction",
+      "value": "modulation-coding"
+    },
+    {
+      "block": "Interleaving",
+      "value": "modulation-coding"
+    },
+    {
+      "block": "MIMO",
+      "value": "modulation-coding"
+    },
+    {
+      "block": "Modulation",
+      "value": "modulation-coding"
+    },
+    {
+      "block": "RF Impairments Correction",
+      "value": "rf-hardware"
+    },
+    {
+      "block": "RF Impairments and Components",
+      "value": "rf-hardware"
+    },
+    {
+      "block": "Sequence Operations",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Source Coding",
+      "value": "modulation-coding"
+    },
+    {
+      "block": "Synchronization",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Utility Blocks",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Channels",
+      "value": "Model wireless propagation channels including AWGN, fading, and multipath effects — use to simulate realistic signal degradation between transmitter and receiver"
+    },
+    {
+      "block": "Comm Filters",
+      "value": "Apply communications-specific filters such as raised cosine, Gaussian, and matched filters — use for pulse shaping at the transmitter or matched filtering at the receiver"
+    },
+    {
+      "block": "Comm Sinks",
+      "value": "Display and analyze communications signals with eye diagrams, constellation plots, and BER meters — use for visual inspection and performance measurement of comm links"
+    },
+    {
+      "block": "Comm Sources",
+      "value": "Generate communications test signals including random data, PN sequences, and standard waveforms — use as input to modulation and coding blocks during link simulation"
+    },
+    {
+      "block": "Demos",
+      "value": "Access demonstration models showcasing Communications Toolbox workflows — use as reference implementations for modem design and link-level simulation"
+    },
+    {
+      "block": "Equalizers",
+      "value": "Compensate for channel distortion using adaptive equalizers (LMS, RLS, decision feedback) — use to recover data from ISI-corrupted received signals in frequency-selective channels"
+    },
+    {
+      "block": "Error Detection and Correction",
+      "value": "Encode and decode data with forward error correction codes (convolutional, turbo, LDPC, Reed-Solomon) — use to add redundancy that enables error-free reception at lower SNR"
+    },
+    {
+      "block": "Interleaving",
+      "value": "Reorder data bits or symbols to spread burst errors across multiple codewords — use between coding and modulation to convert burst errors into random errors for FEC effectiveness"
+    },
+    {
+      "block": "MIMO",
+      "value": "Implement multiple-input multiple-output antenna processing (spatial multiplexing, beamforming, space-time coding) — use to increase throughput or reliability in multi-antenna systems"
+    },
+    {
+      "block": "Modulation",
+      "value": "Map digital data to analog waveforms (QAM, PSK, FSK, OFDM) and demodulate received signals — use as the core physical-layer mapping between bits and transmitted symbols"
+    },
+    {
+      "block": "RF Impairments Correction",
+      "value": "Correct RF front-end impairments such as I/Q imbalance, DC offset, and carrier frequency offset — use at the receiver to compensate for hardware non-idealities before demodulation"
+    },
+    {
+      "block": "RF Impairments and Components",
+      "value": "Model RF front-end impairments including phase noise, nonlinear amplifiers, and I/Q imbalance — use to evaluate system robustness to realistic transmitter and receiver hardware effects"
+    },
+    {
+      "block": "Sequence Operations",
+      "value": "Generate and manipulate pseudorandom sequences (Gold, Kasami, PN) and perform spreading/despreading — use for CDMA, scrambling, or synchronization sequence generation"
+    },
+    {
+      "block": "Source Coding",
+      "value": "Compress and decompress data using source coding algorithms (Huffman, arithmetic, quantization) — use to reduce data rate before channel coding in bandwidth-constrained links"
+    },
+    {
+      "block": "Synchronization",
+      "value": "Recover timing, frequency, and frame synchronization from received signals — use to align the receiver clock and carrier with the incoming waveform before demodulation"
+    },
+    {
+      "block": "Utility Blocks",
+      "value": "Perform common communications operations like bit-to-integer conversion, constellation mapping, and signal resampling — use as helper blocks connecting major processing stages"
+    }
+  ]
+}

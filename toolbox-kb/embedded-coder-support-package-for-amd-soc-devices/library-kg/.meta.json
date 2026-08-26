@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.74455849535,
+  "generatorVersion": 4,
+  "libraries": [
+    "Embedded Coder Support Package for AMD SoC Devices"
+  ],
+  "blockCount": 9,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Embedded_Coder_Support_Package_for_AMD_SoC_Devices": {
+      "blockCount": 9
+    }
+  }
+}

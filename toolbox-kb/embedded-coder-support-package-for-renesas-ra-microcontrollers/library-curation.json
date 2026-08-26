@@ -1,0 +1,107 @@
+{
+  "commonBlocks": [
+    "Analog To Digital Converter",
+    "Digital Port Pins Read",
+    "Digital Port Pins Write",
+    "PWM Output",
+    "Three-Phase PWM"
+  ],
+  "categories": [
+    {
+      "name": "analog-io",
+      "description": "Analog input/output peripherals on Renesas RA",
+      "keywords": [
+        "adc",
+        "dac",
+        "analog",
+        "converter",
+        "voltage"
+      ]
+    },
+    {
+      "name": "digital-io",
+      "description": "Digital GPIO and port pin access on Renesas RA",
+      "keywords": [
+        "gpio",
+        "digital",
+        "pin",
+        "read",
+        "write"
+      ]
+    },
+    {
+      "name": "communication",
+      "description": "Serial communication interfaces on Renesas RA",
+      "keywords": [
+        "spi",
+        "i2c",
+        "serial",
+        "bus",
+        "transfer"
+      ]
+    },
+    {
+      "name": "timing",
+      "description": "Timer and interrupt management on Renesas RA",
+      "keywords": [
+        "timer",
+        "interrupt",
+        "pwm",
+        "isr",
+        "gpt"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Analog To Digital Converter",
+      "value": "analog-io"
+    },
+    {
+      "block": "Digital Port Pins Read",
+      "value": "digital-io"
+    },
+    {
+      "block": "Digital Port Pins Write",
+      "value": "digital-io"
+    },
+    {
+      "block": "Hardware Interrupt",
+      "value": "timing"
+    },
+    {
+      "block": "PWM Output",
+      "value": "timing"
+    },
+    {
+      "block": "Three-Phase PWM",
+      "value": "timing"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Analog To Digital Converter",
+      "value": "Read analog input channels via the ADC peripheral on Renesas RA — use for sampling sensor voltages or analog signals in embedded control applications"
+    },
+    {
+      "block": "Digital Port Pins Read",
+      "value": "Read digital GPIO pin states on Renesas RA — use for reading switches, encoders, or digital sensor inputs"
+    },
+    {
+      "block": "Digital Port Pins Write",
+      "value": "Write digital GPIO pin states on Renesas RA — use for controlling LEDs, relays, or digital output signals"
+    },
+    {
+      "block": "Hardware Interrupt",
+      "value": "Configure hardware interrupt service routines on Renesas RA MCUs — use for triggering function-call subsystems from peripheral interrupts"
+    },
+    {
+      "block": "PWM Output",
+      "value": "Generate PWM signals on Renesas RA timer outputs — use for motor control, LED dimming, or servo positioning"
+    },
+    {
+      "block": "Three-Phase PWM",
+      "value": "Generate three-phase PWM waveforms on Renesas RA — use for driving BLDC motors or three-phase inverters in motor control applications"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "libraryName": "Industrial Communication Toolbox",
+  "generatedAt": "2026-08-19T14:31:00",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "MQTT Client Publish",
+      "referenceBlock": "mqttlib/MQTT Client Publish",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MQTTPublish",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "MQTT Client Subscribe",
+      "referenceBlock": "mqttlib/MQTT Client Subscribe",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MQTTSubscribe",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Modbus Client Read",
+      "referenceBlock": "modbuslib/Modbus Client Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "modbusRead",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Modbus Client Write",
+      "referenceBlock": "modbuslib/Modbus Client Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "modbusWrite",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "OPC UA Read",
+      "referenceBlock": "opcualib/OPC UA Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "opcUARead",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "OPC UA Write",
+      "referenceBlock": "opcualib/OPC UA Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "opcUAWrite",
+      "introducedIn": "2024a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

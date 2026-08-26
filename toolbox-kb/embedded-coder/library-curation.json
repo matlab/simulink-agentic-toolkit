@@ -1,0 +1,166 @@
+{
+  "commonBlocks": [
+    "Serial Receive",
+    "Serial Send",
+    "UDP Receive",
+    "UDP Send",
+    "CAN Pack",
+    "CAN Unpack"
+  ],
+  "categories": [
+    {
+      "name": "configuration-wizards",
+      "description": "Code generation configuration wizards for different target types and optimization goals",
+      "keywords": [
+        "ert",
+        "grt",
+        "configuration",
+        "wizard",
+        "codegen"
+      ]
+    },
+    {
+      "name": "host-communication",
+      "description": "Host-target communication blocks for serial, CAN, and UDP data exchange",
+      "keywords": [
+        "serial",
+        "udp",
+        "can",
+        "byte",
+        "communication"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Blockset Name2",
+      "value": "configuration-wizards"
+    },
+    {
+      "block": "Byte Pack",
+      "value": "host-communication"
+    },
+    {
+      "block": "Byte Reversal",
+      "value": "host-communication"
+    },
+    {
+      "block": "Byte Unpack",
+      "value": "host-communication"
+    },
+    {
+      "block": "CAN Pack",
+      "value": "host-communication"
+    },
+    {
+      "block": "CAN Unpack",
+      "value": "host-communication"
+    },
+    {
+      "block": "Custom MATLAB file",
+      "value": "configuration-wizards"
+    },
+    {
+      "block": "ERT (optimized for fixed-point)",
+      "value": "configuration-wizards"
+    },
+    {
+      "block": "ERT (optimized for floating-point)",
+      "value": "configuration-wizards"
+    },
+    {
+      "block": "GRT (debug for fixed/floating-point)",
+      "value": "configuration-wizards"
+    },
+    {
+      "block": "GRT (optimized for fixed/floating-point)",
+      "value": "configuration-wizards"
+    },
+    {
+      "block": "Serial Configuration",
+      "value": "host-communication"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "host-communication"
+    },
+    {
+      "block": "Serial Send",
+      "value": "host-communication"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "host-communication"
+    },
+    {
+      "block": "UDP Send",
+      "value": "host-communication"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Blockset Name2",
+      "value": "Library identification label — internal library element, not used in application models"
+    },
+    {
+      "block": "Byte Pack",
+      "value": "Pack multiple signals into a byte array for serial or network transmission — use to construct communication payloads with specified byte order and alignment for host-target data exchange"
+    },
+    {
+      "block": "Byte Reversal",
+      "value": "Reverse byte order of a multi-byte value between big-endian and little-endian — use when communicating between processors with different endianness"
+    },
+    {
+      "block": "Byte Unpack",
+      "value": "Extract signals from a byte array received via serial or network — use to parse communication payloads back into individual signal values with correct data type interpretation"
+    },
+    {
+      "block": "CAN Pack",
+      "value": "Pack signal values into a CAN message data field — use to encode multiple signals into 8-byte CAN payloads for transmission from the embedded target"
+    },
+    {
+      "block": "CAN Unpack",
+      "value": "Extract signal values from a received CAN message data field — use to decode individual signals from CAN payloads received on the embedded target"
+    },
+    {
+      "block": "Custom MATLAB file",
+      "value": "Configuration wizard using a custom MATLAB script to set model parameters — use when standard wizards do not match your target and you need full control over code generation settings"
+    },
+    {
+      "block": "ERT (optimized for fixed-point)",
+      "value": "Configuration wizard that sets model parameters for optimized Embedded Real-Time code generation targeting fixed-point processors — use to quickly configure a model for production-quality fixed-point C code"
+    },
+    {
+      "block": "ERT (optimized for floating-point)",
+      "value": "Configuration wizard that sets model parameters for optimized Embedded Real-Time code generation targeting floating-point processors — use to quickly configure a model for efficient floating-point embedded C code"
+    },
+    {
+      "block": "GRT (debug for fixed/floating-point)",
+      "value": "Configuration wizard for Generic Real-Time target with debugging enabled — use during development when code traceability and debugging are more important than code size optimization"
+    },
+    {
+      "block": "GRT (optimized for fixed/floating-point)",
+      "value": "Configuration wizard for Generic Real-Time target with optimizations enabled — use for rapid prototyping on generic targets with reasonable code efficiency"
+    },
+    {
+      "block": "Serial Configuration",
+      "value": "Configure serial port parameters on the embedded target — use to set baud rate, parity, and framing before using Serial Receive/Send blocks for host communication"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "Receive data bytes from the serial port on the embedded target — use for host-target communication during rapid prototyping or external mode data logging"
+    },
+    {
+      "block": "Serial Send",
+      "value": "Send data bytes through the serial port on the embedded target — use for host-target communication during rapid prototyping or parameter tuning"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP datagrams on the embedded target — use for network-based host-target communication or inter-processor data exchange over Ethernet"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP datagrams from the embedded target — use for network-based telemetry, logging, or inter-processor communication over Ethernet"
+    }
+  ]
+}

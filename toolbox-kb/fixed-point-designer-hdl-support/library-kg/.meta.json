@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456263892,
+  "generatorVersion": 4,
+  "libraries": [
+    "Fixed-Point Designer HDL Support"
+  ],
+  "blockCount": 52,
+  "categoryCount": 3,
+  "libraryFingerprints": {
+    "Fixed_Point_Designer_HDL_Support": {
+      "blockCount": 52
+    }
+  }
+}

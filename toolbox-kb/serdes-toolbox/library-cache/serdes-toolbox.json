@@ -1,0 +1,81 @@
+{
+  "libraryName": "SerDes Toolbox",
+  "generatedAt": "2026-08-19T14:31:09",
+  "blockCount": 7,
+  "blocks": [
+    {
+      "name": "Automatic Gain Control",
+      "referenceBlock": "serdesTopLevel/Datapath Blocks/Automatic Gain Control",
+      "blockType": "serdes.AGC",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clock Data Recovery",
+      "referenceBlock": "serdesTopLevel/Datapath Blocks/Clock Data Recovery",
+      "blockType": "serdes.CDR",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Decision Feedback Equalizer w/ CDR",
+      "referenceBlock": "serdesTopLevel/Datapath Blocks/Decision Feedback Equalizer w/ CDR",
+      "blockType": "serdes.DFECDR",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Feed-Forward Equalizer",
+      "referenceBlock": "serdesTopLevel/Datapath Blocks/Feed-Forward Equalizer",
+      "blockType": "serdes.FFE",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Saturating Amplifier",
+      "referenceBlock": "serdesTopLevel/Datapath Blocks/Saturating Amplifier",
+      "blockType": "serdes.SatAmp",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transparent Pass-Through",
+      "referenceBlock": "serdesTopLevel/Datapath Blocks/Transparent Pass-Through",
+      "blockType": "serdes.Transparent",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Gain Amplifier",
+      "referenceBlock": "serdesTopLevel/Datapath Blocks/Variable Gain Amplifier",
+      "blockType": "serdes.VGA",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

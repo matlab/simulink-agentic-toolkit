@@ -23,7 +23,7 @@ Register or update custom Simulink block libraries so the agent prefers them ove
 
 - User wants to **create** a custom library from scratch (author new blocks, build a new `.slx` library file) → use `building-simulink-models` skill with `model_edit` directly. This skill only *registers* existing libraries; it cannot create library content.
 - Only configuring block exclusions or parameter protection (libraries already declared) → `configuring-block-policy`
-- Only curating block descriptions/categories (libraries already declared) → `curating-library-kg`
+- Only curating block descriptions/categories (libraries already declared) → `simulink-curating-library-kg`
 
 ## Workflow
 
@@ -51,20 +51,20 @@ Follow `references/library-setup.md` for all gate API details — it is the sing
 
 **Gate 2 — Block policy:** If `.satk/block-policy.json` is missing, STOP and ask the user about policy setup by following `references/library-setup.md`. Do not proceed until policy is resolved.
 
-**Gate 3 — Library blocks knowledge index:** If the KB is empty (index.md contains `populated: false`) or missing, STOP and ask the user whether to index their library blocks so the agent knows which blocks are available during model building. Offer two options: **Automatic** (agent infers categories/descriptions autonomously) or **Guided setup** (interactive curation). Both invoke the `curating-library-kg` skill. Follow `references/library-setup.md` for details. Do not proceed until KG generation completes.
+**Gate 3 — Library blocks knowledge index:** If the KB is empty (index.md contains `populated: false`) or missing, STOP and ask the user whether to index their library blocks so the agent knows which blocks are available during model building. Offer two options: **Automatic** (agent infers categories/descriptions autonomously) or **Guided setup** (interactive curation). Both invoke the `simulink-curating-library-kg` skill. Follow `references/library-setup.md` for details. Do not proceed until KG generation completes.
 
 ### Management menu (config already complete)
 
 Retrieve and display the user's current configuration status using the APIs in `references/library-setup.md` § "Status Display (Management Menu)". Show library names/paths, policy mode with fallback, and KG block/category counts. Then offer:
 
-- **(a) Add or remove libraries** — load existing config via `library.LibraryConfig.load(dataRoot)`, append/remove entries, save via `library.LibraryConfig.save(dataRoot, allLibs)`, then invoke `curating-library-kg` skill (automatic mode) to regenerate KG.
+- **(a) Add or remove libraries** — load existing config via `library.LibraryConfig.load(dataRoot)`, append/remove entries, save via `library.LibraryConfig.save(dataRoot, allLibs)`, then invoke `simulink-curating-library-kg` skill (automatic mode) to regenerate KG.
 - **(b) Update block policy** — load `configuring-block-policy` skill.
 - **(c) Promote config to prefdir** — only show if tier is `project` or `legacy`. Copy `.satk/` folder to `prefdir/.satk/` (expand relative paths to absolute). See `references/library-setup.md` § "Gate 1" for the promote API.
-- **(d) Regenerate knowledge index** — load `curating-library-kg` skill.
+- **(d) Regenerate knowledge index** — load `simulink-curating-library-kg` skill.
 
 ### Adding files to existing config
 
-When `satk-libraries.json` already exists with declared libraries: read the existing config, append the new library entries, save via `library.LibraryConfig.save()`, then invoke the `curating-library-kg` skill (automatic mode) to infer categories/descriptions for the new blocks and regenerate the knowledge index.
+When `satk-libraries.json` already exists with declared libraries: read the existing config, append the new library entries, save via `library.LibraryConfig.save()`, then invoke the `simulink-curating-library-kg` skill (automatic mode) to infer categories/descriptions for the new blocks and regenerate the knowledge index.
 
 ## Guardrails
 

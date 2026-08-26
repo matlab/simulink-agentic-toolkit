@@ -1,0 +1,72 @@
+{
+  "libraryName": "Simulink Design Verifier Temporal Pattern Blocks",
+  "generatedAt": "2026-08-19T14:31:13",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "atleast_n",
+      "referenceBlock": "sldvpatternlib/atleast_n",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Atleast n",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "atmost_n",
+      "referenceBlock": "sldvpatternlib/atmost_n",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Atmost 'n'",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "check_at_n",
+      "referenceBlock": "sldvpatternlib/check_at_n",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Check at 'n'th step",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "p_until_q",
+      "referenceBlock": "sldvpatternlib/p_until_q",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "p until q",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "time_elapse",
+      "referenceBlock": "sldvpatternlib/time_elapse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Time elapse 'n' steps",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "within_n",
+      "referenceBlock": "sldvpatternlib/within_n",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Within 'n' steps",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,738 @@
+{
+  "libraryName": "Motor Control Blockset",
+  "generatedAt": "2026-08-18T15:27:48",
+  "blockCount": 80,
+  "blocks": [
+    {
+      "name": "ACIM Control Reference",
+      "referenceBlock": "mcblib/Controls/Control Reference/ACIM Control Reference",
+      "blockType": "ACIMControlReference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ACIM Feed Forward Control",
+      "referenceBlock": "mcblib/Controls/Control Reference/ACIM Feed Forward Control",
+      "blockType": "ACIMFeedForwardControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ACIM Slip Speed Estimator",
+      "referenceBlock": "mcblib/Controls/Control Reference/ACIM Slip Speed Estimator",
+      "blockType": "ACIMSlipSpeedEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ACIM Torque Estimator",
+      "referenceBlock": "mcblib/Controls/Control Reference/ACIM Torque Estimator",
+      "blockType": "ACIMTorqueEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DQ Limiter",
+      "referenceBlock": "mcblib/Controls/Control Reference/DQ Limiter",
+      "blockType": "DQLimiter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LUT based ACIM Control Reference",
+      "referenceBlock": "mcblib/Controls/Control Reference/LUT based ACIM Control Reference",
+      "blockType": "LUTbasedACIMControlReference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LUT based PMSM Control Reference",
+      "referenceBlock": "mcblib/Controls/Control Reference/LUT based PMSM Control Reference",
+      "blockType": "LUTbasedPMSMControlReference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LUT based SynRM Control Reference",
+      "referenceBlock": "mcblib/Controls/Control Reference/LUT based SynRM Control Reference",
+      "blockType": "LUTbasedSynRMControlReference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "MTPA Control Reference",
+      "referenceBlock": "mcblib/Controls/Control Reference/MTPA Control Reference",
+      "blockType": "MTPAControlReference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM FeedForward Control",
+      "referenceBlock": "mcblib/Controls/Control Reference/PMSM FeedForward Control",
+      "blockType": "PMSMFeedForwardControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PMSM Torque Estimator",
+      "referenceBlock": "mcblib/Controls/Control Reference/PMSM Torque Estimator",
+      "blockType": "PMSMTorqueEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Position Generator",
+      "referenceBlock": "mcblib/Controls/Control Reference/Position Generator",
+      "blockType": "PositionGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SRM Commutation",
+      "referenceBlock": "mcblib/Controls/Control Reference/SRM Commutation",
+      "blockType": "SRMCommutation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Six Step Commutation",
+      "referenceBlock": "mcblib/Controls/Control Reference/Six Step Commutation",
+      "blockType": "Six-StepCommutation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SynRM FeedForward Control",
+      "referenceBlock": "mcblib/Controls/Control Reference/SynRM FeedForward Control",
+      "blockType": "SynRMFeedForwardControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "SynRM Torque Estimator",
+      "referenceBlock": "mcblib/Controls/Control Reference/SynRM Torque Estimator",
+      "blockType": "SynRMTorqueEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Vector Control Reference",
+      "referenceBlock": "mcblib/Controls/Control Reference/Vector Control Reference",
+      "blockType": "VectorControlReference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Derating Function",
+      "referenceBlock": "mcblib/Controls/Controllers/Derating Function",
+      "blockType": "DeratingFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FOC Default Controller Gains",
+      "referenceBlock": "mcblib/Controls/Controllers/FOC Default Controller Gains",
+      "blockType": "FOCDefaultControllerGains",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Field Oriented Control Autotuner",
+      "referenceBlock": "mcblib/Controls/Controllers/Field Oriented Control Autotuner",
+      "blockType": "FOCAutoTuner",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Field-Oriented Current Controller",
+      "referenceBlock": "mcblib/Controls/Controllers/Field-Oriented Current Controller",
+      "blockType": "Field-OrientedCurrentController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "I-F Controller",
+      "referenceBlock": "mcblib/Controls/Controllers/I-F Controller",
+      "blockType": "I-FController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "PI Controller",
+      "referenceBlock": "mcblib/Controls/Controllers/PI Controller",
+      "blockType": "PIDController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensorless Six-Step Commutation",
+      "referenceBlock": "mcblib/Controls/Controllers/Sensorless Six-Step Commutation",
+      "blockType": "SensorlessSix-StepCommutation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "VbyF Controller",
+      "referenceBlock": "mcblib/Controls/Controllers/VbyF Controller",
+      "blockType": "V/FController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "3-Phase Sine Voltage Generator",
+      "referenceBlock": "mcblib/Controls/Math Transforms/3-Phase Sine Voltage Generator",
+      "blockType": "3-PhaseSineVoltageGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6-Phase Inverse VSD Transform",
+      "referenceBlock": "mcblib/Controls/Math Transforms/6-Phase Inverse VSD Transform",
+      "blockType": "6-PhaseInverseVSDTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "6-Phase VSD Transform",
+      "referenceBlock": "mcblib/Controls/Math Transforms/6-Phase VSD Transform",
+      "blockType": "6-PhaseVSDTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Clarke Transform",
+      "referenceBlock": "mcblib/Controls/Math Transforms/Clarke Transform",
+      "blockType": "ClarkeTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Clarke Transform",
+      "referenceBlock": "mcblib/Controls/Math Transforms/Inverse Clarke Transform",
+      "blockType": "InverseClarkeTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Park Transform",
+      "referenceBlock": "mcblib/Controls/Math Transforms/Inverse Park Transform",
+      "blockType": "ParktoClarkeAngleTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Phase Shift for Single Shunt FOC",
+      "referenceBlock": "mcblib/Controls/Math Transforms/PWM Phase Shift for Single Shunt FOC",
+      "blockType": "PWMPhaseShiftforSingleShuntFOC",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Reference Generator",
+      "referenceBlock": "mcblib/Controls/Math Transforms/PWM Reference Generator",
+      "blockType": "PWMModulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Park Transform",
+      "referenceBlock": "mcblib/Controls/Math Transforms/Park Transform",
+      "blockType": "ClarketoParkAngleTransform",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Phase Current Extractor for Single Shunt FOC",
+      "referenceBlock": "mcblib/Controls/Math Transforms/Phase Current Extractor for Single Shunt FOC",
+      "blockType": "PhaseCurrentExtractorforSingleShuntFOC",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "SinCos Embedded Optimized",
+      "referenceBlock": "mcblib/Controls/Math Transforms/SinCos Embedded Optimized",
+      "blockType": "SinCosEmbeddedOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "atan2",
+      "referenceBlock": "mcblib/Controls/Math Transforms/atan2",
+      "blockType": "atan2",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Average-Value Inverter",
+      "referenceBlock": "mcblib/Electrical Systems/Inverters/Average-Value Inverter",
+      "blockType": "AverageValueInverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BLDC Average-Value Inverter",
+      "referenceBlock": "mcblib/Electrical Systems/Inverters/BLDC Average-Value Inverter",
+      "blockType": "BLDCAverageValueInverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "BLDC",
+      "referenceBlock": "mcblib/Electrical Systems/Motors/BLDC",
+      "blockType": "BLDC",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Motor",
+      "referenceBlock": "mcblib/Electrical Systems/Motors/Induction Motor",
+      "blockType": "InductionMotor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interior PMSM",
+      "referenceBlock": "mcblib/Electrical Systems/Motors/Interior PMSM",
+      "blockType": "InteriorPMSM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Surface Mount PMSM",
+      "referenceBlock": "mcblib/Electrical Systems/Motors/Surface Mount PMSM",
+      "blockType": "SurfaceMountPMSM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Id0 Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Id0 Estimator",
+      "blockType": "Id0Estimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mechanical Parameter Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Mechanical Parameter Estimator",
+      "blockType": "MechanicalParameterEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Parameter Estimation Configurator",
+      "referenceBlock": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Parameter Estimation Configurator",
+      "blockType": "ACIMParameterEstimationConfigurator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rr L Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Rr L Estimator",
+      "blockType": "RrLEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rs Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Rs Estimator",
+      "blockType": "RsEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ld Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Ld Estimator",
+      "blockType": "LdEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lq Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Lq Estimator",
+      "blockType": "LqEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mechanical Parameter Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Mechanical Parameter Estimator",
+      "blockType": "PMSMMechanicalParameterEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Parameter Estimation Configurator",
+      "referenceBlock": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Parameter Estimation Configurator",
+      "blockType": "PMSMParameterEstimationConfigurator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rs Estimator",
+      "referenceBlock": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Rs Estimator",
+      "blockType": "RsEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Host Serial Receive",
+      "referenceBlock": "mcblib/Protection and Diagnostics/Host Serial Receive",
+      "blockType": "system.SerialReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Host Serial Setup",
+      "referenceBlock": "mcblib/Protection and Diagnostics/Host Serial Setup",
+      "blockType": "system.SerialConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Host Serial Transmit",
+      "referenceBlock": "mcblib/Protection and Diagnostics/Host Serial Transmit",
+      "blockType": "system.SerialSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Protection Relay",
+      "referenceBlock": "mcblib/Protection and Diagnostics/Protection Relay",
+      "blockType": "ProtectionRelay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hall Speed and Position",
+      "referenceBlock": "mcblib/Sensor Decoders/Hall Speed and Position",
+      "blockType": "HallSpeedandPosition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hall Validity",
+      "referenceBlock": "mcblib/Sensor Decoders/Hall Validity",
+      "blockType": "HallValidity",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mechanical to Electrical Position",
+      "referenceBlock": "mcblib/Sensor Decoders/Mechanical to Electrical Position",
+      "blockType": "MechanicaltoElectricalPosition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quadrature Decoder",
+      "referenceBlock": "mcblib/Sensor Decoders/Quadrature Decoder",
+      "blockType": "QuadratureDecoder",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resolver Decoder",
+      "referenceBlock": "mcblib/Sensor Decoders/Resolver Decoder",
+      "blockType": "ResolverDecoderPhase1",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software Watchdog Timer",
+      "referenceBlock": "mcblib/Sensor Decoders/Software Watchdog Timer",
+      "blockType": "SoftwareWatchdogTimer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Speed Measurement",
+      "referenceBlock": "mcblib/Sensor Decoders/Speed Measurement",
+      "blockType": "SpeedMeasurement",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Extended EMF Observer",
+      "referenceBlock": "mcblib/Sensorless Estimators/Extended EMF Observer",
+      "blockType": "ExtendedEMFObserver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flux Observer",
+      "referenceBlock": "mcblib/Sensorless Estimators/Flux Observer",
+      "blockType": "FluxObserver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pulsating High Freq Observer",
+      "referenceBlock": "mcblib/Sensorless Estimators/Pulsating High Freq Observer",
+      "blockType": "PulsatingHighFreqObserver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sliding Mode Observer",
+      "referenceBlock": "mcblib/Sensorless Estimators/Sliding Mode Observer",
+      "blockType": "SlidingModeObserver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Byte Pack",
+      "referenceBlock": "mcblib/Signal Management/Byte Pack",
+      "blockType": "Bytepack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Byte Reversal",
+      "referenceBlock": "mcblib/Signal Management/Byte Reversal",
+      "blockType": "ByteReversal",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Byte Unpack",
+      "referenceBlock": "mcblib/Signal Management/Byte Unpack",
+      "blockType": "ByteUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Compute Parameter",
+      "referenceBlock": "mcblib/Signal Management/Compute Parameter",
+      "blockType": "ComputeParameter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Dead-Time Compensator",
+      "referenceBlock": "mcblib/Signal Management/Dead-Time Compensator",
+      "blockType": "Dead-TimeCompensator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "IIR Filter",
+      "referenceBlock": "mcblib/Signal Management/IIR Filter",
+      "blockType": "IIRFilter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Memory Copy",
+      "referenceBlock": "mcblib/Signal Management/Memory Copy",
+      "blockType": "MemoryCopy",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "PLL with Feed Forward",
+      "referenceBlock": "mcblib/Signal Management/PLL with Feed Forward",
+      "blockType": "FeedForwardPLL",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Position Compensation",
+      "referenceBlock": "mcblib/Signal Management/Position Compensation",
+      "blockType": "PositionCompensation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Protocol Decoder",
+      "referenceBlock": "mcblib/Signal Management/Protocol Decoder",
+      "blockType": "matlabshared.embedded_utilities.blocks.ProtocolDecoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Protocol Encoder",
+      "referenceBlock": "mcblib/Signal Management/Protocol Encoder",
+      "blockType": "matlabshared.embedded_utilities.blocks.ProtocolEncoderBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Vector plot",
+      "referenceBlock": "mcblib/Signal Management/Vector plot",
+      "blockType": "mcb_vectorplot",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

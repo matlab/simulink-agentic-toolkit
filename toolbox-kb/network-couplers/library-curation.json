@@ -1,0 +1,166 @@
+{
+  "commonBlocks": [
+    "Network Coupler (Capacitor)",
+    "Network Coupler (Flexible Shaft)",
+    "Network Coupler (Thermal Mass)"
+  ],
+  "categories": [
+    {
+      "name": "rate-conversion",
+      "description": "Rate transition and interpolation between solver domains",
+      "keywords": [
+        "prediction",
+        "smoothing",
+        "rate",
+        "discrete",
+        "continuous"
+      ]
+    },
+    {
+      "name": "electrical-couplers",
+      "description": "Electrical network partitioning couplers",
+      "keywords": [
+        "capacitor",
+        "inductor",
+        "voltage",
+        "current",
+        "electrical"
+      ]
+    },
+    {
+      "name": "mechanical-fluid-thermal",
+      "description": "Mechanical, fluid, and thermal network couplers",
+      "keywords": [
+        "shaft",
+        "compressible",
+        "thermal",
+        "chamber",
+        "fluid"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Network Coupler (Capacitor)",
+      "value": "electrical-couplers"
+    },
+    {
+      "block": "Network Coupler (Compressible Link)",
+      "value": "mechanical-fluid-thermal"
+    },
+    {
+      "block": "Network Coupler (Constant Volume Chamber (IL))",
+      "value": "mechanical-fluid-thermal"
+    },
+    {
+      "block": "Network Coupler (Constant Volume Chamber (TL))",
+      "value": "mechanical-fluid-thermal"
+    },
+    {
+      "block": "Network Coupler (Current-Voltage)",
+      "value": "electrical-couplers"
+    },
+    {
+      "block": "Network Coupler (Flexible Shaft)",
+      "value": "mechanical-fluid-thermal"
+    },
+    {
+      "block": "Network Coupler (Inductor)",
+      "value": "electrical-couplers"
+    },
+    {
+      "block": "Network Coupler (Thermal Mass)",
+      "value": "mechanical-fluid-thermal"
+    },
+    {
+      "block": "Network Coupler (Transmission Line)",
+      "value": "electrical-couplers"
+    },
+    {
+      "block": "Network Coupler (Voltage-Current)",
+      "value": "electrical-couplers"
+    },
+    {
+      "block": "Network Coupler (Voltage-Voltage)",
+      "value": "electrical-couplers"
+    },
+    {
+      "block": "Prediction (discrete->continuous)",
+      "value": "rate-conversion"
+    },
+    {
+      "block": "Prediction (slow->fast)",
+      "value": "rate-conversion"
+    },
+    {
+      "block": "Smoothing (continuous->discrete)",
+      "value": "rate-conversion"
+    },
+    {
+      "block": "Smoothing (fast->slow)",
+      "value": "rate-conversion"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Network Coupler (Capacitor)",
+      "value": "Couple two electrical networks via a virtual capacitor — use for partitioning large electrical circuits into separately-solved networks at a capacitive interface"
+    },
+    {
+      "block": "Network Coupler (Compressible Link)",
+      "value": "Couple two hydraulic networks via a compressible fluid link — use for partitioning hydraulic systems at a compliance element for co-simulation"
+    },
+    {
+      "block": "Network Coupler (Constant Volume Chamber (IL))",
+      "value": "Couple isothermal liquid networks via a constant volume chamber — use for partitioning isothermal liquid circuits at a compliance element"
+    },
+    {
+      "block": "Network Coupler (Constant Volume Chamber (TL))",
+      "value": "Couple two-phase liquid networks via a constant volume chamber — use for partitioning thermal-liquid circuits at a compliance element"
+    },
+    {
+      "block": "Network Coupler (Current-Voltage)",
+      "value": "Couple electrical networks with current on one side and voltage on the other — use for interfacing current-source and voltage-source network partitions"
+    },
+    {
+      "block": "Network Coupler (Flexible Shaft)",
+      "value": "Couple two mechanical rotational networks via a flexible shaft — use for partitioning driveline models at a compliant shaft element"
+    },
+    {
+      "block": "Network Coupler (Inductor)",
+      "value": "Couple two electrical networks via a virtual inductor — use for partitioning electrical circuits at an inductive interface element"
+    },
+    {
+      "block": "Network Coupler (Thermal Mass)",
+      "value": "Couple two thermal networks via a thermal mass — use for partitioning thermal systems at a heat capacity element"
+    },
+    {
+      "block": "Network Coupler (Transmission Line)",
+      "value": "Couple two electrical networks via a transmission line delay — use for naturally decoupling electrical networks separated by propagation delay"
+    },
+    {
+      "block": "Network Coupler (Voltage-Current)",
+      "value": "Couple electrical networks with voltage on one side and current on the other — use for interfacing voltage-source and current-source network partitions"
+    },
+    {
+      "block": "Network Coupler (Voltage-Voltage)",
+      "value": "Couple two electrical networks via voltage-voltage interface — use for partitioning electrical circuits at a voltage-type coupling point"
+    },
+    {
+      "block": "Prediction (discrete->continuous)",
+      "value": "Predict continuous-time values from discrete-time samples — use at the boundary where a discrete solver feeds into a continuous Simscape network"
+    },
+    {
+      "block": "Prediction (slow->fast)",
+      "value": "Predict fast-rate values from slow-rate samples — use at multi-rate boundaries where a slow subsystem drives a faster Simscape network"
+    },
+    {
+      "block": "Smoothing (continuous->discrete)",
+      "value": "Smooth continuous-time signals for discrete sampling — use at the boundary where a continuous Simscape network feeds into a discrete solver"
+    },
+    {
+      "block": "Smoothing (fast->slow)",
+      "value": "Smooth fast-rate signals for slow-rate consumption — use at multi-rate boundaries where a fast Simscape network feeds a slower subsystem"
+    }
+  ]
+}

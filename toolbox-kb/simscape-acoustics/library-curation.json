@@ -1,0 +1,306 @@
+{
+  "commonBlocks": [
+    "Moving Coil Speaker"
+  ],
+  "categories": [
+    {
+      "name": "acoustic-elements",
+      "description": "Fundamental acoustic lumped elements",
+      "keywords": [
+        "compliance",
+        "inertance",
+        "resistance",
+        "switch",
+        "element"
+      ]
+    },
+    {
+      "name": "sensors-sources",
+      "description": "Acoustic measurement and excitation blocks",
+      "keywords": [
+        "sensor",
+        "source",
+        "pressure",
+        "velocity",
+        "controlled"
+      ]
+    },
+    {
+      "name": "applications",
+      "description": "Complete acoustic application subsystems",
+      "keywords": [
+        "speaker",
+        "enclosure",
+        "microphone",
+        "earbud",
+        "ear"
+      ]
+    },
+    {
+      "name": "radiation-impedance",
+      "description": "Radiation coupling to free field",
+      "keywords": [
+        "radiation",
+        "impedance",
+        "piston",
+        "flanged",
+        "spherical"
+      ]
+    },
+    {
+      "name": "transformers-utilities",
+      "description": "Domain converters and configuration blocks",
+      "keywords": [
+        "transformer",
+        "converter",
+        "mems",
+        "mechanical",
+        "properties"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Circular Piston Radiation Impedance",
+      "value": "radiation-impedance"
+    },
+    {
+      "block": "Condenser Microphone",
+      "value": "applications"
+    },
+    {
+      "block": "Cone",
+      "value": "applications"
+    },
+    {
+      "block": "Controlled Pressure Source",
+      "value": "sensors-sources"
+    },
+    {
+      "block": "Controlled Volume Velocity Source",
+      "value": "sensors-sources"
+    },
+    {
+      "block": "Cylindrical Tube With N Segments",
+      "value": "applications"
+    },
+    {
+      "block": "Cylindrical Tube With Thermoviscous Losses Using Foster Network",
+      "value": "applications"
+    },
+    {
+      "block": "Ear Canal with Ear Drum",
+      "value": "applications"
+    },
+    {
+      "block": "Ear Drum Impedance",
+      "value": "applications"
+    },
+    {
+      "block": "Earbud",
+      "value": "applications"
+    },
+    {
+      "block": "Far-Field Pressure Sensor",
+      "value": "sensors-sources"
+    },
+    {
+      "block": "MEMS Speaker Electromechanical Converter",
+      "value": "transformers-utilities"
+    },
+    {
+      "block": "Mechanical to Acoustic Converter",
+      "value": "transformers-utilities"
+    },
+    {
+      "block": "Microspeaker",
+      "value": "applications"
+    },
+    {
+      "block": "Moving Coil Speaker",
+      "value": "applications"
+    },
+    {
+      "block": "Passive Radiator",
+      "value": "applications"
+    },
+    {
+      "block": "Ported Speaker Enclosure",
+      "value": "applications"
+    },
+    {
+      "block": "Radiation Impedance - Circular Flanged Opening",
+      "value": "radiation-impedance"
+    },
+    {
+      "block": "Radiation Impedance - Circular Unflanged Opening",
+      "value": "radiation-impedance"
+    },
+    {
+      "block": "Radiation Impedance - Element In Array On Pulsing Sphere",
+      "value": "radiation-impedance"
+    },
+    {
+      "block": "Simple Acoustic Enclosure",
+      "value": "applications"
+    },
+    {
+      "block": "Small Cylindrical Orifice or Tube",
+      "value": "applications"
+    },
+    {
+      "block": "Small Rectangular Slot",
+      "value": "applications"
+    },
+    {
+      "block": "Speaker Enclosure with Mounting Holes",
+      "value": "applications"
+    },
+    {
+      "block": "Spherical Cap Radiation Impedance",
+      "value": "radiation-impedance"
+    },
+    {
+      "block": "Spherical Source Radiation Impedance",
+      "value": "radiation-impedance"
+    },
+    {
+      "block": "Thin Rectangular Tube With Thermoviscous Losses",
+      "value": "applications"
+    },
+    {
+      "block": "Variable Acoustic Resistance",
+      "value": "acoustic-elements"
+    },
+    {
+      "block": "Volume Velocity Sensor",
+      "value": "sensors-sources"
+    },
+    {
+      "block": "Volume Velocity Source",
+      "value": "sensors-sources"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Circular Piston Radiation Impedance",
+      "value": "Radiation load of a circular piston — use for modeling how a speaker cone couples acoustic energy to free air"
+    },
+    {
+      "block": "Condenser Microphone",
+      "value": "Electrostatic condenser microphone model — use for simulating capacitive microphone transduction with bias voltage"
+    },
+    {
+      "block": "Cone",
+      "value": "Conical horn or waveguide section — use for modeling acoustic impedance transformation through expanding cones"
+    },
+    {
+      "block": "Controlled Pressure Source",
+      "value": "Signal-controlled acoustic pressure source — use for driving acoustic networks with time-varying pressure from Simulink"
+    },
+    {
+      "block": "Controlled Volume Velocity Source",
+      "value": "Signal-controlled volume velocity source — use for injecting time-varying airflow into acoustic networks"
+    },
+    {
+      "block": "Cylindrical Tube With N Segments",
+      "value": "Multi-segment cylindrical tube — use for modeling wave propagation with distributed losses in long tubes"
+    },
+    {
+      "block": "Cylindrical Tube With Thermoviscous Losses Using Foster Network",
+      "value": "Cylindrical tube with frequency-dependent losses — use for accurate modeling of thermal and viscous boundary layer effects"
+    },
+    {
+      "block": "Ear Canal with Ear Drum",
+      "value": "Human ear canal terminated by the eardrum — use for modeling sound propagation to the tympanic membrane"
+    },
+    {
+      "block": "Ear Drum Impedance",
+      "value": "Acoustic impedance of the human eardrum — use for terminating ear canal models with realistic load"
+    },
+    {
+      "block": "Earbud",
+      "value": "In-ear headphone acoustic model — use for simulating the acoustic response of earbud-type transducers in the ear canal"
+    },
+    {
+      "block": "Far-Field Pressure Sensor",
+      "value": "Measure acoustic pressure at a distance from the source — use for predicting sound pressure levels in the far field"
+    },
+    {
+      "block": "MEMS Speaker Electromechanical Converter",
+      "value": "MEMS speaker transduction model — use for simulating piezoelectric or electrostatic MEMS speaker conversion"
+    },
+    {
+      "block": "Mechanical to Acoustic Converter",
+      "value": "Convert between mechanical and acoustic domains — use for coupling vibrating structures to acoustic networks"
+    },
+    {
+      "block": "Microspeaker",
+      "value": "Miniature loudspeaker model — use for simulating small moving-coil speakers in portable devices"
+    },
+    {
+      "block": "Moving Coil Speaker",
+      "value": "Electrodynamic loudspeaker model — use for simulating standard moving-coil speaker transduction and response"
+    },
+    {
+      "block": "Passive Radiator",
+      "value": "Undriven diaphragm for bass reinforcement — use for modeling passive bass radiators that replace ports in sealed enclosures"
+    },
+    {
+      "block": "Ported Speaker Enclosure",
+      "value": "Bass-reflex speaker cabinet with port — use for modeling vented loudspeaker enclosures with Helmholtz resonance"
+    },
+    {
+      "block": "Radiation Impedance - Circular Flanged Opening",
+      "value": "Radiation load at a flanged circular opening — use for terminating tubes or ports mounted in a baffle"
+    },
+    {
+      "block": "Radiation Impedance - Circular Unflanged Opening",
+      "value": "Radiation load at an unflanged circular opening — use for terminating tubes or ports radiating without a baffle"
+    },
+    {
+      "block": "Radiation Impedance - Element In Array On Pulsing Sphere",
+      "value": "Radiation impedance for array elements on a sphere — use for modeling mutual coupling in spherical transducer arrays"
+    },
+    {
+      "block": "Simple Acoustic Enclosure",
+      "value": "Sealed speaker cabinet — use for modeling closed-box loudspeaker enclosures"
+    },
+    {
+      "block": "Small Cylindrical Orifice or Tube",
+      "value": "Narrow cylindrical passage — use for modeling acoustic resistance and inertance of small holes and tubes"
+    },
+    {
+      "block": "Small Rectangular Slot",
+      "value": "Narrow rectangular passage — use for modeling acoustic impedance of thin slots and gaps"
+    },
+    {
+      "block": "Speaker Enclosure with Mounting Holes",
+      "value": "Speaker cabinet with additional openings — use for modeling enclosures where mounting holes affect acoustic behavior"
+    },
+    {
+      "block": "Spherical Cap Radiation Impedance",
+      "value": "Radiation load of a spherical cap — use for modeling dome tweeter or curved diaphragm radiation"
+    },
+    {
+      "block": "Spherical Source Radiation Impedance",
+      "value": "Radiation load of a pulsating sphere — use for modeling omnidirectional point source radiation"
+    },
+    {
+      "block": "Thin Rectangular Tube With Thermoviscous Losses",
+      "value": "Thin rectangular tube with boundary layer losses — use for modeling frequency-dependent losses in flat acoustic channels"
+    },
+    {
+      "block": "Variable Acoustic Resistance",
+      "value": "Acoustic resistance with variable value — use for modeling adjustable damping or flow-dependent losses"
+    },
+    {
+      "block": "Volume Velocity Sensor",
+      "value": "Measure acoustic volume velocity through a branch — use for monitoring airflow in acoustic elements"
+    },
+    {
+      "block": "Volume Velocity Source",
+      "value": "Constant volume velocity source — use for providing fixed airflow excitation in acoustic circuits"
+    }
+  ]
+}

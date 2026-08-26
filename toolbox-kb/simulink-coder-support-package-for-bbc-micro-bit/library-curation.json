@@ -1,0 +1,80 @@
+{
+  "commonBlocks": [
+    "LED",
+    "Button",
+    "Accelerometer"
+  ],
+  "categories": [
+    {
+      "name": "microbit",
+      "description": "BBC micro:bit onboard peripherals and wireless communication",
+      "keywords": [
+        "microbit",
+        "led",
+        "button",
+        "sensor",
+        "radio"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Accelerometer",
+      "value": "microbit"
+    },
+    {
+      "block": "Audio",
+      "value": "microbit"
+    },
+    {
+      "block": "Basic",
+      "value": "microbit"
+    },
+    {
+      "block": "Button",
+      "value": "microbit"
+    },
+    {
+      "block": "LED",
+      "value": "microbit"
+    },
+    {
+      "block": "Magnetometer",
+      "value": "microbit"
+    },
+    {
+      "block": "Radio",
+      "value": "microbit"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Accelerometer",
+      "value": "Read 3-axis acceleration data from the BBC micro:bit onboard accelerometer — use for tilt detection, motion sensing, or gesture recognition projects"
+    },
+    {
+      "block": "Audio",
+      "value": "Generate audio output on the BBC micro:bit — use for playing tones, melodies, or audio feedback through the built-in speaker"
+    },
+    {
+      "block": "Basic",
+      "value": "Access basic I/O on the BBC micro:bit — use for GPIO pin read/write, analog input, or general-purpose digital interfacing"
+    },
+    {
+      "block": "Button",
+      "value": "Read button press state on the BBC micro:bit — use for detecting user input from the two onboard pushbuttons"
+    },
+    {
+      "block": "LED",
+      "value": "Control the 5x5 LED matrix on the BBC micro:bit — use for displaying patterns, scrolling text, or visual indicators"
+    },
+    {
+      "block": "Magnetometer",
+      "value": "Read magnetic field data from the BBC micro:bit onboard magnetometer — use for compass heading, magnetic field detection, or proximity sensing"
+    },
+    {
+      "block": "Radio",
+      "value": "Send and receive wireless messages between BBC micro:bits — use for peer-to-peer communication or multi-device coordination projects"
+    }
+  ]
+}

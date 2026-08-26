@@ -24,7 +24,7 @@ lnk.Type = 'Implement';
 
 The link source is the component; the destination is the requirement. From the requirement's perspective, these are `inLinks()`.
 
-For nested components, use [`resolveComponent`](../scripts/resolveComponent.m):
+For nested components, use [`resolveComponent`](../scripts/resolveComponent.m) — run it via `evaluate_matlab_code` with `project_path` set to the skill's `scripts/` folder so MATLAB can find it (never `addpath`):
 
 ```matlab
 comp = resolveComponent(arch, 'Assembly/Actuator');

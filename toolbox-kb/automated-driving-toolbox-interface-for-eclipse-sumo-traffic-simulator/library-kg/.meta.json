@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:08",
+  "generatedAtDatenum": 740213.74453879625,
+  "generatorVersion": 4,
+  "libraries": [
+    "Automated Driving Toolbox Interface for Eclipse SUMO Traffic Simulator"
+  ],
+  "blockCount": 5,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Automated_Driving_Toolbox_Interface_for_Eclipse_SUMO_Traffic_Simulator": {
+      "blockCount": 5
+    }
+  }
+}

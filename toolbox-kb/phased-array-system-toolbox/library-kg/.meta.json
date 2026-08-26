@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74457440968,
+  "generatorVersion": 4,
+  "libraries": [
+    "Phased Array System Toolbox"
+  ],
+  "blockCount": 82,
+  "categoryCount": 9,
+  "libraryFingerprints": {
+    "Phased_Array_System_Toolbox": {
+      "blockCount": 82
+    }
+  }
+}

@@ -1,0 +1,454 @@
+{
+  "commonBlocks": [
+    "SAR ADC",
+    "Delta Sigma Modulator",
+    "VCO",
+    "PFD",
+    "Charge Pump",
+    "Loop Filter",
+    "Eye Diagram",
+    "ADC Testbench"
+  ],
+  "categories": [
+    {
+      "name": "adc-architectures",
+      "description": "Complete ADC architecture models",
+      "keywords": [
+        "flash",
+        "sar",
+        "interleaved",
+        "adc"
+      ]
+    },
+    {
+      "name": "adc-foundation",
+      "description": "ADC building blocks and modulators",
+      "keywords": [
+        "integrator",
+        "dsm",
+        "quantizer",
+        "clock",
+        "modulator"
+      ]
+    },
+    {
+      "name": "adc-measurements",
+      "description": "ADC performance measurement",
+      "keywords": [
+        "snr",
+        "inl",
+        "dnl",
+        "jitter",
+        "testbench"
+      ]
+    },
+    {
+      "name": "pll-architectures",
+      "description": "Complete PLL architecture models",
+      "keywords": [
+        "fractional",
+        "integer",
+        "baseband",
+        "pll"
+      ]
+    },
+    {
+      "name": "pll-foundation",
+      "description": "PLL building blocks",
+      "keywords": [
+        "vco",
+        "pfd",
+        "charge",
+        "filter",
+        "divider",
+        "prescaler"
+      ]
+    },
+    {
+      "name": "pll-measurements",
+      "description": "PLL performance measurement",
+      "keywords": [
+        "lock",
+        "phase noise",
+        "testbench",
+        "measurement"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "General mixed-signal utilities and measurements",
+      "keywords": [
+        "eye",
+        "clock",
+        "slew",
+        "op-amp",
+        "binary",
+        "timing"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ADC AC Measurement",
+      "value": "adc-measurements"
+    },
+    {
+      "block": "ADC DC Measurement",
+      "value": "adc-measurements"
+    },
+    {
+      "block": "ADC Testbench",
+      "value": "adc-measurements"
+    },
+    {
+      "block": "Aperture Jitter Measurement",
+      "value": "adc-measurements"
+    },
+    {
+      "block": "Baseband PLL",
+      "value": "pll-architectures"
+    },
+    {
+      "block": "Binary Vector Conversion",
+      "value": "utilities"
+    },
+    {
+      "block": "Charge Pump",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "Clock Generator",
+      "value": "utilities"
+    },
+    {
+      "block": "Clock Jitter Measurement",
+      "value": "utilities"
+    },
+    {
+      "block": "Continuous Time Delta Sigma Modulator",
+      "value": "adc-foundation"
+    },
+    {
+      "block": "DT Integrator",
+      "value": "adc-foundation"
+    },
+    {
+      "block": "Delta Sigma Modulator",
+      "value": "adc-foundation"
+    },
+    {
+      "block": "Dual Modulus Prescaler",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "Eye Diagram",
+      "value": "utilities"
+    },
+    {
+      "block": "Eye Measurement",
+      "value": "utilities"
+    },
+    {
+      "block": "Flash ADC",
+      "value": "adc-architectures"
+    },
+    {
+      "block": "Fractional Clock Divider with Accumulator",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "Fractional Clock Divider with DSM",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "Fractional N PLL with Accumulator",
+      "value": "pll-architectures"
+    },
+    {
+      "block": "Fractional N PLL with Delta Sigma Modulator",
+      "value": "pll-architectures"
+    },
+    {
+      "block": "Integer N PLL with Dual Modulus Prescaler",
+      "value": "pll-architectures"
+    },
+    {
+      "block": "Integer N PLL with Single Modulus Prescaler",
+      "value": "pll-architectures"
+    },
+    {
+      "block": "Interleaved ADC",
+      "value": "adc-architectures"
+    },
+    {
+      "block": "Jitter Measurement",
+      "value": "utilities"
+    },
+    {
+      "block": "Linear Circuit Wizard",
+      "value": "utilities"
+    },
+    {
+      "block": "Lock Time Measurement",
+      "value": "pll-measurements"
+    },
+    {
+      "block": "Logic Decision",
+      "value": "utilities"
+    },
+    {
+      "block": "Loop Filter",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "Lowpass Resampler",
+      "value": "utilities"
+    },
+    {
+      "block": "Operational Amplifier",
+      "value": "utilities"
+    },
+    {
+      "block": "PFD",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "PFD and Charge Pump Testbench",
+      "value": "pll-measurements"
+    },
+    {
+      "block": "PLL Testbench",
+      "value": "pll-measurements"
+    },
+    {
+      "block": "Phase Noise Measurement",
+      "value": "pll-measurements"
+    },
+    {
+      "block": "Quantizer",
+      "value": "adc-foundation"
+    },
+    {
+      "block": "Ring Oscillator VCO",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "SAR ADC",
+      "value": "adc-architectures"
+    },
+    {
+      "block": "Sampling Clock Source",
+      "value": "adc-foundation"
+    },
+    {
+      "block": "Signal Sampler",
+      "value": "utilities"
+    },
+    {
+      "block": "Single Modulus Prescaler",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "Slew Rate",
+      "value": "utilities"
+    },
+    {
+      "block": "Timing Measurement",
+      "value": "utilities"
+    },
+    {
+      "block": "VCO",
+      "value": "pll-foundation"
+    },
+    {
+      "block": "VCO Testbench",
+      "value": "pll-measurements"
+    },
+    {
+      "block": "Variable Pulse Delay",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ADC AC Measurement",
+      "value": "Measure ADC AC performance metrics — use for extracting SNR, SNDR, SFDR, and harmonic distortion"
+    },
+    {
+      "block": "ADC DC Measurement",
+      "value": "Measure ADC DC performance metrics — use for extracting INL, DNL, offset, and gain error"
+    },
+    {
+      "block": "ADC Testbench",
+      "value": "Complete ADC test environment — use for automated characterization of ADC models with stimulus and measurement"
+    },
+    {
+      "block": "Aperture Jitter Measurement",
+      "value": "Measure ADC aperture jitter — use for quantifying timing uncertainty in sample-and-hold circuits"
+    },
+    {
+      "block": "Baseband PLL",
+      "value": "Model a baseband phase-locked loop — use for simulating PLL behavior at baseband for fast behavioral analysis"
+    },
+    {
+      "block": "Binary Vector Conversion",
+      "value": "Convert between binary vectors and numeric values — use for interfacing digital bus representations with numeric signals"
+    },
+    {
+      "block": "Charge Pump",
+      "value": "Model a PLL charge pump — use for converting phase detector output to a current that drives the loop filter"
+    },
+    {
+      "block": "Clock Generator",
+      "value": "Generate a periodic clock signal — use for providing timing reference to mixed-signal circuits"
+    },
+    {
+      "block": "Clock Jitter Measurement",
+      "value": "Measure clock signal jitter — use for characterizing timing uncertainty on clock edges"
+    },
+    {
+      "block": "Continuous Time Delta Sigma Modulator",
+      "value": "Model a continuous-time delta-sigma ADC — use for simulating oversampled CT DSM architectures with noise shaping"
+    },
+    {
+      "block": "DT Integrator",
+      "value": "Discrete-time integrator for delta-sigma modulators — use for modeling switched-capacitor integrators in DT DSMs"
+    },
+    {
+      "block": "Delta Sigma Modulator",
+      "value": "Model a discrete-time delta-sigma modulator — use for simulating oversampled DT DSM architectures"
+    },
+    {
+      "block": "Dual Modulus Prescaler",
+      "value": "Model a dual-modulus frequency divider — use for implementing swallow-counter based programmable division"
+    },
+    {
+      "block": "Eye Diagram",
+      "value": "Display signal eye diagram — use for visualizing signal quality and timing margins in serial links"
+    },
+    {
+      "block": "Eye Measurement",
+      "value": "Measure eye diagram parameters — use for extracting eye height, width, and jitter from serial signals"
+    },
+    {
+      "block": "Flash ADC",
+      "value": "Model a flash analog-to-digital converter — use for simulating high-speed parallel ADC architectures with comparator arrays"
+    },
+    {
+      "block": "Fractional Clock Divider with Accumulator",
+      "value": "Model fractional division using accumulator — use for generating fractional divide ratios with spurs"
+    },
+    {
+      "block": "Fractional Clock Divider with DSM",
+      "value": "Model fractional division using delta-sigma modulation — use for generating low-spur fractional divide ratios"
+    },
+    {
+      "block": "Fractional N PLL with Accumulator",
+      "value": "Model a fractional-N PLL using accumulator — use for simulating fine-resolution frequency synthesis with spurs"
+    },
+    {
+      "block": "Fractional N PLL with Delta Sigma Modulator",
+      "value": "Model a fractional-N PLL using DSM — use for simulating low-spur fractional frequency synthesis"
+    },
+    {
+      "block": "Integer N PLL with Dual Modulus Prescaler",
+      "value": "Model an integer-N PLL with dual-modulus divider — use for simulating programmable frequency synthesis"
+    },
+    {
+      "block": "Integer N PLL with Single Modulus Prescaler",
+      "value": "Model an integer-N PLL with fixed divider — use for simulating basic frequency multiplication"
+    },
+    {
+      "block": "Interleaved ADC",
+      "value": "Model a time-interleaved ADC — use for simulating high-speed conversion by multiplexing multiple ADC channels"
+    },
+    {
+      "block": "Jitter Measurement",
+      "value": "Measure signal jitter components — use for decomposing jitter into deterministic and random components"
+    },
+    {
+      "block": "Linear Circuit Wizard",
+      "value": "Generate Simulink models from circuit netlists — use for importing analog filter or amplifier topologies"
+    },
+    {
+      "block": "Lock Time Measurement",
+      "value": "Measure PLL lock acquisition time — use for characterizing how fast the PLL achieves frequency lock"
+    },
+    {
+      "block": "Logic Decision",
+      "value": "Make binary logic decisions on analog signals — use for determining digital values from analog waveforms with thresholds"
+    },
+    {
+      "block": "Loop Filter",
+      "value": "Model a PLL loop filter — use for filtering charge pump output to produce VCO control voltage"
+    },
+    {
+      "block": "Lowpass Resampler",
+      "value": "Resample discrete signals to continuous time — use for converting sampled data back to continuous waveforms with filtering"
+    },
+    {
+      "block": "Operational Amplifier",
+      "value": "Model an operational amplifier — use for simulating op-amp circuits with gain, bandwidth, and slew rate limits"
+    },
+    {
+      "block": "PFD",
+      "value": "Model a phase-frequency detector — use for comparing reference and feedback clock edges in PLL loops"
+    },
+    {
+      "block": "PFD and Charge Pump Testbench",
+      "value": "Test environment for PFD and charge pump — use for verifying dead-zone, linearity, and current matching"
+    },
+    {
+      "block": "PLL Testbench",
+      "value": "Complete PLL test environment — use for automated PLL characterization including lock time and phase noise"
+    },
+    {
+      "block": "Phase Noise Measurement",
+      "value": "Measure oscillator phase noise — use for extracting phase noise spectral density from PLL or VCO output"
+    },
+    {
+      "block": "Quantizer",
+      "value": "Multi-level quantizer for DSM loops — use for modeling the comparator array within delta-sigma modulators"
+    },
+    {
+      "block": "Ring Oscillator VCO",
+      "value": "Model a ring oscillator VCO — use for simulating low-cost VCOs with ring topology and phase noise"
+    },
+    {
+      "block": "SAR ADC",
+      "value": "Model a successive-approximation ADC — use for simulating medium-speed high-resolution conversion with binary search"
+    },
+    {
+      "block": "Sampling Clock Source",
+      "value": "Generate a sampling clock with jitter — use for providing realistic clock signals to ADC models"
+    },
+    {
+      "block": "Signal Sampler",
+      "value": "Sample a continuous signal at clock edges — use for modeling sample-and-hold behavior with configurable timing"
+    },
+    {
+      "block": "Single Modulus Prescaler",
+      "value": "Model a fixed-ratio frequency divider — use for dividing VCO frequency by a constant integer"
+    },
+    {
+      "block": "Slew Rate",
+      "value": "Apply slew-rate limiting to a signal — use for modeling output rate constraints of analog circuits"
+    },
+    {
+      "block": "Timing Measurement",
+      "value": "Measure signal timing parameters — use for extracting rise time, fall time, and propagation delay"
+    },
+    {
+      "block": "VCO",
+      "value": "Model a voltage-controlled oscillator — use for simulating frequency modulation by control voltage with phase noise"
+    },
+    {
+      "block": "VCO Testbench",
+      "value": "Test environment for VCO characterization — use for measuring tuning gain, frequency range, and phase noise"
+    },
+    {
+      "block": "Variable Pulse Delay",
+      "value": "Apply variable delay to pulse signals — use for modeling jitter injection or propagation delay variation"
+    }
+  ]
+}

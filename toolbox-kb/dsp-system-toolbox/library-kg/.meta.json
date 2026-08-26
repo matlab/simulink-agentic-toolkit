@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.74455396994,
+  "generatorVersion": 4,
+  "libraries": [
+    "DSP System Toolbox"
+  ],
+  "blockCount": 17,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "DSP_System_Toolbox": {
+      "blockCount": 17
+    }
+  }
+}

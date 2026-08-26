@@ -1,0 +1,2034 @@
+{
+  "libraryName": "Simscape Fluids",
+  "generatedAt": "2026-08-19T14:31:11",
+  "blockCount": 224,
+  "blocks": [
+    {
+      "name": "P-H Diagram (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Utilities/P-H Diagram (2P)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "P-H Diagram (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interface (2P-G)",
+      "referenceBlock": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (2P-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Interface (2P-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interface (2P-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (2P-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Interface (2P-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interface (2P-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (2P-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Interface (2P-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interface (G-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (G-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Interface (G-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interface (TL-IL)",
+      "referenceBlock": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (TL-IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Interface (TL-IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Air Muscle Actuator (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Actuators/Air Muscle Actuator (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Air Muscle Actuator\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Actuator (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Actuators/Double-Acting Actuator (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting\nActuator (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single-Acting Actuator (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Actuators/Single-Acting Actuator (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Single-Acting\nActuator (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Elbow (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Pipes & Fittings/Elbow (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Elbow (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe Bend (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Pipes & Fittings/Pipe Bend (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe Bend (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compressor (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Turbomachinery/Compressor (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Compressor (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ejector (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Turbomachinery/Ejector (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ejector (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fan (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Turbomachinery/Fan (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fan (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Positive-Displacement Compressor (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Turbomachinery/Positive-Displacement Compressor (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Positive-Displacement\nCompressor (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Turbine (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Turbomachinery/Turbine (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Turbine (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Orifice (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Orifice (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Orifice (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2-Way Directional Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "2-Way Directional\nValve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3-Way Directional Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "3-Way Directional\nValve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 3-Position Directional Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 3-Position\nDirectional Valve\n(G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/Check Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Check Valve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pilot-Operated Check Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pilot-Operated Check\nValve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ball Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Ball Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ball Valve (G)",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Gate Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Gate Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gate Valve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Poppet Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Poppet Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Poppet Valve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Temperature Control Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Temperature Control Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Temperature Control\nValve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Reducing Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Pressure Control Valves/Pressure Reducing Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Reducing\nValve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Relief Valve (G)",
+      "referenceBlock": "SimscapeFluids_lib/Gas/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Relief\nValve (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "E-NTU Heat Transfer",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/E-NTU Heat Transfer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "E-NTU Heat Transfer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger Interface (G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Heat Exchanger Interface (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger\nInterface (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger Interface (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Heat Exchanger Interface (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger\nInterface (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Exchanger Interface (G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Specific Dissipation Heat Exchanger Interface (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Exchanger\nInterface (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Exchanger Interface (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Specific Dissipation Heat Exchanger Interface (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Exchanger\nInterface (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Transfer",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Specific Dissipation Heat Transfer",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Transfer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger (G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Gas/Heat Exchanger (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger (G-G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Gas/Heat Exchanger (G-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger (G-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Exchanger (G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Gas/Specific Dissipation Heat Exchanger (G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Exchanger (G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Exchanger (G-G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Gas/Specific Dissipation Heat Exchanger (G-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Exchanger (G-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Heat Exchanger (G-G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Gas/System-Level Heat Exchanger (G-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level Heat\nExchanger (G-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Heat Exchanger (MA-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Moist Air/System-Level Heat Exchanger (MA-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level Heat\nExchanger (MA-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger (TL-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Heat Exchanger (TL-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger\n(TL-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Heat Exchanger (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Plate Heat Exchanger (TL-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Plate Heat Exchanger (TL-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Plate Heat Exchanger\n(TL-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Exchanger (TL-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Specific Dissipation Heat Exchanger (TL-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Exchanger\n(TL-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Exchanger (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Specific Dissipation Heat Exchanger (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Exchanger (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Heat Exchanger (TL-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/System-Level Heat Exchanger (TL-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level Heat\nExchanger (TL-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger (G-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Gas/Heat Exchanger (G-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger\n(G-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Specific Dissipation Heat Exchanger (G-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Gas/Specific Dissipation Heat Exchanger (G-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Specific Dissipation\nHeat Exchanger\n(G-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Heat Exchanger (TL-G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Gas/System-Level Heat Exchanger (TL-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level Heat\nExchanger (TL-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cooling Tower (TL-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Moist Air/Cooling Tower (TL-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cooling Tower\n(TL-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger (TL-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Moist Air/Heat Exchanger (TL-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger\n(TL-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Heat Exchanger (TL-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Moist Air/System-Level Heat Exchanger (TL-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level Heat\nExchanger (TL-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Heat Exchanger (2P-2P)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid/System-Level Heat Exchanger (2P-2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level Heat\nExchanger (2P-2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Condenser Evaporator (2P-G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Gas/Condenser Evaporator (2P-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Condenser Evaporator\n(2P-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Condenser Evaporator (2P-G)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Gas/System-Level Condenser Evaporator (2P-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level\nCondenser Evaporator\n(2P-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Condenser Evaporator (2P-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Moist Air/Condenser Evaporator (2P-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Condenser Evaporator\n(2P-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Condenser Evaporator (2P-MA)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Moist Air/System-Level Condenser Evaporator (2P-MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level\nCondenser Evaporator\n(2P-MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Condenser Evaporator (TL-2P)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Thermal Liquid/Condenser Evaporator (TL-2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Condenser Evaporator\n(TL-2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Plate Condenser Evaporator (TL-2P)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Thermal Liquid/Plate Condenser Evaporator (TL-2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Plate Condenser\nEvaporator (TL-2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Condenser Evaporator (2P-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Thermal Liquid/System-Level Condenser Evaporator (2P-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level\nCondenser Evaporator\n(2P-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Actuator (G-IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Actuator (G-IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting\nActuator (G-IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting\nActuator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Actuator (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Actuator (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting\nActuator (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Rotary Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Rotary Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting Rotary\nActuator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotating Single-Acting Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Rotating Single-Acting Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotating\nSingle-Acting\nActuator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single-Acting Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Single-Acting Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Single-Acting\nActuator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single-Acting Actuator (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Single-Acting Actuator (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Single-Acting\nActuator (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single-Acting Rotary Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Single-Acting Rotary Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Single-Acting Rotary\nActuator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cylinder Cushion (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Cushion (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylinder Cushion\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cylinder Cushion (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Cushion (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylinder Cushion\n(IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cylinder Friction (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Friction (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylinder Friction\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cylinder Friction (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Friction (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylinder Friction\n(IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotating Channel (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Rotating Channel (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotating Channel\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotating Cylinder Force (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Rotating Cylinder Force (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Rotating Cylinder\nForce (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Area Change (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Area Change (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Area Change (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cross-Junction (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Cross-Junction (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cross-Junction (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Elbow (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Elbow (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Elbow (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Resistance (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Local Resistance (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Resistance\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Partially Filled Pipe (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Partially Filled Pipe (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Partially Filled\nPipe (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Pipe (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe Bend (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Pipe Bend (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe Bend (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "T-Junction (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/T-Junction (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "T-Junction (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Y-Junction (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Y-Junction (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Y-Junction (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Centrifugal Pump (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Centrifugal Pump (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Centrifugal Pump\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fixed-Displacement Motor (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Fixed-Displacement Motor (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fixed-Displacement\nMotor (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fixed-Displacement Pump (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Fixed-Displacement Pump (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fixed-Displacement\nPump (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Jet Pump (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Jet Pump (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Jet Pump (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure-Compensated Pump (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Pressure-Compensated Pump (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure-Compensated\nPump (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable-Displacement Motor (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Variable-Displacement Motor (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable-Displacement\nMotor (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable-Displacement Pump (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Variable-Displacement Pump (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable-Displacement\nPump (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Swash Plate",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Auxiliary Components/Swash Plate",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Swash Plate",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Plate Orifice (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Auxiliary Components/Valve Plate Orifice (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Plate Orifice\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gas-Charged Accumulator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Gas-Charged Accumulator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gas-Charged\nAccumulator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spring-Loaded Accumulator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Spring-Loaded Accumulator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Spring-Loaded\nAccumulator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tank (G-IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Tank (G-IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tank (G-IL)",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Tank (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Tank (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tank (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Isothermal Liquid Predefined Properties (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Utilities/Isothermal Liquid Predefined Properties (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Isothermal Liquid\nPredefined\nProperties (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2-Way Directional Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "2-Way Directional\nValve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3-Way Directional Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "3-Way Directional\nValve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 2-Position Directional Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 2-Position\nDirectional Valve\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 3-Position Directional Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 3-Position\nDirectional Valve\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Check Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Check Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "M-Way N-Position Directional Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/M-Way N-Position Directional Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "M-Way N-Position\nDirectional Valve\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pilot-Operated Check Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pilot-Operated Check\nValve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Shuttle Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Shuttle Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Shuttle Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Solenoid Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Solenoid Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Solenoid Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ball Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Ball Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ball Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cartridge Valve Insert (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Cartridge Valve Insert (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cartridge Valve\nInsert (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gate Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Gate Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gate Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Needle Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Needle Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Needle Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Poppet Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Poppet Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Poppet Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure-Compensated 3-Way Flow Control Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Pressure-Compensated 3-Way Flow Control Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure-Compensated\n3-Way Flow Control\nValve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure-Compensated Flow Control Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Pressure-Compensated Flow Control Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure-Compensated\nFlow Control Valve\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hydromechanical Valve Interface (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Hydromechanical Valve Interface (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Hydromechanical\nValve Interface\n(IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Poppet with Seat at B (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Poppet with Seat at B (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Poppet with Seat at\nB (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Poppet with Seat at F (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Poppet with Seat at F (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Poppet with Seat at\nF (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Piston (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Piston (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Piston (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Port with Land (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Port with Land (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Port with Land\n(IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Port with Land Edge at B (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Port with Land Edge at B (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Port with Land\nEdge at B (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Port with Land Edge at F (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Port with Land Edge at F (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Port with Land\nEdge at F (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Section with Detached Shaft (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with Detached Shaft (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Section with\nDetached Shaft\n(IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Section with End Cap at B (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with End Cap at B (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Section with\nEnd Cap at B (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Section with End Cap at F (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with End Cap at F (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Section with\nEnd Cap at F (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Section with Rigid Shaft (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with Rigid Shaft (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Section with\nRigid Shaft (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Valve Section with Valve Port (IL-PB)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with Valve Port (IL-PB)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Valve Section with\nValve Port (IL-PB)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Annular Leakage (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Annular Leakage (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Annular Leakage (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Orifice (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Orifice (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Orifice (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spool Orifice (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Spool Orifice (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Spool Orifice (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Overlapping Orifice (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Variable Overlapping Orifice (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Overlapping\nOrifice (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Counterbalance Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Counterbalance Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Counterbalance Valve\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Compensator Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Compensator Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Compensator\nValve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Relief Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Relief\nValve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure-Reducing 3-Way Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure-Reducing 3-Way Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure-Reducing\n3-Way Valve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure-Reducing Valve (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure-Reducing Valve (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure-Reducing\nValve (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cartridge Valve Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Cartridge Valve Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cartridge Valve\nActuator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Servo Valve Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Double-Acting Servo Valve Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting Servo\nValve Actuator (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pilot Valve Actuator (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Pilot Valve Actuator (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pilot Valve Actuator\n(IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spool Orifice Flow Force (IL)",
+      "referenceBlock": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Spool Orifice Flow Force (IL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Spool Orifice Flow\nForce (IL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Actuator (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Actuators/Double-Acting Actuator (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting\nActuator (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single-Acting Actuator (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Actuators/Single-Acting Actuator (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Single-Acting\nActuator (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cross-Junction (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Cross-Junction (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cross-Junction (MA)",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Elbow (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Elbow (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Elbow (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Resistance (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Local Resistance (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Resistance\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe Bend (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Pipe Bend (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe Bend (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "T-Junction (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/T-Junction (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "T-Junction (MA)",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Y-Junction (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Y-Junction (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Y-Junction (MA)",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Compressor (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Turbomachinery/Compressor (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Compressor (MA)",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Ejector (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Turbomachinery/Ejector (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ejector (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fan (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Turbomachinery/Fan (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fan (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Positive-Displacement Compressor (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Turbomachinery/Positive-Displacement Compressor (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Positive-Displacement\nCompressor (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Turbine (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Turbomachinery/Turbine (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Turbine (MA)",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Orifice (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Orifice (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Orifice (MA)",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "2-Way Directional Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "2-Way Directional\nValve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3-Way Directional Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "3-Way Directional\nValve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 2-Position Directional Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 2-Position\nDirectional Valve\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 3-Position Directional Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 3-Position\nDirectional Valve\n(MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/Check Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Check Valve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pilot-Operated Check Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pilot-Operated Check\nValve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ball Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Ball Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ball Valve (MA)",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Gate Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Gate Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gate Valve (MA)",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Poppet Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Poppet Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Poppet Valve (MA)",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Temperature Control Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Temperature Control Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Temperature Control\nValve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Compensator Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Pressure Control Valves/Pressure Compensator Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Compensator\nValve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Reducing Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Pressure Control Valves/Pressure Reducing Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Reducing\nValve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Relief Valve (MA)",
+      "referenceBlock": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (MA)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Relief\nValve (MA)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Actuator (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Actuators/Double-Acting Actuator (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting\nActuator (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Double-Acting Actuator (TL-G)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Actuators/Double-Acting Actuator (TL-G)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Double-Acting\nActuator (TL-G)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single-Acting Actuator (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Actuators/Single-Acting Actuator (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Single-Acting\nActuator (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cylinder Cushion (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Actuators/Auxiliary Components/Cylinder Cushion (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylinder Cushion\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cylinder Friction (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Actuators/Auxiliary Components/Cylinder Friction (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylinder Friction\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Area Change (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Area Change (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Area Change (TL)",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Cross-Junction (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Cross-Junction (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cross-Junction (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Elbow (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Elbow (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Elbow (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Local Resistance (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Local Resistance (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Local Resistance\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Partially Filled Pipe (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Partially Filled Pipe (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Partially Filled\nPipe (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Pipe (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pipe Bend (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Pipe Bend (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pipe Bend (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "T-Junction (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/T-Junction (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "T-Junction (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Y-Junction (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Y-Junction (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Y-Junction (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Centrifugal Pump (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Centrifugal Pump (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Centrifugal Pump\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fixed-Displacement Motor (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Fixed-Displacement Motor (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fixed-Displacement\nMotor (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fixed-Displacement Pump (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Fixed-Displacement Pump (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fixed-Displacement\nPump (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Jet Pump (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Jet Pump (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Jet Pump (TL)",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Variable-Displacement Motor (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Variable-Displacement Motor (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable-Displacement\nMotor (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable-Displacement Pump (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Variable-Displacement Pump (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable-Displacement\nPump (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gas-Charged Accumulator (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Tanks & Accumulators/Gas-Charged Accumulator (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gas-Charged\nAccumulator (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tank (G-TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Tanks & Accumulators/Tank (G-TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tank (G-TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tank (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Tanks & Accumulators/Tank (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Tank (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermal Liquid Properties (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Utilities/Thermal Liquid Properties (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermal Liquid\nProperties (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Coefficient Parameterized Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Coefficient Parameterized Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Coefficient\nParameterized Valve\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Orifice (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Orifice (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Orifice (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2-Way Directional Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "2-Way Directional\nValve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3-Way Directional Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "3-Way Directional\nValve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 2-Position Directional Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 2-Position\nDirectional Valve\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 3-Position Directional Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 3-Position\nDirectional Valve\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/Check Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Check Valve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pilot-Operated Check Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pilot-Operated Check\nValve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gate Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Control Valves/Gate Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Gate Valve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Poppet Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Control Valves/Poppet Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Poppet Valve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Temperature Control Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Control Valves/Temperature Control Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Temperature Control\nValve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Counterbalance Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Counterbalance Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Counterbalance Valve\n(TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Compensator Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Compensator Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Compensator\nValve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Reducing Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Reducing Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Reducing\nValve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Relief Valve (TL)",
+      "referenceBlock": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (TL)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Relief\nValve (TL)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Centrifugal Pump (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Centrifugal Pump (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Centrifugal Pump\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compressor (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Compressor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Compressor (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fixed-Displacement Pump (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Fixed-Displacement Pump (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fixed-Displacement\nPump (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Positive-Displacement Compressor (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Positive-Displacement Compressor (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Positive-Displacement\nCompressor (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Turbine (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Turbine (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Turbine (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable-Displacement Pump (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Variable-Displacement Pump (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable-Displacement\nPump (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3-Zone Pipe (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Pipes & Fittings/3-Zone Pipe (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "3-Zone Pipe (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Receiver Accumulator (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Tanks & Accumulators/Receiver Accumulator (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Receiver Accumulator\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "EN14511 Heat Pump (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Thermodynamic Cycles/EN14511 Heat Pump (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "EN14511 Heat Pump\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System-Level Refrigeration Cycle (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Thermodynamic Cycles/System-Level Refrigeration Cycle (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "System-Level\nRefrigeration Cycle\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Two-Phase Fluid Predefined Properties (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Utilities/Two-Phase Fluid Predefined Properties (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Two-Phase Fluid\nPredefined\nProperties (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Orifice (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Orifice (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Orifice (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 2-Position Directional Valve (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 2-Position\nDirectional Valve\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4-Way 3-Position Directional Valve (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "4-Way 3-Position\nDirectional Valve\n(2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Valve (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Directional Control Valves/Check Valve (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Check Valve (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thermostatic Expansion Valve (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Flow Control Valves/Thermostatic Expansion Valve (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thermostatic\nExpansion Valve (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Relief Valve (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Relief\nValve (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure-Reducing Valve (2P)",
+      "referenceBlock": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Pressure Control Valves/Pressure-Reducing Valve (2P)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure-Reducing\nValve (2P)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiposition Valve Actuator",
+      "referenceBlock": "SimscapeFluids_lib/Valve Actuators/Multiposition Valve Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Multiposition Valve\nActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Proportional Valve Actuator",
+      "referenceBlock": "SimscapeFluids_lib/Valve Actuators/Proportional Valve Actuator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Proportional Valve\nActuator",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:53",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

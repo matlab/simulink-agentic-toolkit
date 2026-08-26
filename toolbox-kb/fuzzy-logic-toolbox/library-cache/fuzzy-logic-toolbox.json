@@ -1,0 +1,63 @@
+{
+  "libraryName": "Fuzzy Logic Toolbox",
+  "generatedAt": "2026-08-19T14:30:59",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "FIS Tree",
+      "referenceBlock": "fuzblock/FIS Tree",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Fuzzy Inference System (FIS) Tree",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Fuzzy Logic  Controller",
+      "referenceBlock": "fuzblock/Fuzzy Logic  Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Fuzzy Inference System",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fuzzy Logic  Controller  with Ruleviewer",
+      "referenceBlock": "fuzblock/Fuzzy Logic  Controller  with Ruleviewer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Fuzzy Inference System",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fuzzy PID Controller",
+      "referenceBlock": "fuzblock/Fuzzy PID Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Fuzzy PID Controller",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Membership  Functions",
+      "referenceBlock": "fuzblock/Membership  Functions",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MF Library",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

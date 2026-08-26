@@ -1,0 +1,99 @@
+{
+  "libraryName": "Offroad Autonomy Library",
+  "generatedAt": "2026-08-19T14:31:03",
+  "blockCount": 9,
+  "blocks": [
+    {
+      "name": "Simulation 3D Physics Backhoe",
+      "referenceBlock": "offroadsim3dlib/Simulation 3D Physics Backhoe",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Physics Backhoe",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Simulation 3D Physics Dump Truck",
+      "referenceBlock": "offroadsim3dlib/Simulation 3D Physics Dump Truck",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Physics Dump Truck",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Simulation 3D Camera",
+      "referenceBlock": "offroadsim3dlib/Simulation 3D Camera",
+      "blockType": "Simulation3DCamera",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Simulation 3D Lidar",
+      "referenceBlock": "offroadsim3dlib/Simulation 3D Lidar",
+      "blockType": "Simulation3DLidar",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Simulation 3D Scene Configuration",
+      "referenceBlock": "offroadsim3dlib/Simulation 3D Scene Configuration",
+      "blockType": "Simulation3DSceneConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Ackermann MPPI Controller",
+      "referenceBlock": "offroadcontrollerlib/Ackermann MPPI Controller",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Articulated Steering MPPI Controller",
+      "referenceBlock": "offroadcontrollerlib/Articulated Steering MPPI Controller",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Bicycle MPPI Controller",
+      "referenceBlock": "offroadcontrollerlib/Bicycle MPPI Controller",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Differential Drive MPPI Controller",
+      "referenceBlock": "offroadcontrollerlib/Differential Drive MPPI Controller",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

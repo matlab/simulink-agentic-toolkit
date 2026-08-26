@@ -1,0 +1,117 @@
+{
+  "libraryName": "Simulink Design Verifier",
+  "generatedAt": "2026-08-19T14:31:13",
+  "blockCount": 11,
+  "blocks": [
+    {
+      "name": "Property Examples",
+      "referenceBlock": "sldvlib/Examples/Property Examples",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Property Examples",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Temporal Property Examples",
+      "referenceBlock": "sldvlib/Examples/Temporal Property Examples",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Temporal Property Examples",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assumption",
+      "referenceBlock": "sldvlib/Objectives and Constraints/Assumption",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Design Verifier Assumption",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Proof Objective",
+      "referenceBlock": "sldvlib/Objectives and Constraints/Proof Objective",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Design Verifier Proof Objective",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Test Condition",
+      "referenceBlock": "sldvlib/Objectives and Constraints/Test Condition",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Design Verifier Test Condition",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Test Objective",
+      "referenceBlock": "sldvlib/Objectives and Constraints/Test Objective",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Design Verifier Test Objective",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detector",
+      "referenceBlock": "sldvlib/Temporal Operators/Detector",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Extender",
+      "referenceBlock": "sldvlib/Temporal Operators/Extender",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Extender",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Within Implies",
+      "referenceBlock": "sldvlib/Temporal Operators/Within Implies",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Within Implies",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Implies",
+      "referenceBlock": "sldvlib/Verification Utilities/Implies",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Design Verifier Implies",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Verification Subsystem",
+      "referenceBlock": "sldvlib/Verification Utilities/Verification Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VerificationSubsystem",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,90 @@
+{
+  "libraryName": "Raspberry Pi Blockset",
+  "generatedAt": "2026-08-19T14:31:06",
+  "blockCount": 8,
+  "blocks": [
+    {
+      "name": "Audio and Video",
+      "referenceBlock": "raspberrypilib/Audio and Video",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_AV_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Basic",
+      "referenceBlock": "raspberrypilib/Basic",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_basic_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Communication",
+      "referenceBlock": "raspberrypilib/Communication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_comm_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Internet Of Things",
+      "referenceBlock": "raspberrypilib/Internet Of Things",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_IOT_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network ",
+      "referenceBlock": "raspberrypilib/Network ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_network_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sense HAT",
+      "referenceBlock": "raspberrypilib/Sense HAT",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Common_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensors",
+      "referenceBlock": "raspberrypilib/Sensors",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_IOT_lib",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "raspberrypilib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_IOT_lib",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

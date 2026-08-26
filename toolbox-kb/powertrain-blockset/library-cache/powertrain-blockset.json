@@ -1,0 +1,576 @@
+{
+  "libraryName": "Powertrain Blockset",
+  "generatedAt": "2026-08-19T14:31:05",
+  "blockCount": 62,
+  "blocks": [
+    {
+      "name": "Disc Clutch",
+      "referenceBlock": "autolibcoupling/Disc Clutch",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Disc Clutch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Planetary Gear",
+      "referenceBlock": "autolibcoupling/Planetary Gear",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Planetary Gear: Torque Input - Reduced Order",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gearbox",
+      "referenceBlock": "autolibcoupling/Gearbox",
+      "blockType": "Gearbox",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Motorcycle Chain",
+      "referenceBlock": "autolibcoupling/Motorcycle Chain",
+      "blockType": "MotorcycleChain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Inertia",
+      "referenceBlock": "autolibcoupling/Rotational Inertia",
+      "blockType": "RotationalInertia",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Split Torsional Compliance",
+      "referenceBlock": "autolibcoupling/Split Torsional Compliance",
+      "blockType": "SplitTorsionalCompliance",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torsional Compliance",
+      "referenceBlock": "autolibcoupling/Torsional Compliance",
+      "blockType": "TorsionalCompliance",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Limited Slip Differential",
+      "referenceBlock": "autolibdiff/Limited Slip Differential",
+      "blockType": "LimitedSlipDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Open Differential",
+      "referenceBlock": "autolibdiff/Open Differential",
+      "blockType": "OpenDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transfer Case",
+      "referenceBlock": "autolibdiff/Transfer Case",
+      "blockType": "TransferCase",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Longitudinal Wheel - Disc Brake",
+      "referenceBlock": "autolibwheelslong/Longitudinal Wheel - Disc Brake",
+      "blockType": "LongitudinalWheel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Longitudinal Wheel - Drum Brake",
+      "referenceBlock": "autolibwheelslong/Longitudinal Wheel - Drum Brake",
+      "blockType": "LongitudinalWheel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Longitudinal Wheel - Mapped Brake",
+      "referenceBlock": "autolibwheelslong/Longitudinal Wheel - Mapped Brake",
+      "blockType": "LongitudinalWheel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Longitudinal Wheel - No Brake",
+      "referenceBlock": "autolibwheelslong/Longitudinal Wheel - No Brake",
+      "blockType": "LongitudinalWheel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reduced Lundell Alternator",
+      "referenceBlock": "autolibalternator/Reduced Lundell Alternator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Reduced Lundell Alternator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bidirectional DC-DC",
+      "referenceBlock": "autolibdcdc/Bidirectional DC-DC",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DcToDcConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Datasheet Battery",
+      "referenceBlock": "autolibdatasheetbattery/Datasheet Battery",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Datasheet Battery",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Equivalent Circuit Battery",
+      "referenceBlock": "autolibrcnetworksystem/Equivalent Circuit Battery",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Equivalent Circuit Battery",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Estimation Equivalent Circuit Battery",
+      "referenceBlock": "autolibrcnetworksystem/Estimation Equivalent Circuit Battery",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Estimation Equivalent Circuit Battery",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Starter",
+      "referenceBlock": "autolibstarter/Starter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Starter Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Boost Drive Shaft",
+      "referenceBlock": "autolibboost/Boost Drive Shaft",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Boost Drive Shaft",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compressor",
+      "referenceBlock": "autolibboost/Compressor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Compressor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Turbine",
+      "referenceBlock": "autolibboost/Turbine",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Turbine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CI Core Engine",
+      "referenceBlock": "autolibcoreeng/CI Core Engine",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CI Core Engine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SI Core Engine",
+      "referenceBlock": "autolibcoreeng/SI Core Engine",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SI Core Engine",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mapped Core Engine",
+      "referenceBlock": "autolibcoreeng/Mapped Core Engine",
+      "blockType": "MappedCoreEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Control Volume System",
+      "referenceBlock": "autolibfundflw/Control Volume System",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Control Volume System",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Boundary",
+      "referenceBlock": "autolibfundflw/Flow Boundary",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Boundary",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flow Restriction",
+      "referenceBlock": "autolibfundflw/Flow Restriction",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Flow Restriction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heat Exchanger",
+      "referenceBlock": "autolibfundflw/Heat Exchanger",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Heat Exchanger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CI Controller",
+      "referenceBlock": "autolibengctrlr/CI Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CI Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SI Controller",
+      "referenceBlock": "autolibengctrlr/SI Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SI Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mapped CI Engine",
+      "referenceBlock": "autolibenginesystems/Mapped CI Engine",
+      "blockType": "MappedCIEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mapped SI Engine",
+      "referenceBlock": "autolibenginesystems/Mapped SI Engine",
+      "blockType": "MappedSIEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Engine",
+      "referenceBlock": "autolibenginesystems/Simple Engine",
+      "blockType": "SimpleEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IM Controller",
+      "referenceBlock": "autolibmotorctrlr/IM Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IM Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interior PM Controller",
+      "referenceBlock": "autolibmotorctrlr/Interior PM Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interior PM Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Surface Mount PM Controller",
+      "referenceBlock": "autolibmotorctrlr/Surface Mount PM Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Surface Mount PM Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flux-Based PM Controller",
+      "referenceBlock": "autolibmotorctrlr/Flux-Based PM Controller",
+      "blockType": "Flux-BasedPMController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flux-Based PMSM",
+      "referenceBlock": "autolibemachines/Flux-Based PMSM",
+      "blockType": "Flux-BasedPMSM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Induction Motor",
+      "referenceBlock": "autolibemachines/Induction Motor",
+      "blockType": "InductionMotor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interior PMSM",
+      "referenceBlock": "autolibemachines/Interior PMSM",
+      "blockType": "InteriorPMSM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mapped Motor",
+      "referenceBlock": "autolibemachines/Mapped Motor",
+      "blockType": "MappedMotor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Surface Mount PMSM",
+      "referenceBlock": "autolibemachines/Surface Mount PMSM",
+      "blockType": "SurfaceMountPMSM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-Phase Voltage Source Inverter",
+      "referenceBlock": "autolibemachines/Three-Phase Voltage Source Inverter",
+      "blockType": "Three-PhaseVoltageSourceInverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Equivalent Consumption Minimization Strategy",
+      "referenceBlock": "autolibhevctrlr/Equivalent Consumption Minimization Strategy",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Equivalent Consumption Minimization Strategy",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torque Converter",
+      "referenceBlock": "autolibtrqconv/Torque Converter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Torque Converter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AMT Controller",
+      "referenceBlock": "autolibtranscontrols/AMT Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "AMT Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CVT Controller",
+      "referenceBlock": "autolibtranscontrols/CVT Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CVT Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DCT Controller",
+      "referenceBlock": "autolibtranscontrols/DCT Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DCT Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Automated Manual Transmission",
+      "referenceBlock": "autolibtrans/Automated Manual Transmission",
+      "blockType": "AutomatedManualTransmission",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Continuously Variable Transmission",
+      "referenceBlock": "autolibtrans/Continuously Variable Transmission",
+      "blockType": "ContinuouslyVariableTransmission",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dual Clutch Transmission",
+      "referenceBlock": "autolibtrans/Dual Clutch Transmission",
+      "blockType": "DualClutchTransmission",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Fixed Gear Transmission",
+      "referenceBlock": "autolibtrans/Ideal Fixed Gear Transmission",
+      "blockType": "IdealFixedGearTransmission",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Two-Way Connection",
+      "referenceBlock": "autolibsimscapeutils/Two-Way Connection",
+      "blockType": "TwoWayConnection",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Connection Port",
+      "referenceBlock": "autolibsimscapeutils/Connection Port",
+      "blockType": "PMIOPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Motorcycle Body Longitudinal In-Plane",
+      "referenceBlock": "autolibvehdynlong/Motorcycle Body Longitudinal In-Plane",
+      "blockType": "MotorcycleBodyLongitudinalIn-Plane",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle Body 1DOF Longitudinal",
+      "referenceBlock": "autolibvehdynlong/Vehicle Body 1DOF Longitudinal",
+      "blockType": "VehicleBody1DOFLongitudinal",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle Body 3DOF Longitudinal",
+      "referenceBlock": "autolibvehdynlong/Vehicle Body 3DOF Longitudinal",
+      "blockType": "VehicleBody3DOFLongitudinal",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle Body Total Road Load",
+      "referenceBlock": "autolibvehdynlong/Vehicle Body Total Road Load",
+      "blockType": "VehicleBodyTotalRoadLoad",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Drive Cycle Source",
+      "referenceBlock": "autolibscenario/Drive Cycle Source",
+      "blockType": "DriveCycleSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Longitudinal Driver",
+      "referenceBlock": "autolibscenario/Longitudinal Driver",
+      "blockType": "LongitudinalDriver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

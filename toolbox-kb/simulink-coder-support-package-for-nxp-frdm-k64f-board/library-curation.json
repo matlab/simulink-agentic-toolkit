@@ -1,0 +1,176 @@
+{
+  "commonBlocks": [
+    "Analog Input",
+    "Digital Read",
+    "Digital Write",
+    "PWM Output",
+    "Serial Receive"
+  ],
+  "categories": [
+    {
+      "name": "analog-digital",
+      "description": "Analog and digital I/O peripherals on FRDM-K64F",
+      "keywords": [
+        "analog",
+        "digital",
+        "gpio",
+        "pwm",
+        "dac"
+      ]
+    },
+    {
+      "name": "communication",
+      "description": "Serial, I2C, and network communication",
+      "keywords": [
+        "serial",
+        "i2c",
+        "tcp",
+        "udp",
+        "uart"
+      ]
+    },
+    {
+      "name": "sensors",
+      "description": "Onboard and external sensor interfaces",
+      "keywords": [
+        "sensor",
+        "encoder",
+        "fxos",
+        "accelerometer",
+        "button"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Analog Input",
+      "value": "analog-digital"
+    },
+    {
+      "block": "Analog Output",
+      "value": "analog-digital"
+    },
+    {
+      "block": "Digital Read",
+      "value": "analog-digital"
+    },
+    {
+      "block": "Digital Write",
+      "value": "analog-digital"
+    },
+    {
+      "block": "FXOS8700 6-Axes Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "I2C Controller Read",
+      "value": "communication"
+    },
+    {
+      "block": "I2C Controller Write",
+      "value": "communication"
+    },
+    {
+      "block": "PWM Output",
+      "value": "analog-digital"
+    },
+    {
+      "block": "Push Button",
+      "value": "sensors"
+    },
+    {
+      "block": "Quadrature Encoder",
+      "value": "sensors"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "communication"
+    },
+    {
+      "block": "Serial Transmit",
+      "value": "communication"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "communication"
+    },
+    {
+      "block": "TCP Send",
+      "value": "communication"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "communication"
+    },
+    {
+      "block": "UDP Send",
+      "value": "communication"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Analog Input",
+      "value": "Read analog voltage from ADC channels on NXP FRDM-K64F — use for sampling sensor signals in embedded applications"
+    },
+    {
+      "block": "Analog Output",
+      "value": "Output analog voltage via DAC on NXP FRDM-K64F — use for generating reference voltages or analog control signals"
+    },
+    {
+      "block": "Digital Read",
+      "value": "Read digital GPIO pin state on NXP FRDM-K64F — use for reading buttons, switches, or digital sensor inputs"
+    },
+    {
+      "block": "Digital Write",
+      "value": "Write digital GPIO pin state on NXP FRDM-K64F — use for controlling LEDs, relays, or digital outputs"
+    },
+    {
+      "block": "FXOS8700 6-Axes Sensor",
+      "value": "Read the onboard FXOS8700 accelerometer/magnetometer — use for tilt, orientation, or compass heading measurements on FRDM-K64F"
+    },
+    {
+      "block": "I2C Controller Read",
+      "value": "Read data from an I2C peripheral on FRDM-K64F — use for communicating with external I2C sensors or EEPROMs"
+    },
+    {
+      "block": "I2C Controller Write",
+      "value": "Write data to an I2C peripheral on FRDM-K64F — use for configuring or commanding external I2C devices"
+    },
+    {
+      "block": "PWM Output",
+      "value": "Generate PWM signals on FRDM-K64F timer channels — use for motor control, LED dimming, or servo positioning"
+    },
+    {
+      "block": "Push Button",
+      "value": "Read onboard push button state on FRDM-K64F — use for detecting user input from the board buttons"
+    },
+    {
+      "block": "Quadrature Encoder",
+      "value": "Read quadrature encoder signals on FRDM-K64F — use for measuring motor shaft position and speed"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "Receive data over UART on FRDM-K64F — use for reading data from serial-connected devices or sensors"
+    },
+    {
+      "block": "Serial Transmit",
+      "value": "Transmit data over UART on FRDM-K64F — use for sending data to serial-connected displays or host computers"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "Receive data over TCP/IP on FRDM-K64F — use for network data reception via the Ethernet interface"
+    },
+    {
+      "block": "TCP Send",
+      "value": "Send data over TCP/IP on FRDM-K64F — use for network data transmission via the Ethernet interface"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP packets on FRDM-K64F — use for low-latency network data reception"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP packets from FRDM-K64F — use for low-latency network data transmission"
+    }
+  ]
+}

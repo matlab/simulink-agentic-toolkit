@@ -4,7 +4,7 @@ description: "Common steps for building multi-layer system architecture models u
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "0.2"
+  version: "0.3"
 ---
 # Building Architecture Models
 
@@ -69,6 +69,8 @@ Create and refine System Composer architecture models — from greenfield F/L/P 
 
 - The user has an active Simulink project (or assist in creating one via `managing-simulink-projects`)
 - Simulink, System Composer, and Requirements Toolbox are licensed
+
+The helper `scripts/resolveComponent.m` is in the skill's `scripts/` directory. Use `evaluate_matlab_code` with `project_path` set to the skill's `scripts/` folder so MATLAB can find it. Never use `addpath`.
 
 ## Verification
 

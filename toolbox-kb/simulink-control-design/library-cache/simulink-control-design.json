@@ -1,0 +1,369 @@
+{
+  "libraryName": "Simulink Control Design",
+  "generatedAt": "2026-08-19T14:31:13",
+  "blockCount": 39,
+  "blocks": [
+    {
+      "name": "Active Disturbance Rejection Control",
+      "referenceBlock": "slctrl_adaptive/Active Disturbance Rejection Control",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Active Disturbance Rejection Control",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Adaptive Notch Filter",
+      "referenceBlock": "slctrl_adaptive/Adaptive Notch Filter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Adaptive Notch Filter",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Extremum Seeking Control",
+      "referenceBlock": "slctrl_adaptive/Extremum Seeking Control",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Extremum Seeking Controller",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Iterative Learning Control",
+      "referenceBlock": "slctrl_adaptive/Iterative Learning Control",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Iterative Learning Control",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Model Reference Adaptive Control",
+      "referenceBlock": "slctrl_adaptive/Model Reference Adaptive Control",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Model Reference Adaptive Control",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Change Operating Points",
+      "referenceBlock": "slctrl_autotuning/Change Operating Points",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ChangeOperatingPoint",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Closed-Loop PID Autotuner",
+      "referenceBlock": "slctrl_autotuning/Closed-Loop PID Autotuner",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ClosedLoopOnlinePIDTuner",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Gain-Scheduled PID Autotuner",
+      "referenceBlock": "slctrl_autotuning/Gain-Scheduled PID Autotuner",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "GainScheduledPIDAutotuner",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Open-Loop PID Autotuner",
+      "referenceBlock": "slctrl_autotuning/Open-Loop PID Autotuner",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "OnlinePIDTuner",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PID Gain Scheduler",
+      "referenceBlock": "slctrl_autotuning/PID Gain Scheduler",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PIDGainScheduler",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PID Gains Store and Update",
+      "referenceBlock": "slctrl_autotuning/PID Gains Store and Update",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PIDGainStoring",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Virtual Reference Feedback Tuning",
+      "referenceBlock": "slctrl_autotuning/Virtual Reference Feedback Tuning",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VirtualReferenceFeedbackTuning",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Constraint Enforcement",
+      "referenceBlock": "slctrl_constraint/Constraint Enforcement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Constraint Enforcement",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Control Barrier Function",
+      "referenceBlock": "slctrl_constraint/Control Barrier Function",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Barrier Certificate Enforcement",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "High-Order Control Barrier Function",
+      "referenceBlock": "slctrl_constraint/High-Order Control Barrier Function",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "High-Order Control Barrier Function",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Passivity Enforcement",
+      "referenceBlock": "slctrl_constraint/Passivity Enforcement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Passivity Enforcement",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Disturbance Compensator",
+      "referenceBlock": "slctrl_disturbance/Disturbance Compensator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Disturbance Compensator",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Extended State Observer",
+      "referenceBlock": "slctrl_disturbance/Extended State Observer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Extended State Observer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Ultra-Local Model",
+      "referenceBlock": "slctrl_disturbance/Ultra-Local Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ultra-Local Model",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Frequency Response Estimator",
+      "referenceBlock": "slctrl_fre/Frequency Response Estimator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Frequency Response Estimator",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PRBS Signal Generator",
+      "referenceBlock": "slctrl_signal/PRBS Signal Generator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PRBS Signal Generator",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Sinestream Signal Generator",
+      "referenceBlock": "slctrl_signal/Sinestream Signal Generator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sinestream Signal Generator",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Start-Stop Generator",
+      "referenceBlock": "slctrl_signal/Start-Stop Generator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Start-Stop Generator",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Superposition Signal Generator",
+      "referenceBlock": "slctrl_signal/Superposition Signal Generator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Superposition Signal Generator",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Linear Sliding Mode Controller (State Feedback)",
+      "referenceBlock": "slctrl_smc/Linear Sliding Mode Controller (State Feedback)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Linear Sliding Mode Controller (State Feedback)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sliding Mode Controller (Reaching Law)",
+      "referenceBlock": "slctrl_smc/Sliding Mode Controller (Reaching Law)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sliding Mode Controller (Reaching Law)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trigger-Based  Operating Point Snapshot",
+      "referenceBlock": "slctrl_utilities/Trigger-Based  Operating Point Snapshot",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Triggered Operating Condition/Linearization Snapshot",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bode Plot",
+      "referenceBlock": "slctrlblks/Linear Analysis Plots/Bode Plot",
+      "blockType": "Checks_Bode",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gain and Phase Margin Plot",
+      "referenceBlock": "slctrlblks/Linear Analysis Plots/Gain and Phase Margin Plot",
+      "blockType": "Checks_Margins",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Linear Step Response Plot",
+      "referenceBlock": "slctrlblks/Linear Analysis Plots/Linear Step Response Plot",
+      "blockType": "Checks_LinearStepResponse",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nichols Plot",
+      "referenceBlock": "slctrlblks/Linear Analysis Plots/Nichols Plot",
+      "blockType": "Checks_Nichols",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pole-Zero Plot",
+      "referenceBlock": "slctrlblks/Linear Analysis Plots/Pole-Zero Plot",
+      "blockType": "Checks_PZMap",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Singular Value Plot",
+      "referenceBlock": "slctrlblks/Linear Analysis Plots/Singular Value Plot",
+      "blockType": "Checks_Sigma",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Bode  Characteristics",
+      "referenceBlock": "slctrlblks/Model Verification/Check Bode  Characteristics",
+      "blockType": "Checks_Bode",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Gain and Phase Margins",
+      "referenceBlock": "slctrlblks/Model Verification/Check Gain and Phase Margins",
+      "blockType": "Checks_Margins",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Linear Step Response Characteristics",
+      "referenceBlock": "slctrlblks/Model Verification/Check Linear Step Response Characteristics",
+      "blockType": "Checks_LinearStepResponse",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Nichols Characteristics",
+      "referenceBlock": "slctrlblks/Model Verification/Check Nichols Characteristics",
+      "blockType": "Checks_Nichols",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Pole-Zero Characteristics",
+      "referenceBlock": "slctrlblks/Model Verification/Check Pole-Zero Characteristics",
+      "blockType": "Checks_PZMap",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Singular Value Characteristics",
+      "referenceBlock": "slctrlblks/Model Verification/Check Singular Value Characteristics",
+      "blockType": "Checks_Sigma",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:54",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,15 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for simulink-curating-library-kg
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "2.2"
+human-description: "Curate the SATK library knowledge index so the model-building agent picks better blocks from custom libraries."
+matlab-release: ">=R2023a"
+required-tools:
+  - evaluate_matlab_code
+required-skills: []
+required-products:
+  - Simulink
+optional-products: []
+toolkit: simulink-agentic-toolkit

@@ -1,0 +1,584 @@
+{
+  "commonBlocks": [
+    "UART/USART Read",
+    "UART/USART Write"
+  ],
+  "categories": [
+    {
+      "name": "analog-conversion",
+      "description": "Analog-to-digital and digital-to-analog conversion peripherals including comparators",
+      "keywords": [
+        "ADC",
+        "DAC",
+        "comparator",
+        "analog",
+        "voltage"
+      ]
+    },
+    {
+      "name": "digital-io",
+      "description": "General-purpose digital input and output pin control for GPIO",
+      "keywords": [
+        "GPIO",
+        "pin",
+        "digital",
+        "input",
+        "output"
+      ]
+    },
+    {
+      "name": "timer-pwm",
+      "description": "Hardware timer peripherals for timing, PWM generation, input capture, and encoder decoding",
+      "keywords": [
+        "timer",
+        "PWM",
+        "encoder",
+        "capture",
+        "pulse"
+      ]
+    },
+    {
+      "name": "serial-communication",
+      "description": "Asynchronous serial communication interfaces for point-to-point data exchange",
+      "keywords": [
+        "UART",
+        "USART",
+        "serial",
+        "SCI",
+        "RS232"
+      ]
+    },
+    {
+      "name": "spi-interface",
+      "description": "SPI bus peripherals for high-speed synchronous communication with sensors and memory",
+      "keywords": [
+        "SPI",
+        "MOSI",
+        "MISO",
+        "clock",
+        "register"
+      ]
+    },
+    {
+      "name": "i2c-interface",
+      "description": "I2C bus peripherals for multi-device communication with sensors and EEPROMs",
+      "keywords": [
+        "I2C",
+        "TWI",
+        "address",
+        "sensor",
+        "bus"
+      ]
+    },
+    {
+      "name": "can-bus",
+      "description": "Controller Area Network peripherals for automotive and industrial communication",
+      "keywords": [
+        "CAN",
+        "FDCAN",
+        "automotive",
+        "message",
+        "bus"
+      ]
+    },
+    {
+      "name": "network-iot",
+      "description": "Ethernet and wireless network communication using TCP, UDP, and MQTT protocols",
+      "keywords": [
+        "TCP",
+        "UDP",
+        "MQTT",
+        "Ethernet",
+        "IoT"
+      ]
+    },
+    {
+      "name": "industrial-protocols",
+      "description": "MODBUS protocol peripherals for industrial automation over serial and RS485",
+      "keywords": [
+        "MODBUS",
+        "RS485",
+        "industrial",
+        "register",
+        "protocol"
+      ]
+    },
+    {
+      "name": "interrupts-system",
+      "description": "Interrupt management, math co-processors, and system-level utilities",
+      "keywords": [
+        "interrupt",
+        "NVIC",
+        "CORDIC",
+        "system",
+        "event"
+      ]
+    },
+    {
+      "name": "audio-interface",
+      "description": "Digital audio streaming interfaces using I2S protocol and board audio drivers",
+      "keywords": [
+        "I2S",
+        "audio",
+        "microphone",
+        "codec",
+        "streaming"
+      ]
+    },
+    {
+      "name": "sensors",
+      "description": "Pre-integrated sensor drivers for IMU, accelerometer, environmental, and distance",
+      "keywords": [
+        "IMU",
+        "accelerometer",
+        "gyroscope",
+        "magnetometer",
+        "sensor"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": " Utilities",
+      "value": "interrupts-system"
+    },
+    {
+      "block": "ADXL34x Accelerometer",
+      "value": "sensors"
+    },
+    {
+      "block": "Analog Input",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "Analog Output",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "Audio Input",
+      "value": "audio-interface"
+    },
+    {
+      "block": "Audio Output",
+      "value": "audio-interface"
+    },
+    {
+      "block": "BMI160 IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "BNO055 IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Blockset Name2",
+      "value": "interrupts-system"
+    },
+    {
+      "block": "CAN Read",
+      "value": "can-bus"
+    },
+    {
+      "block": "CAN Write",
+      "value": "can-bus"
+    },
+    {
+      "block": "CCS811 Air Quality Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Digital Read",
+      "value": "digital-io"
+    },
+    {
+      "block": "Digital Write",
+      "value": "digital-io"
+    },
+    {
+      "block": "External Interrupt",
+      "value": "interrupts-system"
+    },
+    {
+      "block": "HTS221 Humidity Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "High Resolution Timer",
+      "value": "timer-pwm"
+    },
+    {
+      "block": "I2C Master Read",
+      "value": "i2c-interface"
+    },
+    {
+      "block": "I2C Master Write",
+      "value": "i2c-interface"
+    },
+    {
+      "block": "ICM20948 IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LIS3DH Accelerometer Sensor  ",
+      "value": "sensors"
+    },
+    {
+      "block": "LIS3MDL Magnetometer",
+      "value": "sensors"
+    },
+    {
+      "block": "LPS22HB Pressure Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LSM303C IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LSM6DS3 IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LSM6DS3H IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LSM6DSL IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LSM6DSM IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LSM6DSO IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "LSM6DSR IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "MPU6050 IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "MPU9250 IMU Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "MQTT Publish",
+      "value": "network-iot"
+    },
+    {
+      "block": "MQTT Subscribe",
+      "value": "network-iot"
+    },
+    {
+      "block": "Modbus RS485 Client Read",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "Modbus RS485 Client Write",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "Modbus RS485 Server Read",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "Modbus RS485 Server Write",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "SCI Read",
+      "value": "serial-communication"
+    },
+    {
+      "block": "SCI Write",
+      "value": "serial-communication"
+    },
+    {
+      "block": "SPI Master Transfer",
+      "value": "spi-interface"
+    },
+    {
+      "block": "SPI Register Read",
+      "value": "spi-interface"
+    },
+    {
+      "block": "SPI Register Write",
+      "value": "spi-interface"
+    },
+    {
+      "block": "STM32L475VG-Discovery (B-L475E-IOT01A)",
+      "value": "interrupts-system"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "network-iot"
+    },
+    {
+      "block": "TCP Send",
+      "value": "network-iot"
+    },
+    {
+      "block": "Tcp Receive",
+      "value": "network-iot"
+    },
+    {
+      "block": "Tcp Send",
+      "value": "network-iot"
+    },
+    {
+      "block": "UART/USART Read",
+      "value": "serial-communication"
+    },
+    {
+      "block": "UART/USART Write",
+      "value": "serial-communication"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "network-iot"
+    },
+    {
+      "block": "UDP Send",
+      "value": "network-iot"
+    },
+    {
+      "block": "Udp Receive",
+      "value": "network-iot"
+    },
+    {
+      "block": "Udp Send",
+      "value": "network-iot"
+    },
+    {
+      "block": "VL53L0X Time Of Flight Sensor",
+      "value": "sensors"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": " Utilities",
+      "value": "Access utility functions and helper blocks for STM32 Discovery board configuration"
+    },
+    {
+      "block": "ADXL34x Accelerometer",
+      "value": "Measure three-axis acceleration using an ADXL34x sensor for vibration or tilt detection"
+    },
+    {
+      "block": "Analog Input",
+      "value": "Read an analog voltage on a board-level pin using the mbed-based peripheral driver"
+    },
+    {
+      "block": "Analog Output",
+      "value": "Write an analog voltage on a board-level DAC pin using the mbed-based peripheral driver"
+    },
+    {
+      "block": "Audio Input",
+      "value": "Capture audio samples from the onboard microphone on an STM32 Discovery board"
+    },
+    {
+      "block": "Audio Output",
+      "value": "Play audio samples through the onboard audio codec on an STM32 Discovery board"
+    },
+    {
+      "block": "BMI160 IMU Sensor",
+      "value": "Measure three-axis acceleration and angular rate using a Bosch BMI160 inertial measurement unit"
+    },
+    {
+      "block": "BNO055 IMU Sensor",
+      "value": "Get orientation estimation with onboard sensor fusion from a Bosch BNO055 absolute orientation sensor"
+    },
+    {
+      "block": "Blockset Name2",
+      "value": "Library identification marker that displays the blockset name in the Simulink library browser"
+    },
+    {
+      "block": "CAN Read",
+      "value": "Receive CAN bus messages for automotive or industrial communication"
+    },
+    {
+      "block": "CAN Write",
+      "value": "Transmit CAN bus messages for automotive or industrial communication"
+    },
+    {
+      "block": "CCS811 Air Quality Sensor",
+      "value": "Measure equivalent CO2 and volatile organic compound levels for indoor air quality monitoring"
+    },
+    {
+      "block": "Digital Read",
+      "value": "Read a single digital input pin on an mbed-based STM32 board"
+    },
+    {
+      "block": "Digital Write",
+      "value": "Set a single digital output pin on an mbed-based STM32 board"
+    },
+    {
+      "block": "External Interrupt",
+      "value": "Trigger execution based on an external GPIO pin edge event on an mbed-based STM32 board"
+    },
+    {
+      "block": "HTS221 Humidity Sensor",
+      "value": "Measure relative humidity and temperature for environmental monitoring"
+    },
+    {
+      "block": "High Resolution Timer",
+      "value": "Generate sub-nanosecond resolution PWM for advanced power conversion or motor control"
+    },
+    {
+      "block": "I2C Master Read",
+      "value": "Read from an I2C peripheral on an mbed-based STM32 board"
+    },
+    {
+      "block": "I2C Master Write",
+      "value": "Write to an I2C peripheral on an mbed-based STM32 board"
+    },
+    {
+      "block": "ICM20948 IMU Sensor",
+      "value": "Track nine-axis motion combining accelerometer, gyroscope, and magnetometer from an ICM20948"
+    },
+    {
+      "block": "LIS3DH Accelerometer Sensor  ",
+      "value": "Measure three-axis acceleration using an ST LIS3DH sensor for motion detection or inclination"
+    },
+    {
+      "block": "LIS3MDL Magnetometer",
+      "value": "Measure the three-axis magnetic field for compass heading or magnetic anomaly detection"
+    },
+    {
+      "block": "LPS22HB Pressure Sensor",
+      "value": "Measure barometric pressure for altitude estimation or weather monitoring"
+    },
+    {
+      "block": "LSM303C IMU Sensor",
+      "value": "Get combined accelerometer and magnetometer data from an ST LSM303C for tilt-compensated heading"
+    },
+    {
+      "block": "LSM6DS3 IMU Sensor",
+      "value": "Get three-axis accelerometer and gyroscope data from an ST LSM6DS3 for motion tracking"
+    },
+    {
+      "block": "LSM6DS3H IMU Sensor",
+      "value": "Get three-axis accelerometer and gyroscope data from an ST LSM6DS3H for high-performance motion sensing"
+    },
+    {
+      "block": "LSM6DSL IMU Sensor",
+      "value": "Get low-power three-axis accelerometer and gyroscope data from an ST LSM6DSL inertial sensor"
+    },
+    {
+      "block": "LSM6DSM IMU Sensor",
+      "value": "Get three-axis accelerometer and gyroscope data from an ST LSM6DSM with OIS interface support"
+    },
+    {
+      "block": "LSM6DSO IMU Sensor",
+      "value": "Get three-axis accelerometer and gyroscope data from an ST LSM6DSO with machine learning core"
+    },
+    {
+      "block": "LSM6DSR IMU Sensor",
+      "value": "Get high-accuracy three-axis accelerometer and gyroscope data from an ST LSM6DSR inertial sensor"
+    },
+    {
+      "block": "MPU6050 IMU Sensor",
+      "value": "Track six-axis motion combining accelerometer and gyroscope from an InvenSense MPU6050"
+    },
+    {
+      "block": "MPU9250 IMU Sensor",
+      "value": "Track nine-axis motion with accelerometer, gyroscope, and magnetometer from an InvenSense MPU9250"
+    },
+    {
+      "block": "MQTT Publish",
+      "value": "Publish sensor data or status messages to an MQTT broker for IoT cloud connectivity"
+    },
+    {
+      "block": "MQTT Subscribe",
+      "value": "Receive commands or configuration updates from an MQTT broker for IoT cloud connectivity"
+    },
+    {
+      "block": "Modbus RS485 Client Read",
+      "value": "Read data from a MODBUS server device over an RS485 physical link"
+    },
+    {
+      "block": "Modbus RS485 Client Write",
+      "value": "Write data to a MODBUS server device over an RS485 physical link"
+    },
+    {
+      "block": "Modbus RS485 Server Read",
+      "value": "Read incoming MODBUS requests from a client over RS485 when acting as server"
+    },
+    {
+      "block": "Modbus RS485 Server Write",
+      "value": "Send MODBUS responses to a client over RS485 when acting as server"
+    },
+    {
+      "block": "SCI Read",
+      "value": "Receive serial communication data on an mbed-based STM32 board"
+    },
+    {
+      "block": "SCI Write",
+      "value": "Transmit serial communication data on an mbed-based STM32 board"
+    },
+    {
+      "block": "SPI Master Transfer",
+      "value": "Perform full-duplex SPI data exchange on an mbed-based STM32 board"
+    },
+    {
+      "block": "SPI Register Read",
+      "value": "Read a specific register address on an SPI peripheral such as a sensor or memory chip"
+    },
+    {
+      "block": "SPI Register Write",
+      "value": "Write to a specific register address on an SPI peripheral for configuration or control"
+    },
+    {
+      "block": "STM32L475VG-Discovery (B-L475E-IOT01A)",
+      "value": "Access onboard sensors and peripherals specific to the STM32L475VG IoT Discovery board"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "Receive data over a TCP network connection on an mbed-based STM32 board"
+    },
+    {
+      "block": "TCP Send",
+      "value": "Send data over a TCP network connection on an mbed-based STM32 board"
+    },
+    {
+      "block": "Tcp Receive",
+      "value": "Receive data over a TCP network connection using the STM32Cube driver"
+    },
+    {
+      "block": "Tcp Send",
+      "value": "Send data over a TCP network connection using the STM32Cube driver"
+    },
+    {
+      "block": "UART/USART Read",
+      "value": "Receive serial data over a UART or USART interface from external devices or host systems"
+    },
+    {
+      "block": "UART/USART Write",
+      "value": "Transmit serial data over a UART or USART interface to external devices or host systems"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP datagrams on an mbed-based STM32 board"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP datagrams on an mbed-based STM32 board"
+    },
+    {
+      "block": "Udp Receive",
+      "value": "Receive UDP datagrams for low-latency network communication using the STM32Cube driver"
+    },
+    {
+      "block": "Udp Send",
+      "value": "Send UDP datagrams for low-latency network communication using the STM32Cube driver"
+    },
+    {
+      "block": "VL53L0X Time Of Flight Sensor",
+      "value": "Measure distance using a laser time-of-flight sensor for ranging up to two meters"
+    }
+  ]
+}

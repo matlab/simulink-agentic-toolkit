@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.7445903935,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Coder Support Package for NXP FRDM-K64F Board"
+  ],
+  "blockCount": 16,
+  "categoryCount": 3,
+  "libraryFingerprints": {
+    "Simulink_Coder_Support_Package_for_NXP_FRDM_K64F_Board": {
+      "blockCount": 16
+    }
+  }
+}

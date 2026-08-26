@@ -1,0 +1,72 @@
+{
+  "libraryName": "Data Acquisition Toolbox",
+  "generatedAt": "2026-08-19T14:30:50",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "Analog Input",
+      "referenceBlock": "daqlib/Analog Input",
+      "blockType": "M-S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Analog Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Input (Single Sample)",
+      "referenceBlock": "daqlib/Analog Input (Single Sample)",
+      "blockType": "M-S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Analog Input (Single Sample)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Output",
+      "referenceBlock": "daqlib/Analog Output",
+      "blockType": "M-S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Analog Output",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Output (Single Sample)",
+      "referenceBlock": "daqlib/Analog Output (Single Sample)",
+      "blockType": "M-S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Analog Output (Single Sample)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input (Single Sample)",
+      "referenceBlock": "daqlib/Digital Input (Single Sample)",
+      "blockType": "M-S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Digital Input (Single Sample)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output (Single Sample)",
+      "referenceBlock": "daqlib/Digital Output (Single Sample)",
+      "blockType": "M-S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Digital Output (Single Sample)",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

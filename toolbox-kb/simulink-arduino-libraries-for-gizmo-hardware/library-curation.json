@@ -1,0 +1,272 @@
+{
+  "commonBlocks": [
+    "Gizmo Initialization",
+    "Gizmo Gamepad",
+    "Analog Input",
+    "Digital Output",
+    "PWM"
+  ],
+  "categories": [
+    {
+      "name": "arduino-io",
+      "description": "Arduino hardware I/O blocks for Gizmo",
+      "keywords": [
+        "analog",
+        "digital",
+        "pwm",
+        "arduino",
+        "pin"
+      ]
+    },
+    {
+      "name": "gamepad",
+      "description": "Gamepad input for teleoperation",
+      "keywords": [
+        "gamepad",
+        "joystick",
+        "axis",
+        "button",
+        "controller"
+      ]
+    },
+    {
+      "name": "common-blocks",
+      "description": "Standard Simulink utility blocks for Gizmo projects",
+      "keywords": [
+        "gain",
+        "constant",
+        "switch",
+        "scope",
+        "math"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Abs",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Add",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Analog Input",
+      "value": "arduino-io"
+    },
+    {
+      "block": "AngleToDutyCycle",
+      "value": "arduino-io"
+    },
+    {
+      "block": "Constant",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Digital Input",
+      "value": "arduino-io"
+    },
+    {
+      "block": "Digital Output",
+      "value": "arduino-io"
+    },
+    {
+      "block": "Display",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Divide",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Gain",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Gamepad Select Axis",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gamepad Select Button",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gizmo Gamepad",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gizmo Initialization",
+      "value": "arduino-io"
+    },
+    {
+      "block": "Ground",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "common-blocks"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "common-blocks"
+    },
+    {
+      "block": "MinMax",
+      "value": "common-blocks"
+    },
+    {
+      "block": "PWM",
+      "value": "arduino-io"
+    },
+    {
+      "block": "Product",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Saturation",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Scope",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Switch",
+      "value": "common-blocks"
+    },
+    {
+      "block": "Terminator",
+      "value": "common-blocks"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Abs",
+      "value": "Compute absolute value of a signal — use for magnitude calculations in Gizmo control or sensing"
+    },
+    {
+      "block": "Add",
+      "value": "Sum input signals — use for combining sensor readings or computing error signals in Gizmo control"
+    },
+    {
+      "block": "Analog Input",
+      "value": "Read analog voltage on Gizmo Arduino pins — use for sampling sensor signals like potentiometers or light sensors"
+    },
+    {
+      "block": "AngleToDutyCycle",
+      "value": "Convert servo angle to PWM duty cycle — use for translating angular position commands into PWM signals for Gizmo servos"
+    },
+    {
+      "block": "Constant",
+      "value": "Output a constant value — use for providing fixed setpoints or parameters in Gizmo models"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "Convert signal data type — use for matching data types between blocks in Gizmo Arduino-targeted models"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "Zero the output within a specified band — use for eliminating joystick deadband or sensor noise near zero"
+    },
+    {
+      "block": "Digital Input",
+      "value": "Read digital pin state on Gizmo Arduino — use for reading buttons, limit switches, or digital sensors"
+    },
+    {
+      "block": "Digital Output",
+      "value": "Write digital pin state on Gizmo Arduino — use for controlling LEDs, relays, or other digital outputs"
+    },
+    {
+      "block": "Display",
+      "value": "Show signal value during simulation — use for monitoring variables during Gizmo model development"
+    },
+    {
+      "block": "Divide",
+      "value": "Divide one signal by another — use for ratio calculations or normalization in Gizmo algorithms"
+    },
+    {
+      "block": "Gain",
+      "value": "Multiply signal by a constant — use for scaling sensor values or applying controller gains in Gizmo models"
+    },
+    {
+      "block": "Gamepad Select Axis",
+      "value": "Select a specific axis from the gamepad — use for mapping joystick axes to motor or servo commands"
+    },
+    {
+      "block": "Gamepad Select Button",
+      "value": "Select a specific button from the gamepad — use for mapping gamepad buttons to Gizmo actions or mode switches"
+    },
+    {
+      "block": "Gizmo Gamepad",
+      "value": "Read all axes and buttons from a connected gamepad — use as the primary input device for teleoperating Gizmo robots"
+    },
+    {
+      "block": "Gizmo Initialization",
+      "value": "Initialize the Gizmo hardware configuration — use at the start of every Gizmo model to set up board communication"
+    },
+    {
+      "block": "Ground",
+      "value": "Provide a zero-valued signal — use for terminating unused input ports cleanly in Gizmo models"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "Perform Boolean logic operations — use for AND, OR, NOT logic in decision-making within Gizmo control"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Execute custom MATLAB code in the Gizmo model — use for implementing custom algorithms not covered by standard blocks"
+    },
+    {
+      "block": "MinMax",
+      "value": "Output minimum or maximum of inputs — use for signal limiting or selecting extremes in Gizmo control"
+    },
+    {
+      "block": "PWM",
+      "value": "Generate PWM output on Gizmo Arduino pins — use for motor speed control, LED dimming, or servo positioning"
+    },
+    {
+      "block": "Product",
+      "value": "Multiply input signals element-wise — use for modulation or scaling operations in Gizmo models"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "Compare two signals — use for threshold detection or conditional logic in Gizmo control algorithms"
+    },
+    {
+      "block": "Saturation",
+      "value": "Limit signal to upper and lower bounds — use for clamping actuator commands to safe operating ranges"
+    },
+    {
+      "block": "Scope",
+      "value": "Visualize signals over time — use for debugging and monitoring signal behavior in Gizmo models"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "Adjustable gain with interactive slider — use for real-time tuning of controller gains during Gizmo operation"
+    },
+    {
+      "block": "Switch",
+      "value": "Select between inputs based on a condition — use for mode switching or conditional routing in Gizmo control"
+    },
+    {
+      "block": "Terminator",
+      "value": "Terminate an unconnected output — use for suppressing warnings on unused block outputs in Gizmo models"
+    }
+  ]
+}

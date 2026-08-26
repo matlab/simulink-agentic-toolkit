@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "PLL",
+    "SMPS"
+  ],
+  "categories": [
+    {
+      "name": "mixed-signal-models",
+      "description": "Pre-built mixed-signal circuit models",
+      "keywords": [
+        "pll",
+        "smps",
+        "power",
+        "clock",
+        "mixed-signal"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "PLL",
+      "value": "mixed-signal-models"
+    },
+    {
+      "block": "SMPS",
+      "value": "mixed-signal-models"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "PLL",
+      "value": "Model a phase-locked loop circuit — use for clock recovery, frequency synthesis, or jitter analysis in mixed-signal designs"
+    },
+    {
+      "block": "SMPS",
+      "value": "Model a switched-mode power supply — use for power converter design, regulation analysis, or EMI studies in mixed-signal systems"
+    }
+  ]
+}

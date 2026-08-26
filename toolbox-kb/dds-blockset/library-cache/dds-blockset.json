@@ -1,0 +1,36 @@
+{
+  "libraryName": "DDS Blockset",
+  "generatedAt": "2026-08-19T14:30:49",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "Take DDS Sample",
+      "referenceBlock": "ddslib/Take DDS Sample",
+      "blockType": "TakeDDSSample",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Write DDS Sample",
+      "referenceBlock": "ddslib/Write DDS Sample",
+      "blockType": "WriteDDSSample",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

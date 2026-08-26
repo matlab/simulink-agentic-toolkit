@@ -1,0 +1,307 @@
+{
+  "commonBlocks": [
+    "CAN Pack",
+    "CAN Unpack",
+    "CAN Receive",
+    "CAN Transmit",
+    "CAN Configuration"
+  ],
+  "categories": [
+    {
+      "name": "can-classic",
+      "description": "Classic CAN bus communication",
+      "keywords": [
+        "can",
+        "pack",
+        "unpack",
+        "receive",
+        "transmit"
+      ]
+    },
+    {
+      "name": "can-fd",
+      "description": "CAN FD high-bandwidth communication",
+      "keywords": [
+        "canfd",
+        "flexible",
+        "64byte",
+        "bandwidth",
+        "fd"
+      ]
+    },
+    {
+      "name": "j1939",
+      "description": "SAE J1939 heavy-duty vehicle protocol",
+      "keywords": [
+        "j1939",
+        "truck",
+        "heavy",
+        "pgn",
+        "transport"
+      ]
+    },
+    {
+      "name": "xcp",
+      "description": "XCP measurement and calibration protocol",
+      "keywords": [
+        "xcp",
+        "calibration",
+        "measurement",
+        "acquisition",
+        "stimulation"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "CAN Configuration",
+      "value": "can-classic"
+    },
+    {
+      "block": "CAN FD Configuration",
+      "value": "can-fd"
+    },
+    {
+      "block": "CAN FD Log",
+      "value": "can-fd"
+    },
+    {
+      "block": "CAN FD Pack",
+      "value": "can-fd"
+    },
+    {
+      "block": "CAN FD Receive",
+      "value": "can-fd"
+    },
+    {
+      "block": "CAN FD Replay",
+      "value": "can-fd"
+    },
+    {
+      "block": "CAN FD Transmit",
+      "value": "can-fd"
+    },
+    {
+      "block": "CAN FD Unpack",
+      "value": "can-fd"
+    },
+    {
+      "block": "CAN Log",
+      "value": "can-classic"
+    },
+    {
+      "block": "CAN Pack",
+      "value": "can-classic"
+    },
+    {
+      "block": "CAN Receive",
+      "value": "can-classic"
+    },
+    {
+      "block": "CAN Replay",
+      "value": "can-classic"
+    },
+    {
+      "block": "CAN Transmit",
+      "value": "can-classic"
+    },
+    {
+      "block": "CAN Unpack",
+      "value": "can-classic"
+    },
+    {
+      "block": "J1939 CAN Transport Layer",
+      "value": "j1939"
+    },
+    {
+      "block": "J1939 Network Configuration",
+      "value": "j1939"
+    },
+    {
+      "block": "J1939 Node Configuration",
+      "value": "j1939"
+    },
+    {
+      "block": "J1939 Receive",
+      "value": "j1939"
+    },
+    {
+      "block": "J1939 Transmit",
+      "value": "j1939"
+    },
+    {
+      "block": "XCP CAN Configuration",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP CAN Data Acquisition",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP CAN Data Stimulation",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP CAN FD Configuration",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP CAN FD Data Acquisition",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP CAN FD Data Stimulation",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP CAN FD Transport Layer",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP CAN Transport Layer",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP UDP Bypass",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP UDP Configuration",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP UDP Data Acquisition",
+      "value": "xcp"
+    },
+    {
+      "block": "XCP UDP Data Stimulation",
+      "value": "xcp"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "CAN Configuration",
+      "value": "Configure a CAN channel for communication — use for setting up baud rate, hardware interface, and bus parameters before sending or receiving"
+    },
+    {
+      "block": "CAN FD Configuration",
+      "value": "Configure a CAN FD channel — use for setting up CAN FD baud rates and parameters for high-bandwidth vehicle communication"
+    },
+    {
+      "block": "CAN FD Log",
+      "value": "Log CAN FD messages to a file — use for recording high-bandwidth bus traffic for offline analysis"
+    },
+    {
+      "block": "CAN FD Pack",
+      "value": "Pack signal values into a CAN FD message frame — use for encoding signals into CAN FD payloads up to 64 bytes"
+    },
+    {
+      "block": "CAN FD Receive",
+      "value": "Receive CAN FD messages from the bus — use for reading high-bandwidth frames from modern vehicle networks"
+    },
+    {
+      "block": "CAN FD Replay",
+      "value": "Replay previously logged CAN FD messages — use for stimulating models with recorded CAN FD bus data"
+    },
+    {
+      "block": "CAN FD Transmit",
+      "value": "Transmit CAN FD messages to the bus — use for sending high-bandwidth frames to modern vehicle ECUs"
+    },
+    {
+      "block": "CAN FD Unpack",
+      "value": "Unpack signal values from a CAN FD message frame — use for decoding signals from received CAN FD data"
+    },
+    {
+      "block": "CAN Log",
+      "value": "Log CAN bus messages to a file — use for recording raw bus traffic for offline analysis or replay"
+    },
+    {
+      "block": "CAN Pack",
+      "value": "Pack signal values into a CAN message frame — use for encoding physical signals into the CAN data payload using a DBC definition"
+    },
+    {
+      "block": "CAN Receive",
+      "value": "Receive CAN messages from the bus — use for reading incoming frames from ECUs or sensors on the CAN network"
+    },
+    {
+      "block": "CAN Replay",
+      "value": "Replay previously logged CAN messages — use for stimulating a model with recorded real-world bus data"
+    },
+    {
+      "block": "CAN Transmit",
+      "value": "Transmit CAN messages to the bus — use for sending frames to ECUs or actuators on the CAN network"
+    },
+    {
+      "block": "CAN Unpack",
+      "value": "Unpack signal values from a CAN message frame — use for decoding physical signals from received CAN data using a DBC definition"
+    },
+    {
+      "block": "J1939 CAN Transport Layer",
+      "value": "Handle J1939 multi-packet transport protocol — use for managing segmented message transfer on heavy-duty vehicle J1939 networks"
+    },
+    {
+      "block": "J1939 Network Configuration",
+      "value": "Configure the J1939 network parameters — use for setting up address claiming and network management for heavy-duty vehicles"
+    },
+    {
+      "block": "J1939 Node Configuration",
+      "value": "Configure a J1939 network node — use for defining ECU name, address, and capabilities on the J1939 bus"
+    },
+    {
+      "block": "J1939 Receive",
+      "value": "Receive J1939 parameter group messages — use for reading diagnostic or operational data from heavy-duty vehicle ECUs"
+    },
+    {
+      "block": "J1939 Transmit",
+      "value": "Transmit J1939 parameter group messages — use for sending commands or data to heavy-duty vehicle ECUs"
+    },
+    {
+      "block": "XCP CAN Configuration",
+      "value": "Configure XCP CAN connection parameters — use for defining slave address and timing for XCP measurement sessions"
+    },
+    {
+      "block": "XCP CAN Data Acquisition",
+      "value": "Acquire measurement data from an ECU via XCP-on-CAN — use for real-time signal monitoring during calibration"
+    },
+    {
+      "block": "XCP CAN Data Stimulation",
+      "value": "Stimulate ECU variables via XCP-on-CAN — use for overwriting calibration parameters in real time during testing"
+    },
+    {
+      "block": "XCP CAN FD Configuration",
+      "value": "Configure XCP CAN FD connection parameters — use for defining XCP session settings over CAN FD"
+    },
+    {
+      "block": "XCP CAN FD Data Acquisition",
+      "value": "Acquire measurement data via XCP-on-CAN-FD — use for high-bandwidth real-time signal monitoring"
+    },
+    {
+      "block": "XCP CAN FD Data Stimulation",
+      "value": "Stimulate ECU variables via XCP-on-CAN-FD — use for high-bandwidth calibration parameter injection"
+    },
+    {
+      "block": "XCP CAN FD Transport Layer",
+      "value": "Configure XCP-on-CAN-FD transport — use for high-bandwidth measurement and calibration over CAN FD"
+    },
+    {
+      "block": "XCP CAN Transport Layer",
+      "value": "Configure XCP-on-CAN transport — use for setting up measurement and calibration communication over CAN with ECUs"
+    },
+    {
+      "block": "XCP UDP Bypass",
+      "value": "Bypass XCP transport for direct UDP access — use for raw XCP communication over Ethernet UDP"
+    },
+    {
+      "block": "XCP UDP Configuration",
+      "value": "Configure XCP-on-UDP connection parameters — use for defining XCP session settings over Ethernet UDP"
+    },
+    {
+      "block": "XCP UDP Data Acquisition",
+      "value": "Acquire measurement data via XCP-on-UDP — use for real-time ECU signal monitoring over Ethernet"
+    },
+    {
+      "block": "XCP UDP Data Stimulation",
+      "value": "Stimulate ECU variables via XCP-on-UDP — use for calibration parameter injection over Ethernet"
+    }
+  ]
+}

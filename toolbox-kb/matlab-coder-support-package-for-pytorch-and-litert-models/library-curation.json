@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "LiteRT",
+    "PyTorch ExportedProgram"
+  ],
+  "categories": [
+    {
+      "name": "ml-inference",
+      "description": "Machine learning model inference from external frameworks",
+      "keywords": [
+        "pytorch",
+        "litert",
+        "inference",
+        "model",
+        "deep learning"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "LiteRT",
+      "value": "ml-inference"
+    },
+    {
+      "block": "PyTorch ExportedProgram",
+      "value": "ml-inference"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "LiteRT",
+      "value": "Run inference on a LiteRT model within Simulink — use for deploying TensorFlow Lite models on edge devices or mobile targets"
+    },
+    {
+      "block": "PyTorch ExportedProgram",
+      "value": "Run inference on a PyTorch ExportedProgram within Simulink — use for integrating PyTorch-trained models into Simulink-based systems"
+    }
+  ]
+}

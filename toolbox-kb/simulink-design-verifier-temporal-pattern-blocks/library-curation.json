@@ -1,0 +1,72 @@
+{
+  "commonBlocks": [
+    "atleast_n",
+    "within_n",
+    "p_until_q"
+  ],
+  "categories": [
+    {
+      "name": "temporal-patterns",
+      "description": "Temporal pattern blocks for formal verification of time-based properties",
+      "keywords": [
+        "temporal",
+        "verification",
+        "assertion",
+        "pattern",
+        "time"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "atleast_n",
+      "value": "temporal-patterns"
+    },
+    {
+      "block": "atmost_n",
+      "value": "temporal-patterns"
+    },
+    {
+      "block": "check_at_n",
+      "value": "temporal-patterns"
+    },
+    {
+      "block": "p_until_q",
+      "value": "temporal-patterns"
+    },
+    {
+      "block": "time_elapse",
+      "value": "temporal-patterns"
+    },
+    {
+      "block": "within_n",
+      "value": "temporal-patterns"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "atleast_n",
+      "value": "Assert that a condition holds for at least N consecutive time steps — use for specifying minimum duration requirements in temporal verification"
+    },
+    {
+      "block": "atmost_n",
+      "value": "Assert that a condition holds for at most N consecutive time steps — use for specifying maximum duration constraints in temporal verification"
+    },
+    {
+      "block": "check_at_n",
+      "value": "Check whether a condition holds at exactly the Nth time step — use for verifying properties at specific points in a simulation timeline"
+    },
+    {
+      "block": "p_until_q",
+      "value": "Assert that condition P remains true until condition Q becomes true — use for specifying precedence or ordering requirements between events"
+    },
+    {
+      "block": "time_elapse",
+      "value": "Measure elapsed time in simulation steps — use for creating time-based triggers or delays in temporal property specifications"
+    },
+    {
+      "block": "within_n",
+      "value": "Assert that a condition becomes true within N time steps — use for specifying bounded response time requirements in temporal verification"
+    }
+  ]
+}

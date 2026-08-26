@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74458028935,
+  "generatorVersion": 4,
+  "libraries": [
+    "SerDes Toolbox"
+  ],
+  "blockCount": 7,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "SerDes_Toolbox": {
+      "blockCount": 7
+    }
+  }
+}

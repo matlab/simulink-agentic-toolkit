@@ -1,0 +1,135 @@
+{
+  "commonBlocks": [
+    "Proof Objective",
+    "Assumption",
+    "Test Objective",
+    "Verification Subsystem"
+  ],
+  "categories": [
+    {
+      "name": "objectives-constraints",
+      "description": "Formal verification objectives and input constraints",
+      "keywords": [
+        "proof",
+        "assumption",
+        "objective",
+        "constraint",
+        "test"
+      ]
+    },
+    {
+      "name": "temporal-operators",
+      "description": "Temporal logic operators for time-based properties",
+      "keywords": [
+        "temporal",
+        "detector",
+        "extender",
+        "within",
+        "time"
+      ]
+    },
+    {
+      "name": "verification-utils",
+      "description": "Verification infrastructure and utilities",
+      "keywords": [
+        "verification",
+        "implies",
+        "subsystem",
+        "property",
+        "example"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Assumption",
+      "value": "objectives-constraints"
+    },
+    {
+      "block": "Detector",
+      "value": "temporal-operators"
+    },
+    {
+      "block": "Extender",
+      "value": "temporal-operators"
+    },
+    {
+      "block": "Implies",
+      "value": "verification-utils"
+    },
+    {
+      "block": "Proof Objective",
+      "value": "objectives-constraints"
+    },
+    {
+      "block": "Property Examples",
+      "value": "verification-utils"
+    },
+    {
+      "block": "Temporal Property Examples",
+      "value": "verification-utils"
+    },
+    {
+      "block": "Test Condition",
+      "value": "objectives-constraints"
+    },
+    {
+      "block": "Test Objective",
+      "value": "objectives-constraints"
+    },
+    {
+      "block": "Verification Subsystem",
+      "value": "verification-utils"
+    },
+    {
+      "block": "Within Implies",
+      "value": "temporal-operators"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Assumption",
+      "value": "Constrain input ranges for formal verification — use for defining valid operating conditions that the design verifier assumes hold during analysis"
+    },
+    {
+      "block": "Detector",
+      "value": "Detect when a Boolean condition has been true for N consecutive steps — use for building temporal assertions that require sustained conditions"
+    },
+    {
+      "block": "Extender",
+      "value": "Extend a Boolean pulse by N time steps — use for holding a trigger active longer when building temporal verification logic"
+    },
+    {
+      "block": "Implies",
+      "value": "Logical implication operator for verification — use for specifying if-then relationships between conditions in formal property definitions"
+    },
+    {
+      "block": "Proof Objective",
+      "value": "Specify a property to be formally proven — use for defining safety or correctness assertions that must hold under all valid input conditions"
+    },
+    {
+      "block": "Property Examples",
+      "value": "Example models demonstrating property specifications — use as reference for learning how to write formal verification properties"
+    },
+    {
+      "block": "Temporal Property Examples",
+      "value": "Example models demonstrating temporal property specifications — use as reference for writing time-based formal verification properties"
+    },
+    {
+      "block": "Test Condition",
+      "value": "Constrain signals during test generation — use for guiding automatic test vector generation to focus on specific operating regions"
+    },
+    {
+      "block": "Test Objective",
+      "value": "Specify a coverage target for test generation — use for directing automatic test generation to achieve specific signal conditions or code paths"
+    },
+    {
+      "block": "Verification Subsystem",
+      "value": "Container for verification logic excluded from code generation — use for grouping assertions and proof objectives without affecting production code"
+    },
+    {
+      "block": "Within Implies",
+      "value": "Assert that if P occurs, then Q must follow within N steps — use for bounded response time verification in safety-critical temporal properties"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "libraryName": "Embedded Coder Support Package for ARM Cortex-A Processors",
+  "generatedAt": "2026-08-19T14:30:54",
+  "blockCount": 4,
+  "blocks": [
+    {
+      "name": "Linux Task",
+      "referenceBlock": "arm_cortex_a_lib/Linux Task",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Linux Task",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "VxWorks Task",
+      "referenceBlock": "arm_cortex_a_lib/VxWorks Task",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VxWorks Task",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "arm_cortex_a_lib/UDP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "arm_cortex_a_lib/UDP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Send",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

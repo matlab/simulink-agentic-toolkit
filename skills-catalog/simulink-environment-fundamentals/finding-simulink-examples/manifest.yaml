@@ -1,0 +1,14 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for finding-simulink-examples
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "1.0"
+human-description: Searches the full catalog of shipped MathWorks example models (10,000+, indexed and pre-built, not a local-disk scan) with the invokeModelFinder helper script and reads a match read-only. Use when asked to find, show, or open a shipped example model, or to point someone at an example that demonstrates a concept.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+optional-products: []
+required-tools: []
+required-skills: []

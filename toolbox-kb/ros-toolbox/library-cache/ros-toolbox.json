@@ -1,0 +1,387 @@
+{
+  "libraryName": "ROS Toolbox",
+  "generatedAt": "2026-08-19T14:31:06",
+  "blockCount": 41,
+  "blocks": [
+    {
+      "name": "Apply Transform",
+      "referenceBlock": "robotlib/Apply Transform",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ros.slroscpp.internal.block.ApplyTransform",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Blank Message",
+      "referenceBlock": "robotlib/Blank Message",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Blank Message",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Call Service",
+      "referenceBlock": "robotlib/Call Service",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Call Service",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Get Transform",
+      "referenceBlock": "robotlib/Get Transform",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ros.slroscpp.internal.block.GetTransform",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Header Assignment",
+      "referenceBlock": "robotlib/Header Assignment",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Header",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Publish",
+      "referenceBlock": "robotlib/Publish",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Publish",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Data",
+      "referenceBlock": "robotlib/Read Data",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Read Data from ROS Bag",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subscribe",
+      "referenceBlock": "robotlib/Subscribe",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Subscribe",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Write Image",
+      "referenceBlock": "robotlib/Write Image",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Write Image",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Write Point Cloud",
+      "referenceBlock": "robotlib/Write Point Cloud",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Write Point Cloud",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Current Time",
+      "referenceBlock": "robotlib/Current Time",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ros.slros.internal.block.CurrentTime",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Get Parameter",
+      "referenceBlock": "robotlib/Get Parameter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Get Parameter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Image",
+      "referenceBlock": "robotlib/Read Image",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Occupancy Grid",
+      "referenceBlock": "robotlib/Read Occupancy Grid",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Read Point Cloud",
+      "referenceBlock": "robotlib/Read Point Cloud",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Scan",
+      "referenceBlock": "robotlib/Read Scan",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Set Parameter",
+      "referenceBlock": "robotlib/Set Parameter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS Set Parameter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Apply Transform",
+      "referenceBlock": "ros2lib/Apply Transform",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ros.slros2.internal.block.ApplyTransform",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Blank Message",
+      "referenceBlock": "ros2lib/Blank Message",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Blank Message",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Call Service",
+      "referenceBlock": "ros2lib/Call Service",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Call Service",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cancel Action Goal",
+      "referenceBlock": "ros2lib/Cancel Action Goal",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS 2 Cancel Action Goal",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Get Transform",
+      "referenceBlock": "ros2lib/Get Transform",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ros.slros2.internal.block.GetTransform",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Header Assignment",
+      "referenceBlock": "ros2lib/Header Assignment",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Header",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Monitor Action Goal",
+      "referenceBlock": "ros2lib/Monitor Action Goal",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS 2 Monitor Action Goal",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Publish",
+      "referenceBlock": "ros2lib/Publish",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Publish",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Data",
+      "referenceBlock": "ros2lib/Read Data",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Read Data from ROS2 Bag",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Receive Service Request",
+      "referenceBlock": "ros2lib/Receive Service Request",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Receive Service Request",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Send Action Goal",
+      "referenceBlock": "ros2lib/Send Action Goal",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS 2 Send Action Goal",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Send Service Response",
+      "referenceBlock": "ros2lib/Send Service Response",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Send Service Response",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Subscribe",
+      "referenceBlock": "ros2lib/Subscribe",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Subscribe",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Write Image",
+      "referenceBlock": "ros2lib/Write Image",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Write Image",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Write Point Cloud",
+      "referenceBlock": "ros2lib/Write Point Cloud",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ROS2 Write Point Cloud",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "ros2lib/CAN Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "ros2lib/CAN Transmit",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Current Time",
+      "referenceBlock": "ros2lib/Current Time",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ros.slros2.internal.block.CurrentTime",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Get Parameter",
+      "referenceBlock": "ros2lib/Get Parameter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ros.slros2.internal.block.GetParameter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Image",
+      "referenceBlock": "ros2lib/Read Image",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Occupancy Grid",
+      "referenceBlock": "ros2lib/Read Occupancy Grid",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Read Point Cloud",
+      "referenceBlock": "ros2lib/Read Point Cloud",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Read Scan",
+      "referenceBlock": "ros2lib/Read Scan",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Coordinate Transformation Conversion",
+      "referenceBlock": "roslib/Utilities/Coordinate Transformation Conversion",
+      "blockType": "robotics.slcore.internal.block.CoordinateTransformationConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

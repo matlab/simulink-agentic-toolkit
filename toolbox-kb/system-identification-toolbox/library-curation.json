@@ -1,0 +1,154 @@
+{
+  "commonBlocks": [
+    "Kalman Filter",
+    "Extended Kalman Filter",
+    "Idmodel",
+    "Recursive Least Squares Estimator"
+  ],
+  "categories": [
+    {
+      "name": "state-estimation",
+      "description": "Kalman and particle filters for state estimation",
+      "keywords": [
+        "kalman",
+        "filter",
+        "estimate",
+        "state",
+        "ekf"
+      ]
+    },
+    {
+      "name": "online-identification",
+      "description": "Recursive parameter estimation algorithms",
+      "keywords": [
+        "recursive",
+        "rls",
+        "adaptive",
+        "online",
+        "parameter"
+      ]
+    },
+    {
+      "name": "identified-models",
+      "description": "Simulation of identified dynamic models",
+      "keywords": [
+        "model",
+        "idmodel",
+        "nonlinear",
+        "arx",
+        "neural"
+      ]
+    },
+    {
+      "name": "data-io",
+      "description": "Data import/export for system identification",
+      "keywords": [
+        "iddata",
+        "source",
+        "sink",
+        "record",
+        "replay"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Extended Kalman Filter",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Hammerstein-Wiener Model",
+      "value": "identified-models"
+    },
+    {
+      "block": "Idmodel",
+      "value": "identified-models"
+    },
+    {
+      "block": "Kalman Filter",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Model Type Converter",
+      "value": "online-identification"
+    },
+    {
+      "block": "Neural State Space Model",
+      "value": "identified-models"
+    },
+    {
+      "block": "Nonlinear ARX Model",
+      "value": "identified-models"
+    },
+    {
+      "block": "Nonlinear Grey-Box Model",
+      "value": "identified-models"
+    },
+    {
+      "block": "Particle Filter",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Recursive Least Squares Estimator",
+      "value": "online-identification"
+    },
+    {
+      "block": "Recursive Polynomial Model Estimator",
+      "value": "online-identification"
+    },
+    {
+      "block": "Unscented Kalman Filter",
+      "value": "state-estimation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Extended Kalman Filter",
+      "value": "Estimate states of a nonlinear system using the Extended Kalman Filter — use for real-time state estimation when system dynamics are mildly nonlinear"
+    },
+    {
+      "block": "Hammerstein-Wiener Model",
+      "value": "Simulate a Hammerstein-Wiener nonlinear model — use for modeling systems with input and output static nonlinearities surrounding a linear dynamic core"
+    },
+    {
+      "block": "Idmodel",
+      "value": "Simulate any identified linear model in Simulink — use for embedding estimated transfer functions, state-space, or polynomial models into a system simulation"
+    },
+    {
+      "block": "Kalman Filter",
+      "value": "Estimate states of a linear system using a standard Kalman Filter — use for optimal state estimation in linear systems with Gaussian noise"
+    },
+    {
+      "block": "Model Type Converter",
+      "value": "Convert between identified model representations — use for transforming idpoly, idss, or idtf models into different formats for simulation"
+    },
+    {
+      "block": "Neural State Space Model",
+      "value": "Simulate a neural network-based state space model — use for deploying deep learning-identified dynamics models in Simulink for prediction or control"
+    },
+    {
+      "block": "Nonlinear ARX Model",
+      "value": "Simulate a nonlinear autoregressive model with exogenous inputs — use for deploying identified NLARX models that capture nonlinear input-output behavior"
+    },
+    {
+      "block": "Nonlinear Grey-Box Model",
+      "value": "Simulate a nonlinear grey-box model with estimated parameters — use for deploying first-principles models whose parameters were identified from data"
+    },
+    {
+      "block": "Particle Filter",
+      "value": "Estimate states using sequential Monte Carlo sampling — use for state estimation in highly nonlinear or non-Gaussian systems where Kalman filters fail"
+    },
+    {
+      "block": "Recursive Least Squares Estimator",
+      "value": "Estimate parameters online using recursive least squares — use for adaptive identification of linear-in-parameters models during simulation"
+    },
+    {
+      "block": "Recursive Polynomial Model Estimator",
+      "value": "Estimate polynomial model parameters online — use for adaptive identification of ARX, ARMAX, or Output-Error models in real time"
+    },
+    {
+      "block": "Unscented Kalman Filter",
+      "value": "Estimate states using the Unscented Kalman Filter — use for nonlinear state estimation with better accuracy than EKF for strongly nonlinear systems"
+    }
+  ]
+}

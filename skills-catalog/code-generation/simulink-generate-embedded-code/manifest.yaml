@@ -1,0 +1,17 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Configures Simulink models for Embedded Coder code generation. Applies production deployment settings (target, hardware, objective, MISRA compliance) across a model reference hierarchy automatically, with automatic revert on error.
+matlab-release: ">=R2023b"
+required-tools:
+  - evaluate_matlab_code
+required-skills: []
+required-products:
+  - Simulink
+  - Embedded Coder
+  - Simulink Coder
+  - MATLAB Coder
+optional-products: []
+toolkit: simulink-agentic-toolkit

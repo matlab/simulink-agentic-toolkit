@@ -1,0 +1,117 @@
+{
+  "libraryName": "Audio Toolbox",
+  "generatedAt": "2026-08-19T14:30:47",
+  "blockCount": 11,
+  "blocks": [
+    {
+      "name": "Deep Learning",
+      "referenceBlock": "audiolibv1/Deep Learning",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Sinks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Demos",
+      "referenceBlock": "audiolibv1/Demos",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP Demos",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dynamic Range Control",
+      "referenceBlock": "audiolibv1/Dynamic Range Control",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Dynamic Range Control",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Effects",
+      "referenceBlock": "audiolibv1/Effects",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Filters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Features",
+      "referenceBlock": "audiolibv1/Features",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Features",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Filters",
+      "referenceBlock": "audiolibv1/Filters",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Filters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Info",
+      "referenceBlock": "audiolibv1/Info",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio System Toolbox Info",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Measurements",
+      "referenceBlock": "audiolibv1/Measurements",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Filters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinks",
+      "referenceBlock": "audiolibv1/Sinks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Sinks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sources",
+      "referenceBlock": "audiolibv1/Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Sources",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "User-Defined Functions",
+      "referenceBlock": "audiolibv1/User-Defined Functions",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Features",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:09",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

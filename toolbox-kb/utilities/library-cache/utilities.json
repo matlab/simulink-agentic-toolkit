@@ -1,0 +1,117 @@
+{
+  "libraryName": "Utilities",
+  "generatedAt": "2026-08-19T14:31:18",
+  "blockCount": 11,
+  "blocks": [
+    {
+      "name": "PS-Simulink Converter",
+      "referenceBlock": "nesl_utility/PS-Simulink Converter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PS-Simulink\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulink-PS Converter",
+      "referenceBlock": "nesl_utility/Simulink-PS Converter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink-PS\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Solver Configuration",
+      "referenceBlock": "nesl_utility/Solver Configuration",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Solver\nConfiguration",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Array Connection",
+      "referenceBlock": "nesl_utility/Array Connection",
+      "blockType": "SimscapeArrayConnection",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Connection Label",
+      "referenceBlock": "nesl_utility/Connection Label",
+      "blockType": "ConnectionLabel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Probe",
+      "referenceBlock": "nesl_utility/Probe",
+      "blockType": "SimscapeProbe",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simscape Component",
+      "referenceBlock": "nesl_utility/Simscape Component",
+      "blockType": "SimscapeComponentBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simscape Bus",
+      "referenceBlock": "nesl_utility/Simscape Bus",
+      "blockType": "SimscapeBus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spectrum Analyzer",
+      "referenceBlock": "nesl_utility/Spectrum Analyzer",
+      "blockType": "SpectrumAnalyzer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variant Connector",
+      "referenceBlock": "nesl_utility/Variant Connector",
+      "blockType": "VariantPMConnector",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Connection Port",
+      "referenceBlock": "nesl_utility/Connection Port",
+      "blockType": "PMIOPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,288 @@
+{
+  "libraryName": "Simscape Acoustics",
+  "generatedAt": "2026-08-19T14:31:10",
+  "blockCount": 30,
+  "blocks": [
+    {
+      "name": "Variable Acoustic Resistance",
+      "referenceBlock": "acoustic_lib/Acoustic Elements/Variable Acoustic Resistance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Variable Acoustic\nResistance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Far-Field Pressure Sensor",
+      "referenceBlock": "acoustic_lib/Acoustic Sensors/Far-Field Pressure Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Far-Field Pressure\nSensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Volume Velocity Sensor",
+      "referenceBlock": "acoustic_lib/Acoustic Sensors/Volume Velocity Sensor",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Volume Velocity\nSensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Pressure Source",
+      "referenceBlock": "acoustic_lib/Acoustic Sources/Controlled Pressure Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Pressure\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Controlled Volume Velocity Source",
+      "referenceBlock": "acoustic_lib/Acoustic Sources/Controlled Volume Velocity Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Controlled Volume\nVelocity Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Volume Velocity Source",
+      "referenceBlock": "acoustic_lib/Acoustic Sources/Volume Velocity Source",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Volume Velocity\nSource",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ported Speaker Enclosure",
+      "referenceBlock": "acoustic_lib/Applications/Cavities and Enclosures/Ported Speaker Enclosure",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ported Speaker\nEnclosure",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Acoustic Enclosure",
+      "referenceBlock": "acoustic_lib/Applications/Cavities and Enclosures/Simple Acoustic Enclosure",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Simple Acoustic\nEnclosure",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Speaker Enclosure with Mounting Holes",
+      "referenceBlock": "acoustic_lib/Applications/Cavities and Enclosures/Speaker Enclosure with Mounting Holes",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Speaker Enclosure\nwith Mounting Holes",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Earbud",
+      "referenceBlock": "acoustic_lib/Applications/Headphones/Earbud",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Earbud",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Ear Canal with Ear Drum",
+      "referenceBlock": "acoustic_lib/Applications/Human Ear/Ear Canal with Ear Drum",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ear Canal with Ear\nDrum",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ear Drum Impedance",
+      "referenceBlock": "acoustic_lib/Applications/Human Ear/Ear Drum Impedance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Ear Drum Impedance",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Condenser Microphone",
+      "referenceBlock": "acoustic_lib/Applications/Microphones/Condenser Microphone",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Condenser Microphone",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Microspeaker",
+      "referenceBlock": "acoustic_lib/Applications/Moving Coil Speakers/Microspeaker",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Microspeaker",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Moving Coil Speaker",
+      "referenceBlock": "acoustic_lib/Applications/Moving Coil Speakers/Moving Coil Speaker",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Moving Coil Speaker",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Passive Radiator",
+      "referenceBlock": "acoustic_lib/Applications/Moving Coil Speakers/Passive Radiator",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Passive Radiator",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Cone",
+      "referenceBlock": "acoustic_lib/Applications/Tubes and Horns/Cone",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cone",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Cylindrical Tube With N Segments",
+      "referenceBlock": "acoustic_lib/Applications/Tubes and Horns/Cylindrical Tube With N Segments",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylindrical Tube\nWith N Segments",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cylindrical Tube With Thermoviscous Losses Using Foster Network",
+      "referenceBlock": "acoustic_lib/Applications/Tubes and Horns/Cylindrical Tube With Thermoviscous Losses Using Foster Network",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cylindrical Tube\nWith Thermoviscous\nLosses Using Foster\nNetwork",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Small Cylindrical Orifice or Tube",
+      "referenceBlock": "acoustic_lib/Applications/Tubes and Horns/Small Cylindrical Orifice or Tube",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Small Cylindrical\nOrifice or Tube",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Small Rectangular Slot",
+      "referenceBlock": "acoustic_lib/Applications/Tubes and Horns/Small Rectangular Slot",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Small Rectangular\nSlot",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Thin Rectangular Tube With Thermoviscous Losses",
+      "referenceBlock": "acoustic_lib/Applications/Tubes and Horns/Thin Rectangular Tube With Thermoviscous Losses",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Thin Rectangular\nTube With\nThermoviscous Losses",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Circular Piston Radiation Impedance",
+      "referenceBlock": "acoustic_lib/Radiation Impedance/Circular Piston Radiation Impedance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Circular Piston\nRadiation Impedance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radiation Impedance - Circular Flanged Opening",
+      "referenceBlock": "acoustic_lib/Radiation Impedance/Radiation Impedance - Circular Flanged Opening",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Radiation Impedance\n- Circular Flanged\nOpening",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radiation Impedance - Circular Unflanged Opening",
+      "referenceBlock": "acoustic_lib/Radiation Impedance/Radiation Impedance - Circular Unflanged Opening",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Radiation Impedance\n- Circular Unflanged\nOpening",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radiation Impedance - Element In Array On Pulsing Sphere",
+      "referenceBlock": "acoustic_lib/Radiation Impedance/Radiation Impedance - Element In Array On Pulsing Sphere",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Radiation Impedance\n- Element In Array\nOn Pulsing Sphere",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spherical Cap Radiation Impedance",
+      "referenceBlock": "acoustic_lib/Radiation Impedance/Spherical Cap Radiation Impedance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Spherical Cap\nRadiation Impedance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spherical Source Radiation Impedance",
+      "referenceBlock": "acoustic_lib/Radiation Impedance/Spherical Source Radiation Impedance",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Spherical Source\nRadiation Impedance",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MEMS Speaker Electromechanical Converter",
+      "referenceBlock": "acoustic_lib/Transformers/MEMS Speaker Electromechanical Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "MEMS Speaker\nElectromechanical\nConverter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mechanical to Acoustic Converter",
+      "referenceBlock": "acoustic_lib/Transformers/Mechanical to Acoustic Converter",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Mechanical to\nAcoustic Converter",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

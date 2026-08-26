@@ -1,0 +1,219 @@
+{
+  "commonBlocks": [
+    "Motor",
+    "Color Sensor",
+    "Ultrasonic Sensor",
+    "Gyro Sensor",
+    "Encoder"
+  ],
+  "categories": [
+    {
+      "name": "actuators",
+      "description": "Motor and mechanical output control",
+      "keywords": [
+        "motor",
+        "encoder",
+        "actuator",
+        "speed",
+        "position"
+      ]
+    },
+    {
+      "name": "sensors",
+      "description": "Environmental and motion sensors",
+      "keywords": [
+        "color",
+        "gyro",
+        "ultrasonic",
+        "infrared",
+        "touch"
+      ]
+    },
+    {
+      "name": "communication",
+      "description": "Network data exchange",
+      "keywords": [
+        "tcp",
+        "udp",
+        "i2c",
+        "network",
+        "wifi"
+      ]
+    },
+    {
+      "name": "user-interface",
+      "description": "Display, audio, and user input",
+      "keywords": [
+        "display",
+        "button",
+        "speaker",
+        "led",
+        "screen"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Battery",
+      "value": "sensors"
+    },
+    {
+      "block": "Button",
+      "value": "user-interface"
+    },
+    {
+      "block": "Color Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Display",
+      "value": "user-interface"
+    },
+    {
+      "block": "Encoder",
+      "value": "actuators"
+    },
+    {
+      "block": "Gyro Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "I2C Register Read",
+      "value": "communication"
+    },
+    {
+      "block": "Infrared Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Motor",
+      "value": "actuators"
+    },
+    {
+      "block": "NXT Sensors",
+      "value": "sensors"
+    },
+    {
+      "block": "Pixy2 Vision Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Speaker",
+      "value": "user-interface"
+    },
+    {
+      "block": "Status Light",
+      "value": "user-interface"
+    },
+    {
+      "block": "TCP/IP Receive",
+      "value": "communication"
+    },
+    {
+      "block": "TCP/IP Send",
+      "value": "communication"
+    },
+    {
+      "block": "Timer",
+      "value": "sensors"
+    },
+    {
+      "block": "Touch Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "communication"
+    },
+    {
+      "block": "UDP Send",
+      "value": "communication"
+    },
+    {
+      "block": "Ultrasonic Sensor",
+      "value": "sensors"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Battery",
+      "value": "Read EV3 battery voltage level — use for monitoring remaining battery life and triggering low-power behaviors"
+    },
+    {
+      "block": "Button",
+      "value": "Read EV3 brick button presses — use for detecting user input from the navigation buttons on the brick"
+    },
+    {
+      "block": "Color Sensor",
+      "value": "Read color or light intensity from the EV3 color sensor — use for line following, color sorting, or ambient light detection"
+    },
+    {
+      "block": "Display",
+      "value": "Show text or images on the EV3 LCD screen — use for displaying status, sensor values, or debug info on the robot"
+    },
+    {
+      "block": "Encoder",
+      "value": "Read motor encoder position and speed — use for closed-loop motor control or odometry in navigation tasks"
+    },
+    {
+      "block": "Gyro Sensor",
+      "value": "Read angular rate and heading from the EV3 gyro sensor — use for rotation measurement, balancing, or heading control"
+    },
+    {
+      "block": "I2C Register Read",
+      "value": "Read data from I2C devices connected to EV3 ports — use for interfacing with third-party I2C sensors or devices"
+    },
+    {
+      "block": "Infrared Sensor",
+      "value": "Read proximity or IR beacon data from the EV3 infrared sensor — use for obstacle detection or remote control reception"
+    },
+    {
+      "block": "Motor",
+      "value": "Control EV3 motors with speed or position commands — use for driving wheels, arms, or other actuated mechanisms"
+    },
+    {
+      "block": "NXT Sensors",
+      "value": "Interface with legacy NXT sensors on EV3 — use for reading older NXT-compatible sensors connected to EV3 ports"
+    },
+    {
+      "block": "Pixy2 Vision Sensor",
+      "value": "Read object detection data from a Pixy2 camera on EV3 — use for color blob tracking or line following with vision"
+    },
+    {
+      "block": "Speaker",
+      "value": "Play tones or audio files on the EV3 speaker — use for audio feedback, alerts, or musical output from the robot"
+    },
+    {
+      "block": "Status Light",
+      "value": "Control the EV3 brick status LEDs — use for visual status indication with configurable color and flash patterns"
+    },
+    {
+      "block": "TCP/IP Receive",
+      "value": "Receive data over TCP/IP on EV3 — use for remote monitoring or receiving commands from a host computer over WiFi"
+    },
+    {
+      "block": "TCP/IP Send",
+      "value": "Send data over TCP/IP from EV3 — use for transmitting sensor data or status to a host computer over WiFi"
+    },
+    {
+      "block": "Timer",
+      "value": "Read elapsed time on EV3 — use for timing operations, creating delays, or measuring event durations"
+    },
+    {
+      "block": "Touch Sensor",
+      "value": "Read the EV3 touch sensor press state — use for detecting physical contact, bumper hits, or limit switches"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP packets on EV3 — use for low-latency data reception from a host computer"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP packets from EV3 — use for low-latency data transmission to a host computer"
+    },
+    {
+      "block": "Ultrasonic Sensor",
+      "value": "Measure distance using the EV3 ultrasonic sensor — use for obstacle detection and distance measurement in navigation"
+    }
+  ]
+}

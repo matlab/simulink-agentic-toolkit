@@ -1,0 +1,72 @@
+{
+  "commonBlocks": [
+    "Modulation",
+    "Error Detection and Correction",
+    "Comm Filters"
+  ],
+  "categories": [
+    {
+      "name": "hdl-communications",
+      "description": "HDL-optimized communications blocks for FPGA and ASIC implementation",
+      "keywords": [
+        "hdl",
+        "fpga",
+        "hardware",
+        "vhdl",
+        "verilog"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Comm Filters",
+      "value": "hdl-communications"
+    },
+    {
+      "block": "Comm Sinks",
+      "value": "hdl-communications"
+    },
+    {
+      "block": "Comm Sources",
+      "value": "hdl-communications"
+    },
+    {
+      "block": "Error Detection and Correction",
+      "value": "hdl-communications"
+    },
+    {
+      "block": "Interleaving",
+      "value": "hdl-communications"
+    },
+    {
+      "block": "Modulation",
+      "value": "hdl-communications"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Comm Filters",
+      "value": "HDL-optimized communications filters (raised cosine, CIC, FIR) for FPGA implementation — use for pulse shaping and matched filtering in hardware-targeted receiver/transmitter designs"
+    },
+    {
+      "block": "Comm Sinks",
+      "value": "HDL-compatible signal analysis and measurement blocks — use to capture and analyze communications signals within HDL-targeted subsystems"
+    },
+    {
+      "block": "Comm Sources",
+      "value": "HDL-optimized signal generators (NCO, PN sequence, test patterns) for FPGA — use to generate reference signals and test data in hardware-targeted designs"
+    },
+    {
+      "block": "Error Detection and Correction",
+      "value": "HDL-optimized FEC encoders and decoders (Viterbi, RS, LDPC, turbo) for FPGA — use to implement channel coding in hardware with streaming interfaces and fixed latency"
+    },
+    {
+      "block": "Interleaving",
+      "value": "HDL-optimized interleavers and deinterleavers for FPGA — use to implement bit/symbol reordering in hardware with deterministic throughput and memory-efficient architectures"
+    },
+    {
+      "block": "Modulation",
+      "value": "HDL-optimized modulators and demodulators (QAM, PSK, OFDM) for FPGA — use to implement physical-layer modulation in hardware with fixed-point arithmetic and pipeline-friendly architectures"
+    }
+  ]
+}

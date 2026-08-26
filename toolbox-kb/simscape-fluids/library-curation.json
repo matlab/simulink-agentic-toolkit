@@ -1,0 +1,1924 @@
+{
+  "commonBlocks": [
+    "Pipe (IL)",
+    "Check Valve (IL)",
+    "Orifice (IL)",
+    "Double-Acting Actuator (IL)",
+    "Fixed-Displacement Pump (IL)",
+    "Pressure Relief Valve (IL)",
+    "Gas-Charged Accumulator (IL)",
+    "4-Way 3-Position Directional Valve (IL)",
+    "Tank (IL)",
+    "Centrifugal Pump (TL)",
+    "Heat Exchanger (TL-TL)",
+    "Pipe (TL)"
+  ],
+  "categories": [
+    {
+      "name": "actuators",
+      "description": "Linear and rotary fluid-power cylinders and their auxiliary components for converting pressure to mechanical force",
+      "keywords": [
+        "cylinder",
+        "piston",
+        "actuator",
+        "force",
+        "stroke"
+      ]
+    },
+    {
+      "name": "valves",
+      "description": "Directional, flow-control, and pressure-control valves that route, throttle, or regulate fluid flow",
+      "keywords": [
+        "valve",
+        "directional",
+        "check",
+        "solenoid",
+        "throttle"
+      ]
+    },
+    {
+      "name": "orifices-restrictions",
+      "description": "Fixed and variable orifices, leakage paths, and local resistances that restrict fluid flow",
+      "keywords": [
+        "orifice",
+        "restriction",
+        "leakage",
+        "metering",
+        "loss"
+      ]
+    },
+    {
+      "name": "pipes-fittings",
+      "description": "Pipe segments, bends, junctions, and fittings that convey fluid between components",
+      "keywords": [
+        "pipe",
+        "elbow",
+        "junction",
+        "fitting",
+        "duct"
+      ]
+    },
+    {
+      "name": "heat-exchangers",
+      "description": "Devices that transfer thermal energy between fluid streams or between a fluid and a thermal boundary",
+      "keywords": [
+        "heat exchanger",
+        "condenser",
+        "evaporator",
+        "cooling",
+        "NTU"
+      ]
+    },
+    {
+      "name": "pumps-compressors",
+      "description": "Pumps, motors, compressors, fans, turbines, and ejectors that add or extract energy from a fluid stream",
+      "keywords": [
+        "pump",
+        "compressor",
+        "turbine",
+        "fan",
+        "motor"
+      ]
+    },
+    {
+      "name": "tanks-accumulators",
+      "description": "Reservoirs, accumulators, and receivers that store fluid volume or hydraulic energy",
+      "keywords": [
+        "tank",
+        "accumulator",
+        "reservoir",
+        "storage",
+        "receiver"
+      ]
+    },
+    {
+      "name": "valve-actuators",
+      "description": "Actuation mechanisms that position valve spools or poppets in response to control signals or pilot pressures",
+      "keywords": [
+        "actuator",
+        "solenoid",
+        "pilot",
+        "servo",
+        "proportional"
+      ]
+    },
+    {
+      "name": "hydromechanical-valves",
+      "description": "Primitive building blocks for constructing custom spool and poppet valve geometries from first principles",
+      "keywords": [
+        "spool",
+        "land",
+        "poppet",
+        "bore",
+        "hydromechanical"
+      ]
+    },
+    {
+      "name": "utilities-interfaces",
+      "description": "Fluid property definitions, diagnostic visualizations, domain interfaces, and complete thermodynamic cycle models",
+      "keywords": [
+        "properties",
+        "interface",
+        "diagram",
+        "refrigeration",
+        "coupling"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "2-Way Directional Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "2-Way Directional Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "2-Way Directional Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "2-Way Directional Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "3-Way Directional Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "3-Way Directional Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "3-Way Directional Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "3-Way Directional Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "3-Zone Pipe (2P)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (2P)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (2P)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Air Muscle Actuator (G)",
+      "value": "actuators"
+    },
+    {
+      "block": "Annular Leakage (IL)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Area Change (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Area Change (TL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Ball Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Ball Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Ball Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Cartridge Valve Actuator (IL)",
+      "value": "valve-actuators"
+    },
+    {
+      "block": "Cartridge Valve Insert (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Centrifugal Pump (2P)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Centrifugal Pump (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Centrifugal Pump (TL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Check Valve (2P)",
+      "value": "valves"
+    },
+    {
+      "block": "Check Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Check Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Check Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Check Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Compressor (2P)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Compressor (G)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Compressor (MA)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Condenser Evaporator (2P-G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Condenser Evaporator (2P-MA)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Condenser Evaporator (TL-2P)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Cooling Tower (TL-MA)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Counterbalance Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Counterbalance Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Cross-Junction (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Cross-Junction (MA)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Cross-Junction (TL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Cylinder Cushion (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Cylinder Cushion (IL-PB)",
+      "value": "actuators"
+    },
+    {
+      "block": "Cylinder Cushion (TL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Cylinder Friction (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Cylinder Friction (IL-PB)",
+      "value": "actuators"
+    },
+    {
+      "block": "Cylinder Friction (TL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Actuator (G)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Actuator (G-IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Actuator (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Actuator (IL-PB)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Actuator (MA)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Actuator (TL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Actuator (TL-G)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Rotary Actuator (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Double-Acting Servo Valve Actuator (IL)",
+      "value": "valve-actuators"
+    },
+    {
+      "block": "E-NTU Heat Transfer",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "EN14511 Heat Pump (2P)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Ejector (G)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Ejector (MA)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Elbow (G)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Elbow (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Elbow (MA)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Elbow (TL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Fan (G)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Fan (MA)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Fixed-Displacement Motor (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Fixed-Displacement Motor (TL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Fixed-Displacement Pump (2P)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Fixed-Displacement Pump (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Fixed-Displacement Pump (TL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Flow Coefficient Parameterized Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Gas-Charged Accumulator (IL)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Gas-Charged Accumulator (TL)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Gate Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Gate Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Gate Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Gate Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Heat Exchanger (G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Heat Exchanger (G-G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Heat Exchanger (G-TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Heat Exchanger (TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Heat Exchanger (TL-MA)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Heat Exchanger (TL-TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Heat Exchanger Interface (G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Heat Exchanger Interface (TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Hydromechanical Valve Interface (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Interface (2P-G)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Interface (2P-MA)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Interface (2P-TL)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Interface (G-MA)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Interface (TL-IL)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Isothermal Liquid Predefined Properties (IL)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Jet Pump (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Jet Pump (TL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Local Resistance (IL)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Local Resistance (MA)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Local Resistance (TL)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "M-Way N-Position Directional Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Multiposition Valve Actuator",
+      "value": "valve-actuators"
+    },
+    {
+      "block": "Needle Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Orifice (2P)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Orifice (G)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Orifice (IL)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Orifice (MA)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Orifice (TL)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "P-H Diagram (2P)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Partially Filled Pipe (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Partially Filled Pipe (TL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Pilot Valve Actuator (IL)",
+      "value": "valve-actuators"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pipe (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Pipe (TL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Pipe Bend (G)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Pipe Bend (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Pipe Bend (MA)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Pipe Bend (TL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Plate Condenser Evaporator (TL-2P)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Plate Heat Exchanger (TL-TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Poppet Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Poppet Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Poppet Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Poppet Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Poppet with Seat at B (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Poppet with Seat at F (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Positive-Displacement Compressor (2P)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Positive-Displacement Compressor (G)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Positive-Displacement Compressor (MA)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Pressure Compensator Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Compensator Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Compensator Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Reducing Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Reducing Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Reducing Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Relief Valve (2P)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Relief Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Relief Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Relief Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure Relief Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure-Compensated 3-Way Flow Control Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure-Compensated Flow Control Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure-Compensated Pump (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Pressure-Reducing 3-Way Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure-Reducing Valve (2P)",
+      "value": "valves"
+    },
+    {
+      "block": "Pressure-Reducing Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Proportional Valve Actuator",
+      "value": "valve-actuators"
+    },
+    {
+      "block": "Receiver Accumulator (2P)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Rotating Channel (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Rotating Cylinder Force (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Rotating Single-Acting Actuator (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Shuttle Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Single-Acting Actuator (G)",
+      "value": "actuators"
+    },
+    {
+      "block": "Single-Acting Actuator (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Single-Acting Actuator (IL-PB)",
+      "value": "actuators"
+    },
+    {
+      "block": "Single-Acting Actuator (MA)",
+      "value": "actuators"
+    },
+    {
+      "block": "Single-Acting Actuator (TL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Single-Acting Rotary Actuator (IL)",
+      "value": "actuators"
+    },
+    {
+      "block": "Solenoid Valve (IL)",
+      "value": "valves"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (G-G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (G-TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (TL-TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger Interface (G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger Interface (TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Specific Dissipation Heat Transfer",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "Spool Orifice (IL)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Spool Orifice Flow Force (IL)",
+      "value": "valve-actuators"
+    },
+    {
+      "block": "Spring-Loaded Accumulator (IL)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Swash Plate",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "System-Level Condenser Evaporator (2P-G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Condenser Evaporator (2P-MA)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Condenser Evaporator (2P-TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Heat Exchanger (2P-2P)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Heat Exchanger (G-G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Heat Exchanger (MA-MA)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Heat Exchanger (TL-G)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Heat Exchanger (TL-MA)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Heat Exchanger (TL-TL)",
+      "value": "heat-exchangers"
+    },
+    {
+      "block": "System-Level Refrigeration Cycle (2P)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "T-Junction (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "T-Junction (MA)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "T-Junction (TL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Tank (G-IL)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Tank (G-TL)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Tank (IL)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Tank (TL)",
+      "value": "tanks-accumulators"
+    },
+    {
+      "block": "Temperature Control Valve (G)",
+      "value": "valves"
+    },
+    {
+      "block": "Temperature Control Valve (MA)",
+      "value": "valves"
+    },
+    {
+      "block": "Temperature Control Valve (TL)",
+      "value": "valves"
+    },
+    {
+      "block": "Thermal Liquid Properties (TL)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Thermostatic Expansion Valve (2P)",
+      "value": "valves"
+    },
+    {
+      "block": "Turbine (2P)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Turbine (G)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Turbine (MA)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Two-Phase Fluid Predefined Properties (2P)",
+      "value": "utilities-interfaces"
+    },
+    {
+      "block": "Valve Piston (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Plate Orifice (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Valve Port with Land (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Port with Land Edge at B (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Port with Land Edge at F (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Section with Detached Shaft (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Section with End Cap at B (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Section with End Cap at F (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Section with Rigid Shaft (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Valve Section with Valve Port (IL-PB)",
+      "value": "hydromechanical-valves"
+    },
+    {
+      "block": "Variable Overlapping Orifice (IL)",
+      "value": "orifices-restrictions"
+    },
+    {
+      "block": "Variable-Displacement Motor (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Variable-Displacement Motor (TL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Variable-Displacement Pump (2P)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Variable-Displacement Pump (IL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Variable-Displacement Pump (TL)",
+      "value": "pumps-compressors"
+    },
+    {
+      "block": "Y-Junction (IL)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Y-Junction (MA)",
+      "value": "pipes-fittings"
+    },
+    {
+      "block": "Y-Junction (TL)",
+      "value": "pipes-fittings"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "2-Way Directional Valve (G)",
+      "value": "Use to control on-off gas flow in a single line with a two-way pneumatic valve"
+    },
+    {
+      "block": "2-Way Directional Valve (IL)",
+      "value": "Use to control on-off hydraulic flow in a single line with a two-way directional valve"
+    },
+    {
+      "block": "2-Way Directional Valve (MA)",
+      "value": "Use to control on-off moist air flow in a single duct path with a two-way valve"
+    },
+    {
+      "block": "2-Way Directional Valve (TL)",
+      "value": "Use to control on-off thermal liquid flow with a two-way directional valve including thermal effects"
+    },
+    {
+      "block": "3-Way Directional Valve (G)",
+      "value": "Use to route gas flow between three ports for supply, exhaust, or divert functions in pneumatic circuits"
+    },
+    {
+      "block": "3-Way Directional Valve (IL)",
+      "value": "Use to route isothermal liquid flow between three ports for supply, return, or bypass functions"
+    },
+    {
+      "block": "3-Way Directional Valve (MA)",
+      "value": "Use to route moist air between three ports for supply, exhaust, or divert functions"
+    },
+    {
+      "block": "3-Way Directional Valve (TL)",
+      "value": "Use to route thermal liquid flow between three ports for supply, return, or bypass with temperature tracking"
+    },
+    {
+      "block": "3-Zone Pipe (2P)",
+      "value": "Use to model a two-phase fluid pipe with subcooled, two-phase, and superheated zones for condenser and evaporator tubes"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (2P)",
+      "value": "Use to control a two-phase fluid actuator or switch refrigerant flow paths between two positions"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (IL)",
+      "value": "Use to control a hydraulic actuator with two discrete positions for extend and retract commands"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (MA)",
+      "value": "Use to control a moist air actuator with two discrete positions for bidirectional motion"
+    },
+    {
+      "block": "4-Way 2-Position Directional Valve (TL)",
+      "value": "Use to control a thermal liquid actuator with two discrete positions including fluid temperature effects"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (2P)",
+      "value": "Use to control two-phase fluid flow paths with three valve positions for reversible heat pump operation"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (G)",
+      "value": "Use to control a double-acting pneumatic actuator with extend, retract, and neutral positions"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (IL)",
+      "value": "Use to control a double-acting hydraulic actuator with extend, retract, and center-neutral positions"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (MA)",
+      "value": "Use to control a double-acting moist air actuator with extend, retract, and neutral positions"
+    },
+    {
+      "block": "4-Way 3-Position Directional Valve (TL)",
+      "value": "Use to control a double-acting thermal liquid actuator with three positions and thermal effects"
+    },
+    {
+      "block": "Air Muscle Actuator (G)",
+      "value": "Use to model a pneumatic artificial muscle that contracts when pressurized, for soft robotics or compliant actuation"
+    },
+    {
+      "block": "Annular Leakage (IL)",
+      "value": "Use to model leakage flow through an annular gap such as between a piston and cylinder bore"
+    },
+    {
+      "block": "Area Change (IL)",
+      "value": "Use to model a sudden or gradual cross-section change in an isothermal liquid pipe causing pressure loss"
+    },
+    {
+      "block": "Area Change (TL)",
+      "value": "Use to model a cross-section change in a thermal liquid pipe causing pressure loss with thermal effects"
+    },
+    {
+      "block": "Ball Valve (G)",
+      "value": "Use to model a quarter-turn ball valve for gas flow shutoff or throttling with characterized flow area"
+    },
+    {
+      "block": "Ball Valve (IL)",
+      "value": "Use to model a quarter-turn ball valve for isothermal liquid flow shutoff or modulated throttling"
+    },
+    {
+      "block": "Ball Valve (MA)",
+      "value": "Use to model a quarter-turn ball valve for moist air shutoff or throttling applications"
+    },
+    {
+      "block": "Cartridge Valve Actuator (IL)",
+      "value": "Use to model the hydraulic pilot stage that drives a cartridge valve insert open or closed"
+    },
+    {
+      "block": "Cartridge Valve Insert (IL)",
+      "value": "Use to model a two-way cartridge valve insert for compact manifold-mounted hydraulic flow control"
+    },
+    {
+      "block": "Centrifugal Pump (2P)",
+      "value": "Use to model a centrifugal pump handling two-phase fluid for refrigerant or process liquid circulation"
+    },
+    {
+      "block": "Centrifugal Pump (IL)",
+      "value": "Use to model a centrifugal pump providing pressure rise in an isothermal liquid system based on head-flow curves"
+    },
+    {
+      "block": "Centrifugal Pump (TL)",
+      "value": "Use to model a centrifugal pump in a thermal liquid system with head-flow curves and heat generation"
+    },
+    {
+      "block": "Check Valve (2P)",
+      "value": "Use to allow two-phase fluid flow in one direction only, preventing refrigerant backflow in cycle circuits"
+    },
+    {
+      "block": "Check Valve (G)",
+      "value": "Use to allow gas flow in one direction only, preventing backflow in pneumatic circuits"
+    },
+    {
+      "block": "Check Valve (IL)",
+      "value": "Use to allow isothermal liquid flow in one direction only, preventing backflow in hydraulic circuits"
+    },
+    {
+      "block": "Check Valve (MA)",
+      "value": "Use to allow moist air flow in one direction only, preventing backflow in air distribution systems"
+    },
+    {
+      "block": "Check Valve (TL)",
+      "value": "Use to allow thermal liquid flow in one direction only, preventing backflow with thermal property tracking"
+    },
+    {
+      "block": "Compressor (2P)",
+      "value": "Use to model a two-phase fluid compressor with performance maps for vapor compression cycle analysis"
+    },
+    {
+      "block": "Compressor (G)",
+      "value": "Use to model a gas compressor with performance maps for pressure ratio and efficiency as functions of speed and flow"
+    },
+    {
+      "block": "Compressor (MA)",
+      "value": "Use to model a moist air compressor with performance maps accounting for humidity effects on compression"
+    },
+    {
+      "block": "Condenser Evaporator (2P-G)",
+      "value": "Use to model a condenser or evaporator exchanging heat between a two-phase refrigerant and a gas stream"
+    },
+    {
+      "block": "Condenser Evaporator (2P-MA)",
+      "value": "Use to model a condenser or evaporator exchanging heat between a two-phase refrigerant and moist air"
+    },
+    {
+      "block": "Condenser Evaporator (TL-2P)",
+      "value": "Use to model a condenser or evaporator exchanging heat between thermal liquid and a two-phase refrigerant"
+    },
+    {
+      "block": "Cooling Tower (TL-MA)",
+      "value": "Use to model an evaporative cooling tower that rejects heat from thermal liquid to moist air via evaporation"
+    },
+    {
+      "block": "Counterbalance Valve (IL)",
+      "value": "Use to prevent uncontrolled lowering of a hydraulic load by requiring pilot pressure before allowing return flow"
+    },
+    {
+      "block": "Counterbalance Valve (TL)",
+      "value": "Use to prevent uncontrolled load lowering in a thermal liquid circuit by requiring pilot pressure for return flow"
+    },
+    {
+      "block": "Cross-Junction (IL)",
+      "value": "Use to model a four-way pipe junction in an isothermal liquid network with mixing and splitting flow"
+    },
+    {
+      "block": "Cross-Junction (MA)",
+      "value": "Use to model a four-way duct junction in a moist air network for splitting or merging airflows"
+    },
+    {
+      "block": "Cross-Junction (TL)",
+      "value": "Use to model a four-way pipe junction in a thermal liquid network with mixing and splitting"
+    },
+    {
+      "block": "Cylinder Cushion (IL)",
+      "value": "Use to model end-of-stroke cushioning in a hydraulic cylinder that decelerates the piston before impact"
+    },
+    {
+      "block": "Cylinder Cushion (IL-PB)",
+      "value": "Use to model end-of-stroke cushioning in a position-based hydraulic cylinder network"
+    },
+    {
+      "block": "Cylinder Cushion (TL)",
+      "value": "Use to model end-of-stroke cushioning in a thermal liquid hydraulic cylinder for deceleration control"
+    },
+    {
+      "block": "Cylinder Friction (IL)",
+      "value": "Use to model seal and piston friction in a hydraulic cylinder for accurate force and efficiency calculations"
+    },
+    {
+      "block": "Cylinder Friction (IL-PB)",
+      "value": "Use to model seal friction in a position-based hydraulic cylinder for efficiency analysis"
+    },
+    {
+      "block": "Cylinder Friction (TL)",
+      "value": "Use to model seal and piston friction in a thermal liquid hydraulic cylinder including thermal dissipation"
+    },
+    {
+      "block": "Double-Acting Actuator (G)",
+      "value": "Use to model a pneumatic cylinder driven by gas pressure on both sides of the piston for bidirectional force generation"
+    },
+    {
+      "block": "Double-Acting Actuator (G-IL)",
+      "value": "Use to model a hydraulic cylinder with gas on one side and isothermal liquid on the other for mixed-domain actuation"
+    },
+    {
+      "block": "Double-Acting Actuator (IL)",
+      "value": "Use to model a double-acting hydraulic cylinder driven by isothermal liquid pressure on both piston sides"
+    },
+    {
+      "block": "Double-Acting Actuator (IL-PB)",
+      "value": "Use to model a double-acting hydraulic cylinder in a position-based isothermal liquid network"
+    },
+    {
+      "block": "Double-Acting Actuator (MA)",
+      "value": "Use to model a double-acting pneumatic cylinder operating in a moist air network with humidity tracking"
+    },
+    {
+      "block": "Double-Acting Actuator (TL)",
+      "value": "Use to model a double-acting hydraulic cylinder in a thermal liquid network with temperature-dependent fluid properties"
+    },
+    {
+      "block": "Double-Acting Actuator (TL-G)",
+      "value": "Use to model a hydraulic cylinder with thermal liquid on one side and gas on the other for mixed-domain actuation with thermal effects"
+    },
+    {
+      "block": "Double-Acting Rotary Actuator (IL)",
+      "value": "Use to model a hydraulic rotary actuator that converts fluid pressure to bidirectional shaft torque"
+    },
+    {
+      "block": "Double-Acting Servo Valve Actuator (IL)",
+      "value": "Use to model a double-acting hydraulic pilot stage for high-performance servo valve spool positioning"
+    },
+    {
+      "block": "E-NTU Heat Transfer",
+      "value": "Use to compute heat transfer between two fluid streams using the effectiveness-NTU method for any heat exchanger geometry"
+    },
+    {
+      "block": "EN14511 Heat Pump (2P)",
+      "value": "Use to model a complete heat pump cycle per the EN14511 standard for system-level energy performance analysis"
+    },
+    {
+      "block": "Ejector (G)",
+      "value": "Use to model a gas ejector that uses a high-pressure motive stream to entrain and compress a low-pressure suction stream"
+    },
+    {
+      "block": "Ejector (MA)",
+      "value": "Use to model a moist air ejector that entrains low-pressure air using a high-pressure motive stream"
+    },
+    {
+      "block": "Elbow (G)",
+      "value": "Use to model pressure loss in a gas pipe elbow fitting where the flow changes direction at a sharp angle"
+    },
+    {
+      "block": "Elbow (IL)",
+      "value": "Use to model pressure loss at a pipe elbow in an isothermal liquid line"
+    },
+    {
+      "block": "Elbow (MA)",
+      "value": "Use to model pressure loss at a duct elbow in a moist air system where flow changes direction"
+    },
+    {
+      "block": "Elbow (TL)",
+      "value": "Use to model pressure loss at a pipe elbow in a thermal liquid line with heat exchange to surroundings"
+    },
+    {
+      "block": "Fan (G)",
+      "value": "Use to model a fan that moves gas at low pressure ratios, typically for ventilation or cooling airflow"
+    },
+    {
+      "block": "Fan (MA)",
+      "value": "Use to model a fan moving moist air at low pressure rise for HVAC ventilation or process air handling"
+    },
+    {
+      "block": "Fixed-Displacement Motor (IL)",
+      "value": "Use to model a hydraulic motor with fixed displacement converting fluid power to shaft torque and speed"
+    },
+    {
+      "block": "Fixed-Displacement Motor (TL)",
+      "value": "Use to model a hydraulic motor with fixed displacement in a thermal liquid system tracking viscous losses and heat"
+    },
+    {
+      "block": "Fixed-Displacement Pump (2P)",
+      "value": "Use to model a positive-displacement pump for two-phase fluid circulation with fixed volumetric output"
+    },
+    {
+      "block": "Fixed-Displacement Pump (IL)",
+      "value": "Use to model a positive-displacement hydraulic pump with fixed volumetric output per revolution"
+    },
+    {
+      "block": "Fixed-Displacement Pump (TL)",
+      "value": "Use to model a positive-displacement pump with fixed output in a thermal liquid system including thermal losses"
+    },
+    {
+      "block": "Flow Coefficient Parameterized Valve (TL)",
+      "value": "Use to model a valve in a thermal liquid system parameterized by Cv or Kv flow coefficients from manufacturer data"
+    },
+    {
+      "block": "Gas-Charged Accumulator (IL)",
+      "value": "Use to model a gas-charged hydraulic accumulator that stores energy and damps pressure pulsations"
+    },
+    {
+      "block": "Gas-Charged Accumulator (TL)",
+      "value": "Use to model a gas-charged hydraulic accumulator in a thermal liquid system with heat exchange during compression"
+    },
+    {
+      "block": "Gate Valve (G)",
+      "value": "Use to model a gate valve for full-bore gas shutoff with minimal flow resistance when open"
+    },
+    {
+      "block": "Gate Valve (IL)",
+      "value": "Use to model a gate valve for full-bore isothermal liquid shutoff with minimal restriction when fully open"
+    },
+    {
+      "block": "Gate Valve (MA)",
+      "value": "Use to model a gate valve for full-bore moist air shutoff in duct networks"
+    },
+    {
+      "block": "Gate Valve (TL)",
+      "value": "Use to model a gate valve for full-bore thermal liquid shutoff with minimal restriction when fully open"
+    },
+    {
+      "block": "Heat Exchanger (G)",
+      "value": "Use to model a gas-to-wall heat exchanger for single-stream gas cooling or heating against a thermal boundary"
+    },
+    {
+      "block": "Heat Exchanger (G-G)",
+      "value": "Use to model heat transfer between two gas streams in a counterflow, crossflow, or parallel-flow arrangement"
+    },
+    {
+      "block": "Heat Exchanger (G-TL)",
+      "value": "Use to model heat transfer between a gas stream and a thermal liquid stream such as a charge air cooler"
+    },
+    {
+      "block": "Heat Exchanger (TL)",
+      "value": "Use to model thermal liquid heat exchange against a wall or thermal boundary for single-stream heating or cooling"
+    },
+    {
+      "block": "Heat Exchanger (TL-MA)",
+      "value": "Use to model heat transfer between a thermal liquid loop and moist air such as a fan coil unit"
+    },
+    {
+      "block": "Heat Exchanger (TL-TL)",
+      "value": "Use to model heat transfer between two thermal liquid streams such as oil-to-coolant or water-to-glycol loops"
+    },
+    {
+      "block": "Heat Exchanger Interface (G)",
+      "value": "Use as a building block to connect a gas stream to a custom heat exchanger model with E-NTU or specific dissipation"
+    },
+    {
+      "block": "Heat Exchanger Interface (TL)",
+      "value": "Use as a building block to connect a thermal liquid stream to a custom heat exchanger model"
+    },
+    {
+      "block": "Hydromechanical Valve Interface (IL-PB)",
+      "value": "Use to define the boundary between a hydromechanical valve model and the external isothermal liquid circuit"
+    },
+    {
+      "block": "Interface (2P-G)",
+      "value": "Use to connect a two-phase fluid network to a gas network when modeling systems with phase-change boundaries"
+    },
+    {
+      "block": "Interface (2P-MA)",
+      "value": "Use to connect a two-phase fluid network to a moist air network for refrigeration-to-air coupling"
+    },
+    {
+      "block": "Interface (2P-TL)",
+      "value": "Use to connect a two-phase fluid network to a thermal liquid network for hybrid cooling systems"
+    },
+    {
+      "block": "Interface (G-MA)",
+      "value": "Use to connect a gas network to a moist air network when dry gas flows interact with humid air streams"
+    },
+    {
+      "block": "Interface (TL-IL)",
+      "value": "Use to connect a thermal liquid network to an isothermal liquid network when thermal effects are only needed in part of the system"
+    },
+    {
+      "block": "Isothermal Liquid Predefined Properties (IL)",
+      "value": "Use to define fluid properties for an isothermal liquid network using predefined fluid data such as hydraulic oil or water"
+    },
+    {
+      "block": "Jet Pump (IL)",
+      "value": "Use to model a jet pump that uses a high-velocity isothermal liquid jet to entrain and boost a secondary stream"
+    },
+    {
+      "block": "Jet Pump (TL)",
+      "value": "Use to model a jet pump in a thermal liquid system using a high-velocity jet to entrain a secondary stream"
+    },
+    {
+      "block": "Local Resistance (IL)",
+      "value": "Use to model a generic localized pressure drop in an isothermal liquid line using a loss coefficient"
+    },
+    {
+      "block": "Local Resistance (MA)",
+      "value": "Use to model a generic localized pressure drop in a moist air duct using a loss coefficient"
+    },
+    {
+      "block": "Local Resistance (TL)",
+      "value": "Use to model a localized pressure drop in a thermal liquid line using a loss coefficient with thermal effects"
+    },
+    {
+      "block": "M-Way N-Position Directional Valve (IL)",
+      "value": "Use to model a configurable multi-way multi-position directional valve for complex hydraulic routing schemes"
+    },
+    {
+      "block": "Multiposition Valve Actuator",
+      "value": "Use to drive a directional valve spool between discrete indexed positions based on a control signal"
+    },
+    {
+      "block": "Needle Valve (IL)",
+      "value": "Use to model a needle valve for precise fine-adjustment of isothermal liquid flow rate"
+    },
+    {
+      "block": "Orifice (2P)",
+      "value": "Use to model a fixed flow restriction in a two-phase fluid line for expansion or metering purposes"
+    },
+    {
+      "block": "Orifice (G)",
+      "value": "Use to model a fixed flow restriction in a gas line for pressure drop or flow metering applications"
+    },
+    {
+      "block": "Orifice (IL)",
+      "value": "Use to model a fixed flow restriction in an isothermal liquid line for metering or pressure drop control"
+    },
+    {
+      "block": "Orifice (MA)",
+      "value": "Use to model a fixed flow restriction in a moist air duct for pressure drop or flow metering"
+    },
+    {
+      "block": "Orifice (TL)",
+      "value": "Use to model a fixed flow restriction in a thermal liquid line with viscous heating effects"
+    },
+    {
+      "block": "P-H Diagram (2P)",
+      "value": "Use to visualize the pressure-enthalpy state of a two-phase fluid for thermodynamic cycle analysis and diagnostics"
+    },
+    {
+      "block": "Partially Filled Pipe (IL)",
+      "value": "Use to model an isothermal liquid pipe that may not be completely filled, accounting for gravity-driven flow"
+    },
+    {
+      "block": "Partially Filled Pipe (TL)",
+      "value": "Use to model a thermal liquid pipe that may not be fully filled, for gravity-driven or open-channel scenarios"
+    },
+    {
+      "block": "Pilot Valve Actuator (IL)",
+      "value": "Use to model a pilot-operated actuator that positions a main-stage valve spool using pilot pressure signals"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (G)",
+      "value": "Use to block gas backflow unless a pilot pressure signal unlocks the valve for controlled reverse flow"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (IL)",
+      "value": "Use to hold hydraulic load pressure with a check valve that can be unlocked by a pilot signal"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (MA)",
+      "value": "Use to block moist air backflow unless a pilot signal unlocks the valve for controlled reverse flow"
+    },
+    {
+      "block": "Pilot-Operated Check Valve (TL)",
+      "value": "Use to hold thermal liquid load pressure with a pilot-unlockable check valve for load-holding applications"
+    },
+    {
+      "block": "Pipe (IL)",
+      "value": "Use to model a straight segment of isothermal liquid pipe with distributed friction and fluid inertia"
+    },
+    {
+      "block": "Pipe (TL)",
+      "value": "Use to model a straight thermal liquid pipe segment with friction, inertia, and wall heat transfer"
+    },
+    {
+      "block": "Pipe Bend (G)",
+      "value": "Use to model pressure loss in a smooth gas pipe bend with a defined radius of curvature"
+    },
+    {
+      "block": "Pipe Bend (IL)",
+      "value": "Use to model a smooth pipe bend in an isothermal liquid line with curvature-dependent pressure loss"
+    },
+    {
+      "block": "Pipe Bend (MA)",
+      "value": "Use to model pressure loss in a smooth moist air duct bend with defined curvature radius"
+    },
+    {
+      "block": "Pipe Bend (TL)",
+      "value": "Use to model a smooth pipe bend in a thermal liquid line with curvature and thermal loss effects"
+    },
+    {
+      "block": "Plate Condenser Evaporator (TL-2P)",
+      "value": "Use to model a plate-type condenser or evaporator between thermal liquid and two-phase refrigerant"
+    },
+    {
+      "block": "Plate Heat Exchanger (TL-TL)",
+      "value": "Use to model a plate-type heat exchanger between two thermal liquid streams with corrugated plate geometry"
+    },
+    {
+      "block": "Poppet Valve (G)",
+      "value": "Use to model a poppet-style gas valve with conical or flat seat geometry for fast-acting flow control"
+    },
+    {
+      "block": "Poppet Valve (IL)",
+      "value": "Use to model a poppet-style valve in an isothermal liquid line for fast-acting flow regulation"
+    },
+    {
+      "block": "Poppet Valve (MA)",
+      "value": "Use to model a poppet-style valve for moist air flow control with fast actuation response"
+    },
+    {
+      "block": "Poppet Valve (TL)",
+      "value": "Use to model a poppet-style valve for thermal liquid flow control with fast-acting seat geometry"
+    },
+    {
+      "block": "Poppet with Seat at B (IL-PB)",
+      "value": "Use to model a poppet element seated at the back end of a hydromechanical valve bore for custom valve design"
+    },
+    {
+      "block": "Poppet with Seat at F (IL-PB)",
+      "value": "Use to model a poppet element seated at the front end of a hydromechanical valve bore for custom valve design"
+    },
+    {
+      "block": "Positive-Displacement Compressor (2P)",
+      "value": "Use to model a volumetric compressor for two-phase refrigerant with fixed displacement per revolution"
+    },
+    {
+      "block": "Positive-Displacement Compressor (G)",
+      "value": "Use to model a volumetric gas compressor with fixed displacement per revolution for pneumatic supply systems"
+    },
+    {
+      "block": "Positive-Displacement Compressor (MA)",
+      "value": "Use to model a volumetric compressor handling moist air with fixed displacement per revolution"
+    },
+    {
+      "block": "Pressure Compensator Valve (IL)",
+      "value": "Use to maintain a constant pressure differential across a metering orifice for load-independent flow control"
+    },
+    {
+      "block": "Pressure Compensator Valve (MA)",
+      "value": "Use to maintain constant pressure differential in a moist air system for load-independent flow metering"
+    },
+    {
+      "block": "Pressure Compensator Valve (TL)",
+      "value": "Use to maintain constant pressure differential in a thermal liquid system for load-independent flow control"
+    },
+    {
+      "block": "Pressure Reducing Valve (G)",
+      "value": "Use to maintain a constant downstream gas pressure regardless of upstream pressure variations"
+    },
+    {
+      "block": "Pressure Reducing Valve (MA)",
+      "value": "Use to maintain reduced downstream pressure in a moist air system regardless of upstream supply pressure"
+    },
+    {
+      "block": "Pressure Reducing Valve (TL)",
+      "value": "Use to maintain a reduced downstream thermal liquid pressure regardless of upstream supply pressure"
+    },
+    {
+      "block": "Pressure Relief Valve (2P)",
+      "value": "Use to protect a two-phase fluid system from overpressure by venting refrigerant above the safety limit"
+    },
+    {
+      "block": "Pressure Relief Valve (G)",
+      "value": "Use to protect a gas system from overpressure by venting flow when pressure exceeds a set threshold"
+    },
+    {
+      "block": "Pressure Relief Valve (IL)",
+      "value": "Use to protect a hydraulic circuit from overpressure by diverting excess flow when pressure exceeds the set point"
+    },
+    {
+      "block": "Pressure Relief Valve (MA)",
+      "value": "Use to protect a moist air system from overpressure by venting flow above the set threshold"
+    },
+    {
+      "block": "Pressure Relief Valve (TL)",
+      "value": "Use to protect a thermal liquid circuit from overpressure by diverting flow above the set pressure limit"
+    },
+    {
+      "block": "Pressure-Compensated 3-Way Flow Control Valve (IL)",
+      "value": "Use to maintain constant flow to an actuator regardless of load pressure using a 3-way pressure-compensated valve"
+    },
+    {
+      "block": "Pressure-Compensated Flow Control Valve (IL)",
+      "value": "Use to maintain constant hydraulic flow rate to a load independent of pressure variations across the valve"
+    },
+    {
+      "block": "Pressure-Compensated Pump (IL)",
+      "value": "Use to model a pump that automatically adjusts displacement to maintain a target outlet pressure"
+    },
+    {
+      "block": "Pressure-Reducing 3-Way Valve (IL)",
+      "value": "Use to regulate downstream pressure below supply with a 3-way valve that can both supply and exhaust fluid"
+    },
+    {
+      "block": "Pressure-Reducing Valve (2P)",
+      "value": "Use to reduce two-phase fluid pressure downstream for controlled expansion or pressure regulation"
+    },
+    {
+      "block": "Pressure-Reducing Valve (IL)",
+      "value": "Use to maintain a reduced downstream hydraulic pressure regardless of higher upstream supply pressure"
+    },
+    {
+      "block": "Proportional Valve Actuator",
+      "value": "Use to continuously position a valve spool proportionally to an input command signal for modulated flow control"
+    },
+    {
+      "block": "Receiver Accumulator (2P)",
+      "value": "Use to model a receiver-drier or accumulator in a refrigerant circuit that separates liquid from vapor and stores excess charge"
+    },
+    {
+      "block": "Rotating Channel (IL)",
+      "value": "Use to model a fluid passage in a rotating body where centrifugal effects influence the pressure distribution"
+    },
+    {
+      "block": "Rotating Cylinder Force (IL)",
+      "value": "Use to model the centrifugal force on fluid in a rotating hydraulic cylinder for rotating machinery applications"
+    },
+    {
+      "block": "Rotating Single-Acting Actuator (IL)",
+      "value": "Use to model a single-acting hydraulic actuator mounted on a rotating structure with centrifugal effects"
+    },
+    {
+      "block": "Shuttle Valve (IL)",
+      "value": "Use to automatically select the higher of two hydraulic pressures and route it to the outlet port"
+    },
+    {
+      "block": "Single-Acting Actuator (G)",
+      "value": "Use to model a pneumatic cylinder with gas pressure on one side and spring return for simple extend-retract motion"
+    },
+    {
+      "block": "Single-Acting Actuator (IL)",
+      "value": "Use to model a single-acting hydraulic cylinder with spring or gravity return in isothermal liquid systems"
+    },
+    {
+      "block": "Single-Acting Actuator (IL-PB)",
+      "value": "Use to model a single-acting hydraulic cylinder in a position-based isothermal liquid network"
+    },
+    {
+      "block": "Single-Acting Actuator (MA)",
+      "value": "Use to model a single-acting pneumatic cylinder in a moist air system with spring return"
+    },
+    {
+      "block": "Single-Acting Actuator (TL)",
+      "value": "Use to model a single-acting hydraulic cylinder in a thermal liquid system with temperature tracking"
+    },
+    {
+      "block": "Single-Acting Rotary Actuator (IL)",
+      "value": "Use to model a single-acting hydraulic rotary actuator with spring return for limited angular motion"
+    },
+    {
+      "block": "Solenoid Valve (IL)",
+      "value": "Use to model an electrically actuated on-off hydraulic valve for automated directional control"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (G)",
+      "value": "Use to model gas-to-wall heat exchange parameterized by a specific dissipation curve for simplified analysis"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (G-G)",
+      "value": "Use to model gas-to-gas heat exchange with specific dissipation parameterization for rapid system-level studies"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (G-TL)",
+      "value": "Use to model gas-to-thermal-liquid heat exchange with specific dissipation parameterization"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (TL)",
+      "value": "Use to model thermal liquid heat exchange against a boundary using specific dissipation data"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger (TL-TL)",
+      "value": "Use to model thermal-liquid-to-thermal-liquid heat exchange with specific dissipation parameterization"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger Interface (G)",
+      "value": "Use as a building block for gas-side heat exchange with a known specific dissipation characteristic"
+    },
+    {
+      "block": "Specific Dissipation Heat Exchanger Interface (TL)",
+      "value": "Use as a building block for thermal-liquid-side heat exchange with a known specific dissipation characteristic"
+    },
+    {
+      "block": "Specific Dissipation Heat Transfer",
+      "value": "Use to model heat transfer with a parameterized specific dissipation rate for simplified exchanger characterization"
+    },
+    {
+      "block": "Spool Orifice (IL)",
+      "value": "Use to model a variable orifice formed by spool displacement for directional valve metering characterization"
+    },
+    {
+      "block": "Spool Orifice Flow Force (IL)",
+      "value": "Use to compute the flow-induced force on a valve spool for accurate spool dynamics modeling"
+    },
+    {
+      "block": "Spring-Loaded Accumulator (IL)",
+      "value": "Use to model a spring-loaded hydraulic accumulator for energy storage with linear spring preload characteristics"
+    },
+    {
+      "block": "Swash Plate",
+      "value": "Use to model the swash plate mechanism that converts displacement command to pump or motor stroke angle"
+    },
+    {
+      "block": "System-Level Condenser Evaporator (2P-G)",
+      "value": "Use to model a system-level condenser or evaporator between two-phase fluid and gas for rapid cycle analysis"
+    },
+    {
+      "block": "System-Level Condenser Evaporator (2P-MA)",
+      "value": "Use to model a system-level condenser or evaporator between two-phase fluid and moist air for HVAC systems"
+    },
+    {
+      "block": "System-Level Condenser Evaporator (2P-TL)",
+      "value": "Use to model a system-level condenser or evaporator between two-phase fluid and thermal liquid"
+    },
+    {
+      "block": "System-Level Heat Exchanger (2P-2P)",
+      "value": "Use to model two-phase-to-two-phase heat exchange at the system level for cascade refrigeration cycles"
+    },
+    {
+      "block": "System-Level Heat Exchanger (G-G)",
+      "value": "Use to model gas-to-gas heat exchange at the system level with lumped effectiveness for fast simulation"
+    },
+    {
+      "block": "System-Level Heat Exchanger (MA-MA)",
+      "value": "Use to model moist-air-to-moist-air heat exchange at the system level for HVAC energy recovery modeling"
+    },
+    {
+      "block": "System-Level Heat Exchanger (TL-G)",
+      "value": "Use to model thermal-liquid-to-gas heat exchange at the system level such as a vehicle radiator"
+    },
+    {
+      "block": "System-Level Heat Exchanger (TL-MA)",
+      "value": "Use to model thermal-liquid-to-moist-air heat exchange at the system level for building HVAC models"
+    },
+    {
+      "block": "System-Level Heat Exchanger (TL-TL)",
+      "value": "Use to model thermal-liquid-to-thermal-liquid heat exchange at system level with lumped effectiveness"
+    },
+    {
+      "block": "System-Level Refrigeration Cycle (2P)",
+      "value": "Use to model a complete vapor-compression refrigeration cycle at the system level for rapid thermal system studies"
+    },
+    {
+      "block": "T-Junction (IL)",
+      "value": "Use to model a three-way T-junction in an isothermal liquid pipe network for flow splitting or merging"
+    },
+    {
+      "block": "T-Junction (MA)",
+      "value": "Use to model a T-junction in a moist air duct network for airflow splitting or merging"
+    },
+    {
+      "block": "T-Junction (TL)",
+      "value": "Use to model a T-junction in a thermal liquid pipe network for flow splitting or merging with mixing"
+    },
+    {
+      "block": "Tank (G-IL)",
+      "value": "Use to model a pressurized hydraulic tank with a gas blanket above the isothermal liquid for reservoir modeling"
+    },
+    {
+      "block": "Tank (G-TL)",
+      "value": "Use to model a pressurized tank with gas blanket over thermal liquid for reservoir modeling with thermal effects"
+    },
+    {
+      "block": "Tank (IL)",
+      "value": "Use to model a hydraulic reservoir or open tank that sets reference pressure in an isothermal liquid circuit"
+    },
+    {
+      "block": "Tank (TL)",
+      "value": "Use to model a hydraulic reservoir or tank that sets reference pressure in a thermal liquid circuit"
+    },
+    {
+      "block": "Temperature Control Valve (G)",
+      "value": "Use to regulate gas temperature by blending hot and cold streams through a thermostatic three-way valve"
+    },
+    {
+      "block": "Temperature Control Valve (MA)",
+      "value": "Use to regulate moist air temperature by blending hot and cold air streams through a thermostatic valve"
+    },
+    {
+      "block": "Temperature Control Valve (TL)",
+      "value": "Use to regulate thermal liquid temperature by blending hot and cold streams through a thermostatic valve"
+    },
+    {
+      "block": "Thermal Liquid Properties (TL)",
+      "value": "Use to define temperature-dependent fluid properties for a thermal liquid network"
+    },
+    {
+      "block": "Thermostatic Expansion Valve (2P)",
+      "value": "Use to meter refrigerant flow into an evaporator while maintaining target superheat at the evaporator outlet"
+    },
+    {
+      "block": "Turbine (2P)",
+      "value": "Use to model a turbine expanding two-phase fluid to extract mechanical work in organic Rankine or power cycles"
+    },
+    {
+      "block": "Turbine (G)",
+      "value": "Use to model a gas turbine that extracts mechanical power from expanding gas flow using performance characteristics"
+    },
+    {
+      "block": "Turbine (MA)",
+      "value": "Use to model a moist air turbine extracting mechanical power from expanding humid air flow"
+    },
+    {
+      "block": "Two-Phase Fluid Predefined Properties (2P)",
+      "value": "Use to define refrigerant or two-phase fluid properties from predefined substances for vapor compression systems"
+    },
+    {
+      "block": "Valve Piston (IL-PB)",
+      "value": "Use to model the moving piston element inside a custom hydromechanical valve assembly"
+    },
+    {
+      "block": "Valve Plate Orifice (IL)",
+      "value": "Use to model the port timing orifice in a piston pump valve plate for detailed pump dynamics"
+    },
+    {
+      "block": "Valve Port with Land (IL-PB)",
+      "value": "Use to model a valve port with spool land coverage for building custom spool valve geometries"
+    },
+    {
+      "block": "Valve Port with Land Edge at B (IL-PB)",
+      "value": "Use to model a valve port with the land edge at the back for asymmetric spool valve construction"
+    },
+    {
+      "block": "Valve Port with Land Edge at F (IL-PB)",
+      "value": "Use to model a valve port with the land edge at the front for asymmetric spool valve construction"
+    },
+    {
+      "block": "Valve Section with Detached Shaft (IL-PB)",
+      "value": "Use to model a valve bore section where the spool shaft is disconnected for multi-stage valve assemblies"
+    },
+    {
+      "block": "Valve Section with End Cap at B (IL-PB)",
+      "value": "Use to model a valve bore section capped at the back end to terminate a hydromechanical valve assembly"
+    },
+    {
+      "block": "Valve Section with End Cap at F (IL-PB)",
+      "value": "Use to model a valve bore section capped at the front end to terminate a hydromechanical valve assembly"
+    },
+    {
+      "block": "Valve Section with Rigid Shaft (IL-PB)",
+      "value": "Use to model a valve bore section with a rigid spool shaft connecting adjacent lands in a custom valve"
+    },
+    {
+      "block": "Valve Section with Valve Port (IL-PB)",
+      "value": "Use to model a valve bore section containing a port opening for custom hydromechanical valve topology"
+    },
+    {
+      "block": "Variable Overlapping Orifice (IL)",
+      "value": "Use to model an orifice with overlapping spool geometry that transitions between under-lap and over-lap regions"
+    },
+    {
+      "block": "Variable-Displacement Motor (IL)",
+      "value": "Use to model a hydraulic motor with adjustable displacement for variable-speed drive applications"
+    },
+    {
+      "block": "Variable-Displacement Motor (TL)",
+      "value": "Use to model a hydraulic motor with adjustable displacement in a thermal liquid network for variable-speed drives"
+    },
+    {
+      "block": "Variable-Displacement Pump (2P)",
+      "value": "Use to model a two-phase fluid pump with adjustable displacement for variable flow refrigerant circuits"
+    },
+    {
+      "block": "Variable-Displacement Pump (IL)",
+      "value": "Use to model a hydraulic pump with adjustable displacement for load-sensing or power-limiting control"
+    },
+    {
+      "block": "Variable-Displacement Pump (TL)",
+      "value": "Use to model a hydraulic pump with adjustable displacement in a thermal liquid system for load-sensing control"
+    },
+    {
+      "block": "Y-Junction (IL)",
+      "value": "Use to model a Y-shaped pipe junction in an isothermal liquid network with angled branch connections"
+    },
+    {
+      "block": "Y-Junction (MA)",
+      "value": "Use to model a Y-junction in a moist air duct network with angled branch connections"
+    },
+    {
+      "block": "Y-Junction (TL)",
+      "value": "Use to model a Y-junction in a thermal liquid pipe network with angled branches and thermal mixing"
+    }
+  ]
+}

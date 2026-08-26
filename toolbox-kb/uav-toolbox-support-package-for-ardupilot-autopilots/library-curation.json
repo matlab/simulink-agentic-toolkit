@@ -1,0 +1,69 @@
+{
+  "commonBlocks": [],
+  "categories": [
+    {
+      "name": "state-reading",
+      "description": "Vehicle state and sensor data reading",
+      "keywords": [
+        "attitude",
+        "position",
+        "velocity",
+        "angular",
+        "course"
+      ]
+    },
+    {
+      "name": "setpoints-commands",
+      "description": "Control setpoints and actuator commands",
+      "keywords": [
+        "torque",
+        "thrust",
+        "actuator",
+        "setpoint",
+        "command"
+      ]
+    },
+    {
+      "name": "peripherals",
+      "description": "Communication and peripheral interfaces",
+      "keywords": [
+        "serial",
+        "i2c",
+        "rc",
+        "receive",
+        "transmit"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Logging, parameters, and timing",
+      "keywords": [
+        "log",
+        "parameter",
+        "timestamp",
+        "dataflash",
+        "config"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "RC Receive",
+      "value": "peripherals"
+    },
+    {
+      "block": "Timestamp",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "RC Receive",
+      "value": "Read RC transmitter channel values — use for accessing pilot stick inputs for manual override or mode switching logic"
+    },
+    {
+      "block": "Timestamp",
+      "value": "Read the ArduPilot system timestamp — use for time-stamping events or synchronizing operations with the autopilot clock"
+    }
+  ]
+}

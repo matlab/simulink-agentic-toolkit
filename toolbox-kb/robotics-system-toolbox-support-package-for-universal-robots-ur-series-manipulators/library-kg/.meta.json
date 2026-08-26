@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74457881949,
+  "generatorVersion": 4,
+  "libraries": [
+    "Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators"
+  ],
+  "blockCount": 6,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Robotics_System_Toolbox_Support_Package_for_Universal_Robots_UR_Series_Manipulators": {
+      "blockCount": 6
+    }
+  }
+}

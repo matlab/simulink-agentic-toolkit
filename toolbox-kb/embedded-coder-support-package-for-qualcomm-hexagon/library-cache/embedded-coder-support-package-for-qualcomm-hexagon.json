@@ -1,0 +1,36 @@
+{
+  "libraryName": "Embedded Coder Support Package for Qualcomm Hexagon",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "Hexagon",
+      "referenceBlock": "hexagonlib/Hexagon",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Hexagon_Utilities_Blocks",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "QNN",
+      "referenceBlock": "hexagonlib/QNN",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "QNN_Blocks",
+      "introducedIn": "2026a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

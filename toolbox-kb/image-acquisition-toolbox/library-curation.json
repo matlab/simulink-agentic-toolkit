@@ -1,0 +1,30 @@
+{
+  "commonBlocks": [
+    "From Video Device"
+  ],
+  "categories": [
+    {
+      "name": "acquisition",
+      "description": "Video and image acquisition from hardware devices",
+      "keywords": [
+        "video",
+        "camera",
+        "capture",
+        "image",
+        "device"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "From Video Device",
+      "value": "acquisition"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "From Video Device",
+      "value": "Acquire live video frames from a camera or capture device — use for real-time image processing, computer vision, or video-based control in Simulink"
+    }
+  ]
+}

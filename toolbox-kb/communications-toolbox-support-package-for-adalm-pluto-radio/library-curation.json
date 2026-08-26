@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "ADALM-Pluto Radio Receiver",
+    "ADALM-Pluto Radio Transmitter"
+  ],
+  "categories": [
+    {
+      "name": "sdr-hardware",
+      "description": "ADALM-PLUTO software-defined radio hardware interface blocks",
+      "keywords": [
+        "pluto",
+        "sdr",
+        "radio",
+        "receiver",
+        "transmitter"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ADALM-Pluto Radio Receiver",
+      "value": "sdr-hardware"
+    },
+    {
+      "block": "ADALM-Pluto Radio Transmitter",
+      "value": "sdr-hardware"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ADALM-Pluto Radio Receiver",
+      "value": "Receive IQ samples from an ADALM-PLUTO SDR device in real time — use for over-the-air signal acquisition in RF prototyping, spectrum monitoring, or receiver algorithm validation"
+    },
+    {
+      "block": "ADALM-Pluto Radio Transmitter",
+      "value": "Transmit IQ samples through an ADALM-PLUTO SDR device in real time — use for over-the-air waveform transmission in RF prototyping, interference testing, or transmitter algorithm validation"
+    }
+  ]
+}

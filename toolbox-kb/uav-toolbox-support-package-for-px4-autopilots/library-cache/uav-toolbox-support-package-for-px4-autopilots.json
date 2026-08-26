@@ -1,0 +1,261 @@
+{
+  "libraryName": "UAV Toolbox Support Package for PX4 Autopilots",
+  "generatedAt": "2026-08-19T14:31:18",
+  "blockCount": 27,
+  "blocks": [
+    {
+      "name": "PX4 Analog Input",
+      "referenceBlock": "px4Peripheralslib/PX4 Analog Input",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Analog Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "px4Peripheralslib/I2C Controller Read",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "px4Peripheralslib/I2C Controller Write",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PX4 Actuator Write",
+      "referenceBlock": "px4Peripheralslib/PX4 Actuator Write",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "PX4 CAN Receive",
+      "referenceBlock": "px4Peripheralslib/PX4 CAN Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PX4 CAN Transmit",
+      "referenceBlock": "px4Peripheralslib/PX4 CAN Transmit",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PX4 PWM Output",
+      "referenceBlock": "px4Peripheralslib/PX4 PWM Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Receive",
+      "referenceBlock": "px4Peripheralslib/Serial Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Transmit",
+      "referenceBlock": "px4Peripheralslib/Serial Transmit",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Accelerometer",
+      "referenceBlock": "px4Sensorslib/Accelerometer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Accelerometer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery",
+      "referenceBlock": "px4Sensorslib/Battery",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Battery",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GPS",
+      "referenceBlock": "px4Sensorslib/GPS",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 GPS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gyroscope",
+      "referenceBlock": "px4Sensorslib/Gyroscope",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Gyroscope",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnetometer",
+      "referenceBlock": "px4Sensorslib/Magnetometer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Magnetometer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radio Control Transmitter",
+      "referenceBlock": "px4Sensorslib/Radio Control Transmitter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Radio Control Transmitter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle Attitude",
+      "referenceBlock": "px4Sensorslib/Vehicle Attitude",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Vehicle Attitude",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MAVLink Bridge Sink",
+      "referenceBlock": "px4MAVLinkBridgelib/MAVLink Bridge Sink",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "px4.internal.block.MAVLinkSink",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MAVLink Bridge Source",
+      "referenceBlock": "px4MAVLinkBridgelib/MAVLink Bridge Source",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "px4.internal.block.MAVLinkSource",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PX4 Read Position Setpoint",
+      "referenceBlock": "px4Utilslib/PX4 Read Position Setpoint",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Read Position Setpoint",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PX4 ULog",
+      "referenceBlock": "px4Utilslib/PX4 ULog",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 ULog",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PX4 Write Parameter",
+      "referenceBlock": "px4Utilslib/PX4 Write Parameter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Write Parameter",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "PX4 Write Thrust & Torque Setpoint",
+      "referenceBlock": "px4Utilslib/PX4 Write Thrust & Torque Setpoint",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Write Thrust && Torque Setpoint",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Read Parameter",
+      "referenceBlock": "px4Utilslib/Read Parameter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 Read Parameter",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PX4 Timestamp",
+      "referenceBlock": "px4Utilslib/PX4 Timestamp",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "PX4 uORB Message",
+      "referenceBlock": "px4uORBlib/PX4 uORB Message",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 uORB Message",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PX4 uORB Read",
+      "referenceBlock": "px4uORBlib/PX4 uORB Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 uORB Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PX4 uORB Write",
+      "referenceBlock": "px4uORBlib/PX4 uORB Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PX4 uORB Write",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:54",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,81 @@
+{
+  "libraryName": "Simulink Coder Support Package for BBC micro:bit",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 7,
+  "blocks": [
+    {
+      "name": "Accelerometer",
+      "referenceBlock": "microbitblockslib/Accelerometer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BBC micro:bit Accelerometer Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Audio",
+      "referenceBlock": "microbitblockslib/Audio",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BBC micro:bit Accelerometer Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Basic",
+      "referenceBlock": "microbitblockslib/Basic",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BBC micro:bit Basic Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Button",
+      "referenceBlock": "microbitblockslib/Button",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BBC micro:bit Button Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LED",
+      "referenceBlock": "microbitblockslib/LED",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BBC micro:bit LED Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnetometer",
+      "referenceBlock": "microbitblockslib/Magnetometer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BBC micro:bit Magnetometer Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radio",
+      "referenceBlock": "microbitblockslib/Radio",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "BBC micro:bit Accelerometer Blocks",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

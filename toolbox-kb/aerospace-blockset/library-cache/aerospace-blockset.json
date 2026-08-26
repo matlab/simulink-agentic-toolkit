@@ -1,0 +1,2016 @@
+{
+  "libraryName": "Aerospace Blockset",
+  "generatedAt": "2026-08-17T12:07:54",
+  "blockCount": 222,
+  "blocks": [
+    {
+      "name": "Linear Second-Order Actuator",
+      "referenceBlock": "aerolibactuator/Linear Second-Order Actuator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LinearSecondOrderActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Second-Order Actuator",
+      "referenceBlock": "aerolibactuator/Nonlinear Second-Order Actuator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NonlinearSecondOrderActuator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital DATCOM Forces and Moments",
+      "referenceBlock": "aerolibadyn/Digital DATCOM Forces and Moments",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Digital DATCOM Forces and Moments",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Aerodynamic Forces and Moments",
+      "referenceBlock": "aerolibadyn/Aerodynamic Forces and Moments",
+      "blockType": "AerodynamicForcesAndMoments",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pilot Joystick",
+      "referenceBlock": "aerolibanimutils/Pilot Joystick",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "PilotJoystick",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pilot Joystick All",
+      "referenceBlock": "aerolibanimutils/Pilot Joystick All",
+      "blockType": "PilotJoystick",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation Pace",
+      "referenceBlock": "aerolibanimutils/Simulation Pace",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation Pace",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FlightGear Preconfigured 6DoF Animation",
+      "referenceBlock": "aerolibfltsims/FlightGear Preconfigured 6DoF Animation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FlightGearQuick6DoFAnimation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Generate Run Script",
+      "referenceBlock": "aerolibfltsims/Generate Run Script",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Generate FlightGear Run Script",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Receive net_ctrl Packet from FlightGear",
+      "referenceBlock": "aerolibfltsims/Receive net_ctrl Packet from FlightGear",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FlightGearReceiveNetCtrl",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Send net_fdm Packet to FlightGear",
+      "referenceBlock": "aerolibfltsims/Send net_fdm Packet to FlightGear",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FlightGearSendNetFdm",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pack net_fdm Packet for FlightGear",
+      "referenceBlock": "aerolibfltsims/Pack net_fdm Packet for FlightGear",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "FlightGearPackNetFdm",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unpack net_ctrl Packet from FlightGear",
+      "referenceBlock": "aerolibfltsims/Unpack net_ctrl Packet from FlightGear",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "FlightGearUnpackNetCtrl",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3DoF Animation",
+      "referenceBlock": "aerolibanim/3DoF Animation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "3DoF_Animation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6DoF Animation",
+      "referenceBlock": "aerolibanim/6DoF Animation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6DoF_Animation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Animation",
+      "referenceBlock": "aerolibanim/MATLAB Animation",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "AeroMATLABAnimation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Air Transport Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Air Transport Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Air Transport Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D Aircraft",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Aircraft",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Aircraft",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Airliner Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Airliner Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Airliner Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D CubeSat Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D CubeSat Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D CubeSat Pack",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Custom Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Custom Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Custom Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D General Aviation Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D General Aviation Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D General Aviation Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D Helicopter Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Helicopter Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Helicopter Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D Light Helicopter Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Light Helicopter Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Light Helicopter Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D Multirotor Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Multirotor Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Multirotor Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D Rotorcraft",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Rotorcraft",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Rotorcraft",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Sky Hogg Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Sky Hogg Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Sky Hogg Pack",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D SmallSat Pack",
+      "referenceBlock": "aerolibsim3d/Simulation 3D SmallSat Pack",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D SmallSat Pack",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Space Environment",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Space Environment",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Space Environment",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Simulation 3D Spacecraft",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Spacecraft",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Spacecraft",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Actor Transform Get",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Actor Transform Get",
+      "blockType": "Simulation3DActorTransformGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Actor Transform Set",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Actor Transform Set",
+      "blockType": "Simulation3DActorTransformSet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Camera Get",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Camera Get",
+      "blockType": "Simulation3DCameraGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Message Get",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Message Get",
+      "blockType": "Simulation3DMessageGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Message Set",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Message Set",
+      "blockType": "Simulation3DMessageSet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Scene Configuration",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Scene Configuration",
+      "blockType": "Simulation3DSceneConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Ultrasonic Sensor",
+      "referenceBlock": "aerolibsim3d/Simulation 3D Ultrasonic Sensor",
+      "blockType": "Simulation3DUltrasonicSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "CIRA-86 Atmosphere Model",
+      "referenceBlock": "aerolibatmos2/CIRA-86 Atmosphere Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CIRA-86 Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "COESA Atmosphere Model",
+      "referenceBlock": "aerolibatmos2/COESA Atmosphere Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Atmosphere Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ISA Atmosphere Model",
+      "referenceBlock": "aerolibatmos2/ISA Atmosphere Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "International Standard Atmosphere Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NRLMSISE-00 Atmosphere Model",
+      "referenceBlock": "aerolibatmos2/NRLMSISE-00 Atmosphere Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NRLMSISE-00 Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Altitude",
+      "referenceBlock": "aerolibatmos2/Pressure Altitude",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Altitude",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lapse Rate Model",
+      "referenceBlock": "aerolibatmos2/Lapse Rate Model",
+      "blockType": "InternationalStandardAtmosphereModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Non-Standard Day 210C",
+      "referenceBlock": "aerolibatmos2/Non-Standard Day 210C",
+      "blockType": "AtmosphereModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Non-Standard Day 310",
+      "referenceBlock": "aerolibatmos2/Non-Standard Day 310",
+      "blockType": "AtmosphereModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Earth Nutation",
+      "referenceBlock": "aerolibcelestial/Earth Nutation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "EarthNutation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moon Libration",
+      "referenceBlock": "aerolibcelestial/Moon Libration",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MoonLibration",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Delta UT1",
+      "referenceBlock": "aerolibcelestial/Delta UT1",
+      "blockType": "DeltaUT1",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Earth Orientation Parameters",
+      "referenceBlock": "aerolibcelestial/Earth Orientation Parameters",
+      "blockType": "EOParameters",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Eclipse Shadow Model (Cylindrical)",
+      "referenceBlock": "aerolibcelestial/Eclipse Shadow Model (Cylindrical)",
+      "blockType": "EclipseShadowModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Eclipse Shadow Model (Dual Cone)",
+      "referenceBlock": "aerolibcelestial/Eclipse Shadow Model (Dual Cone)",
+      "blockType": "EclipseShadowModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Planetary Ephemeris",
+      "referenceBlock": "aerolibcelestial/Planetary Ephemeris",
+      "blockType": "PlanetaryEphem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Solar Flux and Geomagnetic Index",
+      "referenceBlock": "aerolibcelestial/Solar Flux and Geomagnetic Index",
+      "blockType": "FluxSolarAndGeomagnetic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Centrifugal Effect Model",
+      "referenceBlock": "aerolibgravity2/Centrifugal Effect Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Centrifugal Effect Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Geoid Height",
+      "referenceBlock": "aerolibgravity2/Geoid Height",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Geoid Height",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "World Magnetic Model",
+      "referenceBlock": "aerolibgravity2/World Magnetic Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "WorldMagneticModel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Zonal Harmonic Gravity Model",
+      "referenceBlock": "aerolibgravity2/Zonal Harmonic Gravity Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zonal Harmonic Gravity Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "International Geomagnetic Reference Field",
+      "referenceBlock": "aerolibgravity2/International Geomagnetic Reference Field",
+      "blockType": "IGRF",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spherical Harmonic Gravity Model",
+      "referenceBlock": "aerolibgravity2/Spherical Harmonic Gravity Model",
+      "blockType": "SHGravity",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "WGS84 Gravity Model  ",
+      "referenceBlock": "aerolibgravity2/WGS84 Gravity Model  ",
+      "blockType": "GravityWGS84",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete Wind Gust Model",
+      "referenceBlock": "aerolibwind2/Discrete Wind Gust Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discrete Wind Gust Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dryden Wind Turbulence Model  (Continuous (+q -r))",
+      "referenceBlock": "aerolibwind2/Dryden Wind Turbulence Model  (Continuous (+q -r))",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Wind Turbulence Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Horizontal Wind Model",
+      "referenceBlock": "aerolibwind2/Horizontal Wind Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Horizontal Wind Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wind Shear Model",
+      "referenceBlock": "aerolibwind2/Wind Shear Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Wind Shear Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dryden Wind Turbulence Model  (Continuous (+q +r))",
+      "referenceBlock": "aerolibwind2/Dryden Wind Turbulence Model  (Continuous (+q +r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dryden Wind Turbulence Model  (Continuous (-q +r))",
+      "referenceBlock": "aerolibwind2/Dryden Wind Turbulence Model  (Continuous (-q +r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dryden Wind Turbulence Model  (Discrete (+q +r))",
+      "referenceBlock": "aerolibwind2/Dryden Wind Turbulence Model  (Discrete (+q +r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dryden Wind Turbulence Model  (Discrete (+q -r))",
+      "referenceBlock": "aerolibwind2/Dryden Wind Turbulence Model  (Discrete (+q -r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dryden Wind Turbulence Model  (Discrete (-q +r))",
+      "referenceBlock": "aerolibwind2/Dryden Wind Turbulence Model  (Discrete (-q +r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Horizontal Wind Model 07",
+      "referenceBlock": "aerolibwind2/Horizontal Wind Model 07",
+      "blockType": "WindHWM07",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Horizontal Wind Model 14",
+      "referenceBlock": "aerolibwind2/Horizontal Wind Model 14",
+      "blockType": "WindHWM14",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Von Karman Wind Turbulence Model  (Continuous (+q +r))",
+      "referenceBlock": "aerolibwind2/Von Karman Wind Turbulence Model  (Continuous (+q +r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Von Karman Wind Turbulence Model  (Continuous (+q -r))",
+      "referenceBlock": "aerolibwind2/Von Karman Wind Turbulence Model  (Continuous (+q -r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Von Karman Wind Turbulence Model  (Continuous (-q +r))",
+      "referenceBlock": "aerolibwind2/Von Karman Wind Turbulence Model  (Continuous (-q +r))",
+      "blockType": "WindTurbulenceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3DOF Acceleration",
+      "referenceBlock": "aerolib3dof2/3DOF Acceleration",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "3DOF Acceleration",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "3DOF Angular Acceleration",
+      "referenceBlock": "aerolib3dof2/3DOF Angular Acceleration",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "3DOF Angular Acceleration",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "3dof (Body Axes)",
+      "referenceBlock": "aerolib3dof2/3dof (Body Axes)",
+      "blockType": "EOM3DOFNoAccel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3dof (Wind Axes)",
+      "referenceBlock": "aerolib3dof2/3dof (Wind Axes)",
+      "blockType": "EOM3DOFNoAccel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Variable Mass 3dof (Body Axes)",
+      "referenceBlock": "aerolib3dof2/Custom Variable Mass 3dof (Body Axes)",
+      "blockType": "EOM3DOFNoAccel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Variable Mass 3dof (Wind Axes)",
+      "referenceBlock": "aerolib3dof2/Custom Variable Mass 3dof (Wind Axes)",
+      "blockType": "EOM3DOFNoAccel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Variable Mass 3dof (Body Axes)",
+      "referenceBlock": "aerolib3dof2/Simple Variable Mass 3dof (Body Axes)",
+      "blockType": "EOM3DOFNoAccel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Variable Mass 3dof (Wind Axes)",
+      "referenceBlock": "aerolib3dof2/Simple Variable Mass 3dof (Wind Axes)",
+      "blockType": "EOM3DOFNoAccel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6DOF Acceleration",
+      "referenceBlock": "aerolib6dof2/6DOF Acceleration",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6DOF Acceleration",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "6DOF Angular Acceleration",
+      "referenceBlock": "aerolib6dof2/6DOF Angular Acceleration",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6DOF Angular Acceleration",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "6DOF ECEF (Quaternion)",
+      "referenceBlock": "aerolib6dof2/6DOF ECEF (Quaternion)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6DOF EoM (ECEF)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6DOF Wind (Wind Angles)",
+      "referenceBlock": "aerolib6dof2/6DOF Wind (Wind Angles)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6DOF EoM (Wind Axis)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6DOF (Euler Angles)",
+      "referenceBlock": "aerolib6dof2/6DOF (Euler Angles)",
+      "blockType": "EOM6DOFBodyEuler",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6DOF (Quaternion)",
+      "referenceBlock": "aerolib6dof2/6DOF (Quaternion)",
+      "blockType": "EOM6DOFBodyQuat",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6DOF Wind (Quaternion)",
+      "referenceBlock": "aerolib6dof2/6DOF Wind (Quaternion)",
+      "blockType": "6DOFEoM(WindAxis)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Variable Mass 6DOF ECEF (Quaternion)",
+      "referenceBlock": "aerolib6dof2/Custom Variable Mass 6DOF ECEF (Quaternion)",
+      "blockType": "6DOFEoM(ECEF)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Variable Mass 6DOF (Euler Angles)",
+      "referenceBlock": "aerolib6dof2/Custom Variable Mass 6DOF (Euler Angles)",
+      "blockType": "EOM6DOFBodyEuler",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Variable Mass 6DOF (Quaternion)",
+      "referenceBlock": "aerolib6dof2/Custom Variable Mass 6DOF (Quaternion)",
+      "blockType": "EOM6DOFBodyQuat",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Variable Mass 6DOF Wind (Quaternion)",
+      "referenceBlock": "aerolib6dof2/Custom Variable Mass 6DOF Wind (Quaternion)",
+      "blockType": "6DOFEoM(WindAxis)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom Variable Mass 6DOF Wind (Wind Angles)",
+      "referenceBlock": "aerolib6dof2/Custom Variable Mass 6DOF Wind (Wind Angles)",
+      "blockType": "6DOFEoM(WindAxis)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Variable Mass 6DOF ECEF (Quaternion)",
+      "referenceBlock": "aerolib6dof2/Simple Variable Mass 6DOF ECEF (Quaternion)",
+      "blockType": "6DOFEoM(ECEF)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Variable Mass 6DOF (Euler Angles)",
+      "referenceBlock": "aerolib6dof2/Simple Variable Mass 6DOF (Euler Angles)",
+      "blockType": "EOM6DOFBodyEuler",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Variable Mass 6DOF (Quaternion)",
+      "referenceBlock": "aerolib6dof2/Simple Variable Mass 6DOF (Quaternion)",
+      "blockType": "EOM6DOFBodyQuat",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Variable Mass 6DOF Wind (Quaternion)",
+      "referenceBlock": "aerolib6dof2/Simple Variable Mass 6DOF Wind (Quaternion)",
+      "blockType": "6DOFEoM(WindAxis)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Variable Mass 6DOF Wind (Wind Angles)",
+      "referenceBlock": "aerolib6dof2/Simple Variable Mass 6DOF Wind (Wind Angles)",
+      "blockType": "6DOFEoM(WindAxis)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4th Order Point Mass (Longitudinal)",
+      "referenceBlock": "aerolibptmass/4th Order Point Mass (Longitudinal)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "4th Order Point Mass (Longitudinal)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "4th Order Point Mass Forces (Longitudinal)",
+      "referenceBlock": "aerolibptmass/4th Order Point Mass Forces (Longitudinal)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "4th Order Point Mass Forces (Longitudinal)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6th Order Point Mass (Coordinated Flight)",
+      "referenceBlock": "aerolibptmass/6th Order Point Mass (Coordinated Flight)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6th Order Point Mass (Coordinated Flight)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "6th Order Point Mass Forces (Coordinated Flight)",
+      "referenceBlock": "aerolibptmass/6th Order Point Mass Forces (Coordinated Flight)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "6th Order Point Mass Forces (Coordinated Flight)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fixed-Wing Point Mass",
+      "referenceBlock": "aerolibptmass/Fixed-Wing Point Mass",
+      "blockType": "RefPointMass",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Airspeed Indicator",
+      "referenceBlock": "aerolibhmi/Airspeed Indicator",
+      "blockType": "AirspeedIndicatorBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Altimeter",
+      "referenceBlock": "aerolibhmi/Altimeter",
+      "blockType": "AltimeterBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Artificial Horizon",
+      "referenceBlock": "aerolibhmi/Artificial Horizon",
+      "blockType": "ArtificialHorizonBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Climb Rate Indicator",
+      "referenceBlock": "aerolibhmi/Climb Rate Indicator",
+      "blockType": "ClimbIndicatorBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "EGT Indicator",
+      "referenceBlock": "aerolibhmi/EGT Indicator",
+      "blockType": "EGTIndicatorBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Heading Indicator",
+      "referenceBlock": "aerolibhmi/Heading Indicator",
+      "blockType": "HeadingIndicatorBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RPM Indicator",
+      "referenceBlock": "aerolibhmi/RPM Indicator",
+      "blockType": "RPMIndicatorBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Turn Coordinator",
+      "referenceBlock": "aerolibhmi/Turn Coordinator",
+      "blockType": "TurnCoordinatorBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dynamic Pressure",
+      "referenceBlock": "aerolibasang/Dynamic Pressure",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Dynamic Pressure",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Airspeed Correction",
+      "referenceBlock": "aerolibasang/Ideal Airspeed Correction",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ideal Airspeed Correction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Incidence  & Airspeed",
+      "referenceBlock": "aerolibasang/Incidence  & Airspeed",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Incidence&Airspeed",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Incidence, Sideslip, & Airspeed",
+      "referenceBlock": "aerolibasang/Incidence, Sideslip, & Airspeed",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Incidence,Sideslip,&Airspeed",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mach Number",
+      "referenceBlock": "aerolibasang/Mach Number",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Mach Number",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radius at Geocentric Latitude",
+      "referenceBlock": "aerolibasang/Radius at Geocentric Latitude",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Radius at Geocentric Latitude",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relative Ratio",
+      "referenceBlock": "aerolibasang/Relative Ratio",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Relative Ratio",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wind Angular Rates",
+      "referenceBlock": "aerolibasang/Wind Angular Rates",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Wind Angular Rates",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "1D Controller Blend: u=(1-L).K1.y+L.K2.y",
+      "referenceBlock": "aerolibschedule/1D Controller Blend: u=(1-L).K1.y+L.K2.y",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Blend-1D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "1D Controller [A(v),B(v),C(v),D(v)]",
+      "referenceBlock": "aerolibschedule/1D Controller [A(v),B(v),C(v),D(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceABCD-1D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "1D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "referenceBlock": "aerolibschedule/1D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceABCFH-1D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "1D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "referenceBlock": "aerolibschedule/1D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceSelfCond-1D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2D Controller Blend",
+      "referenceBlock": "aerolibschedule/2D Controller Blend",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Blend-2D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2D Controller [A(v),B(v),C(v),D(v)]",
+      "referenceBlock": "aerolibschedule/2D Controller [A(v),B(v),C(v),D(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceABCD-2D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "referenceBlock": "aerolibschedule/2D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceABCFH-2D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "referenceBlock": "aerolibschedule/2D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceSelfCond-2D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3D Controller [A(v),B(v),C(v),D(v)]",
+      "referenceBlock": "aerolibschedule/3D Controller [A(v),B(v),C(v),D(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceABCD-3D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "referenceBlock": "aerolibschedule/3D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceABCFH-3D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "referenceBlock": "aerolibschedule/3D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "StateSpaceSelfCond-3D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gain Scheduled Lead-Lag",
+      "referenceBlock": "aerolibschedule/Gain Scheduled Lead-Lag",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gain Scheduled Lead-Lag",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interpolate Matrix(x,y,z) ",
+      "referenceBlock": "aerolibschedule/Interpolate Matrix(x,y,z) ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ScheduleMatrix-3D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Self-Conditioned [A,B,C,D]",
+      "referenceBlock": "aerolibschedule/Self-Conditioned [A,B,C,D]",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Self-Conditioned",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interpolate Matrix(x) ",
+      "referenceBlock": "aerolibschedule/Interpolate Matrix(x) ",
+      "blockType": "ScheduleMatrix-1D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interpolate Matrix(x,y) ",
+      "referenceBlock": "aerolibschedule/Interpolate Matrix(x,y) ",
+      "blockType": "ScheduleMatrix-2D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Calculate Range",
+      "referenceBlock": "aerolibguid/Calculate Range",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Calculate Range",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-axis Accelerometer",
+      "referenceBlock": "aerolibnav/Three-axis Accelerometer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Three-axis Accelerometer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-axis Gyroscope",
+      "referenceBlock": "aerolibnav/Three-axis Gyroscope",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Three-axis Gyroscope",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Three-axis Inertial Measurement Unit",
+      "referenceBlock": "aerolibnav/Three-axis Inertial Measurement Unit",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Three-axis Inertial Measurement Unit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Estimate Center of Gravity",
+      "referenceBlock": "aerolibbdyn/Estimate Center of Gravity",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Estimate Center of Gravity",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Moments about CG  due to Forces",
+      "referenceBlock": "aerolibbdyn/Moments about CG  due to Forces",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Moments About CG Due To Forces",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Symmetric Inertia Tensor",
+      "referenceBlock": "aerolibbdyn/Symmetric Inertia Tensor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Symmetric Inertia Tensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Estimate Inertia Tensor",
+      "referenceBlock": "aerolibbdyn/Estimate Inertia Tensor",
+      "blockType": "EstimateInertiaTensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Crossover Pilot Model",
+      "referenceBlock": "aerolibpilot/Crossover Pilot Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CrossoverPilotModel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Precision Pilot Model",
+      "referenceBlock": "aerolibpilot/Precision Pilot Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PrecisionPilotModel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tustin Pilot Model",
+      "referenceBlock": "aerolibpilot/Tustin Pilot Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TustinPilotModel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Turbofan Engine System",
+      "referenceBlock": "aerolibpropulsion2/Turbofan Engine System",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Turbofan Engine System",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dynamic Inflow (3-State)",
+      "referenceBlock": "aerolibinflowmodels/Dynamic Inflow (3-State)",
+      "blockType": "ThreeStateDI",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Dynamic Inflow (Finite-State)",
+      "referenceBlock": "aerolibinflowmodels/Dynamic Inflow (Finite-State)",
+      "blockType": "FiniteStateDI",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Multirotor",
+      "referenceBlock": "aerolibrotordyn/Multirotor",
+      "blockType": "Multirotor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotor",
+      "referenceBlock": "aerolibrotordyn/Rotor",
+      "blockType": "Rotor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CubeSat Vehicle (Nadir Pointing)",
+      "referenceBlock": "aerolibcubesatveh/CubeSat Vehicle (Nadir Pointing)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CubeSat Vehicle",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CubeSat Vehicle (Custom Pointing)",
+      "referenceBlock": "aerolibcubesatveh/CubeSat Vehicle (Custom Pointing)",
+      "blockType": "CubeSatVehicle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CubeSat Vehicle (Sun Tracking)",
+      "referenceBlock": "aerolibcubesatveh/CubeSat Vehicle (Sun Tracking)",
+      "blockType": "CubeSatVehicle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Attitude Profile (Nadir Pointing)",
+      "referenceBlock": "aerolibsatdyn/Attitude Profile (Nadir Pointing)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Attitude Profile",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Attitude Dynamics",
+      "referenceBlock": "aerolibsatdyn/Attitude Dynamics",
+      "blockType": "AttitudeDynamics",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Attitude Profile (Geographic Pointing)",
+      "referenceBlock": "aerolibsatdyn/Attitude Profile (Geographic Pointing)",
+      "blockType": "AttitudeProfile",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Attitude Profile (Sun Tracking)",
+      "referenceBlock": "aerolibsatdyn/Attitude Profile (Sun Tracking)",
+      "blockType": "AttitudeProfile",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cartesian State Vectors to Keplerian Orbital Elements",
+      "referenceBlock": "aerolibsatdyn/Cartesian State Vectors to Keplerian Orbital Elements",
+      "blockType": "IJK2Keplerian",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Keplerian Orbital Elements to Cartesian State Vectors",
+      "referenceBlock": "aerolibsatdyn/Keplerian Orbital Elements to Cartesian State Vectors",
+      "blockType": "Keplerian2IJK",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Line of Sight Access",
+      "referenceBlock": "aerolibsatdyn/Line of Sight Access",
+      "blockType": "LineOfSightAccess",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Orbit Propagator Kepler (unperturbed)",
+      "referenceBlock": "aerolibsatdyn/Orbit Propagator Kepler (unperturbed)",
+      "blockType": "OrbitPropagator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Orbit Propagator Numerical (high precision)",
+      "referenceBlock": "aerolibsatdyn/Orbit Propagator Numerical (high precision)",
+      "blockType": "OrbitPropagator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spacecraft Dynamics",
+      "referenceBlock": "aerolibsatdyn/Spacecraft Dynamics",
+      "blockType": "SpacecraftDynamics",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Besselian Epoch to Julian Epoch",
+      "referenceBlock": "aerolibtransform2/Besselian Epoch to Julian Epoch",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Besselian to Julian",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix Body to Wind",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix Body to Wind",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DCM Body to Wind",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix Body to Wind to Alpha and Beta",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix Body to Wind to Alpha and Beta",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DCM2AB",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix ECEF to NED",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix ECEF to NED",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DCM ECEF to NED",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix ECEF to NED to Latitude and Longitude",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix ECEF to NED to Latitude and Longitude",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DCM to LATLON",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix ECI to ECEF",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix ECI to ECEF",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DCMECItoECEF",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix to Wind Angles",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix to Wind Angles",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DCM2Wind",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ECI Position to AER",
+      "referenceBlock": "aerolibtransform2/ECI Position to AER",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ECItoAER",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ECI Position to LLA",
+      "referenceBlock": "aerolibtransform2/ECI Position to LLA",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ECItoLLA",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Julian Epoch to Besselian Epoch",
+      "referenceBlock": "aerolibtransform2/Julian Epoch to Besselian Epoch",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Julian to Besselian",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LLA to ECI Position",
+      "referenceBlock": "aerolibtransform2/LLA to ECI Position",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LLAtoECI",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wind Angles to  Direction Cosine Matrix",
+      "referenceBlock": "aerolibtransform2/Wind Angles to  Direction Cosine Matrix",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Wind2DCM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Delta UT1",
+      "referenceBlock": "aerolibtransform2/Delta UT1",
+      "blockType": "DeltaUT1",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix to Rotation Angles",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix to Rotation Angles",
+      "blockType": "Dcm2Angle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix  to Quaternions",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix  to Quaternions",
+      "blockType": "Dcm2Quat",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direction Cosine Matrix to Rodrigues",
+      "referenceBlock": "aerolibtransform2/Direction Cosine Matrix to Rodrigues",
+      "blockType": "Dcm2Rod",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ECEF Position to LLA",
+      "referenceBlock": "aerolibtransform2/ECEF Position to LLA",
+      "blockType": "ECEF2LLA",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Flat Earth to LLA",
+      "referenceBlock": "aerolibtransform2/Flat Earth to LLA",
+      "blockType": "FlatEarth2LLA",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Geocentric to  Geodetic Latitude",
+      "referenceBlock": "aerolibtransform2/Geocentric to  Geodetic Latitude",
+      "blockType": "Geoc2Geod",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Geodetic to  Geocentric Latitude",
+      "referenceBlock": "aerolibtransform2/Geodetic to  Geocentric Latitude",
+      "blockType": "Geod2Geoc",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LLA to ECEF Position",
+      "referenceBlock": "aerolibtransform2/LLA to ECEF Position",
+      "blockType": "LLA2ECEF",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LLA to Flat Earth",
+      "referenceBlock": "aerolibtransform2/LLA to Flat Earth",
+      "blockType": "LLA2Flat",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternions to Rodrigues",
+      "referenceBlock": "aerolibtransform2/Quaternions to Rodrigues",
+      "blockType": "Quat2Rod",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternions to  Direction Cosine Matrix",
+      "referenceBlock": "aerolibtransform2/Quaternions to  Direction Cosine Matrix",
+      "blockType": "Quat2Dcm",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternions to Rotation Angles",
+      "referenceBlock": "aerolibtransform2/Quaternions to Rotation Angles",
+      "blockType": "Quat2Angle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rodrigues to Direction Cosine Matrix",
+      "referenceBlock": "aerolibtransform2/Rodrigues to Direction Cosine Matrix",
+      "blockType": "Rod2Dcm",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rodrigues to Quaternions",
+      "referenceBlock": "aerolibtransform2/Rodrigues to Quaternions",
+      "blockType": "Rod2Quat",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rodrigues to Rotation Angles",
+      "referenceBlock": "aerolibtransform2/Rodrigues to Rotation Angles",
+      "blockType": "Rod2Angle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotation Angles to Direction Cosine Matrix",
+      "referenceBlock": "aerolibtransform2/Rotation Angles to Direction Cosine Matrix",
+      "blockType": "Angle2Dcm",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotation Angles to Quaternions",
+      "referenceBlock": "aerolibtransform2/Rotation Angles to Quaternions",
+      "blockType": "Angle2Quat",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotation Angles to Rodrigues",
+      "referenceBlock": "aerolibtransform2/Rotation Angles to Rodrigues",
+      "blockType": "Angle2Rod",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Adjoint of 3x3 Matrix",
+      "referenceBlock": "aerolibutil/Adjoint of 3x3 Matrix",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Adjoint of 3x3 matrix",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Invert  3x3 Matrix",
+      "referenceBlock": "aerolibutil/Invert  3x3 Matrix",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Invert 3x3 Matrix",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Conjugate",
+      "referenceBlock": "aerolibutil/Quaternion Conjugate",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Quaternion Conjugate",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Division",
+      "referenceBlock": "aerolibutil/Quaternion Division",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Quaternion Division",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Inverse",
+      "referenceBlock": "aerolibutil/Quaternion Inverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Quaternion Inverse",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Multiplication",
+      "referenceBlock": "aerolibutil/Quaternion Multiplication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Quaternion Multiplication",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Rotation",
+      "referenceBlock": "aerolibutil/Quaternion Rotation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Quaternion Rotation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3x3 Cross Product",
+      "referenceBlock": "aerolibutil/3x3 Cross Product",
+      "blockType": "CrossProduct",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Create 3x3 Matrix",
+      "referenceBlock": "aerolibutil/Create 3x3 Matrix",
+      "blockType": "Create3x3Matrix",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Determinant of 3x3 Matrix",
+      "referenceBlock": "aerolibutil/Determinant of 3x3 Matrix",
+      "blockType": "Determinantof3x3Matrix",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Interpolation",
+      "referenceBlock": "aerolibutil/Quaternion Interpolation",
+      "blockType": "QuatInterp",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Modulus",
+      "referenceBlock": "aerolibutil/Quaternion Modulus",
+      "blockType": "QuaternionModulus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Norm",
+      "referenceBlock": "aerolibutil/Quaternion Norm",
+      "blockType": "QuaternionNorm",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quaternion Normalize",
+      "referenceBlock": "aerolibutil/Quaternion Normalize",
+      "blockType": "QuaternionNormalize",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Acceleration Conversion",
+      "referenceBlock": "aerolibconvert2/Acceleration Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Acceleration Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Angle Conversion",
+      "referenceBlock": "aerolibconvert2/Angle Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Angle Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Angular Acceleration Conversion",
+      "referenceBlock": "aerolibconvert2/Angular Acceleration Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Angular Acceleration Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Angular Velocity Conversion",
+      "referenceBlock": "aerolibconvert2/Angular Velocity Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Angular Velocity Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Density Conversion",
+      "referenceBlock": "aerolibconvert2/Density Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Density Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Force Conversion",
+      "referenceBlock": "aerolibconvert2/Force Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Force Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Julian Date Conversion",
+      "referenceBlock": "aerolibconvert2/Julian Date Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "JulianDate",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Length Conversion",
+      "referenceBlock": "aerolibconvert2/Length Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Length Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mass Conversion",
+      "referenceBlock": "aerolibconvert2/Mass Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Mass Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pressure Conversion",
+      "referenceBlock": "aerolibconvert2/Pressure Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Pressure Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Temperature Conversion",
+      "referenceBlock": "aerolibconvert2/Temperature Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Temperature Conversion",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Velocity Conversion",
+      "referenceBlock": "aerolibconvert2/Velocity Conversion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Velocity Conversion",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:53",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

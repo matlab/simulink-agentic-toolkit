@@ -27,7 +27,7 @@ If a folder is provided, save each `.slx` file as a separate library entry.
 ```matlab
 dataRoot = prefdir();
 libraries(1).name = 'MotorLib';
-libraries(1).path = 'D:\SharedLibs\MotorLib.slx';
+libraries(1).path = 'D:/SharedLibs/MotorLib.slx';
 libraries(1).description = 'Motor control blocks';
 library.LibraryConfig.save(dataRoot, libraries);
 ```
@@ -77,10 +77,10 @@ Policy must be configured before the Knowledge Index.
 
 If libraries are declared and the Knowledge Index is empty (`.satk/library-kg/index.md` contains `populated: false`) or missing, provide the user with options to index their library blocks and wait until the user responds:
 
-- **Automatic** — load the `curating-library-kg` skill. The agent reads `.satk/library-cache/*.json`, infers categories and descriptions from block metadata, saves curation to `.satk/library-curation.json`, and generates the Knowledge Graph — all without asking the user for input. Present the results to the user for review after generation.
-- **Guided setup** — load the `curating-library-kg` skill and follow its interactive workflow (common blocks, categories, descriptions). The skill collects curation data with user input at each step, saves it to `.satk/library-curation.json`, and generates the Knowledge Graph. Do NOT proceed until the curation workflow completes.
+- **Automatic** — load the `simulink-curating-library-kg` skill. The agent reads `.satk/library-cache/*.json`, infers categories and descriptions from block metadata, saves curation to `.satk/library-curation.json`, and generates the Knowledge Graph — all without asking the user for input. Present the results to the user for review after generation.
+- **Guided setup** — load the `simulink-curating-library-kg` skill and follow its interactive workflow (common blocks, categories, descriptions). The skill collects curation data with user input at each step, saves it to `.satk/library-curation.json`, and generates the Knowledge Graph. Do NOT proceed until the curation workflow completes.
 
-Both paths use the `curating-library-kg` skill. The difference is whether the agent proposes and commits autonomously (automatic) or pauses for user confirmation at each step (guided).
+Both paths use the `simulink-curating-library-kg` skill. The difference is whether the agent proposes and commits autonomously (automatic) or pauses for user confirmation at each step (guided).
 
 Do not use `find_system`, `load_system`, or `get_param` on library `.slx` files to build or populate the index.
 

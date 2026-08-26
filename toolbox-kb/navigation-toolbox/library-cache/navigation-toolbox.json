@@ -1,0 +1,117 @@
+{
+  "libraryName": "Navigation Toolbox",
+  "generatedAt": "2026-08-19T14:31:02",
+  "blockCount": 11,
+  "blocks": [
+    {
+      "name": "AHRS",
+      "referenceBlock": "mspfiltlib/AHRS",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complementary Filter",
+      "referenceBlock": "mspfiltlib/Complementary Filter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IMU Filter",
+      "referenceBlock": "mspfiltlib/IMU Filter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "ecompass",
+      "referenceBlock": "mspfiltlib/ecompass",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "GPS",
+      "referenceBlock": "mspsensorlib/GPS",
+      "blockType": "fusion.internal.simulink.gpsSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IMU",
+      "referenceBlock": "mspsensorlib/IMU",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "INS",
+      "referenceBlock": "mspsensorlib/INS",
+      "blockType": "fusion.internal.simulink.insSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pure Pursuit",
+      "referenceBlock": "navlib/Control Algorithms/Pure Pursuit",
+      "blockType": "nav.slalgs.internal.PurePursuit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Timed Elastic Band (TEB)",
+      "referenceBlock": "navlib/Control Algorithms/Timed Elastic Band (TEB)",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Vector Field Histogram",
+      "referenceBlock": "navlib/Control Algorithms/Vector Field Histogram",
+      "blockType": "nav.slalgs.internal.VectorFieldHistogram",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Coordinate Transformation Conversion",
+      "referenceBlock": "navlib/Utilities/Coordinate Transformation Conversion",
+      "blockType": "robotics.slcore.internal.block.CoordinateTransformationConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

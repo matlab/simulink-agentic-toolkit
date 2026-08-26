@@ -1,0 +1,315 @@
+{
+  "libraryName": "RF Blockset Models for Analog Devices RF Transceivers",
+  "generatedAt": "2026-08-19T14:31:06",
+  "blockCount": 33,
+  "blocks": [
+    {
+      "name": "ad9361_rx",
+      "referenceBlock": "ad9361_models/ad9361_rx",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9361_RX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9361_tx",
+      "referenceBlock": "ad9361_models/ad9361_tx",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9361_TX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9361_QPSK",
+      "referenceBlock": "ad9361_testbenches/ad9361_QPSK",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9361_QPSK",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9361_RX",
+      "referenceBlock": "ad9361_testbenches/ad9361_RX",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9361_RX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9361_RX_OOB",
+      "referenceBlock": "ad9361_testbenches/ad9361_RX_OOB",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9361_RX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9361_TX",
+      "referenceBlock": "ad9361_testbenches/ad9361_TX",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9361_TX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_orx",
+      "referenceBlock": "ad9371_models/ad9371_orx",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_orx",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_rx",
+      "referenceBlock": "ad9371_models/ad9371_rx",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_rx",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_snf",
+      "referenceBlock": "ad9371_models/ad9371_snf",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_snf",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_tx",
+      "referenceBlock": "ad9371_models/ad9371_tx",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_tx",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Help",
+      "referenceBlock": "ad9371_testbenches/Help",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Help",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_DPD",
+      "referenceBlock": "ad9371_testbenches/ad9371_DPD",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_DPD",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_ORX",
+      "referenceBlock": "ad9371_testbenches/ad9371_ORX",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_ORX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_RX",
+      "referenceBlock": "ad9371_testbenches/ad9371_RX",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_RX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_SNF",
+      "referenceBlock": "ad9371_testbenches/ad9371_SNF",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_SNF",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_TX",
+      "referenceBlock": "ad9371_testbenches/ad9371_TX",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_TX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ad9371_TX_RX",
+      "referenceBlock": "ad9371_testbenches/ad9371_TX_RX",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ad9371_TX_RX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ByPass",
+      "referenceBlock": "ad9371_utilities/ByPass",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CW Signal",
+      "referenceBlock": "ad9371_utilities/CW Signal",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DEC4",
+      "referenceBlock": "ad9371_utilities/DEC4",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DEC5",
+      "referenceBlock": "ad9371_utilities/DEC5",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DEC5HR",
+      "referenceBlock": "ad9371_utilities/DEC5HR",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "External LO1",
+      "referenceBlock": "ad9371_utilities/External LO1",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integrated LO",
+      "referenceBlock": "ad9371_utilities/Integrated LO",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LTE signal",
+      "referenceBlock": "ad9371_utilities/LTE signal",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LTE signal1",
+      "referenceBlock": "ad9371_utilities/LTE signal1",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power",
+      "referenceBlock": "ad9371_utilities/Power",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RHB1",
+      "referenceBlock": "ad9371_utilities/RHB1",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "THB1",
+      "referenceBlock": "ad9371_utilities/THB1",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "THB2",
+      "referenceBlock": "ad9371_utilities/THB2",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TestSignalTX",
+      "referenceBlock": "ad9371_utilities/TestSignalTX",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FIR",
+      "referenceBlock": "ad9371_utilities/FIR",
+      "blockType": "FIRDecimation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TFIR",
+      "referenceBlock": "ad9371_utilities/TFIR",
+      "blockType": "FIRInterpolation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74458964122,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller"
+  ],
+  "blockCount": 60,
+  "categoryCount": 5,
+  "libraryFingerprints": {
+    "Simulink_Coder_Support_Package_for_ARM_Cortex_based_VEX_Microcontroller": {
+      "blockCount": 60
+    }
+  }
+}

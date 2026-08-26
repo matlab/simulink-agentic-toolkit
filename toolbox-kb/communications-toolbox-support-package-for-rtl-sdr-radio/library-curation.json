@@ -1,0 +1,30 @@
+{
+  "commonBlocks": [
+    "RTL-SDR Receiver"
+  ],
+  "categories": [
+    {
+      "name": "sdr-hardware",
+      "description": "RTL-SDR receive-only software-defined radio interface",
+      "keywords": [
+        "rtl",
+        "sdr",
+        "radio",
+        "receiver",
+        "usb"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "RTL-SDR Receiver",
+      "value": "sdr-hardware"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "RTL-SDR Receiver",
+      "value": "Receive IQ samples from an RTL-SDR USB dongle in real time — use for low-cost spectrum monitoring, FM/ADS-B reception, or educational RF signal capture from 25 MHz to 1.75 GHz"
+    }
+  ]
+}

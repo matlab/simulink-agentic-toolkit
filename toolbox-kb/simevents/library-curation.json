@@ -1,0 +1,308 @@
+{
+  "commonBlocks": [
+    "Entity Generator",
+    "Entity Queue",
+    "Entity Server",
+    "Entity Terminator",
+    "Entity Gate",
+    "Resource Pool"
+  ],
+  "categories": [
+    {
+      "name": "entity-flow",
+      "description": "Entity routing, switching, and transport",
+      "keywords": [
+        "switch",
+        "gate",
+        "transport",
+        "conveyor",
+        "route"
+      ]
+    },
+    {
+      "name": "entity-management",
+      "description": "Entity creation, storage, batching, and termination",
+      "keywords": [
+        "generator",
+        "queue",
+        "server",
+        "store",
+        "batch"
+      ]
+    },
+    {
+      "name": "resources-messaging",
+      "description": "Shared resource management and messaging",
+      "keywords": [
+        "resource",
+        "pool",
+        "acquire",
+        "message",
+        "release"
+      ]
+    },
+    {
+      "name": "custom-logic",
+      "description": "Custom logic and debugging tools",
+      "keywords": [
+        "chart",
+        "matlab",
+        "debugger",
+        "viewer",
+        "function"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Composite Entity Creator",
+      "value": "entity-management"
+    },
+    {
+      "block": "Composite Entity Splitter",
+      "value": "entity-management"
+    },
+    {
+      "block": "Conveyor System",
+      "value": "entity-flow"
+    },
+    {
+      "block": "Design Patterns",
+      "value": "custom-logic"
+    },
+    {
+      "block": "Discrete-Event Chart",
+      "value": "custom-logic"
+    },
+    {
+      "block": "Entity Batch Creator",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Batch Splitter",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Find",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Gate",
+      "value": "entity-flow"
+    },
+    {
+      "block": "Entity Generator",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Input Switch",
+      "value": "entity-flow"
+    },
+    {
+      "block": "Entity Multicast",
+      "value": "entity-flow"
+    },
+    {
+      "block": "Entity Output Switch",
+      "value": "entity-flow"
+    },
+    {
+      "block": "Entity Queue",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Replicator",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Selector",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Server",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Store",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Terminator",
+      "value": "entity-management"
+    },
+    {
+      "block": "Entity Transport Delay",
+      "value": "entity-flow"
+    },
+    {
+      "block": "Hit  Crossing",
+      "value": "resources-messaging"
+    },
+    {
+      "block": "MATLAB Discrete-Event System",
+      "value": "custom-logic"
+    },
+    {
+      "block": "Message Receive",
+      "value": "resources-messaging"
+    },
+    {
+      "block": "Message Send",
+      "value": "resources-messaging"
+    },
+    {
+      "block": "Multicast Receive Queue",
+      "value": "resources-messaging"
+    },
+    {
+      "block": "Resource Acquirer",
+      "value": "resources-messaging"
+    },
+    {
+      "block": "Resource Pool",
+      "value": "resources-messaging"
+    },
+    {
+      "block": "Resource Releaser",
+      "value": "resources-messaging"
+    },
+    {
+      "block": "Sequence Viewer",
+      "value": "custom-logic"
+    },
+    {
+      "block": "SimEvents Debugger",
+      "value": "custom-logic"
+    },
+    {
+      "block": "Simulink Function",
+      "value": "custom-logic"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Composite Entity Creator",
+      "value": "Bundle multiple entities into a single composite entity — use for modeling assemblies, kits, or grouped items moving together"
+    },
+    {
+      "block": "Composite Entity Splitter",
+      "value": "Split a composite entity back into individual entities — use for disassembly or unpacking operations in manufacturing or logistics"
+    },
+    {
+      "block": "Conveyor System",
+      "value": "Model a physical conveyor with transport delay — use for simulating material movement on belts or rollers with spatial dynamics"
+    },
+    {
+      "block": "Design Patterns",
+      "value": "Pre-built discrete-event design patterns — use as starting templates for common queuing and workflow configurations"
+    },
+    {
+      "block": "Discrete-Event Chart",
+      "value": "Model event-driven logic using Stateflow charts — use for complex state-based entity processing rules that are hard to express with standard blocks"
+    },
+    {
+      "block": "Entity Batch Creator",
+      "value": "Collect entities into fixed-size batches — use for modeling palletizing, packaging, or batch processing operations"
+    },
+    {
+      "block": "Entity Batch Splitter",
+      "value": "Split a batch entity into individual entities — use for modeling depalletizing or batch unpacking operations"
+    },
+    {
+      "block": "Entity Find",
+      "value": "Search for entities matching criteria in a store — use for locating specific items in warehouses or buffers by attribute value"
+    },
+    {
+      "block": "Entity Gate",
+      "value": "Open or close entity flow based on a signal — use for modeling doors, valves, or conditional access points in entity networks"
+    },
+    {
+      "block": "Entity Generator",
+      "value": "Create entities at specified rates or times — use for modeling arrivals of customers, parts, or packets entering a system"
+    },
+    {
+      "block": "Entity Input Switch",
+      "value": "Route entities from multiple inputs to a single output — use for merging entity streams from parallel paths"
+    },
+    {
+      "block": "Entity Multicast",
+      "value": "Send an entity to all connected outputs simultaneously — use for broadcasting events or duplicating items to multiple destinations"
+    },
+    {
+      "block": "Entity Output Switch",
+      "value": "Route entities from a single input to multiple outputs — use for splitting entity flow based on conditions or round-robin logic"
+    },
+    {
+      "block": "Entity Queue",
+      "value": "Buffer entities in FIFO, LIFO, or priority order — use for modeling waiting lines, buffers, or inventory storage"
+    },
+    {
+      "block": "Entity Replicator",
+      "value": "Create copies of an entity — use for modeling document copying, message broadcasting, or parallel processing splits"
+    },
+    {
+      "block": "Entity Selector",
+      "value": "Select specific entities from a set based on criteria — use for cherry-picking items from queues or stores by attribute"
+    },
+    {
+      "block": "Entity Server",
+      "value": "Process entities with configurable service time — use for modeling workstations, processors, or service desks that hold entities during processing"
+    },
+    {
+      "block": "Entity Store",
+      "value": "Store entities in an unordered collection — use for modeling warehouses, parking lots, or pools where order does not matter"
+    },
+    {
+      "block": "Entity Terminator",
+      "value": "Remove entities from the simulation — use for modeling system exits where entities leave permanently"
+    },
+    {
+      "block": "Entity Transport Delay",
+      "value": "Delay entity flow by a specified time — use for modeling transit time through pipes, corridors, or communication channels"
+    },
+    {
+      "block": "Hit  Crossing",
+      "value": "Detect when a signal crosses a threshold — use for triggering discrete events based on continuous signal conditions"
+    },
+    {
+      "block": "MATLAB Discrete-Event System",
+      "value": "Implement custom discrete-event logic in MATLAB — use for modeling complex event-driven behavior not available in standard blocks"
+    },
+    {
+      "block": "Message Receive",
+      "value": "Receive messages from Simulink message ports — use for interfacing discrete-event models with message-based Simulink components"
+    },
+    {
+      "block": "Message Send",
+      "value": "Send messages to Simulink message ports — use for triggering Simulink message-based components from discrete-event models"
+    },
+    {
+      "block": "Multicast Receive Queue",
+      "value": "Queue for receiving multicast entity copies — use for buffering broadcast entities at each receiving destination"
+    },
+    {
+      "block": "Resource Acquirer",
+      "value": "Acquire shared resources for an entity — use for modeling entities competing for limited resources like machines or operators"
+    },
+    {
+      "block": "Resource Pool",
+      "value": "Define a pool of shared resources — use for configuring the total supply of machines, workers, or other limited resources"
+    },
+    {
+      "block": "Resource Releaser",
+      "value": "Release previously acquired shared resources — use for freeing resources back to the pool after entity processing completes"
+    },
+    {
+      "block": "Sequence Viewer",
+      "value": "Visualize entity and message event sequences — use for debugging event ordering and timing in discrete-event simulations"
+    },
+    {
+      "block": "SimEvents Debugger",
+      "value": "Debug discrete-event simulations interactively — use for stepping through entity events and inspecting queue states during development"
+    },
+    {
+      "block": "Simulink Function",
+      "value": "Define a callable function within SimEvents models — use for encapsulating reusable computations called by entity events"
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "libraryName": "Simulink Extras",
+  "generatedAt": "2026-08-19T14:31:13",
+  "blockCount": 34,
+  "blocks": [
+    {
+      "name": "Discrete Transfer Fcn (with initial outputs)",
+      "referenceBlock": "simulink_extras/Additional Discrete/Discrete Transfer Fcn (with initial outputs)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discrete Transfer Function with Initial Outputs",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete Transfer Fcn (with initial states)",
+      "referenceBlock": "simulink_extras/Additional Discrete/Discrete Transfer Fcn (with initial states)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discrete Transfer Function with Initial States",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete Zero-Pole (with initial outputs)",
+      "referenceBlock": "simulink_extras/Additional Discrete/Discrete Zero-Pole (with initial outputs)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discrete Zero-Pole with Initial Outputs",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete Zero-Pole (with initial states)",
+      "referenceBlock": "simulink_extras/Additional Discrete/Discrete Zero-Pole (with initial states)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discrete Zero-Pole with Initial States",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Idealized ADC quantizer",
+      "referenceBlock": "simulink_extras/Additional Discrete/Idealized ADC quantizer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IdealADC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "State-Space (with initial outputs)",
+      "referenceBlock": "simulink_extras/Additional Linear/State-Space (with initial outputs)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "State-Space with Initial Outputs",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transfer Fcn (with initial outputs)",
+      "referenceBlock": "simulink_extras/Additional Linear/Transfer Fcn (with initial outputs)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transfer Function with Initial Outputs",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transfer Fcn (with initial states)",
+      "referenceBlock": "simulink_extras/Additional Linear/Transfer Fcn (with initial states)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transfer Function with Initial States",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Zero-Pole (with initial outputs)",
+      "referenceBlock": "simulink_extras/Additional Linear/Zero-Pole (with initial outputs)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zero-Pole with Initial Outputs",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Zero-Pole (with initial states)",
+      "referenceBlock": "simulink_extras/Additional Linear/Zero-Pole (with initial states)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zero-Pole with Initial States",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Auto Correlator",
+      "referenceBlock": "simulink_extras/Additional Sinks/Auto Correlator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Auto Correlator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Averaging Power Spectral Density",
+      "referenceBlock": "simulink_extras/Additional Sinks/Averaging Power Spectral Density",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Averaging Power Spectral Density",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Averaging Spectrum Analyzer",
+      "referenceBlock": "simulink_extras/Additional Sinks/Averaging Spectrum Analyzer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Averaging Spectrum Analyzer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cross Correlator",
+      "referenceBlock": "simulink_extras/Additional Sinks/Cross Correlator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Cross Correlator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power Spectral Density",
+      "referenceBlock": "simulink_extras/Additional Sinks/Power Spectral Density",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Power Spectral Density",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spectrum Analyzer",
+      "referenceBlock": "simulink_extras/Additional Sinks/Spectrum Analyzer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Spectrum Analyzer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clock",
+      "referenceBlock": "simulink_extras/Flip Flops/Clock",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Digital clock",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "D Flip-Flop",
+      "referenceBlock": "simulink_extras/Flip Flops/D Flip-Flop",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DFlipFlop",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "D Latch",
+      "referenceBlock": "simulink_extras/Flip Flops/D Latch",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DLatch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J-K Flip-Flop",
+      "referenceBlock": "simulink_extras/Flip Flops/J-K Flip-Flop",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "JKFlipFlop",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "S-R Flip-Flop",
+      "referenceBlock": "simulink_extras/Flip Flops/S-R Flip-Flop",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SRFlipFlop",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switched derivative for linearization",
+      "referenceBlock": "simulink_extras/Linearization/Switched derivative for linearization",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Derivative for linearization",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cartesian to Polar",
+      "referenceBlock": "simulink_extras/Transformations/Cartesian to Polar",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Cart2Polar",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cartesian to Spherical",
+      "referenceBlock": "simulink_extras/Transformations/Cartesian to Spherical",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Cart2Sph",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Celsius to Fahrenheit",
+      "referenceBlock": "simulink_extras/Transformations/Celsius to Fahrenheit",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CelsiusToFahrenheit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Degrees to Radians",
+      "referenceBlock": "simulink_extras/Transformations/Degrees to Radians",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DegreesToRadians",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fahrenheit to Celsius",
+      "referenceBlock": "simulink_extras/Transformations/Fahrenheit to Celsius",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FahrenheitToCelsius",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Polar to Cartesian",
+      "referenceBlock": "simulink_extras/Transformations/Polar to Cartesian",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Polar2Cart",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Radians to Degrees",
+      "referenceBlock": "simulink_extras/Transformations/Radians to Degrees",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "RadiansToDegrees",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Spherical to Cartesian",
+      "referenceBlock": "simulink_extras/Transformations/Spherical to Cartesian",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sph2Cart",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Matrix Interpolation",
+      "referenceBlock": "simulink_extras/Additional Lookup Tables/Matrix Interpolation",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Floating Bar Plot",
+      "referenceBlock": "simulink_extras/Additional Sinks/Floating Bar Plot",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Floating Bar Plot",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FMU",
+      "referenceBlock": "simulink_extras/FMU Import/FMU",
+      "blockType": "FMU",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switched transport delay for linearization",
+      "referenceBlock": "simulink_extras/Linearization/Switched transport delay for linearization",
+      "blockType": "TransportDelay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,196 @@
+{
+  "commonBlocks": [
+    "Filtering",
+    "Sources",
+    "Sinks",
+    "Transforms",
+    "Signal Operations",
+    "Statistics"
+  ],
+  "categories": [
+    {
+      "name": "dsp-processing",
+      "description": "Core signal processing: filtering, math, quantization, and signal operations",
+      "keywords": [
+        "filter",
+        "math",
+        "quantize",
+        "convolution",
+        "operation"
+      ]
+    },
+    {
+      "name": "dsp-analysis",
+      "description": "Signal analysis: estimation, feature extraction, statistics, and transforms",
+      "keywords": [
+        "estimation",
+        "feature",
+        "statistics",
+        "spectrum",
+        "transform"
+      ]
+    },
+    {
+      "name": "dsp-io",
+      "description": "Signal sources, sinks, and frame management",
+      "keywords": [
+        "source",
+        "sink",
+        "buffer",
+        "frame",
+        "signal"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Demos, dataflow scheduling, and toolbox information",
+      "keywords": [
+        "demo",
+        "info",
+        "dataflow",
+        "parallel",
+        "anomaly"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Dataflow Subsystem",
+      "value": "utilities"
+    },
+    {
+      "block": "Deep Signal Anomaly Detector",
+      "value": "utilities"
+    },
+    {
+      "block": "Demos",
+      "value": "utilities"
+    },
+    {
+      "block": "Estimation",
+      "value": "dsp-analysis"
+    },
+    {
+      "block": "Filtering",
+      "value": "dsp-processing"
+    },
+    {
+      "block": "Frequency Feature Extractor",
+      "value": "dsp-analysis"
+    },
+    {
+      "block": "Info",
+      "value": "utilities"
+    },
+    {
+      "block": "Math Functions",
+      "value": "dsp-processing"
+    },
+    {
+      "block": "Quantizers",
+      "value": "dsp-processing"
+    },
+    {
+      "block": "Signal Management",
+      "value": "dsp-io"
+    },
+    {
+      "block": "Signal Operations",
+      "value": "dsp-processing"
+    },
+    {
+      "block": "Sinks",
+      "value": "dsp-io"
+    },
+    {
+      "block": "Sources",
+      "value": "dsp-io"
+    },
+    {
+      "block": "Statistics",
+      "value": "dsp-analysis"
+    },
+    {
+      "block": "Time Feature Extractor",
+      "value": "dsp-analysis"
+    },
+    {
+      "block": "Transforms",
+      "value": "dsp-analysis"
+    },
+    {
+      "block": "Wavelet Scattering",
+      "value": "dsp-analysis"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Dataflow Subsystem",
+      "value": "Execute a subsystem using dataflow scheduling for automatic parallelism — use to exploit multi-core CPUs by letting the scheduler determine optimal execution order and buffering"
+    },
+    {
+      "block": "Deep Signal Anomaly Detector",
+      "value": "Detect anomalies in time-series signals using a trained deep learning model — use for predictive maintenance, fault detection, or quality monitoring on streaming sensor data"
+    },
+    {
+      "block": "Demos",
+      "value": "Access demonstration models for DSP System Toolbox workflows — use as reference implementations for filtering, spectral analysis, and signal processing pipelines"
+    },
+    {
+      "block": "Estimation",
+      "value": "Estimate signal parameters including power spectrum, autocorrelation, and frequency content — use for spectral analysis, system identification, or adaptive filtering applications"
+    },
+    {
+      "block": "Filtering",
+      "value": "Design and apply digital filters (FIR, IIR, adaptive, multirate) to signals — use for noise removal, band selection, decimation, or interpolation in signal processing pipelines"
+    },
+    {
+      "block": "Frequency Feature Extractor",
+      "value": "Extract frequency-domain features (spectral centroid, bandwidth, roll-off) from signals — use for condition monitoring, audio classification, or vibration analysis feature engineering"
+    },
+    {
+      "block": "Info",
+      "value": "Display DSP System Toolbox version and configuration information — use to verify toolbox installation and compatibility"
+    },
+    {
+      "block": "Math Functions",
+      "value": "Perform matrix math, linear algebra, and polynomial operations on signals — use for signal transformations, system solving, or statistical computations in DSP workflows"
+    },
+    {
+      "block": "Quantizers",
+      "value": "Quantize signals to fixed-point or integer representations — use to model ADC quantization effects or prepare floating-point algorithms for fixed-point implementation"
+    },
+    {
+      "block": "Signal Management",
+      "value": "Buffer, delay, pad, and reshape signal frames — use to convert between sample-based and frame-based processing or manage signal alignment in multirate systems"
+    },
+    {
+      "block": "Signal Operations",
+      "value": "Apply signal operations like convolution, correlation, interpolation, and zero-crossing detection — use for time-domain signal manipulation and feature extraction"
+    },
+    {
+      "block": "Sinks",
+      "value": "Display and log signals with scopes, spectrum analyzers, and array plots — use for real-time visualization and analysis of signal processing results"
+    },
+    {
+      "block": "Sources",
+      "value": "Generate test signals (sine, chirp, noise, pulse) and read from audio/file sources — use as inputs to DSP processing chains for development and testing"
+    },
+    {
+      "block": "Statistics",
+      "value": "Compute running statistics (mean, variance, histogram, min/max) on streaming signals — use for online signal monitoring and statistical characterization"
+    },
+    {
+      "block": "Time Feature Extractor",
+      "value": "Extract time-domain features (RMS, crest factor, kurtosis, peak-to-peak) from signals — use for condition monitoring or signal characterization without transforming to frequency domain"
+    },
+    {
+      "block": "Transforms",
+      "value": "Apply spectral and time-frequency transforms (FFT, DCT, Hilbert, spectrogram) — use to convert signals between time and frequency domains for analysis or processing"
+    },
+    {
+      "block": "Wavelet Scattering",
+      "value": "Compute wavelet scattering transform coefficients for robust signal representation — use for signal classification tasks where translation-invariant features outperform raw spectral content"
+    }
+  ]
+}

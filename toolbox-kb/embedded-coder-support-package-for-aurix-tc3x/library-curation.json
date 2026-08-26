@@ -1,0 +1,106 @@
+{
+  "commonBlocks": [
+    "Task Manager",
+    "Interprocess Data Read",
+    "Interprocess Data Write",
+    "ADC Interface",
+    "PWM Interface"
+  ],
+  "categories": [
+    {
+      "name": "aurix-tc3x",
+      "description": "Infineon AURIX TC3x multicore ECU deployment and test bench blocks",
+      "keywords": [
+        "aurix",
+        "tc3x",
+        "infineon",
+        "multicore",
+        "automotive"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ADC Interface",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "AURIX TC3x",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "Digital IO Interface",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "Event Source",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "Interprocess Data Channel",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "PWM Interface",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "Task Manager",
+      "value": "aurix-tc3x"
+    },
+    {
+      "block": "Utilities",
+      "value": "aurix-tc3x"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ADC Interface",
+      "value": "Simulate the ADC peripheral behavior for test bench testing — use in SIL/PIL to provide analog input stimulus without hardware"
+    },
+    {
+      "block": "AURIX TC3x",
+      "value": "Device-specific library container for Infineon AURIX TC3x multicore processors — provides access to TC3x-specific peripherals and scheduling"
+    },
+    {
+      "block": "Digital IO Interface",
+      "value": "Simulate digital I/O peripheral behavior for test bench testing — use in SIL/PIL to provide GPIO stimulus without hardware"
+    },
+    {
+      "block": "Event Source",
+      "value": "Generate scheduling events for test bench simulation — use to trigger task execution in SIL/PIL without real hardware timer interrupts"
+    },
+    {
+      "block": "Interprocess Data Channel",
+      "value": "Simulate inter-core communication channels for test bench testing — use in SIL/PIL to model data exchange between cores without real shared memory"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "Read shared data from another AURIX TC3x core — use for inter-core communication in multicore automotive ECU deployments"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "Write shared data visible to other AURIX TC3x cores — use for inter-core data exchange in multicore deployments"
+    },
+    {
+      "block": "PWM Interface",
+      "value": "Simulate PWM peripheral behavior for test bench testing — use in SIL/PIL to capture PWM duty cycle outputs without hardware"
+    },
+    {
+      "block": "Task Manager",
+      "value": "Configure multi-core task scheduling on the AURIX TC3x — use to assign Simulink subsystems to specific cores and manage execution priority"
+    },
+    {
+      "block": "Utilities",
+      "value": "Utility blocks for AURIX TC3x deployment — use for target-specific configuration and diagnostics"
+    }
+  ]
+}

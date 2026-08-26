@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.7445809606,
+  "generatorVersion": 4,
+  "libraries": [
+    "SimEvents"
+  ],
+  "blockCount": 31,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "SimEvents": {
+      "cacheTimestamp": 740213.73348379624,
+      "blockCount": 31
+    }
+  }
+}

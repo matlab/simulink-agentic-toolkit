@@ -1,0 +1,90 @@
+{
+  "libraryName": "DSP HDL Toolbox",
+  "generatedAt": "2026-08-19T14:30:50",
+  "blockCount": 8,
+  "blocks": [
+    {
+      "name": "Filtering",
+      "referenceBlock": "dsphdllib2/Filtering",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Filtering",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Math Functions",
+      "referenceBlock": "dsphdllib2/Math Functions",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Math Functions",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Downsampler",
+      "referenceBlock": "dsphdlsigops2/Downsampler",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Farrow Rate Converter",
+      "referenceBlock": "dsphdlsigops2/Farrow Rate Converter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NCO",
+      "referenceBlock": "dsphdlsigops2/NCO",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Upsampler",
+      "referenceBlock": "dsphdlsigops2/Upsampler",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sources",
+      "referenceBlock": "dsphdllib2/Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DSP HDL Sources",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transforms",
+      "referenceBlock": "dsphdllib2/Transforms",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transforms",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,63 @@
+{
+  "commonBlocks": [
+    "Fuzzy Logic  Controller",
+    "Fuzzy PID Controller"
+  ],
+  "categories": [
+    {
+      "name": "fuzzy-logic",
+      "description": "Fuzzy inference systems and fuzzy control blocks",
+      "keywords": [
+        "fuzzy",
+        "fis",
+        "membership",
+        "rules",
+        "inference"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "FIS Tree",
+      "value": "fuzzy-logic"
+    },
+    {
+      "block": "Fuzzy Logic  Controller",
+      "value": "fuzzy-logic"
+    },
+    {
+      "block": "Fuzzy Logic  Controller  with Ruleviewer",
+      "value": "fuzzy-logic"
+    },
+    {
+      "block": "Fuzzy PID Controller",
+      "value": "fuzzy-logic"
+    },
+    {
+      "block": "Membership  Functions",
+      "value": "fuzzy-logic"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "FIS Tree",
+      "value": "Evaluate a hierarchical tree of fuzzy inference systems — use for complex multi-stage fuzzy controllers with cascaded decision layers"
+    },
+    {
+      "block": "Fuzzy Logic  Controller",
+      "value": "Evaluate a fuzzy inference system in Simulink — use for implementing fuzzy-rule-based control, decision making, or expert system logic"
+    },
+    {
+      "block": "Fuzzy Logic  Controller  with Ruleviewer",
+      "value": "Evaluate a FIS with live rule viewer display — use for debugging fuzzy logic by visualizing rule firing and inference in real time"
+    },
+    {
+      "block": "Fuzzy PID Controller",
+      "value": "Implement a PID controller with fuzzy gain scheduling — use for adaptive control where PID gains vary based on fuzzy rules applied to error and error rate"
+    },
+    {
+      "block": "Membership  Functions",
+      "value": "Evaluate membership functions for fuzzy set operations — use for fuzzification, computing degrees of membership, or custom fuzzy logic pipelines"
+    }
+  ]
+}

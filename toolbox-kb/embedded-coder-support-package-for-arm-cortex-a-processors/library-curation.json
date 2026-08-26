@@ -1,0 +1,56 @@
+{
+  "commonBlocks": [
+    "Linux Task",
+    "UDP Receive",
+    "UDP Send"
+  ],
+  "categories": [
+    {
+      "name": "arm-cortex-a",
+      "description": "Deployment blocks for ARM Cortex-A application processors running Linux or VxWorks",
+      "keywords": [
+        "arm",
+        "cortex-a",
+        "linux",
+        "vxworks",
+        "task"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Linux Task",
+      "value": "arm-cortex-a"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "arm-cortex-a"
+    },
+    {
+      "block": "UDP Send",
+      "value": "arm-cortex-a"
+    },
+    {
+      "block": "VxWorks Task",
+      "value": "arm-cortex-a"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Linux Task",
+      "value": "Execute a subsystem as a Linux process task on an ARM Cortex-A processor — use to deploy algorithms as real-time Linux tasks on application processors"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP datagrams on the ARM Cortex-A target — use for host-target communication over Ethernet during deployment"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP datagrams from the ARM Cortex-A target — use for telemetry or parameter exchange with a host PC"
+    },
+    {
+      "block": "VxWorks Task",
+      "value": "Execute a subsystem as a VxWorks task on an ARM Cortex-A processor — use when deploying to Cortex-A boards running VxWorks RTOS"
+    }
+  ]
+}

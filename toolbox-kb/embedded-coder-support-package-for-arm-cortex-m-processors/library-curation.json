@@ -1,0 +1,30 @@
+{
+  "commonBlocks": [
+    "Hardware Interrupt"
+  ],
+  "categories": [
+    {
+      "name": "arm-cortex-m",
+      "description": "Deployment blocks for ARM Cortex-M microcontrollers",
+      "keywords": [
+        "arm",
+        "cortex-m",
+        "interrupt",
+        "microcontroller",
+        "isr"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Hardware Interrupt",
+      "value": "arm-cortex-m"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Hardware Interrupt",
+      "value": "Configure a hardware interrupt on an ARM Cortex-M processor — use to trigger ISR execution from peripheral events like timers, GPIO edges, or DMA completion"
+    }
+  ]
+}

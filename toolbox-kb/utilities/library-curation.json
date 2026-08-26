@@ -1,0 +1,136 @@
+{
+  "commonBlocks": [
+    "PS-Simulink Converter",
+    "Simulink-PS Converter",
+    "Solver Configuration",
+    "Connection Port",
+    "Probe"
+  ],
+  "categories": [
+    {
+      "name": "domain-conversion",
+      "description": "Signal conversion between Simulink and Simscape domains",
+      "keywords": [
+        "converter",
+        "simulink",
+        "physical",
+        "signal",
+        "domain"
+      ]
+    },
+    {
+      "name": "network-infrastructure",
+      "description": "Physical network configuration and connectivity",
+      "keywords": [
+        "solver",
+        "port",
+        "bus",
+        "connection",
+        "array"
+      ]
+    },
+    {
+      "name": "measurement",
+      "description": "Signal measurement and analysis in physical networks",
+      "keywords": [
+        "probe",
+        "spectrum",
+        "measure",
+        "variable",
+        "analyze"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Array Connection",
+      "value": "network-infrastructure"
+    },
+    {
+      "block": "Connection Label",
+      "value": "network-infrastructure"
+    },
+    {
+      "block": "Connection Port",
+      "value": "network-infrastructure"
+    },
+    {
+      "block": "PS-Simulink Converter",
+      "value": "domain-conversion"
+    },
+    {
+      "block": "Probe",
+      "value": "measurement"
+    },
+    {
+      "block": "Simscape Bus",
+      "value": "network-infrastructure"
+    },
+    {
+      "block": "Simscape Component",
+      "value": "network-infrastructure"
+    },
+    {
+      "block": "Simulink-PS Converter",
+      "value": "domain-conversion"
+    },
+    {
+      "block": "Solver Configuration",
+      "value": "network-infrastructure"
+    },
+    {
+      "block": "Spectrum Analyzer",
+      "value": "measurement"
+    },
+    {
+      "block": "Variant Connector",
+      "value": "network-infrastructure"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Array Connection",
+      "value": "Create an array of physical connections — use for modeling repeated physical elements like battery cells in series or parallel without manual wiring"
+    },
+    {
+      "block": "Connection Label",
+      "value": "Label a physical connection line — use for identifying and organizing physical signal connections in complex Simscape models"
+    },
+    {
+      "block": "Connection Port",
+      "value": "Create a physical connection port on a subsystem boundary — use for exposing Simscape physical connections through subsystem interfaces"
+    },
+    {
+      "block": "PS-Simulink Converter",
+      "value": "Convert a Simscape physical signal to a Simulink signal — use for passing measurement data from physical networks into standard Simulink processing"
+    },
+    {
+      "block": "Probe",
+      "value": "Measure internal variables of a Simscape block — use for extracting physical quantities like current, voltage, or flow without breaking the physical connection"
+    },
+    {
+      "block": "Simscape Bus",
+      "value": "Bundle multiple physical connections into a single bus — use for simplifying wiring in models with many parallel physical connections"
+    },
+    {
+      "block": "Simscape Component",
+      "value": "Instantiate a custom Simscape component from a .ssc file — use for adding user-defined physical domain components written in Simscape language"
+    },
+    {
+      "block": "Simulink-PS Converter",
+      "value": "Convert a Simulink signal to a Simscape physical signal — use for injecting control commands or setpoints from Simulink into physical network models"
+    },
+    {
+      "block": "Solver Configuration",
+      "value": "Configure the Simscape local solver for a physical network — use at the top level of every Simscape physical network to set solver parameters"
+    },
+    {
+      "block": "Spectrum Analyzer",
+      "value": "Display frequency spectrum of Simscape signals — use for analyzing frequency content of physical system responses"
+    },
+    {
+      "block": "Variant Connector",
+      "value": "Switch between physical connection variants — use for modeling different physical configurations that can be selected at compile time"
+    }
+  ]
+}

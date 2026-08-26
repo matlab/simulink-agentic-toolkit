@@ -1,0 +1,162 @@
+{
+  "libraryName": "Simulink Coder Support Package for NXP FRDM-K64F Board",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 16,
+  "blocks": [
+    {
+      "name": "Analog Input",
+      "referenceBlock": "frdmk64flib/Analog Input",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "freedomk64f.AnalogInput",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Output",
+      "referenceBlock": "frdmk64flib/Analog Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Read",
+      "referenceBlock": "frdmk64flib/Digital Read",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "freedomk64f.DigitalRead",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Write",
+      "referenceBlock": "frdmk64flib/Digital Write",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "freedomk64f.DigitalWrite",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FXOS8700 6-Axes Sensor",
+      "referenceBlock": "frdmk64flib/FXOS8700 6-Axes Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Controller Read",
+      "referenceBlock": "frdmk64flib/I2C Controller Read",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Controller Write",
+      "referenceBlock": "frdmk64flib/I2C Controller Write",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "frdmk64flib/PWM Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "freedomk64f.PWMOutput",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Push Button",
+      "referenceBlock": "frdmk64flib/Push Button",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "freedomk64f.PushButton",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Quadrature Encoder",
+      "referenceBlock": "frdmk64flib/Quadrature Encoder",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Receive",
+      "referenceBlock": "frdmk64flib/Serial Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Transmit",
+      "referenceBlock": "frdmk64flib/Serial Transmit",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Receive",
+      "referenceBlock": "frdmk64flib/TCP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Send",
+      "referenceBlock": "frdmk64flib/TCP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "frdmk64flib/UDP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "frdmk64flib/UDP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

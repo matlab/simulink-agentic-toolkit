@@ -1,0 +1,504 @@
+{
+  "libraryName": "Battery",
+  "generatedAt": "2026-08-19T14:30:47",
+  "blockCount": 54,
+  "blocks": [
+    {
+      "name": "Passive Cell Balancing",
+      "referenceBlock": "batt_sl_lib/Cell Balancing/Passive Cell Balancing",
+      "blockType": "PassiveCellBalancing",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery CC-CV",
+      "referenceBlock": "batt_sl_lib/Current Management/Battery CC-CV",
+      "blockType": "BatteryCC-CV",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Charging Current Limit",
+      "referenceBlock": "batt_sl_lib/Current Management/Battery Charging Current Limit",
+      "blockType": "BatteryChargingCurrentLimit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Discharging Current Limit",
+      "referenceBlock": "batt_sl_lib/Current Management/Battery Discharging Current Limit",
+      "blockType": "BatteryDischargingCurrentLimit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CC-CV Charging (Proportional Control)",
+      "referenceBlock": "batt_sl_lib/Current Management/CC-CV Charging (Proportional Control)",
+      "blockType": "CC-CVCharging(ProportionalControl)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Battery Capacity Estimator (Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/Battery Capacity Estimator (Kalman Filter)",
+      "blockType": "BatteryCapacityEstimator(KalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Capacity Estimator (Least Squares)",
+      "referenceBlock": "batt_sl_lib/Estimators/Battery Capacity Estimator (Least Squares)",
+      "blockType": "BatteryCapacityEstimator(LeastSquares)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Capacity Estimator (Least Squares, Variable Weights)",
+      "referenceBlock": "batt_sl_lib/Estimators/Battery Capacity Estimator (Least Squares, Variable Weights)",
+      "blockType": "BatteryCapacityEstimator(LeastSquares,VariableWeights)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Power Estimator",
+      "referenceBlock": "batt_sl_lib/Estimators/Battery Power Estimator",
+      "blockType": "BatteryPowerEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Cell Delta SOC Estimator (Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/Cell Delta SOC Estimator (Kalman Filter)",
+      "blockType": "CellDeltaSOCEstimator(KalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cell Delta SOC Estimator (Kalman Filter, Variable Resistance)",
+      "referenceBlock": "batt_sl_lib/Estimators/Cell Delta SOC Estimator (Kalman Filter, Variable Resistance)",
+      "blockType": "CellDeltaSOCEstimator(KalmanFilter,VariableResistance)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pack Bar SOC Estimator (Adaptive Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/Pack Bar SOC Estimator (Adaptive Kalman Filter)",
+      "blockType": "PackBarSOCEstimator(AdaptiveKalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pack Bar SOC Estimator (Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/Pack Bar SOC Estimator (Kalman Filter)",
+      "blockType": "PackBarSOCEstimator(KalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOC Estimator (Adaptive Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOC Estimator (Adaptive Kalman Filter)",
+      "blockType": "SOCEstimator(AdaptiveKalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOC Estimator (Adaptive Kalman Filter, Variable Capacity)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOC Estimator (Adaptive Kalman Filter, Variable Capacity)",
+      "blockType": "SOCEstimator(AdaptiveKalmanFilter,VariableCapacity)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOC Estimator (Coulomb Counting)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOC Estimator (Coulomb Counting)",
+      "blockType": "SOCEstimator(CoulombCounting)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOC Estimator (Coulomb Counting, Variable Capacity)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOC Estimator (Coulomb Counting, Variable Capacity)",
+      "blockType": "SOCEstimator(CoulombCounting,VariableCapacity)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOC Estimator (Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOC Estimator (Kalman Filter)",
+      "blockType": "SOCEstimator(KalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOC Estimator (Kalman Filter, Variable Capacity)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOC Estimator (Kalman Filter, Variable Capacity)",
+      "blockType": "SOCEstimator(KalmanFilter,VariableCapacity)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOE Estimator (Adaptive Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOE Estimator (Adaptive Kalman Filter)",
+      "blockType": "SOEEstimator(AdaptiveKalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOE Estimator (Energy Counting)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOE Estimator (Energy Counting)",
+      "blockType": "SOEEstimator(EnergyCounting)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOE Estimator (Kalman Filter)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOE Estimator (Kalman Filter)",
+      "blockType": "SOEEstimator(KalmanFilter)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOE Estimator (Adaptive Kalman Filter, Variable Energy Capacity)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOE Estimator (Adaptive Kalman Filter, Variable Energy Capacity)",
+      "blockType": "SOEEstimator(AdaptiveKalmanFilter,VariableEnergyCapacity)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOE Estimator (Energy Counting, Variable Energy Capacity)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOE Estimator (Energy Counting, Variable Energy Capacity)",
+      "blockType": "SOEEstimator(EnergyCounting,VariableEnergyCapacity)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOE Estimator (Kalman Filter, Variable Energy Capacity)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOE Estimator (Kalman Filter, Variable Energy Capacity)",
+      "blockType": "SOEEstimator(KalmanFilter,VariableEnergyCapacity)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOH Estimator",
+      "referenceBlock": "batt_sl_lib/Estimators/SOH Estimator",
+      "blockType": "SOHEstimator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SOH Estimator (Capacity-Based)",
+      "referenceBlock": "batt_sl_lib/Estimators/SOH Estimator (Capacity-Based)",
+      "blockType": "SOHEstimator(Capacity-Based)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Battery Cell Contact Monitoring",
+      "referenceBlock": "batt_sl_lib/Protection/Battery Cell Contact Monitoring",
+      "blockType": "BatteryCellContactMonitoring",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Current Monitoring",
+      "referenceBlock": "batt_sl_lib/Protection/Battery Current Monitoring",
+      "blockType": "BatteryCurrentMonitoring",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Temperature Monitoring",
+      "referenceBlock": "batt_sl_lib/Protection/Battery Temperature Monitoring",
+      "blockType": "BatteryTemperatureMonitoring",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Voltage Monitoring",
+      "referenceBlock": "batt_sl_lib/Protection/Battery Voltage Monitoring",
+      "blockType": "BatteryVoltageMonitoring",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fault Qualification",
+      "referenceBlock": "batt_sl_lib/Protection/Fault Qualification",
+      "blockType": "FaultQualification",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Coolant Control",
+      "referenceBlock": "batt_sl_lib/Thermal Management/Battery Coolant Control",
+      "blockType": "BatteryCoolantControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Heater Control",
+      "referenceBlock": "batt_sl_lib/Thermal Management/Battery Heater Control",
+      "blockType": "BatteryHeaterControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery",
+      "referenceBlock": "batt_lib/Cells/Battery",
+      "blockType": "Battery",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery (Table-Based)",
+      "referenceBlock": "batt_lib/Cells/Battery (Table-Based)",
+      "blockType": "Battery(Table-Based)",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Equivalent Circuit",
+      "referenceBlock": "batt_lib/Cells/Battery Equivalent Circuit",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Battery Equivalent\nCircuit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Supercapacitor Equivalent Circuit",
+      "referenceBlock": "batt_lib/Cells/Supercapacitor Equivalent Circuit",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Supercapacitor\nEquivalent Circuit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery Single Particle",
+      "referenceBlock": "batt_lib/Cells/Electrochemical/Battery Single Particle",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Battery Single\nParticle",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Array of Electrical Nodes Connector",
+      "referenceBlock": "batt_lib/Connectors/Array of Electrical Nodes Connector",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Array of Electrical\nNodes Connector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Charger",
+      "referenceBlock": "batt_lib/Cyclers/Charger",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Charger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cycler",
+      "referenceBlock": "batt_lib/Cyclers/Cycler",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Cycler",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discharger",
+      "referenceBlock": "batt_lib/Cyclers/Discharger",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Discharger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fuel Cell (Table-Based)",
+      "referenceBlock": "batt_lib/Fuel Cell/Fuel Cell (Table-Based)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fuel Cell\n(Table-Based)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fuel Cell Equivalent Circuit",
+      "referenceBlock": "batt_lib/Fuel Cell/Fuel Cell Equivalent Circuit",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Fuel Cell Equivalent\nCircuit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Active Interface",
+      "referenceBlock": "batt_lib/HIL/Active Interface",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Active Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Passive Balancing Interface",
+      "referenceBlock": "batt_lib/HIL/Passive Balancing Interface",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Passive Balancing\nInterface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Passive Interface",
+      "referenceBlock": "batt_lib/HIL/Passive Interface",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Passive Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Impedance (State-Space)",
+      "referenceBlock": "batt_lib/Passive/Impedance (State-Space)",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Impedance\n(State-Space)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Array of Thermal Nodes Connector",
+      "referenceBlock": "batt_lib/Thermal/Array of Thermal Nodes Connector",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Array of Thermal\nNodes Connector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Edge Cooling",
+      "referenceBlock": "batt_lib/Thermal/Edge Cooling",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Edge Cooling",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multi-Cell Thermal ROM",
+      "referenceBlock": "batt_lib/Thermal/Multi-Cell Thermal ROM",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Multi-Cell Thermal\nROM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Parallel Channels",
+      "referenceBlock": "batt_lib/Thermal/Parallel Channels",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "Parallel Channels",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "U-shaped Channels",
+      "referenceBlock": "batt_lib/Thermal/U-shaped Channels",
+      "blockType": "SimscapeBlock",
+      "description": "",
+      "category": "",
+      "maskType": "U-shaped Channels",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:09",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

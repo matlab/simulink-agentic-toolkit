@@ -1,0 +1,72 @@
+{
+  "commonBlocks": [
+    "GPIO Read",
+    "GPIO Write",
+    "Communication"
+  ],
+  "categories": [
+    {
+      "name": "nvidia-peripherals",
+      "description": "NVIDIA Jetson and DRIVE hardware peripheral access",
+      "keywords": [
+        "nvidia",
+        "jetson",
+        "drive",
+        "gpu",
+        "embedded"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Audio and Video",
+      "value": "nvidia-peripherals"
+    },
+    {
+      "block": "Communication",
+      "value": "nvidia-peripherals"
+    },
+    {
+      "block": "GPIO Read",
+      "value": "nvidia-peripherals"
+    },
+    {
+      "block": "GPIO Write",
+      "value": "nvidia-peripherals"
+    },
+    {
+      "block": "Internet Of Things",
+      "value": "nvidia-peripherals"
+    },
+    {
+      "block": "Network ",
+      "value": "nvidia-peripherals"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Audio and Video",
+      "value": "Access camera and audio peripherals on NVIDIA Jetson/DRIVE platforms — use for video capture, image processing, or audio I/O in GPU-accelerated applications"
+    },
+    {
+      "block": "Communication",
+      "value": "Access communication interfaces on NVIDIA Jetson/DRIVE — use for I2C, SPI, UART, or CAN bus communication with external devices"
+    },
+    {
+      "block": "GPIO Read",
+      "value": "Read GPIO pin state on NVIDIA Jetson — use for reading digital input signals from buttons, switches, or external sensors"
+    },
+    {
+      "block": "GPIO Write",
+      "value": "Write GPIO pin state on NVIDIA Jetson — use for controlling LEDs, relays, or other digital output peripherals"
+    },
+    {
+      "block": "Internet Of Things",
+      "value": "Access IoT connectivity on NVIDIA Jetson — use for MQTT, ThingSpeak, or cloud data exchange in edge computing applications"
+    },
+    {
+      "block": "Network ",
+      "value": "Access network interfaces on NVIDIA Jetson/DRIVE — use for TCP/IP, UDP, or Ethernet communication in distributed computing systems"
+    }
+  ]
+}

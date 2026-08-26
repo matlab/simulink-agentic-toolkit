@@ -1,0 +1,113 @@
+{
+  "commonBlocks": [
+    "MCAL ADC",
+    "MCAL DIO Channel Read",
+    "MCAL DIO Channel Write"
+  ],
+  "categories": [
+    {
+      "name": "mcal-analog",
+      "description": "AUTOSAR MCAL analog peripherals on RH850",
+      "keywords": [
+        "adc",
+        "analog",
+        "mcal",
+        "converter",
+        "sample"
+      ]
+    },
+    {
+      "name": "mcal-digital",
+      "description": "AUTOSAR MCAL digital I/O on RH850",
+      "keywords": [
+        "dio",
+        "digital",
+        "port",
+        "pin",
+        "channel"
+      ]
+    },
+    {
+      "name": "mcal-comm",
+      "description": "AUTOSAR MCAL communication interfaces on RH850",
+      "keywords": [
+        "spi",
+        "mcal",
+        "communication",
+        "bus",
+        "transfer"
+      ]
+    },
+    {
+      "name": "interrupt",
+      "description": "Interrupt and timer peripherals on RH850",
+      "keywords": [
+        "interrupt",
+        "isr",
+        "timer",
+        "tsg3",
+        "event"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "MCAL ADC",
+      "value": "mcal-analog"
+    },
+    {
+      "block": "MCAL DIO Channel Group Read",
+      "value": "mcal-digital"
+    },
+    {
+      "block": "MCAL DIO Channel Group Write",
+      "value": "mcal-digital"
+    },
+    {
+      "block": "MCAL DIO Channel Read",
+      "value": "mcal-digital"
+    },
+    {
+      "block": "MCAL DIO Channel Write",
+      "value": "mcal-digital"
+    },
+    {
+      "block": "MCAL DIO Port Pins Read",
+      "value": "mcal-digital"
+    },
+    {
+      "block": "MCAL DIO Port Pins Write",
+      "value": "mcal-digital"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "MCAL ADC",
+      "value": "Read analog inputs via MCAL ADC driver on Renesas RH850 — use for AUTOSAR-compliant analog signal acquisition in automotive ECUs"
+    },
+    {
+      "block": "MCAL DIO Channel Group Read",
+      "value": "Read a group of DIO channels via MCAL on RH850 — use for reading multiple digital inputs simultaneously through the AUTOSAR DIO driver"
+    },
+    {
+      "block": "MCAL DIO Channel Group Write",
+      "value": "Write a group of DIO channels via MCAL on RH850 — use for setting multiple digital outputs simultaneously through the AUTOSAR DIO driver"
+    },
+    {
+      "block": "MCAL DIO Channel Read",
+      "value": "Read a single DIO channel via MCAL on RH850 — use for reading individual digital input pins through the AUTOSAR-compliant DIO interface"
+    },
+    {
+      "block": "MCAL DIO Channel Write",
+      "value": "Write a single DIO channel via MCAL on RH850 — use for setting individual digital output pins through the AUTOSAR-compliant DIO interface"
+    },
+    {
+      "block": "MCAL DIO Port Pins Read",
+      "value": "Read port pin states via MCAL on RH850 — use for bulk digital input acquisition at the port level through AUTOSAR DIO"
+    },
+    {
+      "block": "MCAL DIO Port Pins Write",
+      "value": "Write port pin states via MCAL on RH850 — use for bulk digital output control at the port level through AUTOSAR DIO"
+    }
+  ]
+}

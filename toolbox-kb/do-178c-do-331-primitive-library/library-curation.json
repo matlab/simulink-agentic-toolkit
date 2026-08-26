@@ -1,0 +1,1044 @@
+{
+  "commonBlocks": [
+    "Gain",
+    "Add",
+    "Switch",
+    "Constant",
+    "Unit Delay",
+    "Logical Operator",
+    "Relational Operator",
+    "Saturation",
+    "Bus Creator",
+    "Bus Selector",
+    "Discrete-Time Integrator",
+    "1-D Lookup Table",
+    "Mux",
+    "Demux"
+  ],
+  "categories": [
+    {
+      "name": "math-operations",
+      "description": "Arithmetic, algebraic, and trigonometric computations",
+      "keywords": [
+        "add",
+        "gain",
+        "multiply",
+        "sqrt",
+        "math"
+      ]
+    },
+    {
+      "name": "lookup-tables",
+      "description": "Breakpoint-based interpolation and table lookup",
+      "keywords": [
+        "lookup",
+        "interpolation",
+        "prelookup",
+        "breakpoint",
+        "table"
+      ]
+    },
+    {
+      "name": "logic-and-comparison",
+      "description": "Boolean logic, relational comparisons, bit operations, and edge detection",
+      "keywords": [
+        "logic",
+        "compare",
+        "detect",
+        "bitwise",
+        "relational"
+      ]
+    },
+    {
+      "name": "discontinuities",
+      "description": "Saturation, dead zones, relays, and signal limiting",
+      "keywords": [
+        "saturation",
+        "dead zone",
+        "relay",
+        "clamp",
+        "limit"
+      ]
+    },
+    {
+      "name": "discrete-operations",
+      "description": "Delays, integrators, and difference operators for sampled systems",
+      "keywords": [
+        "delay",
+        "integrator",
+        "difference",
+        "discrete",
+        "sample"
+      ]
+    },
+    {
+      "name": "signal-routing",
+      "description": "Buses, muxing, switching, data stores, and signal routing",
+      "keywords": [
+        "bus",
+        "mux",
+        "switch",
+        "goto",
+        "routing"
+      ]
+    },
+    {
+      "name": "signal-attributes",
+      "description": "Data type conversion, rate transitions, and signal property management",
+      "keywords": [
+        "conversion",
+        "type",
+        "rate",
+        "specification",
+        "unit"
+      ]
+    },
+    {
+      "name": "ports-and-subsystems",
+      "description": "Subsystem interfaces, iterators, conditional execution ports",
+      "keywords": [
+        "subsystem",
+        "port",
+        "iterator",
+        "enable",
+        "trigger"
+      ]
+    },
+    {
+      "name": "sources-and-sinks",
+      "description": "Constants, inputs, outputs, grounds, and terminators",
+      "keywords": [
+        "constant",
+        "inport",
+        "outport",
+        "ground",
+        "terminator"
+      ]
+    },
+    {
+      "name": "user-defined-functions",
+      "description": "MATLAB Function, C Caller, and expression blocks",
+      "keywords": [
+        "matlab",
+        "function",
+        "fcn",
+        "caller",
+        "expression"
+      ]
+    },
+    {
+      "name": "stateflow",
+      "description": "Stateflow charts and embedded Simulink functions",
+      "keywords": [
+        "chart",
+        "stateflow",
+        "state",
+        "machine",
+        "flow"
+      ]
+    },
+    {
+      "name": "documentation",
+      "description": "Model documentation and metadata blocks",
+      "keywords": [
+        "doc",
+        "info",
+        "model",
+        "documentation",
+        "metadata"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "1-D Lookup Table",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "2-D Lookup Table",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "3-D Lookup Table",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "ASCII to String",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Abs",
+      "value": "math-operations"
+    },
+    {
+      "block": "Action Port",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Add",
+      "value": "math-operations"
+    },
+    {
+      "block": "Assignment",
+      "value": "math-operations"
+    },
+    {
+      "block": "Bias",
+      "value": "math-operations"
+    },
+    {
+      "block": "Bit Clear",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Bit Set",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Bitwise Operator",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Bus Assignment",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Bus Creator",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Bus Selector",
+      "value": "signal-routing"
+    },
+    {
+      "block": "C Caller",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Chart",
+      "value": "stateflow"
+    },
+    {
+      "block": "Combinatorial  Logic",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Constant",
+      "value": "sources-and-sinks"
+    },
+    {
+      "block": "Data Store Memory",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Data Store Read",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Data Store Write",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Data Type Conversion Inherited",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Data Type Duplicate",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Data Type Propagation",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Dead Zone Dynamic",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Decrement Real World",
+      "value": "discrete-operations"
+    },
+    {
+      "block": "Delay",
+      "value": "discrete-operations"
+    },
+    {
+      "block": "Demux",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Detect Change",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Detect Decrease",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Detect Fall Negative",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Detect Fall Nonpositive",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Detect Increase",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Detect Rise Nonnegative",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Detect Rise Positive",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Difference",
+      "value": "discrete-operations"
+    },
+    {
+      "block": "Discrete-Time Integrator",
+      "value": "discrete-operations"
+    },
+    {
+      "block": "Divide",
+      "value": "math-operations"
+    },
+    {
+      "block": "DocBlock",
+      "value": "documentation"
+    },
+    {
+      "block": "Dot Product",
+      "value": "math-operations"
+    },
+    {
+      "block": "Enable",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Enumerated Constant",
+      "value": "sources-and-sinks"
+    },
+    {
+      "block": "Fcn",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "For Each",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "For Iterator",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "From",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Function-Call Generator",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Function-Call Split",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Gain",
+      "value": "math-operations"
+    },
+    {
+      "block": "Goto",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Ground",
+      "value": "sources-and-sinks"
+    },
+    {
+      "block": "IC",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "If",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "In1",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Increment Real World",
+      "value": "discrete-operations"
+    },
+    {
+      "block": "Interpolation Using Prelookup",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Interval Test",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Interval Test Dynamic",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "user-defined-functions"
+    },
+    {
+      "block": "Math Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "Merge",
+      "value": "signal-routing"
+    },
+    {
+      "block": "MinMax",
+      "value": "math-operations"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "math-operations"
+    },
+    {
+      "block": "Model Info",
+      "value": "documentation"
+    },
+    {
+      "block": "Multiport Switch",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Mux",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Out1",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Polynomial",
+      "value": "math-operations"
+    },
+    {
+      "block": "Prelookup",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "Probe",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Product",
+      "value": "math-operations"
+    },
+    {
+      "block": "Rate Transition",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Relay",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Reshape",
+      "value": "math-operations"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "Saturation",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Saturation Dynamic",
+      "value": "discontinuities"
+    },
+    {
+      "block": "Selector",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "logic-and-comparison"
+    },
+    {
+      "block": "Sign",
+      "value": "math-operations"
+    },
+    {
+      "block": "Signal Conversion",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Signal Specification",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "math-operations"
+    },
+    {
+      "block": "Simulink Function in Chart",
+      "value": "stateflow"
+    },
+    {
+      "block": "Sqrt",
+      "value": "math-operations"
+    },
+    {
+      "block": "Subtract",
+      "value": "math-operations"
+    },
+    {
+      "block": "Sum",
+      "value": "math-operations"
+    },
+    {
+      "block": "Switch",
+      "value": "signal-routing"
+    },
+    {
+      "block": "Switch Case",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Terminator",
+      "value": "sources-and-sinks"
+    },
+    {
+      "block": "Trigger",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "math-operations"
+    },
+    {
+      "block": "Unit Conversion",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Unit Delay",
+      "value": "discrete-operations"
+    },
+    {
+      "block": "Vector Concatenate",
+      "value": "signal-routing"
+    },
+    {
+      "block": "While Iterator",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "Width",
+      "value": "signal-attributes"
+    },
+    {
+      "block": "Wrap To Zero",
+      "value": "discontinuities"
+    },
+    {
+      "block": "f",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "function",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "n-D Lookup Table",
+      "value": "lookup-tables"
+    },
+    {
+      "block": "u",
+      "value": "ports-and-subsystems"
+    },
+    {
+      "block": "y",
+      "value": "ports-and-subsystems"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "1-D Lookup Table",
+      "value": "Interpolate output from a single breakpoint-value pair table — use for calibration curves, sensor linearization, or scheduled gains in certified airborne software"
+    },
+    {
+      "block": "2-D Lookup Table",
+      "value": "Interpolate output from a two-dimensional breakpoint grid — use for engine maps, aerodynamic coefficients, or performance tables requiring DO-178C traceability"
+    },
+    {
+      "block": "3-D Lookup Table",
+      "value": "Interpolate output from a three-dimensional breakpoint grid — use for complex parameter schedules indexed by three operating conditions"
+    },
+    {
+      "block": "ASCII to String",
+      "value": "Convert ASCII integer codes to a string signal — use for constructing text messages, protocol payloads, or display strings from numeric data"
+    },
+    {
+      "block": "Abs",
+      "value": "Compute absolute value of a signal — use for magnitude calculations, error bounds, or ensuring non-negative values in certified control logic"
+    },
+    {
+      "block": "Action Port",
+      "value": "Mark a subsystem as an action subsystem — use inside If Action or Switch Case Action subsystems to receive execution control from an If or Switch Case block"
+    },
+    {
+      "block": "Add",
+      "value": "Sum two or more signals element-wise — use for combining feedforward and feedback paths, error computation, or signal aggregation"
+    },
+    {
+      "block": "Assignment",
+      "value": "Assign values to specific elements of a vector or matrix signal — use to update individual channels within a bus or array without affecting other elements"
+    },
+    {
+      "block": "Bias",
+      "value": "Add a constant offset to a signal — use for sensor offset correction, coordinate frame shifts, or zero-point calibration adjustments"
+    },
+    {
+      "block": "Bit Clear",
+      "value": "Clear a specific bit in an integer signal — use for flag manipulation, register programming, or clearing status bits in avionics data words"
+    },
+    {
+      "block": "Bit Set",
+      "value": "Set a specific bit in an integer signal — use for flag activation, register programming, or asserting status bits in avionics data words"
+    },
+    {
+      "block": "Bitwise Operator",
+      "value": "Perform AND, OR, XOR, or NOT operations on integer signals at the bit level — use for masking, packing, or protocol decoding in certified embedded software"
+    },
+    {
+      "block": "Bus Assignment",
+      "value": "Replace selected elements in a bus signal — use to update specific fields of a structured data bus while preserving all other elements unchanged"
+    },
+    {
+      "block": "Bus Creator",
+      "value": "Bundle multiple signals into a single bus — use to group related signals into a structured interface for cleaner routing and subsystem boundaries"
+    },
+    {
+      "block": "Bus Selector",
+      "value": "Extract selected elements from a bus signal — use to access specific fields from a structured data bus at subsystem inputs or processing stages"
+    },
+    {
+      "block": "C Caller",
+      "value": "Call an external C function directly from the model — use to integrate legacy certified C code or hand-optimized routines into a Simulink model"
+    },
+    {
+      "block": "Chart",
+      "value": "Implement state machine or flow chart logic using Stateflow — use for mode management, sequential logic, or complex decision trees requiring DO-178C structural coverage"
+    },
+    {
+      "block": "Combinatorial  Logic",
+      "value": "Implement a truth table mapping input combinations to outputs — use for encoding discrete logic decisions, mode selection tables, or Boolean function lookup"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "Test whether a signal is equal to, greater than, or less than a specified constant — use for threshold detection, limit checking, or generating Boolean flags from analog signals"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "Test whether a signal is positive, negative, zero, or nonzero — use for sign detection, zero-crossing logic, or validity checking in certified algorithms"
+    },
+    {
+      "block": "Constant",
+      "value": "Output a constant value — use for fixed parameters, calibration values, Boolean flags, or reference setpoints in certified control algorithms"
+    },
+    {
+      "block": "Data Store Memory",
+      "value": "Define a named shared memory region accessible across the model — use for global state variables, mode flags, or inter-subsystem communication without explicit signal wiring"
+    },
+    {
+      "block": "Data Store Read",
+      "value": "Read a value from a named Data Store Memory — use to access shared state from any subsystem without routing a signal wire through the hierarchy"
+    },
+    {
+      "block": "Data Store Write",
+      "value": "Write a value to a named Data Store Memory — use to update shared state from any subsystem, enabling decoupled communication between model components"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "Convert a signal from one data type to another — use at boundaries between subsystems with different numeric representations or when interfacing fixed-point and floating-point paths"
+    },
+    {
+      "block": "Data Type Conversion Inherited",
+      "value": "Convert a signal to match the data type inherited from downstream — use to ensure type compatibility without hard-coding the target type"
+    },
+    {
+      "block": "Data Type Duplicate",
+      "value": "Enforce that connected signals share the same data type — use as a design constraint to catch type mismatches at model update rather than runtime"
+    },
+    {
+      "block": "Data Type Propagation",
+      "value": "Propagate data type information through the model — use to help Simulink resolve ambiguous types during compilation in complex signal paths"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "Zero the output when the input is within a specified band around zero — use for eliminating sensor noise near neutral, preventing actuator chatter, or modeling mechanical play"
+    },
+    {
+      "block": "Dead Zone Dynamic",
+      "value": "Zero the output within a dynamically varying dead band — use when the dead zone limits change at runtime based on operating conditions or adaptive thresholds"
+    },
+    {
+      "block": "Decrement Real World",
+      "value": "Subtract one from the real-world value of a fixed-point signal — use for countdown logic or decrement operations that respect fixed-point scaling"
+    },
+    {
+      "block": "Delay",
+      "value": "Delay a signal by a configurable number of sample periods — use for pipeline alignment, transport delay modeling, or accessing multiple past samples in discrete algorithms"
+    },
+    {
+      "block": "Demux",
+      "value": "Split a vector signal into individual scalar or sub-vector outputs — use to separate multiplexed channels for individual processing or routing"
+    },
+    {
+      "block": "Detect Change",
+      "value": "Output true when the input value differs from its previous sample — use for event detection, state transition triggering, or identifying discrete command updates"
+    },
+    {
+      "block": "Detect Decrease",
+      "value": "Output true when the input decreases from its previous sample — use for detecting falling parameters, countdown completion, or decreasing-trend events"
+    },
+    {
+      "block": "Detect Fall Negative",
+      "value": "Output true when the input transitions from non-negative to negative — use for zero-crossing detection, sign-change events, or detecting entry into a negative regime"
+    },
+    {
+      "block": "Detect Fall Nonpositive",
+      "value": "Output true when the input transitions from positive to non-positive — use for detecting the moment a signal drops to zero or below"
+    },
+    {
+      "block": "Detect Increase",
+      "value": "Output true when the input increases from its previous sample — use for detecting rising parameters, ramp-up events, or increasing-trend triggers"
+    },
+    {
+      "block": "Detect Rise Nonnegative",
+      "value": "Output true when the input transitions from negative to non-negative — use for zero-crossing detection from below or recovery-from-negative events"
+    },
+    {
+      "block": "Detect Rise Positive",
+      "value": "Output true when the input transitions from non-positive to positive — use for detecting the moment a signal first becomes positive"
+    },
+    {
+      "block": "Difference",
+      "value": "Compute the difference between current and previous sample values — use for discrete differentiation, rate-of-change detection, or delta computations in sampled systems"
+    },
+    {
+      "block": "Discrete-Time Integrator",
+      "value": "Accumulate a signal over discrete time steps with optional reset and saturation — use for PID integral action, position from velocity, or energy accumulation in certified controllers"
+    },
+    {
+      "block": "Divide",
+      "value": "Divide one signal by another element-wise — use for normalization, ratio computation, or computing per-unit quantities in flight control"
+    },
+    {
+      "block": "DocBlock",
+      "value": "Embed documentation text within the model diagram — use to attach design notes, requirements references, or change history directly to the model for DO-178C traceability"
+    },
+    {
+      "block": "Dot Product",
+      "value": "Compute inner product of two vectors — use for projection calculations, correlation measures, or computing force/torque components along an axis"
+    },
+    {
+      "block": "Enable",
+      "value": "Add an enable port to a subsystem — use to make the subsystem execute only when the enable signal is true, supporting conditional execution patterns"
+    },
+    {
+      "block": "Enumerated Constant",
+      "value": "Output a constant value of an enumerated data type — use for mode identifiers, state labels, or typed command values that must match an enumeration definition"
+    },
+    {
+      "block": "Fcn",
+      "value": "Evaluate a user-specified expression of the input — use for simple one-line mathematical expressions that do not warrant a full MATLAB Function block"
+    },
+    {
+      "block": "For Each",
+      "value": "Partition input signals and iterate a subsystem over each partition — use for applying identical processing to each element of a vector or array independently"
+    },
+    {
+      "block": "For Iterator",
+      "value": "Repeat subsystem execution a fixed number of iterations per time step — use for iterative algorithms, convergence loops, or multi-pass computations within one sample"
+    },
+    {
+      "block": "From",
+      "value": "Receive a signal from a matching Goto block without a physical wire — use to reduce diagram clutter for signals that must reach distant parts of the model"
+    },
+    {
+      "block": "Function-Call Generator",
+      "value": "Generate function-call events to trigger function-call subsystems — use to control execution order or implement scheduled function calls in rate-based designs"
+    },
+    {
+      "block": "Function-Call Split",
+      "value": "Distribute a single function-call event to multiple function-call subsystems — use when one trigger must activate several subsystems in a defined sequence"
+    },
+    {
+      "block": "Gain",
+      "value": "Multiply a signal by a constant factor — use for unit conversion, controller gains, scaling factors, or applying physical constants in certified algorithms"
+    },
+    {
+      "block": "Goto",
+      "value": "Send a signal to matching From blocks without a physical wire — use to broadcast a signal to multiple destinations while keeping the diagram clean"
+    },
+    {
+      "block": "Ground",
+      "value": "Provide a zero-valued signal to unconnected input ports — use to explicitly tie unused inputs to zero and satisfy DO-178C unconnected-port requirements"
+    },
+    {
+      "block": "IC",
+      "value": "Set the initial condition of a signal at simulation start — use to define known starting values for signals that would otherwise be undefined on the first time step"
+    },
+    {
+      "block": "If",
+      "value": "Evaluate conditions and activate corresponding If Action subsystems — use to implement conditional branching with mutually exclusive execution paths"
+    },
+    {
+      "block": "In1",
+      "value": "Define an input port for a subsystem or model — use to declare the subsystem interface and receive signals from the parent level"
+    },
+    {
+      "block": "Increment Real World",
+      "value": "Add one to the real-world value of a fixed-point signal — use for counter logic or increment operations that respect fixed-point scaling"
+    },
+    {
+      "block": "Interpolation Using Prelookup",
+      "value": "Perform table interpolation using precomputed index and fraction from a Prelookup block — use to share index computation across multiple tables for efficiency"
+    },
+    {
+      "block": "Interval Test",
+      "value": "Test whether a signal falls within a fixed interval — use for range checking, validity windows, or generating in-band/out-of-band Boolean flags"
+    },
+    {
+      "block": "Interval Test Dynamic",
+      "value": "Test whether a signal falls within a dynamically varying interval — use when the valid range changes at runtime based on flight phase or operating mode"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "Perform AND, OR, NOT, NAND, NOR, or XOR on Boolean signals — use for combining conditions, implementing enable logic, or voting schemes in certified avionics"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Write custom algorithms in MATLAB code with automatic C code generation — use for complex computations not easily expressed with standard blocks while maintaining DO-178C traceability"
+    },
+    {
+      "block": "Math Function",
+      "value": "Apply a mathematical function such as exp, log, pow, sqrt, or reciprocal — use for nonlinear transformations in certified airborne computations"
+    },
+    {
+      "block": "Merge",
+      "value": "Combine outputs from conditionally executed subsystems into one signal — use when exactly one of several mutually exclusive subsystems writes to a shared output at each step"
+    },
+    {
+      "block": "MinMax",
+      "value": "Output the minimum or maximum of input signals — use for signal limiting, worst-case selection, or redundancy management voting logic"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "Track the running minimum or maximum of a signal with a reset input — use for peak detection, envelope tracking, or exceedance monitoring with periodic reset"
+    },
+    {
+      "block": "Model Info",
+      "value": "Display model metadata such as version, author, and last modified date — use for configuration management visibility and audit trail in certified models"
+    },
+    {
+      "block": "Multiport Switch",
+      "value": "Select one of N data inputs based on an integer control signal — use for indexed selection, mode-dependent routing, or state-machine output multiplexing"
+    },
+    {
+      "block": "Mux",
+      "value": "Combine multiple scalar or vector signals into a single vector — use to aggregate parallel channels into one signal line for compact routing or array processing"
+    },
+    {
+      "block": "Out1",
+      "value": "Define an output port for a subsystem or model — use to declare the subsystem interface and pass computed results back to the parent level"
+    },
+    {
+      "block": "Polynomial",
+      "value": "Evaluate a polynomial expression given coefficients and an input — use for curve-fit approximations, sensor correction polynomials, or aerodynamic coefficient models"
+    },
+    {
+      "block": "Prelookup",
+      "value": "Compute breakpoint index and interpolation fraction for a given input — pair with Interpolation Using Prelookup to share search results across multiple tables"
+    },
+    {
+      "block": "Probe",
+      "value": "Detect signal attributes such as width, sample time, or complexity at compile time — use for conditional logic based on signal properties or for documentation"
+    },
+    {
+      "block": "Product",
+      "value": "Multiply or divide two or more signals — use for gain scheduling, coordinate transforms, or computing products of physical quantities"
+    },
+    {
+      "block": "Rate Transition",
+      "value": "Handle data transfer between subsystems running at different sample rates — use to ensure data integrity across rate boundaries in multirate certified systems"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "Compare two signals using ==, ~=, <, >, <=, >= — use for threshold comparisons, guard conditions, or generating Boolean control signals from continuous quantities"
+    },
+    {
+      "block": "Relay",
+      "value": "Implement hysteresis switching between two output values — use for on/off control with noise rejection, thermostat-style logic, or mode switching with debounce"
+    },
+    {
+      "block": "Reshape",
+      "value": "Change the dimensions of a signal without altering its data — use to convert between vector and matrix representations for downstream block compatibility"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "Round a signal value using floor, ceil, round, or fix — use for quantization, discrete command generation, or integer arithmetic in certified logic"
+    },
+    {
+      "block": "Saturation",
+      "value": "Clamp a signal between fixed upper and lower bounds — use to enforce actuator limits, protect downstream logic from out-of-range values, or implement safety envelopes"
+    },
+    {
+      "block": "Saturation Dynamic",
+      "value": "Clamp a signal between dynamically varying upper and lower bounds — use when saturation limits depend on operating conditions, available authority, or fault state"
+    },
+    {
+      "block": "Selector",
+      "value": "Extract specific elements from a vector, matrix, or multidimensional signal by index — use for channel selection, subarray extraction, or picking specific components"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "Shift integer bits left or right — use for efficient multiply/divide by powers of two, fixed-point scaling, or protocol bit-field extraction"
+    },
+    {
+      "block": "Sign",
+      "value": "Output the sign of a signal as +1, 0, or -1 — use for direction detection, polarity logic, or deadband control decisions"
+    },
+    {
+      "block": "Signal Conversion",
+      "value": "Convert between virtual and non-virtual signal types — use to force signal storage allocation or resolve mux/bus compatibility at subsystem boundaries"
+    },
+    {
+      "block": "Signal Specification",
+      "value": "Assert expected signal dimensions, data type, and sample time — use as a design contract to catch specification violations during model compilation"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "Compute square root preserving the sign of the input — use when the sign carries physical meaning such as signed flow or signed force magnitude"
+    },
+    {
+      "block": "Simulink Function in Chart",
+      "value": "Embed a Simulink subsystem as a callable function inside a Stateflow chart — use to reuse Simulink algorithms from within state machine actions"
+    },
+    {
+      "block": "Sqrt",
+      "value": "Compute the square root of a signal — use for RMS calculations, distance computations, or converting squared quantities back to physical units"
+    },
+    {
+      "block": "Subtract",
+      "value": "Subtract one signal from another — use for error computation, differential measurements, or computing deviations from reference values"
+    },
+    {
+      "block": "Sum",
+      "value": "Add or subtract multiple signals according to a sign list — use for summing junctions in feedback loops, multi-input aggregation, or PID error paths"
+    },
+    {
+      "block": "Switch",
+      "value": "Select between two data inputs based on a Boolean or threshold condition — use for if-then-else logic, failover selection, or conditional signal routing"
+    },
+    {
+      "block": "Switch Case",
+      "value": "Route execution to one of several Switch Case Action subsystems based on an integer input — use for multi-way branching driven by mode or state variables"
+    },
+    {
+      "block": "Terminator",
+      "value": "Absorb an unconnected output signal — use to explicitly mark unused outputs and satisfy DO-178C unconnected-port requirements without generating warnings"
+    },
+    {
+      "block": "Trigger",
+      "value": "Add a trigger port to a subsystem — use to make the subsystem execute on rising, falling, or either edge of a trigger signal"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "Compute sine, cosine, tangent, or their inverses — use for coordinate transforms, angle computations, or navigation algorithms in certified flight software"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "Negate a signal — use to reverse polarity, compute complementary values, or implement sign inversion in feedback paths"
+    },
+    {
+      "block": "Unit Conversion",
+      "value": "Convert a signal between physical units — use to transform between measurement systems at interface boundaries while maintaining dimensional consistency"
+    },
+    {
+      "block": "Unit Delay",
+      "value": "Delay a signal by exactly one sample period — use for implementing Z-transform transfer functions, state feedback, or breaking algebraic loops in discrete systems"
+    },
+    {
+      "block": "Vector Concatenate",
+      "value": "Join multiple signals end-to-end into a longer vector — use for assembling output arrays, building message payloads, or combining separately computed segments"
+    },
+    {
+      "block": "While Iterator",
+      "value": "Repeat subsystem execution until a condition becomes false — use for convergence algorithms or iterative solvers that need a variable number of passes per step"
+    },
+    {
+      "block": "Width",
+      "value": "Output the width of the input signal as a constant — use for dynamically sizing downstream operations or verifying expected vector lengths"
+    },
+    {
+      "block": "Wrap To Zero",
+      "value": "Reset output to zero when input exceeds a threshold — use for counter overflow handling, watchdog-style resets, or periodic signal wrapping in certified logic"
+    },
+    {
+      "block": "f",
+      "value": "Trigger port inside a Simulink Function template — activates the function when called from a Stateflow chart action"
+    },
+    {
+      "block": "function",
+      "value": "Trigger port that makes a subsystem callable as a function — use inside Function-Call Subsystems to receive execution events from callers"
+    },
+    {
+      "block": "n-D Lookup Table",
+      "value": "Interpolate output from an N-dimensional breakpoint grid — use when more than three independent variables index a calibration table"
+    },
+    {
+      "block": "u",
+      "value": "Input port inside a Simulink Function template — receives the function argument passed from Stateflow"
+    },
+    {
+      "block": "y",
+      "value": "Output port inside a Simulink Function template — returns the computed result back to the calling Stateflow chart"
+    }
+  ]
+}

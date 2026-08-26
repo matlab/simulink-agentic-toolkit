@@ -1,0 +1,198 @@
+{
+  "libraryName": "Simulink 3D Animation",
+  "generatedAt": "2026-08-19T14:31:11",
+  "blockCount": 20,
+  "blocks": [
+    {
+      "name": "Simulation 3D Actor",
+      "referenceBlock": "sl3dlib/Simulation 3D/Actors/Simulation 3D Actor",
+      "blockType": "Simulation3DActor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Bicyclist",
+      "referenceBlock": "sl3dlib/Simulation 3D/Actors/Simulation 3D Bicyclist",
+      "blockType": "Simulation3DBicyclist",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Pedestrian",
+      "referenceBlock": "sl3dlib/Simulation 3D/Actors/Simulation 3D Pedestrian",
+      "blockType": "Simulation3DPedestrian",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Vehicle with Ground Following",
+      "referenceBlock": "sl3dlib/Simulation 3D/Actors/Simulation 3D Vehicle with Ground Following",
+      "blockType": "Simulation3DVehiclewithGroundFollowing",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Scene Configuration",
+      "referenceBlock": "sl3dlib/Simulation 3D/Environment/Simulation 3D Scene Configuration",
+      "blockType": "Simulation3DSceneConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Joystick",
+      "referenceBlock": "sl3dlib/Simulation 3D/Hardware Interface/Simulation 3D Joystick",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Joystick",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Simulation 3D SpaceMouse",
+      "referenceBlock": "sl3dlib/Simulation 3D/Hardware Interface/Simulation 3D SpaceMouse",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D SpaceMouse",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Simulation 3D Camera",
+      "referenceBlock": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Camera",
+      "blockType": "Simulation3DCamera",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Fisheye Camera",
+      "referenceBlock": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Fisheye Camera",
+      "blockType": "Simulation3DFisheyeCamera",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Lidar",
+      "referenceBlock": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Lidar",
+      "blockType": "Simulation3DLidar",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Radar Data Generator",
+      "referenceBlock": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Radar Data Generator",
+      "blockType": "Simulation3DRadarDataGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Ray Tracer",
+      "referenceBlock": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Ray Tracer",
+      "blockType": "Simulation3DRayTracer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Ultrasonic Array",
+      "referenceBlock": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Ultrasonic Array",
+      "blockType": "Simulation3DUltrasonicArray",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Ultrasonic Sensor",
+      "referenceBlock": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Ultrasonic Sensor",
+      "blockType": "Simulation3DUltrasonicSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Actor Transform Get",
+      "referenceBlock": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Actor Transform Get",
+      "blockType": "Simulation3DActorTransformGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Actor Transform Set",
+      "referenceBlock": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Actor Transform Set",
+      "blockType": "Simulation3DActorTransformSet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Camera Get",
+      "referenceBlock": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Camera Get",
+      "blockType": "Simulation3DCameraGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Message Get",
+      "referenceBlock": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Message Get",
+      "blockType": "Simulation3DMessageGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Simulation 3D Message Set",
+      "referenceBlock": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Message Set",
+      "blockType": "Simulation3DMessageSet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Simulation 3D Video Writer",
+      "referenceBlock": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Video Writer",
+      "blockType": "Simulation3DVideoWriterSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:53",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

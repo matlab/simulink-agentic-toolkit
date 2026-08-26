@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:08",
+  "generatedAtDatenum": 740213.74453731487,
+  "generatorVersion": 4,
+  "libraries": [
+    "Audio Toolbox"
+  ],
+  "blockCount": 11,
+  "categoryCount": 5,
+  "libraryFingerprints": {
+    "Audio_Toolbox": {
+      "blockCount": 11
+    }
+  }
+}

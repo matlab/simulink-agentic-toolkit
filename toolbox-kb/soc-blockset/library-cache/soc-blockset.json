@@ -1,0 +1,1026 @@
+{
+  "libraryName": "SoC Blockset",
+  "generatedAt": "2026-08-19T15:22:59",
+  "blockCount": 112,
+  "blocks": [
+    {
+      "name": "SoC Bus Creator",
+      "referenceBlock": "hwlogicconnlib/SoC Bus Creator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bus Creator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SoC Bus Selector",
+      "referenceBlock": "hwlogicconnlib/SoC Bus Selector",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bus Selector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream Connector",
+      "referenceBlock": "hwlogicconnlib/Stream Connector",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stream Connector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream FIFO",
+      "referenceBlock": "hwlogicconnlib/Stream FIFO",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Stream Connector",
+      "referenceBlock": "hwlogicconnlib/Video Stream Connector",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Video Stream Connector",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Stream FIFO",
+      "referenceBlock": "hwlogicconnlib/Video Stream FIFO",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DIP Switch",
+      "referenceBlock": "hwlogiciolib/DIP Switch",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DIP Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IO Pin",
+      "referenceBlock": "hwlogiciolib/IO Pin",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IO Pin",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "LED",
+      "referenceBlock": "hwlogiciolib/LED",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LED",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Push Button",
+      "referenceBlock": "hwlogiciolib/Push Button",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Push Button",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4 Master Sink",
+      "referenceBlock": "hwlogictestlib/AXI4 Master Sink",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "A4M Sink",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4 Master Source",
+      "referenceBlock": "hwlogictestlib/AXI4 Master Source",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "A4M Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream Data Sink",
+      "referenceBlock": "hwlogictestlib/Stream Data Sink",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stream Data Sink",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream Data Source",
+      "referenceBlock": "hwlogictestlib/Stream Data Source",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stream Data Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Test Sink",
+      "referenceBlock": "hwlogictestlib/Video Test Sink",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Video Test Sink",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Test Source",
+      "referenceBlock": "hwlogictestlib/Video Test Source",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Video Test  Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Read",
+      "referenceBlock": "hostiolib/UDP Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Write",
+      "referenceBlock": "hostiolib/UDP Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4 Random Access Memory",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "AXI4 Random Access Memory",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4 Video Frame Buffer",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "AXI4 Video Frame Buffer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4-Stream to Software",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "AXI4-Stream to Software",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IP Core Register Read",
+      "referenceBlock": "socmemlib/IP Core Register Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IP Core Register Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interrupt Channel",
+      "referenceBlock": "socmemlib/Interrupt Channel",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interrupt Channel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Memory Traffic Generator",
+      "referenceBlock": "socmemlib/Memory Traffic Generator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Memory Traffic Generator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Register Channel",
+      "referenceBlock": "socmemlib/Register Channel",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Register Channel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Software to AXI4-Stream",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Software to AXI4-Stream",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC Interface",
+      "referenceBlock": "peripheralslib/ADC Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ADC Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Audio Capture Interface",
+      "referenceBlock": "peripheralslib/Audio Capture Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Capture Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Audio Playback Interface",
+      "referenceBlock": "peripheralslib/Audio Playback Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Playback Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital IO Interface",
+      "referenceBlock": "peripheralslib/Digital IO Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Digital IO Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Interface",
+      "referenceBlock": "peripheralslib/PWM Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PWM Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Capture Interface",
+      "referenceBlock": "peripheralslib/Video Capture Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Video Capture Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Display Interface",
+      "referenceBlock": "peripheralslib/Video Display Interface",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Video Display Interface",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ADC Read",
+      "referenceBlock": "prociolib/ADC Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ADC Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Audio Capture",
+      "referenceBlock": "prociolib/Audio Capture",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Capture",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Audio Playback",
+      "referenceBlock": "prociolib/Audio Playback",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Audio Playback",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM Write",
+      "referenceBlock": "prociolib/PWM Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PWM Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Register Read",
+      "referenceBlock": "prociolib/Register Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Register Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Register Write",
+      "referenceBlock": "prociolib/Register Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Register Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream Read",
+      "referenceBlock": "prociolib/Stream Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stream Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stream Write",
+      "referenceBlock": "prociolib/Stream Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stream Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Read",
+      "referenceBlock": "prociolib/TCP Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TCP Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP Write",
+      "referenceBlock": "prociolib/TCP Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TCP Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Read",
+      "referenceBlock": "prociolib/UDP Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Write",
+      "referenceBlock": "prociolib/UDP Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Capture",
+      "referenceBlock": "prociolib/Video Capture",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Video Capture",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Video Display",
+      "referenceBlock": "prociolib/Video Display",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Video Display",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interprocess Data Channel",
+      "referenceBlock": "procinterlib/Interprocess Data Channel",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interprocess Data Channel",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interprocess Data Read",
+      "referenceBlock": "procinterlib/Interprocess Data Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interprocess Data Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interprocess Data Write",
+      "referenceBlock": "procinterlib/Interprocess Data Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interprocess Data Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "proctasklib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HardwareInterrupt",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Proxy Task",
+      "referenceBlock": "proctasklib/Proxy Task",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ProxyTask",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Task Manager",
+      "referenceBlock": "proctasklib/Task Manager",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Task Manager",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logger",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Logger",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "rteLogger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ToFcns",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Task Trigger",
+      "referenceBlock": "proctasklib/Task Trigger",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Task Trigger",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Task Trigger Merge",
+      "referenceBlock": "proctasklib/Task Trigger Merge",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Task Trigger Merge",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Power ON",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Power ON",
+      "blockType": "EntityGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RTE",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/RTE",
+      "blockType": "MATLABDiscreteEventSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Switch",
+      "blockType": "EntityInputSwitch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "rteDispatchRunnable",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/rteDispatchRunnable",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assertion",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/Assertion",
+      "blockType": "Assertion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "isWireless",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/isWireless",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "fcnIdx",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/fcnIdx",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "rteDispatchRT",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/rteDispatchRT",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assertion",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/Assertion",
+      "blockType": "Assertion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "isWireless",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/isWireless",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "fcnIdx",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/fcnIdx",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Event Source",
+      "referenceBlock": "prociodatalib/Event Source",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Event Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IO Data Sink",
+      "referenceBlock": "prociodatalib/IO Data Sink",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IO Data Sink",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IO Data Source",
+      "referenceBlock": "prociodatalib/IO Data Source",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "IO Data Source",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Testbench Task",
+      "referenceBlock": "prociodatalib/Testbench Task",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TestbenchTask",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

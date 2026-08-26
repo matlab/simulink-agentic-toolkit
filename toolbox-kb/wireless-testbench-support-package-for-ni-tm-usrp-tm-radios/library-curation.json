@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "SDRu Receiver",
+    "SDRu Transmitter"
+  ],
+  "categories": [
+    {
+      "name": "sdr-radio",
+      "description": "Software-defined radio transmission and reception via USRP hardware",
+      "keywords": [
+        "usrp",
+        "sdr",
+        "receiver",
+        "transmitter",
+        "radio"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "SDRu Receiver",
+      "value": "sdr-radio"
+    },
+    {
+      "block": "SDRu Transmitter",
+      "value": "sdr-radio"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "SDRu Receiver",
+      "value": "Receive RF signals from a USRP software-defined radio — use for over-the-air signal capture, spectrum monitoring, or wireless receiver prototyping"
+    },
+    {
+      "block": "SDRu Transmitter",
+      "value": "Transmit RF signals through a USRP software-defined radio — use for over-the-air waveform transmission, wireless testing, or transmitter prototyping"
+    }
+  ]
+}

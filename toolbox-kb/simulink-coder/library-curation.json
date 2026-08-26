@@ -1,0 +1,46 @@
+{
+  "commonBlocks": [
+    "Custom Code"
+  ],
+  "categories": [
+    {
+      "name": "code-generation",
+      "description": "Code generation configuration and customization blocks",
+      "keywords": [
+        "code",
+        "generation",
+        "custom",
+        "sfun",
+        "async"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Asynchronous",
+      "value": "code-generation"
+    },
+    {
+      "block": "Custom Code",
+      "value": "code-generation"
+    },
+    {
+      "block": "S-Function Target",
+      "value": "code-generation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Asynchronous",
+      "value": "Configure asynchronous task execution for generated code — use when deploying code with interrupt-driven or event-triggered execution on real-time targets"
+    },
+    {
+      "block": "Custom Code",
+      "value": "Insert custom C/C++ code into the generated code — use for integrating legacy code, hardware drivers, or platform-specific routines with Simulink Coder output"
+    },
+    {
+      "block": "S-Function Target",
+      "value": "Generate a standalone S-Function from a subsystem — use for creating reusable simulation components or protecting IP while sharing models"
+    }
+  ]
+}

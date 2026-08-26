@@ -1,0 +1,135 @@
+{
+  "libraryName": "Embedded Coder Support Package for Infineon AURIX TC4x",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 13,
+  "blocks": [
+    {
+      "name": "AURIX TC46x",
+      "referenceBlock": "aurixtc4xlib/AURIX TC46x",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discovery_Utilities_Blocks",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "AURIX TC48x",
+      "referenceBlock": "aurixtc4xlib/AURIX TC48x",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discovery_Utilities_Blocks",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "AURIX TC49xN",
+      "referenceBlock": "aurixtc4xlib/AURIX TC49xN",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discovery_Utilities_Blocks",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "AURIX TC4Dx",
+      "referenceBlock": "aurixtc4xlib/AURIX TC4Dx",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discovery_Utilities_Blocks",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "aurixtc4xlib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discovery_Utilities_Blocks",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Task Manager",
+      "referenceBlock": "aurixtc4xlib/Scheduling/Task Manager",
+      "blockType": "TaskManager",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Interprocess Data Read",
+      "referenceBlock": "aurixtc4xlib/Target Communication/Interprocess Data Read",
+      "blockType": "InterprocessDataRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Interprocess Data Write",
+      "referenceBlock": "aurixtc4xlib/Target Communication/Interprocess Data Write",
+      "blockType": "InterprocessDataWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "ADC Interface",
+      "referenceBlock": "aurixtc4xlib/Test Bench Blocks/ADC Interface",
+      "blockType": "ADCInterface",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Digital IO Interface",
+      "referenceBlock": "aurixtc4xlib/Test Bench Blocks/Digital IO Interface",
+      "blockType": "DigitalIOInterface",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Event Source",
+      "referenceBlock": "aurixtc4xlib/Test Bench Blocks/Event Source",
+      "blockType": "EventSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Interprocess Data Channel",
+      "referenceBlock": "aurixtc4xlib/Test Bench Blocks/Interprocess Data Channel",
+      "blockType": "InterprocessDataChannel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "PWM Interface",
+      "referenceBlock": "aurixtc4xlib/Test Bench Blocks/PWM Interface",
+      "blockType": "PWMInterface",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,36 @@
+{
+  "libraryName": "Embedded Coder Support Package for Real-Time Linux",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "CAN Receive block",
+      "referenceBlock": "slrtlinuxsocketcanlib/SocketCAN/CAN Receive block",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "CAN Transmit block",
+      "referenceBlock": "slrtlinuxsocketcanlib/SocketCAN/CAN Transmit block",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

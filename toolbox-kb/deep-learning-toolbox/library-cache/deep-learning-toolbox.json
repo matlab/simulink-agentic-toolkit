@@ -1,0 +1,945 @@
+{
+  "libraryName": "Deep Learning Toolbox",
+  "generatedAt": "2026-08-19T14:30:51",
+  "blockCount": 103,
+  "blocks": [
+    {
+      "name": "Clipped ReLU Layer",
+      "referenceBlock": "dlactivationlib/Clipped ReLU Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Clipped ReLU Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "GELU Layer",
+      "referenceBlock": "dlactivationlib/GELU Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "GELU Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Leaky ReLU Layer",
+      "referenceBlock": "dlactivationlib/Leaky ReLU Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Leaky ReLU Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "PReLU Layer",
+      "referenceBlock": "dlactivationlib/PReLU Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PReLU Layer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "ReLU Layer",
+      "referenceBlock": "dlactivationlib/ReLU Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ReLU Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Sigmoid Layer",
+      "referenceBlock": "dlactivationlib/Sigmoid Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sigmoid Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Softmax Layer",
+      "referenceBlock": "dlactivationlib/Softmax Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Softmax Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Swish Layer",
+      "referenceBlock": "dlactivationlib/Swish Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Swish Layer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Tanh Layer",
+      "referenceBlock": "dlactivationlib/Tanh Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Tanh Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Addition Layer",
+      "referenceBlock": "dlcombinationlib/Addition Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Addition Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Concatenation Layer",
+      "referenceBlock": "dlcombinationlib/Concatenation Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Concatenation Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Depth Concatenation Layer",
+      "referenceBlock": "dlcombinationlib/Depth Concatenation Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Depth Concatenation Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Multiplication Layer",
+      "referenceBlock": "dlcombinationlib/Multiplication Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Multiplication Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Convolution 1D Layer",
+      "referenceBlock": "dlconvfclib/Convolution 1D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Convolution 1D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Convolution 2D Layer",
+      "referenceBlock": "dlconvfclib/Convolution 2D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Convolution 2D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Convolution 3D Layer",
+      "referenceBlock": "dlconvfclib/Convolution 3D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Convolution 3D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Fully Connected Layer",
+      "referenceBlock": "dlconvfclib/Fully Connected Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Fully Connected Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Inverse Zerocenter",
+      "referenceBlock": "dlinputlayernormlib/Inverse Zerocenter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Inverse Zerocenter",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Inverse Zscore",
+      "referenceBlock": "dlinputlayernormlib/Inverse Zscore",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Inverse Zscore",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Rescale-Symmetric 1D",
+      "referenceBlock": "dlinputlayernormlib/Rescale-Symmetric 1D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rescale-Symmetric 1D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Rescale-Symmetric 2D",
+      "referenceBlock": "dlinputlayernormlib/Rescale-Symmetric 2D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rescale-Symmetric 2D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Rescale-Symmetric 3D",
+      "referenceBlock": "dlinputlayernormlib/Rescale-Symmetric 3D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rescale-Symmetric 3D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Rescale-Zero-One 1D",
+      "referenceBlock": "dlinputlayernormlib/Rescale-Zero-One 1D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rescale-Zero-One 1D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Rescale-Zero-One 2D",
+      "referenceBlock": "dlinputlayernormlib/Rescale-Zero-One 2D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rescale-Zero-One 2D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Rescale-Zero-One 3D",
+      "referenceBlock": "dlinputlayernormlib/Rescale-Zero-One 3D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rescale-Zero-One 3D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Zerocenter 1D",
+      "referenceBlock": "dlinputlayernormlib/Zerocenter 1D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zerocenter 1D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Zerocenter 2D",
+      "referenceBlock": "dlinputlayernormlib/Zerocenter 2D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zerocenter 2D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Zerocenter 3D",
+      "referenceBlock": "dlinputlayernormlib/Zerocenter 3D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zerocenter 3D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Zscore 1D",
+      "referenceBlock": "dlinputlayernormlib/Zscore 1D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zscore 1D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Zscore 2D",
+      "referenceBlock": "dlinputlayernormlib/Zscore 2D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zscore 2D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Zscore 3D",
+      "referenceBlock": "dlinputlayernormlib/Zscore 3D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Zscore 3D",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Batch Normalization Layer",
+      "referenceBlock": "dlnormalizationlib/Batch Normalization Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Batch Normalization Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Instance Normalization Layer",
+      "referenceBlock": "dlnormalizationlib/Instance Normalization Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Instance Normalization Layer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Layer Normalization Layer",
+      "referenceBlock": "dlnormalizationlib/Layer Normalization Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Layer Normalization Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Average Pooling 1D Layer",
+      "referenceBlock": "dlpoolinglib/Average Pooling 1D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Average Pooling 1D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Average Pooling 2D Layer",
+      "referenceBlock": "dlpoolinglib/Average Pooling 2D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Average Pooling 2D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Average Pooling 3D Layer",
+      "referenceBlock": "dlpoolinglib/Average Pooling 3D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Average Pooling 3D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Global Average Pooling 1D Layer",
+      "referenceBlock": "dlpoolinglib/Global Average Pooling 1D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Global Average Pooling 1D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Global Average Pooling 2D Layer",
+      "referenceBlock": "dlpoolinglib/Global Average Pooling 2D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Global Average Pooling 2D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Global Average Pooling 3D Layer",
+      "referenceBlock": "dlpoolinglib/Global Average Pooling 3D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Global Average Pooling 3D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Global Max Pooling 1D Layer",
+      "referenceBlock": "dlpoolinglib/Global Max Pooling 1D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Global Max Pooling 1D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Global Max Pooling 2D Layer",
+      "referenceBlock": "dlpoolinglib/Global Max Pooling 2D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Global Max Pooling 2D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Global Max Pooling 3D Layer",
+      "referenceBlock": "dlpoolinglib/Global Max Pooling 3D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Global Max Pooling 3D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Max Pooling 1D Layer",
+      "referenceBlock": "dlpoolinglib/Max Pooling 1D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Max Pooling 1D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Max Pooling 2D Layer",
+      "referenceBlock": "dlpoolinglib/Max Pooling 2D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Max Pooling 2D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Max Pooling 3D Layer",
+      "referenceBlock": "dlpoolinglib/Max Pooling 3D Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Max Pooling 3D Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Flatten Layer",
+      "referenceBlock": "dlsequencelib/Flatten Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Flatten Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "GRU Layer",
+      "referenceBlock": "dlsequencelib/GRU Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "GRU Layer",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "GRU Projected Layer",
+      "referenceBlock": "dlsequencelib/GRU Projected Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "GRU Projected Layer",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "LSTM Layer",
+      "referenceBlock": "dlsequencelib/LSTM Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LSTM Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "LSTM Projected Layer",
+      "referenceBlock": "dlsequencelib/LSTM Projected Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LSTM Projected Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Dropout Layer",
+      "referenceBlock": "dlutilitylib/Dropout Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Dropout Layer",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Identity Layer",
+      "referenceBlock": "dlutilitylib/Identity Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Identity Layer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Scaling Layer",
+      "referenceBlock": "dlutilitylib/Scaling Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Scaling Layer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Spatial Dropout Layer",
+      "referenceBlock": "dlutilitylib/Spatial Dropout Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Spatial Dropout Layer",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Classify",
+      "referenceBlock": "deeplib/Classify",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Classify",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Predict",
+      "referenceBlock": "deeplib/Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Predict",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stateful Classify",
+      "referenceBlock": "deeplib/Stateful Classify",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stateful Classify",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stateful Predict",
+      "referenceBlock": "deeplib/Stateful Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stateful Predict",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ONNX Model Predict",
+      "referenceBlock": "pycoexlib/ONNX Model Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ONNXModelPredict",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "PyTorch Model Predict",
+      "referenceBlock": "pycoexlib/PyTorch Model Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PyTorchModelPredict",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "TensorFlow Model Predict",
+      "referenceBlock": "pycoexlib/TensorFlow Model Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TensorFlowModelPredict",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Custom Python Model Predict",
+      "referenceBlock": "pycoexlib/Custom Python Model Predict",
+      "blockType": "CustomPythonModelPredict",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Model Reference Controller",
+      "referenceBlock": "neural/Control Systems/Model Reference Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NN Model Reference Control",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NARMA-L2 Controller",
+      "referenceBlock": "neural/Control Systems/NARMA-L2 Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NARMA-L2 Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NN Predictive Controller",
+      "referenceBlock": "neural/Control Systems/NN Predictive Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NN Predictive Controller",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "X(2Y)  Graph",
+      "referenceBlock": "neural/Control Systems/X(2Y)  Graph",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "X(2Y) scope.",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "fixunknowns",
+      "referenceBlock": "neural/Processing Functions/fixunknowns",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FIXUNKNOWNS Preprocess",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "fixunknowns_reverse",
+      "referenceBlock": "neural/Processing Functions/fixunknowns_reverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FIXUNKNOWNS Reverse Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "lvqoutputs",
+      "referenceBlock": "neural/Processing Functions/lvqoutputs",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LVQOUTPUTS Preprocess",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "lvqoutputs_reverse",
+      "referenceBlock": "neural/Processing Functions/lvqoutputs_reverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LVQOUTPUTS Reverse Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mapminmax",
+      "referenceBlock": "neural/Processing Functions/mapminmax",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MAPMINMAX Preprocess",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mapminmax_reverse",
+      "referenceBlock": "neural/Processing Functions/mapminmax_reverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MAPMINMAX Reverse Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mapstd",
+      "referenceBlock": "neural/Processing Functions/mapstd",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MAPSTD Preprocess",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mapstd_reverse",
+      "referenceBlock": "neural/Processing Functions/mapstd_reverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MAPSTD Reverse Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "processpca",
+      "referenceBlock": "neural/Processing Functions/processpca",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PROCESSPCA Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "processpca_reverse",
+      "referenceBlock": "neural/Processing Functions/processpca_reverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PROCESSPCA Reverse Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "removeconstantrows",
+      "referenceBlock": "neural/Processing Functions/removeconstantrows",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "REMOVECONSTANTROWS Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "removeconstantrows_reverse",
+      "referenceBlock": "neural/Processing Functions/removeconstantrows_reverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "REMOVECONSTANTROWS Reverse Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "removerows",
+      "referenceBlock": "neural/Processing Functions/removerows",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "REMOVEROWS Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "removerows_reverse",
+      "referenceBlock": "neural/Processing Functions/removerows_reverse",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "REMOVEROWS Reverse Process",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "compet",
+      "referenceBlock": "neural/Transfer Functions/compet",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "COMPET",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "elliot2sig",
+      "referenceBlock": "neural/Transfer Functions/elliot2sig",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ELLIOT2SIG",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "elliotsig",
+      "referenceBlock": "neural/Transfer Functions/elliotsig",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ELLIOTSIG",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "hardlim",
+      "referenceBlock": "neural/Transfer Functions/hardlim",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HARDLIM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "hardlims",
+      "referenceBlock": "neural/Transfer Functions/hardlims",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HARDLIMS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "logsig",
+      "referenceBlock": "neural/Transfer Functions/logsig",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LOGSIG",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "netinv",
+      "referenceBlock": "neural/Transfer Functions/netinv",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NETINV",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "poslin",
+      "referenceBlock": "neural/Transfer Functions/poslin",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "POSLIN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "purelin",
+      "referenceBlock": "neural/Transfer Functions/purelin",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "PURELIN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "radbas",
+      "referenceBlock": "neural/Transfer Functions/radbas",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "RADBAS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "radbasn",
+      "referenceBlock": "neural/Transfer Functions/radbasn",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "RADBASN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "satlin",
+      "referenceBlock": "neural/Transfer Functions/satlin",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SATLIN",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "satlins",
+      "referenceBlock": "neural/Transfer Functions/satlins",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SATLINS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "softmax",
+      "referenceBlock": "neural/Transfer Functions/softmax",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SOFTMAX",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "tansig",
+      "referenceBlock": "neural/Transfer Functions/tansig",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TANSIG",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "tribas",
+      "referenceBlock": "neural/Transfer Functions/tribas",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "TRIBAS",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "dist",
+      "referenceBlock": "neural/Weight Functions/dist",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DIST",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "dotprod",
+      "referenceBlock": "neural/Weight Functions/dotprod",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DOTPROD",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "negdist",
+      "referenceBlock": "neural/Weight Functions/negdist",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NEGDIST",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "normprod",
+      "referenceBlock": "neural/Weight Functions/normprod",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NORMPROD",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "netprod",
+      "referenceBlock": "neural/Net Input Functions/netprod",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "netsum",
+      "referenceBlock": "neural/Net Input Functions/netsum",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

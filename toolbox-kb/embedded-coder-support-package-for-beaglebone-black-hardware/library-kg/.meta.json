@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.744560081,
+  "generatorVersion": 4,
+  "libraries": [
+    "Embedded Coder Support Package for BeagleBone Black Hardware"
+  ],
+  "blockCount": 12,
+  "categoryCount": 3,
+  "libraryFingerprints": {
+    "Embedded_Coder_Support_Package_for_BeagleBone_Black_Hardware": {
+      "blockCount": 12
+    }
+  }
+}

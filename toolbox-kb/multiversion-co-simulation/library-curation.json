@@ -1,0 +1,30 @@
+{
+  "commonBlocks": [
+    "Multiversion Co-simulation"
+  ],
+  "categories": [
+    {
+      "name": "co-simulation",
+      "description": "Cross-version model co-simulation",
+      "keywords": [
+        "multiversion",
+        "cosimulation",
+        "reference",
+        "version",
+        "compatibility"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Multiversion Co-simulation",
+      "value": "co-simulation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Multiversion Co-simulation",
+      "value": "Run a referenced model in a different MATLAB version within the same simulation — use when subsystems require specific MATLAB versions or toolbox combinations"
+    }
+  ]
+}

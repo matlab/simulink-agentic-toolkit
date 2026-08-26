@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:14",
+  "generatedAtDatenum": 740213.74461696763,
+  "generatorVersion": 4,
+  "libraries": [
+    "Vehicle Dynamics Blockset"
+  ],
+  "blockCount": 72,
+  "categoryCount": 5,
+  "libraryFingerprints": {
+    "Vehicle_Dynamics_Blockset": {
+      "blockCount": 72
+    }
+  }
+}

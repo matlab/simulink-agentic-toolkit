@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:15",
+  "generatedAtDatenum": 740213.7446182986,
+  "generatorVersion": 4,
+  "libraries": [
+    "Wireless HDL Toolbox"
+  ],
+  "blockCount": 4,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Wireless_HDL_Toolbox": {
+      "blockCount": 4
+    }
+  }
+}

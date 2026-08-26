@@ -1,0 +1,36 @@
+{
+  "libraryName": "Report Generator",
+  "generatedAt": "2026-08-19T14:31:06",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "Launch Report",
+      "referenceBlock": "rptgenlib/Launch Report",
+      "blockType": "SubSystem",
+      "description": "Reports on the current system or model",
+      "category": "",
+      "maskType": "rptgen_generate_report",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Launch Rptlist",
+      "referenceBlock": "rptgenlib/Launch Rptlist",
+      "blockType": "SubSystem",
+      "description": "This block launches the Report Generator Explorer. It lists all the setup files which the Report Generator can use to generate reports.  This GUI can also be used to set the current system's \"ReportName\" property.",
+      "category": "",
+      "maskType": "rptgen_show_rptlist",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456943292,
+  "generatorVersion": 4,
+  "libraries": [
+    "MATLAB Coder Support Package for PyTorch and LiteRT Models"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "MATLAB_Coder_Support_Package_for_PyTorch_and_LiteRT_Models": {
+      "blockCount": 2
+    }
+  }
+}

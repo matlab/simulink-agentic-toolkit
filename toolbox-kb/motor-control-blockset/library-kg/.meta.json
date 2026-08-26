@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74457189813,
+  "generatorVersion": 4,
+  "libraries": [
+    "Motor Control Blockset"
+  ],
+  "blockCount": 80,
+  "categoryCount": 10,
+  "libraryFingerprints": {
+    "Motor_Control_Blockset": {
+      "blockCount": 80
+    }
+  }
+}

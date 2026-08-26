@@ -1,0 +1,36 @@
+{
+  "libraryName": "Simulink Coder Support Package for NXP FRDM-KL25Z Board",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "FRDM-KL25Z",
+      "referenceBlock": "freedomboardrootlib/FRDM-KL25Z",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FRDM-KL25Z",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FRDM-TFC Shield",
+      "referenceBlock": "freedomboardrootlib/FRDM-TFC Shield",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "FRDM-TFC Shield",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

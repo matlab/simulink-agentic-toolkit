@@ -1,0 +1,27 @@
+{
+  "libraryName": "Multiversion Co-simulation",
+  "generatedAt": "2026-08-19T14:31:02",
+  "blockCount": 1,
+  "blocks": [
+    {
+      "name": "Multiversion Co-simulation",
+      "referenceBlock": "MultiversionCoSim/Multiversion Co-simulation",
+      "blockType": "CoSimServiceBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

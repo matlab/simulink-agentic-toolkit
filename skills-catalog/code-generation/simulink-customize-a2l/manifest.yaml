@@ -1,0 +1,18 @@
+# Copyright 2026 The MathWorks, Inc.
+
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0.0"
+human-description: Customize A2L calibration files generated from Simulink models.
+matlab-release: ">=R2023a"
+required-tools:
+  - evaluate_matlab_code
+  - run_matlab_file
+required-skills: []
+required-products:
+  - Embedded Coder
+  - Simulink
+  - Simulink Coder
+optional-products: []
+toolkit: simulink-agentic-toolkit

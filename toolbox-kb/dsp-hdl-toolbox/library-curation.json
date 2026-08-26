@@ -1,0 +1,90 @@
+{
+  "commonBlocks": [
+    "Filtering",
+    "NCO",
+    "Transforms",
+    "Downsampler",
+    "Upsampler"
+  ],
+  "categories": [
+    {
+      "name": "hdl-dsp",
+      "description": "HDL-optimized DSP blocks for FPGA signal processing",
+      "keywords": [
+        "hdl",
+        "fpga",
+        "filter",
+        "fft",
+        "streaming"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Downsampler",
+      "value": "hdl-dsp"
+    },
+    {
+      "block": "Farrow Rate Converter",
+      "value": "hdl-dsp"
+    },
+    {
+      "block": "Filtering",
+      "value": "hdl-dsp"
+    },
+    {
+      "block": "Math Functions",
+      "value": "hdl-dsp"
+    },
+    {
+      "block": "NCO",
+      "value": "hdl-dsp"
+    },
+    {
+      "block": "Sources",
+      "value": "hdl-dsp"
+    },
+    {
+      "block": "Transforms",
+      "value": "hdl-dsp"
+    },
+    {
+      "block": "Upsampler",
+      "value": "hdl-dsp"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Downsampler",
+      "value": "Decimate a streaming signal by an integer factor in HDL — use to reduce sample rate in multi-rate FPGA signal processing chains while maintaining streaming data flow"
+    },
+    {
+      "block": "Farrow Rate Converter",
+      "value": "Perform fractional sample rate conversion using a Farrow structure in HDL — use when input and output rates are not integer-related and the conversion must run on FPGA"
+    },
+    {
+      "block": "Filtering",
+      "value": "HDL-optimized digital filters (FIR, IIR, CIC) with streaming interfaces for FPGA — use when filter designs must be synthesized to hardware with deterministic latency and resource-efficient architectures"
+    },
+    {
+      "block": "Math Functions",
+      "value": "HDL-optimized math operations (CORDIC, divide, sqrt) for FPGA — use for arithmetic computations that must map efficiently to hardware resources with fixed-point precision"
+    },
+    {
+      "block": "NCO",
+      "value": "Generate sine/cosine waveforms using a numerically controlled oscillator in HDL — use for digital mixing, carrier generation, or phase modulation in FPGA-based receivers and transmitters"
+    },
+    {
+      "block": "Sources",
+      "value": "HDL-compatible signal source blocks for test and stimulus generation — use to provide input waveforms to HDL-targeted signal processing subsystems"
+    },
+    {
+      "block": "Transforms",
+      "value": "HDL-optimized spectral transforms (FFT, IFFT, DCT) with streaming I/O — use for frequency-domain processing in FPGA-based systems requiring real-time spectral analysis"
+    },
+    {
+      "block": "Upsampler",
+      "value": "Interpolate a streaming signal by an integer factor in HDL — use to increase sample rate in multi-rate FPGA signal processing chains"
+    }
+  ]
+}

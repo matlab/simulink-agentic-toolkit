@@ -1,0 +1,297 @@
+{
+  "libraryName": "Vehicle Network Toolbox",
+  "generatedAt": "2026-08-17T11:31:11",
+  "blockCount": 31,
+  "blocks": [
+    {
+      "name": "CAN Configuration",
+      "referenceBlock": "canlib/CAN Configuration",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN Configuration",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Log",
+      "referenceBlock": "canlib/CAN Log",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN Log",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Pack",
+      "referenceBlock": "canlib/CAN Pack",
+      "blockType": "CANPack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Receive",
+      "referenceBlock": "canlib/CAN Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Replay",
+      "referenceBlock": "canlib/CAN Replay",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN Replay",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Transmit",
+      "referenceBlock": "canlib/CAN Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN Transmit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Unpack",
+      "referenceBlock": "canlib/CAN Unpack",
+      "blockType": "CANUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Configuration",
+      "referenceBlock": "canfdlib/CAN FD Configuration",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN FD Configuration",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Log",
+      "referenceBlock": "canfdlib/CAN FD Log",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN FD Log",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Pack",
+      "referenceBlock": "canfdlib/CAN FD Pack",
+      "blockType": "CANFDPack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Receive",
+      "referenceBlock": "canfdlib/CAN FD Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN FD Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Replay",
+      "referenceBlock": "canfdlib/CAN FD Replay",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN FD Replay",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Transmit",
+      "referenceBlock": "canfdlib/CAN FD Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "CAN FD Transmit",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN FD Unpack",
+      "referenceBlock": "canfdlib/CAN FD Unpack",
+      "blockType": "CANFDUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J1939 CAN Transport Layer",
+      "referenceBlock": "vntj1939lib/J1939 CAN Transport Layer",
+      "blockType": "J1939CANTransportLayer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J1939 Network Configuration",
+      "referenceBlock": "vntj1939lib/J1939 Network Configuration",
+      "blockType": "J1939NetworkConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J1939 Node Configuration",
+      "referenceBlock": "vntj1939lib/J1939 Node Configuration",
+      "blockType": "J1939NodeConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J1939 Receive",
+      "referenceBlock": "vntj1939lib/J1939 Receive",
+      "blockType": "J1939Receive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J1939 Transmit",
+      "referenceBlock": "vntj1939lib/J1939 Transmit",
+      "blockType": "J1939Transmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN Transport Layer",
+      "referenceBlock": "vntxcplib/CAN/XCP CAN Transport Layer",
+      "blockType": "XCPCANTransportLayer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN Configuration",
+      "referenceBlock": "vntxcplib/CAN/XCP CAN Configuration",
+      "blockType": "XCPCANConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN Data Acquisition",
+      "referenceBlock": "vntxcplib/CAN/XCP CAN Data Acquisition",
+      "blockType": "XCPCANDataAcquisition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN Data Stimulation",
+      "referenceBlock": "vntxcplib/CAN/XCP CAN Data Stimulation",
+      "blockType": "XCPCANDataStimulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN FD Transport Layer",
+      "referenceBlock": "vntxcplib/CAN FD/XCP CAN FD Transport Layer",
+      "blockType": "XCPCANFDTransportLayer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN FD Configuration",
+      "referenceBlock": "vntxcplib/CAN FD/XCP CAN FD Configuration",
+      "blockType": "XCPCANFDConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN FD Data Acquisition",
+      "referenceBlock": "vntxcplib/CAN FD/XCP CAN FD Data Acquisition",
+      "blockType": "XCPCANFDDataAcquisition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN FD Data Stimulation",
+      "referenceBlock": "vntxcplib/CAN FD/XCP CAN FD Data Stimulation",
+      "blockType": "XCPCANFDDataStimulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP UDP Bypass",
+      "referenceBlock": "vntxcplib/UDP/XCP UDP Bypass",
+      "blockType": "XCPUDPBypass",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP UDP Configuration",
+      "referenceBlock": "vntxcplib/UDP/XCP UDP Configuration",
+      "blockType": "XCPUDPConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP UDP Data Acquisition",
+      "referenceBlock": "vntxcplib/UDP/XCP UDP Data Acquisition",
+      "blockType": "XCPUDPDataAcquisition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP UDP Data Stimulation",
+      "referenceBlock": "vntxcplib/UDP/XCP UDP Data Stimulation",
+      "blockType": "XCPUDPDataStimulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

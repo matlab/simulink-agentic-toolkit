@@ -1,0 +1,73 @@
+{
+  "commonBlocks": [
+    "OPC UA Read",
+    "OPC UA Write",
+    "Modbus Client Read",
+    "Modbus Client Write"
+  ],
+  "categories": [
+    {
+      "name": "industrial-protocols",
+      "description": "Industrial communication protocols for automation and IoT",
+      "keywords": [
+        "mqtt",
+        "modbus",
+        "opcua",
+        "industrial",
+        "iot"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "MQTT Client Publish",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "MQTT Client Subscribe",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "Modbus Client Read",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "Modbus Client Write",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "OPC UA Read",
+      "value": "industrial-protocols"
+    },
+    {
+      "block": "OPC UA Write",
+      "value": "industrial-protocols"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "MQTT Client Publish",
+      "value": "Publish messages to an MQTT broker — use for IoT telemetry, cloud data upload, or machine-to-cloud communication in industrial systems"
+    },
+    {
+      "block": "MQTT Client Subscribe",
+      "value": "Subscribe to MQTT topics and receive messages — use for receiving cloud commands, IoT control signals, or inter-device messaging"
+    },
+    {
+      "block": "Modbus Client Read",
+      "value": "Read registers from a Modbus server — use for acquiring data from PLCs, sensors, or industrial equipment via Modbus TCP/RTU"
+    },
+    {
+      "block": "Modbus Client Write",
+      "value": "Write registers to a Modbus server — use for sending commands to PLCs, actuators, or industrial equipment via Modbus TCP/RTU"
+    },
+    {
+      "block": "OPC UA Read",
+      "value": "Read variables from an OPC UA server — use for acquiring process data from industrial automation systems using OPC Unified Architecture"
+    },
+    {
+      "block": "OPC UA Write",
+      "value": "Write variables to an OPC UA server — use for sending setpoints or commands to industrial automation systems via OPC UA"
+    }
+  ]
+}

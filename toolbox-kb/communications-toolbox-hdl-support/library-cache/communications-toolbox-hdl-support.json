@@ -1,0 +1,72 @@
+{
+  "libraryName": "Communications Toolbox HDL Support",
+  "generatedAt": "2026-08-19T14:30:48",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "Comm Filters",
+      "referenceBlock": "commhdllib/Comm Filters",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Comm Filters",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Comm Sinks",
+      "referenceBlock": "commhdllib/Comm Sinks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Comm Sinks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Comm Sources",
+      "referenceBlock": "commhdllib/Comm Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Comm Sources",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Error Detection and Correction",
+      "referenceBlock": "commhdllib/Error Detection and Correction",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Error Detection and Correction",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interleaving",
+      "referenceBlock": "commhdllib/Interleaving",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interleaving",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modulation",
+      "referenceBlock": "commhdllib/Modulation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Modulation",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

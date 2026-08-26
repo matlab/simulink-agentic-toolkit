@@ -1,0 +1,90 @@
+{
+  "libraryName": "Simulink Support Package for Parrot Minidrones",
+  "generatedAt": "2026-08-19T14:31:15",
+  "blockCount": 8,
+  "blocks": [
+    {
+      "name": "Keyboard Read",
+      "referenceBlock": "parrotlib/Keyboard Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Keyboard Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cannon",
+      "referenceBlock": "parrotlib/Cannon",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Grabber",
+      "referenceBlock": "parrotlib/Grabber",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PARROT Image Conversion",
+      "referenceBlock": "parrotlib/PARROT Image Conversion",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP/IP Receive",
+      "referenceBlock": "parrotlib/TCP/IP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP/IP Send",
+      "referenceBlock": "parrotlib/TCP/IP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "parrotlib/UDP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "parrotlib/UDP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Send",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

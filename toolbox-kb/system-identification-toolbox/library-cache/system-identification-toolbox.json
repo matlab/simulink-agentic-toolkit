@@ -1,0 +1,126 @@
+{
+  "libraryName": "System Identification Toolbox",
+  "generatedAt": "2026-08-19T14:31:17",
+  "blockCount": 12,
+  "blocks": [
+    {
+      "name": "Extended Kalman Filter",
+      "referenceBlock": "slident/Estimators/Extended Kalman Filter",
+      "blockType": "ExtendedKalmanFilter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Kalman Filter",
+      "referenceBlock": "slident/Estimators/Kalman Filter",
+      "blockType": "ctrlKalmanFilter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Model Type Converter",
+      "referenceBlock": "slident/Estimators/Model Type Converter",
+      "blockType": "idModelTypeConverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Particle Filter",
+      "referenceBlock": "slident/Estimators/Particle Filter",
+      "blockType": "ParticleFilter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Recursive Least Squares Estimator",
+      "referenceBlock": "slident/Estimators/Recursive Least Squares Estimator",
+      "blockType": "idEstimatorsRLS",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Recursive Polynomial Model Estimator",
+      "referenceBlock": "slident/Estimators/Recursive Polynomial Model Estimator",
+      "blockType": "idEstimatorsPolyModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unscented Kalman Filter",
+      "referenceBlock": "slident/Estimators/Unscented Kalman Filter",
+      "blockType": "UnscentedKalmanFilter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hammerstein-Wiener Model",
+      "referenceBlock": "slident/Models/Hammerstein-Wiener Model",
+      "blockType": "Hammerstein-WienerModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Idmodel",
+      "referenceBlock": "slident/Models/Idmodel",
+      "blockType": "Idmodel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Neural State Space Model",
+      "referenceBlock": "slident/Models/Neural State Space Model",
+      "blockType": "NeuralStateSpaceModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear ARX Model",
+      "referenceBlock": "slident/Models/Nonlinear ARX Model",
+      "blockType": "NonlinearARXModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear Grey-Box Model",
+      "referenceBlock": "slident/Models/Nonlinear Grey-Box Model",
+      "blockType": "NonlinearGrey-BoxModel",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

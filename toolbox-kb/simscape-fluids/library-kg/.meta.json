@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-21T12:37:12",
+  "generatedAtDatenum": 740215.52583443292,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simscape Fluids"
+  ],
+  "blockCount": 224,
+  "categoryCount": 10,
+  "libraryFingerprints": {
+    "Simscape_Fluids": {
+      "blockCount": 224
+    }
+  }
+}

@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.7.1",
+      "version": "0.8.2",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -20,7 +20,7 @@
     },
     {
       "name": "model-based-system-engineering",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "description": "Model-Based Systems Engineering capabilities for System Composer architecture models",
       "author": {
         "name": "MathWorks"
@@ -85,13 +85,39 @@
     },
     {
       "name": "control-systems",
-      "version": "0.1.0",
+      "version": "0.3.0",
       "description": "Control system design and analysis for Simulink models",
       "author": {
         "name": "MathWorks"
       },
       "keywords": ["simulink", "control-design", "linearization", "lti", "lpv", "frequency-response", "motor-control"],
       "source": "./skills-catalog/control-systems",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "simulink-environment-fundamentals",
+      "version": "0.1.0",
+      "description": "Core Simulink environment capabilities, including discovering shipped example models",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "examples", "example-models", "discovery", "model-finder"],
+      "source": "./skills-catalog/simulink-environment-fundamentals",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "signal-processing",
+      "version": "0.1.0",
+      "description": "Frame-based streaming DSP models in Simulink using DSP System Toolbox — correct block selection, frame configuration, tunable filters, buffering, multirate, variable-rate decimation",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "dsp", "signal-processing", "streaming", "frame-based", "audio", "filter", "multirate", "buffering", "decimation"],
+      "source": "./skills-catalog/signal-processing",
       "category": "development",
       "strict": false,
       "skills": "./"

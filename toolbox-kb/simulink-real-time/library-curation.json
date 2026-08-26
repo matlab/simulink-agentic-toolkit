@@ -1,0 +1,831 @@
+{
+  "commonBlocks": [
+    "EtherCAT PDO Receive",
+    "EtherCAT PDO Transmit",
+    "EtherCAT Init",
+    "UDP Send",
+    "UDP Receive",
+    "TCP Client",
+    "File Log",
+    "Byte Packing",
+    "Byte Unpacking",
+    "Shared Memory Pack",
+    "Shared Memory Unpack"
+  ],
+  "categories": [
+    {
+      "name": "async-triggers",
+      "description": "Asynchronous event and thread triggers for interrupt-driven execution",
+      "keywords": [
+        "async",
+        "interrupt",
+        "thread",
+        "trigger",
+        "event"
+      ]
+    },
+    {
+      "name": "can-messaging",
+      "description": "CAN and CAN FD message packing and unpacking for vehicle bus communication",
+      "keywords": [
+        "CAN",
+        "message",
+        "pack",
+        "unpack",
+        "frame"
+      ]
+    },
+    {
+      "name": "dds-communication",
+      "description": "DDS publish-subscribe communication for distributed real-time systems",
+      "keywords": [
+        "DDS",
+        "publish",
+        "subscribe",
+        "topic",
+        "middleware"
+      ]
+    },
+    {
+      "name": "ethercat",
+      "description": "EtherCAT fieldbus communication, PDO exchange, and subdevice management",
+      "keywords": [
+        "EtherCAT",
+        "PDO",
+        "SDO",
+        "fieldbus",
+        "subdevice"
+      ]
+    },
+    {
+      "name": "ip-networking",
+      "description": "TCP, UDP, and raw Ethernet communication on the real-time target",
+      "keywords": [
+        "TCP",
+        "UDP",
+        "Ethernet",
+        "IP",
+        "socket",
+        "network"
+      ]
+    },
+    {
+      "name": "j1939-protocol",
+      "description": "SAE J1939 heavy-vehicle network protocol messaging",
+      "keywords": [
+        "J1939",
+        "heavy-vehicle",
+        "PGN",
+        "SAE",
+        "truck"
+      ]
+    },
+    {
+      "name": "lin-protocol",
+      "description": "LIN bus frame packing and unpacking for body electronics",
+      "keywords": [
+        "LIN",
+        "body",
+        "frame",
+        "schedule",
+        "bus"
+      ]
+    },
+    {
+      "name": "data-logging",
+      "description": "File logging and execution profiling on the real-time target",
+      "keywords": [
+        "log",
+        "file",
+        "profiler",
+        "trace",
+        "record"
+      ]
+    },
+    {
+      "name": "serial-communication",
+      "description": "Serial port communication with FIFO buffering and ASCII/binary parsing",
+      "keywords": [
+        "serial",
+        "FIFO",
+        "ASCII",
+        "baud",
+        "RS232"
+      ]
+    },
+    {
+      "name": "shared-memory",
+      "description": "Shared memory inter-model data exchange on the real-time target",
+      "keywords": [
+        "shared-memory",
+        "partition",
+        "inter-model",
+        "exchange"
+      ]
+    },
+    {
+      "name": "target-management",
+      "description": "Real-time target management including overload handling and persistent storage",
+      "keywords": [
+        "overload",
+        "persistent",
+        "target",
+        "management",
+        "restart"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Byte and bit manipulation utilities for custom protocol framing",
+      "keywords": [
+        "byte",
+        "bit",
+        "pack",
+        "endian",
+        "protocol"
+      ]
+    },
+    {
+      "name": "xcp-protocol",
+      "description": "XCP measurement and calibration protocol over CAN, CAN FD, and UDP",
+      "keywords": [
+        "XCP",
+        "measurement",
+        "calibration",
+        "ECU",
+        "DAQ"
+      ]
+    },
+    {
+      "name": "hardware-io",
+      "description": "Physical hardware I/O devices and time synchronization",
+      "keywords": [
+        "hardware",
+        "steering-wheel",
+        "PTP",
+        "IEEE-1588",
+        "sensor"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ASCII Decode",
+      "value": "serial-communication"
+    },
+    {
+      "block": "ASCII Encode",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Bit Packing",
+      "value": "utilities"
+    },
+    {
+      "block": "Bit Unpacking",
+      "value": "utilities"
+    },
+    {
+      "block": "Byte Packing",
+      "value": "utilities"
+    },
+    {
+      "block": "Byte Reversal",
+      "value": "utilities"
+    },
+    {
+      "block": "Byte Unpacking",
+      "value": "utilities"
+    },
+    {
+      "block": "Change endianess",
+      "value": "shared-memory"
+    },
+    {
+      "block": "DDS Receive",
+      "value": "dds-communication"
+    },
+    {
+      "block": "DDS Send",
+      "value": "dds-communication"
+    },
+    {
+      "block": "Enable File Log",
+      "value": "data-logging"
+    },
+    {
+      "block": "Enable Profiler",
+      "value": "data-logging"
+    },
+    {
+      "block": "EtherCAT Async SDO Download",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Async SDO Upload",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Async SSC/SoE Download",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Async SSC/SoE Upload",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Get Emergency",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Get Notifications",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Get Scanbus Error Data",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Get State",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Init",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT PDO Receive",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT PDO Transmit",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Set State",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Sync SDO Download",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Sync SDO Upload",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Sync SSC/SoE Download",
+      "value": "ethercat"
+    },
+    {
+      "block": "EtherCAT Sync SSC/SoE Upload",
+      "value": "ethercat"
+    },
+    {
+      "block": "Ethernet Receive",
+      "value": "ip-networking"
+    },
+    {
+      "block": "Ethernet Send",
+      "value": "ip-networking"
+    },
+    {
+      "block": "FIFO ASCII read",
+      "value": "serial-communication"
+    },
+    {
+      "block": "FIFO bin read",
+      "value": "serial-communication"
+    },
+    {
+      "block": "FIFO read",
+      "value": "serial-communication"
+    },
+    {
+      "block": "FIFO write",
+      "value": "serial-communication"
+    },
+    {
+      "block": "File Log",
+      "value": "data-logging"
+    },
+    {
+      "block": "Get SubDevice State",
+      "value": "ethercat"
+    },
+    {
+      "block": "IEEE 1588 Read Parameter",
+      "value": "hardware-io"
+    },
+    {
+      "block": "J1939 CAN Transport Layer",
+      "value": "j1939-protocol"
+    },
+    {
+      "block": "J1939 Network Configuration",
+      "value": "j1939-protocol"
+    },
+    {
+      "block": "J1939 Node Configuration",
+      "value": "j1939-protocol"
+    },
+    {
+      "block": "J1939 Receive",
+      "value": "j1939-protocol"
+    },
+    {
+      "block": "J1939 Transmit",
+      "value": "j1939-protocol"
+    },
+    {
+      "block": "LIN Pack",
+      "value": "lin-protocol"
+    },
+    {
+      "block": "LIN Unpack",
+      "value": "lin-protocol"
+    },
+    {
+      "block": "Legacy Serial",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Legacy Serial F",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Legacy Serial Read",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Legacy Serial Write",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Log Event",
+      "value": "data-logging"
+    },
+    {
+      "block": "Modem Control",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Modem Status",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Overload Options",
+      "value": "target-management"
+    },
+    {
+      "block": "Persistent Variable Read",
+      "value": "target-management"
+    },
+    {
+      "block": "Persistent Variable Write",
+      "value": "target-management"
+    },
+    {
+      "block": "Protocol Decoder",
+      "value": "utilities"
+    },
+    {
+      "block": "Protocol Encoder",
+      "value": "utilities"
+    },
+    {
+      "block": "Set SubDevice State",
+      "value": "ethercat"
+    },
+    {
+      "block": "Setup",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Shared Memory Pack",
+      "value": "shared-memory"
+    },
+    {
+      "block": "Shared Memory Unpack",
+      "value": "shared-memory"
+    },
+    {
+      "block": "Steering Wheel Read",
+      "value": "hardware-io"
+    },
+    {
+      "block": "TCP Client",
+      "value": "ip-networking"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "ip-networking"
+    },
+    {
+      "block": "TCP Send",
+      "value": "ip-networking"
+    },
+    {
+      "block": "TCP Server",
+      "value": "ip-networking"
+    },
+    {
+      "block": "Thread Trigger",
+      "value": "async-triggers"
+    },
+    {
+      "block": "UDP Multicast Receive",
+      "value": "ip-networking"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "ip-networking"
+    },
+    {
+      "block": "UDP Send",
+      "value": "ip-networking"
+    },
+    {
+      "block": "V2 Ascii Decode",
+      "value": "serial-communication"
+    },
+    {
+      "block": "XCP CAN Configuration",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP CAN Data Acquisition",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP CAN Data Stimulation",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP CAN FD Configuration",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP CAN FD Data Acquisition",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP CAN FD Data Stimulation",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP CAN FD Transport Layer",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP CAN Transport Layer",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP UDP Bypass",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP UDP Configuration",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP UDP Data Acquisition",
+      "value": "xcp-protocol"
+    },
+    {
+      "block": "XCP UDP Data Stimulation",
+      "value": "xcp-protocol"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ASCII Decode",
+      "value": "Decode ASCII-formatted data received from a serial port into numeric signals"
+    },
+    {
+      "block": "ASCII Encode",
+      "value": "Encode numeric signals into ASCII-formatted strings for serial transmission"
+    },
+    {
+      "block": "Bit Packing",
+      "value": "Pack individual bit fields into a larger integer word for protocol encoding"
+    },
+    {
+      "block": "Bit Unpacking",
+      "value": "Extract individual bit fields from a packed integer word for protocol decoding"
+    },
+    {
+      "block": "Byte Packing",
+      "value": "Pack typed signals into a raw byte vector for custom protocol framing"
+    },
+    {
+      "block": "Byte Reversal",
+      "value": "Reverse byte order of multi-byte data for endianness conversion"
+    },
+    {
+      "block": "Byte Unpacking",
+      "value": "Unpack typed signals from a raw byte vector for custom protocol parsing"
+    },
+    {
+      "block": "Change endianess",
+      "value": "Swap byte order of data for cross-platform shared memory communication"
+    },
+    {
+      "block": "DDS Receive",
+      "value": "Receive data samples from a DDS topic on the real-time target network"
+    },
+    {
+      "block": "DDS Send",
+      "value": "Publish data samples to a DDS topic from the real-time target"
+    },
+    {
+      "block": "Enable File Log",
+      "value": "Programmatically start or stop file logging on the real-time target during execution"
+    },
+    {
+      "block": "Enable Profiler",
+      "value": "Start or stop execution profiling on the real-time target for timing analysis"
+    },
+    {
+      "block": "EtherCAT Async SDO Download",
+      "value": "Write parameters to an EtherCAT subdevice asynchronously via SDO protocol"
+    },
+    {
+      "block": "EtherCAT Async SDO Upload",
+      "value": "Read parameters from an EtherCAT subdevice asynchronously via SDO protocol"
+    },
+    {
+      "block": "EtherCAT Async SSC/SoE Download",
+      "value": "Write parameters to a SERCOS-over-EtherCAT subdevice asynchronously"
+    },
+    {
+      "block": "EtherCAT Async SSC/SoE Upload",
+      "value": "Read parameters from a SERCOS-over-EtherCAT subdevice asynchronously"
+    },
+    {
+      "block": "EtherCAT Get Emergency",
+      "value": "Read emergency messages from an EtherCAT subdevice for fault diagnosis"
+    },
+    {
+      "block": "EtherCAT Get Notifications",
+      "value": "Read EtherCAT master notifications for network health monitoring"
+    },
+    {
+      "block": "EtherCAT Get Scanbus Error Data",
+      "value": "Retrieve bus scan error information for EtherCAT network diagnostics"
+    },
+    {
+      "block": "EtherCAT Get State",
+      "value": "Read the current state machine state of the EtherCAT master"
+    },
+    {
+      "block": "EtherCAT Init",
+      "value": "Initialize the EtherCAT master and configure network parameters at startup"
+    },
+    {
+      "block": "EtherCAT PDO Receive",
+      "value": "Receive process data objects from EtherCAT subdevices in the cyclic data exchange"
+    },
+    {
+      "block": "EtherCAT PDO Transmit",
+      "value": "Transmit process data objects to EtherCAT subdevices in the cyclic data exchange"
+    },
+    {
+      "block": "EtherCAT Set State",
+      "value": "Command the EtherCAT master to transition to a specified state"
+    },
+    {
+      "block": "EtherCAT Sync SDO Download",
+      "value": "Write parameters to an EtherCAT subdevice synchronously via SDO protocol"
+    },
+    {
+      "block": "EtherCAT Sync SDO Upload",
+      "value": "Read parameters from an EtherCAT subdevice synchronously via SDO protocol"
+    },
+    {
+      "block": "EtherCAT Sync SSC/SoE Download",
+      "value": "Write parameters to a SERCOS-over-EtherCAT subdevice synchronously"
+    },
+    {
+      "block": "EtherCAT Sync SSC/SoE Upload",
+      "value": "Read parameters from a SERCOS-over-EtherCAT subdevice synchronously"
+    },
+    {
+      "block": "Ethernet Receive",
+      "value": "Receive raw Ethernet frames on the real-time target for custom protocol handling"
+    },
+    {
+      "block": "Ethernet Send",
+      "value": "Send raw Ethernet frames from the real-time target for custom protocol handling"
+    },
+    {
+      "block": "FIFO ASCII read",
+      "value": "Read ASCII data from a serial FIFO buffer with delimiter-based parsing"
+    },
+    {
+      "block": "FIFO bin read",
+      "value": "Read binary data from a serial FIFO buffer with fixed-size frame parsing"
+    },
+    {
+      "block": "FIFO read",
+      "value": "Read raw bytes from a serial FIFO buffer on the real-time target"
+    },
+    {
+      "block": "FIFO write",
+      "value": "Write raw bytes to a serial FIFO buffer on the real-time target"
+    },
+    {
+      "block": "File Log",
+      "value": "Log signal data to a file on the real-time target for post-run analysis"
+    },
+    {
+      "block": "Get SubDevice State",
+      "value": "Read the current state of a specific EtherCAT subdevice"
+    },
+    {
+      "block": "IEEE 1588 Read Parameter",
+      "value": "Read IEEE 1588 precision time protocol synchronization parameters"
+    },
+    {
+      "block": "J1939 CAN Transport Layer",
+      "value": "Configure J1939 transport protocol for multi-packet CAN messaging on the real-time target"
+    },
+    {
+      "block": "J1939 Network Configuration",
+      "value": "Define J1939 network parameters including bus speed and channel assignment"
+    },
+    {
+      "block": "J1939 Node Configuration",
+      "value": "Configure a J1939 node with source address and name for network participation"
+    },
+    {
+      "block": "J1939 Receive",
+      "value": "Receive J1939 parameter group messages on the real-time target"
+    },
+    {
+      "block": "J1939 Transmit",
+      "value": "Transmit J1939 parameter group messages from the real-time target"
+    },
+    {
+      "block": "LIN Pack",
+      "value": "Pack signal values into a LIN frame for transmission on the real-time target"
+    },
+    {
+      "block": "LIN Unpack",
+      "value": "Unpack signal values from a received LIN frame on the real-time target"
+    },
+    {
+      "block": "Legacy Serial",
+      "value": "Configure and access a legacy serial port on the real-time target mainboard"
+    },
+    {
+      "block": "Legacy Serial F",
+      "value": "Configure and access a legacy serial port with FIFO support on the target mainboard"
+    },
+    {
+      "block": "Legacy Serial Read",
+      "value": "Read data from a legacy mainboard serial port on the real-time target"
+    },
+    {
+      "block": "Legacy Serial Write",
+      "value": "Write data to a legacy mainboard serial port on the real-time target"
+    },
+    {
+      "block": "Log Event",
+      "value": "Insert a named event marker in the profiling trace for timing instrumentation"
+    },
+    {
+      "block": "Modem Control",
+      "value": "Set modem control lines on the serial port for hardware handshaking"
+    },
+    {
+      "block": "Modem Status",
+      "value": "Read modem status lines from the serial port for hardware handshaking"
+    },
+    {
+      "block": "Overload Options",
+      "value": "Configure how the real-time target handles CPU overload conditions"
+    },
+    {
+      "block": "Persistent Variable Read",
+      "value": "Read a persistent variable that survives across real-time application restarts"
+    },
+    {
+      "block": "Persistent Variable Write",
+      "value": "Write a persistent variable that survives across real-time application restarts"
+    },
+    {
+      "block": "Protocol Decoder",
+      "value": "Decode structured data from a byte stream according to a protocol definition"
+    },
+    {
+      "block": "Protocol Encoder",
+      "value": "Encode structured data into a byte stream according to a protocol definition"
+    },
+    {
+      "block": "Set SubDevice State",
+      "value": "Command a specific EtherCAT subdevice to transition to a new state"
+    },
+    {
+      "block": "Setup",
+      "value": "Configure serial port parameters including baud rate, parity, and data bits"
+    },
+    {
+      "block": "Shared Memory Pack",
+      "value": "Pack signals into a shared memory partition for inter-model data exchange"
+    },
+    {
+      "block": "Shared Memory Unpack",
+      "value": "Unpack signals from a shared memory partition for inter-model data exchange"
+    },
+    {
+      "block": "Steering Wheel Read",
+      "value": "Read steering angle, throttle, and brake inputs from a Logitech G29 controller"
+    },
+    {
+      "block": "TCP Client",
+      "value": "Establish a TCP client connection from the real-time target to a remote host"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "Receive data over a TCP connection on the real-time target"
+    },
+    {
+      "block": "TCP Send",
+      "value": "Send data over a TCP connection from the real-time target"
+    },
+    {
+      "block": "TCP Server",
+      "value": "Accept incoming TCP connections on the real-time target"
+    },
+    {
+      "block": "Thread Trigger",
+      "value": "Trigger a subsystem from a software interrupt thread for asynchronous real-time execution"
+    },
+    {
+      "block": "UDP Multicast Receive",
+      "value": "Receive UDP multicast datagrams on the real-time target"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP datagrams on the real-time target"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP datagrams from the real-time target"
+    },
+    {
+      "block": "V2 Ascii Decode",
+      "value": "Decode ASCII data with enhanced format specification for serial protocols"
+    },
+    {
+      "block": "XCP CAN Configuration",
+      "value": "Set XCP session parameters for CAN-based measurement and calibration"
+    },
+    {
+      "block": "XCP CAN Data Acquisition",
+      "value": "Acquire measurement data from an ECU via XCP over CAN"
+    },
+    {
+      "block": "XCP CAN Data Stimulation",
+      "value": "Write calibration data to an ECU via XCP over CAN"
+    },
+    {
+      "block": "XCP CAN FD Configuration",
+      "value": "Set XCP session parameters for CAN FD-based measurement and calibration"
+    },
+    {
+      "block": "XCP CAN FD Data Acquisition",
+      "value": "Acquire measurement data from an ECU via XCP over CAN FD"
+    },
+    {
+      "block": "XCP CAN FD Data Stimulation",
+      "value": "Write calibration data to an ECU via XCP over CAN FD"
+    },
+    {
+      "block": "XCP CAN FD Transport Layer",
+      "value": "Configure XCP measurement and calibration protocol over CAN FD bus"
+    },
+    {
+      "block": "XCP CAN Transport Layer",
+      "value": "Configure XCP measurement and calibration protocol over CAN bus"
+    },
+    {
+      "block": "XCP UDP Bypass",
+      "value": "Route XCP commands directly to UDP for external tool access during real-time execution"
+    },
+    {
+      "block": "XCP UDP Configuration",
+      "value": "Set XCP session parameters for UDP-based measurement and calibration"
+    },
+    {
+      "block": "XCP UDP Data Acquisition",
+      "value": "Acquire measurement data from an ECU via XCP over UDP"
+    },
+    {
+      "block": "XCP UDP Data Stimulation",
+      "value": "Write calibration data to an ECU via XCP over UDP"
+    }
+  ]
+}

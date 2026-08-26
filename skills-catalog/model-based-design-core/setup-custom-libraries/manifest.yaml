@@ -10,7 +10,7 @@ required-tools:
   - model_edit
 required-skills:
   - configuring-block-policy
-  - curating-library-kg
+  - simulink-curating-library-kg
 reference-files:
   - references/library-setup.md
 required-products:

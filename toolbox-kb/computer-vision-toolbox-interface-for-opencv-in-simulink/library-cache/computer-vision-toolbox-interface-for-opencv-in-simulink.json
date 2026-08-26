@@ -1,0 +1,54 @@
+{
+  "libraryName": "Computer Vision Toolbox Interface for OpenCV in Simulink",
+  "generatedAt": "2026-08-19T14:30:49",
+  "blockCount": 4,
+  "blocks": [
+    {
+      "name": "Image To Matrix",
+      "referenceBlock": "opencvConverterBlockset/Image To Matrix",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Image To Matrix Converter Block",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Matrix To Image",
+      "referenceBlock": "opencvConverterBlockset/Matrix To Image",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Matrix To Image Converter Block",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "FromOpenCV",
+      "referenceBlock": "opencvConverterBlockset/FromOpenCV",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "FromOpenCV Converter Block",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ToOpenCV",
+      "referenceBlock": "opencvConverterBlockset/ToOpenCV",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ToOpenCV Converter Block",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.744560625,
+  "generatorVersion": 4,
+  "libraries": [
+    "Embedded Coder Support Package for Intel SoC Devices"
+  ],
+  "blockCount": 5,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Embedded_Coder_Support_Package_for_Intel_SoC_Devices": {
+      "blockCount": 5
+    }
+  }
+}

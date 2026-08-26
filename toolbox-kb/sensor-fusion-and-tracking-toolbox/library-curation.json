@@ -1,0 +1,275 @@
+{
+  "commonBlocks": [
+    "Global Nearest Neighbor Multi Object Tracker",
+    "Joint Probabilistic Data Association Multi Object Tracker",
+    "Track-To-Track Fuser",
+    "Fusion Radar Sensor",
+    "Tracking Scenario Reader"
+  ],
+  "categories": [
+    {
+      "name": "multi-object-trackers",
+      "description": "Complete multi-object tracking algorithms",
+      "keywords": [
+        "tracker",
+        "gnn",
+        "jpda",
+        "phd",
+        "mht"
+      ]
+    },
+    {
+      "name": "jipda-components",
+      "description": "Modular JIPDA tracker building blocks",
+      "keywords": [
+        "jipda",
+        "assigner",
+        "initiator",
+        "predictor",
+        "updater"
+      ]
+    },
+    {
+      "name": "sensor-target-models",
+      "description": "Sensor and target specification models",
+      "keywords": [
+        "birth",
+        "clutter",
+        "measurement",
+        "survival",
+        "detectability"
+      ]
+    },
+    {
+      "name": "scenario-utilities",
+      "description": "Scenario readers, sensors, and data utilities",
+      "keywords": [
+        "scenario",
+        "radar",
+        "gps",
+        "detection",
+        "concatenation"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Birth Model",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "Clutter Model",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "Detectability Model",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "Detection Concatenation",
+      "value": "scenario-utilities"
+    },
+    {
+      "block": "Fusion Radar Sensor",
+      "value": "scenario-utilities"
+    },
+    {
+      "block": "Generalized Optimal Subpattern Assignment Metric",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "Global Nearest Neighbor Multi Object Tracker",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "Grid-Based Multi Object Tracker",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "JIPDA Track Assigner",
+      "value": "jipda-components"
+    },
+    {
+      "block": "JIPDA Track Initiator",
+      "value": "jipda-components"
+    },
+    {
+      "block": "JIPDA Track Maintainer",
+      "value": "jipda-components"
+    },
+    {
+      "block": "JIPDA Track Outputter",
+      "value": "jipda-components"
+    },
+    {
+      "block": "JIPDA Track Predictor",
+      "value": "jipda-components"
+    },
+    {
+      "block": "JIPDA Track Updater",
+      "value": "jipda-components"
+    },
+    {
+      "block": "Joint Probabilistic Data Association Multi Object Tracker",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "Measurement Model",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "Optimal Subpattern Assignment Metric",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "Probability Hypothesis Density Tracker",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "Scenario To Platform",
+      "value": "scenario-utilities"
+    },
+    {
+      "block": "Sensor Specification",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "State Transition Model",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "Survival Model",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "Target Specification",
+      "value": "sensor-target-models"
+    },
+    {
+      "block": "Track Concatenation",
+      "value": "scenario-utilities"
+    },
+    {
+      "block": "Track-Oriented Multi-Hypothesis Tracker",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "Track-To-Track Fuser",
+      "value": "multi-object-trackers"
+    },
+    {
+      "block": "Tracking Scenario Reader",
+      "value": "scenario-utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Birth Model",
+      "value": "Define where new targets can appear in the surveillance volume — use for configuring target birth distributions in PHD trackers"
+    },
+    {
+      "block": "Clutter Model",
+      "value": "Define the false alarm distribution and density — use for characterizing spurious detections in the sensor field of view"
+    },
+    {
+      "block": "Detectability Model",
+      "value": "Define sensor detection probability as a function of target state — use for modeling range-dependent or aspect-dependent detection likelihood"
+    },
+    {
+      "block": "Detection Concatenation",
+      "value": "Merge detection lists from multiple sensors — use for combining detections before feeding into a centralized tracker"
+    },
+    {
+      "block": "Fusion Radar Sensor",
+      "value": "Simulate a radar sensor generating detections from a scenario — use for creating synthetic radar measurements for tracker testing"
+    },
+    {
+      "block": "Generalized Optimal Subpattern Assignment Metric",
+      "value": "Evaluate tracker performance using GOSPA metric — use for quantifying tracking accuracy including missed and false tracks"
+    },
+    {
+      "block": "Global Nearest Neighbor Multi Object Tracker",
+      "value": "Track multiple objects using GNN data association — use for simple multi-target tracking when targets are well-separated"
+    },
+    {
+      "block": "Grid-Based Multi Object Tracker",
+      "value": "Track objects on a spatial occupancy grid — use for tracking extended targets or dense environments with grid-based representations"
+    },
+    {
+      "block": "JIPDA Track Assigner",
+      "value": "Assign detections to tracks using JIPDA probabilities — use as a modular component in custom JIPDA tracker pipelines"
+    },
+    {
+      "block": "JIPDA Track Initiator",
+      "value": "Initiate new tracks from unassigned detections — use as a modular component for track birth in JIPDA tracker designs"
+    },
+    {
+      "block": "JIPDA Track Maintainer",
+      "value": "Manage track lifecycle based on existence probability — use for confirming or deleting tracks in modular JIPDA pipelines"
+    },
+    {
+      "block": "JIPDA Track Outputter",
+      "value": "Output confirmed tracks from the JIPDA tracker — use for extracting finalized track estimates from modular JIPDA designs"
+    },
+    {
+      "block": "JIPDA Track Predictor",
+      "value": "Predict track states forward in time — use for the prediction step in modular JIPDA tracker pipelines"
+    },
+    {
+      "block": "JIPDA Track Updater",
+      "value": "Update track states with new measurements — use for the measurement update step in modular JIPDA tracker pipelines"
+    },
+    {
+      "block": "Joint Probabilistic Data Association Multi Object Tracker",
+      "value": "Track multiple objects using JPDA soft association — use for cluttered environments where detections may originate from multiple targets"
+    },
+    {
+      "block": "Measurement Model",
+      "value": "Define the sensor measurement function — use for mapping target state to expected sensor observations in tracking filters"
+    },
+    {
+      "block": "Optimal Subpattern Assignment Metric",
+      "value": "Evaluate tracker performance using OSPA metric — use for measuring the overall distance between estimated and ground-truth track sets"
+    },
+    {
+      "block": "Probability Hypothesis Density Tracker",
+      "value": "Track unknown number of objects using PHD filter — use when target count varies and explicit track management is impractical"
+    },
+    {
+      "block": "Scenario To Platform",
+      "value": "Extract platform poses from a tracking scenario — use for feeding ground-truth platform positions into sensor models"
+    },
+    {
+      "block": "Sensor Specification",
+      "value": "Bundle sensor models into a complete specification — use for combining measurement, clutter, and detectability models for a sensor"
+    },
+    {
+      "block": "State Transition Model",
+      "value": "Define target dynamics and motion model — use for specifying how targets move between time steps in tracking filters"
+    },
+    {
+      "block": "Survival Model",
+      "value": "Define target survival probability over time — use for modeling how likely targets persist between frames in PHD trackers"
+    },
+    {
+      "block": "Target Specification",
+      "value": "Bundle target models into a complete specification — use for combining state transition, survival, and birth models for targets"
+    },
+    {
+      "block": "Track Concatenation",
+      "value": "Merge track lists from multiple trackers — use for combining tracks before feeding into a track-to-track fuser"
+    },
+    {
+      "block": "Track-Oriented Multi-Hypothesis Tracker",
+      "value": "Track objects using multiple hypothesis trees — use for high-accuracy tracking in dense clutter with deferred association decisions"
+    },
+    {
+      "block": "Track-To-Track Fuser",
+      "value": "Fuse tracks from multiple trackers into a unified track set — use for combining outputs from distributed sensors or tracking nodes"
+    },
+    {
+      "block": "Tracking Scenario Reader",
+      "value": "Read and replay a saved tracking scenario — use for loading pre-configured multi-platform scenarios into Simulink for testing"
+    }
+  ]
+}

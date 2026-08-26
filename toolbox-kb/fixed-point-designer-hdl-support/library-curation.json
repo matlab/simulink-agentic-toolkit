@@ -1,0 +1,389 @@
+{
+  "commonBlocks": [
+    "Real Divide HDL Optimized",
+    "CORDIC Square Root HDL Optimized",
+    "Real Burst Matrix Solve Using QR Decomposition",
+    "Non-Square Jacobi SVD HDL Optimized"
+  ],
+  "categories": [
+    {
+      "name": "math-operations",
+      "description": "HDL-optimized scalar math functions",
+      "keywords": [
+        "exp",
+        "log",
+        "sqrt",
+        "divide",
+        "cordic",
+        "sigmoid",
+        "tanh",
+        "power",
+        "reciprocal",
+        "modulo"
+      ]
+    },
+    {
+      "name": "linear-system-solvers",
+      "description": "HDL-optimized linear system solvers using QR",
+      "keywords": [
+        "solve",
+        "system",
+        "burst",
+        "partial-systolic",
+        "systolic",
+        "forgetting"
+      ]
+    },
+    {
+      "name": "matrix-factorizations",
+      "description": "HDL-optimized matrix factorization blocks",
+      "keywords": [
+        "qr",
+        "svd",
+        "decomposition",
+        "factorization",
+        "jacobi"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "CORDIC Sigmoid HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "CORDIC Square Root HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Complex Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Complex Burst Matrix Solve Using Q-less QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Complex Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Complex Burst Matrix Solve Using QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Complex Burst Q-less QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Complex Burst Q-less QR Decomposition Whole R Output",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Complex Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Complex Burst QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Complex Divide HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Complex Partial-Systolic Matrix Solve Using QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Complex Partial-Systolic Q-less QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Complex Partial-Systolic Q-less QR with Forgetting Factor",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Complex Partial-Systolic QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Divide by Constant HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Euler to NED Transformation HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Hyperbolic Tangent HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Modulo by Constant HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Non-Square Jacobi SVD HDL Optimized",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Normalized Reciprocal HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Real Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Real Burst Matrix Solve Using Q-less QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Real Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Real Burst Matrix Solve Using QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Real Burst Q-less QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Real Burst Q-less QR Decomposition Whole R Output",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Real Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Real Burst QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Real Divide HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Real Partial-Systolic Matrix Solve Using QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Real Partial-Systolic Q-less QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Real Partial-Systolic Q-less QR with Forgetting Factor",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Real Partial-Systolic QR Decomposition",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Real Reciprocal HDL Optimized",
+      "value": "math-operations"
+    },
+    {
+      "block": "Square Jacobi SVD HDL Optimized",
+      "value": "matrix-factorizations"
+    },
+    {
+      "block": "Systolic Matrix Solve Using QR Decomposition",
+      "value": "linear-system-solvers"
+    },
+    {
+      "block": "Systolic QR Decomposition",
+      "value": "matrix-factorizations"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "CORDIC Sigmoid HDL Optimized",
+      "value": "Compute sigmoid activation using CORDIC for HDL — use for neural network inference on FPGA with fixed-point"
+    },
+    {
+      "block": "CORDIC Square Root HDL Optimized",
+      "value": "Compute square root using CORDIC for HDL — use for implementing sqrt in FPGA without multipliers"
+    },
+    {
+      "block": "Complex Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "value": "Solve complex linear systems with async burst Q-less QR — use for streaming matrix problems on FPGA with variable latency"
+    },
+    {
+      "block": "Complex Burst Matrix Solve Using Q-less QR Decomposition",
+      "value": "Solve complex linear systems with burst Q-less QR — use for FPGA beamforming or channel estimation with complex matrices"
+    },
+    {
+      "block": "Complex Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "Solve complex systems with Q-less QR and forgetting — use for adaptive filtering on FPGA with exponential weighting"
+    },
+    {
+      "block": "Complex Burst Matrix Solve Using QR Decomposition",
+      "value": "Solve complex linear systems with burst QR — use for FPGA-based complex least-squares problems"
+    },
+    {
+      "block": "Complex Burst Q-less QR Decomposition",
+      "value": "Factorize complex matrices with burst Q-less QR — use for computing R factor of complex matrices on FPGA"
+    },
+    {
+      "block": "Complex Burst Q-less QR Decomposition Whole R Output",
+      "value": "Factorize complex matrices outputting full R — use for FPGA Q-less QR when the entire R matrix is needed at once"
+    },
+    {
+      "block": "Complex Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "value": "Factorize with forgetting outputting full R — use for time-weighted complex covariance on FPGA"
+    },
+    {
+      "block": "Complex Burst QR Decomposition",
+      "value": "Compute full QR decomposition of complex matrices — use for FPGA-based complex matrix factorization"
+    },
+    {
+      "block": "Complex Divide HDL Optimized",
+      "value": "Divide complex numbers optimized for HDL — use for implementing complex division in FPGA signal processing"
+    },
+    {
+      "block": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "value": "Solve complex systems with partial-systolic Q-less QR — use for area-efficient FPGA matrix solving"
+    },
+    {
+      "block": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "Solve complex systems with partial-systolic Q-less QR and forgetting — use for adaptive FPGA beamforming"
+    },
+    {
+      "block": "Complex Partial-Systolic Matrix Solve Using QR Decomposition",
+      "value": "Solve complex systems with partial-systolic QR — use for area-efficient FPGA least-squares solving"
+    },
+    {
+      "block": "Complex Partial-Systolic Q-less QR Decomposition",
+      "value": "Factorize complex matrices with partial-systolic Q-less QR — use for area-efficient FPGA complex factorization"
+    },
+    {
+      "block": "Complex Partial-Systolic Q-less QR with Forgetting Factor",
+      "value": "Factorize complex matrices with forgetting — use for adaptive covariance estimation on FPGA"
+    },
+    {
+      "block": "Complex Partial-Systolic QR Decomposition",
+      "value": "Compute full QR of complex matrices with partial-systolic architecture — use for area-efficient FPGA QR"
+    },
+    {
+      "block": "Divide by Constant HDL Optimized",
+      "value": "Divide by a compile-time constant optimized for HDL — use for efficient constant division without a divider circuit"
+    },
+    {
+      "block": "Euler to NED Transformation HDL Optimized",
+      "value": "Convert Euler angles to NED frame optimized for HDL — use for coordinate rotation in FPGA-based navigation"
+    },
+    {
+      "block": "Hyperbolic Tangent HDL Optimized",
+      "value": "Compute tanh optimized for HDL — use for neural network activation or nonlinear control on FPGA"
+    },
+    {
+      "block": "Modulo by Constant HDL Optimized",
+      "value": "Compute modulo by a constant optimized for HDL — use for efficient remainder computation without a divider"
+    },
+    {
+      "block": "Non-Square Jacobi SVD HDL Optimized",
+      "value": "Compute SVD of non-square matrices for HDL — use for FPGA-based singular value decomposition of rectangular matrices"
+    },
+    {
+      "block": "Normalized Reciprocal HDL Optimized",
+      "value": "Compute normalized reciprocal optimized for HDL — use for division by normalizing the dividend first"
+    },
+    {
+      "block": "Real Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "value": "Solve real linear systems with async burst Q-less QR — use for streaming real matrix problems on FPGA"
+    },
+    {
+      "block": "Real Burst Matrix Solve Using Q-less QR Decomposition",
+      "value": "Solve real linear systems with burst Q-less QR — use for FPGA-based real least-squares with normal equations"
+    },
+    {
+      "block": "Real Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "Solve real systems with Q-less QR and forgetting — use for real adaptive filtering on FPGA"
+    },
+    {
+      "block": "Real Burst Matrix Solve Using QR Decomposition",
+      "value": "Solve real linear systems with burst QR — use for FPGA-based overdetermined system solving"
+    },
+    {
+      "block": "Real Burst Q-less QR Decomposition",
+      "value": "Factorize real matrices with burst Q-less QR — use for computing R factor of real matrices on FPGA"
+    },
+    {
+      "block": "Real Burst Q-less QR Decomposition Whole R Output",
+      "value": "Factorize real matrices outputting full R — use for FPGA Q-less QR when the entire R matrix is needed"
+    },
+    {
+      "block": "Real Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "value": "Factorize with forgetting outputting full R — use for time-weighted real covariance on FPGA"
+    },
+    {
+      "block": "Real Burst QR Decomposition",
+      "value": "Compute full QR decomposition of real matrices — use for FPGA-based real matrix factorization"
+    },
+    {
+      "block": "Real Divide HDL Optimized",
+      "value": "Divide real numbers optimized for HDL — use for general-purpose fixed-point division on FPGA"
+    },
+    {
+      "block": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "value": "Solve real systems with partial-systolic Q-less QR — use for area-efficient FPGA real matrix solving"
+    },
+    {
+      "block": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "value": "Solve real systems with partial-systolic Q-less QR and forgetting — use for adaptive real filtering on FPGA"
+    },
+    {
+      "block": "Real Partial-Systolic Matrix Solve Using QR Decomposition",
+      "value": "Solve real systems with partial-systolic QR — use for area-efficient FPGA real least-squares"
+    },
+    {
+      "block": "Real Partial-Systolic Q-less QR Decomposition",
+      "value": "Factorize real matrices with partial-systolic Q-less QR — use for area-efficient FPGA real factorization"
+    },
+    {
+      "block": "Real Partial-Systolic Q-less QR with Forgetting Factor",
+      "value": "Factorize real matrices with forgetting — use for adaptive real covariance estimation on FPGA"
+    },
+    {
+      "block": "Real Partial-Systolic QR Decomposition",
+      "value": "Compute full QR of real matrices with partial-systolic architecture — use for area-efficient FPGA QR"
+    },
+    {
+      "block": "Real Reciprocal HDL Optimized",
+      "value": "Compute 1/x optimized for HDL — use for reciprocal computation in FPGA signal processing"
+    },
+    {
+      "block": "Square Jacobi SVD HDL Optimized",
+      "value": "Compute SVD of square matrices for HDL — use for FPGA-based singular value decomposition"
+    },
+    {
+      "block": "Systolic Matrix Solve Using QR Decomposition",
+      "value": "Solve linear systems with fully systolic QR — use for maximum-throughput FPGA matrix solving"
+    },
+    {
+      "block": "Systolic QR Decomposition",
+      "value": "Compute QR with fully systolic architecture — use for maximum-throughput FPGA matrix factorization"
+    }
+  ]
+}

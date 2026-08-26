@@ -1,0 +1,54 @@
+{
+  "commonBlocks": [
+    "For Use with DPI-C SystemVerilog"
+  ],
+  "categories": [
+    {
+      "name": "hdl-cosimulation",
+      "description": "HDL co-simulation interfaces with EDA tools",
+      "keywords": [
+        "hdl",
+        "cosimulation",
+        "vivado",
+        "xcelium",
+        "vcs"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "For Use with  AMD Vivado Simulator",
+      "value": "hdl-cosimulation"
+    },
+    {
+      "block": "For Use with  Cadence Xcelium",
+      "value": "hdl-cosimulation"
+    },
+    {
+      "block": "For Use with  Synopsys VCS",
+      "value": "hdl-cosimulation"
+    },
+    {
+      "block": "For Use with DPI-C SystemVerilog",
+      "value": "hdl-cosimulation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "For Use with  AMD Vivado Simulator",
+      "value": "Co-simulate HDL designs running in AMD Vivado Simulator — use for verifying FPGA designs against Simulink reference models using Vivado"
+    },
+    {
+      "block": "For Use with  Cadence Xcelium",
+      "value": "Co-simulate HDL designs running in Cadence Xcelium — use for verifying RTL against Simulink golden models using Xcelium simulator"
+    },
+    {
+      "block": "For Use with  Synopsys VCS",
+      "value": "Co-simulate HDL designs running in Synopsys VCS — use for verifying RTL against Simulink golden models using VCS simulator"
+    },
+    {
+      "block": "For Use with DPI-C SystemVerilog",
+      "value": "Co-simulate via DPI-C interface with SystemVerilog testbenches — use for integrating Simulink models into SystemVerilog verification environments"
+    }
+  ]
+}

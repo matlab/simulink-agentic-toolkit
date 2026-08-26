@@ -1,0 +1,558 @@
+{
+  "libraryName": "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 60,
+  "blocks": [
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "vexarmcortexlib/Utilities/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Stateflow",
+      "referenceBlock": "vexarmcortexlib/Utilities/Stateflow",
+      "blockType": "Chart",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Variable Input",
+      "referenceBlock": "vexarmcortexlib/Utilities/Variable Input",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Slider Gain",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DC Motor",
+      "referenceBlock": "vexarmcortexlib/Actuators/DC Motor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "vexarmcortexlib/Actuators/Digital Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Servo Motor",
+      "referenceBlock": "vexarmcortexlib/Actuators/Servo Motor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Servo Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Competition Switch",
+      "referenceBlock": "vexarmcortexlib/Gamepad/Competition Switch",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Competition Switch",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gamepad Accelerometer",
+      "referenceBlock": "vexarmcortexlib/Gamepad/Gamepad Accelerometer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gamepad Accelerometer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gamepad Button",
+      "referenceBlock": "vexarmcortexlib/Gamepad/Gamepad Button",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gamepad Button",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gamepad Joystick",
+      "referenceBlock": "vexarmcortexlib/Gamepad/Gamepad Joystick",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gamepad Joystick",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LCD Button",
+      "referenceBlock": "vexarmcortexlib/LCD/LCD Button",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LCD Screen",
+      "referenceBlock": "vexarmcortexlib/LCD/LCD Screen",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Constant",
+      "referenceBlock": "vexarmcortexlib/Logical Operations Library/Compare To Constant",
+      "blockType": "CompareToConstant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Zero",
+      "referenceBlock": "vexarmcortexlib/Logical Operations Library/Compare To Zero",
+      "blockType": "CompareToZero",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logical Operator",
+      "referenceBlock": "vexarmcortexlib/Logical Operations Library/Logical Operator",
+      "blockType": "Logic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logical Operator1",
+      "referenceBlock": "vexarmcortexlib/Logical Operations Library/Logical Operator1",
+      "blockType": "Logic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relational Operator",
+      "referenceBlock": "vexarmcortexlib/Logical Operations Library/Relational Operator",
+      "blockType": "RelationalOperator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Abs",
+      "referenceBlock": "vexarmcortexlib/Math Library/Abs",
+      "blockType": "Abs",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Add",
+      "referenceBlock": "vexarmcortexlib/Math Library/Add",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bias",
+      "referenceBlock": "vexarmcortexlib/Math Library/Bias",
+      "blockType": "Bias",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Divide",
+      "referenceBlock": "vexarmcortexlib/Math Library/Divide",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gain",
+      "referenceBlock": "vexarmcortexlib/Math Library/Gain",
+      "blockType": "Gain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Math Function",
+      "referenceBlock": "vexarmcortexlib/Math Library/Math Function",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MinMax",
+      "referenceBlock": "vexarmcortexlib/Math Library/MinMax",
+      "blockType": "MinMax",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MinMax Running Resettable",
+      "referenceBlock": "vexarmcortexlib/Math Library/MinMax Running Resettable",
+      "blockType": "MinMaxRunningResettable",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Polynomial",
+      "referenceBlock": "vexarmcortexlib/Math Library/Polynomial",
+      "blockType": "Polyval",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Product",
+      "referenceBlock": "vexarmcortexlib/Math Library/Product",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reciprocal Sqrt",
+      "referenceBlock": "vexarmcortexlib/Math Library/Reciprocal Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rounding Function",
+      "referenceBlock": "vexarmcortexlib/Math Library/Rounding Function",
+      "blockType": "Rounding",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sign",
+      "referenceBlock": "vexarmcortexlib/Math Library/Sign",
+      "blockType": "Signum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signed Sqrt",
+      "referenceBlock": "vexarmcortexlib/Math Library/Signed Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sine Wave Function",
+      "referenceBlock": "vexarmcortexlib/Math Library/Sine Wave Function",
+      "blockType": "Sin",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Slider Gain",
+      "referenceBlock": "vexarmcortexlib/Math Library/Slider Gain",
+      "blockType": "SliderGain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sqrt",
+      "referenceBlock": "vexarmcortexlib/Math Library/Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subtract",
+      "referenceBlock": "vexarmcortexlib/Math Library/Subtract",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trigonometric Function",
+      "referenceBlock": "vexarmcortexlib/Math Library/Trigonometric Function",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unary Minus",
+      "referenceBlock": "vexarmcortexlib/Math Library/Unary Minus",
+      "blockType": "UnaryMinus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "vexarmcortexlib/Sensors/Analog Input",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "vexarmcortexlib/Sensors/Digital Input",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gyroscope",
+      "referenceBlock": "vexarmcortexlib/Sensors/Gyroscope",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integrated Encoder Module",
+      "referenceBlock": "vexarmcortexlib/Sensors/Integrated Encoder Module",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Optical Shaft Encoder",
+      "referenceBlock": "vexarmcortexlib/Sensors/Optical Shaft Encoder",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ultrasonic Sensor",
+      "referenceBlock": "vexarmcortexlib/Sensors/Ultrasonic Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Arcade Module",
+      "referenceBlock": "vexarmcortexlib/Utilities/Arcade Module",
+      "blockType": "Arcade-2MotorsModule",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Clock",
+      "referenceBlock": "vexarmcortexlib/Utilities/Clock",
+      "blockType": "Clock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "vexarmcortexlib/Utilities/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Conversion",
+      "referenceBlock": "vexarmcortexlib/Utilities/Data Type Conversion",
+      "blockType": "DataTypeConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Deadband",
+      "referenceBlock": "vexarmcortexlib/Utilities/Deadband",
+      "blockType": "DeadZone",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Display",
+      "referenceBlock": "vexarmcortexlib/Utilities/Display",
+      "blockType": "Display",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Field Simulator",
+      "referenceBlock": "vexarmcortexlib/Utilities/Field Simulator",
+      "blockType": "FieldSimulator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gamepad Simulator",
+      "referenceBlock": "vexarmcortexlib/Utilities/Gamepad Simulator",
+      "blockType": "GamepadSimulator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gear Transmission",
+      "referenceBlock": "vexarmcortexlib/Utilities/Gear Transmission",
+      "blockType": "Reference",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ground",
+      "referenceBlock": "vexarmcortexlib/Utilities/Ground",
+      "blockType": "Ground",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Latch",
+      "referenceBlock": "vexarmcortexlib/Utilities/Latch",
+      "blockType": "Latch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Limit Switch Control ",
+      "referenceBlock": "vexarmcortexlib/Utilities/Limit Switch Control ",
+      "blockType": "SaturationDynamic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Manual Switch",
+      "referenceBlock": "vexarmcortexlib/Utilities/Manual Switch",
+      "blockType": "ManualSwitch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Scope",
+      "referenceBlock": "vexarmcortexlib/Utilities/Scope",
+      "blockType": "Scope",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "vexarmcortexlib/Utilities/Switch",
+      "blockType": "Switch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "vexarmcortexlib/Utilities/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Toggle",
+      "referenceBlock": "vexarmcortexlib/Utilities/Toggle",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

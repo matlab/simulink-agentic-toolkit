@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "0.2"
+version: "0.3"
 human-description: "Build multi-layer system architecture models using System Composer, including interface dictionaries, allocation sets, stereotypes, and requirements tracing."
 matlab-release: ">=R2023a"
 required-tools:

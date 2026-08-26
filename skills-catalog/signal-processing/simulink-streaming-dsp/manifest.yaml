@@ -1,0 +1,20 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "2.0"
+human-description: Build frame-based streaming DSP models in Simulink with correct block selection and configuration.
+matlab-release: ">=R2023b"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - DSP System Toolbox
+optional-products:
+  - Computer Vision Toolbox
+required-tools:
+  - model_edit
+  - model_read
+  - model_check
+  - model_test
+  - evaluate_matlab_code
+required-skills: []

@@ -138,7 +138,7 @@ systemcomposer.allocation.editor('path/to/MyAllocation.mldatx')
 
 ### Resolving Nested Components
 
-Sub-components inside composites (e.g., `ConveyorSystem/Motor`) require walking into each parent's `.Architecture`. Use the [`resolveComponent`](../scripts/resolveComponent.m) helper:
+Sub-components inside composites (e.g., `ConveyorSystem/Motor`) require walking into each parent's `.Architecture`. Use the [`resolveComponent`](../scripts/resolveComponent.m) helper — run it via `evaluate_matlab_code` with `project_path` set to the skill's `scripts/` folder so MATLAB can find it (never `addpath`):
 
 ```matlab
 comp = resolveComponent(arch, 'ConveyorSystem/Motor');

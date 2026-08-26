@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "Hexagon",
+    "QNN"
+  ],
+  "categories": [
+    {
+      "name": "deployment",
+      "description": "Code deployment to Qualcomm Hexagon processors",
+      "keywords": [
+        "hexagon",
+        "qualcomm",
+        "dsp",
+        "qnn",
+        "deployment"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Hexagon",
+      "value": "deployment"
+    },
+    {
+      "block": "QNN",
+      "value": "deployment"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Hexagon",
+      "value": "Deploy generated code to Qualcomm Hexagon DSP — use for running Simulink algorithms on Qualcomm mobile or embedded processors with DSP acceleration"
+    },
+    {
+      "block": "QNN",
+      "value": "Deploy deep learning models to Qualcomm Neural Network runtime — use for AI inference on Qualcomm hardware with QNN acceleration"
+    }
+  ]
+}

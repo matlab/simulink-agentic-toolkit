@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.744570162,
+  "generatorVersion": 4,
+  "libraries": [
+    "Mixed-Signal Blockset"
+  ],
+  "blockCount": 47,
+  "categoryCount": 7,
+  "libraryFingerprints": {
+    "Mixed_Signal_Blockset": {
+      "blockCount": 47
+    }
+  }
+}

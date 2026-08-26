@@ -1,0 +1,198 @@
+{
+  "libraryName": "Simulink Support Package for LEGO MINDSTORMS EV3 Hardware",
+  "generatedAt": "2026-08-19T14:31:14",
+  "blockCount": 20,
+  "blocks": [
+    {
+      "name": "Display",
+      "referenceBlock": "legoev3lib/Display",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Display",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Motor",
+      "referenceBlock": "legoev3lib/Motor",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Motor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "NXT Sensors",
+      "referenceBlock": "legoev3lib/NXT Sensors",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Common_Blocks",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Speaker",
+      "referenceBlock": "legoev3lib/Speaker",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Speaker",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Status Light",
+      "referenceBlock": "legoev3lib/Status Light",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Status Light",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Battery",
+      "referenceBlock": "legoev3lib/Battery",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Button",
+      "referenceBlock": "legoev3lib/Button",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Button",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Color Sensor",
+      "referenceBlock": "legoev3lib/Color Sensor",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Color Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Encoder",
+      "referenceBlock": "legoev3lib/Encoder",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Encoder",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gyro Sensor",
+      "referenceBlock": "legoev3lib/Gyro Sensor",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Gyro Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "I2C Register Read",
+      "referenceBlock": "legoev3lib/I2C Register Read",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Infrared Sensor",
+      "referenceBlock": "legoev3lib/Infrared Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Infrared Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pixy2 Vision Sensor",
+      "referenceBlock": "legoev3lib/Pixy2 Vision Sensor",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ev3.pixy2_vision",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP/IP Receive",
+      "referenceBlock": "legoev3lib/TCP/IP Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "TCP/IP Send",
+      "referenceBlock": "legoev3lib/TCP/IP Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Timer",
+      "referenceBlock": "legoev3lib/Timer",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Touch Sensor",
+      "referenceBlock": "legoev3lib/Touch Sensor",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Touch Sensor",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "legoev3lib/UDP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "legoev3lib/UDP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Send",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ultrasonic Sensor",
+      "referenceBlock": "legoev3lib/Ultrasonic Sensor",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LEGO MINDSTORMS EV3 Ultrasonic Sensor",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

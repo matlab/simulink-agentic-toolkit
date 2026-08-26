@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:08",
+  "generatedAtDatenum": 740213.74454777781,
+  "generatorVersion": 4,
+  "libraries": [
+    "Communications Toolbox Support Package for ADALM-PLUTO Radio"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Communications_Toolbox_Support_Package_for_ADALM_PLUTO_Radio": {
+      "blockCount": 2
+    }
+  }
+}

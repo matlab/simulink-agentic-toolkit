@@ -1,0 +1,387 @@
+{
+  "libraryName": "Robotics System Toolbox",
+  "generatedAt": "2026-08-19T14:31:07",
+  "blockCount": 41,
+  "blocks": [
+    {
+      "name": "Check Collision",
+      "referenceBlock": "robotslcollision/Check Collision",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Check Collision",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Collision Box",
+      "referenceBlock": "robotslcollision/Collision Box",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Collision Box",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Collision Capsule",
+      "referenceBlock": "robotslcollision/Collision Capsule",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Collision Capsule",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Collision Cylinder",
+      "referenceBlock": "robotslcollision/Collision Cylinder",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Collision Cylinder",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Collision Mesh",
+      "referenceBlock": "robotslcollision/Collision Mesh",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Collision Mesh",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Collision Sphere",
+      "referenceBlock": "robotslcollision/Collision Sphere",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Collision Sphere",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Rigid Body Tree",
+      "referenceBlock": "robotslcollision/Rigid Body Tree",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rigid Body Tree",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Rigid Body Tree Check Collision",
+      "referenceBlock": "robotslcollision/Rigid Body Tree Check Collision",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Rigid Body Tree Check Collision",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Gazebo Apply Command",
+      "referenceBlock": "robotgazebolib/Gazebo Apply Command",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gazebo Apply Command",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gazebo Blank Message",
+      "referenceBlock": "robotgazebolib/Gazebo Blank Message",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gazebo Blank Message",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gazebo Pacer",
+      "referenceBlock": "robotgazebolib/Gazebo Pacer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gazebo Pacer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gazebo Publish",
+      "referenceBlock": "robotgazebolib/Gazebo Publish",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gazebo Publish",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gazebo Read",
+      "referenceBlock": "robotgazebolib/Gazebo Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gazebo Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gazebo Select Entity",
+      "referenceBlock": "robotgazebolib/Gazebo Select Entity",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gazebo Select Entity",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gazebo Subscribe",
+      "referenceBlock": "robotgazebolib/Gazebo Subscribe",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gazebo Subscribe",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Forward Dynamics",
+      "referenceBlock": "robotmaniplib/Forward Dynamics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Forward Dynamics",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Get Jacobian",
+      "referenceBlock": "robotmaniplib/Get Jacobian",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Get Jacobian",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Get Transform",
+      "referenceBlock": "robotmaniplib/Get Transform",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Get Transform",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gravity Torque",
+      "referenceBlock": "robotmaniplib/Gravity Torque",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Gravity Torque",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Dynamics",
+      "referenceBlock": "robotmaniplib/Inverse Dynamics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Inverse Dynamics",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Inverse Kinematics",
+      "referenceBlock": "robotmaniplib/Inverse Kinematics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Inverse Kinematics",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Joint Space Mass Matrix",
+      "referenceBlock": "robotmaniplib/Joint Space Mass Matrix",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Joint Space Mass Matrix",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Joint Space Motion Model",
+      "referenceBlock": "robotmaniplib/Joint Space Motion Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Joint Space Motion Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Task Space Motion Model",
+      "referenceBlock": "robotmaniplib/Task Space Motion Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Task Space Motion Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Velocity Product Torque",
+      "referenceBlock": "robotmaniplib/Velocity Product Torque",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Velocity Product Torque",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ackermann Kinematic Model",
+      "referenceBlock": "robotmobilelib/Ackermann Kinematic Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Ackermann Kinematic Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bicycle Kinematic Model",
+      "referenceBlock": "robotmobilelib/Bicycle Kinematic Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bicycle Kinematic Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Differential Drive Kinematic Model",
+      "referenceBlock": "robotmobilelib/Differential Drive Kinematic Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Differential Drive Kinematic Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unicycle Kinematic Model",
+      "referenceBlock": "robotmobilelib/Unicycle Kinematic Model",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Unicycle Kinematic Model",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pure Pursuit",
+      "referenceBlock": "robotmobilelib/Pure Pursuit",
+      "blockType": "nav.slalgs.internal.PurePursuit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Robot",
+      "referenceBlock": "robotsim3dlib/Simulation 3D Robot",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Robot",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Camera",
+      "referenceBlock": "robotsim3dlib/Simulation 3D Camera",
+      "blockType": "Simulation3DCamera",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Lidar",
+      "referenceBlock": "robotsim3dlib/Simulation 3D Lidar",
+      "blockType": "Simulation3DLidar",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Simulation 3D Scene Configuration",
+      "referenceBlock": "robotsim3dlib/Simulation 3D Scene Configuration",
+      "blockType": "Simulation3DSceneConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Coordinate Transformation Conversion",
+      "referenceBlock": "robotutilslib/Coordinate Transformation Conversion",
+      "blockType": "robotics.slcore.internal.block.CoordinateTransformationConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Minimum Jerk Polynomial Trajectory",
+      "referenceBlock": "robotutilslib/Minimum Jerk Polynomial Trajectory",
+      "blockType": "shared_uav_rst.sluav.internal.system.MinJerkPolyTraj",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Minimum Snap Polynomial Trajectory",
+      "referenceBlock": "robotutilslib/Minimum Snap Polynomial Trajectory",
+      "blockType": "shared_uav_rst.sluav.internal.system.MinSnapPolyTraj",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Polynomial Trajectory",
+      "referenceBlock": "robotutilslib/Polynomial Trajectory",
+      "blockType": "robotics.slcore.internal.block.PolyTrajSys",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotation Trajectory",
+      "referenceBlock": "robotutilslib/Rotation Trajectory",
+      "blockType": "robotics.slcore.internal.block.RotTrajSys",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transform Trajectory",
+      "referenceBlock": "robotutilslib/Transform Trajectory",
+      "blockType": "robotics.slcore.internal.block.TransformTrajSys",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trapezoidal Velocity Profile Trajectory",
+      "referenceBlock": "robotutilslib/Trapezoidal Velocity Profile Trajectory",
+      "blockType": "robotics.slcore.internal.block.TrapVelTrajSys",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

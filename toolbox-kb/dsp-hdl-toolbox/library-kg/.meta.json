@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.74455359951,
+  "generatorVersion": 4,
+  "libraries": [
+    "DSP HDL Toolbox"
+  ],
+  "blockCount": 8,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "DSP_HDL_Toolbox": {
+      "blockCount": 8
+    }
+  }
+}

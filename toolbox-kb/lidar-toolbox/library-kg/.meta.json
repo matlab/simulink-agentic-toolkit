@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456922454,
+  "generatorVersion": 4,
+  "libraries": [
+    "Lidar Toolbox"
+  ],
+  "blockCount": 1,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Lidar_Toolbox": {
+      "blockCount": 1
+    }
+  }
+}

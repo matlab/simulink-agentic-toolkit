@@ -1,0 +1,617 @@
+{
+  "commonBlocks": [
+    "Amplifier",
+    "Filter",
+    "Mixer",
+    "S-parameters",
+    "Configuration",
+    "IIP3 Testbench",
+    "Noise Figure Testbench",
+    "RF Budget"
+  ],
+  "categories": [
+    {
+      "name": "circuit-elements",
+      "description": "Lumped and distributed RF elements",
+      "keywords": [
+        "amplifier",
+        "filter",
+        "capacitor",
+        "inductor",
+        "resistor",
+        "transmission",
+        "s-param"
+      ]
+    },
+    {
+      "name": "junctions-switches",
+      "description": "RF switches, dividers, and circulators",
+      "keywords": [
+        "switch",
+        "divider",
+        "coupler",
+        "circulator",
+        "spdt",
+        "spst"
+      ]
+    },
+    {
+      "name": "sources",
+      "description": "RF signal sources",
+      "keywords": [
+        "source",
+        "cw",
+        "noise",
+        "sinusoid"
+      ]
+    },
+    {
+      "name": "systems",
+      "description": "System-level RF blocks",
+      "keywords": [
+        "channel",
+        "modulator",
+        "demodulator",
+        "iq"
+      ]
+    },
+    {
+      "name": "testbenches",
+      "description": "RF measurement testbenches",
+      "keywords": [
+        "testbench",
+        "iip3",
+        "noise figure",
+        "gain",
+        "oip"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Configuration and connectivity",
+      "keywords": [
+        "configuration",
+        "inport",
+        "outport",
+        "spectrum",
+        "connection"
+      ]
+    },
+    {
+      "name": "physical-models",
+      "description": "Physical component model libraries",
+      "keywords": [
+        "amplifiers",
+        "mixers",
+        "ladder",
+        "black box",
+        "lines"
+      ]
+    },
+    {
+      "name": "math-models",
+      "description": "Math-based RF models for budget analysis",
+      "keywords": [
+        "budget",
+        "sparameters",
+        "power amplifier"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Amplifier",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Amplifiers",
+      "value": "physical-models"
+    },
+    {
+      "block": "Antenna",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Attenuator",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Black Box Elements",
+      "value": "physical-models"
+    },
+    {
+      "block": "C",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Channel",
+      "value": "systems"
+    },
+    {
+      "block": "Circulator",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "Configuration",
+      "value": "utilities"
+    },
+    {
+      "block": "Connection Label",
+      "value": "utilities"
+    },
+    {
+      "block": "Connection Port",
+      "value": "utilities"
+    },
+    {
+      "block": "Continuous Wave",
+      "value": "sources"
+    },
+    {
+      "block": "Coupler",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "Demodulator",
+      "value": "systems"
+    },
+    {
+      "block": "Divider",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "Enable",
+      "value": "testbenches"
+    },
+    {
+      "block": "Filter",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Gnd",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "IIP2 Testbench",
+      "value": "testbenches"
+    },
+    {
+      "block": "IIP3 Testbench",
+      "value": "testbenches"
+    },
+    {
+      "block": "IMT Mixer",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "IQ Demodulator",
+      "value": "systems"
+    },
+    {
+      "block": "IQ Modulator",
+      "value": "systems"
+    },
+    {
+      "block": "Ideal Transformer",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Inport",
+      "value": "utilities"
+    },
+    {
+      "block": "L",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "LC Ladder",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Ladder Filters",
+      "value": "physical-models"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "testbenches"
+    },
+    {
+      "block": "Mixer",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Mixers",
+      "value": "physical-models"
+    },
+    {
+      "block": "Modulator",
+      "value": "systems"
+    },
+    {
+      "block": "Mutual Inductor",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Noise",
+      "value": "sources"
+    },
+    {
+      "block": "Noise Figure Testbench",
+      "value": "testbenches"
+    },
+    {
+      "block": "OIP2 Testbench",
+      "value": "testbenches"
+    },
+    {
+      "block": "OIP3 Testbench",
+      "value": "testbenches"
+    },
+    {
+      "block": "Outport",
+      "value": "utilities"
+    },
+    {
+      "block": "Phase Shift",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Potentiometer",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "Power Amplifier",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "R",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "RF Budget",
+      "value": "math-models"
+    },
+    {
+      "block": "S-Parameter Testbench",
+      "value": "testbenches"
+    },
+    {
+      "block": "S-parameters",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "SPDT",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "SPST",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "SPnT",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "Signal Combiner",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Sinusoid",
+      "value": "sources"
+    },
+    {
+      "block": "Sparameters",
+      "value": "math-models"
+    },
+    {
+      "block": "Spectrum Analyzer",
+      "value": "utilities"
+    },
+    {
+      "block": "Switch",
+      "value": "junctions-switches"
+    },
+    {
+      "block": "Three-Winding Transformer",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Transducer Gain Testbench",
+      "value": "testbenches"
+    },
+    {
+      "block": "Transmission Line",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Transmission Lines",
+      "value": "physical-models"
+    },
+    {
+      "block": "VGA",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Variable Attenuator",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Variable Capacitor",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Variable Inductor",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Variable Phase Shift",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Variable Resistor",
+      "value": "circuit-elements"
+    },
+    {
+      "block": "Z",
+      "value": "circuit-elements"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Amplifier",
+      "value": "Model an RF amplifier — use for simulating gain, noise figure, and nonlinearity in receive or transmit chains"
+    },
+    {
+      "block": "Amplifiers",
+      "value": "Library of physical amplifier models — use for accessing validated amplifier component models"
+    },
+    {
+      "block": "Antenna",
+      "value": "Model an antenna element — use for simulating radiation pattern, gain, and impedance matching"
+    },
+    {
+      "block": "Attenuator",
+      "value": "Model a fixed attenuator — use for simulating signal level reduction with defined loss"
+    },
+    {
+      "block": "Black Box Elements",
+      "value": "Library of S-parameter components — use for importing measured data into circuit simulation"
+    },
+    {
+      "block": "C",
+      "value": "Capacitor element — use for representing capacitance in RF matching networks and filters"
+    },
+    {
+      "block": "Channel",
+      "value": "Model an RF propagation channel — use for simulating path loss, fading, and multipath"
+    },
+    {
+      "block": "Circulator",
+      "value": "Model an RF circulator — use for routing signals between antenna, transmitter, and receiver ports"
+    },
+    {
+      "block": "Configuration",
+      "value": "Configure RF simulation parameters — use for setting solver, frequency, and simulation options"
+    },
+    {
+      "block": "Connection Label",
+      "value": "Label an RF connection — use for identifying and documenting signal paths in RF schematics"
+    },
+    {
+      "block": "Connection Port",
+      "value": "Physical connection port — use for exposing RF ports at subsystem boundaries"
+    },
+    {
+      "block": "Continuous Wave",
+      "value": "Generate a CW RF source — use for providing single-tone excitation at a specified frequency"
+    },
+    {
+      "block": "Coupler",
+      "value": "Model a directional coupler — use for sampling a fraction of RF power for monitoring"
+    },
+    {
+      "block": "Demodulator",
+      "value": "Model an RF demodulator — use for frequency down-conversion from RF to baseband"
+    },
+    {
+      "block": "Divider",
+      "value": "Model a power divider — use for splitting RF power equally between output ports"
+    },
+    {
+      "block": "Enable",
+      "value": "Enable port for conditional execution — use for gating subsystem execution in testbenches"
+    },
+    {
+      "block": "Filter",
+      "value": "Model an RF filter — use for simulating bandpass, lowpass, or highpass frequency selection"
+    },
+    {
+      "block": "Gnd",
+      "value": "RF ground reference — use for terminating unused ports with matched impedance"
+    },
+    {
+      "block": "IIP2 Testbench",
+      "value": "Measure input 2nd-order intercept point — use for characterizing 2nd-order nonlinearity"
+    },
+    {
+      "block": "IIP3 Testbench",
+      "value": "Measure input 3rd-order intercept point — use for characterizing 3rd-order nonlinearity and dynamic range"
+    },
+    {
+      "block": "IMT Mixer",
+      "value": "Intermodulation table mixer — use for simulating mixer with tabulated intermodulation products"
+    },
+    {
+      "block": "IQ Demodulator",
+      "value": "Model an IQ demodulator — use for converting RF to complex baseband I and Q signals"
+    },
+    {
+      "block": "IQ Modulator",
+      "value": "Model an IQ modulator — use for converting complex baseband I and Q to RF carrier"
+    },
+    {
+      "block": "Ideal Transformer",
+      "value": "Model an ideal transformer — use for impedance transformation in matching networks"
+    },
+    {
+      "block": "Inport",
+      "value": "RF circuit input port — use for connecting Simulink signals into the RF domain"
+    },
+    {
+      "block": "L",
+      "value": "Inductor element — use for representing inductance in RF matching networks and filters"
+    },
+    {
+      "block": "LC Ladder",
+      "value": "LC ladder network — use for implementing lumped-element filter topologies"
+    },
+    {
+      "block": "Ladder Filters",
+      "value": "Library of ladder filter topologies — use for accessing standard LC filter implementations"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Custom MATLAB function in RF model — use for implementing custom signal processing within testbenches"
+    },
+    {
+      "block": "Mixer",
+      "value": "Model an RF mixer — use for simulating frequency up/down conversion with conversion gain and nonlinearity"
+    },
+    {
+      "block": "Mixers",
+      "value": "Library of physical mixer models — use for accessing validated mixer component models"
+    },
+    {
+      "block": "Modulator",
+      "value": "Model an RF modulator — use for frequency up-conversion from baseband to RF"
+    },
+    {
+      "block": "Mutual Inductor",
+      "value": "Model coupled inductors — use for simulating transformer coupling between RF coils"
+    },
+    {
+      "block": "Noise",
+      "value": "Generate RF noise source — use for modeling thermal noise in receiver sensitivity analysis"
+    },
+    {
+      "block": "Noise Figure Testbench",
+      "value": "Measure noise figure — use for characterizing receiver noise performance"
+    },
+    {
+      "block": "OIP2 Testbench",
+      "value": "Measure output 2nd-order intercept point — use for characterizing transmitter 2nd-order distortion"
+    },
+    {
+      "block": "OIP3 Testbench",
+      "value": "Measure output 3rd-order intercept point — use for characterizing transmitter 3rd-order distortion"
+    },
+    {
+      "block": "Outport",
+      "value": "RF circuit output port — use for connecting RF signals out to the Simulink domain"
+    },
+    {
+      "block": "Phase Shift",
+      "value": "Model a fixed phase shifter — use for adding constant phase rotation in RF signal paths"
+    },
+    {
+      "block": "Potentiometer",
+      "value": "Model an RF potentiometer — use for variable resistance in RF bias or control networks"
+    },
+    {
+      "block": "Power Amplifier",
+      "value": "Model a power amplifier with memory — use for simulating PA nonlinearity, AM-AM, and AM-PM distortion"
+    },
+    {
+      "block": "R",
+      "value": "Resistor element — use for representing resistance in RF networks and terminations"
+    },
+    {
+      "block": "RF Budget",
+      "value": "Compute RF budget analysis — use for cascaded gain, noise, and linearity analysis across an RF chain"
+    },
+    {
+      "block": "S-Parameter Testbench",
+      "value": "Measure S-parameters of a circuit — use for extracting scattering parameters from an RF subsystem"
+    },
+    {
+      "block": "S-parameters",
+      "value": "Model a component from S-parameter data — use for importing measured or simulated network parameters"
+    },
+    {
+      "block": "SPDT",
+      "value": "Single-pole double-throw switch — use for routing RF between two paths"
+    },
+    {
+      "block": "SPST",
+      "value": "Single-pole single-throw switch — use for enabling/disabling an RF signal path"
+    },
+    {
+      "block": "SPnT",
+      "value": "Single-pole N-throw switch — use for routing RF to one of multiple paths"
+    },
+    {
+      "block": "Signal Combiner",
+      "value": "Combine multiple RF signals — use for power combining in phased arrays or multi-path architectures"
+    },
+    {
+      "block": "Sinusoid",
+      "value": "Generate sinusoidal RF source — use for single-frequency excitation in circuit simulation"
+    },
+    {
+      "block": "Sparameters",
+      "value": "S-parameter component for budget analysis — use for inserting measured network data into RF budget chain"
+    },
+    {
+      "block": "Spectrum Analyzer",
+      "value": "Display RF spectrum — use for visualizing frequency content at any point in the RF chain"
+    },
+    {
+      "block": "Switch",
+      "value": "Two-terminal RF switch — use for connecting or disconnecting an RF path"
+    },
+    {
+      "block": "Three-Winding Transformer",
+      "value": "Three-winding RF transformer — use for power splitting or combining with isolation"
+    },
+    {
+      "block": "Transducer Gain Testbench",
+      "value": "Measure transducer power gain — use for characterizing amplifier gain under specific source and load conditions"
+    },
+    {
+      "block": "Transmission Line",
+      "value": "Model a transmission line — use for simulating delay, loss, and impedance effects in interconnects"
+    },
+    {
+      "block": "Transmission Lines",
+      "value": "Library of transmission line models — use for accessing coax, microstrip, and stripline models"
+    },
+    {
+      "block": "VGA",
+      "value": "Variable-gain amplifier — use for simulating signal-controlled gain in AGC loops"
+    },
+    {
+      "block": "Variable Attenuator",
+      "value": "Signal-controlled attenuator — use for simulating programmable loss in RF paths"
+    },
+    {
+      "block": "Variable Capacitor",
+      "value": "Signal-controlled capacitor — use for simulating tunable matching networks or varactors"
+    },
+    {
+      "block": "Variable Inductor",
+      "value": "Signal-controlled inductor — use for simulating tunable inductors in matching networks"
+    },
+    {
+      "block": "Variable Phase Shift",
+      "value": "Signal-controlled phase shifter — use for simulating beam steering in phased arrays"
+    },
+    {
+      "block": "Variable Resistor",
+      "value": "Signal-controlled resistor — use for simulating programmable attenuation or PIN diodes"
+    },
+    {
+      "block": "Z",
+      "value": "Impedance element — use for representing arbitrary complex impedance in RF networks"
+    }
+  ]
+}

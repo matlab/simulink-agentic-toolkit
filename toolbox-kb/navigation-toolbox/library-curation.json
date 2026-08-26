@@ -1,0 +1,136 @@
+{
+  "commonBlocks": [
+    "IMU",
+    "GPS",
+    "AHRS",
+    "Pure Pursuit",
+    "INS"
+  ],
+  "categories": [
+    {
+      "name": "sensor-fusion",
+      "description": "Orientation and position estimation from sensor data",
+      "keywords": [
+        "ahrs",
+        "filter",
+        "orientation",
+        "fusion",
+        "imu"
+      ]
+    },
+    {
+      "name": "sensor-simulation",
+      "description": "Simulated navigation sensor models",
+      "keywords": [
+        "gps",
+        "imu",
+        "ins",
+        "sensor",
+        "simulate"
+      ]
+    },
+    {
+      "name": "path-following",
+      "description": "Path tracking and obstacle avoidance algorithms",
+      "keywords": [
+        "pursuit",
+        "path",
+        "obstacle",
+        "avoidance",
+        "steering"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "AHRS",
+      "value": "sensor-fusion"
+    },
+    {
+      "block": "Complementary Filter",
+      "value": "sensor-fusion"
+    },
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "sensor-fusion"
+    },
+    {
+      "block": "GPS",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "IMU",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "IMU Filter",
+      "value": "sensor-fusion"
+    },
+    {
+      "block": "INS",
+      "value": "sensor-simulation"
+    },
+    {
+      "block": "Pure Pursuit",
+      "value": "path-following"
+    },
+    {
+      "block": "Timed Elastic Band (TEB)",
+      "value": "path-following"
+    },
+    {
+      "block": "Vector Field Histogram",
+      "value": "path-following"
+    },
+    {
+      "block": "ecompass",
+      "value": "sensor-fusion"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "AHRS",
+      "value": "Estimate orientation using an Attitude and Heading Reference System filter — use for fusing accelerometer, gyroscope, and magnetometer data into robust orientation estimates"
+    },
+    {
+      "block": "Complementary Filter",
+      "value": "Estimate orientation using a complementary filter — use for lightweight sensor fusion of accelerometer and gyroscope with tunable trust between sensors"
+    },
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "Convert between rotation representations — use for converting quaternions, Euler angles, rotation matrices, or axis-angle representations"
+    },
+    {
+      "block": "GPS",
+      "value": "Simulate GPS receiver measurements — use for generating realistic position and velocity readings with configurable noise and satellite geometry"
+    },
+    {
+      "block": "IMU",
+      "value": "Simulate inertial measurement unit sensor readings — use for generating realistic accelerometer and gyroscope measurements with configurable noise models"
+    },
+    {
+      "block": "IMU Filter",
+      "value": "Estimate orientation from IMU data using a Kalman-based filter — use for accurate attitude estimation from noisy accelerometer and gyroscope measurements"
+    },
+    {
+      "block": "INS",
+      "value": "Simulate integrated navigation system measurements — use for generating fused position, velocity, and orientation data from a combined GPS/IMU system"
+    },
+    {
+      "block": "Pure Pursuit",
+      "value": "Follow a path using the pure pursuit steering algorithm — use for autonomous vehicle or robot lateral control to track waypoint-based reference paths"
+    },
+    {
+      "block": "Timed Elastic Band (TEB)",
+      "value": "Plan time-optimal trajectories while avoiding obstacles — use for generating smooth, collision-free paths that respect kinematic constraints in real time"
+    },
+    {
+      "block": "Vector Field Histogram",
+      "value": "Compute obstacle-free steering direction using sensor data — use for reactive obstacle avoidance in mobile robots using range sensor measurements"
+    },
+    {
+      "block": "ecompass",
+      "value": "Compute heading from accelerometer and magnetometer readings — use for determining magnetic north direction in tilt-compensated compass applications"
+    }
+  ]
+}

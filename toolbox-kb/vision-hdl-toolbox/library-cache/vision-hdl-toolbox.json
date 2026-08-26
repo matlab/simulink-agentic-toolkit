@@ -1,0 +1,99 @@
+{
+  "libraryName": "Vision HDL Toolbox",
+  "generatedAt": "2026-08-19T14:31:18",
+  "blockCount": 9,
+  "blocks": [
+    {
+      "name": "Analysis & Enhancement",
+      "referenceBlock": "visionhdllib/Analysis & Enhancement",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Analysis & Enhancement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Conversions",
+      "referenceBlock": "visionhdllib/Conversions",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Conversions",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Examples",
+      "referenceBlock": "visionhdllib/Examples",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Demos",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Filtering",
+      "referenceBlock": "visionhdllib/Filtering",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Filtering",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Geometric Transforms",
+      "referenceBlock": "visionhdllib/Geometric Transforms",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Morphological Operations",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Info",
+      "referenceBlock": "visionhdllib/Info",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Info",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Morphological Operations",
+      "referenceBlock": "visionhdllib/Morphological Operations",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Morphological Operations",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Statistics",
+      "referenceBlock": "visionhdllib/Statistics",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Statistics",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "visionhdllib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Transforms",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

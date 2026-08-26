@@ -4,7 +4,7 @@ description: "Generate a standalone bug report that another developer can use to
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.2"
+  version: "1.3"
 ---
 
 # Filing Bug Reports
@@ -56,7 +56,7 @@ Generate a self-contained bug report as a Markdown file that gives a receiving d
    **SATK-specific** (when Simulink MCP tools are available):
    - SATK version: read the `VERSION` file at the SATK root. If it doesn't exist and a `.git/` folder is present, read the latest commit hash and note "development build (<hash>)". If neither exists, ask the user what version of Simulink Agentic Toolkit they are using
    - MATLAB: `evaluate_matlab_code` → `disp(version); ver('simulink'); disp(pwd); disp(computer('arch'))`
-   - `satk_initialize.m` status: `evaluate_matlab_code` → `which('model_read')` (empty = not run)
+   - SATK toolbox status: `evaluate_matlab_code` → `which('model_read')` (empty = toolbox not installed)
    - Connector: `evaluate_matlab_code` → `try; disp(connector.securePort); catch; disp('not running'); end`
    - MCP config: read `.vscode/mcp.json` for server mode and binary path
    - If this is a layout issue and satk status is ok: `evaluate_matlab_code` → `layout.LayoutStateManager.instance().getAnonymizedLayoutSnapshotsPath()` but ask user if they agree to share anonymized layout information first. If you get user permission, do not read the contents of the file at the path returned by getAnonymizedLayoutSnapshotsPath, instead use a tool call to append this very large file directly to the final bug report.

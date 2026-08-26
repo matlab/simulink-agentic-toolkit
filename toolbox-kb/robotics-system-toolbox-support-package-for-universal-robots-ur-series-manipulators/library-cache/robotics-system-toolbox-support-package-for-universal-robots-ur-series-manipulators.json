@@ -1,0 +1,72 @@
+{
+  "libraryName": "Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators",
+  "generatedAt": "2026-08-19T14:31:07",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "Actuate Gripper",
+      "referenceBlock": "urRTDElib/Actuate Gripper",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Follow Joint Waypoints",
+      "referenceBlock": "urRTDElib/Follow Joint Waypoints",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Read Controller Output",
+      "referenceBlock": "urRTDElib/Read Controller Output",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Read Joint Configuration",
+      "referenceBlock": "urRTDElib/Read Joint Configuration",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Read Motion Status",
+      "referenceBlock": "urRTDElib/Read Motion Status",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Send Joint Configuration",
+      "referenceBlock": "urRTDElib/Send Joint Configuration",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,46 @@
+{
+  "commonBlocks": [
+    "Modulation"
+  ],
+  "categories": [
+    {
+      "name": "wireless-hdl",
+      "description": "HDL-optimized wireless communication building blocks for FPGA",
+      "keywords": [
+        "hdl",
+        "wireless",
+        "fpga",
+        "modulation",
+        "synchronization"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Error Detection and Correction",
+      "value": "wireless-hdl"
+    },
+    {
+      "block": "Modulation",
+      "value": "wireless-hdl"
+    },
+    {
+      "block": "Utilities",
+      "value": "wireless-hdl"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Error Detection and Correction",
+      "value": "HDL-optimized blocks for forward error correction — use for implementing channel coding in FPGA-based wireless receivers"
+    },
+    {
+      "block": "Modulation",
+      "value": "HDL-optimized modulation and demodulation blocks — use for implementing digital modulation schemes in FPGA-based wireless transceivers"
+    },
+    {
+      "block": "Utilities",
+      "value": "HDL-optimized utility blocks for wireless designs — use for signal conditioning, buffering, or format conversion in FPGA wireless implementations"
+    }
+  ]
+}

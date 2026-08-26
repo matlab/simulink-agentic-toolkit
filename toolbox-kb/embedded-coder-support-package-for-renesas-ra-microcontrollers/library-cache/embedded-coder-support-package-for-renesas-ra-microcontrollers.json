@@ -1,0 +1,72 @@
+{
+  "libraryName": "Embedded Coder Support Package for Renesas RA Microcontrollers",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "ra6basedlib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HardwareInterrupt",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Analog To Digital Converter",
+      "referenceBlock": "ra6basedlib/Analog To Digital Converter",
+      "blockType": "renesas.ra.blocks.analogToDigitalConverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Pins Read",
+      "referenceBlock": "ra6basedlib/Digital Port Pins Read",
+      "blockType": "renesas.ra.blocks.digitalPortPinsRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Digital Port Pins Write",
+      "referenceBlock": "ra6basedlib/Digital Port Pins Write",
+      "blockType": "renesas.ra.blocks.digitalPortPinsWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "PWM Output",
+      "referenceBlock": "ra6basedlib/PWM Output",
+      "blockType": "renesas.ra.blocks.pulseWidthModulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Three-Phase PWM",
+      "referenceBlock": "ra6basedlib/Three-Phase PWM",
+      "blockType": "renesas.ra.blocks.threePhasePWM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

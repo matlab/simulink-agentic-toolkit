@@ -1,0 +1,549 @@
+{
+  "libraryName": "Vehicle Dynamics Blockset",
+  "generatedAt": "2026-08-17T12:07:54",
+  "blockCount": 59,
+  "blocks": [
+    {
+      "name": "Two-Way Connection",
+      "referenceBlock": "autolibsimscapeutils/Two-Way Connection",
+      "blockType": "TwoWayConnection",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Connection Port",
+      "referenceBlock": "autolibsimscapeutils/Connection Port",
+      "blockType": "PMIOPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Acceleration and Braking",
+      "referenceBlock": "vehdynlibscenario/Acceleration and Braking",
+      "blockType": "AccelerationandDeceleration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Constant Radius",
+      "referenceBlock": "vehdynlibscenario/Constant Radius",
+      "blockType": "ConstantRadius",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Drive Cycle Source",
+      "referenceBlock": "vehdynlibscenario/Drive Cycle Source",
+      "blockType": "DriveCycleSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fishhook",
+      "referenceBlock": "vehdynlibscenario/Fishhook",
+      "blockType": "Fishhook",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Lane Change",
+      "referenceBlock": "vehdynlibscenario/Lane Change",
+      "blockType": "LaneChange",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Reference Path Generator",
+      "referenceBlock": "vehdynlibscenario/Reference Path Generator",
+      "blockType": "ReferencePathGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Sine With Dwell",
+      "referenceBlock": "vehdynlibscenario/Sine With Dwell",
+      "blockType": "SineWithDwell",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Slowly Increasing Steer",
+      "referenceBlock": "vehdynlibscenario/Slowly Increasing Steer",
+      "blockType": "IncreasingSteer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Swept Sine",
+      "referenceBlock": "vehdynlibscenario/Swept Sine",
+      "blockType": "SweptSineSteer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Wide Open Throttle",
+      "referenceBlock": "vehdynlibscenario/Wide Open Throttle",
+      "blockType": "DriveCycleSource",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Lateral Driver",
+      "referenceBlock": "vehdynlibdriver/Lateral Driver",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Lateral Driver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Predictive Driver",
+      "referenceBlock": "vehdynlibdriver/Predictive Driver",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Predictive Driver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Longitudinal Driver",
+      "referenceBlock": "vehdynlibdriver/Longitudinal Driver",
+      "blockType": "LongitudinalDriver",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Actor Transform Get",
+      "referenceBlock": "vehdynlibsim3dcore/Simulation 3D Actor Transform Get",
+      "blockType": "Simulation3DActorTransformGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Actor Transform Set",
+      "referenceBlock": "vehdynlibsim3dcore/Simulation 3D Actor Transform Set",
+      "blockType": "Simulation3DActorTransformSet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Camera Get",
+      "referenceBlock": "vehdynlibsim3dcore/Simulation 3D Camera Get",
+      "blockType": "Simulation3DCameraGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Message Get",
+      "referenceBlock": "vehdynlibsim3dcore/Simulation 3D Message Get",
+      "blockType": "Simulation3DMessageGet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Message Set",
+      "referenceBlock": "vehdynlibsim3dcore/Simulation 3D Message Set",
+      "blockType": "Simulation3DMessageSet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Ray Tracer",
+      "referenceBlock": "vehdynlibsim3dcore/Simulation 3D Ray Tracer",
+      "blockType": "Simulation3DRayTracer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Scene Configuration",
+      "referenceBlock": "vehdynlibsim3dcore/Simulation 3D Scene Configuration",
+      "blockType": "Simulation3DSceneConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Physics Vehicle",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Physics Vehicle",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Physics Vehicle",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Dolly",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Dolly",
+      "blockType": "Simulation3DDolly",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Motorcycle",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Motorcycle",
+      "blockType": "Simulation3DMotorcycle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Terrain Sensor",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Terrain Sensor",
+      "blockType": "Simulation3DTerrainSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Three Wheeled Vehicle",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Three Wheeled Vehicle",
+      "blockType": "Simulation3DThreeWheeledVehicle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulation 3D Tractor",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Tractor",
+      "blockType": "Simulation3DTractor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Trailer",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Trailer",
+      "blockType": "Simulation3DTrailer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Vehicle",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Vehicle",
+      "blockType": "Simulation3DVehicle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Vehicle with Ground Following",
+      "referenceBlock": "vehdynlibsim3d/Simulation 3D Vehicle with Ground Following",
+      "blockType": "Simulation3DVehiclewithGroundFollowing",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle Terrain Sensor",
+      "referenceBlock": "vehdynlibsim3d/Vehicle Terrain Sensor",
+      "blockType": "VehicleTerrainSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Motorcycle Chain",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Couplings/Motorcycle Chain",
+      "blockType": "MotorcycleChain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Rotational Inertia",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Couplings/Rotational Inertia",
+      "blockType": "RotationalInertia",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Split Torsional Compliance",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Couplings/Split Torsional Compliance",
+      "blockType": "SplitTorsionalCompliance",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Torsional Compliance",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Couplings/Torsional Compliance",
+      "blockType": "TorsionalCompliance",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Active Differential",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Active Differential",
+      "blockType": "ActiveSlipDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Limited Slip Differential",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Limited Slip Differential",
+      "blockType": "LimitedSlipDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Open Differential",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Open Differential",
+      "blockType": "OpenDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Transfer Case",
+      "referenceBlock": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Transfer Case",
+      "blockType": "TransferCase",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Mapped CI Engine",
+      "referenceBlock": "vdynlib/Brakes/Propulsion/Mapped CI Engine",
+      "blockType": "MappedCIEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Mapped Motor",
+      "referenceBlock": "vdynlib/Brakes/Propulsion/Mapped Motor",
+      "blockType": "MappedMotor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Mapped SI Engine",
+      "referenceBlock": "vdynlib/Brakes/Propulsion/Mapped SI Engine",
+      "blockType": "MappedSIEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Simple Engine",
+      "referenceBlock": "vdynlib/Brakes/Propulsion/Simple Engine",
+      "blockType": "SimpleEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Ideal Fixed Gear Transmission",
+      "referenceBlock": "vdynlib/Brakes/Transmission/Ideal Fixed Gear Transmission",
+      "blockType": "IdealFixedGearTransmission",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Gearbox",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Couplings/Gearbox",
+      "blockType": "Gearbox",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Motorcycle Chain",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Couplings/Motorcycle Chain",
+      "blockType": "MotorcycleChain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rotational Inertia",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Couplings/Rotational Inertia",
+      "blockType": "RotationalInertia",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Split Torsional Compliance",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Couplings/Split Torsional Compliance",
+      "blockType": "SplitTorsionalCompliance",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Torsional Compliance",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Couplings/Torsional Compliance",
+      "blockType": "TorsionalCompliance",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Active Differential",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Active Differential",
+      "blockType": "ActiveSlipDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Limited Slip Differential",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Limited Slip Differential",
+      "blockType": "LimitedSlipDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Open Differential",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Open Differential",
+      "blockType": "OpenDifferential",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transfer Case",
+      "referenceBlock": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Transfer Case",
+      "blockType": "TransferCase",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mapped CI Engine",
+      "referenceBlock": "vdynlib/Powertrain/Propulsion/Mapped CI Engine",
+      "blockType": "MappedCIEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mapped Motor",
+      "referenceBlock": "vdynlib/Powertrain/Propulsion/Mapped Motor",
+      "blockType": "MappedMotor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mapped SI Engine",
+      "referenceBlock": "vdynlib/Powertrain/Propulsion/Mapped SI Engine",
+      "blockType": "MappedSIEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Engine",
+      "referenceBlock": "vdynlib/Powertrain/Propulsion/Simple Engine",
+      "blockType": "SimpleEngine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Fixed Gear Transmission",
+      "referenceBlock": "vdynlib/Powertrain/Transmission/Ideal Fixed Gear Transmission",
+      "blockType": "IdealFixedGearTransmission",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-24T14:21:54",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

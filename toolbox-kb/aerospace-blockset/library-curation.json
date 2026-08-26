@@ -1,0 +1,2038 @@
+{
+  "commonBlocks": [
+    "6DOF (Euler Angles)",
+    "6DOF (Quaternion)",
+    "COESA Atmosphere Model",
+    "Dryden Wind Turbulence Model  (Continuous (+q -r))",
+    "Aerodynamic Forces and Moments",
+    "Incidence, Sideslip, & Airspeed",
+    "Dynamic Pressure",
+    "Mach Number",
+    "LLA to Flat Earth",
+    "Flat Earth to LLA",
+    "Rotation Angles to Direction Cosine Matrix",
+    "Quaternion Normalize",
+    "WGS84 Gravity Model  ",
+    "Linear Second-Order Actuator",
+    "Discrete Wind Gust Model",
+    "ECEF Position to LLA",
+    "LLA to ECEF Position",
+    "Orbit Propagator Numerical (high precision)",
+    "Spacecraft Dynamics",
+    "6DOF ECEF (Quaternion)"
+  ],
+  "categories": [
+    {
+      "name": "actuators",
+      "description": "Flight control actuators and servo dynamics",
+      "keywords": [
+        "actuator",
+        "servo",
+        "deflection",
+        "rate limit",
+        "control surface"
+      ]
+    },
+    {
+      "name": "aerodynamics",
+      "description": "Aerodynamic forces, moments, and coefficients",
+      "keywords": [
+        "aerodynamic",
+        "force",
+        "moment",
+        "DATCOM",
+        "coefficient"
+      ]
+    },
+    {
+      "name": "animation-visualization",
+      "description": "3D visualization, FlightGear interface, and flight animation",
+      "keywords": [
+        "animation",
+        "FlightGear",
+        "visualization",
+        "3D",
+        "Unreal"
+      ]
+    },
+    {
+      "name": "atmosphere",
+      "description": "Standard and non-standard atmosphere models",
+      "keywords": [
+        "atmosphere",
+        "density",
+        "pressure",
+        "temperature",
+        "altitude"
+      ]
+    },
+    {
+      "name": "celestial-phenomena",
+      "description": "Celestial bodies, ephemeris, eclipse, and Earth orientation",
+      "keywords": [
+        "ephemeris",
+        "eclipse",
+        "nutation",
+        "planetary",
+        "solar flux"
+      ]
+    },
+    {
+      "name": "gravity-magnetic-field",
+      "description": "Gravity and geomagnetic field models",
+      "keywords": [
+        "gravity",
+        "magnetic",
+        "geoid",
+        "WGS84",
+        "harmonic"
+      ]
+    },
+    {
+      "name": "wind-turbulence",
+      "description": "Wind, turbulence, and gust disturbance models",
+      "keywords": [
+        "wind",
+        "turbulence",
+        "gust",
+        "Dryden",
+        "Von Karman"
+      ]
+    },
+    {
+      "name": "equations-of-motion-3dof",
+      "description": "Three-degree-of-freedom flight dynamics",
+      "keywords": [
+        "3DOF",
+        "longitudinal",
+        "body axes",
+        "wind axes",
+        "variable mass"
+      ]
+    },
+    {
+      "name": "equations-of-motion-6dof",
+      "description": "Six-degree-of-freedom flight dynamics",
+      "keywords": [
+        "6DOF",
+        "Euler",
+        "quaternion",
+        "ECEF",
+        "equations of motion"
+      ]
+    },
+    {
+      "name": "point-mass-dynamics",
+      "description": "Simplified point-mass trajectory equations",
+      "keywords": [
+        "point mass",
+        "trajectory",
+        "coordinated flight",
+        "longitudinal"
+      ]
+    },
+    {
+      "name": "cockpit-instruments",
+      "description": "Flight instrument panel displays",
+      "keywords": [
+        "indicator",
+        "cockpit",
+        "instrument",
+        "gauge",
+        "display"
+      ]
+    },
+    {
+      "name": "flight-parameters",
+      "description": "Airspeed, Mach, angles, and aerodynamic parameter computation",
+      "keywords": [
+        "airspeed",
+        "Mach",
+        "dynamic pressure",
+        "incidence",
+        "sideslip"
+      ]
+    },
+    {
+      "name": "gain-scheduling",
+      "description": "Gain-scheduled controllers and matrix interpolation",
+      "keywords": [
+        "gain schedule",
+        "controller",
+        "interpolate",
+        "LPV",
+        "state-space"
+      ]
+    },
+    {
+      "name": "guidance-navigation",
+      "description": "Guidance, range calculation, and inertial navigation sensors",
+      "keywords": [
+        "guidance",
+        "range",
+        "accelerometer",
+        "gyroscope",
+        "IMU"
+      ]
+    },
+    {
+      "name": "body-dynamics",
+      "description": "Mass properties, inertia tensor, and CG estimation",
+      "keywords": [
+        "inertia",
+        "CG",
+        "center of gravity",
+        "mass",
+        "moment"
+      ]
+    },
+    {
+      "name": "pilot-models",
+      "description": "Human pilot transfer function models",
+      "keywords": [
+        "pilot",
+        "crossover",
+        "handling qualities",
+        "neuromuscular"
+      ]
+    },
+    {
+      "name": "propulsion",
+      "description": "Engine and propulsion system models",
+      "keywords": [
+        "turbofan",
+        "engine",
+        "thrust",
+        "spool",
+        "fuel flow"
+      ]
+    },
+    {
+      "name": "rotor-dynamics",
+      "description": "Helicopter and multirotor rotor models",
+      "keywords": [
+        "rotor",
+        "blade",
+        "inflow",
+        "multirotor",
+        "helicopter"
+      ]
+    },
+    {
+      "name": "satellite-dynamics",
+      "description": "Orbit propagation, spacecraft attitude, and CubeSat vehicles",
+      "keywords": [
+        "orbit",
+        "satellite",
+        "spacecraft",
+        "CubeSat",
+        "attitude"
+      ]
+    },
+    {
+      "name": "coordinate-transforms",
+      "description": "Frame conversions between ECEF, ECI, NED, LLA, body, and wind axes",
+      "keywords": [
+        "DCM",
+        "ECEF",
+        "ECI",
+        "LLA",
+        "NED"
+      ]
+    },
+    {
+      "name": "quaternion-utilities",
+      "description": "Quaternion and 3x3 matrix math operations",
+      "keywords": [
+        "quaternion",
+        "matrix",
+        "conjugate",
+        "normalize",
+        "cross product"
+      ]
+    },
+    {
+      "name": "unit-conversion",
+      "description": "Physical unit conversions for aerospace quantities",
+      "keywords": [
+        "conversion",
+        "units",
+        "metric",
+        "imperial",
+        "convert"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "1D Controller Blend: u=(1-L).K1.y+L.K2.y",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "1D Controller [A(v),B(v),C(v),D(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "1D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "1D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "2D Controller Blend",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "2D Controller [A(v),B(v),C(v),D(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "2D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "2D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "3D Controller [A(v),B(v),C(v),D(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "3D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "3D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "3DOF Acceleration",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "3DOF Angular Acceleration",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "3DoF Animation",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "3dof (Body Axes)",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "3dof (Wind Axes)",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "3x3 Cross Product",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "4th Order Point Mass (Longitudinal)",
+      "value": "point-mass-dynamics"
+    },
+    {
+      "block": "4th Order Point Mass Forces (Longitudinal)",
+      "value": "point-mass-dynamics"
+    },
+    {
+      "block": "6DOF (Euler Angles)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "6DOF (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "6DOF Acceleration",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "6DOF Angular Acceleration",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "6DOF ECEF (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "6DOF Wind (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "6DOF Wind (Wind Angles)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "6DoF Animation",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "6th Order Point Mass (Coordinated Flight)",
+      "value": "point-mass-dynamics"
+    },
+    {
+      "block": "6th Order Point Mass Forces (Coordinated Flight)",
+      "value": "point-mass-dynamics"
+    },
+    {
+      "block": "Acceleration Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Adjoint of 3x3 Matrix",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Aerodynamic Forces and Moments",
+      "value": "aerodynamics"
+    },
+    {
+      "block": "Airspeed Indicator",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Altimeter",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Angle Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Angular Acceleration Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Angular Velocity Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Artificial Horizon",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Attitude Dynamics",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Attitude Profile (Geographic Pointing)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Attitude Profile (Nadir Pointing)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Attitude Profile (Sun Tracking)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Besselian Epoch to Julian Epoch",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "CIRA-86 Atmosphere Model",
+      "value": "atmosphere"
+    },
+    {
+      "block": "COESA Atmosphere Model",
+      "value": "atmosphere"
+    },
+    {
+      "block": "Calculate Range",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Cartesian State Vectors to Keplerian Orbital Elements",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Centrifugal Effect Model",
+      "value": "gravity-magnetic-field"
+    },
+    {
+      "block": "Climb Rate Indicator",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Create 3x3 Matrix",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Crossover Pilot Model",
+      "value": "pilot-models"
+    },
+    {
+      "block": "CubeSat Vehicle (Custom Pointing)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "CubeSat Vehicle (Nadir Pointing)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "CubeSat Vehicle (Sun Tracking)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Custom Variable Mass 3dof (Body Axes)",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "Custom Variable Mass 3dof (Wind Axes)",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF (Euler Angles)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF ECEF (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF Wind (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF Wind (Wind Angles)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Delta UT1",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Density Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Determinant of 3x3 Matrix",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Digital DATCOM Forces and Moments",
+      "value": "aerodynamics"
+    },
+    {
+      "block": "Direction Cosine Matrix  to Quaternions",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix Body to Wind",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix Body to Wind to Alpha and Beta",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix ECEF to NED",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix ECEF to NED to Latitude and Longitude",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix ECI to ECEF",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix to Rodrigues",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix to Rotation Angles",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Direction Cosine Matrix to Wind Angles",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Discrete Wind Gust Model",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Continuous (+q +r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Continuous (+q -r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Continuous (-q +r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Discrete (+q +r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Discrete (+q -r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Discrete (-q +r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Dynamic Inflow (3-State)",
+      "value": "rotor-dynamics"
+    },
+    {
+      "block": "Dynamic Inflow (Finite-State)",
+      "value": "rotor-dynamics"
+    },
+    {
+      "block": "Dynamic Pressure",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "ECEF Position to LLA",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "ECI Position to AER",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "ECI Position to LLA",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "EGT Indicator",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Earth Nutation",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Earth Orientation Parameters",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Eclipse Shadow Model (Cylindrical)",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Eclipse Shadow Model (Dual Cone)",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Estimate Center of Gravity",
+      "value": "body-dynamics"
+    },
+    {
+      "block": "Estimate Inertia Tensor",
+      "value": "body-dynamics"
+    },
+    {
+      "block": "Fixed-Wing Point Mass",
+      "value": "point-mass-dynamics"
+    },
+    {
+      "block": "Flat Earth to LLA",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "FlightGear Preconfigured 6DoF Animation",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Force Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Gain Scheduled Lead-Lag",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "Generate Run Script",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Geocentric to  Geodetic Latitude",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Geodetic to  Geocentric Latitude",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Geoid Height",
+      "value": "gravity-magnetic-field"
+    },
+    {
+      "block": "Heading Indicator",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Horizontal Wind Model",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Horizontal Wind Model 07",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Horizontal Wind Model 14",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "ISA Atmosphere Model",
+      "value": "atmosphere"
+    },
+    {
+      "block": "Ideal Airspeed Correction",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "Incidence  & Airspeed",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "Incidence, Sideslip, & Airspeed",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "International Geomagnetic Reference Field",
+      "value": "gravity-magnetic-field"
+    },
+    {
+      "block": "Interpolate Matrix(x) ",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "Interpolate Matrix(x,y) ",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "Interpolate Matrix(x,y,z) ",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "Invert  3x3 Matrix",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Julian Date Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Julian Epoch to Besselian Epoch",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Keplerian Orbital Elements to Cartesian State Vectors",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "LLA to ECEF Position",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "LLA to ECI Position",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "LLA to Flat Earth",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Lapse Rate Model",
+      "value": "atmosphere"
+    },
+    {
+      "block": "Length Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Line of Sight Access",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Linear Second-Order Actuator",
+      "value": "actuators"
+    },
+    {
+      "block": "MATLAB Animation",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Mach Number",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "Mass Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Moments about CG  due to Forces",
+      "value": "body-dynamics"
+    },
+    {
+      "block": "Moon Libration",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Multirotor",
+      "value": "rotor-dynamics"
+    },
+    {
+      "block": "NRLMSISE-00 Atmosphere Model",
+      "value": "atmosphere"
+    },
+    {
+      "block": "Non-Standard Day 210C",
+      "value": "atmosphere"
+    },
+    {
+      "block": "Non-Standard Day 310",
+      "value": "atmosphere"
+    },
+    {
+      "block": "Nonlinear Second-Order Actuator",
+      "value": "actuators"
+    },
+    {
+      "block": "Orbit Propagator Kepler (unperturbed)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Orbit Propagator Numerical (high precision)",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Pack net_fdm Packet for FlightGear",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Pilot Joystick",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Pilot Joystick All",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Planetary Ephemeris",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Precision Pilot Model",
+      "value": "pilot-models"
+    },
+    {
+      "block": "Pressure Altitude",
+      "value": "atmosphere"
+    },
+    {
+      "block": "Pressure Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Quaternion Conjugate",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Division",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Interpolation",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Inverse",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Modulus",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Multiplication",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Norm",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Normalize",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternion Rotation",
+      "value": "quaternion-utilities"
+    },
+    {
+      "block": "Quaternions to  Direction Cosine Matrix",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Quaternions to Rodrigues",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Quaternions to Rotation Angles",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "RPM Indicator",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Radius at Geocentric Latitude",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "Receive net_ctrl Packet from FlightGear",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Relative Ratio",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "Rodrigues to Direction Cosine Matrix",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Rodrigues to Quaternions",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Rodrigues to Rotation Angles",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Rotation Angles to Direction Cosine Matrix",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Rotation Angles to Quaternions",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Rotation Angles to Rodrigues",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Rotor",
+      "value": "rotor-dynamics"
+    },
+    {
+      "block": "Self-Conditioned [A,B,C,D]",
+      "value": "gain-scheduling"
+    },
+    {
+      "block": "Send net_fdm Packet to FlightGear",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simple Variable Mass 3dof (Body Axes)",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "Simple Variable Mass 3dof (Wind Axes)",
+      "value": "equations-of-motion-3dof"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF (Euler Angles)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF ECEF (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF Wind (Quaternion)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF Wind (Wind Angles)",
+      "value": "equations-of-motion-6dof"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Get",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Set",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Air Transport Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Aircraft",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Airliner Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Camera Get",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D CubeSat Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Custom Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D General Aviation Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Helicopter Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Light Helicopter Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Message Get",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Message Set",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Multirotor Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Rotorcraft",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Sky Hogg Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D SmallSat Pack",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Space Environment",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Spacecraft",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Sensor",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Simulation Pace",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Solar Flux and Geomagnetic Index",
+      "value": "celestial-phenomena"
+    },
+    {
+      "block": "Spacecraft Dynamics",
+      "value": "satellite-dynamics"
+    },
+    {
+      "block": "Spherical Harmonic Gravity Model",
+      "value": "gravity-magnetic-field"
+    },
+    {
+      "block": "Symmetric Inertia Tensor",
+      "value": "body-dynamics"
+    },
+    {
+      "block": "Temperature Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Three-axis Accelerometer",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Three-axis Gyroscope",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Three-axis Inertial Measurement Unit",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Turbofan Engine System",
+      "value": "propulsion"
+    },
+    {
+      "block": "Turn Coordinator",
+      "value": "cockpit-instruments"
+    },
+    {
+      "block": "Tustin Pilot Model",
+      "value": "pilot-models"
+    },
+    {
+      "block": "Unpack net_ctrl Packet from FlightGear",
+      "value": "animation-visualization"
+    },
+    {
+      "block": "Velocity Conversion",
+      "value": "unit-conversion"
+    },
+    {
+      "block": "Von Karman Wind Turbulence Model  (Continuous (+q +r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Von Karman Wind Turbulence Model  (Continuous (+q -r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "Von Karman Wind Turbulence Model  (Continuous (-q +r))",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "WGS84 Gravity Model  ",
+      "value": "gravity-magnetic-field"
+    },
+    {
+      "block": "Wind Angles to  Direction Cosine Matrix",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Wind Angular Rates",
+      "value": "flight-parameters"
+    },
+    {
+      "block": "Wind Shear Model",
+      "value": "wind-turbulence"
+    },
+    {
+      "block": "World Magnetic Model",
+      "value": "gravity-magnetic-field"
+    },
+    {
+      "block": "Zonal Harmonic Gravity Model",
+      "value": "gravity-magnetic-field"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "1D Controller Blend: u=(1-L).K1.y+L.K2.y",
+      "value": "Blend two controller outputs using a single scheduling variable — use for smooth controller transition during flight envelope changes"
+    },
+    {
+      "block": "1D Controller [A(v),B(v),C(v),D(v)]",
+      "value": "Implement a gain-scheduled state-space controller interpolated over one scheduling variable — standard approach for LPV controller deployment"
+    },
+    {
+      "block": "1D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "value": "Implement a gain-scheduled observer-form controller over one scheduling variable — use when the controller includes a state estimator"
+    },
+    {
+      "block": "1D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "value": "Implement a self-conditioned gain-scheduled controller over one variable — prevents integrator wind-up during controller transitions"
+    },
+    {
+      "block": "2D Controller Blend",
+      "value": "Blend controller outputs using two scheduling variables — use for multi-parameter operating envelope transitions"
+    },
+    {
+      "block": "2D Controller [A(v),B(v),C(v),D(v)]",
+      "value": "Implement a gain-scheduled state-space controller interpolated over two scheduling variables"
+    },
+    {
+      "block": "2D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "value": "Implement a gain-scheduled observer-form controller over two scheduling variables"
+    },
+    {
+      "block": "2D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "value": "Implement a self-conditioned gain-scheduled controller over two scheduling variables"
+    },
+    {
+      "block": "3D Controller [A(v),B(v),C(v),D(v)]",
+      "value": "Implement a gain-scheduled state-space controller interpolated over three scheduling variables"
+    },
+    {
+      "block": "3D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+      "value": "Implement a gain-scheduled observer-form controller over three scheduling variables"
+    },
+    {
+      "block": "3D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+      "value": "Implement a self-conditioned gain-scheduled controller over three scheduling variables"
+    },
+    {
+      "block": "3DOF Acceleration",
+      "value": "Compute translational acceleration from forces, mass, and body velocity for 3DOF longitudinal-plane motion"
+    },
+    {
+      "block": "3DOF Angular Acceleration",
+      "value": "Compute pitch angular acceleration from moments and inertia for 3DOF longitudinal-plane motion"
+    },
+    {
+      "block": "3DoF Animation",
+      "value": "Visualize longitudinal-plane vehicle motion in a 2D MATLAB figure with trajectory and attitude"
+    },
+    {
+      "block": "3dof (Body Axes)",
+      "value": "Integrate 3DOF equations of motion in body axes — use for longitudinal-plane flight simulation of fixed-wing aircraft with constant mass"
+    },
+    {
+      "block": "3dof (Wind Axes)",
+      "value": "Integrate 3DOF equations of motion in wind axes — use for longitudinal-plane trajectory analysis where angle of attack is a natural state variable"
+    },
+    {
+      "block": "3x3 Cross Product",
+      "value": "Compute the cross product of two 3-element vectors — use for torque, angular momentum, or Coriolis calculations"
+    },
+    {
+      "block": "4th Order Point Mass (Longitudinal)",
+      "value": "Integrate 4th-order longitudinal point-mass equations (V, gamma, x, h) for trajectory optimization and performance analysis"
+    },
+    {
+      "block": "4th Order Point Mass Forces (Longitudinal)",
+      "value": "Compute forces for 4th-order longitudinal point mass from thrust, weight, lift, and drag coefficients"
+    },
+    {
+      "block": "6DOF (Euler Angles)",
+      "value": "Integrate 6DOF body-axis equations using Euler angle attitude — the most common EoM block for conventional aircraft simulation"
+    },
+    {
+      "block": "6DOF (Quaternion)",
+      "value": "Integrate 6DOF body-axis equations using quaternion attitude — use to avoid gimbal lock in highly maneuverable vehicle or spacecraft simulation"
+    },
+    {
+      "block": "6DOF Acceleration",
+      "value": "Compute translational acceleration from forces and body-axis velocity for full six-degree-of-freedom motion"
+    },
+    {
+      "block": "6DOF Angular Acceleration",
+      "value": "Compute angular acceleration from moments, inertia tensor, and angular velocity for full 6DOF motion"
+    },
+    {
+      "block": "6DOF ECEF (Quaternion)",
+      "value": "Integrate 6DOF equations in ECEF frame using quaternion attitude — use for long-range or orbital flight where Earth curvature and rotation matter"
+    },
+    {
+      "block": "6DOF Wind (Quaternion)",
+      "value": "Integrate 6DOF wind-axis equations using quaternion attitude — combine wind-axis convenience with singularity-free representation"
+    },
+    {
+      "block": "6DOF Wind (Wind Angles)",
+      "value": "Integrate 6DOF equations in wind axes using alpha/beta/mu angles — use when aerodynamic angles are natural state variables"
+    },
+    {
+      "block": "6DoF Animation",
+      "value": "Visualize full 3D vehicle motion in a MATLAB figure with position and orientation"
+    },
+    {
+      "block": "6th Order Point Mass (Coordinated Flight)",
+      "value": "Integrate 6th-order coordinated-flight point-mass equations (V, gamma, chi, x, y, h) for 3D trajectory analysis with bank-to-turn"
+    },
+    {
+      "block": "6th Order Point Mass Forces (Coordinated Flight)",
+      "value": "Compute forces for 6th-order coordinated point mass from aerodynamic coefficients, thrust, and bank angle"
+    },
+    {
+      "block": "Acceleration Conversion",
+      "value": "Convert acceleration between units (m/s2, ft/s2, g) for interfacing between metric and imperial subsystems"
+    },
+    {
+      "block": "Adjoint of 3x3 Matrix",
+      "value": "Compute the classical adjoint (adjugate) of a 3x3 matrix — use in matrix inversion or Cramer's rule calculations"
+    },
+    {
+      "block": "Aerodynamic Forces and Moments",
+      "value": "Compute body-axis aerodynamic forces and moments from coefficients, dynamic pressure, and reference geometry — the primary aero block for any flight vehicle model"
+    },
+    {
+      "block": "Airspeed Indicator",
+      "value": "Display indicated airspeed on a standard round-dial cockpit instrument for pilot-in-the-loop simulation"
+    },
+    {
+      "block": "Altimeter",
+      "value": "Display barometric altitude on a standard three-pointer altimeter instrument"
+    },
+    {
+      "block": "Angle Conversion",
+      "value": "Convert angles between degrees, radians, and revolutions"
+    },
+    {
+      "block": "Angular Acceleration Conversion",
+      "value": "Convert angular acceleration between rad/s2, deg/s2, and rpm/s"
+    },
+    {
+      "block": "Angular Velocity Conversion",
+      "value": "Convert angular velocity between rad/s, deg/s, and rpm"
+    },
+    {
+      "block": "Artificial Horizon",
+      "value": "Display pitch and roll attitude on a standard gyroscopic artificial horizon instrument"
+    },
+    {
+      "block": "Attitude Dynamics",
+      "value": "Propagate spacecraft rotational dynamics (angular velocity and quaternion) from applied torques and inertia — the core spacecraft attitude block"
+    },
+    {
+      "block": "Attitude Profile (Geographic Pointing)",
+      "value": "Generate quaternion commands to point at a geographic location on Earth — use for targeted observation or communication pointing"
+    },
+    {
+      "block": "Attitude Profile (Nadir Pointing)",
+      "value": "Generate quaternion commands for Earth-nadir pointing attitude — use for Earth observation satellite attitude guidance"
+    },
+    {
+      "block": "Attitude Profile (Sun Tracking)",
+      "value": "Generate quaternion commands for Sun-pointing attitude — use for solar panel orientation or sun-sensor calibration"
+    },
+    {
+      "block": "Besselian Epoch to Julian Epoch",
+      "value": "Convert Besselian epoch year to Julian epoch year — use when processing legacy star catalogs or precession models"
+    },
+    {
+      "block": "CIRA-86 Atmosphere Model",
+      "value": "Compute temperature, pressure, and density using the COSPAR International Reference Atmosphere 1986 — use for middle atmosphere (up to 120 km) studies"
+    },
+    {
+      "block": "COESA Atmosphere Model",
+      "value": "Compute atmospheric properties using the U.S. Standard Atmosphere 1976 (COESA) — the most common atmosphere model for aircraft simulation"
+    },
+    {
+      "block": "Calculate Range",
+      "value": "Compute great-circle range between two geographic positions — use for waypoint navigation, target distance, or range-to-go calculations"
+    },
+    {
+      "block": "Cartesian State Vectors to Keplerian Orbital Elements",
+      "value": "Convert position/velocity vectors to classical Keplerian elements (a, e, i, RAAN, omega, nu) for orbit characterization"
+    },
+    {
+      "block": "Centrifugal Effect Model",
+      "value": "Compute centrifugal acceleration due to Earth's rotation — add to gravity for effective weight in rotating reference frames"
+    },
+    {
+      "block": "Climb Rate Indicator",
+      "value": "Display vertical speed on a standard variometer instrument"
+    },
+    {
+      "block": "Create 3x3 Matrix",
+      "value": "Assemble a 3x3 matrix from nine scalar inputs or three row/column vectors"
+    },
+    {
+      "block": "Crossover Pilot Model",
+      "value": "Model human pilot as a crossover transfer function that adapts gain and lead to achieve desired crossover frequency — use for handling qualities analysis"
+    },
+    {
+      "block": "CubeSat Vehicle (Custom Pointing)",
+      "value": "CubeSat model with user-defined pointing direction — use when non-standard attitude profiles are needed"
+    },
+    {
+      "block": "CubeSat Vehicle (Nadir Pointing)",
+      "value": "Pre-configured CubeSat model with nadir-pointing attitude — drag-and-drop for quick CubeSat orbit simulation"
+    },
+    {
+      "block": "CubeSat Vehicle (Sun Tracking)",
+      "value": "CubeSat model that tracks the Sun for maximum solar panel illumination — use for power budget analysis"
+    },
+    {
+      "block": "Custom Variable Mass 3dof (Body Axes)",
+      "value": "Integrate 3DOF body-axis equations with user-defined time-varying mass, inertia, and mass flow — use for rocket or missile longitudinal simulation"
+    },
+    {
+      "block": "Custom Variable Mass 3dof (Wind Axes)",
+      "value": "Integrate 3DOF wind-axis equations with user-defined time-varying mass properties — use for variable-mass trajectory analysis in wind coordinates"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF (Euler Angles)",
+      "value": "Integrate 6DOF body-axis Euler equations with user-defined time-varying mass, inertia, and mass flow"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF (Quaternion)",
+      "value": "Integrate 6DOF body-axis quaternion equations with user-defined time-varying mass properties"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF ECEF (Quaternion)",
+      "value": "Integrate 6DOF ECEF equations with user-defined time-varying mass properties — use for long-range variable-mass vehicles like launch vehicles"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF Wind (Quaternion)",
+      "value": "Integrate 6DOF wind-axis quaternion equations with user-defined time-varying mass properties"
+    },
+    {
+      "block": "Custom Variable Mass 6DOF Wind (Wind Angles)",
+      "value": "Integrate 6DOF wind-axis wind-angle equations with user-defined time-varying mass properties"
+    },
+    {
+      "block": "Delta UT1",
+      "value": "Look up the difference between UTC and UT1 for precise sidereal time calculation in high-accuracy orbit propagation"
+    },
+    {
+      "block": "Density Conversion",
+      "value": "Convert atmospheric density between kg/m3, slug/ft3, and lb/ft3"
+    },
+    {
+      "block": "Determinant of 3x3 Matrix",
+      "value": "Compute the determinant of a 3x3 matrix — use for checking invertibility or computing volume scaling"
+    },
+    {
+      "block": "Digital DATCOM Forces and Moments",
+      "value": "Compute aerodynamic forces and moments from Digital DATCOM stability derivatives — use when aerodynamic data comes from DATCOM analysis"
+    },
+    {
+      "block": "Direction Cosine Matrix  to Quaternions",
+      "value": "Convert a direction cosine matrix to equivalent quaternion representation — use when switching between rotation representations"
+    },
+    {
+      "block": "Direction Cosine Matrix Body to Wind",
+      "value": "Construct the DCM from body to wind axes using angle of attack and sideslip — use for force resolution between body and wind frames"
+    },
+    {
+      "block": "Direction Cosine Matrix Body to Wind to Alpha and Beta",
+      "value": "Extract angle of attack and sideslip from a body-to-wind DCM — inverse of DCM construction from aero angles"
+    },
+    {
+      "block": "Direction Cosine Matrix ECEF to NED",
+      "value": "Construct the DCM from ECEF to local NED frame using geodetic latitude and longitude — fundamental for local-level navigation"
+    },
+    {
+      "block": "Direction Cosine Matrix ECEF to NED to Latitude and Longitude",
+      "value": "Extract geodetic latitude and longitude from an ECEF-to-NED direction cosine matrix"
+    },
+    {
+      "block": "Direction Cosine Matrix ECI to ECEF",
+      "value": "Construct the DCM from ECI to ECEF using Julian date and Earth rotation — required for satellite position in Earth-fixed coordinates"
+    },
+    {
+      "block": "Direction Cosine Matrix to Rodrigues",
+      "value": "Convert a DCM to Rodrigues (Gibbs) vector representation for small-angle applications"
+    },
+    {
+      "block": "Direction Cosine Matrix to Rotation Angles",
+      "value": "Extract Euler rotation angles from a DCM for any rotation sequence (ZYX, XYZ, etc.)"
+    },
+    {
+      "block": "Direction Cosine Matrix to Wind Angles",
+      "value": "Extract wind angles (flight path, heading, bank) from a direction cosine matrix"
+    },
+    {
+      "block": "Discrete Wind Gust Model",
+      "value": "Generate a 1-cosine discrete gust profile per MIL-F-8785C — use for gust load analysis and control law robustness testing"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Continuous (+q +r))",
+      "value": "Dryden continuous turbulence with positive pitch and positive yaw rate convention"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Continuous (+q -r))",
+      "value": "Generate continuous stochastic turbulence per MIL-F-8785C Dryden spectra — the standard turbulence model for fixed-wing simulation (positive pitch, negative yaw convention)"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Continuous (-q +r))",
+      "value": "Dryden continuous turbulence with negative pitch and positive yaw rate convention"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Discrete (+q +r))",
+      "value": "Discrete-time Dryden turbulence for digital simulation with positive pitch and yaw convention"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Discrete (+q -r))",
+      "value": "Discrete-time Dryden turbulence for digital simulation with positive pitch, negative yaw convention"
+    },
+    {
+      "block": "Dryden Wind Turbulence Model  (Discrete (-q +r))",
+      "value": "Discrete-time Dryden turbulence for digital simulation with negative pitch, positive yaw convention"
+    },
+    {
+      "block": "Dynamic Inflow (3-State)",
+      "value": "Model rotor induced velocity using Pitt-Peters 3-state dynamic inflow — provides uniform and first-harmonic inflow for helicopter trim and stability"
+    },
+    {
+      "block": "Dynamic Inflow (Finite-State)",
+      "value": "Model rotor inflow using Peters-He finite-state dynamic inflow theory — higher-fidelity inflow for advanced rotorcraft analysis"
+    },
+    {
+      "block": "Dynamic Pressure",
+      "value": "Compute dynamic pressure (q-bar) from airspeed and density — fundamental for aerodynamic force calculation"
+    },
+    {
+      "block": "ECEF Position to LLA",
+      "value": "Convert ECEF Cartesian coordinates to geodetic latitude, longitude, and altitude — standard GPS-to-map conversion"
+    },
+    {
+      "block": "ECI Position to AER",
+      "value": "Convert ECI position to azimuth, elevation, and range relative to a ground station — use for ground-to-satellite tracking"
+    },
+    {
+      "block": "ECI Position to LLA",
+      "value": "Convert ECI position vector to geodetic latitude, longitude, and altitude — use for satellite ground-track computation"
+    },
+    {
+      "block": "EGT Indicator",
+      "value": "Display exhaust gas temperature on a standard engine gauge for powerplant monitoring"
+    },
+    {
+      "block": "Earth Nutation",
+      "value": "Compute Earth nutation angles (longitude and obliquity corrections) for precise ECI-to-ECEF transformations in high-fidelity orbital simulations"
+    },
+    {
+      "block": "Earth Orientation Parameters",
+      "value": "Retrieve polar motion, precession, and nutation parameters from IERS data for sub-arcsecond frame alignment"
+    },
+    {
+      "block": "Eclipse Shadow Model (Cylindrical)",
+      "value": "Determine if a spacecraft is in Earth's shadow using a cylindrical approximation — use for fast solar power availability estimation"
+    },
+    {
+      "block": "Eclipse Shadow Model (Dual Cone)",
+      "value": "Determine if a spacecraft is in Earth's penumbra or umbra using a dual-cone model — use when partial eclipse effects on solar arrays matter"
+    },
+    {
+      "block": "Estimate Center of Gravity",
+      "value": "Estimate combined CG location from multiple component masses and positions — use for mass buildup in vehicle configuration studies"
+    },
+    {
+      "block": "Estimate Inertia Tensor",
+      "value": "Estimate combined inertia tensor from multiple components using parallel axis theorem — use for composite vehicle inertia buildup"
+    },
+    {
+      "block": "Fixed-Wing Point Mass",
+      "value": "Simplified fixed-wing point mass dynamics for quick trajectory studies without full aerodynamic modeling"
+    },
+    {
+      "block": "Flat Earth to LLA",
+      "value": "Convert flat-Earth (NED) position back to geodetic coordinates — use at end of flat-Earth simulation for geo-referenced output"
+    },
+    {
+      "block": "FlightGear Preconfigured 6DoF Animation",
+      "value": "Send 6DOF vehicle state to FlightGear for real-time 3D flight visualization with minimal configuration"
+    },
+    {
+      "block": "Force Conversion",
+      "value": "Convert force between Newtons, pounds-force, and kiloponds"
+    },
+    {
+      "block": "Gain Scheduled Lead-Lag",
+      "value": "Implement a gain-scheduled lead-lag compensator whose time constants vary with a scheduling variable — common in flight control augmentation"
+    },
+    {
+      "block": "Generate Run Script",
+      "value": "Generate platform-specific script to launch FlightGear with correct network settings for co-simulation"
+    },
+    {
+      "block": "Geocentric to  Geodetic Latitude",
+      "value": "Convert geocentric latitude to geodetic latitude accounting for Earth oblateness"
+    },
+    {
+      "block": "Geodetic to  Geocentric Latitude",
+      "value": "Convert geodetic latitude to geocentric latitude for spherical Earth calculations"
+    },
+    {
+      "block": "Geoid Height",
+      "value": "Look up the geoid undulation (difference between geoid and WGS84 ellipsoid) at a given location for altitude reference conversion"
+    },
+    {
+      "block": "Heading Indicator",
+      "value": "Display magnetic or true heading on a standard directional gyro instrument"
+    },
+    {
+      "block": "Horizontal Wind Model",
+      "value": "Compute steady-state horizontal winds (eastward and northward components) as a function of altitude and location"
+    },
+    {
+      "block": "Horizontal Wind Model 07",
+      "value": "Compute quiet-time horizontal winds using the HWM07 empirical model — accounts for latitude, longitude, altitude, and solar activity"
+    },
+    {
+      "block": "Horizontal Wind Model 14",
+      "value": "Compute horizontal winds using the updated HWM14 empirical model — improved accuracy over HWM07 for upper atmosphere"
+    },
+    {
+      "block": "ISA Atmosphere Model",
+      "value": "Compute temperature, pressure, and density using the International Standard Atmosphere with optional temperature offset — use for standard-day flight performance"
+    },
+    {
+      "block": "Ideal Airspeed Correction",
+      "value": "Correct indicated airspeed for compressibility effects to obtain calibrated or equivalent airspeed"
+    },
+    {
+      "block": "Incidence  & Airspeed",
+      "value": "Compute angle of attack and total airspeed from body-axis velocity components (u, w) for 2D flight"
+    },
+    {
+      "block": "Incidence, Sideslip, & Airspeed",
+      "value": "Compute angle of attack, sideslip angle, and total airspeed from body-axis velocity components (u, v, w)"
+    },
+    {
+      "block": "International Geomagnetic Reference Field",
+      "value": "Compute Earth's magnetic field from the IGRF model with full spherical harmonic expansion — use for high-fidelity magnetometer simulation"
+    },
+    {
+      "block": "Interpolate Matrix(x) ",
+      "value": "Interpolate a matrix of gains over one scheduling variable — use for 1D gain-table lookup in scheduled controllers"
+    },
+    {
+      "block": "Interpolate Matrix(x,y) ",
+      "value": "Interpolate a matrix of gains over two scheduling variables — use for 2D gain-table lookup in scheduled controllers"
+    },
+    {
+      "block": "Interpolate Matrix(x,y,z) ",
+      "value": "Interpolate a matrix of gains over three scheduling variables — use for deploying 3D gain tables in controllers"
+    },
+    {
+      "block": "Invert  3x3 Matrix",
+      "value": "Compute the inverse of a 3x3 matrix — use for resolving body-axis equations or transforming between frames"
+    },
+    {
+      "block": "Julian Date Conversion",
+      "value": "Convert between Julian date, modified Julian date, and calendar date representations for time system interoperability"
+    },
+    {
+      "block": "Julian Epoch to Besselian Epoch",
+      "value": "Convert Julian epoch year to Besselian epoch year for compatibility with older astronomical catalogs"
+    },
+    {
+      "block": "Keplerian Orbital Elements to Cartesian State Vectors",
+      "value": "Convert Keplerian orbital elements to position/velocity vectors for initializing orbit propagation"
+    },
+    {
+      "block": "LLA to ECEF Position",
+      "value": "Convert geodetic latitude, longitude, and altitude to ECEF Cartesian coordinates — standard map-to-Cartesian conversion"
+    },
+    {
+      "block": "LLA to ECI Position",
+      "value": "Convert geodetic latitude, longitude, and altitude to ECI position vector — use for ground station position in inertial frame"
+    },
+    {
+      "block": "LLA to Flat Earth",
+      "value": "Convert geodetic coordinates to flat-Earth NED position relative to a reference point — use for local-area aircraft simulation"
+    },
+    {
+      "block": "Lapse Rate Model",
+      "value": "Compute atmospheric properties using a configurable temperature lapse rate — use for simplified atmosphere modeling with custom lapse rates"
+    },
+    {
+      "block": "Length Conversion",
+      "value": "Convert length between meters, feet, nautical miles, kilometers, and statute miles"
+    },
+    {
+      "block": "Line of Sight Access",
+      "value": "Determine if two objects have unobstructed line of sight considering Earth occultation — use for communication link and sensor coverage analysis"
+    },
+    {
+      "block": "Linear Second-Order Actuator",
+      "value": "Model linear actuator dynamics as a second-order transfer function — use for control surface deflection response with natural frequency and damping"
+    },
+    {
+      "block": "MATLAB Animation",
+      "value": "Render custom 3D aircraft geometry in a MATLAB figure for flight path visualization"
+    },
+    {
+      "block": "Mach Number",
+      "value": "Compute Mach number from airspeed and speed of sound for compressibility-related calculations"
+    },
+    {
+      "block": "Mass Conversion",
+      "value": "Convert mass between kilograms, slugs, and pounds-mass"
+    },
+    {
+      "block": "Moments about CG  due to Forces",
+      "value": "Compute moments about the CG caused by off-CG forces using moment arm cross products — use for engine thrust or landing gear force coupling"
+    },
+    {
+      "block": "Moon Libration",
+      "value": "Compute lunar libration angles for precise Moon-relative pointing and selenocentric frame transformations"
+    },
+    {
+      "block": "Multirotor",
+      "value": "Model a complete multirotor aircraft (quadrotor, hexarotor, etc.) with motor dynamics and thrust allocation — use for eVTOL/drone simulation"
+    },
+    {
+      "block": "NRLMSISE-00 Atmosphere Model",
+      "value": "Compute atmospheric density and temperature using the NRL MSIS empirical model — use for spacecraft drag estimation in low Earth orbit"
+    },
+    {
+      "block": "Non-Standard Day 210C",
+      "value": "Compute atmosphere for MIL-STD-210C hot/cold/tropical non-standard day profiles — use for worst-case environmental performance analysis"
+    },
+    {
+      "block": "Non-Standard Day 310",
+      "value": "Compute atmosphere for MIL-HDBK-310 non-standard day profiles — use for updated military environmental extremes analysis"
+    },
+    {
+      "block": "Nonlinear Second-Order Actuator",
+      "value": "Model actuator dynamics with rate and position limits — use when control surface deflection has saturation or rate-limiting behavior"
+    },
+    {
+      "block": "Orbit Propagator Kepler (unperturbed)",
+      "value": "Propagate a Keplerian orbit analytically without perturbations — use for quick orbit prediction when perturbations are negligible"
+    },
+    {
+      "block": "Orbit Propagator Numerical (high precision)",
+      "value": "Propagate orbit numerically with drag, solar radiation pressure, third-body, and gravity perturbations — use for mission-fidelity orbit analysis"
+    },
+    {
+      "block": "Pack net_fdm Packet for FlightGear",
+      "value": "Serialize flight dynamics state into FlightGear's net_fdm binary protocol format"
+    },
+    {
+      "block": "Pilot Joystick",
+      "value": "Read a single-axis hardware joystick input for pilot-in-the-loop simulation"
+    },
+    {
+      "block": "Pilot Joystick All",
+      "value": "Read all axes and buttons from a hardware joystick simultaneously for full pilot-in-the-loop simulation"
+    },
+    {
+      "block": "Planetary Ephemeris",
+      "value": "Compute position and velocity of solar system bodies from JPL ephemeris data — use for interplanetary mission design or third-body perturbation forces"
+    },
+    {
+      "block": "Precision Pilot Model",
+      "value": "Model human pilot with neuromuscular dynamics and remnant noise for precision tracking tasks — higher fidelity than crossover model"
+    },
+    {
+      "block": "Pressure Altitude",
+      "value": "Convert static pressure to geopotential altitude using standard atmosphere pressure-altitude relationship"
+    },
+    {
+      "block": "Pressure Conversion",
+      "value": "Convert pressure between Pascals, psi, atmospheres, inches of mercury, and millibars"
+    },
+    {
+      "block": "Quaternion Conjugate",
+      "value": "Compute the conjugate of a unit quaternion — equivalent to inverse for unit quaternions, use for reverse rotations"
+    },
+    {
+      "block": "Quaternion Division",
+      "value": "Divide one quaternion by another — compute relative rotation between two orientations"
+    },
+    {
+      "block": "Quaternion Interpolation",
+      "value": "Interpolate between two quaternions using SLERP — use for smooth attitude trajectory generation between waypoints"
+    },
+    {
+      "block": "Quaternion Inverse",
+      "value": "Compute the multiplicative inverse of a quaternion — use for non-unit quaternions where conjugate alone is insufficient"
+    },
+    {
+      "block": "Quaternion Modulus",
+      "value": "Compute the magnitude (norm) of a quaternion — use for normalization checks or quaternion health monitoring"
+    },
+    {
+      "block": "Quaternion Multiplication",
+      "value": "Multiply two quaternions to compose sequential rotations — fundamental operation for quaternion-based attitude propagation"
+    },
+    {
+      "block": "Quaternion Norm",
+      "value": "Compute the squared norm of a quaternion — faster than modulus when only comparing magnitudes"
+    },
+    {
+      "block": "Quaternion Normalize",
+      "value": "Normalize a quaternion to unit length — essential after numerical integration to prevent attitude drift"
+    },
+    {
+      "block": "Quaternion Rotation",
+      "value": "Rotate a 3D vector by a quaternion using the sandwich product — use for transforming vectors between reference frames"
+    },
+    {
+      "block": "Quaternions to  Direction Cosine Matrix",
+      "value": "Convert quaternion to equivalent 3x3 DCM — use for applying quaternion attitude to vector rotations"
+    },
+    {
+      "block": "Quaternions to Rodrigues",
+      "value": "Convert quaternion to Rodrigues (Gibbs) vector representation"
+    },
+    {
+      "block": "Quaternions to Rotation Angles",
+      "value": "Extract Euler angles from quaternion for display or controller feedback"
+    },
+    {
+      "block": "RPM Indicator",
+      "value": "Display engine or rotor RPM on a standard tachometer instrument"
+    },
+    {
+      "block": "Radius at Geocentric Latitude",
+      "value": "Compute Earth's radius at a given geocentric latitude accounting for oblateness — use for altitude calculations over non-spherical Earth"
+    },
+    {
+      "block": "Receive net_ctrl Packet from FlightGear",
+      "value": "Receive pilot control inputs from FlightGear via UDP for hardware-in-the-loop scenarios"
+    },
+    {
+      "block": "Relative Ratio",
+      "value": "Compute ratios of atmospheric properties relative to sea-level standard values for non-dimensional analysis"
+    },
+    {
+      "block": "Rodrigues to Direction Cosine Matrix",
+      "value": "Convert Rodrigues vector to equivalent direction cosine matrix"
+    },
+    {
+      "block": "Rodrigues to Quaternions",
+      "value": "Convert Rodrigues vector to quaternion representation for singularity-free propagation"
+    },
+    {
+      "block": "Rodrigues to Rotation Angles",
+      "value": "Extract Euler angles from a Rodrigues vector"
+    },
+    {
+      "block": "Rotation Angles to Direction Cosine Matrix",
+      "value": "Construct a DCM from Euler rotation angles for any sequence — the standard attitude initialization method"
+    },
+    {
+      "block": "Rotation Angles to Quaternions",
+      "value": "Convert Euler angles to quaternion — use for singularity-free attitude initialization from common angle inputs"
+    },
+    {
+      "block": "Rotation Angles to Rodrigues",
+      "value": "Convert Euler angles to Rodrigues vector representation"
+    },
+    {
+      "block": "Rotor",
+      "value": "Model a complete helicopter rotor (main or tail) with collective/cyclic inputs producing thrust, torque, and hub moments"
+    },
+    {
+      "block": "Self-Conditioned [A,B,C,D]",
+      "value": "Implement a self-conditioned state-space controller that prevents integrator wind-up when switching between manual and automatic modes"
+    },
+    {
+      "block": "Send net_fdm Packet to FlightGear",
+      "value": "Transmit vehicle state to FlightGear via UDP for real-time 3D visualization"
+    },
+    {
+      "block": "Simple Variable Mass 3dof (Body Axes)",
+      "value": "Integrate 3DOF body-axis equations with linearly decreasing mass — use for simple rocket/missile models with constant mass flow rate"
+    },
+    {
+      "block": "Simple Variable Mass 3dof (Wind Axes)",
+      "value": "Integrate 3DOF wind-axis equations with linearly decreasing mass — use for simple variable-mass trajectory analysis"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF (Euler Angles)",
+      "value": "Integrate 6DOF body-axis Euler equations with linearly decreasing mass — simple rocket or missile model"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF (Quaternion)",
+      "value": "Integrate 6DOF body-axis quaternion equations with linearly decreasing mass"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF ECEF (Quaternion)",
+      "value": "Integrate 6DOF ECEF quaternion equations with linearly decreasing mass — use for simplified launch vehicle or long-range missile models"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF Wind (Quaternion)",
+      "value": "Integrate 6DOF wind-axis quaternion equations with linearly decreasing mass"
+    },
+    {
+      "block": "Simple Variable Mass 6DOF Wind (Wind Angles)",
+      "value": "Integrate 6DOF wind-axis wind-angle equations with linearly decreasing mass"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Get",
+      "value": "Read position and orientation of any actor in the Unreal Engine 3D scene"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Set",
+      "value": "Set position and orientation of any actor in the Unreal Engine 3D scene"
+    },
+    {
+      "block": "Simulation 3D Air Transport Pack",
+      "value": "Load a large commercial transport aircraft 3D mesh for Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D Aircraft",
+      "value": "Generic aircraft actor for Unreal Engine co-simulation — position and orient any aircraft mesh in the 3D scene"
+    },
+    {
+      "block": "Simulation 3D Airliner Pack",
+      "value": "Load a regional airliner 3D mesh for Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D Camera Get",
+      "value": "Capture rendered camera image from the Unreal Engine scene for perception algorithm testing"
+    },
+    {
+      "block": "Simulation 3D CubeSat Pack",
+      "value": "Load a CubeSat 3D mesh for Unreal Engine space visualization"
+    },
+    {
+      "block": "Simulation 3D Custom Pack",
+      "value": "Load a user-supplied custom 3D mesh into the Unreal Engine scene"
+    },
+    {
+      "block": "Simulation 3D General Aviation Pack",
+      "value": "Load a general aviation aircraft 3D mesh for Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D Helicopter Pack",
+      "value": "Load a helicopter 3D mesh for Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D Light Helicopter Pack",
+      "value": "Load a light helicopter 3D mesh for Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D Message Get",
+      "value": "Receive custom data messages from actors in the Unreal Engine 3D simulation"
+    },
+    {
+      "block": "Simulation 3D Message Set",
+      "value": "Send custom data messages to actors in the Unreal Engine 3D simulation"
+    },
+    {
+      "block": "Simulation 3D Multirotor Pack",
+      "value": "Load a multirotor drone 3D mesh for Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D Rotorcraft",
+      "value": "Generic rotorcraft actor for Unreal Engine co-simulation with main and tail rotor animation"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "Configure the Unreal Engine 3D scene including weather, time of day, and terrain"
+    },
+    {
+      "block": "Simulation 3D Sky Hogg Pack",
+      "value": "Load the Sky Hogg experimental aircraft 3D mesh for Unreal Engine visualization"
+    },
+    {
+      "block": "Simulation 3D SmallSat Pack",
+      "value": "Load a small satellite 3D mesh for Unreal Engine space visualization"
+    },
+    {
+      "block": "Simulation 3D Space Environment",
+      "value": "Configure a space environment scene in Unreal Engine with Earth, Sun, and star background"
+    },
+    {
+      "block": "Simulation 3D Spacecraft",
+      "value": "Generic spacecraft actor for Unreal Engine co-simulation — position and orient in 3D space scene"
+    },
+    {
+      "block": "Simulation 3D Ultrasonic Sensor",
+      "value": "Simulate an ultrasonic proximity sensor returning range measurements from the 3D scene"
+    },
+    {
+      "block": "Simulation Pace",
+      "value": "Slow simulation to real time for interactive visualization and pilot-in-the-loop testing"
+    },
+    {
+      "block": "Solar Flux and Geomagnetic Index",
+      "value": "Look up F10.7 solar flux and Ap/Kp geomagnetic indices by date — required inputs for NRLMSISE-00 and other upper-atmosphere density models"
+    },
+    {
+      "block": "Spacecraft Dynamics",
+      "value": "Integrate combined translational and rotational spacecraft equations of motion — a single block for complete 6DOF spacecraft simulation"
+    },
+    {
+      "block": "Spherical Harmonic Gravity Model",
+      "value": "Compute gravitational acceleration using full spherical harmonic expansion (EGM96/EGM2008) — use for highest-fidelity orbit propagation"
+    },
+    {
+      "block": "Symmetric Inertia Tensor",
+      "value": "Construct a symmetric 3x3 inertia tensor from moments and products of inertia for use in rotational equations of motion"
+    },
+    {
+      "block": "Temperature Conversion",
+      "value": "Convert temperature between Kelvin, Celsius, Fahrenheit, and Rankine"
+    },
+    {
+      "block": "Three-axis Accelerometer",
+      "value": "Simulate a three-axis accelerometer with bias, scale factor error, noise, and quantization for IMU/INS modeling"
+    },
+    {
+      "block": "Three-axis Gyroscope",
+      "value": "Simulate a three-axis rate gyroscope with bias drift, angular random walk, and scale factor error for IMU/INS modeling"
+    },
+    {
+      "block": "Three-axis Inertial Measurement Unit",
+      "value": "Simulate a complete IMU (accelerometers + gyroscopes) with configurable error models for navigation system development"
+    },
+    {
+      "block": "Turbofan Engine System",
+      "value": "Model a turbofan engine with spool dynamics, thrust output, and fuel flow as a function of throttle and flight condition"
+    },
+    {
+      "block": "Turn Coordinator",
+      "value": "Display turn rate and slip/skid on a standard turn coordinator instrument"
+    },
+    {
+      "block": "Tustin Pilot Model",
+      "value": "Model human pilot using Tustin's simplified transfer function (gain, lead, lag, delay) — use for classical pilot-in-the-loop stability analysis"
+    },
+    {
+      "block": "Unpack net_ctrl Packet from FlightGear",
+      "value": "Deserialize FlightGear's net_ctrl binary packet into individual control input signals"
+    },
+    {
+      "block": "Velocity Conversion",
+      "value": "Convert velocity between m/s, ft/s, knots, km/h, and mph"
+    },
+    {
+      "block": "Von Karman Wind Turbulence Model  (Continuous (+q +r))",
+      "value": "Generate continuous Von Karman turbulence with positive pitch and yaw — preferred for European standards and MIL-HDBK-1797B"
+    },
+    {
+      "block": "Von Karman Wind Turbulence Model  (Continuous (+q -r))",
+      "value": "Generate continuous Von Karman turbulence with positive pitch, negative yaw rate convention"
+    },
+    {
+      "block": "Von Karman Wind Turbulence Model  (Continuous (-q +r))",
+      "value": "Generate continuous Von Karman turbulence with negative pitch, positive yaw rate convention"
+    },
+    {
+      "block": "WGS84 Gravity Model  ",
+      "value": "Compute normal gravity on or near the WGS84 ellipsoid using the Somigliana formula — use for standard aircraft-level gravity modeling"
+    },
+    {
+      "block": "Wind Angles to  Direction Cosine Matrix",
+      "value": "Construct a DCM from wind angles (flight path, heading, bank) — inverse of DCM-to-wind-angles extraction"
+    },
+    {
+      "block": "Wind Angular Rates",
+      "value": "Compute angular rates in wind axes from body rates and aerodynamic angles — use when wind-axis rate feedback is needed"
+    },
+    {
+      "block": "Wind Shear Model",
+      "value": "Generate a vertical wind shear profile representing low-level wind shear or microburst for approach/departure safety analysis"
+    },
+    {
+      "block": "World Magnetic Model",
+      "value": "Compute Earth's magnetic field vector using the WMM — use for magnetometer simulation and compass heading correction"
+    },
+    {
+      "block": "Zonal Harmonic Gravity Model",
+      "value": "Compute gravity with zonal (J2, J3, J4) harmonic corrections — use for orbit propagation when oblateness matters but full spherical harmonics are too expensive"
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "libraryName": "Simulink Arduino Libraries for Gizmo Hardware",
+  "generatedAt": "2026-08-19T14:31:12",
+  "blockCount": 28,
+  "blocks": [
+    {
+      "name": "AngleToDutyCycle",
+      "referenceBlock": "gizmoLibrary/Arduino Utilities/AngleToDutyCycle",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "gizmoLibrary/Arduino Utilities/Analog Input",
+      "blockType": "ArduinoAnalogInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Digital Input",
+      "referenceBlock": "gizmoLibrary/Arduino Utilities/Digital Input",
+      "blockType": "ArduinoDigitalInput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Digital Output",
+      "referenceBlock": "gizmoLibrary/Arduino Utilities/Digital Output",
+      "blockType": "ArduinoDigitalOutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "PWM",
+      "referenceBlock": "gizmoLibrary/Arduino Utilities/PWM",
+      "blockType": "ArduinoPWM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Logical Operator",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Logical Operator",
+      "blockType": "Logic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relational Operator",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Relational Operator",
+      "blockType": "RelationalOperator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Slider Gain",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Slider Gain",
+      "blockType": "SliderGain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Abs",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Abs",
+      "blockType": "Abs",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Add",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Add",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Divide",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Divide",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Gain",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Gain",
+      "blockType": "Gain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "MinMax",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Arithmetic Blocks/MinMax",
+      "blockType": "MinMax",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Product",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Product",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Saturation",
+      "referenceBlock": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Saturation",
+      "blockType": "Saturate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Data Type Conversion",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Data Type Conversion",
+      "blockType": "DataTypeConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Dead Zone",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Dead Zone",
+      "blockType": "DeadZone",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Display",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Display",
+      "blockType": "Display",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Gamepad Select Axis",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Gamepad Select Axis",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Gamepad Select Button",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Gamepad Select Button",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Gizmo Gamepad",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Gizmo Gamepad",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Gizmo Initialization",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Gizmo Initialization",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Ground",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Ground",
+      "blockType": "Ground",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Scope",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Scope",
+      "blockType": "Scope",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Switch",
+      "blockType": "Switch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "gizmoLibrary/Gizmo Blocks/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

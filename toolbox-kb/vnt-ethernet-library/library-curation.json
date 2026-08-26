@@ -1,0 +1,30 @@
+{
+  "commonBlocks": [
+    "Automotive Ethernet ECU Interface"
+  ],
+  "categories": [
+    {
+      "name": "automotive-ethernet",
+      "description": "Automotive Ethernet communication and AUTOSAR signal packing",
+      "keywords": [
+        "ethernet",
+        "automotive",
+        "autosar",
+        "someip",
+        "vehicle"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Automotive Ethernet ECU Interface",
+      "value": "automotive-ethernet"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Automotive Ethernet ECU Interface",
+      "value": "Interface a Simulink model as an automotive Ethernet ECU — use for simulating SOME/IP or DoIP communication endpoints in vehicle network models"
+    }
+  ]
+}

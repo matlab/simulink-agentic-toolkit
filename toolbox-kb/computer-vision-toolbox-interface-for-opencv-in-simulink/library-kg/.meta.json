@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.744548831,
+  "generatorVersion": 4,
+  "libraries": [
+    "Computer Vision Toolbox Interface for OpenCV in Simulink"
+  ],
+  "blockCount": 4,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Computer_Vision_Toolbox_Interface_for_OpenCV_in_Simulink": {
+      "blockCount": 4
+    }
+  }
+}

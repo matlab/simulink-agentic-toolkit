@@ -1,0 +1,127 @@
+{
+  "commonBlocks": [
+    "Joints",
+    "Body Elements",
+    "Forces and Torques",
+    "Frames and Transforms"
+  ],
+  "categories": [
+    {
+      "name": "structure",
+      "description": "Rigid body definition and spatial reference frames",
+      "keywords": [
+        "body",
+        "frame",
+        "transform",
+        "inertia",
+        "geometry"
+      ]
+    },
+    {
+      "name": "motion",
+      "description": "Joints, gears, and kinematic connections between bodies",
+      "keywords": [
+        "joint",
+        "gear",
+        "belt",
+        "coupling",
+        "revolute"
+      ]
+    },
+    {
+      "name": "interaction",
+      "description": "Forces, contacts, and constraint interactions",
+      "keywords": [
+        "force",
+        "torque",
+        "constraint",
+        "contact",
+        "spring"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Belts and Cables",
+      "value": "motion"
+    },
+    {
+      "block": "Body Elements",
+      "value": "structure"
+    },
+    {
+      "block": "Constraints",
+      "value": "interaction"
+    },
+    {
+      "block": "Curves and Surfaces",
+      "value": "interaction"
+    },
+    {
+      "block": "Forces and Torques",
+      "value": "interaction"
+    },
+    {
+      "block": "Frames and Transforms",
+      "value": "structure"
+    },
+    {
+      "block": "Gears and Couplings",
+      "value": "motion"
+    },
+    {
+      "block": "Joints",
+      "value": "motion"
+    },
+    {
+      "block": "Simscape Mechanical Interfaces",
+      "value": "interaction"
+    },
+    {
+      "block": "Utilities",
+      "value": "structure"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Belts and Cables",
+      "value": "Model flexible belt and cable connections between pulleys — use for power transmission systems like timing belts, V-belts, or cable-driven mechanisms"
+    },
+    {
+      "block": "Body Elements",
+      "value": "Define rigid body geometry, inertia, and visual properties — use for creating the physical bodies that make up a multibody mechanism"
+    },
+    {
+      "block": "Constraints",
+      "value": "Apply kinematic constraints between bodies — use for locking degrees of freedom, enforcing geometric relationships, or creating closed-loop mechanisms"
+    },
+    {
+      "block": "Curves and Surfaces",
+      "value": "Define contact geometry for collision detection — use for modeling rolling, sliding, or impact interactions between curved surfaces in multibody systems"
+    },
+    {
+      "block": "Forces and Torques",
+      "value": "Apply external forces and torques to bodies — use for modeling gravity, springs, dampers, actuators, or any applied load in a multibody system"
+    },
+    {
+      "block": "Frames and Transforms",
+      "value": "Define coordinate frames and spatial transformations — use for positioning, orienting, and relating reference frames within a multibody assembly"
+    },
+    {
+      "block": "Gears and Couplings",
+      "value": "Model gear pairs and mechanical couplings — use for spur gears, bevel gears, worm drives, or other power transmission couplings between shafts"
+    },
+    {
+      "block": "Joints",
+      "value": "Connect bodies with degrees of freedom — use for revolute, prismatic, spherical, or other articulated connections in a multibody mechanism"
+    },
+    {
+      "block": "Simscape Mechanical Interfaces",
+      "value": "Interface Simscape Multibody with Simscape physical networks — use for connecting 3D mechanical models to 1D driveline or other Simscape domain models"
+    },
+    {
+      "block": "Utilities",
+      "value": "Utility blocks for multibody modeling — use for mechanism configuration, variable sensing, or solver settings in Simscape Multibody models"
+    }
+  ]
+}

@@ -1,0 +1,756 @@
+{
+  "libraryName": "Simulink Real-Time",
+  "generatedAt": "2026-08-19T14:31:14",
+  "blockCount": 82,
+  "blocks": [
+    {
+      "name": "Thread Trigger",
+      "referenceBlock": "slrealtimeasynclib/Thread Trigger",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink Real-Time software interrupt",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "DDS Receive",
+      "referenceBlock": "slrealtimeddslib/DDS Receive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DDS Receive",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "DDS Send",
+      "referenceBlock": "slrealtimeddslib/DDS Send",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DDS Send",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Async SDO Download",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Async SDO Download",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatasyncsdodownload",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Async SDO Upload",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Async SDO Upload",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatasyncsdoupload",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Async SSC/SoE Download",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Async SSC/SoE Download",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatasyncsoedownload",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "EtherCAT Async SSC/SoE Upload",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Async SSC/SoE Upload",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatasyncsoeupload",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "EtherCAT Get Emergency",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Get Emergency",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatgetemergencydata",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Get Notifications",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Get Notifications",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatgetnotify",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Get Scanbus Error Data",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Get Scanbus Error Data",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatgetsbdata",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Get State",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Get State",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatgetstate",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Init",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Init",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatinit",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT PDO Receive",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT PDO Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercat_pdo_receive",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT PDO Transmit",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT PDO Transmit",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercat_pdo_send",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Set State",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Set State",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatsetstate",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Sync SDO Download",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Sync SDO Download",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatcoewrite",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Sync SDO Upload",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Sync SDO Upload",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatcoeread",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "EtherCAT Sync SSC/SoE Download",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Sync SSC/SoE Download",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatsoewrite",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "EtherCAT Sync SSC/SoE Upload",
+      "referenceBlock": "slrealtimeethercatlib/EtherCAT Sync SSC/SoE Upload",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatsoeread",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Get SubDevice State",
+      "referenceBlock": "slrealtimeethercatlib/Get SubDevice State",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatgetslavestate",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Set SubDevice State",
+      "referenceBlock": "slrealtimeethercatlib/Set SubDevice State",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ethercatsetslavestate",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "TCP Client",
+      "referenceBlock": "slrealtimeiplib/TCP Client",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimetcpclient",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "TCP Receive",
+      "referenceBlock": "slrealtimeiplib/TCP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimetcpreceive",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "TCP Send",
+      "referenceBlock": "slrealtimeiplib/TCP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimetcpsend",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "TCP Server",
+      "referenceBlock": "slrealtimeiplib/TCP Server",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimetcpserver",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "UDP Multicast Receive",
+      "referenceBlock": "slrealtimeiplib/UDP Multicast Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimeudpmulticastreceive",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "slrealtimeiplib/UDP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimeudpreceive",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "slrealtimeiplib/UDP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimeudpsend",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Ethernet Receive",
+      "referenceBlock": "slrealtimeiplib/Ethernet/Ethernet Receive",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Ethernet Send",
+      "referenceBlock": "slrealtimeiplib/Ethernet/Ethernet Send",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "J1939 CAN Transport Layer",
+      "referenceBlock": "slrtj1939lib/J1939 CAN Transport Layer",
+      "blockType": "J1939CANTransportLayer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "J1939 Network Configuration",
+      "referenceBlock": "slrtj1939lib/J1939 Network Configuration",
+      "blockType": "J1939NetworkConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J1939 Node Configuration",
+      "referenceBlock": "slrtj1939lib/J1939 Node Configuration",
+      "blockType": "J1939NodeConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "J1939 Receive",
+      "referenceBlock": "slrtj1939lib/J1939 Receive",
+      "blockType": "J1939Receive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "J1939 Transmit",
+      "referenceBlock": "slrtj1939lib/J1939 Transmit",
+      "blockType": "J1939Transmit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "LIN Pack",
+      "referenceBlock": "slrealtimelinlib/LIN Pack",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LIN Pack",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "LIN Unpack",
+      "referenceBlock": "slrealtimelinlib/LIN Unpack",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LIN Unpack",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "File Log",
+      "referenceBlock": "slrealtimeloglib/File Log",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimeloggingblock",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Enable File Log",
+      "referenceBlock": "slrealtimeloglib/Enable File Log",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimeenablelogging",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Steering Wheel Read",
+      "referenceBlock": "slrealtimeG29lib/Steering Wheel Read",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Logitech G29 Steering Wheel",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "IEEE 1588 Read Parameter",
+      "referenceBlock": "slrealtimeptplib/IEEE 1588 Read Parameter",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "IEEE_1588_read_param",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Enable Profiler",
+      "referenceBlock": "slrealtimeproflib/Enable Profiler",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimestartstoptracing",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Log Event",
+      "referenceBlock": "slrealtimeproflib/Log Event",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "logevent",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Legacy Serial",
+      "referenceBlock": "slrealtimeseriallib/Mainboard/Legacy Serial",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Serial",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Legacy Serial F",
+      "referenceBlock": "slrealtimeseriallib/Mainboard/Legacy Serial F",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Serial F",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "ASCII Decode",
+      "referenceBlock": "slrealtimeseriallib/ASCII Decode",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ASCII Decode",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "ASCII Encode",
+      "referenceBlock": "slrealtimeseriallib/ASCII Encode",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ASCII Encode",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "FIFO ASCII read",
+      "referenceBlock": "slrealtimeseriallib/FIFO ASCII read",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "FIFO Block: reader",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "FIFO bin read",
+      "referenceBlock": "slrealtimeseriallib/FIFO bin read",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "FIFO Block: reader",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "FIFO read",
+      "referenceBlock": "slrealtimeseriallib/FIFO read",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "FIFO Block: reader",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "FIFO write",
+      "referenceBlock": "slrealtimeseriallib/FIFO write",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "FIFO Block: writer",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "V2 Ascii Decode",
+      "referenceBlock": "slrealtimeseriallib/V2 Ascii Decode",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "asciidecode2",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Legacy Serial Read",
+      "referenceBlock": "slrealtimeseriallib/Mainboard/Legacy Serial Read",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Serial Read",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Legacy Serial Write",
+      "referenceBlock": "slrealtimeseriallib/Mainboard/Legacy Serial Write",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Serial Write",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Modem Control",
+      "referenceBlock": "slrealtimeseriallib/Mainboard/Modem Control",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Modem Control",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Modem Status",
+      "referenceBlock": "slrealtimeseriallib/Mainboard/Modem Status",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Modem Status",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Setup",
+      "referenceBlock": "slrealtimeseriallib/Mainboard/Setup",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Setup",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Change endianess",
+      "referenceBlock": "slrealtimesharedmemorylib/Change endianess",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slreverseendian",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Shared Memory Pack",
+      "referenceBlock": "slrealtimesharedmemorylib/Shared Memory Pack",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Shared-memory Pack",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Shared Memory Unpack",
+      "referenceBlock": "slrealtimesharedmemorylib/Shared Memory Unpack",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Shared Memory Partition Unpacking",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Overload Options",
+      "referenceBlock": "slrealtimetgmanagement/Overload Options",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "slrtOverloadOptions",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Persistent Variable Read",
+      "referenceBlock": "slrealtimetgmanagement/Persistent Variable Read",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimepervarread",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Persistent Variable Write",
+      "referenceBlock": "slrealtimetgmanagement/Persistent Variable Write",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimepervarwrite",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Packing",
+      "referenceBlock": "slrealtimeutilitieslib/Bit Packing",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimebitpacking",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Bit Unpacking",
+      "referenceBlock": "slrealtimeutilitieslib/Bit Unpacking",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimebitpacking",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Byte Packing",
+      "referenceBlock": "slrealtimeutilitieslib/Byte Packing",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimebytepacking",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Byte Reversal",
+      "referenceBlock": "slrealtimeutilitieslib/Byte Reversal",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slrealtimereverseendian",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Byte Unpacking",
+      "referenceBlock": "slrealtimeutilitieslib/Byte Unpacking",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "slreraltimebytepacking",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Protocol Decoder",
+      "referenceBlock": "slrealtimeutilitieslib/Protocol Decoder",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "matlabshared.embedded_utilities.blocks.ProtocolDecoderBlock",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Protocol Encoder",
+      "referenceBlock": "slrealtimeutilitieslib/Protocol Encoder",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "matlabshared.embedded_utilities.blocks.ProtocolEncoderBlock",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP CAN Transport Layer",
+      "referenceBlock": "xcprtlib/CAN/XCP CAN Transport Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "XCP CAN Transport Layer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN FD Transport Layer",
+      "referenceBlock": "xcprtlib/CAN FD/XCP CAN FD Transport Layer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "XCP CAN FD Transport Layer",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "XCP CAN Configuration",
+      "referenceBlock": "xcprtlib/CAN/XCP CAN Configuration",
+      "blockType": "XCPCANConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP CAN Data Acquisition",
+      "referenceBlock": "xcprtlib/CAN/XCP CAN Data Acquisition",
+      "blockType": "XCPCANDataAcquisition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP CAN Data Stimulation",
+      "referenceBlock": "xcprtlib/CAN/XCP CAN Data Stimulation",
+      "blockType": "XCPCANDataStimulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP CAN FD Configuration",
+      "referenceBlock": "xcprtlib/CAN FD/XCP CAN FD Configuration",
+      "blockType": "XCPCANFDConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP CAN FD Data Acquisition",
+      "referenceBlock": "xcprtlib/CAN FD/XCP CAN FD Data Acquisition",
+      "blockType": "XCPCANFDDataAcquisition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP CAN FD Data Stimulation",
+      "referenceBlock": "xcprtlib/CAN FD/XCP CAN FD Data Stimulation",
+      "blockType": "XCPCANFDDataStimulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP UDP Bypass",
+      "referenceBlock": "xcprtlib/UDP/XCP UDP Bypass",
+      "blockType": "XCPUDPBypass",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP UDP Configuration",
+      "referenceBlock": "xcprtlib/UDP/XCP UDP Configuration",
+      "blockType": "XCPUDPConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP UDP Data Acquisition",
+      "referenceBlock": "xcprtlib/UDP/XCP UDP Data Acquisition",
+      "blockType": "XCPUDPDataAcquisition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "XCP UDP Data Stimulation",
+      "referenceBlock": "xcprtlib/UDP/XCP UDP Data Stimulation",
+      "blockType": "XCPUDPDataStimulation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

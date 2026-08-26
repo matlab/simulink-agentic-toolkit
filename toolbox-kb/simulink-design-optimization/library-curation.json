@@ -1,0 +1,111 @@
+{
+  "commonBlocks": [
+    "Check Against Reference",
+    "Check Custom Bounds",
+    "Check Step Response  Characteristics",
+    "Adaptive Lookup Table (1D Stair-Fit)"
+  ],
+  "categories": [
+    {
+      "name": "adaptive-tables",
+      "description": "Self-tuning lookup tables that adapt during simulation",
+      "keywords": [
+        "adaptive",
+        "lookup",
+        "table",
+        "calibration",
+        "tune"
+      ]
+    },
+    {
+      "name": "signal-metrics",
+      "description": "Signal measurement and statistics blocks",
+      "keywords": [
+        "rms",
+        "power",
+        "signal",
+        "metric",
+        "amplitude"
+      ]
+    },
+    {
+      "name": "model-verification",
+      "description": "Automated signal verification and bounds checking",
+      "keywords": [
+        "check",
+        "verify",
+        "bounds",
+        "reference",
+        "step"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Adaptive Lookup Table (1D Stair-Fit)",
+      "value": "adaptive-tables"
+    },
+    {
+      "block": "Adaptive Lookup Table (2D Stair-Fit)",
+      "value": "adaptive-tables"
+    },
+    {
+      "block": "Adaptive Lookup Table (nD Stair-Fit)",
+      "value": "adaptive-tables"
+    },
+    {
+      "block": "CRMS",
+      "value": "signal-metrics"
+    },
+    {
+      "block": "Check Against Reference",
+      "value": "model-verification"
+    },
+    {
+      "block": "Check Custom Bounds",
+      "value": "model-verification"
+    },
+    {
+      "block": "Check Step Response  Characteristics",
+      "value": "model-verification"
+    },
+    {
+      "block": "DRMS",
+      "value": "signal-metrics"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Adaptive Lookup Table (1D Stair-Fit)",
+      "value": "Online-adaptive 1D lookup table that updates breakpoints during simulation — use for self-tuning calibration maps that learn from measured input-output data"
+    },
+    {
+      "block": "Adaptive Lookup Table (2D Stair-Fit)",
+      "value": "Online-adaptive 2D lookup table that updates breakpoints during simulation — use for self-tuning 2D calibration surfaces from measured data"
+    },
+    {
+      "block": "Adaptive Lookup Table (nD Stair-Fit)",
+      "value": "Online-adaptive n-dimensional lookup table — use for self-tuning multi-dimensional calibration maps from measured data"
+    },
+    {
+      "block": "CRMS",
+      "value": "Compute continuous running RMS of a signal — use for measuring signal power or vibration amplitude in continuous-time systems"
+    },
+    {
+      "block": "Check Against Reference",
+      "value": "Verify that a signal tracks a reference within tolerance — use for automated pass/fail testing against golden reference data during optimization or verification"
+    },
+    {
+      "block": "Check Custom Bounds",
+      "value": "Verify that a signal stays within user-defined upper and lower bounds — use for automated envelope testing during parameter optimization or design verification"
+    },
+    {
+      "block": "Check Step Response  Characteristics",
+      "value": "Verify step response meets rise time, settling time, and overshoot specs — use for automated performance validation of control system transient response"
+    },
+    {
+      "block": "DRMS",
+      "value": "Compute discrete running RMS of a signal — use for measuring signal power or vibration amplitude in discrete-time systems"
+    }
+  ]
+}

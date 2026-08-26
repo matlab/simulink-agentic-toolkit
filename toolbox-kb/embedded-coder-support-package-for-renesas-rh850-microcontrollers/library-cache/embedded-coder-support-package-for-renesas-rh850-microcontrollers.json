@@ -1,0 +1,90 @@
+{
+  "libraryName": "Embedded Coder Support Package for Renesas RH850 Microcontrollers",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 8,
+  "blocks": [
+    {
+      "name": "MCAL ADC",
+      "referenceBlock": "rh850mcallib/MCAL ADC",
+      "blockType": "mcal.blocks.advancedSarADCGroupConvertBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAL DIO Channel Group Read",
+      "referenceBlock": "rh850mcallib/MCAL DIO Channel Group Read",
+      "blockType": "mcal.blocks.mcalDioChannelGroupRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAL DIO Channel Group Write",
+      "referenceBlock": "rh850mcallib/MCAL DIO Channel Group Write",
+      "blockType": "mcal.blocks.mcalDioChannelGroupWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAL DIO Channel Read",
+      "referenceBlock": "rh850mcallib/MCAL DIO Channel Read",
+      "blockType": "mcal.blocks.mcalDioChannelRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAL DIO Channel Write",
+      "referenceBlock": "rh850mcallib/MCAL DIO Channel Write",
+      "blockType": "mcal.blocks.mcalDioChannelWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAL DIO Port Pins Read",
+      "referenceBlock": "rh850mcallib/MCAL DIO Port Pins Read",
+      "blockType": "mcal.blocks.mcalDioPortPinsRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "MCAL DIO Port Pins Write",
+      "referenceBlock": "rh850mcallib/MCAL DIO Port Pins Write",
+      "blockType": "mcal.blocks.mcalDioPortPinsWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Hardware Interrupt",
+      "referenceBlock": "rh850u2axblockslib/Hardware Interrupt",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HardwareInterrupt",
+      "introducedIn": "2026a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

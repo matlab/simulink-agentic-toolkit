@@ -1,0 +1,1260 @@
+{
+  "libraryName": "DO-178C/DO-331 Primitive Library",
+  "generatedAt": "2026-08-19T14:30:50",
+  "blockCount": 138,
+  "blocks": [
+    {
+      "name": "Decrement Real World",
+      "referenceBlock": "do178Lib/Simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Decrement Real World",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Real World Value Decrement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Increment Real World",
+      "referenceBlock": "do178Lib/Simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Increment Real World",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Real World Value Increment",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dead Zone Dynamic",
+      "referenceBlock": "do178Lib/Simulink/Discontinuities/Dead Zone Dynamic",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Dead Zone Dynamic",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Saturation Dynamic",
+      "referenceBlock": "do178Lib/Simulink/Discontinuities/Saturation Dynamic",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Saturation Dynamic",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wrap To Zero",
+      "referenceBlock": "do178Lib/Simulink/Discontinuities/Wrap To Zero",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Wrap To Zero",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Difference",
+      "referenceBlock": "do178Lib/Simulink/Discrete/Difference",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Difference",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Bit Clear",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Bit Clear",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bit Clear",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Set",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Bit Set",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bit Set",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Constant",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Compare To Constant",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Compare To Constant",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Zero",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Compare To Zero",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Compare To Zero",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Change",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Detect Change",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Change",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Decrease",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Detect Decrease",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Decrease",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Fall Negative",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Detect Fall Negative",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Fall Negative",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Fall Nonpositive",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Detect Fall Nonpositive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Fall Nonpositive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Increase",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Detect Increase",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Increase",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Rise Nonnegative",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Detect Rise Nonnegative",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Rise Nonnegative",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Rise Positive",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Detect Rise Positive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Rise Positive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interval Test",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Interval Test",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interval Test",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interval Test Dynamic",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Interval Test Dynamic",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interval Test Dynamic",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MinMax Running Resettable",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/MinMax Running Resettable",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MinMax Running Resettable",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DocBlock",
+      "referenceBlock": "do178Lib/Simulink/Model-Wide Utilities/DocBlock",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DocBlock",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Model Info",
+      "referenceBlock": "do178Lib/Simulink/Model-Wide Utilities/Model Info",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "CMBlock",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Conversion Inherited",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Data Type Conversion Inherited",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Conversion Inherited",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "do178Lib/Simulink/User-Defined Functions/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Chart",
+      "referenceBlock": "do178Lib/Stateflow/Chart",
+      "blockType": "Chart",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Simulink Function in Chart",
+      "referenceBlock": "do178Lib/Stateflow/Simulink Function in Chart",
+      "blockType": "Chart",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Dead Zone",
+      "referenceBlock": "do178Lib/Simulink/Discontinuities/Dead Zone",
+      "blockType": "DeadZone",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Relay",
+      "referenceBlock": "do178Lib/Simulink/Discontinuities/Relay",
+      "blockType": "Relay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Saturation",
+      "referenceBlock": "do178Lib/Simulink/Discontinuities/Saturation",
+      "blockType": "Saturate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Delay",
+      "referenceBlock": "do178Lib/Simulink/Discrete/Delay",
+      "blockType": "Delay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Discrete-Time Integrator",
+      "referenceBlock": "do178Lib/Simulink/Discrete/Discrete-Time Integrator",
+      "blockType": "DiscreteIntegrator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Unit Delay",
+      "referenceBlock": "do178Lib/Simulink/Discrete/Unit Delay",
+      "blockType": "UnitDelay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Bitwise Operator",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Bitwise Operator",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Bitwise Operator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Combinatorial  Logic",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Combinatorial  Logic",
+      "blockType": "CombinatorialLogic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logical Operator",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Logical Operator",
+      "blockType": "Logic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relational Operator",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Relational Operator",
+      "blockType": "RelationalOperator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Shift Arithmetic",
+      "referenceBlock": "do178Lib/Simulink/Logic and Bit Operations/Shift Arithmetic",
+      "blockType": "ArithShift",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "1-D Lookup Table",
+      "referenceBlock": "do178Lib/Simulink/Lookup Tables/1-D Lookup Table",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2-D Lookup Table",
+      "referenceBlock": "do178Lib/Simulink/Lookup Tables/2-D Lookup Table",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "3-D Lookup Table",
+      "referenceBlock": "do178Lib/Simulink/Lookup Tables/3-D Lookup Table",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interpolation Using Prelookup",
+      "referenceBlock": "do178Lib/Simulink/Lookup Tables/Interpolation Using Prelookup",
+      "blockType": "Interpolation_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Prelookup",
+      "referenceBlock": "do178Lib/Simulink/Lookup Tables/Prelookup",
+      "blockType": "PreLookup",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "n-D Lookup Table",
+      "referenceBlock": "do178Lib/Simulink/Lookup Tables/n-D Lookup Table",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Abs",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Abs",
+      "blockType": "Abs",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Add",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Add",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assignment",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Assignment",
+      "blockType": "Assignment",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bias",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Bias",
+      "blockType": "Bias",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Divide",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Divide",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dot Product",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Dot Product",
+      "blockType": "DotProduct",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gain",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Gain",
+      "blockType": "Gain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Math Function",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Math Function",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MinMax",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/MinMax",
+      "blockType": "MinMax",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Polynomial",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Polynomial",
+      "blockType": "Polyval",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Product",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Product",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reshape",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Reshape",
+      "blockType": "Reshape",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rounding Function",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Rounding Function",
+      "blockType": "Rounding",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sign",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Sign",
+      "blockType": "Signum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signed Sqrt",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Signed Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sqrt",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subtract",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Subtract",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sum",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Sum",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trigonometric Function",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Trigonometric Function",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unary Minus",
+      "referenceBlock": "do178Lib/Simulink/Math Operations/Unary Minus",
+      "blockType": "UnaryMinus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Function-Call Generator",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Function-Call Generator",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Function-Call Generator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Function-Call Split",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Function-Call Split",
+      "blockType": "FunctionCallSplit",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "If",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/If",
+      "blockType": "If",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch Case",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Switch Case",
+      "blockType": "SwitchCase",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Atomic Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Atomic Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Enabled Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Enable",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Enabled Subsystem/Enable",
+      "blockType": "EnablePort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Enabled Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/For Each Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "For Each",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/For Each Subsystem/For Each",
+      "blockType": "ForEach",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/For Each Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/For Iterator Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "For Iterator",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/For Iterator Subsystem/For Iterator",
+      "blockType": "ForIterator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/For Iterator Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Function-Call Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "function",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Function-Call Subsystem/function",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Function-Call Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/If Action Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Action Port",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/If Action Subsystem/Action Port",
+      "blockType": "ActionPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/If Action Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Triggered Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trigger",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Triggered Subsystem/Trigger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Triggered Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Variant Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Variant Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Variant Subsystem/Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Variant Subsystem/Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Variant Subsystem/Subsystem1/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/Variant Subsystem/Subsystem1/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/While Iterator Subsystem/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IC",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/While Iterator Subsystem/IC",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "While Iterator",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/While Iterator Subsystem/While Iterator",
+      "blockType": "WhileIterator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Ports & Subsystems/While Iterator Subsystem/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Duplicate",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Data Type Duplicate",
+      "blockType": "DataTypeDuplicate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Conversion",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Data Type Conversion",
+      "blockType": "DataTypeConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Propagation",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Data Type Propagation",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Data Type Propagation",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "IC",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/IC",
+      "blockType": "InitialCondition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Probe",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Probe",
+      "blockType": "Probe",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rate Transition",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Rate Transition",
+      "blockType": "RateTransition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Conversion",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Signal Conversion",
+      "blockType": "SignalConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Specification",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Signal Specification",
+      "blockType": "SignalSpecification",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unit Conversion",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Unit Conversion",
+      "blockType": "UnitConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Width",
+      "referenceBlock": "do178Lib/Simulink/Signal Attributes/Width",
+      "blockType": "Width",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bus Assignment",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Bus Assignment",
+      "blockType": "BusAssignment",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bus Creator",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Bus Creator",
+      "blockType": "BusCreator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bus Selector",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Bus Selector",
+      "blockType": "BusSelector",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Store Memory",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Data Store Memory",
+      "blockType": "DataStoreMemory",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Store Read",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Data Store Read",
+      "blockType": "DataStoreRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Store Write",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Data Store Write",
+      "blockType": "DataStoreWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Demux",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Demux",
+      "blockType": "Demux",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "From",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/From",
+      "blockType": "From",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Goto",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Goto",
+      "blockType": "Goto",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Merge",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Merge",
+      "blockType": "Merge",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiport Switch",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Multiport Switch",
+      "blockType": "MultiPortSwitch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mux",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Mux",
+      "blockType": "Mux",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Selector",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Selector",
+      "blockType": "Selector",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Switch",
+      "blockType": "Switch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vector Concatenate",
+      "referenceBlock": "do178Lib/Simulink/Signal Routing/Vector Concatenate",
+      "blockType": "Concatenate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "do178Lib/Simulink/Sinks/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Out1",
+      "referenceBlock": "do178Lib/Simulink/Sinks/Out1",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "In1",
+      "referenceBlock": "do178Lib/Simulink/Sources/In1",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "do178Lib/Simulink/Sources/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Enumerated Constant",
+      "referenceBlock": "do178Lib/Simulink/Sources/Enumerated Constant",
+      "blockType": "EnumeratedConstant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ground",
+      "referenceBlock": "do178Lib/Simulink/Sources/Ground",
+      "blockType": "Ground",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ASCII to String",
+      "referenceBlock": "do178Lib/Simulink/String/ASCII to String",
+      "blockType": "ASCIIToString",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "C Caller",
+      "referenceBlock": "do178Lib/Simulink/User-Defined Functions/C Caller",
+      "blockType": "CCaller",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fcn",
+      "referenceBlock": "do178Lib/Simulink/User-Defined Functions/Fcn",
+      "blockType": "Fcn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "u",
+      "referenceBlock": "do178Lib/Stateflow/Simulink Function in Chart/foo/u",
+      "blockType": "Inport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "f",
+      "referenceBlock": "do178Lib/Stateflow/Simulink Function in Chart/foo/f",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "y",
+      "referenceBlock": "do178Lib/Stateflow/Simulink Function in Chart/foo/y",
+      "blockType": "Outport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

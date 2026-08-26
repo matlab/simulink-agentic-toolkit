@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456901615,
+  "generatorVersion": 4,
+  "libraries": [
+    "Instrument Control Toolbox"
+  ],
+  "blockCount": 10,
+  "categoryCount": 3,
+  "libraryFingerprints": {
+    "Instrument_Control_Toolbox": {
+      "blockCount": 10
+    }
+  }
+}

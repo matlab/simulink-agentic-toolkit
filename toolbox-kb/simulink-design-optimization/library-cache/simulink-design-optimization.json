@@ -1,0 +1,117 @@
+{
+  "libraryName": "Simulink Design Optimization",
+  "generatedAt": "2026-08-19T14:31:13",
+  "blockCount": 11,
+  "blocks": [
+    {
+      "name": "Adaptive Lookup Table (1D Stair-Fit)",
+      "referenceBlock": "sdolib/Adaptive Lookup Tables/Adaptive Lookup Table (1D Stair-Fit)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Adaptive Lookup Table (1D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Adaptive Lookup Table (2D Stair-Fit)",
+      "referenceBlock": "sdolib/Adaptive Lookup Tables/Adaptive Lookup Table (2D Stair-Fit)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Adaptive Lookup Table (2D)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Adaptive Lookup Table (nD Stair-Fit)",
+      "referenceBlock": "sdolib/Adaptive Lookup Tables/Adaptive Lookup Table (nD Stair-Fit)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Adaptive Lookup Table (nD)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CRMS",
+      "referenceBlock": "sdolib/RMS Blocks/CRMS",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Continuous RMS Value Block",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DRMS",
+      "referenceBlock": "sdolib/RMS Blocks/DRMS",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Discrete RMS Value Block",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Against Reference",
+      "referenceBlock": "sdolib/Model Verification/Check Against Reference",
+      "blockType": "Checks_ReferenceSignal",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Custom Bounds",
+      "referenceBlock": "sdolib/Model Verification/Check Custom Bounds",
+      "blockType": "Checks_CustomBounds",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Step Response  Characteristics",
+      "referenceBlock": "sdolib/Model Verification/Check Step Response  Characteristics",
+      "blockType": "Checks_StepResponse",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Against Reference",
+      "referenceBlock": "sdolib/Signal Constraints/Check Against Reference",
+      "blockType": "Checks_ReferenceSignal",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Custom Bounds",
+      "referenceBlock": "sdolib/Signal Constraints/Check Custom Bounds",
+      "blockType": "Checks_CustomBounds",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Step Response  Characteristics",
+      "referenceBlock": "sdolib/Signal Constraints/Check Step Response  Characteristics",
+      "blockType": "Checks_StepResponse",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

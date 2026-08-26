@@ -1,0 +1,990 @@
+{
+  "commonBlocks": [
+    "Predict",
+    "Classify",
+    "Convolution 2D Layer",
+    "ReLU Layer",
+    "Fully Connected Layer",
+    "Softmax Layer",
+    "Batch Normalization Layer",
+    "Max Pooling 2D Layer",
+    "LSTM Layer",
+    "Addition Layer",
+    "ONNX Model Predict",
+    "Concatenation Layer",
+    "Stateful Predict"
+  ],
+  "categories": [
+    {
+      "name": "inference",
+      "description": "Top-level network inference blocks for classification and prediction",
+      "keywords": [
+        "predict",
+        "classify",
+        "inference",
+        "stateful",
+        "network"
+      ]
+    },
+    {
+      "name": "activation-layers",
+      "description": "Nonlinear activation functions applied between network layers",
+      "keywords": [
+        "relu",
+        "sigmoid",
+        "tanh",
+        "activation",
+        "gelu"
+      ]
+    },
+    {
+      "name": "convolution-layers",
+      "description": "Convolutional and fully connected layers for feature extraction",
+      "keywords": [
+        "convolution",
+        "conv2d",
+        "fully",
+        "connected",
+        "filter"
+      ]
+    },
+    {
+      "name": "pooling-layers",
+      "description": "Spatial and temporal pooling layers for dimensionality reduction",
+      "keywords": [
+        "pooling",
+        "max",
+        "average",
+        "global",
+        "downsample"
+      ]
+    },
+    {
+      "name": "normalization-layers",
+      "description": "Batch, instance, and layer normalization for training stability",
+      "keywords": [
+        "normalization",
+        "batch",
+        "instance",
+        "layer",
+        "norm"
+      ]
+    },
+    {
+      "name": "sequence-layers",
+      "description": "Recurrent layers (LSTM, GRU) and reshaping for sequence processing",
+      "keywords": [
+        "lstm",
+        "gru",
+        "sequence",
+        "recurrent",
+        "flatten"
+      ]
+    },
+    {
+      "name": "combination-layers",
+      "description": "Addition, concatenation, and multiplication for merging network branches",
+      "keywords": [
+        "addition",
+        "concatenation",
+        "multiplication",
+        "merge",
+        "skip"
+      ]
+    },
+    {
+      "name": "input-normalization",
+      "description": "Input data normalization and inverse denormalization for inference",
+      "keywords": [
+        "rescale",
+        "zscore",
+        "zerocenter",
+        "normalize",
+        "inverse"
+      ]
+    },
+    {
+      "name": "utility-layers",
+      "description": "Dropout, reshape, permute, and other structural utility layers",
+      "keywords": [
+        "dropout",
+        "reshape",
+        "permute",
+        "slice",
+        "identity"
+      ]
+    },
+    {
+      "name": "external-frameworks",
+      "description": "Run inference from external frameworks: ONNX, PyTorch, TensorFlow, Python",
+      "keywords": [
+        "onnx",
+        "pytorch",
+        "tensorflow",
+        "python",
+        "external"
+      ]
+    },
+    {
+      "name": "classic-nn-controllers",
+      "description": "Classic neural network controllers for adaptive and predictive control",
+      "keywords": [
+        "controller",
+        "narma",
+        "predictive",
+        "adaptive",
+        "model"
+      ]
+    },
+    {
+      "name": "classic-nn-preprocessing",
+      "description": "Data preprocessing and postprocessing functions for classic NN workflows",
+      "keywords": [
+        "mapminmax",
+        "mapstd",
+        "pca",
+        "preprocessing",
+        "fixunknowns"
+      ]
+    },
+    {
+      "name": "classic-nn-functions",
+      "description": "Transfer functions, weight functions, and net input functions for classic networks",
+      "keywords": [
+        "tansig",
+        "logsig",
+        "purelin",
+        "dotprod",
+        "transfer"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Addition Layer",
+      "value": "combination-layers"
+    },
+    {
+      "block": "Average Pooling 1D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Average Pooling 2D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Average Pooling 3D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Batch Normalization Layer",
+      "value": "normalization-layers"
+    },
+    {
+      "block": "Classify",
+      "value": "inference"
+    },
+    {
+      "block": "Clipped ReLU Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "Concatenation Layer",
+      "value": "combination-layers"
+    },
+    {
+      "block": "Convolution 1D Layer",
+      "value": "convolution-layers"
+    },
+    {
+      "block": "Convolution 2D Layer",
+      "value": "convolution-layers"
+    },
+    {
+      "block": "Convolution 3D Layer",
+      "value": "convolution-layers"
+    },
+    {
+      "block": "Custom Python Model Predict",
+      "value": "external-frameworks"
+    },
+    {
+      "block": "Depth Concatenation Layer",
+      "value": "combination-layers"
+    },
+    {
+      "block": "Dropout Layer",
+      "value": "utility-layers"
+    },
+    {
+      "block": "Flatten Layer",
+      "value": "sequence-layers"
+    },
+    {
+      "block": "Fully Connected Layer",
+      "value": "convolution-layers"
+    },
+    {
+      "block": "GELU Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "GRU Layer",
+      "value": "sequence-layers"
+    },
+    {
+      "block": "GRU Projected Layer",
+      "value": "sequence-layers"
+    },
+    {
+      "block": "Global Average Pooling 1D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Global Average Pooling 2D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Global Average Pooling 3D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Global Max Pooling 1D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Global Max Pooling 2D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Global Max Pooling 3D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Identity Layer",
+      "value": "utility-layers"
+    },
+    {
+      "block": "Instance Normalization Layer",
+      "value": "normalization-layers"
+    },
+    {
+      "block": "Inverse Zerocenter",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Inverse Zscore",
+      "value": "input-normalization"
+    },
+    {
+      "block": "LSTM Layer",
+      "value": "sequence-layers"
+    },
+    {
+      "block": "LSTM Projected Layer",
+      "value": "sequence-layers"
+    },
+    {
+      "block": "Layer Normalization Layer",
+      "value": "normalization-layers"
+    },
+    {
+      "block": "Leaky ReLU Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "Max Pooling 1D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Max Pooling 2D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Max Pooling 3D Layer",
+      "value": "pooling-layers"
+    },
+    {
+      "block": "Model Reference Controller",
+      "value": "classic-nn-controllers"
+    },
+    {
+      "block": "Multiplication Layer",
+      "value": "combination-layers"
+    },
+    {
+      "block": "NARMA-L2 Controller",
+      "value": "classic-nn-controllers"
+    },
+    {
+      "block": "NN Predictive Controller",
+      "value": "classic-nn-controllers"
+    },
+    {
+      "block": "ONNX Model Predict",
+      "value": "external-frameworks"
+    },
+    {
+      "block": "PReLU Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "Predict",
+      "value": "inference"
+    },
+    {
+      "block": "PyTorch Model Predict",
+      "value": "external-frameworks"
+    },
+    {
+      "block": "ReLU Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "Rescale-Symmetric 1D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Rescale-Symmetric 2D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Rescale-Symmetric 3D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Rescale-Zero-One 1D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Rescale-Zero-One 2D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Rescale-Zero-One 3D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Scaling Layer",
+      "value": "utility-layers"
+    },
+    {
+      "block": "Sigmoid Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "Softmax Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "Spatial Dropout Layer",
+      "value": "utility-layers"
+    },
+    {
+      "block": "Stateful Classify",
+      "value": "inference"
+    },
+    {
+      "block": "Stateful Predict",
+      "value": "inference"
+    },
+    {
+      "block": "Swish Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "Tanh Layer",
+      "value": "activation-layers"
+    },
+    {
+      "block": "TensorFlow Model Predict",
+      "value": "external-frameworks"
+    },
+    {
+      "block": "X(2Y)  Graph",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "Zerocenter 1D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Zerocenter 2D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Zerocenter 3D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Zscore 1D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Zscore 2D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "Zscore 3D",
+      "value": "input-normalization"
+    },
+    {
+      "block": "compet",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "dist",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "dotprod",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "elliot2sig",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "elliotsig",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "fixunknowns",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "fixunknowns_reverse",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "hardlim",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "hardlims",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "logsig",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "lvqoutputs",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "lvqoutputs_reverse",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "mapminmax",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "mapminmax_reverse",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "mapstd",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "mapstd_reverse",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "negdist",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "netinv",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "netprod",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "netsum",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "normprod",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "poslin",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "processpca",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "processpca_reverse",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "purelin",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "radbas",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "radbasn",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "removeconstantrows",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "removeconstantrows_reverse",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "removerows",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "removerows_reverse",
+      "value": "classic-nn-preprocessing"
+    },
+    {
+      "block": "satlin",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "satlins",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "softmax",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "tansig",
+      "value": "classic-nn-functions"
+    },
+    {
+      "block": "tribas",
+      "value": "classic-nn-functions"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Addition Layer",
+      "value": "Element-wise add multiple input tensors — use for residual (skip) connections that sum the shortcut path with the main path in ResNet-style architectures"
+    },
+    {
+      "block": "Average Pooling 1D Layer",
+      "value": "Reduce temporal resolution by averaging over sliding windows — use to downsample 1-D feature maps while preserving smooth signal characteristics"
+    },
+    {
+      "block": "Average Pooling 2D Layer",
+      "value": "Reduce spatial resolution by averaging over 2-D sliding windows — use to downsample feature maps while preserving average activation patterns"
+    },
+    {
+      "block": "Average Pooling 3D Layer",
+      "value": "Reduce volumetric resolution by averaging over 3-D sliding windows — use to downsample 3-D feature maps in video or medical imaging networks"
+    },
+    {
+      "block": "Batch Normalization Layer",
+      "value": "Normalize activations across the batch using learned scale and offset — use between convolution and activation to stabilize training and accelerate convergence"
+    },
+    {
+      "block": "Classify",
+      "value": "Run inference on a trained deep learning network and return class labels — use for image classification, signal categorization, or any trained network that outputs discrete categories"
+    },
+    {
+      "block": "Clipped ReLU Layer",
+      "value": "Apply clipped rectified linear activation with a configurable ceiling — use to bound layer outputs between 0 and a maximum value for numerically stable deployments"
+    },
+    {
+      "block": "Concatenation Layer",
+      "value": "Concatenate inputs along a specified dimension — use to merge features from parallel branches or combine multi-scale representations"
+    },
+    {
+      "block": "Convolution 1D Layer",
+      "value": "Apply learned 1-D convolutional filters to sequential data — use for temporal pattern detection in time-series, audio, or sensor signal classification networks"
+    },
+    {
+      "block": "Convolution 2D Layer",
+      "value": "Apply learned 2-D convolutional filters to image or spatial data — use as the core feature extraction layer in image classification, detection, and segmentation networks"
+    },
+    {
+      "block": "Convolution 3D Layer",
+      "value": "Apply learned 3-D convolutional filters to volumetric or video data — use for spatiotemporal feature extraction in video analysis or 3-D medical imaging networks"
+    },
+    {
+      "block": "Custom Python Model Predict",
+      "value": "Run inference using a custom Python function — use to integrate arbitrary Python ML frameworks or custom preprocessing into Simulink inference pipelines"
+    },
+    {
+      "block": "Depth Concatenation Layer",
+      "value": "Concatenate inputs along the channel (depth) dimension — use in inception modules or U-Net skip connections that stack feature maps from different paths"
+    },
+    {
+      "block": "Dropout Layer",
+      "value": "Randomly zero activations during training for regularization — use to prevent overfitting by forcing the network to learn redundant representations"
+    },
+    {
+      "block": "Flatten Layer",
+      "value": "Reshape a multi-dimensional input into a 1-D vector — use to transition from convolutional feature maps to fully connected layers or sequence inputs"
+    },
+    {
+      "block": "Fully Connected Layer",
+      "value": "Apply a learned linear transformation (matrix multiply plus bias) — use as a dense layer for classification heads or regression outputs after feature extraction"
+    },
+    {
+      "block": "GELU Layer",
+      "value": "Apply Gaussian Error Linear Unit activation — use as a smooth alternative to ReLU in transformer architectures and NLP-inspired signal processing networks"
+    },
+    {
+      "block": "GRU Layer",
+      "value": "Apply a Gated Recurrent Unit for sequence modeling — use for temporal pattern recognition in time-series data with lower computational cost than LSTM"
+    },
+    {
+      "block": "GRU Projected Layer",
+      "value": "Apply a GRU with projection to reduce output dimensionality — use for sequence tasks where a lower-dimensional hidden state reduces computation without losing accuracy"
+    },
+    {
+      "block": "Global Average Pooling 1D Layer",
+      "value": "Reduce each 1-D feature channel to a single value by global averaging — use before the classification head to make the network input-length invariant"
+    },
+    {
+      "block": "Global Average Pooling 2D Layer",
+      "value": "Reduce each 2-D feature map to a single value by global averaging — use before the classification head to replace fully connected layers with spatial invariance"
+    },
+    {
+      "block": "Global Average Pooling 3D Layer",
+      "value": "Reduce each 3-D feature volume to a single value by global averaging — use before classification to achieve spatial invariance in volumetric networks"
+    },
+    {
+      "block": "Global Max Pooling 1D Layer",
+      "value": "Reduce each 1-D feature channel to its maximum value — use to capture the strongest activation regardless of temporal position"
+    },
+    {
+      "block": "Global Max Pooling 2D Layer",
+      "value": "Reduce each 2-D feature map to its maximum value — use to capture the strongest spatial activation for position-invariant feature extraction"
+    },
+    {
+      "block": "Global Max Pooling 3D Layer",
+      "value": "Reduce each 3-D feature volume to its maximum value — use for position-invariant feature extraction from volumetric data"
+    },
+    {
+      "block": "Identity Layer",
+      "value": "Pass input through unchanged — use as a placeholder or naming point in complex architectures for clarity or to mark branch points"
+    },
+    {
+      "block": "Instance Normalization Layer",
+      "value": "Normalize each sample independently across spatial dimensions — use in style transfer or generative networks where batch statistics are inappropriate"
+    },
+    {
+      "block": "Inverse Zerocenter",
+      "value": "Reverse zero-centering normalization on network outputs — use to add back the training mean to denormalize predictions"
+    },
+    {
+      "block": "Inverse Zscore",
+      "value": "Reverse z-score normalization on network outputs — use to convert standardized predictions back to original scale using training mean and standard deviation"
+    },
+    {
+      "block": "LSTM Layer",
+      "value": "Apply a Long Short-Term Memory layer for sequence modeling — use for temporal dependencies in time-series prediction, speech, or sequential signal processing"
+    },
+    {
+      "block": "LSTM Projected Layer",
+      "value": "Apply an LSTM with projection to reduce hidden state size — use when the full LSTM hidden dimension is larger than needed for the downstream task"
+    },
+    {
+      "block": "Layer Normalization Layer",
+      "value": "Normalize activations across features within each sample — use in transformer architectures or recurrent networks where batch normalization is unsuitable"
+    },
+    {
+      "block": "Leaky ReLU Layer",
+      "value": "Apply leaky rectified linear activation with a small negative slope — use to avoid dead neurons by allowing a small gradient for negative inputs"
+    },
+    {
+      "block": "Max Pooling 1D Layer",
+      "value": "Reduce temporal resolution by taking the maximum over sliding windows — use to downsample 1-D feature maps while retaining the strongest activations"
+    },
+    {
+      "block": "Max Pooling 2D Layer",
+      "value": "Reduce spatial resolution by taking the maximum over 2-D sliding windows — use to downsample feature maps while preserving dominant features and adding translation invariance"
+    },
+    {
+      "block": "Max Pooling 3D Layer",
+      "value": "Reduce volumetric resolution by taking the maximum over 3-D sliding windows — use to downsample 3-D feature maps in video or medical imaging networks"
+    },
+    {
+      "block": "Model Reference Controller",
+      "value": "Implement a model reference adaptive controller using a neural network — use for adaptive control where the plant model is approximated by a trained network"
+    },
+    {
+      "block": "Multiplication Layer",
+      "value": "Element-wise multiply input tensors — use for attention mechanisms, feature gating, or multiplicative interactions between network branches"
+    },
+    {
+      "block": "NARMA-L2 Controller",
+      "value": "Implement a NARMA-L2 (feedback linearization) neural network controller — use for nonlinear plant control where the network inverts the plant dynamics"
+    },
+    {
+      "block": "NN Predictive Controller",
+      "value": "Implement a neural network predictive controller using receding-horizon optimization — use for model-predictive control where the plant model is a trained network"
+    },
+    {
+      "block": "ONNX Model Predict",
+      "value": "Run inference using an imported ONNX model — use to deploy models trained in any ONNX-compatible framework into Simulink without manual reimplementation"
+    },
+    {
+      "block": "PReLU Layer",
+      "value": "Apply parametric ReLU with a learnable negative slope — use when the optimal negative-region slope varies by channel and should be learned during training"
+    },
+    {
+      "block": "Predict",
+      "value": "Run inference on a trained deep learning network and return numeric outputs — use for regression, feature extraction, or networks that output continuous values rather than class labels"
+    },
+    {
+      "block": "PyTorch Model Predict",
+      "value": "Run inference using a PyTorch model via Python co-execution — use to integrate PyTorch-trained networks into Simulink when ONNX export is not available or loses fidelity"
+    },
+    {
+      "block": "ReLU Layer",
+      "value": "Apply rectified linear unit activation (max of 0 and input) — use as the default nonlinearity in convolutional and fully connected networks for fast training convergence"
+    },
+    {
+      "block": "Rescale-Symmetric 1D",
+      "value": "Rescale 1-D input data to the symmetric range [-1, 1] — use to normalize time-series or sensor signals before feeding into a trained network"
+    },
+    {
+      "block": "Rescale-Symmetric 2D",
+      "value": "Rescale 2-D input data to the symmetric range [-1, 1] — use to normalize images before feeding into a network trained with symmetric rescaling"
+    },
+    {
+      "block": "Rescale-Symmetric 3D",
+      "value": "Rescale 3-D input data to the symmetric range [-1, 1] — use to normalize volumetric data before network inference"
+    },
+    {
+      "block": "Rescale-Zero-One 1D",
+      "value": "Rescale 1-D input data to the [0, 1] range — use to normalize time-series signals to match the training normalization"
+    },
+    {
+      "block": "Rescale-Zero-One 2D",
+      "value": "Rescale 2-D input data to the [0, 1] range — use to normalize images to match the training normalization"
+    },
+    {
+      "block": "Rescale-Zero-One 3D",
+      "value": "Rescale 3-D input data to the [0, 1] range — use to normalize volumetric inputs to match training normalization"
+    },
+    {
+      "block": "Scaling Layer",
+      "value": "Multiply input by a constant factor — use to apply fixed gain to activations for calibration or to match output ranges to downstream requirements"
+    },
+    {
+      "block": "Sigmoid Layer",
+      "value": "Apply sigmoid activation squashing outputs to the 0-1 range — use for binary classification output layers or gating mechanisms in recurrent networks"
+    },
+    {
+      "block": "Softmax Layer",
+      "value": "Apply softmax normalization producing a probability distribution over classes — use as the final activation in multi-class classification networks"
+    },
+    {
+      "block": "Spatial Dropout Layer",
+      "value": "Drop entire feature channels rather than individual elements during training — use for spatial regularization in convolutional networks where adjacent activations are correlated"
+    },
+    {
+      "block": "Stateful Classify",
+      "value": "Run inference with internal state on recurrent networks and return class labels — use for sequence classification tasks where LSTM/GRU hidden states persist across time steps"
+    },
+    {
+      "block": "Stateful Predict",
+      "value": "Run inference with internal state on recurrent networks and return numeric outputs — use for time-series prediction where LSTM/GRU hidden states carry temporal context between samples"
+    },
+    {
+      "block": "Swish Layer",
+      "value": "Apply Swish activation (x times sigmoid) — use as a self-gated nonlinearity that often outperforms ReLU in deep architectures with many layers"
+    },
+    {
+      "block": "Tanh Layer",
+      "value": "Apply hyperbolic tangent activation squashing outputs to -1 to 1 — use in recurrent network gates or when centered (zero-mean) activations are beneficial"
+    },
+    {
+      "block": "TensorFlow Model Predict",
+      "value": "Run inference using a TensorFlow/Keras model via Python co-execution — use to integrate TensorFlow-trained networks into Simulink without manual conversion"
+    },
+    {
+      "block": "X(2Y)  Graph",
+      "value": "Legacy neural network plotting block — internal visualization utility for classic Neural Network Toolbox"
+    },
+    {
+      "block": "Zerocenter 1D",
+      "value": "Subtract the training mean from 1-D input data — use to zero-center time-series signals before network inference using the stored training statistics"
+    },
+    {
+      "block": "Zerocenter 2D",
+      "value": "Subtract the training mean from 2-D input data — use to zero-center images before inference using per-channel training means"
+    },
+    {
+      "block": "Zerocenter 3D",
+      "value": "Subtract the training mean from 3-D input data — use to zero-center volumetric inputs before inference"
+    },
+    {
+      "block": "Zscore 1D",
+      "value": "Apply z-score normalization to 1-D input data using training statistics — use to standardize time-series signals to zero mean and unit variance before network inference"
+    },
+    {
+      "block": "Zscore 2D",
+      "value": "Apply z-score normalization to 2-D input data using training statistics — use to standardize images to zero mean and unit variance before network inference"
+    },
+    {
+      "block": "Zscore 3D",
+      "value": "Apply z-score normalization to 3-D input data using training statistics — use to standardize volumetric data before network inference"
+    },
+    {
+      "block": "compet",
+      "value": "Competitive transfer function that outputs 1 for the neuron with the largest input — use in competitive learning and self-organizing map networks"
+    },
+    {
+      "block": "dist",
+      "value": "Euclidean distance weight function — use in radial basis and competitive networks to compute distance between input vectors and weight vectors"
+    },
+    {
+      "block": "dotprod",
+      "value": "Dot product weight function — use as the standard weight application method in feedforward layers computing weighted sums of inputs"
+    },
+    {
+      "block": "elliot2sig",
+      "value": "Apply Elliot symmetric sigmoid (fast approximation to tanh) — use when sigmoid-like activation is needed with lower computational cost than standard tanh"
+    },
+    {
+      "block": "elliotsig",
+      "value": "Apply Elliot sigmoid (fast approximation to logistic sigmoid) — use for computationally efficient sigmoid activation in resource-constrained deployments"
+    },
+    {
+      "block": "fixunknowns",
+      "value": "Encode unknown or missing values in input data using indicator variables — use as a preprocessing step for networks that must handle incomplete input data"
+    },
+    {
+      "block": "fixunknowns_reverse",
+      "value": "Reverse the fixunknowns encoding — use to restore original data format after network processing"
+    },
+    {
+      "block": "hardlim",
+      "value": "Hard-limit transfer function (outputs 0 or 1) — use for binary threshold activation in perceptrons or pattern classification networks"
+    },
+    {
+      "block": "hardlims",
+      "value": "Symmetric hard-limit transfer function (outputs -1 or 1) — use for bipolar threshold activation in symmetric perceptron networks"
+    },
+    {
+      "block": "logsig",
+      "value": "Log-sigmoid transfer function mapping inputs to 0-1 range — use as the classic sigmoid activation for binary outputs in legacy neural network architectures"
+    },
+    {
+      "block": "lvqoutputs",
+      "value": "Transform network outputs for Learning Vector Quantization — use as output processing for LVQ classification networks"
+    },
+    {
+      "block": "lvqoutputs_reverse",
+      "value": "Reverse LVQ output transformation — use to convert LVQ network outputs back to class indices"
+    },
+    {
+      "block": "mapminmax",
+      "value": "Scale inputs to the [-1, 1] range using training min/max statistics — use as input preprocessing for classic neural networks trained with normalized data"
+    },
+    {
+      "block": "mapminmax_reverse",
+      "value": "Reverse min-max scaling to recover original data range — use to denormalize network outputs back to physical units"
+    },
+    {
+      "block": "mapstd",
+      "value": "Standardize inputs to zero mean and unit standard deviation — use as input preprocessing for classic neural networks trained with standardized data"
+    },
+    {
+      "block": "mapstd_reverse",
+      "value": "Reverse standardization to recover original data scale — use to denormalize network outputs back to physical units"
+    },
+    {
+      "block": "negdist",
+      "value": "Negative Euclidean distance weight function — use in competitive layers where closer vectors should produce larger (less negative) net inputs"
+    },
+    {
+      "block": "netinv",
+      "value": "Inverse transfer function (1/x) — use in radial basis or specialized network architectures requiring reciprocal activation"
+    },
+    {
+      "block": "netprod",
+      "value": "Product net input function — use in pi-sigma or product-unit networks where net input is the product rather than sum of weighted inputs"
+    },
+    {
+      "block": "netsum",
+      "value": "Summation net input function — use as the standard net input computation that sums all weighted inputs plus bias in feedforward networks"
+    },
+    {
+      "block": "normprod",
+      "value": "Normalized dot product weight function — use when weight application should be invariant to input vector magnitude"
+    },
+    {
+      "block": "poslin",
+      "value": "Positive linear transfer function (equivalent to ReLU) — use as rectified linear activation in classic Neural Network Toolbox architectures"
+    },
+    {
+      "block": "processpca",
+      "value": "Apply PCA dimensionality reduction using training-time principal components — use as input preprocessing to reduce input dimensionality while preserving variance"
+    },
+    {
+      "block": "processpca_reverse",
+      "value": "Reverse PCA transformation to reconstruct the full-dimensional signal — use to map reduced outputs back to original feature space"
+    },
+    {
+      "block": "purelin",
+      "value": "Linear transfer function (identity) — use for output layers in regression networks where no nonlinear squashing is desired"
+    },
+    {
+      "block": "radbas",
+      "value": "Radial basis transfer function (Gaussian) — use as the activation in radial basis function network hidden layers for function approximation"
+    },
+    {
+      "block": "radbasn",
+      "value": "Normalized radial basis transfer function — use in normalized RBF networks where basis function outputs are divided by their sum"
+    },
+    {
+      "block": "removeconstantrows",
+      "value": "Remove rows that were constant in the training data — use to eliminate uninformative input features before network inference"
+    },
+    {
+      "block": "removeconstantrows_reverse",
+      "value": "Reinsert constant rows removed during preprocessing — use to restore original data dimensions after network processing"
+    },
+    {
+      "block": "removerows",
+      "value": "Remove specified rows from input data — use to exclude unwanted features identified during training data analysis"
+    },
+    {
+      "block": "removerows_reverse",
+      "value": "Reinsert removed rows into output data — use to restore original data dimensions after network processing"
+    },
+    {
+      "block": "satlin",
+      "value": "Saturating linear transfer function (clipped to 0-1) — use when linear response is needed within bounds and saturation outside"
+    },
+    {
+      "block": "satlins",
+      "value": "Symmetric saturating linear transfer function (clipped to -1 to 1) — use for bounded linear activation with symmetric saturation limits"
+    },
+    {
+      "block": "softmax",
+      "value": "Softmax transfer function producing probability distribution — use as the output activation for multi-class classification in classic NN Toolbox networks"
+    },
+    {
+      "block": "tansig",
+      "value": "Hyperbolic tangent sigmoid transfer function — use as the standard bipolar sigmoid activation in classic feedforward and recurrent networks"
+    },
+    {
+      "block": "tribas",
+      "value": "Triangular basis transfer function — use in specialized interpolation or local-response networks as a piecewise-linear basis function"
+    }
+  ]
+}

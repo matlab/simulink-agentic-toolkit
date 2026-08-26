@@ -1,0 +1,54 @@
+{
+  "libraryName": "HDL Verifier",
+  "generatedAt": "2026-08-19T14:31:00",
+  "blockCount": 4,
+  "blocks": [
+    {
+      "name": "For Use with  AMD Vivado Simulator",
+      "referenceBlock": "edalinklib/For Use with  AMD Vivado Simulator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HDL Verifier for use with Cadence Xcelium Simulink Block Library",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "For Use with  Cadence Xcelium",
+      "referenceBlock": "edalinklib/For Use with  Cadence Xcelium",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HDL Verifier for use with Cadence Xcelium Simulink Block Library",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "For Use with  Synopsys VCS",
+      "referenceBlock": "edalinklib/For Use with  Synopsys VCS",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HDL Verifier for use with Cadence Xcelium Simulink Block Library",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "For Use with DPI-C SystemVerilog",
+      "referenceBlock": "edalinklib/For Use with DPI-C SystemVerilog",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HDL Verifier for use with DPI-C SystemVerilog component generation",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

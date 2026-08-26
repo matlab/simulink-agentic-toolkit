@@ -1,0 +1,342 @@
+{
+  "libraryName": "Automated Driving Toolbox",
+  "generatedAt": "2026-08-19T14:30:47",
+  "blockCount": 36,
+  "blocks": [
+    {
+      "name": "Demos",
+      "referenceBlock": "drivinglib/Demos",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Demos",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lidar Point Cloud Generator",
+      "referenceBlock": "drivingscenarioandsensors/Lidar Point Cloud Generator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "lidarPointCloudGenerator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bicycle Model - Force Input",
+      "referenceBlock": "drivingscenarioandsensors/Bicycle Model - Force Input",
+      "blockType": "VehicleBody3DOFLateral",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Bicycle Model - Velocity Input",
+      "referenceBlock": "drivingscenarioandsensors/Bicycle Model - Velocity Input",
+      "blockType": "VehicleBody3DOFLateral",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Cuboid To 3D Simulation",
+      "referenceBlock": "drivingscenarioandsensors/Cuboid To 3D Simulation",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Driving Radar Data Generator",
+      "referenceBlock": "drivingscenarioandsensors/Driving Radar Data Generator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "INS",
+      "referenceBlock": "drivingscenarioandsensors/INS",
+      "blockType": "fusion.internal.simulink.insSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ideal Ground Truth Sensor",
+      "referenceBlock": "drivingscenarioandsensors/Ideal Ground Truth Sensor",
+      "blockType": "idealGroundTruthSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2025a"
+    },
+    {
+      "name": "Radar Detection Generator",
+      "referenceBlock": "drivingscenarioandsensors/Radar Detection Generator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Scenario Reader",
+      "referenceBlock": "drivingscenarioandsensors/Scenario Reader",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ultrasonic Detection Generator",
+      "referenceBlock": "drivingscenarioandsensors/Ultrasonic Detection Generator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle To World",
+      "referenceBlock": "drivingscenarioandsensors/Vehicle To World",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vision Detection Generator",
+      "referenceBlock": "drivingscenarioandsensors/Vision Detection Generator",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "World To Vehicle",
+      "referenceBlock": "drivingscenarioandsensors/World To Vehicle",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Info",
+      "referenceBlock": "drivinglib/Info",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Info",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RoadRunner Scenario",
+      "referenceBlock": "roadrunnerscenario/RoadRunner Scenario",
+      "blockType": "RoadRunnerScenario",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RoadRunner Scenario Reader",
+      "referenceBlock": "roadrunnerscenario/RoadRunner Scenario Reader",
+      "blockType": "RoadRunnerScenarioReader",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RoadRunner Scenario Writer",
+      "referenceBlock": "roadrunnerscenario/RoadRunner Scenario Writer",
+      "blockType": "RoadRunnerScenarioWriter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Vision Detection Generator",
+      "referenceBlock": "drivingsim3d/Simulation 3D Vision Detection Generator",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulation 3D Vision Detection Generator",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Bicyclist",
+      "referenceBlock": "drivingsim3d/Simulation 3D Bicyclist",
+      "blockType": "Simulation3DBicyclist",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Camera",
+      "referenceBlock": "drivingsim3d/Simulation 3D Camera",
+      "blockType": "Simulation3DCamera",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Fisheye Camera",
+      "referenceBlock": "drivingsim3d/Simulation 3D Fisheye Camera",
+      "blockType": "Simulation3DFisheyeCamera",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Lidar",
+      "referenceBlock": "drivingsim3d/Simulation 3D Lidar",
+      "blockType": "Simulation3DLidar",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Pedestrian",
+      "referenceBlock": "drivingsim3d/Simulation 3D Pedestrian",
+      "blockType": "Simulation3DPedestrian",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Probabilistic Radar",
+      "referenceBlock": "drivingsim3d/Simulation 3D Probabilistic Radar",
+      "blockType": "Simulation3DProbabilisticRadar",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Probabilistic Radar Configuration",
+      "referenceBlock": "drivingsim3d/Simulation 3D Probabilistic Radar Configuration",
+      "blockType": "Simulation3DProbabilisticRadarConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Scene Configuration",
+      "referenceBlock": "drivingsim3d/Simulation 3D Scene Configuration",
+      "blockType": "Simulation3DSceneConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Ultrasonic Array",
+      "referenceBlock": "drivingsim3d/Simulation 3D Ultrasonic Array",
+      "blockType": "Simulation3DUltrasonicArray",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Ultrasonic Sensor",
+      "referenceBlock": "drivingsim3d/Simulation 3D Ultrasonic Sensor",
+      "blockType": "Simulation3DUltrasonicSensor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulation 3D Vehicle with Ground Following",
+      "referenceBlock": "drivingsim3d/Simulation 3D Vehicle with Ground Following",
+      "blockType": "Simulation3DVehiclewithGroundFollowing",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lateral Controller Stanley",
+      "referenceBlock": "drivingvehiclecontroller/Lateral Controller Stanley",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Lateral Controller Stanley",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Longitudinal Controller Stanley",
+      "referenceBlock": "drivingvehiclecontroller/Longitudinal Controller Stanley",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Longitudinal Controller Stanley",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detection Concatenation",
+      "referenceBlock": "drivinglib/Detection Concatenation",
+      "blockType": "matlabshared.tracking.internal.DetectionConcatenation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multi-Object Tracker",
+      "referenceBlock": "drivinglib/Multi-Object Tracker",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Path Smoother Spline",
+      "referenceBlock": "drivinglib/Path Smoother Spline",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Velocity Profiler",
+      "referenceBlock": "drivinglib/Velocity Profiler",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:09",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

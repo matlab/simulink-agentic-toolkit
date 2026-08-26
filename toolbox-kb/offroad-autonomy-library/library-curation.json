@@ -1,0 +1,119 @@
+{
+  "commonBlocks": [
+    "Simulation 3D Scene Configuration",
+    "Ackermann MPPI Controller",
+    "Simulation 3D Camera",
+    "Simulation 3D Lidar"
+  ],
+  "categories": [
+    {
+      "name": "simulation-3d",
+      "description": "3D visualization and virtual sensor simulation for offroad scenarios",
+      "keywords": [
+        "3d",
+        "simulation",
+        "scene",
+        "camera",
+        "lidar"
+      ]
+    },
+    {
+      "name": "mppi-controllers",
+      "description": "Model-predictive path integral controllers for various vehicle types",
+      "keywords": [
+        "mppi",
+        "controller",
+        "trajectory",
+        "path",
+        "sampling"
+      ]
+    },
+    {
+      "name": "vehicle-utilities",
+      "description": "Vehicle dynamics utilities for offroad models",
+      "keywords": [
+        "chassis",
+        "wheel",
+        "ground",
+        "terrain",
+        "vehicle"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Ackermann MPPI Controller",
+      "value": "mppi-controllers"
+    },
+    {
+      "block": "Articulated Steering MPPI Controller",
+      "value": "mppi-controllers"
+    },
+    {
+      "block": "Bicycle MPPI Controller",
+      "value": "mppi-controllers"
+    },
+    {
+      "block": "Differential Drive MPPI Controller",
+      "value": "mppi-controllers"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Simulation 3D Physics Backhoe",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Simulation 3D Physics Dump Truck",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "simulation-3d"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Ackermann MPPI Controller",
+      "value": "Model-predictive path integral controller for Ackermann-steered vehicles — use for sampling-based trajectory optimization in offroad navigation"
+    },
+    {
+      "block": "Articulated Steering MPPI Controller",
+      "value": "MPPI controller for articulated-steering vehicles — use for trajectory optimization of wheel loaders or articulated dump trucks"
+    },
+    {
+      "block": "Bicycle MPPI Controller",
+      "value": "MPPI controller using bicycle kinematic model — use for sampling-based trajectory optimization of car-like vehicles in offroad settings"
+    },
+    {
+      "block": "Differential Drive MPPI Controller",
+      "value": "MPPI controller for differential-drive vehicles — use for sampling-based trajectory optimization of skid-steer or tracked robots"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "Attach a virtual camera sensor in the 3D simulation scene — use for generating synthetic camera images for perception algorithm development"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "Attach a virtual lidar sensor in the 3D simulation scene — use for generating synthetic point clouds for offroad perception testing"
+    },
+    {
+      "block": "Simulation 3D Physics Backhoe",
+      "value": "Spawn a physics-enabled 3D backhoe in the simulation scene — use for simulating excavation operations with realistic articulated arm dynamics"
+    },
+    {
+      "block": "Simulation 3D Physics Dump Truck",
+      "value": "Spawn a physics-enabled 3D dump truck in the simulation scene — use for simulating loading and hauling operations with bed tilt dynamics"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "Configure the 3D simulation environment and scene — use for selecting terrain, weather, and lighting conditions for offroad simulation"
+    }
+  ]
+}

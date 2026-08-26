@@ -1,0 +1,108 @@
+{
+  "commonBlocks": [
+    "Filtering",
+    "Analysis & Enhancement",
+    "Conversions",
+    "Utilities"
+  ],
+  "categories": [
+    {
+      "name": "image-processing",
+      "description": "HDL-optimized pixel-level image processing and analysis",
+      "keywords": [
+        "filter",
+        "morphology",
+        "statistics",
+        "enhancement",
+        "edge"
+      ]
+    },
+    {
+      "name": "video-infrastructure",
+      "description": "Video stream management and format conversion for FPGA",
+      "keywords": [
+        "conversion",
+        "stream",
+        "buffer",
+        "pixel",
+        "frame"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Analysis & Enhancement",
+      "value": "image-processing"
+    },
+    {
+      "block": "Conversions",
+      "value": "video-infrastructure"
+    },
+    {
+      "block": "Examples",
+      "value": "video-infrastructure"
+    },
+    {
+      "block": "Filtering",
+      "value": "image-processing"
+    },
+    {
+      "block": "Geometric Transforms",
+      "value": "image-processing"
+    },
+    {
+      "block": "Info",
+      "value": "video-infrastructure"
+    },
+    {
+      "block": "Morphological Operations",
+      "value": "image-processing"
+    },
+    {
+      "block": "Statistics",
+      "value": "image-processing"
+    },
+    {
+      "block": "Utilities",
+      "value": "video-infrastructure"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Analysis & Enhancement",
+      "value": "HDL-optimized image analysis and enhancement operations — use for histogram equalization, edge detection, or contrast adjustment in FPGA vision pipelines"
+    },
+    {
+      "block": "Conversions",
+      "value": "HDL-optimized color space and data type conversions — use for RGB-to-grayscale, YCbCr conversion, or pixel format changes in FPGA video processing"
+    },
+    {
+      "block": "Examples",
+      "value": "Example models demonstrating Vision HDL Toolbox workflows — use as reference designs for building FPGA-based vision processing systems"
+    },
+    {
+      "block": "Filtering",
+      "value": "HDL-optimized spatial filtering operations — use for 2D FIR filters, median filters, or custom kernel convolutions in FPGA image processing"
+    },
+    {
+      "block": "Geometric Transforms",
+      "value": "HDL-optimized geometric image transformations — use for image rotation, scaling, warping, or remapping in FPGA-based vision systems"
+    },
+    {
+      "block": "Info",
+      "value": "Information and documentation for Vision HDL Toolbox — use for accessing library version info and getting started resources"
+    },
+    {
+      "block": "Morphological Operations",
+      "value": "HDL-optimized morphological image operations — use for erosion, dilation, opening, or closing on binary/grayscale images in FPGA implementations"
+    },
+    {
+      "block": "Statistics",
+      "value": "HDL-optimized image statistics computation — use for calculating mean, variance, histograms, or other pixel statistics in streaming FPGA pipelines"
+    },
+    {
+      "block": "Utilities",
+      "value": "HDL-optimized video streaming utilities — use for frame buffering, pixel streaming control, or ROI extraction in FPGA video pipelines"
+    }
+  ]
+}

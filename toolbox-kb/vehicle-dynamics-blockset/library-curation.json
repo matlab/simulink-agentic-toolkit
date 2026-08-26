@@ -1,0 +1,335 @@
+{
+  "commonBlocks": [
+    "Drive Cycle Source",
+    "Predictive Driver",
+    "Longitudinal Driver",
+    "Lateral Driver",
+    "Simulation 3D Scene Configuration",
+    "Simulation 3D Vehicle"
+  ],
+  "categories": [
+    {
+      "name": "test-scenarios",
+      "description": "Standard vehicle test maneuvers and drive cycle inputs",
+      "keywords": [
+        "maneuver",
+        "test",
+        "drive-cycle",
+        "steer",
+        "scenario"
+      ]
+    },
+    {
+      "name": "driver-models",
+      "description": "Driver behavior models for steering and longitudinal control",
+      "keywords": [
+        "driver",
+        "steering",
+        "throttle",
+        "path-following",
+        "longitudinal"
+      ]
+    },
+    {
+      "name": "3d-visualization",
+      "description": "Unreal Engine 3D visualization scene and actor management",
+      "keywords": [
+        "3d",
+        "scene",
+        "unreal",
+        "visualization",
+        "actor"
+      ]
+    },
+    {
+      "name": "drivetrain",
+      "description": "Driveline couplings, differentials, and transmission components",
+      "keywords": [
+        "differential",
+        "coupling",
+        "shaft",
+        "gear",
+        "inertia"
+      ]
+    },
+    {
+      "name": "propulsion",
+      "description": "Engine and electric motor power source models",
+      "keywords": [
+        "engine",
+        "motor",
+        "propulsion",
+        "torque",
+        "mapped"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Acceleration and Braking",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Connection Port",
+      "value": "drivetrain"
+    },
+    {
+      "block": "Constant Radius",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Drive Cycle Source",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Fishhook",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Gearbox",
+      "value": "drivetrain"
+    },
+    {
+      "block": "Lane Change",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Lateral Driver",
+      "value": "driver-models"
+    },
+    {
+      "block": "Longitudinal Driver",
+      "value": "driver-models"
+    },
+    {
+      "block": "Predictive Driver",
+      "value": "driver-models"
+    },
+    {
+      "block": "Reference Path Generator",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Get",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Set",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Camera Get",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Dolly",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Message Get",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Message Set",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Motorcycle",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Physics Vehicle",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Ray Tracer",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Terrain Sensor",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Three Wheeled Vehicle",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Tractor",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Trailer",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Vehicle",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Simulation 3D Vehicle with Ground Following",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Sine With Dwell",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Slowly Increasing Steer",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Swept Sine",
+      "value": "test-scenarios"
+    },
+    {
+      "block": "Two-Way Connection",
+      "value": "drivetrain"
+    },
+    {
+      "block": "Vehicle Terrain Sensor",
+      "value": "3d-visualization"
+    },
+    {
+      "block": "Wide Open Throttle",
+      "value": "test-scenarios"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Acceleration and Braking",
+      "value": "Generate standardized acceleration-and-braking test maneuver commands for vehicle performance evaluation"
+    },
+    {
+      "block": "Connection Port",
+      "value": "Expose a physical modeling port on a subsystem boundary for Simscape signals"
+    },
+    {
+      "block": "Constant Radius",
+      "value": "Generate steering and speed commands for a constant-radius cornering test"
+    },
+    {
+      "block": "Drive Cycle Source",
+      "value": "Output standardized drive cycle speed profiles for fuel economy and emissions testing"
+    },
+    {
+      "block": "Fishhook",
+      "value": "Generate a fishhook steering maneuver for rollover propensity evaluation"
+    },
+    {
+      "block": "Gearbox",
+      "value": "Model a multi-speed gearbox with discrete gear ratios and shift logic"
+    },
+    {
+      "block": "Lane Change",
+      "value": "Generate steering commands for a single or double lane-change maneuver"
+    },
+    {
+      "block": "Lateral Driver",
+      "value": "Model a driver that follows a reference path using preview-point lateral steering control"
+    },
+    {
+      "block": "Longitudinal Driver",
+      "value": "Model a driver that tracks a target speed profile with throttle and brake commands"
+    },
+    {
+      "block": "Predictive Driver",
+      "value": "Model a combined longitudinal and lateral driver using predictive path-following control"
+    },
+    {
+      "block": "Reference Path Generator",
+      "value": "Produce waypoint-based reference path signals for path-following controllers"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Get",
+      "value": "Read position and orientation of a 3D scene actor for closed-loop visualization"
+    },
+    {
+      "block": "Simulation 3D Actor Transform Set",
+      "value": "Set position and orientation of a 3D scene actor from simulation data"
+    },
+    {
+      "block": "Simulation 3D Camera Get",
+      "value": "Capture camera images from the 3D visualization environment for perception algorithms"
+    },
+    {
+      "block": "Simulation 3D Dolly",
+      "value": "Place a dolly trailer actor in the 3D visualization scene"
+    },
+    {
+      "block": "Simulation 3D Message Get",
+      "value": "Receive custom messages from the 3D visualization engine"
+    },
+    {
+      "block": "Simulation 3D Message Set",
+      "value": "Send custom messages to the 3D visualization engine"
+    },
+    {
+      "block": "Simulation 3D Motorcycle",
+      "value": "Place a motorcycle actor in the 3D visualization scene"
+    },
+    {
+      "block": "Simulation 3D Physics Vehicle",
+      "value": "Place a physics-enabled vehicle actor in the 3D scene that responds to applied forces"
+    },
+    {
+      "block": "Simulation 3D Ray Tracer",
+      "value": "Cast rays in the 3D scene to detect distances and surfaces for lidar or proximity modeling"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "Configure the Unreal Engine 3D visualization scene including map and weather settings"
+    },
+    {
+      "block": "Simulation 3D Terrain Sensor",
+      "value": "Query terrain height and surface type under a vehicle in the 3D scene"
+    },
+    {
+      "block": "Simulation 3D Three Wheeled Vehicle",
+      "value": "Place a three-wheeled vehicle actor in the 3D visualization scene"
+    },
+    {
+      "block": "Simulation 3D Tractor",
+      "value": "Place a tractor actor in the 3D visualization scene for articulated vehicle simulation"
+    },
+    {
+      "block": "Simulation 3D Trailer",
+      "value": "Place a trailer actor in the 3D visualization scene"
+    },
+    {
+      "block": "Simulation 3D Vehicle",
+      "value": "Place a four-wheeled vehicle actor in the 3D visualization scene"
+    },
+    {
+      "block": "Simulation 3D Vehicle with Ground Following",
+      "value": "Place a vehicle in the 3D scene that automatically follows terrain elevation"
+    },
+    {
+      "block": "Sine With Dwell",
+      "value": "Generate a sine-with-dwell steering input for electronic stability control testing per FMVSS 126"
+    },
+    {
+      "block": "Slowly Increasing Steer",
+      "value": "Generate a slowly increasing steering angle for understeer gradient characterization"
+    },
+    {
+      "block": "Swept Sine",
+      "value": "Generate a frequency-swept sinusoidal steering input for vehicle frequency response analysis"
+    },
+    {
+      "block": "Two-Way Connection",
+      "value": "Create a bidirectional physical connection between Simscape domains"
+    },
+    {
+      "block": "Vehicle Terrain Sensor",
+      "value": "Measure ground height and normal vectors under each wheel for terrain-aware dynamics"
+    },
+    {
+      "block": "Wide Open Throttle",
+      "value": "Generate a wide-open-throttle acceleration command for maximum performance testing"
+    }
+  ]
+}

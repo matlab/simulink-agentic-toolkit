@@ -1,0 +1,63 @@
+{
+  "libraryName": "Requirements Toolbox",
+  "generatedAt": "2026-08-19T14:31:07",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "System Requirements",
+      "referenceBlock": "reqmanage/System Requirements",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Requirements",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": " Demux ",
+      "referenceBlock": "reqmanage/Requirements Table/ Demux ",
+      "blockType": "Demux",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": " Ground ",
+      "referenceBlock": "reqmanage/Requirements Table/ Ground ",
+      "blockType": "Ground",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": " SFunction ",
+      "referenceBlock": "reqmanage/Requirements Table/ SFunction ",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": " Terminator ",
+      "referenceBlock": "reqmanage/Requirements Table/ Terminator ",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

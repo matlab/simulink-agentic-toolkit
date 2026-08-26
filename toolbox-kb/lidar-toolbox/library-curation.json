@@ -1,0 +1,30 @@
+{
+  "commonBlocks": [
+    "Lidar Sensor"
+  ],
+  "categories": [
+    {
+      "name": "lidar-sensing",
+      "description": "Lidar sensor simulation and point cloud generation",
+      "keywords": [
+        "lidar",
+        "pointcloud",
+        "sensor",
+        "3d",
+        "perception"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Lidar Sensor",
+      "value": "lidar-sensing"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Lidar Sensor",
+      "value": "Simulate a lidar sensor generating 3D point cloud data — use for modeling lidar perception in autonomous driving, robotics, or environment mapping applications"
+    }
+  ]
+}

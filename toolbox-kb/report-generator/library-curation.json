@@ -1,0 +1,38 @@
+{
+  "commonBlocks": [
+    "Launch Report"
+  ],
+  "categories": [
+    {
+      "name": "reporting",
+      "description": "Automated report generation from Simulink models",
+      "keywords": [
+        "report",
+        "document",
+        "generate",
+        "launch",
+        "rptlist"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Launch Report",
+      "value": "reporting"
+    },
+    {
+      "block": "Launch Rptlist",
+      "value": "reporting"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Launch Report",
+      "value": "Trigger report generation during simulation — use for automatically creating documentation or test reports at specific simulation events"
+    },
+    {
+      "block": "Launch Rptlist",
+      "value": "Launch a report generation list during simulation — use for executing a predefined sequence of report generation tasks from a running model"
+    }
+  ]
+}

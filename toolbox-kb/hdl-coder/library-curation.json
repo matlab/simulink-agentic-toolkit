@@ -1,0 +1,1485 @@
+{
+  "commonBlocks": [
+    "Gain",
+    "Unit Delay",
+    "Delay",
+    "Add",
+    "Product",
+    "HDL FIFO",
+    "Dual Port RAM",
+    "Multiply-Accumulate",
+    "Serializer1D",
+    "Deserializer1D",
+    "Discrete FIR Filter",
+    "Data Type Conversion"
+  ],
+  "categories": [
+    {
+      "name": "math-operations",
+      "description": "General arithmetic and mathematical operations for HDL designs",
+      "keywords": [
+        "add",
+        "multiply",
+        "gain",
+        "arithmetic",
+        "matrix"
+      ]
+    },
+    {
+      "name": "floating-point-operations",
+      "description": "Floating-point math functions optimized for FPGA hardware implementation",
+      "keywords": [
+        "floating-point",
+        "trigonometry",
+        "logarithm",
+        "rounding",
+        "IEEE-754"
+      ]
+    },
+    {
+      "name": "memory-and-storage",
+      "description": "RAM blocks and FIFO buffers for on-chip data storage in HDL",
+      "keywords": [
+        "RAM",
+        "FIFO",
+        "memory",
+        "storage",
+        "buffer"
+      ]
+    },
+    {
+      "name": "discrete-elements",
+      "description": "Delay elements, integrators, and transfer functions for discrete-time HDL logic",
+      "keywords": [
+        "delay",
+        "register",
+        "integrator",
+        "filter",
+        "pipeline"
+      ]
+    },
+    {
+      "name": "logic-and-bit-operations",
+      "description": "Bit manipulation, boolean logic, comparisons, and edge detection for HDL",
+      "keywords": [
+        "bitwise",
+        "logic",
+        "comparison",
+        "shift",
+        "detect"
+      ]
+    },
+    {
+      "name": "signal-processing",
+      "description": "Filters, serializers, lookup tables, and DSP operations for signal processing in HDL",
+      "keywords": [
+        "FIR",
+        "lookup-table",
+        "serializer",
+        "CORDIC",
+        "DSP"
+      ]
+    },
+    {
+      "name": "hdl-subsystems-and-control",
+      "description": "Synchronous subsystems, state control, and nonlinear discontinuity blocks for HDL",
+      "keywords": [
+        "subsystem",
+        "synchronous",
+        "saturation",
+        "reset",
+        "enable"
+      ]
+    },
+    {
+      "name": "soc-and-axi-interfaces",
+      "description": "AXI bus interfaces, streaming connectors, and SoC integration blocks",
+      "keywords": [
+        "AXI",
+        "streaming",
+        "SoC",
+        "DMA",
+        "bus"
+      ]
+    },
+    {
+      "name": "peripheral-and-io",
+      "description": "Hardware peripheral interfaces for ADC, audio, video, and digital IO",
+      "keywords": [
+        "ADC",
+        "audio",
+        "video",
+        "GPIO",
+        "peripheral"
+      ]
+    },
+    {
+      "name": "processor-and-communication",
+      "description": "Processor-side IO blocks for register, stream, and network communication",
+      "keywords": [
+        "register",
+        "TCP",
+        "UDP",
+        "stream",
+        "interprocess"
+      ]
+    },
+    {
+      "name": "task-scheduling",
+      "description": "Task scheduling, interrupt handling, and event management for SoC processors",
+      "keywords": [
+        "task",
+        "interrupt",
+        "scheduler",
+        "trigger",
+        "event"
+      ]
+    },
+    {
+      "name": "signal-attributes-and-utilities",
+      "description": "Data type conversion, signal routing, and model documentation utilities",
+      "keywords": [
+        "data-type",
+        "conversion",
+        "routing",
+        "documentation",
+        "signal"
+      ]
+    },
+    {
+      "name": "verification",
+      "description": "Assertion and bounds-checking blocks for model verification during simulation",
+      "keywords": [
+        "assertion",
+        "bounds",
+        "range-check",
+        "gradient",
+        "verification"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "1-D Lookup Table",
+      "value": "signal-processing"
+    },
+    {
+      "block": "2-D Lookup Table",
+      "value": "signal-processing"
+    },
+    {
+      "block": "ACosh",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "ASinh",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "ATanh",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Abs",
+      "value": "math-operations"
+    },
+    {
+      "block": "Acos",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Add",
+      "value": "math-operations"
+    },
+    {
+      "block": "Asin",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Assertion",
+      "value": "verification"
+    },
+    {
+      "block": "Assignment",
+      "value": "math-operations"
+    },
+    {
+      "block": "Atan",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Atan2",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Backlash",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Bias",
+      "value": "math-operations"
+    },
+    {
+      "block": "Bit Clear",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit Concat",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit Reduce",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit Rotate",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit Set",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit Shift",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit Slice",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bit to Integer Converter",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bits to Word",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bitwise Operator",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Bus to Vector",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "Ceil",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Commonly Used Blocks",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Complex to Magnitude-Angle",
+      "value": "math-operations"
+    },
+    {
+      "block": "Complex to Real-Imag",
+      "value": "math-operations"
+    },
+    {
+      "block": "Conjugate",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Constant",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "Cos",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Cosh",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Cosine HDL Optimized",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Coulomb & Viscous Friction",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Dead Zone Dynamic",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Decrement Real World",
+      "value": "math-operations"
+    },
+    {
+      "block": "Decrement Stored Integer",
+      "value": "math-operations"
+    },
+    {
+      "block": "Delay",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Deserializer1D",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Detect Change",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Decrease",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Fall Negative",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Fall Nonpositive",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Increase",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Rise Nonnegative",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Detect Rise Positive",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Direct Lookup Table (n-D)",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Discrete FIR Filter",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Discrete PID Controller",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Discrete State-Space",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Discrete Transfer Fcn",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Discrete-Time Integrator",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Divide",
+      "value": "math-operations"
+    },
+    {
+      "block": "Dot Product",
+      "value": "math-operations"
+    },
+    {
+      "block": "Dual Port RAM",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Dual Port RAM System",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Dual Rate Dual Port RAM",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Enabled Delay",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Enabled Resettable Delay",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Enabled Synchronous Subsystem",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Exp",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Extract Bits",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Fix",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Fixed-Point State-Space",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Float Typecast",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Floor",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Gain",
+      "value": "math-operations"
+    },
+    {
+      "block": "HDL Combinatorial Logic",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "HDL FIFO",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Hermitian",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Hit  Crossing",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Hypot",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Increment Real World",
+      "value": "math-operations"
+    },
+    {
+      "block": "Increment Stored Integer",
+      "value": "math-operations"
+    },
+    {
+      "block": "Integer to Bit Converter",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Interval Test",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Interval Test Dynamic",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Log",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Log10",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "MATLAB System",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "Magnitude Square",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Magnitude-Angle to Complex",
+      "value": "math-operations"
+    },
+    {
+      "block": "Math Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "Math Reciprocal",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Matrix Concatenate",
+      "value": "math-operations"
+    },
+    {
+      "block": "MatrixMultiply",
+      "value": "math-operations"
+    },
+    {
+      "block": "Max",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Memory",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Min",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "MinMax",
+      "value": "math-operations"
+    },
+    {
+      "block": "Mod",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Multiply-Accumulate",
+      "value": "math-operations"
+    },
+    {
+      "block": "Multiply-Add",
+      "value": "math-operations"
+    },
+    {
+      "block": "PWM",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Ports & Subsystems",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Pow",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Pow10",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Prelookup",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Product",
+      "value": "math-operations"
+    },
+    {
+      "block": "Product of Elements",
+      "value": "math-operations"
+    },
+    {
+      "block": "Rate Transition",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "Real-Imag to Complex",
+      "value": "math-operations"
+    },
+    {
+      "block": "Reciprocal",
+      "value": "math-operations"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "math-operations"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Relay",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Rem",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Resettable Delay",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Resettable Synchronous Subsystem",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Reshape",
+      "value": "math-operations"
+    },
+    {
+      "block": "Round",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Saturation",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Saturation Dynamic",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Serializer1D",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Sign",
+      "value": "math-operations"
+    },
+    {
+      "block": "Signal Specification",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "SignedSqrt",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Simple Dual Port RAM",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Simple Dual Port RAM System",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Simple Tri Port RAM System",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Sin",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Sincos",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Sine HDL Optimized",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Single Port RAM",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Single Port RAM System",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Sinh",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Sparse Matrix-Vector Product",
+      "value": "signal-processing"
+    },
+    {
+      "block": "Sqrt",
+      "value": "math-operations"
+    },
+    {
+      "block": "Square",
+      "value": "math-operations"
+    },
+    {
+      "block": "State Control",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Subtract",
+      "value": "math-operations"
+    },
+    {
+      "block": "Sum",
+      "value": "math-operations"
+    },
+    {
+      "block": "Sum of Elements",
+      "value": "math-operations"
+    },
+    {
+      "block": "Switch",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Synchronous Subsystem",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Tan",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Tanh",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Tapped Delay",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Tapped Delay Enabled Resettable Synchronous",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Tapped Delay Enabled Synchronous",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Tapped Delay Resettable Synchronous",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Terminator",
+      "value": "signal-attributes-and-utilities"
+    },
+    {
+      "block": "Transpose",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "math-operations"
+    },
+    {
+      "block": "True Dual Port RAM System",
+      "value": "memory-and-storage"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "math-operations"
+    },
+    {
+      "block": "Unit Delay",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Unit Delay Enabled Resettable Synchronous",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Unit Delay Enabled Synchronous",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Unit Delay Resettable Synchronous",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "Vector Concatenate",
+      "value": "math-operations"
+    },
+    {
+      "block": "Word to Bits",
+      "value": "logic-and-bit-operations"
+    },
+    {
+      "block": "Wrap To Zero",
+      "value": "hdl-subsystems-and-control"
+    },
+    {
+      "block": "Zero-Order Hold",
+      "value": "discrete-elements"
+    },
+    {
+      "block": "cos + jsin",
+      "value": "floating-point-operations"
+    },
+    {
+      "block": "n-D Lookup Table",
+      "value": "signal-processing"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "1-D Lookup Table",
+      "value": "Use when you need one-dimensional nonlinear function approximation via table lookup in HDL"
+    },
+    {
+      "block": "2-D Lookup Table",
+      "value": "Use when you need two-dimensional nonlinear function approximation via table lookup in HDL"
+    },
+    {
+      "block": "ACosh",
+      "value": "Use when you need the inverse hyperbolic cosine with HDL floating-point implementation"
+    },
+    {
+      "block": "ASinh",
+      "value": "Use when you need the inverse hyperbolic sine with HDL floating-point implementation"
+    },
+    {
+      "block": "ATanh",
+      "value": "Use when you need the inverse hyperbolic tangent with HDL floating-point implementation"
+    },
+    {
+      "block": "Abs",
+      "value": "Use when you need the absolute value of a signal for magnitude-only processing in HDL designs"
+    },
+    {
+      "block": "Acos",
+      "value": "Use when you need the arccosine function with HDL floating-point hardware mapping"
+    },
+    {
+      "block": "Add",
+      "value": "Use when you need to sum two or more signals together in an HDL-compatible arithmetic path"
+    },
+    {
+      "block": "Asin",
+      "value": "Use when you need the arcsine function with HDL floating-point hardware mapping"
+    },
+    {
+      "block": "Assertion",
+      "value": "Use when you need to verify that a signal meets expected conditions during simulation"
+    },
+    {
+      "block": "Assignment",
+      "value": "Use when you need to assign values to specific elements of a vector or matrix signal"
+    },
+    {
+      "block": "Atan",
+      "value": "Use when you need the arctangent function with HDL floating-point hardware mapping"
+    },
+    {
+      "block": "Atan2",
+      "value": "Use when you need the four-quadrant arctangent with HDL floating-point support"
+    },
+    {
+      "block": "Backlash",
+      "value": "Use when you need to model mechanical backlash or gear play behavior in HDL"
+    },
+    {
+      "block": "Bias",
+      "value": "Use when you need to add a constant offset to a signal value"
+    },
+    {
+      "block": "Bit Clear",
+      "value": "Use when you need to clear a specific bit position in a fixed-point or integer signal"
+    },
+    {
+      "block": "Bit Concat",
+      "value": "Use when you need to concatenate multiple signals at the bit level into a wider word"
+    },
+    {
+      "block": "Bit Reduce",
+      "value": "Use when you need to reduce all bits of a word using AND, OR, or XOR operations"
+    },
+    {
+      "block": "Bit Rotate",
+      "value": "Use when you need to circularly shift the bits of a signal left or right"
+    },
+    {
+      "block": "Bit Set",
+      "value": "Use when you need to set a specific bit position to one in a fixed-point or integer signal"
+    },
+    {
+      "block": "Bit Shift",
+      "value": "Use when you need to shift bits left or right, filling with zeros"
+    },
+    {
+      "block": "Bit Slice",
+      "value": "Use when you need to extract a contiguous range of bits from a wider signal"
+    },
+    {
+      "block": "Bit to Integer Converter",
+      "value": "Use when you need to pack a vector of individual bit signals into a single integer word"
+    },
+    {
+      "block": "Bits to Word",
+      "value": "Use when you need to assemble individual bit inputs into a multi-bit word signal"
+    },
+    {
+      "block": "Bitwise Operator",
+      "value": "Use when you need to apply AND, OR, XOR, or NOT across bits of one or more signals"
+    },
+    {
+      "block": "Bus to Vector",
+      "value": "Use when you need to convert a bus signal into a vector for HDL-compatible processing"
+    },
+    {
+      "block": "Ceil",
+      "value": "Use when you need to round a floating-point value up to the nearest integer in HDL"
+    },
+    {
+      "block": "Commonly Used Blocks",
+      "value": "Use as a quick-access container for the most frequently used HDL Coder library blocks"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "Use when you need to compare a signal against a fixed constant and output a boolean result"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "Use when you need to check if a signal is equal to, greater than, or less than zero"
+    },
+    {
+      "block": "Complex to Magnitude-Angle",
+      "value": "Use when you need to convert a complex signal into its polar magnitude and phase components"
+    },
+    {
+      "block": "Complex to Real-Imag",
+      "value": "Use when you need to split a complex signal into separate real and imaginary parts"
+    },
+    {
+      "block": "Conjugate",
+      "value": "Use when you need to compute the complex conjugate of a floating-point signal"
+    },
+    {
+      "block": "Constant",
+      "value": "Use when you need to provide a fixed constant value as a signal source"
+    },
+    {
+      "block": "Cos",
+      "value": "Use when you need the cosine function with HDL floating-point hardware mapping"
+    },
+    {
+      "block": "Cosh",
+      "value": "Use when you need the hyperbolic cosine with HDL floating-point implementation"
+    },
+    {
+      "block": "Cosine HDL Optimized",
+      "value": "Use when you need a lookup-table-based cosine optimized for HDL area and speed"
+    },
+    {
+      "block": "Coulomb & Viscous Friction",
+      "value": "Use when you need to model static and dynamic friction forces in an HDL simulation"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "Use when you need to convert a signal between different numeric data types in HDL"
+    },
+    {
+      "block": "Dead Zone",
+      "value": "Use when you need to suppress signal values within a specified band around zero"
+    },
+    {
+      "block": "Dead Zone Dynamic",
+      "value": "Use when you need a dead zone with dynamically adjustable upper and lower limits"
+    },
+    {
+      "block": "Decrement Real World",
+      "value": "Use when you need to decrease a fixed-point signal by one unit in real-world value"
+    },
+    {
+      "block": "Decrement Stored Integer",
+      "value": "Use when you need to decrease the stored integer value of a fixed-point signal by one"
+    },
+    {
+      "block": "Delay",
+      "value": "Use when you need a configurable number of sample delays in an HDL pipeline"
+    },
+    {
+      "block": "Deserializer1D",
+      "value": "Use when you need to convert a serial data stream back into parallel vector form in HDL"
+    },
+    {
+      "block": "Detect Change",
+      "value": "Use when you need to detect any change in signal value between consecutive samples"
+    },
+    {
+      "block": "Detect Decrease",
+      "value": "Use when you need to identify when a signal value decreases from one sample to the next"
+    },
+    {
+      "block": "Detect Fall Negative",
+      "value": "Use when you need to detect a signal transition from non-negative to strictly negative"
+    },
+    {
+      "block": "Detect Fall Nonpositive",
+      "value": "Use when you need to detect a signal transition from positive to non-positive"
+    },
+    {
+      "block": "Detect Increase",
+      "value": "Use when you need to identify when a signal value increases from one sample to the next"
+    },
+    {
+      "block": "Detect Rise Nonnegative",
+      "value": "Use when you need to detect a signal transition from negative to non-negative"
+    },
+    {
+      "block": "Detect Rise Positive",
+      "value": "Use when you need to detect a signal transition from non-positive to strictly positive"
+    },
+    {
+      "block": "Direct Lookup Table (n-D)",
+      "value": "Use when you need direct index-based table access without interpolation for n-dimensional data"
+    },
+    {
+      "block": "Discrete FIR Filter",
+      "value": "Use when you need a finite impulse response filter optimized for HDL code generation"
+    },
+    {
+      "block": "Discrete PID Controller",
+      "value": "Use when you need a proportional-integral-derivative controller for digital control in HDL"
+    },
+    {
+      "block": "Discrete State-Space",
+      "value": "Use when you need state-space representation of a discrete linear system for HDL generation"
+    },
+    {
+      "block": "Discrete Transfer Fcn",
+      "value": "Use when you need to implement a discrete transfer function for digital filter or controller design"
+    },
+    {
+      "block": "Discrete-Time Integrator",
+      "value": "Use when you need discrete-time integration for accumulator or integrator logic in HDL"
+    },
+    {
+      "block": "Divide",
+      "value": "Use when you need to perform division of signals in an HDL-compatible design"
+    },
+    {
+      "block": "Dot Product",
+      "value": "Use when you need to compute the inner product of two vector signals"
+    },
+    {
+      "block": "Dual Port RAM",
+      "value": "Use when you need simultaneous read and write access to shared memory in HDL"
+    },
+    {
+      "block": "Dual Port RAM System",
+      "value": "Use when you need a System object based dual-port RAM with HDL code generation support"
+    },
+    {
+      "block": "Dual Rate Dual Port RAM",
+      "value": "Use when you need dual-port RAM operating at two different clock rates in HDL"
+    },
+    {
+      "block": "Enabled Delay",
+      "value": "Use when you need a delay that only advances when an enable signal is active"
+    },
+    {
+      "block": "Enabled Resettable Delay",
+      "value": "Use when you need a delay with both enable control and asynchronous reset capability"
+    },
+    {
+      "block": "Enabled Synchronous Subsystem",
+      "value": "Use when you need a subsystem that executes synchronously only when its enable input is active"
+    },
+    {
+      "block": "Exp",
+      "value": "Use when you need the exponential function with HDL floating-point hardware support"
+    },
+    {
+      "block": "Extract Bits",
+      "value": "Use when you need to select specific bits from an integer or fixed-point signal"
+    },
+    {
+      "block": "Fix",
+      "value": "Use when you need to round a floating-point value toward zero in HDL"
+    },
+    {
+      "block": "Fixed-Point State-Space",
+      "value": "Use when you need a fixed-point state-space model optimized for HDL implementation"
+    },
+    {
+      "block": "Float Typecast",
+      "value": "Use when you need to reinterpret the bit pattern of a floating-point signal as a different type"
+    },
+    {
+      "block": "Floor",
+      "value": "Use when you need to round a floating-point value down to the nearest integer in HDL"
+    },
+    {
+      "block": "Gain",
+      "value": "Use when you need to multiply a signal by a constant scaling factor"
+    },
+    {
+      "block": "HDL Combinatorial Logic",
+      "value": "Use when you need to implement a truth table as combinational logic for HDL"
+    },
+    {
+      "block": "HDL FIFO",
+      "value": "Use when you need a first-in-first-out buffer for rate matching or data queuing in hardware"
+    },
+    {
+      "block": "Hermitian",
+      "value": "Use when you need the Hermitian transpose of a complex matrix in floating-point HDL"
+    },
+    {
+      "block": "Hit  Crossing",
+      "value": "Use when you need to detect when a signal crosses a specified threshold value"
+    },
+    {
+      "block": "Hypot",
+      "value": "Use when you need to compute the hypotenuse length from two sides in floating-point HDL"
+    },
+    {
+      "block": "Increment Real World",
+      "value": "Use when you need to increase a fixed-point signal by one unit in real-world value"
+    },
+    {
+      "block": "Increment Stored Integer",
+      "value": "Use when you need to increase the stored integer value of a fixed-point signal by one"
+    },
+    {
+      "block": "Integer to Bit Converter",
+      "value": "Use when you need to unpack an integer word into a vector of individual bit signals"
+    },
+    {
+      "block": "Interval Test",
+      "value": "Use when you need to check if a signal falls within a specified constant range"
+    },
+    {
+      "block": "Interval Test Dynamic",
+      "value": "Use when you need to check if a signal falls within a dynamically specified range"
+    },
+    {
+      "block": "Log",
+      "value": "Use when you need the natural logarithm with HDL floating-point hardware support"
+    },
+    {
+      "block": "Log10",
+      "value": "Use when you need the base-10 logarithm with HDL floating-point hardware support"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "Use when you need boolean AND, OR, NAND, NOR, XOR, or NOT operations on logic signals"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Use when you need custom algorithmic logic written in MATLAB for HDL code generation"
+    },
+    {
+      "block": "MATLAB System",
+      "value": "Use when you need a System object with state and methods for HDL code generation"
+    },
+    {
+      "block": "Magnitude Square",
+      "value": "Use when you need the squared magnitude of a complex signal in floating-point HDL"
+    },
+    {
+      "block": "Magnitude-Angle to Complex",
+      "value": "Use when you need to construct a complex signal from polar magnitude and angle inputs"
+    },
+    {
+      "block": "Math Function",
+      "value": "Use when you need general mathematical functions like square, reciprocal, or logarithm in HDL"
+    },
+    {
+      "block": "Math Reciprocal",
+      "value": "Use when you need the reciprocal computed via floating-point math operations in HDL"
+    },
+    {
+      "block": "Matrix Concatenate",
+      "value": "Use when you need to combine multiple matrix signals into a single larger matrix"
+    },
+    {
+      "block": "MatrixMultiply",
+      "value": "Use when you need to perform matrix multiplication for linear algebra operations in HDL"
+    },
+    {
+      "block": "Max",
+      "value": "Use when you need to find the maximum of floating-point inputs in HDL"
+    },
+    {
+      "block": "Memory",
+      "value": "Use when you need to hold the previous sample value with one time-step delay"
+    },
+    {
+      "block": "Min",
+      "value": "Use when you need to find the minimum of floating-point inputs in HDL"
+    },
+    {
+      "block": "MinMax",
+      "value": "Use when you need to find the minimum or maximum across multiple input signals"
+    },
+    {
+      "block": "Mod",
+      "value": "Use when you need the modulus operation on floating-point signals in HDL"
+    },
+    {
+      "block": "Multiply-Accumulate",
+      "value": "Use when you need an efficient multiply-and-accumulate operation targeting DSP slices in hardware"
+    },
+    {
+      "block": "Multiply-Add",
+      "value": "Use when you need a fused multiply-add operation that maps to FPGA DSP resources"
+    },
+    {
+      "block": "PWM",
+      "value": "Use when you need to generate a pulse-width modulated output signal in HDL"
+    },
+    {
+      "block": "Ports & Subsystems",
+      "value": "Use as a container for port and subsystem block elements in HDL designs"
+    },
+    {
+      "block": "Pow",
+      "value": "Use when you need to raise a floating-point signal to an arbitrary power in HDL"
+    },
+    {
+      "block": "Pow10",
+      "value": "Use when you need to compute ten raised to a floating-point power in HDL"
+    },
+    {
+      "block": "Prelookup",
+      "value": "Use when you need to compute table indices and fractions separately from interpolation"
+    },
+    {
+      "block": "Product",
+      "value": "Use when you need to multiply two or more signals together in hardware"
+    },
+    {
+      "block": "Product of Elements",
+      "value": "Use when you need to compute the product across all elements of a vector signal"
+    },
+    {
+      "block": "Rate Transition",
+      "value": "Use when you need to safely transfer data between subsystems running at different clock rates"
+    },
+    {
+      "block": "Real-Imag to Complex",
+      "value": "Use when you need to combine separate real and imaginary components into a complex signal"
+    },
+    {
+      "block": "Reciprocal",
+      "value": "Use when you need to compute the multiplicative inverse of a signal"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "Use when you need to compute one divided by the square root of a signal"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "Use when you need to compare two signals and produce a boolean output"
+    },
+    {
+      "block": "Relay",
+      "value": "Use when you need hysteresis-based switching between two output values"
+    },
+    {
+      "block": "Rem",
+      "value": "Use when you need the remainder after division of floating-point signals in HDL"
+    },
+    {
+      "block": "Resettable Delay",
+      "value": "Use when you need a delay element that can be reset to its initial condition"
+    },
+    {
+      "block": "Resettable Synchronous Subsystem",
+      "value": "Use when you need a subsystem with synchronous reset that reinitializes all internal states"
+    },
+    {
+      "block": "Reshape",
+      "value": "Use when you need to change the dimensions of a signal without modifying its data"
+    },
+    {
+      "block": "Round",
+      "value": "Use when you need to round a floating-point signal to the nearest integer in HDL"
+    },
+    {
+      "block": "Saturation",
+      "value": "Use when you need to clamp a signal within fixed upper and lower bounds"
+    },
+    {
+      "block": "Saturation Dynamic",
+      "value": "Use when you need to clamp a signal within dynamically adjustable bounds"
+    },
+    {
+      "block": "Serializer1D",
+      "value": "Use when you need to convert parallel vector data into a serial stream for HDL processing"
+    },
+    {
+      "block": "Shift Arithmetic",
+      "value": "Use when you need arithmetic bit shifting that preserves the sign of fixed-point signals"
+    },
+    {
+      "block": "Sign",
+      "value": "Use when you need to determine the sign of a signal as positive, negative, or zero"
+    },
+    {
+      "block": "Signal Specification",
+      "value": "Use when you need to explicitly specify the data type and dimensions of a signal"
+    },
+    {
+      "block": "SignedSqrt",
+      "value": "Use when you need the signed square root that preserves the sign of the input"
+    },
+    {
+      "block": "Simple Dual Port RAM",
+      "value": "Use when you need one write port and one read port accessing separate addresses in HDL"
+    },
+    {
+      "block": "Simple Dual Port RAM System",
+      "value": "Use when you need a System object based simple dual-port RAM for HDL code generation"
+    },
+    {
+      "block": "Simple Tri Port RAM System",
+      "value": "Use when you need a System object based triple-port RAM for HDL code generation"
+    },
+    {
+      "block": "Sin",
+      "value": "Use when you need the sine function with HDL floating-point hardware mapping"
+    },
+    {
+      "block": "Sincos",
+      "value": "Use when you need simultaneous sine and cosine outputs from a single angle input in HDL"
+    },
+    {
+      "block": "Sine HDL Optimized",
+      "value": "Use when you need a lookup-table-based sine optimized for HDL area and speed"
+    },
+    {
+      "block": "Single Port RAM",
+      "value": "Use when you need basic read-write memory with a single address port in HDL"
+    },
+    {
+      "block": "Single Port RAM System",
+      "value": "Use when you need a System object based single-port RAM for HDL code generation"
+    },
+    {
+      "block": "Sinh",
+      "value": "Use when you need the hyperbolic sine with HDL floating-point implementation"
+    },
+    {
+      "block": "Sparse Matrix-Vector Product",
+      "value": "Use when you need efficient matrix-vector multiplication exploiting sparsity patterns in HDL"
+    },
+    {
+      "block": "Sqrt",
+      "value": "Use when you need to compute the square root of a signal for HDL implementation"
+    },
+    {
+      "block": "Square",
+      "value": "Use when you need to compute the square of a signal value"
+    },
+    {
+      "block": "State Control",
+      "value": "Use when you need to specify synchronous or combinational reset behavior for a subsystem"
+    },
+    {
+      "block": "Subtract",
+      "value": "Use when you need to compute the difference between two signals"
+    },
+    {
+      "block": "Sum",
+      "value": "Use when you need to add or subtract multiple signals with configurable sign list"
+    },
+    {
+      "block": "Sum of Elements",
+      "value": "Use when you need to sum all elements of a vector input into a single scalar"
+    },
+    {
+      "block": "Switch",
+      "value": "Use when you need to select between inputs based on a control signal condition"
+    },
+    {
+      "block": "Synchronous Subsystem",
+      "value": "Use when you need to group logic into a subsystem that operates on a single clock domain"
+    },
+    {
+      "block": "Tan",
+      "value": "Use when you need the tangent function with HDL floating-point hardware mapping"
+    },
+    {
+      "block": "Tanh",
+      "value": "Use when you need the hyperbolic tangent with HDL floating-point implementation"
+    },
+    {
+      "block": "Tapped Delay",
+      "value": "Use when you need multiple delayed versions of a signal for filter or pipeline structures"
+    },
+    {
+      "block": "Tapped Delay Enabled Resettable Synchronous",
+      "value": "Use when you need a tapped delay line with synchronous enable and reset for HDL pipelines"
+    },
+    {
+      "block": "Tapped Delay Enabled Synchronous",
+      "value": "Use when you need a tapped delay line with synchronous enable control for HDL pipelines"
+    },
+    {
+      "block": "Tapped Delay Resettable Synchronous",
+      "value": "Use when you need a tapped delay line with synchronous reset for HDL pipelines"
+    },
+    {
+      "block": "Terminator",
+      "value": "Use when you need to properly terminate an unconnected output port to avoid warnings"
+    },
+    {
+      "block": "Transpose",
+      "value": "Use when you need to transpose a matrix signal in floating-point HDL designs"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "Use when you need sine, cosine, or other trigonometric computations in HDL"
+    },
+    {
+      "block": "True Dual Port RAM System",
+      "value": "Use when you need a System object based true dual-port RAM with independent read-write on both ports"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "Use when you need to negate a signal value"
+    },
+    {
+      "block": "Unit Delay",
+      "value": "Use when you need a single sample delay to create registers in HDL designs"
+    },
+    {
+      "block": "Unit Delay Enabled Resettable Synchronous",
+      "value": "Use when you need a single-sample delay with synchronous enable and reset for HDL"
+    },
+    {
+      "block": "Unit Delay Enabled Synchronous",
+      "value": "Use when you need a single-sample delay with synchronous enable control for HDL"
+    },
+    {
+      "block": "Unit Delay Resettable Synchronous",
+      "value": "Use when you need a single-sample delay with synchronous reset capability for HDL"
+    },
+    {
+      "block": "Vector Concatenate",
+      "value": "Use when you need to join multiple vector signals into a single longer vector"
+    },
+    {
+      "block": "Word to Bits",
+      "value": "Use when you need to decompose a multi-bit word into individual bit outputs"
+    },
+    {
+      "block": "Wrap To Zero",
+      "value": "Use when you need a signal to reset to zero after exceeding a threshold value"
+    },
+    {
+      "block": "Zero-Order Hold",
+      "value": "Use when you need to sample a signal and hold its value at a specific rate for multirate HDL designs"
+    },
+    {
+      "block": "cos + jsin",
+      "value": "Use when you need to compute complex exponential from an angle as cosine plus j-sine"
+    },
+    {
+      "block": "n-D Lookup Table",
+      "value": "Use when you need multi-dimensional interpolation table lookup for HDL code generation"
+    }
+  ]
+}

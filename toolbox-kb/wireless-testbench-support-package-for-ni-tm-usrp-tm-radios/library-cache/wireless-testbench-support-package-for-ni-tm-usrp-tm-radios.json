@@ -1,0 +1,36 @@
+{
+  "libraryName": "Wireless Testbench Support Package for NI(TM) USRP(TM) Radios",
+  "generatedAt": "2026-08-19T14:31:18",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "SDRu Receiver",
+      "referenceBlock": "commsdrhw_v2/SDRu Receiver",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SDRu Receiver",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SDRu Transmitter",
+      "referenceBlock": "commsdrhw_v2/SDRu Transmitter",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SDRu Transmitter",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

@@ -1,0 +1,132 @@
+{
+  "commonBlocks": [
+    "MPC Controller",
+    "Nonlinear MPC Controller",
+    "Adaptive MPC Controller",
+    "Adaptive Cruise Control System"
+  ],
+  "categories": [
+    {
+      "name": "mpc-controllers",
+      "description": "Model predictive control algorithms for constrained optimal control",
+      "keywords": [
+        "mpc",
+        "predictive",
+        "controller",
+        "constraint",
+        "optimization"
+      ]
+    },
+    {
+      "name": "automated-driving",
+      "description": "Pre-built MPC-based automated driving controllers",
+      "keywords": [
+        "cruise",
+        "lane",
+        "path",
+        "vehicle",
+        "driving"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Adaptive Cruise Control System",
+      "value": "automated-driving"
+    },
+    {
+      "block": "Adaptive MPC Controller",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Data-Driven MPC",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Explicit MPC Controller",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Lane Keeping Assist System",
+      "value": "automated-driving"
+    },
+    {
+      "block": "MPC Controller",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Multiple Explicit MPC Controllers",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Multiple MPC Controllers",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Multistage Nonlinear MPC",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Nonlinear MPC Controller",
+      "value": "mpc-controllers"
+    },
+    {
+      "block": "Path Following Control System",
+      "value": "automated-driving"
+    },
+    {
+      "block": "Vehicle Path Planner System",
+      "value": "automated-driving"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Adaptive Cruise Control System",
+      "value": "Pre-built adaptive cruise control using MPC — use for maintaining desired speed while keeping safe following distance from a lead vehicle"
+    },
+    {
+      "block": "Adaptive MPC Controller",
+      "value": "MPC controller that updates its internal plant model online — use for controlling systems whose dynamics change over time or operating conditions"
+    },
+    {
+      "block": "Data-Driven MPC",
+      "value": "MPC controller that operates directly from input-output data without an explicit model — use when a first-principles model is unavailable"
+    },
+    {
+      "block": "Explicit MPC Controller",
+      "value": "Pre-computed piecewise-affine MPC controller — use for real-time control on resource-constrained hardware where online optimization is too slow"
+    },
+    {
+      "block": "Lane Keeping Assist System",
+      "value": "Pre-built lane keeping assist using MPC — use for automatic steering to keep a vehicle centered within lane markings"
+    },
+    {
+      "block": "MPC Controller",
+      "value": "Standard linear MPC controller with constraint handling — use for multivariable constrained control with output tracking and disturbance rejection"
+    },
+    {
+      "block": "Multiple Explicit MPC Controllers",
+      "value": "Switch between multiple pre-computed explicit MPC controllers — use for gain-scheduled control across operating regions on embedded targets"
+    },
+    {
+      "block": "Multiple MPC Controllers",
+      "value": "Switch between multiple MPC controllers at runtime — use for gain-scheduled control that adapts to different plant operating modes"
+    },
+    {
+      "block": "Multistage Nonlinear MPC",
+      "value": "Nonlinear MPC with stage-varying costs and constraints — use for trajectory optimization with time-varying objectives or obstacle avoidance"
+    },
+    {
+      "block": "Nonlinear MPC Controller",
+      "value": "General nonlinear MPC with custom cost and constraints — use for controlling highly nonlinear systems where linear MPC provides insufficient performance"
+    },
+    {
+      "block": "Path Following Control System",
+      "value": "Pre-built path following controller using MPC — use for tracking a reference path with combined lateral and longitudinal vehicle control"
+    },
+    {
+      "block": "Vehicle Path Planner System",
+      "value": "Pre-built vehicle path planner using MPC — use for generating collision-free trajectories that satisfy vehicle dynamics constraints"
+    }
+  ]
+}

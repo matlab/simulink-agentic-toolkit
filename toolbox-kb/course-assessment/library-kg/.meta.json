@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.74454900459,
+  "generatorVersion": 4,
+  "libraries": [
+    "Course Assessment"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Course_Assessment": {
+      "blockCount": 2
+    }
+  }
+}

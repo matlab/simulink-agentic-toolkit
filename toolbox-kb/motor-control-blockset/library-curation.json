@@ -1,0 +1,765 @@
+{
+  "commonBlocks": [
+    "Clarke Transform",
+    "Park Transform",
+    "Inverse Clarke Transform",
+    "Inverse Park Transform",
+    "Field-Oriented Current Controller",
+    "PI Controller",
+    "PWM Reference Generator",
+    "Average-Value Inverter",
+    "Surface Mount PMSM",
+    "Induction Motor",
+    "BLDC",
+    "Quadrature Decoder",
+    "Hall Speed and Position",
+    "Flux Observer",
+    "Sliding Mode Observer"
+  ],
+  "categories": [
+    {
+      "name": "control-references",
+      "description": "Torque/current/speed reference generators and feed-forward blocks that produce commands for FOC and vector control loops",
+      "keywords": [
+        "reference",
+        "control reference",
+        "feed forward",
+        "MTPA",
+        "torque estimator",
+        "commutation"
+      ]
+    },
+    {
+      "name": "controllers",
+      "description": "Closed-loop current, speed, and voltage controllers plus autotuning and gain-selection helpers",
+      "keywords": [
+        "PI",
+        "FOC",
+        "controller",
+        "autotuner",
+        "gain",
+        "I-F",
+        "V/F"
+      ]
+    },
+    {
+      "name": "math-transforms",
+      "description": "Clarke/Park and multi-phase transforms, PWM math, and trig utilities used inside FOC and vector-control math paths",
+      "keywords": [
+        "Clarke",
+        "Park",
+        "transform",
+        "PWM",
+        "sine",
+        "atan2",
+        "VSD"
+      ]
+    },
+    {
+      "name": "inverters",
+      "description": "Average-value inverter models that convert DC bus voltage and modulation signals into three-phase output for simulation",
+      "keywords": [
+        "inverter",
+        "average value",
+        "DC bus",
+        "three-phase",
+        "power stage"
+      ]
+    },
+    {
+      "name": "motors",
+      "description": "Electric machine models for BLDC, induction, and PMSM motors used as plants in motor-control simulations",
+      "keywords": [
+        "motor",
+        "PMSM",
+        "BLDC",
+        "induction",
+        "machine",
+        "plant"
+      ]
+    },
+    {
+      "name": "parameter-estimation",
+      "description": "Blocks that identify motor electrical and mechanical parameters (Rs, Ld, Lq, Rr, inertia, friction) from measured data",
+      "keywords": [
+        "estimator",
+        "parameter identification",
+        "Rs",
+        "Ld",
+        "Lq",
+        "inertia",
+        "commissioning"
+      ]
+    },
+    {
+      "name": "protection-diagnostics",
+      "description": "Host-side serial communication and protection/diagnostic utilities for embedded motor-control targets",
+      "keywords": [
+        "serial",
+        "host",
+        "protection",
+        "relay",
+        "diagnostic",
+        "safety"
+      ]
+    },
+    {
+      "name": "sensor-decoders",
+      "description": "Position/speed decoders for Hall, quadrature encoder, and resolver sensors, plus watchdog and speed-measurement helpers",
+      "keywords": [
+        "hall",
+        "encoder",
+        "resolver",
+        "quadrature",
+        "position",
+        "speed",
+        "watchdog"
+      ]
+    },
+    {
+      "name": "sensorless-estimators",
+      "description": "Rotor position and speed observers that eliminate the need for a physical position sensor",
+      "keywords": [
+        "sensorless",
+        "observer",
+        "flux",
+        "sliding mode",
+        "EMF",
+        "high frequency"
+      ]
+    },
+    {
+      "name": "signal-management",
+      "description": "Signal packing, filtering, PLLs, dead-time compensation, and protocol codecs for embedded motor-control signal paths",
+      "keywords": [
+        "byte pack",
+        "IIR",
+        "PLL",
+        "dead-time",
+        "protocol",
+        "memory",
+        "filter"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "3-Phase Sine Voltage Generator",
+      "value": "math-transforms"
+    },
+    {
+      "block": "6-Phase Inverse VSD Transform",
+      "value": "math-transforms"
+    },
+    {
+      "block": "6-Phase VSD Transform",
+      "value": "math-transforms"
+    },
+    {
+      "block": "ACIM Control Reference",
+      "value": "control-references"
+    },
+    {
+      "block": "ACIM Feed Forward Control",
+      "value": "control-references"
+    },
+    {
+      "block": "ACIM Slip Speed Estimator",
+      "value": "control-references"
+    },
+    {
+      "block": "ACIM Torque Estimator",
+      "value": "control-references"
+    },
+    {
+      "block": "Average-Value Inverter",
+      "value": "inverters"
+    },
+    {
+      "block": "BLDC",
+      "value": "motors"
+    },
+    {
+      "block": "BLDC Average-Value Inverter",
+      "value": "inverters"
+    },
+    {
+      "block": "Byte Pack",
+      "value": "signal-management"
+    },
+    {
+      "block": "Byte Reversal",
+      "value": "signal-management"
+    },
+    {
+      "block": "Byte Unpack",
+      "value": "signal-management"
+    },
+    {
+      "block": "Clarke Transform",
+      "value": "math-transforms"
+    },
+    {
+      "block": "Compute Parameter",
+      "value": "signal-management"
+    },
+    {
+      "block": "DQ Limiter",
+      "value": "control-references"
+    },
+    {
+      "block": "Dead-Time Compensator",
+      "value": "signal-management"
+    },
+    {
+      "block": "Derating Function",
+      "value": "controllers"
+    },
+    {
+      "block": "Extended EMF Observer",
+      "value": "sensorless-estimators"
+    },
+    {
+      "block": "FOC Default Controller Gains",
+      "value": "controllers"
+    },
+    {
+      "block": "Field Oriented Control Autotuner",
+      "value": "controllers"
+    },
+    {
+      "block": "Field-Oriented Current Controller",
+      "value": "controllers"
+    },
+    {
+      "block": "Flux Observer",
+      "value": "sensorless-estimators"
+    },
+    {
+      "block": "Hall Speed and Position",
+      "value": "sensor-decoders"
+    },
+    {
+      "block": "Hall Validity",
+      "value": "sensor-decoders"
+    },
+    {
+      "block": "Host Serial Receive",
+      "value": "protection-diagnostics"
+    },
+    {
+      "block": "Host Serial Setup",
+      "value": "protection-diagnostics"
+    },
+    {
+      "block": "Host Serial Transmit",
+      "value": "protection-diagnostics"
+    },
+    {
+      "block": "I-F Controller",
+      "value": "controllers"
+    },
+    {
+      "block": "IIR Filter",
+      "value": "signal-management"
+    },
+    {
+      "block": "Id0 Estimator",
+      "value": "parameter-estimation"
+    },
+    {
+      "block": "Induction Motor",
+      "value": "motors"
+    },
+    {
+      "block": "Interior PMSM",
+      "value": "motors"
+    },
+    {
+      "block": "Inverse Clarke Transform",
+      "value": "math-transforms"
+    },
+    {
+      "block": "Inverse Park Transform",
+      "value": "math-transforms"
+    },
+    {
+      "block": "LUT based ACIM Control Reference",
+      "value": "control-references"
+    },
+    {
+      "block": "LUT based PMSM Control Reference",
+      "value": "control-references"
+    },
+    {
+      "block": "LUT based SynRM Control Reference",
+      "value": "control-references"
+    },
+    {
+      "block": "Ld Estimator",
+      "value": "parameter-estimation"
+    },
+    {
+      "block": "Lq Estimator",
+      "value": "parameter-estimation"
+    },
+    {
+      "block": "MTPA Control Reference",
+      "value": "control-references"
+    },
+    {
+      "block": "Mechanical Parameter Estimator",
+      "value": "parameter-estimation"
+    },
+    {
+      "block": "Mechanical to Electrical Position",
+      "value": "sensor-decoders"
+    },
+    {
+      "block": "Memory Copy",
+      "value": "signal-management"
+    },
+    {
+      "block": "PI Controller",
+      "value": "controllers"
+    },
+    {
+      "block": "PLL with Feed Forward",
+      "value": "signal-management"
+    },
+    {
+      "block": "PMSM FeedForward Control",
+      "value": "control-references"
+    },
+    {
+      "block": "PMSM Torque Estimator",
+      "value": "control-references"
+    },
+    {
+      "block": "PWM Phase Shift for Single Shunt FOC",
+      "value": "math-transforms"
+    },
+    {
+      "block": "PWM Reference Generator",
+      "value": "math-transforms"
+    },
+    {
+      "block": "Parameter Estimation Configurator",
+      "value": "parameter-estimation"
+    },
+    {
+      "block": "Park Transform",
+      "value": "math-transforms"
+    },
+    {
+      "block": "Phase Current Extractor for Single Shunt FOC",
+      "value": "math-transforms"
+    },
+    {
+      "block": "Position Compensation",
+      "value": "signal-management"
+    },
+    {
+      "block": "Position Generator",
+      "value": "control-references"
+    },
+    {
+      "block": "Protection Relay",
+      "value": "protection-diagnostics"
+    },
+    {
+      "block": "Protocol Decoder",
+      "value": "signal-management"
+    },
+    {
+      "block": "Protocol Encoder",
+      "value": "signal-management"
+    },
+    {
+      "block": "Pulsating High Freq Observer",
+      "value": "sensorless-estimators"
+    },
+    {
+      "block": "Quadrature Decoder",
+      "value": "sensor-decoders"
+    },
+    {
+      "block": "Resolver Decoder",
+      "value": "sensor-decoders"
+    },
+    {
+      "block": "Rr L Estimator",
+      "value": "parameter-estimation"
+    },
+    {
+      "block": "Rs Estimator",
+      "value": "parameter-estimation"
+    },
+    {
+      "block": "SRM Commutation",
+      "value": "control-references"
+    },
+    {
+      "block": "Sensorless Six-Step Commutation",
+      "value": "controllers"
+    },
+    {
+      "block": "SinCos Embedded Optimized",
+      "value": "math-transforms"
+    },
+    {
+      "block": "Six Step Commutation",
+      "value": "control-references"
+    },
+    {
+      "block": "Sliding Mode Observer",
+      "value": "sensorless-estimators"
+    },
+    {
+      "block": "Software Watchdog Timer",
+      "value": "sensor-decoders"
+    },
+    {
+      "block": "Speed Measurement",
+      "value": "sensor-decoders"
+    },
+    {
+      "block": "Surface Mount PMSM",
+      "value": "motors"
+    },
+    {
+      "block": "SynRM FeedForward Control",
+      "value": "control-references"
+    },
+    {
+      "block": "SynRM Torque Estimator",
+      "value": "control-references"
+    },
+    {
+      "block": "VbyF Controller",
+      "value": "controllers"
+    },
+    {
+      "block": "Vector Control Reference",
+      "value": "control-references"
+    },
+    {
+      "block": "Vector plot",
+      "value": "signal-management"
+    },
+    {
+      "block": "atan2",
+      "value": "math-transforms"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "3-Phase Sine Voltage Generator",
+      "value": "Generate a balanced three-phase sinusoidal voltage set from a magnitude and frequency command — use to drive AC motor models open-loop or synthesize test stimuli"
+    },
+    {
+      "block": "6-Phase Inverse VSD Transform",
+      "value": "Convert alpha/beta reference voltages back to six-phase (dual three-phase) output — use to drive six-phase inverters after control computations are done in the reduced frame"
+    },
+    {
+      "block": "6-Phase VSD Transform",
+      "value": "Apply the Vector Space Decomposition transform to convert six measured phase currents into two orthogonal subspaces — use for control of six-phase motors and to isolate harmonic content"
+    },
+    {
+      "block": "ACIM Control Reference",
+      "value": "Compute id/iq current references for an induction motor from a torque or speed command — use as the outer setpoint block inside an ACIM field-oriented control loop"
+    },
+    {
+      "block": "ACIM Feed Forward Control",
+      "value": "Add decoupling voltage feed-forward terms for an induction motor FOC loop — use to cancel cross-coupling between d and q axes and improve current-loop bandwidth"
+    },
+    {
+      "block": "ACIM Slip Speed Estimator",
+      "value": "Estimate rotor slip frequency from stator current references and rotor time constant — use in indirect field-oriented control of induction motors to orient the reference frame"
+    },
+    {
+      "block": "ACIM Torque Estimator",
+      "value": "Estimate electromagnetic torque of an induction motor from d/q currents and magnetizing inductance — use for torque monitoring, feedback, or diagnostics without a torque sensor"
+    },
+    {
+      "block": "Average-Value Inverter",
+      "value": "Model a three-phase inverter as an ideal voltage source proportional to duty cycle — use for fast, non-switching plant simulations of FOC loops when switching harmonics are not of interest"
+    },
+    {
+      "block": "BLDC",
+      "value": "Trapezoidal back-EMF permanent-magnet motor model — use as the plant in six-step commutated BLDC drive simulations"
+    },
+    {
+      "block": "BLDC Average-Value Inverter",
+      "value": "Average-value inverter model tailored for six-step BLDC commutation — use in trapezoidal-drive simulations where individual switching events can be abstracted away"
+    },
+    {
+      "block": "Byte Pack",
+      "value": "Pack heterogeneous scalar signals into a single byte buffer using a specified layout — use to build serial or CAN telemetry frames from Simulink signals"
+    },
+    {
+      "block": "Byte Reversal",
+      "value": "Reverse the byte order of a value or vector — use to convert between little-endian and big-endian representations when talking to external hardware"
+    },
+    {
+      "block": "Byte Unpack",
+      "value": "Unpack a byte buffer into heterogeneous scalar signals using a specified layout — use to parse incoming serial or CAN telemetry frames"
+    },
+    {
+      "block": "Clarke Transform",
+      "value": "Convert three-phase stationary quantities (ia, ib, ic) into two-axis alpha/beta stationary components — use as the first math step of any FOC current or voltage transformation"
+    },
+    {
+      "block": "Compute Parameter",
+      "value": "Perform a one-time computation at model start based on workspace parameters and expose the result on an outport — use to derive constants (e.g., inverse Rs) that would otherwise recur every step"
+    },
+    {
+      "block": "DQ Limiter",
+      "value": "Saturate d and q current or voltage vectors while preserving their angle — use to enforce inverter voltage limits or maximum current envelopes without distorting the commanded direction"
+    },
+    {
+      "block": "Dead-Time Compensator",
+      "value": "Compensate inverter dead-time distortion by adding a current-sign-dependent voltage offset — use to restore output-voltage linearity in FOC drives at low modulation index"
+    },
+    {
+      "block": "Derating Function",
+      "value": "Reduce a torque or current command based on temperature, DC bus voltage, or other limits — use to keep the drive within safe operating limits without abrupt shutoff"
+    },
+    {
+      "block": "Extended EMF Observer",
+      "value": "Estimate rotor position of a salient PMSM from extended back-EMF at medium-to-high speed — use for sensorless FOC of interior PMSMs above the low-speed region"
+    },
+    {
+      "block": "FOC Default Controller Gains",
+      "value": "Compute default PI gains for current, speed, and flux loops from motor parameters and bandwidth targets — use as a starting point before autotuning or hand tuning"
+    },
+    {
+      "block": "Field Oriented Control Autotuner",
+      "value": "Run a closed-loop system-identification and gain-tuning routine on a live FOC drive — use to derive current, speed, and field-weakening PI gains automatically on target hardware"
+    },
+    {
+      "block": "Field-Oriented Current Controller",
+      "value": "Regulate d and q axis currents to their references with decoupled PI loops and voltage limiting — use as the inner current loop of any FOC-based motor drive"
+    },
+    {
+      "block": "Flux Observer",
+      "value": "Estimate stator flux and rotor angle by integrating the voltage equation with drift compensation — use as the position observer for medium- to high-speed sensorless FOC"
+    },
+    {
+      "block": "Hall Speed and Position",
+      "value": "Decode Hall-sensor A/B/C states into electrical angle and rotor speed — use to obtain position/speed feedback for BLDC drives and low-resolution PMSM applications"
+    },
+    {
+      "block": "Hall Validity",
+      "value": "Detect illegal Hall-sensor state transitions such as all-high or all-low patterns — use to flag broken Hall sensors or wiring errors so the drive can go into a safe state"
+    },
+    {
+      "block": "Host Serial Receive",
+      "value": "Receive framed serial data on the host PC from a target motor-control MCU — use to bring live measurement, telemetry, or debug data back into Simulink for monitoring"
+    },
+    {
+      "block": "Host Serial Setup",
+      "value": "Configure the host-side serial port (COM port, baud rate, parity) used to talk to a target MCU — use once at the top of a host monitoring model"
+    },
+    {
+      "block": "Host Serial Transmit",
+      "value": "Send framed serial data from the host PC to a target motor-control MCU — use to command setpoints, gains, or test triggers from a live monitoring model"
+    },
+    {
+      "block": "I-F Controller",
+      "value": "Drive a PMSM in open-loop current mode with a rotating angle ramp — use during sensorless startup before the position observer converges"
+    },
+    {
+      "block": "IIR Filter",
+      "value": "Second-order IIR filter with fixed-point-friendly implementation — use for anti-aliasing sensor measurements, smoothing speed feedback, or shaping references in motor-control loops"
+    },
+    {
+      "block": "Id0 Estimator",
+      "value": "Identify the zero-current bias of the d-axis in an induction motor during commissioning — use as one step of the ACIM parameter identification workflow"
+    },
+    {
+      "block": "Induction Motor",
+      "value": "Squirrel-cage induction machine model with configurable equivalent-circuit parameters — use as the plant for scalar V/F, direct torque, or vector-control simulations"
+    },
+    {
+      "block": "Interior PMSM",
+      "value": "Interior permanent-magnet synchronous machine model with saliency (Ld ≠ Lq) — use as the plant for MTPA, field-weakening, and reluctance-torque studies"
+    },
+    {
+      "block": "Inverse Clarke Transform",
+      "value": "Convert alpha/beta stationary components back into three-phase voltage or current commands — use as the final math step before driving PWM in an FOC controller"
+    },
+    {
+      "block": "Inverse Park Transform",
+      "value": "Rotate d/q axis quantities back to the stationary alpha/beta frame using the electrical angle — use to convert voltage commands from the rotor-oriented frame before PWM generation"
+    },
+    {
+      "block": "LUT based ACIM Control Reference",
+      "value": "Look up id/iq current references for an induction motor from precomputed tables indexed by torque and speed — use when torque linearity across the operating envelope matters more than analytical simplicity"
+    },
+    {
+      "block": "LUT based PMSM Control Reference",
+      "value": "Look up id/iq current references for a PMSM from precomputed torque/speed tables — use for MTPA and field-weakening operation of interior PMSMs where closed-form solutions are inaccurate"
+    },
+    {
+      "block": "LUT based SynRM Control Reference",
+      "value": "Look up id/iq current references for a synchronous reluctance motor from precomputed tables — use to achieve optimal torque-per-ampere operation across the full SynRM operating map"
+    },
+    {
+      "block": "Ld Estimator",
+      "value": "Estimate the d-axis inductance of a PMSM from high-frequency current injection — use during commissioning to obtain the inductance needed for accurate current-loop tuning and MTPA lookups"
+    },
+    {
+      "block": "Lq Estimator",
+      "value": "Estimate the q-axis inductance of a PMSM from high-frequency current injection — use during commissioning to characterize saliency and populate MTPA tables"
+    },
+    {
+      "block": "MTPA Control Reference",
+      "value": "Compute maximum torque per ampere (MTPA) d/q current references analytically from motor parameters — use for interior PMSMs to minimize copper losses at a given torque command"
+    },
+    {
+      "block": "Mechanical Parameter Estimator",
+      "value": "Identify motor inertia and viscous friction from a spin-down or acceleration test — use to obtain mechanical plant parameters for speed-loop tuning"
+    },
+    {
+      "block": "Mechanical to Electrical Position",
+      "value": "Convert mechanical shaft angle to electrical angle using the pole-pair count and apply modulo wrapping — use anywhere a mechanical sensor feeds an electrical control loop"
+    },
+    {
+      "block": "Memory Copy",
+      "value": "Copy a block of data between arrays or buffers in generated code — use to move telemetry or parameter blocks efficiently without loop constructs"
+    },
+    {
+      "block": "PI Controller",
+      "value": "Discrete PI controller with anti-windup and output saturation tailored for motor-control loops — use to build custom current, speed, position, or flux regulators"
+    },
+    {
+      "block": "PLL with Feed Forward",
+      "value": "Track the phase and frequency of a sinusoidal signal or estimated back-EMF using a PLL with feed-forward speed input — use to smooth rotor angle estimates from noisy observers"
+    },
+    {
+      "block": "PMSM FeedForward Control",
+      "value": "Add decoupling voltage feed-forward terms for PMSM FOC — use to cancel back-EMF and cross-axis coupling and improve current-loop transient response"
+    },
+    {
+      "block": "PMSM Torque Estimator",
+      "value": "Estimate PMSM electromagnetic torque from measured d/q currents and machine parameters — use for torque feedback, monitoring, or verification without a torque sensor"
+    },
+    {
+      "block": "PWM Phase Shift for Single Shunt FOC",
+      "value": "Offset PWM edges so that two distinct phase currents can be sampled on a single DC-bus shunt within one PWM period — use for cost-optimized drives with only one current sensor"
+    },
+    {
+      "block": "PWM Reference Generator",
+      "value": "Generate space-vector or sine-triangle PWM duty cycles from three-phase voltage references — use to drive a three-phase inverter from an FOC or vector controller"
+    },
+    {
+      "block": "Parameter Estimation Configurator",
+      "value": "Sequence and configure the motor parameter identification tests (signal injection, dwell times, ramps) — use as the top-level orchestrator of the commissioning workflow"
+    },
+    {
+      "block": "Park Transform",
+      "value": "Rotate alpha/beta stationary quantities into the d/q rotor-oriented frame using the electrical angle — use to move currents and voltages into the rotating frame for FOC math"
+    },
+    {
+      "block": "Phase Current Extractor for Single Shunt FOC",
+      "value": "Reconstruct two phase currents from single-shunt DC-bus samples using PWM state timing — use to enable FOC on drives with only one current sensor"
+    },
+    {
+      "block": "Position Compensation",
+      "value": "Compensate rotor angle for the one-sample delay between current sample time and the next PWM update — use to sharpen FOC current tracking at high electrical frequencies"
+    },
+    {
+      "block": "Position Generator",
+      "value": "Generate a synthetic electrical position ramp from a speed reference — use for open-loop rotor position during I-F startup or when a real sensor is unavailable"
+    },
+    {
+      "block": "Protection Relay",
+      "value": "Latch a fault condition (over-current, over-temperature, over-voltage) and hold the drive disabled until reset — use to implement safe shutdown of a motor-control system"
+    },
+    {
+      "block": "Protocol Decoder",
+      "value": "Decode framed messages according to a user-defined protocol (headers, checksum, payload) — use to parse serial or embedded communication streams inside the target model"
+    },
+    {
+      "block": "Protocol Encoder",
+      "value": "Encode framed messages according to a user-defined protocol — use to construct serial or embedded communication streams from Simulink signals"
+    },
+    {
+      "block": "Pulsating High Freq Observer",
+      "value": "Inject a high-frequency voltage signal on the d-axis and demodulate the resulting current ripple to extract rotor position — use for sensorless PMSM control at zero and low speed where back-EMF is too small"
+    },
+    {
+      "block": "Quadrature Decoder",
+      "value": "Decode A/B encoder pulses into an accumulated count, direction, and index reset — use to convert incremental encoder feedback into position and speed for high-resolution servos"
+    },
+    {
+      "block": "Resolver Decoder",
+      "value": "Demodulate resolver sine/cosine channels and excitation to recover rotor angle — use for motor-control feedback in high-vibration or high-temperature environments where encoders are unsuitable"
+    },
+    {
+      "block": "Rr L Estimator",
+      "value": "Estimate the rotor resistance and rotor inductance of an induction motor from injected test signals — use during ACIM commissioning to obtain rotor-side equivalent-circuit values"
+    },
+    {
+      "block": "Rs Estimator",
+      "value": "Estimate stator resistance by injecting a DC current and measuring the resulting voltage — use during commissioning of PMSM, induction, or SynRM drives"
+    },
+    {
+      "block": "SRM Commutation",
+      "value": "Sequence phase excitation for a switched reluctance motor based on rotor position — use as the electrical commutation logic for SRM drives"
+    },
+    {
+      "block": "Sensorless Six-Step Commutation",
+      "value": "Perform BLDC six-step commutation using back-EMF zero-crossing detection instead of Hall sensors — use for low-cost BLDC drives without position feedback"
+    },
+    {
+      "block": "SinCos Embedded Optimized",
+      "value": "Compute sine and cosine of an electrical angle using a lookup-based implementation optimized for fixed-point/embedded targets — use inside Park/inverse-Park math on resource-constrained MCUs"
+    },
+    {
+      "block": "Six Step Commutation",
+      "value": "Drive a BLDC motor in six-step (trapezoidal) commutation based on Hall sensor states — use for simple, robust BLDC control without full field-oriented control"
+    },
+    {
+      "block": "Sliding Mode Observer",
+      "value": "Estimate back-EMF and rotor angle using a sliding-mode current observer — use for robust sensorless PMSM position estimation in the presence of parameter variation"
+    },
+    {
+      "block": "Software Watchdog Timer",
+      "value": "Software watchdog that trips if a periodic kick signal is missed — use to detect task overruns or firmware hangs and force the drive into a safe state"
+    },
+    {
+      "block": "Speed Measurement",
+      "value": "Differentiate an accumulated position with configurable filtering to produce a low-noise speed estimate — use to close speed loops from encoder or resolver feedback"
+    },
+    {
+      "block": "Surface Mount PMSM",
+      "value": "Surface-mount permanent-magnet synchronous machine model with symmetric d/q inductance — use as the plant for FOC studies on non-salient PMSMs"
+    },
+    {
+      "block": "SynRM FeedForward Control",
+      "value": "Add voltage feed-forward decoupling for a synchronous reluctance motor FOC loop — use to compensate cross-axis coupling and improve dynamic response"
+    },
+    {
+      "block": "SynRM Torque Estimator",
+      "value": "Estimate synchronous reluctance motor torque from d/q currents and saturated inductance data — use for torque feedback or monitoring in SynRM drives"
+    },
+    {
+      "block": "VbyF Controller",
+      "value": "Produce a stator voltage reference proportional to frequency for scalar V/F control of induction motors — use when full-vector control is unnecessary, e.g. fans and pumps"
+    },
+    {
+      "block": "Vector Control Reference",
+      "value": "Generate d/q current references for a generic three-phase vector-controlled machine — use as the outer-loop reference block when detailed motor-type-specific logic is not required"
+    },
+    {
+      "block": "Vector plot",
+      "value": "Visualize two-dimensional vector quantities (e.g. alpha/beta or d/q) as an animated diagram during simulation — use to inspect FOC transforms and current-vector trajectories"
+    },
+    {
+      "block": "atan2",
+      "value": "Compute the four-quadrant arctangent using an embedded-optimized implementation — use to recover electrical angles from alpha/beta components on fixed-point targets"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "commonBlocks": [
+    "Serial Configuration",
+    "Serial Receive",
+    "Serial Send",
+    "TCP/IP Receive",
+    "TCP/IP Send"
+  ],
+  "categories": [
+    {
+      "name": "serial-comm",
+      "description": "Serial port communication with instruments and devices",
+      "keywords": [
+        "serial",
+        "uart",
+        "rs232",
+        "baud",
+        "port"
+      ]
+    },
+    {
+      "name": "network-comm",
+      "description": "Network-based data exchange over TCP/IP and UDP",
+      "keywords": [
+        "tcp",
+        "udp",
+        "network",
+        "ethernet",
+        "socket"
+      ]
+    },
+    {
+      "name": "instrument-io",
+      "description": "Direct instrument query and command via SCPI/VISA",
+      "keywords": [
+        "visa",
+        "gpib",
+        "scpi",
+        "instrument",
+        "query"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Query Instrument",
+      "value": "instrument-io"
+    },
+    {
+      "block": "Serial Configuration",
+      "value": "serial-comm"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "serial-comm"
+    },
+    {
+      "block": "Serial Send",
+      "value": "serial-comm"
+    },
+    {
+      "block": "TCP/IP Receive",
+      "value": "network-comm"
+    },
+    {
+      "block": "TCP/IP Send",
+      "value": "network-comm"
+    },
+    {
+      "block": "To Instrument",
+      "value": "instrument-io"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "network-comm"
+    },
+    {
+      "block": "UDP Send",
+      "value": "network-comm"
+    },
+    {
+      "block": "VISA",
+      "value": "instrument-io"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Query Instrument",
+      "value": "Send a command and read the response from a SCPI/GPIB instrument — use for interactive measurement acquisition from test equipment"
+    },
+    {
+      "block": "Serial Configuration",
+      "value": "Configure serial port parameters like baud rate and parity — use for setting up RS-232/RS-485 communication before send/receive operations"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "Receive data from a serial port — use for reading measurement data or responses from serial-connected instruments or microcontrollers"
+    },
+    {
+      "block": "Serial Send",
+      "value": "Send data through a serial port — use for transmitting commands or data to serial-connected instruments or microcontrollers"
+    },
+    {
+      "block": "TCP/IP Receive",
+      "value": "Receive data over a TCP/IP network connection — use for acquiring data from networked instruments, remote systems, or lab equipment"
+    },
+    {
+      "block": "TCP/IP Send",
+      "value": "Send data over a TCP/IP network connection — use for transmitting commands or data to networked instruments or remote systems"
+    },
+    {
+      "block": "To Instrument",
+      "value": "Send a command string to an instrument without reading a response — use for one-way configuration commands to SCPI/GPIB instruments"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive data over UDP — use for low-latency acquisition from instruments or systems that broadcast measurement data"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send data over UDP — use for low-latency command transmission to instruments or systems that accept UDP messages"
+    },
+    {
+      "block": "VISA",
+      "value": "Communicate with instruments via the VISA standard — use for vendor-neutral access to GPIB, USB, TCP/IP, or serial instruments"
+    }
+  ]
+}

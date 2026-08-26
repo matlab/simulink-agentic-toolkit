@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "Divide by Constant and Round",
+    "Modulo by Constant"
+  ],
+  "categories": [
+    {
+      "name": "fixed-point-math",
+      "description": "Optimized fixed-point arithmetic operations for efficient code generation",
+      "keywords": [
+        "fixed-point",
+        "divide",
+        "modulo",
+        "round",
+        "constant"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Divide by Constant and Round",
+      "value": "fixed-point-math"
+    },
+    {
+      "block": "Modulo by Constant",
+      "value": "fixed-point-math"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Divide by Constant and Round",
+      "value": "Divide a signal by a compile-time constant and round the result with configurable rounding mode — use to replace expensive runtime division with efficient multiply-shift operations in fixed-point code generation"
+    },
+    {
+      "block": "Modulo by Constant",
+      "value": "Compute modulo of a signal by a compile-time constant — use for efficient remainder operations in fixed-point scheduling, circular buffers, or angle wrapping without runtime division"
+    }
+  ]
+}

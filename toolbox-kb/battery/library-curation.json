@@ -1,0 +1,587 @@
+{
+  "commonBlocks": [
+    "Battery CC-CV",
+    "SOC Estimator (Kalman Filter)",
+    "Battery Voltage Monitoring",
+    "Battery Current Monitoring",
+    "Battery Temperature Monitoring",
+    "Passive Cell Balancing",
+    "Battery",
+    "Battery (Table-Based)",
+    "Battery Equivalent Circuit",
+    "Battery Power Estimator",
+    "Charger",
+    "Cycler",
+    "Battery Coolant Control"
+  ],
+  "categories": [
+    {
+      "name": "cell-balancing",
+      "description": "Cell balancing algorithms for equalizing SOC across series cells",
+      "keywords": [
+        "balancing",
+        "passive",
+        "cell",
+        "equalize",
+        "bleed"
+      ]
+    },
+    {
+      "name": "current-management",
+      "description": "Charging and discharging current control and limiting algorithms",
+      "keywords": [
+        "charging",
+        "discharging",
+        "current",
+        "limit",
+        "cc-cv"
+      ]
+    },
+    {
+      "name": "state-estimation",
+      "description": "State of charge, energy, health, and capacity estimation algorithms",
+      "keywords": [
+        "soc",
+        "soe",
+        "soh",
+        "estimator",
+        "kalman"
+      ]
+    },
+    {
+      "name": "protection",
+      "description": "Battery protection monitoring for voltage, current, temperature, and contacts",
+      "keywords": [
+        "monitoring",
+        "protection",
+        "fault",
+        "voltage",
+        "overcurrent"
+      ]
+    },
+    {
+      "name": "thermal-management",
+      "description": "Thermal management control algorithms for cooling and heating",
+      "keywords": [
+        "coolant",
+        "heater",
+        "thermal",
+        "temperature",
+        "control"
+      ]
+    },
+    {
+      "name": "cell-models",
+      "description": "Simscape physical battery and supercapacitor cell models",
+      "keywords": [
+        "battery",
+        "cell",
+        "equivalent",
+        "circuit",
+        "simscape"
+      ]
+    },
+    {
+      "name": "connectors",
+      "description": "Multi-cell electrical and thermal array connectors",
+      "keywords": [
+        "connector",
+        "array",
+        "nodes",
+        "electrical",
+        "thermal"
+      ]
+    },
+    {
+      "name": "cyclers",
+      "description": "Battery test equipment models (chargers, dischargers, cyclers)",
+      "keywords": [
+        "charger",
+        "discharger",
+        "cycler",
+        "test",
+        "profile"
+      ]
+    },
+    {
+      "name": "fuel-cell",
+      "description": "Fuel cell stack models for hydrogen powertrain simulation",
+      "keywords": [
+        "fuel",
+        "cell",
+        "hydrogen",
+        "stack",
+        "pem"
+      ]
+    },
+    {
+      "name": "hil",
+      "description": "Hardware-in-the-loop interfaces for BMS testing",
+      "keywords": [
+        "hil",
+        "interface",
+        "emulation",
+        "hardware",
+        "realtime"
+      ]
+    },
+    {
+      "name": "thermal-components",
+      "description": "Simscape thermal components for pack cooling simulation",
+      "keywords": [
+        "cooling",
+        "rom",
+        "channel",
+        "edge",
+        "thermal"
+      ]
+    },
+    {
+      "name": "passive-components",
+      "description": "Passive electrical component models (impedance, state-space)",
+      "keywords": [
+        "impedance",
+        "state-space",
+        "passive",
+        "eis",
+        "frequency"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Active Interface",
+      "value": "hil"
+    },
+    {
+      "block": "Array of Electrical Nodes Connector",
+      "value": "connectors"
+    },
+    {
+      "block": "Array of Thermal Nodes Connector",
+      "value": "thermal-components"
+    },
+    {
+      "block": "Battery",
+      "value": "cell-models"
+    },
+    {
+      "block": "Battery (Table-Based)",
+      "value": "cell-models"
+    },
+    {
+      "block": "Battery CC-CV",
+      "value": "current-management"
+    },
+    {
+      "block": "Battery Capacity Estimator (Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Battery Capacity Estimator (Least Squares)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Battery Capacity Estimator (Least Squares, Variable Weights)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Battery Cell Contact Monitoring",
+      "value": "protection"
+    },
+    {
+      "block": "Battery Charging Current Limit",
+      "value": "current-management"
+    },
+    {
+      "block": "Battery Coolant Control",
+      "value": "thermal-management"
+    },
+    {
+      "block": "Battery Current Monitoring",
+      "value": "protection"
+    },
+    {
+      "block": "Battery Discharging Current Limit",
+      "value": "current-management"
+    },
+    {
+      "block": "Battery Equivalent Circuit",
+      "value": "cell-models"
+    },
+    {
+      "block": "Battery Heater Control",
+      "value": "thermal-management"
+    },
+    {
+      "block": "Battery Power Estimator",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Battery Single Particle",
+      "value": "cell-models"
+    },
+    {
+      "block": "Battery Temperature Monitoring",
+      "value": "protection"
+    },
+    {
+      "block": "Battery Voltage Monitoring",
+      "value": "protection"
+    },
+    {
+      "block": "CC-CV Charging (Proportional Control)",
+      "value": "current-management"
+    },
+    {
+      "block": "Cell Delta SOC Estimator (Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Cell Delta SOC Estimator (Kalman Filter, Variable Resistance)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Charger",
+      "value": "cyclers"
+    },
+    {
+      "block": "Cycler",
+      "value": "cyclers"
+    },
+    {
+      "block": "Discharger",
+      "value": "cyclers"
+    },
+    {
+      "block": "Edge Cooling",
+      "value": "thermal-components"
+    },
+    {
+      "block": "Fault Qualification",
+      "value": "protection"
+    },
+    {
+      "block": "Fuel Cell (Table-Based)",
+      "value": "fuel-cell"
+    },
+    {
+      "block": "Fuel Cell Equivalent Circuit",
+      "value": "fuel-cell"
+    },
+    {
+      "block": "Impedance (State-Space)",
+      "value": "passive-components"
+    },
+    {
+      "block": "Multi-Cell Thermal ROM",
+      "value": "thermal-components"
+    },
+    {
+      "block": "Pack Bar SOC Estimator (Adaptive Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Pack Bar SOC Estimator (Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Parallel Channels",
+      "value": "thermal-components"
+    },
+    {
+      "block": "Passive Balancing Interface",
+      "value": "hil"
+    },
+    {
+      "block": "Passive Cell Balancing",
+      "value": "cell-balancing"
+    },
+    {
+      "block": "Passive Interface",
+      "value": "hil"
+    },
+    {
+      "block": "SOC Estimator (Adaptive Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOC Estimator (Adaptive Kalman Filter, Variable Capacity)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOC Estimator (Coulomb Counting)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOC Estimator (Coulomb Counting, Variable Capacity)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOC Estimator (Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOC Estimator (Kalman Filter, Variable Capacity)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOE Estimator (Adaptive Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOE Estimator (Adaptive Kalman Filter, Variable Energy Capacity)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOE Estimator (Energy Counting)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOE Estimator (Energy Counting, Variable Energy Capacity)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOE Estimator (Kalman Filter)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOE Estimator (Kalman Filter, Variable Energy Capacity)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOH Estimator",
+      "value": "state-estimation"
+    },
+    {
+      "block": "SOH Estimator (Capacity-Based)",
+      "value": "state-estimation"
+    },
+    {
+      "block": "Supercapacitor Equivalent Circuit",
+      "value": "cell-models"
+    },
+    {
+      "block": "U-shaped Channels",
+      "value": "thermal-components"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Active Interface",
+      "value": "Provide a hardware-in-the-loop interface for active battery emulation — use to connect a real-time battery model to physical BMS hardware for closed-loop HIL testing"
+    },
+    {
+      "block": "Array of Electrical Nodes Connector",
+      "value": "Connect arrays of electrical nodes between battery modules in Simscape — use to wire series or parallel cell configurations without manually connecting each cell port"
+    },
+    {
+      "block": "Array of Thermal Nodes Connector",
+      "value": "Connect arrays of thermal nodes between battery modules in Simscape — use to wire thermal ports of series/parallel cell configurations for pack-level thermal simulation"
+    },
+    {
+      "block": "Battery",
+      "value": "Model a battery cell or module as a Simscape physical component with equivalent circuit dynamics — use for system-level electrical simulation with current, voltage, and thermal ports"
+    },
+    {
+      "block": "Battery (Table-Based)",
+      "value": "Model a battery cell using table-based parameterization of OCV, resistance, and time constants vs. SOC and temperature — use when cell characterization data is available from HPPC or EIS testing"
+    },
+    {
+      "block": "Battery CC-CV",
+      "value": "Implement constant-current constant-voltage charging protocol — use to generate charge current commands that transition from CC to CV phase at the voltage setpoint for safe Li-ion charging"
+    },
+    {
+      "block": "Battery Capacity Estimator (Kalman Filter)",
+      "value": "Estimate total battery capacity online using a Kalman filter — use to track capacity fade over the battery lifetime for accurate SOC scaling and end-of-life prediction"
+    },
+    {
+      "block": "Battery Capacity Estimator (Least Squares)",
+      "value": "Estimate total battery capacity online using recursive least squares — use when a computationally lighter alternative to Kalman filtering is needed for capacity tracking"
+    },
+    {
+      "block": "Battery Capacity Estimator (Least Squares, Variable Weights)",
+      "value": "Estimate battery capacity using weighted recursive least squares — use when measurement quality varies and recent data should be weighted more heavily for faster adaptation"
+    },
+    {
+      "block": "Battery Cell Contact Monitoring",
+      "value": "Detect cell contact failures (open connections) by monitoring voltage and temperature anomalies — use in BMS safety logic to identify loose or corroded cell tabs before thermal events"
+    },
+    {
+      "block": "Battery Charging Current Limit",
+      "value": "Compute the maximum allowable charging current based on cell voltage, temperature, and SOC — use in BMS to protect cells from overcharge by dynamically limiting charger current demand"
+    },
+    {
+      "block": "Battery Coolant Control",
+      "value": "Control coolant flow rate and pump speed to regulate battery temperature — use to implement thermal management logic that maintains optimal cell temperature during charging and driving"
+    },
+    {
+      "block": "Battery Current Monitoring",
+      "value": "Monitor pack current against overcurrent and short-circuit thresholds with time-based qualification — use to trigger contactor opening or current derating when sustained overcurrent is detected"
+    },
+    {
+      "block": "Battery Discharging Current Limit",
+      "value": "Compute the maximum allowable discharging current based on cell voltage, temperature, and SOC — use in BMS to prevent over-discharge and protect cells under high-load conditions"
+    },
+    {
+      "block": "Battery Equivalent Circuit",
+      "value": "Model a battery using a configurable equivalent circuit (R, RC, or multi-RC) in Simscape — use for detailed electrical dynamics simulation including transient voltage response under pulsed loads"
+    },
+    {
+      "block": "Battery Heater Control",
+      "value": "Control heater activation to bring battery temperature into operating range — use in cold-climate BMS to pre-condition cells before charging or high-power discharge"
+    },
+    {
+      "block": "Battery Power Estimator",
+      "value": "Estimate the maximum available charge and discharge power over a prediction horizon — use for power management in hybrid/electric powertrains to enforce safe operating limits on motor torque requests"
+    },
+    {
+      "block": "Battery Single Particle",
+      "value": "Model a battery cell using single-particle electrochemical physics — use when equivalent circuits lack fidelity and internal states like lithium concentration gradients are needed for advanced BMS development"
+    },
+    {
+      "block": "Battery Temperature Monitoring",
+      "value": "Monitor cell temperatures against over-temperature and under-temperature thresholds — use to trigger thermal protection actions like derating, heating, or emergency shutdown"
+    },
+    {
+      "block": "Battery Voltage Monitoring",
+      "value": "Monitor cell voltages against overvoltage and undervoltage thresholds — use to trigger charging cutoff, load disconnect, or cell balancing when limits are approached"
+    },
+    {
+      "block": "CC-CV Charging (Proportional Control)",
+      "value": "Implement CC-CV charging with a proportional controller for smooth phase transition — use when a simple feedback controller is preferred over open-loop current reference generation"
+    },
+    {
+      "block": "Cell Delta SOC Estimator (Kalman Filter)",
+      "value": "Estimate SOC differences between individual cells using a Kalman filter — use to monitor cell imbalance in a pack and trigger balancing when delta SOC exceeds thresholds"
+    },
+    {
+      "block": "Cell Delta SOC Estimator (Kalman Filter, Variable Resistance)",
+      "value": "Estimate cell SOC differences with online resistance adaptation — use when cell aging causes resistance divergence that biases fixed-model delta SOC estimates"
+    },
+    {
+      "block": "Charger",
+      "value": "Model a battery charger as a controlled current/voltage source in Simscape — use to simulate charging profiles (CC-CV, pulse, multi-stage) applied to physical battery models"
+    },
+    {
+      "block": "Cycler",
+      "value": "Model a battery test cycler that applies charge/discharge profiles in Simscape — use to simulate standard test procedures (capacity tests, HPPC, drive cycles) on physical battery models"
+    },
+    {
+      "block": "Discharger",
+      "value": "Model a battery discharger as a controlled load in Simscape — use to simulate constant-current, constant-power, or profile-based discharge testing on physical battery models"
+    },
+    {
+      "block": "Edge Cooling",
+      "value": "Model edge cooling of prismatic or pouch cells in Simscape — use to simulate heat extraction through cell edges via cold plates in pack thermal design"
+    },
+    {
+      "block": "Fault Qualification",
+      "value": "Apply debouncing and time-based qualification to raw fault signals — use to prevent nuisance trips from transient sensor noise while ensuring genuine faults are confirmed within response time requirements"
+    },
+    {
+      "block": "Fuel Cell (Table-Based)",
+      "value": "Model a fuel cell stack using table-based V-I characteristics in Simscape — use for system-level simulation of hydrogen fuel cell powertrains with electrical and thermal coupling"
+    },
+    {
+      "block": "Fuel Cell Equivalent Circuit",
+      "value": "Model a fuel cell using an equivalent circuit with activation, ohmic, and concentration losses — use for dynamic fuel cell simulation capturing transient voltage response to load steps"
+    },
+    {
+      "block": "Impedance (State-Space)",
+      "value": "Model a frequency-dependent impedance using state-space representation in Simscape — use to capture complex EIS-measured impedance spectra for high-fidelity battery or fuel cell models"
+    },
+    {
+      "block": "Multi-Cell Thermal ROM",
+      "value": "Reduced-order thermal model for multiple cells capturing spatial temperature distribution — use for computationally efficient pack thermal simulation that resolves cell-to-cell temperature gradients"
+    },
+    {
+      "block": "Pack Bar SOC Estimator (Adaptive Kalman Filter)",
+      "value": "Estimate average pack-level SOC using an adaptive Kalman filter that tunes noise covariances online — use for robust pack SOC display that adapts to changing sensor noise or model uncertainty"
+    },
+    {
+      "block": "Pack Bar SOC Estimator (Kalman Filter)",
+      "value": "Estimate average pack-level SOC using a standard Kalman filter — use as the primary gauge algorithm for displaying remaining energy in a battery pack"
+    },
+    {
+      "block": "Parallel Channels",
+      "value": "Model parallel coolant flow channels for battery thermal management in Simscape — use to simulate flow distribution and thermal performance of manifolded cooling plates"
+    },
+    {
+      "block": "Passive Balancing Interface",
+      "value": "Interface a physical passive balancing circuit with a real-time battery model — use for HIL testing where real balancing FETs interact with simulated cell voltages"
+    },
+    {
+      "block": "Passive Cell Balancing",
+      "value": "Equalize cell voltages in a series-connected pack by dissipating excess energy through bleed resistors — use to implement BMS balancing logic that reduces cell-to-cell SOC variation during charging"
+    },
+    {
+      "block": "Passive Interface",
+      "value": "Provide a hardware-in-the-loop interface for passive battery emulation — use to output simulated cell voltages to physical BMS sense wires for HIL validation"
+    },
+    {
+      "block": "SOC Estimator (Adaptive Kalman Filter)",
+      "value": "Estimate cell-level state of charge using an adaptive Kalman filter — use when operating conditions change significantly and fixed filter tuning produces drift"
+    },
+    {
+      "block": "SOC Estimator (Adaptive Kalman Filter, Variable Capacity)",
+      "value": "Estimate SOC with adaptive Kalman filtering and online capacity tracking — use for aged batteries where nominal capacity no longer reflects actual usable energy"
+    },
+    {
+      "block": "SOC Estimator (Coulomb Counting)",
+      "value": "Estimate SOC by integrating measured current over time — use as a simple baseline estimator or as a complement to model-based methods for short-term SOC tracking"
+    },
+    {
+      "block": "SOC Estimator (Coulomb Counting, Variable Capacity)",
+      "value": "Estimate SOC via coulomb counting with time-varying capacity — use when capacity fade is significant and a fixed Ah reference would cause cumulative SOC error"
+    },
+    {
+      "block": "SOC Estimator (Kalman Filter)",
+      "value": "Estimate cell-level state of charge using an extended Kalman filter with an equivalent circuit model — use as the standard model-based SOC estimation algorithm for BMS applications"
+    },
+    {
+      "block": "SOC Estimator (Kalman Filter, Variable Capacity)",
+      "value": "Estimate SOC using a Kalman filter with online capacity parameter — use to maintain accurate SOC estimates as the battery ages and total capacity decreases"
+    },
+    {
+      "block": "SOE Estimator (Adaptive Kalman Filter)",
+      "value": "Estimate state of energy using an adaptive Kalman filter — use when energy-based range prediction is needed and operating conditions vary widely"
+    },
+    {
+      "block": "SOE Estimator (Adaptive Kalman Filter, Variable Energy Capacity)",
+      "value": "Estimate SOE with adaptive filtering and online energy capacity tracking — use for aged packs where total energy capacity has degraded from nominal"
+    },
+    {
+      "block": "SOE Estimator (Energy Counting)",
+      "value": "Estimate state of energy by integrating power over time — use as a simple energy accounting method for applications where voltage variation is small"
+    },
+    {
+      "block": "SOE Estimator (Energy Counting, Variable Energy Capacity)",
+      "value": "Estimate SOE via energy integration with time-varying energy capacity — use when simple energy counting is sufficient but capacity fade must be accounted for"
+    },
+    {
+      "block": "SOE Estimator (Kalman Filter)",
+      "value": "Estimate state of energy using a Kalman filter — use for model-based remaining energy prediction that accounts for voltage-dependent available energy"
+    },
+    {
+      "block": "SOE Estimator (Kalman Filter, Variable Energy Capacity)",
+      "value": "Estimate SOE using a Kalman filter with online energy capacity tracking — use for accurate remaining range estimation in aged batteries"
+    },
+    {
+      "block": "SOH Estimator",
+      "value": "Estimate state of health based on internal resistance growth — use to track battery degradation over lifetime and predict maintenance or replacement timing"
+    },
+    {
+      "block": "SOH Estimator (Capacity-Based)",
+      "value": "Estimate state of health based on capacity fade relative to nominal — use to quantify usable capacity loss for warranty tracking or second-life battery grading"
+    },
+    {
+      "block": "Supercapacitor Equivalent Circuit",
+      "value": "Model a supercapacitor using an equivalent circuit in Simscape — use for hybrid energy storage systems combining batteries with supercapacitors for peak power buffering"
+    },
+    {
+      "block": "U-shaped Channels",
+      "value": "Model U-shaped coolant flow channels in Simscape — use to simulate serpentine or U-turn cooling plate geometries and their effect on temperature uniformity"
+    }
+  ]
+}

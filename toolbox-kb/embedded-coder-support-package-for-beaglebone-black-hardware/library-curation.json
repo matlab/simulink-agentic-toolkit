@@ -1,0 +1,143 @@
+{
+  "commonBlocks": [
+    "GPIO Read",
+    "GPIO Write",
+    "Analog Input",
+    "PWM"
+  ],
+  "categories": [
+    {
+      "name": "gpio-analog",
+      "description": "Digital and analog I/O peripherals",
+      "keywords": [
+        "gpio",
+        "analog",
+        "pwm",
+        "led",
+        "pin"
+      ]
+    },
+    {
+      "name": "media",
+      "description": "Audio and video capture/playback",
+      "keywords": [
+        "audio",
+        "video",
+        "capture",
+        "display",
+        "camera"
+      ]
+    },
+    {
+      "name": "network",
+      "description": "Network communication and IoT connectivity",
+      "keywords": [
+        "udp",
+        "thingspeak",
+        "network",
+        "iot",
+        "send"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ALSA Audio Capture",
+      "value": "media"
+    },
+    {
+      "block": "ALSA Audio Playback",
+      "value": "media"
+    },
+    {
+      "block": "Analog Input",
+      "value": "gpio-analog"
+    },
+    {
+      "block": "GPIO Read",
+      "value": "gpio-analog"
+    },
+    {
+      "block": "GPIO Write",
+      "value": "gpio-analog"
+    },
+    {
+      "block": "LED",
+      "value": "gpio-analog"
+    },
+    {
+      "block": "PWM",
+      "value": "gpio-analog"
+    },
+    {
+      "block": "SDL Video Display",
+      "value": "media"
+    },
+    {
+      "block": "ThingSpeak Write",
+      "value": "network"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "network"
+    },
+    {
+      "block": "UDP Send",
+      "value": "network"
+    },
+    {
+      "block": "V4L2 Video Capture",
+      "value": "media"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ALSA Audio Capture",
+      "value": "Capture audio from a microphone via ALSA on BeagleBone Black — use for audio signal acquisition in embedded DSP or voice processing"
+    },
+    {
+      "block": "ALSA Audio Playback",
+      "value": "Play audio through speakers via ALSA on BeagleBone Black — use for audio output, alert tones, or real-time sound generation"
+    },
+    {
+      "block": "Analog Input",
+      "value": "Read analog voltage from ADC inputs on BeagleBone Black — use for sampling sensor signals like temperature, light, or force"
+    },
+    {
+      "block": "GPIO Read",
+      "value": "Read digital GPIO pin state on BeagleBone Black — use for reading buttons, switches, or digital sensor inputs"
+    },
+    {
+      "block": "GPIO Write",
+      "value": "Write digital GPIO pin state on BeagleBone Black — use for controlling LEDs, relays, or digital outputs"
+    },
+    {
+      "block": "LED",
+      "value": "Control onboard user LEDs on BeagleBone Black — use for status indication or visual debugging on the board"
+    },
+    {
+      "block": "PWM",
+      "value": "Generate PWM output on BeagleBone Black — use for motor speed control, servo positioning, or LED brightness dimming"
+    },
+    {
+      "block": "SDL Video Display",
+      "value": "Display video output on a connected screen via SDL — use for rendering processed images or UI on BeagleBone Black HDMI output"
+    },
+    {
+      "block": "ThingSpeak Write",
+      "value": "Upload data to ThingSpeak IoT platform — use for cloud logging of sensor data or remote monitoring from the BeagleBone Black"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP packets on BeagleBone Black — use for real-time data reception from other devices on the network"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP packets from BeagleBone Black — use for transmitting sensor data or status to other devices on the network"
+    },
+    {
+      "block": "V4L2 Video Capture",
+      "value": "Capture video frames from a USB camera via V4L2 — use for image acquisition in computer vision applications on BeagleBone Black"
+    }
+  ]
+}

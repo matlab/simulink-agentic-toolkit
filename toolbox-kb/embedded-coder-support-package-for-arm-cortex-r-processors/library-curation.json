@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "Digital Read",
+    "Digital Write"
+  ],
+  "categories": [
+    {
+      "name": "arm-cortex-r",
+      "description": "Deployment blocks for ARM Cortex-R safety processors",
+      "keywords": [
+        "arm",
+        "cortex-r",
+        "rm57",
+        "digital",
+        "gpio"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Digital Read",
+      "value": "arm-cortex-r"
+    },
+    {
+      "block": "Digital Write",
+      "value": "arm-cortex-r"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Digital Read",
+      "value": "Read the state of a digital input pin on a TI RM57Lx ARM Cortex-R processor — use to sample GPIO pin state for discrete input signals"
+    },
+    {
+      "block": "Digital Write",
+      "value": "Set the state of a digital output pin on a TI RM57Lx ARM Cortex-R processor — use to control GPIO outputs for actuators or indicators"
+    }
+  ]
+}

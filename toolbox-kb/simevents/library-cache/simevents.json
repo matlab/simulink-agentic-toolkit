@@ -1,0 +1,297 @@
+{
+  "libraryName": "SimEvents",
+  "generatedAt": "2026-08-19T14:31:09",
+  "blockCount": 31,
+  "blocks": [
+    {
+      "name": "Design Patterns",
+      "referenceBlock": "sldelib/Design Patterns",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Design Patterns",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete-Event Chart",
+      "referenceBlock": "sldelib/Discrete-Event Chart",
+      "blockType": "Chart",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SimEvents Debugger",
+      "referenceBlock": "sldelib/SimEvents Debugger",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SimEvents Debugger (Tech Preview)",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Composite Entity Creator",
+      "referenceBlock": "sldelib/Composite Entity Creator",
+      "blockType": "CompositeEntityCreator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Composite Entity Splitter",
+      "referenceBlock": "sldelib/Composite Entity Splitter",
+      "blockType": "CompositeEntitySplitter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Conveyor System",
+      "referenceBlock": "sldelib/Conveyor System",
+      "blockType": "MATLABDiscreteEventSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Input Switch",
+      "referenceBlock": "sldelib/Entity Input Switch",
+      "blockType": "EntityInputSwitch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Output Switch",
+      "referenceBlock": "sldelib/Entity Output Switch",
+      "blockType": "EntityOutputSwitch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Transport Delay",
+      "referenceBlock": "sldelib/Entity Transport Delay",
+      "blockType": "EntityTransportDelay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Batch Creator",
+      "referenceBlock": "sldelib/Entity Batch Creator",
+      "blockType": "EntityBatchCreator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Batch Splitter",
+      "referenceBlock": "sldelib/Entity Batch Splitter",
+      "blockType": "EntityBatchSplitter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Find",
+      "referenceBlock": "sldelib/Entity Find",
+      "blockType": "FindEntity",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Gate",
+      "referenceBlock": "sldelib/Entity Gate",
+      "blockType": "EntityGate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Generator",
+      "referenceBlock": "sldelib/Entity Generator",
+      "blockType": "EntityGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Multicast",
+      "referenceBlock": "sldelib/Entity Multicast",
+      "blockType": "EntityMulticast",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Queue",
+      "referenceBlock": "sldelib/Entity Queue",
+      "blockType": "Queue",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Replicator",
+      "referenceBlock": "sldelib/Entity Replicator",
+      "blockType": "EntityReplicator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Selector",
+      "referenceBlock": "sldelib/Entity Selector",
+      "blockType": "MATLABDiscreteEventSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Server",
+      "referenceBlock": "sldelib/Entity Server",
+      "blockType": "EntityServer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Store",
+      "referenceBlock": "sldelib/Entity Store",
+      "blockType": "EntityStore",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Entity Terminator",
+      "referenceBlock": "sldelib/Entity Terminator",
+      "blockType": "EntityTerminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hit  Crossing",
+      "referenceBlock": "sldelib/Hit  Crossing",
+      "blockType": "HitCross",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Discrete-Event System",
+      "referenceBlock": "sldelib/MATLAB Discrete-Event System",
+      "blockType": "MATLABDiscreteEventSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Message Receive",
+      "referenceBlock": "sldelib/Message Receive",
+      "blockType": "Receive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Message Send",
+      "referenceBlock": "sldelib/Message Send",
+      "blockType": "Send",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multicast Receive Queue",
+      "referenceBlock": "sldelib/Multicast Receive Queue",
+      "blockType": "Queue",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resource Acquirer",
+      "referenceBlock": "sldelib/Resource Acquirer",
+      "blockType": "EntityResourceAcquirer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resource Releaser",
+      "referenceBlock": "sldelib/Resource Releaser",
+      "blockType": "EntityResourceReleaser",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resource Pool",
+      "referenceBlock": "sldelib/Resource Pool",
+      "blockType": "EntityResourcePool",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sequence Viewer",
+      "referenceBlock": "sldelib/Sequence Viewer",
+      "blockType": "MessageViewer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simulink Function",
+      "referenceBlock": "sldelib/Simulink Function",
+      "blockType": "SimulinkFunctionSubsystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

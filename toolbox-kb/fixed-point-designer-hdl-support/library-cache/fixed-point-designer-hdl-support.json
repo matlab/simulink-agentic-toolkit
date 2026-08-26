@@ -1,0 +1,396 @@
+{
+  "libraryName": "Fixed-Point Designer HDL Support",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 42,
+  "blocks": [
+    {
+      "name": "Euler to NED Transformation HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Coordinate Transformations/Euler to NED Transformation HDL Optimized",
+      "blockType": "EulertoNEDTransformationHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CORDIC Sigmoid HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/CORDIC Sigmoid HDL Optimized",
+      "blockType": "CORDICSigmoidHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "CORDIC Square Root HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/CORDIC Square Root HDL Optimized",
+      "blockType": "CORDICSquareRootHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Complex Divide HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/Complex Divide HDL Optimized",
+      "blockType": "ComplexDivideHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Divide by Constant HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/Divide by Constant HDL Optimized",
+      "blockType": "DividebyConstantHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hyperbolic Tangent HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/Hyperbolic Tangent HDL Optimized",
+      "blockType": "HyperbolicTangentHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Modulo by Constant HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/Modulo by Constant HDL Optimized",
+      "blockType": "fixed.system.internal.modbyconstant_hdl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Normalized Reciprocal HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/Normalized Reciprocal HDL Optimized",
+      "blockType": "NormalizedReciprocalHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Divide HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/Real Divide HDL Optimized",
+      "blockType": "RealDivideHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Reciprocal HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Math Operations/Real Reciprocal HDL Optimized",
+      "blockType": "RealReciprocalHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "blockType": "ComplexBurstAsynchronousMatrixSolveUsingQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Burst Matrix Solve Using Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Matrix Solve Using Q-less QR Decomposition",
+      "blockType": "ComplexBurstMatrixSolveUsingQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "blockType": "ComplexBurstMatrixSolveUsingQ-lessQRDecompositionwithForgettingFactor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Burst Matrix Solve Using QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Matrix Solve Using QR Decomposition",
+      "blockType": "ComplexBurstMatrixSolveUsingQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "blockType": "ComplexPartial-SystolicMatrixSolveUsingQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "blockType": "ComplexPartial-SystolicMatrixSolveUsingQ-lessQRDecompositionwithForgettingFactor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Partial-Systolic Matrix Solve Using QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Partial-Systolic Matrix Solve Using QR Decomposition",
+      "blockType": "ComplexPartial-SystolicMatrixSolveUsingQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+      "blockType": "RealBurstAsynchronousMatrixSolveUsingQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Burst Matrix Solve Using Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Matrix Solve Using Q-less QR Decomposition",
+      "blockType": "RealBurstMatrixSolveUsingQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "blockType": "RealBurstMatrixSolveUsingQ-lessQRDecompositionwithForgettingFactor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Burst Matrix Solve Using QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Matrix Solve Using QR Decomposition",
+      "blockType": "RealBurstMatrixSolveUsingQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+      "blockType": "RealPartial-SystolicMatrixSolveUsingQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+      "blockType": "RealPartial-SystolicMatrixSolveUsingQ-lessQRDecompositionwithForgettingFactor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Partial-Systolic Matrix Solve Using QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Partial-Systolic Matrix Solve Using QR Decomposition",
+      "blockType": "RealPartial-SystolicMatrixSolveUsingQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Systolic Matrix Solve Using QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Systolic Matrix Solve Using QR Decomposition",
+      "blockType": "SystolicMatrixSolveUsingQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    },
+    {
+      "name": "Complex Burst Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst Q-less QR Decomposition",
+      "blockType": "ComplexBurstQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Burst Q-less QR Decomposition Whole R Output",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst Q-less QR Decomposition Whole R Output",
+      "blockType": "ComplexBurstQ-lessQRDecompositionWholeROutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "blockType": "ComplexBurstQ-lessQRDecompositionwithForgettingFactorWholeROutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Burst QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst QR Decomposition",
+      "blockType": "ComplexBurstQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Partial-Systolic Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Partial-Systolic Q-less QR Decomposition",
+      "blockType": "ComplexPartial-SystolicQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Partial-Systolic Q-less QR with Forgetting Factor",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Partial-Systolic Q-less QR with Forgetting Factor",
+      "blockType": "ComplexPartial-SystolicQ-lessQRwithForgettingFactor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex Partial-Systolic QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Partial-Systolic QR Decomposition",
+      "blockType": "ComplexPartial-SystolicQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Non-Square Jacobi SVD HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Non-Square Jacobi SVD HDL Optimized",
+      "blockType": "Non-SquareJacobiSVDHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Burst Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst Q-less QR Decomposition",
+      "blockType": "RealBurstQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Burst Q-less QR Decomposition Whole R Output",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst Q-less QR Decomposition Whole R Output",
+      "blockType": "RealBurstQ-lessQRDecompositionWholeROutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+      "blockType": "RealBurstQ-lessQRDecompositionwithForgettingFactorWholeROutput",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "Real Burst QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst QR Decomposition",
+      "blockType": "RealBurstQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Partial-Systolic Q-less QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Partial-Systolic Q-less QR Decomposition",
+      "blockType": "RealPartial-SystolicQ-lessQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Partial-Systolic Q-less QR with Forgetting Factor",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Partial-Systolic Q-less QR with Forgetting Factor",
+      "blockType": "RealPartial-SystolicQ-lessQRwithForgettingFactor",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real Partial-Systolic QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Partial-Systolic QR Decomposition",
+      "blockType": "RealPartial-SystolicQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Square Jacobi SVD HDL Optimized",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Square Jacobi SVD HDL Optimized",
+      "blockType": "SquareJacobiSVDHDLOptimized",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Systolic QR Decomposition",
+      "referenceBlock": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Systolic QR Decomposition",
+      "blockType": "SystolicQRDecomposition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

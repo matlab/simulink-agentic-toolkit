@@ -1,0 +1,63 @@
+{
+  "libraryName": "Automated Driving Toolbox Interface for Eclipse SUMO Traffic Simulator",
+  "generatedAt": "2026-08-19T14:30:47",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "Actor",
+      "referenceBlock": "SumoInterfaceLibrary/Actor",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "SUMO Actor",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Client",
+      "referenceBlock": "SumoInterfaceLibrary/Client",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "SUMO Client",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "SumoInterfaceLibrary/Reader",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "SUMO Reader",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Server",
+      "referenceBlock": "SumoInterfaceLibrary/Server",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "SUMO Server",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "SumoInterfaceLibrary/Writer",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "SUMO Writer",
+      "introducedIn": "2026a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:09",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

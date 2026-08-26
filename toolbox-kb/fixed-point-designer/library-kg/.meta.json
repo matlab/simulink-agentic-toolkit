@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74456193286,
+  "generatorVersion": 4,
+  "libraries": [
+    "Fixed-Point Designer"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Fixed_Point_Designer": {
+      "blockCount": 2
+    }
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "libraryName": "Embedded Coder",
+  "generatedAt": "2026-08-19T14:30:54",
+  "blockCount": 17,
+  "blocks": [
+    {
+      "name": "ERT (optimized for fixed-point)",
+      "referenceBlock": "rtweclib/Configuration Wizards/ERT (optimized for fixed-point)",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ModelConfigurationWizard",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "embeddedtargetslib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "embeddedtargetslib/Host Communication/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Byte Pack",
+      "referenceBlock": "embeddedtargetslib/Host Communication/Byte Pack",
+      "blockType": "Bytepack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Byte Reversal",
+      "referenceBlock": "embeddedtargetslib/Host Communication/Byte Reversal",
+      "blockType": "ByteReversal",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Byte Unpack",
+      "referenceBlock": "embeddedtargetslib/Host Communication/Byte Unpack",
+      "blockType": "ByteUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Pack",
+      "referenceBlock": "embeddedtargetslib/Host Communication/CAN Pack",
+      "blockType": "CANPack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "CAN Unpack",
+      "referenceBlock": "embeddedtargetslib/Host Communication/CAN Unpack",
+      "blockType": "CANUnpack",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Configuration",
+      "referenceBlock": "embeddedtargetslib/Host Communication/Serial Configuration",
+      "blockType": "system.SerialConfiguration",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Receive",
+      "referenceBlock": "embeddedtargetslib/Host Communication/Serial Receive",
+      "blockType": "system.SerialReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serial Send",
+      "referenceBlock": "embeddedtargetslib/Host Communication/Serial Send",
+      "blockType": "system.SerialSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "embeddedtargetslib/Host Communication/UDP Receive",
+      "blockType": "UDPReceive",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "embeddedtargetslib/Host Communication/UDP Send",
+      "blockType": "UDPSend",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Custom MATLAB file",
+      "referenceBlock": "rtweclib/Configuration Wizards/Custom MATLAB file",
+      "blockType": "ModelConfigurationWizard",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ERT (optimized for floating-point)",
+      "referenceBlock": "rtweclib/Configuration Wizards/ERT (optimized for floating-point)",
+      "blockType": "ModelConfigurationWizard",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GRT (debug for fixed/floating-point)",
+      "referenceBlock": "rtweclib/Configuration Wizards/GRT (debug for fixed/floating-point)",
+      "blockType": "ModelConfigurationWizard",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GRT (optimized for fixed/floating-point)",
+      "referenceBlock": "rtweclib/Configuration Wizards/GRT (optimized for fixed/floating-point)",
+      "blockType": "ModelConfigurationWizard",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

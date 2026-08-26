@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74459356477,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Design Verifier Temporal Pattern Blocks"
+  ],
+  "blockCount": 6,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Simulink_Design_Verifier_Temporal_Pattern_Blocks": {
+      "blockCount": 6
+    }
+  }
+}

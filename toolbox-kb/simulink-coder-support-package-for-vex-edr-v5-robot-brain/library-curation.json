@@ -1,0 +1,605 @@
+{
+  "commonBlocks": [
+    "Smart Motor Write",
+    "Smart Motor Read",
+    "Gamepad Joystick",
+    "Inertial Sensor",
+    "Distance Sensor",
+    "Differential (Tank) Drive",
+    "V5 GPS Sensor"
+  ],
+  "categories": [
+    {
+      "name": "drivetrain",
+      "description": "Drive system blocks",
+      "keywords": [
+        "differential",
+        "tank",
+        "drive"
+      ]
+    },
+    {
+      "name": "actuators",
+      "description": "Motor and output blocks",
+      "keywords": [
+        "motor",
+        "servo",
+        "smart",
+        "digital output"
+      ]
+    },
+    {
+      "name": "gamepad",
+      "description": "Controller input blocks",
+      "keywords": [
+        "gamepad",
+        "joystick",
+        "button",
+        "competition"
+      ]
+    },
+    {
+      "name": "sensors",
+      "description": "V5 sensor blocks",
+      "keywords": [
+        "distance",
+        "inertial",
+        "optical",
+        "encoder",
+        "gyro",
+        "vision",
+        "gps",
+        "rotation"
+      ]
+    },
+    {
+      "name": "logic-math",
+      "description": "Logic and math operations",
+      "keywords": [
+        "compare",
+        "logical",
+        "math",
+        "gain",
+        "add",
+        "trig"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Simulation and utility blocks",
+      "keywords": [
+        "scope",
+        "display",
+        "clock",
+        "switch",
+        "simulator",
+        "deadband",
+        "latch"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Abs",
+      "value": "logic-math"
+    },
+    {
+      "block": "Add",
+      "value": "logic-math"
+    },
+    {
+      "block": "Analog Input",
+      "value": "sensors"
+    },
+    {
+      "block": "Arcade Module",
+      "value": "utilities"
+    },
+    {
+      "block": "Bias",
+      "value": "logic-math"
+    },
+    {
+      "block": "Chart",
+      "value": "utilities"
+    },
+    {
+      "block": "Clock",
+      "value": "utilities"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "logic-math"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "logic-math"
+    },
+    {
+      "block": "Competition Switch",
+      "value": "gamepad"
+    },
+    {
+      "block": "Constant",
+      "value": "utilities"
+    },
+    {
+      "block": "DC Motor",
+      "value": "actuators"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "utilities"
+    },
+    {
+      "block": "Deadband",
+      "value": "utilities"
+    },
+    {
+      "block": "Differential (Tank) Drive",
+      "value": "drivetrain"
+    },
+    {
+      "block": "Digital Input",
+      "value": "sensors"
+    },
+    {
+      "block": "Digital Output",
+      "value": "actuators"
+    },
+    {
+      "block": "Display",
+      "value": "utilities"
+    },
+    {
+      "block": "Distance Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Divide",
+      "value": "logic-math"
+    },
+    {
+      "block": "Field Simulator",
+      "value": "utilities"
+    },
+    {
+      "block": "Gain",
+      "value": "logic-math"
+    },
+    {
+      "block": "Gamepad Button",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gamepad Joystick",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gamepad Simulator",
+      "value": "utilities"
+    },
+    {
+      "block": "Gear Transmission",
+      "value": "utilities"
+    },
+    {
+      "block": "Ground",
+      "value": "utilities"
+    },
+    {
+      "block": "Gyroscope",
+      "value": "sensors"
+    },
+    {
+      "block": "Inertial Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Latch",
+      "value": "utilities"
+    },
+    {
+      "block": "Limit Switch Control ",
+      "value": "utilities"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "logic-math"
+    },
+    {
+      "block": "Logical Operator1",
+      "value": "logic-math"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "utilities"
+    },
+    {
+      "block": "Manual Switch",
+      "value": "utilities"
+    },
+    {
+      "block": "Math Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "MinMax",
+      "value": "logic-math"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "logic-math"
+    },
+    {
+      "block": "Optical Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Optical Shaft Encoder",
+      "value": "sensors"
+    },
+    {
+      "block": "Polynomial",
+      "value": "logic-math"
+    },
+    {
+      "block": "Product",
+      "value": "logic-math"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "logic-math"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "logic-math"
+    },
+    {
+      "block": "Rotation Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "Scope",
+      "value": "utilities"
+    },
+    {
+      "block": "Servo Motor",
+      "value": "actuators"
+    },
+    {
+      "block": "Sign",
+      "value": "logic-math"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "logic-math"
+    },
+    {
+      "block": "Sine Wave Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "logic-math"
+    },
+    {
+      "block": "Smart Motor Read",
+      "value": "sensors"
+    },
+    {
+      "block": "Smart Motor Write",
+      "value": "actuators"
+    },
+    {
+      "block": "Sqrt",
+      "value": "logic-math"
+    },
+    {
+      "block": "Subtract",
+      "value": "logic-math"
+    },
+    {
+      "block": "Switch",
+      "value": "utilities"
+    },
+    {
+      "block": "Terminator",
+      "value": "utilities"
+    },
+    {
+      "block": "Toggle",
+      "value": "utilities"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "Ultrasonic Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "logic-math"
+    },
+    {
+      "block": "V5 GPS Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Variable Input",
+      "value": "utilities"
+    },
+    {
+      "block": "Vision Sensor",
+      "value": "sensors"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Abs",
+      "value": "Absolute value — use for magnitude regardless of sign"
+    },
+    {
+      "block": "Add",
+      "value": "Sum signals — use for combining sensor inputs or control terms"
+    },
+    {
+      "block": "Analog Input",
+      "value": "Read V5 analog sensor — use for potentiometers or light sensors on 3-wire ports"
+    },
+    {
+      "block": "Arcade Module",
+      "value": "Map joystick to arcade drive — use for single-stick differential motor control on V5"
+    },
+    {
+      "block": "Bias",
+      "value": "Add constant offset — use for sensor calibration on V5"
+    },
+    {
+      "block": "Chart",
+      "value": "Stateflow chart for V5 — use for implementing state machine logic on V5 Robot Brain"
+    },
+    {
+      "block": "Clock",
+      "value": "Output simulation time — use for time-based sequencing"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "Compare signal to constant — use for threshold decisions in V5 robot logic"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "Compare signal to zero — use for zero-crossing detection in V5 programs"
+    },
+    {
+      "block": "Competition Switch",
+      "value": "Read V5 competition state — use for detecting autonomous, driver-control, or disabled mode"
+    },
+    {
+      "block": "Constant",
+      "value": "Constant value output — use for fixed parameters"
+    },
+    {
+      "block": "DC Motor",
+      "value": "Drive a V5 DC motor — use for commanding legacy motor ports on V5 Robot Brain"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "Convert data types — use for matching signal types between blocks"
+    },
+    {
+      "block": "Deadband",
+      "value": "Apply deadzone — use for ignoring small joystick movements"
+    },
+    {
+      "block": "Differential (Tank) Drive",
+      "value": "Tank-style differential drive — use for commanding left/right motors from forward and turn inputs on V5"
+    },
+    {
+      "block": "Digital Input",
+      "value": "Read V5 digital sensor — use for limit switches on 3-wire ports"
+    },
+    {
+      "block": "Digital Output",
+      "value": "Set V5 digital pin — use for controlling LEDs or pneumatics on V5 3-wire ports"
+    },
+    {
+      "block": "Display",
+      "value": "Show signal value — use for debugging during simulation"
+    },
+    {
+      "block": "Distance Sensor",
+      "value": "Read V5 Distance Sensor — use for measuring range to objects with time-of-flight"
+    },
+    {
+      "block": "Divide",
+      "value": "Divide signals — use for ratio computation or normalization"
+    },
+    {
+      "block": "Field Simulator",
+      "value": "Simulate V5 competition field — use for testing autonomous without hardware"
+    },
+    {
+      "block": "Gain",
+      "value": "Multiply by constant — use for scaling V5 sensor readings or motor commands"
+    },
+    {
+      "block": "Gamepad Button",
+      "value": "Read V5 gamepad button — use for detecting button presses on V5 controller"
+    },
+    {
+      "block": "Gamepad Joystick",
+      "value": "Read V5 gamepad joystick — use for analog stick input from V5 controller"
+    },
+    {
+      "block": "Gamepad Simulator",
+      "value": "Simulate V5 gamepad — use for testing driver-control without physical controller"
+    },
+    {
+      "block": "Gear Transmission",
+      "value": "Model gear ratio — use for speed/torque conversion through gears"
+    },
+    {
+      "block": "Ground",
+      "value": "Zero-value signal — use for grounding unused inputs"
+    },
+    {
+      "block": "Gyroscope",
+      "value": "Read V5 gyroscope — use for measuring heading on legacy gyro sensor"
+    },
+    {
+      "block": "Inertial Sensor",
+      "value": "Read V5 Inertial Sensor — use for measuring heading, pitch, roll, and acceleration"
+    },
+    {
+      "block": "Latch",
+      "value": "Latch signal on trigger — use for capturing readings at events"
+    },
+    {
+      "block": "Limit Switch Control ",
+      "value": "Limit motor by switch state — use for preventing over-travel with limit switches on V5"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "AND/OR/NOT logic gate — use for combining boolean conditions"
+    },
+    {
+      "block": "Logical Operator1",
+      "value": "Additional logic gate — use for OR operations in robot decision logic"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Custom MATLAB code for V5 — use for implementing algorithms not available as blocks on V5 Robot Brain"
+    },
+    {
+      "block": "Manual Switch",
+      "value": "Toggle between inputs — use for mode switching in simulation"
+    },
+    {
+      "block": "Math Function",
+      "value": "Apply math function — use for exp, log, power operations on V5"
+    },
+    {
+      "block": "MinMax",
+      "value": "Find min or max — use for clamping V5 motor outputs"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "Track running min/max — use for peak detection over time"
+    },
+    {
+      "block": "Optical Sensor",
+      "value": "Read V5 Optical Sensor — use for detecting color and proximity of objects"
+    },
+    {
+      "block": "Optical Shaft Encoder",
+      "value": "Read V5 optical shaft encoder — use for measuring wheel rotation on legacy encoders"
+    },
+    {
+      "block": "Polynomial",
+      "value": "Evaluate polynomial — use for nonlinear sensor calibration"
+    },
+    {
+      "block": "Product",
+      "value": "Multiply signals — use for combining gains"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "Compute 1/sqrt — use for normalization"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "Compare two signals — use for condition checking between V5 sensor values"
+    },
+    {
+      "block": "Rotation Sensor",
+      "value": "Read V5 Rotation Sensor — use for precise angular measurement with smart rotation sensor"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "Round to integer — use for discrete value conversion"
+    },
+    {
+      "block": "Scope",
+      "value": "Plot signals — use for visualizing V5 robot behavior"
+    },
+    {
+      "block": "Servo Motor",
+      "value": "Command V5 servo position — use for controlling angular position of servo motors on V5"
+    },
+    {
+      "block": "Sign",
+      "value": "Extract sign — use for direction detection"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "Sign-preserving sqrt — use for signed root computation"
+    },
+    {
+      "block": "Sine Wave Function",
+      "value": "Generate sine wave — use for periodic test stimuli"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "Adjustable gain — use for tuning during V5 simulation"
+    },
+    {
+      "block": "Smart Motor Read",
+      "value": "Read V5 Smart Motor state — use for getting position, velocity, current, and temperature"
+    },
+    {
+      "block": "Smart Motor Write",
+      "value": "Command V5 Smart Motor — use for setting velocity, position, or torque targets on V5 Smart Motors"
+    },
+    {
+      "block": "Sqrt",
+      "value": "Square root — use for distance calculations"
+    },
+    {
+      "block": "Subtract",
+      "value": "Subtract signals — use for error computation in control loops"
+    },
+    {
+      "block": "Switch",
+      "value": "Conditional signal selection — use for threshold-based input switching"
+    },
+    {
+      "block": "Terminator",
+      "value": "Terminate unused output — use for cleanly handling unconnected ports"
+    },
+    {
+      "block": "Toggle",
+      "value": "Binary toggle constant — use for mode selection"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "Trig functions — use for angle calculations in V5 navigation"
+    },
+    {
+      "block": "Ultrasonic Sensor",
+      "value": "Read V5 ultrasonic sensor — use for distance measurement on legacy ultrasonic"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "Negate signal — use for reversing direction"
+    },
+    {
+      "block": "V5 GPS Sensor",
+      "value": "Read V5 GPS Sensor — use for absolute field position and heading measurement"
+    },
+    {
+      "block": "Variable Input",
+      "value": "Slider-adjustable constant — use for tuning parameters during V5 robot simulation"
+    },
+    {
+      "block": "Vision Sensor",
+      "value": "Read V5 Vision Sensor — use for detecting colored objects and their positions"
+    }
+  ]
+}

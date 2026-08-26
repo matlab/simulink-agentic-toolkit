@@ -1,0 +1,64 @@
+{
+  "commonBlocks": [
+    "Client",
+    "Reader",
+    "Actor"
+  ],
+  "categories": [
+    {
+      "name": "sumo-interface",
+      "description": "Eclipse SUMO traffic simulator co-simulation blocks for closed-loop testing with microscopic traffic",
+      "keywords": [
+        "sumo",
+        "traffic",
+        "traci",
+        "cosimulation",
+        "vehicle"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Actor",
+      "value": "sumo-interface"
+    },
+    {
+      "block": "Client",
+      "value": "sumo-interface"
+    },
+    {
+      "block": "Reader",
+      "value": "sumo-interface"
+    },
+    {
+      "block": "Server",
+      "value": "sumo-interface"
+    },
+    {
+      "block": "Writer",
+      "value": "sumo-interface"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Actor",
+      "value": "Control a specific traffic participant (vehicle, pedestrian, or cyclist) in the SUMO simulation — use to override SUMO-managed actor behavior with Simulink-computed trajectories for ego or controlled vehicles"
+    },
+    {
+      "block": "Client",
+      "value": "Establish and manage the TraCI connection to a running SUMO traffic simulation — use as the central communication hub that synchronizes simulation time steps between Simulink and SUMO"
+    },
+    {
+      "block": "Reader",
+      "value": "Read traffic state data (vehicle positions, speeds, traffic light phases) from the SUMO simulation — use to import the current traffic environment state into Simulink for perception or planning algorithms"
+    },
+    {
+      "block": "Server",
+      "value": "Launch and manage a SUMO traffic simulation server instance — use to start SUMO with a specified network and route configuration, controlling its lifecycle from within Simulink"
+    },
+    {
+      "block": "Writer",
+      "value": "Send commands and data to the SUMO simulation (e.g., set traffic light phases, add vehicles) — use to modify the traffic environment dynamically based on Simulink controller decisions"
+    }
+  ]
+}

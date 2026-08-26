@@ -1,0 +1,63 @@
+{
+  "libraryName": "Embedded Coder Support Package for Intel SoC Devices",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "AXI4 Read",
+      "referenceBlock": "alterasoclib/AXI4 Read",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "AXI4 Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4 Write",
+      "referenceBlock": "alterasoclib/AXI4 Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "AXI4 Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Linux Task",
+      "referenceBlock": "alterasoclib/Linux Task",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Linux Task",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "alterasoclib/UDP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "alterasoclib/UDP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Send",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

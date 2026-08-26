@@ -1,0 +1,800 @@
+{
+  "commonBlocks": [
+    "ePWM",
+    "CAN Receive",
+    "CAN Transmit",
+    "C28x Hardware Interrupt"
+  ],
+  "categories": [
+    {
+      "name": "analog-conversion",
+      "description": "ADC, DAC, comparators, and sigma-delta filter modules for analog signal acquisition and generation",
+      "keywords": [
+        "adc",
+        "dac",
+        "comparator",
+        "analog",
+        "sigma-delta"
+      ]
+    },
+    {
+      "name": "pwm-timing",
+      "description": "PWM generation, input capture, quadrature decoding, and timer peripherals for actuation and measurement",
+      "keywords": [
+        "pwm",
+        "epwm",
+        "capture",
+        "ecap",
+        "eqep"
+      ]
+    },
+    {
+      "name": "digital-io",
+      "description": "GPIO digital input and output pin access",
+      "keywords": [
+        "gpio",
+        "digital",
+        "input",
+        "output",
+        "pin"
+      ]
+    },
+    {
+      "name": "serial-communication",
+      "description": "Serial communication peripherals: SCI/UART, SPI, I2C, and LIN interfaces",
+      "keywords": [
+        "sci",
+        "spi",
+        "i2c",
+        "uart",
+        "lin"
+      ]
+    },
+    {
+      "name": "can-communication",
+      "description": "CAN and CAN FD bus communication including message packing and unpacking",
+      "keywords": [
+        "can",
+        "mcan",
+        "canfd",
+        "pack",
+        "unpack"
+      ]
+    },
+    {
+      "name": "network-communication",
+      "description": "TCP and UDP network communication via on-chip Ethernet",
+      "keywords": [
+        "tcp",
+        "udp",
+        "ethernet",
+        "network",
+        "socket"
+      ]
+    },
+    {
+      "name": "data-packing",
+      "description": "Byte-level data packing, unpacking, and protocol encoding/decoding for communication payloads",
+      "keywords": [
+        "byte",
+        "pack",
+        "protocol",
+        "encode",
+        "decode"
+      ]
+    },
+    {
+      "name": "interrupt-scheduling",
+      "description": "Hardware and software interrupt configuration, task scheduling, and event routing",
+      "keywords": [
+        "interrupt",
+        "isr",
+        "task",
+        "event",
+        "trigger"
+      ]
+    },
+    {
+      "name": "cla-coprocessor",
+      "description": "Control Law Accelerator coprocessor for offloading real-time math from the main CPU",
+      "keywords": [
+        "cla",
+        "coprocessor",
+        "accelerator",
+        "offload",
+        "parallel"
+      ]
+    },
+    {
+      "name": "interprocessor",
+      "description": "Inter-processor communication for dual-core C2000 devices",
+      "keywords": [
+        "ipc",
+        "interprocess",
+        "dual-core",
+        "shared",
+        "multicore"
+      ]
+    },
+    {
+      "name": "iqmath",
+      "description": "TI IQMath fixed-point arithmetic library for efficient control computations",
+      "keywords": [
+        "iqmath",
+        "fixed-point",
+        "iq",
+        "trig",
+        "sqrt"
+      ]
+    },
+    {
+      "name": "memory-register",
+      "description": "Direct memory and register access for DMA, shared memory, and custom peripheral interfacing",
+      "keywords": [
+        "memory",
+        "register",
+        "dma",
+        "allocate",
+        "copy"
+      ]
+    },
+    {
+      "name": "sensor-drivers",
+      "description": "Driver blocks for common external sensors connected via I2C or SPI",
+      "keywords": [
+        "sensor",
+        "accelerometer",
+        "gyroscope",
+        "bme",
+        "i2c"
+      ]
+    },
+    {
+      "name": "system",
+      "description": "System-level blocks: watchdog, profiler, and library utilities",
+      "keywords": [
+        "watchdog",
+        "profiler",
+        "system",
+        "timer",
+        "reset"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "ADXL34x",
+      "value": "sensor-drivers"
+    },
+    {
+      "block": "Absolute IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "AnalogIO Input",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "AnalogIO Output",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "Arctangent IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "BME280",
+      "value": "sensor-drivers"
+    },
+    {
+      "block": "BMI160",
+      "value": "sensor-drivers"
+    },
+    {
+      "block": "BMM150",
+      "value": "sensor-drivers"
+    },
+    {
+      "block": "BMP280",
+      "value": "sensor-drivers"
+    },
+    {
+      "block": "Byte Pack",
+      "value": "data-packing"
+    },
+    {
+      "block": "Byte Unpack",
+      "value": "data-packing"
+    },
+    {
+      "block": "C28x Hardware Interrupt",
+      "value": "interrupt-scheduling"
+    },
+    {
+      "block": "CAN FD Pack",
+      "value": "can-communication"
+    },
+    {
+      "block": "CAN FD Unpack",
+      "value": "can-communication"
+    },
+    {
+      "block": "CAN Pack",
+      "value": "can-communication"
+    },
+    {
+      "block": "CAN Receive",
+      "value": "can-communication"
+    },
+    {
+      "block": "CAN Transmit",
+      "value": "can-communication"
+    },
+    {
+      "block": "CAN Unpack",
+      "value": "can-communication"
+    },
+    {
+      "block": "CAP",
+      "value": "pwm-timing"
+    },
+    {
+      "block": "CLA Math",
+      "value": "cla-coprocessor"
+    },
+    {
+      "block": "CLA Subsystem",
+      "value": "cla-coprocessor"
+    },
+    {
+      "block": "CLA Task",
+      "value": "cla-coprocessor"
+    },
+    {
+      "block": "CLA Task Manager",
+      "value": "cla-coprocessor"
+    },
+    {
+      "block": "CMPSS",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "COMP",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "DAC",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "Event Source",
+      "value": "interrupt-scheduling"
+    },
+    {
+      "block": "F29H85x",
+      "value": "system"
+    },
+    {
+      "block": "Float to IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "Fractional part IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "Fractional part IQN x int32",
+      "value": "iqmath"
+    },
+    {
+      "block": "HRCAP",
+      "value": "pwm-timing"
+    },
+    {
+      "block": "Hardware Interrupt",
+      "value": "interrupt-scheduling"
+    },
+    {
+      "block": "Hardware Profiler",
+      "value": "system"
+    },
+    {
+      "block": "IPC Receive",
+      "value": "interprocessor"
+    },
+    {
+      "block": "IPC Transmit",
+      "value": "interprocessor"
+    },
+    {
+      "block": "IQN / IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "IQN to Float",
+      "value": "iqmath"
+    },
+    {
+      "block": "IQN x IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "IQN x int32",
+      "value": "iqmath"
+    },
+    {
+      "block": "IQN1 to IQN2",
+      "value": "iqmath"
+    },
+    {
+      "block": "IQN1 x IQN2",
+      "value": "iqmath"
+    },
+    {
+      "block": "Idle Task",
+      "value": "interrupt-scheduling"
+    },
+    {
+      "block": "Integer part IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "Integer part IQN x int32",
+      "value": "iqmath"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "interprocessor"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "interprocessor"
+    },
+    {
+      "block": "LIN Receive",
+      "value": "serial-communication"
+    },
+    {
+      "block": "LIN Transmit",
+      "value": "serial-communication"
+    },
+    {
+      "block": "LIS3DH",
+      "value": "sensor-drivers"
+    },
+    {
+      "block": "MCAN Interrupt Status",
+      "value": "can-communication"
+    },
+    {
+      "block": "MCAN Receive",
+      "value": "can-communication"
+    },
+    {
+      "block": "MCAN Transmit",
+      "value": "can-communication"
+    },
+    {
+      "block": "Magnitude IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "Memory Allocate",
+      "value": "memory-register"
+    },
+    {
+      "block": "Memory Copy",
+      "value": "memory-register"
+    },
+    {
+      "block": "PWM",
+      "value": "pwm-timing"
+    },
+    {
+      "block": "Protocol Decoder",
+      "value": "data-packing"
+    },
+    {
+      "block": "Protocol Encoder",
+      "value": "data-packing"
+    },
+    {
+      "block": "QEP",
+      "value": "pwm-timing"
+    },
+    {
+      "block": "Register ReadWrite",
+      "value": "memory-register"
+    },
+    {
+      "block": "SDFM",
+      "value": "analog-conversion"
+    },
+    {
+      "block": "Saturate IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "Serial Configuration",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Serial Send",
+      "value": "serial-communication"
+    },
+    {
+      "block": "Software Trigger CPU<->CLA",
+      "value": "cla-coprocessor"
+    },
+    {
+      "block": "Square Root IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "network-communication"
+    },
+    {
+      "block": "TCP Send",
+      "value": "network-communication"
+    },
+    {
+      "block": "Task Manager",
+      "value": "interrupt-scheduling"
+    },
+    {
+      "block": "Timer",
+      "value": "pwm-timing"
+    },
+    {
+      "block": "Trig Fcn IQN",
+      "value": "iqmath"
+    },
+    {
+      "block": "UART Receive",
+      "value": "serial-communication"
+    },
+    {
+      "block": "UART Transmit",
+      "value": "serial-communication"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "network-communication"
+    },
+    {
+      "block": "UDP Send",
+      "value": "network-communication"
+    },
+    {
+      "block": "ePWM",
+      "value": "pwm-timing"
+    },
+    {
+      "block": "sensors",
+      "value": "sensor-drivers"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "ADXL34x",
+      "value": "Interface with the ADXL34x family of 3-axis MEMS accelerometers via I2C/SPI — use to measure acceleration for tilt sensing, vibration monitoring, or inertial navigation"
+    },
+    {
+      "block": "Absolute IQN",
+      "value": "Compute the absolute value of a fixed-point IQ number — use in control algorithms that require magnitude without sign for error signals or reference tracking"
+    },
+    {
+      "block": "AnalogIO Input",
+      "value": "Read an analog I/O pin configured as input — use to acquire raw analog voltage levels from external circuits or sensor outputs on supported device pins"
+    },
+    {
+      "block": "AnalogIO Output",
+      "value": "Write to an analog I/O pin configured as output — use to drive analog voltage levels for DAC-like functionality on supported device pins"
+    },
+    {
+      "block": "Arctangent IQN",
+      "value": "Compute the arctangent of a fixed-point IQ number — use for phase angle calculation in vector control transforms for motor drive algorithms"
+    },
+    {
+      "block": "BME280",
+      "value": "Interface with the BME280 environmental sensor via I2C/SPI — use to measure temperature, humidity, and barometric pressure for environmental monitoring applications"
+    },
+    {
+      "block": "BMI160",
+      "value": "Interface with the BMI160 6-axis inertial measurement unit via I2C/SPI — use to measure acceleration and angular rate for motion tracking or orientation estimation"
+    },
+    {
+      "block": "BMM150",
+      "value": "Interface with the BMM150 3-axis magnetometer via I2C — use to measure magnetic field for compass heading or proximity detection applications"
+    },
+    {
+      "block": "BMP280",
+      "value": "Interface with the BMP280 barometric pressure and temperature sensor via I2C/SPI — use to measure atmospheric pressure for altitude estimation or weather monitoring"
+    },
+    {
+      "block": "Byte Pack",
+      "value": "Pack multiple signals into a byte array with specified byte order and alignment — use to construct communication payloads for serial, CAN, or network protocols"
+    },
+    {
+      "block": "Byte Unpack",
+      "value": "Extract signals from a byte array based on specified offsets and data types — use to parse received communication payloads into individual signal values"
+    },
+    {
+      "block": "C28x Hardware Interrupt",
+      "value": "Configure a hardware interrupt service routine triggered by a peripheral event — use to run time-critical code in response to ADC completion, ePWM events, or external pin interrupts"
+    },
+    {
+      "block": "CAN FD Pack",
+      "value": "Pack signal values into a CAN FD message payload with up to 64 bytes — use to encode signals into flexible data-rate CAN frames for higher-bandwidth communication"
+    },
+    {
+      "block": "CAN FD Unpack",
+      "value": "Extract signal values from a received CAN FD message payload — use to decode signals from flexible data-rate CAN frames with up to 64 data bytes"
+    },
+    {
+      "block": "CAN Pack",
+      "value": "Pack signal values into a CAN message payload according to a defined layout — use to encode multiple signals into the 8-byte CAN data field before transmission"
+    },
+    {
+      "block": "CAN Receive",
+      "value": "Receive CAN messages from the on-chip CAN controller — use to read data frames from a CAN bus in automotive or industrial control networks"
+    },
+    {
+      "block": "CAN Transmit",
+      "value": "Transmit CAN messages through the on-chip CAN controller — use to send data frames onto a CAN bus for inter-ECU communication"
+    },
+    {
+      "block": "CAN Unpack",
+      "value": "Extract signal values from a received CAN message payload — use to decode individual signals from the 8-byte CAN data field after reception"
+    },
+    {
+      "block": "CAP",
+      "value": "Configure a capture input to timestamp rising/falling edges — use to measure signal timing on older C2000 devices without the enhanced capture module"
+    },
+    {
+      "block": "CLA Math",
+      "value": "Perform fixed-point or floating-point math operations on the Control Law Accelerator — use to offload computation-intensive control math from the main CPU for faster loop execution"
+    },
+    {
+      "block": "CLA Subsystem",
+      "value": "Define a subsystem that executes on the Control Law Accelerator coprocessor — use to partition time-critical control algorithms onto the CLA for parallel execution with the main CPU"
+    },
+    {
+      "block": "CLA Task",
+      "value": "Define a single CLA task triggered by a hardware event — use to implement one control law computation that runs on the CLA independently of the main CPU"
+    },
+    {
+      "block": "CLA Task Manager",
+      "value": "Configure CLA task triggering and priority — use to manage which hardware events launch which CLA tasks and control their execution order"
+    },
+    {
+      "block": "CMPSS",
+      "value": "Configure the Comparator Subsystem with integrated DAC reference and digital filter — use for advanced trip-zone protection with programmable hysteresis and blanking windows in motor drive applications"
+    },
+    {
+      "block": "COMP",
+      "value": "Configure the on-chip analog comparator — use to generate a digital output when an input signal crosses a programmable threshold for fast overcurrent or overvoltage protection without CPU intervention"
+    },
+    {
+      "block": "DAC",
+      "value": "Configure and write to the on-chip digital-to-analog converter — use to generate analog reference voltages for comparators, bias points, or low-frequency analog control outputs"
+    },
+    {
+      "block": "Event Source",
+      "value": "Select a hardware event (ePWM, ADC EOC, timer) as an interrupt trigger source — use to link peripheral completion events to interrupt service routines"
+    },
+    {
+      "block": "F29H85x",
+      "value": "Device-specific library container for the F29H85x processor family — provides access to peripherals specific to this next-generation C2000 variant"
+    },
+    {
+      "block": "Float to IQN",
+      "value": "Convert a floating-point value to IQ fixed-point format — use at the boundary between floating-point design and fixed-point C2000 implementation for algorithm porting"
+    },
+    {
+      "block": "Fractional part IQN",
+      "value": "Extract the fractional part of a fixed-point IQ number — use for modulo-1 operations in phase accumulators or angle wrapping in fixed-point control loops"
+    },
+    {
+      "block": "Fractional part IQN x int32",
+      "value": "Extract the fractional part after multiplying an IQ number by an integer — use for scaled fractional computations in fixed-point signal processing"
+    },
+    {
+      "block": "HRCAP",
+      "value": "Configure the High-Resolution Capture module for sub-nanosecond edge timestamping — use when standard capture resolution is insufficient for precision frequency or phase measurements"
+    },
+    {
+      "block": "Hardware Interrupt",
+      "value": "Configure a hardware interrupt service routine on the target processor — use to execute high-priority code triggered by peripheral events or external signals"
+    },
+    {
+      "block": "Hardware Profiler",
+      "value": "Measure execution time of code sections using hardware timers — use to verify real-time performance and identify bottlenecks in control loop execution"
+    },
+    {
+      "block": "IPC Receive",
+      "value": "Receive data from another processor core via the inter-processor communication module — use in dual-core C2000 devices to read data computed by the other CPU or CLA"
+    },
+    {
+      "block": "IPC Transmit",
+      "value": "Send data to another processor core via the inter-processor communication module — use in dual-core C2000 devices to share computed results with the other CPU"
+    },
+    {
+      "block": "IQN / IQN",
+      "value": "Divide two fixed-point IQ numbers — use for ratio computations in fixed-point control algorithms where hardware division support is limited"
+    },
+    {
+      "block": "IQN to Float",
+      "value": "Convert an IQ fixed-point number to floating-point format — use at interfaces where fixed-point C2000 results must be logged or compared with floating-point reference models"
+    },
+    {
+      "block": "IQN x IQN",
+      "value": "Multiply two fixed-point IQ numbers with proper Q-format alignment — use as the core multiply operation in fixed-point control law implementations"
+    },
+    {
+      "block": "IQN x int32",
+      "value": "Multiply a fixed-point IQ number by a 32-bit integer — use for scaling operations where one operand is a pure integer count, index, or gain"
+    },
+    {
+      "block": "IQN1 to IQN2",
+      "value": "Convert between different IQ fixed-point formats — use when signals with different fractional bit allocations must be combined in a computation"
+    },
+    {
+      "block": "IQN1 x IQN2",
+      "value": "Multiply two IQ numbers with different Q-formats and produce a result in a specified Q-format — use when operands have different precision requirements"
+    },
+    {
+      "block": "Idle Task",
+      "value": "Define code that executes in the idle (background) loop when no interrupts are active — use for low-priority housekeeping, communication polling, or diagnostic routines"
+    },
+    {
+      "block": "Integer part IQN",
+      "value": "Extract the integer part of a fixed-point IQ number — use for floor operations or integer truncation in fixed-point lookup table indexing"
+    },
+    {
+      "block": "Integer part IQN x int32",
+      "value": "Extract the integer part after multiplying an IQ number by an integer — use for scaled integer extraction in fixed-point address or index calculations"
+    },
+    {
+      "block": "Interprocess Data Read",
+      "value": "Read shared data written by another processor core — use for lightweight data exchange between CPU cores without message-based IPC overhead"
+    },
+    {
+      "block": "Interprocess Data Write",
+      "value": "Write data to shared memory accessible by another processor core — use for lightweight data sharing between CPU cores without message-based IPC overhead"
+    },
+    {
+      "block": "LIN Receive",
+      "value": "Receive data frames from the LIN bus — use to read sensor data or actuator feedback in automotive body electronics or seat/mirror control systems"
+    },
+    {
+      "block": "LIN Transmit",
+      "value": "Transmit data frames on the LIN bus — use to send commands to LIN peripheral nodes in automotive sub-networks"
+    },
+    {
+      "block": "LIS3DH",
+      "value": "Interface with the LIS3DH 3-axis accelerometer via I2C/SPI — use to measure acceleration for motion detection, orientation sensing, or vibration analysis"
+    },
+    {
+      "block": "MCAN Interrupt Status",
+      "value": "Read MCAN interrupt status flags — use to poll or respond to CAN FD communication events like message received, bus-off, or error conditions"
+    },
+    {
+      "block": "MCAN Receive",
+      "value": "Receive messages from the MCAN (CAN FD) controller on newer C2000 devices — use for CAN FD communication with hardware message filtering and FIFO buffering"
+    },
+    {
+      "block": "MCAN Transmit",
+      "value": "Transmit messages through the MCAN controller — use to send CAN/CAN FD frames with priority-based arbitration on newer C2000 devices"
+    },
+    {
+      "block": "Magnitude IQN",
+      "value": "Compute the magnitude of a fixed-point IQ vector — use for vector length calculation in field-oriented motor control or signal envelope detection"
+    },
+    {
+      "block": "Memory Allocate",
+      "value": "Allocate a block of memory at a specified address — use to reserve DMA buffers, shared memory regions, or peripheral-mapped memory for real-time data transfer"
+    },
+    {
+      "block": "Memory Copy",
+      "value": "Copy data between memory regions using DMA or CPU — use for bulk data transfer between peripheral buffers and processing memory without CPU blocking"
+    },
+    {
+      "block": "PWM",
+      "value": "Configure a basic PWM output channel — use for simple duty-cycle generation when the full ePWM feature set is not required"
+    },
+    {
+      "block": "Protocol Decoder",
+      "value": "Decode structured protocol data from a serial byte stream — use to parse custom or standard communication protocols into meaningful signal fields"
+    },
+    {
+      "block": "Protocol Encoder",
+      "value": "Encode structured data into a protocol-formatted byte stream — use to construct custom or standard communication protocol frames for serial transmission"
+    },
+    {
+      "block": "QEP",
+      "value": "Configure the Quadrature Encoder Pulse module — use to decode rotary encoder signals for position and speed feedback on older C2000 devices"
+    },
+    {
+      "block": "Register ReadWrite",
+      "value": "Directly read or write a hardware register at a specified memory-mapped address — use to access peripheral registers not covered by dedicated blockset blocks or for custom hardware interfacing"
+    },
+    {
+      "block": "SDFM",
+      "value": "Configure the Sigma-Delta Filter Module to demodulate sigma-delta modulator bitstreams — use to interface with isolated sigma-delta current/voltage sensors for high-resolution measurements in motor drives"
+    },
+    {
+      "block": "Saturate IQN",
+      "value": "Clamp a fixed-point IQ number to a specified range — use to prevent overflow or enforce actuator limits in fixed-point control law outputs"
+    },
+    {
+      "block": "Serial Configuration",
+      "value": "Configure serial port parameters including baud rate, data bits, parity, and stop bits — use to initialize serial communication before using Serial Receive/Send blocks"
+    },
+    {
+      "block": "Serial Receive",
+      "value": "Receive data from a configured serial port — use for generic serial communication when device-specific SCI blocks are not appropriate"
+    },
+    {
+      "block": "Serial Send",
+      "value": "Send data through a configured serial port — use for generic serial communication when device-specific SCI blocks are not appropriate"
+    },
+    {
+      "block": "Software Trigger CPU<->CLA",
+      "value": "Send a software trigger between the CPU and CLA coprocessor — use to synchronize CPU and CLA execution or signal task completion across the two processing cores"
+    },
+    {
+      "block": "Square Root IQN",
+      "value": "Compute the square root of a fixed-point IQ number — use for RMS calculation, magnitude computation, or normalization in fixed-point algorithms"
+    },
+    {
+      "block": "TCP Receive",
+      "value": "Receive data over a TCP connection — use for reliable stream-based communication with a remote host via the on-chip Ethernet peripheral"
+    },
+    {
+      "block": "TCP Send",
+      "value": "Send data over a TCP connection — use for reliable stream-based data transfer to a remote host via the on-chip Ethernet peripheral"
+    },
+    {
+      "block": "Task Manager",
+      "value": "Configure multi-rate task scheduling with priority assignment — use to manage multiple control loops running at different rates on the same C2000 processor"
+    },
+    {
+      "block": "Timer",
+      "value": "Configure a CPU timer for periodic interrupt generation or elapsed time measurement — use to create fixed-rate sampling triggers independent of the ePWM system"
+    },
+    {
+      "block": "Trig Fcn IQN",
+      "value": "Compute trigonometric functions in fixed-point IQ format including sin, cos, and atan2 — use for Park/Clarke transforms and angle-based computations in fixed-point motor control"
+    },
+    {
+      "block": "UART Receive",
+      "value": "Receive data from the UART peripheral — use for asynchronous serial communication with external devices on newer C2000 devices with dedicated UART modules"
+    },
+    {
+      "block": "UART Transmit",
+      "value": "Transmit data through the UART peripheral — use for asynchronous serial communication with external devices on newer C2000 devices with dedicated UART modules"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive UDP datagrams from the network — use for low-latency connectionless communication where occasional packet loss is acceptable"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send UDP datagrams over the network — use for low-latency broadcasting or point-to-point data transfer without connection overhead"
+    },
+    {
+      "block": "ePWM",
+      "value": "Configure the Enhanced PWM module with independent time-base, compare, action-qualifier, dead-band, and trip-zone submodules — use as the primary actuator output for motor control, power converter switching, and precision waveform generation"
+    },
+    {
+      "block": "sensors",
+      "value": "Access the sensor driver library containing blocks for common I2C/SPI sensors — use as a container for accelerometer, gyroscope, magnetometer, and environmental sensor interfaces"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "commonBlocks": [
+    "Real-Time Synchronization",
+    "Analog Input",
+    "Analog Output",
+    "Digital Input",
+    "Digital Output"
+  ],
+  "categories": [
+    {
+      "name": "analog-io",
+      "description": "Analog input/output via DAQ hardware",
+      "keywords": [
+        "analog",
+        "voltage",
+        "dac",
+        "adc",
+        "sample"
+      ]
+    },
+    {
+      "name": "digital-io",
+      "description": "Digital, counter, and encoder I/O",
+      "keywords": [
+        "digital",
+        "counter",
+        "encoder",
+        "frequency",
+        "servo"
+      ]
+    },
+    {
+      "name": "streaming",
+      "description": "Packet and stream-based data exchange",
+      "keywords": [
+        "packet",
+        "stream",
+        "video",
+        "raw",
+        "binary"
+      ]
+    },
+    {
+      "name": "iot-profiling",
+      "description": "IoT connectivity and execution profiling",
+      "keywords": [
+        "thingspeak",
+        "iot",
+        "execution",
+        "timestamp",
+        "profile"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Analog Input",
+      "value": "analog-io"
+    },
+    {
+      "block": "Analog Output",
+      "value": "analog-io"
+    },
+    {
+      "block": "Counter Input",
+      "value": "digital-io"
+    },
+    {
+      "block": "Digital Input",
+      "value": "digital-io"
+    },
+    {
+      "block": "Digital Output",
+      "value": "digital-io"
+    },
+    {
+      "block": "Encoder Input",
+      "value": "digital-io"
+    },
+    {
+      "block": "Examples",
+      "value": "iot-profiling"
+    },
+    {
+      "block": "Execution Time",
+      "value": "iot-profiling"
+    },
+    {
+      "block": "Frequency Output",
+      "value": "digital-io"
+    },
+    {
+      "block": "Other Input",
+      "value": "streaming"
+    },
+    {
+      "block": "Other Output",
+      "value": "streaming"
+    },
+    {
+      "block": "Packet Input",
+      "value": "streaming"
+    },
+    {
+      "block": "Packet Output",
+      "value": "streaming"
+    },
+    {
+      "block": "Real-Time Synchronization",
+      "value": "iot-profiling"
+    },
+    {
+      "block": "Servo Output",
+      "value": "digital-io"
+    },
+    {
+      "block": "Stream Input",
+      "value": "streaming"
+    },
+    {
+      "block": "Stream Output",
+      "value": "streaming"
+    },
+    {
+      "block": "ThingSpeak Input",
+      "value": "iot-profiling"
+    },
+    {
+      "block": "ThingSpeak Output",
+      "value": "iot-profiling"
+    },
+    {
+      "block": "Timestamp",
+      "value": "iot-profiling"
+    },
+    {
+      "block": "Video Input",
+      "value": "streaming"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Analog Input",
+      "value": "Read analog voltage from DAQ hardware in real time — use for acquiring sensor signals at deterministic sample rates on the desktop"
+    },
+    {
+      "block": "Analog Output",
+      "value": "Write analog voltage to DAQ hardware in real time — use for generating control signals to actuators at deterministic sample rates"
+    },
+    {
+      "block": "Counter Input",
+      "value": "Read hardware counter values in real time — use for measuring encoder counts, pulse frequencies, or event timing"
+    },
+    {
+      "block": "Digital Input",
+      "value": "Read digital channels from DAQ hardware in real time — use for acquiring switch states or digital sensor signals"
+    },
+    {
+      "block": "Digital Output",
+      "value": "Write digital channels to DAQ hardware in real time — use for controlling relays, indicators, or digital actuators"
+    },
+    {
+      "block": "Encoder Input",
+      "value": "Read quadrature encoder position in real time — use for measuring motor shaft angle or linear position with hardware decoding"
+    },
+    {
+      "block": "Examples",
+      "value": "Example models for Simulink Desktop Real-Time — use as reference for setting up real-time I/O configurations"
+    },
+    {
+      "block": "Execution Time",
+      "value": "Measure task execution time of the real-time model — use for profiling computational load and detecting timing overruns"
+    },
+    {
+      "block": "Frequency Output",
+      "value": "Generate a frequency signal via DAQ hardware — use for producing clock outputs or variable-frequency drive signals"
+    },
+    {
+      "block": "Other Input",
+      "value": "Read vendor-specific input channels — use for accessing custom or non-standard DAQ hardware inputs"
+    },
+    {
+      "block": "Other Output",
+      "value": "Write vendor-specific output channels — use for accessing custom or non-standard DAQ hardware outputs"
+    },
+    {
+      "block": "Packet Input",
+      "value": "Receive raw data packets from hardware — use for reading structured binary data from custom I/O devices in real time"
+    },
+    {
+      "block": "Packet Output",
+      "value": "Send raw data packets to hardware — use for transmitting structured binary commands to custom I/O devices in real time"
+    },
+    {
+      "block": "Real-Time Synchronization",
+      "value": "Synchronize model execution to real-time clock — use as the essential block that enables desktop real-time mode for any model"
+    },
+    {
+      "block": "Servo Output",
+      "value": "Generate servo control signals via real-time hardware — use for driving RC servos or positioning actuators from desktop real-time models"
+    },
+    {
+      "block": "Stream Input",
+      "value": "Receive streaming data from hardware — use for continuous data acquisition from serial or network devices in real time"
+    },
+    {
+      "block": "Stream Output",
+      "value": "Send streaming data to hardware — use for continuous data output to serial or network devices in real time"
+    },
+    {
+      "block": "ThingSpeak Input",
+      "value": "Read data from ThingSpeak IoT platform in real time — use for incorporating cloud sensor data into real-time desktop simulations"
+    },
+    {
+      "block": "ThingSpeak Output",
+      "value": "Write data to ThingSpeak IoT platform in real time — use for uploading measurement data to the cloud during real-time operation"
+    },
+    {
+      "block": "Timestamp",
+      "value": "Read the real-time clock timestamp — use for precise time-stamping of events or measuring actual execution timing"
+    },
+    {
+      "block": "Video Input",
+      "value": "Capture video frames from hardware in real time — use for real-time image acquisition from cameras or frame grabbers"
+    }
+  ]
+}

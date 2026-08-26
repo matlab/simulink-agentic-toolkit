@@ -1,0 +1,88 @@
+{
+  "commonBlocks": [
+    "UDP Send",
+    "UDP Receive",
+    "PARROT Image Conversion"
+  ],
+  "categories": [
+    {
+      "name": "parrot-drone",
+      "description": "Parrot minidrone communication and accessory control",
+      "keywords": [
+        "parrot",
+        "drone",
+        "udp",
+        "camera",
+        "flight"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Cannon",
+      "value": "parrot-drone"
+    },
+    {
+      "block": "Grabber",
+      "value": "parrot-drone"
+    },
+    {
+      "block": "Keyboard Read",
+      "value": "parrot-drone"
+    },
+    {
+      "block": "PARROT Image Conversion",
+      "value": "parrot-drone"
+    },
+    {
+      "block": "TCP/IP Receive",
+      "value": "parrot-drone"
+    },
+    {
+      "block": "TCP/IP Send",
+      "value": "parrot-drone"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "parrot-drone"
+    },
+    {
+      "block": "UDP Send",
+      "value": "parrot-drone"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Cannon",
+      "value": "Fire the cannon accessory on a Parrot minidrone — use for triggering the ball launcher in drone competition or gamification scenarios"
+    },
+    {
+      "block": "Grabber",
+      "value": "Control the grabber accessory on a Parrot minidrone — use for picking up and releasing objects in autonomous retrieval missions"
+    },
+    {
+      "block": "Keyboard Read",
+      "value": "Read keyboard input during simulation — use for manual pilot control or interactive testing of drone flight algorithms"
+    },
+    {
+      "block": "PARROT Image Conversion",
+      "value": "Convert raw camera images from Parrot drone format — use for preprocessing onboard camera data before computer vision algorithms"
+    },
+    {
+      "block": "TCP/IP Receive",
+      "value": "Receive data over TCP/IP from a Parrot drone — use for receiving telemetry, status, or sensor data from the drone during flight"
+    },
+    {
+      "block": "TCP/IP Send",
+      "value": "Send data over TCP/IP to a Parrot drone — use for transmitting commands or configuration to the drone during operation"
+    },
+    {
+      "block": "UDP Receive",
+      "value": "Receive data over UDP from a Parrot drone — use for low-latency reception of video, sensor, or navigation data from the drone"
+    },
+    {
+      "block": "UDP Send",
+      "value": "Send data over UDP to a Parrot drone — use for low-latency command transmission to the drone flight controller"
+    }
+  ]
+}

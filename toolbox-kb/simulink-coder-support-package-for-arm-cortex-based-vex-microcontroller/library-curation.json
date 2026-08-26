@@ -1,0 +1,552 @@
+{
+  "commonBlocks": [
+    "DC Motor",
+    "Gamepad Joystick",
+    "Gyroscope",
+    "Optical Shaft Encoder",
+    "Ultrasonic Sensor",
+    "Arcade Module"
+  ],
+  "categories": [
+    {
+      "name": "actuators",
+      "description": "Motor and digital output blocks",
+      "keywords": [
+        "motor",
+        "servo",
+        "digital output",
+        "actuator"
+      ]
+    },
+    {
+      "name": "gamepad",
+      "description": "Controller input blocks",
+      "keywords": [
+        "gamepad",
+        "joystick",
+        "button",
+        "competition",
+        "accelerometer"
+      ]
+    },
+    {
+      "name": "sensors",
+      "description": "Analog and digital sensor blocks",
+      "keywords": [
+        "analog",
+        "encoder",
+        "gyroscope",
+        "ultrasonic",
+        "digital input"
+      ]
+    },
+    {
+      "name": "logic-math",
+      "description": "Logic comparison and math operations",
+      "keywords": [
+        "compare",
+        "logical",
+        "relational",
+        "math",
+        "gain",
+        "add"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Simulation and utility blocks",
+      "keywords": [
+        "scope",
+        "display",
+        "clock",
+        "switch",
+        "simulator",
+        "deadband"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Abs",
+      "value": "logic-math"
+    },
+    {
+      "block": "Add",
+      "value": "logic-math"
+    },
+    {
+      "block": "Analog Input",
+      "value": "sensors"
+    },
+    {
+      "block": "Arcade Module",
+      "value": "utilities"
+    },
+    {
+      "block": "Bias",
+      "value": "logic-math"
+    },
+    {
+      "block": "Clock",
+      "value": "utilities"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "logic-math"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "logic-math"
+    },
+    {
+      "block": "Competition Switch",
+      "value": "gamepad"
+    },
+    {
+      "block": "Constant",
+      "value": "utilities"
+    },
+    {
+      "block": "DC Motor",
+      "value": "actuators"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "utilities"
+    },
+    {
+      "block": "Deadband",
+      "value": "utilities"
+    },
+    {
+      "block": "Digital Input",
+      "value": "sensors"
+    },
+    {
+      "block": "Digital Output",
+      "value": "actuators"
+    },
+    {
+      "block": "Display",
+      "value": "utilities"
+    },
+    {
+      "block": "Divide",
+      "value": "logic-math"
+    },
+    {
+      "block": "Field Simulator",
+      "value": "utilities"
+    },
+    {
+      "block": "Gain",
+      "value": "logic-math"
+    },
+    {
+      "block": "Gamepad Accelerometer",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gamepad Button",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gamepad Joystick",
+      "value": "gamepad"
+    },
+    {
+      "block": "Gamepad Simulator",
+      "value": "utilities"
+    },
+    {
+      "block": "Gear Transmission",
+      "value": "utilities"
+    },
+    {
+      "block": "Ground",
+      "value": "utilities"
+    },
+    {
+      "block": "Gyroscope",
+      "value": "sensors"
+    },
+    {
+      "block": "Integrated Encoder Module",
+      "value": "sensors"
+    },
+    {
+      "block": "LCD Button",
+      "value": "gamepad"
+    },
+    {
+      "block": "LCD Screen",
+      "value": "gamepad"
+    },
+    {
+      "block": "Latch",
+      "value": "utilities"
+    },
+    {
+      "block": "Limit Switch Control ",
+      "value": "utilities"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "logic-math"
+    },
+    {
+      "block": "Logical Operator1",
+      "value": "logic-math"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "utilities"
+    },
+    {
+      "block": "Manual Switch",
+      "value": "utilities"
+    },
+    {
+      "block": "Math Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "MinMax",
+      "value": "logic-math"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "logic-math"
+    },
+    {
+      "block": "Optical Shaft Encoder",
+      "value": "sensors"
+    },
+    {
+      "block": "Polynomial",
+      "value": "logic-math"
+    },
+    {
+      "block": "Product",
+      "value": "logic-math"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "logic-math"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "logic-math"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "Scope",
+      "value": "utilities"
+    },
+    {
+      "block": "Servo Motor",
+      "value": "actuators"
+    },
+    {
+      "block": "Sign",
+      "value": "logic-math"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "logic-math"
+    },
+    {
+      "block": "Sine Wave Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "logic-math"
+    },
+    {
+      "block": "Sqrt",
+      "value": "logic-math"
+    },
+    {
+      "block": "Stateflow",
+      "value": "utilities"
+    },
+    {
+      "block": "Subtract",
+      "value": "logic-math"
+    },
+    {
+      "block": "Switch",
+      "value": "utilities"
+    },
+    {
+      "block": "Terminator",
+      "value": "utilities"
+    },
+    {
+      "block": "Toggle",
+      "value": "utilities"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "logic-math"
+    },
+    {
+      "block": "Ultrasonic Sensor",
+      "value": "sensors"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "logic-math"
+    },
+    {
+      "block": "Variable Input",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Abs",
+      "value": "Compute absolute value — use for getting magnitude regardless of sign"
+    },
+    {
+      "block": "Add",
+      "value": "Add two or more signals — use for summing sensor inputs or control terms"
+    },
+    {
+      "block": "Analog Input",
+      "value": "Read analog sensor on VEX Cortex — use for reading potentiometers, line followers, or light sensors"
+    },
+    {
+      "block": "Arcade Module",
+      "value": "Map joystick to arcade drive — use for converting single-stick input to differential motor commands"
+    },
+    {
+      "block": "Bias",
+      "value": "Add a constant offset to a signal — use for calibrating sensor zero points"
+    },
+    {
+      "block": "Clock",
+      "value": "Output simulation time — use for time-based sequencing in robot programs"
+    },
+    {
+      "block": "Compare To Constant",
+      "value": "Compare signal to a constant value — use for threshold-based decisions in robot logic"
+    },
+    {
+      "block": "Compare To Zero",
+      "value": "Compare signal to zero — use for detecting zero-crossings or sign changes"
+    },
+    {
+      "block": "Competition Switch",
+      "value": "Read VEX competition field state — use for detecting autonomous vs driver-control mode"
+    },
+    {
+      "block": "Constant",
+      "value": "Output a constant value — use for fixed parameters like speed setpoints"
+    },
+    {
+      "block": "DC Motor",
+      "value": "Drive a VEX DC motor — use for commanding motor speed on VEX Cortex motor ports"
+    },
+    {
+      "block": "Data Type Conversion",
+      "value": "Convert between data types — use for matching signal types between blocks"
+    },
+    {
+      "block": "Deadband",
+      "value": "Apply deadzone to signal — use for ignoring small joystick movements near center"
+    },
+    {
+      "block": "Digital Input",
+      "value": "Read digital sensor on VEX Cortex — use for reading limit switches or bumper sensors"
+    },
+    {
+      "block": "Digital Output",
+      "value": "Set a digital I/O pin high or low — use for controlling LEDs, relays, or pneumatics on VEX Cortex"
+    },
+    {
+      "block": "Display",
+      "value": "Show signal value during simulation — use for debugging robot algorithms"
+    },
+    {
+      "block": "Divide",
+      "value": "Divide two signals — use for ratio computation or normalization"
+    },
+    {
+      "block": "Field Simulator",
+      "value": "Simulate VEX competition field — use for testing autonomous routines without hardware"
+    },
+    {
+      "block": "Gain",
+      "value": "Multiply signal by a constant — use for scaling sensor readings or control outputs"
+    },
+    {
+      "block": "Gamepad Accelerometer",
+      "value": "Read VEX gamepad accelerometer — use for tilt-based control input from the controller"
+    },
+    {
+      "block": "Gamepad Button",
+      "value": "Read VEX gamepad button state — use for detecting button presses on the VEX controller"
+    },
+    {
+      "block": "Gamepad Joystick",
+      "value": "Read VEX gamepad joystick axis — use for analog joystick input from the VEX controller"
+    },
+    {
+      "block": "Gamepad Simulator",
+      "value": "Simulate VEX gamepad inputs — use for testing driver-control code without a physical controller"
+    },
+    {
+      "block": "Gear Transmission",
+      "value": "Model gear ratio effects — use for converting motor speed/torque through gear train"
+    },
+    {
+      "block": "Ground",
+      "value": "Provide zero-value signal — use for grounding unused input ports"
+    },
+    {
+      "block": "Gyroscope",
+      "value": "Read VEX gyroscope — use for measuring robot heading and turn rate"
+    },
+    {
+      "block": "Integrated Encoder Module",
+      "value": "Read VEX integrated motor encoder — use for measuring motor shaft rotation"
+    },
+    {
+      "block": "LCD Button",
+      "value": "Read VEX LCD module button — use for user input via the LCD screen buttons"
+    },
+    {
+      "block": "LCD Screen",
+      "value": "Write text to VEX LCD module — use for displaying status or debug info on the robot LCD"
+    },
+    {
+      "block": "Latch",
+      "value": "Latch a signal value on trigger — use for capturing sensor readings at specific events"
+    },
+    {
+      "block": "Limit Switch Control ",
+      "value": "Limit motor output based on switch state — use for preventing mechanism over-travel using limit switches"
+    },
+    {
+      "block": "Logical Operator",
+      "value": "Perform AND/OR/NOT logic — use for combining boolean conditions in robot decision logic"
+    },
+    {
+      "block": "Logical Operator1",
+      "value": "Additional logic gate — use for OR operations in robot decision logic"
+    },
+    {
+      "block": "MATLAB Function",
+      "value": "Embed custom MATLAB code on VEX Cortex — use for implementing algorithms not available as blocks"
+    },
+    {
+      "block": "Manual Switch",
+      "value": "Toggle between two inputs — use for switching between autonomous and manual modes in simulation"
+    },
+    {
+      "block": "Math Function",
+      "value": "Apply mathematical function — use for exp, log, power, or modulus operations"
+    },
+    {
+      "block": "MinMax",
+      "value": "Find minimum or maximum of inputs — use for clamping or selecting extreme values"
+    },
+    {
+      "block": "MinMax Running Resettable",
+      "value": "Track running min/max with reset — use for peak detection over time windows"
+    },
+    {
+      "block": "Optical Shaft Encoder",
+      "value": "Read VEX optical shaft encoder — use for measuring wheel rotation and distance"
+    },
+    {
+      "block": "Polynomial",
+      "value": "Evaluate polynomial — use for nonlinear sensor calibration curves"
+    },
+    {
+      "block": "Product",
+      "value": "Multiply two or more signals — use for combining gains or computing power"
+    },
+    {
+      "block": "Reciprocal Sqrt",
+      "value": "Compute 1/sqrt of signal — use for normalization operations"
+    },
+    {
+      "block": "Relational Operator",
+      "value": "Compare two signals with relational operators — use for condition checking between sensor values"
+    },
+    {
+      "block": "Rounding Function",
+      "value": "Round signal to nearest integer — use for converting to discrete values"
+    },
+    {
+      "block": "Scope",
+      "value": "Plot signals over time — use for visualizing robot behavior during simulation"
+    },
+    {
+      "block": "Servo Motor",
+      "value": "Command a VEX servo position — use for controlling angular position of servo motors"
+    },
+    {
+      "block": "Sign",
+      "value": "Extract sign of signal — use for direction detection in motor control"
+    },
+    {
+      "block": "Signed Sqrt",
+      "value": "Compute signed square root — use for sign-preserving root operations"
+    },
+    {
+      "block": "Sine Wave Function",
+      "value": "Generate sine wave signal — use for periodic test stimuli"
+    },
+    {
+      "block": "Slider Gain",
+      "value": "Interactive gain adjustment — use for tuning control parameters during simulation"
+    },
+    {
+      "block": "Sqrt",
+      "value": "Compute square root — use for distance or magnitude calculations"
+    },
+    {
+      "block": "Stateflow",
+      "value": "Embed state machine logic on VEX Cortex — use for implementing mode-switching and sequencing logic"
+    },
+    {
+      "block": "Subtract",
+      "value": "Subtract signals — use for computing error signals in control loops"
+    },
+    {
+      "block": "Switch",
+      "value": "Conditional signal selection — use for choosing between inputs based on a threshold condition"
+    },
+    {
+      "block": "Terminator",
+      "value": "Terminate unused output — use for cleanly handling unconnected block outputs"
+    },
+    {
+      "block": "Toggle",
+      "value": "Toggle constant between values — use for binary mode selection during simulation"
+    },
+    {
+      "block": "Trigonometric Function",
+      "value": "Compute trig functions — use for angle calculations in robot navigation"
+    },
+    {
+      "block": "Ultrasonic Sensor",
+      "value": "Read VEX ultrasonic distance sensor — use for detecting obstacles and measuring range"
+    },
+    {
+      "block": "Unary Minus",
+      "value": "Negate a signal — use for reversing motor direction or sign inversion"
+    },
+    {
+      "block": "Variable Input",
+      "value": "Slider-adjustable constant input — use for tuning parameters during VEX robot simulation"
+    }
+  ]
+}

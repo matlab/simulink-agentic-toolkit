@@ -1,0 +1,126 @@
+{
+  "libraryName": "Embedded Coder Support Package for BeagleBone Black Hardware",
+  "generatedAt": "2026-08-19T14:30:55",
+  "blockCount": 12,
+  "blocks": [
+    {
+      "name": "SDL Video Display",
+      "referenceBlock": "beaglebonelib/SDL Video Display",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "SDL Video Display",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ALSA Audio Capture",
+      "referenceBlock": "beaglebonelib/ALSA Audio Capture",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ALSA Audio Capture",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ALSA Audio Playback",
+      "referenceBlock": "beaglebonelib/ALSA Audio Playback",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "ALSA Audio Playback",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Analog Input",
+      "referenceBlock": "beaglebonelib/Analog Input",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "Analog Input",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GPIO Read",
+      "referenceBlock": "beaglebonelib/GPIO Read",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "GPIO Read",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "GPIO Write",
+      "referenceBlock": "beaglebonelib/GPIO Write",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "GPIO Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "LED",
+      "referenceBlock": "beaglebonelib/LED",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "LED Write",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM",
+      "referenceBlock": "beaglebonelib/PWM",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "PWM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ThingSpeak Write",
+      "referenceBlock": "beaglebonelib/ThingSpeak Write",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "codertarget.arm_cortex_a.blocks.ThingSpeakWrite",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "beaglebonelib/UDP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "beaglebonelib/UDP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Send",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "V4L2 Video Capture",
+      "referenceBlock": "beaglebonelib/V4L2 Video Capture",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "V4L2 Video Capture",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

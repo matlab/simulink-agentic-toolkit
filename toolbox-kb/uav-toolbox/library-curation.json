@@ -1,0 +1,186 @@
+{
+  "commonBlocks": [
+    "Waypoint Follower"
+  ],
+  "categories": [
+    {
+      "name": "guidance-navigation",
+      "description": "Path following, trajectory planning, and obstacle avoidance",
+      "keywords": [
+        "waypoint",
+        "orbit",
+        "guidance",
+        "trajectory",
+        "avoidance"
+      ]
+    },
+    {
+      "name": "mavlink",
+      "description": "MAVLink protocol encoding and decoding",
+      "keywords": [
+        "mavlink",
+        "serialize",
+        "message",
+        "protocol",
+        "telemetry"
+      ]
+    },
+    {
+      "name": "simulation-3d",
+      "description": "3D visualization with Unreal Engine",
+      "keywords": [
+        "3d",
+        "simulation",
+        "camera",
+        "lidar",
+        "unreal"
+      ]
+    },
+    {
+      "name": "uav-scenario",
+      "description": "Lightweight UAV scenario framework",
+      "keywords": [
+        "scenario",
+        "motion",
+        "scope",
+        "platform",
+        "transform"
+      ]
+    },
+    {
+      "name": "sensors-utilities",
+      "description": "Sensor models and utility blocks",
+      "keywords": [
+        "gps",
+        "ins",
+        "barometer",
+        "animation",
+        "coordinate"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "sensors-utilities"
+    },
+    {
+      "block": "Fixed-Wing UAV Point Mass",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Guidance Model",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "MAVLink Blank Message",
+      "value": "mavlink"
+    },
+    {
+      "block": "MAVLink Deserializer",
+      "value": "mavlink"
+    },
+    {
+      "block": "MAVLink Serializer",
+      "value": "mavlink"
+    },
+    {
+      "block": "Minimum Jerk Polynomial Trajectory",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Minimum Snap Polynomial Trajectory",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Multi-Instance Guidance Model",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Obstacle Avoidance",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Orbit Follower",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Path Manager",
+      "value": "guidance-navigation"
+    },
+    {
+      "block": "Read UAV Trajectory",
+      "value": "sensors-utilities"
+    },
+    {
+      "block": "UAV Animation",
+      "value": "sensors-utilities"
+    },
+    {
+      "block": "Waypoint Follower",
+      "value": "guidance-navigation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "Convert between rotation representations — use for translating quaternions, Euler angles, or rotation matrices in UAV navigation"
+    },
+    {
+      "block": "Fixed-Wing UAV Point Mass",
+      "value": "Simulate fixed-wing UAV dynamics using point-mass equations — use for fast prototyping of guidance and navigation before full 6-DOF models"
+    },
+    {
+      "block": "Guidance Model",
+      "value": "Execute a UAV guidance model for path following — use for implementing waypoint navigation logic with configurable lookahead and transition criteria"
+    },
+    {
+      "block": "MAVLink Blank Message",
+      "value": "Create an empty MAVLink message structure — use for initializing MAVLink messages before populating fields for transmission"
+    },
+    {
+      "block": "MAVLink Deserializer",
+      "value": "Deserialize raw bytes into MAVLink message structures — use for parsing received MAVLink data into usable signal fields"
+    },
+    {
+      "block": "MAVLink Serializer",
+      "value": "Serialize MAVLink messages into raw bytes for transmission — use for encoding MAVLink messages before sending over serial or UDP"
+    },
+    {
+      "block": "Minimum Jerk Polynomial Trajectory",
+      "value": "Generate smooth trajectories minimizing jerk — use for planning comfortable multirotor paths with continuous acceleration profiles"
+    },
+    {
+      "block": "Minimum Snap Polynomial Trajectory",
+      "value": "Generate smooth trajectories minimizing snap — use for planning aggressive multirotor paths that minimize control effort"
+    },
+    {
+      "block": "Multi-Instance Guidance Model",
+      "value": "Run multiple UAV guidance instances in parallel — use for simulating swarms or multi-vehicle missions with independent guidance"
+    },
+    {
+      "block": "Obstacle Avoidance",
+      "value": "Compute collision-free steering commands — use for reactive obstacle avoidance using 3D sensor data in UAV navigation"
+    },
+    {
+      "block": "Orbit Follower",
+      "value": "Track a circular orbit pattern — use for loitering, surveillance, or inspection missions requiring circular flight paths"
+    },
+    {
+      "block": "Path Manager",
+      "value": "Manage transitions between mission path segments — use for sequencing waypoints, orbits, and landing patterns in UAV missions"
+    },
+    {
+      "block": "Read UAV Trajectory",
+      "value": "Read a pre-planned UAV trajectory from workspace — use for loading waypoint sequences or time-stamped paths into the model"
+    },
+    {
+      "block": "UAV Animation",
+      "value": "Animate UAV flight in a MATLAB figure — use for lightweight 3D visualization without the Unreal Engine"
+    },
+    {
+      "block": "Waypoint Follower",
+      "value": "Follow a sequence of 3D waypoints — use for basic point-to-point UAV navigation with smooth transitions between waypoints"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "libraryName": "Model Predictive Control Toolbox",
+  "generatedAt": "2026-08-19T14:31:02",
+  "blockCount": 12,
+  "blocks": [
+    {
+      "name": "Adaptive MPC Controller",
+      "referenceBlock": "mpclib/Adaptive MPC Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Adaptive MPC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data-Driven MPC",
+      "referenceBlock": "mpclib/Data-Driven MPC",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "DataDrivenMPC",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Explicit MPC Controller",
+      "referenceBlock": "mpclib/Explicit MPC Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Explicit MPC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MPC Controller",
+      "referenceBlock": "mpclib/MPC Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "MPC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiple Explicit MPC Controllers",
+      "referenceBlock": "mpclib/Multiple Explicit MPC Controllers",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Multiple Explicit MPC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiple MPC Controllers",
+      "referenceBlock": "mpclib/Multiple MPC Controllers",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Multiple MPC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multistage Nonlinear MPC",
+      "referenceBlock": "mpclib/Multistage Nonlinear MPC",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NonlinearMPCMultistage",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Nonlinear MPC Controller",
+      "referenceBlock": "mpclib/Nonlinear MPC Controller",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "NonlinearMPC",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Adaptive Cruise Control System",
+      "referenceBlock": "mpclib/Automated Driving/Adaptive Cruise Control System",
+      "blockType": "Adaptivecruisecontrol(ACC)system",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Lane Keeping Assist System",
+      "referenceBlock": "mpclib/Automated Driving/Lane Keeping Assist System",
+      "blockType": "LaneKeepingAssist(LKA)System",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Path Following Control System",
+      "referenceBlock": "mpclib/Automated Driving/Path Following Control System",
+      "blockType": "Pathfollowingcontrol(PFC)system",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vehicle Path Planner System",
+      "referenceBlock": "mpclib/Automated Driving/Vehicle Path Planner System",
+      "blockType": "VehiclePathPlanner(VPP)system",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

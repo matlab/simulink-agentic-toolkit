@@ -1,0 +1,158 @@
+{
+  "commonBlocks": [
+    "Sources",
+    "Sinks",
+    "Filters",
+    "Dynamic Range Control",
+    "Features"
+  ],
+  "categories": [
+    {
+      "name": "audio-processing",
+      "description": "Core audio signal processing including effects, filtering, and dynamics",
+      "keywords": [
+        "filter",
+        "effect",
+        "compressor",
+        "eq",
+        "dynamics"
+      ]
+    },
+    {
+      "name": "audio-io",
+      "description": "Audio input/output from devices, files, and generators",
+      "keywords": [
+        "source",
+        "sink",
+        "microphone",
+        "speaker",
+        "player"
+      ]
+    },
+    {
+      "name": "audio-analysis",
+      "description": "Audio measurement, feature extraction, and signal analysis",
+      "keywords": [
+        "feature",
+        "measurement",
+        "mfcc",
+        "loudness",
+        "spectral"
+      ]
+    },
+    {
+      "name": "deep-learning",
+      "description": "Neural network-based audio processing models",
+      "keywords": [
+        "deep",
+        "learning",
+        "neural",
+        "network",
+        "inference"
+      ]
+    },
+    {
+      "name": "utilities",
+      "description": "Demos, information, and user-defined extensions",
+      "keywords": [
+        "demo",
+        "info",
+        "custom",
+        "user",
+        "function"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Deep Learning",
+      "value": "deep-learning"
+    },
+    {
+      "block": "Demos",
+      "value": "utilities"
+    },
+    {
+      "block": "Dynamic Range Control",
+      "value": "audio-processing"
+    },
+    {
+      "block": "Effects",
+      "value": "audio-processing"
+    },
+    {
+      "block": "Features",
+      "value": "audio-analysis"
+    },
+    {
+      "block": "Filters",
+      "value": "audio-processing"
+    },
+    {
+      "block": "Info",
+      "value": "utilities"
+    },
+    {
+      "block": "Measurements",
+      "value": "audio-analysis"
+    },
+    {
+      "block": "Sinks",
+      "value": "audio-io"
+    },
+    {
+      "block": "Sources",
+      "value": "audio-io"
+    },
+    {
+      "block": "User-Defined Functions",
+      "value": "utilities"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Deep Learning",
+      "value": "Apply trained deep neural networks to audio signals for tasks like speech enhancement, source separation, or sound classification — use when data-driven audio processing outperforms classical algorithms"
+    },
+    {
+      "block": "Demos",
+      "value": "Access demonstration models and examples showcasing Audio Toolbox capabilities — use as starting points or reference implementations for audio processing workflows"
+    },
+    {
+      "block": "Dynamic Range Control",
+      "value": "Apply compression, expansion, limiting, or gating to control audio signal amplitude — use to prevent clipping, reduce dynamic range for broadcast, or shape transient response"
+    },
+    {
+      "block": "Effects",
+      "value": "Apply audio effects such as reverb, chorus, flanger, distortion, or delay — use for creative sound design or modeling audio processing chains in real-time applications"
+    },
+    {
+      "block": "Features",
+      "value": "Extract audio features like MFCCs, spectral centroid, pitch, or zero-crossing rate — use for audio analysis, speech recognition preprocessing, or music information retrieval"
+    },
+    {
+      "block": "Filters",
+      "value": "Design and apply audio filters including parametric EQ, crossovers, shelving, and octave-band filters — use for frequency-selective processing in audio systems"
+    },
+    {
+      "block": "Info",
+      "value": "Display Audio Toolbox version and configuration information — use to verify toolbox installation and compatibility"
+    },
+    {
+      "block": "Measurements",
+      "value": "Measure audio signal properties like loudness (LUFS), THD, SNR, or frequency response — use for audio quality assessment and standards compliance testing"
+    },
+    {
+      "block": "Sinks",
+      "value": "Output audio to speakers, files, or audio devices — use as the final stage in an audio processing pipeline to play back or record processed signals"
+    },
+    {
+      "block": "Sources",
+      "value": "Generate or acquire audio from microphones, files, oscillators, or noise generators — use as input to audio processing pipelines for real-time capture or offline analysis"
+    },
+    {
+      "block": "User-Defined Functions",
+      "value": "Embed custom MATLAB functions or System objects into the audio processing stream — use when built-in blocks do not cover your specific audio algorithm"
+    }
+  ]
+}

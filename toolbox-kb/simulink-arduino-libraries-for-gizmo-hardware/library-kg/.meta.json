@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:12",
+  "generatedAtDatenum": 740213.74458880792,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Arduino Libraries for Gizmo Hardware"
+  ],
+  "blockCount": 28,
+  "categoryCount": 3,
+  "libraryFingerprints": {
+    "Simulink_Arduino_Libraries_for_Gizmo_Hardware": {
+      "blockCount": 28
+    }
+  }
+}

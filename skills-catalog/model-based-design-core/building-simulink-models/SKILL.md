@@ -4,7 +4,7 @@ description: Builds and edits Simulink, System Composer, Stateflow, and Simscape
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.4"
+  version: "1.5"
 ---
 
 # Building Models
@@ -104,7 +104,9 @@ Prefer code-generation-safe names for blocks, signals, and variables:
 
 Use the block's **display name** in the `type` field. Do not construct or guess library paths.
 
-- **Customer library blocks (from `.satk/reuse-libraries.json`):** pass both `type` AND `ReferenceBlock` fields. Set `type` to the block's display name and `ReferenceBlock` to the full library path from the library KG.
+- **Custom library blocks (from `satk-libraries.json`):** pass both `type` AND `ReferenceBlock` fields. Set `type` to the block's display name and `ReferenceBlock` to the full library path from the library KG.
+
+- **Toolbox KB blocks (from `activeToolboxes`):** Use them exactly like custom library blocks — reference the `type` and `ReferenceBlock` fields from the toolbox category page in the library KG.
 
 - **Built-in Simulink blocks:** Use the BlockType directly: `Gain`, `Sum`, `Constant`, `Integrator`, `SubSystem`, `Scope`
 - **Library blocks (Simscape, Aerospace, DSP, Communications, etc.):** Use the display name as it appears in the Simulink Library Browser: `Voltage Source`, `Resistor`, `DC Motor`, `Solver Configuration`, `6DOF (Euler Angles)`

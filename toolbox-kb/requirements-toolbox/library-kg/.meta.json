@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:11",
+  "generatedAtDatenum": 740213.74457635416,
+  "generatorVersion": 4,
+  "libraries": [
+    "Requirements Toolbox"
+  ],
+  "blockCount": 5,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Requirements_Toolbox": {
+      "blockCount": 5
+    }
+  }
+}

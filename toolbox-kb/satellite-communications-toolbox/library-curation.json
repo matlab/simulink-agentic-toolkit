@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "DVBS-APSK Modulator Baseband",
+    "DVBS-APSK Demodulator Baseband"
+  ],
+  "categories": [
+    {
+      "name": "satellite-modulation",
+      "description": "DVB-S satellite communication modulation and demodulation",
+      "keywords": [
+        "dvbs",
+        "apsk",
+        "satellite",
+        "modulator",
+        "demodulator"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "DVBS-APSK Demodulator Baseband",
+      "value": "satellite-modulation"
+    },
+    {
+      "block": "DVBS-APSK Modulator Baseband",
+      "value": "satellite-modulation"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "DVBS-APSK Demodulator Baseband",
+      "value": "Demodulate DVB-S2/S2X APSK signals at baseband — use for satellite receiver design, link budget verification, or DVB standard compliance testing"
+    },
+    {
+      "block": "DVBS-APSK Modulator Baseband",
+      "value": "Modulate data using DVB-S2/S2X APSK at baseband — use for satellite transmitter design, waveform generation, or DVB standard modulation"
+    }
+  ]
+}

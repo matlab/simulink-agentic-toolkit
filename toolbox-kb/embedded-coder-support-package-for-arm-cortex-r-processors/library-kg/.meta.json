@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:09",
+  "generatedAtDatenum": 740213.74455912039,
+  "generatorVersion": 4,
+  "libraries": [
+    "Embedded Coder Support Package for ARM Cortex-R Processors"
+  ],
+  "blockCount": 2,
+  "categoryCount": 1,
+  "libraryFingerprints": {
+    "Embedded_Coder_Support_Package_for_ARM_Cortex_R_Processors": {
+      "blockCount": 2
+    }
+  }
+}

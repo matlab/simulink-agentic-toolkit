@@ -14,7 +14,7 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 |-------|---------------------------|
 | `building-simulink-models` | Best practices for structural model changes, for example, adding blocks, wiring, layout |
 | `configuring-block-policy` | Create and manage `.satk/block-policy.json` to control which blocks the agent can use and which parameters it can modify |
-| `curating-library-kg` | Curate the library knowledge index — mark common blocks, define categories, and improve descriptions for better agent block selection |
+| `simulink-curating-library-kg` | Curate the library knowledge index — mark common blocks, define categories, and improve descriptions for better agent block selection |
 | `filing-bug-reports` | Generate standalone bug reports for reproducing, investigating, and fixing issues |
 | `generate-requirement-drafts` | Generate requirements. This needs Requirements Toolbox (.slreqx) with traceability links when available, falls back to structured YAML |
 | `managing-simulink-projects` | Manage MATLAB projects for Simulink workflows — path management, file registration, labels, and source control configuration |
@@ -42,6 +42,7 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 | `inject-faults` | Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation (requires Simulink Fault Analyzer) |
 | `manage-safety-analysis` | Create and manage FMEA spreadsheets, fault trees, and safety analysis documents using Safety Analysis Manager (requires Simulink Fault Analyzer) |
 | `resolve-design-errors` | Detect Simulink Design Verifier design errors (division-by-zero, overflow, dead logic, out-of-bounds), perform root cause analysis with cascade detection and locality scoring, and propose ranked fixes (requires Simulink Design Verifier and Simulink Check) |
+| `simulink-explain-missing-coverage` | Explain why Simulink Coverage objectives went uncovered — separate provably-dead outcomes (SLDV) from reachable-but-untested ones, trace each to its controllable inputs (Model Slicer), and recommend a test, filter, or design review (requires Simulink Coverage, Design Verifier, Simulink Check) |
 | `testing-simulink-models` | Test Simulink models via two paths — ephemeral Gherkin-based tests (`model_test`) for quick validation, or persistent Simulink Test cases authored from requirements or behavioral specs |
 
 ### [Simulink Simulation](simulink-simulation/) 
@@ -78,6 +79,22 @@ Control system design and analysis skills for Simulink models
 | `simulink-linearize` | Linearize Simulink models to obtain LTI or LPV representations (requires Simulink Control Design) |
 | `simulink-frequency-response` | Obtain frequency response from Simulink models using simulation-based estimation (requires Simulink Control Design) |
 | `simulink-control-motors` | Implement motor control with FOC, sensorless, six-step, and field weakening for PMSM, BLDC, induction, and SynRM motors (requires Motor Control Blockset) |
+
+### [Simulink Environment Fundamentals](simulink-environment-fundamentals/)
+
+Core Simulink environment capabilities, including discovering shipped example models
+
+| Skill | Description |
+|-------|---------------------------|
+| `finding-simulink-examples` | Search the full catalog of shipped MathWorks example models with the `invokeModelFinder` helper — find, show, or open an example that demonstrates a concept |
+
+### [Signal Processing](signal-processing/)
+
+Signal processing skills for Simulink models using DSP System Toolbox
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-streaming-dsp` | Build frame-based streaming DSP models in Simulink — correct block selection, frame configuration, tunable filters (R2023b+), buffering/multirate, variable-rate decimation (requires DSP System Toolbox) |
 
 ---
 

@@ -1,0 +1,342 @@
+{
+  "commonBlocks": [
+    "FMU",
+    "D Flip-Flop",
+    "Degrees to Radians",
+    "Radians to Degrees",
+    "Idealized ADC quantizer"
+  ],
+  "categories": [
+    {
+      "name": "initialized-dynamics",
+      "description": "Transfer functions and state-space with initial conditions",
+      "keywords": [
+        "transfer",
+        "state-space",
+        "initial",
+        "discrete",
+        "zero-pole"
+      ]
+    },
+    {
+      "name": "signal-analysis",
+      "description": "Spectrum analysis and correlation sinks",
+      "keywords": [
+        "spectrum",
+        "psd",
+        "correlator",
+        "analyzer",
+        "averaging"
+      ]
+    },
+    {
+      "name": "digital-logic",
+      "description": "Flip-flops, latches, and clock blocks",
+      "keywords": [
+        "flip-flop",
+        "latch",
+        "clock",
+        "digital",
+        "edge"
+      ]
+    },
+    {
+      "name": "coordinate-transforms",
+      "description": "Coordinate system and unit conversions",
+      "keywords": [
+        "cartesian",
+        "polar",
+        "spherical",
+        "degrees",
+        "celsius"
+      ]
+    },
+    {
+      "name": "linearization-utilities",
+      "description": "Blocks for linearization and steady-state detection",
+      "keywords": [
+        "linearization",
+        "derivative",
+        "transport",
+        "steady",
+        "fmu"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Auto Correlator",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "Averaging Power Spectral Density",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "Averaging Spectrum Analyzer",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "Cartesian to Polar",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Cartesian to Spherical",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Celsius to Fahrenheit",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Clock",
+      "value": "digital-logic"
+    },
+    {
+      "block": "Cross Correlator",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "D Flip-Flop",
+      "value": "digital-logic"
+    },
+    {
+      "block": "D Latch",
+      "value": "digital-logic"
+    },
+    {
+      "block": "Degrees to Radians",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Discrete Transfer Fcn (with initial outputs)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "Discrete Transfer Fcn (with initial states)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "Discrete Zero-Pole (with initial outputs)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "Discrete Zero-Pole (with initial states)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "FMU",
+      "value": "linearization-utilities"
+    },
+    {
+      "block": "Fahrenheit to Celsius",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Floating Bar Plot",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "Idealized ADC quantizer",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "J-K Flip-Flop",
+      "value": "digital-logic"
+    },
+    {
+      "block": "Matrix Interpolation",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "Polar to Cartesian",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "Power Spectral Density",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "Radians to Degrees",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "S-R Flip-Flop",
+      "value": "digital-logic"
+    },
+    {
+      "block": "Spectrum Analyzer",
+      "value": "signal-analysis"
+    },
+    {
+      "block": "Spherical to Cartesian",
+      "value": "coordinate-transforms"
+    },
+    {
+      "block": "State-Space (with initial outputs)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "Switched derivative for linearization",
+      "value": "linearization-utilities"
+    },
+    {
+      "block": "Switched transport delay for linearization",
+      "value": "linearization-utilities"
+    },
+    {
+      "block": "Transfer Fcn (with initial outputs)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "Transfer Fcn (with initial states)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "Zero-Pole (with initial outputs)",
+      "value": "initialized-dynamics"
+    },
+    {
+      "block": "Zero-Pole (with initial states)",
+      "value": "initialized-dynamics"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Auto Correlator",
+      "value": "Compute and display the autocorrelation of a signal — use for analyzing signal periodicity and spectral content"
+    },
+    {
+      "block": "Averaging Power Spectral Density",
+      "value": "Compute averaged PSD over multiple windows — use for frequency-domain power analysis with reduced variance"
+    },
+    {
+      "block": "Averaging Spectrum Analyzer",
+      "value": "Display averaged frequency spectrum — use for stable spectral visualization of noisy signals"
+    },
+    {
+      "block": "Cartesian to Polar",
+      "value": "Convert Cartesian coordinates to polar — use for translating x,y positions to radius and angle"
+    },
+    {
+      "block": "Cartesian to Spherical",
+      "value": "Convert Cartesian coordinates to spherical — use for translating x,y,z to radius, azimuth, and elevation"
+    },
+    {
+      "block": "Celsius to Fahrenheit",
+      "value": "Convert temperature from Celsius to Fahrenheit — use for unit conversion in thermal models"
+    },
+    {
+      "block": "Clock",
+      "value": "Generate a digital clock signal — use for providing edge-triggered timing to flip-flop circuits"
+    },
+    {
+      "block": "Cross Correlator",
+      "value": "Compute and display cross-correlation between two signals — use for measuring time delay or similarity"
+    },
+    {
+      "block": "D Flip-Flop",
+      "value": "Edge-triggered D flip-flop — use for sampling and holding a digital signal on clock edges"
+    },
+    {
+      "block": "D Latch",
+      "value": "Level-sensitive D latch — use for transparent data passing when enable is active"
+    },
+    {
+      "block": "Degrees to Radians",
+      "value": "Convert angle from degrees to radians — use for interfacing degree-based inputs with trig functions"
+    },
+    {
+      "block": "Discrete Transfer Fcn (with initial outputs)",
+      "value": "Discrete transfer function with specified initial output values — use when you need a known output at t=0 for bumpless transfer or initialization"
+    },
+    {
+      "block": "Discrete Transfer Fcn (with initial states)",
+      "value": "Discrete transfer function with specified initial state vector — use when internal filter states must match a known operating point"
+    },
+    {
+      "block": "Discrete Zero-Pole (with initial outputs)",
+      "value": "Discrete zero-pole model with specified initial outputs — use for initialized discrete filters defined by zeros and poles"
+    },
+    {
+      "block": "Discrete Zero-Pole (with initial states)",
+      "value": "Discrete zero-pole model with specified initial states — use when discrete filter states must be preset"
+    },
+    {
+      "block": "FMU",
+      "value": "Import a Functional Mock-up Unit into Simulink — use for co-simulating models from other tools via the FMI standard"
+    },
+    {
+      "block": "Fahrenheit to Celsius",
+      "value": "Convert temperature from Fahrenheit to Celsius — use for unit conversion in thermal models"
+    },
+    {
+      "block": "Floating Bar Plot",
+      "value": "Display signals as floating bar chart — use for visualizing ranges or intervals during simulation"
+    },
+    {
+      "block": "Idealized ADC quantizer",
+      "value": "Quantize a signal to n-bit ADC resolution — use for modeling analog-to-digital conversion effects without timing"
+    },
+    {
+      "block": "J-K Flip-Flop",
+      "value": "Edge-triggered J-K flip-flop — use for toggle and set/reset digital logic with clock synchronization"
+    },
+    {
+      "block": "Matrix Interpolation",
+      "value": "Interpolate within a matrix of data — use for multi-dimensional lookup with interpolation between grid points"
+    },
+    {
+      "block": "Polar to Cartesian",
+      "value": "Convert polar coordinates to Cartesian — use for translating radius and angle to x,y positions"
+    },
+    {
+      "block": "Power Spectral Density",
+      "value": "Compute single-window PSD of a signal — use for quick frequency-domain power distribution analysis"
+    },
+    {
+      "block": "Radians to Degrees",
+      "value": "Convert angle from radians to degrees — use for displaying angular outputs in human-readable units"
+    },
+    {
+      "block": "S-R Flip-Flop",
+      "value": "Set-Reset flip-flop — use for basic bistable storage with separate set and reset inputs"
+    },
+    {
+      "block": "Spectrum Analyzer",
+      "value": "Display frequency spectrum of a signal — use for real-time spectral visualization during simulation"
+    },
+    {
+      "block": "Spherical to Cartesian",
+      "value": "Convert spherical coordinates to Cartesian — use for translating radius, azimuth, elevation to x,y,z"
+    },
+    {
+      "block": "State-Space (with initial outputs)",
+      "value": "Continuous state-space model with specified initial outputs — use when output must start at a known value"
+    },
+    {
+      "block": "Switched derivative for linearization",
+      "value": "Derivative block that switches behavior for linearization — use when standard derivative blocks cause issues during model linearization"
+    },
+    {
+      "block": "Switched transport delay for linearization",
+      "value": "Transport delay that switches for linearization — use when standard transport delay causes issues during trim or linearization"
+    },
+    {
+      "block": "Transfer Fcn (with initial outputs)",
+      "value": "Continuous transfer function with specified initial outputs — use for bumpless initialization of continuous filters"
+    },
+    {
+      "block": "Transfer Fcn (with initial states)",
+      "value": "Continuous transfer function with specified initial state vector — use when filter states must match a trim condition"
+    },
+    {
+      "block": "Zero-Pole (with initial outputs)",
+      "value": "Continuous zero-pole model with specified initial outputs — use for initialized continuous filters defined by zeros and poles"
+    },
+    {
+      "block": "Zero-Pole (with initial states)",
+      "value": "Continuous zero-pole model with specified initial states — use when filter internal states must be preset"
+    }
+  ]
+}

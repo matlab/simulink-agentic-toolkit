@@ -1,0 +1,39 @@
+{
+  "commonBlocks": [
+    "Eye Measurement",
+    "Jitter Measurement"
+  ],
+  "categories": [
+    {
+      "name": "signal-integrity",
+      "description": "High-speed serial link signal quality measurements",
+      "keywords": [
+        "eye",
+        "jitter",
+        "signal",
+        "integrity",
+        "measurement"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Eye Measurement",
+      "value": "signal-integrity"
+    },
+    {
+      "block": "Jitter Measurement",
+      "value": "signal-integrity"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Eye Measurement",
+      "value": "Measure eye diagram parameters such as opening, height, and width — use for serial link signal quality assessment and compliance testing"
+    },
+    {
+      "block": "Jitter Measurement",
+      "value": "Measure jitter components including deterministic and random jitter — use for serial link timing analysis and transmitter/receiver characterization"
+    }
+  ]
+}

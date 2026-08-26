@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-19T17:52:10",
+  "generatedAtDatenum": 740213.74457061337,
+  "generatorVersion": 4,
+  "libraries": [
+    "Model Predictive Control Toolbox"
+  ],
+  "blockCount": 12,
+  "categoryCount": 2,
+  "libraryFingerprints": {
+    "Model_Predictive_Control_Toolbox": {
+      "blockCount": 12
+    }
+  }
+}

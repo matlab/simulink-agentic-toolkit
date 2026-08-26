@@ -1,0 +1,99 @@
+{
+  "libraryName": "Embedded Coder Support Package for AMD SoC Devices",
+  "generatedAt": "2026-08-19T14:30:54",
+  "blockCount": 9,
+  "blocks": [
+    {
+      "name": "Linux Task",
+      "referenceBlock": "zynqlib/Linux Task",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Linux Task",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "VxWorks Task",
+      "referenceBlock": "zynqlib/VxWorks Task",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "VxWorks Task",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4-Interface Read",
+      "referenceBlock": "zynqlib/AXI4-Interface Read",
+      "blockType": "AXI4-InterfaceRead",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4-Interface Write",
+      "referenceBlock": "zynqlib/AXI4-Interface Write",
+      "blockType": "AXI4-InterfaceWrite",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4-Stream IIO Read",
+      "referenceBlock": "zynqlib/AXI4-Stream IIO Read",
+      "blockType": "matlabshared.libiio.axistream.read",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "AXI4-Stream IIO Write",
+      "referenceBlock": "zynqlib/AXI4-Stream IIO Write",
+      "blockType": "matlabshared.libiio.axistream.write",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Blockset Name2",
+      "referenceBlock": "zynqlib/Blockset Name2",
+      "blockType": "LibraryName",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Receive",
+      "referenceBlock": "zynqlib/UDP Receive",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Receive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "UDP Send",
+      "referenceBlock": "zynqlib/UDP Send",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "UDP Send",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

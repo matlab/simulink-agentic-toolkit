@@ -1,0 +1,2313 @@
+{
+  "libraryName": "HDL Coder",
+  "generatedAt": "2026-08-19T14:31:00",
+  "blockCount": 255,
+  "blocks": [
+    {
+      "name": "Commonly Used Blocks",
+      "referenceBlock": "hdlsllib/Commonly Used Blocks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Wrap To Zero",
+      "referenceBlock": "hdlsllib/Discontinuities/Wrap To Zero",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Wrap To Zero",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tapped Delay Enabled Resettable Synchronous",
+      "referenceBlock": "hdlsllib/Discrete/Tapped Delay Enabled Resettable Synchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Tapped Delay Enabled Resettable Synchronous",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tapped Delay Enabled Synchronous",
+      "referenceBlock": "hdlsllib/Discrete/Tapped Delay Enabled Synchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Tapped Delay Enabled Synchronous",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tapped Delay Resettable Synchronous",
+      "referenceBlock": "hdlsllib/Discrete/Tapped Delay Resettable Synchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Tapped Delay Resettable Synchronous",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unit Delay Enabled Resettable Synchronous",
+      "referenceBlock": "hdlsllib/Discrete/Unit Delay Enabled Resettable Synchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Unit Delay Enabled Resettable Synchronous",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unit Delay Enabled Synchronous",
+      "referenceBlock": "hdlsllib/Discrete/Unit Delay Enabled Synchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Unit Delay Enabled Synchronous",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unit Delay Resettable Synchronous",
+      "referenceBlock": "hdlsllib/Discrete/Unit Delay Resettable Synchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Unit Delay Resettable Synchronous",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Deserializer1D",
+      "referenceBlock": "hdlsllib/HDL Operations/Deserializer1D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Deserializer1D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiply-Accumulate",
+      "referenceBlock": "hdlsllib/HDL Operations/Multiply-Accumulate",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Multiply-Accumulate",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Multiply-Add",
+      "referenceBlock": "hdlsllib/HDL Operations/Multiply-Add",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Multiply-Add",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Serializer1D",
+      "referenceBlock": "hdlsllib/HDL Operations/Serializer1D",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Serializer1D",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dual Port RAM",
+      "referenceBlock": "hdlsllib/HDL RAMs/Dual Port RAM",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Dual-port RAM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dual Rate Dual Port RAM",
+      "referenceBlock": "hdlsllib/HDL RAMs/Dual Rate Dual Port RAM",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Dual-rate dual-port RAM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "HDL FIFO",
+      "referenceBlock": "hdlsllib/HDL RAMs/HDL FIFO",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "HDL_FIFO",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Dual Port RAM",
+      "referenceBlock": "hdlsllib/HDL RAMs/Simple Dual Port RAM",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simple Dual-port RAM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single Port RAM",
+      "referenceBlock": "hdlsllib/HDL RAMs/Single Port RAM",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Single-port RAM",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Enabled Synchronous Subsystem",
+      "referenceBlock": "hdlsllib/HDL Subsystems/Enabled Synchronous Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Enabled Synchronous Subsystem",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resettable Synchronous Subsystem",
+      "referenceBlock": "hdlsllib/HDL Subsystems/Resettable Synchronous Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Resettable Synchronous Subsystem",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Synchronous Subsystem",
+      "referenceBlock": "hdlsllib/HDL Subsystems/Synchronous Subsystem",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Synchronous Subsystem",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Concat",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit Concat",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bit Concat",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Reduce",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit Reduce",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bit Reduce",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Rotate",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit Rotate",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bit Rotate",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Shift",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit Shift",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bit Shift",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Slice",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit Slice",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bit Slice",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bits to Word",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bits to Word",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Bits to Word",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Constant",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Compare To Constant",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Compare To Constant",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Compare To Zero",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Compare To Zero",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Compare To Zero",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Fall Negative",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Detect Fall Negative",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Fall Negative",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Fall Nonpositive",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Detect Fall Nonpositive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Fall Nonpositive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Rise Nonnegative",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Detect Rise Nonnegative",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Rise Nonnegative",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Rise Positive",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Detect Rise Positive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Detect Rise Positive",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interval Test",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Interval Test",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Interval Test",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Word to Bits",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Word to Bits",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Word to Bits",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cosine HDL Optimized",
+      "referenceBlock": "hdlsllib/Lookup Tables/Cosine HDL Optimized",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sine and Cosine HDL optimized block",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Decrement Real World",
+      "referenceBlock": "hdlsllib/Math Operations/Decrement Real World",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Real World Value Decrement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Decrement Stored Integer",
+      "referenceBlock": "hdlsllib/Math Operations/Decrement Stored Integer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stored Integer Value Decrement",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Increment Real World",
+      "referenceBlock": "hdlsllib/Math Operations/Increment Real World",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Real World Value Increment",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Increment Stored Integer",
+      "referenceBlock": "hdlsllib/Math Operations/Increment Stored Integer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Stored Integer Value Increment",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ports & Subsystems",
+      "referenceBlock": "hdlsllib/Ports & Subsystems",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Routing",
+      "referenceBlock": "hdlsllib/Signal Routing",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinks",
+      "referenceBlock": "hdlsllib/Sinks",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ddlogger",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/ddlogger",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Constant",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Constant1",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Constant1",
+      "blockType": "Constant",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reader",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Reader",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Writer",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Writer",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "mid",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/mid",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "event",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/event",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "info",
+      "referenceBlock": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/info",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logger",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Logger",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "rteLogger",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ToFcns",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Power ON",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Power ON",
+      "blockType": "EntityGenerator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "RTE",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/RTE",
+      "blockType": "MATLABDiscreteEventSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Switch",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Switch",
+      "blockType": "EntityInputSwitch",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "rteDispatchRunnable",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/rteDispatchRunnable",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assertion",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/Assertion",
+      "blockType": "Assertion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "isWireless",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/isWireless",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "fcnIdx",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/fcnIdx",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "rteDispatchRT",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/rteDispatchRT",
+      "blockType": "TriggerPort",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assertion",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/Assertion",
+      "blockType": "Assertion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Terminator",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/Terminator",
+      "blockType": "Terminator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "isWireless",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/isWireless",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "fcnIdx",
+      "referenceBlock": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/fcnIdx",
+      "blockType": "ArgIn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sources",
+      "referenceBlock": "hdlsllib/Sources",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB Function",
+      "referenceBlock": "hdlsllib/User-Defined Functions/MATLAB Function",
+      "blockType": "MATLABFunction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Backlash",
+      "referenceBlock": "hdlsllib/Discontinuities/Backlash",
+      "blockType": "Backlash",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Coulomb & Viscous Friction",
+      "referenceBlock": "hdlsllib/Discontinuities/Coulomb & Viscous Friction",
+      "blockType": "CoulombicandViscousFriction",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dead Zone",
+      "referenceBlock": "hdlsllib/Discontinuities/Dead Zone",
+      "blockType": "DeadZone",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dead Zone Dynamic",
+      "referenceBlock": "hdlsllib/Discontinuities/Dead Zone Dynamic",
+      "blockType": "DeadZoneDynamic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hit  Crossing",
+      "referenceBlock": "hdlsllib/Discontinuities/Hit  Crossing",
+      "blockType": "HitCross",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relay",
+      "referenceBlock": "hdlsllib/Discontinuities/Relay",
+      "blockType": "Relay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Saturation",
+      "referenceBlock": "hdlsllib/Discontinuities/Saturation",
+      "blockType": "Saturate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Saturation Dynamic",
+      "referenceBlock": "hdlsllib/Discontinuities/Saturation Dynamic",
+      "blockType": "SaturationDynamic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Delay",
+      "referenceBlock": "hdlsllib/Discrete/Delay",
+      "blockType": "Delay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete Transfer Fcn",
+      "referenceBlock": "hdlsllib/Discrete/Discrete Transfer Fcn",
+      "blockType": "DiscreteTransferFcn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete FIR Filter",
+      "referenceBlock": "hdlsllib/Discrete/Discrete FIR Filter",
+      "blockType": "DiscreteFir",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete PID Controller",
+      "referenceBlock": "hdlsllib/Discrete/Discrete PID Controller",
+      "blockType": "PIDController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete-Time Integrator",
+      "referenceBlock": "hdlsllib/Discrete/Discrete-Time Integrator",
+      "blockType": "DiscreteIntegrator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Enabled Delay",
+      "referenceBlock": "hdlsllib/Discrete/Enabled Delay",
+      "blockType": "Delay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Enabled Resettable Delay",
+      "referenceBlock": "hdlsllib/Discrete/Enabled Resettable Delay",
+      "blockType": "Delay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Memory",
+      "referenceBlock": "hdlsllib/Discrete/Memory",
+      "blockType": "Memory",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Resettable Delay",
+      "referenceBlock": "hdlsllib/Discrete/Resettable Delay",
+      "blockType": "Delay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tapped Delay",
+      "referenceBlock": "hdlsllib/Discrete/Tapped Delay",
+      "blockType": "TappedDelayLine",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unit Delay",
+      "referenceBlock": "hdlsllib/Discrete/Unit Delay",
+      "blockType": "UnitDelay",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Zero-Order Hold",
+      "referenceBlock": "hdlsllib/Discrete/Zero-Order Hold",
+      "blockType": "ZeroOrderHold",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ACosh",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/ACosh",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ASinh",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/ASinh",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "ATanh",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/ATanh",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Abs",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Abs",
+      "blockType": "Abs",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Acos",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Acos",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Add",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Add",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Asin",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Asin",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Atan",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Atan",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Atan2",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Atan2",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bias",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Bias",
+      "blockType": "Bias",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Ceil",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Ceil",
+      "blockType": "Rounding",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Conjugate",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Conjugate",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cos",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Cos",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Cosh",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Cosh",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Conversion",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Data Type Conversion",
+      "blockType": "DataTypeConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete Transfer Fcn",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Discrete Transfer Fcn",
+      "blockType": "DiscreteTransferFcn",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete FIR Filter",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Discrete FIR Filter",
+      "blockType": "DiscreteFir",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete PID Controller",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Discrete PID Controller",
+      "blockType": "PIDController",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete-Time Integrator",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Discrete-Time Integrator",
+      "blockType": "DiscreteIntegrator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Divide",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Divide",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Exp",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Exp",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fix",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Fix",
+      "blockType": "Rounding",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Float Typecast",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Float Typecast",
+      "blockType": "FloatTypecast",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Floor",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Floor",
+      "blockType": "Rounding",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gain",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Gain",
+      "blockType": "Gain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hermitian",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Hermitian",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Hypot",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Hypot",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Log",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Log",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Log10",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Log10",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnitude Square",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Magnitude Square",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnitude-Angle to Complex",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Magnitude-Angle to Complex",
+      "blockType": "MagnitudeAngleToComplex",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Math Reciprocal",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Math Reciprocal",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Max",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Max",
+      "blockType": "MinMax",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Min",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Min",
+      "blockType": "MinMax",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Mod",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Mod",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pow",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Pow",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Pow10",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Pow10",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Product",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Product",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Product of Elements",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Product of Elements",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reciprocal",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Reciprocal",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reciprocal Sqrt",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Reciprocal Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relational Operator",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Relational Operator",
+      "blockType": "RelationalOperator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rem",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Rem",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Round",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Round",
+      "blockType": "Rounding",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sign",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Sign",
+      "blockType": "Signum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "SignedSqrt",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/SignedSqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sin",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Sin",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sincos",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Sincos",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sinh",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Sinh",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sqrt",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Square",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Square",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subtract",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Subtract",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sum of Elements",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Sum of Elements",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tan",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Tan",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Tanh",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Tanh",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Transpose",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Transpose",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unary Minus",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/Unary Minus",
+      "blockType": "UnaryMinus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "cos + jsin",
+      "referenceBlock": "hdlsllib/HDL Floating Point Operations/cos + jsin",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dual Port RAM System",
+      "referenceBlock": "hdlsllib/HDL RAMs/Dual Port RAM System",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Dual Port RAM System",
+      "referenceBlock": "hdlsllib/HDL RAMs/Simple Dual Port RAM System",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Simple Tri Port RAM System",
+      "referenceBlock": "hdlsllib/HDL RAMs/Simple Tri Port RAM System",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Single Port RAM System",
+      "referenceBlock": "hdlsllib/HDL RAMs/Single Port RAM System",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "True Dual Port RAM System",
+      "referenceBlock": "hdlsllib/HDL RAMs/True Dual Port RAM System",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "State Control",
+      "referenceBlock": "hdlsllib/HDL Subsystems/State Control",
+      "blockType": "StateControl",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Clear",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit Clear",
+      "blockType": "BitClear",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit Set",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit Set",
+      "blockType": "BitSet",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bit to Integer Converter",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bit to Integer Converter",
+      "blockType": "BittoIntegerConverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bitwise Operator",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Bitwise Operator",
+      "blockType": "BitwiseOperator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Change",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Detect Change",
+      "blockType": "DetectChange",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Decrease",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Detect Decrease",
+      "blockType": "DetectDecrease",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Detect Increase",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Detect Increase",
+      "blockType": "DetectIncrease",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Extract Bits",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Extract Bits",
+      "blockType": "ExtractBits",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Integer to Bit Converter",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Integer to Bit Converter",
+      "blockType": "IntegertoBitConverter",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Interval Test Dynamic",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Interval Test Dynamic",
+      "blockType": "IntervalTestDynamic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Logical Operator",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Logical Operator",
+      "blockType": "Logic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Relational Operator",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Relational Operator",
+      "blockType": "RelationalOperator",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Shift Arithmetic",
+      "referenceBlock": "hdlsllib/Logic and Bit Operations/Shift Arithmetic",
+      "blockType": "ArithShift",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "1-D Lookup Table",
+      "referenceBlock": "hdlsllib/Lookup Tables/1-D Lookup Table",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "2-D Lookup Table",
+      "referenceBlock": "hdlsllib/Lookup Tables/2-D Lookup Table",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Direct Lookup Table (n-D)",
+      "referenceBlock": "hdlsllib/Lookup Tables/Direct Lookup Table (n-D)",
+      "blockType": "LookupNDDirect",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Prelookup",
+      "referenceBlock": "hdlsllib/Lookup Tables/Prelookup",
+      "blockType": "PreLookup",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sine HDL Optimized",
+      "referenceBlock": "hdlsllib/Lookup Tables/Sine HDL Optimized",
+      "blockType": "SineandCosineHDLoptimizedblock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "n-D Lookup Table",
+      "referenceBlock": "hdlsllib/Lookup Tables/n-D Lookup Table",
+      "blockType": "Lookup_n-D",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Abs",
+      "referenceBlock": "hdlsllib/Math Operations/Abs",
+      "blockType": "Abs",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Add",
+      "referenceBlock": "hdlsllib/Math Operations/Add",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assignment",
+      "referenceBlock": "hdlsllib/Math Operations/Assignment",
+      "blockType": "Assignment",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bias",
+      "referenceBlock": "hdlsllib/Math Operations/Bias",
+      "blockType": "Bias",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex to Magnitude-Angle",
+      "referenceBlock": "hdlsllib/Math Operations/Complex to Magnitude-Angle",
+      "blockType": "ComplexToMagnitudeAngle",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Complex to Real-Imag",
+      "referenceBlock": "hdlsllib/Math Operations/Complex to Real-Imag",
+      "blockType": "ComplexToRealImag",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Divide",
+      "referenceBlock": "hdlsllib/Math Operations/Divide",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Dot Product",
+      "referenceBlock": "hdlsllib/Math Operations/Dot Product",
+      "blockType": "DotProduct",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Gain",
+      "referenceBlock": "hdlsllib/Math Operations/Gain",
+      "blockType": "Gain",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Magnitude-Angle to Complex",
+      "referenceBlock": "hdlsllib/Math Operations/Magnitude-Angle to Complex",
+      "blockType": "MagnitudeAngleToComplex",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Math Function",
+      "referenceBlock": "hdlsllib/Math Operations/Math Function",
+      "blockType": "Math",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Matrix Concatenate",
+      "referenceBlock": "hdlsllib/Math Operations/Matrix Concatenate",
+      "blockType": "Concatenate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MatrixMultiply",
+      "referenceBlock": "hdlsllib/Math Operations/MatrixMultiply",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MinMax",
+      "referenceBlock": "hdlsllib/Math Operations/MinMax",
+      "blockType": "MinMax",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Product",
+      "referenceBlock": "hdlsllib/Math Operations/Product",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Product of Elements",
+      "referenceBlock": "hdlsllib/Math Operations/Product of Elements",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Real-Imag to Complex",
+      "referenceBlock": "hdlsllib/Math Operations/Real-Imag to Complex",
+      "blockType": "RealImagToComplex",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reciprocal",
+      "referenceBlock": "hdlsllib/Math Operations/Reciprocal",
+      "blockType": "Product",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reciprocal Sqrt",
+      "referenceBlock": "hdlsllib/Math Operations/Reciprocal Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Reshape",
+      "referenceBlock": "hdlsllib/Math Operations/Reshape",
+      "blockType": "Reshape",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sign",
+      "referenceBlock": "hdlsllib/Math Operations/Sign",
+      "blockType": "Signum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sqrt",
+      "referenceBlock": "hdlsllib/Math Operations/Sqrt",
+      "blockType": "Sqrt",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Subtract",
+      "referenceBlock": "hdlsllib/Math Operations/Subtract",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sum",
+      "referenceBlock": "hdlsllib/Math Operations/Sum",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sum of Elements",
+      "referenceBlock": "hdlsllib/Math Operations/Sum of Elements",
+      "blockType": "Sum",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Trigonometric Function",
+      "referenceBlock": "hdlsllib/Math Operations/Trigonometric Function",
+      "blockType": "Trigonometry",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Unary Minus",
+      "referenceBlock": "hdlsllib/Math Operations/Unary Minus",
+      "blockType": "UnaryMinus",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Vector Concatenate",
+      "referenceBlock": "hdlsllib/Math Operations/Vector Concatenate",
+      "blockType": "Concatenate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assertion",
+      "referenceBlock": "hdlsllib/Model Verification/Assertion",
+      "blockType": "Assertion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Discrete Gradient",
+      "referenceBlock": "hdlsllib/Model Verification/Check Discrete Gradient",
+      "blockType": "Checks_Gradient",
+      "description": "| du / dt | < 1",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check  Dynamic Gap",
+      "referenceBlock": "hdlsllib/Model Verification/Check  Dynamic Gap",
+      "blockType": "Checks_DGap",
+      "description": "u < min || max < u",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check  Dynamic Range",
+      "referenceBlock": "hdlsllib/Model Verification/Check  Dynamic Range",
+      "blockType": "Checks_DRange",
+      "description": "min < u < max",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check  Static Gap",
+      "referenceBlock": "hdlsllib/Model Verification/Check  Static Gap",
+      "blockType": "Checks_SGap",
+      "description": "u <= 0 || 100 <= u",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check  Static Range",
+      "referenceBlock": "hdlsllib/Model Verification/Check  Static Range",
+      "blockType": "Checks_SRange",
+      "description": "0 <= u <= 100",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Dynamic  Lower Bound",
+      "referenceBlock": "hdlsllib/Model Verification/Check Dynamic  Lower Bound",
+      "blockType": "Checks_DMin",
+      "description": "min < u",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Dynamic  Upper Bound",
+      "referenceBlock": "hdlsllib/Model Verification/Check Dynamic  Upper Bound",
+      "blockType": "Checks_DMax",
+      "description": "u < max",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Input  Resolution",
+      "referenceBlock": "hdlsllib/Model Verification/Check Input  Resolution",
+      "blockType": "Checks_Resolution",
+      "description": "-Inf < u < +Inf",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Static  Lower Bound",
+      "referenceBlock": "hdlsllib/Model Verification/Check Static  Lower Bound",
+      "blockType": "Checks_SMin",
+      "description": "0 <= u",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Check Static  Upper Bound",
+      "referenceBlock": "hdlsllib/Model Verification/Check Static  Upper Bound",
+      "blockType": "Checks_SMax",
+      "description": "u <= 0",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "DocBlock",
+      "referenceBlock": "hdlsllib/Model-Wide Utilities/DocBlock",
+      "blockType": "DocBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Model Info",
+      "referenceBlock": "hdlsllib/Model-Wide Utilities/Model Info",
+      "blockType": "CMBlock",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Discrete State-Space",
+      "referenceBlock": "hdlsllib/RCP and HIL/Discrete State-Space",
+      "blockType": "DiscreteStateSpace",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Fixed-Point State-Space",
+      "referenceBlock": "hdlsllib/RCP and HIL/Fixed-Point State-Space",
+      "blockType": "Fixed-PointState-Space",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "HDL Combinatorial Logic",
+      "referenceBlock": "hdlsllib/RCP and HIL/HDL Combinatorial Logic",
+      "blockType": "HDLCombinatorialLogic",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "PWM",
+      "referenceBlock": "hdlsllib/RCP and HIL/PWM",
+      "blockType": "PWM",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Sparse Matrix-Vector Product",
+      "referenceBlock": "hdlsllib/RCP and HIL/Sparse Matrix-Vector Product",
+      "blockType": "SparseMatrix-VectorProduct",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Bus to Vector",
+      "referenceBlock": "hdlsllib/Signal Attributes/Bus to Vector",
+      "blockType": "BusToVector",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Duplicate",
+      "referenceBlock": "hdlsllib/Signal Attributes/Data Type Duplicate",
+      "blockType": "DataTypeDuplicate",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Propagation",
+      "referenceBlock": "hdlsllib/Signal Attributes/Data Type Propagation",
+      "blockType": "DataTypePropagation",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Data Type Conversion",
+      "referenceBlock": "hdlsllib/Signal Attributes/Data Type Conversion",
+      "blockType": "DataTypeConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Probe",
+      "referenceBlock": "hdlsllib/Signal Attributes/Probe",
+      "blockType": "Probe",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Rate Transition",
+      "referenceBlock": "hdlsllib/Signal Attributes/Rate Transition",
+      "blockType": "RateTransition",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Conversion",
+      "referenceBlock": "hdlsllib/Signal Attributes/Signal Conversion",
+      "blockType": "SignalConversion",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Signal Specification",
+      "referenceBlock": "hdlsllib/Signal Attributes/Signal Specification",
+      "blockType": "SignalSpecification",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "MATLAB System",
+      "referenceBlock": "hdlsllib/User-Defined Functions/MATLAB System",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ],
+  "annotatedAt": "2026-08-20T01:00:10",
+  "releasesScanned": [
+    "2023a",
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023a"
+}

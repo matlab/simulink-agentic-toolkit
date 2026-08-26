@@ -1,0 +1,73 @@
+{
+  "commonBlocks": [
+    "Read Joint Configuration",
+    "Send Joint Configuration",
+    "Follow Joint Waypoints",
+    "Actuate Gripper"
+  ],
+  "categories": [
+    {
+      "name": "ur-robot-control",
+      "description": "Universal Robots UR series real-time control and monitoring",
+      "keywords": [
+        "robot",
+        "manipulator",
+        "joint",
+        "gripper",
+        "ur"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Actuate Gripper",
+      "value": "ur-robot-control"
+    },
+    {
+      "block": "Follow Joint Waypoints",
+      "value": "ur-robot-control"
+    },
+    {
+      "block": "Read Controller Output",
+      "value": "ur-robot-control"
+    },
+    {
+      "block": "Read Joint Configuration",
+      "value": "ur-robot-control"
+    },
+    {
+      "block": "Read Motion Status",
+      "value": "ur-robot-control"
+    },
+    {
+      "block": "Send Joint Configuration",
+      "value": "ur-robot-control"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Actuate Gripper",
+      "value": "Open or close a gripper attached to a Universal Robots arm — use for pick-and-place operations or object manipulation tasks"
+    },
+    {
+      "block": "Follow Joint Waypoints",
+      "value": "Command a UR robot to move through a sequence of joint configurations — use for executing pre-planned multi-point trajectories"
+    },
+    {
+      "block": "Read Controller Output",
+      "value": "Read the current controller output signals from a UR robot — use for monitoring torque commands or control effort in real time"
+    },
+    {
+      "block": "Read Joint Configuration",
+      "value": "Read current joint angles and velocities from a UR robot — use for feedback in closed-loop control or state monitoring"
+    },
+    {
+      "block": "Read Motion Status",
+      "value": "Read the motion state of a UR robot — use for detecting motion completion, checking if the robot is moving, or triggering sequenced operations"
+    },
+    {
+      "block": "Send Joint Configuration",
+      "value": "Send a target joint configuration to a UR robot — use for commanding the robot to move to a specific joint pose"
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "commonBlocks": [
+    "Inverse Kinematics",
+    "Forward Dynamics",
+    "Get Transform",
+    "Joint Space Motion Model",
+    "Pure Pursuit",
+    "Differential Drive Kinematic Model"
+  ],
+  "categories": [
+    {
+      "name": "collision-checking",
+      "description": "Collision geometry and detection",
+      "keywords": [
+        "collision",
+        "box",
+        "sphere",
+        "mesh",
+        "capsule",
+        "cylinder"
+      ]
+    },
+    {
+      "name": "gazebo",
+      "description": "Gazebo co-simulation interface",
+      "keywords": [
+        "gazebo",
+        "pacer",
+        "entity",
+        "command"
+      ]
+    },
+    {
+      "name": "manipulator-dynamics",
+      "description": "Rigid body tree kinematics and dynamics",
+      "keywords": [
+        "dynamics",
+        "kinematics",
+        "jacobian",
+        "gravity",
+        "mass",
+        "inverse"
+      ]
+    },
+    {
+      "name": "mobile-robots",
+      "description": "Mobile robot kinematic models and path following",
+      "keywords": [
+        "ackermann",
+        "bicycle",
+        "differential",
+        "unicycle",
+        "pursuit"
+      ]
+    },
+    {
+      "name": "simulation-3d",
+      "description": "3D visualization with Unreal Engine",
+      "keywords": [
+        "simulation",
+        "3d",
+        "camera",
+        "lidar",
+        "scene",
+        "robot"
+      ]
+    },
+    {
+      "name": "trajectory-utilities",
+      "description": "Trajectory generation and coordinate utilities",
+      "keywords": [
+        "trajectory",
+        "jerk",
+        "snap",
+        "polynomial",
+        "rotation",
+        "transform"
+      ]
+    }
+  ],
+  "categoryAssignments": [
+    {
+      "block": "Ackermann Kinematic Model",
+      "value": "mobile-robots"
+    },
+    {
+      "block": "Bicycle Kinematic Model",
+      "value": "mobile-robots"
+    },
+    {
+      "block": "Check Collision",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Collision Box",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Collision Capsule",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Collision Cylinder",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Collision Mesh",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Collision Sphere",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "trajectory-utilities"
+    },
+    {
+      "block": "Differential Drive Kinematic Model",
+      "value": "mobile-robots"
+    },
+    {
+      "block": "Forward Dynamics",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Gazebo Apply Command",
+      "value": "gazebo"
+    },
+    {
+      "block": "Gazebo Blank Message",
+      "value": "gazebo"
+    },
+    {
+      "block": "Gazebo Pacer",
+      "value": "gazebo"
+    },
+    {
+      "block": "Gazebo Publish",
+      "value": "gazebo"
+    },
+    {
+      "block": "Gazebo Read",
+      "value": "gazebo"
+    },
+    {
+      "block": "Gazebo Select Entity",
+      "value": "gazebo"
+    },
+    {
+      "block": "Gazebo Subscribe",
+      "value": "gazebo"
+    },
+    {
+      "block": "Get Jacobian",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Get Transform",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Gravity Torque",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Inverse Dynamics",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Inverse Kinematics",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Joint Space Mass Matrix",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Joint Space Motion Model",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Minimum Jerk Polynomial Trajectory",
+      "value": "trajectory-utilities"
+    },
+    {
+      "block": "Minimum Snap Polynomial Trajectory",
+      "value": "trajectory-utilities"
+    },
+    {
+      "block": "Polynomial Trajectory",
+      "value": "trajectory-utilities"
+    },
+    {
+      "block": "Pure Pursuit",
+      "value": "mobile-robots"
+    },
+    {
+      "block": "Rigid Body Tree",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Rigid Body Tree Check Collision",
+      "value": "collision-checking"
+    },
+    {
+      "block": "Rotation Trajectory",
+      "value": "trajectory-utilities"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Simulation 3D Robot",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "simulation-3d"
+    },
+    {
+      "block": "Task Space Motion Model",
+      "value": "manipulator-dynamics"
+    },
+    {
+      "block": "Transform Trajectory",
+      "value": "trajectory-utilities"
+    },
+    {
+      "block": "Trapezoidal Velocity Profile Trajectory",
+      "value": "trajectory-utilities"
+    },
+    {
+      "block": "Unicycle Kinematic Model",
+      "value": "mobile-robots"
+    },
+    {
+      "block": "Velocity Product Torque",
+      "value": "manipulator-dynamics"
+    }
+  ],
+  "customDescriptions": [
+    {
+      "block": "Ackermann Kinematic Model",
+      "value": "Simulate Ackermann-steered vehicle kinematics — use for modeling car-like robots with front-wheel steering"
+    },
+    {
+      "block": "Bicycle Kinematic Model",
+      "value": "Simulate bicycle kinematic model — use for simplified car-like vehicle motion with single front and rear wheel"
+    },
+    {
+      "block": "Check Collision",
+      "value": "Detect collisions between geometric primitives — use for verifying robot configurations are collision-free"
+    },
+    {
+      "block": "Collision Box",
+      "value": "Define a box collision geometry — use for representing rectangular obstacles or link bounding volumes"
+    },
+    {
+      "block": "Collision Capsule",
+      "value": "Define a capsule collision geometry — use for representing cylindrical shapes with rounded ends"
+    },
+    {
+      "block": "Collision Cylinder",
+      "value": "Define a cylinder collision geometry — use for representing round obstacles or link volumes"
+    },
+    {
+      "block": "Collision Mesh",
+      "value": "Define a mesh collision geometry — use for representing complex-shaped obstacles from triangulated surfaces"
+    },
+    {
+      "block": "Collision Sphere",
+      "value": "Define a sphere collision geometry — use for representing spherical obstacles or conservative bounding volumes"
+    },
+    {
+      "block": "Coordinate Transformation Conversion",
+      "value": "Convert between rotation representations — use for translating quaternions, Euler angles, and rotation matrices"
+    },
+    {
+      "block": "Differential Drive Kinematic Model",
+      "value": "Simulate differential-drive robot kinematics — use for two-wheeled robots steered by wheel speed difference"
+    },
+    {
+      "block": "Forward Dynamics",
+      "value": "Compute joint accelerations from applied torques — use for simulating robot motion given joint forces"
+    },
+    {
+      "block": "Gazebo Apply Command",
+      "value": "Send a command to a Gazebo simulation entity — use for applying forces, torques, or joint commands in Gazebo"
+    },
+    {
+      "block": "Gazebo Blank Message",
+      "value": "Create an empty Gazebo message — use for initializing Gazebo communication structures"
+    },
+    {
+      "block": "Gazebo Pacer",
+      "value": "Synchronize Simulink and Gazebo simulation rates — use for ensuring lockstep co-simulation timing"
+    },
+    {
+      "block": "Gazebo Publish",
+      "value": "Publish data to Gazebo — use for sending commands or signals from Simulink to the Gazebo simulator"
+    },
+    {
+      "block": "Gazebo Read",
+      "value": "Read state data from Gazebo — use for getting joint positions, velocities, or link poses from the simulator"
+    },
+    {
+      "block": "Gazebo Select Entity",
+      "value": "Select a Gazebo model or link — use for specifying which simulation entity to interact with"
+    },
+    {
+      "block": "Gazebo Subscribe",
+      "value": "Subscribe to Gazebo data — use for receiving sensor or state updates from the Gazebo simulator"
+    },
+    {
+      "block": "Get Jacobian",
+      "value": "Compute geometric Jacobian of a robot — use for mapping joint velocities to end-effector velocity"
+    },
+    {
+      "block": "Get Transform",
+      "value": "Compute forward kinematics transform — use for finding end-effector or frame pose given joint angles"
+    },
+    {
+      "block": "Gravity Torque",
+      "value": "Compute gravity compensation torques — use for calculating joint torques needed to counteract gravity"
+    },
+    {
+      "block": "Inverse Dynamics",
+      "value": "Compute required joint torques for desired motion — use for feedforward torque computation in robot control"
+    },
+    {
+      "block": "Inverse Kinematics",
+      "value": "Solve for joint angles given desired end-effector pose — use for computing joint configurations that achieve a target pose"
+    },
+    {
+      "block": "Joint Space Mass Matrix",
+      "value": "Compute the joint-space inertia matrix — use for dynamic control algorithms that require the mass matrix"
+    },
+    {
+      "block": "Joint Space Motion Model",
+      "value": "Simulate robot motion in joint space — use for modeling manipulator dynamics with joint torque inputs"
+    },
+    {
+      "block": "Minimum Jerk Polynomial Trajectory",
+      "value": "Generate smooth trajectory minimizing jerk — use for planning comfortable robot paths with continuous acceleration"
+    },
+    {
+      "block": "Minimum Snap Polynomial Trajectory",
+      "value": "Generate smooth trajectory minimizing snap — use for planning aggressive robot paths minimizing control effort"
+    },
+    {
+      "block": "Polynomial Trajectory",
+      "value": "Generate trajectory from polynomial coefficients — use for executing pre-computed polynomial motion profiles"
+    },
+    {
+      "block": "Pure Pursuit",
+      "value": "Track a path using pure pursuit — use for steering a mobile robot along a reference path with lookahead"
+    },
+    {
+      "block": "Rigid Body Tree",
+      "value": "Create a rigid body tree robot model — use for defining robot kinematics and dynamics from DH or URDF data"
+    },
+    {
+      "block": "Rigid Body Tree Check Collision",
+      "value": "Check collision for all links of a rigid body tree — use for whole-robot collision checking against environment"
+    },
+    {
+      "block": "Rotation Trajectory",
+      "value": "Interpolate between rotation orientations — use for generating smooth rotational motion between poses"
+    },
+    {
+      "block": "Simulation 3D Camera",
+      "value": "Attach a virtual camera in the 3D scene — use for generating synthetic images from the robot perspective"
+    },
+    {
+      "block": "Simulation 3D Lidar",
+      "value": "Attach a virtual lidar in the 3D scene — use for generating synthetic point clouds in simulation"
+    },
+    {
+      "block": "Simulation 3D Robot",
+      "value": "Spawn a robot in the 3D simulation scene — use for visualizing robot motion in an Unreal Engine environment"
+    },
+    {
+      "block": "Simulation 3D Scene Configuration",
+      "value": "Configure the 3D simulation environment — use for selecting scene, lighting, and rendering options"
+    },
+    {
+      "block": "Task Space Motion Model",
+      "value": "Simulate robot motion in task space — use for modeling end-effector dynamics with Cartesian force inputs"
+    },
+    {
+      "block": "Transform Trajectory",
+      "value": "Interpolate between homogeneous transforms — use for generating smooth 6-DOF motion between poses"
+    },
+    {
+      "block": "Trapezoidal Velocity Profile Trajectory",
+      "value": "Generate trajectory with trapezoidal velocity — use for time-optimal point-to-point motion with acceleration limits"
+    },
+    {
+      "block": "Unicycle Kinematic Model",
+      "value": "Simulate unicycle kinematic model — use for simple point-robot motion with speed and turn rate inputs"
+    },
+    {
+      "block": "Velocity Product Torque",
+      "value": "Compute Coriolis and centrifugal torques — use for velocity-dependent torque compensation in dynamic control"
+    }
+  ]
+}
