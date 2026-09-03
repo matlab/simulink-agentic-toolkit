@@ -60,6 +60,7 @@ Skills for code generation
 
 | Skill | Description |
 |-------|---------------------------|
+| `simulink-optimizing-embedded-code` | Optimize Simulink Embedded Coder generated code for runtime, RAM, ROM, stack usage, and MISRA compliance (requires Embedded Coder) |
 | `simulink-single-precision-conversion` | Convert a double-precision Simulink system or subsystem to single precision (requires Fixed-Point Designer) |
 
 ### [Simulink Modeling](simulink-modeling/)

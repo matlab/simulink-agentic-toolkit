@@ -4,7 +4,7 @@ description: "Generates draft requirements from Simulink models. Use when drafti
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "2.2"
+  version: "2.3"
 ---
 
 # Generate Requirement Drafts
@@ -24,7 +24,7 @@ Generate draft requirements from Simulink models using the richest artifact the 
 
 ## Output Conventions
 - Default file names: `<Model>_Requirements.slreqx` or `<model>_requirements.yaml`
-- Stable IDs: `REQ_<SYSTEM>_001`, `REQ_<SYSTEM>_002`, …
+- Stable IDs: `REQ_<SYSTEM>_001`, `REQ_<SYSTEM>_002`, … — use **one** consistent project-wide prefix with sequential integers across all requirements, even when they derive from different subsystems. Do not switch to per-subsystem prefixes or hierarchical decimal numbering (e.g. `CB-1.1`, `TP-1.1`).
 - Follow repo conventions if `.slreqx` or `.yaml` files already exist
 - When updating an existing artifact, preserve existing IDs — append new IDs, never renumber
 - Every generated requirement must be marked as draft — use `"draft"` in Keywords (slreq) or `status: Draft` + `keywords: [draft]` (YAML)
@@ -40,8 +40,8 @@ Choose the pattern that best fits the model behavior:
 | Pattern | Template | When to Use |
 |---------|----------|-------------|
 | **Ubiquitous** | The \<system\> shall \<response\>. | Always-on behavior, invariants |
-| **Event-driven** | When \<trigger\>, the \<system\> shall \<response\>. | Triggered subsystems, Stateflow transitions, input events |
-| **State-driven** | While \<state\>, the \<system\> shall \<response\>. | Stateflow states, mode-dependent behavior |
+| **Event-driven** | When \<trigger\>, the \<system\> shall \<response\>. | A momentary trigger causes a one-time response: input events, **entering** a Stateflow state (the transition itself) |
+| **State-driven** | While \<state\>, the \<system\> shall \<response\>. | Behavior that holds continuously **while in** a Stateflow state or mode — the ongoing response, not the entry transition |
 | **Unwanted behavior** | If \<condition\>, then the \<system\> shall \<response\>. | Error handling, safety limits, saturation |
 | **Optional feature** | Where \<feature\>, the \<system\> shall \<response\>. | Variant subsystems, configurable features |
 | **Combined** | While \<state\>, when \<trigger\>, the \<system\> shall \<response\>. | State + event combinations |
@@ -54,15 +54,17 @@ Choose the pattern that best fits the model behavior:
 | "BrakeLogic subsystem disengages controller" | "When brake pedal input exceeds BrakeThreshold (0.0), the controller shall disengage cruise control." |
 | "Gain block multiplies by 2.5" | "While cruise control is active, the controller shall amplify speed error by Kp (2.5) to compute proportional correction." |
 | "Stateflow chart transitions to Idle" | "When the driver presses the off button, the system shall transition to the Idle state." |
+| "Defrost state runs the heater at full power" | "While in the Defrost state, the system shall drive the heater at full power." |
 | "Variant subsystem selects Algorithm A" | "Where the adaptive mode is enabled, the controller shall use the predictive algorithm." |
 
 ### Rules
 
 - Write requirements using **EARS patterns** — pick the pattern that matches the model behavior
-- Use block/subsystem names only in `Rationale` or provenance notes, not in the requirement `Summary`
+- Use block/subsystem names (e.g. `Saturation`, `BrakeLogic`) only in `Rationale`, `Description`, or provenance notes — **never** in the requirement `Summary`. (A workspace *parameter* rendered as `VarName (value)` is required in the Summary and is not a block name.)
 - When referencing a numeric value, include the **workspace variable name and resolved value**: `VarName (value)`. If the model uses a literal with no variable, record the numeric literal directly
 - Put the **WHY** in `Rationale`, not in the requirement statement
 - One subsystem may support zero, one, or several behavioral requirements — don't force a 1:1 mapping
+- For a Stateflow state or mode, separate **entering** it from **being in** it: the entry transition is event-driven (`When <trigger>, … shall transition to <state>`), but the behavior that holds throughout the mode is state-driven (`While <state>, … shall <response>`). When asked for a mode's behavior, prefer the `While <state>` form — do not fold it into a `When` entry statement
 
 ## Backend Decision Gate
 
@@ -84,8 +86,11 @@ disp(hasSlreq)
 
 ## Workflow
 
-1. **Understand the model** — use `model_overview` and `model_read` to understand subsystems, interfaces, control logic.
-2. **Extract parameters** — use `model_query_params` / `model_resolve_params` for thresholds, gains, sample times that should appear in requirement text. Record both variable names and resolved values.
+- Call `model_overview`, `model_read`, `model_query_params`, `model_resolve_params` as **MCP tools** — never pass their names to `evaluate_matlab_code`.
+- Use `evaluate_matlab_code` only for MATLAB code, such as the backend probe and the `slreq.*` APIs in Path A.
+
+1. **Understand the model** — use the `model_overview` and `model_read` tools to understand subsystems, interfaces, control logic.
+2. **Extract parameters** — use the `model_query_params` / `model_resolve_params` tools for thresholds, gains, sample times that should appear in requirement text. Record both variable names and resolved values.
 3. **Build a capture table** (backend-neutral):
 
    | Id | ParentId | Summary | Description | SourceBlock | Rationale | ASIL | Priority | Keywords |

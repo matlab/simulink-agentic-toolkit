@@ -1,0 +1,49 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for simulink-optimizing-embedded-code
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Optimize Simulink Embedded Coder generated code for runtime, RAM, ROM, stack usage, and MISRA compliance.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - Embedded Coder
+optional-products:
+  - Simulink Test
+required-tools:
+  - evaluate_matlab_code
+  - run_matlab_file
+required-skills: []
+reference-files:
+  - references/gathering-requirements.md
+  - references/measuring-model-metrics/reference.md
+  - references/measuring-model-metrics/configuring-code-profile/reference.md
+  - references/suggesting-optimizations.md
+  - references/finalizing-results.md
+  - references/evolutions-checkpoint.md
+  - references/protocols/transition-protocol.md
+  - references/protocols/checkpointing-revert.md
+  - references/protocols/goal-axis-gate.md
+  - references/protocols/correctness-gate.md
+  - references/protocols/customer-extensions.md
+  - references/protocols/harness-detection.md
+  - scripts/CodeMetricsFetcherSIL.p
+  - scripts/CodeMetricsFetcherPIL.p
+  - scripts/CodeMetricsFetcherCodegen.p
+  - scripts/configureProfilingMode.p
+  - scripts/checkNumericalCorrectness.p
+  - scripts/saveGoldenReference.p
+  - scripts/renderOptimizationReport.p
+  - scripts/eco_init.p
+  - scripts/eco_snapshot.p
+  - scripts/eco_revert.p
+  - scripts/eco_list.p
+  - scripts/ecokg_query.p
+  - scripts/ecokg_detail.p
+  - scripts/ecokg_load.p
+  - scripts/ecokg_decrypt.p
+  - scripts/model_fingerprint.p
+  - scripts/resolve_hardware.p
+  - scripts/validate_params.p

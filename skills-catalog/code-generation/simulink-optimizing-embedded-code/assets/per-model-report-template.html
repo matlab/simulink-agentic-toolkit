@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--
+  Per-model optimization report template.
+  Used by Phase 5 (finalizing-results) to produce
+  <project_path>/.eco_diagnostics/{{MODEL_NAME}}_optimization_report.html
+
+  Replace every {{PLACEHOLDER}} with the value sourced as documented in
+  assets/per-model-report-template.md (field-mapping table).
+
+  Placeholders fall into two categories:
+  1. SCRIPT-FILLED: populated automatically by renderOptimizationReport.m
+     from state.json and diagnostic files.
+  2. AGENT-FILLED: populated autonomously by the agent during Phase 5,
+     using contextual reasoning over the run history. The script inserts
+     sensible defaults if the agent does not supply them, but the agent
+     SHOULD populate these for a richer customer report.
+
+  This file is a single-model variant of the multi-model bench dashboard
+  (models_dashboard.html). All CSS is inline so the report opens stand-alone
+  in any browser by double-clicking &mdash; no external assets, no server.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>{{MODEL_NAME}} &mdash; Optimization Report</title>
+<style>
+  :root{
+    --bg:#0d1117; --surface:#161b22; --surface2:#21262d;
+    --border:#30363d; --text:#e6edf3; --text2:#8b949e;
+    --accent:#58a6ff; --green:#3fb950; --yellow:#d29922;
+    --red:#f85149; --purple:#bc8cff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+       background:var(--bg);color:var(--text);line-height:1.55;font-size:14px}
+  .main{max-width:1200px;margin:0 auto;padding:32px 48px}
+  h1.page{font-size:26px;margin-bottom:6px}
+  .page-meta{color:var(--text2);font-size:13px;margin-bottom:24px}
+  section{margin:28px 0;scroll-margin-top:24px}
+  section h2{font-size:17px;color:var(--accent);margin-bottom:12px;padding-bottom:6px;border-bottom:1px solid var(--border)}
+  section h3{font-size:14px;margin:16px 0 8px;color:var(--text)}
+
+  /* Cards */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:10px 0 18px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:13px 16px}
+  .card .label{font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.4px}
+  .card .value{font-size:20px;font-weight:600;margin-top:4px}
+  .card .sub{font-size:11px;color:var(--text2);margin-top:2px}
+  .card.green .value{color:var(--green)}
+  .card.yellow .value{color:var(--yellow)}
+  .card.red .value{color:var(--red)}
+  .card.accent .value{color:var(--accent)}
+  .card.purple .value{color:var(--purple)}
+  .card.gray .value{color:var(--text2)}
+
+  /* Tables */
+  table{width:100%;border-collapse:collapse;background:var(--surface);
+        border:1px solid var(--border);border-radius:8px;overflow:hidden;margin:6px 0 14px;font-size:13px}
+  th{background:var(--surface2);padding:9px 12px;text-align:left;font-weight:600;color:var(--text);
+     border-bottom:1px solid var(--border);font-size:11px;text-transform:uppercase;letter-spacing:.3px}
+  td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:rgba(88,166,255,.04)}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:'SF Mono',Consolas,Monaco,monospace}
+  td.center,th.center{text-align:center}
+
+  /* Badges */
+  .b{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;letter-spacing:.2px}
+  .b.green{background:rgba(63,185,80,.15);color:var(--green)}
+  .b.yellow{background:rgba(210,153,34,.15);color:var(--yellow)}
+  .b.red{background:rgba(248,81,73,.15);color:var(--red)}
+  .b.gray{background:var(--surface2);color:var(--text2)}
+  .b.purple{background:rgba(188,140,255,.15);color:var(--purple)}
+  .b.accent{background:rgba(88,166,255,.15);color:var(--accent)}
+  .delta-pos{color:var(--red)}
+  .delta-neg{color:var(--green)}
+  .delta-flat{color:var(--text2)}
+
+  /* Stage chip */
+  .stage-pill{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;margin-right:4px}
+  .stage-applied{background:rgba(63,185,80,.18);color:var(--green);border:1px solid rgba(63,185,80,.3)}
+  .stage-stub{background:rgba(210,153,34,.15);color:var(--yellow);border:1px solid rgba(210,153,34,.3)}
+  .stage-skip{background:var(--surface2);color:var(--text2);border:1px solid var(--border)}
+
+  .suggestion-row td:first-child{font-weight:600}
+  .stage-tag-A{color:var(--accent)}
+  .stage-tag-B{color:var(--yellow)}
+  .stage-tag-C{color:var(--purple)}
+  .stage-tag-D{color:var(--green)}
+
+  .footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--border);color:var(--text2);font-size:12px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  code{font-family:'SF Mono',Consolas,Monaco,monospace;background:var(--surface2);padding:1px 5px;border-radius:3px;font-size:12px}
+
+  /* Summary narrative */
+  .summary-narrative{font-size:13px;line-height:1.7;color:var(--text);padding:14px 18px;background:var(--surface);border:1px solid var(--border);border-radius:8px;margin:8px 0 16px}
+  .summary-narrative p{margin-bottom:8px}
+  .summary-narrative p:last-child{margin-bottom:0}
+
+  /* Scope cards */
+  .scope-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:10px 0}
+  .scope-item{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:11px 14px}
+  .scope-item .scope-key{font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px}
+  .scope-item .scope-val{font-size:13px;color:var(--text);font-weight:500}
+
+  /* Recommendations list */
+  .reco-list{list-style:none;margin:8px 0;padding:0}
+  .reco-list li{position:relative;padding:10px 14px 10px 28px;margin:6px 0;background:var(--surface);border:1px solid var(--border);border-radius:8px;font-size:13px;line-height:1.5}
+  .reco-list li::before{content:"";position:absolute;left:12px;top:14px;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .reco-list li.reco-high::before{background:var(--green)}
+  .reco-list li.reco-med::before{background:var(--yellow)}
+  .reco-list li.reco-low::before{background:var(--text2)}
+
+  /* Preferences note */
+  .pref-note{font-size:12px;color:var(--text2);padding:10px 14px;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--purple);border-radius:6px;margin:8px 0}
+
+  /* Sim-vs-SIL verification panel */
+  .verify-box{border-radius:10px;padding:18px 22px 16px;margin-top:6px}
+  .verify-box .card{background:rgba(255,255,255,0.10)}
+  .verify-warn h2, .verify-pass h2, .verify-fail h2{text-align:center}
+  .verify-warn h2{color:#ffe89a;border-bottom-color:rgba(255,232,154,0.45)}
+  .verify-warn .verify-box{
+    background:linear-gradient(135deg, rgba(255,236,160,0.22), rgba(255,220,140,0.15));
+    border:1px solid rgba(255,215,100,0.55);
+  }
+  .verify-pass h2{color:#a6e7b3;border-bottom-color:rgba(166,231,179,0.45)}
+  .verify-pass .verify-box{
+    background:linear-gradient(135deg, rgba(180,240,195,0.22), rgba(150,225,170,0.15));
+    border:1px solid rgba(120,210,140,0.55);
+  }
+  .verify-fail h2{color:#f5a8a2;border-bottom-color:rgba(245,168,162,0.45)}
+  .verify-fail .verify-box{
+    background:linear-gradient(135deg, rgba(248,81,73,0.22), rgba(220,60,55,0.15));
+    border:1px solid rgba(248,81,73,0.55);
+  }
+  .verify-final{
+    display:block;margin-top:12px;padding:9px 13px;
+    background:rgba(63,185,80,0.10);border-left:3px solid var(--green);
+    border-radius:5px;color:var(--green);font-size:12px;
+    font-family:'SF Mono',Consolas,Monaco,monospace;
+  }
+
+  /* Evolution tree (collapsible nodes + arrows) */
+  .tree{display:flex;flex-direction:column;align-items:center;margin:14px 0 0;padding:8px 0}
+  .tree-level{display:flex;justify-content:center;align-items:flex-start;gap:28px;width:100%}
+  .tree-node{position:relative;background:var(--surface);border:2px solid var(--border);border-radius:10px;padding:10px 16px;width:560px;max-width:100%;box-shadow:0 2px 6px rgba(0,0,0,0.35);cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
+  .tree-node:hover{transform:translateY(-1px)}
+  .tree-node.accept{border-color:var(--green);box-shadow:0 0 0 1px rgba(63,185,80,.20),0 2px 6px rgba(0,0,0,0.35)}
+  .tree-node.accept:hover{box-shadow:0 0 0 2px rgba(63,185,80,.35),0 6px 14px rgba(0,0,0,0.45)}
+  .tree-node.reject{border-color:var(--red);background:rgba(248,81,73,.04);box-shadow:0 0 0 1px rgba(248,81,73,.20),0 2px 6px rgba(0,0,0,0.35)}
+  .tree-node.reject:hover{box-shadow:0 0 0 2px rgba(248,81,73,.35),0 6px 14px rgba(0,0,0,0.45)}
+  .tree-node.baseline{border-color:var(--accent);box-shadow:0 0 0 1px rgba(88,166,255,.20),0 2px 6px rgba(0,0,0,0.35)}
+  .tree-node.baseline:hover{box-shadow:0 0 0 2px rgba(88,166,255,.35),0 6px 14px rgba(0,0,0,0.45)}
+  .tree-node.original,.tree-node.pristine{border-color:var(--text2);box-shadow:0 0 0 1px rgba(139,148,158,.20),0 2px 6px rgba(0,0,0,0.35)}
+  .tree-node.original:hover,.tree-node.pristine:hover{box-shadow:0 0 0 2px rgba(139,148,158,.35),0 6px 14px rgba(0,0,0,0.45)}
+  .tree-node.reject-branch{width:480px}
+  .tree-node .tree-details{max-height:0;overflow:hidden;opacity:0;transition:max-height .25s ease, opacity .2s ease, margin .2s ease;margin:0}
+  .tree-node:hover .tree-details, .tree-node:focus-within .tree-details{max-height:600px;opacity:1;margin-top:10px}
+  .tree-node .hint{font-size:10px;color:var(--text2);font-style:italic;margin-left:auto;letter-spacing:.3px;opacity:.6}
+  .tree-node:hover .hint{opacity:0}
+  .tree-node-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .tree-node-head .vtag{font-family:'SF Mono',Consolas,Monaco,monospace;font-weight:700;font-size:14px;color:var(--text)}
+  .tree-node-head .eid{font-family:'SF Mono',Consolas,Monaco,monospace;font-size:11px;color:var(--text2)}
+  .tree-metrics{display:flex;gap:18px;flex-wrap:wrap;margin:0;padding:8px 12px;background:var(--surface2);border-radius:6px;font-size:12px}
+  .tree-metrics .m{display:flex;flex-direction:column}
+  .tree-metrics .m .k{color:var(--text2);font-size:10px;text-transform:uppercase;letter-spacing:.3px}
+  .tree-metrics .m .v{font-family:'SF Mono',Consolas,Monaco,monospace;font-weight:600;color:var(--text)}
+  .tree-change{font-size:12px;color:var(--text2);margin:4px 0 6px;padding-left:14px;border-left:2px solid var(--surface2)}
+  .tree-change strong{color:var(--text);font-weight:600}
+  .tree-gate{font-size:11px;color:var(--text2);margin-top:6px;line-height:1.7}
+  .tree-gate .axis{display:inline-block;margin-right:14px}
+  .tree-gate .axis .neg{color:var(--green);font-weight:600}
+  .tree-gate .axis .pos{color:var(--red);font-weight:600}
+  .tree-gate .axis .flat{color:var(--text2)}
+  .tree-edge{display:flex;flex-direction:column;align-items:center;margin:0;padding:0}
+  .tree-edge .stem{width:2px;height:20px;background:var(--green)}
+  .tree-edge .arrow{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:9px solid var(--green);margin-top:-1px}
+  .tree-edge .label{font-size:10px;color:var(--text2);text-transform:uppercase;letter-spacing:.4px;margin:4px 0 2px;background:var(--bg);padding:0 6px}
+  .tree-edge.baseline-edge .stem{background:var(--accent)}
+  .tree-edge.baseline-edge .arrow{border-top-color:var(--accent)}
+  .tree-branch-wrap{display:flex;align-items:center;gap:0;width:100%;justify-content:center}
+  .tree-branch-edge{display:flex;align-items:center;margin:0 6px}
+  .tree-branch-edge .stem{height:2px;width:46px;background:var(--red);background-image:repeating-linear-gradient(90deg,var(--red) 0 6px,transparent 6px 12px)}
+  .tree-branch-edge .arrow{width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent;border-left:9px solid var(--red);margin-left:-1px}
+  .tree-branch-edge .label{font-size:10px;color:var(--red);text-transform:uppercase;letter-spacing:.4px;margin:0 8px;font-weight:600}
+
+  /* Hierarchical tree layout: parent -> trunk -> bus -> per-child drop -> child node.
+     Explicit DOM elements (.tree-trunk-down, .tree-bus, .tree-drop) keep the geometry deterministic
+     regardless of child-count or per-child node width. */
+  .tree-children-row{position:relative;display:flex;flex-direction:column;align-items:stretch;width:100%;margin-top:0;padding-top:0}
+  .tree-trunk-down{align-self:center;width:2px;height:20px;background:var(--text2)}
+  .tree-bus{height:2px;background:var(--text2);margin:0 8%}
+  .tree-children-flex{display:flex;gap:32px;align-items:flex-start;justify-content:space-around;width:100%;flex-wrap:wrap;margin-top:0}
+  .tree-children-flex > .tree-child{display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
+  .tree-drop{width:2px;height:22px;background:var(--text2);margin:0}
+  .tree-drop-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.4px;padding:2px 9px;background:var(--surface);border:1px solid var(--border);border-radius:10px;margin:6px 0 6px;color:var(--text2)}
+  .tree-drop-arrow{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:9px solid var(--text2);margin:-1px 0 0}
+  /* Per-child-type variant colours for the drop + arrow + label */
+  .tree-child.kind-accept .tree-drop,.tree-child.kind-baseline .tree-drop{background:var(--accent)}
+  .tree-child.kind-accept .tree-drop-arrow,.tree-child.kind-baseline .tree-drop-arrow{border-top-color:var(--accent)}
+  .tree-child.kind-accept .tree-drop-label,.tree-child.kind-baseline .tree-drop-label{color:var(--accent);border-color:rgba(88,166,255,.5)}
+  .tree-child.kind-rolled-back .tree-drop{background:var(--red);background-image:repeating-linear-gradient(0deg,var(--red) 0 6px,transparent 6px 12px)}
+  .tree-child.kind-rolled-back .tree-drop-arrow{border-top-color:var(--red)}
+  .tree-child.kind-rolled-back .tree-drop-label{color:var(--red);border-color:rgba(248,81,73,.5)}
+  .tree-child.kind-user-revert .tree-drop{background:var(--yellow)}
+  .tree-child.kind-user-revert .tree-drop-arrow{border-top-color:var(--yellow)}
+  .tree-child.kind-user-revert .tree-drop-label{color:var(--yellow);border-color:rgba(210,153,34,.5)}
+
+  /* Legacy (.tree-branch-edge) selectors kept for backwards compatibility with older rendered reports */
+  .tree-branch-edge.gate-rejected{display:flex;flex-direction:column;align-items:center;margin:0}
+  .tree-branch-edge.gate-rejected .stem{height:20px;width:2px;background:var(--red);background-image:repeating-linear-gradient(0deg,var(--red) 0 6px,transparent 6px 12px)}
+  .tree-branch-edge.gate-rejected .arrow{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:9px solid var(--red);margin-top:-1px;border-bottom:none}
+  .tree-branch-edge.gate-rejected .label{color:var(--red);margin:0 0 2px;background:var(--bg);padding:0 6px}
+  .tree-branch-edge.user-revert{display:flex;flex-direction:column;align-items:center;margin:0}
+  .tree-branch-edge.user-revert .stem{height:20px;width:2px;background:var(--yellow)}
+  .tree-branch-edge.user-revert .arrow{width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-top:9px solid var(--yellow);margin-top:-1px;border-bottom:none}
+  .tree-branch-edge.user-revert .label{color:var(--yellow);margin:0 0 2px;background:var(--bg);padding:0 6px;font-weight:600;font-size:10px;text-transform:uppercase;letter-spacing:.4px}
+
+  /* User-requested revert leaf node */
+  .tree-node.revert-user{border-color:var(--yellow);background:rgba(210,153,34,.04);box-shadow:0 0 0 1px rgba(210,153,34,.20),0 2px 6px rgba(0,0,0,0.35)}
+  .tree-node.revert-user:hover{box-shadow:0 0 0 2px rgba(210,153,34,.35),0 6px 14px rgba(0,0,0,0.45)}
+  .tree-node.revert-user.reject-branch{width:480px}
+
+  /* Back-pointer connector from User_Requested_Revert leaf to its target version */
+  .tree-revert-backpointer{margin-top:8px;padding:6px 10px;background:rgba(210,153,34,.10);border-left:3px solid var(--yellow);border-radius:5px;font-size:11px}
+  .tree-revert-backpointer a{color:var(--yellow);font-family:'SF Mono',Consolas,Monaco,monospace;text-decoration:none}
+  .tree-revert-backpointer a:hover{text-decoration:underline}
+
+  /* Anchor-jump highlight when a back-pointer is clicked */
+  .tree-node:target{outline:2px solid var(--yellow);outline-offset:4px;animation:flash-target 1.4s ease-out 1}
+  @keyframes flash-target{0%{outline-color:var(--yellow);outline-width:4px}100%{outline-color:var(--yellow);outline-width:2px}}
+  .tree-legend{display:flex;gap:18px;flex-wrap:wrap;margin:0 0 12px;font-size:12px;color:var(--text2);justify-content:center}
+  .tree-legend .swatch{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:middle;border:2px solid transparent}
+  .tree-legend .swatch.original,.tree-legend .swatch.pristine{border-color:var(--text2)}
+  .tree-legend .swatch.baseline{border-color:var(--accent)}
+  .tree-legend .swatch.accept{border-color:var(--green)}
+  .tree-legend .swatch.reject{border-color:var(--red);background:rgba(248,81,73,.04)}
+  .tree-legend .swatch.revert-user{border-color:var(--yellow);background:rgba(210,153,34,.04)}
+
+  @media (max-width:1100px){
+    .main{padding:20px}
+  }
+</style>
+</head>
+<body>
+<main class="main">
+
+  <h1 class="page">{{MODEL_NAME}}</h1>
+  <div class="page-meta">
+    <code>{{MODEL_FILE}}</code> &middot;
+    HW target: {{HW_TARGET}} &middot;
+    Verification mode: {{VERIFICATION_MODE}} &middot;
+    Goal: {{GOAL}} &middot;
+    Run completed {{RUN_DATE}}
+  </div>
+
+  <!-- Headline Outcomes -->
+  <section>
+    <h2>Headline Outcomes</h2>
+    <div class="cards">
+      {{HEADLINE_CARDS}}
+    </div>
+  </section>
+
+  <!-- Iterations (now also carries the per-iteration suggestion summary that used to live in its own section) -->
+  <section>
+    <h2>Iterations (Model-Change &rarr; Re-measurement Cycles)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Iter</th>
+          <th>Version</th>
+          <th>Changes Applied</th>
+          <th class="num">{{METRIC1_LABEL}}</th>
+          <th class="num">{{METRIC2_LABEL}}</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ITERATION_ROWS}}
+      </tbody>
+    </table>
+    <p style="color:var(--text2);font-size:12px">
+      {{ITERATION_FOOTNOTE}}
+    </p>
+  </section>
+
+  <!-- Evolution Tree -->
+  <section>
+    <h2>Evolution Tree</h2>
+    <p style="color:var(--text2);font-size:12px;margin-bottom:8px">
+      Each node is a git snapshot in the workspace repo at <code>{{GIT_REPO_PATH}}</code>. Sibling branches off a parent represent either (a) candidates that were auto-rejected by the Goal-Axis Acceptance Gate (<em>Gate Rejected</em> &mdash; dashed red connector) or (b) versions the user asked to roll back from after re-measurement (<em>User-Requested Revert</em> &mdash; solid amber connector with a clickable back-pointer to the restored target). Both kinds of leaf remain queryable via their git tag but are not part of the live accepted lineage. {{TREE_PREAMBLE_NOTE}}
+    </p>
+    <div class="tree-legend">
+      <span><span class="swatch original"></span>Original (v0)</span>
+      <span><span class="swatch baseline"></span>Baseline (config normalisation)</span>
+      <span><span class="swatch accept"></span>Accepted (gate passed)</span>
+      <span><span class="swatch reject"></span>Gate Rejected (auto-revert)</span>
+      <span><span class="swatch revert-user"></span>User-Requested Revert</span>
+    </div>
+
+    <div class="tree">
+      {{EVOLUTION_TREE_NODES}}
+    </div>
+
+    <p style="color:var(--text2);font-size:12px;margin-top:14px;text-align:center">
+      <strong>Tree rendering conventions:</strong>
+      Each node is positioned by its <code>parentVersion</code>, so a parent with multiple attempts shows its children side-by-side as sibling branches. Nodes with <code>revertCause</code> are always leaves &mdash; the tree never descends past them.
+      A <span style="color:var(--red);font-weight:600">dashed red</span> connector labelled "GATE REJECTED" marks an auto-revert by the Goal-Axis Acceptance Gate (the offending axis delta is highlighted in red inside the leaf).
+      A <span style="color:var(--yellow);font-weight:600">solid amber</span> connector labelled "USER REVERT" marks a user-requested rollback after re-measurement; each such leaf also carries a clickable <span style="color:var(--yellow)">&#x21B6; back-pointer</span> in its details body that jumps to the restored target version (the live workspace is now at that target, and any further optimization branches off it, not off the revert leaf).
+      Both kinds of leaf retain a git tag so the abandoned state can be re-loaded for inspection via <code>eco_revert</code>.
+    </p>
+  </section>
+
+  <!-- Token Usage -->
+  <section>
+    <h2>Token Usage (end-to-end workflow)</h2>
+    <div class="cards">
+      {{TOKEN_CARDS}}
+    </div>
+    <p style="color:var(--text2);font-size:12px">
+      Source: <code>.eco_diagnostics/eco_optimization_report.md</code>
+    </p>
+  </section>
+
+  <!-- Sim-vs-SIL Correctness Verification -->
+  <section class="{{VERIFY_CLASS}}">
+    <h2>Sim-vs-SIL Correctness Verification</h2>
+    <div class="verify-box">
+      <div class="cards">
+        <div class="card {{VERIFY_VERDICT_COLOR}}">
+          <div class="label">Verdict</div>
+          <div class="value">{{VERIFY_VERDICT}}</div>
+          <div class="sub">{{VERIFY_VERDICT_SUB}}</div>
+        </div>
+        <div class="card accent">
+          <div class="label">Max abs error</div>
+          <div class="value" style="font-size:18px">{{VERIFY_MAX_ERR}}</div>
+          <div class="sub">{{VERIFY_MAX_ERR_SUB}}</div>
+        </div>
+      </div>
+      <p style="font-size:13px">{{VERIFY_NARRATIVE}}</p>
+      <span class="verify-final">Artifacts: {{VERIFY_ARTIFACTS}}</span>
+    </div>
+  </section>
+
+  <!-- Further Recommendations (AGENT-FILLED: manual follow-ups the user could explore) -->
+  <section>
+    <h2>Further Recommendations</h2>
+    <p style="color:var(--text2);font-size:12px;margin-bottom:8px">
+      These are additional optimizations identified during the run that were not applied &mdash; either because they require manual effort, domain-specific decisions, or fall outside the automated workflow scope.
+    </p>
+    <ul class="reco-list">
+      {{RECOMMENDATIONS}}
+    </ul>
+  </section>
+
+  <!-- Customer Preferences Applied (AGENT-FILLED: shown only if preferences were active) -->
+  {{PREFERENCES_SECTION}}
+
+  <!-- Footer -->
+  <div class="footer">
+    Run completed {{RUN_DATE}} &middot;
+    {{NUM_PHASES}} phases &middot;
+    {{NUM_TRANSITIONS}} transitions &middot;
+    {{NUM_ERRORS}} errors recovered &middot;
+    Diagnostics: <code>.eco_diagnostics/eco_optimization_report.md</code>,
+    <code>.eco_diagnostics/eco_decision_trace.md</code>
+  </div>
+
+</main>
+</body>
+</html>

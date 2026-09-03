@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.8.2",
+      "version": "0.8.3",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -46,12 +46,12 @@
     },
     {
       "name": "code-generation",
-      "version": "0.2.0",
-      "description": "Prepare Simulink models for production code generation, including single-precision conversion",
+      "version": "0.3.0",
+      "description": "Prepare Simulink models for production code generation, including single-precision conversion and optimizing generated embedded code for runtime, memory, and MISRA compliance",
       "author": {
         "name": "MathWorks"
       },
-      "keywords": ["simulink", "code-generation", "embedded-coder", "fixed-point-designer", "single-precision"],
+      "keywords": ["simulink", "code-generation", "embedded-coder", "fixed-point-designer", "single-precision", "optimization", "misra", "a2l"],
       "source": "./skills-catalog/code-generation",
       "category": "development",
       "strict": false,

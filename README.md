@@ -149,15 +149,34 @@ If you installed the MCP server binary to a non-default location (e.g., a networ
 satk_initialize(MCPServerPath="//server/share/bin/matlab-mcp-server")
 ```
 
-> **Note:** `satk_initialize` must run once per MATLAB session. To automate this, add the following to your [`startup.m`](https://www.mathworks.com/help/matlab/ref/startup.html):
+> **Note:** `satk_initialize` must run once per MATLAB session. To run it automatically in future sessions, add the block below to your [`startup.m`](https://www.mathworks.com/help/matlab/ref/startup.html).
+>
+> **Finding or creating your `startup.m`:**
+>
+> 1. List existing startup files:
+>    ```matlab
+>    which('startup', '-all')
+>    ```
+> 2. If any are listed, edit the **first** entry — MATLAB runs the one it finds first on the path.
+> 3. If none are listed, create one under `userpath`:
+>    ```matlab
+>    edit(fullfile(userpath, 'startup.m'))
+>    ```
+>    If that errors because `userpath` has multiple folders, run `userpath`, copy the first folder, and use it explicitly: `edit(fullfile('<thatFolder>', 'startup.m'))`.
+>
+> **Add this block to `startup.m`:**
 >
 > ```matlab
-> % Initialize the Simulink Agentic Toolkit (adjust version/path as needed)
-> if contains(version, 'R2026a')
->     addpath("~/.matlab/agentic-toolkits/simulink")
->     satk_initialize
+> % Initialize the Simulink Agentic Toolkit each MATLAB session.
+> if ispc
+>     homeDir = getenv('USERPROFILE');
+> else
+>     homeDir = getenv('HOME');
 > end
-> `
+> toolkitDir = fullfile(homeDir, '.matlab', 'agentic-toolkits', 'simulink');
+> addpath(toolkitDir)
+> satk_initialize
+> ```
 
 ### Verify
 
@@ -234,7 +253,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Control Systems](skills-catalog/control-systems/) | Control system design and analysis skills for Simulink models |
 | [Simulink Environment Fundamentals](skills-catalog/simulink-environment-fundamentals/) | Core Simulink environment capabilities, including discovering shipped example models |
 | [Signal Processing](skills-catalog/signal-processing/) | Frame-based streaming DSP models in Simulink using DSP System Toolbox |
-| [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion |
+| [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion and optimizing generated embedded code |
 
 ## Security Considerations
 When using the Simulink Agentic Toolkit and MATLAB MCP Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).

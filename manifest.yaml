@@ -75,6 +75,7 @@ skill-groups:
     path: skills-catalog/code-generation
     requires-products:
       - Simulink
+      - Embedded Coder
       - Fixed-Point Designer
 
   - name: simulink-environment-fundamentals

@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "2.2"
+version: "2.3"
 human-description: "Generates draft requirements from Simulink models. Prefers Requirements Toolbox (.slreqx) when available; falls back to structured YAML."
 matlab-release: ">=R2023a"
 required-tools:
