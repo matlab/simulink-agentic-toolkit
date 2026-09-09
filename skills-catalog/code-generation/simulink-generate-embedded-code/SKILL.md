@@ -3,18 +3,18 @@ name: simulink-generate-embedded-code
 description: >
   Configure Simulink models for Embedded Coder (ERT) or AUTOSAR code generation.
   Use when the user asks to configure a model for production/ECU deployment,
-  generate embedded C or C++ code, target ARM or x86 hardware, optimize code
-  generation for speed or RAM, apply MISRA C/C++ compliance, or set up ERT,
-  AUTOSAR, or shared-library targets — including running a full build or
-  producing a code generation report. Handles target selection, optimization
-  cascades, hardware mapping, model hierarchy propagation, and constraint
-  introspection via the configure_for_codegen function. Do NOT use for Simulink
-  Coder / GRT / grt.tlc / rapid-prototyping targets, DDS, or ROS — this skill
-  is Embedded Coder and AUTOSAR only.
+  generate embedded C or C++ code, target ARM or x86 hardware, select a MISRA
+  C/C++ compliance profile at configuration time, or set up ERT, AUTOSAR, or
+  shared-library targets — including running a full build or producing a code
+  generation report. Handles target selection, hardware mapping, model
+  hierarchy propagation, and constraint introspection via the
+  configure_for_codegen function. Do NOT use for Simulink Coder / GRT /
+  grt.tlc / rapid-prototyping targets, DDS, or ROS — this skill is Embedded
+  Coder and AUTOSAR only.
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.0.1"
 ---
 
 # Generate Embedded Code from Simulink Models
@@ -25,7 +25,6 @@ Configure Simulink models for Embedded Coder code generation using the configure
 
 - User asks to configure a model for code generation, production deployment, or Embedded Coder
 - User mentions ERT, AUTOSAR, ARM, embedded target, or production code
-- User wants to optimize generated code for speed or RAM
 - User asks for MISRA C or MISRA C++ compliance
 - User describes a deployment target in domain language ("deploy to ECU", "minimize flash")
 
@@ -37,6 +36,7 @@ Configure Simulink models for Embedded Coder code generation using the configure
 - Simulink Coder (GRT) targets — this skill only handles Embedded Coder (ERT) and AUTOSAR
 - DDS (Data Distribution Service) or ROS targets
 - Modifying or formatting generated code files after code generation
+- Iterative optimization of generated code after configuration — measuring baseline metrics, applying targeted changes, and re-measuring to confirm improvement
 
 ## Rules
 

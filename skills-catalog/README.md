@@ -43,6 +43,7 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 | `manage-safety-analysis` | Create and manage FMEA spreadsheets, fault trees, and safety analysis documents using Safety Analysis Manager (requires Simulink Fault Analyzer) |
 | `resolve-design-errors` | Detect Simulink Design Verifier design errors (division-by-zero, overflow, dead logic, out-of-bounds), perform root cause analysis with cascade detection and locality scoring, and propose ranked fixes (requires Simulink Design Verifier and Simulink Check) |
 | `simulink-explain-missing-coverage` | Explain why Simulink Coverage objectives went uncovered — separate provably-dead outcomes (SLDV) from reachable-but-untested ones, trace each to its controllable inputs (Model Slicer), and recommend a test, filter, or design review (requires Simulink Coverage, Design Verifier, Simulink Check) |
+| `fix-sldv-incompatibility` | Make a Simulink model compatible with Simulink Design Verifier — diagnose incompatibilities, apply fixes to a copy, and optionally verify consistency (requires Simulink Design Verifier) |
 | `testing-simulink-models` | Test Simulink models via two paths — ephemeral Gherkin-based tests (`model_test`) for quick validation, or persistent Simulink Test cases authored from requirements or behavioral specs |
 
 ### [Simulink Simulation](simulink-simulation/) 
@@ -60,6 +61,8 @@ Skills for code generation
 
 | Skill | Description |
 |-------|---------------------------|
+| `simulink-customize-a2l` | Customize A2L calibration files generated from Simulink models (requires Embedded Coder) |
+| `simulink-generate-embedded-code` | Configure Simulink models for Embedded Coder code generation — production deployment settings, hardware config, MISRA compliance across model reference hierarchies (requires Embedded Coder) |
 | `simulink-optimizing-embedded-code` | Optimize Simulink Embedded Coder generated code for runtime, RAM, ROM, stack usage, and MISRA compliance (requires Embedded Coder) |
 | `simulink-single-precision-conversion` | Convert a double-precision Simulink system or subsystem to single precision (requires Fixed-Point Designer) |
 

@@ -75,11 +75,13 @@ If you prefer to manage your own MCP server installation and agent configuration
 
 ## Update Simulink Agentic Toolkit
 
-Run the update action in MATLAB to download the latest toolkit and MCP server:
+To update the toolkit, download the latest installer add-on by clicking [agenticToolkitInstaller.mltbx](https://github.com/matlab/simulink-agentic-toolkit/releases/latest/download/agenticToolkitInstaller.mltbx). Open the downloaded file with MATLAB, and run this command in MATLAB:
 
 ```matlab
 setupAgenticToolkit("update")
 ```
+
+This updates the skills, configurations, and MCP server binary for both the MATLAB and Simulink Agentic Toolkits.
 
 After updating:
 
@@ -138,7 +140,13 @@ MATLAB MCP Server collects fully anonymized information about your usage of the 
 setupAgenticToolkit("configure", DisableTelemetry=true)
 ```
 
-This command opts every configured agent out of data collection. This setting is retained when you update to a new version the toolkit with `setupAgenticToolkit("update")`. If you reconfigure the toolkit for your agent(s) by running `setupAgenticToolkit("configure")`, include `DisableTelemetry=true` again to keep data collection disabled.
+This command opts every configured agent out of data collection. You can also opt out during install:
+
+```matlab
+setupAgenticToolkit("install", DisableTelemetry=true)
+```
+
+The setting is preserved across updates and subsequent configure calls — you do not need to pass the flag again. To re-enable data collection, pass `DisableTelemetry=false` explicitly.
 
 ---
 
@@ -149,6 +157,7 @@ This command opts every configured agent out of data collection. This setting is
 | Agent doesn't list Simulink skills | Skills not registered | Re-run `setupAgenticToolkit("configure")` |
 | MCP tools fail with "Undefined function" | `satk_initialize` not run in current MATLAB session | Run `satk_initialize` in MATLAB |
 | MCP server can't connect to MATLAB | Connector not running or stale connection | Add `--log-folder` and `--log-level` arguments to your MCP server configuration (see [MATLAB MCP Server arguments](https://github.com/matlab/matlab-mcp-server#arguments)), then run `satk_initialize` again (it calls `shareMATLABSession` automatically). Check the generated logs. |
+| Installation fails with "MATLAB support for Open JDK is required" (macOS Apple Silicon) | OpenJDK is not installed. MATLAB on Apple Silicon (maca64) requires a Java runtime for the Add-On Manager and toolbox installation in R2026a and earlier. | Install a Java runtime (e.g., Amazon Corretto 11) per the [MATLAB Apple Silicon requirements](https://www.mathworks.com/support/requirements/apple-silicon.html), then retry installation. This is the same Java requirement as for desktop MATLAB on Apple Silicon. R2026b and later do not require OpenJDK for most features. |
 | macOS blocks the MCP server binary | Gatekeeper quarantine | Right-click → Open, or run: `xattr -d com.apple.quarantine ~/.matlab/agentic-toolkits/bin/matlab-mcp-server` |
 | "rmiml.selectionLinkHelper" error | Path corruption from other toolboxes | Run `restoredefaultpath` in MATLAB, then re-run `satk_initialize` |
 | `model_test` fails or is unavailable | Simulink Test not installed | Install Simulink Test, or use the other 7 tools which work without it |

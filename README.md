@@ -67,7 +67,7 @@ You can use the Agentic Toolkit installer to set up the Simulink Agentic Toolkit
 
 Follow these steps to set up the Simulink Agentic Toolkit.
 
-1. Download `agenticToolkitInstaller.mltbx` from the [latest release](https://github.com/matlab/simulink-agentic-toolkit/releases).
+1. Download [agenticToolkitInstaller.mltbx](https://github.com/matlab/simulink-agentic-toolkit/releases/latest/download/agenticToolkitInstaller.mltbx).
 2. Open the downloaded file to install the installer add-on. If the Add-On Manager fails to launch (common on headless machines, corporate proxies/antivirus, or older MATLAB versions — you may see this error ERR_CERT_AUTHORITY_INVALID or "Unable to open the requested feature"), install programmatically instead:
 
    ```matlab
@@ -78,8 +78,6 @@ Follow these steps to set up the Simulink Agentic Toolkit.
    ```matlab
    setupAgenticToolkit("install")
    ```
-
-To update to the latest version, run `setupAgenticToolkit("update")`.
 
 To uninstall the toolkit, run `setupAgenticToolkit("uninstall")`.
 
@@ -132,8 +130,17 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
 ### MATLAB Setup
 The MATLAB MCP Server connects to a running MATLAB session. For each session, add the Simulink Agentic Toolkit to the path and initialize it.
 
+On Linux and macOS, use:
+
 ```matlab
 addpath("~/.matlab/agentic-toolkits/simulink")
+satk_initialize
+```
+
+On Windows, use:
+
+```matlab
+addpath(fullfile(getenv('USERPROFILE'), '.matlab', 'agentic-toolkits', 'simulink'))
 satk_initialize
 ```
 
@@ -167,15 +174,15 @@ satk_initialize(MCPServerPath="//server/share/bin/matlab-mcp-server")
 > **Add this block to `startup.m`:**
 >
 > ```matlab
-> % Initialize the Simulink Agentic Toolkit each MATLAB session.
-> if ispc
->     homeDir = getenv('USERPROFILE');
-> else
->     homeDir = getenv('HOME');
+> % Initialize the Simulink Agentic Toolkit (adjust version/path as needed)
+> if contains(version, 'R2026a')
+>     if ispc
+>         addpath(fullfile(getenv('USERPROFILE'), '.matlab', 'agentic-toolkits', 'simulink'))
+>     else
+>         addpath("~/.matlab/agentic-toolkits/simulink")
+>     end
+>     satk_initialize
 > end
-> toolkitDir = fullfile(homeDir, '.matlab', 'agentic-toolkits', 'simulink');
-> addpath(toolkitDir)
-> satk_initialize
 > ```
 
 ### Verify
@@ -221,6 +228,16 @@ To remove all library configuration:
 ```matlab
 satk.Configuration.clearConfig()
 ```
+## Update Simulink Agentic Toolkit
+
+To update the toolkit, download the latest installer add-on by clicking [agenticToolkitInstaller.mltbx](https://github.com/matlab/simulink-agentic-toolkit/releases/latest/download/agenticToolkitInstaller.mltbx). Open the downloaded file with MATLAB, and run this command in MATLAB:
+
+```matlab
+setupAgenticToolkit("update")
+```
+
+This updates the skills, configurations, and MCP server binary for both the MATLAB and Simulink Agentic Toolkits.
+
 ## MCP Tools
 
 After you install the Simulink Agentic Toolkit, your agent can use the following tools.
@@ -235,6 +252,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the following
 | `model_test` | Verify requirements. Run human-readable Gherkin tests with automatic harness generation *(requires Simulink Test)* |
 | `model_query_params` | Inspect any parameter. Query block settings, signal properties, solver config, and logging flags |
 | `model_resolve_params` | Get actual values. Resolve workspace variables like `Kp` to their numeric values across all scopes |
+| `model_scan` | Find something specific, fast. Regex-search the saved `.slx` file on disk for a block name, parameter value, or string without loading the model |
 
 
 ---
@@ -247,13 +265,13 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 |-------|---------------------------|
 | [Model-Based Design Core](skills-catalog/model-based-design-core/) | Core Model-Based Design (MBD) skills for building, testing, and specifying Simulink models |
 | [Model-Based System Engineering](skills-catalog/model-based-system-engineering/) | Model-Based System Engineering skills for System Composer architecture models |
-| [Verification, Validation, and Test](skills-catalog/verification-validation-and-test/) | Author custom Model Advisor checks and run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, etc.) |
+| [Verification, Validation, and Test](skills-catalog/verification-validation-and-test/) | Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, etc.), fix SLDV incompatibilities, and explain missing coverage |
 | [Simulink Simulation](skills-catalog/simulink-simulation/) | Skills for constructing simulation input datasets and configuring simulation workflows |
 | [Simulink Modeling](skills-catalog/simulink-modeling/) | Configure and integrate C/C++ code into Simulink models via C Function blocks |
 | [Control Systems](skills-catalog/control-systems/) | Control system design and analysis skills for Simulink models |
 | [Simulink Environment Fundamentals](skills-catalog/simulink-environment-fundamentals/) | Core Simulink environment capabilities, including discovering shipped example models |
 | [Signal Processing](skills-catalog/signal-processing/) | Frame-based streaming DSP models in Simulink using DSP System Toolbox |
-| [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion and optimizing generated embedded code |
+| [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code, configuring Embedded Coder deployment settings, and customizing A2L calibration files |
 
 ## Security Considerations
 When using the Simulink Agentic Toolkit and MATLAB MCP Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).

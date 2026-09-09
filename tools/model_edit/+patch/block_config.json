@@ -393,11 +393,11 @@
             "tick clock"
         ],
         "DiscreteFilter": [
-            "Discrete FIR Filter",
             "iir filter"
         ],
         "DiscreteFir": [
-            "fir filter"
+            "fir filter",
+            "discrete fir filter"
         ],
         "DiscreteIntegrator": [
             "discrete-time integrator",

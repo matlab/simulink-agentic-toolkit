@@ -19,13 +19,15 @@ Simulink domain skills are in `skills-catalog/model-based-design-core/`. Each sk
 
 ## MCP Tools
 
-Seven MCP tools are available when the MCP server is connected (see `tools/registry.json`):
+Nine MCP tools are available when the MCP server is connected (see `tools/registry.json`):
 - `model_overview` — hierarchical model visualization
 - `model_read` — block topology and expression notation
 - `model_edit` — structural modifications
 - `model_check` — structural validation (unconnected ports, dangling lines, Edit-Time Checks on States and Subcharts)
+- `model_read_diagnostics` — read errors, warnings, and info from the Diagnostic Viewer
 - `model_query_params` — random access to parameters
 - `model_resolve_params` — resolve workspace variables
+- `model_scan` — regex search of the saved `.slx` file on disk for a specific block, parameter value, or string
 - `model_test` — Gherkin-based behavioral testing (requires Simulink Test)
 
 ## MATLAB Prerequisite

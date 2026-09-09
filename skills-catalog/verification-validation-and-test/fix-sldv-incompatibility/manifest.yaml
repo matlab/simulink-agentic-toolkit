@@ -1,0 +1,26 @@
+# manifest.yaml — Tooling metadata for fix-sldv-incompatibility
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "1.0"
+human-description: Make a Simulink model compatible with Simulink Design Verifier. Diagnoses the incompatibility (config params and flagged blocks), applies the matching fix to a copy via set_param or model_edit, and confirms the copy passes sldvcompat. Optionally raises confidence the fix preserved behavior by replaying SLDV-generated tests on the original model (a consistency check on the generated cases, not a proof of equivalence).
+matlab-release: ">=R2023b"
+required-tools:
+  - evaluate_matlab_code
+  - model_overview
+  - model_read
+  - model_edit
+  - model_query_params
+required-skills: []
+reference-files:
+  - references/incompatibility-rules.md
+  - references/consistency-check.md
+  - scripts/sldv_diagnose_incompatibility.m
+  - scripts/sldv_localize_incompatibility.m
+  - scripts/sldv_verify_consistency.m
+required-products:
+  - Simulink
+  - Simulink Design Verifier
+optional-products: []
+toolkit: simulink-agentic-toolkit
+# Copyright 2026 The MathWorks, Inc.

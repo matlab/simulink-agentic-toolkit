@@ -189,7 +189,7 @@
   "Sin": "Apply sine function to input",
   "SineandCosine": "Compute sine and cosine of input simultaneously",
   "SliderGain": "Vary scalar gain using interactive slider",
-  "Sqrt": "Compute square root of input",
+  "Sqrt": "Compute square root, signed square root, or reciprocal square root of input (Operator parameter selects the operation; see the block expression)",
   "Squeeze": "Remove dimensions of length 1 from signal",
   "StateReader": "Read state values from specified block",
   "StateSpace": "Implement continuous-time state-space system",

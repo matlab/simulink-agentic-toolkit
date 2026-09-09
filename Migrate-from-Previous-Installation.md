@@ -17,7 +17,21 @@ If you set up the Simulink® Agentic Toolkit using an earlier version (the agent
    - Gemini CLI: `~/.gemini/settings.json` (remove the `mcpServers` entry)
    - Sourcegraph Amp: `~/.config/amp/settings.json` (remove `amp.mcpServers.matlab` or `amp.mcpServers.simulink` **and** `amp.skills.path`)
 
-5. **Skill registrations** — remove old symlinks from `~/.agents/skills/` and `~/.claude/skills/` that point into your old toolkit clone. For Amp, also remove the `amp.skills.path` entry in `~/.config/amp/settings.json` if it references your old toolkit path.
+5. **Skill registrations** — remove old symlinks or skill files that point into your old toolkit clone from all possible skill locations:
+
+   **Global (user-level):**
+   - `~/.agents/skills/`
+   - `~/.claude/skills/`
+   - `~/.copilot/skills/`
+
+   **Project-level** (check any projects where you previously used the toolkit):
+   - `.agents/skills/`
+   - `.claude/skills/`
+   - `.github/skills/`
+
+   **Other locations:**
+   - Any custom paths configured via the VS Code `chat.agentSkillsLocations` setting
+   - For Amp, remove the `amp.skills.path` entry in `~/.config/amp/settings.json` if it references your old toolkit path
 
 6. **Old toolkit clone** — if you cloned the repository just for setup and no longer need it as a reference, you can delete it. The new setup script downloads toolkit files to `~/.matlab/agentic-toolkits/`.
 

@@ -33,8 +33,8 @@
     },
     {
       "name": "verification-validation-and-test",
-      "version": "0.7.0",
-      "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR, SLCI), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), and detect design errors with root cause analysis using Simulink Design Verifier",
+      "version": "0.8.0",
+      "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR, SLCI), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), detect design errors with root cause analysis using Simulink Design Verifier, fix SLDV incompatibilities, and explain missing coverage objectives",
       "author": {
         "name": "MathWorks"
       },
@@ -46,8 +46,8 @@
     },
     {
       "name": "code-generation",
-      "version": "0.3.0",
-      "description": "Prepare Simulink models for production code generation, including single-precision conversion and optimizing generated embedded code for runtime, memory, and MISRA compliance",
+      "version": "0.4.0",
+      "description": "Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code for runtime, memory, and MISRA compliance, configuring Embedded Coder deployment settings, and customizing A2L calibration files",
       "author": {
         "name": "MathWorks"
       },

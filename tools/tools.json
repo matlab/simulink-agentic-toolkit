@@ -16,7 +16,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "scope": {
             "type": "string",
@@ -49,7 +49,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "scope": {
             "type": "string",
@@ -82,7 +82,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "targets": {
             "type": "string",
@@ -120,7 +120,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "expressions": {
             "type": "string",
@@ -148,7 +148,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "scope": {
             "type": "string",
@@ -190,7 +190,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "severity": {
             "type": "string",
@@ -253,7 +253,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "scope": {
             "type": "string",
@@ -272,6 +272,42 @@
       }
     },
     {
+      "name": "model_scan",
+      "title": "Model Scan",
+      "description": "Regex search the raw .slx file on disk to locate a SPECIFIC block, parameter value, or string. Extremely fast (<100ms). Returns blk_X IDs usable with model_edit.\n\nWHEN TO USE — only for targeted searches:\n- Find a specific named block: \"PID.*Controller\", \"ErrorSum\"\n- Find blocks using a workspace variable: \"Kp\", \"SampleTime\"\n- Find commented/disabled blocks: \"Commented\"\n- Check if a specific item exists before editing: \"(?i)controller\"\n\nWHEN NOT TO USE — use the dedicated tool instead:\n- Model structure, hierarchy, or subsystem list → use model_overview\n- How blocks are connected or signal flow → use model_overview (detail=full)\n- What a subsystem computes or its algorithm → use model_read\n- Port names, interfaces, or I/O lists → use model_overview (detail=interfaces)\n- Counting blocks or subsystems → use model_overview (detail=tree)\n- Understanding block behavior or expressions → use model_read\n\nDo NOT use broad patterns like \"SubSystem\", \"Block\", or \".\" to discover model structure — model_overview exists for that and gives structured results.\n\nWHAT IS SEARCHED: the raw XML inside the saved .slx — block elements, parameter elements, and Stateflow chart XML. Config sets, package metadata, and _rels files are filtered out of the results. Patterns are Go RE2 applied to the UNESCAPED XML: write '<P Name=\"Gain\">', not '&lt;P Name=&quot;Gain&quot;&gt;'. No lookaround and no backreferences; use '(?i)' for case-insensitive matching.\n\nIMPORTANT: The grep results include id/owner_id fields (blk_X format) that are directly usable with model_edit. Do NOT call evaluate_matlab_code with find_system to re-discover block IDs — they are already in the output.\n\nLimitations:\n- Reads the SAVED .slx on disk, never the in-memory model. A model with unsaved changes returns DIRTY_MODEL — save it and retry, or use model_read (structure, expressions) / model_query_params (specific values), which read the loaded model. Expect this immediately after model_edit: scan before you edit, or save between the edit and the scan.\n- Does not resolve workspace variables or compiled types — use model_resolve_params for that.",
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "model": {
+            "type": "string",
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
+          },
+          "command": {
+            "type": "string",
+            "enum": [
+              "grep"
+            ],
+            "description": "Scan command: 'grep' for regex search across all model content"
+          },
+          "pattern": {
+            "type": "string",
+            "description": "Regex pattern for grep command. Examples: 'Gain', 'Controller', '(?i)pid'"
+          }
+        },
+        "required": [
+          "model",
+          "command",
+          "pattern"
+        ]
+      }
+    },
+    {
       "name": "model_test",
       "title": "Model Test",
       "description": "Execute behavioral tests against a Simulink model using a Gherkin-format specification file. Auto-creates test artifacts and returns pytest-style results. IMPORTANT: Load the 'testing-simulink-models' skill before writing .feature files — the Gherkin format requires TOML front-matter and custom step syntax not found in standard Gherkin. ROUTING: When a user asks to 'generate tests', 'write test cases', or 'verify requirements' for a Simulink model or subsystem, ALWAYS use this tool with the testing-simulink-models skill — never write matlab.unittest.TestCase classes that reimplement model logic in MATLAB.",
@@ -286,7 +322,7 @@
         "properties": {
           "model": {
             "type": "string",
-            "description": "Model filename (e.g. MyModel.slx)"
+            "description": "Model filename (e.g. MyModel.slx) or absolute path to .slx/.mdl file"
           },
           "gherkin_file": {
             "type": "string",
@@ -399,6 +435,16 @@
           "model",
           "scope",
           "checks"
+        ]
+      }
+    },
+    "model_scan": {
+      "function": "model_scan",
+      "input": {
+        "order": [
+          "model",
+          "command",
+          "pattern"
         ]
       }
     },
