@@ -114,13 +114,13 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
    --extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
    ```
 
-4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, and `code-generation/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, `physical-modeling/`, and `code-generation/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
    For platforms that discover skills from `~/.agents/skills/`, create symlinks:
 
    ```bash
    mkdir -p ~/.agents/skills
-   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing code-generation; do
+   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing physical-modeling code-generation; do
      for skill in /path/to/simulink-agentic-toolkit/skills-catalog/$group/*/; do
        ln -s "$skill" ~/.agents/skills/$(basename "$skill")
      done
@@ -271,6 +271,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Control Systems](skills-catalog/control-systems/) | Control system design and analysis skills for Simulink models |
 | [Simulink Environment Fundamentals](skills-catalog/simulink-environment-fundamentals/) | Core Simulink environment capabilities, including discovering shipped example models |
 | [Signal Processing](skills-catalog/signal-processing/) | Frame-based streaming DSP models in Simulink using DSP System Toolbox |
+| [Physical Modeling](skills-catalog/physical-modeling/) | Model, simulate, and analyze multidomain physical systems with the Simscape product family |
 | [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code, configuring Embedded Coder deployment settings, and customizing A2L calibration files |
 
 ## Security Considerations

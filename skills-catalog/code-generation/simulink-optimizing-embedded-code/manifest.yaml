@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: product-specific
-version: "1.0"
+version: "1.0.1"
 human-description: Optimize Simulink Embedded Coder generated code for runtime, RAM, ROM, stack usage, and MISRA compliance.
 matlab-release: ">=R2023a"
 toolkit: simulink-agentic-toolkit

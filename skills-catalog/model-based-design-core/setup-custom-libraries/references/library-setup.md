@@ -40,7 +40,7 @@ Do not create any files. The agent will proceed with standard Simulink blocks.
 
 ```matlab
 projectRoot = '/path/to/project';
-library.LibraryConfig.save(projectRoot, libraries);
+library.LibraryConfig.save(projectRoot, libraries, struct('allowParentRelative', true));
 ```
 
 **Promote project config to prefdir:**

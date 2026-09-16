@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "2.0"
+version: "2.0.1"
 human-description: Tests Simulink models using either ephemeral Gherkin-based tests (model_test) for quick validation or persistent tests (Simulink Test API) authored from requirements or behavioral specs. Requires Simulink Test.
 matlab-release: ">=R2023a"
 required-tools:

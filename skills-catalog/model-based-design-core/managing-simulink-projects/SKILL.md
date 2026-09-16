@@ -79,6 +79,7 @@ Four principles that prevent the most common failures:
 | Link data dictionaries to models | `references/data-dictionaries.md` |
 | Configure model references across folders | `references/model-references.md` |
 | Configure source control, cache folders, `.gitignore` | `references/source-control-and-caching.md` |
+| Configure startup/shutdown scripts | `references/path-and-file-management.md` (Startup and Shutdown Scripts section) |
 | Diagnose broken references or health check failures | Start with Verification below, then route to the relevant reference |
 
 ## Verification

@@ -307,8 +307,7 @@
             "simulation clock"
         ],
         "CombinatorialLogic": [
-            "boolean table",
-            "truth table"
+            "boolean table"
         ],
         "ComplexToMagnitudeAngle": [
             "Complex2MagnitudeAngle",
@@ -451,8 +450,7 @@
             "linear hold"
         ],
         "FloatExtractBits": [
-            "bit field",
-            "extract bits"
+            "float extract bits"
         ],
         "From": [
             "from tag",
@@ -9347,6 +9345,12 @@
             "path": "hdlsllib/Logic and Bit Operations/Detect Rise Positive",
             "aliases": [
                 "detect rise positive"
+            ]
+        },
+        {
+            "path": "simulink/Logic and Bit Operations/Extract Bits",
+            "aliases": [
+                "extract bits"
             ]
         },
         {

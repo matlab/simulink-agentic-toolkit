@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "2.1"
+version: "2.1.1"
 human-description: "Create, populate, and manage safety analysis spreadsheets (FMEA, FHA, HARA) and fault trees (FTA) in Safety Analysis Manager."
 matlab-release: ">=R2023b"
 required-tools:

@@ -2,7 +2,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "0.1"
+version: "0.1.1"
 human-description: Explain why Simulink Coverage objectives are missing on an existing coverage result — separate provably-dead outcomes (SLDV) from reachable-but-untested ones, trace each to its controllable inputs (Model Slicer), and recommend a test, a coverage filter, or a design review. Never collects coverage.
 matlab-release: ">=R2023a"
 required-tools:

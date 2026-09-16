@@ -1,0 +1,43 @@
+component two_port_dynamic
+% Two-port dynamic isothermal liquid component
+
+% Use this component if there is an internal fluid state. If there is no
+% internal fluid state and the flow is quasi-steady, drop the p_I state
+% variable and its mass-balance equation, and replace with mdot_A + mdot_B == 0.
+
+parameters
+    % Add parameters here
+end
+
+nodes
+    A = foundation.isothermal_liquid.isothermal_liquid; % A:left
+    B = foundation.isothermal_liquid.isothermal_liquid; % B:right
+end
+
+variables
+    % Through variables
+    mdot_A = {0, 'kg/s'}; % Mass flow rate into port A
+    mdot_B = {0, 'kg/s'}; % Mass flow rate into port B
+
+    % State of internal fluid volume
+    p_I = {value = {0.101325, 'MPa'}, priority = priority.high}; % Pressure of liquid volume
+end
+
+branches
+    mdot_A : A.mdot -> *;
+    mdot_B : B.mdot -> *;
+end
+
+equations
+    % Momentum balance
+    % Implement equation relating pressure difference with mass flow rate
+
+    % Mass balance
+    % Implement differential equation for internal fluid state p_I
+
+    % Validate that pressure is in valid region
+    assert(A.p >= A.p_min, Action = A.properties_range_check)
+    assert(B.p >= A.p_min, Action = A.properties_range_check)
+end
+
+end

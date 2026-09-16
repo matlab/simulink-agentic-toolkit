@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.8.3",
+      "version": "0.8.4",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -33,7 +33,7 @@
     },
     {
       "name": "verification-validation-and-test",
-      "version": "0.8.0",
+      "version": "0.8.1",
       "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR, SLCI), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), detect design errors with root cause analysis using Simulink Design Verifier, fix SLDV incompatibilities, and explain missing coverage objectives",
       "author": {
         "name": "MathWorks"
@@ -46,7 +46,7 @@
     },
     {
       "name": "code-generation",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "description": "Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code for runtime, memory, and MISRA compliance, configuring Embedded Coder deployment settings, and customizing A2L calibration files",
       "author": {
         "name": "MathWorks"
@@ -98,7 +98,7 @@
     },
     {
       "name": "simulink-environment-fundamentals",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Core Simulink environment capabilities, including discovering shipped example models",
       "author": {
         "name": "MathWorks"
@@ -118,6 +118,19 @@
       },
       "keywords": ["simulink", "dsp", "signal-processing", "streaming", "frame-based", "audio", "filter", "multirate", "buffering", "decimation"],
       "source": "./skills-catalog/signal-processing",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "physical-modeling",
+      "version": "0.1.0",
+      "description": "Model, simulate, and analyze multidomain physical systems with the Simscape product family",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simscape", "physical-modeling", "ssc", "simulink", "matlab"],
+      "source": "./skills-catalog/physical-modeling",
       "category": "development",
       "strict": false,
       "skills": "./"

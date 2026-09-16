@@ -92,3 +92,11 @@ skill-groups:
     requires-products:
       - Simulink
       - DSP System Toolbox
+
+  - name: physical-modeling
+    display-name: "Physical Modeling"
+    description: "Model, simulate, and analyze multidomain physical systems with the Simscape product family"
+    path: skills-catalog/physical-modeling
+    requires-products:
+      - Simulink
+      - Simscape

@@ -55,6 +55,14 @@ Skills for constructing simulation input datasets and configuring simulation wor
 | `authoring-simulink-inputs` | Create populated input signal datasets for Simulink models using createInputDataset scaffolds with correct metadata |
 | `create-sdi-run` | Import data into the Simulation Data Inspector from files, workspace variables, or a simulation |
 
+### [Physical Modeling](physical-modeling/)
+
+Model, simulate, and analyze multidomain physical systems with the Simscape product family
+
+| Skill | Description |
+|-------|---------------------------|
+| `simscape-write-ssc` | Write and validate Simscape Language source files (.ssc) — components, domains, or functions |
+
 ### [Code Generation](code-generation/)
 
 Skills for code generation

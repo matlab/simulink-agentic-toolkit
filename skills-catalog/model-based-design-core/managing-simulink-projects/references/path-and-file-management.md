@@ -55,6 +55,32 @@ if isfile(targetFile)
 end
 ```
 
+## Startup and Shutdown Scripts
+
+Use `addStartupFile` and `addShutdownFile` to register scripts that run when the project opens and closes. These methods both register the file with the project and mark it as a startup/shutdown script — a separate `addFile` call is not needed.
+
+```matlab
+% Write the startup script
+startupFile = fullfile(proj.RootFolder, 'startup.m');
+fid = fopen(startupFile, 'w');
+fprintf(fid, 'proj = currentProject;\n');
+fprintf(fid, 'addpath(fullfile(proj.RootFolder, ''data''));\n');
+fclose(fid);
+
+% Write the shutdown script
+shutdownFile = fullfile(proj.RootFolder, 'shutdown.m');
+fid = fopen(shutdownFile, 'w');
+fprintf(fid, 'proj = currentProject;\n');
+fprintf(fid, 'rmpath(fullfile(proj.RootFolder, ''data''));\n');
+fclose(fid);
+
+% Register both with the project
+addStartupFile(proj, 'startup.m');
+addShutdownFile(proj, 'shutdown.m');
+```
+
+Use `currentProject` inside startup/shutdown scripts to get the project handle — do not rely on a `proj` variable existing in the base workspace.
+
 ## Key Behaviors
 
 - `addFile` is idempotent — adding same file twice does not error

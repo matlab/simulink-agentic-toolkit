@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "1.2"
+version: "1.2.1"
 human-description: Register, add, or update existing custom Simulink block libraries and configure block policy and knowledge index. Use when a user wants to register, set up, configure, or add existing .slx library files for agent-assisted model building. Do NOT use when the user wants to create or author a new library from scratch.
 matlab-release: ">=R2023a"
 required-tools:

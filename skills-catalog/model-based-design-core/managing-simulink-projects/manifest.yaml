@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "1.1"
+version: "1.2"
 human-description: "Manages MATLAB projects for Simulink workflows: path management, file registration, labels, source control configuration, and project lifecycle."
 matlab-release: ">=R2023a"
 required-tools:

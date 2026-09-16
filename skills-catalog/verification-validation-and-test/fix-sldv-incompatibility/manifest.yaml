@@ -2,7 +2,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "1.0"
+version: "1.0.1"
 human-description: Make a Simulink model compatible with Simulink Design Verifier. Diagnoses the incompatibility (config params and flagged blocks), applies the matching fix to a copy via set_param or model_edit, and confirms the copy passes sldvcompat. Optionally raises confidence the fix preserved behavior by replaying SLDV-generated tests on the original model (a consistency check on the generated cases, not a proof of equivalence).
 matlab-release: ">=R2023b"
 required-tools:

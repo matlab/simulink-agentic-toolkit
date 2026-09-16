@@ -1,0 +1,47 @@
+# manifest.yaml — Tooling metadata for simscape-write-ssc
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "1.0"
+human-description: Write and validate Simscape Language source files (.ssc).
+matlab-release: ">=R2023a"
+required-tools:
+  - evaluate_matlab_code
+required-skills: []
+reference-files:
+  - references/composition/arrays-of-nodes.md
+  - references/composition/composite-components-and-connections.md
+  - references/composition/composites-member-variable-initialization.md
+  - references/composition/for-loop-component-arrays.md
+  - references/composition/inheritance-and-subclassing.md
+  - references/composition/optional-and-variant-members.md
+  - references/equations-and-variables/assertions-and-bounds.md
+  - references/equations-and-variables/intermediates-and-let.md
+  - references/equations-and-variables/variables-derivatives-initialization.md
+  - references/foundation/domain-selection.md
+  - references/foundation/gas.md
+  - references/foundation/isothermal-liquid.md
+  - references/foundation/moist-air.md
+  - references/foundation/thermal-liquid.md
+  - references/foundation/two-phase-fluid.md
+  - references/language-functions/matlab-declaration-functions.md
+  - references/language-functions/tablelookup.md
+  - references/language-functions/writing-simscape-functions.md
+  - references/modecharts-and-events/events-and-event-variables.md
+  - references/modecharts-and-events/modecharts.md
+  - references/parameters-and-conditionals/access-and-visibility-attributes.md
+  - references/parameters-and-conditionals/conditional-sections-and-hiding-members.md
+  - references/parameters-and-conditionals/enumerations.md
+  - references/parameters-and-conditionals/parameter-declaration.md
+  - references/ports-and-nodes/branches.md
+  - references/ports-and-nodes/nodes-conserving-ports.md
+  - references/ports-and-nodes/physical-signal-inputs-and-outputs.md
+  - references/presentation/block-appearance-and-ports.md
+  - references/presentation/uilayout-and-dialog-tabs.md
+helper-files:
+  - scripts/+simscape/+agentic/sscIssues.m
+required-products:
+  - Simscape
+optional-products: []
+toolkit: simulink-agentic-toolkit
+# Copyright 2026 The MathWorks, Inc.
