@@ -17,12 +17,15 @@
 
 - Audio Toolbox
 
-Common blocks: [common.md](common.md) (5 of 11 blocks)
+Common blocks: [common.md](common.md) (30 of 50 blocks)
 
 ## Categories
 
-- [Deep learning](deep-learning.md) — 1 blocks; Neural network-based audio processing models
-- [Utilities](utilities.md) — 3 blocks; Demos, information, and user-defined extensions
-- [Audio processing](audio-processing.md) — 3 blocks; Core audio signal processing including effects, filtering, and dynamics
-- [Audio analysis](audio-analysis.md) — 2 blocks; Audio measurement, feature extraction, and signal analysis
-- [Audio io](audio-io.md) — 2 blocks; Audio input/output from devices, files, and generators
+- [Deep learning](deep-learning.md) — 13 blocks; Neural-network audio processing blocks
+- [Effects dynamics](effects-dynamics.md) — 4 blocks; Audio effects and dynamic range control
+- [Sources](sources.md) — 7 blocks; Generate or read audio signals
+- [Features](features.md) — 5 blocks; Extract audio features for analysis and machine learning
+- [Filters](filters.md) — 15 blocks; Filter banks and equalizer designs
+- [Measurements](measurements.md) — 2 blocks; Perceptual and level measurements
+- [Sinks](sinks.md) — 3 blocks; Play, record, and visualize audio
+- [User defined](user-defined.md) — 1 blocks; Host custom audio plugins and functions

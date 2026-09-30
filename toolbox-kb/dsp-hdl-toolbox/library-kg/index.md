@@ -17,8 +17,11 @@
 
 - DSP HDL Toolbox
 
-Common blocks: [common.md](common.md) (5 of 8 blocks)
+Common blocks: [common.md](common.md) (17 of 18 blocks)
 
 ## Categories
 
-- [Hdl dsp](hdl-dsp.md) — 8 blocks; HDL-optimized DSP blocks for FPGA signal processing
+- [Filtering](filtering.md) — 10 blocks; HDL-optimized streaming filters and rate-change filters
+- [Math functions](math-functions.md) — 1 blocks; HDL-optimized math on streaming samples
+- [Signal operations](signal-operations.md) — 5 blocks; HDL-optimized resampling and sample-rate operations
+- [Transforms](transforms.md) — 2 blocks; HDL-optimized FFT/IFFT transforms

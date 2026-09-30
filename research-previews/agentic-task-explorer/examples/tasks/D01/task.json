@@ -11,10 +11,7 @@
     "include_files": [
       "$/StabilityControlSystem.slx",
       "$/requirements.yaml"
-    ],
-    "context_variables": {
-      "model_name": "StabilityControlSystem.slx"
-    }
+    ]
   },
   "steps": [
     {

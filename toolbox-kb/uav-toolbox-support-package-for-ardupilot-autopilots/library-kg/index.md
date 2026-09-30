@@ -17,9 +17,10 @@
 
 - UAV Toolbox Support Package for ArduPilot Autopilots
 
-Common blocks: [common.md](common.md) (5 of 22 blocks)
+Common blocks: [common.md](common.md) (12 of 12 blocks)
 
 ## Categories
 
-- [Peripherals](peripherals.md) — 5 blocks; Communication and peripheral interfaces
-- [Utilities](utilities.md) — 4 blocks; Logging, parameters, and timing
+- [Controller interface](controller-interface.md) — 10 blocks; Read vehicle state and issue setpoints when authoring custom ArduPilot controllers
+- [Peripherals](peripherals.md) — 1 blocks; Access ArduPilot hardware peripherals
+- [Utility](utility.md) — 1 blocks; Timing and helper blocks

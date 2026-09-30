@@ -4,7 +4,7 @@ title: Signal management
 description: Signal quality, invalidation, and communication status handling
 tags: [invalidation, signal, quality, status, communication]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: AUTOSAR Blockset
 category_path: Signal management
 block_count: 1

@@ -11,10 +11,7 @@
     "include_files": [
       "StabilityControlSystemMessy.slx",
       "StabilityControlSystemRestructured.slx"
-    ],
-    "context_variables": {
-      "model_name": "StabilityControlSystemMessy.slx"
-    }
+    ]
   },
   "steps": [
     {

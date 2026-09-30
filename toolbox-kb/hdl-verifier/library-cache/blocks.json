@@ -1,0 +1,113 @@
+{
+  "libraryName": "HDL Verifier",
+  "generatedAt": "2026-09-28T19:17:20",
+  "blockCount": 8,
+  "blocks": [
+    {
+      "name": "To VCD File",
+      "referenceBlock": "vivadosimlib/To VCD File",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "To VCD File",
+      "maskDescription": "Generates a value change dump (VCD) file containing information about changes to signals connected to the block's input ports. The VCD file name field specifies the name of the generated file.",
+      "pathCategory": "For Use with  AMD Vivado Simulator",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "HDL Cosimulation",
+      "referenceBlock": "vivadosimlib/HDL Cosimulation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink and Vivado Simulator Cosimulation",
+      "maskDescription": "Cosimulate hardware components with the Vivado(R) Simulator. Inputs from Simulink(R) are applied to HDL signals. Outputs from this block are driven by HDL signals.",
+      "pathCategory": "For Use with  AMD Vivado Simulator",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "To VCD File",
+      "referenceBlock": "lfilinklib/To VCD File",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "To VCD File",
+      "maskDescription": "Generates a value change dump (VCD) file containing information about changes to signals connected to the block's input ports. The VCD file name field specifies the name of the generated file.",
+      "pathCategory": "For Use with  Cadence Xcelium",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "HDL Cosimulation",
+      "referenceBlock": "lfilinklib/HDL Cosimulation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink and Xcelium Cosimulation",
+      "maskDescription": "Cosimulate hardware components using Xcelium(R) simulators.  Inputs from Simulink(R) are applied to HDL signals.  Outputs from this block are driven by HDL signals.",
+      "pathCategory": "For Use with  Cadence Xcelium",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "To VCD File",
+      "referenceBlock": "vcslib/To VCD File",
+      "blockType": "S-Function",
+      "description": "",
+      "category": "",
+      "maskType": "To VCD File",
+      "maskDescription": "Generates a value change dump (VCD) file containing information about changes to signals connected to the block's input ports. The VCD file name field specifies the name of the generated file.",
+      "pathCategory": "For Use with  Synopsys VCS",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "HDL Cosimulation",
+      "referenceBlock": "vcslib/HDL Cosimulation",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Simulink and VCS Cosimulation",
+      "maskDescription": "Cosimulate hardware components using Synopsys VCS(R) simulators.  Inputs from Simulink(R) are applied to HDL signals.  Outputs from this block are driven by HDL signals.",
+      "pathCategory": "For Use with  Synopsys VCS",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Assertion",
+      "referenceBlock": "dpiblklib/Assertion",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Assertion for DPI-C",
+      "maskDescription": "Assert that the input signal is non-zero. The default behavior in the absence of a callback is to output an error message when the assertion fails.\n\nWhen generating a DPI-C component this block gets translated into a native SystemVerilog assertion that throws the specified assertion fail message or executes the specified SystemVerilog command if 'custom' severity is selected.",
+      "pathCategory": "For Use with DPI-C SystemVerilog",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sequence Feedback",
+      "referenceBlock": "dpiblklib/Sequence Feedback",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Sequence Feedback",
+      "maskDescription": "Use this block as a feedback connection from the scoreboard to the sequence in the UVM testbench model. This block is a unit delay with initial condition 0.",
+      "pathCategory": "For Use with DPI-C SystemVerilog",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023b",
+  "annotatedAt": "2026-09-29T04:54:38"
+}

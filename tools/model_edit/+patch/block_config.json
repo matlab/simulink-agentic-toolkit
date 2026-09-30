@@ -221,9 +221,6 @@
     "aliases": {
         "Math": [
             "exp",
-            "log",
-            "pow",
-            "power",
             "sqrt"
         ],
         "Gain": [
@@ -242,7 +239,6 @@
             "+",
             "-",
             "add",
-            "minus",
             "plus",
             "subtract"
         ],
@@ -670,7 +666,6 @@
             "reshape array"
         ],
         "Rounding": [
-            "round",
             "rounding mode"
         ],
         "S-Function": [
@@ -719,8 +714,7 @@
             "sign"
         ],
         "Sin": [
-            "sin()",
-            "sine"
+            "sin()"
         ],
         "Sqrt": [
             "sqrt()",
@@ -880,6 +874,49 @@
         ]
     },
     "pathAliases": [
+        {
+            "path": "simulink/Quick Insert/Math\nOperations/Log",
+            "aliases": [
+                "log"
+            ]
+        },
+        {
+            "path": "simulink/Quick Insert/Math\nOperations/Power",
+            "aliases": [
+                "pow",
+                "power"
+            ]
+        },
+        {
+            "path": "simulink/Quick Insert/Math\nOperations/Round",
+            "aliases": [
+                "round"
+            ]
+        },
+        {
+            "path": "simulink/Quick Insert/Math\nOperations/Minus",
+            "aliases": [
+                "minus"
+            ]
+        },
+        {
+            "path": "simulink/Quick Insert/Math\nOperations/Max",
+            "aliases": [
+                "max"
+            ]
+        },
+        {
+            "path": "simulink/Quick Insert/Math\nOperations/Min",
+            "aliases": [
+                "min"
+            ]
+        },
+        {
+            "path": "simulink/Quick Insert/Math\nOperations/Reciprocal",
+            "aliases": [
+                "reciprocal"
+            ]
+        },
         {
             "path": "simulink/Lookup Tables/1-D Lookup Table",
             "aliases": [
@@ -16476,7 +16513,12 @@
             "path": "simulink/Sources/Sine Wave",
             "aliases": [
                 "sine wave",
-                "sinewave",
+                "sinewave"
+            ]
+        },
+        {
+            "path": "simulink/Lookup Tables/Sine",
+            "aliases": [
                 "sine"
             ]
         },

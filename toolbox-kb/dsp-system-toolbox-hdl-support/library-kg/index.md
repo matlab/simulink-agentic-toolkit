@@ -17,8 +17,13 @@
 
 - DSP System Toolbox HDL Support
 
-Common blocks: [common.md](common.md) (2 of 6 blocks)
+Common blocks: [common.md](common.md) (27 of 27 blocks)
 
 ## Categories
 
-- [Hdl dsp support](hdl-dsp-support.md) — 6 blocks; HDL-compatible DSP System Toolbox blocks for FPGA implementation
+- [Filtering](filtering.md) — 7 blocks; HDL-optimized streaming filters and rate-change filters
+- [Signal management](signal-management.md) — 6 blocks; Reshape, type conversion, and element selection
+- [Signal operations](signal-operations.md) — 6 blocks; Sample-rate change, delays, and holds
+- [Sinks](sinks.md) — 4 blocks; Display and logging of signals
+- [Sources](sources.md) — 2 blocks; Signal sources
+- [Statistics](statistics.md) — 2 blocks; Running statistical measures

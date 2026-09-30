@@ -1,0 +1,48 @@
+---
+type: Simulink Block Category
+title: Equivalent baseband
+description: Equivalent-baseband RF chain components (amplifiers, mixers, filters, lines)
+tags: [equivalent baseband]
+status: stable
+source: custom_library
+library_root: RF Blockset
+category_path: Equivalent baseband
+block_count: 28
+---
+
+# Equivalent baseband
+
+Use these blocks for equivalent baseband.
+
+## Recommended Blocks
+
+| Block | ReferenceBlock | Since | Intent |
+|---|---|---|---|
+| General Amplifier | rfamplifiers1/General Amplifier | R2023a+ | RF amplifier described by a data source that consists of either an RFDATA object or data from a file. When there is no noise data in the data source, use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. When there is no nonlinearity data in the data source, use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. When the data source contains operating condition information, use the Operating Conditions tab to select operating condition settings for the simulation. Data interpolation is used during simulation. |
+| S-Parameters Amplifier | rfamplifiers1/S-Parameters Amplifier | R2023a+ | RF amplifier described by frequency-dependent S-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of S-Parameters, an M-element vector of the corresponding frequency values and a scalar or M-element vector of the corresponding reference impedance values. Use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation. |
+| Y-Parameters Amplifier | rfamplifiers1/Y-Parameters Amplifier | R2023a+ | RF amplifier described by frequency-dependent Y-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Y-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation. |
+| Z-Parameters Amplifier | rfamplifiers1/Z-Parameters Amplifier | R2023a+ | RF amplifier described by frequency-dependent Z-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Z-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation. |
+| General Passive Network | rfblackbox1/General Passive Network | R2023a+ | Two-port passive network described by an RFDATA object or data from a file. Data interpolation is used during simulation. |
+| General  Circuit Element | rfblackbox1/General  Circuit Element | R2023a+ | Two-port network described by an RFCKT object. |
+| S-Parameters Passive Network | rfblackbox1/S-Parameters Passive Network | R2023a+ | Two-port passive network described by the frequency-dependent S-Parameters (2x2xM array), the Frequency (vector of length M), and the Reference impedance (scalar or vector of length M). M is the number of frequencies. Data interpolation is used during simulation. |
+| Y-Parameters Passive Network | rfblackbox1/Y-Parameters Passive Network | R2023a+ | Two-port passive network described by the frequency-dependent Y-Parameters (2x2xM array), and the Frequency (vector of length M). M is the number of frequencies. Data interpolation is used during simulation. |
+| Z-Parameters Passive Network | rfblackbox1/Z-Parameters Passive Network | R2023a+ | Two-port passive network described by the frequency-dependent Z-Parameters (2x2xM array), and the Frequency (vector of length M). M is the number of frequencies. Data interpolation is used during simulation. |
+| LC Bandpass Pi | rfladderfilters1/LC Bandpass Pi | R2023a+ | Model an LC bandpass pi network. |
+| LC Bandpass Tee | rfladderfilters1/LC Bandpass Tee | R2023a+ | Model an LC bandpass tee network. |
+| LC Bandstop Pi | rfladderfilters1/LC Bandstop Pi | R2023a+ | Model an LC bandstop pi network. |
+| LC Bandstop Tee | rfladderfilters1/LC Bandstop Tee | R2023a+ | Model an LC bandstop tee network. |
+| LC Highpass Pi | rfladderfilters1/LC Highpass Pi | R2023a+ | Model an LC highpass pi network. |
+| LC Highpass Tee | rfladderfilters1/LC Highpass Tee | R2023a+ | Model an LC highpass tee network. |
+| LC Lowpass Pi | rfladderfilters1/LC Lowpass Pi | R2023a+ | Model an LC lowpass pi network. |
+| LC Lowpass Tee | rfladderfilters1/LC Lowpass Tee | R2023a+ | Model an LC lowpass tee network. |
+| General Mixer | rfmixers1/General Mixer | R2023a+ | RF mixer described by a data source that consists of either an RFDATA object or data from a file. When there is no noise data in the data source, use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. When there is no nonlinearity data in the data source, use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. When the data source contains operating condition information, use the Operating Conditions tab to select operating condition settings for the simulation. Data interpolation is used during simulation. |
+| S-Parameters Mixer | rfmixers1/S-Parameters Mixer | R2023a+ | RF mixer described by frequency-dependent S-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of S-Parameters, an M-element vector of the corresponding frequency values and a scalar or M-element vector of the corresponding reference impedance values. Use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation. |
+| Y-Parameters Mixer | rfmixers1/Y-Parameters Mixer | R2023a+ | RF mixer described by frequency-dependent Y-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Y-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation. |
+| Z-Parameters Mixer | rfmixers1/Z-Parameters Mixer | R2023a+ | RF mixer described by frequency-dependent Z-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Z-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation. |
+| Coaxial Transmission Line | rftxlines1/Coaxial Transmission Line | R2023a+ | Model a coaxial transmission line. |
+| Coplanar Waveguide Transmission Line | rftxlines1/Coplanar Waveguide Transmission Line | R2023a+ | Model a coplanar waveguide transmission line. |
+| Microstrip Transmission Line | rftxlines1/Microstrip Transmission Line | R2023a+ | Model a microstrip transmission line. |
+| Parallel-Plate Transmission Line | rftxlines1/Parallel-Plate Transmission Line | R2023a+ | Model a parallel-plate transmission line. |
+| RLCG Transmission Line | rftxlines1/RLCG Transmission Line | R2023a+ | Model an RLCG transmission line. |
+| Transmission Line | rftxlines1/Transmission Line | R2023a+ | Model a transmission line. |
+| Two-Wire Transmission Line | rftxlines1/Two-Wire Transmission Line | R2023a+ | Model a two-wire transmission line. |

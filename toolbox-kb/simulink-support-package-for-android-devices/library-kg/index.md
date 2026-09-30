@@ -17,8 +17,12 @@
 
 - Simulink Support Package for Android Devices
 
-Common blocks: [common.md](common.md) (2 of 5 blocks)
+Common blocks: [common.md](common.md) (27 of 36 blocks)
 
 ## Categories
 
-- [Android](android.md) — 5 blocks; Android device peripheral and sensor access
+- [Advanced](advanced.md) — 2 blocks; Advanced app-integration blocks
+- [Audio video](audio-video.md) — 6 blocks; Audio and media I/O on Android
+- [Communication](communication.md) — 15 blocks; Network, cloud, and serial data exchange on Android
+- [Sensors](sensors.md) — 9 blocks; On-device Android sensors
+- [User interface](user-interface.md) — 4 blocks; Interactive app UI input and display

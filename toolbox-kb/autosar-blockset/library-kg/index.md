@@ -17,7 +17,7 @@
 
 - AUTOSAR Blockset
 
-Common blocks: [common.md](common.md) (8 of 28 blocks)
+Common blocks: [common.md](common.md) (21 of 22 blocks)
 
 ## Categories
 
@@ -25,6 +25,6 @@ Common blocks: [common.md](common.md) (8 of 28 blocks)
 - [Diagnostics](diagnostics.md) — 7 blocks; Diagnostic Event Manager (DEM) services for fault monitoring, debouncing, and reporting
 - [Function inhibition](function-inhibition.md) — 2 blocks; Function Inhibition Manager (FIM) for controlled degradation and safety interlocks
 - [Nvram](nvram.md) — 3 blocks; Non-volatile RAM (NvM) services for persistent data storage across power cycles
-- [Interpolation](interpolation.md) — 7 blocks; AUTOSAR fixed-point interpolation and lookup routines for calibration data
-- [Math functions](math-functions.md) — 6 blocks; AUTOSAR Math Function Library (MFL) building blocks for signal generation
+- [Interpolation](interpolation.md) — 6 blocks; AUTOSAR fixed-point interpolation and lookup routines for calibration data
+- [Math functions](math-functions.md) — 1 blocks; AUTOSAR Math Function Library (MFL) building blocks for signal generation
 - [Signal management](signal-management.md) — 1 blocks; Signal quality, invalidation, and communication status handling

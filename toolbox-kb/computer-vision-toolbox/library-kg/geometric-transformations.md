@@ -1,0 +1,32 @@
+---
+type: Simulink Block Category
+title: Geometric transformations
+description: Warp, resize, and rotate images
+tags: [geometric, warp, resize, rotate, transform]
+status: stable
+source: custom_library
+library_root: Computer Vision Toolbox
+category_path: Geometric transformations
+block_count: 12
+---
+
+# Geometric transformations
+
+Use these blocks for geometric transformations.
+
+## Recommended Blocks
+
+| Block | ReferenceBlock | Since | Intent |
+|---|---|---|---|
+| Estimate Geometric Transformation | visiongeotforms/Estimate Geometric Transformation | R2023a+ | Find the transformation matrix that maps the largest number of points from Pts1 to Pts2. The Pts1 and Pts2 inputs specify the location of points in two images. Each row in the Pts1 and Pts2 arrays has the format [x y]. The points in the arrays must be ordered to form corresponding location pairs. When the Find and exclude outliers option is selected, the block randomly selects matching point pairs until it computes a transformation matrix that fits a specified number of inliers, or until a user-specified stopping criterion is reached. It then refines this transformation matrix by using all inliers found in the first step. |
+| Rotate | visiongeotforms/Rotate | R2023a+ | Rotates an image by an angle in radians. You can specify this angle using the block parameters dialog box or input port Angle. Use the Output size parameter to determine the size of the output. If you select Expanded to fit rotated input image, the block outputs a matrix that contains all the rotated image values and zeros elsewhere. If you select Same as input image, the block outputs a matrix that contains the middle part of the rotated image and zeros elsewhere. As a result, the edges of the rotated image might be cropped. When specifying the rotation angle using the Angle port, the maximum angle value should be greater than 0 but less than or equal to pi radians. |
+| Shear | visiongeotforms/Shear | R2023a+ | Shifts each row or column of an image by a linearly increasing or decreasing distance. Use the Shear direction parameter to specify whether you want to shift the rows or columns horizontally or vertically. Use the Row/column shear values [first last] parameter or the S port to specify a two-element vector. The first element represents the number of pixels by which you want to shift your first row or column, and the second element represents the number of pixels by which you want to shift your last row or column. When using the S port to specify the shear values, use the Maximum shear value parameter to specify the maximum number of pixels by which you want to shift your rows or columns. If, for the Output size after shear parameter, you select Full, the block outputs the entire sheared image. If you select Same as input image, the block outputs the top left portion of the full sheared image with dimensions same as input image. |
+| Translate | visiongeotforms/Translate | R2023a+ | Move an image up or down and/or left or right. You can specify your two-element offset vector using the dialog box or the Offset port. The first element represents how many pixels up or down to shift your image. If you enter a positive value, the block moves the image downward. The second element represents how many pixels left or right to shift your image. If you enter a positive value, the block moves the image to the right. |
+| Warp | visiongeotforms/Warp | R2023a+ | Apply an affine or projective geometric transformation to warp an image — use for rectification, registration, and perspective correction. |
+| Find Local Maxima | visionstatistics/Find Local Maxima | R2023a+ | Finds local maxima in an input matrix. The size of the search region can be specified using the Neighborhood size parameter. Idx output port has the dimension M-by-2, where M is the maximum number of local maxima. This output port holds one-based [x y] coordinates of the local maxima. Threshold value is applied on the input matrix to find the valid local maxima If the input is a Hough matrix generated from a Hough Transform block, the Input is Hough matrix spanning full theta range check box should be selected. In this case the block considers that the input Hough matrix is antisymmetric about the rho axis and theta spans from -pi/2 to pi/2 radians. If a local maximum is found near a boundary such that the neighboring window lies outside the Hough matrix, the block picks up only one peak and ignores the corresponding antisymmetric peak. |
+| 2-D DCT | visiontransforms/2-D DCT | R2023a+ | Outputs the two-dimensional discrete cosine transform (2-D DCT) of a real input signal. The number of rows and columns of the input matrix must be a power of 2. |
+| 2-D FFT | visiontransforms/2-D FFT | R2023a+ | Outputs the complex fast Fourier transform in two dimensions (2-D FFT) of a real or complex input. When the 'FFT implementation' parameter is set to 'Radix-2', the number of rows and columns of the input matrix must be a power of 2. |
+| 2-D IDCT | visiontransforms/2-D IDCT | R2023a+ | Outputs the two-dimensional inverse discrete cosine transform (2-D IDCT) of a real input signal. The number of rows and columns of the input matrix must be a power of 2. |
+| 2-D IFFT | visiontransforms/2-D IFFT | R2023a+ | Outputs the inverse fast Fourier transform in two dimensions (2-D IFFT) of a real or complex input. Outputs are real if you select 'Input is conjugate symmetric' option; otherwise, outputs are complex. When the 'FFT implementation' parameter is set to 'Radix-2', the number of rows and columns of the input matrix must be a power of 2. |
+| Hough Lines | visiontransforms/Hough Lines | R2023a+ | Finds Cartesian coordinates of lines that are described by rho and theta pairs. The block inputs are the theta and rho values of lines and a reference image. The block outputs the one-based [x y] coordinates of the intersections between the lines and two of the reference image boundary lines. The boundary lines are the left and right vertical boundaries and the top and bottom horizontal boundaries of the reference image. |
+| Hough Transform | visiontransforms/Hough Transform | R2023a+ | Implements the Hough Transform to detect lines. The block generates a parameter space matrix using the following equation: rho = x*cos(theta) + y*sin(theta). The block outputs this matrix at the Hough port. The rows and columns of this matrix correspond to the rho and theta values, respectively. Peak values in this matrix represent potential lines in the input image. |

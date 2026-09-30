@@ -17,8 +17,9 @@
 
 - Embedded Coder Support Package for Qualcomm Hexagon
 
-Common blocks: [common.md](common.md) (2 of 2 blocks)
+Common blocks: [common.md](common.md) (6 of 6 blocks)
 
 ## Categories
 
-- [Deployment](deployment.md) — 2 blocks; Code deployment to Qualcomm Hexagon processors
+- [Utilities](utilities.md) — 1 blocks; Hexagon support-package utilities
+- [Qnn inference](qnn-inference.md) — 5 blocks; Run deep-learning inference on Qualcomm AI Engine Direct (QNN) backends

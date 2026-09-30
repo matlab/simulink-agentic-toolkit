@@ -5,7 +5,7 @@ The skills catalog organizes agent skills into groups. Each group is a directory
 
 ## Skill Groups
 
-### [Model-Based Design Core](model-based-design-core/) 
+### [Model-Based Design Core](model-based-design-core/)
 
 Core Model-Based Design (MBD) skills for building, testing, and specifying Simulink models
 
@@ -19,11 +19,12 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 | `generate-requirement-drafts` | Generate requirements. This needs Requirements Toolbox (.slreqx) with traceability links when available, falls back to structured YAML |
 | `managing-simulink-projects` | Manage MATLAB projects for Simulink workflows — path management, file registration, labels, and source control configuration |
 | `setup-custom-libraries` | Register and configure custom Simulink block libraries so the agent prefers them over built-in blocks during model building |
+| `simulink-sanitize-model` | Sanitize and anonymize a Simulink model for external sharing — strips proprietary content, anonymizes names, and produces a self-contained bundle |
 | `simulating-simulink-models` | Run simulations for data exploration, parameter sweeps, and custom analysis |
 | `specifying-mbd-algorithms` | Specify algorithms for Model-Based Design (MBD) including system specs, architecture specs, implementation and test plans |
 | `specifying-plant-models` | Specify plant models for closed-loop simulation |
 
-### [Model-Based System Engineering](model-based-system-engineering/) 
+### [Model-Based System Engineering](model-based-system-engineering/)
 
 Model-Based System Engineering skills for System Composer architecture models
 
@@ -31,7 +32,7 @@ Model-Based System Engineering skills for System Composer architecture models
 |-------|---------------------------|
 | `building-architecture-models` | Build multi-layer system architecture models — components, interfaces, allocations, stereotypes, and requirements traceability (requires System Composer) |
 
-### [Verification, Validation, and Test](verification-validation-and-test/) 
+### [Verification, Validation, and Test](verification-validation-and-test/)
 
 Skills for authoring custom Model Advisor checks and running compliance reviews against industry standards
 
@@ -46,14 +47,15 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 | `fix-sldv-incompatibility` | Make a Simulink model compatible with Simulink Design Verifier — diagnose incompatibilities, apply fixes to a copy, and optionally verify consistency (requires Simulink Design Verifier) |
 | `testing-simulink-models` | Test Simulink models via two paths — ephemeral Gherkin-based tests (`model_test`) for quick validation, or persistent Simulink Test cases authored from requirements or behavioral specs |
 
-### [Simulink Simulation](simulink-simulation/) 
+### [Simulink Simulation](simulink-simulation/)
 
-Skills for constructing simulation input datasets and configuring simulation workflows
+Skills for constructing simulation input datasets, configuring simulation workflows and running multiple simulations
 
 | Skill | Description |
 |-------|---------------------------|
 | `authoring-simulink-inputs` | Create populated input signal datasets for Simulink models using createInputDataset scaffolds with correct metadata |
 | `create-sdi-run` | Import data into the Simulation Data Inspector from files, workspace variables, or a simulation |
+| `simulink-run-parallel-simulations` | Run multiple Simulink simulations in parallel — parameter sweeps, Monte Carlo studies, and batch campaigns |
 
 ### [Physical Modeling](physical-modeling/)
 
@@ -69,8 +71,10 @@ Skills for code generation
 
 | Skill | Description |
 |-------|---------------------------|
+| `simulink-author-classic-autosar-swc` | Author, configure, and validate Classic AUTOSAR software components in Simulink (requires AUTOSAR Blockset and Embedded Coder) |
+| `simulink-configure-code-interfaces` | Configure how Simulink model elements map to generated C/C++ code — storage classes and data objects (Data Interface) or service functions with Component deployment (Service Interface); code mappings, dictionary linking, deployment types, and function prototypes |
 | `simulink-customize-a2l` | Customize A2L calibration files generated from Simulink models (requires Embedded Coder) |
-| `simulink-generate-embedded-code` | Configure Simulink models for Embedded Coder code generation — production deployment settings, hardware config, MISRA compliance across model reference hierarchies (requires Embedded Coder) |
+| `simulink-configure-model-for-code-generation` | Configure Simulink models for Embedded Coder (ERT), Simulink Coder (GRT rapid-prototyping), or AUTOSAR code generation — target selection, hardware config, MISRA compliance across model reference hierarchies (requires Embedded Coder or Simulink Coder) |
 | `simulink-optimizing-embedded-code` | Optimize Simulink Embedded Coder generated code for runtime, RAM, ROM, stack usage, and MISRA compliance (requires Embedded Coder) |
 | `simulink-single-precision-conversion` | Convert a double-precision Simulink system or subsystem to single precision (requires Fixed-Point Designer) |
 

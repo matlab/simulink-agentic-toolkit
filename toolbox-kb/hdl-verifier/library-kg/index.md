@@ -17,8 +17,10 @@
 
 - HDL Verifier
 
-Common blocks: [common.md](common.md) (1 of 4 blocks)
+Common blocks: [common.md](common.md) (8 of 8 blocks)
 
 ## Categories
 
-- [Hdl cosimulation](hdl-cosimulation.md) — 4 blocks; HDL co-simulation interfaces with EDA tools
+- [Signal logging](signal-logging.md) — 3 blocks; Capture HDL signal activity to file
+- [Hdl cosimulation](hdl-cosimulation.md) — 3 blocks; Cosimulate Simulink with an external HDL simulator
+- [Dpi c verification](dpi-c-verification.md) — 2 blocks; SystemVerilog DPI-C / UVM testbench components

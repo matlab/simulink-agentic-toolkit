@@ -53,26 +53,38 @@ When the user is satisfied:
    else  % PIL
        [~, simOut_vN] = CodeMetricsFetcherPIL(modelName, 'coarse');
    end
+   ```
+   Log tokens for the SIL/PIL run (separate call — N from `eco_report_file_tokens: N` in console):
+   ```matlab
+   eco_token_log('CodeMetricsFetcherSIL', N)  % N from "eco_report_file_tokens: N" in console; use CodeMetricsFetcherPIL if PIL
+   ```
 
+   ```matlab
    % 2. Compare against the golden reference (v0 baseline SIL/PIL outputs
    %    saved in Phase 2 via saveGoldenReference.m)
    verdict = checkNumericalCorrectness(simOut_vN, state.GOLDEN_REF_PATH, state.TOLERANCE);
+   ```
+   ```matlab
+   eco_token_log('checkNumericalCorrectness', N)  % N from "eco_output_tokens: N" in console output
+   ```
 
+   ```matlab
    maxErr       = verdict.maxErr;
+   maxRelErr    = verdict.maxRelErr;
    maxErrSignal = verdict.maxErrSignal;
    perSignal    = verdict.perSignal;
 
    save(fullfile(artifactsDir, 'final_sil_pil_comparison.mat'), ...
-        'simOut_vN', 'verdict', 'maxErr', 'maxErrSignal', 'perSignal');
+        'simOut_vN', 'verdict', 'maxErr', 'maxRelErr', 'maxErrSignal', 'perSignal');
    ```
 
    **Verdict classification** (drives `{{VERIFY_CLASS}}` / `{{VERIFY_VERDICT}}` / `{{VERIFY_VERDICT_COLOR}}`):
 
-   | Condition on `maxErr`                                                       | Verdict      | `VERIFY_CLASS`  | `VERIFY_VERDICT_COLOR` |
+   | Condition                                                                   | Verdict      | `VERIFY_CLASS`  | `VERIFY_VERDICT_COLOR` |
    |-----------------------------------------------------------------------------|--------------|-----------------|------------------------|
    | `== 0` exactly, across all common signals                                   | `PASS`       | `verify-pass`   | `green`                |
-   | `<= state.TOLERANCE` (within numerical-rounding tolerance, e.g. ~1 ulp)     | `PASS (warn)`| `verify-warn`   | `yellow`               |
-   | `> state.TOLERANCE`                                                         | `FAIL`       | `verify-fail`   | `red`                  |
+   | Within effective tolerance per signal (`max(absTol, relTol*signalRange)`)    | `PASS (warn)`| `verify-warn`   | `yellow`               |
+   | Exceeds effective tolerance on any signal                                    | `FAIL`       | `verify-fail`   | `red`                  |
 
    **Populate the state object** so the step-6 HTML renderer can consume the values:
 
@@ -100,6 +112,9 @@ When the user is satisfied:
    % Compare against golden reference (captured from normal sim in Phase 2)
    verdict = checkNumericalCorrectness(simOut_vN, state.GOLDEN_REF_PATH, state.TOLERANCE);
    ```
+   ```matlab
+   eco_token_log('checkNumericalCorrectness', N)  % N from "eco_output_tokens: N" in console output
+   ```
 
    This compares normal-sim baseline outputs (v0) vs SIL outputs of the final optimized model (vN), verifying that the generated code produces the same numerical results as the simulation.
 
@@ -121,6 +136,9 @@ When the user is satisfied:
    addpath(fullfile('<skill_root>', 'scripts'));
    reportPath = renderOptimizationReport(state, projectPath, '<skill_root>');
    ```
+   ```matlab
+   eco_token_log('renderOptimizationReport', N)  % N from "eco_output_tokens: N" in console output
+   ```
 
    This single call reads the HTML template, replaces all `{{PLACEHOLDER}}` tokens, builds the headline cards, iteration table, evolution tree, token cards, and verification panel from `state` + diagnostic files, writes the output to `<project_path>/.eco_diagnostics/<MODEL_NAME>_optimization_report.html`, runs the pure-ASCII sanity check, and returns the absolute path.
 
@@ -131,6 +149,9 @@ When the user is satisfied:
    If `renderOptimizationReport` errors, diagnose and fix (common causes: missing `state.VERIFY` fields, empty `versionMap`, unreadable `state.json`). Do NOT skip the report — it is the primary customer deliverable.
 
    For field-mapping details, encoding rules, version-tag display conventions, and tree-node format, see `<skill_root>/assets/per-model-report-template.md`.
+   ```matlab
+   eco_token_log('assets/per-model-report-template.md')
+   ```
 
    **Why this comes before step 7:** the customer report must be produced regardless of whether the diagnostic-trail verification in step 7 passes. If step 7 STOPs, the customer artifact is already written.
 
@@ -140,17 +161,17 @@ When the user is satisfied:
 
    ```matlab
    diagDir = fullfile('<project_path>', '.eco_diagnostics');
-   reportFile = fullfile(diagDir, 'eco_optimization_report.md');
    traceFile  = fullfile(diagDir, 'eco_decision_trace.md');
+   ledgerFile = fullfile(diagDir, 'token_ledger.json');
 
    missing = {};
-   if ~isfile(reportFile), missing{end+1} = 'eco_optimization_report.md'; end
    if ~isfile(traceFile),  missing{end+1} = 'eco_decision_trace.md'; end
+   if ~isfile(ledgerFile), missing{end+1} = 'token_ledger.json'; end
    ```
 
-   - **Both files exist:** Read each and confirm it contains a `## Phase: <N>` heading for every phase in this session. If any phase is missing, **STOP** and tell the user: *"Phase <N> did not append its diagnostic entry. The session is complete but the diagnostic trail is incomplete — bench scoring may be impaired. (Your customer report from step 6 is intact.)"* Then back-fill the missing entries from state if possible.
-   - **Either file missing:** **STOP** and tell the user: *"Diagnostic file `<filename>` was never created. Earlier phases skipped the mandatory append step. Bench scoring will be impaired for this run. (Your customer report from step 6 is intact.)"* Create the missing file with whatever entries can be reconstructed from the state object.
-   - **Both complete:** Log the final entry: `OK FR-03: Diagnostic files verified complete (<N> phase entries each)`.
+   - **All files exist:** For the trace file, read it and confirm it contains a `## Phase: <N>` heading for every phase in this session. For the ledger file, confirm it is non-empty (`eco_token_log` calls throughout each phase have already written entries). If any phase is missing from the trace, **STOP** and tell the user: *"Phase <N> did not append its diagnostic entry. The session is complete but the diagnostic trail is incomplete — bench scoring may be impaired. (Your customer report from step 6 is intact.)"* Then back-fill the missing entries from state if possible.
+   - **Any file missing:** **STOP** and tell the user: *"Diagnostic file `<filename>` was never created. Earlier phases skipped the mandatory append step. Bench scoring will be impaired for this run. (Your customer report from step 6 is intact.)"* Create the missing file with whatever entries can be reconstructed from the state object.
+   - **All complete:** Log the final entry: `OK FR-03: Diagnostic files verified complete (<N> phase entries in trace; <M> entries in token ledger)`.
 
 8. **Append the final wrap-up entry** to both diagnostic files for this phase, then declare the run complete.
 
@@ -161,7 +182,7 @@ When the user is satisfied:
 | FR-01 | Incomplete version map | Summary misses reverted changes or intermediate versions; Gate-rejected vs User-requested revert entries indistinguishable in the report | Version map not maintained across phases; `revertCause` / `parentVersion` / `revertTargetVersion` fields not populated | Always pull the full `VERSION_MAP` from the state object; include both `FAIL`-status (Gate_Rejected) and `USER_REVERT`-status entries; render each according to its `revertCause` so the two are visually distinct in the tree and the wrap-up text |
 | FR-07 | Tree hierarchy mis-rendered | Evolution tree shows a revert leaf as a parent of further nodes, or alternate routes after a user revert appear off the wrong ancestor | `parentVersion` not maintained when entries are appended; renderer descends into a node with `revertCause != null` | Every versionMap entry except `v0` MUST carry `parentVersion`; `renderOptimizationReport` treats `revertCause != null` as a leaf and refuses to descend. Log `WARN FR-07` if violated. |
 | FR-02 | Metrics comparison against wrong baseline | Final improvement percentage is incorrect | Using an intermediate version instead of v1 as the baseline reference | Always compare final metrics against `v1_baseline`, not the most recent previous version |
-| FR-03 | Diagnostic files incomplete or missing | Bench scorecard cannot diagnose bad suggestions | Earlier phases skipped the decision-trace / token-report append step | Step 7 above — verify both files exist and have an entry per phase; back-fill if missing |
+| FR-03 | Diagnostic files incomplete or missing | Bench scorecard cannot diagnose bad suggestions | Earlier phases skipped the decision-trace append or token-ledger verification step | Step 7 above — verify both files exist (`eco_decision_trace.md` has a `## Phase:` entry per phase; `token_ledger.json` is non-empty); back-fill if missing |
 | FR-04 | Per-model customer report missing | Customer has no consolidated artifact to review the run; only raw diagnostic logs exist | Step 6 skipped, or `renderOptimizationReport` errored, or `.eco_diagnostics/` not writable | Step 6 above — call `renderOptimizationReport(state, projectPath, skillRoot)`, which writes to `<project_path>/.eco_diagnostics/<MODEL>_optimization_report.html` and returns the absolute path. The termination gate blocks stopping if the file is missing. Step 6 runs **before** the step-7 STOP gates so the customer report is intact even if diagnostic verification fails. If the function errors, diagnose and retry — do not declare the run complete with a missing report. |
 | FR-05 | Final correctness check skipped or wrong baseline | Customer report shows "Not run" card, or verdict reflects v(N-1)-vs-vN instead of v0-vs-vN; numerical regressions go undetected | Golden reference missing/corrupt, or wrong golden ref used (e.g., a mid-run snapshot instead of the Phase 2 baseline) | Step 5 above — MANDATORY for ALL modes. Always compare the **Phase 2 golden reference** (normal sim for codegen, SIL/PIL simOut otherwise) against a fresh **SIL run of the final vN**. If the golden reference is missing, emit a "Not run" verification card and log `WARN FR-05`. In codegen mode, the Phase 5 SIL run is lightweight (no profiling) — it only verifies numerical correctness. |
 | FR-08 | Mojibake in rendered HTML report | Customer-facing report shows garbled glyphs like `â†'` instead of `→`, or `â€"` instead of `—` | Template or replacement strings contained raw non-ASCII bytes | `renderOptimizationReport` runs a post-write pure-ASCII sanity check and warns if any non-ASCII byte is found. If the warning fires, escape the offending strings to HTML entities and re-run. Log `WARN FR-08`. |

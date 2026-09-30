@@ -17,7 +17,11 @@ These steps are shared by both modes.
 
 ### Step C1: Read the `configuring-code-profile` instructions
 
-Read `<skill_root>/references/measuring-model-metrics/configuring-code-profile/reference.md`. The decision framework uses the hardware target, board connectivity, optimization goal, and phase to autonomously decide:
+Read `<skill_root>/references/measuring-model-metrics/configuring-code-profile/reference.md` and log the read:
+```matlab
+eco_token_log('references/measuring-model-metrics/configuring-code-profile/reference.md')
+```
+The decision framework uses the hardware target, board connectivity, optimization goal, and phase to autonomously decide:
 - `verificationMode`: `'SIL'` or `'PIL'`
 - `reportLevel`: `'coarse'` or `'detailed'`
 - `profilingFocus`: `'time'` or `'stack'` (mutually exclusive — based on optimization goal; if goal is "both", start with `'time'` and switch to `'stack'` in a later re-measure cycle)
@@ -31,6 +35,9 @@ Read `<skill_root>/references/measuring-model-metrics/configuring-code-profile/r
 addpath(fullfile('<skill_root>', 'scripts'));
 configureProfilingMode('<model>', '<verificationMode>', '<reportLevel>', '<profilingFocus>', <enableCRL>);
 ```
+```matlab
+eco_token_log('configureProfilingMode', N)  % N from "eco_output_tokens: N" in console output
+```
 
 The `enableCRL` flag comes from the state object's `ENABLE_CRL` field. Pass `true` when the model targets a real hardware board, `false` for generic/desktop targets.
 
@@ -41,17 +48,26 @@ The `enableCRL` flag comes from the state object's `ENABLE_CRL` field. Pass `tru
 addpath(fullfile('<skill_root>', 'scripts'));
 [reportText, simOut] = CodeMetricsFetcherSIL('<model>', '<reportLevel>');
 ```
+```matlab
+eco_token_log('CodeMetricsFetcherSIL', N)  % N from "eco_report_file_tokens: N" in console output
+```
 
 *If PIL:*
 ```matlab
 addpath(fullfile('<skill_root>', 'scripts'));
 [reportText, simOut] = CodeMetricsFetcherPIL('<model>', '<reportLevel>');
 ```
+```matlab
+eco_token_log('CodeMetricsFetcherPIL', N)  % N from "eco_report_file_tokens: N" in console output
+```
 
 *If codegen:*
 ```matlab
 addpath(fullfile('<skill_root>', 'scripts'));
 [reportText, simOut] = CodeMetricsFetcherCodegen('<model>', '<reportLevel>');
+```
+```matlab
+eco_token_log('CodeMetricsFetcherCodegen', N)  % N from "eco_report_file_tokens: N" in console output
 ```
 
 SIL/PIL automatically performs code generation, simulation, and metric extraction. PIL execution time reflects actual on-target performance; SIL execution time reflects host-simulated performance. Codegen mode runs a normal simulation (with signal logging) then generates code via `slbuild` for static-only metrics (no execution time). The `simOut` second output contains signal data — in Phase 2 it becomes the golden reference; in Phase 4 it is compared against that golden reference by the Correctness Gate.
@@ -100,6 +116,9 @@ Use when `NEXT_ACTION` indicates baseline / first run.
    addpath(fullfile('<skill_root>', 'scripts'));
    goldenRefPath = saveGoldenReference(simOut, '<model>', '<project_path>');
    ```
+   ```matlab
+   eco_token_log('saveGoldenReference', N)  % N from "eco_output_tokens: N" in console output
+   ```
 
    - `simOut` is the second output returned by `CodeMetricsFetcherSIL` or `CodeMetricsFetcherPIL` in step C3
    - Save the returned path in `state.GOLDEN_REF_PATH`
@@ -108,6 +127,9 @@ Use when `NEXT_ACTION` indicates baseline / first run.
    - **Codegen mode:** If `state.VERIFICATION_MODE == 'codegen'`, step C3 already used `CodeMetricsFetcherCodegen` which returns `simOut` from a normal simulation with signal logging enabled. Use that `simOut` directly:
      ```matlab
      goldenRefPath = saveGoldenReference(simOut, '<model>', '<project_path>');
+     ```
+     ```matlab
+     eco_token_log('saveGoldenReference', N)  % N from "eco_output_tokens: N" in console output
      ```
      Store in `state.GOLDEN_REF_PATH`. This enables the Phase 5 final SIL verification even in codegen mode.
      Log `OK NC-02: Golden reference saved from normal sim (codegen mode) at <path>`.
@@ -150,7 +172,14 @@ This phase takes the user's input and THEN performs the heavy analysis — scope
      addpath(fullfile('<skill_root>', 'scripts'));
      configureProfilingMode('<model>', '<verificationMode>', 'detailed', '<profilingFocus>', <enableCRL>);
      ```
-     Then re-run the appropriate `CodeMetricsFetcher*` with `'detailed'`.
+     ```matlab
+     eco_token_log('configureProfilingMode', N)  % N from "eco_output_tokens: N" in console output
+     ```
+     Then re-run the appropriate `CodeMetricsFetcher*` with `'detailed'` and log (separate call):
+     ```matlab
+     eco_token_log('CodeMetricsFetcherSIL', N)  % N from "eco_report_file_tokens: N" in console output
+     % or CodeMetricsFetcherPIL / CodeMetricsFetcherCodegen as appropriate
+     ```
 
 3. **Delegate the heavy analysis to a sub-task — scoped or full depending on user input.** This is where the deep analysis happens (reading code files, identifying patterns, etc.). The scope depends on whether `targetFunctions` is set.
 
@@ -204,7 +233,7 @@ This phase takes the user's input and THEN performs the heavy analysis — scope
 
 4. **Present the analysis to the user.** Show the sub-task's output (scoped or full). Ask: *"Here's the analysis. Ready for optimization suggestions?"*
 
-5. **MANDATORY TRANSITION to Phase 3.** Once the user confirms readiness for suggestions, **(a) append the decision trace** to `<project_path>/.eco_diagnostics/eco_decision_trace.md` (one entry per MM-0x risk — see "Decision Trace Logging" below), **(b) update the token usage report** (include the baseline SIL/PIL run cost), **(c)** construct the state object with baseline metrics and target functions populated, and **(d)** proceed to Phase 3 with `NEXT_ACTION: "Present Stage A optimization suggestions"`. **Refuse to transition if either diagnostic file has not been appended (OR-05/OR-06).**
+5. **MANDATORY TRANSITION to Phase 3.** Once the user confirms readiness for suggestions, **(a) append the decision trace** (with `## Phase:` heading) to `<project_path>/.eco_diagnostics/eco_decision_trace.md` (one entry per MM-0x risk — see "Decision Trace Logging" below), **(b)** verify the token ledger (`token_ledger.json` is non-empty — `eco_token_log` calls throughout this phase have already recorded entries), **(c)** construct the state object with baseline metrics and target functions populated, and **(d)** proceed to Phase 3 with `NEXT_ACTION: "Present Stage A optimization suggestions"`. **Refuse to transition if decision trace not appended (OR-06) or token ledger empty (OR-05).**
 
 ---
 
@@ -231,19 +260,28 @@ Use when `NEXT_ACTION` indicates apply + re-measure.
 
 3. **Run common steps C1–C3** above. For remeasure, the `configuring-code-profile` sub-skill will use phase `'remeasure'` and `targetFunctions` are known. The sub-skill will decide whether to stay coarse or escalate to detailed based on whether the target functions are visible at the current granularity. **Retain the `simOut` returned by `CodeMetricsFetcher*` — it is needed for step 3.5.**
 
-3.5. **Run the Numerical Correctness Gate** (read `<skill_root>/references/protocols/correctness-gate.md`). This gate runs BEFORE the efficiency gate and is non-negotiable.
+3.5. **Run the Numerical Correctness Gate** (read `<skill_root>/references/protocols/correctness-gate.md` and log the read).
+   ```matlab
+   eco_token_log('references/protocols/correctness-gate.md')
+   ```
+   This gate runs BEFORE the efficiency gate and is non-negotiable.
 
    ```matlab
    addpath(fullfile('<skill_root>', 'scripts'));
    verdict = checkNumericalCorrectness(simOut, state.GOLDEN_REF_PATH, state.TOLERANCE);
    ```
+   ```matlab
+   eco_token_log('checkNumericalCorrectness', N)  % N from "eco_output_tokens: N" in console output
+   ```
+
+   The verdict reports both absolute and relative error per signal. Each signal's effective tolerance is `max(tolerance.absolute, tolerance.relative * signalRange)`, so large-magnitude signals are judged proportionally while small signals use the absolute floor.
 
    **Three outcomes:**
    - **PASS (exact/warn)** → Log `OK NC-01` or `WARN NC-01`. Proceed to step 4.
    - **FAIL** → Auto-reject immediately:
      1. Call `eco_revert(workspacePath, <live entry>.tag, modelName)` — this closes the model, checks out the target commit, and reopens the model.
-     2. Append `versionMap` entry with `status: "FAIL rejected — correctness regression on <signal> (err=<maxErr>)"`, `revertCause: "Gate_Rejected"`.
-     3. Report to user which signal diverged and by how much.
+     2. Append `versionMap` entry with `status: "FAIL rejected — correctness regression on <signal> (absErr=<maxErr>, relErr=<maxRelErr>, effectiveTol=<effectiveTol>)"`, `revertCause: "Gate_Rejected"`.
+     3. Report to user which signal diverged, by how much (absolute and relative), and what the effective tolerance was.
      4. Do NOT proceed to step 4 or 5 (efficiency gate). Skip directly to step 7 (transition).
 
    **Skip conditions:**
@@ -283,15 +321,19 @@ Use when `NEXT_ACTION` indicates apply + re-measure.
    Return ONLY a concise structured summary (comparison table + per-target-function changes + next-stage recommendation). Do NOT include data for non-target functions, raw report text, or full code listings.
    ```
 
-5. **Run the Goal-Axis Acceptance Gate** (read `<skill_root>/references/protocols/goal-axis-gate.md`). **Prerequisite: the Numerical Correctness Gate (step 3.5) must have PASSED before reaching this step.** The gate is auto-executed by the agent on the comparison sub-task's output — it does NOT ask the user. Two outcomes:
+5. **Run the Goal-Axis Acceptance Gate** (read `<skill_root>/references/protocols/goal-axis-gate.md` and log the read).
+   ```matlab
+   eco_token_log('references/protocols/goal-axis-gate.md')
+   ```
+   **Prerequisite: the Numerical Correctness Gate (step 3.5) must have PASSED before reaching this step.** The gate is auto-executed by the agent on the comparison sub-task's output — it does NOT ask the user. Two outcomes:
    - **PASS** → call `eco_snapshot(workspacePath, 'v<N+1>_<tag>', 'rationale + Δ vs <state.liveVersion>', modelName)`. Capture the returned `commitSHA`, append the new `versionMap` entry with `parentVersion: <state.liveVersion at apply time>`, `status: "OK ACCEPT — …"`, `revertCause: null`, and update `state.liveVersion` to the new entry's `version`. This is the **only** checkpoint taken for this candidate.
    - **FAIL (Scenario 3, Gate_Rejected)** → the gate auto-reverts. Call `eco_revert(workspacePath, <live entry>.tag, modelName)` (the entry whose `version === state.liveVersion`, which is still the pre-apply accepted version because `liveVersion` only advances on PASS). Append a `versionMap` entry with `status: "FAIL rejected — regression on <axis>"`, `revertCause: "Gate_Rejected"`, `parentVersion = state.liveVersion`. Do NOT update `state.liveVersion`.
 
 6. **Present the sub-task's summary and the gate outcome to the user.** Discuss results. If the gate PASSED but the **user** then decides (after seeing the numbers) that they want to roll back to a different historical version, that is **Scenario 5 — User_Requested_Revert** and is handled by `<skill_root>/references/protocols/checkpointing-revert.md` → "Recovery on Bad Apply" section, NOT by re-running the gate. Goal-axis regressions never reach this step — they were already auto-rejected in step 5.
 
 7. **MANDATORY TRANSITION or Wrap-up.**
-   - **If the goal is NOT met:** **(a) Append the decision trace** to `<project_path>/.eco_diagnostics/eco_decision_trace.md` (one entry per MM-0x risk exercised — see "Decision Trace Logging" below; include the comparison-table summary), **(b) update the token usage report**, **(c)** construct the state object with updated metrics and the next stage to try, and **(d)** proceed to Phase 3 with `NEXT_ACTION: "Present Stage <X> optimization suggestions"`. **Refuse to transition if either diagnostic file has not been appended (OR-05/OR-06).**
-   - **If the goal IS met or the user is satisfied:** If stages remain in `STAGE_SCOPE`, inform the user: *"There are additional optimization stages available: <list remaining stages with what they target>. Would you like to continue, or are you happy to finalize now?"* If the user explicitly confirms they want to stop, proceed to finalize. Then: **(a) Append the decision trace** to `<project_path>/.eco_diagnostics/eco_decision_trace.md`, **(b) update the token usage report**, **(c)** construct the state object with `CURRENT_STAGE = "FINALIZE"` and updated metrics, and **(d)** proceed to Phase 5 with `NEXT_ACTION: "Phase 5 Finalize — (1) READ references/finalizing-results.md, (2) summarize changes + metrics, (3) run final correctness verification MANDATORY, (4) render per-model HTML report MANDATORY, (5) verify diagnostics"`. **Refuse to transition if either diagnostic file has not been appended (OR-05/OR-06).**
+   - **If the goal is NOT met:** **(a) Append the decision trace** (with `## Phase:` heading) to `<project_path>/.eco_diagnostics/eco_decision_trace.md` (one entry per MM-0x risk exercised — see "Decision Trace Logging" below; include the comparison-table summary), **(b)** verify the token ledger (`token_ledger.json` is non-empty), **(c)** construct the state object with updated metrics and the next stage to try, and **(d)** proceed to Phase 3 with `NEXT_ACTION: "Present Stage <X> optimization suggestions"`. **Refuse to transition if decision trace not appended (OR-06) or token ledger empty (OR-05).**
+   - **If the goal IS met or the user is satisfied:** If stages remain in `STAGE_SCOPE`, inform the user: *"There are additional optimization stages available: <list remaining stages with what they target>. Would you like to continue, or are you happy to finalize now?"* If the user explicitly confirms they want to stop, proceed to finalize. Then: **(a) Append the decision trace** (with `## Phase:` heading) to `<project_path>/.eco_diagnostics/eco_decision_trace.md`, **(b)** verify the token ledger (`token_ledger.json` is non-empty), **(c)** construct the state object with `CURRENT_STAGE = "FINALIZE"` and updated metrics, and **(d)** proceed to Phase 5 with `NEXT_ACTION: "Phase 5 Finalize — (1) READ references/finalizing-results.md, (2) summarize changes + metrics, (3) run final correctness verification MANDATORY, (4) render per-model HTML report MANDATORY, (5) verify diagnostics"`. **Refuse to transition if decision trace not appended (OR-06) or token ledger empty (OR-05).**
 
 ## Risk / Alert — Known Failure Modes
 
@@ -323,8 +365,8 @@ After each common-step / phase-step that exercises an MM-0x risk, append the cor
 | If PIL hangs / is reset | `WARN MM-06: PIL timeout on <board> — reset and retried` (or `WARN MM-06: Fell back to SIL after N PIL failures`) |
 | After Phase 2 golden ref save (post-C3) | `OK NC-02: Golden reference saved at <path> from baseline SIL/PIL simOut (<N> signals, method=<logsout/yout>)` |
 | After Phase 4 step 3.5 correctness PASS (exact) | `OK NC-01: Correctness gate PASSED — 0 error across <N> signals (method=<method>)` |
-| After Phase 4 step 3.5 correctness PASS (warn) | `WARN NC-01: Correctness gate PASSED — maxErr=<value> on <signal> within tolerance=<tol> (method=<method>)` |
-| After Phase 4 step 3.5 correctness FAIL | `FAIL NC-01: Correctness gate FAILED — maxErr=<value> on <signal> exceeds tolerance=<tol>. Auto-rejecting v<N+1>. (method=<method>)` |
+| After Phase 4 step 3.5 correctness PASS (warn) | `WARN NC-01: Correctness gate PASSED — maxAbsErr=<value> (relErr=<value>) on <signal> within effectiveTol=<value> (method=<method>)` |
+| After Phase 4 step 3.5 correctness FAIL | `FAIL NC-01: Correctness gate FAILED — maxAbsErr=<value> (relErr=<value>) on <signal> exceeds effectiveTol=<value>. Auto-rejecting v<N+1>. (method=<method>)` |
 | Phase 4 correctness gate skipped | `SKIP NC-01: <reason>` (codegen mode — deferred to Phase 5 / golden ref missing / no signals) |
 | After Phase 4 step 0.5 (never rules loaded) | `OK EXT-01: Loaded <N> never rules` or `INFO EXT-01: No never rules found` |
 | Phase 4 step 0.5 never rule blocks candidate | `BLOCK EXT-04: <candidate> blocked — violates never rule "<text>"` |

@@ -1,0 +1,33 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml - Tooling metadata for simulink-author-classic-autosar-swc
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.2"
+human-description: Author, configure, and validate Classic AUTOSAR software components in Simulink.
+matlab-release: ">=R2023a"
+required-tools:
+  - model_overview
+  - model_read
+  - model_query_params
+  - model_edit
+  - model_check
+  - model_read_diagnostics
+  - evaluate_matlab_code
+required-skills: []
+reference-files:
+  - references/bsw-library-callers.md
+  - references/client-server-and-irv-patterns.md
+  - references/conditional-write-prereqs.md
+  - references/property-tree-categories.md
+  - references/property-tree-mutation-rules.md
+  - references/swaddrmethod-memory-placement.md
+  - references/swc-port-mapping.md
+  - references/variants-and-arxml-roundtrip.md
+  - references/verify-generated-artifacts.md
+required-products:
+  - Simulink
+  - AUTOSAR Blockset
+  - Embedded Coder
+optional-products: []
+toolkit: simulink-agentic-toolkit

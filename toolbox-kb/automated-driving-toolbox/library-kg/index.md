@@ -17,16 +17,13 @@
 
 - Automated Driving Toolbox
 
-Common blocks: [common.md](common.md) (11 of 36 blocks)
+Common blocks: [common.md](common.md) (25 of 35 blocks)
 
 ## Categories
 
-- [Utilities](utilities.md) — 4 blocks; Demos, coordinate transforms, and toolbox information
-- [Sensor simulation](sensor-simulation.md) — 7 blocks; Synthetic sensor models for lidar, radar, camera, and ultrasonic
-- [Vehicle models](vehicle-models.md) — 2 blocks; Vehicle dynamics models for lateral and longitudinal motion
-- [X 3d simulation](x-3d-simulation.md) — 13 blocks; Unreal Engine 3D environment visualization and high-fidelity sensing
-- [Scenario simulation](scenario-simulation.md) — 1 blocks; Driving scenario generation, playback, and actor management
-- [Roadrunner](roadrunner.md) — 3 blocks; RoadRunner co-simulation for high-fidelity road environments
-- [Vehicle control](vehicle-control.md) — 2 blocks; Lateral and longitudinal vehicle motion controllers
-- [Perception](perception.md) — 2 blocks; Object detection, tracking, and multi-sensor fusion
-- [Path planning](path-planning.md) — 2 blocks; Path smoothing, velocity profiling, and trajectory generation
+- [Tracking and planning](tracking-and-planning.md) — 4 blocks; Object tracking and motion-planning algorithms
+- [Demos](demos.md) — 1 blocks; Links to example models
+- [Scenario sensor modeling](scenario-sensor-modeling.md) — 15 blocks; Cuboid driving scenarios and statistical sensor models
+- [Roadrunner](roadrunner.md) — 3 blocks; RoadRunner scenario co-simulation interface
+- [Simulation 3d](simulation-3d.md) — 11 blocks; Photorealistic 3D scene actors and sensors
+- [Vehicle control](vehicle-control.md) — 1 blocks

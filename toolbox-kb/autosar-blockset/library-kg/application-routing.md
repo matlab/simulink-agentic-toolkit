@@ -4,7 +4,7 @@ title: Application routing
 description: Inter-runnable communication and event-driven data exchange between AUTOSAR software components
 tags: [event, send, receive, routing, communication]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: AUTOSAR Blockset
 category_path: Application routing
 block_count: 2

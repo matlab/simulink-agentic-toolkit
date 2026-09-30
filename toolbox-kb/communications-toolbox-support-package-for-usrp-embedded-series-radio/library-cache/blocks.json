@@ -1,0 +1,53 @@
+{
+  "libraryName": "Communications Toolbox Support Package for USRP Embedded Series Radio",
+  "generatedAt": "2026-09-28T19:13:26",
+  "blockCount": 3,
+  "blocks": [
+    {
+      "name": "E3xx Receiver",
+      "referenceBlock": "e3xxlib/E3xx Receiver",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "E3xx",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "E3xx Transmitter",
+      "referenceBlock": "e3xxlib/E3xx Transmitter",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "E3xx",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Info1",
+      "referenceBlock": "usrpe3xx_lib/Info1",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "USRP Embedded Series Radio Examples",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023b",
+  "annotatedAt": "2026-09-29T04:54:39"
+}

@@ -1,0 +1,113 @@
+{
+  "libraryName": "Simulink Support Package for Raspberry Pi Hardware",
+  "generatedAt": "2026-09-28T19:20:41",
+  "blockCount": 8,
+  "blocks": [
+    {
+      "name": "Audio and Video",
+      "referenceBlock": "raspberrypilib/Audio and Video",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_AV_lib",
+      "maskDescription": "Raspberry Pi Audio Video Library",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Basic",
+      "referenceBlock": "raspberrypilib/Basic",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_basic_lib",
+      "maskDescription": "Raspberry Pi Basic Library",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Communication",
+      "referenceBlock": "raspberrypilib/Communication",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_comm_lib",
+      "maskDescription": "Raspberry Pi Communication Library",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Internet Of Things",
+      "referenceBlock": "raspberrypilib/Internet Of Things",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_IOT_lib",
+      "maskDescription": "Raspberry Pi IOT Library",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Network ",
+      "referenceBlock": "raspberrypilib/Network ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_network_lib",
+      "maskDescription": "Raspberry Pi Network Communication Library",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sense HAT",
+      "referenceBlock": "raspberrypilib/Sense HAT",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Arduino_Common_Blocks",
+      "maskDescription": "Arduino Common Blocks",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Sensors",
+      "referenceBlock": "raspberrypilib/Sensors",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_IOT_lib",
+      "maskDescription": "Raspberry Pi IOT Library",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Utilities",
+      "referenceBlock": "raspberrypilib/Utilities",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Raspberry_Pi_IOT_lib",
+      "maskDescription": "Raspberry Pi IOT Library",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023b",
+  "annotatedAt": "2026-09-29T04:54:39"
+}

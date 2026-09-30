@@ -1,0 +1,89 @@
+{
+  "libraryName": "Embedded Coder Support Package for Qualcomm Hexagon",
+  "generatedAt": "2026-09-28T19:16:55",
+  "blockCount": 6,
+  "blocks": [
+    {
+      "name": "Hexagon",
+      "referenceBlock": "hexagonlib/Hexagon",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Hexagon_Utilities_Blocks",
+      "maskDescription": "Hexagon Utilities Blocks",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023b"
+    },
+    {
+      "name": "QNN CPU Predict",
+      "referenceBlock": "mwqnnlib/QNN CPU Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "qualcommcpu:qnnblocks:CPU_BlockName",
+      "maskDescription": "Predict responses of a deep learning network represented as a QNN model for the CPU backend of Qualcomm AI Direct Engine. The block accepts QNN model as a compiled shared object (.dll or .so) for execution on x86-based host. For the target, the block accepts another compiled shared object (.so) that is optimized to run on CPU backend. To dequantize outputs to single-precision, select Dequantize output.",
+      "pathCategory": "QNN",
+      "metadataQuality": "high",
+      "introducedIn": "2025b"
+    },
+    {
+      "name": "QNN DSP Predict",
+      "referenceBlock": "mwqnnlib/QNN DSP Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "qualcommcpu:qnnblocks:DSP_BlockName",
+      "maskDescription": "Predict responses of a deep learning network represented as a QNN model for the DSP backend (Hexagon v66) of Qualcomm AI Direct Engine. The block accepts QNN model as a compiled shared object (.dll or .so) for execution on x86-based host. For the target, the block accepts another compiled shared object (.so) that is optimized to run on DSP backend. To dequantize outputs to single-precision, select Dequantize output.",
+      "pathCategory": "QNN",
+      "metadataQuality": "high",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "QNN GPU Predict",
+      "referenceBlock": "mwqnnlib/QNN GPU Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "qualcommcpu:qnnblocks:GPU_BlockName",
+      "maskDescription": "Predict responses of a deep learning network represented as a QNN model for the GPU backend of Qualcomm AI Direct Engine. The block accepts QNN model as a compiled shared object (.dll or .so) for execution on x86-based host. For the target, the block accepts another compiled shared object (.so) that is optimized to run on GPU backend. To dequantize outputs to single-precision, select Dequantize output.",
+      "pathCategory": "QNN",
+      "metadataQuality": "high",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "QNN HTP Predict",
+      "referenceBlock": "mwqnnlib/QNN HTP Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "qualcommcpu:qnnblocks:HTP_BlockName",
+      "maskDescription": "Predict responses of a deep learning network represented as a QNN model or QNN context binary for the HTP (NPU) backend of Qualcomm AI Direct Engine. The block accepts QNN model as a compiled shared object (.dll or .so) for execution on x86-based host. For the target, the block accepts either a compiled shared object (.so) or a QNN context binary file (.bin) that are optimized to run on HTP (NPU) backend. To dequantize outputs to single-precision, select Dequantize output.",
+      "pathCategory": "QNN",
+      "metadataQuality": "high",
+      "introducedIn": "2025b"
+    },
+    {
+      "name": "QNN LPAI Predict",
+      "referenceBlock": "mwqnnlib/QNN LPAI Predict",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "qualcommcpu:qnnblocks:LPAI_BlockName",
+      "maskDescription": "Predict responses of a deep learning network represented as a QNN context binary for the LPAI backend of Qualcomm AI Direct Engine. The block accepts QNN model as a compiled shared object (.dll or .so) for execution on x86-based host. For the target, the block accepts a QNN context binary file (.bin) that is optimized to run on LPAI backend. To dequantize outputs to single-precision, select Dequantize output.",
+      "pathCategory": "QNN",
+      "metadataQuality": "high",
+      "introducedIn": "2025b"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023b",
+  "annotatedAt": "2026-09-29T04:54:37"
+}

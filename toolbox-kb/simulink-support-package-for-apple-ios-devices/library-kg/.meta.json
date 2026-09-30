@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-19T17:52:13",
-  "generatedAtDatenum": 740213.74459579866,
+  "generatedAt": "2026-09-29T16:38:10",
+  "generatedAtDatenum": 740254.69317136577,
   "generatorVersion": 4,
   "libraries": [
     "Simulink Support Package for Apple iOS Devices"
   ],
-  "blockCount": 5,
-  "categoryCount": 1,
+  "blockCount": 18,
+  "categoryCount": 4,
   "libraryFingerprints": {
     "Simulink_Support_Package_for_Apple_iOS_Devices": {
-      "blockCount": 5
+      "blockCount": 18
     }
   }
 }

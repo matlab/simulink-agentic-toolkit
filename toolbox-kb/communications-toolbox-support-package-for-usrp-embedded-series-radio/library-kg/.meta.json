@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-09-29T16:38:06",
+  "generatedAtDatenum": 740254.69313287036,
+  "generatorVersion": 4,
+  "libraries": [
+    "Communications Toolbox Support Package for USRP Embedded Series Radio"
+  ],
+  "blockCount": 3,
+  "categoryCount": 2,
+  "libraryFingerprints": {
+    "Communications_Toolbox_Support_Package_for_USRP_Embedded_Series_Radio": {
+      "blockCount": 3
+    }
+  }
+}

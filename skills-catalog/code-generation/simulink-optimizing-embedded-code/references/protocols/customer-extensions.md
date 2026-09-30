@@ -25,6 +25,7 @@ Extensions live in the customer's project directory:
 
 Preferences are **NOT** stored in `state.json`. Each phase reads the file directly from disk when it needs it:
 
+- **Phase 1** reads `tolerance` section (if present) to override default tolerance at state construction time
 - **Phase 3** reads `skip` + `know` sections and discovers custom optimizations
 - **Phase 4** reads `never` rules before each candidate apply
 
@@ -71,6 +72,14 @@ know:
   - "We compile with -Os on this target, speed flags may not help"
   - "Our models heavily use For Each subsystems"
   - "The CAN_Rx and CAN_Tx blocks must keep their exact signal types"
+
+# ─── TOLERANCE ──────────────────────────────────────────────────────
+# Numerical correctness tolerance for the SIL/PIL verification gate.
+# Both absolute and relative thresholds apply; a signal passes if its
+# error is within EITHER threshold.
+# Default: { absolute: 1e-6, relative: 0.01 }
+# A scalar value is also accepted (pure absolute, relative = 0).
+tolerance: {}
 ```
 
 ### How the agent uses each section
@@ -80,6 +89,7 @@ know:
 | `never` | Hard — violations block the candidate | Phase 4, before each apply | Candidate is blocked and logged; agent moves to next |
 | `skip` | Hard — matched subskills excluded from pipeline | Phase 3, at filter entry | Subskill is never loaded or suggested |
 | `know` | Soft — influences ranking and rationale | Phase 3, during suggestion generation | Agent weighs these; never hard-blocks |
+| `tolerance` | Config — overrides default tolerance | Phase 1, at state construction (step 6.5) | Agent uses these values for `state.TOLERANCE` instead of defaults |
 
 ### Validation rules
 
@@ -168,7 +178,7 @@ Before applying any candidate (built-in or custom):
 ## What This Protocol Does NOT Allow
 
 - **Suppressing gates:** Correctness Gate and Goal-Axis Gate always run. No preference can disable them.
-- **Changing tolerance:** `state.TOLERANCE` is set in Phase 1 and cannot be overridden by preferences.
+- **Changing tolerance:** `state.TOLERANCE` is initialized with smart defaults in Phase 1 (`{"absolute": 1e-6, "relative": 0.01}`). Customers CAN set custom tolerance via the `tolerance:` section in `optimization_preferences.yaml`. When present, the preference values override the Phase 1 defaults at state construction time (step 6.5 of gathering-requirements). The tolerance cannot be weakened mid-run to make a failing version pass.
 - **Modifying phase sequencing:** The A→B→C→D stage order is fixed.
 - **Overriding gate verdicts:** If a gate says FAIL, the version is rejected regardless of preferences.
 

@@ -17,10 +17,11 @@
 
 - Embedded Coder Support Package for Infineon AURIX TC4x
 
-Common blocks: [common.md](common.md) (4 of 14 blocks)
+Common blocks: [common.md](common.md) (13 of 14 blocks)
 
 ## Categories
 
-- [Device libraries](device-libraries.md) — 6 blocks; Device-specific peripheral block libraries for TC4x variants
-- [Multicore](multicore.md) — 3 blocks; Multi-core scheduling and inter-processor communication
-- [Test bench](test-bench.md) — 5 blocks; Test bench interfaces for processor-in-the-loop testing
+- [Uncategorized](uncategorized.md) — 6 blocks; blocks not yet assigned to a category
+- [Scheduling](scheduling.md) — 1 blocks; Map model rates to OS tasks on the multicore target
+- [Target communication](target-communication.md) — 2 blocks; Data exchange between processes and cores
+- [Test bench](test-bench.md) — 5 blocks; Harness stand-ins for target peripherals used in SIL/PIL testing

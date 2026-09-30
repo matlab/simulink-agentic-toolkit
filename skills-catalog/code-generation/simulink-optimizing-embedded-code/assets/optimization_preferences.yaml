@@ -38,3 +38,26 @@ skip: []
 #   - "Our models heavily use For Each subsystems"
 #   - "The CAN_Rx and CAN_Tx blocks must keep their exact signal types"
 know: []
+
+# ─── TOLERANCE ──────────────────────────────────────────────────────
+# Numerical correctness tolerance for the SIL/PIL verification gate.
+# The agent uses these to decide whether an optimization preserves the
+# model's numerical behavior. Both absolute and relative thresholds apply;
+# a signal passes if its error is within EITHER threshold.
+#
+# absolute: Maximum allowable absolute error on any signal (default: 1e-6)
+# relative: Maximum allowable relative error as a fraction of the golden
+#           reference signal's peak magnitude (default: 0.01 = 1%)
+#
+# Pass criterion per signal:
+#   effectiveTol = max(absolute, relative * signalRange)
+#   signalPasses = (absErr <= effectiveTol)
+#
+# Examples:
+#   Safety-critical control: { absolute: 1e-10, relative: 0.001 }
+#   Consumer electronics:    { absolute: 1e-4,  relative: 0.05 }
+#   Default (balanced):      { absolute: 1e-6,  relative: 0.01 }
+#
+# A scalar value is also accepted for backward compatibility
+# (treated as pure absolute tolerance with relative = 0).
+tolerance: {}

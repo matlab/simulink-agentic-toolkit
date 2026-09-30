@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Simulink Agentic Toolkit"
+abstract:
+  The Simulink® Agentic Toolkit allows you to use AI agents with Simulink
+  by giving your AI agent the knowledge and context to read, build, edit,
+  and test Simulink models using Model-Based Design best practices. Use
+  this toolkit to provide trusted Simulink capabilities to your agent.
+
+type: software
+authors:
+  - name: "The MathWorks, Inc."
+    entity: organization
+date-released: 2026-04-16
+license: "https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md"
+url: "https://github.com/matlab/simulink-agentic-toolkit"
+repository-code: "https://github.com/matlab/simulink-agentic-toolkit"
+keywords:
+  - simulink-agentic-toolkit
+  - agent-skills
+  - matlab-mcp-server

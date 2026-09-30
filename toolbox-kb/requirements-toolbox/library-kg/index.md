@@ -17,8 +17,8 @@
 
 - Requirements Toolbox
 
-Common blocks: [common.md](common.md) (1 of 5 blocks)
+Common blocks: [common.md](common.md) (2 of 2 blocks)
 
 ## Categories
 
-- [Requirements](requirements.md) — 5 blocks; Requirements management and traceability blocks
+- [Requirements authoring](requirements-authoring.md) — 2 blocks; Author, organize, and trace formal requirements inside a model

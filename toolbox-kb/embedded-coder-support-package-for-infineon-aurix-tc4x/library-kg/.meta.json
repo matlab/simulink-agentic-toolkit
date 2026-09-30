@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456040515,
+  "generatedAt": "2026-09-29T16:38:07",
+  "generatedAtDatenum": 740254.69314424763,
   "generatorVersion": 4,
   "libraries": [
     "Embedded Coder Support Package for Infineon AURIX TC4x"
   ],
   "blockCount": 14,
-  "categoryCount": 3,
+  "categoryCount": 4,
   "libraryFingerprints": {
     "Embedded_Coder_Support_Package_for_Infineon_AURIX_TC4x": {
       "blockCount": 14

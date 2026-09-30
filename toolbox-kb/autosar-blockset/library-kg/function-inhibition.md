@@ -4,7 +4,7 @@ title: Function inhibition
 description: Function Inhibition Manager (FIM) for controlled degradation and safety interlocks
 tags: [inhibition, fim, control, available, permission]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: AUTOSAR Blockset
 category_path: Function inhibition
 block_count: 2

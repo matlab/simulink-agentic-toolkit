@@ -17,21 +17,20 @@
 
 - C2000 Microcontroller Blockset
 
-Common blocks: [common.md](common.md) (30 of 594 blocks)
+Common blocks: [common.md](common.md) (30 of 578 blocks)
 
 ## Categories
 
-- [Analog conversion](analog-conversion.md) — 66 blocks; ADC, DAC, comparators, and sigma-delta filter modules for analog signal acquisition and generation
-- [System](system.md) — 54 blocks; System-level blocks: watchdog, profiler, and library utilities
-- [Digital io](digital-io.md) — 52 blocks; GPIO digital input and output pin access
-- [Serial communication](serial-communication.md) — 173 blocks; Serial communication peripherals: SCI/UART, SPI, I2C, and LIN interfaces
-- [Interrupt scheduling](interrupt-scheduling.md) — 31 blocks; Hardware and software interrupt configuration, task scheduling, and event routing
-- [Pwm timing](pwm-timing.md) — 71 blocks; PWM generation, input capture, quadrature decoding, and timer peripherals for actuation and measurement
-- [Can communication](can-communication.md) — 59 blocks; CAN and CAN FD bus communication including message packing and unpacking
-- [Cla coprocessor](cla-coprocessor.md) — 35 blocks; Control Law Accelerator coprocessor for offloading real-time math from the main CPU
-- [Interprocessor](interprocessor.md) — 10 blocks; Inter-processor communication for dual-core C2000 devices
-- [Network communication](network-communication.md) — 12 blocks; TCP and UDP network communication via on-chip Ethernet
-- [Iqmath](iqmath.md) — 17 blocks; TI IQMath fixed-point arithmetic library for efficient control computations
-- [Sensor drivers](sensor-drivers.md) — 7 blocks; Driver blocks for common external sensors connected via I2C or SPI
-- [Memory register](memory-register.md) — 3 blocks; Direct memory and register access for DMA, shared memory, and custom peripheral interfacing
-- [Data packing](data-packing.md) — 4 blocks; Byte-level data packing, unpacking, and protocol encoding/decoding for communication payloads
+- [Library](library.md) — 31 blocks; Library entry points and device families
+- [Analog io](analog-io.md) — 65 blocks; ADC, DAC, comparator, and sigma-delta analog interfaces
+- [Digital io](digital-io.md) — 68 blocks; GPIO digital input/output
+- [Serial comm](serial-comm.md) — 164 blocks; SPI, I2C, SCI/UART, and host serial communication
+- [Scheduling](scheduling.md) — 52 blocks; Interrupts, tasks, watchdog, and scheduling
+- [Pwm capture](pwm-capture.md) — 66 blocks; PWM generation and pulse/encoder capture
+- [Can network](can-network.md) — 61 blocks; CAN and CAN FD messaging and packing
+- [Cla](cla.md) — 33 blocks; Control Law Accelerator coprocessor blocks
+- [Network](network.md) — 14 blocks; TCP/IP and UDP networking
+- [Ipc](ipc.md) — 10 blocks; Inter-processor and inter-process communication
+- [Memory](memory.md) — 3 blocks; Memory and register access
+- [Sensors](sensors.md) — 7 blocks; Onboard/attached sensor driver blocks
+- [Data packing](data-packing.md) — 4 blocks; Byte and protocol frame packing/unpacking

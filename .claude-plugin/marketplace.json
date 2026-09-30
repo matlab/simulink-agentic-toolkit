@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.8.4",
+      "version": "0.9.1",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -46,7 +46,7 @@
     },
     {
       "name": "code-generation",
-      "version": "0.4.1",
+      "version": "0.6.3",
       "description": "Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code for runtime, memory, and MISRA compliance, configuring Embedded Coder deployment settings, and customizing A2L calibration files",
       "author": {
         "name": "MathWorks"
@@ -59,8 +59,8 @@
     },
     {
       "name": "simulink-simulation",
-      "version": "0.2.0",
-      "description": "Create input signal datasets and import data into the Simulation Data Inspector for Simulink model simulation",
+      "version": "0.3.0",
+      "description": "Create input signal datasets, import data into the Simulation Data Inspector, and run multiple Simulink simulations",
       "author": {
         "name": "MathWorks"
       },
@@ -98,7 +98,7 @@
     },
     {
       "name": "simulink-environment-fundamentals",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "description": "Core Simulink environment capabilities, including discovering shipped example models",
       "author": {
         "name": "MathWorks"

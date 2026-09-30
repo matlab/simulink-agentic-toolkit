@@ -17,8 +17,15 @@
 
 - Simulink Coder Support Package for BBC micro:bit
 
-Common blocks: [common.md](common.md) (3 of 7 blocks)
+Common blocks: [common.md](common.md) (30 of 105 blocks)
 
 ## Categories
 
-- [Microbit](microbit.md) — 7 blocks; BBC micro:bit onboard peripherals and wireless communication
+- [Accelerometer](accelerometer.md) — 9 blocks; On-board 3-axis accelerometers
+- [Audio](audio.md) — 2 blocks
+- [Io basic](io-basic.md) — 11 blocks; Digital/analog pins and serial buses on the micro:bit
+- [Button](button.md) — 6 blocks
+- [Led](led.md) — 17 blocks; 5x5 LED matrix output
+- [Led images](led-images.md) — 54 blocks; Prebuilt 5x5 LED glyphs (letters, digits, faces, arrows, icons)
+- [Magnetometer](magnetometer.md) — 4 blocks; On-board 3-axis magnetometers
+- [Radio](radio.md) — 2 blocks; 2.4 GHz radio communication

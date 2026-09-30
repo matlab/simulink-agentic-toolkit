@@ -1,0 +1,27 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.1"
+human-description: Run multiple Simulink simulations in parallel with parsim, batchsim, and DesignStudy.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+optional-products:
+  - Parallel Computing Toolbox
+  - MATLAB Parallel Server
+required-tools:
+  - run_matlab_file
+  - evaluate_matlab_code
+  - model_read
+  - model_query_params
+reference-files:
+  - references/signal-and-parameter-discovery.md
+  - references/output-metrics.md
+  - references/worker-data-transfer.md
+  - references/simulation-callbacks.md
+  - references/designstudy-and-batchsim.md
+  - references/optimization-options.md
+  - references/debugging.md
+required-skills: []

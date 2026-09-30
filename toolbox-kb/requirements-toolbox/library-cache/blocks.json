@@ -1,0 +1,41 @@
+{
+  "libraryName": "Requirements Toolbox",
+  "generatedAt": "2026-09-28T19:18:56",
+  "blockCount": 2,
+  "blocks": [
+    {
+      "name": "Requirements Table",
+      "referenceBlock": "reqmanage/Requirements Table",
+      "blockType": "RequirementsTable",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Requirements",
+      "referenceBlock": "reqmanage/System Requirements",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Requirements",
+      "maskDescription": "Lists the requirements for the current model.",
+      "pathCategory": "",
+      "metadataQuality": "high",
+      "introducedIn": "2023a"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023b",
+  "annotatedAt": "2026-09-29T04:54:38"
+}

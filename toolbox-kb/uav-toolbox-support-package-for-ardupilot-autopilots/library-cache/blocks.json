@@ -1,0 +1,161 @@
+{
+  "libraryName": "UAV Toolbox Support Package for ArduPilot Autopilots",
+  "generatedAt": "2026-09-28T19:22:05",
+  "blockCount": 12,
+  "blocks": [
+    {
+      "name": "Ang Velocity Setpoint",
+      "referenceBlock": "ardupilotControllerInterfacelib/Ang Velocity Setpoint",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Attitude Setpoint",
+      "referenceBlock": "ardupilotControllerInterfacelib/Attitude Setpoint",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Current Ang Velocity",
+      "referenceBlock": "ardupilotControllerInterfacelib/Current Ang Velocity",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Current Attitude",
+      "referenceBlock": "ardupilotControllerInterfacelib/Current Attitude",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Current Position",
+      "referenceBlock": "ardupilotControllerInterfacelib/Current Position",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Current Velocity",
+      "referenceBlock": "ardupilotControllerInterfacelib/Current Velocity",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "Position Setpoint",
+      "referenceBlock": "ardupilotControllerInterfacelib/Position Setpoint",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2025b"
+    },
+    {
+      "name": "Velocity Setpoint",
+      "referenceBlock": "ardupilotControllerInterfacelib/Velocity Setpoint",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2026a"
+    },
+    {
+      "name": "ArduPlane Actuator Write",
+      "referenceBlock": "ardupilotControllerInterfacelib/ArduPlane Actuator Write",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "ArduPlane Actuator Write",
+      "maskDescription": "Set actuator values for Motors and Servos. \n \nThe block accepts single scalar values between -1 to 1 as input and writes those values to the selected Motors/Servos. An input value of 1 indicates maximum output, 0 indicates centered servos or minimum motor thrust, and -1 indicates maximum output in the opposite direction (if supported). \n \nConfigure the Actuators in Mission Planner. For more information, click 'Help'.",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "high",
+      "introducedIn": "2025b"
+    },
+    {
+      "name": "Write Torque & Thrust",
+      "referenceBlock": "ardupilotControllerInterfacelib/Write Torque & Thrust",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Write Torque and Thrust",
+      "maskDescription": "Write the normalized torque and thrust command in the range of [-1, 1] for roll, pitch, and yaw and [0, 1] for throttle to the ArduPilot Mixer. \n \nA custom mixer matrix can be defined in this block for custom airframe.",
+      "pathCategory": "Controller Interface Blocks",
+      "metadataQuality": "high",
+      "introducedIn": "2025b"
+    },
+    {
+      "name": "RC Receive",
+      "referenceBlock": "ardupilotPeripheralslib/RC Receive",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "RC Receive",
+      "maskDescription": "RC Receive block fetches raw channel data, with optional trim and deadzone adjustments from RC transmitter signals for the selected channels.",
+      "pathCategory": "Peripheral Blocks",
+      "metadataQuality": "high",
+      "introducedIn": "2025b"
+    },
+    {
+      "name": "Timestamp",
+      "referenceBlock": "ardupilotUtilslib/Timestamp",
+      "blockType": "MATLABSystem",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "Utility Blocks",
+      "metadataQuality": "medium",
+      "introducedIn": "2025a"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2025a",
+  "annotatedAt": "2026-09-29T04:54:39"
+}

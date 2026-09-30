@@ -17,20 +17,24 @@
 
 - Simulink Real-Time
 
-Common blocks: [common.md](common.md) (13 of 86 blocks)
+Common blocks: [common.md](common.md) (30 of 86 blocks)
 
 ## Categories
 
-- [Async triggers](async-triggers.md) — 1 blocks; Asynchronous event and thread triggers for interrupt-driven execution
-- [Dds communication](dds-communication.md) — 2 blocks; DDS publish-subscribe communication for distributed real-time systems
-- [Ethercat](ethercat.md) — 18 blocks; EtherCAT fieldbus communication, PDO exchange, and subdevice management
-- [Ip networking](ip-networking.md) — 9 blocks; TCP, UDP, and raw Ethernet communication on the real-time target
-- [J1939 protocol](j1939-protocol.md) — 5 blocks; SAE J1939 heavy-vehicle network protocol messaging
-- [Lin protocol](lin-protocol.md) — 2 blocks; LIN bus frame packing and unpacking for body electronics
-- [Data logging](data-logging.md) — 4 blocks; File logging and execution profiling on the real-time target
-- [Hardware io](hardware-io.md) — 2 blocks; Physical hardware I/O devices and time synchronization
-- [Serial communication](serial-communication.md) — 14 blocks; Serial port communication with FIFO buffering and ASCII/binary parsing
-- [Shared memory](shared-memory.md) — 3 blocks; Shared memory inter-model data exchange on the real-time target
-- [Target management](target-management.md) — 3 blocks; Real-time target management including overload handling and persistent storage
-- [Utilities](utilities.md) — 7 blocks; Byte and bit manipulation utilities for custom protocol framing
-- [Xcp protocol](xcp-protocol.md) — 12 blocks; XCP measurement and calibration protocol over CAN, CAN FD, and UDP
+- [Async](async.md) — 1 blocks
+- [Can can msg blocks](can-can-msg-blocks.md) — 2 blocks
+- [Can can fd msg blocks](can-can-fd-msg-blocks.md) — 2 blocks
+- [Dds](dds.md) — 2 blocks
+- [Ethercat](ethercat.md) — 18 blocks
+- [Ethernet ip](ethernet-ip.md) — 15 blocks; Raw Ethernet and IP communication on the real-time target
+- [J1939](j1939.md) — 5 blocks; SAE J1939 higher-layer CAN protocol messaging
+- [Lin](lin.md) — 2 blocks
+- [Logging](logging.md) — 2 blocks
+- [Logitech g29](logitech-g29.md) — 1 blocks
+- [Ptp](ptp.md) — 1 blocks
+- [Profiling](profiling.md) — 2 blocks
+- [Rs232](rs232.md) — 5 blocks
+- [Rs232 mainboard](rs232-mainboard.md) — 7 blocks
+- [Utilities](utilities.md) — 6 blocks; Data-format and helper blocks
+- [Target management](target-management.md) — 3 blocks
+- [Xcp](xcp.md) — 12 blocks; XCP measurement and calibration over CAN, CAN FD, and UDP

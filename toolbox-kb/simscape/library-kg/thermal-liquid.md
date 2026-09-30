@@ -1,0 +1,33 @@
+---
+type: Simulink Block Category
+title: Thermal liquid
+description: Thermal liquid elements accounting for heat transfer in a liquid
+tags: [thermal liquid]
+status: stable
+source: custom_library
+library_root: Simscape
+category_path: Thermal liquid
+block_count: 13
+---
+
+# Thermal liquid
+
+Use these blocks for thermal liquid.
+
+## Recommended Blocks
+
+| Block | ReferenceBlock | Since | Intent |
+|---|---|---|---|
+| Absolute Reference (TL) | fl_lib/Thermal Liquid/Elements/Absolute Reference (TL) | R2023a+ | This block represents the absolute reference in a thermal liquid network where pressure and temperature are equal to zero. |
+| Cap (TL) | fl_lib/Thermal Liquid/Elements/Cap (TL) | R2023a+ | This block represents a terminus in a thermal liquid network. There is no mass or energy flow through the cap. This block can optionally be used to assign a beginning value and priority to the pressure and temperature of the connected node. |
+| Constant Volume Chamber (TL) | fl_lib/Thermal Liquid/Elements/Constant Volume Chamber (TL) | R2023a+ | This block models mass and energy storage in a thermal liquid network. The chamber contains a constant volume of liquid. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume. Ports A, B, C, and D are the thermal liquid conserving ports associated with the chamber inlets. Port H is the thermal conserving port associated with the thermal mass of the liquid volume. |
+| Flow Resistance (TL) | fl_lib/Thermal Liquid/Elements/Flow Resistance (TL) | R2023a+ | This block represents a generic pressure loss in a thermal liquid network. The drop in pressure is proportional to the square of the mass flow rate. The proportionality constant is determined from the specified nominal condition. |
+| Infinite Flow Resistance (TL) | fl_lib/Thermal Liquid/Elements/Infinite Flow Resistance (TL) | R2023a+ | This block represents a break in a thermal liquid network. There is no mass or energy flow through the break. However, the liquid properties, specified by the Thermal Liquid Settings (TL) block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the differences in pressure and temperature of port A relative to port B. |
+| Local Restriction (TL) | fl_lib/Thermal Liquid/Elements/Local Restriction (TL) | R2023a+ | This block models the pressure loss due to a flow area restriction such as a valve or an orifice in a thermal liquid network. There is no heat exchange with the environment. The restriction area can be optionally set by the physical signal port AR [m^2]. The input is limited by the minimum and maximum restriction area. |
+| Pipe (TL) | fl_lib/Thermal Liquid/Elements/Pipe (TL) | R2023a+ | This block models pipe flow dynamics in a thermal liquid network due to viscous friction losses and convective heat transfer with the pipe wall. You can optionally include the effects of dynamic compressibility and fluid inertia. The pipe contains a constant volume of liquid. Temperature varies dynamically based on the net energy accumulation in the volume. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the net mass accumulation in the volume. Selecting Enable fluid inertia causes the liquid to resist acceleration. Ports A and B are the thermal liquid conserving ports associated with the pipe inlet and outlet. Port H is the thermal conserving port associated with the pipe wall. |
+| Reservoir (TL) | fl_lib/Thermal Liquid/Elements/Reservoir (TL) | R2023a+ | This block sets boundary conditions in a thermal liquid network. The volume of liquid inside the reservoir is assumed infinite. Therefore, the flow is assumed quasi-steady. Liquid leaves the reservoir at the reservoir pressure and temperature. Liquid enters the reservoir at the reservoir pressure, but its temperature is determined by the thermal liquid network upstream. The reservoir pressure and temperature can be optionally set by physical signal ports P and T, respectively. |
+| Flow Rate Sensor (TL) | fl_lib/Thermal Liquid/Sensors/Flow Rate Sensor (TL) | R2023a+ | This block measures mass, volumetric, and energy flow rates in a thermal liquid network. There is no change in pressure or temperature across the sensor. The physical signal ports M [kg/s], V [m^3/s], and φ [W] report the mass flow rate, the volumetric flow rate, and the energy flow rate, respectively, through the sensor. The positive flow direction is from port A to port B. |
+| Pressure & Temperature Sensor (TL) | fl_lib/Thermal Liquid/Sensors/Pressure & Temperature Sensor (TL) | R2023a+ | This block measures pressure and temperature in a thermal liquid network. There is no mass or energy flow through the sensor. The physical signal ports P, Pa, and Pg [Pa] report the pressure difference across the sensor, the absolute pressure at port A, and the gauge pressure at port A, respectively. The physical signal port T [K] reports the temperature at port A or across the sensor. Difference measurements are positive when the values at port A are greater than port B. |
+| Thermodynamic Properties Sensor (TL) | fl_lib/Thermal Liquid/Sensors/Thermodynamic Properties Sensor (TL) | R2023a+ | This block measures thermodynamic fluid states in a thermal liquid network. There is no mass or energy flow through the sensor. The physical signal ports u [kJ/kg], ρ [kg/m^3], and cp [kJ/(kg*K)] report the specific internal energy, density, and specific heat at constant pressure, respectively, measured at port A. |
+| Transport Properties Sensor (TL) | fl_lib/Thermal Liquid/Sensors/Transport Properties Sensor (TL) | R2026a+ | This block measures transport properties in a thermal liquid network. There is no mass or energy flow through the sensor. The physical signal ports μ, ν, k, and Pr report the dynamic viscosity, kinematic viscosity, thermal conductivity, and prandtl number, respectively, measured at port A. |
+| Thermal Liquid Settings (TL) | fl_lib/Thermal Liquid/Utilities/Thermal Liquid Settings (TL) | R2023a+ | This block provides liquid properties to the connected thermal liquid network. The liquid properties can be specified as two-dimensional tables or one-dimensional vectors. For the two-dimensional liquid property tables, rows correspond to Temperature vector and Columns correspond to Pressure vector. The one-dimensional liquid property vectors correspond to Temperature vector. The default liquid is water. Use the <b>Thermal liquid properties</b> button in the <b>Plots</b> section to visualize the provided liquid properties. |

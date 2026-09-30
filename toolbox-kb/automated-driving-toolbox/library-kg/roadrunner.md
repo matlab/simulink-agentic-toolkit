@@ -1,10 +1,10 @@
 ---
 type: Simulink Block Category
 title: Roadrunner
-description: RoadRunner co-simulation for high-fidelity road environments
-tags: [roadrunner, cosimulation, scenario, writer, reader]
+description: RoadRunner scenario co-simulation interface
+tags: [roadrunner]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: Automated Driving Toolbox
 category_path: Roadrunner
 block_count: 3
@@ -18,6 +18,6 @@ Use these blocks for roadrunner.
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| RoadRunner Scenario | roadrunnerscenario/RoadRunner Scenario | R2023a+ | Co-simulate with a RoadRunner scenario providing high-fidelity road networks and traffic — use when the driving environment requires detailed road geometry, signage, and traffic signals from RoadRunner |
-| RoadRunner Scenario Reader | roadrunnerscenario/RoadRunner Scenario Reader | R2023a+ | Read actor poses and road data from a running RoadRunner co-simulation — use to import real-time traffic participant states into Simulink for closed-loop testing |
-| RoadRunner Scenario Writer | roadrunnerscenario/RoadRunner Scenario Writer | R2023a+ | Send ego vehicle state back to a RoadRunner co-simulation — use to close the loop by updating the ego pose in RoadRunner based on Simulink controller outputs |
+| RoadRunner Scenario | roadrunnerscenario/RoadRunner Scenario | R2023a+ | Interface block that co-simulates the model with a RoadRunner scenario — use to drive Simulink from RoadRunner actors. |
+| RoadRunner Scenario Reader | roadrunnerscenario/RoadRunner Scenario Reader | R2023a+ | Read actor and state data from a RoadRunner scenario into the model — use to consume RoadRunner data in Simulink. |
+| RoadRunner Scenario Writer | roadrunnerscenario/RoadRunner Scenario Writer | R2023a+ | Write actor and state data from the model back to a RoadRunner scenario — use to publish Simulink results into RoadRunner. |

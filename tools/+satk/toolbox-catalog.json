@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-20T01:16:57",
+  "generatedAt": "2026-09-28T19:10:18",
   "toolboxes": [
     {
       "name": "AUTOSAR Blockset",
@@ -8,7 +8,7 @@
       "description": "",
       "slxRelPath": "toolbox/coder/autosar/blocks/autosarlib.slx",
       "kbFolder": "autosar-blockset",
-      "blockCount": 27,
+      "blockCount": 22,
       "categories": []
     },
     {
@@ -26,7 +26,7 @@
       "description": "",
       "slxRelPath": "toolbox/audio/audio/audiolibv1.slx",
       "kbFolder": "audio-toolbox",
-      "blockCount": 11,
+      "blockCount": 50,
       "categories": []
     },
     {
@@ -35,7 +35,7 @@
       "description": "",
       "slxRelPath": "toolbox/driving/driving/drivingblocks/drivinglib.slx",
       "kbFolder": "automated-driving-toolbox",
-      "blockCount": 36,
+      "blockCount": 35,
       "categories": []
     },
     {
@@ -62,7 +62,7 @@
       "description": "",
       "slxRelPath": "toolbox/c2b/tic2000/blocks/c2000lib.slx",
       "kbFolder": "c2000-microcontroller-blockset",
-      "blockCount": 577,
+      "blockCount": 578,
       "categories": []
     },
     {
@@ -80,16 +80,16 @@
       "description": "",
       "slxRelPath": "toolbox/comm/comm/commlibv2.slx",
       "kbFolder": "communications-toolbox",
-      "blockCount": 16,
+      "blockCount": 172,
       "categories": []
     },
     {
       "name": "Communications Toolbox HDL Support",
-      "product": "Communications Toolbox",
+      "product": "Communications Toolbox HDL Support",
       "description": "",
       "slxRelPath": "toolbox/comm/comm/commhdllib.slx",
       "kbFolder": "communications-toolbox-hdl-support",
-      "blockCount": 6,
+      "blockCount": 25,
       "categories": []
     },
     {
@@ -125,7 +125,7 @@
       "description": "",
       "slxRelPath": "toolbox/vision/vision/visionlib.slx",
       "kbFolder": "computer-vision-toolbox",
-      "blockCount": 13,
+      "blockCount": 75,
       "categories": []
     },
     {
@@ -157,11 +157,11 @@
     },
     {
       "name": "DO-178C/DO-331 Primitive Library",
-      "product": "DO Qualification Kit",
+      "product": "DO-178C/DO-331 Primitive Library",
       "description": "",
       "slxRelPath": "toolbox/qualkits/do/templates/templatessrc/src/do178_project/tools/compatible_blocks/do178Lib.slx",
       "kbFolder": "do-178c-do-331-primitive-library",
-      "blockCount": 138,
+      "blockCount": 113,
       "categories": []
     },
     {
@@ -170,7 +170,7 @@
       "description": "",
       "slxRelPath": "toolbox/dsphdl/dsphdl/dsphdllib2.slx",
       "kbFolder": "dsp-hdl-toolbox",
-      "blockCount": 8,
+      "blockCount": 18,
       "categories": []
     },
     {
@@ -179,16 +179,16 @@
       "description": "",
       "slxRelPath": "toolbox/dsp/dsp/dsplibv4.slx",
       "kbFolder": "dsp-system-toolbox",
-      "blockCount": 17,
+      "blockCount": 240,
       "categories": []
     },
     {
       "name": "DSP System Toolbox HDL Support",
-      "product": "DSP HDL Toolbox",
+      "product": "DSP System Toolbox HDL Support",
       "description": "",
       "slxRelPath": "toolbox/dsp/dsp/dsphdlsupportlib.slx",
       "kbFolder": "dsp-system-toolbox-hdl-support",
-      "blockCount": 6,
+      "blockCount": 27,
       "categories": []
     },
     {
@@ -283,11 +283,11 @@
     },
     {
       "name": "Embedded Coder Support Package for AURIX TC4x",
-      "product": "Embedded Coder",
+      "product": "Embedded Coder Support Package for AURIX TC4x",
       "description": "",
       "slxRelPath": "toolbox/target/supportpackages/aurix_target/tc4xx/blocks/aurixtc4xlib.slx",
       "kbFolder": "embedded-coder-support-package-for-aurix-tc4x",
-      "blockCount": 13,
+      "blockCount": 14,
       "categories": []
     },
     {
@@ -301,11 +301,11 @@
     },
     {
       "name": "Embedded Coder Support Package for Infineon AURIX TC4x",
-      "product": "Embedded Coder",
+      "product": "Embedded Coder Support Package for Infineon AURIX TC4x",
       "description": "",
       "slxRelPath": "toolbox/target/supportpackages/aurix_target/tc4xx/blocks/aurixtc4xlib.slx",
       "kbFolder": "embedded-coder-support-package-for-infineon-aurix-tc4x",
-      "blockCount": 13,
+      "blockCount": 14,
       "categories": []
     },
     {
@@ -319,11 +319,11 @@
     },
     {
       "name": "Embedded Coder Support Package for Qualcomm Hexagon",
-      "product": "Embedded Coder",
+      "product": "Embedded Coder Support Package for Qualcomm Hexagon",
       "description": "",
       "slxRelPath": "toolbox/shared/supportpackages/hexagon/blocks/hexagonlib.slx",
       "kbFolder": "embedded-coder-support-package-for-qualcomm-hexagon",
-      "blockCount": 2,
+      "blockCount": 6,
       "categories": []
     },
     {
@@ -346,11 +346,11 @@
     },
     {
       "name": "Embedded Coder Support Package for Renesas RH850 Microcontrollers",
-      "product": "Embedded Coder",
+      "product": "Embedded Coder Support Package for Renesas RH850 Microcontrollers",
       "description": "",
       "slxRelPath": "toolbox/target/supportpackages/renesas/rh850/slLibrary/rh850lib.slx",
       "kbFolder": "embedded-coder-support-package-for-renesas-rh850-microcontrollers",
-      "blockCount": 8,
+      "blockCount": 9,
       "categories": []
     },
     {
@@ -386,7 +386,7 @@
       "description": "",
       "slxRelPath": "toolbox/physmod/simscape/library/m/fl_lib.slx",
       "kbFolder": "simscape",
-      "blockCount": 274,
+      "blockCount": 294,
       "categories": []
     },
     {
@@ -404,7 +404,7 @@
       "description": "",
       "slxRelPath": "toolbox/hdlcoder/hdllib/sl_lib/hdlsllib.slx",
       "kbFolder": "hdl-coder",
-      "blockCount": 255,
+      "blockCount": 262,
       "categories": []
     },
     {
@@ -413,7 +413,7 @@
       "description": "",
       "slxRelPath": "toolbox/edalink/edalink/edalink/edalinklib.slx",
       "kbFolder": "hdl-verifier",
-      "blockCount": 4,
+      "blockCount": 8,
       "categories": []
     },
     {
@@ -548,7 +548,7 @@
       "description": "",
       "slxRelPath": "toolbox/autoblks/autoblks/autolib.slx",
       "kbFolder": "powertrain-blockset",
-      "blockCount": 62,
+      "blockCount": 63,
       "categories": []
     },
     {
@@ -557,7 +557,7 @@
       "description": "",
       "slxRelPath": "toolbox/simrf/simrf_top/simrf_top/simrfV2libs.slx",
       "kbFolder": "rf-blockset",
-      "blockCount": 68,
+      "blockCount": 89,
       "categories": []
     },
     {
@@ -620,7 +620,7 @@
       "description": "",
       "slxRelPath": "toolbox/shared/slreq/reqmanage.slx",
       "kbFolder": "requirements-toolbox",
-      "blockCount": 5,
+      "blockCount": 2,
       "categories": []
     },
     {
@@ -719,7 +719,7 @@
       "description": "",
       "slxRelPath": "toolbox/simulink/blocks/library/simulink.slx",
       "kbFolder": "simulink",
-      "blockCount": 352,
+      "blockCount": 573,
       "categories": []
     },
     {
@@ -746,7 +746,7 @@
       "description": "",
       "slxRelPath": "toolbox/simulink/blocks/library/simulinkcoder/rtwlib.slx",
       "kbFolder": "simulink-coder",
-      "blockCount": 3,
+      "blockCount": 13,
       "categories": []
     },
     {
@@ -760,11 +760,11 @@
     },
     {
       "name": "Simulink Coder Support Package for BBC micro:bit",
-      "product": "Simulink Coder",
+      "product": "Simulink Coder Support Package for BBC micro:bit",
       "description": "",
       "slxRelPath": "toolbox/target/supportpackages/microbit/blocks/microbitblockslib.slx",
       "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
-      "blockCount": 7,
+      "blockCount": 105,
       "categories": []
     },
     {
@@ -863,25 +863,25 @@
       "description": "",
       "slxRelPath": "toolbox/slrealtime/simulink/blocks/slrealtimelib.slx",
       "kbFolder": "simulink-real-time",
-      "blockCount": 82,
+      "blockCount": 86,
       "categories": []
     },
     {
       "name": "Simulink Support Package for Android Devices",
-      "product": "Simulink",
+      "product": "Simulink Support Package for Android Devices",
       "description": "",
       "slxRelPath": "toolbox/target/supportpackages/android/blocks/androidlib.slx",
       "kbFolder": "simulink-support-package-for-android-devices",
-      "blockCount": 5,
+      "blockCount": 36,
       "categories": []
     },
     {
       "name": "Simulink Support Package for Apple iOS Devices",
-      "product": "Simulink",
+      "product": "Simulink Support Package for Apple iOS Devices",
       "description": "",
       "slxRelPath": "toolbox/target/supportpackages/ios/blocks/ioslib.slx",
       "kbFolder": "simulink-support-package-for-apple-ios-devices",
-      "blockCount": 5,
+      "blockCount": 18,
       "categories": []
     },
     {
@@ -917,7 +917,7 @@
       "description": "",
       "slxRelPath": "toolbox/stats/blocks/statsLibrary.slx",
       "kbFolder": "statistics-and-machine-learning-toolbox",
-      "blockCount": 1798,
+      "blockCount": 37,
       "categories": []
     },
     {
@@ -926,7 +926,7 @@
       "description": "",
       "slxRelPath": "toolbox/ident/ident/slident.slx",
       "kbFolder": "system-identification-toolbox",
-      "blockCount": 12,
+      "blockCount": 14,
       "categories": []
     },
     {
@@ -935,16 +935,16 @@
       "description": "",
       "slxRelPath": "toolbox/uav/uavsimulink/core/uavlib.slx",
       "kbFolder": "uav-toolbox",
-      "blockCount": 15,
+      "blockCount": 32,
       "categories": []
     },
     {
       "name": "UAV Toolbox Support Package for ArduPilot Autopilots",
-      "product": "UAV Toolbox",
+      "product": "UAV Toolbox Support Package for ArduPilot Autopilots",
       "description": "",
       "slxRelPath": "toolbox/target/supportpackages/ardupilot/core/blocks/ardupilotlib.slx",
       "kbFolder": "uav-toolbox-support-package-for-ardupilot-autopilots",
-      "blockCount": 2,
+      "blockCount": 12,
       "categories": []
     },
     {
@@ -958,11 +958,11 @@
     },
     {
       "name": "Utilities",
-      "product": "Simscape",
+      "product": "Utilities",
       "description": "",
       "slxRelPath": "toolbox/physmod/simscape/engine/library/m/nesl_utility.slx",
       "kbFolder": "utilities",
-      "blockCount": 11,
+      "blockCount": 25,
       "categories": []
     },
     {
@@ -998,7 +998,7 @@
       "description": "",
       "slxRelPath": "toolbox/visionhdl/visionhdl/visionhdllib.slx",
       "kbFolder": "vision-hdl-toolbox",
-      "blockCount": 9,
+      "blockCount": 32,
       "categories": []
     },
     {
@@ -1034,14 +1034,14 @@
       "description": "",
       "slxRelPath": "toolbox/physmod/simscape/library/m/fl_lib.slx",
       "kbFolder": "simscape",
-      "blockCount": 274,
+      "blockCount": 294,
       "categories": []
     },
     {
       "name": "Lidar Toolbox",
       "product": "Point Cloud Toolbox",
       "description": "",
-      "slxRelPath": "toolbox/pointcloud/simulink/lidarlib.slx",
+      "slxRelPath": "toolbox/lidar/lidarsimulink/lidarlib.slx",
       "kbFolder": "lidar-toolbox",
       "blockCount": 1,
       "categories": []
@@ -1050,7 +1050,7 @@
       "name": "Motor Control Blockset",
       "product": "Motor Control Blockset",
       "description": "",
-      "slxRelPath": "toolbox/mcb/mcb/library/mcblib.slx",
+      "slxRelPath": "toolbox/mcb/mcbblocks/mcblib.slx",
       "kbFolder": "motor-control-blockset",
       "blockCount": 80,
       "categories": []
@@ -1059,9 +1059,81 @@
       "name": "SoC Blockset",
       "product": "SoC Blockset",
       "description": "",
-      "slxRelPath": "toolbox/soc/lib/xilinxsoclib.slx",
+      "slxRelPath": "toolbox/soc/blocks/soclib.slx",
       "kbFolder": "soc-blockset",
       "blockCount": 112,
+      "categories": []
+    },
+    {
+      "name": "Communications Toolbox Support Package for USRP Embedded Series Radio",
+      "product": "Communications Toolbox Support Package for USRP Embedded Series Radio",
+      "description": "",
+      "slxRelPath": "toolbox/shared/sdr/sdrplug/usrpembeddedseriesradio_hspdef/usrpembeddedseriesradio_hspdef/usrpe3xx_lib.slx",
+      "kbFolder": "communications-toolbox-support-package-for-usrp-embedded-series-radio",
+      "blockCount": 3,
+      "categories": []
+    },
+    {
+      "name": "Control System Toolbox",
+      "product": "Control System Toolbox",
+      "description": "",
+      "slxRelPath": "toolbox/control/ctrlmodels/cstblocks.slx",
+      "kbFolder": "control-system-toolbox",
+      "blockCount": 24,
+      "categories": []
+    },
+    {
+      "name": "Motor Control Blockset HDL Support",
+      "product": "Motor Control Blockset HDL Support",
+      "description": "",
+      "slxRelPath": "toolbox/mcb/mcbblocks/mcbhdllib.slx",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "blockCount": 29,
+      "categories": []
+    },
+    {
+      "name": "Simulink Support Package for Raspberry Pi Hardware",
+      "product": "Simulink Support Package for Raspberry Pi Hardware",
+      "description": "",
+      "slxRelPath": "toolbox/target/supportpackages/raspberrypi/blocks/raspberrypilib.slx",
+      "kbFolder": "simulink-support-package-for-raspberry-pi-hardware",
+      "blockCount": 8,
+      "categories": []
+    },
+    {
+      "name": "SoC Blockset Support Package for AMD FPGA and SoC Devices",
+      "product": "SoC Blockset Support Package for AMD FPGA and SoC Devices",
+      "description": "",
+      "slxRelPath": "toolbox/soc/supportpackages/xilinxsoc/blocks/xilinxsoclib.slx",
+      "kbFolder": "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+      "blockCount": 69,
+      "categories": []
+    },
+    {
+      "name": "Stateflow",
+      "product": "Stateflow",
+      "description": "",
+      "slxRelPath": "toolbox/stateflow/stateflow/sflib.slx",
+      "kbFolder": "stateflow",
+      "blockCount": 4,
+      "categories": []
+    },
+    {
+      "name": "Simulink Test",
+      "product": "Simulink Test",
+      "description": "",
+      "slxRelPath": "toolbox/simulinktest/block_libraries/sltestlib.slx",
+      "kbFolder": "simulink-test",
+      "blockCount": 11,
+      "categories": []
+    },
+    {
+      "name": "Simulink Fault Analyzer",
+      "product": "Simulink Fault Analyzer",
+      "description": "",
+      "slxRelPath": "toolbox/safety/block_libraries/mwfaultblocklib.slx",
+      "kbFolder": "simulink-fault-analyzer",
+      "blockCount": 5,
       "categories": []
     }
   ],

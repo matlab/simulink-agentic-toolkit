@@ -1,17 +1,19 @@
 ---
 name: finding-simulink-examples
-description: Search the full catalog of shipped MathWorks example models with the invokeModelFinder helper script. Use when asked to find, show, or open a shipped example model, or to point someone at an example that demonstrates a concept.
+description: Find, show, open, or identify shipped MathWorks example models that demonstrate a concept, block, or application domain, and return the command to open them.
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Finding Simulink Examples
 
-Use the `invokeModelFinder` helper script to search the **full catalog of shipped MathWorks example models**, then report the match.
+Use this skill to find examples and models in the MathWorks Examples database.
 
-`invokeModelFinder` searches a **database of every example MathWorks ships** across all products — well over 10,000 models. It is a database search, **not** a scan of the local disk: a hit means the example exists in the MathWorks database and comes with the command to open it, regardless of what is currently open or saved locally. Opening a match requires the owning product to be installed; the returned `open_command` (e.g. `openExample(...)`) handles that.
+Use the `invokeModelFinder` helper script to search the **database of shipped MathWorks example models**, then report matching examples.
+
+`invokeModelFinder` searches a **database of every example MathWorks ships** across all products. It is a database search, **not** a scan of the local disk: a hit means the example exists in the MathWorks database and comes with the command to open it, regardless of what is currently open or saved locally. Opening a match requires the owning product to be installed; the returned `open_command` (e.g. `openExample(...)`) handles that.
 
 `invokeModelFinder` is a helper script that ships with this skill in its `scripts/` folder. It exists because the customer-facing `modelfinder` function is **interactive** — it opens a `Selection:` menu in the terminal and blocks, so it cannot be driven programmatically. `invokeModelFinder` is a thin, non-interactive wrapper that returns results directly. Call it with `evaluate_matlab_code`, setting `project_path` to the skill's `scripts/` folder so MATLAB can resolve the function (never use `addpath`):
 

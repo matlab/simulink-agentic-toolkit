@@ -17,24 +17,20 @@
 
 - Simscape
 
-Common blocks: [common.md](common.md) (12 of 277 blocks)
+Common blocks: [common.md](common.md) (30 of 294 blocks)
 
 ## Categories
 
-- [Electrical elements](electrical-elements.md) — 19 blocks; Passive and active electrical circuit components including resistors, capacitors, inductors, and transformers
-- [Electrical sources sensors](electrical-sources-sensors.md) — 16 blocks; Voltage and current sources for circuit excitation, and sensors for measuring electrical quantities
-- [Gas domain](gas-domain.md) — 18 blocks; Compressible gas flow elements, chambers, pipes, sensors, sources, and utilities
-- [Isothermal liquid domain](isothermal-liquid-domain.md) — 17 blocks; Incompressible isothermal liquid flow elements, actuators, sensors, and sources
-- [Magnetic domain](magnetic-domain.md) — 13 blocks; Magnetic circuit elements including reluctances, flux sources, and electromagnetic converters
-- [Mechanical translational](mechanical-translational.md) — 24 blocks; Translational mechanical elements including springs, dampers, masses, friction, and references
-- [Mechanical rotational](mechanical-rotational.md) — 19 blocks; Rotational mechanical elements including springs, dampers, inertias, friction, and references
-- [Mechanical mechanisms](mechanical-mechanisms.md) — 11 blocks; Gear boxes, levers, crank mechanisms, and interfaces to Simscape Multibody
-- [Moist air domain](moist-air-domain.md) — 22 blocks; Psychrometric moist air flow elements, moisture control, sensors, and sources
-- [Physical signal dynamics](physical-signal-dynamics.md) — 16 blocks; Integrators, transfer functions, state-space models, delays, and lookup tables for physical signals
-- [Physical signal math](physical-signal-math.md) — 24 blocks; Arithmetic operations, nonlinear functions, and logic for physical signals
-- [Physical signal sources](physical-signal-sources.md) — 11 blocks; Physical signal generators, terminators, and periodic estimators
-- [Rotational across based](rotational-across-based.md) — 9 blocks; Position-aware rotational elements with across-based formulation for angle tracking
-- [Thermal domain](thermal-domain.md) — 16 blocks; Heat transfer elements, thermal mass, temperature and heat flow sources and sensors
-- [Thermal liquid domain](thermal-liquid-domain.md) — 17 blocks; Liquid flow elements with thermal energy transport, sensors, and sources
-- [Translational position based](translational-position-based.md) — 6 blocks; Position-aware translational elements with position-based formulation for displacement tracking
-- [Two phase fluid domain](two-phase-fluid-domain.md) — 19 blocks; Two-phase fluid flow elements with phase change, vapor quality, sensors, and sources
+- [Electrical](electrical.md) — 31 blocks; Electrical-domain sources, sensors, elements, and references
+- [Gas](gas.md) — 14 blocks; Gas-domain elements for pneumatic and compressible-flow systems
+- [Rotational](rotational.md) — 38 blocks; Mechanical rotational elements and references
+- [Translational](translational.md) — 46 blocks; Mechanical translational (linear-motion) elements and references
+- [Mechanical](mechanical.md) — 12 blocks; Mechanical-domain building blocks
+- [Hydraulic](hydraulic.md) — 18 blocks; Hydraulic-domain (legacy) elements, sources, and sensors
+- [Isothermal liquid](isothermal-liquid.md) — 12 blocks; Isothermal liquid thermal-fluid elements (constant-temperature liquid)
+- [Magnetic](magnetic.md) — 12 blocks; Magnetic-domain elements, sources, and sensors
+- [Moist air](moist-air.md) — 18 blocks; Moist-air elements for HVAC and humidity modeling
+- [Physical signals](physical-signals.md) — 50 blocks; Physical-signal math, sources, sensors, and utilities that operate on Simscape PS signals
+- [Thermal](thermal.md) — 15 blocks; Thermal-domain conduction, convection, and radiation elements
+- [Thermal liquid](thermal-liquid.md) — 13 blocks; Thermal liquid elements accounting for heat transfer in a liquid
+- [Two phase fluid](two-phase-fluid.md) — 15 blocks; Two-phase fluid (liquid/vapor) elements for refrigeration and phase-change systems

@@ -34,6 +34,9 @@ Before starting requirements gathering, initialize version control, detect the m
     This is the floor preserved for end-of-run finalization comparison. It is NOT the Phase-4 revert target (see Step 0e in Phase 2).
 
 **Harness check:** Before proceeding to the steps below, read `<skill_root>/references/protocols/harness-detection.md` and run the detection. If the model is a harness, extract the owner model and redirect.
+```matlab
+eco_token_log('references/protocols/harness-detection.md')
+```
 
 ## Steps
 
@@ -64,6 +67,9 @@ Before starting requirements gathering, initialize version control, detect the m
    ```matlab
    addpath(fullfile('<skill_root>', 'scripts'));
    fingerprint = model_fingerprint('<model>');
+   ```
+   ```matlab
+   eco_token_log('model_fingerprint', N)  % N from "eco_output_tokens: N" in console output
    ```
    Store result in state as `MODEL_FINGERPRINT`.
 
@@ -127,6 +133,18 @@ Before starting requirements gathering, initialize version control, detect the m
 
    Summarize understanding back to user before proceeding.
 
+6.5. **Inform the user about tolerance settings.** After tradeoffs are established, briefly mention:
+
+   *"For correctness verification, I'll use standard numerical tolerance: 1e-6 absolute error and 1% relative error. This means small signals are checked to 1e-6 and large signals allow proportionally larger absolute deviations. If your application has stricter or looser requirements, you can configure this in `.custom_optimizations/optimization_preferences.yaml`."*
+
+   **Do NOT ask the user to configure tolerance.** Most users should accept defaults.
+
+   Set `state.TOLERANCE` to `{"absolute": 1e-6, "relative": 0.01}`. If `<PROJECT_PATH>/.custom_optimizations/optimization_preferences.yaml` exists and has a non-empty `tolerance:` section with `absolute` and/or `relative` keys, use those values instead (merge with defaults for any missing key).
+
+   **Exception:** If the user's stated GOAL involves precision-sensitive work (e.g., they explicitly mention single-precision conversion, or their STAGE_SCOPE includes Stage B precision reduction), add a follow-up note:
+
+   *"Since your optimization may involve data-type changes (double to single), I've set relative tolerance to 1% which accommodates precision reduction. If your application requires tighter control, let me know."*
+
 7. **MANDATORY TRANSITION to Phase 2.** Once confirmed: **(a)** append decision trace, **(b)** update token report, **(c)** construct state object, **(d)** proceed to Phase 2. **Refuse to transition if either diagnostic file not appended (OR-05/OR-06).** Set `NEXT_ACTION` based on `VERIFICATION_MODE`:
    - If `codegen`: `"Phase 2 Baseline (codegen) — (1) READ references/measuring-model-metrics/reference.md, (2) skip configureProfilingMode (codegen needs no profiling), (3) run CodeMetricsFetcherCodegen (sim + slbuild + static metrics), (4) CHECKPOINT: v1_baseline after run completes, (5) AWAIT_USER: present code analysis and ask which areas to target"`
    - If `SIL`/`PIL`: `"Phase 2 Baseline (<mode>) — (1) READ references/measuring-model-metrics/reference.md, (2) configureProfilingMode, (3) run CodeMetricsFetcher<mode> coarse, (4) CHECKPOINT: v1_baseline after run completes, (5) AWAIT_USER: present function listing with metrics and ask which functions to target"`
@@ -143,6 +161,7 @@ Before starting requirements gathering, initialize version control, detect the m
 | GR-04 | Missing tradeoff info | Wrong tradeoffs later | Skipping step 6 or vague answers | Re-ask if unclear |
 | GR-05 | Codegen used for runtime goal | No execution time data; goal unachievable | User asks for "faster code" but also "no testing" or "codegen only" | Guardrail: explain that runtime requires execution, upgrade to SIL/PIL |
 | GR-06 | Non-ERT target with SIL/PIL | `configureProfilingMode` fails on unsupported parameters in Phase 2 | Model uses `grt.tlc` or other non-ERT target but VERIFICATION_MODE is SIL/PIL | Check STF in Phase 1 Step 5; offer switch to `ert.tlc` or fallback to codegen before transitioning |
+| GR-07 | Tolerance too loose or too tight | False passes or false rejects in correctness gate | Default tolerance inappropriate for domain | Inform user in step 6.5; allow override via `optimization_preferences.yaml` tolerance section |
 
 ## Decision Trace Logging
 
@@ -156,6 +175,7 @@ After each numbered step, append to `<project_path>/.eco_diagnostics/eco_decisio
 | 5 (STF check) | `OK GR-06: STF is ERT-based (<stf>)` (or `OK GR-06: STF was <stf> (non-ERT) — switched to ert.tlc per user confirmation` or `OK GR-06: STF was <stf> (non-ERT) — user chose codegen mode`) |
 | 5 (guardrail) | `WARN GR-05: User requested codegen but GOAL=<goal> requires execution — upgraded to <mode>` (or `OK GR-05: GOAL=<goal> compatible with codegen`) |
 | 6 (tradeoffs) | `OK GR-04: Tradeoffs captured: <constraints>` |
+| 6.5 (tolerance) | `OK GR-07: Tolerance set to {absolute: <val>, relative: <val>}` (or `OK GR-07: Tolerance overridden from preferences — {absolute: <val>, relative: <val>}`) |
 
 If a risk's mitigation is intentionally not exercised, log `SKIP GR-0x: <reason>`. The diagnostic file MUST contain an entry for every GR-0x ID before transition.
 

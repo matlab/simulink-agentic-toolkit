@@ -1,0 +1,65 @@
+{
+  "libraryName": "Stateflow",
+  "generatedAt": "2026-09-28T19:20:43",
+  "blockCount": 4,
+  "blocks": [
+    {
+      "name": "Sequence Viewer",
+      "referenceBlock": "sflib/Sequence Viewer",
+      "blockType": "MessageViewer",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Chart",
+      "referenceBlock": "sflib/Chart",
+      "blockType": "Chart",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "State Transition Table",
+      "referenceBlock": "sflib/State Transition Table",
+      "blockType": "StateTransitionTable",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Truth Table",
+      "referenceBlock": "sflib/Truth Table",
+      "blockType": "TruthTable",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023b",
+  "annotatedAt": "2026-09-29T04:54:39"
+}

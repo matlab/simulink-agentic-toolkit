@@ -17,11 +17,14 @@
 
 - Computer Vision Toolbox
 
-Common blocks: [common.md](common.md) (6 of 13 blocks)
+Common blocks: [common.md](common.md) (30 of 75 blocks)
 
 ## Categories
 
-- [Image processing](image-processing.md) — 4 blocks; Core image processing: filtering, morphology, geometric transforms, and enhancement
-- [Utilities](utilities.md) — 4 blocks; Demos, format conversions, information, and helper operations
-- [Image io](image-io.md) — 3 blocks; Image and video input/output from files, cameras, and displays
-- [Image analysis](image-analysis.md) — 2 blocks; Image statistics, frequency transforms, and feature analysis
+- [Analysis statistics](analysis-statistics.md) — 27 blocks; Measure and analyze image content
+- [Sources](sources.md) — 6 blocks; Bring images and video into the model
+- [Filtering](filtering.md) — 9 blocks; Spatial filtering and noise reduction on images
+- [Conversions utilities](conversions-utilities.md) — 12 blocks; Convert between Simulink Image types and matrices
+- [Examples](examples.md) — 1 blocks; Informational example-launcher blocks
+- [Geometric transformations](geometric-transformations.md) — 12 blocks; Warp, resize, and rotate images
+- [Sinks](sinks.md) — 8 blocks; Display, record, and export images and video

@@ -17,10 +17,12 @@
 
 - UAV Toolbox
 
-Common blocks: [common.md](common.md) (6 of 32 blocks)
+Common blocks: [common.md](common.md) (25 of 32 blocks)
 
 ## Categories
 
-- [Guidance navigation](guidance-navigation.md) — 9 blocks; Path following, trajectory planning, and obstacle avoidance
-- [Mavlink](mavlink.md) — 3 blocks; MAVLink protocol encoding and decoding
-- [Sensors utilities](sensors-utilities.md) — 6 blocks; Sensor models and utility blocks
+- [Guidance algorithms](guidance-algorithms.md) — 11 blocks; Path following, trajectory generation, and obstacle avoidance
+- [Mavlink](mavlink.md) — 2 blocks
+- [Scenario sensors](scenario-sensors.md) — 7 blocks; Scenario-based sensor models (GPS, INS, barometer)
+- [Simulation 3d](simulation-3d.md) — 10 blocks; Photorealistic 3D scene, cameras, and sensors
+- [Utilities](utilities.md) — 2 blocks; Coordinate transforms and animation helpers

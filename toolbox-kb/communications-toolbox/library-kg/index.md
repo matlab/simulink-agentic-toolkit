@@ -17,12 +17,20 @@
 
 - Communications Toolbox
 
-Common blocks: [common.md](common.md) (6 of 16 blocks)
+Common blocks: [common.md](common.md) (30 of 172 blocks)
 
 ## Categories
 
-- [Channel modeling](channel-modeling.md) — 1 blocks; Wireless channel models and propagation effects
-- [Signal processing](signal-processing.md) — 4 blocks; Filters, equalizers, synchronization, and sequence operations
-- [Utilities](utilities.md) — 4 blocks; Sources, sinks, demos, and helper blocks
-- [Modulation coding](modulation-coding.md) — 5 blocks; Modulation, demodulation, error correction, and interleaving
-- [Rf hardware](rf-hardware.md) — 2 blocks; RF impairment modeling and correction
+- [Channels](channels.md) — 8 blocks; Channel models: noise, fading, and channel response
+- [Comm filters](comm-filters.md) — 9 blocks; Pulse-shaping, DC removal, and filter libraries
+- [Comm sinks](comm-sinks.md) — 7 blocks; Visualization and IQ capture
+- [Comm sources](comm-sources.md) — 24 blocks; Random data and spreading-sequence generators
+- [Equalizers](equalizers.md) — 3 blocks; Adaptive and OFDM equalizers
+- [Error correction](error-correction.md) — 10 blocks; Turbo and turbo-product forward error correction
+- [Interleaving block](interleaving-block.md) — 10 blocks
+- [Interleaving convolutional](interleaving-convolutional.md) — 6 blocks
+- [Mimo](mimo.md) — 3 blocks; Multi-antenna detection
+- [Modulation](modulation.md) — 48 blocks; Analog and digital baseband modulators/demodulators
+- [Rf impairments](rf-impairments.md) — 13 blocks; RF impairment models and their correction
+- [Synchronization](synchronization.md) — 5 blocks; Carrier, symbol, and frame synchronization
+- [Utility](utility.md) — 26 blocks; Conversions and measurement blocks

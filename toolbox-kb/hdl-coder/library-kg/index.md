@@ -17,18 +17,23 @@
 
 - HDL Coder
 
-Common blocks: [common.md](common.md) (17 of 316 blocks)
+Common blocks: [common.md](common.md) (30 of 262 blocks)
 
 ## Categories
 
-- [Hdl subsystems and control](hdl-subsystems-and-control.md) — 16 blocks; Synchronous subsystems, state control, and nonlinear discontinuity blocks for HDL
-- [Discrete elements](discrete-elements.md) — 23 blocks; Delay elements, integrators, and transfer functions for discrete-time HDL logic
-- [Signal processing](signal-processing.md) — 11 blocks; Filters, serializers, lookup tables, and DSP operations for signal processing in HDL
-- [Math operations](math-operations.md) — 50 blocks; General arithmetic and mathematical operations for HDL designs
-- [Memory and storage](memory-and-storage.md) — 14 blocks; RAM blocks and FIFO buffers for on-chip data storage in HDL
-- [Logic and bit operations](logic-and-bit-operations.md) — 29 blocks; Bit manipulation, boolean logic, comparisons, and edge detection for HDL
-- [Signal attributes and utilities](signal-attributes-and-utilities.md) — 21 blocks; Data type conversion, signal routing, and model documentation utilities
-- [Uncategorized](uncategorized.md) — 52 blocks; blocks not yet assigned to a category
-- [Task scheduling](task-scheduling.md) — 11 blocks; Task scheduling, interrupt handling, and event management for SoC processors
-- [Verification](verification.md) — 4 blocks; Assertion and bounds-checking blocks for model verification during simulation
-- [Floating point operations](floating-point-operations.md) — 36 blocks; Floating-point math functions optimized for FPGA hardware implementation
+- [Ports subsystems](ports-subsystems.md) — 27 blocks; Ports, subsystems, and control-flow blocks
+- [Sources](sources.md) — 5 blocks; Constant and ground signal sources
+- [Signal attributes](signal-attributes.md) — 10 blocks; Data type, rate, and signal attribute handling
+- [Discrete](discrete.md) — 24 blocks; Discrete-time dynamics, delays, and filters
+- [Signal routing](signal-routing.md) — 20 blocks; Buses, mux/demux, switches, and tagged routing
+- [Math](math.md) — 90 blocks; Arithmetic, trigonometric, and matrix math operations
+- [Logic bit](logic-bit.md) — 31 blocks; Logical, relational, and bit-level operations
+- [Sinks](sinks.md) — 9 blocks; Scopes, logging, and simulation control outputs
+- [Discontinuities](discontinuities.md) — 8 blocks; Nonlinear discontinuity blocks
+- [Hdl rams](hdl-rams.md) — 9 blocks; HDL RAM memory models
+- [Hdl subsystems](hdl-subsystems.md) — 1 blocks; HDL subsystem/state-control blocks
+- [Lookup tables](lookup-tables.md) — 8 blocks; Lookup tables and prelookup
+- [Model verification](model-verification.md) — 11 blocks; Runtime assertion and range-check blocks
+- [Utilities](utilities.md) — 2 blocks; Documentation and model-wide utilities
+- [Rcp hil](rcp-hil.md) — 5 blocks; State-space, PWM, and hardware-oriented blocks
+- [User defined](user-defined.md) — 2 blocks; Custom MATLAB code blocks

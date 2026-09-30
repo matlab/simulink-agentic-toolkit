@@ -13,10 +13,7 @@
       "$/requirements.yaml",
       "$/interface.json",
       "$/mil_test.json"
-    ],
-    "context_variables": {
-      "model_name": "StabilityControlSystem.slx"
-    }
+    ]
   },
   "steps": [
     {

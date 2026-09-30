@@ -1,0 +1,34 @@
+---
+type: Simulink Block Category
+title: Gas
+description: Gas-domain elements for pneumatic and compressible-flow systems
+tags: [gas]
+status: stable
+source: custom_library
+library_root: Simscape
+category_path: Gas
+block_count: 14
+---
+
+# Gas
+
+Use these blocks for gas.
+
+## Recommended Blocks
+
+| Block | ReferenceBlock | Since | Intent |
+|---|---|---|---|
+| Absolute Reference (G) | fl_lib/Gas/Elements/Absolute Reference (G) | R2023a+ | This block represents the absolute reference in a gas network where pressure and temperature are equal to zero. |
+| Cap (G) | fl_lib/Gas/Elements/Cap (G) | R2023a+ | This block represents a terminus in a gas network. There is no mass or energy flow through the cap. This block can optionally be used to assign a beginning value and priority to the pressure and temperature of the connected node. |
+| Constant Volume Chamber (G) | fl_lib/Gas/Elements/Constant Volume Chamber (G) | R2023a+ | This block models mass and energy storage in a gas network. The chamber contains a constant volume of gas. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume. Ports A, B, C, and D are the gas conserving ports associated with the chamber inlets. Port H is the thermal conserving port associated with the thermal mass of the gas volume. |
+| Flow Resistance (G) | fl_lib/Gas/Elements/Flow Resistance (G) | R2023a+ | This block represents a generic pressure loss in a gas network. Mass flow rate is proportional to the square root of pressure drop and density. The proportionality constant is determined from the specified nominal condition. Set Nominal density to zero to omit the density dependence. |
+| Infinite Flow Resistance (G) | fl_lib/Gas/Elements/Infinite Flow Resistance (G) | R2023a+ | This block represents a break in a gas network. There is no mass or energy flow through the break. However, the gas properties, specified by the Gas Properties (G) block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the differences in pressure and temperature of port A relative to port B. |
+| Local Restriction (G) | fl_lib/Gas/Elements/Local Restriction (G) | R2023a+ | This block models the pressure loss due to a flow area restriction such as a valve or an orifice in a gas network. There is no heat exchange with the environment. Choking occurs when the restriction flow reaches the speed of sound. The restriction area can be optionally set by the physical signal port AR [m^2]. The input is limited by the minimum and maximum restriction area. |
+| Pipe (G) | fl_lib/Gas/Elements/Pipe (G) | R2023a+ | This block models pipe flow dynamics in a gas network due to viscous friction losses and convective heat transfer with the pipe wall. You can optionally include the effects of dynamic compressibility and fluid inertia. The pipe contains a constant volume of gas. Temperature varies dynamically based on the net energy accumulation in the volume. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the net mass accumulation in the volume. Selecting Enable fluid inertia causes the gas to resist acceleration. The flow is choked when the outlet reaches the speed of sound. Ports A and B are the gas conserving ports associated with the pipe inlet and outlet. Port H is the thermal conserving port associated with the pipe wall. |
+| Reservoir (G) | fl_lib/Gas/Elements/Reservoir (G) | R2023a+ | This block sets boundary conditions in a gas network. The volume of gas inside the reservoir is assumed infinite. Therefore, the flow is assumed quasi-steady. Gas leaves the reservoir at the reservoir pressure and temperature. Gas enters the reservoir at the reservoir pressure, but its temperature is determined by the gas network upstream. The reservoir pressure and temperature can be optionally set by physical signal ports P and T, respectively. |
+| Flow Rate Sensor (G) | fl_lib/Gas/Sensors/Flow Rate Sensor (G) | R2023a+ | This block measures mass, volumetric, and energy flow rate in a gas network. The energy flow rate is the advection of total enthalpy. There is no change in pressure or temperature across the sensor. The physical signal ports M [kg/s], V [m^3/s], and φ [W] report the mass flow rate, the volumetric flow rate, and the energy flow rate, respectively, through the sensor. The positive flow direction is from port A to port B. |
+| Mach Number Sensor (G) | fl_lib/Gas/Sensors/Mach Number Sensor (G) | R2023a+ | This block measures Mach number in a gas network. There is no change in pressure or temperature across the sensor. The physical signal port Mach reports the Mach number. The positive flow direction is from port A to port B. |
+| Pressure & Temperature Sensor (G) | fl_lib/Gas/Sensors/Pressure & Temperature Sensor (G) | R2023a+ | This block measures pressure and temperature in a gas network. There is no mass or energy flow through the sensor. The physical signal ports P, Pa, and Pg [Pa] report the pressure difference across the sensor, the absolute pressure at port A, and the gauge pressure at port A, respectively. The physical signal port T [K] reports the temperature at port A or across the sensor. Difference measurements are positive when the values at port A are greater than port B. |
+| Thermodynamic Properties Sensor (G) | fl_lib/Gas/Sensors/Thermodynamic Properties Sensor (G) | R2023a+ | This block measures thermodynamic fluid states in a gas network. There is no mass or energy flow through the sensor. The physical signal ports h [kJ/kg], ρ [kg/m^3], cp [kJ/(kg*K)] and s [kJ/(kg*K)] report the specific enthalpy, density, specific heat at constant pressure, and specific entropy, respectively, measured at port A. |
+| Transport Properties Sensor (G) | fl_lib/Gas/Sensors/Transport Properties Sensor (G) | R2026a+ | This block measures transport properties in a gas network. There is no mass or energy flow through the sensor. The physical signal ports μ, ν, k, and Pr report the dynamic viscosity, kinematic viscosity, thermal conductivity, and Prandtl number, respectively, measured at port A. |
+| Gas Properties (G) | fl_lib/Gas/Utilities/Gas Properties (G) | R2023a+ | This block provides gas properties to the connected gas network. The gas is modeled as perfect, semiperfect, or real. The ideal gas law applies to perfect and semiperfect gas. For semiperfect gas, caloric and transport properties are functions to temperature. They are specified as one-dimensional arrays corresponding to Temperature vector. For real gas, all properties are functions of temperature and pressure. They are specific as two-dimensional arrays in which rows correspond to Temperature vector and columns correspond to Pressure vector. The default gas is dry air. |

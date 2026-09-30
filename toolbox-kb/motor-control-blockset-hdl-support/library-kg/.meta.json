@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-09-29T16:38:08",
+  "generatedAtDatenum": 740254.69314980321,
+  "generatorVersion": 4,
+  "libraries": [
+    "Motor Control Blockset HDL Support"
+  ],
+  "blockCount": 29,
+  "categoryCount": 8,
+  "libraryFingerprints": {
+    "Motor_Control_Blockset_HDL_Support": {
+      "blockCount": 29
+    }
+  }
+}

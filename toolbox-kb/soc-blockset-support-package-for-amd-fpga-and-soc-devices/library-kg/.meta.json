@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-09-29T16:38:10",
+  "generatedAtDatenum": 740254.6931729283,
+  "generatorVersion": 4,
+  "libraries": [
+    "SoC Blockset Support Package for AMD FPGA and SoC Devices"
+  ],
+  "blockCount": 69,
+  "categoryCount": 4,
+  "libraryFingerprints": {
+    "SoC_Blockset_Support_Package_for_AMD_FPGA_and_SoC_Devices": {
+      "blockCount": 69
+    }
+  }
+}

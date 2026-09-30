@@ -1,0 +1,21 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for simulink-sanitize-model
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "1.0"
+human-description: Sanitize and anonymize a Simulink model for external sharing.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - Stateflow
+optional-products:
+  - Simulink Test
+  - Requirements Toolbox
+required-tools:
+  - evaluate_matlab_code
+  - model_read
+  - model_query_params
+  - model_overview
+required-skills: []

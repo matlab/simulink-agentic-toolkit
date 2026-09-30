@@ -17,8 +17,13 @@
 
 - Communications Toolbox HDL Support
 
-Common blocks: [common.md](common.md) (3 of 6 blocks)
+Common blocks: [common.md](common.md) (24 of 25 blocks)
 
 ## Categories
 
-- [Hdl communications](hdl-communications.md) — 6 blocks; HDL-optimized communications blocks for FPGA and ASIC implementation
+- [Comm filters](comm-filters.md) — 3 blocks; Pulse-shaping and conditioning filters for HDL links
+- [Comm sinks](comm-sinks.md) — 3 blocks; Visualization and measurement of received signals
+- [Comm sources](comm-sources.md) — 1 blocks; Sequence and test sources
+- [Error correction](error-correction.md) — 6 blocks; HDL-optimized forward error correction and error detection
+- [Interleaving](interleaving.md) — 4 blocks; Interleavers/deinterleavers that spread burst errors
+- [Modulation](modulation.md) — 8 blocks; Baseband digital modulators and demodulators

@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-19T17:52:13",
-  "generatedAtDatenum": 740213.74459560181,
+  "generatedAt": "2026-09-29T16:38:09",
+  "generatedAtDatenum": 740254.69317077543,
   "generatorVersion": 4,
   "libraries": [
     "Simulink Support Package for Android Devices"
   ],
-  "blockCount": 5,
-  "categoryCount": 1,
+  "blockCount": 36,
+  "categoryCount": 5,
   "libraryFingerprints": {
     "Simulink_Support_Package_for_Android_Devices": {
-      "blockCount": 5
+      "blockCount": 36
     }
   }
 }

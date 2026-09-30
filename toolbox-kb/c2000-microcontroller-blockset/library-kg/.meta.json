@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.7445451736,
+  "generatedAt": "2026-09-29T16:38:06",
+  "generatedAtDatenum": 740254.69312712958,
   "generatorVersion": 4,
   "libraries": [
     "C2000 Microcontroller Blockset"
   ],
-  "blockCount": 594,
-  "categoryCount": 14,
+  "blockCount": 578,
+  "categoryCount": 13,
   "libraryFingerprints": {
     "C2000_Microcontroller_Blockset": {
-      "blockCount": 594
+      "blockCount": 578
     }
   }
 }

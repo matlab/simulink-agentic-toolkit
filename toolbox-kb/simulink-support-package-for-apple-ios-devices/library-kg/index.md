@@ -17,8 +17,11 @@
 
 - Simulink Support Package for Apple iOS Devices
 
-Common blocks: [common.md](common.md) (2 of 5 blocks)
+Common blocks: [common.md](common.md) (18 of 18 blocks)
 
 ## Categories
 
-- [Ios](ios.md) — 5 blocks; iOS device peripheral and sensor access
+- [Communication](communication.md) — 7 blocks; Network and device-to-host data exchange on iOS
+- [Audio video](audio-video.md) — 5 blocks; Camera, microphone, and media I/O on iOS
+- [Sensors](sensors.md) — 3 blocks; On-device iOS sensors (accelerometer, gyroscope, GPS, magnetometer)
+- [User interface](user-interface.md) — 3 blocks; On-screen controls and display elements

@@ -1,0 +1,15 @@
+[
+  {"file": "SKILL.md", "tokens": 7344},
+  {"file": "references/gathering-requirements.md", "tokens": 3869},
+  {"file": "references/measuring-model-metrics/reference.md", "tokens": 7699},
+  {"file": "references/measuring-model-metrics/configuring-code-profile/reference.md", "tokens": 3369},
+  {"file": "references/suggesting-optimizations.md", "tokens": 2773},
+  {"file": "references/finalizing-results.md", "tokens": 4431},
+  {"file": "references/evolutions-checkpoint.md", "tokens": 1380},
+  {"file": "references/protocols/correctness-gate.md", "tokens": 1364},
+  {"file": "references/protocols/goal-axis-gate.md", "tokens": 1526},
+  {"file": "references/protocols/checkpointing-revert.md", "tokens": 1032},
+  {"file": "references/protocols/harness-detection.md", "tokens": 526},
+  {"file": "references/protocols/customer-extensions.md", "tokens": 2555},
+  {"file": "assets/per-model-report-template.md", "tokens": 9865}
+]

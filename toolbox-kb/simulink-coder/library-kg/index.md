@@ -17,8 +17,10 @@
 
 - Simulink Coder
 
-Common blocks: [common.md](common.md) (1 of 3 blocks)
+Common blocks: [common.md](common.md) (11 of 13 blocks)
 
 ## Categories
 
-- [Code generation](code-generation.md) — 3 blocks; Code generation configuration and customization blocks
+- [Asynchronous](asynchronous.md) — 1 blocks; Interrupt-driven and asynchronous execution modeling
+- [Custom code](custom-code.md) — 11 blocks; Inject user C code at specific points of the generated code
+- [Targets](targets.md) — 1 blocks; Code-generation target blocks

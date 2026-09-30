@@ -17,10 +17,7 @@
       "coverage_results.json",
       "sil_results.json",
       "inspection_checklist.md"
-    ],
-    "context_variables": {
-      "model_name": "StabilityControlSystem.slx"
-    }
+    ]
   },
   "steps": [
     {

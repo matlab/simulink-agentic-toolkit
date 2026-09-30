@@ -10,10 +10,7 @@
   "workspace": {
     "include_files": [
       "StabilityControlSystem.slx"
-    ],
-    "context_variables": {
-      "model_name": "StabilityControlSystem.slx"
-    }
+    ]
   },
   "steps": [
     {

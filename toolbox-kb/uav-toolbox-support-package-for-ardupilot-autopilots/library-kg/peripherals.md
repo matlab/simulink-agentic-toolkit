@@ -1,10 +1,10 @@
 ---
 type: Simulink Block Category
 title: Peripherals
-description: Communication and peripheral interfaces
-tags: [serial, i2c, rc, receive, transmit]
+description: Access ArduPilot hardware peripherals
+tags: [peripheral, sensor, serial, pwm]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: UAV Toolbox Support Package for ArduPilot Autopilots
 category_path: Peripherals
 block_count: 1
@@ -18,4 +18,4 @@ Use these blocks for peripherals.
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| RC Receive | ardupilotPeripheralslib/RC Receive | R2026a+ | Read RC transmitter channel values — use for accessing pilot stick inputs for manual override or mode switching logic |
+| RC Receive | ardupilotPeripheralslib/RC Receive | R2025b+ | RC Receive block fetches raw channel data, with optional trim and deadzone adjustments from RC transmitter signals for the selected channels. |

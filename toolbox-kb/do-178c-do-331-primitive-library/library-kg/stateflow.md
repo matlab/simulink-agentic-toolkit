@@ -1,10 +1,10 @@
 ---
 type: Simulink Block Category
 title: Stateflow
-description: Stateflow charts and embedded Simulink functions
-tags: [chart, stateflow, state, machine, flow]
+description: State-machine and flow-chart logic
+tags: [stateflow, chart, simulink function]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: DO-178C/DO-331 Primitive Library
 category_path: Stateflow
 block_count: 2
@@ -18,5 +18,5 @@ Use these blocks for stateflow.
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Chart | do178Lib/Stateflow/Chart | R2023b+ | Implement state machine or flow chart logic using Stateflow — use for mode management, sequential logic, or complex decision trees requiring DO-178C structural coverage |
-| Simulink Function in Chart | do178Lib/Stateflow/Simulink Function in Chart | R2023b+ | Embed a Simulink subsystem as a callable function inside a Stateflow chart — use to reuse Simulink algorithms from within state machine actions |
+| Chart | do178Lib/Stateflow/Chart | R2023b+ | Model event-driven state-machine and flow-chart logic — use for modal, supervisory, or sequential control logic. |
+| Simulink Function in Chart | do178Lib/Stateflow/Simulink Function in Chart | R2023b+ | Define a Simulink Function callable from Stateflow — use to invoke Simulink subsystem logic from chart actions. |

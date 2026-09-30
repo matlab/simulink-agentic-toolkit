@@ -17,10 +17,9 @@
 
 - System Identification Toolbox
 
-Common blocks: [common.md](common.md) (4 of 14 blocks)
+Common blocks: [common.md](common.md) (12 of 14 blocks)
 
 ## Categories
 
-- [State estimation](state-estimation.md) — 4 blocks; Kalman and particle filters for state estimation
-- [Online identification](online-identification.md) — 3 blocks; Recursive parameter estimation algorithms
-- [Identified models](identified-models.md) — 5 blocks; Simulation of identified dynamic models
+- [State estimators](state-estimators.md) — 7 blocks; Online recursive state and parameter estimation from noisy measurements
+- [Models](models.md) — 7 blocks; Identified dynamic models for simulation and prediction

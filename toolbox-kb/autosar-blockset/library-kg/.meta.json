@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.74453931709,
+  "generatedAt": "2026-09-29T16:38:05",
+  "generatedAtDatenum": 740254.69311987271,
   "generatorVersion": 4,
   "libraries": [
     "AUTOSAR Blockset"
   ],
-  "blockCount": 28,
+  "blockCount": 22,
   "categoryCount": 7,
   "libraryFingerprints": {
     "AUTOSAR_Blockset": {
-      "blockCount": 28
+      "blockCount": 22
     }
   }
 }

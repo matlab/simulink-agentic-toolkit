@@ -17,19 +17,21 @@
 
 - DO-178C/DO-331 Primitive Library
 
-Common blocks: [common.md](common.md) (14 of 138 blocks)
+Common blocks: [common.md](common.md) (30 of 113 blocks)
 
 ## Categories
 
-- [Discrete operations](discrete-operations.md) — 6 blocks; Delays, integrators, and difference operators for sampled systems
-- [Discontinuities](discontinuities.md) — 6 blocks; Saturation, dead zones, relays, and signal limiting
-- [Logic and comparison](logic-and-comparison.md) — 18 blocks; Boolean logic, relational comparisons, bit operations, and edge detection
-- [Math operations](math-operations.md) — 21 blocks; Arithmetic, algebraic, and trigonometric computations
-- [Documentation](documentation.md) — 2 blocks; Model documentation and metadata blocks
-- [Signal attributes](signal-attributes.md) — 12 blocks; Data type conversion, rate transitions, and signal property management
-- [User defined functions](user-defined-functions.md) — 4 blocks; MATLAB Function, C Caller, and expression blocks
-- [Stateflow](stateflow.md) — 2 blocks; Stateflow charts and embedded Simulink functions
-- [Lookup tables](lookup-tables.md) — 6 blocks; Breakpoint-based interpolation and table lookup
-- [Ports and subsystems](ports-and-subsystems.md) — 42 blocks; Subsystem interfaces, iterators, conditional execution ports
-- [Signal routing](signal-routing.md) — 15 blocks; Buses, muxing, switching, data stores, and signal routing
-- [Sources and sinks](sources-and-sinks.md) — 4 blocks; Constants, inputs, outputs, grounds, and terminators
+- [Discrete](discrete.md) — 6 blocks; Discrete-time delays and integration
+- [Discontinuities](discontinuities.md) — 6 blocks; Dead zone, relay, and saturation nonlinearities
+- [Logic bit](logic-bit.md) — 18 blocks; Logical, relational, and bit operations
+- [Lookup tables](lookup-tables.md) — 6 blocks; N-D lookup tables and prelookup interpolation
+- [Math](math.md) — 21 blocks; Arithmetic and elementwise math functions
+- [Simulink model wide utilities](simulink-model-wide-utilities.md) — 2 blocks
+- [Ports subsystems](ports-subsystems.md) — 19 blocks; Ports, subsystems, and control-flow containers
+- [Signal attributes](signal-attributes.md) — 10 blocks; Type, rate, and attribute handling
+- [Signal routing](signal-routing.md) — 15 blocks; Buses, mux/demux, switches, and data stores
+- [Sinks](sinks.md) — 1 blocks; Signal sinks
+- [Sources](sources.md) — 3 blocks; Constant and ground sources
+- [String](string.md) — 1 blocks; String handling
+- [User defined](user-defined.md) — 3 blocks; Custom C, MATLAB, and expression blocks
+- [Stateflow](stateflow.md) — 2 blocks; State-machine and flow-chart logic

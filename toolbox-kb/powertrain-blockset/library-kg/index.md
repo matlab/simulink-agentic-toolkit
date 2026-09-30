@@ -17,14 +17,14 @@
 
 - Powertrain Blockset
 
-Common blocks: [common.md](common.md) (7 of 64 blocks)
+Common blocks: [common.md](common.md) (30 of 63 blocks)
 
 ## Categories
 
-- [Coupling drivetrain](coupling-drivetrain.md) — 12 blocks; Clutches, gears, differentials, and shafts
-- [Wheels brakes](wheels-brakes.md) — 4 blocks; Wheel and brake models
-- [Electrical](electrical.md) — 8 blocks; Battery, alternator, and power electronics
-- [Engine](engine.md) — 15 blocks; ICE engine models and controllers
-- [Motor inverter](motor-inverter.md) — 11 blocks; Electric motor and inverter models
-- [Transmission](transmission.md) — 8 blocks; Transmission systems and controllers
-- [Vehicle scenario](vehicle-scenario.md) — 6 blocks; Vehicle body, driver, and drive cycle
+- [Drivetrain](drivetrain.md) — 14 blocks; Couplings, differentials, transfer cases, and wheels
+- [Combustion engines](combustion-engines.md) — 29 blocks; Map-based and simple internal-combustion engine models
+- [Electric propulsion](electric-propulsion.md) — 7 blocks; Electric motors, inverters, and motor controllers
+- [Transmission](transmission.md) — 4 blocks; Transmission system models
+- [Utilities](utilities.md) — 3 blocks; Power accounting and Simscape interface helpers
+- [Vehicle dynamics](vehicle-dynamics.md) — 4 blocks; Longitudinal vehicle body and road-load dynamics
+- [Scenario](scenario.md) — 2 blocks; Drive-cycle and driver models for closed-loop runs

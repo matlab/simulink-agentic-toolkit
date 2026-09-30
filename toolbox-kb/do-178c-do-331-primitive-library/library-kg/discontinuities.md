@@ -1,10 +1,10 @@
 ---
 type: Simulink Block Category
 title: Discontinuities
-description: Saturation, dead zones, relays, and signal limiting
-tags: [saturation, dead zone, relay, clamp, limit]
+description: Dead zone, relay, and saturation nonlinearities
+tags: [discontinuities, dead zone, relay, saturation]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: DO-178C/DO-331 Primitive Library
 category_path: Discontinuities
 block_count: 6
@@ -18,9 +18,9 @@ Use these blocks for discontinuities.
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Dead Zone Dynamic | do178Lib/Simulink/Discontinuities/Dead Zone Dynamic | R2023b+ | Zero the output within a dynamically varying dead band — use when the dead zone limits change at runtime based on operating conditions or adaptive thresholds |
-| Saturation Dynamic | do178Lib/Simulink/Discontinuities/Saturation Dynamic | R2023a+ | Clamp a signal between dynamically varying upper and lower bounds — use when saturation limits depend on operating conditions, available authority, or fault state |
-| Wrap To Zero | do178Lib/Simulink/Discontinuities/Wrap To Zero | R2023b+ | Reset output to zero when input exceeds a threshold — use for counter overflow handling, watchdog-style resets, or periodic signal wrapping in certified logic |
-| Dead Zone | do178Lib/Simulink/Discontinuities/Dead Zone | R2023b+ | Zero the output when the input is within a specified band around zero — use for eliminating sensor noise near neutral, preventing actuator chatter, or modeling mechanical play |
-| Relay | do178Lib/Simulink/Discontinuities/Relay | R2023b+ | Implement hysteresis switching between two output values — use for on/off control with noise rejection, thermostat-style logic, or mode switching with debounce |
-| Saturation | do178Lib/Simulink/Discontinuities/Saturation | R2023b+ | Clamp a signal between fixed upper and lower bounds — use to enforce actuator limits, protect downstream logic from out-of-range values, or implement safety envelopes |
+| Dead Zone | do178Lib/Simulink/Discontinuities/Dead Zone | R2023b+ | Output zero while the input is within a dead band, then pass the offset beyond it — use to model backlash or ignore small signals. |
+| Relay | do178Lib/Simulink/Discontinuities/Relay | R2023b+ | Switch the output between two values with hysteresis around on/off thresholds — use for bang-bang control or thermostat-like logic. |
+| Saturation | do178Lib/Simulink/Discontinuities/Saturation | R2023b+ | Clip a signal to specified upper and lower limits — use to enforce actuator or physical bounds. |
+| Dead Zone Dynamic | do178Lib/Simulink/Discontinuities/Dead Zone Dynamic | R2023b+ | Output zero for inputs within a dead zone. Offset input signals by either the Start or End value when outside of the dead zone. |
+| Saturation Dynamic | do178Lib/Simulink/Discontinuities/Saturation Dynamic | R2023a+ | Bound the range of the second input by using the first input (upper limit) and the third input (lower limit). |
+| Wrap To Zero | do178Lib/Simulink/Discontinuities/Wrap To Zero | R2023b+ | If the input is above the threshold, the output is zero, otherwise the output equals the input. |

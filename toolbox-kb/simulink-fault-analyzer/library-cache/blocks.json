@@ -1,0 +1,52 @@
+{
+  "libraryName": "Simulink Fault Analyzer",
+  "generatedAt": "2026-09-27T06:33:31",
+  "blockCount": 5,
+  "blocks": [
+    {
+      "name": "Fault Data Inport",
+      "referenceBlock": "mwfaultblocklib/Fault Port Blocks/Fault Data Inport",
+      "blockType": "FaultDataInport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2024b"
+    },
+    {
+      "name": "Fault Inport",
+      "referenceBlock": "mwfaultblocklib/Fault Port Blocks/Fault Inport",
+      "blockType": "FaultInport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fault Outport",
+      "referenceBlock": "mwfaultblocklib/Fault Port Blocks/Fault Outport",
+      "blockType": "FaultOutport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fault Inport",
+      "referenceBlock": "mwfaultblocklib/Fault Subsystem/Fault Inport",
+      "blockType": "FaultInport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Fault Outport",
+      "referenceBlock": "mwfaultblocklib/Fault Subsystem/Fault Outport",
+      "blockType": "FaultOutport",
+      "description": "",
+      "category": "",
+      "maskType": "",
+      "introducedIn": "2023a"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "libraryName": "Simulink Coder",
+  "generatedAt": "2026-09-28T19:19:03",
+  "blockCount": 13,
+  "blocks": [
+    {
+      "name": "Asynchronous",
+      "referenceBlock": "rtwlib/Asynchronous",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Asynchronous Library",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": " ",
+      "referenceBlock": "custcode/ ",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Custom Code Help",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Model Header",
+      "referenceBlock": "custcode/Model Header",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Model Header",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "Model Source",
+      "referenceBlock": "custcode/Model Source",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "Model Source",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Derivatives",
+      "referenceBlock": "custcode/System Derivatives",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Derivatives",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Disable",
+      "referenceBlock": "custcode/System Disable",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Disable",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Enable",
+      "referenceBlock": "custcode/System Enable",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Enable",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Initialize",
+      "referenceBlock": "custcode/System Initialize",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Initialize",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Outputs",
+      "referenceBlock": "custcode/System Outputs",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Outputs",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Start",
+      "referenceBlock": "custcode/System Start",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Start",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Terminate",
+      "referenceBlock": "custcode/System Terminate",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Terminate",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "System Update",
+      "referenceBlock": "custcode/System Update",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "System Update",
+      "maskDescription": "",
+      "pathCategory": "Custom Code",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    },
+    {
+      "name": "S-Function Target",
+      "referenceBlock": "rtwlib/S-Function Target",
+      "blockType": "SubSystem",
+      "description": "",
+      "category": "",
+      "maskType": "S-Function Target",
+      "maskDescription": "",
+      "pathCategory": "",
+      "metadataQuality": "medium",
+      "introducedIn": "2023a"
+    }
+  ],
+  "releasesScanned": [
+    "2023b",
+    "2024a",
+    "2024b",
+    "2025a",
+    "2025b",
+    "2026a"
+  ],
+  "earliestRelease": "2023b",
+  "annotatedAt": "2026-09-29T04:54:39"
+}

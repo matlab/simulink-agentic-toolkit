@@ -1,0 +1,23 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0.1"
+human-description: Configure how Simulink model elements map to generated C/C++ code — storage classes and data objects (Data Interface) or service functions with Component deployment (Service Interface); code mappings, dictionary linking, deployment types, and function prototypes.
+matlab-release: ">=R2023a"
+required-tools:
+  - evaluate_matlab_code
+  - model_edit
+  - model_query_params
+  - model_read
+required-skills: []
+reference-files:
+  - references/simulink-configure-code-interfaces.md
+  - references/code_mapping.md
+  - references/coder_dictionary.md
+required-products:
+  - Simulink
+  - Simulink Coder
+optional-products:
+  - Embedded Coder
+toolkit: simulink-agentic-toolkit

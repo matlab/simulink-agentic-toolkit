@@ -10,12 +10,18 @@ Re-run `model_fingerprint` to ensure the element map is current (Phase 4 structu
 addpath(fullfile('<skill_root>', 'scripts'));
 fingerprint = model_fingerprint('<model>');
 ```
+```matlab
+eco_token_log('model_fingerprint', N)  % N from "eco_output_tokens: N" in console output
+```
 
 Update `MODEL_FINGERPRINT` in state.json with the result.
 
 ## Second Action: Load Customer Preferences
 
-Check for customer extensions (see `references/protocols/customer-extensions.md`):
+Check for customer extensions (read and log `references/protocols/customer-extensions.md`):
+```matlab
+eco_token_log('references/protocols/customer-extensions.md')
+```
 1. Resolve `<PROJECT_PATH>/.custom_optimizations/optimization_preferences.yaml`.
 2. Parse `skip` and `know` sections.
 3. Discover and evaluate custom optimizations (run FIRST, before KG query).
@@ -28,6 +34,9 @@ Query the Knowledge Graph via MATLAB:
 addpath(fullfile('<skill_root>', 'scripts'));
 result = ecokg_query('<goal>', <hardware_struct>, '<stage>', {<model_elements>});
 disp(jsonencode(result))
+```
+```matlab
+eco_token_log('ecokg_query', N)  % N from "eco_output_tokens: N" in console output
 ```
 
 | Argument | Source |
@@ -95,6 +104,9 @@ Never explore an API before reading the KG detail — ecokg_detail exists to giv
 detail = ecokg_detail('<suggestion_id>');
 disp(jsonencode(detail))
 ```
+```matlab
+eco_token_log('ecokg_detail', N)  % N from "eco_output_tokens: N" in console output
+```
 
 ### What ecokg_detail returns (Pass 2 — full opt_reference):
 ```json
@@ -144,6 +156,9 @@ After the user confirms a config-set parameter batch, run `validate_params.m` to
 addpath(fullfile('<skill_root>', 'scripts'));
 results = validate_params('<model>', {'Param1','Param2',...}, {'val1','val2',...});
 ```
+```matlab
+eco_token_log('validate_params', N)  % N from "eco_output_tokens: N" in console output
+```
 
 This validates in two phases:
 1. **Trial-apply** each param individually on a config set copy to check if Simulink accepts the value. Any param that throws an error is marked invalid immediately.
@@ -185,7 +200,7 @@ When a candidate is rejected by the Gate:
 - Flag suggestions that could change numerical behavior.
 - Progress through stages A -> B -> C -> D.
 
-**MANDATORY TRANSITION after user confirms a batch — Do NOT apply changes in the suggestion phase.** Once the user confirms: **(a) append the decision trace** to `<project_path>/.eco_diagnostics/eco_decision_trace.md` (one entry per SO-0x risk — see "Decision Trace Logging" below), **(b) update the token usage report** in `<project_path>/.eco_diagnostics/eco_optimization_report.md` (include Stage, KG query count, suggestions emitted), **(c)** construct the state object with `CURRENT_STAGE` and `DEFERRED_LEVERS` updated, and **(d)** proceed to Phase 4 with `NEXT_ACTION: "Phase 4 Apply — Stage <X> batch"`. **Refuse to transition if either diagnostic file has not been appended (OR-05/OR-06).**
+**MANDATORY TRANSITION after user confirms a batch — Do NOT apply changes in the suggestion phase.** Once the user confirms: **(a) append the decision trace** (with `## Phase:` heading) to `<project_path>/.eco_diagnostics/eco_decision_trace.md` (one entry per SO-0x risk — see "Decision Trace Logging" below), **(b)** verify the token ledger (`token_ledger.json` is non-empty — `eco_token_log` calls throughout this phase have already recorded entries), **(c)** construct the state object with `CURRENT_STAGE` and `DEFERRED_LEVERS` updated, and **(d)** proceed to Phase 4 with `NEXT_ACTION: "Phase 4 Apply — Stage <X> batch"`. **Refuse to transition if decision trace not appended (OR-06) or token ledger empty (OR-05).**
 
 ## Risk / Alert — Known Failure Modes
 

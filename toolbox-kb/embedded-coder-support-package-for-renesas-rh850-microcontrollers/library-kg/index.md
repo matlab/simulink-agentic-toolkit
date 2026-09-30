@@ -17,10 +17,9 @@
 
 - Embedded Coder Support Package for Renesas RH850 Microcontrollers
 
-Common blocks: [common.md](common.md) (5 of 11 blocks)
+Common blocks: [common.md](common.md) (9 of 9 blocks)
 
 ## Categories
 
-- [Interrupt](interrupt.md) — 3 blocks; Interrupt and timer peripherals on RH850
-- [Mcal analog](mcal-analog.md) — 1 blocks; AUTOSAR MCAL analog peripherals on RH850
-- [Mcal digital](mcal-digital.md) — 6 blocks; AUTOSAR MCAL digital I/O on RH850
+- [Mcal io](mcal-io.md) — 7 blocks; AUTOSAR Microcontroller Abstraction Layer drivers for analog and digital I/O
+- [Peripheral io](peripheral-io.md) — 2 blocks; On-chip RH850 peripheral outputs

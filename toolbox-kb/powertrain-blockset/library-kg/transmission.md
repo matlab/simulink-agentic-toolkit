@@ -1,13 +1,13 @@
 ---
 type: Simulink Block Category
 title: Transmission
-description: Transmission systems and controllers
-tags: [transmission, cvt, dct, amt, torque converter]
+description: Transmission system models
+tags: [transmission, clutch, cvt, fixed gear, manual]
 status: stable
-source: mathworks_toolbox
+source: custom_library
 library_root: Powertrain Blockset
 category_path: Transmission
-block_count: 8
+block_count: 4
 ---
 
 # Transmission
@@ -18,11 +18,7 @@ Use these blocks for transmission.
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Torque Converter | autolibtrqconv/Torque Converter | R2023a+ | Model hydrodynamic torque converter — use for simulating fluid coupling between engine and automatic transmission |
-| AMT Controller | autolibtranscontrols/AMT Controller | R2023a+ | Automated manual transmission controller — use for shift scheduling and clutch control in AMT |
-| CVT Controller | autolibtranscontrols/CVT Controller | R2023a+ | CVT ratio controller — use for controlling continuously variable transmission ratio |
-| DCT Controller | autolibtranscontrols/DCT Controller | R2023a+ | Dual-clutch transmission controller — use for shift scheduling and clutch coordination in DCT |
-| Automated Manual Transmission | autolibtrans/Automated Manual Transmission | R2023a+ | Complete AMT system — use for simulating automated manual gearbox with clutch actuator |
-| Continuously Variable Transmission | autolibtrans/Continuously Variable Transmission | R2023a+ | Complete CVT system — use for simulating belt or chain CVT with ratio control |
-| Dual Clutch Transmission | autolibtrans/Dual Clutch Transmission | R2023a+ | Complete DCT system — use for simulating dual-clutch gearbox with seamless shifts |
-| Ideal Fixed Gear Transmission | autolibtrans/Ideal Fixed Gear Transmission | R2023a+ | Simple fixed-ratio gearbox — use for fast simulation when shift dynamics are not needed |
+| Automated Manual Transmission | autolibtrans/Automated Manual Transmission | R2023a+ | Model an automated manual transmission with clutch and gear-shift logic — use for AMT driveline studies. |
+| Continuously Variable Transmission | autolibtrans/Continuously Variable Transmission | R2023a+ | Model a CVT with a continuously variable gear ratio — use for CVT powertrain simulation. |
+| Dual Clutch Transmission | autolibtrans/Dual Clutch Transmission | R2023a+ | Model a dual-clutch transmission with two clutches for seamless shifts — use for DCT driveline studies. |
+| Ideal Fixed Gear Transmission | autolibtrans/Ideal Fixed Gear Transmission | R2023a+ | Model an idealized multi-speed transmission with instantaneous gear selection — use for lightweight transmission studies. |

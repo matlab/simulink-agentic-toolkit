@@ -55,7 +55,7 @@ skill-groups:
 
   - name: simulink-simulation
     display-name: "Simulink Simulation"
-    description: "Authoring simulation inputs and creating Simulation Data Inspector runs"
+    description: "Authoring simulation inputs, creating Simulation Data Inspector runs, and running multiple simulations"
     path: skills-catalog/simulink-simulation
     requires-products:
       - Simulink
@@ -75,6 +75,7 @@ skill-groups:
     path: skills-catalog/code-generation
     requires-products:
       - Simulink
+      - Simulink Coder
       - Embedded Coder
       - Fixed-Point Designer
 

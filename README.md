@@ -202,12 +202,12 @@ Describe the structure of the currently open model.
 
 ### Toolbox Libraries
 
-Use `satk.Configuration.setLibrary` to activate pre-built knowledge bases for installed MathWorks toolboxes:
+Use `satk.Configuration.setToolboxes` to activate pre-built knowledge bases for installed MathWorks toolboxes:
 
 ```matlab
-satk.Configuration.setLibrary('all')                                          % Activate all installed toolbox KBs
-satk.Configuration.setLibrary({'Aerospace Blockset', 'Simscape'})  % Activate specific toolboxes by name
-satk.Configuration.setLibrary('none')                                         % Deactivate all toolbox KBs
+satk.Configuration.setToolboxes('all')                                 % Activate all installed toolbox KBs
+satk.Configuration.setToolboxes({'Aerospace Blockset', 'Simscape'})    % Activate specific toolboxes by name
+satk.Configuration.setToolboxes('none')                                % Deactivate all toolbox KBs
 ```
 
 ### Custom Libraries
@@ -220,6 +220,8 @@ satk.Configuration.setCustomLibraries("C:\path\to\customLibs")
 
 This declares your custom libraries. 
 On the next model-building task or on invocation of the **'setup-custom-libraries'** skill, the agent indexes the libraries into a knowledge base (~3–5 min to complete) storing it in MATLAB's preference directory (prefdir) enabling usage of custom blocks alongside built-in ones.
+
+Custom libraries anchor the location. Once you register custom libraries with a `Location`, activating toolbox knowledge bases with `setToolboxes` writes them into that same `.satk`, so a single configuration carries both. If you activate toolbox KBs globally first and later register custom libraries with a `Location`, the toolbox KBs are moved alongside the custom libraries automatically.
 
 ### Clearing Configuration
 

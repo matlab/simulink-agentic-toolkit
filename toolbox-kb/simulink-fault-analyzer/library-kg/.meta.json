@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-09-27T06:56:47",
+  "generatedAtDatenum": 740252.28944430558,
+  "generatorVersion": 4,
+  "libraries": [
+    "Simulink Fault Analyzer"
+  ],
+  "blockCount": 5,
+  "categoryCount": 2,
+  "libraryFingerprints": {
+    "Simulink_Fault_Analyzer": {
+      "blockCount": 5
+    }
+  }
+}

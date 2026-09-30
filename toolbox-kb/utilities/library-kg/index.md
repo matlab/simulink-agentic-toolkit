@@ -17,10 +17,10 @@
 
 - Utilities
 
-Common blocks: [common.md](common.md) (5 of 11 blocks)
+Common blocks: [common.md](common.md) (16 of 25 blocks)
 
 ## Categories
 
-- [Domain conversion](domain-conversion.md) — 2 blocks; Signal conversion between Simulink and Simscape domains
-- [Network infrastructure](network-infrastructure.md) — 7 blocks; Physical network configuration and connectivity
-- [Measurement](measurement.md) — 2 blocks; Signal measurement and analysis in physical networks
+- [Simscape utilities](simscape-utilities.md) — 8 blocks; Core Simscape connection, probing, and component-authoring utilities
+- [Network couplers](network-couplers.md) — 14 blocks; Split a physical network into partitions coupled through an element, for solver decoupling or real-time simulation
+- [Uncategorized](uncategorized.md) — 3 blocks; blocks not yet assigned to a category
