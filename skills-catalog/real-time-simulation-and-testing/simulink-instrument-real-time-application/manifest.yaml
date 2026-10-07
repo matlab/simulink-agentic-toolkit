@@ -1,0 +1,26 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Set up signal capture for a Simulink Real-Time application with slrealtime.Instrument.
+matlab-release: ">=R2026a"
+required-tools:
+  - evaluate_matlab_code
+  - model_edit
+  - model_overview
+  - model_query_params
+  - model_read
+required-skills: []
+reference-files:
+  - references/bus-elements.md
+  - references/canvas-prep.md
+  - references/destinations.md
+  - references/guardrails.md
+  - references/instrument-api.md
+required-products:
+  - Simulink
+  - Simulink Real-Time
+optional-products:
+  - Embedded Coder
+toolkit: simulink-agentic-toolkit

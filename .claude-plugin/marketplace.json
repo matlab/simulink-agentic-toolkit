@@ -33,12 +33,12 @@
     },
     {
       "name": "verification-validation-and-test",
-      "version": "0.8.1",
-      "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR, SLCI), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), detect design errors with root cause analysis using Simulink Design Verifier, fix SLDV incompatibilities, and explain missing coverage objectives",
+      "version": "0.8.2",
+      "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR, SLCI), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), detect design errors with root cause analysis using Simulink Design Verifier, fix SLDV incompatibilities, explain missing coverage objectives, and collect quality metrics (maintainability, complexity, testing, coverage) using metric.Engine",
       "author": {
         "name": "MathWorks"
       },
-      "keywords": ["simulink", "model-advisor", "verification", "validation", "compliance", "misra", "iso-26262", "do-178c", "slci", "simulink-code-inspector", "simulink-test", "testing", "mldatx", "requirements-traceability", "fault-injection", "safety-analysis", "fmea", "fta", "design-error-detection", "simulink-design-verifier", "root-cause-analysis"],
+      "keywords": ["simulink", "model-advisor", "verification", "validation", "compliance", "misra", "iso-26262", "do-178c", "slci", "simulink-code-inspector", "simulink-test", "testing", "mldatx", "requirements-traceability", "fault-injection", "safety-analysis", "fmea", "fta", "design-error-detection", "simulink-design-verifier", "root-cause-analysis", "quality-metrics", "metric-engine", "maintainability", "coverage-metrics"],
       "source": "./skills-catalog/verification-validation-and-test",
       "category": "development",
       "strict": false,
@@ -46,7 +46,7 @@
     },
     {
       "name": "code-generation",
-      "version": "0.6.3",
+      "version": "0.7.0",
       "description": "Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code for runtime, memory, and MISRA compliance, configuring Embedded Coder deployment settings, and customizing A2L calibration files",
       "author": {
         "name": "MathWorks"
@@ -131,6 +131,19 @@
       },
       "keywords": ["simscape", "physical-modeling", "ssc", "simulink", "matlab"],
       "source": "./skills-catalog/physical-modeling",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "real-time-simulation-and-testing",
+      "version": "0.1.0",
+      "description": "Configure, deploy, and run Simulink models on real-time target computers with Simulink Real-Time",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "simulink-real-time", "slrt", "real-time", "hil", "code-generation", "speedgoat", "deployment"],
+      "source": "./skills-catalog/real-time-simulation-and-testing",
       "category": "development",
       "strict": false,
       "skills": "./"

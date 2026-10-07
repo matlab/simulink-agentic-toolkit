@@ -43,6 +43,7 @@ Skills for authoring custom Model Advisor checks and running compliance reviews 
 | `inject-faults` | Add, configure, and simulate faults on Simulink model signals for robustness analysis and safety validation (requires Simulink Fault Analyzer) |
 | `manage-safety-analysis` | Create and manage FMEA spreadsheets, fault trees, and safety analysis documents using Safety Analysis Manager (requires Simulink Fault Analyzer) |
 | `resolve-design-errors` | Detect Simulink Design Verifier design errors (division-by-zero, overflow, dead logic, out-of-bounds), perform root cause analysis with cascade detection and locality scoring, and propose ranked fixes (requires Simulink Design Verifier and Simulink Check) |
+| `simulink-collect-metrics` | Collect and interpret Simulink quality metrics using the metric.Engine API, including metric discovery, execution, report generation, and diagnostics (requires Simulink Check) |
 | `simulink-explain-missing-coverage` | Explain why Simulink Coverage objectives went uncovered — separate provably-dead outcomes (SLDV) from reachable-but-untested ones, trace each to its controllable inputs (Model Slicer), and recommend a test, filter, or design review (requires Simulink Coverage, Design Verifier, Simulink Check) |
 | `fix-sldv-incompatibility` | Make a Simulink model compatible with Simulink Design Verifier — diagnose incompatibilities, apply fixes to a copy, and optionally verify consistency (requires Simulink Design Verifier) |
 | `testing-simulink-models` | Test Simulink models via two paths — ephemeral Gherkin-based tests (`model_test`) for quick validation, or persistent Simulink Test cases authored from requirements or behavioral specs |
@@ -111,6 +112,17 @@ Signal processing skills for Simulink models using DSP System Toolbox
 | Skill | Description |
 |-------|---------------------------|
 | `simulink-streaming-dsp` | Build frame-based streaming DSP models in Simulink — correct block selection, frame configuration, tunable filters (R2023b+), buffering/multirate, variable-rate decimation (requires DSP System Toolbox) |
+
+### [Real-Time Simulation and Testing](real-time-simulation-and-testing/)
+
+Configure, deploy, and run Simulink models on real-time target computers with Simulink Real-Time
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-instrument-real-time-application` | Set up signal capture for a Simulink Real-Time application with `slrealtime.Instrument` — canvas test-pointing and streaming badges, signal adds, destination routing to file log, SDI, or MATLAB callbacks, and `generateScript` persistence (requires Simulink Real-Time) |
+| `simulink-run-real-time-application` | Build, deploy, run, monitor, tune, and stop Simulink Real-Time applications — `slbuild`, `load`/`start`/`stop`, stop time and start options, root-inport and Playback stimulation, parameter tuning, signal reads, recording, and file-log import (requires Simulink Real-Time) |
+| `simulink-configure-real-time-target` | Manage Simulink Real-Time target computer definitions — credentials, network configuration, TLS material, startup applications, and lifecycle operations such as reboot, status, and connection checks (requires Simulink Real-Time) |
+| `simulink-configure-real-time-model` | Configure a Simulink model for Simulink Real-Time code generation — system target file selection, fixed-step solver settings, and SLRT build options (requires Simulink Real-Time) |
 
 ---
 

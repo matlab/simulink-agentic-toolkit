@@ -101,3 +101,11 @@ skill-groups:
     requires-products:
       - Simulink
       - Simscape
+
+  - name: real-time-simulation-and-testing
+    display-name: "Real-Time Simulation and Testing"
+    description: "Configure, deploy, and run Simulink models on real-time target computers with Simulink Real-Time"
+    path: skills-catalog/real-time-simulation-and-testing
+    requires-products:
+      - Simulink
+      - Simulink Real-Time

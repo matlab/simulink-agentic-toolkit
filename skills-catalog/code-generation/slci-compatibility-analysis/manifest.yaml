@@ -1,0 +1,46 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Verify Simulink model compatibility with SLCI code inspection and fix incompatibilities.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - Simulink Code Inspector
+optional-products:
+  - Embedded Coder
+required-tools:
+  - evaluate_matlab_code
+  - model_overview
+required-skills: []
+reference-files:
+  - references/block_constraints_data_operations.md
+  - references/block_constraints_discontinuities.md
+  - references/block_constraints_discrete.md
+  - references/block_constraints_logic_bits.md
+  - references/block_constraints_math_operations.md
+  - references/block_constraints_misc.md
+  - references/block_constraints_ports_subsystems.md
+  - references/block_constraints_signal_routing.md
+  - references/block_constraints_sources_sinks.md
+  - references/block_constraints_string.md
+  - references/block_constraints_tables_functions.md
+  - references/block_constraints_universal.md
+  - references/block_support_constraints.md
+  - references/code_generation_constraints.md
+  - references/code_inspection_limitations.md
+  - references/code_replacement_libraries_constraints.md
+  - references/data_import_export_constraints.md
+  - references/diagnostics_constraints.md
+  - references/explain-constraint.md
+  - references/fixing-incompatibilities.md
+  - references/hardware_implementation_constraints.md
+  - references/incompatibility-guide.md
+  - references/math_data_types_constraints.md
+  - references/matlab_function_block_constraints.md
+  - references/model_advisor_checks_constraints.md
+  - references/model_wide_attribute_constraints.md
+  - references/solver_constraints.md
+  - references/stateflow_constraints.md

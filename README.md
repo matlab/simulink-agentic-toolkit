@@ -114,13 +114,13 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
    --extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
    ```
 
-4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, `physical-modeling/`, and `code-generation/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, `physical-modeling/`, `code-generation/`, and `real-time-simulation-and-testing/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
    For platforms that discover skills from `~/.agents/skills/`, create symlinks:
 
    ```bash
    mkdir -p ~/.agents/skills
-   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing physical-modeling code-generation; do
+   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing physical-modeling code-generation real-time-simulation-and-testing; do
      for skill in /path/to/simulink-agentic-toolkit/skills-catalog/$group/*/; do
        ln -s "$skill" ~/.agents/skills/$(basename "$skill")
      done
@@ -217,19 +217,51 @@ To use your own custom Simulink block libraries with the toolkit, register them 
 ```matlab
 satk.Configuration.setCustomLibraries("C:\path\to\customLibs")
 ```
+This declares your custom libraries. By default (`GenerateKB=false`), the knowledge base is **not** built immediately — on the next model-building task or on invocation of the **'setup-custom-libraries'** skill, the agent indexes the libraries into a knowledge base (~3–5 min to complete), enabling usage of custom blocks alongside built-in ones.
 
-This declares your custom libraries. 
-On the next model-building task or on invocation of the **'setup-custom-libraries'** skill, the agent indexes the libraries into a knowledge base (~3–5 min to complete) storing it in MATLAB's preference directory (prefdir) enabling usage of custom blocks alongside built-in ones.
+#### Options
 
-Custom libraries anchor the location. Once you register custom libraries with a `Location`, activating toolbox knowledge bases with `setToolboxes` writes them into that same `.satk`, so a single configuration carries both. If you activate toolbox KBs globally first and later register custom libraries with a `Location`, the toolbox KBs are moved alongside the custom libraries automatically.
+`setCustomLibraries` accepts the following options:
+
+```matlab
+% Build the knowledge base deterministically from block metadata present in the libraries. 
+satk.Configuration.setCustomLibraries("C:\path\to\customLibs", GenerateKB=true)
+% Choose where the KB and configuration folder is written.
+% Omitted  -> MATLAB prefdir (default): per-user, global, paths stored absolute.
+% <dir>    -> an existing directory: library paths on the same drive are
+%             stored relative to this root (so the .satk folder can be
+%             committed and shared); paths on a different drive are stored
+%             absolute.
+satk.Configuration.setCustomLibraries("libs", Location="C:\repo\myProject")
+```
+
+Custom libraries anchor the location. Once you register custom libraries with
+a `Location`, activating toolbox knowledge bases with `setToolboxes`
+writes them into that same `.satk`.
+
+If you activate toolbox KBs globally first and later register custom
+libraries with a `Location`, the toolbox KBs are moved alongside the custom
+libraries automatically. 
 
 ### Clearing Configuration
 
-To remove all library configuration:
+To remove the global (prefdir) library configuration:
 
 ```matlab
 satk.Configuration.clearConfig()
 ```
+
+To remove a project-local configuration (its `.satk/` folder and any
+`satk-libraries.json` at the project root) — for example when a project config
+is shadowing the global one and you want the global config to win:
+
+```matlab
+satk.Configuration.clearConfig("C:\repo\myProject")
+```
+
+Both forms are destructive and not reversible.
+
+
 ## Update Simulink Agentic Toolkit
 
 To update the toolkit, download the latest installer add-on by clicking [agenticToolkitInstaller.mltbx](https://github.com/matlab/simulink-agentic-toolkit/releases/latest/download/agenticToolkitInstaller.mltbx). Open the downloaded file with MATLAB, and run this command in MATLAB:
@@ -275,6 +307,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Signal Processing](skills-catalog/signal-processing/) | Frame-based streaming DSP models in Simulink using DSP System Toolbox |
 | [Physical Modeling](skills-catalog/physical-modeling/) | Model, simulate, and analyze multidomain physical systems with the Simscape product family |
 | [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code, configuring Embedded Coder deployment settings, and customizing A2L calibration files |
+| [Real-Time Simulation and Testing](skills-catalog/real-time-simulation-and-testing/) | Configure, deploy, and run Simulink models on real-time target computers with Simulink Real-Time |
 
 ## Security Considerations
 When using the Simulink Agentic Toolkit and MATLAB MCP Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).

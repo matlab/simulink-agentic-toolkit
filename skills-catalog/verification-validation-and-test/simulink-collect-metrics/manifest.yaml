@@ -1,0 +1,35 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+version: "1.0.0"
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+toolkit: simulink-agentic-toolkit
+
+human-description: >
+  Collect and interpret Simulink quality metrics using the metric.Engine API,
+  including metric discovery, execution, report generation, and diagnostics.
+
+matlab-release: ">=R2023a"
+
+required-products:
+  - Simulink Check
+
+optional-products:
+  - Embedded Coder
+  - Requirements Toolbox
+  - Simulink Coverage
+  - Simulink Test
+
+required-tools:
+  - evaluate_matlab_code
+  - run_matlab_file
+
+required-skills: []
+
+reference-files:
+  - references/documentation-links.md
+  - references/metric-groups.md
+  - references/release-notes.md
+
+helper-files:
+  - scripts/AgentProgressMonitor

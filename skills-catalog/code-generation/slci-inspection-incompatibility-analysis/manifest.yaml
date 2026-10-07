@@ -1,0 +1,19 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Diagnose SLCI inspection failures by tracing them to compatibility constraint violations or known limitations.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - Simulink Code Inspector
+optional-products:
+  - Embedded Coder
+required-tools:
+  - evaluate_matlab_code
+required-skills:
+  - slci-compatibility-analysis
+reference-files:
+  - references/stateflow_failure_patterns.md

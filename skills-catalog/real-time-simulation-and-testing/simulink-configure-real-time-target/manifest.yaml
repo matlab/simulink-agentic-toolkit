@@ -1,0 +1,22 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Manage Simulink Real-Time target computer definitions, credentials, network configuration, TLS material, startup applications, and lifecycle operations from MATLAB.
+matlab-release: ">=R2026a"
+required-tools:
+  - evaluate_matlab_code
+required-skills: []
+reference-files:
+  - references/api-reference.md
+  - references/network-setup.md
+  - references/persistent-side-effects.md
+  - references/quick-start-patterns.md
+  - references/target-settings-schema.md
+  - references/target-side-operations.md
+required-products:
+  - Simulink Real-Time
+optional-products:
+  - Embedded Coder
+toolkit: simulink-agentic-toolkit

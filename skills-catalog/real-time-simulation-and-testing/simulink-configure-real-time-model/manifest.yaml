@@ -1,0 +1,24 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Configure a Simulink model for Simulink Real-Time code generation, including system target file selection, fixed-step solver settings, and SLRT build options.
+matlab-release: ">=R2026a"
+required-tools:
+  - evaluate_matlab_code
+  - model_edit
+  - model_query_params
+required-skills: []
+reference-files:
+  - references/api-reference.md
+  - references/compiler-options.md
+  - references/disconnected-workflow.md
+  - references/slrt-options.md
+  - references/stf-by-target.md
+  - references/upgrade-advisor.md
+required-products:
+  - Simulink Real-Time
+optional-products:
+  - Embedded Coder
+toolkit: simulink-agentic-toolkit

@@ -1,0 +1,26 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for simulink-run-real-time-application
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Build, deploy, start, stop, and stimulate Simulink Real-Time applications on a target.
+matlab-release: ">=R2026a"
+required-tools:
+  - evaluate_matlab_code
+required-skills: []
+reference-files:
+  - references/api-reference.md
+  - references/build-and-load-pipeline.md
+  - references/guardrails.md
+  - references/monitoring-tuning-logging.md
+  - references/signal-access-and-streaming.md
+  - references/start-options.md
+  - references/stimulation.md
+required-products:
+  - Simulink
+  - Simulink Coder
+  - Simulink Real-Time
+optional-products:
+  - Embedded Coder
+toolkit: simulink-agentic-toolkit
