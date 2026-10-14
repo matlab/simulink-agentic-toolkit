@@ -56,6 +56,7 @@ Skills for constructing simulation input datasets, configuring simulation workfl
 |-------|---------------------------|
 | `authoring-simulink-inputs` | Create populated input signal datasets for Simulink models using createInputDataset scaffolds with correct metadata |
 | `create-sdi-run` | Import data into the Simulation Data Inspector from files, workspace variables, or a simulation |
+| `simulink-check-rapid-accelerator-compatibility` | Check a Simulink model for Rapid Accelerator mode incompatibilities — static analysis of blocks, configurations, and data types with BLOCKER/WARNING severity classification |
 | `simulink-run-parallel-simulations` | Run multiple Simulink simulations in parallel — parameter sweeps, Monte Carlo studies, and batch campaigns |
 
 ### [Physical Modeling](physical-modeling/)

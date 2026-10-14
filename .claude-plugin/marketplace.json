@@ -59,12 +59,12 @@
     },
     {
       "name": "simulink-simulation",
-      "version": "0.3.0",
-      "description": "Create input signal datasets, import data into the Simulation Data Inspector, and run multiple Simulink simulations",
+      "version": "0.3.1",
+      "description": "Create input signal datasets, import data into the Simulation Data Inspector, run multiple Simulink simulations and check Rapid Accelerator compatibility for Simulink model simulation",
       "author": {
         "name": "MathWorks"
       },
-      "keywords": ["simulink", "matlab", "simulation", "input-data", "signals", "dataset", "sdi", "data-inspector"],
+      "keywords": ["simulink", "matlab", "simulation", "input-data", "signals", "dataset", "sdi", "data-inspector", "rapid-accelerator", "raccel", "compatibility"],
       "source": "./skills-catalog/simulink-simulation",
       "category": "development",
       "strict": false,
