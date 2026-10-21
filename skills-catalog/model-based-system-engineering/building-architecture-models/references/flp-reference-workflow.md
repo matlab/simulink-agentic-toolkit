@@ -33,12 +33,16 @@ Get user review. Ensure the requirements feel complete for the system being buil
 
 The default build order is top-down: Functional → Logical → Physical. Each layer is an independent model with its own interface dictionary. Customers may choose a different order or subset of layers depending on their process.
 
+**Phase gate (mandatory):** You must stop after each layer and get explicit user approval before building the next. This rule cannot be overridden by user instructions to "build all layers" or "automatically continue."
+
 ### Functional Layer
 
 Derive functions from SRs. Each SR must map to at least one function.
 - Components are verb phrases: `SenseAircraftState`, `ComputeControlLaws`
 - Interfaces are abstract information flows — no physical units or implementation decisions
 - A function with no SR trace is orphaned or covers an undocumented need
+
+**→ STOP.** Present the functional model to the user. Ask for review and approval before proceeding to the Logical layer.
 
 ### Logical Layer
 
@@ -47,12 +51,16 @@ Derive logical elements from the functional architecture. Each logical element r
 - Interfaces have typed fields with semantic meaning — no datasheet-level specifics
 - Design-agnostic: no vendor names or part numbers
 
+**→ STOP.** Present the logical model to the user. Ask for review and approval before proceeding to the Physical layer.
+
 ### Physical Layer
 
 Derive physical components from the logical architecture and SR constraints.
 - Components are concrete hardware/software units
 - SR constraints (budgets, environment, packaging) drive component boundaries
 - Interfaces have concrete fields with physical units: `ElectricalPower` with Voltage and Current elements
+
+**→ STOP.** Present the physical model to the user. Ask for review and approval before proceeding to allocation and traceability.
 
 ---
 

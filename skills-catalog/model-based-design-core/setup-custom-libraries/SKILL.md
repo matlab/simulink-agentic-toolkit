@@ -4,7 +4,7 @@ description: Register, add, or update existing custom Simulink block libraries a
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.2"
+  version: "1.2.1"
 ---
 
 # Setup Custom Libraries

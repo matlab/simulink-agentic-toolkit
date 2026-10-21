@@ -20,7 +20,7 @@
     },
     {
       "name": "model-based-system-engineering",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "description": "Model-Based Systems Engineering capabilities for System Composer architecture models",
       "author": {
         "name": "MathWorks"

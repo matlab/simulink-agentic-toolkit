@@ -28,6 +28,15 @@ addPath(proj, 'architecture');
 
 Without this, SC APIs either throw "file not found" or silently create artifacts in the current directory instead of the intended location.
 
+## Saving Models into the Architecture Folder
+
+`systemcomposer.createModel` takes a model **name**, not a path. Passing `fullfile(archDir, 'MyLogical')` drops the folder, and a later `model.save()` writes `MyLogical.slx` to the current folder. Save the new model into the folder explicitly:
+
+```matlab
+model = systemcomposer.createModel('MyLogical');
+save_system('MyLogical', fullfile(archDir, 'MyLogical.slx'));
+```
+
 ----
 
 Copyright 2026 The MathWorks, Inc.

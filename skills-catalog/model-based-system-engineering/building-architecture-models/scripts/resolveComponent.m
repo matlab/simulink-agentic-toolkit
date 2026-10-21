@@ -15,13 +15,15 @@ function comp = resolveComponent(arch, path)
 %   path - char/string, '/'-delimited component path
 %
 % Output:
-%   comp - the resolved systemcomposer.arch.Component
+%   comp - the resolved systemcomposer.arch.Component, or empty if any
+%          path segment is not found
 
 %   Copyright 2026 The MathWorks, Inc.
 
     parts = strsplit(char(path), '/');
     comp  = arch.getComponent(parts{1});
     for k = 2:numel(parts)
+        if isempty(comp), return; end
         comp = comp.Architecture.getComponent(parts{k});
     end
 end

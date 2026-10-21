@@ -65,6 +65,31 @@ end
 
 ---
 
+## Sequence Diagrams (Interactions)
+
+Wire components with `model_edit` (see `building-simulink-models/references/system-composer.md`) — do **not** script structural edits with `addComponent`/`addPort`/`connect`. Sequence diagrams are the exception: the `systemcomposer.interaction` API is scripting-only (R2024b+), so build interactions via `evaluate_matlab_code`. Model the structure first — lifelines reference components that **already exist**.
+
+```matlab
+interaction = addInteraction(model, 'StartupSequence');
+
+% Lifeline per component — pass the component OBJECT, not a name
+llSensor     = addLifeline(interaction, arch.getComponent('Sensor'));
+llController = addLifeline(interaction, arch.getComponent('Controller'));
+
+% Messages go on the ROOT OPERAND, not the interaction:
+% addMessage(operand, srcLifeline, srcPort, destLifeline, destPort, label)
+rootOp = interaction.RootFragment.Operands(1);
+addMessage(rootOp, llSensor, 'StateOut', llController, 'StateIn', 'sendState');
+model.save();
+```
+
+- **`addLifeline` cannot create a component** (a UI-only capability). Passing a name errors with `No element exists ... with full path`. Create the component first with `model_edit` (add a `SubSystem` named after the component), then `addLifeline(interaction, arch.getComponent(name))`.
+- Pass the component **object** (`arch.getComponent('Sensor')`); a bare name is read as a full model path and fails even for existing top-level components.
+- `addMessage` takes the root operand (`interaction.RootFragment.Operands(1)`), port **name strings**, and returns a `Message` with no `Name` property.
+- Also available: `addFragment`, `addOperand`, `addDurationConstraint`, `addAnnotation`; `getInteraction(s)`, `interaction.open()`.
+
+---
+
 ## Profiles and Stereotypes
 
 Stereotypes attach quantitative properties to components (mass, power, cost, etc.).
