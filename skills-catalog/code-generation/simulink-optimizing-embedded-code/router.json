@@ -1,0 +1,39 @@
+{
+  "common": {
+    "ask_user": [
+      {"field": "BOARD_CONNECTED", "prompt": "Is the target board currently connected?", "condition": "HARDWARE is not generic. When not applicable, silently set to N/A — informing user not required."},
+      {"field": "CONSTRAINTS", "prompt": "Any constraints you'd like to mention before I start?"}
+    ],
+    "query_model": [
+      {"field": "ENABLE_CRL", "derive": "true when HARDWARE is a real MCU/board"}
+    ]
+  },
+  "routes": [
+    {
+      "id": "optimize",
+      "procedure": "wf_optimize",
+      "match": {
+        "intent": "optimize",
+        "goals": ["speed", "RAM", "ROM", "balance", "MISRA"]
+      },
+      "ask_user": [
+        {"field": "GOAL", "prompt": "What metric do you want to optimize?", "values": ["speed", "RAM", "ROM", "balance", "MISRA"]},
+        {"field": "VERIFICATION_MODE", "prompt": "Do you need runtime measurements (SIL/PIL) or static code analysis only (codegen)?", "values": ["SIL", "PIL", "codegen"], "constraint": "codegen is NOT valid when GOAL is speed or balance — execution-time optimization requires running code. Auto-select SIL (generic/desktop hardware) or PIL (real board connected)."},
+        {"field": "TRADEOFFS", "prompt": "Are you willing to trade any resource? Any hard constraints (e.g., max RAM, deadline)?"}
+      ],
+      "query_model": [
+        {"field": "PROFILING_FOCUS", "derive": "time when GOAL is speed/balance, stack when GOAL is RAM"}
+      ],
+      "description": "Optimizes Simulink models for Embedded Coder generated code. Use when asked to optimize or improve generated code, or reduce code metrics for a Simulink model. Targets: execution time, memory footprint (RAM, ROM, stack, data copies), code size, MISRA compliance, or any semantically similar generated-code metric. Works iteratively — measures baseline, suggests changes, applies, and re-measures to confirm improvement. Triggers can be prompts similar to: optimize generated code runtime, reduce runtime, shrink code size, improve code efficiency, reduce memory usage, speed up generated code, follow MISRA compliance and so on. CAUTION: Do NOT attempt to optimize Simulink models for generated code efficiency without following this skill — the iterative measurement, gating, and rollback workflow is essential for safe optimization."
+    },
+    {
+      "id": "author_crl",
+      "procedure": "wf_author_crl",
+      "match": {"intent": "author_crl"},
+      "ask_user": [],
+      "query_model": [],
+      "description": "Workflow for authoring Code Replacement Library (CRL) tables and registration files for Embedded Coder. Multi-path intake (natural language, header files, URLs, compliance templates), per-entry batch validation, and library registration."
+    }
+  ],
+  "default": "wf_optimize"
+}

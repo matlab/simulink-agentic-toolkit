@@ -276,8 +276,9 @@ If the model is partially built and fails mid-construction:
 2. **Identify last good state** — find the last successfully wired block
 3. **Fix the specific error** using the diagnosis above
 4. **Continue from failure point** using `model_edit` (not re-running full script)
-5. **Post-fix cleanup:** `Simulink.BlockDiagram.arrangeSystem(mdl)` + `save_system(mdl)`
-6. **Validate:** `sim(mdl, 'StopTime', '0.1')` — brief sim to confirm no crash
+5. **Post-fix layout:** `model_edit(mdl, scope, [], "full")` for each scope you changed
+6. **Save:** `save_system(mdl)`
+7. **Validate:** `sim(mdl, 'StopTime', '0.1')` — brief sim to confirm no crash
 
 **Reference:** `recovery-protocol.md` (full decision tree)
 

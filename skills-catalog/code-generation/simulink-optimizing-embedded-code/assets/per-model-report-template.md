@@ -11,10 +11,10 @@
 Save the rendered report to:
 
 ```
-<project_path>/.eco_diagnostics/<MODEL_NAME>_optimization_report.html
+<project_path>/.diagnostics/<MODEL_NAME>_optimization_report.html
 ```
 
-`<project_path>` is the value carried in the state object. `<MODEL_NAME>` is the value of `state.MODEL`. The `.eco_diagnostics/` folder is already created earlier in the run for the diagnostic logs — reuse it.
+`<project_path>` is the value carried in the state object. `<MODEL_NAME>` is the value of `state.MODEL`. The `.diagnostics/` folder is already created earlier in the run for the diagnostic logs — reuse it.
 
 After saving, the agent's wrap-up message MUST tell the user the absolute path and how to open it:
 
@@ -35,7 +35,7 @@ out     = tpl;
 out = strrep(out, '{{MODEL_NAME}}',         modelName);
 out = strrep(out, '{{MODEL_FILE}}',         [modelName '.slx']);
 % ... (every placeholder) ...
-outPath = fullfile(projectPath, '.eco_diagnostics', [modelName '_optimization_report.html']);
+outPath = fullfile(projectPath, '.diagnostics', [modelName '_optimization_report.html']);
 fid = fopen(outPath, 'w'); fwrite(fid, out); fclose(fid);
 ```
 
@@ -47,9 +47,9 @@ The agent platform may also use its native file-write tool — the template + re
 
 For every placeholder in the template, this table gives the source and the format. Sources:
 
-- **state** — values read from `<project_path>/.eco_diagnostics/state.json` at Phase 5 entry (e.g., `state.MODEL`, `state.GOAL`, `state.versionMap`).
-- **diag/trace** — `<project_path>/.eco_diagnostics/eco_decision_trace.md` (decisions, suggestions, risk checks; each phase appends a `## Phase: <N>` heading).
-- **diag/ledger** — `<project_path>/.eco_diagnostics/token_ledger.json` (token usage entries written by `eco_token_log`).
+- **state** — values read from `<project_path>/.diagnostics/state.json` at Phase 5 entry (e.g., `state.MODEL`, `state.GOAL`, `state.versionMap`).
+- **diag/trace** — `<project_path>/.diagnostics/eco_decision_trace.md` (decisions, suggestions, risk checks; each phase appends a `## Phase: <N>` heading).
+- **diag/ledger** — `<project_path>/.diagnostics/token_ledger.json` (token usage entries written by `eco_token_log`).
 - **artifacts** — anything saved during the run (sim-vs-SIL `.mat`, profiling reports). Versioned model snapshots live in the workspace `.git` repo. The sim-vs-SIL `.mat` is produced by `finalizing-results` **step 5** — it captures golden reference (normal sim or SIL/PIL from Phase 2) vs `SIL(vN_model)` (the live workspace) and is the source of every `{{VERIFY_*}}` placeholder. Step 5 is mandatory for ALL modes (including codegen). If golden reference is missing (`state.GOLDEN_REF_PATH` empty), render a "Not run" card instead of omitting the section.
 - **derived** — computed by the agent in Phase 5 from the above.
 
@@ -329,7 +329,7 @@ The tree is built by walking `versionMap` and grouping entries by `parentVersion
 1. **Walk and group.** Build a map `children[parentVersion] = [entry, …]`. The `v0` node has no parent and is the tree root.
 2. **Single child:** if a parent has exactly one child, emit the child as a centred next level (the existing `<div class="tree-level">` + connector pattern).
 3. **Multiple children:** if a parent has N children, emit a single `<div class="tree-children-row">` directly below the parent, containing N `<div class="tree-child">` columns side by side. Each column is a vertical stack of: connector → child node → (recursively) that child's own subtree.
-4. **Leaf invariant (MANDATORY):** A node with `revertCause != null` is a leaf and MUST NOT be traversed for children. If any later entry's `parentVersion` points at a revert leaf, the renderer logs `WARN FR-07` and skips that subtree. The lineage after a user-revert continues from `revertTargetVersion`, not from the revert leaf — this is enforced upstream in the state writer (see `<skill_root>/references/protocols/checkpointing-revert.md` → "Recovery on Bad Apply" step 5).
+4. **Leaf invariant (MANDATORY):** A node with `revertCause != null` is a leaf and MUST NOT be traversed for children. If any later entry's `parentVersion` points at a revert leaf, the renderer logs `WARN FR-07` and skips that subtree. The lineage after a user-revert continues from `revertTargetVersion`, not from the revert leaf — this is enforced upstream in the state writer (see the `ref_checkpointing` KG node → "Recovery on Bad Apply" step 5).
 5. **Connector style per child:**
    - accepted child → solid green `<div class="tree-edge">` (or `baseline-edge` for the v0→v1 transition).
    - `Gate_Rejected` child → dashed red `<div class="tree-branch-edge gate-rejected">` with `<span class="label">GATE REJECTED</span>`.
@@ -442,10 +442,10 @@ Status badge cheatsheet:
 
 ## Diagnostic logging
 
-After writing the report, append to `<project_path>/.eco_diagnostics/eco_decision_trace.md`:
+After writing the report, append to `<project_path>/.diagnostics/eco_decision_trace.md`:
 
 - `OK FR-04: Per-model report written to <absolute_path>` — on success
-- `WARN FR-04: Per-model report skipped — <reason>` — only if a hard failure prevents writing (e.g., `.eco_diagnostics/` doesn't exist and cannot be created). This is a degraded outcome — surface it to the user explicitly.
+- `WARN FR-04: Per-model report skipped — <reason>` — only if a hard failure prevents writing (e.g., `.diagnostics/` doesn't exist and cannot be created). This is a degraded outcome — surface it to the user explicitly.
 
 ---
 

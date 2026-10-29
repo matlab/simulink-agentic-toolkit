@@ -4,7 +4,7 @@ description: Builds and edits Simulink, System Composer, Stateflow, and Simscape
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.5"
+  version: "1.6"
 ---
 
 # Building Models
@@ -86,6 +86,7 @@ The response `created` map shows `ref → blk_id` (or `ref → sf_X` in SF scope
   ```
 - Do not call `Simulink.BlockDiagram.arrangeSystem` or use `set_param` for block positioning unless the user explicitly requests it. `model_edit` has a built-in autolayout engine that runs automatically after each call.
 - Always pass `layout_mode` to `model_edit`. Use `"full"` when populating an empty scope (new model root, or a newly-created subsystem) for optimal block arrangement. Use `"incremental"` when adding blocks to a scope that already has existing blocks (preserves existing positions).
+- For requests to fix, tidy, or rearrange an existing layout, to re-place specific blocks, or to group or expand subsystems, load the `arranging-simulink-layouts` skill.
 - Each `model_edit` call operates in exactly one domain (Simulink, System Composer, or Stateflow) determined by the scope. To add a Chart block and then populate it, use two calls: SL scope for the Chart block, then SF scope for internals. Use `model_read` between calls to discover the chart's `sf_X` scope ID.
 - Use meaningfully named variables (e.g., `Kp_SpeedController`) instead of hardcoded numeric values. Define variables in model workspace or a `.m` init script.
 - Don't use `evaluate_matlab_code` with `set_param`/`add_block` to bypass `model_edit` — it skips autolayout, undo tracking, and error recovery

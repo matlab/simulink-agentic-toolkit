@@ -27,7 +27,8 @@ Build errors mid-execution
 │
 └─ After fixing:
    ├─ Run remaining steps via model_edit (NOT re-running full script)
-   ├─ Run Post-Build Cleanup (arrangeSystem + save via evaluate_matlab_code)
+   ├─ Lay out each built scope: model_edit(mdl, scope, [], "full")
+   ├─ Save: save_system(mdl) via evaluate_matlab_code
    └─ Validate with short sim: sim(mdl, 'StopTime', '0.1')
 ```
 
@@ -140,7 +141,8 @@ When a build fails, follow this exact sequence:
 3. Identify gap (what was supposed to come next)
 4. model_edit → add remaining blocks + connections
 5. model_query_params → verify key params
-6. evaluate_matlab_code → arrangeSystem + sim test
+6. model_edit(mdl, scope, [], "full") → lay out each scope you changed
+7. evaluate_matlab_code → sim test
 ```
 
 ### Why This Is Better
@@ -159,7 +161,8 @@ After every build, use `model_overview` to detect unresolved blocks:
 - Look for blocks with generic names or missing library references
 - For each placeholder: use `model_edit` replace_block or delete + add_block
 - Rewire connections (check port count with model_read)
-- Cleanup: `evaluate_matlab_code` → `Simulink.BlockDiagram.arrangeSystem(mdl); save_system(mdl);`
+- Layout: `model_edit(mdl, scope, [], "full")` for each scope you changed
+- Save: `evaluate_matlab_code` → `save_system(mdl);`
 
 ---
 

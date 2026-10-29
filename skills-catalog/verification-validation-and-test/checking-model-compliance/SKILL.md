@@ -4,7 +4,7 @@ description: "Use this skill when the user asks to check Simulink model complian
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "0.6"
+  version: "0.6.2"
 ---
 
 # Checking Model Compliance
@@ -101,7 +101,7 @@ model_advisor_resolve_checks('standard', '<STANDARD_NAME>')
 - `status: truncated` → use returned config file path in step 4
 - `status: error` → report and stop
 
-**Gate:** If `checks_count` > 100, confirm with user before proceeding.
+**Gate:** If `checks_count` > 100, confirm with user before proceeding. If the request already authorizes the full run (e.g., "run all checks, no need to confirm"), treat that as confirmation and proceed.
 
 **Shortcut:** If the user already has specific check IDs, call `model_advisor_run` directly with those IDs and skip to step 5.
 
@@ -223,6 +223,8 @@ For JMAAB, JMAAB_V6, or MAB standards → load and follow `references/uncheckabl
 Ask: "Would you like me to fix these issues?"
 - No → stop (report only)
 - Yes → load and follow `references/fix-mode.md` workflow
+
+A request such as "fix them for me" starts fix mode; it does not approve any specific change. Present the first batch of planned changes, ask the user to confirm, and end your turn. Never apply a batch in the same turn you present it.
 
 ### 9. Justification Mode
 

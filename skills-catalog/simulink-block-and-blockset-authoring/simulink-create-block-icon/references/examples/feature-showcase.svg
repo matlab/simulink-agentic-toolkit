@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  feature-showcase.svg — reference icon for a fictional "Signal Shaper" block.
+
+  One icon that exercises every documented IconEditor feature EXCEPT First Fit:
+    - Frame           custom adaptive rounded-rectangle boundary (hidden id="frame").
+    - Parts           three parts: a base part plus two visibility-switched modes.
+    - Visibility      the mode parts switch on the "Mode" param; the equation on the
+                      "ShowEquation" checkbox.
+    - Expression text the cutoff readout shows the live "CutoffFreq" value.
+    - Equation        a LaTeX transfer function (shown only when ShowEquation is on).
+    - Relative pos.   the cutoff readout is pinned under the plot frame.
+    - Port labels     "in"/"out" bound to their ports via d:options="Port:L0/R0"
+                      (the common case; see references/svg-format.md for the niche
+                      auto-generate variant using d:repeatFor).
+    - Behavior        Resize:FitToBlock (icon scales with the block); the title stays
+                      upright on rotation (Orientation:Readable).
+
+  To import & validate, register this on a masked block that has:
+    - Mask params:  Mode         popup    {Lowpass, Highpass}
+                    CutoffFreq   edit     (numeric, e.g. 1000)
+                    ShowEquation checkbox
+    - Ports:        1 input (e.g. "in"), 1 output (e.g. "out").
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:d="http://www.mathworks.com/blockgraphics"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1" width="90" height="70"
+     d:options="Frame:Adaptive; Resize:FitToBlock;">
+
+    <!-- Custom frame: hidden rounded-rectangle boundary. Simulink draws the adaptive frame from it. -->
+    <rect id="frame" visibility="hidden" x="0" y="0" width="90" height="70" rx="8" ry="8"/>
+
+    <!-- Base part: always-visible scaffold (title, plot frame, equation, readout, port labels). -->
+    <g title="base" ie-elementType="Part" ie-base-part="true">
+
+        <text id="title" class="text" style="fill:#333333;font-size:9px;text-anchor:middle;"
+              d:options="Orientation:Readable;"
+              x="28" y="12" width="44" height="10">
+            <tspan dx="0" dy="0" x="28">Shaper</tspan>
+        </text>
+
+        <!-- LaTeX transfer function, shown only when the ShowEquation checkbox is on. -->
+        <math d:visible="ShowEquation === 'on'"
+              cx="70" cy="11" width="30" height="11"
+              style="font-size:8px">$\frac{1}{1+sRC}$</math>
+
+        <!-- Plot frame: fixed geometry (scales with the block via Resize:FitToBlock). -->
+        <rect id="plot" class="rect" style="fill:none;stroke:#999999;stroke-width:0.75;"
+              x="12" y="18" width="66" height="34"/>
+
+        <!-- Cutoff readout: live expression text, pinned under the plot (relative position),
+             and double-click-editable on the canvas (d:clientData). -->
+        <text id="cutoff" class="text" style="fill:#0072bd;font-size:8px;text-anchor:middle;"
+              d:textContent="CutoffFreq + ' Hz'"
+              d:clientData="{'blockParam':'CutoffFreq'}"
+              d:hcenter="plot.hcenter" d:top="plot.bottom+3"
+              x="45" y="60" width="44" height="8">
+            <tspan dx="0" dy="0" x="45">1000 Hz</tspan>
+        </text>
+
+        <!-- Port labels: each label is bound to one specific port via
+             d:options="Port:<L|R|T|B><0-based index>". The dvg-port-label class marks
+             the element as a port label; the binding anchors it to its port so it
+             tracks the port as the block resizes. This is the common way to label a
+             known port. (For dynamically-generated labels across a variable number of
+             ports, see the d:repeatFor "auto-generate" forms in svg-format.md.) -->
+        <text class="dvg-port-label text" style="fill:#333333;font-size:7px;"
+              d:options="Port:L0;"
+              x="2" y="35" width="16" height="7">
+            <tspan dx="0" dy="0" x="2">in</tspan>
+        </text>
+        <text class="dvg-port-label text" style="fill:#333333;font-size:7px;text-anchor:end;"
+              d:options="Port:R0;"
+              x="88" y="35" width="16" height="7">
+            <tspan dx="0" dy="0" x="0">out</tspan>
+        </text>
+    </g>
+
+    <!-- Mode = Lowpass: response falls with frequency. -->
+    <g title="lowpass" ie-elementType="Part" d:visible="Mode === 'Lowpass'">
+        <path class="path" style="fill:none;stroke:#0072bd;stroke-width:1.5;"
+              d="M 15,24 L 38,25 C 52,27 60,44 75,47"/>
+    </g>
+
+    <!-- Mode = Highpass: response rises with frequency. -->
+    <g title="highpass" ie-elementType="Part" d:visible="Mode === 'Highpass'">
+        <path class="path" style="fill:none;stroke:#d95319;stroke-width:1.5;"
+              d="M 15,47 C 30,44 38,27 52,25 L 75,24"/>
+    </g>
+</svg>

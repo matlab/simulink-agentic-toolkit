@@ -2,7 +2,7 @@
 <!--
   Per-model optimization report template.
   Used by Phase 5 (finalizing-results) to produce
-  <project_path>/.eco_diagnostics/{{MODEL_NAME}}_optimization_report.html
+  <project_path>/.diagnostics/{{MODEL_NAME}}_optimization_report.html
 
   Replace every {{PLACEHOLDER}} with the value sourced as documented in
   assets/per-model-report-template.md (field-mapping table).
@@ -324,7 +324,7 @@
       {{TOKEN_CARDS}}
     </div>
     <p style="color:var(--text2);font-size:12px">
-      Source: <code>.eco_diagnostics/token_ledger.json</code>
+      Source: <code>.diagnostics/token_ledger.json</code>
     </p>
   </section>
 
@@ -369,8 +369,8 @@
     {{NUM_PHASES}} phases &middot;
     {{NUM_TRANSITIONS}} transitions &middot;
     {{NUM_ERRORS}} errors recovered &middot;
-    Diagnostics: <code>.eco_diagnostics/eco_decision_trace.md</code>,
-    <code>.eco_diagnostics/token_ledger.json</code>
+    Diagnostics: <code>.diagnostics/eco_decision_trace.md</code>,
+    <code>.diagnostics/token_ledger.json</code>
   </div>
 
 </main>

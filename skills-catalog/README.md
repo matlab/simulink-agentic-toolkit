@@ -12,6 +12,7 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 
 | Skill | Description |
 |-------|---------------------------|
+| `arranging-simulink-layouts` | Fix, tidy, or rearrange block diagram layouts — re-place selected blocks without moving the rest, and group or expand subsystems |
 | `building-simulink-models` | Best practices for structural model changes, for example, adding blocks, wiring, layout |
 | `configuring-block-policy` | Create and manage `.satk/block-policy.json` to control which blocks the agent can use and which parameters it can modify |
 | `simulink-curating-library-kg` | Curate the library knowledge index — mark common blocks, define categories, and improve descriptions for better agent block selection |
@@ -31,6 +32,7 @@ Model-Based System Engineering skills for System Composer architecture models
 | Skill | Description |
 |-------|---------------------------|
 | `building-architecture-models` | Build multi-layer system architecture models — components, interfaces, allocations, stereotypes, and requirements traceability (requires System Composer) |
+| `simulink-manage-variant-configuration` | Explore, create, validate, and activate Simulink variant configurations |
 
 ### [Verification, Validation, and Test](verification-validation-and-test/)
 
@@ -124,6 +126,14 @@ Configure, deploy, and run Simulink models on real-time target computers with Si
 | `simulink-run-real-time-application` | Build, deploy, run, monitor, tune, and stop Simulink Real-Time applications — `slbuild`, `load`/`start`/`stop`, stop time and start options, root-inport and Playback stimulation, parameter tuning, signal reads, recording, and file-log import (requires Simulink Real-Time) |
 | `simulink-configure-real-time-target` | Manage Simulink Real-Time target computer definitions — credentials, network configuration, TLS material, startup applications, and lifecycle operations such as reboot, status, and connection checks (requires Simulink Real-Time) |
 | `simulink-configure-real-time-model` | Configure a Simulink model for Simulink Real-Time code generation — system target file selection, fixed-step solver settings, and SLRT build options (requires Simulink Real-Time) |
+
+### [Simulink Block and Blockset Authoring](simulink-block-and-blockset-authoring/)
+
+Author the appearance of custom Simulink blocks, such as dynamic SVG block icons
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-create-block-icon` | Create and register dynamic SVG icons on Simulink blocks — visibility conditions, live text, equations, shaped frames, first-fit sizing, resize behavior, and port labels, authored the MathWorks-recommended IconEditor way and editable in the IconEditor |
 
 ---
 

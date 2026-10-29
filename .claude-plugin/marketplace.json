@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.9.1",
+      "version": "0.10.0",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -20,7 +20,7 @@
     },
     {
       "name": "model-based-system-engineering",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "description": "Model-Based Systems Engineering capabilities for System Composer architecture models",
       "author": {
         "name": "MathWorks"
@@ -33,7 +33,7 @@
     },
     {
       "name": "verification-validation-and-test",
-      "version": "0.8.2",
+      "version": "0.8.4",
       "description": "Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, AUTOSAR, SLCI), author persistent, requirement-traceable Simulink Test cases, inject faults for robustness testing, perform safety analysis (FMEA, FHA, FTA), detect design errors with root cause analysis using Simulink Design Verifier, fix SLDV incompatibilities, explain missing coverage objectives, and collect quality metrics (maintainability, complexity, testing, coverage) using metric.Engine",
       "author": {
         "name": "MathWorks"
@@ -46,7 +46,7 @@
     },
     {
       "name": "code-generation",
-      "version": "0.7.0",
+      "version": "0.7.2",
       "description": "Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code for runtime, memory, and MISRA compliance, configuring Embedded Coder deployment settings, and customizing A2L calibration files",
       "author": {
         "name": "MathWorks"
@@ -85,7 +85,7 @@
     },
     {
       "name": "control-systems",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "description": "Control system design and analysis for Simulink models",
       "author": {
         "name": "MathWorks"
@@ -144,6 +144,19 @@
       },
       "keywords": ["simulink", "simulink-real-time", "slrt", "real-time", "hil", "code-generation", "speedgoat", "deployment"],
       "source": "./skills-catalog/real-time-simulation-and-testing",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "simulink-block-and-blockset-authoring",
+      "version": "0.1.1",
+      "description": "Author the appearance of custom Simulink blocks, such as dynamic SVG block icons",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": ["simulink", "mask", "block-icon", "icon-editor", "svg", "dvg", "block-authoring"],
+      "source": "./skills-catalog/simulink-block-and-blockset-authoring",
       "category": "development",
       "strict": false,
       "skills": "./"

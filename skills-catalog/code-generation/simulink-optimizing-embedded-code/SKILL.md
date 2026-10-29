@@ -1,342 +1,343 @@
 ---
 name: simulink-optimizing-embedded-code
-description: "Optimizes Simulink models for Embedded Coder generated code. Use when asked to optimize or improve generated code, or reduce code metrics for a Simulink model. Targets: execution time, memory footprint (RAM, ROM, stack, data copies), code size, MISRA compliance, or any semantically similar generated-code metric. Works iteratively — measures baseline, suggests changes, applies, and re-measures to confirm improvement. Triggers can be prompts similar to: optimize generated code runtime, reduce runtime, shrink code size, improve code efficiency, reduce memory usage, speed up generated code, follow MISRA compliance and so on. CAUTION: Do NOT attempt to optimize Simulink models for generated code efficiency without following this skill — the iterative measurement, gating, and rollback workflow is essential for safe optimization."
+description: "Routes Embedded Coder workflows for Simulink models. Use when asked to optimize or improve generated code, reduce code metrics, author Code Replacement Libraries, or improve Embedded Coder output. Targets: execution time, memory (RAM, ROM, stack), code size, MISRA compliance. Works iteratively with measurement, gating, and rollback. Triggers: optimize generated code, reduce runtime, shrink code size, improve code efficiency, reduce memory, speed up generated code, MISRA compliance, author CRL. CAUTION: Do NOT optimize generated code without this skill — the gating and rollback workflow is essential."
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "2.0"
+  version: "3.0"
 ---
 
-# Simulink-optimizing-embedded-code
+# Simulink Embedded Coder
 
 > **Release compatibility:** MATLAB R2023a and later.
 
-Iteratively improves generated C/C++ code from Simulink models by suggesting configuration, modeling, and architectural changes — then measuring the impact.
+Entry point for Embedded Coder workflows on Simulink models. Detects the model, initializes the workspace, gathers requirements, routes to the matched procedure, and hands off execution.
 
 ## When to Use
 
-- User asks to reduce runtime, RAM, ROM, or stack usage of generated code from a Simulink model
-- User wants to optimize Embedded Coder output for a specific hardware target
-- User asks to improve code efficiency metrics after code generation
-- User wants an iterative optimization workflow with measurable before/after comparisons
+- User asks to optimize generated code (speed, RAM, ROM, stack, MISRA, code size)
+- User asks to author or modify a Code Replacement Library (CRL)
+- User wants to improve Embedded Coder output for a specific hardware target
+- Any request involving iterative improvement of Simulink-generated C/C++ code
 
 ## When NOT to Use
 
-- User wants to build or create a Simulink model from scratch (not optimization)
-- User needs help with MATLAB scripts unrelated to Simulink code generation
-- User wants to debug a simulation error (not a code efficiency issue)
-- User is working with hand-written C/C++ code (not generated from Simulink)
+- Building or creating Simulink models from scratch (not optimization)
+- MATLAB scripts unrelated to Simulink code generation
+- Debugging a simulation error (not a code efficiency issue)
+- Working with hand-written C/C++ code (not generated from Simulink)
 
-## Overall Workflow
+---
 
-```
-Phase 1: Gather Requirements -> Confirm goal -> Decide codegen vs SIL/PIL
-Phase 2: Baseline -> SIL/PIL or slbuild -> User targets functions
-Phase 3: Suggest batch (Stage A/B/C/D) -> User confirms
-Phase 4: Apply -> Re-measure -> Goal-Axis Gate -> Compare
-Phase 3-4: Repeat until all stages exhausted
-Phase 5: Finalize -> Customer report -> Stop
-```
+## Communication — User-Facing Language
 
-**Phases run continuously.** At each boundary the agent writes diagnostics and state to disk (see Transition Protocol), then proceeds directly to the next phase without stopping or asking the user for permission to continue.
+**This rule applies to every step below (Step 0 through completion) and to all procedure content — not just route matching.** The user should experience a seamless optimization assistant, never the machinery behind it. In everything you say to the user:
 
-## First Action: Detect Model and Route
+- **Never surface internal identifiers.** This includes node IDs (`wf_*`, `ref_*`, `param_*`, `sug_*`, `hw_*`) **and risk-check / gate / log codes** (`OR-NN`, `GR-NN`, `RT-NN`, `NC-NN`, and any `XX-NN` code). `OR-02`, `GR-03`, `RT-01` are internal bookkeeping — they mean nothing to the user. Never write things like *"Not a harness (OK OR-02)"* or *"matches the optimize route (OK RT-01)"*.
+- **Never surface state field names or values-as-fields.** `WORKSPACE_HEAD`, `PROCEDURE_STACK`, `PROCEDURE_ID`, `NEXT_ACTION`, `GOAL`, `VERIFICATION_MODE`, `liveVersion`, `versionMap`, etc. Don't say *"WORKSPACE_HEAD is empty"* or *"GOAL is set to RAM (pre-extracted)"* — say *"this is a first run"* or *"I'll optimize for RAM."*
+- **Never surface script/function names or step mechanics.** `eco_state_read`/`eco_state_write`, `ecokg_start_procedure`, `ecokg_detail`, `eco_complete`, and narration such as *"add the skill scripts to the path," "write state," "append the decision trace," "load the procedure," "load the measurement reference," "verify the token ledger."* These are agent-side actions — perform them silently.
+- **`Log: OK/WARN XX-NN: ...` directives throughout this document and all procedures write to the decision-trace FILE (`.diagnostics/eco_decision_trace.md`). They are NEVER spoken or shown to the user.** Append them to the file; do not report them in chat.
+- **Describe actions in task terms the user understands:** *"checking the model," "measuring the baseline," "applying optimizations," "verifying numerical correctness," "execution time improved 12%."* Not the steps, phases, scripts, or state writes that produce them.
+- **If a step doesn't apply, silently skip it** — don't explain internal actions or why they were skipped.
 
-1. **Detect open model:** None open: stop; one model: use it, derive `<project_path>` from the model's file location; multiple: ask user.
-   ```matlab
-   find_system('type','block_diagram','BlockDiagramType','model')
-   ```
-2. **Check for state:**
-   ```matlab
-   isfile(fullfile('<project_path>', '.eco_diagnostics', 'state.json'))
-   ```
-3. **Route:**
-   - No `state.json` -> Fresh run. Read Phase 1.
-   - `state.json` exists -> Resume. Run `eco_validate_state`, follow `NEXT_ACTION`.
-   - **Exception:** If `NEXT_ACTION` points to Phase 4 but workspace is clean (no partial apply), re-route to Phase 3 — the approved batch is lost and must be re-suggested.
+Workflow names from the route `id` (e.g., "optimize," "author CRL") are fine to use with the user. Internal node/field/code identifiers are not.
 
-## Phase Routing Table
+## Step 0 — Detect Model & Determine Run Mode
 
-**Phase 1 is NOT optional.** Even when intent seems obvious ("just fix it"), you MUST complete Phase 1. Requirements gathering asks questions that cannot be inferred — user must confirm goal, hardware, and verification mode. Phrases like "just do it" express impatience, NOT informed consent to skip.
-
-Read ONLY the phase file needed:
-
-| Phase | When | File to Read |
-|-------|------|--------------|
-| 1 — Gather Requirements | Fresh run | `<skill_root>/references/gathering-requirements.md` |
-| 2 — Baseline Measurement | After Phase 1 | `<skill_root>/references/measuring-model-metrics/reference.md` |
-| 3 — Suggest Optimizations | After Phase 2 or 4 | `<skill_root>/references/suggesting-optimizations.md` |
-| 4 — Apply & Re-measure | After Phase 3 | `<skill_root>/references/measuring-model-metrics/reference.md` (remeasure mode) |
-| 5 — Finalize Results | All stages exhausted | `<skill_root>/references/finalizing-results.md` |
-
-**Do not preload all phase files.** After reading each, log:
-```matlab
-eco_token_log('<relative_path_of_phase_file>')
-```
-
-## On-Demand Protocol Files
-
-Read ONLY when the situation requires:
-
-| File | When |
-|------|------|
-| `references/protocols/correctness-gate.md` | Phase 4 (after SIL/PIL re-run, before efficiency gate) |
-| `references/protocols/goal-axis-gate.md` | Phase 4 (after correctness gate passes) |
-| `references/protocols/checkpointing-revert.md` | Phase 4 or any revert. Also log `references/evolutions-checkpoint.md` |
-| `references/protocols/harness-detection.md` | Phase 1 (fresh run) |
-| `references/protocols/customer-extensions.md` | Phase 3 and 4 (when `.custom_optimizations/` exists) |
-
-## Cross-Cutting Rules
-
-1. **Confirm before acting.** Never apply changes without explicit user approval. Complete Phase 1 first even if user says "just fix it".
-2. **Correctness before efficiency.** Phase 4 runs Numerical Correctness Gate BEFORE Goal-Axis Gate. Correctness failures auto-reject. In codegen mode, per-iteration gate is skipped but Phase 5 runs mandatory final SIL verification.
-3. **Goal axis is inviolable.** Regressions on GOAL axes -> reject and revert. `TRADEOFFS` only relaxes non-goal axes.
-4. **One checkpoint per accepted version.** Taken AFTER both gates pass via `eco_snapshot`. Never pre-apply.
-5. **Delegate heavy reads to sub-tasks.** Never read SIL/PIL reports or generated code in main context.
-6. **Always update diagnostics before transition.** Decision trace + subskill log + verify token ledger non-empty. Refuse to transition without them (OR-05/OR-06).
-7. **Stage progression with user override.** Default: A->B->C->D then Phase 5. If user wants to stop, inform of remaining stages, respect their decision, proceed to Phase 5. Auto-finalize only after all `STAGE_SCOPE` stages exhausted (OR-13).
-8. **Customer preferences are lazy-loaded.** If `<PROJECT_PATH>/.custom_optimizations/optimization_preferences.yaml` exists, Phase 3 reads `skip`/`know`, Phase 4 reads `never` rules. Custom optimizations run before built-in subskills. See `references/protocols/customer-extensions.md`.
-
-## Transition Protocol
-
-### State Object (`state.json`)
-
-Lives at `<project_path>/.eco_diagnostics/state.json`. Captured in every git snapshot, so prior states are recoverable via `git show <sha>:.eco_diagnostics/state.json`.
-
-**Shape:**
-
-```json
-{
-  "MODEL": "<model_name>",
-  "PROJECT_PATH": "<absolute_path_to_project>",
-  "HARDWARE": "<target>",
-  "BOARD_CONNECTED": true,
-  "GOAL": "speed|RAM|ROM|balance|MISRA",
-  "TRADEOFFS": "<constraints>",
-  "VERIFICATION_MODE": "codegen|SIL|PIL",
-  "PROFILING_FOCUS": "time|stack",
-  "REPORT_LEVEL": "coarse|detailed",
-  "ENABLE_CRL": true,
-  "TOLERANCE": { "absolute": 1e-6, "relative": 0.01 },
-  "SIM_STOP_TIME": "10",
-  "GOLDEN_REF_PATH": "<path to .eco_diagnostics/golden_reference/<model>_golden_ref.mat>",
-  "TARGET_FUNCTIONS": ["..."],
-  "MODEL_FINGERPRINT": {},
-  "CURRENT_STAGE": "A|B|C|D|FINALIZE",
-  "STAGE_SCOPE": ["A","B","C","D"],
-  "DEFERRED_LEVERS": [],
-  "liveVersion": "v1",
-  "versionMap": [
-    { "version": "v0", "tag": "v0_pristine", "commitSHA": "...", "metrics": {},
-      "status": "OK pristine", "parentVersion": null,
-      "revertCause": null, "revertTargetVersion": null, "revertTargetCommitSHA": null },
-    { "version": "v1", "tag": "v1_baseline", "commitSHA": "...",
-      "metrics": { "ExecTime_ns": 0, "GlobalRAM_B": 0 },
-      "status": "OK baseline — measurement prereqs applied", "parentVersion": "v0",
-      "revertCause": null, "revertTargetVersion": null, "revertTargetCommitSHA": null }
-  ],
-  "LATEST_METRICS": { "ExecTime_ns": 0, "GlobalRAM_B": 0, "perTargetFunction": [] },
-  "REPORT_FILE": "<path>",
-  "NEXT_ACTION": "<structured action>"
-}
-```
-
-Codegen mode NOT permitted when GOAL=speed|balance (GR-05).
-
-#### Customer Preferences (NOT in state.json)
-
-Read lazily from `<PROJECT_PATH>/.custom_optimizations/optimization_preferences.yaml` — not cached in state. Template at `<skill_root>/assets/optimization_preferences.yaml`. See `protocols/customer-extensions.md`.
-
-#### `NEXT_ACTION` Format
-
-Must use numbered sub-step format: `"Phase <N> <name> — (1) READ <file>, (2) CHECKPOINT: <what>, (3) <action>, (4) AWAIT_USER: <what>"`. Prefixes: `READ` = must read file first; `CHECKPOINT` = must snapshot; `AWAIT_USER` = stop and wait for user response. Sub-steps without a prefix are autonomous actions.
-
-#### Per-entry `versionMap` fields (all mandatory)
-
-`version` (label, e.g. "v2a"), `tag` (human-readable), `commitSHA` (null only for FAIL pre-checkpoint), `metrics` (empty for revert leaves), `status` ("OK pristine" | "OK ACCEPT" | "FAIL rejected" | "USER_REVERT"), `parentVersion` (null for v0; after revert to v{i}, subsequent entries use v{i}), `revertCause` ("Gate_Rejected" | "User_Requested_Revert" | null), `revertTargetVersion`, `revertTargetCommitSHA`.
-
-#### `liveVersion` semantics
-
-Always read `state.liveVersion`, never `versionMap[-1]`. Advances only on accepts; reverts point it back. After v0_pristine: "v0"; after v1_baseline: "v1"; after gate PASS: the accepted version; after `Gate_Rejected` revert: unchanged (gate restored the parent); after `User_Requested_Revert`: `revertTargetVersion`.
-
-#### What does NOT create a versionMap entry
-
-1. User declines suggested batch at end of Phase 3.
-2. In-conversation undo (inverse MATLAB op, no commitSHA ever existed).
-
-### Transition Execution Steps
-
-Before every phase transition:
-
-1. **Append decision trace** to `.eco_diagnostics/eco_decision_trace.md`. Steps 2-6 blocked until written.
-2. **Verify token ledger** (`token_ledger.json` non-empty). Steps 3-6 blocked until verified.
-3. **Write updated `state.json`** with `NEXT_ACTION`, `CURRENT_STAGE`, `versionMap`, `LATEST_METRICS`.
-4. **If new versionMap entry has `commitSHA` = null:** Skip if all entries already have commitSHA.
-   ```matlab
-   eco_snapshot(workspacePath, tag, description, modelName)
-   ```
-5. **If step 4 ran:** Re-write `state.json` with populated commitSHA and updated `liveVersion`.
-6. **Proceed** to next phase per `NEXT_ACTION`.
-
-**Revert variant (Kind A/B):** Steps 1, 2, 6 only — no new checkpoint.
-
-### Phase Resume
-
-When `state.json` exists on invocation:
-
-1. **Read state.** Parse `state.json`.
-2. **Incomplete transition check.** If latest versionMap entry has `commitSHA: null`:
-   - Tag found on HEAD -> populate commitSHA from HEAD, update liveVersion.
-   - No tag + dirty tree -> complete snapshot via `eco_snapshot`.
-   - No tag + clean tree -> remove dangling entry.
-3. **Validate workspace:**
+1. Add skill scripts to the MATLAB path:
    ```matlab
    addpath(fullfile('<skill_root>', 'scripts'));
-   result = eco_validate_state('<PROJECT_PATH>', '<commitSHA>', '<MODEL>');
    ```
-4. **Handle result:**
-   - `clean` -> proceed. `dirty` + modelDirty=false -> auto-discard (`git checkout -- .`), log OR-09.
-   - `dirty` + modelDirty=true -> present dirty-model options (discard or keep+re-measure).
-   - `head_mismatch` -> present mismatch options (start fresh or restore).
-   - `error` -> report and halt.
-5. **Resume** from `NEXT_ACTION`.
 
-### Workspace Recovery
+2. Find open models:
+   ```matlab
+   openModels = find_system('type','block_diagram','BlockDiagramType','model');
+   ```
 
-**Dirty model** — tell user: uncommitted model changes since last checkpoint. Options: (1) Discard changes and restore to last checkpoint, (2) Keep changes and re-measure as new baseline.
+3. Branch on result:
+   - **None open:** *"No Simulink models are currently open. Please open the model you want to work with and try again."* **Stop.**
+   - **One model:** Use it. Derive `<project_path>` = the directory containing the model's `.slx` file (i.e., `fileparts(which('<model>'))`). This is the working directory for all skill operations — `.diagnostics/state.json` and all artifacts live here. Every `<project_path>` placeholder in this document and in procedure content must be substituted with this resolved path.
+   - **Multiple models:** Present list, ask which to use. Wait for answer.
 
-**HEAD mismatch** — tell user: workspace state doesn't match expected SHA. Options: (1) Start fresh from current state with re-measure, (2) Restore to last known state.
+4. **Determine run mode.** `state.json` may or may not exist yet. `eco_state_read` returns empty when the file is absent.
 
-**Discard:** Reopen model after reset. State unchanged.
+   ```matlab
+   wsHead = eco_state_read('<project_path>', 'WORKSPACE_HEAD');
+   ```
+
+   **a. Never run before** (`WORKSPACE_HEAD` is empty — including first-ever run where `state.json` does not yet exist):
+   Continue to Step 1 (full setup: init workspace, harness check, model summary, gather, route). **If you mention run mode to the user at all, say *"this is a first run"* — never name the `WORKSPACE_HEAD` field or report its value (see Communication rule above).**
+
+   **b. Previously run — check workspace and model:**
+
+   ```matlab
+   currentHead = strtrim(evalc('system(''git -C "<project_path>" rev-parse HEAD'')'));
+   [~, gitStatus] = system(sprintf('git -C "%s" status --porcelain -- "%s.slx"', '<project_path>', '<model>'));
+   modelDirty = ~isempty(strtrim(gitStatus));
+   ```
+
+   | Condition | Run Mode | Action |
+   |-----------|----------|--------|
+   | `currentHead ≠ wsHead` | **Stale workspace** | `eco_state_flush('<project_path>')` → Step 1 |
+   | `currentHead = wsHead` and `modelDirty` | **Stale model** | `eco_state_flush('<project_path>')` → Step 1 |
+   | `currentHead = wsHead` and `~modelDirty` and workflow active | **Resume** | Read `NEXT_ACTION` from workflow scope, load procedure via `ecokg_start_procedure('<project_path>', procId)`, resume from `NEXT_ACTION`. **Skip Steps 1–5.** |
+   | `currentHead = wsHead` and `~modelDirty` and no active workflow | **Fresh run, same model** | Common fields valid. Skip to Step 3 (re-confirm model summary), then Steps 4–5. |
+
+   To check whether a workflow is active:
+   ```matlab
+   procId = eco_state_read('<project_path>', 'PROCEDURE_ID');
+   hasActiveWorkflow = ~isempty(procId);
+   ```
+   If active, read the workflow's `NEXT_ACTION`:
+   ```matlab
+   nextAction = eco_state_read('<project_path>', procId, 'NEXT_ACTION');
+   ```
+
+   **User manual reset:** To abandon a suspended workflow and start fresh:
+   ```matlab
+   eco_state_flush('<project_path>')
+   ```
+
+## Step 1 — Initialize Workspace
+
+1. Initialize version control:
+   ```matlab
+   result = eco_init('<project_path>');
+   ```
+   Creates `.git` repo (if absent), `.gitignore` (excluding `.diagnostics/`, `bench_results/`, `slprj/`, `*.mexw64`), and commits + tags initial state as `v0_pristine`. Idempotent — returns `'already_initialized'` with current HEAD SHA on re-entry.
+
+2. Bootstrap the runtime state file:
+   ```matlab
+   eco_state_init('<project_path>');
+   ```
+   Reads `assets/state_schema.json` and creates `.diagnostics/state.json` with all fields set to their schema defaults. Idempotent — skips if `state.json` already exists. This ensures a complete, schema-conformant state file exists before any `eco_state_read` or `eco_state_write` calls.
+
+3. Save the model to capture unsaved edits:
+   ```matlab
+   save_system('<model>');
+   ```
+
+4. Record the `v0_pristine` commitSHA from `eco_init` result for the first versionMap entry.
+
+## Step 2 — Harness Check
+
+**Never optimize a test harness directly.** Before any analysis, check:
+
 ```matlab
-close_system('<MODEL>', 0);
-clear mex; clear functions;
-system('git checkout -- .');
-system('git clean -fd');
-open_system(fullfile('<PROJECT_PATH>', '<MODEL>.slx'));
+try
+    ownerModel = get_param('<model>', 'OwnerModelName');
+    isHarness = ~isempty(ownerModel);
+catch
+    isHarness = false;
+end
 ```
 
-**Keep+re-measure:** Append to versionMap, clear metrics, route to Phase 2.
+Fallback (requires Simulink Test):
 ```matlab
-eco_snapshot('<PROJECT_PATH>', 'v<N>_external_edit', 'External model modifications incorporated', '<MODEL>')
+try
+    isHarness = sltest.harness.isHarness('<model>');
+catch
+    isHarness = false;
+end
 ```
 
-**Restore (mismatch):** State unchanged.
+**If harness detected:**
+1. Extract owner:
+   ```matlab
+   ownerModel = get_param('<model>', 'OwnerModelName');
+   ownerComponent = get_param('<model>', 'HarnessOwnerPath');
+   ```
+2. Close harness, open owner:
+   ```matlab
+   sltest.harness.close(ownerComponent, '<model>');
+   open_system(ownerModel);
+   ```
+3. Inform user: *"The model `<model>` is a test harness. The model under test is `<ownerModel>`. I'll work with that instead."*
+4. If the harness wraps a specific subsystem, note that path as a candidate for target functions.
+5. Replace `<model>` and `<project_path>` with the owner's values. Continue.
+
+Log: `OK OR-02: Not a harness` or `WARN OR-02: Harness detected — redirected to <ownerModel>`.
+
+## Step 3 — Model Summary & Fingerprint
+
+1. Query model properties using `evaluate_matlab_code` (use `get_param` calls — do NOT use `model_overview` or `model_query_params` MCP tools):
+   - Hardware target (`get_param('<model>', 'ProdHWDeviceType')`, `get_param('<model>', 'TargetHWDeviceType')`)
+   - System target file (`get_param('<model>', 'SystemTargetFile')`)
+   - Solver type (`get_param('<model>', 'SolverType')`) and sample times (`get_param('<model>', 'FixedStep')`)
+   - Top-level subsystems (`find_system('<model>', 'SearchDepth', 1, 'BlockType', 'SubSystem')`)
+
+2. Present a **natural-prose** summary: model name, application domain (if recognizable), architecture, hardware target, solver, sample times.
+
+3. Ask: *"Here's my understanding of the model. Does this look correct?"*
+
+4. **Do NOT proceed until the user confirms.** If corrected, update and re-confirm.
+
+5. Run model fingerprint and write to state immediately (same `evaluate_matlab_code` call):
+   ```matlab
+   fingerprint = model_fingerprint('<model>');
+   eco_state_write('<project_path>', 'MODEL_FINGERPRINT', fingerprint);
+   ```
+   ```matlab
+   eco_token_log('<project_path>', 'model_fingerprint', N)  % N from "eco_output_tokens: N"
+   ```
+
+Log: `OK GR-03: Model summary confirmed by user` or `WARN GR-03: Summary corrected — <what changed>`.
+
+## Step 4 — Match Routes
+
+Read `<skill_root>/router.json` (use the Read tool or equivalent — do NOT load it into MATLAB). Route matching is **entirely semantic** — read the JSON, then use each route's `description` (and the `match` object as additional context) to decide which route(s) best fit the user's prompt. Do NOT write code to iterate, parse, or print router fields. One route may match, or multiple routes may match if the user's request spans several workflows.
+
+When presenting the matched workflow(s) to the user, use the route's `id` as the human-readable name (e.g., "optimize", "author_crl") — never expose internal node IDs like `wf_optimize` or `wf_author_crl` (see **Communication — User-Facing Language** above). Those are internal identifiers for state and KG lookups only.
+
+**Stack population rules:**
+
+`PROCEDURE_STACK` is an ordered list of all active (non-terminated, non-abandoned) workflows. The **top** of the stack is `stack{end}` — the currently executing workflow, which always matches `PROCEDURE_ID`. An entry stays in the stack until it completes or is abandoned.
+
+- **Default (single workflow):** `PROCEDURE_STACK` contains one entry — the matched route's `procedure`. `PROCEDURE_ID` = that entry.
+- **Multiple workflows:** Only when the user *explicitly* requests ordered execution of multiple workflows (e.g., *"author CRL tables first, then optimize for speed"*), match all relevant routes and populate `PROCEDURE_STACK` with the execution order — first-to-execute at the end (top), last-to-execute at position 1. Present the ordered plan to the user using the route `id` names, and confirm before proceeding.
+- **No match:** Use `router.default`.
+
+Log: `OK RT-01: Matched route <id>` or `OK RT-01: Matched routes [<id1>, <id2>] — user-confirmed order`.
+
+## Step 5 — Gather Common Fields & Transition
+
+### Step 5a — Gather Common Fields
+
+Read `router.json`'s `common` section. Gather its `ask_user` fields and derive its `query_model` fields. These apply to **every** workflow, regardless of which route matched.
+
+**Auto-populated** (already set from Steps 2–3 — do not re-ask):
+- `PROJECT_PATH`, `MODEL`, `HARDWARE`, `MODEL_FINGERPRINT`
+
+**Ask common fields** (apply the communication rule — only ask the user the question itself; do not narrate field names, derivation logic, or internal state values):
+
+**1. BOARD_CONNECTED** — *"Is the target board currently connected?"*
+
+Only ask when HARDWARE (from model query in Step 3) is a real MCU/board, not generic. When HARDWARE is generic, silently set `BOARD_CONNECTED` to `N/A` — do not tell the user "BOARD_CONNECTED is not applicable" or mention the field name at all. Log: `OK GR-02: HARDWARE=<target>, BOARD_CONNECTED=<value>` or `OK GR-02: HARDWARE=generic — BOARD_CONNECTED not applicable`.
+
+**2. CONSTRAINTS** — *"Any constraints you'd like to mention before I start?"*
+
+Free-form text. Checked at suggestion time and goal-axis gate by the procedure.
+
+**Derive common `query_model` fields** (silently — never tell the user about derived field values):
+- **ENABLE_CRL**: `true` when HARDWARE is a real MCU/board (not generic)
+
+### Step 5b — Pre-populate Workflow Fields from Prompt
+
+For **every** matched route (all routes on the `PROCEDURE_STACK`), read its `ask_user` fields from `router.json`. Check whether the user's original prompt already provides a value for any of these fields. If so, write it to state under the workflow scope immediately (e.g., `eco_state_write('<path>', 'wf_optimize.GOAL', 'speed')`).
+
+This ensures workflow-specific values extracted from the prompt survive session interruptions — they are persisted before any workflow starts.
+
+**Do NOT ask workflow-specific questions here.** Only extract values that are explicitly evident from the user's prompt. Remaining fields are gathered when the workflow starts (see Workflow Entry Protocol below).
+
+### Write State
+
+Use `eco_state_write` to persist all common fields plus any pre-populated workflow fields. `PROCEDURE_STACK` is populated from route matching (Step 4). `PROCEDURE_ID` is the top of the stack.
+
+Common fields: MODEL, PROJECT_PATH, PROCEDURE_ID, HARDWARE, CONSTRAINTS, BOARD_CONNECTED, ENABLE_CRL, WORKSPACE_HEAD, PROCEDURE_STACK.
+
+`MODEL_FINGERPRINT` was already written to state in Step 3 — do not re-write here.
+
+### Transition
+
+1. **Append decision trace** for the gathering phase to `.diagnostics/eco_decision_trace.md` (see Decision Trace below).
+2. **Write state** via `eco_state_write` (see Write State above).
+3. **Load the procedure:**
+   ```matlab
+   ecokg_start_procedure('<project_path>', '<matched_route.procedure>');
+   ```
+   ```matlab
+   eco_token_log('<project_path>', 'ecokg_start_procedure', N)  % N from "eco_output_tokens: N" in console
+   ```
+4. **Begin execution.** The procedure content defines all subsequent phases, routing tables, transition protocol, and risk mitigations. Follow it from its Workflow Entry Protocol.
+
+---
+
+## Workflow Entry Protocol
+
+Every procedure starts by gathering its own workflow-specific fields. This runs **before** the procedure's Phase 1.
+
+1. **Read common fields** via `eco_state_read('<project_path>', {'MODEL', 'HARDWARE', ...})`.
+2. **Read this route's `ask_user` fields** from `router.json`.
+3. **Check which fields are already populated** — either pre-extracted from the user's prompt (Step 5b) or from a previous session. Read each via `eco_state_read('<project_path>', 'wf_<id>', '<field>')`.
+4. **Ask remaining unpopulated fields.** Apply any guardrails specific to these fields (e.g., GR-05, GR-06 for `wf_optimize`).
+5. **Derive `query_model` fields** from the route definition.
+6. **Write all workflow-specific fields** via `eco_state_write('<project_path>', 'wf_<id>.<field>', ...)`.
+
+Guardrails (GR-05, GR-06, etc.) are documented in each procedure's content, not here — they depend on workflow-specific fields that only that workflow knows about.
+
+---
+
+## Workflow Completion Protocol
+
+Every procedure node's content ends with a call to `eco_complete`. The agent does not need to detect completion — it simply follows the procedure's instructions, and the last instruction is always:
+
 ```matlab
-eco_revert('<PROJECT_PATH>', '<expectedSHA>', '<MODEL>')
+eco_complete('<project_path>');
 ```
 
-**Re-baseline (mismatch):** Update liveVersion's commitSHA to HEAD, clear metrics, route to Phase 2.
+`eco_complete` handles everything:
 
-### Token Usage Tracking
+1. Flushes the completed workflow's state fields.
+2. Pops the completed workflow from `PROCEDURE_STACK`.
+3. **Stack non-empty:** Sets `PROCEDURE_ID` to the new top (`stack{end}`). If that workflow has a `NEXT_ACTION` (delegation return), prints resume instructions. If not (sequential), prints instructions to start the workflow fresh from its Workflow Entry Protocol.
+4. **Stack empty (all done):** Updates `WORKSPACE_HEAD` to current HEAD, clears `PROCEDURE_ID`, and prints "all workflows complete." The next invocation starts fresh.
 
-Tracked via `eco_token_log` (uses `eco_token_count`). Ledger at `.eco_diagnostics/token_ledger.json`.
+This is the **only** place workflow fields are cleared. Individual procedure nodes do not flush their own state.
 
-Two sources: (1) **Static files** — counts from `<skill_root>/assets/file_token_registry.json`, logged by name only. (2) **Dynamic scripts** — print `eco_output_tokens: <N>` to console; agent extracts N from MCP response text.
+### Abandoning a Workflow
 
-**CRITICAL:** `eco_output_tokens` is console output, NOT a struct field. Do NOT access as `result.eco_output_tokens` — it will error. Run the script in one `evaluate_matlab_code` call, then log in a **separate** call:
+When the user asks to abandon, skip, or stop the current workflow mid-execution (e.g., *"abandon this workflow"*, *"skip this and move on"*, *"I want to stop CRL authoring and continue with optimization"*), call:
 
 ```matlab
-% WRONG — causes "Unrecognized field name" error:
-detail = ecokg_detail('sug_atomic_inline');
-eco_token_log('ecokg_detail', detail.eco_output_tokens);
-
-% CORRECT — two separate evaluate_matlab_code calls:
-% Call 1: run the script (console prints "eco_output_tokens: 1087")
-detail = ecokg_detail('sug_atomic_inline');
-disp(jsonencode(detail))
-
-% Call 2 (separate): log the token count extracted from console output
-eco_token_log('ecokg_detail', 1087)
+eco_complete('<project_path>', 'abandon');
 ```
 
-After file reads:
-```matlab
-eco_token_log('references/gathering-requirements.md')
-```
-After scripts (separate call):
-```matlab
-eco_token_log('ecokg_query', N)  % N from "eco_output_tokens: N" in console output
-```
+This performs the **exact same state operations** as normal completion — flush, pop, transition — but prints "abandoned" instead of "complete." The model state is NOT reverted automatically; it stays as-is. If the user wants to revert model changes made by the abandoned workflow, use `eco_revert` explicitly before calling `eco_complete` with `'abandon'`.
 
-The ledger IS the token report (OR-05). `renderOptimizationReport` reads it directly.
+**CRITICAL:** Never manually manipulate `PROCEDURE_STACK` or `PROCEDURE_ID` via `eco_state_write` to skip a workflow. Always use `eco_complete('<project_path>', 'abandon')` — it handles flush, pop, and transition correctly.
 
-### Decision Trace & Subskill Invocation Log
+---
 
-File: `.eco_diagnostics/eco_decision_trace.md`. Format: `OK <ID>` | `WARN <ID>` | `SKIP <ID>` with explanation. Every risk has a unique Diagnostic ID. Missing entries = never considered = diagnostic finding.
+## Decision Trace — Gathering Phase
+
+Append to `<project_path>/.diagnostics/eco_decision_trace.md` before transition:
 
 ```markdown
-## Phase: <N> — <name>
-### Skill: <path>
-### Decisions Made
-- <param>: <value> — <why>
+## Gathering Requirements
+### Common Fields
+- MODEL: <name> — <how detected>
+- HARDWARE: <value> — <from model>
+- BOARD_CONNECTED: <value> — <user said or N/A>
+- CONSTRAINTS: <value> — <user's exclusions>
+- PROCEDURE(S): <id(s)> — <matched route(s)>
+
+### Pre-populated Workflow Fields
+- <wf_id>.<field>: <value> — <extracted from user's prompt>
+(List only fields that were pre-extracted; omit if none.)
+
 ### Risk Checks
-- OK/WARN/SKIP <ID>: <detail>
-### Suggestions Emitted (Phase 3 only)
-- [S1] Stage C | "<desc>" | Blocks: [...] | Risk checks: OK SO-05, OK SO-06
-### Unexpected Events
-- <errors, retries, fallbacks>
-### Subskill Invocation Log
-- OK/SKIP <name>: <reason>
+- OK/WARN OR-02: <harness check>
+- OK/WARN RT-01: <route matching>
+- OK/WARN GR-02: <hardware context>
+- OK/WARN GR-03: <model summary confirmed>
 ```
 
-Every candidate child gets a line, even if skipped. Append at the start of every phase.
+Every ID must have an entry before transition. Missing = never checked = diagnostic finding.
 
-## Codegen-Only Path
+## Token Usage Tracking
 
-When `VERIFICATION_MODE = codegen`, Phase 2/4 use static analysis (no SIL/PIL):
-1. Skip `configureProfilingMode`.
-2. Run `CodeMetricsFetcherCodegen('<model>')` — normal sim (with signal logging for golden ref) + `slbuild` + `rtw.codemetrics.CodeMetrics`.
-3. Read generated `.c`/`.h` directly for analysis.
-4. Phase 2 saves golden reference from `simOut`.
-5. Phase 4 skips per-iteration correctness gate.
-6. Phase 5 runs mandatory SIL verification against golden ref. **Exception:** If `state.SIL_FALLBACK = true`, skip verification and omit from report.
+Tracked via `eco_token_log('<project_path>', source, N)`. Ledger: `<project_path>/.diagnostics/token_ledger.json`. All three arguments are required.
 
-**Restriction:** Codegen NOT permitted when GOAL = speed or balance (requires SIL/PIL for execution-time measurement).
+All token-heavy content flows through KG scripts (`ecokg_start_procedure`, `ecokg_detail`, `ecokg_query`) and instrumented MATLAB scripts (`model_fingerprint`, etc.). Each prints `eco_output_tokens: <N>` to console. Extract N from the MCP response text and pass it to `eco_token_log`.
 
-## Behavioral Guidelines
+**CRITICAL:** `eco_output_tokens` is console output, NOT a struct field. Do NOT access as `result.eco_output_tokens`. Run the script in one `evaluate_matlab_code` call, then log in a **separate** call:
 
-- Conversational iterative dialogue, not one-shot. Explain in plain language.
-- Be honest about uncertainty — suggest measuring when unsure.
-- Use tools, not guesses — always query actual values. Handle errors gracefully.
-- Track cumulative progress via version map. Use `ecokg_query` for the authoritative catalog.
-- Use sub-tasks for heavy reads.
-
-## Context & Token Management
-
-| Action | Where | Why |
-|--------|-------|-----|
-| Reading SIL/PIL reports or generated code | Sub-task | Large output; keeps main window clean |
-| Computing before/after deltas | Sub-task | Involves reading two reports |
-| Running Goal-Axis Gate delta computation | Sub-task | Heavy metric comparison delegated |
-| Running `validate_params`, `configureProfilingMode` | Main thread | Small output, informs next interaction |
-| Running `CodeMetricsFetcherSIL/PIL` | Main thread | Capture report path, then delegate reading |
-| Applying `set_param`, presenting suggestions | Main thread | Small/interactive |
-
-Rules: Never read reports/generated code in main thread. Never re-read files. Minimize tool output. Parallelize independent calls. Keep user messages concise.
-
-## Risk Table
-
-| ID | Risk | Mitigation |
-|----|------|------------|
-| OR-01 | Context overflow | Delegate heavy reads to sub-tasks |
-| OR-02 | Test-harness optimization | Run harness detection protocol |
-| OR-03 | Stale checkpoint | `save_system` then checkpoint AFTER gate passes |
-| OR-04 | codegen/SIL/PIL mismatch | Carry `VERIFICATION_MODE` in state; codegen blocked for speed/balance (GR-05) |
-| OR-05 | Token ledger empty | Refuse to transition until non-empty |
-| OR-06 | Decision trace missing | Refuse to transition until appended |
-| OR-07 | Goal-axis regression accepted | Run Goal-Axis Gate; ablate bundles |
-| OR-09 | Dirty workspace on resume | Run `eco_validate_state`; handle per Recovery Options |
-| OR-10 | Stale state after revert | Rewrite state BEFORE transition after every revert |
-| OR-11 | Diagnostic-file wipe via revert | `.gitignore` with `.eco_diagnostics/`; reconstruct from context |
-| OR-12 | Missing v1_baseline | Always take in Phase 2 after initial SIL/PIL run |
-| OR-13 | Premature finalization | Inform user of remaining stages; respect explicit stop |
-| OR-14 | Correctness regression | Run Correctness Gate before efficiency gate; auto-reject on FAIL |
-| OR-15 | Golden ref not saved | Always save in Phase 2; store path in state |
-| OR-16 | Customer preferences ignored | Check `.custom_optimizations/` at Phase 3/4 entry |
-| OR-17 | Over-suppression | Warn if all subskills for GOAL are suppressed |
-| OR-18 | Custom optimization breaks model | Gates still run; auto-revert on failure |
-| OR-19 | Codegen for runtime goal | Phase 1 guardrail GR-05: explain and upgrade to SIL/PIL |
+```matlab
+% Call 1: run the script (console prints "eco_output_tokens: N")
+ecokg_start_procedure('<project_path>', 'wf_optimize');
+% Call 2 (separate): log the token count read from console
+eco_token_log('<project_path>', 'ecokg_start_procedure', N)
+```
 
 ----
 

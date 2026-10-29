@@ -1,0 +1,22 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for arranging-simulink-layouts
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "1.0"
+human-description: Arranges and tidies Simulink block diagram layouts with the model_edit layout engine. Use when fixing or tidying a layout, re-placing specific blocks, or grouping and expanding subsystems.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+optional-products: []
+required-tools:
+  - model_edit
+  - model_read
+  - model_overview
+  - model_check
+  - model_query_params
+  - evaluate_matlab_code
+required-skills: []
+reference-files:
+  - references/subsystem-restructuring.md

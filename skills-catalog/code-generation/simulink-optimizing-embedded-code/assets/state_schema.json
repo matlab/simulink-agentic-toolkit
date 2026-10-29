@@ -1,0 +1,43 @@
+{
+  "id": "state_schema",
+  "version": "3.1",
+  "common": {
+    "MODEL":              { "type": "string" },
+    "PROJECT_PATH":       { "type": "string" },
+    "PROCEDURE_ID":       { "type": "string" },
+    "HARDWARE":           { "type": "string" },
+    "CONSTRAINTS":        { "type": "string" },
+    "BOARD_CONNECTED":    { "type": "boolean", "default": false },
+    "ENABLE_CRL":         { "type": "boolean" },
+    "MODEL_FINGERPRINT":  { "type": "object" },
+    "WORKSPACE_HEAD":     { "type": "string" },
+    "PROCEDURE_STACK":    { "type": "array",   "default": [] }
+  },
+  "wf_optimize": {
+    "GOAL":               { "type": "string",  "values": ["speed", "RAM", "ROM", "balance", "MISRA"] },
+    "VERIFICATION_MODE":  { "type": "string",  "values": ["codegen", "SIL", "PIL"] },
+    "TRADEOFFS":          { "type": "string" },
+    "PROFILING_FOCUS":    { "type": "string",  "values": ["time", "stack"] },
+    "REPORT_LEVEL":       { "type": "string",  "values": ["coarse", "detailed"] },
+    "SIM_STOP_TIME":      { "type": "string" },
+    "GOLDEN_REF_PATH":    { "type": "string" },
+    "TARGET_FUNCTIONS":   { "type": "array" },
+    "CURRENT_STAGE":      { "type": "string",  "values": ["A", "B", "C", "D", "FINALIZE"] },
+    "STAGE_SCOPE":        { "type": "array",   "default": ["A", "B", "C", "D"] },
+    "DEFERRED_LEVERS":    { "type": "array",   "default": [] },
+    "liveVersion":        { "type": "string" },
+    "versionMap":         { "type": "array" },
+    "LATEST_METRICS":     { "type": "object" },
+    "REPORT_FILE":        { "type": "string" },
+    "NEXT_ACTION":        { "type": "string" },
+    "SIL_FALLBACK":       { "type": "boolean", "default": false },
+    "TOLERANCE":          { "type": "object",  "default": { "absolute": 1e-6, "relative": 0.01 } },
+    "VERIFY":             { "type": "object" }
+  },
+  "wf_author_crl": {
+    "NEXT_ACTION":        { "type": "string" }
+  },
+  "versionMap_entry": {
+    "fields": ["version", "tag", "commitSHA", "metrics", "status", "parentVersion", "revertCause", "revertTargetVersion", "revertTargetCommitSHA"]
+  }
+}

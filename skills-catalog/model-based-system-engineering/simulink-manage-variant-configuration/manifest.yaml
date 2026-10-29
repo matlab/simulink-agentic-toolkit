@@ -1,0 +1,18 @@
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.0"
+human-description: Explore, create, validate, and activate Simulink variant configurations.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - Variant Manager for Simulink
+  - Simulink Test
+  - Parallel Computing Toolbox
+required-skills: []
+required-tools:
+  - evaluate_matlab_code
+optional-products: []
+
+# Copyright 2026 The MathWorks, Inc.

@@ -109,3 +109,10 @@ skill-groups:
     requires-products:
       - Simulink
       - Simulink Real-Time
+
+  - name: simulink-block-and-blockset-authoring
+    display-name: "Simulink Block and Blockset Authoring"
+    description: "Author the appearance of custom Simulink blocks, such as dynamic SVG block icons"
+    path: skills-catalog/simulink-block-and-blockset-authoring
+    requires-products:
+      - Simulink

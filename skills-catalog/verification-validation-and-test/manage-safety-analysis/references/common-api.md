@@ -18,7 +18,7 @@ ft = fileType(filePath);
 % Throws an error if the file is not a Safety Analysis Manager file (e.g., Simulink Test Manager .mldatx files).
 %
 % "document" -> proceed with safetyAnalysisMgr.openDocument(filePath)
-% "template" -> proceed with safetyAnalysisMgr.newSpreadsheet(filePath) or newTree(filePath)
+% "template" -> proceed with safetyAnalysisMgr.newSpreadsheet(filePath) (R2023b+) or safetyAnalysisMgr.newDocument(filePath) (R2026b+)
 ```
 
 | MATLAB Release | How to call |
@@ -38,7 +38,7 @@ ss = safetyAnalysisMgr.import(fileName)                       % Import Excel fil
 
 ### Unified Document Creation (R2026b+)
 
-Alternative to `newSpreadsheet`/`newTree` — creates either document type via a single entry point.
+Alternative to `newSpreadsheet` — creates either document type via a single entry point.
 
 ```matlab
 doc = safetyAnalysisMgr.newDocument('spreadsheet')            % Create new blank spreadsheet

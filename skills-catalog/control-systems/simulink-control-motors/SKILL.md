@@ -4,7 +4,7 @@ description: "Build motor control solutions using Motor Control Blockset for PMS
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Simulink Control Motors — Motor Control Blockset Skill

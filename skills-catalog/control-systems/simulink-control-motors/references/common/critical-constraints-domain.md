@@ -151,12 +151,12 @@ for i = 1:numel(lines)
 end
 ```
 
-### Rule 32: arrangeSystem Before save_system
-```matlab
-Simulink.BlockDiagram.arrangeSystem(mdl);  % Auto-layout
-save_system(mdl);
+### Rule 32: Layout Before save_system
+```text
+model_edit(mdl, "root", [], "full")         % repeat for each subsystem scope you built
+evaluate_matlab_code → save_system(mdl)
 ```
-Always arrange before save -- prevents overlapping blocks in saved model.
+Always lay out the scopes you built before saving. This prevents overlapping blocks in the saved model. Use `model_edit` full layout, not `Simulink.BlockDiagram.arrangeSystem`, unless the user asks for Auto Arrange. For tidying a model the user arranged by hand, see the `arranging-simulink-layouts` skill.
 
 ---
 

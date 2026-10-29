@@ -114,13 +114,13 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
    --extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
    ```
 
-4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, `physical-modeling/`, `code-generation/`, and `real-time-simulation-and-testing/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, `physical-modeling/`, `code-generation/`, `real-time-simulation-and-testing/`, and `simulink-block-and-blockset-authoring/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
    For platforms that discover skills from `~/.agents/skills/`, create symlinks:
 
    ```bash
    mkdir -p ~/.agents/skills
-   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing physical-modeling code-generation real-time-simulation-and-testing; do
+   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing physical-modeling code-generation real-time-simulation-and-testing simulink-block-and-blockset-authoring; do
      for skill in /path/to/simulink-agentic-toolkit/skills-catalog/$group/*/; do
        ln -s "$skill" ~/.agents/skills/$(basename "$skill")
      done
@@ -219,6 +219,21 @@ satk.Configuration.setCustomLibraries("C:\path\to\customLibs")
 ```
 This declares your custom libraries. By default (`GenerateKB=false`), the knowledge base is **not** built immediately — on the next model-building task or on invocation of the **'setup-custom-libraries'** skill, the agent indexes the libraries into a knowledge base (~3–5 min to complete), enabling usage of custom blocks alongside built-in ones.
 
+Each entry is either a directory (every `.slx`/`.mdl` in it is registered) or a
+path to a single library file. To register more than one, pass a string array or
+a cell array:
+
+```matlab
+% Multiple directories
+satk.Configuration.setCustomLibraries(["C:\path\to\motorLibs", "C:\path\to\sensorLibs"])
+
+% Individual library files
+satk.Configuration.setCustomLibraries(["C:\libs\motorLib.slx", "C:\libs\sensorLib.slx"])
+```
+
+Each call **replaces** the full set of registered custom libraries rather than
+adding to it — list every library you want in a single call.
+
 #### Options
 
 `setCustomLibraries` accepts the following options:
@@ -308,6 +323,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Physical Modeling](skills-catalog/physical-modeling/) | Model, simulate, and analyze multidomain physical systems with the Simscape product family |
 | [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code, configuring Embedded Coder deployment settings, and customizing A2L calibration files |
 | [Real-Time Simulation and Testing](skills-catalog/real-time-simulation-and-testing/) | Configure, deploy, and run Simulink models on real-time target computers with Simulink Real-Time |
+| [Simulink Block and Blockset Authoring](skills-catalog/simulink-block-and-blockset-authoring/) | Author the appearance of custom Simulink blocks, such as dynamic SVG block icons |
 
 ## Security Considerations
 When using the Simulink Agentic Toolkit and MATLAB MCP Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).

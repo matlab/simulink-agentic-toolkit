@@ -12,7 +12,8 @@ WHILE violations > 0:
     2. Categorize and prioritize by Fix Order (below)
     3. Select the highest-priority fixable category
     4. Present ALL planned changes as a numbered list to user
-    5. Wait for user confirmation
+    5. Wait for user confirmation — end your turn; the original request
+       to "fix" does not approve this batch
        - If user declines → EXIT, report current state
     6. Apply fixes
     7. Re-run the same checks

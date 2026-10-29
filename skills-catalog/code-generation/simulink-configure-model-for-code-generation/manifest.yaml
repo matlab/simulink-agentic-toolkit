@@ -2,16 +2,19 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: product-specific
-version: "2.1.0"
-human-description: Configures Simulink models for Embedded Coder (ERT), Simulink Coder (GRT rapid-prototyping), or AUTOSAR code generation. Applies deployment settings (target, hardware, objective, MISRA compliance) across a model reference hierarchy automatically, with automatic revert on error.
+version: "2.2.0"
+human-description: Configure Simulink models for ERT, GRT, or AUTOSAR code generation.
 matlab-release: ">=R2023b"
 required-tools:
   - evaluate_matlab_code
 required-skills: []
+reference-files:
+  - references/phrase-mapping.md
 required-products:
   - Simulink
   - Embedded Coder
   - Simulink Coder
   - MATLAB Coder
-optional-products: []
+optional-products:
+  - AUTOSAR Blockset
 toolkit: simulink-agentic-toolkit

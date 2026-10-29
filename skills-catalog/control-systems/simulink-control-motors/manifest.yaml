@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "1.0"
+version: "1.1"
 human-description: "Build motor control drives for PMSM, BLDC, induction, and SynRM motors using Motor Control Blockset. Covers FOC, sensorless control, six-step, field weakening, MTPA/MTPV, gain tuning, and embedded code generation."
 matlab-release: ">=R2025a"
 required-tools:

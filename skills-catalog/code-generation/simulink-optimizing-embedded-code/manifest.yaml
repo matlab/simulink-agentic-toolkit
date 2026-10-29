@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: product-specific
-version: "2.0"
+version: "3.0"
 human-description: Optimize Simulink Embedded Coder generated code for runtime, RAM, ROM, stack usage, and MISRA compliance.
 matlab-release: ">=R2023a"
 toolkit: simulink-agentic-toolkit
@@ -17,17 +17,8 @@ required-tools:
   - run_matlab_file
 required-skills: []
 reference-files:
-  - references/gathering-requirements.md
-  - references/measuring-model-metrics/reference.md
-  - references/measuring-model-metrics/configuring-code-profile/reference.md
-  - references/suggesting-optimizations.md
-  - references/finalizing-results.md
-  - references/evolutions-checkpoint.md
-  - references/protocols/checkpointing-revert.md
-  - references/protocols/goal-axis-gate.md
-  - references/protocols/correctness-gate.md
-  - references/protocols/customer-extensions.md
-  - references/protocols/harness-detection.md
+  - router.json
+  - assets/ecokg.enc
   - scripts/CodeMetricsFetcherSIL.m
   - scripts/CodeMetricsFetcherPIL.m
   - scripts/CodeMetricsFetcherCodegen.m
@@ -49,4 +40,8 @@ reference-files:
   - scripts/eco_validate_state.m
   - scripts/eco_token_log.m
   - scripts/eco_token_count.m
-  - assets/file_token_registry.json
+  - assets/state_schema.json
+  - assets/optimization_preferences.yaml
+  - assets/customer-extensions.md
+  - assets/per-model-report-template.html
+  - assets/per-model-report-template.md
