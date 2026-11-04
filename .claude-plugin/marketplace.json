@@ -46,7 +46,7 @@
     },
     {
       "name": "code-generation",
-      "version": "0.7.2",
+      "version": "0.7.3",
       "description": "Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code for runtime, memory, and MISRA compliance, configuring Embedded Coder deployment settings, and customizing A2L calibration files",
       "author": {
         "name": "MathWorks"

@@ -4,7 +4,7 @@ description: "Routes Embedded Coder workflows for Simulink models. Use when aske
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "3.0"
+  version: "3.1"
 ---
 
 # Simulink Embedded Coder

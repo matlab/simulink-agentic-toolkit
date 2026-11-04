@@ -81,6 +81,8 @@ Skills for code generation
 | `simulink-configure-model-for-code-generation` | Configure Simulink models for Embedded Coder (ERT), Simulink Coder (GRT rapid-prototyping), or AUTOSAR code generation — target selection, hardware config, MISRA compliance across model reference hierarchies (requires Embedded Coder or Simulink Coder) |
 | `simulink-optimizing-embedded-code` | Optimize Simulink Embedded Coder generated code for runtime, RAM, ROM, stack usage, and MISRA compliance (requires Embedded Coder) |
 | `simulink-single-precision-conversion` | Convert a double-precision Simulink system or subsystem to single precision (requires Fixed-Point Designer) |
+| `slci-compatibility-analysis` | Verify Simulink model compatibility with SLCI code inspection and fix incompatibilities (requires Simulink Code Inspector) |
+| `slci-inspection-incompatibility-analysis` | Trace SLCI code inspection failures to root-cause incompatibilities or known limitations (requires Simulink Code Inspector) |
 
 ### [Simulink Modeling](simulink-modeling/)
 
