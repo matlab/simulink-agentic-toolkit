@@ -114,13 +114,13 @@ If you prefer to manage your own MATLAB MCP server installation and agent config
    --extension-file=/path/to/simulink-agentic-toolkit/tools/tools.json
    ```
 
-4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, `physical-modeling/`, `code-generation/`, `real-time-simulation-and-testing/`, and `simulink-block-and-blockset-authoring/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
+4. Register skills by pointing your agent's skill or prompt directory at each non-empty group under `skills-catalog/` — `model-based-design-core/`, `model-based-system-engineering/`, `verification-validation-and-test/`, `simulink-simulation/`, `simulink-modeling/`, `control-systems/`, `simulink-environment-fundamentals/`, `signal-processing/`, `physical-modeling/`, `code-generation/`, `real-time-simulation-and-testing/`, `simulink-block-and-blockset-authoring/`, and `aerospace/`. Each skill is a self-contained `SKILL.md` with a `manifest.yaml`.
 
    For platforms that discover skills from `~/.agents/skills/`, create symlinks:
 
    ```bash
    mkdir -p ~/.agents/skills
-   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing physical-modeling code-generation real-time-simulation-and-testing simulink-block-and-blockset-authoring; do
+   for group in model-based-design-core model-based-system-engineering verification-validation-and-test simulink-simulation simulink-modeling control-systems simulink-environment-fundamentals signal-processing physical-modeling code-generation real-time-simulation-and-testing simulink-block-and-blockset-authoring aerospace; do
      for skill in /path/to/simulink-agentic-toolkit/skills-catalog/$group/*/; do
        ln -s "$skill" ~/.agents/skills/$(basename "$skill")
      done
@@ -316,7 +316,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Model-Based System Engineering](skills-catalog/model-based-system-engineering/) | Model-Based System Engineering skills for System Composer architecture models |
 | [Verification, Validation, and Test](skills-catalog/verification-validation-and-test/) | Author custom Model Advisor checks, run compliance reviews against industry standards (MISRA, MAB, ISO 26262, DO-178C, etc.), fix SLDV incompatibilities, and explain missing coverage |
 | [Simulink Simulation](skills-catalog/simulink-simulation/) | Skills for constructing simulation input datasets and configuring simulation workflows |
-| [Simulink Modeling](skills-catalog/simulink-modeling/) | Configure and integrate C/C++ code into Simulink models via C Function blocks |
+| [Simulink Modeling](skills-catalog/simulink-modeling/) | Configure and integrate C/C++ and Python code into Simulink models via C Function and Python Code blocks |
 | [Control Systems](skills-catalog/control-systems/) | Control system design and analysis skills for Simulink models |
 | [Simulink Environment Fundamentals](skills-catalog/simulink-environment-fundamentals/) | Core Simulink environment capabilities, including discovering shipped example models |
 | [Signal Processing](skills-catalog/signal-processing/) | Frame-based streaming DSP models in Simulink using DSP System Toolbox |
@@ -324,6 +324,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Code Generation](skills-catalog/code-generation/) | Prepare Simulink models for production code generation, including single-precision conversion, optimizing generated embedded code, configuring Embedded Coder deployment settings, and customizing A2L calibration files |
 | [Real-Time Simulation and Testing](skills-catalog/real-time-simulation-and-testing/) | Configure, deploy, and run Simulink models on real-time target computers with Simulink Real-Time |
 | [Simulink Block and Blockset Authoring](skills-catalog/simulink-block-and-blockset-authoring/) | Author the appearance of custom Simulink blocks, such as dynamic SVG block icons |
+| [Aerospace](skills-catalog/aerospace/) | Aerospace skills for Simulink models using Aerospace Blockset |
 
 ## Security Considerations
 When using the Simulink Agentic Toolkit and MATLAB MCP Server, you should thoroughly review and validate all tool calls before you run them. Always keep a human in the loop for important actions and only proceed once you are confident the call will do exactly what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2025-06-18/server/tools#security-considerations).

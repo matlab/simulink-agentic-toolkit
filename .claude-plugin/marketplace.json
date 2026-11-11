@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.10.0",
+      "version": "0.11.0",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -72,12 +72,12 @@
     },
     {
       "name": "simulink-modeling",
-      "version": "0.1.0",
-      "description": "Configure and integrate C/C++ code into Simulink models via C Function blocks",
+      "version": "0.2.0",
+      "description": "Configure and integrate C/C++ and Python code into Simulink models via C Function and Python Code blocks",
       "author": {
         "name": "MathWorks"
       },
-      "keywords": ["simulink", "c-function", "custom-code", "legacy-code", "cpp", "integration"],
+      "keywords": ["simulink", "c-function", "custom-code", "legacy-code", "cpp", "python", "python-code", "integration"],
       "source": "./skills-catalog/simulink-modeling",
       "category": "development",
       "strict": false,
@@ -157,6 +157,27 @@
       },
       "keywords": ["simulink", "mask", "block-icon", "icon-editor", "svg", "dvg", "block-authoring"],
       "source": "./skills-catalog/simulink-block-and-blockset-authoring",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "aerospace",
+      "version": "0.1.0",
+      "description": "Aerospace skills for Simulink models using Aerospace Blockset",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": [
+        "simulink",
+        "aerospace",
+        "aerospace-blockset",
+        "multi-vehicle",
+        "uav",
+        "mission-planning",
+        "trajectory"
+      ],
+      "source": "./skills-catalog/aerospace",
       "category": "development",
       "strict": false,
       "skills": "./"

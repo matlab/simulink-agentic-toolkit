@@ -1,0 +1,30 @@
+# Copyright 2026 The MathWorks, Inc.
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "1.2"
+human-description: Create multi-vehicle aerospace simulations from actor models, trajectories, and coordination.
+matlab-release: ">=R2026b"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - Aerospace Blockset
+  - System Composer
+  - Stateflow
+optional-products: []
+required-tools:
+  - evaluate_matlab_code
+  - model_query_params
+  - model_edit
+required-skills:
+  - building-simulink-models
+  - building-architecture-models
+  - managing-simulink-projects
+  - simulating-simulink-models
+reference-files:
+  - references/actor-models-reference.md
+  - references/architecture-components.md
+  - references/common-mistakes.md
+  - references/coordination-patterns.md
+  - references/frame-consistency-rules.md
+  - references/mission-planning-reference.md

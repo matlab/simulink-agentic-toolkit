@@ -3,8 +3,8 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "1.0"
-human-description: Arranges and tidies Simulink block diagram layouts with the model_edit layout engine. Use when fixing or tidying a layout, re-placing specific blocks, or grouping and expanding subsystems.
+version: "1.1"
+human-description: Arranges Simulink block diagram layout to improve readability using the model_edit layout engine. Use when fixing or tidying a layout, repositioning specific blocks, or grouping and expanding subsystems.
 matlab-release: ">=R2023a"
 toolkit: simulink-agentic-toolkit
 required-products:

@@ -28,7 +28,7 @@ skill-groups:
 
   - name: simulink-modeling
     display-name: "Simulink Modeling"
-    description: "Configuring and integrating C/C++ code into Simulink models via C Function blocks"
+    description: "Configuring and integrating C/C++ and Python code into Simulink models via C Function and Python Code blocks"
     path: skills-catalog/simulink-modeling
     requires-products:
       - Simulink
@@ -116,3 +116,11 @@ skill-groups:
     path: skills-catalog/simulink-block-and-blockset-authoring
     requires-products:
       - Simulink
+
+  - name: aerospace
+    display-name: "Aerospace"
+    description: "Aerospace skills for Simulink models using Aerospace Blockset"
+    path: skills-catalog/aerospace
+    requires-products:
+      - Simulink
+      - Aerospace Blockset

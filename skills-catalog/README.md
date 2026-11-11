@@ -12,7 +12,7 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 
 | Skill | Description |
 |-------|---------------------------|
-| `arranging-simulink-layouts` | Fix, tidy, or rearrange block diagram layouts — re-place selected blocks without moving the rest, and group or expand subsystems |
+| `arranging-simulink-layouts` | Fix, tidy, or rearrange block diagram layouts — reposition selected blocks without moving the rest, and group or expand subsystems |
 | `building-simulink-models` | Best practices for structural model changes, for example, adding blocks, wiring, layout |
 | `configuring-block-policy` | Create and manage `.satk/block-policy.json` to control which blocks the agent can use and which parameters it can modify |
 | `simulink-curating-library-kg` | Curate the library knowledge index — mark common blocks, define categories, and improve descriptions for better agent block selection |
@@ -86,11 +86,12 @@ Skills for code generation
 
 ### [Simulink Modeling](simulink-modeling/)
 
-Configure and integrate C/C++ code into Simulink models via C Function blocks
+Configure and integrate C/C++ and Python code into Simulink models via C Function and Python Code blocks
 
 | Skill | Description |
 |-------|---------------------------|
 | `simulink-use-c-function-block` | Configure Simulink C Function blocks programmatically using the SymbolSpec API |
+| `simulink-integrate-python-code` | Run and integrate Python code inside a Simulink model with the Python Code block |
 
 ### [Control Systems](control-systems/)
 
@@ -138,6 +139,14 @@ Author the appearance of custom Simulink blocks, such as dynamic SVG block icons
 | `simulink-create-block-icon` | Create and register dynamic SVG icons on Simulink blocks — visibility conditions, live text, equations, shaped frames, first-fit sizing, resize behavior, and port labels, authored the MathWorks-recommended IconEditor way and editable in the IconEditor |
 
 ---
+
+### [Aerospace](aerospace/)
+
+Aerospace skills for Simulink models using Aerospace Blockset
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-compose-multi-vehicle-system` | Create multi-vehicle aerospace simulations from actor models, trajectories, and coordination (requires Aerospace Blockset R2026b) |
 
 ## Adding Skills
 
