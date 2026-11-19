@@ -40,11 +40,9 @@ body:
       description: Which coding agent are you using, if relevant?
       options:
         - Claude Code
-        - GitHub Copilot
-        - Cursor
-        - Codex
-        - Amp
-        - Gemini CLI
+        - GitHub Copilot in VS Code
+        - GitHub Copilot CLI
+        - OpenAI Codex
         - Other
     validations:
       required: false

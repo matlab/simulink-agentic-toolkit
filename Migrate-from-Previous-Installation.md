@@ -1,42 +1,42 @@
 # Migrate from a Previous Installation
 
-If you set up the Simulink® Agentic Toolkit using an earlier version (the agent-driven "Set up the Simulink Agentic Toolkit" workflow), you should clean up the old installation before using `setupAgenticToolkit`. The old workflow installed files to different locations that the new setup script does not manage.
+Use the [Agentic Toolkit Installer](https://github.com/matlab/agentic-toolkit-installer) to install the Simulink® Agentic Toolkit. The Agentic Toolkit Installer replaces the `setupAgenticToolkit` installer (`agenticToolkitInstaller.mltbx`) and the previous agent-driven setup.
 
-### What to Remove
+## What the Installer Removes for You
 
-1. **Old toolkit data folder** — delete `~/.simulink-agentic-toolkit/` (macOS/Linux) or `%USERPROFILE%\.simulink-agentic-toolkit\` (Windows). This was the data directory used by the old agent-driven setup.
+When you run `agentic-toolkit-installer install`, the installer detects previous installations and prompts you to remove them before proceeding with the installation.
 
-2. **MCP server binary** — delete `~/.matlab/agentic-toolkits/bin/matlab-mcp-server` (macOS/Linux) or `%USERPROFILE%\.matlab\agentic-toolkits\bin\matlab-mcp-server.exe` (Windows). Some earlier versions installed the binary as `matlab-mcp-core-server` or to `~/.local/bin/` or `%USERPROFILE%\.local\bin\` — check both locations and names.
+The installer can remove:
 
-3. **MCP Add-On** — delete `~/.local/share/MATLABMCPCoreServerToolbox.mltbx` (macOS/Linux) or `%USERPROFILE%\.local\share\MATLABMCPCoreServerToolbox.mltbx` (Windows). If you already installed the toolbox in MATLAB, you can uninstall it via `matlab.addons.uninstall` or manually through the Add-On Manager — the new setup uninstalls any previous copy automatically before installing the latest `.mltbx`. (The toolbox was previously named "MATLAB MCP Core Server Toolbox" and is now "MATLAB MCP Server Toolbox".)
+- The installation created by `setupAgenticToolkit` in `~/.matlab/agentic-toolkits/` (`%USERPROFILE%\.matlab\agentic-toolkits\` on Windows), including its Model Context Protocol (MCP) server binary
+- Files created by the previous agent-driven installation workflow, including `~/.simulink-agentic-toolkit/` and the MCP server binary and toolbox under `~/.local/`
+- The **MathWorks Agentic Toolkit Setup** and **MATLAB MCP Core Server Toolbox** add-ons from the previous installation
+- Previous `matlab` or `simulink` MCP server entries and toolkit plugin marketplaces configured for your coding agents
+- Skill symbolic links that reference the previous installation in `~/.agents/skills/`, `~/.claude/skills/`, and `~/.copilot/skills/`
 
-4. **Agent MCP configuration** — remove the old `matlab` or `simulink` MCP server entry from your agent's config file. Your config should **not** reference any of the paths above. The location depends on your platform:
-   - Claude Code: `~/.claude.json` (`%USERPROFILE%\.claude.json` on Windows) — remove the entry from `mcpServers`
-   - GitHub Copilot: VS Code user-profile `mcp.json` (remove the `matlab` or `simulink` server). File location: `~/Library/Application Support/Code/User/mcp.json` (macOS), `~/.config/Code/User/mcp.json` (Linux), `%APPDATA%\Code\User\mcp.json` (Windows)
-   - OpenAI Codex: `~/.codex/config.toml` (remove `[mcp_servers.matlab]` or `[mcp_servers.simulink]`)
-   - Gemini CLI: `~/.gemini/settings.json` (remove the `mcpServers` entry)
-   - Sourcegraph Amp: `~/.config/amp/settings.json` (remove `amp.mcpServers.matlab` or `amp.mcpServers.simulink` **and** `amp.skills.path`)
+Close your coding agents before you run the installer. On Windows, a running agent can prevent the installer from removing an MCP server binary that is in use.
 
-5. **Skill registrations** — remove old symlinks or skill files that point into your old toolkit clone from all possible skill locations:
+## What You Still Need to Do
 
-   **Global (user-level):**
-   - `~/.agents/skills/`
-   - `~/.claude/skills/`
-   - `~/.copilot/skills/`
+1. **Clean up `startup.m`.** The installer does not edit your files. If you added these lines, remove them:
 
-   **Project-level** (check any projects where you previously used the toolkit):
-   - `.agents/skills/`
-   - `.claude/skills/`
-   - `.github/skills/`
+   ```matlab
+   addpath("~/.matlab/agentic-toolkits/simulink")   % or the fullfile(getenv('USERPROFILE'), ...) form
+   satk_initialize
+   ```
 
-   **Other locations:**
-   - Any custom paths configured via the VS Code `chat.agentSkillsLocations` setting
-   - For Amp, remove the `amp.skills.path` entry in `~/.config/amp/settings.json` if it references your old toolkit path
+   The toolkit is on the MATLAB path automatically, so you no longer need `satk_initialize`. The function still works and issues a deprecation warning. However, a future release will remove it. If your scripts call `validate_installation`, replace it with `satk_doctor`. Installations from the Agentic Toolkit Installer do not include `validate_installation`.
 
-6. **Old toolkit clone** — if you cloned the repository just for setup and no longer need it as a reference, you can delete it. The new setup script downloads toolkit files to `~/.matlab/agentic-toolkits/`.
+2. **Remove references from project-level configuration.** If you set up the toolkit for a specific project instead of globally:
+   - In the project skill folders (`.agents/skills/`, `.claude/skills/`, or `.github/skills/`), remove links that reference the previous installation.
+   - In the project MCP configuration files (`.mcp.json` for Claude Code, `.vscode/mcp.json` for GitHub Copilot in VS Code), remove the previous `matlab` server entry. Otherwise, your agent can list the MCP server twice or connect to the previous installation.
 
-> **Tip:** After removing the items above, you can ask your coding agent to search your home directory for any remaining references to the old toolkit (e.g., "matlab-mcp", "simulink-agentic-toolkit", or old paths like `.local/bin`) to catch anything we missed.
+3. **Delete an old toolkit clone.** If you cloned the Simulink Agentic Toolkit repository only to set up the toolkit, delete the clone.
 
-After cleaning up, follow the [Automated Setup](README.md#install-simulink-agentic-toolkit-automated-setup) instructions in the README.
+4. **Restart MATLAB and your agents, and then run `satk_doctor` in MATLAB.** Review the diagnostic results for references to the previous `setupAgenticToolkit` installation.
+
+> **Tip:** Ask your coding agent to search your home folder for any remaining references to the old setup (for example, `matlab-mcp-core-server`, `agentic-toolkits`, or `.local/bin`) to catch anything left over.
 
 ---
+
+Copyright 2025-2026 The MathWorks, Inc.

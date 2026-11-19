@@ -1,0 +1,46 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for simscape-diagnose-simulation-error
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: product-specific
+version: "0.2"
+human-description: Diagnose and fix Simscape simulation errors and solver warnings.
+matlab-release: ">=R2023a"
+required-tools:
+  - evaluate_matlab_code
+  - model_query_params
+  - model_edit
+  - model_overview
+  - model_test
+required-skills: []
+reference-files:
+  - scripts/+simscape/+agentic/initialization_analyzer_run.p
+  - scripts/+simscape/+agentic/InitializationAnalysis.p
+  - scripts/+simscape/+agentic/variable_viewer_run.p
+  - scripts/+simscape/+agentic/statistics_viewer_run.p
+  - scripts/+simscape/+agentic/ModelStatistics.p
+  - scripts/+simscape/+agentic/variable_scaling_analyzer_run.p
+  - scripts/+simscape/+agentic/VariableScaling.p
+  - scripts/+simscape/+agentic/stiffness_analyzer_run.p
+  - scripts/+simscape/+agentic/spsInputSampleTimes.p
+  - scripts/+simscape/+agentic/spsInputJumps.p
+  - scripts/+simscape/+agentic/parasiticParameters.p
+  - scripts/+simscape/+agentic/nominal_values_get_nominal_values.p
+  - scripts/+simscape/+agentic/nominal_values_is_nominal_enabled.p
+  - scripts/+simscape/+agentic/nominal_values_set_nominal_values.p
+  - scripts/+simscape/+agentic/nominal_values_set_nominal_enabled.p
+  - scripts/+simscape/+agentic/simscape_debug_require_api.p
+  - scripts/+simscape/+agentic/simscape_debug_require_param.p
+  - scripts/+simscape/+agentic/simscape_debug_require_network.p
+  - references/initialization_analyzer.md
+  - references/variable_viewer.md
+  - references/statistics_viewer.md
+  - references/variable_scaling_analyzer.md
+  - references/nominal_values.md
+  - references/stiffness_analyzer.md
+  - references/sps_input_jumps.md
+required-products:
+  - Simulink
+  - Simscape
+optional-products: []
+toolkit: simulink-agentic-toolkit

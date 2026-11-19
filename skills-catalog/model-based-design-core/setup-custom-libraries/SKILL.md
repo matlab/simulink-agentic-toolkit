@@ -4,7 +4,7 @@ description: Register, add, or update existing custom Simulink block libraries a
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.2.1"
+  version: "1.2.2"
 ---
 
 # Setup Custom Libraries
@@ -22,7 +22,6 @@ Register or update custom Simulink block libraries so the agent prefers them ove
 ## When NOT to Use
 
 - User wants to **create** a custom library from scratch (author new blocks, build a new `.slx` library file) → use `building-simulink-models` skill with `model_edit` directly. This skill only *registers* existing libraries; it cannot create library content.
-- Only configuring block exclusions or parameter protection (libraries already declared) → `configuring-block-policy`
 - Only curating block descriptions/categories (libraries already declared) → `simulink-curating-library-kg`
 
 ## Workflow
@@ -58,7 +57,7 @@ Follow `references/library-setup.md` for all gate API details — it is the sing
 Retrieve and display the user's current configuration status using the APIs in `references/library-setup.md` § "Status Display (Management Menu)". Show library names/paths, policy mode with fallback, and KG block/category counts. Then offer:
 
 - **(a) Add or remove libraries** — load existing config via `library.LibraryConfig.load(dataRoot)`, append/remove entries, save via `library.LibraryConfig.save(dataRoot, allLibs)`, then invoke `simulink-curating-library-kg` skill (automatic mode) to regenerate KG.
-- **(b) Update block policy** — load `configuring-block-policy` skill.
+- **(b) Update block policy** — ask for the block source (and any blocked blocks or protected parameters), then apply each with `satk.Configuration.setPolicy`. See `references/library-setup.md` § "Gate 2".
 - **(c) Promote config to prefdir** — only show if tier is `project` or `legacy`. Copy `.satk/` folder to `prefdir/.satk/` (expand relative paths to absolute). See `references/library-setup.md` § "Gate 1" for the promote API.
 - **(d) Regenerate knowledge index** — load `simulink-curating-library-kg` skill.
 

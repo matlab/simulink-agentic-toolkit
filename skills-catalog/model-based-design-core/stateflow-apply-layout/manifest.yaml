@@ -1,0 +1,20 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for stateflow-apply-layout
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "2.4.0"
+human-description: Apply auto-layout to any Stateflow subviewer — chart, subchart state, box or function, atomic subchart, or atomic box — with correct calling conventions for full, incremental, mixed, and subviewer-targeted layout.
+matlab-release: ">=R2023a"
+toolkit: simulink-agentic-toolkit
+optional-products: []
+required-products:
+  - MATLAB
+  - Simulink
+  - Stateflow
+required-tools:
+  - evaluate_matlab_code
+required-skills: []
+reference-files:
+  - references/calling-convention-examples.md
+  - references/failures-and-iteration.md

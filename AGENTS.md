@@ -4,14 +4,7 @@
 
 ## Setup
 
-If the user asks to set up the Simulink Agentic Toolkit, direct them to run the following in MATLAB:
-
-```matlab
-addpath('<path-to-setup-folder>')
-setupAgenticToolkit("install")
-```
-
-This handles platform detection, MCP server download, toolkit installation, agent configuration, and skill registration. Do not attempt to run setup commands on the user's behalf.
+If the user asks to install, update, or set up the Simulink Agentic Toolkit, direct them to the Agentic Toolkit Installer: https://github.com/matlab/agentic-toolkit-installer. Do not attempt to run setup commands on the user's behalf.
 
 ## Domain Skills
 
@@ -32,4 +25,4 @@ Nine MCP tools are available when the MCP server is connected (see `tools/regist
 
 ## MATLAB Prerequisite
 
-The MCP server uses `--matlab-session-mode=existing`. MATLAB must be running with `satk_initialize` executed (which calls `shareMATLABSession`) before MCP tools will work. The MATLAB MCP Server Toolbox must be installed once per MATLAB version. If tools fail to connect, guide the user to run `addpath('<toolkit_root>'); satk_initialize` in MATLAB.
+The installer configures the MCP server with `--matlab-session-mode=auto`: it connects to a shared MATLAB session if one exists and otherwise starts its own. No per-session setup is needed; the toolkit is on the MATLAB path automatically. To use the MATLAB session the user already has open, guide them to run `shareMATLABSession` in it. If tools fail to connect or report "Undefined function", guide the user to run `satk_doctor` in MATLAB, which checks the MATLAB path and session sharing and suggests fixes. For installed versions, configured agents, or the MCP server, guide them to run `agentic-toolkit-installer status` in a terminal. `satk_initialize` and `validate_installation` are deprecated; do not suggest them to users. `validate_installation` is not on the MATLAB path for installer users, so if a script calls it, suggest `satk_doctor` instead.

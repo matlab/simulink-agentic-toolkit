@@ -14,7 +14,6 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 |-------|---------------------------|
 | `arranging-simulink-layouts` | Fix, tidy, or rearrange block diagram layouts — reposition selected blocks without moving the rest, and group or expand subsystems |
 | `building-simulink-models` | Best practices for structural model changes, for example, adding blocks, wiring, layout |
-| `configuring-block-policy` | Create and manage `.satk/block-policy.json` to control which blocks the agent can use and which parameters it can modify |
 | `simulink-curating-library-kg` | Curate the library knowledge index — mark common blocks, define categories, and improve descriptions for better agent block selection |
 | `filing-bug-reports` | Generate standalone bug reports for reproducing, investigating, and fixing issues |
 | `generate-requirement-drafts` | Generate requirements. This needs Requirements Toolbox (.slreqx) with traceability links when available, falls back to structured YAML |
@@ -24,6 +23,7 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 | `simulating-simulink-models` | Run simulations for data exploration, parameter sweeps, and custom analysis |
 | `specifying-mbd-algorithms` | Specify algorithms for Model-Based Design (MBD) including system specs, architecture specs, implementation and test plans |
 | `specifying-plant-models` | Specify plant models for closed-loop simulation |
+| `stateflow-apply-layout` | Arrange Stateflow diagrams — clean up after API edits or tidy an existing chart, subchart, or atomic subchart, with full, incremental, or per-subviewer layout |
 
 ### [Model-Based System Engineering](model-based-system-engineering/)
 
@@ -67,6 +67,7 @@ Model, simulate, and analyze multidomain physical systems with the Simscape prod
 
 | Skill | Description |
 |-------|---------------------------|
+| `simscape-diagnose-simulation-error` | Diagnose Simscape simulation errors — min step size violations, transient initialization failures, and index reduction |
 | `simscape-write-ssc` | Write and validate Simscape Language source files (.ssc) — components, domains, or functions |
 
 ### [Code Generation](code-generation/)

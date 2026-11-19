@@ -59,14 +59,27 @@ copyfile(sourceSATK, destSATK);
 
 ## Gate 2: Block Policy
 
-If libraries are declared and `.satk/block-policy.json` does not exist, ask the user whether to configure a policy.
+If libraries are declared and `.satk/block-policy.json` does not exist, ask the user which block source to apply. Do not continue until the user responds.
 
-- **Yes** — load the `configuring-block-policy` skill.
-- **No / skip** — save defaults (prefer custom libraries over built-in), so the question isn't asked again. Always create this file via the API; never write it manually.
+| User's answer | `blockSource` value |
+|---------------|---------------------|
+| Only use blocks from my libraries | `library_blocks_only` |
+| Prefer my libraries, built-ins when nothing fits (default) | `prefer_library_blocks` |
+
+Write the answer with the below API — never hand-write the file. A skip or no answer means the default value; write it anyway, so the question isn't asked again.
 
 ```matlab
-policyData = library.BlockPolicy.defaults();
-library.BlockPolicy.save(dataRoot, policyData);
+satk.Configuration.setPolicy('blockSource', 'library_blocks_only', Location=dataRoot);
+```
+
+Blocked blocks and protected parameters are optional; ask only if the user raises them. Each is a separate `setPolicy` call. Substitute the user's own library, block, and parameter names — the placeholders below are not real blocks. Note the double braces: `struct` needs them to store a cell array in a field.
+
+```matlab
+satk.Configuration.setPolicy('blockedBlocks', {'<libName>/<blockName>'}, ...
+    Location=dataRoot);
+satk.Configuration.setPolicy('protectedParams', ...
+    {struct('block', '<libName>/<blockName>', 'params', {{'<paramName>'}})}, ...
+    Location=dataRoot);
 ```
 
 If `.satk/block-policy.json` already exists, proceed directly.
@@ -100,9 +113,9 @@ config = library.LibraryConfig.load(dataRoot);
 % config.libraries(i).name, .path, .description
 numLibraries = numel(config.libraries);
 
-% 2. Policy mode and fallback
-policyData = library.BlockPolicy.loadRaw(dataRoot, config);
-% policyData.policyMode — 'prefer_customer_libraries' | 'approved_blocks_only'
+% 2. Block source and fallback
+policyData = satk.Configuration.getPolicy(Location=dataRoot);
+% policyData.blockSource — 'prefer_library_blocks' | 'library_blocks_only'
 % policyData.fallbackToBuiltins — logical
 
 % 3. KG block count — read index.md header
@@ -123,12 +136,12 @@ Use the exact block name from the Knowledge graph in the `type` field of `add_bl
 
 ## Block Policy Rules
 
-The `policyMode` in `.satk/block-policy.json` is the source for fallback behavior:
+The `blockSource` policy in `.satk/block-policy.json` decides fallback behavior:
 
-| Mode | Behavior |
+| `blockSource` | Behavior |
 |------|----------|
-| `approved_blocks_only` | Only use blocks in the Knowledge graph. If nothing fits, ask the user. |
-| `prefer_customer_libraries` | Prefer library blocks, fall back to built-ins when no match. |
+| `library_blocks_only` | Only use blocks in the Knowledge graph. If nothing fits, ask the user. |
+| `prefer_library_blocks` | Prefer library blocks, fall back to built-ins when no match. |
 
 - **Off-limits parameters** (protected in block policy) — the agent will not modify these values.
 - **Excluded blocks** — removed from the Knowledge graph entirely; the agent will never place them.

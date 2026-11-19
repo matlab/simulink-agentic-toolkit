@@ -4,6 +4,8 @@
 
 The Agentic Task Explorer stages and presents structured agentic tasks for live demonstrations and interactive exploration.
 
+The task explorer is installed with the Simulink Agentic Toolkit. Install the toolkit and configure your agent with the [Agentic Toolkit Installer](https://github.com/matlab/agentic-toolkit-installer). You do not need to run any setup in MATLAB first: `slAgenticTaskExplorer` is on the MATLAB path, and staging a task shares your MATLAB session so that your agent works in it.
+
 ## Quick Start
 
 ```matlab
@@ -42,12 +44,13 @@ slAgenticTaskExplorer(example_id, data_path, workspace_root, skip_presenter)
 2. Validates that all referenced files exist
 3. Creates/clears the workspace directory (`workspace_root/workspace`)
 4. Copies task files (shared + task-local) to the workspace
-5. Copies required skills to the workspace
+5. In a repository checkout only, copies the Model-Based Design Core skills to the workspace (an installed toolkit uses the skills that the installer configured for your agent)
 6. Writes `.gitignore` and initializes a git repository
 7. Opens the model (if `context_variables.model_name` is set)
-8. Opens VS Code in the workspace directory
-9. Prints the runbook to the MATLAB command window
-10. Displays the task explorer UI
+8. Shares the MATLAB session (`shareMATLABSession`) so that your agent connects to it instead of starting its own
+9. Opens VS Code in the workspace directory
+10. Prints the runbook to the MATLAB command window
+11. Displays the task explorer UI
 
 ## Task Validation
 

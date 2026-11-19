@@ -4,7 +4,7 @@ description: Use this skill when the user wants to curate the SATK library knowl
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "2.2"
+  version: "2.2.1"
 ---
 
 # Curating the Library Knowledge Index
@@ -21,7 +21,7 @@ Curate `.satk/library-kg/` for better agent block selection. Infer categories an
 
 ## When NOT to Use
 
-- Blocking, deprecating, or protecting blocks → `configuring-block-policy`
+- Blocking or protecting blocks
 - Actively building a model → `building-simulink-models`
 - Declaring which libraries exist → Library Setup gate in `building-simulink-models`
 

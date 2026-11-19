@@ -2,66 +2,66 @@
 
 ## Environment
 
-### How can I check whether Simulink Agentic Toolkit has been set up correctly?
+### How Can I Check Whether the Simulink Agentic Toolkit Is Set Up Correctly?
 
-**From MATLAB:** Call `satk_initialize`, then run `validate_installation`:
+**From MATLAB:** Run `satk_doctor`.
 
 ```matlab
-satk_initialize
-validate_installation
+satk_doctor
 ```
+The `satk_doctor` function displays a diagnostic summary and returns the results in YAML format. It checks what only MATLAB can see, such as the MATLAB path and session sharing. To check installed versions, configured agents, and the MCP server, run `agentic-toolkit-installer status` in a terminal from the folder where you downloaded the [Agentic Toolkit Installer](https://github.com/matlab/agentic-toolkit-installer).
 
-This runs six checks in order and prints a summary:
+It performs these checks:
 
-| # | Check | What it verifies |
-|---|-------|-----------------|
-| 1 | MATLAB version | R2023a or later |
-| 2 | Simulink | Installed and licensed |
-| 3 | Tool entry points | All MCP tool functions are on the MATLAB path |
-| 4 | Package resolution | `+sage` and `+mbd` packages resolve inside the toolkit and are not shadowed |
-| 5 | MCP server binary | `matlab-mcp-server` exists at `~/.matlab/agentic-toolkits/bin/` |
-| 6 | MCP connectivity | `shareMATLABSession` is available and the MATLAB connector is running |
+| Check | Description |
+|-------|-----------------|
+| MATLAB version | Verifies that you are using MATLAB R2023a or later. If this check fails, the remaining checks do not run.|
+| Simulink | Verifies that Simulink is installed and licensed. If this check fails, the remaining checks do not run.|
+| Toolkit location | Reports the folder that the toolkit's MATLAB tools run from.|
+| Legacy installation | Verifies that no leftover `setupAgenticToolkit` files remain in `~/.matlab/agentic-toolkits`.|
+| Tool entry points | Verifies that all Model Context Protocol (MCP) tool functions are on the MATLAB path.|
+| Package resolution | Verifies that the `+sage` and `+mbd` packages resolve to the toolkit installation and are not shadowed by other packages.|
+| MATLAB session | Verifies that the MATLAB MCP Server Toolbox is installed and reports whether the current MATLAB session is shared. |
+| Diagnostic capture and block layout | Verifies that the required internal components load successfully.|
 
-The output uses pass/fail/warning icons and provides a fix suggestion for each failed check. If all checks pass, the overall result is **PASS** and MCP tools are ready for use by your AI coding agent.
+For each warning or failure, `satk_doctor` provides a suggested corrective action. If no checks fail, the overall result is **PASS**.
 
 **From your AI coding agent:** Verify that MCP tools and skills are registered. The method varies by agent:
 
 | Agent | Check MCP tools | Check skills |
 |-------|----------------|--------------|
-| Claude Code | `/mcp` | `/skills` |
-| GitHub Copilot | VS Code command palette: `MCP: List Servers` | Skills visible in chat `@` mentions |
-| OpenAI Codex | `codex --list-tools` or check `~/.codex/config.toml` | Check `.codex-plugin/plugin.json` registration |
-| Sourcegraph Amp | Check `~/.config/amp/settings.json` for MCP config | Verify `amp.skills.path` in settings |
-| Gemini CLI | `gemini --list-tools` or check `~/.gemini/settings.json` | Check `gemini-extension.json` registration |
+| Claude Code | Run `/mcp` | Run `/skills` |
+| GitHub Copilot in VS Code | From the VS Code Command Palette, select `MCP: List Servers` | Type `/` in the chat input to see the available skills |
+| GitHub Copilot CLI | In a terminal, run `copilot mcp list` | Run `/skills list` |
+| OpenAI Codex | In a terminal, run `codex mcp list` | Ask the agent to list its skills |
 
-You should see the `matlab` MCP server with tools like `model_overview`, `model_read`, `model_edit`, `model_query_params`, `model_resolve_params`, and `model_test`. For skills, look for the Model-Based Design skills (e.g., `building-simulink-models`, `testing-simulink-models`, `simulating-simulink-models`) and the setup skill (`simulink-agentic-toolkit-setup`).
+The list includes the `matlab` MCP server with tools such as `model_overview`, `model_read`, `model_edit`, `model_query_params`, `model_resolve_params`, and `model_test`. For skills, look for the Model-Based Design skills (for example, `building-simulink-models`, `testing-simulink-models`, `simulating-simulink-models`).
 
 **Common fixes for failures:**
 
-- **Checks 1–2 fail (halts remaining checks):** Upgrade MATLAB or install Simulink.
-- **Checks 3–4 fail:** Run satk_initialize to add the toolkit paths, or remove conflicting path entries that shadow the toolkit packages.
-- **Check 5 warns:** Run `setupAgenticToolkit("install")` to download the MCP server binary.
-- **Check 6 fails:** Install the MATLAB MCP Server Toolbox (downloaded automatically during setup), then restart MATLAB and re-run `satk_initialize`.
-- **`/mcp` shows no matlab server:** Re-run the setup skill (`simulink-agentic-toolkit-setup`) to register the MCP server with your agent, or verify the binary path in your agent's MCP configuration.
-- **`/skills` is missing MBD skills:** Re-run the setup skill to register skills globally, or confirm the toolkit plugin is installed for your agent.
+- **MATLAB version or Simulink fails:** Upgrade MATLAB or install Simulink.
+- **Tool entry points or package resolution fails:** Restart MATLAB. If the check continues to fail, reinstall the toolkit with the Agentic Toolkit Installer or remove MATLAB path entries that shadow the toolkit packages.
+- **MATLAB session check reports a warning:** Reinstall with the Agentic Toolkit Installer, then restart MATLAB.
+- **Legacy installation reports a warning:** See [Migrate from a Previous Installation](../Migrate-from-Previous-Installation.md).
+- **MATLAB MCP Server or Model-Based Design skills are unavailable:** Run `agentic-toolkit-installer configure`, then restart your agent.
 
 
 ## Skill: testing-simulink-models
 
-### Why is gherkin used for test authoring?
+### Why Does the Toolkit Use Gherkin for Test Authoring?
 
-Gherkin was selected as the test authoring format because it sits at a sweet spot — LLMs generate it reliably, it maps naturally onto how requirements are written, and humans can review it quickly.
+The toolkit uses Gherkin as the test authoring format because it balances three needs: large language models (LLMs) generate it reliably, it maps naturally onto how requirements are written, and humans can review it quickly.
 
 Rather than asking an LLM to create and maintain complex Simulink Test artifacts directly, the agent generates a simple, reviewable text file that `model_test` converts into Simulink Test artifacts. This approach also works consistently across MATLAB releases.
 
-- **LLM reliability.** There is a large corpus of Gherkin on the internet, so LLMs are well-trained on the syntax and produce it very consistently. Gherkin's execution model is also similar to pytest — the agent outputs a constrained file, runs it, and interprets results — which is another pattern LLMs have extensive pretraining data on.
+- **LLM reliability.** There is a large corpus of Gherkin on the internet, so LLMs are well-trained on the syntax and produce it consistently. The Gherkin execution model is also similar to pytest: the agent outputs a constrained file, runs it, and interprets the results. LLMs also have extensive pretraining data for this pattern.
 
-- **Natural alignment with requirements.** Gherkin is designed for behavior-based testing, which maps directly to how requirements are written. EARS notation (Easy Approach to Requirements Syntax), widely used in automotive and aerospace, uses the same logical structure — *When \<trigger\>, the system shall \<response\>* — just with different keywords. A requirement and a Gherkin scenario are cognitively the same object. This makes translating requirements into test files straightforward for the agent, and lets 100% of its reasoning go toward the engineering problem rather than toward managing tool APIs or harness lifecycles.
+- **Natural alignment with requirements.** Gherkin is designed for behavior-based testing, which maps directly to how requirements are written. Easy Approach to Requirements Syntax (EARS) notation, widely used in automotive and aerospace, uses the same logical structure — *When \<trigger\>, the system shall \<response\>* — but with different keywords. A requirement and a Gherkin scenario are cognitively the same object. This alignment makes it straightforward for the agent to translate requirements into test files. The agent can then focus its reasoning on the engineering problem rather than on managing tool APIs or harness lifecycles.
 
-- **Human reviewability.** A Gherkin file sits at the intersection of what agents can output reliably and what humans can review quickly. As AI-assisted workflows scale, agents will generate while humans review — and that review needs to be cognitively simple. Gherkin delivers that.
+- **Human reviewability.** A Gherkin file sits at the intersection of what agents can output reliably and what humans can review quickly. As AI-assisted workflows scale, agents generate content while humans review it, and that review needs to be cognitively simple. Gherkin keeps the review simple.
 
 - **Broad release compatibility.** The toolkit targets MATLAB releases back to R2023a. Gherkin is a plain-text format that `model_test` translates into Simulink Test artifacts, so it works across releases without depending on version-specific APIs.
 
-- **Domain-specific extensions.** The Gherkin specification itself does not define the full set of semantics needed for Simulink testing (e.g., input signals, tolerances, logged signals). The toolkit overlays additional structured sections for inputs and assessments that the agent generates alongside the standard Given/When/Then steps.
+- **Domain-specific extensions.** The Gherkin specification does not define the full set of semantics needed for Simulink testing (for example, input signals, tolerances, logged signals). The toolkit overlays additional structured sections for inputs and assessments that the agent generates alongside the standard Given/When/Then steps.
 
-- **Future evolution.** This is not necessarily the final answer. The ideal interface — one an agent can generate and a human can review — will keep evolving as both LLM capabilities and Simulink Test features advance. MBD GenAI benchmarks are being developed to run tradeoff experiments across different test formats.
+- **Future evolution.** This is not necessarily the final answer. The ideal interface — one an agent can generate and a human can review — will keep evolving as both LLM capabilities and Simulink Test features advance. MathWorks is developing Model-Based Design generative AI benchmarks to run tradeoff experiments across different test formats.
