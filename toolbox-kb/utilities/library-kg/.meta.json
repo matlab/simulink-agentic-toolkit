@@ -1,15 +1,225 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.69317650457,
-  "generatorVersion": 4,
-  "libraries": [
-    "Utilities"
-  ],
-  "blockCount": 25,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Utilities": {
-      "blockCount": 25
+  "pages": [
+    {
+      "id": "network-couplers",
+      "kind": "toolbox",
+      "library": "Utilities",
+      "kbFolder": "utilities",
+      "category": "network-couplers",
+      "hash": "9dc9467640fc9cd3169bdf50a55cf505f697dd27aac6239b1ba2957fd91fa5a5",
+      "fm": {
+        "title": "Network couplers",
+        "description": "Split a physical network into partitions coupled through an element, for solver decoupling or real-time simulation (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "utilities",
+          "network coupler",
+          "coupler"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Prediction (discrete->continuous)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Prediction (discrete->continuous)",
+          "since": "R2023a+",
+          "intent": "Use this block prior to connecting a discrete-time network to a continuous time network. The block predicts what the input u is between sampling points by using the last calculated gradient and time elapsed since last sampling event."
+        },
+        {
+          "block": "Prediction (slow->fast)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Prediction (slow->fast)",
+          "since": "R2023a+",
+          "intent": "Use this block prior to connecting a discrete-time network to another discrete-time network that has a faster sampling rate. The block predicts what the input u would have been had it been sampled at the faster sampling rate. The block does this by calculating the derivative of input u."
+        },
+        {
+          "block": "Smoothing (continuous->discrete)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Smoothing (continuous->discrete)",
+          "since": "R2023a+",
+          "intent": "Use this block prior to connecting a continuous-time network to a fixed-step network. The block applies a first-order transfer function to smooth high frequency dynamics that cannot be tracked by the fixed-step network. Typically the smoothing time constant should be at least a factor of 10 times larger than the fixed-step size."
+        },
+        {
+          "block": "Smoothing (fast->slow)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Smoothing (fast->slow)",
+          "since": "R2023a+",
+          "intent": "Use this block prior to connecting a discrete-time network to another discrete-time network with a slower sampling rate. The block averages input u over the specified number of samples and passes the result to output y."
+        },
+        {
+          "block": "Network Coupler (Capacitor)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Capacitor)",
+          "since": "R2023a+",
+          "intent": "Couple two electrical network partitions through a capacitor — use to split a large network for solver decoupling or real-time partitioning."
+        },
+        {
+          "block": "Network Coupler (Compressible Link)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Compressible Link)",
+          "since": "R2023a+",
+          "intent": "Couple two gas/fluid network partitions through a compressible link — use to decouple large compressible-flow networks for faster or real-time solving."
+        },
+        {
+          "block": "Network Coupler (Constant Volume Chamber (IL))",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Constant Volume Chamber (IL))",
+          "since": "R2023a+",
+          "intent": "Couple two isothermal-liquid network partitions through a constant-volume chamber — use to decouple hydraulic networks for real-time simulation."
+        },
+        {
+          "block": "Network Coupler (Constant Volume Chamber (TL))",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Constant Volume Chamber (TL))",
+          "since": "R2023a+",
+          "intent": "Couple two thermal-liquid network partitions through a constant-volume chamber — use to decouple thermal-liquid networks for real-time simulation."
+        },
+        {
+          "block": "Network Coupler (Current-Voltage)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Current-Voltage)",
+          "since": "R2023a+",
+          "intent": "Couple electrical partitions with a current-to-voltage coupling — use to split an electrical network at a controlled-source boundary."
+        },
+        {
+          "block": "Network Coupler (Flexible Shaft)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Flexible Shaft)",
+          "since": "R2023a+",
+          "intent": "Couple two mechanical rotational partitions through a flexible shaft — use to decouple driveline networks for real-time simulation."
+        },
+        {
+          "block": "Network Coupler (Inductor)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Inductor)",
+          "since": "R2023a+",
+          "intent": "Couple two electrical network partitions through an inductor — use to split a large electrical network for solver decoupling."
+        },
+        {
+          "block": "Network Coupler (Thermal Mass)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Thermal Mass)",
+          "since": "R2023a+",
+          "intent": "Couple two thermal network partitions through a thermal mass — use to decouple thermal networks for real-time simulation."
+        },
+        {
+          "block": "Network Coupler (Voltage-Current)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Voltage-Current)",
+          "since": "R2023a+",
+          "intent": "Couple electrical partitions with a voltage-to-current coupling — use to split an electrical network at a controlled-source boundary."
+        },
+        {
+          "block": "Network Coupler (Voltage-Voltage)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Voltage-Voltage)",
+          "since": "R2023a+",
+          "intent": "Couple two electrical network partitions with a voltage-to-voltage coupling — use to split a network while preserving voltage continuity."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "simscape-utilities",
+      "kind": "toolbox",
+      "library": "Utilities",
+      "kbFolder": "utilities",
+      "category": "simscape-utilities",
+      "hash": "23af28af5bdb1cc9f63997bb6c359f7a5520614dd1f9fdcbd00cb5555d094c79",
+      "fm": {
+        "title": "Simscape utilities",
+        "description": "Core Simscape connection, probing, and component-authoring utilities (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "utilities",
+          "connection",
+          "probe",
+          "simscape component",
+          "simscape bus",
+          "variant connector",
+          "array connection",
+          "spectrum analyzer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Array Connection",
+          "ref": "nesl_utility/Array Connection",
+          "since": "R2025a+",
+          "intent": "Wire an array of identical Simscape components in bulk through a single connection — use to build vectorized physical networks without drawing individual lines."
+        },
+        {
+          "block": "Connection Label",
+          "ref": "nesl_utility/Connection Label",
+          "since": "R2023a+",
+          "intent": "Create a wireless (label-based) physical connection between two ports — use to reduce clutter in large Simscape schematics."
+        },
+        {
+          "block": "Probe",
+          "ref": "nesl_utility/Probe",
+          "since": "R2023a+",
+          "intent": "Measure and output internal variables of a connected Simscape component without breaking the connection — use for non-intrusive physical diagnostics."
+        },
+        {
+          "block": "Simscape Component",
+          "ref": "nesl_utility/Simscape Component",
+          "since": "R2023a+",
+          "intent": "Instantiate a custom Simscape (.ssc) component in the model — use to bring a language-authored physical component into a diagram."
+        },
+        {
+          "block": "Simscape Bus",
+          "ref": "nesl_utility/Simscape Bus",
+          "since": "R2023a+",
+          "intent": "Bundle multiple physical connections into a single Simscape bus line — use to simplify multi-domain physical interfaces."
+        },
+        {
+          "block": "Spectrum Analyzer",
+          "ref": "nesl_utility/Spectrum Analyzer",
+          "since": "R2023a+",
+          "intent": "Display the frequency spectrum of a signal during simulation — use to inspect harmonic and spectral content."
+        },
+        {
+          "block": "Variant Connector",
+          "ref": "nesl_utility/Variant Connector",
+          "since": "R2023a+",
+          "intent": "Physical-connection variant switch that selects among alternative Simscape subnetworks — use for configurable or variant physical models."
+        },
+        {
+          "block": "Connection Port",
+          "ref": "nesl_utility/Connection Port",
+          "since": "R2023a+",
+          "intent": "Expose a physical connection port on a Simscape subsystem — use to create physical pins on a masked subsystem."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "uncategorized",
+      "kind": "toolbox",
+      "library": "Utilities",
+      "kbFolder": "utilities",
+      "category": "uncategorized",
+      "hash": "5adf9c64307375522bf145697807437cd7e21b98371feccb6dc6c14532fdabd4",
+      "fm": {
+        "title": "Uncategorized",
+        "description": "Blocks for Uncategorized (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "utilities"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "PS-Simulink Converter",
+          "ref": "nesl_utility/PS-Simulink Converter",
+          "since": "R2023a+",
+          "intent": "Converts the input Physical Signal to a Simulink output signal. Format of Simulink output signal matches the format of Physical Signal. 'Vector format' provides an option for outputting vector Physical Signals as Simulink 1-D arrays. The unit expression in 'Output signal unit' parameter must match or be commensurate with the unit of the Physical Signal and determines the conversion from the Physical Signal to the Simulink output signal. 'Apply affine conversion' check box is only relevant for units with offset (such as temperature units)."
+        },
+        {
+          "block": "Simulink-PS Converter",
+          "ref": "nesl_utility/Simulink-PS Converter",
+          "since": "R2023a+",
+          "intent": "Converts the Simulink input signal to a Physical Signal. The unit expression in 'Input signal unit' parameter is associated with the Simulink input signal and determines the unit assigned to the Physical Signal. 'Apply affine conversion' check box is only relevant for units with offset (such as temperature units). If the selected solver requires input derivatives, you can either provide them explicitly through additional signal ports, or turn on input filtering to calculate time derivatives. The first-order filter provides one derivative, while the second-order filter provides the first and second derivatives. For piecewise-constant signals, you can also explicitly set the input derivatives to zero."
+        },
+        {
+          "block": "Solver Configuration",
+          "ref": "nesl_utility/Solver Configuration",
+          "since": "R2023a+",
+          "intent": "Defines solver settings to use for simulation."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.99553120369
 }

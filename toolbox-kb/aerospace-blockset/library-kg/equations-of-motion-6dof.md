@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Equations of motion 6dof
-description: Six-degree-of-freedom flight dynamics
-tags: [6DOF, Euler, quaternion, ECEF, equations of motion]
+description: Six-degree-of-freedom flight dynamics (17 blocks)
+tags: [toolbox-kb, aerospace-blockset, "6DOF", Euler, quaternion, ECEF, equations of motion]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Equations of motion 6dof
+sources:
+  - resource: matlab:aerolib6dof2
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: equations-of-motion-6dof
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Equations of motion 6dof
-
-Use these blocks for equations of motion 6dof.
 
 ## Recommended Blocks
 

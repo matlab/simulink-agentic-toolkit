@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pwm capture
-description: PWM generation and pulse/encoder capture
-tags: [pwm, epwm, ecap, eqep, capture, encoder]
-status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Pwm capture
+description: PWM generation and pulse/encoder capture (66 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, pwm, epwm, ecap, eqep, capture, encoder]
+status: draft
+sources:
+  - resource: matlab:c2802xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: pwm-capture
 block_count: 66
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Pwm capture
-
-Use these blocks for pwm capture.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ipc
-description: Inter-processor and inter-process communication
-tags: [ipc, interprocess, multicore, shared]
+description: Inter-processor and inter-process communication (10 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, ipc, interprocess, multicore, shared]
 status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Ipc
+sources:
+  - resource: matlab:c2837xDlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: ipc
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Ipc
-
-Use these blocks for ipc.
 
 ## Recommended Blocks
 

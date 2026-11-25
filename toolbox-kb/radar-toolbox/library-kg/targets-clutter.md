@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Targets clutter
-description: Radar target models and environmental clutter
-tags: [backscatter, clutter, pedestrian, target, rcs]
+description: Radar target models and environmental clutter (5 blocks)
+tags: [toolbox-kb, radar-toolbox, backscatter, clutter, pedestrian, target, rcs]
 status: stable
-source: mathworks_toolbox
-library_root: Radar Toolbox
-category_path: Targets clutter
+sources:
+  - resource: matlab:radarlib
+source: toolbox_kb
+managed_by: satk
+library: Radar Toolbox
+kb_folder: radar-toolbox
+category: targets-clutter
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Targets clutter
-
-Use these blocks for targets clutter.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Thermal components
-description: Simscape thermal components for pack cooling simulation
-tags: [cooling, rom, channel, edge, thermal]
+description: Simscape thermal components for pack cooling simulation (5 blocks)
+tags: [toolbox-kb, battery, cooling, rom, channel, edge, thermal]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Thermal components
+sources:
+  - resource: matlab:batt_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: thermal-components
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Thermal components
-
-Use these blocks for thermal components.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sources
-description: Signal sources
-tags: [sources, constant, sine wave]
+description: Signal sources (2 blocks)
+tags: [toolbox-kb, dsp-system-toolbox-hdl-support, sources, constant, sine wave]
 status: stable
-source: custom_library
-library_root: DSP System Toolbox HDL Support
-category_path: Sources
+sources:
+  - resource: matlab:dsphdlsupportsrcs
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox HDL Support
+kb_folder: dsp-system-toolbox-hdl-support
+category: sources
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Sources
-
-Use these blocks for sources.
 
 ## Recommended Blocks
 

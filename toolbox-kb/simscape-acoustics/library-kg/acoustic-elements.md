@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Acoustic elements
-description: Fundamental acoustic lumped elements
-tags: [compliance, inertance, resistance, switch, element]
+description: Fundamental acoustic lumped elements (1 blocks)
+tags: [toolbox-kb, simscape-acoustics, compliance, inertance, resistance, switch, element]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Acoustics
-category_path: Acoustic elements
+sources:
+  - resource: matlab:acoustic_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Acoustics
+kb_folder: simscape-acoustics
+category: acoustic-elements
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Acoustic elements
-
-Use these blocks for acoustic elements.
 
 ## Recommended Blocks
 

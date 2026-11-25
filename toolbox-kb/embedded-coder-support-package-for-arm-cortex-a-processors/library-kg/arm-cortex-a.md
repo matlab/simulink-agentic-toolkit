@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Arm cortex a
-description: Deployment blocks for ARM Cortex-A application processors running Linux or VxWorks
-tags: [arm, cortex-a, linux, vxworks, task]
+description: Deployment blocks for ARM Cortex-A application processors running Linux or VxWorks (4 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-arm-cortex-a-processors, arm, cortex-a, linux, vxworks, task]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for ARM Cortex-A Processors
-category_path: Arm cortex a
+sources:
+  - resource: matlab:arm_cortex_a_lib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for ARM Cortex-A Processors
+kb_folder: embedded-coder-support-package-for-arm-cortex-a-processors
+category: arm-cortex-a
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Arm cortex a
-
-Use these blocks for arm cortex a.
 
 ## Recommended Blocks
 

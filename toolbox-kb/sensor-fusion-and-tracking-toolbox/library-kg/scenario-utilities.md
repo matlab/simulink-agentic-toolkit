@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Scenario utilities
-description: Scenario readers, sensors, and data utilities
-tags: [scenario, radar, gps, detection, concatenation]
+description: "Scenario readers, sensors, and data utilities (5 blocks)"
+tags: [toolbox-kb, sensor-fusion-and-tracking-toolbox, scenario, radar, gps, detection, concatenation]
 status: stable
-source: mathworks_toolbox
-library_root: Sensor Fusion and Tracking Toolbox
-category_path: Scenario utilities
+sources:
+  - resource: matlab:trackingscenarioandsensormodelslib
+source: toolbox_kb
+managed_by: satk
+library: Sensor Fusion and Tracking Toolbox
+kb_folder: sensor-fusion-and-tracking-toolbox
+category: scenario-utilities
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Scenario utilities
-
-Use these blocks for scenario utilities.
 
 ## Recommended Blocks
 

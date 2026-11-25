@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Model verification
-description: Assertion blocks for linear analysis requirements
-tags: [check, assert, margin, characteristics, verify]
+description: Assertion blocks for linear analysis requirements (6 blocks)
+tags: [toolbox-kb, simulink-control-design, check, assert, margin, characteristics, verify]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Model verification
+sources:
+  - resource: matlab:slctrlblks
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: model-verification
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Model verification
-
-Use these blocks for model verification.
 
 ## Recommended Blocks
 

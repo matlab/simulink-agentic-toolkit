@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Comm sources
-description: Sequence and test sources
-tags: [comm sources, pn sequence]
+description: Sequence and test sources (1 blocks)
+tags: [toolbox-kb, communications-toolbox-hdl-support, comm sources, pn sequence]
 status: stable
-source: custom_library
-library_root: Communications Toolbox HDL Support
-category_path: Comm sources
+sources:
+  - resource: matlab:commhdlsource
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox HDL Support
+kb_folder: communications-toolbox-hdl-support
+category: comm-sources
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Comm sources
-
-Use these blocks for comm sources.
 
 ## Recommended Blocks
 

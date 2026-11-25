@@ -1,15 +1,442 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.7445927083,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Control Design"
-  ],
-  "blockCount": 40,
-  "categoryCount": 8,
-  "libraryFingerprints": {
-    "Simulink_Control_Design": {
-      "blockCount": 40
+  "pages": [
+    {
+      "id": "adaptive-control",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "adaptive-control",
+      "hash": "7689a65d9b37db3bcfab11e6ef7ef28578cf3c97ac9ea9972820b900c54b8682",
+      "fm": {
+        "title": "Adaptive control",
+        "description": "Adaptive and learning-based controllers (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "adaptive",
+          "adrc",
+          "notch",
+          "extremum",
+          "iterative",
+          "mrac"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Active Disturbance Rejection Control",
+          "ref": "slctrl_adaptive/Active Disturbance Rejection Control",
+          "since": "R2026a+",
+          "intent": "Reject unknown disturbances without an explicit plant model — use for robust control when plant dynamics are uncertain or time-varying"
+        },
+        {
+          "block": "Adaptive Notch Filter",
+          "ref": "slctrl_adaptive/Adaptive Notch Filter",
+          "since": "R2026a+",
+          "intent": "Suppress a varying-frequency disturbance in real time — use for canceling narrowband oscillations whose frequency drifts"
+        },
+        {
+          "block": "Extremum Seeking Control",
+          "ref": "slctrl_adaptive/Extremum Seeking Control",
+          "since": "R2023b+",
+          "intent": "Find the input that maximizes or minimizes an unknown cost — use for real-time optimization without a plant model"
+        },
+        {
+          "block": "Iterative Learning Control",
+          "ref": "slctrl_adaptive/Iterative Learning Control",
+          "since": "R2024b+",
+          "intent": "Improve tracking over repeated trials — use for reducing repetitive errors in batch or cyclic processes"
+        },
+        {
+          "block": "Model Reference Adaptive Control",
+          "ref": "slctrl_adaptive/Model Reference Adaptive Control",
+          "since": "R2023b+",
+          "intent": "Adapt controller gains to match a reference model — use for maintaining performance as plant parameters change"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "constraint-enforcement",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "constraint-enforcement",
+      "hash": "db4bef3ef6973bacdc8a1165cf3b83239fb753d621038cb943f4d322cb642343",
+      "fm": {
+        "title": "Constraint enforcement",
+        "description": "Safety constraint and passivity enforcement (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "barrier",
+          "constraint",
+          "lyapunov",
+          "passivity",
+          "safety"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Constraint Enforcement",
+          "ref": "slctrl_constraint/Constraint Enforcement",
+          "since": "R2023b+",
+          "intent": "Modify control actions to satisfy state constraints — use for keeping the system within safe operating bounds"
+        },
+        {
+          "block": "Control Barrier Function",
+          "ref": "slctrl_constraint/Control Barrier Function",
+          "since": "R2026a+",
+          "intent": "Enforce safety constraints using barrier certificates — use for guaranteeing set invariance in safety-critical systems"
+        },
+        {
+          "block": "High-Order Control Barrier Function",
+          "ref": "slctrl_constraint/High-Order Control Barrier Function",
+          "since": "R2026a+",
+          "intent": "Enforce safety on systems with relative degree greater than one — use for high-order safety constraints on underactuated systems"
+        },
+        {
+          "block": "Passivity Enforcement",
+          "ref": "slctrl_constraint/Passivity Enforcement",
+          "since": "R2023b+",
+          "intent": "Enforce passivity on control signals — use for guaranteeing stable interaction with unknown passive environments"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "disturbance-estimation",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "disturbance-estimation",
+      "hash": "726135b466ff52177ef0817b8aa04c0e0e5907eb8b0ff230e1c5c7cd2e2d7cbd",
+      "fm": {
+        "title": "Disturbance estimation",
+        "description": "Disturbance observers and compensators (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "disturbance",
+          "observer",
+          "extended",
+          "ultra-local",
+          "compensator"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Disturbance Compensator",
+          "ref": "slctrl_disturbance/Disturbance Compensator",
+          "since": "R2024a+",
+          "intent": "Estimate and cancel disturbances acting on the plant — use for feedforward rejection of estimated load disturbances"
+        },
+        {
+          "block": "Extended State Observer",
+          "ref": "slctrl_disturbance/Extended State Observer",
+          "since": "R2026a+",
+          "intent": "Estimate plant states and lumped disturbance — use for reconstructing unmeasured states and total disturbance for ADRC"
+        },
+        {
+          "block": "Ultra-Local Model",
+          "ref": "slctrl_disturbance/Ultra-Local Model",
+          "since": "R2026a+",
+          "intent": "Approximate plant as a simple integrator chain — use for model-free control design when only input-output data is available"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "linear-analysis-plots",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "linear-analysis-plots",
+      "hash": "f3913beb81addb757bc2b19b6a570164f6a400244e10575a72afa80e59709ab0",
+      "fm": {
+        "title": "Linear analysis plots",
+        "description": "Real-time linear analysis visualization (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "bode",
+          "nichols",
+          "pole-zero",
+          "step",
+          "singular",
+          "plot"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Trigger-Based  Operating Point Snapshot",
+          "ref": "slctrl_utilities/Trigger-Based  Operating Point Snapshot",
+          "since": "R2023a+",
+          "intent": "Capture operating point on a trigger event — use for recording trim conditions during simulation for later linearization"
+        },
+        {
+          "block": "Bode Plot",
+          "ref": "slctrlblks/Linear Analysis Plots/Bode Plot",
+          "since": "R2023a+",
+          "intent": "Display Bode magnitude and phase during simulation — use for visualizing linearized open-loop frequency response"
+        },
+        {
+          "block": "Gain and Phase Margin Plot",
+          "ref": "slctrlblks/Linear Analysis Plots/Gain and Phase Margin Plot",
+          "since": "R2023a+",
+          "intent": "Display gain and phase margins during simulation — use for monitoring loop stability margins in real time"
+        },
+        {
+          "block": "Linear Step Response Plot",
+          "ref": "slctrlblks/Linear Analysis Plots/Linear Step Response Plot",
+          "since": "R2023a+",
+          "intent": "Display linearized step response during simulation — use for checking closed-loop transient performance"
+        },
+        {
+          "block": "Nichols Plot",
+          "ref": "slctrlblks/Linear Analysis Plots/Nichols Plot",
+          "since": "R2023a+",
+          "intent": "Display Nichols chart during simulation — use for visualizing open-loop gain-phase relationship"
+        },
+        {
+          "block": "Pole-Zero Plot",
+          "ref": "slctrlblks/Linear Analysis Plots/Pole-Zero Plot",
+          "since": "R2023a+",
+          "intent": "Display pole-zero map during simulation — use for monitoring system stability and dynamics"
+        },
+        {
+          "block": "Singular Value Plot",
+          "ref": "slctrlblks/Linear Analysis Plots/Singular Value Plot",
+          "since": "R2023a+",
+          "intent": "Display singular values during simulation — use for analyzing MIMO system gain across frequency"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "model-verification",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "model-verification",
+      "hash": "48c41b51df602186ecb8a10f840d68b7958a4453d9fdd78a7cf0bd8737d47c48",
+      "fm": {
+        "title": "Model verification",
+        "description": "Assertion blocks for linear analysis requirements (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "check",
+          "assert",
+          "margin",
+          "characteristics",
+          "verify"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Check Bode  Characteristics",
+          "ref": "slctrlblks/Model Verification/Check Bode  Characteristics",
+          "since": "R2023a+",
+          "intent": "Assert Bode characteristics meet requirements — use for verification that frequency response stays within bounds"
+        },
+        {
+          "block": "Check Gain and Phase Margins",
+          "ref": "slctrlblks/Model Verification/Check Gain and Phase Margins",
+          "since": "R2023a+",
+          "intent": "Assert stability margins meet requirements — use for verification that gain and phase margins exceed thresholds"
+        },
+        {
+          "block": "Check Linear Step Response Characteristics",
+          "ref": "slctrlblks/Model Verification/Check Linear Step Response Characteristics",
+          "since": "R2023a+",
+          "intent": "Assert step response meets requirements — use for verification of rise time, overshoot, and settling specs"
+        },
+        {
+          "block": "Check Nichols Characteristics",
+          "ref": "slctrlblks/Model Verification/Check Nichols Characteristics",
+          "since": "R2023a+",
+          "intent": "Assert Nichols chart meets requirements — use for verification that open-loop response avoids exclusion regions"
+        },
+        {
+          "block": "Check Pole-Zero Characteristics",
+          "ref": "slctrlblks/Model Verification/Check Pole-Zero Characteristics",
+          "since": "R2023a+",
+          "intent": "Assert pole-zero locations meet requirements — use for verification that poles stay in a specified region"
+        },
+        {
+          "block": "Check Singular Value Characteristics",
+          "ref": "slctrlblks/Model Verification/Check Singular Value Characteristics",
+          "since": "R2023a+",
+          "intent": "Assert singular values meet requirements — use for verification that MIMO gain bounds are satisfied"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pid-autotuning",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "pid-autotuning",
+      "hash": "4ceb990b8cd7a40830f78927a23492ef8aafd53b7161ca1051e721d3d611f77e",
+      "fm": {
+        "title": "Pid autotuning",
+        "description": "Online PID tuning and gain scheduling (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "pid",
+          "autotuner",
+          "gain-schedule",
+          "vrft",
+          "tuning"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Change Operating Points",
+          "ref": "slctrl_autotuning/Change Operating Points",
+          "since": "R2023b+",
+          "intent": "Switch between operating points during autotuning — use for scheduling gain tuning at multiple equilibria"
+        },
+        {
+          "block": "Closed-Loop PID Autotuner",
+          "ref": "slctrl_autotuning/Closed-Loop PID Autotuner",
+          "since": "R2023b+",
+          "intent": "Tune PID gains online without opening the loop — use for safe in-service PID tuning with minimal process disruption"
+        },
+        {
+          "block": "Gain-Scheduled PID Autotuner",
+          "ref": "slctrl_autotuning/Gain-Scheduled PID Autotuner",
+          "since": "R2024a+",
+          "intent": "Tune PID gains at multiple operating points automatically — use for building gain schedules from online experiments"
+        },
+        {
+          "block": "Open-Loop PID Autotuner",
+          "ref": "slctrl_autotuning/Open-Loop PID Autotuner",
+          "since": "R2023b+",
+          "intent": "Tune PID gains using an open-loop experiment — use for accurate frequency-response-based PID tuning when the loop can be opened"
+        },
+        {
+          "block": "PID Gain Scheduler",
+          "ref": "slctrl_autotuning/PID Gain Scheduler",
+          "since": "R2023b+",
+          "intent": "Interpolate PID gains across operating conditions — use for implementing gain-scheduled PID controllers from stored gain tables"
+        },
+        {
+          "block": "PID Gains Store and Update",
+          "ref": "slctrl_autotuning/PID Gains Store and Update",
+          "since": "R2023b+",
+          "intent": "Store and apply tuned PID gains — use for saving autotuner results and deploying them to the controller"
+        },
+        {
+          "block": "Virtual Reference Feedback Tuning",
+          "ref": "slctrl_autotuning/Virtual Reference Feedback Tuning",
+          "since": "R2025a+",
+          "intent": "Tune controller from closed-loop data without plant identification — use for data-driven controller design from routine operation data"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-generation",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "signal-generation",
+      "hash": "43d23fe3b3400426c46a81d96eaeaeaa21214f71fece4138cd385858f9998df2",
+      "fm": {
+        "title": "Signal generation",
+        "description": "Test signal generators for identification (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "prbs",
+          "sinestream",
+          "superposition",
+          "start-stop",
+          "signal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Frequency Response Estimator",
+          "ref": "slctrl_fre/Frequency Response Estimator",
+          "since": "R2023b+",
+          "intent": "Estimate frequency response during simulation — use for online Bode measurement of a running system"
+        },
+        {
+          "block": "PRBS Signal Generator",
+          "ref": "slctrl_signal/PRBS Signal Generator",
+          "since": "R2024a+",
+          "intent": "Generate pseudo-random binary sequence — use for broadband excitation in system identification and frequency response tests"
+        },
+        {
+          "block": "Sinestream Signal Generator",
+          "ref": "slctrl_signal/Sinestream Signal Generator",
+          "since": "R2024a+",
+          "intent": "Generate swept or stepped sinusoidal excitation — use for frequency-by-frequency plant identification"
+        },
+        {
+          "block": "Start-Stop Generator",
+          "ref": "slctrl_signal/Start-Stop Generator",
+          "since": "R2024a+",
+          "intent": "Generate start and stop triggers for experiments — use for coordinating autotuning experiment timing"
+        },
+        {
+          "block": "Superposition Signal Generator",
+          "ref": "slctrl_signal/Superposition Signal Generator",
+          "since": "R2024b+",
+          "intent": "Superimpose perturbation on a control signal — use for injecting test signals without disrupting normal operation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sliding-mode",
+      "kind": "toolbox",
+      "library": "Simulink Control Design",
+      "kbFolder": "simulink-control-design",
+      "category": "sliding-mode",
+      "hash": "33f304654a97acc806c3dcb069f1a5169e8a190a9651d3908003170a068096f5",
+      "fm": {
+        "title": "Sliding mode",
+        "description": "Sliding mode robust controllers (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-control-design",
+          "sliding",
+          "mode",
+          "reaching",
+          "state-feedback",
+          "robust"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Linear Sliding Mode Controller (State Feedback)",
+          "ref": "slctrl_smc/Linear Sliding Mode Controller (State Feedback)",
+          "since": "R2023a+",
+          "intent": "Sliding mode controller with linear sliding surface — use for robust trajectory tracking with state feedback and chattering reduction"
+        },
+        {
+          "block": "Sliding Mode Controller (Reaching Law)",
+          "ref": "slctrl_smc/Sliding Mode Controller (Reaching Law)",
+          "since": "R2023a+",
+          "intent": "Sliding mode controller using reaching law design — use for robust control with configurable reaching dynamics"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:30",
+  "generatedAtDatenum": 740309.99549755792
 }

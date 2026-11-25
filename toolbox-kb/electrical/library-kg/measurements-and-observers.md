@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Measurements and observers
-description: Power, RMS, THD, PLL measurements and state observers
-tags: [measurement, pll, rms, observer, pmu]
+description: "Power, RMS, THD, PLL measurements and state observers (13 blocks)"
+tags: [toolbox-kb, electrical, measurement, pll, rms, observer, pmu]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Measurements and observers
+sources:
+  - resource: matlab:ee_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: measurements-and-observers
 block_count: 13
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Measurements and observers
-
-Use these blocks for measurements and observers.
 
 ## Recommended Blocks
 

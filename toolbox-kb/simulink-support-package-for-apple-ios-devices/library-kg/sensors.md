@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: On-device iOS sensors (accelerometer, gyroscope, GPS, magnetometer)
-tags: [sensor, accelerometer, gyroscope, gps, magnetometer]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Apple iOS Devices
-category_path: Sensors
+description: "On-device iOS sensors (accelerometer, gyroscope, GPS, magnetometer) (3 blocks)"
+tags: [toolbox-kb, simulink-support-package-for-apple-ios-devices, sensor, accelerometer, gyroscope, gps, magnetometer]
+status: draft
+sources:
+  - resource: matlab:iossensorlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Apple iOS Devices
+kb_folder: simulink-support-package-for-apple-ios-devices
+category: sensors
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

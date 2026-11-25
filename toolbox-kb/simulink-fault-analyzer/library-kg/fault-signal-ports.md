@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Fault signal ports
-description: Ports that route the modeled signal into and out of a fault subsystem's injection logic
-tags: [fault, signal, inport, outport, subsystem]
+description: Ports that route the modeled signal into and out of a fault subsystem's injection logic (4 blocks)
+tags: [toolbox-kb, simulink-fault-analyzer, fault, signal, inport, outport, subsystem]
 status: stable
-source: custom_library
-library_root: Simulink Fault Analyzer
-category_path: Fault signal ports
+sources:
+  - resource: matlab:mwfaultblocklib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Fault Analyzer
+kb_folder: simulink-fault-analyzer
+category: fault-signal-ports
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Fault signal ports
-
-Use these blocks for fault signal ports.
 
 ## Recommended Blocks
 

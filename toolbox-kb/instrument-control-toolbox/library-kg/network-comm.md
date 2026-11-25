@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Network comm
-description: Network-based data exchange over TCP/IP and UDP
-tags: [tcp, udp, network, ethernet, socket]
+description: Network-based data exchange over TCP/IP and UDP (4 blocks)
+tags: [toolbox-kb, instrument-control-toolbox, tcp, udp, network, ethernet, socket]
 status: stable
-source: mathworks_toolbox
-library_root: Instrument Control Toolbox
-category_path: Network comm
+sources:
+  - resource: matlab:instrumentlib
+source: toolbox_kb
+managed_by: satk
+library: Instrument Control Toolbox
+kb_folder: instrument-control-toolbox
+category: network-comm
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Network comm
-
-Use these blocks for network comm.
 
 ## Recommended Blocks
 

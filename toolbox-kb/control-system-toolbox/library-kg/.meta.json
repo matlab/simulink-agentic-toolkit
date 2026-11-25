@@ -1,15 +1,219 @@
 {
-  "generatedAt": "2026-09-29T16:38:06",
-  "generatedAtDatenum": 740254.69313476852,
-  "generatorVersion": 4,
-  "libraries": [
-    "Control System Toolbox"
-  ],
-  "blockCount": 24,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Control_System_Toolbox": {
-      "blockCount": 24
+  "pages": [
+    {
+      "id": "linear-models",
+      "kind": "toolbox",
+      "library": "Control System Toolbox",
+      "kbFolder": "control-system-toolbox",
+      "category": "linear-models",
+      "hash": "e3278cf3b18d30fb86a5a4353f32df9b0dcf29489c99e5e57cb4a0cb53333733",
+      "fm": {
+        "title": "Linear models",
+        "description": "Simulate imported LTI/second-order model objects (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "control-system-toolbox",
+          "lti system",
+          "sparse second order"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "LTI System",
+          "ref": "cstblocks/LTI System",
+          "since": "R2023a+",
+          "intent": "Simulate an imported Control System Toolbox LTI model object (tf/ss/zpk) directly as a block — use to drop a designed or identified linear model into a model."
+        },
+        {
+          "block": "Sparse Second Order",
+          "ref": "cstblocks/Sparse Second Order",
+          "since": "R2023a+",
+          "intent": "Simulate a large sparse second-order (mechanical/FE-style) model efficiently — use for high-order structural or mechanical dynamics without dense state-space."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "linear-parameter-varying",
+      "kind": "toolbox",
+      "library": "Control System Toolbox",
+      "kbFolder": "control-system-toolbox",
+      "category": "linear-parameter-varying",
+      "hash": "027714714e625ba33f3986c63728c8d3eaeedd0e21aa6288aa933e12c31a0de1",
+      "fm": {
+        "title": "Linear parameter varying",
+        "description": "Gain-scheduled and time-varying linear elements for LPV/LTV modeling (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "control-system-toolbox",
+          "linear parameter varying",
+          "varying",
+          "lpv",
+          "ltv"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Discrete Varying 2DOF PID",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying 2DOF PID",
+          "since": "R2023a+",
+          "intent": "Discrete-time gain-scheduled two-degree-of-freedom PID whose gains vary with scheduling inputs — use for LPV control with separate setpoint and feedback weighting."
+        },
+        {
+          "block": "Discrete Varying Delay",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying Delay",
+          "since": "R2024a+",
+          "intent": "Discrete-time delay whose length varies at runtime from an input — use in gain-scheduled/LPV models with time-varying transport delay."
+        },
+        {
+          "block": "Discrete Varying Lowpass",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying Lowpass",
+          "since": "R2023a+",
+          "intent": "Discrete-time lowpass filter whose cutoff varies at runtime — use for adaptive filtering within a gain-scheduled design."
+        },
+        {
+          "block": "Discrete Varying Notch",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying Notch",
+          "since": "R2023a+",
+          "intent": "Discrete-time notch filter whose notch frequency varies at runtime — use to reject a time-varying tone in an LPV design."
+        },
+        {
+          "block": "Discrete Varying Observer Form",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying Observer Form",
+          "since": "R2023a+",
+          "intent": "Discrete-time observer-canonical state-space block with matrices supplied at runtime — use for LPV estimation/control in observer form."
+        },
+        {
+          "block": "Discrete Varying PID",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying PID",
+          "since": "R2023a+",
+          "intent": "Discrete-time gain-scheduled PID whose gains vary with scheduling inputs — use for LPV control of a discrete plant."
+        },
+        {
+          "block": "Discrete Varying State Space",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying State Space",
+          "since": "R2023a+",
+          "intent": "Discrete-time state-space block whose A/B/C/D matrices are supplied at runtime — use to implement LPV/LTV plants and controllers in discrete time."
+        },
+        {
+          "block": "Discrete Varying Transfer Function",
+          "ref": "cstblocks/Linear Parameter Varying/Discrete Varying Transfer Function",
+          "since": "R2023a+",
+          "intent": "Discrete-time transfer function whose coefficients vary at runtime — use for LPV filtering or control in discrete time."
+        },
+        {
+          "block": "LPV System",
+          "ref": "cstblocks/Linear Parameter Varying/LPV System",
+          "since": "R2023a+",
+          "intent": "Simulate a linear parameter-varying model that interpolates among precomputed linearizations by a scheduling parameter — use to represent a nonlinear plant for gain-scheduled control design."
+        },
+        {
+          "block": "LTV System",
+          "ref": "cstblocks/Linear Parameter Varying/LTV System",
+          "since": "R2024a+",
+          "intent": "Simulate a linear time-varying model whose matrices change with time — use for trajectory-linearized dynamics."
+        },
+        {
+          "block": "Varying 2DOF PID",
+          "ref": "cstblocks/Linear Parameter Varying/Varying 2DOF PID",
+          "since": "R2023a+",
+          "intent": "Continuous-time gain-scheduled two-degree-of-freedom PID with runtime-varying gains — use for LPV control with separate setpoint and feedback weighting."
+        },
+        {
+          "block": "Varying Delay",
+          "ref": "cstblocks/Linear Parameter Varying/Varying Delay",
+          "since": "R2024a+",
+          "intent": "Continuous-time delay whose length varies at runtime — use in gain-scheduled/LPV models with time-varying transport delay."
+        },
+        {
+          "block": "Varying Lowpass Filter",
+          "ref": "cstblocks/Linear Parameter Varying/Varying Lowpass Filter",
+          "since": "R2023a+",
+          "intent": "Continuous-time lowpass filter whose cutoff varies at runtime — use for adaptive filtering within a gain-scheduled design."
+        },
+        {
+          "block": "Varying Notch Filter",
+          "ref": "cstblocks/Linear Parameter Varying/Varying Notch Filter",
+          "since": "R2023a+",
+          "intent": "Continuous-time notch filter whose notch frequency varies at runtime — use to reject a time-varying tone in an LPV design."
+        },
+        {
+          "block": "Varying Observer Form",
+          "ref": "cstblocks/Linear Parameter Varying/Varying Observer Form",
+          "since": "R2023a+",
+          "intent": "Continuous-time observer-canonical state-space block with matrices supplied at runtime — use for LPV estimation/control in observer form."
+        },
+        {
+          "block": "Varying PID Controller",
+          "ref": "cstblocks/Linear Parameter Varying/Varying PID Controller",
+          "since": "R2023a+",
+          "intent": "Continuous-time gain-scheduled PID with runtime-varying gains — use for LPV control of a continuous plant."
+        },
+        {
+          "block": "Varying State Space",
+          "ref": "cstblocks/Linear Parameter Varying/Varying State Space",
+          "since": "R2023a+",
+          "intent": "Continuous-time state-space block whose A/B/C/D matrices are supplied at runtime — use to implement LPV/LTV plants and controllers."
+        },
+        {
+          "block": "Varying Transfer Function",
+          "ref": "cstblocks/Linear Parameter Varying/Varying Transfer Function",
+          "since": "R2023a+",
+          "intent": "Continuous-time transfer function whose coefficients vary at runtime — use for LPV filtering or control."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "state-estimation",
+      "kind": "toolbox",
+      "library": "Control System Toolbox",
+      "kbFolder": "control-system-toolbox",
+      "category": "state-estimation",
+      "hash": "b57ca145fda93295cd27c95cf2f61e4529900ef0fd8801ca14f00a7fc78474c8",
+      "fm": {
+        "title": "State estimation",
+        "description": "Kalman-family and particle filters for online state estimation (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "control-system-toolbox",
+          "state estimation",
+          "kalman",
+          "particle filter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Extended Kalman Filter",
+          "ref": "cstblocks/State Estimation/Extended Kalman Filter",
+          "since": "R2023a+",
+          "intent": "Estimate states of a nonlinear system online by linearizing the dynamics about the current estimate — use for state/parameter estimation when the model is differentiable and only mildly nonlinear."
+        },
+        {
+          "block": "Kalman Filter",
+          "ref": "cstblocks/State Estimation/Kalman Filter",
+          "since": "R2023a+",
+          "intent": "Optimal recursive state observer for a linear system with Gaussian noise — use for sensor fusion and state estimation when a linear model is adequate."
+        },
+        {
+          "block": "Particle Filter",
+          "ref": "cstblocks/State Estimation/Particle Filter",
+          "since": "R2023a+",
+          "intent": "Estimate states of a highly nonlinear or non-Gaussian system using weighted sample particles — use when Kalman-family filters fail on multimodal or strongly nonlinear problems."
+        },
+        {
+          "block": "Unscented Kalman Filter",
+          "ref": "cstblocks/State Estimation/Unscented Kalman Filter",
+          "since": "R2023a+",
+          "intent": "Estimate states of a nonlinear system using sigma-point sampling instead of linearization — use when EKF accuracy degrades from strong nonlinearity."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:35",
+  "generatedAtDatenum": 740309.99555423611
 }

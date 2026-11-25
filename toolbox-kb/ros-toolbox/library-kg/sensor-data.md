@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensor data
-description: Sensor data encoding and decoding
-tags: [image, point cloud, scan, occupancy, write, read]
+description: Sensor data encoding and decoding (14 blocks)
+tags: [toolbox-kb, ros-toolbox, image, point cloud, scan, occupancy, write, read]
 status: stable
-source: mathworks_toolbox
-library_root: ROS Toolbox
-category_path: Sensor data
+sources:
+  - resource: matlab:robotlib
+source: toolbox_kb
+managed_by: satk
+library: ROS Toolbox
+kb_folder: ros-toolbox
+category: sensor-data
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Sensor data
-
-Use these blocks for sensor data.
 
 ## Recommended Blocks
 

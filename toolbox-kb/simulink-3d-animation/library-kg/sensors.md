@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: Virtual sensor models for perception testing
-tags: [camera, lidar, radar, ultrasonic, sensor]
+description: Virtual sensor models for perception testing (7 blocks)
+tags: [toolbox-kb, simulink-3d-animation, camera, lidar, radar, ultrasonic, sensor]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink 3D Animation
-category_path: Sensors
+sources:
+  - resource: matlab:sl3dlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink 3D Animation
+kb_folder: simulink-3d-animation
+category: sensors
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

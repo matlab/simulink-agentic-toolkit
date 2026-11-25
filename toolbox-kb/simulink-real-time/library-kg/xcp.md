@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Xcp
-description: XCP measurement and calibration over CAN, CAN FD, and UDP
-tags: [xcp]
-status: stable
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Xcp
+description: "XCP measurement and calibration over CAN, CAN FD, and UDP (12 blocks)"
+tags: [toolbox-kb, simulink-real-time, xcp]
+status: draft
+sources:
+  - resource: matlab:xcprtlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: xcp
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Xcp
-
-Use these blocks for xcp.
 
 ## Recommended Blocks
 

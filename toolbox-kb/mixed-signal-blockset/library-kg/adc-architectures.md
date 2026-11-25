@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Adc architectures
-description: Complete ADC architecture models
-tags: [flash, sar, interleaved, adc]
+description: Complete ADC architecture models (3 blocks)
+tags: [toolbox-kb, mixed-signal-blockset, flash, sar, interleaved, adc]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset
-category_path: Adc architectures
+sources:
+  - resource: matlab:msbAdcArchitectures
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset
+kb_folder: mixed-signal-blockset
+category: adc-architectures
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Adc architectures
-
-Use these blocks for adc architectures.
 
 ## Recommended Blocks
 

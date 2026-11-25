@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Circuit envelope
-description: Multi-carrier circuit-envelope RF elements, sources, and utilities
-tags: [circuit envelope]
-status: stable
-source: custom_library
-library_root: RF Blockset
-category_path: Circuit envelope
+description: "Multi-carrier circuit-envelope RF elements, sources, and utilities (51 blocks)"
+tags: [toolbox-kb, rf-blockset, circuit envelope]
+status: draft
+sources:
+  - resource: matlab:simrfV2elements
+source: toolbox_kb
+managed_by: satk
+library: RF Blockset
+kb_folder: rf-blockset
+category: circuit-envelope
 block_count: 51
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Circuit envelope
-
-Use these blocks for circuit envelope.
 
 ## Recommended Blocks
 

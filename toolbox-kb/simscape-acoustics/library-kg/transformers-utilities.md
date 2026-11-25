@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Transformers utilities
-description: Domain converters and configuration blocks
-tags: [transformer, converter, mems, mechanical, properties]
+description: Domain converters and configuration blocks (2 blocks)
+tags: [toolbox-kb, simscape-acoustics, transformer, converter, mems, mechanical, properties]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Acoustics
-category_path: Transformers utilities
+sources:
+  - resource: matlab:acoustic_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Acoustics
+kb_folder: simscape-acoustics
+category: transformers-utilities
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Transformers utilities
-
-Use these blocks for transformers utilities.
 
 ## Recommended Blocks
 

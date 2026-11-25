@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Localization
-description: Position estimation from TOA, TDOA, and bistatic measurements
-tags: [localization, TOA, TDOA, position, bistatic, emitter]
+description: "Position estimation from TOA, TDOA, and bistatic measurements (7 blocks)"
+tags: [toolbox-kb, phased-array-system-toolbox, localization, TOA, TDOA, position, bistatic, emitter]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Localization
+sources:
+  - resource: matlab:phasedloclib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: localization
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Localization
-
-Use these blocks for localization.
 
 ## Recommended Blocks
 

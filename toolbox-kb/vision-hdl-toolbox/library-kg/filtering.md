@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Filtering
-description: HDL-optimized spatial filters on a pixel stream
-tags: [filtering, bilateral, image filter, median]
+description: HDL-optimized spatial filters on a pixel stream (3 blocks)
+tags: [toolbox-kb, vision-hdl-toolbox, filtering, bilateral, image filter, median]
 status: stable
-source: custom_library
-library_root: Vision HDL Toolbox
-category_path: Filtering
+sources:
+  - resource: matlab:visionhdlfilter
+source: toolbox_kb
+managed_by: satk
+library: Vision HDL Toolbox
+kb_folder: vision-hdl-toolbox
+category: filtering
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Filtering
-
-Use these blocks for filtering.
 
 ## Recommended Blocks
 

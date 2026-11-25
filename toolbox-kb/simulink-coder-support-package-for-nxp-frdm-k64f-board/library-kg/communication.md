@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Communication
-description: Serial, I2C, and network communication
-tags: [serial, i2c, tcp, udp, uart]
+description: "Serial, I2C, and network communication (8 blocks)"
+tags: [toolbox-kb, simulink-coder-support-package-for-nxp-frdm-k64f-board, serial, i2c, tcp, udp, uart]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for NXP FRDM-K64F Board
-category_path: Communication
+sources:
+  - resource: matlab:frdmk64flib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for NXP FRDM-K64F Board
+kb_folder: simulink-coder-support-package-for-nxp-frdm-k64f-board
+category: communication
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Communication
-
-Use these blocks for communication.
 
 ## Recommended Blocks
 

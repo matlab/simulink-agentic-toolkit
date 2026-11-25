@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Matrix
-description: Matrix and array operations
-tags: [matrix, array, transpose, diagonal, multiply, submatrix]
+description: Matrix and array operations (19 blocks)
+tags: [toolbox-kb, simulink, matrix, array, transpose, diagonal, multiply, submatrix]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Matrix
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: matrix
 block_count: 19
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Matrix
-
-Use these blocks for matrix.
 
 ## Recommended Blocks
 

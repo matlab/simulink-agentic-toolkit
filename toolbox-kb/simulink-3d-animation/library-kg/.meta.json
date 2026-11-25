@@ -1,15 +1,226 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74458836811,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink 3D Animation"
-  ],
-  "blockCount": 21,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Simulink_3D_Animation": {
-      "blockCount": 21
+  "pages": [
+    {
+      "id": "actors",
+      "kind": "toolbox",
+      "library": "Simulink 3D Animation",
+      "kbFolder": "simulink-3d-animation",
+      "category": "actors",
+      "hash": "2d5fee1097a399b17074151a8d9a6a23636c53f1fc0a2692ef2a3c71ae288956",
+      "fm": {
+        "title": "Actors",
+        "description": "3D actors and vehicles in the virtual scene (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-3d-animation",
+          "actor",
+          "vehicle",
+          "pedestrian",
+          "bicyclist",
+          "spawn"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Actor",
+          "ref": "sl3dlib/Simulation 3D/Actors/Simulation 3D Actor",
+          "since": "R2023a+",
+          "intent": "Spawn a generic 3D actor in the simulation scene — use for placing static or dynamic objects in the virtual environment"
+        },
+        {
+          "block": "Simulation 3D Bicyclist",
+          "ref": "sl3dlib/Simulation 3D/Actors/Simulation 3D Bicyclist",
+          "since": "R2024a+",
+          "intent": "Spawn an animated 3D bicyclist in the scene — use for simulating vulnerable road users in traffic scenarios"
+        },
+        {
+          "block": "Simulation 3D Pedestrian",
+          "ref": "sl3dlib/Simulation 3D/Actors/Simulation 3D Pedestrian",
+          "since": "R2024a+",
+          "intent": "Spawn an animated 3D pedestrian in the scene — use for simulating walking people in traffic or safety scenarios"
+        },
+        {
+          "block": "Simulation 3D Vehicle with Ground Following",
+          "ref": "sl3dlib/Simulation 3D/Actors/Simulation 3D Vehicle with Ground Following",
+          "since": "R2024a+",
+          "intent": "Spawn a 3D vehicle that follows terrain elevation — use for realistic vehicle visualization on roads with grade changes"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "hardware-input",
+      "kind": "toolbox",
+      "library": "Simulink 3D Animation",
+      "kbFolder": "simulink-3d-animation",
+      "category": "hardware-input",
+      "hash": "920b8b47023626aa99693cc1dcab7a582dbfabfd4ee24dd67ffd85c3dd4a635d",
+      "fm": {
+        "title": "Hardware input",
+        "description": "Physical input devices for interactive simulation (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-3d-animation",
+          "joystick",
+          "spacemouse",
+          "input",
+          "interactive",
+          "manual"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Joystick",
+          "ref": "sl3dlib/Simulation 3D/Hardware Interface/Simulation 3D Joystick",
+          "since": "R2025a+",
+          "intent": "Read joystick input for interactive 3D simulation — use for manual control of vehicles or cameras in the 3D scene"
+        },
+        {
+          "block": "Simulation 3D SpaceMouse",
+          "ref": "sl3dlib/Simulation 3D/Hardware Interface/Simulation 3D SpaceMouse",
+          "since": "R2025a+",
+          "intent": "Read 3D SpaceMouse input for scene navigation — use for 6-DOF camera or object manipulation in the 3D environment"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Simulink 3D Animation",
+      "kbFolder": "simulink-3d-animation",
+      "category": "sensors",
+      "hash": "9a39a7aa3b8d1f1bebe92ca2322ec246f3f49cab2f674fb5458ad1382343a419",
+      "fm": {
+        "title": "Sensors",
+        "description": "Virtual sensor models for perception testing (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-3d-animation",
+          "camera",
+          "lidar",
+          "radar",
+          "ultrasonic",
+          "sensor"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Camera",
+          "ref": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Camera",
+          "since": "R2024a+",
+          "intent": "Attach a virtual camera to capture images in the 3D scene — use for generating synthetic camera data for perception testing"
+        },
+        {
+          "block": "Simulation 3D Fisheye Camera",
+          "ref": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Fisheye Camera",
+          "since": "R2024a+",
+          "intent": "Attach a virtual fisheye camera in the 3D scene — use for wide-angle synthetic imagery for surround-view perception testing"
+        },
+        {
+          "block": "Simulation 3D Lidar",
+          "ref": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Lidar",
+          "since": "R2024a+",
+          "intent": "Attach a virtual lidar sensor in the 3D scene — use for generating synthetic point cloud data for perception algorithm development"
+        },
+        {
+          "block": "Simulation 3D Radar Data Generator",
+          "ref": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Radar Data Generator",
+          "since": "R2024a+",
+          "intent": "Generate synthetic radar detections from the 3D scene — use for testing radar processing without physical hardware"
+        },
+        {
+          "block": "Simulation 3D Ray Tracer",
+          "ref": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Ray Tracer",
+          "since": "R2024a+",
+          "intent": "Cast rays into the 3D scene and return hit information — use for custom proximity sensing or line-of-sight checks"
+        },
+        {
+          "block": "Simulation 3D Ultrasonic Array",
+          "ref": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Ultrasonic Array",
+          "since": "R2024a+",
+          "intent": "Simulate an array of ultrasonic sensors in the 3D scene — use for testing parking assist or close-range detection algorithms"
+        },
+        {
+          "block": "Simulation 3D Ultrasonic Sensor",
+          "ref": "sl3dlib/Simulation 3D/Sensors/Simulation 3D Ultrasonic Sensor",
+          "since": "R2024a+",
+          "intent": "Simulate a single ultrasonic sensor in the 3D scene — use for testing proximity detection at close range"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Simulink 3D Animation",
+      "kbFolder": "simulink-3d-animation",
+      "category": "utilities",
+      "hash": "0df942401f76f4c1f7ecb08e235e225978ad14f4fd237aca76849d3625ffc72e",
+      "fm": {
+        "title": "Utilities",
+        "description": "Scene utilities and data exchange (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-3d-animation",
+          "transform",
+          "message",
+          "video",
+          "configuration",
+          "scene"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Scene Configuration",
+          "ref": "sl3dlib/Simulation 3D/Environment/Simulation 3D Scene Configuration",
+          "since": "R2023a+",
+          "intent": "Configure the 3D simulation environment — use for selecting scene, weather, lighting, and rendering options for the virtual world"
+        },
+        {
+          "block": "Simulation 3D Actor Transform Get",
+          "ref": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Actor Transform Get",
+          "since": "R2023a+",
+          "intent": "Read the position and orientation of a 3D actor — use for getting ground-truth pose of objects in the scene"
+        },
+        {
+          "block": "Simulation 3D Actor Transform Set",
+          "ref": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Actor Transform Set",
+          "since": "R2023a+",
+          "intent": "Set the position and orientation of a 3D actor — use for programmatically moving objects in the virtual scene"
+        },
+        {
+          "block": "Simulation 3D Camera Get",
+          "ref": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Camera Get",
+          "since": "R2023a+",
+          "intent": "Read the viewport camera position and settings — use for querying the observer camera state in the 3D scene"
+        },
+        {
+          "block": "Simulation 3D Message Get",
+          "ref": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Message Get",
+          "since": "R2025a+",
+          "intent": "Receive messages from the 3D simulation engine — use for reading events or custom data from the Unreal Engine scene"
+        },
+        {
+          "block": "Simulation 3D Message Set",
+          "ref": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Message Set",
+          "since": "R2025a+",
+          "intent": "Send messages to the 3D simulation engine — use for triggering events or passing custom data to the Unreal Engine scene"
+        },
+        {
+          "block": "Simulation 3D Video Writer",
+          "ref": "sl3dlib/Simulation 3D/Utilities/Simulation 3D Video Writer",
+          "since": "R2025a+",
+          "intent": "Record video from the 3D simulation scene — use for capturing rendered footage for review or documentation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:29",
+  "generatedAtDatenum": 740309.99547964125
 }

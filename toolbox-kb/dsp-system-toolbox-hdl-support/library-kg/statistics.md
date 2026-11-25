@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Statistics
-description: Running statistical measures
-tags: [statistics, maximum, minimum]
+description: Running statistical measures (2 blocks)
+tags: [toolbox-kb, dsp-system-toolbox-hdl-support, statistics, maximum, minimum]
 status: stable
-source: custom_library
-library_root: DSP System Toolbox HDL Support
-category_path: Statistics
+sources:
+  - resource: matlab:dsphdlsupportstat
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox HDL Support
+kb_folder: dsp-system-toolbox-hdl-support
+category: statistics
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Statistics
-
-Use these blocks for statistics.
 
 ## Recommended Blocks
 

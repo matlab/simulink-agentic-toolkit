@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Interleaving block
-description: Blocks for interleaving block.
+description: Blocks for Interleaving block (10 blocks)
+tags: [toolbox-kb, communications-toolbox]
 status: draft
-source: custom_library
-library_root: Communications Toolbox
-category_path: Interleaving block
+sources:
+  - resource: matlab:commblkintrlv2
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: interleaving-block
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Interleaving block
-
-Use these blocks for interleaving block.
 
 ## Recommended Blocks
 

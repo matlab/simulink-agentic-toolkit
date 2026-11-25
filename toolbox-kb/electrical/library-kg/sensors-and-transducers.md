@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors and transducers
-description: Current, voltage, power, temperature, and motion sensors
-tags: [sensor, current, voltage, temperature, encoder]
+description: "Current, voltage, power, temperature, and motion sensors (24 blocks)"
+tags: [toolbox-kb, electrical, sensor, current, voltage, temperature, encoder]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Sensors and transducers
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: sensors-and-transducers
 block_count: 24
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Sensors and transducers
-
-Use these blocks for sensors and transducers.
 
 ## Recommended Blocks
 

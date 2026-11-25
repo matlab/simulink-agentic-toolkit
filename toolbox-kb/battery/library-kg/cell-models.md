@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Cell models
-description: Simscape physical battery and supercapacitor cell models
-tags: [battery, cell, equivalent, circuit, simscape]
+description: Simscape physical battery and supercapacitor cell models (5 blocks)
+tags: [toolbox-kb, battery, cell, equivalent, circuit, simscape]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Cell models
+sources:
+  - resource: matlab:batt_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: cell-models
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Cell models
-
-Use these blocks for cell models.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gas
-description: Gas-domain elements for pneumatic and compressible-flow systems
-tags: [gas]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Gas
+description: Gas-domain elements for pneumatic and compressible-flow systems (14 blocks)
+tags: [toolbox-kb, simscape, gas]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: gas
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Gas
-
-Use these blocks for gas.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Current management
-description: Charging and discharging current control and limiting algorithms
-tags: [charging, discharging, current, limit, cc-cv]
+description: Charging and discharging current control and limiting algorithms (4 blocks)
+tags: [toolbox-kb, battery, charging, discharging, current, limit, cc-cv]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Current management
+sources:
+  - resource: matlab:batt_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: current-management
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Current management
-
-Use these blocks for current management.
 
 ## Recommended Blocks
 

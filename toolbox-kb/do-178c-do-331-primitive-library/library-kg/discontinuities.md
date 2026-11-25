@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Discontinuities
-description: Dead zone, relay, and saturation nonlinearities
-tags: [discontinuities, dead zone, relay, saturation]
-status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Discontinuities
+description: "Dead zone, relay, and saturation nonlinearities (6 blocks)"
+tags: [toolbox-kb, do-178c-do-331-primitive-library, discontinuities, dead zone, relay, saturation]
+status: draft
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: discontinuities
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Discontinuities
-
-Use these blocks for discontinuities.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Satellite dynamics
-description: Orbit propagation, spacecraft attitude, and CubeSat vehicles
-tags: [orbit, satellite, spacecraft, CubeSat, attitude]
+description: "Orbit propagation, spacecraft attitude, and CubeSat vehicles (13 blocks)"
+tags: [toolbox-kb, aerospace-blockset, orbit, satellite, spacecraft, CubeSat, attitude]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Satellite dynamics
+sources:
+  - resource: matlab:aerolibcubesatveh
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: satellite-dynamics
 block_count: 13
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Satellite dynamics
-
-Use these blocks for satellite dynamics.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Decision logic
-description: Tabular combinational logic mapping input conditions to actions
-tags: [truth table, decision, boolean, condition, logic]
+description: Tabular combinational logic mapping input conditions to actions (1 blocks)
+tags: [toolbox-kb, stateflow, truth table, decision, boolean, condition, logic]
 status: stable
-source: custom_library
-library_root: Stateflow
-category_path: Decision logic
+sources:
+  - resource: matlab:sflib
+source: toolbox_kb
+managed_by: satk
+library: Stateflow
+kb_folder: stateflow
+category: decision-logic
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Decision logic
-
-Use these blocks for decision logic.
 
 ## Recommended Blocks
 

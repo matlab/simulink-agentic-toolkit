@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pumps compressors
-description: Pumps, motors, compressors, fans, turbines, and ejectors that add or extract energy from a fluid stream
-tags: [pump, compressor, turbine, fan, motor]
+description: "Pumps, motors, compressors, fans, turbines, and ejectors that add or extract energy from a fluid stream (31 blocks)"
+tags: [toolbox-kb, simscape-fluids, pump, compressor, turbine, fan, motor]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Pumps compressors
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: pumps-compressors
 block_count: 31
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Pumps compressors
-
-Use these blocks for pumps compressors.
 
 ## Recommended Blocks
 

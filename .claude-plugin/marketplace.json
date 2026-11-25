@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "model-based-design-core",
-      "version": "0.12.0",
+      "version": "0.13.0",
       "description": "Foundational Model-Based Design capabilities for the Simulink product family",
       "author": {
         "name": "MathWorks"
@@ -178,6 +178,28 @@
         "trajectory"
       ],
       "source": "./skills-catalog/aerospace",
+      "category": "development",
+      "strict": false,
+      "skills": "./"
+    },
+    {
+      "name": "rf-and-mixed-signal",
+      "version": "0.1.0",
+      "description": "Physics-based RF system modeling and simulation in Simulink with RF Blockset Circuit Envelope and Idealized Baseband",
+      "author": {
+        "name": "MathWorks"
+      },
+      "keywords": [
+        "simulink",
+        "rf-blockset",
+        "rf",
+        "circuit-envelope",
+        "idealized-baseband",
+        "rfbudget",
+        "5g",
+        "matlab"
+      ],
+      "source": "./skills-catalog/rf-and-mixed-signal",
       "category": "development",
       "strict": false,
       "skills": "./"

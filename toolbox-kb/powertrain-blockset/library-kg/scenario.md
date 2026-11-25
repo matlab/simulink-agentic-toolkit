@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Scenario
-description: Drive-cycle and driver models for closed-loop runs
-tags: [vehicle scenario builder, drive cycle, longitudinal driver]
+description: Drive-cycle and driver models for closed-loop runs (2 blocks)
+tags: [toolbox-kb, powertrain-blockset, vehicle scenario builder, drive cycle, longitudinal driver]
 status: stable
-source: custom_library
-library_root: Powertrain Blockset
-category_path: Scenario
+sources:
+  - resource: matlab:autolibscenario
+source: toolbox_kb
+managed_by: satk
+library: Powertrain Blockset
+kb_folder: powertrain-blockset
+category: scenario
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Scenario
-
-Use these blocks for scenario.
 
 ## Recommended Blocks
 

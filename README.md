@@ -89,7 +89,11 @@ Use `satk.Configuration.setToolboxes` to activate pre-built knowledge bases for 
 satk.Configuration.setToolboxes('all')                                 % Activate all installed toolbox KBs
 satk.Configuration.setToolboxes({'Aerospace Blockset', 'Simscape'})    % Activate specific toolboxes by name
 satk.Configuration.setToolboxes('none')                                % Deactivate all toolbox KBs
+satk.Configuration.setToolboxes('Simscape', Mode="add")                % Keep the active toolbox KBs and add one
+satk.Configuration.setToolboxes('Simscape', Mode="remove")             % Deactivate just this toolbox
 ```
+
+By default (`Mode="replace"`), the toolboxes you list become the only active ones.
 
 ### Custom Libraries
 
@@ -137,6 +141,45 @@ knowledge bases with `setToolboxes` writes them into that same `.satk` folder.
 If you activate toolbox KBs globally first and later register custom
 libraries with a `Location`, the toolkit automatically moves the toolbox KBs
 alongside the custom libraries.
+
+### Knowledge Base
+
+The agent finds blocks through the knowledge base (KB), markdown pages in the OKF format at `.satk/library-kg/`. The toolkit generates the pages: `setToolboxes` adds toolbox pages, and `setCustomLibraries` registers your custom libraries.
+
+#### Maintaining the Knowledge Base
+
+Maintain the Knowledge Base with `satk.Configuration`. All methods act on the effective KB; pass `Location="global"`, `"project"`, or a folder to target a specific one.
+
+| Task | Method | Description |
+|------|--------|-------------|
+| Read | `listPages` | Table of pages with ID, type, title, description, tags, and status. Filter by folder (`Under=`), page type (`Type=`), or tag (`Tag=`). |
+| | `getPage` | Return one page: its ID, path, frontmatter, and markdown body. |
+| | `getBacklinks` | Return the IDs of the pages that link to a page. |
+| | `listBlocks` | Table of blocks with each block's library, category, and description, and whether you set that description yourself. Filter by library (`Library=`) or category (`Category=`). |
+| | `getBlock` | Look up a block by its display name or `ReferenceBlock`. |
+| Curate blocks | `setBlockDescription` | Set a block's description and regenerate its page. |
+| | `setBlockCategory` | Move blocks to a category, creating the category if it is new, and regenerate. |
+| Edit pages | `addPage` | Add a page, such as a guide or a new category page. `OnExist=` sets what happens if the page already exists: `"error"` (default), `"skip"`, `"update"` (merge the fields you pass), or `"replace"` (overwrite the page). |
+| | `addPages` | Add several pages from a JSON manifest and report a result for each entry. Accepts the same `OnExist=` option. |
+| | `updatePage` | Change a page's frontmatter (status, title, description, tags) or its body. |
+| | `removePage` | Remove a page and return the pages that still link to it. A removed generated page stays removed when you regenerate. |
+| | `renamePage` | Rename a page and rewrite the links to it. Renaming a generated category page also renames the category. A generated page cannot move to another library folder. |
+| Maintain | `regeneratePages` | Regenerate the generated pages from your libraries. `Reset=true` drops all page edits and brings back removed pages, but keeps the block descriptions and categories you set. `Discard="<page id>"` resolves a page marked `conflict`: it backs up your hand edit under `.satk/backup/hand-edits/` and takes the generated version. |
+| | `lint` | Report broken links, unknown `ReferenceBlock` values, wrong block counts, blocked blocks that are listed, and edits that conflict with the generated pages. Fix a conflict with `regeneratePages(Discard="<page id>")`. |
+| | `reindex` | Rebuild every `index.md`, for example after you copy pages into the KB by hand. |
+| | `removeCustomLibrary` | Unregister a library and remove its pages. The block descriptions and categories you set, and your block policy, are kept. |
+| Export | `pack` | Zip the KB so you can share it. Relative links keep working. |
+| | `viz` | Write an interactive HTML graph of the links between pages. Opening it needs network access. |
+
+- Descriptions and categories you set are saved in `.satk/library-curation.json` and survive regeneration.
+- KB write methods accept `By=` to record who made a change in `log.md`, for example `By="human:alice"`. The default is `process:satk-configuration`.
+- A KB created by an earlier release is migrated on the first write call, and the old folder is kept under `.satk/backup/`.
+
+#### Checking the Knowledge Base Status
+
+```matlab
+satk.Configuration.getStatus().kg        % page, block, and lint counts
+```
 
 ### Clearing Configuration
 
@@ -196,6 +239,7 @@ After you install the Simulink Agentic Toolkit, your agent can use the skills in
 | [Real-Time Simulation and Testing](skills-catalog/real-time-simulation-and-testing/) | Configure, deploy, and run Simulink models on real-time target computers with Simulink Real-Time |
 | [Simulink Block and Blockset Authoring](skills-catalog/simulink-block-and-blockset-authoring/) | Author the appearance of custom Simulink blocks, such as dynamic SVG block icons |
 | [Aerospace](skills-catalog/aerospace/) | Aerospace skills for Simulink models using Aerospace Blockset |
+| [RF and Mixed-Signal](skills-catalog/rf-and-mixed-signal/) | Physics-based RF system modeling and simulation in Simulink with RF Blockset Circuit Envelope and Idealized Baseband |
 
 ## Security Considerations
 When you use the Simulink Agentic Toolkit and MATLAB MCP Server, review and validate all tool calls before you run them. Always keep a human in the loop for important actions, and proceed only when you are confident that the call does what you expect. For more information, see [User Interaction Model (MCP)](https://modelcontextprotocol.io/specification/2026-07-28/server/tools#user-interaction-model) and [Security Considerations (MCP)](https://modelcontextprotocol.io/specification/2026-07-28/server/tools#security-considerations).

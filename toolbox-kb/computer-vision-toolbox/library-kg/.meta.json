@@ -1,15 +1,627 @@
 {
-  "generatedAt": "2026-09-29T16:38:06",
-  "generatedAtDatenum": 740254.693134132,
-  "generatorVersion": 4,
-  "libraries": [
-    "Computer Vision Toolbox"
-  ],
-  "blockCount": 75,
-  "categoryCount": 7,
-  "libraryFingerprints": {
-    "Computer_Vision_Toolbox": {
-      "blockCount": 75
+  "pages": [
+    {
+      "id": "analysis-statistics",
+      "kind": "toolbox",
+      "library": "Computer Vision Toolbox",
+      "kbFolder": "computer-vision-toolbox",
+      "category": "analysis-statistics",
+      "hash": "bd77e22c66ce56ce0fdca9bf381ea637b1a23ca99ab19397cd79320ddca62f9d",
+      "fm": {
+        "title": "Analysis statistics",
+        "description": "Measure and analyze image content (27 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "computer-vision-toolbox",
+          "analysis",
+          "enhancement",
+          "statistics",
+          "morphological",
+          "transforms",
+          "text",
+          "graphics"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Contrast Adjustment",
+          "ref": "visionanalysis/Contrast Adjustment",
+          "since": "R2023a+",
+          "intent": "Adjusts the contrast of an image by linearly scaling the pixel values between upper and lower limits. Pixel values that are above or below this range are saturated to the upper or lower limit values, respectively."
+        },
+        {
+          "block": "Edge Detection",
+          "ref": "visionanalysis/Edge Detection",
+          "since": "R2023a+",
+          "intent": "Finds the edges in an input image using Sobel, Prewitt, Roberts, or Canny methods. The block outputs a binary image, a matrix of Boolean values, where pixel values equal to 1 correspond to edges. Alternatively, the block can output two gradient components of the image for the first three methods."
+        },
+        {
+          "block": "Histogram Equalization",
+          "ref": "visionanalysis/Histogram Equalization",
+          "since": "R2023a+",
+          "intent": "Enhance the contrast of input image using histogram equalization."
+        },
+        {
+          "block": "Template Matching",
+          "ref": "visionanalysis/Template Matching",
+          "since": "R2023a+",
+          "intent": "Perform template matching by shifting the template in single-pixel increments throughout the interior of image I. You can use the ROI port to define a region of interest (ROI) over which you want to perform template matching. The format of the ROI port is [x y width height], where [x y] are one-based coordinates of the upper left corner of a rectangle. The block outputs either the match metric values at the Metric port or the one-based [x y] coordinates of the best template match at the Loc port. Optionally, the block can output an N-by-N matrix of the match metric values centered around the best match location at the NMetric port."
+        },
+        {
+          "block": "Trace Boundary",
+          "ref": "visionanalysis/Trace Boundary",
+          "since": "R2023a+",
+          "intent": "Traces the boundary of an object in a binary image BW, in which nonzero pixels belong to an object and 0 pixels constitute the background. Start Pt is a two-element vector specifying the one-based [x y] coordinates of the initial point on the object boundary. Pts is a M-by-2 matrix of one-based [x y] point coordinates, where M is the number of boundary points. M is less than or equal to the Maximum number of boundary pixels specified in the mask."
+        },
+        {
+          "block": "Block Matching",
+          "ref": "visionanalysis/Block Matching",
+          "since": "R2023a+",
+          "intent": "Estimates motion between two images or two video frames using block matching method."
+        },
+        {
+          "block": "Corner Detection",
+          "ref": "visionanalysis/Corner Detection",
+          "since": "R2023a+",
+          "intent": "Find corners in the image. You can use this block to find the location of the corners, and the corner metric values. Corner locations are returned as an M-by-2 matrix of one-based [x y] coordinates, where M is the number of detected corners."
+        },
+        {
+          "block": "Deep Learning Object Detector",
+          "ref": "visionanalysis/Deep Learning Object Detector",
+          "since": "R2023a+",
+          "intent": "Detect objects using a trained deep learning object detector. This blocks predicts bounding boxes, class labels, and scores for the input image using an object detector imported from a MAT-file or a MATLAB function."
+        },
+        {
+          "block": "Optical Flow",
+          "ref": "visionanalysis/Optical Flow",
+          "since": "R2023a+",
+          "intent": "Estimates optical flow across two or more video frames."
+        },
+        {
+          "block": "Closing",
+          "ref": "visionmorphops/Closing",
+          "since": "R2023a+",
+          "intent": "Perform morphological closing on an intensity or binary image. Use the Neighborhood or structuring element parameter to define the neighborhood or structuring element that the block applies to the image. Specify a neighborhood by entering a matrix or vector of ones and zeros. Specify a structuring element using the strel function. Alternatively, you can specify neighborhood values using the Nhood port. For further information on structuring elements, type doc strel at the MATLAB command prompt."
+        },
+        {
+          "block": "Dilation",
+          "ref": "visionmorphops/Dilation",
+          "since": "R2023a+",
+          "intent": "Perform morphological dilation on an intensity or binary image. Use the Neighborhood or structuring element parameter to define the neighborhood or structuring element that the block applies to the image. Specify a neighborhood by entering a matrix or vector of ones and zeros. Specify a structuring element using the strel function. Alternatively, you can specify neighborhood values using the Nhood port. For further information on structuring elements, type doc strel at the MATLAB command prompt."
+        },
+        {
+          "block": "Erosion",
+          "ref": "visionmorphops/Erosion",
+          "since": "R2023a+",
+          "intent": "Perform morphological erosion on an intensity or binary image. Use the Neighborhood or structuring element parameter to define the neighborhood or structuring element that the block applies to the image. Specify a neighborhood by entering a matrix or vector of ones and zeros. Specify a structuring element using the strel function. Alternatively, you can specify neighborhood values using the Nhood port. For further information on structuring elements, type doc strel at the MATLAB command prompt."
+        },
+        {
+          "block": "Label",
+          "ref": "visionmorphops/Label",
+          "since": "R2023a+",
+          "intent": "Labels and counts connected components in a binary image. At the Label port, the block outputs a label matrix where pixels equal to 0 represent the background, pixels equal to 1 represent the first object, pixels equal to 2 represent the second object, and so on. At the Count port, block outputs a scalar that represents the number of labeled objects. Use the Connectivity parameter to define which pixels are connected to each other."
+        },
+        {
+          "block": "Opening",
+          "ref": "visionmorphops/Opening",
+          "since": "R2023a+",
+          "intent": "Perform morphological opening on an intensity or binary image. Use the Neighborhood or structuring element parameter to define the neighborhood or structuring element that the block applies to the image. Specify a neighborhood by entering a matrix or vector of ones and zeros. Specify a structuring element using the strel function. Alternatively, you can specify neighborhood values using the Nhood port. For further information on structuring elements, type doc strel at the MATLAB command prompt."
+        },
+        {
+          "block": "2-D Autocorrelation",
+          "ref": "visionstatistics/2-D Autocorrelation",
+          "since": "R2023a+",
+          "intent": "Compute 2-D autocorrelation of input matrix."
+        },
+        {
+          "block": "2-D Correlation",
+          "ref": "visionstatistics/2-D Correlation",
+          "since": "R2023a+",
+          "intent": "Performs two-dimensional cross-correlation between two inputs. Use the Output size parameter to specify the dimensions of the output. Assume that the input at port I1 has dimensions (Ma, Na) and the input at port I2 has dimensions (Mb, Nb). If you choose Full, the output is the full two-dimensional cross-correlation with dimensions (Ma+Mb-1, Na+Nb-1). If you choose Same as input port I1, the output is the central part of the cross-correlation with the same dimensions as the input at port I1. If you choose Valid, the output is only those parts of the cross-correlation that are computed without the zero-padded edges of any input. This output has dimensions (Ma-Mb+1, Na-Nb+1). You can normalize the output only when the input is floating point."
+        },
+        {
+          "block": "2-D Histogram",
+          "ref": "visionstatistics/2-D Histogram",
+          "since": "R2023a+",
+          "intent": "Generate a histogram of the elements in the specified dimension of the input or across time (running histogram)."
+        },
+        {
+          "block": "2-D Maximum",
+          "ref": "visionstatistics/2-D Maximum",
+          "since": "R2023a+",
+          "intent": "Compute the maximum value along the specified dimension of the input or across time (running maximum)."
+        },
+        {
+          "block": "2-D Mean",
+          "ref": "visionstatistics/2-D Mean",
+          "since": "R2023a+",
+          "intent": "Compute the mean value along the specified dimension of the input or across time (running mean)."
+        },
+        {
+          "block": "2-D Minimum",
+          "ref": "visionstatistics/2-D Minimum",
+          "since": "R2023a+",
+          "intent": "Compute the minimum value along the specified dimension of the input or across time (running minimum)."
+        },
+        {
+          "block": "2-D Standard Deviation",
+          "ref": "visionstatistics/2-D Standard Deviation",
+          "since": "R2023a+",
+          "intent": "Compute the standard deviation along the specified dimension of the input or across time (running standard deviation)."
+        },
+        {
+          "block": "2-D Variance",
+          "ref": "visionstatistics/2-D Variance",
+          "since": "R2023a+",
+          "intent": "Compute the variance along the specified dimension of the input or across time (running variance)."
+        },
+        {
+          "block": "Blob Analysis",
+          "ref": "visionstatistics/Blob Analysis",
+          "since": "R2023a+",
+          "intent": "Compute statistics for connected regions in the binary image, BW."
+        },
+        {
+          "block": "PSNR",
+          "ref": "visionstatistics/PSNR",
+          "since": "R2023a+",
+          "intent": "Computes the peak signal-to-noise ratio (PSNR), in decibels, between two images."
+        },
+        {
+          "block": "Compositing",
+          "ref": "visiontextngfix/Compositing",
+          "since": "R2023a+",
+          "intent": "Combines the pixel values of two images, overlays one image over another, or highlights selected pixels. If, for the Operation parameter, you choose Blend, you can use the Opacity factor(s) parameter to define the amount by which the block scales the pixel values of Image2 before combining them with the pixel values of Image1. This parameter can be a scalar value that the block uses for all pixels or a matrix of values that defines the factor for each pixel. If, for the Operation parameter, you choose Binary mask, you can use the Masking factor(s) parameter to define which pixels of Image1 are overwritten by the pixel values of Image2. You can enter 0 or 1, which the block uses for all pixels, or a matrix of 0's and 1's that defines the factor for each pixel."
+        },
+        {
+          "block": "Draw Markers",
+          "ref": "visiontextngfix/Draw Markers",
+          "since": "R2023a+",
+          "intent": "Mark locations on images by drawing circles, x-marks, plus signs, stars, or squares. Use the Pts port to specify an M-by-2 matrix of x and y pairs, where M is the total number of markers and each x and y pair defines a marker's center. Use the Marker size parameter to define the size of the marker, in pixels. Use the Draw markers in parameter to define the area in which to draw the markers."
+        },
+        {
+          "block": "Draw Shapes",
+          "ref": "visiontextngfix/Draw Shapes",
+          "since": "R2023a+",
+          "intent": "Draw multiple rectangles, lines, polygons, or circles on images by overwriting pixel values. Use the Pts port to specify the appropriate shape coordinates. You can define the color value of the shape's border. You can also choose to fill your shape and specify its opacity."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "conversions-utilities",
+      "kind": "toolbox",
+      "library": "Computer Vision Toolbox",
+      "kbFolder": "computer-vision-toolbox",
+      "category": "conversions-utilities",
+      "hash": "800e0cf357a8a264dcf0875754d52d6760dbb15c91aba5d31141a7423b7f1ae1",
+      "fm": {
+        "title": "Conversions utilities",
+        "description": "Convert between Simulink Image types and matrices (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "computer-vision-toolbox",
+          "utilities",
+          "conversion",
+          "simulink image",
+          "color space"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Autothreshold",
+          "ref": "visionconversions/Autothreshold",
+          "since": "R2023a+",
+          "intent": "Automatically converts an intensity image to a binary image. This block uses Otsu's method, which determines the threshold by splitting the histogram of the input image such that the variance for each of the pixel groups is minimized. Optionally, the block can output a metric that indicates effectiveness of thresholding of the input image. The lower bound of the metric (zero) is attainable only by images having a single gray level, and the upper bound (one) is attainable only by two-valued images."
+        },
+        {
+          "block": "Chroma Resampling",
+          "ref": "visionconversions/Chroma Resampling",
+          "since": "R2023a+",
+          "intent": "Downsample or upsample chroma components of a YCbCr signal to reduce the bandwidth and/or storage requirements."
+        },
+        {
+          "block": "Color Space  Conversion",
+          "ref": "visionconversions/Color Space  Conversion",
+          "since": "R2023a+",
+          "intent": "Converts color information between color spaces. All conversions support double-precision floating-point and single-precision floating-point inputs. The conversions from R'G'B' to intensity, R'G'B' to B'G'R', B'G'R' to R'G'B', B'G'R' to intensity, and R'G'B' and Y'CbCr color spaces also support 8-bit unsigned integer inputs."
+        },
+        {
+          "block": "Demosaic",
+          "ref": "visionconversions/Demosaic",
+          "since": "R2023a+",
+          "intent": "This block performs Demosaicing of an input image in Bayer format with the specified alignment. The alignment is identified as the sequence of R, G and B pixels in the top-left four pixels of the image in row-wise order."
+        },
+        {
+          "block": "Gamma Correction",
+          "ref": "visionconversions/Gamma Correction",
+          "since": "R2023a+",
+          "intent": "Apply or remove gamma correction."
+        },
+        {
+          "block": "Image Complement",
+          "ref": "visionconversions/Image Complement",
+          "since": "R2023a+",
+          "intent": "Computes the complement of a binary or intensity image. For binary images, the block replaces zeros with ones and ones with zeros. In the output image, black and white are reversed. For intensity images, the block subtracts each pixel value from the maximum value that can be represented by the input data type and outputs the difference. In the output image, dark areas become lighter and light areas become darker."
+        },
+        {
+          "block": "Image Data Type Conversion",
+          "ref": "visionconversions/Image Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Converts and scales input image to specified output data type. When converting between floating-point data types, the block casts the input into the output data type and clips values outside the range to 0 or 1. When converting between all other data types, the block casts the input into the output data type and scales the data type values into the dynamic range of the output data type. For double- and single-precision floating-point data types, the dynamic range is between 0 and 1. For fixed-point data types, the dynamic range is between the minimum and maximum values that can be represented by the data type."
+        },
+        {
+          "block": "From Simulink Image",
+          "ref": "visionutilities/From Simulink Image",
+          "since": "R2023a+",
+          "intent": "Convert a Simulink Image data type into the matrix signal used by vision blocks — use at the boundary between Image-typed signals and array processing."
+        },
+        {
+          "block": "Image Attributes",
+          "ref": "visionutilities/Image Attributes",
+          "since": "R2023a+",
+          "intent": "Output attributes of input Simulink image signal."
+        },
+        {
+          "block": "Image Pad",
+          "ref": "visionutilities/Image Pad",
+          "since": "R2023a+",
+          "intent": "Pad a two-dimensional image. Pad your image by adding rows, columns, or rows and columns. You can pad your image by using a constant value (Constant), repeating its border values (Replicate), using its mirror image (Symmetric), or using circular repetition of its elements (Circular)."
+        },
+        {
+          "block": "To Simulink Image",
+          "ref": "visionutilities/To Simulink Image",
+          "since": "R2023a+",
+          "intent": "Package a matrix signal into the Simulink Image data type — use to produce interoperable Image-typed output."
+        },
+        {
+          "block": "Block Processing",
+          "ref": "visionutilities/Block Processing",
+          "since": "R2023a+",
+          "intent": "Repeats a user-specified operation on submatrices of the input matrix. This block extracts submatrices of a user-specified size from the input matrix. It sends each submatrix to a subsystem for processing, and then reassembles each subsystem output into the output matrix. Use the Block size and Overlap parameters to specify the size and overlap of each submatrix in cell array format."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "examples",
+      "kind": "toolbox",
+      "library": "Computer Vision Toolbox",
+      "kbFolder": "computer-vision-toolbox",
+      "category": "examples",
+      "hash": "7306644a0c38a0116b94e93ddf674c85b20dce5f00283fa0fa2fd88e1b34f047",
+      "fm": {
+        "title": "Examples",
+        "description": "Informational example-launcher blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "computer-vision-toolbox",
+          "demos",
+          "example"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Demos",
+          "ref": "visionlib/Demos",
+          "since": "R2023a+",
+          "intent": "Informational block linking to Computer Vision Toolbox example models — not used in production designs."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "filtering",
+      "kind": "toolbox",
+      "library": "Computer Vision Toolbox",
+      "kbFolder": "computer-vision-toolbox",
+      "category": "filtering",
+      "hash": "c5b19114a0c466e51f6a577f27d622dedf8d3dde694e406fd7141bd4729114e3",
+      "fm": {
+        "title": "Filtering",
+        "description": "Spatial filtering and noise reduction on images (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "computer-vision-toolbox",
+          "filter",
+          "median",
+          "blur",
+          "smoothing"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Median Filter",
+          "ref": "visionanalysis/Median Filter",
+          "since": "R2023a+",
+          "intent": "Apply a 2-D median filter to remove salt-and-pepper (impulse) noise while preserving edges — use for noise cleanup before detection, segmentation, or measurement."
+        },
+        {
+          "block": "2-D Convolution",
+          "ref": "visionfilter/2-D Convolution",
+          "since": "R2023a+",
+          "intent": "Performs two-dimensional convolution on two inputs. Use the Output size parameter to specify the dimensions of the output. Assume that the input at port I1 has dimensions (Ma, Na) and the input at port I2 has dimensions (Mb, Nb). If you choose Full, the output is the full two-dimensional convolution with dimensions (Ma+Mb-1, Na+Nb-1). If you choose Same as input port I1, the output is the central part of the convolution with the same dimensions as the input at port I1. If you choose Valid, the output is only those parts of the convolution that are computed without the zero-padded edges of any input. This output has dimensions (Ma-Mb+1, Na-Nb+1). You can normalize the output only when the input is floating point."
+        },
+        {
+          "block": "2-D FIR Filter",
+          "ref": "visionfilter/2-D FIR Filter",
+          "since": "R2023a+",
+          "intent": "Performs two-dimensional FIR filtering of input matrix I using filter coefficient matrix H. You can use the Filtering based on parameter to specify whether your filtering is based on convolution or correlation. Use the Output size parameter to specify the dimensions of the output. Assume that the input at port I has dimensions (Mi, Ni) and the input at port H has dimensions (Mh, Nh). If you choose Full, the output has dimensions (Mi+Mh-1, Ni+Nh-1). If you choose Same as input port I, the output has the same dimensions as the input at port I. If you choose Valid, the block filters the input image only where the coefficient matrix fits entirely within it, so no padding is required. The output has dimensions (Mi-Mh+1, Ni-Nh+1)."
+        },
+        {
+          "block": "Median Filter",
+          "ref": "visionfilter/Median Filter",
+          "since": "R2023a+",
+          "intent": "Apply a 2-D median filter to remove salt-and-pepper (impulse) noise while preserving edges — use for noise cleanup before detection, segmentation, or measurement."
+        },
+        {
+          "block": "Resize",
+          "ref": "visiongeotforms/Resize",
+          "since": "R2023a+",
+          "intent": "Change the size of an image or a region of interest within an image. Use the Specify parameter to designate the parameters you want to use to resize your image. You can specify a scalar percentage that is applied to both rows and columns, or you can specify a two-element vector to scale the rows and columns differently. You can specify the number of rows and/or columns you want your output image to have, and you can preserve or change the image's aspect ratio. Use the Interpolation method parameter to specify the type of interpolation performed by the block when it is resizing a image. If you select the Perform antialiasing when resize factor is between 0 and 100 check box, the block performs lowpass filtering on the input image before shrinking it."
+        },
+        {
+          "block": "Bottom-hat",
+          "ref": "visionmorphops/Bottom-hat",
+          "since": "R2023a+",
+          "intent": "Perform morphological bottom-hat filtering on an intensity or binary image. Use the Neighborhood or structuring element parameter to define the neighborhood or structuring element that the block applies to the image. Specify a neighborhood by entering a matrix or vector of ones and zeros. Specify a structuring element using the strel function. Alternatively, you can specify neighborhood values using the Nhood port. For further information on structuring elements, type doc strel at the MATLAB command prompt."
+        },
+        {
+          "block": "Top-hat",
+          "ref": "visionmorphops/Top-hat",
+          "since": "R2023a+",
+          "intent": "Perform morphological top-hat filtering on an intensity or binary image. Use the Neighborhood or structuring element parameter to define the neighborhood or structuring element that the block applies to the image. Specify a neighborhood by entering a matrix or vector of ones and zeros. Specify a structuring element using the strel function. Alternatively, you can specify neighborhood values using the Nhood port. For further information on structuring elements, type doc strel at the MATLAB command prompt."
+        },
+        {
+          "block": "2-D Median",
+          "ref": "visionstatistics/2-D Median",
+          "since": "R2023a+",
+          "intent": "Compute the median value along the specified dimension of the input or across time (running median). The 'Product output' and 'Accumulator' parameters apply only for complex fixed-point inputs."
+        },
+        {
+          "block": "Gaussian Pyramid",
+          "ref": "visiontransforms/Gaussian Pyramid",
+          "since": "R2023a+",
+          "intent": "This block computes Gaussian pyramid reduction or expansion. The input is either upsampled or downsampled and a lowpass filter is applied pre- or post-sampling."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "geometric-transformations",
+      "kind": "toolbox",
+      "library": "Computer Vision Toolbox",
+      "kbFolder": "computer-vision-toolbox",
+      "category": "geometric-transformations",
+      "hash": "2cec1ebbd79c5eb7131d6d4f16573a086a34b946473a5d097fe992a18b2c7bdc",
+      "fm": {
+        "title": "Geometric transformations",
+        "description": "Warp, resize, and rotate images (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "computer-vision-toolbox",
+          "geometric",
+          "warp",
+          "resize",
+          "rotate",
+          "transform"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Estimate Geometric Transformation",
+          "ref": "visiongeotforms/Estimate Geometric Transformation",
+          "since": "R2023a+",
+          "intent": "Find the transformation matrix that maps the largest number of points from Pts1 to Pts2. The Pts1 and Pts2 inputs specify the location of points in two images. Each row in the Pts1 and Pts2 arrays has the format [x y]. The points in the arrays must be ordered to form corresponding location pairs. When the Find and exclude outliers option is selected, the block randomly selects matching point pairs until it computes a transformation matrix that fits a specified number of inliers, or until a user-specified stopping criterion is reached. It then refines this transformation matrix by using all inliers found in the first step."
+        },
+        {
+          "block": "Rotate",
+          "ref": "visiongeotforms/Rotate",
+          "since": "R2023a+",
+          "intent": "Rotates an image by an angle in radians. You can specify this angle using the block parameters dialog box or input port Angle. Use the Output size parameter to determine the size of the output. If you select Expanded to fit rotated input image, the block outputs a matrix that contains all the rotated image values and zeros elsewhere. If you select Same as input image, the block outputs a matrix that contains the middle part of the rotated image and zeros elsewhere. As a result, the edges of the rotated image might be cropped. When specifying the rotation angle using the Angle port, the maximum angle value should be greater than 0 but less than or equal to pi radians."
+        },
+        {
+          "block": "Shear",
+          "ref": "visiongeotforms/Shear",
+          "since": "R2023a+",
+          "intent": "Shifts each row or column of an image by a linearly increasing or decreasing distance. Use the Shear direction parameter to specify whether you want to shift the rows or columns horizontally or vertically. Use the Row/column shear values [first last] parameter or the S port to specify a two-element vector. The first element represents the number of pixels by which you want to shift your first row or column, and the second element represents the number of pixels by which you want to shift your last row or column. When using the S port to specify the shear values, use the Maximum shear value parameter to specify the maximum number of pixels by which you want to shift your rows or columns. If, for the Output size after shear parameter, you select Full, the block outputs the entire sheared image. If you select Same as input image, the block outputs the top left portion of the full sheared image with dimensions same as input image."
+        },
+        {
+          "block": "Translate",
+          "ref": "visiongeotforms/Translate",
+          "since": "R2023a+",
+          "intent": "Move an image up or down and/or left or right. You can specify your two-element offset vector using the dialog box or the Offset port. The first element represents how many pixels up or down to shift your image. If you enter a positive value, the block moves the image downward. The second element represents how many pixels left or right to shift your image. If you enter a positive value, the block moves the image to the right."
+        },
+        {
+          "block": "Warp",
+          "ref": "visiongeotforms/Warp",
+          "since": "R2023a+",
+          "intent": "Apply an affine or projective geometric transformation to warp an image — use for rectification, registration, and perspective correction."
+        },
+        {
+          "block": "Find Local Maxima",
+          "ref": "visionstatistics/Find Local Maxima",
+          "since": "R2023a+",
+          "intent": "Finds local maxima in an input matrix. The size of the search region can be specified using the Neighborhood size parameter. Idx output port has the dimension M-by-2, where M is the maximum number of local maxima. This output port holds one-based [x y] coordinates of the local maxima. Threshold value is applied on the input matrix to find the valid local maxima If the input is a Hough matrix generated from a Hough Transform block, the Input is Hough matrix spanning full theta range check box should be selected. In this case the block considers that the input Hough matrix is antisymmetric about the rho axis and theta spans from -pi/2 to pi/2 radians. If a local maximum is found near a boundary such that the neighboring window lies outside the Hough matrix, the block picks up only one peak and ignores the corresponding antisymmetric peak."
+        },
+        {
+          "block": "2-D DCT",
+          "ref": "visiontransforms/2-D DCT",
+          "since": "R2023a+",
+          "intent": "Outputs the two-dimensional discrete cosine transform (2-D DCT) of a real input signal. The number of rows and columns of the input matrix must be a power of 2."
+        },
+        {
+          "block": "2-D FFT",
+          "ref": "visiontransforms/2-D FFT",
+          "since": "R2023a+",
+          "intent": "Outputs the complex fast Fourier transform in two dimensions (2-D FFT) of a real or complex input. When the 'FFT implementation' parameter is set to 'Radix-2', the number of rows and columns of the input matrix must be a power of 2."
+        },
+        {
+          "block": "2-D IDCT",
+          "ref": "visiontransforms/2-D IDCT",
+          "since": "R2023a+",
+          "intent": "Outputs the two-dimensional inverse discrete cosine transform (2-D IDCT) of a real input signal. The number of rows and columns of the input matrix must be a power of 2."
+        },
+        {
+          "block": "2-D IFFT",
+          "ref": "visiontransforms/2-D IFFT",
+          "since": "R2023a+",
+          "intent": "Outputs the inverse fast Fourier transform in two dimensions (2-D IFFT) of a real or complex input. Outputs are real if you select 'Input is conjugate symmetric' option; otherwise, outputs are complex. When the 'FFT implementation' parameter is set to 'Radix-2', the number of rows and columns of the input matrix must be a power of 2."
+        },
+        {
+          "block": "Hough Lines",
+          "ref": "visiontransforms/Hough Lines",
+          "since": "R2023a+",
+          "intent": "Finds Cartesian coordinates of lines that are described by rho and theta pairs. The block inputs are the theta and rho values of lines and a reference image. The block outputs the one-based [x y] coordinates of the intersections between the lines and two of the reference image boundary lines. The boundary lines are the left and right vertical boundaries and the top and bottom horizontal boundaries of the reference image."
+        },
+        {
+          "block": "Hough Transform",
+          "ref": "visiontransforms/Hough Transform",
+          "since": "R2023a+",
+          "intent": "Implements the Hough Transform to detect lines. The block generates a parameter space matrix using the following equation: rho = x*cos(theta) + y*sin(theta). The block outputs this matrix at the Hough port. The rows and columns of this matrix correspond to the rho and theta values, respectively. Peak values in this matrix represent potential lines in the input image."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sinks",
+      "kind": "toolbox",
+      "library": "Computer Vision Toolbox",
+      "kbFolder": "computer-vision-toolbox",
+      "category": "sinks",
+      "hash": "c58b4a590b3f520fb38235dd5367607ea5c168a02f007c016e790445ddfe4b61",
+      "fm": {
+        "title": "Sinks",
+        "description": "Display, record, and export images and video (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "computer-vision-toolbox",
+          "sink",
+          "viewer",
+          "to multimedia",
+          "display",
+          "point cloud"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Frame Rate Display",
+          "ref": "visionsinks/Frame Rate Display",
+          "since": "R2023a+",
+          "intent": "Calculate and display the frame rate of the input signal. Use the Calculate and display rate every parameter to control how often the block updates the display. When this parameter is greater than 1, the block displays the average frame rate for the specified number of frames."
+        },
+        {
+          "block": "Point Cloud Viewer",
+          "ref": "visionsinks/Point Cloud Viewer",
+          "since": "R2023a+",
+          "intent": "Visualize a stream of 3-D point clouds during simulation — use to inspect lidar/depth output while debugging perception pipelines."
+        },
+        {
+          "block": "To Multimedia File",
+          "ref": "visionsinks/To Multimedia File",
+          "since": "R2023a+",
+          "intent": "Write video frames and/or audio to a media file — use to record simulation output to disk for playback or reporting."
+        },
+        {
+          "block": "To Video Display",
+          "ref": "visionsinks/To Video Display",
+          "since": "R2023a+",
+          "intent": "This block provides a lightweight, high performance display, which accepts RGB and YCbCr formatted videos. It also generates code."
+        },
+        {
+          "block": "Video To Workspace",
+          "ref": "visionsinks/Video To Workspace",
+          "since": "R2023a+",
+          "intent": "Writes the input to a specified array in the MATLAB workspace. The array is not available until the simulation stops. If the video signal is represented by intensity values, it appears in the workspace as a three-dimensional M-by-N-by-T array, where M and N are the number of rows and columns in a single video frame, and T is the number of frames in the video signal. If it is a color video signal, it appears in the workspace as a four-dimensional M-by-N-by-C-by-T array, where M and N are the number of rows and columns in a single video frame, C is the number of inputs to the block, and T is the number of frames in the video stream."
+        },
+        {
+          "block": "Video Viewer",
+          "ref": "visionsinks/Video Viewer",
+          "since": "R2023a+",
+          "intent": "Display a video or image stream in a viewer window during simulation — use to visually inspect frames while debugging vision algorithms."
+        },
+        {
+          "block": "Write Binary File",
+          "ref": "visionsinks/Write Binary File",
+          "since": "R2023a+",
+          "intent": "Write binary video data into file in the specified format."
+        },
+        {
+          "block": "Insert Text",
+          "ref": "visiontextngfix/Insert Text",
+          "since": "R2023a+",
+          "intent": "Draws formatted text on an image or video stream. Use the Text parameter to specify the text string to be drawn on the image or video stream. This parameter can be a single text string or a cell array of strings. If you enter a cell array, use the Select port to indicate which text string to display. The Text parameter also accepts ANSI C printf-style format specifications, such as %04d, %4.2f, etc. The block replaces the format specifications in the Text parameter with the elements from the vector input at the Variables port."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "Computer Vision Toolbox",
+      "kbFolder": "computer-vision-toolbox",
+      "category": "sources",
+      "hash": "1cc7c09c817f28c4850fa84414829793c972341757a61b3d23c5559a0af13780",
+      "fm": {
+        "title": "Sources",
+        "description": "Bring images and video into the model (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "computer-vision-toolbox",
+          "source",
+          "from multimedia",
+          "from image",
+          "read"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Deinterlacing",
+          "ref": "visionanalysis/Deinterlacing",
+          "since": "R2023a+",
+          "intent": "Removes motion artifacts from images composed of weaved top and bottom fields of an interlaced signal."
+        },
+        {
+          "block": "From Multimedia File",
+          "ref": "visionsources/From Multimedia File",
+          "since": "R2023a+",
+          "intent": "Read frames and/or audio from a media file as a source — use to feed recorded video into a vision pipeline for offline testing."
+        },
+        {
+          "block": "Read Binary File",
+          "ref": "visionsources/Read Binary File",
+          "since": "R2023a+",
+          "intent": "Read binary video data from file in the specified format."
+        },
+        {
+          "block": "Video From Workspace",
+          "ref": "visionsources/Video From Workspace",
+          "since": "R2023a+",
+          "intent": "Outputs video frames from the MATLAB workspace at successive sample times. If the video signal is a M-by-N-by-T workspace array, the block outputs an intensity video signal, where M and N are the number of rows and columns in a single video frame, and T is the number of frames in the video signal. If the video signal is a M-by-N-by-C-by-T workspace array, the block outputs a color video signal, where M and N are the number of rows and columns in a single video frame, C is the number of outputs from the block, and T is the number of frames in the video stream."
+        },
+        {
+          "block": "Image From File",
+          "ref": "visionsources/Image From File",
+          "since": "R2023a+",
+          "intent": "Reads an image from a file. Use the File name parameter to specify the image file you want to import into your model. Use the Sample time parameter to set the sample period of the block."
+        },
+        {
+          "block": "Image From Workspace",
+          "ref": "visionsources/Image From Workspace",
+          "since": "R2023a+",
+          "intent": "Imports an image from the MATLAB workspace. Use the Value parameter to specify the MATLAB workspace variable that contains or an expression that specifies the image you want to import into your model. Use the Sample time parameter to set the sample period of the block."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:16",
+  "generatedAtDatenum": 740309.99533122685
 }

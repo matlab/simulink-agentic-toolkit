@@ -1,15 +1,268 @@
 {
-  "generatedAt": "2026-08-19T17:52:14",
-  "generatedAtDatenum": 740213.74461599533,
-  "generatorVersion": 4,
-  "libraries": [
-    "UAV Toolbox Support Package for PX4 Autopilots"
-  ],
-  "blockCount": 27,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "UAV_Toolbox_Support_Package_for_PX4_Autopilots": {
-      "blockCount": 27
+  "pages": [
+    {
+      "id": "control-utilities",
+      "kind": "toolbox",
+      "library": "UAV Toolbox Support Package for PX4 Autopilots",
+      "kbFolder": "uav-toolbox-support-package-for-px4-autopilots",
+      "category": "control-utilities",
+      "hash": "bd8863c49a81e226aa6c2b8df348e62a943add4d8a4d824f689b0cb205ba4e79",
+      "fm": {
+        "title": "Control utilities",
+        "description": "Control commands, parameters, and logging (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox-support-package-for-px4-autopilots",
+          "thrust",
+          "torque",
+          "parameter",
+          "log",
+          "timestamp"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "PX4 Actuator Write",
+          "ref": "px4Peripheralslib/PX4 Actuator Write",
+          "since": "R2024b+",
+          "intent": "Command individual actuator outputs on PX4 — use for directly controlling motor ESCs or servos in custom control modes"
+        },
+        {
+          "block": "PX4 Read Position Setpoint",
+          "ref": "px4Utilslib/PX4 Read Position Setpoint",
+          "since": "R2023a+",
+          "intent": "Read the active position setpoint on PX4 — use for monitoring commanded waypoints in custom navigation logic"
+        },
+        {
+          "block": "PX4 ULog",
+          "ref": "px4Utilslib/PX4 ULog",
+          "since": "R2023b+",
+          "intent": "Write data to the PX4 onboard ULog — use for recording custom variables for post-flight analysis and replay"
+        },
+        {
+          "block": "PX4 Write Parameter",
+          "ref": "px4Utilslib/PX4 Write Parameter",
+          "since": "R2025a+",
+          "intent": "Write a PX4 parameter value at runtime — use for updating configuration or tuning values from within custom modules"
+        },
+        {
+          "block": "PX4 Write Thrust & Torque Setpoint",
+          "ref": "px4Utilslib/PX4 Write Thrust & Torque Setpoint",
+          "since": "R2025a+",
+          "intent": "Command thrust and torque setpoints to PX4 — use for implementing custom low-level controllers that bypass the PX4 rate controller"
+        },
+        {
+          "block": "Read Parameter",
+          "ref": "px4Utilslib/Read Parameter",
+          "since": "R2023a+",
+          "intent": "Read a PX4 parameter value at runtime — use for accessing configuration or tuning values in custom control code"
+        },
+        {
+          "block": "PX4 Timestamp",
+          "ref": "px4Utilslib/PX4 Timestamp",
+          "since": "R2023b+",
+          "intent": "Read the PX4 system timestamp — use for time-stamping events or synchronizing with the autopilot clock"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "peripherals",
+      "kind": "toolbox",
+      "library": "UAV Toolbox Support Package for PX4 Autopilots",
+      "kbFolder": "uav-toolbox-support-package-for-px4-autopilots",
+      "category": "peripherals",
+      "hash": "f6724d32af8a456faefc8e63eff0f93e1d0c3bcba8695a3dae7baa64a03aeb19",
+      "fm": {
+        "title": "Peripherals",
+        "description": "Communication and I/O peripherals (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox-support-package-for-px4-autopilots",
+          "serial",
+          "i2c",
+          "can",
+          "pwm",
+          "analog"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "PX4 Analog Input",
+          "ref": "px4Peripheralslib/PX4 Analog Input",
+          "since": "R2023a+",
+          "intent": "Read analog voltage from ADC pins on PX4 hardware — use for sampling external sensor voltages on the autopilot board"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "px4Peripheralslib/I2C Controller Read",
+          "since": "R2023a+",
+          "intent": "Read from I2C devices connected to PX4 — use for interfacing with external I2C sensors or peripherals on the autopilot"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "px4Peripheralslib/I2C Controller Write",
+          "since": "R2023a+",
+          "intent": "Write to I2C devices connected to PX4 — use for configuring or commanding external I2C peripherals"
+        },
+        {
+          "block": "PX4 CAN Receive",
+          "ref": "px4Peripheralslib/PX4 CAN Receive",
+          "since": "R2023a+",
+          "intent": "Receive CAN bus messages on PX4 — use for reading data from UAVCAN sensors or other CAN devices"
+        },
+        {
+          "block": "PX4 CAN Transmit",
+          "ref": "px4Peripheralslib/PX4 CAN Transmit",
+          "since": "R2023a+",
+          "intent": "Transmit CAN bus messages from PX4 — use for sending commands to UAVCAN actuators or peripherals"
+        },
+        {
+          "block": "PX4 PWM Output",
+          "ref": "px4Peripheralslib/PX4 PWM Output",
+          "since": "R2023a+",
+          "intent": "Generate PWM signals on PX4 output pins — use for directly driving servos or ESCs bypassing the PX4 mixer"
+        },
+        {
+          "block": "Serial Receive",
+          "ref": "px4Peripheralslib/Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data on PX4 UART — use for reading data from external sensors, companion computers, or GPS modules"
+        },
+        {
+          "block": "Serial Transmit",
+          "ref": "px4Peripheralslib/Serial Transmit",
+          "since": "R2023a+",
+          "intent": "Transmit serial data on PX4 UART — use for sending telemetry or commands to external devices"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "UAV Toolbox Support Package for PX4 Autopilots",
+      "kbFolder": "uav-toolbox-support-package-for-px4-autopilots",
+      "category": "sensors",
+      "hash": "fd5bdf2d402dde2256100b8208f60e2d43629423c56a4518f0200c10a00c3a6b",
+      "fm": {
+        "title": "Sensors",
+        "description": "Onboard sensor data access (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox-support-package-for-px4-autopilots",
+          "accelerometer",
+          "gyroscope",
+          "gps",
+          "magnetometer",
+          "battery"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Accelerometer",
+          "ref": "px4Sensorslib/Accelerometer",
+          "since": "R2023a+",
+          "intent": "Read accelerometer data from PX4 IMU — use for accessing raw acceleration measurements in custom estimation or control"
+        },
+        {
+          "block": "Battery",
+          "ref": "px4Sensorslib/Battery",
+          "since": "R2023a+",
+          "intent": "Read battery voltage and current from PX4 — use for monitoring power state and remaining flight time"
+        },
+        {
+          "block": "GPS",
+          "ref": "px4Sensorslib/GPS",
+          "since": "R2023a+",
+          "intent": "Read GPS position and velocity from PX4 — use for accessing navigation data in custom position controllers"
+        },
+        {
+          "block": "Gyroscope",
+          "ref": "px4Sensorslib/Gyroscope",
+          "since": "R2023a+",
+          "intent": "Read gyroscope data from PX4 IMU — use for accessing raw angular rate measurements in custom controllers"
+        },
+        {
+          "block": "Magnetometer",
+          "ref": "px4Sensorslib/Magnetometer",
+          "since": "R2023a+",
+          "intent": "Read magnetometer data from PX4 — use for accessing magnetic heading in custom attitude estimation"
+        },
+        {
+          "block": "Radio Control Transmitter",
+          "ref": "px4Sensorslib/Radio Control Transmitter",
+          "since": "R2023a+",
+          "intent": "Read RC transmitter channel values on PX4 — use for accessing pilot stick inputs for mode switching or manual override"
+        },
+        {
+          "block": "Vehicle Attitude",
+          "ref": "px4Sensorslib/Vehicle Attitude",
+          "since": "R2023a+",
+          "intent": "Read estimated vehicle attitude from PX4 EKF — use for accessing fused orientation in custom guidance algorithms"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "uorb-mavlink",
+      "kind": "toolbox",
+      "library": "UAV Toolbox Support Package for PX4 Autopilots",
+      "kbFolder": "uav-toolbox-support-package-for-px4-autopilots",
+      "category": "uorb-mavlink",
+      "hash": "4c0f00f6cf1867cda9b4e97b55e2636165923df4748d5962c29cbf59d35da809",
+      "fm": {
+        "title": "Uorb mavlink",
+        "description": "uORB middleware and MAVLink communication (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox-support-package-for-px4-autopilots",
+          "uorb",
+          "mavlink",
+          "publish",
+          "subscribe",
+          "message"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MAVLink Bridge Sink",
+          "ref": "px4MAVLinkBridgelib/MAVLink Bridge Sink",
+          "since": "R2026a+",
+          "intent": "Send data to a ground station via MAVLink — use for publishing custom telemetry through the PX4 MAVLink communication layer"
+        },
+        {
+          "block": "MAVLink Bridge Source",
+          "ref": "px4MAVLinkBridgelib/MAVLink Bridge Source",
+          "since": "R2026a+",
+          "intent": "Receive data from a ground station via MAVLink — use for accepting commands or parameters through the MAVLink communication layer"
+        },
+        {
+          "block": "PX4 uORB Message",
+          "ref": "px4uORBlib/PX4 uORB Message",
+          "since": "R2023a+",
+          "intent": "Define a PX4 uORB message structure — use for creating custom inter-module message types on the PX4 middleware"
+        },
+        {
+          "block": "PX4 uORB Read",
+          "ref": "px4uORBlib/PX4 uORB Read",
+          "since": "R2023a+",
+          "intent": "Subscribe to and read a PX4 uORB topic — use for receiving published data from other PX4 modules or sensors"
+        },
+        {
+          "block": "PX4 uORB Write",
+          "ref": "px4uORBlib/PX4 uORB Write",
+          "since": "R2023a+",
+          "intent": "Publish data to a PX4 uORB topic — use for broadcasting custom data to other PX4 modules or the ground station"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.99552964116
 }

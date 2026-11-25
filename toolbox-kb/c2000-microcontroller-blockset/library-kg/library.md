@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Library
-description: Library entry points and device families
-tags: [library, blockset, device, family]
+description: Library entry points and device families (31 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, library, blockset, device, family]
 status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Library
+sources:
+  - resource: matlab:c2000lib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: library
 block_count: 31
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Library
-
-Use these blocks for library.
 
 ## Recommended Blocks
 

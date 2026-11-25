@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.744579676,
-  "generatorVersion": 4,
-  "libraries": [
-    "Satellite Communications Toolbox"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Satellite_Communications_Toolbox": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "satellite-modulation",
+      "kind": "toolbox",
+      "library": "Satellite Communications Toolbox",
+      "kbFolder": "satellite-communications-toolbox",
+      "category": "satellite-modulation",
+      "hash": "2a3449786e2e64208d05a1af6282865092c794780b7047f1b721e24991211f33",
+      "fm": {
+        "title": "Satellite modulation",
+        "description": "DVB-S satellite communication modulation and demodulation (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "satellite-communications-toolbox",
+          "dvbs",
+          "apsk",
+          "satellite",
+          "modulator",
+          "demodulator"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DVBS-APSK Demodulator Baseband",
+          "ref": "satcomdigbbnd/DVBS-APSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate DVB-S2/S2X APSK signals at baseband — use for satellite receiver design, link budget verification, or DVB standard compliance testing"
+        },
+        {
+          "block": "DVBS-APSK Modulator Baseband",
+          "ref": "satcomdigbbnd/DVBS-APSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate data using DVB-S2/S2X APSK at baseband — use for satellite transmitter design, waveform generation, or DVB standard modulation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:27",
+  "generatedAtDatenum": 740309.99546167825
 }

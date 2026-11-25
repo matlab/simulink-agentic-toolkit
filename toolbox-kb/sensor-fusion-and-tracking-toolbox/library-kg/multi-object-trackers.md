@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Multi object trackers
-description: Complete multi-object tracking algorithms
-tags: [tracker, gnn, jpda, phd, mht]
+description: Complete multi-object tracking algorithms (8 blocks)
+tags: [toolbox-kb, sensor-fusion-and-tracking-toolbox, tracker, gnn, jpda, phd, mht]
 status: stable
-source: mathworks_toolbox
-library_root: Sensor Fusion and Tracking Toolbox
-category_path: Multi object trackers
+sources:
+  - resource: matlab:motalgorithmslib
+source: toolbox_kb
+managed_by: satk
+library: Sensor Fusion and Tracking Toolbox
+kb_folder: sensor-fusion-and-tracking-toolbox
+category: multi-object-trackers
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Multi object trackers
-
-Use these blocks for multi object trackers.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Nvram
-description: Non-volatile RAM (NvM) services for persistent data storage across power cycles
-tags: [nvram, nvm, persistent, storage, eeprom]
+description: Non-volatile RAM (NvM) services for persistent data storage across power cycles (3 blocks)
+tags: [toolbox-kb, autosar-blockset, nvram, nvm, persistent, storage, eeprom]
 status: stable
-source: custom_library
-library_root: AUTOSAR Blockset
-category_path: Nvram
+sources:
+  - resource: matlab:autosarlibnvm
+source: toolbox_kb
+managed_by: satk
+library: AUTOSAR Blockset
+kb_folder: autosar-blockset
+category: nvram
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:12Z" }
 ---
 
 # Nvram
-
-Use these blocks for nvram.
 
 ## Recommended Blocks
 

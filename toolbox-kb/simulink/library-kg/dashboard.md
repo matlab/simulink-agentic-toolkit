@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Dashboard
-description: Interactive dashboard controls and displays
-tags: [dashboard, gauge, knob, switch, button, slider]
+description: Interactive dashboard controls and displays (41 blocks)
+tags: [toolbox-kb, simulink, dashboard, gauge, knob, switch, button, slider]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Dashboard
+sources:
+  - resource: matlab:simulink_hmi_blocks
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: dashboard
 block_count: 41
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Dashboard
-
-Use these blocks for dashboard.
 
 ## Recommended Blocks
 

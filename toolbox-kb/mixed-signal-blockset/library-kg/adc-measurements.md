@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Adc measurements
-description: ADC performance measurement
-tags: [snr, inl, dnl, jitter, testbench]
+description: ADC performance measurement (4 blocks)
+tags: [toolbox-kb, mixed-signal-blockset, snr, inl, dnl, jitter, testbench]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset
-category_path: Adc measurements
+sources:
+  - resource: matlab:msbAdcMeasurements
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset
+kb_folder: mixed-signal-blockset
+category: adc-measurements
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Adc measurements
-
-Use these blocks for adc measurements.
 
 ## Recommended Blocks
 

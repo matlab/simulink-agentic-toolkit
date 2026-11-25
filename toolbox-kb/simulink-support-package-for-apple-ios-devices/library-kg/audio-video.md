@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Audio video
-description: Camera, microphone, and media I/O on iOS
-tags: [audio, video, camera, microphone, image]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Apple iOS Devices
-category_path: Audio video
+description: "Camera, microphone, and media I/O on iOS (5 blocks)"
+tags: [toolbox-kb, simulink-support-package-for-apple-ios-devices, audio, video, camera, microphone, image]
+status: draft
+sources:
+  - resource: matlab:iosaudiovideolib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Apple iOS Devices
+kb_folder: simulink-support-package-for-apple-ios-devices
+category: audio-video
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Audio video
-
-Use these blocks for audio video.
 
 ## Recommended Blocks
 

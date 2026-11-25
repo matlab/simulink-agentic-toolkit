@@ -1,15 +1,450 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.744570162,
-  "generatorVersion": 4,
-  "libraries": [
-    "Mixed-Signal Blockset"
-  ],
-  "blockCount": 47,
-  "categoryCount": 7,
-  "libraryFingerprints": {
-    "Mixed_Signal_Blockset": {
-      "blockCount": 47
+  "pages": [
+    {
+      "id": "adc-architectures",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset",
+      "kbFolder": "mixed-signal-blockset",
+      "category": "adc-architectures",
+      "hash": "208050f33abe3b51dd4b23b2deb1b1f88def3fcafed2cc4473526ed9b5c31b67",
+      "fm": {
+        "title": "Adc architectures",
+        "description": "Complete ADC architecture models (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset",
+          "flash",
+          "sar",
+          "interleaved",
+          "adc"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Flash ADC",
+          "ref": "msbAdcArchitectures/Flash ADC",
+          "since": "R2023a+",
+          "intent": "Model a flash analog-to-digital converter — use for simulating high-speed parallel ADC architectures with comparator arrays"
+        },
+        {
+          "block": "Interleaved ADC",
+          "ref": "msbAdcArchitectures/Interleaved ADC",
+          "since": "R2023b+",
+          "intent": "Model a time-interleaved ADC — use for simulating high-speed conversion by multiplexing multiple ADC channels"
+        },
+        {
+          "block": "SAR ADC",
+          "ref": "msbAdcArchitectures/SAR ADC",
+          "since": "R2023a+",
+          "intent": "Model a successive-approximation ADC — use for simulating medium-speed high-resolution conversion with binary search"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "adc-foundation",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset",
+      "kbFolder": "mixed-signal-blockset",
+      "category": "adc-foundation",
+      "hash": "e177a119fe53be88f23a24ad18cfc8eba2cd6ed3fbee09b1846a00637b22a24f",
+      "fm": {
+        "title": "Adc foundation",
+        "description": "ADC building blocks and modulators (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset",
+          "integrator",
+          "dsm",
+          "quantizer",
+          "clock",
+          "modulator"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Continuous Time Delta Sigma Modulator",
+          "ref": "msbAdcFoundation/Continuous Time Delta Sigma Modulator",
+          "since": "R2024b+",
+          "intent": "Model a continuous-time delta-sigma ADC — use for simulating oversampled CT DSM architectures with noise shaping"
+        },
+        {
+          "block": "DT Integrator",
+          "ref": "msbAdcFoundation/DT Integrator",
+          "since": "R2026a+",
+          "intent": "Discrete-time integrator for delta-sigma modulators — use for modeling switched-capacitor integrators in DT DSMs"
+        },
+        {
+          "block": "Delta Sigma Modulator",
+          "ref": "msbAdcFoundation/Delta Sigma Modulator",
+          "since": "R2023a+",
+          "intent": "Model a discrete-time delta-sigma modulator — use for simulating oversampled DT DSM architectures"
+        },
+        {
+          "block": "Quantizer",
+          "ref": "msbAdcFoundation/Quantizer",
+          "since": "R2026a+",
+          "intent": "Multi-level quantizer for DSM loops — use for modeling the comparator array within delta-sigma modulators"
+        },
+        {
+          "block": "Sampling Clock Source",
+          "ref": "msbAdcFoundation/Sampling Clock Source",
+          "since": "R2023a+",
+          "intent": "Generate a sampling clock with jitter — use for providing realistic clock signals to ADC models"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "adc-measurements",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset",
+      "kbFolder": "mixed-signal-blockset",
+      "category": "adc-measurements",
+      "hash": "dbfeb24f7e7a7c2d02821085b8047efc003bc827e6d2ccad4bd89be0e51ba293",
+      "fm": {
+        "title": "Adc measurements",
+        "description": "ADC performance measurement (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset",
+          "snr",
+          "inl",
+          "dnl",
+          "jitter",
+          "testbench"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADC AC Measurement",
+          "ref": "msbAdcMeasurements/ADC AC Measurement",
+          "since": "R2023a+",
+          "intent": "Measure ADC AC performance metrics — use for extracting SNR, SNDR, SFDR, and harmonic distortion"
+        },
+        {
+          "block": "ADC DC Measurement",
+          "ref": "msbAdcMeasurements/ADC DC Measurement",
+          "since": "R2023a+",
+          "intent": "Measure ADC DC performance metrics — use for extracting INL, DNL, offset, and gain error"
+        },
+        {
+          "block": "ADC Testbench",
+          "ref": "msbAdcMeasurements/ADC Testbench",
+          "since": "R2023a+",
+          "intent": "Complete ADC test environment — use for automated characterization of ADC models with stimulus and measurement"
+        },
+        {
+          "block": "Aperture Jitter Measurement",
+          "ref": "msbAdcMeasurements/Aperture Jitter Measurement",
+          "since": "R2023a+",
+          "intent": "Measure ADC aperture jitter — use for quantifying timing uncertainty in sample-and-hold circuits"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pll-architectures",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset",
+      "kbFolder": "mixed-signal-blockset",
+      "category": "pll-architectures",
+      "hash": "ba7fab64497999a4078bb0d4fde8ae6af5742441122cd32a4177c42bcabd396e",
+      "fm": {
+        "title": "Pll architectures",
+        "description": "Complete PLL architecture models (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset",
+          "fractional",
+          "integer",
+          "baseband",
+          "pll"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Baseband PLL",
+          "ref": "msbPllArchitectures/Baseband PLL",
+          "since": "R2025a+",
+          "intent": "Model a baseband phase-locked loop — use for simulating PLL behavior at baseband for fast behavioral analysis"
+        },
+        {
+          "block": "Fractional N PLL with Accumulator",
+          "ref": "msbPllArchitectures/Fractional N PLL with Accumulator",
+          "since": "R2023a+",
+          "intent": "Model a fractional-N PLL using accumulator — use for simulating fine-resolution frequency synthesis with spurs"
+        },
+        {
+          "block": "Fractional N PLL with Delta Sigma Modulator",
+          "ref": "msbPllArchitectures/Fractional N PLL with Delta Sigma Modulator",
+          "since": "R2023a+",
+          "intent": "Model a fractional-N PLL using DSM — use for simulating low-spur fractional frequency synthesis"
+        },
+        {
+          "block": "Integer N PLL with Dual Modulus Prescaler",
+          "ref": "msbPllArchitectures/Integer N PLL with Dual Modulus Prescaler",
+          "since": "R2023a+",
+          "intent": "Model an integer-N PLL with dual-modulus divider — use for simulating programmable frequency synthesis"
+        },
+        {
+          "block": "Integer N PLL with Single Modulus Prescaler",
+          "ref": "msbPllArchitectures/Integer N PLL with Single Modulus Prescaler",
+          "since": "R2023a+",
+          "intent": "Model an integer-N PLL with fixed divider — use for simulating basic frequency multiplication"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pll-foundation",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset",
+      "kbFolder": "mixed-signal-blockset",
+      "category": "pll-foundation",
+      "hash": "6df77499820ef6884a126905fc802e1480e2ec284ead8de0e758a7575b525643",
+      "fm": {
+        "title": "Pll foundation",
+        "description": "PLL building blocks (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset",
+          "vco",
+          "pfd",
+          "charge",
+          "filter",
+          "divider",
+          "prescaler"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Charge Pump",
+          "ref": "msbPllFoundation/Charge Pump",
+          "since": "R2023a+",
+          "intent": "Model a PLL charge pump — use for converting phase detector output to a current that drives the loop filter"
+        },
+        {
+          "block": "Dual Modulus Prescaler",
+          "ref": "msbPllFoundation/Dual Modulus Prescaler",
+          "since": "R2023a+",
+          "intent": "Model a dual-modulus frequency divider — use for implementing swallow-counter based programmable division"
+        },
+        {
+          "block": "Fractional Clock Divider with Accumulator",
+          "ref": "msbPllFoundation/Fractional Clock Divider with Accumulator",
+          "since": "R2023a+",
+          "intent": "Model fractional division using accumulator — use for generating fractional divide ratios with spurs"
+        },
+        {
+          "block": "Fractional Clock Divider with DSM",
+          "ref": "msbPllFoundation/Fractional Clock Divider with DSM",
+          "since": "R2023a+",
+          "intent": "Model fractional division using delta-sigma modulation — use for generating low-spur fractional divide ratios"
+        },
+        {
+          "block": "Loop Filter",
+          "ref": "msbPllFoundation/Loop Filter",
+          "since": "R2023a+",
+          "intent": "Model a PLL loop filter — use for filtering charge pump output to produce VCO control voltage"
+        },
+        {
+          "block": "PFD",
+          "ref": "msbPllFoundation/PFD",
+          "since": "R2023a+",
+          "intent": "Model a phase-frequency detector — use for comparing reference and feedback clock edges in PLL loops"
+        },
+        {
+          "block": "Ring Oscillator VCO",
+          "ref": "msbPllFoundation/Ring Oscillator VCO",
+          "since": "R2023a+",
+          "intent": "Model a ring oscillator VCO — use for simulating low-cost VCOs with ring topology and phase noise"
+        },
+        {
+          "block": "Single Modulus Prescaler",
+          "ref": "msbPllFoundation/Single Modulus Prescaler",
+          "since": "R2023a+",
+          "intent": "Model a fixed-ratio frequency divider — use for dividing VCO frequency by a constant integer"
+        },
+        {
+          "block": "VCO",
+          "ref": "msbPllFoundation/VCO",
+          "since": "R2023a+",
+          "intent": "Model a voltage-controlled oscillator — use for simulating frequency modulation by control voltage with phase noise"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pll-measurements",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset",
+      "kbFolder": "mixed-signal-blockset",
+      "category": "pll-measurements",
+      "hash": "55816b1096dcd7458832958e798f249da761f7891058add4d9d66c6733bd3df2",
+      "fm": {
+        "title": "Pll measurements",
+        "description": "PLL performance measurement (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset",
+          "lock",
+          "phase noise",
+          "testbench",
+          "measurement"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Lock Time Measurement",
+          "ref": "msbPllMeasurements/Lock Time Measurement",
+          "since": "R2023a+",
+          "intent": "Measure PLL lock acquisition time — use for characterizing how fast the PLL achieves frequency lock"
+        },
+        {
+          "block": "PFD and Charge Pump Testbench",
+          "ref": "msbPllMeasurements/PFD and Charge Pump Testbench",
+          "since": "R2023a+",
+          "intent": "Test environment for PFD and charge pump — use for verifying dead-zone, linearity, and current matching"
+        },
+        {
+          "block": "PLL Testbench",
+          "ref": "msbPllMeasurements/PLL Testbench",
+          "since": "R2023a+",
+          "intent": "Complete PLL test environment — use for automated PLL characterization including lock time and phase noise"
+        },
+        {
+          "block": "Phase Noise Measurement",
+          "ref": "msbPllMeasurements/Phase Noise Measurement",
+          "since": "R2023a+",
+          "intent": "Measure oscillator phase noise — use for extracting phase noise spectral density from PLL or VCO output"
+        },
+        {
+          "block": "VCO Testbench",
+          "ref": "msbPllMeasurements/VCO Testbench",
+          "since": "R2023a+",
+          "intent": "Test environment for VCO characterization — use for measuring tuning gain, frequency range, and phase noise"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset",
+      "kbFolder": "mixed-signal-blockset",
+      "category": "utilities",
+      "hash": "5f2d22376d1176bbb4e12b759517a1c4362543f5dc74db153fbead7091d985bf",
+      "fm": {
+        "title": "Utilities",
+        "description": "General mixed-signal utilities and measurements (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset",
+          "eye",
+          "clock",
+          "slew",
+          "op-amp",
+          "binary",
+          "timing"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Binary Vector Conversion",
+          "ref": "msbUtilities/Binary Vector Conversion",
+          "since": "R2023a+",
+          "intent": "Convert between binary vectors and numeric values — use for interfacing digital bus representations with numeric signals"
+        },
+        {
+          "block": "Clock Jitter Measurement",
+          "ref": "msbUtilities/Clock Jitter Measurement",
+          "since": "R2023a+",
+          "intent": "Measure clock signal jitter — use for characterizing timing uncertainty on clock edges"
+        },
+        {
+          "block": "Linear Circuit Wizard",
+          "ref": "msbUtilities/Linear Circuit Wizard",
+          "since": "R2023a+",
+          "intent": "Generate Simulink models from circuit netlists — use for importing analog filter or amplifier topologies"
+        },
+        {
+          "block": "Operational Amplifier",
+          "ref": "msbUtilities/Operational Amplifier",
+          "since": "R2023a+",
+          "intent": "Model an operational amplifier — use for simulating op-amp circuits with gain, bandwidth, and slew rate limits"
+        },
+        {
+          "block": "Slew Rate",
+          "ref": "msbUtilities/Slew Rate",
+          "since": "R2023a+",
+          "intent": "Apply slew-rate limiting to a signal — use for modeling output rate constraints of analog circuits"
+        },
+        {
+          "block": "Timing Measurement",
+          "ref": "msbUtilities/Timing Measurement",
+          "since": "R2023a+",
+          "intent": "Measure signal timing parameters — use for extracting rise time, fall time, and propagation delay"
+        },
+        {
+          "block": "Clock Generator",
+          "ref": "msbUtilities/Clock Generator",
+          "since": "R2023a+",
+          "intent": "Generate a periodic clock signal — use for providing timing reference to mixed-signal circuits"
+        },
+        {
+          "block": "Eye Diagram",
+          "ref": "msbUtilities/Eye Diagram",
+          "since": "R2023a+",
+          "intent": "Display signal eye diagram — use for visualizing signal quality and timing margins in serial links"
+        },
+        {
+          "block": "Eye Measurement",
+          "ref": "msbUtilities/Eye Measurement",
+          "since": "R2024a+",
+          "intent": "Measure eye diagram parameters — use for extracting eye height, width, and jitter from serial signals"
+        },
+        {
+          "block": "Jitter Measurement",
+          "ref": "msbUtilities/Jitter Measurement",
+          "since": "R2026a+",
+          "intent": "Measure signal jitter components — use for decomposing jitter into deterministic and random components"
+        },
+        {
+          "block": "Logic Decision",
+          "ref": "msbUtilities/Logic Decision",
+          "since": "R2023a+",
+          "intent": "Make binary logic decisions on analog signals — use for determining digital values from analog waveforms with thresholds"
+        },
+        {
+          "block": "Lowpass Resampler",
+          "ref": "msbUtilities/Lowpass Resampler",
+          "since": "R2023a+",
+          "intent": "Resample discrete signals to continuous time — use for converting sampled data back to continuous waveforms with filtering"
+        },
+        {
+          "block": "Signal Sampler",
+          "ref": "msbUtilities/Signal Sampler",
+          "since": "R2023a+",
+          "intent": "Sample a continuous signal at clock edges — use for modeling sample-and-hold behavior with configurable timing"
+        },
+        {
+          "block": "Variable Pulse Delay",
+          "ref": "msbUtilities/Variable Pulse Delay",
+          "since": "R2023a+",
+          "intent": "Apply variable delay to pulse signals — use for modeling jitter injection or propagation delay variation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.99541797454
 }

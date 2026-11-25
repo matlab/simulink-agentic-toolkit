@@ -1,25 +1,8 @@
-# Library Reuse Index
+---
+okf_version: "0.2"
+---
 
-## Priority
+# Simulink Block Category
 
-1. Custom library blocks (highest priority)
-2. Toolbox KB blocks
-
-## Policy
-
-- Always use custom library blocks when available.
-- Never fall back to built-in primitives if the same block exists in a declared library.
-- Only use built-in blocks when NO equivalent exists in any declared library after searching this index.
-- Do not invent custom block names.
-- If uncertain, inspect the relevant category page or ask the user.
-
-## Libraries
-
-- Embedded Coder Support Package for Qualcomm Hexagon
-
-Common blocks: [common.md](common.md) (6 of 6 blocks)
-
-## Categories
-
-- [Utilities](utilities.md) — 1 blocks; Hexagon support-package utilities
-- [Qnn inference](qnn-inference.md) — 5 blocks; Run deep-learning inference on Qualcomm AI Engine Direct (QNN) backends
+* [Qnn inference](qnn-inference.md) - Run deep-learning inference on Qualcomm AI Engine Direct (QNN) backends (5 blocks)
+* [Utilities](utilities.md) - Hexagon support-package utilities (1 blocks)

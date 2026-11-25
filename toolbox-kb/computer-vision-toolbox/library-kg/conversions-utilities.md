@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Conversions utilities
-description: Convert between Simulink Image types and matrices
-tags: [utilities, conversion, simulink image, color space]
-status: stable
-source: custom_library
-library_root: Computer Vision Toolbox
-category_path: Conversions utilities
+description: Convert between Simulink Image types and matrices (12 blocks)
+tags: [toolbox-kb, computer-vision-toolbox, utilities, conversion, simulink image, color space]
+status: draft
+sources:
+  - resource: matlab:visionconversions
+source: toolbox_kb
+managed_by: satk
+library: Computer Vision Toolbox
+kb_folder: computer-vision-toolbox
+category: conversions-utilities
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Conversions utilities
-
-Use these blocks for conversions utilities.
 
 ## Recommended Blocks
 

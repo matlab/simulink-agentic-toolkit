@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Models
-description: Identified dynamic models for simulation and prediction
-tags: [model, idmodel, polynomial, transfer function]
-status: stable
-source: custom_library
-library_root: System Identification Toolbox
-category_path: Models
+description: Identified dynamic models for simulation and prediction (7 blocks)
+tags: [toolbox-kb, system-identification-toolbox, model, idmodel, polynomial, transfer function]
+status: draft
+sources:
+  - resource: matlab:slident
+source: toolbox_kb
+managed_by: satk
+library: System Identification Toolbox
+kb_folder: system-identification-toolbox
+category: models
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Models
-
-Use these blocks for models.
 
 ## Recommended Blocks
 

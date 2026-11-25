@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Fuel cell
-description: Fuel cell stack models for hydrogen powertrain simulation
-tags: [fuel, cell, hydrogen, stack, pem]
+description: Fuel cell stack models for hydrogen powertrain simulation (2 blocks)
+tags: [toolbox-kb, battery, fuel, cell, hydrogen, stack, pem]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Fuel cell
+sources:
+  - resource: matlab:batt_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: fuel-cell
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Fuel cell
-
-Use these blocks for fuel cell.
 
 ## Recommended Blocks
 

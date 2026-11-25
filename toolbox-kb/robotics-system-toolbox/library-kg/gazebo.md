@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gazebo
-description: Gazebo co-simulation interface
-tags: [gazebo, pacer, entity, command]
+description: Gazebo co-simulation interface (7 blocks)
+tags: [toolbox-kb, robotics-system-toolbox, gazebo, pacer, entity, command]
 status: stable
-source: mathworks_toolbox
-library_root: Robotics System Toolbox
-category_path: Gazebo
+sources:
+  - resource: matlab:robotgazebolib
+source: toolbox_kb
+managed_by: satk
+library: Robotics System Toolbox
+kb_folder: robotics-system-toolbox
+category: gazebo
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Gazebo
-
-Use these blocks for gazebo.
 
 ## Recommended Blocks
 

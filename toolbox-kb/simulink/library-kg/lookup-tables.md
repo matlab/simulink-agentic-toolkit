@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Lookup tables
-description: Lookup tables, prelookup, and interpolation
-tags: [lookup, table, prelookup, interpolation, cosine, sine]
-status: stable
-source: custom_library
-library_root: Simulink
-category_path: Lookup tables
+description: "Lookup tables, prelookup, and interpolation (18 blocks)"
+tags: [toolbox-kb, simulink, lookup, table, prelookup, interpolation, cosine, sine]
+status: draft
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: lookup-tables
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Lookup tables
-
-Use these blocks for lookup tables.
 
 ## Recommended Blocks
 
@@ -35,6 +38,4 @@ Use these blocks for lookup tables.
 | SinCos Lookup | simulink/Quick Insert/Lookup Tables/SinCos Lookup | R2023a+ | Approximate sine and cosine together using a lookup table — use for efficient combined trig on embedded targets. |
 | Sine Lookup | simulink/Quick Insert/Lookup Tables/Sine Lookup | R2023a+ | Approximate sine using a lookup table — use for efficient sin evaluation on fixed-point/embedded targets. |
 | Chirp Signal | simulink/Sources/Chirp Signal | R2023a+ | Output a linear chirp signal (sine wave whose frequency varies linearly with time). |
-| Repeating
-Sequence | simulink/Sources/Repeating
-Sequence | R2023a+ | Output a repeating sequence of numbers specified in a table of time-value pairs. Values of time should be monotonically increasing. |
+| Repeating Sequence | simulink/Sources/Repeating Sequence | R2023a+ | Output a repeating sequence of numbers specified in a table of time-value pairs. Values of time should be monotonically increasing. |

@@ -1,15 +1,370 @@
 {
-  "generatedAt": "2026-09-29T16:38:08",
-  "generatedAtDatenum": 740254.69314980321,
-  "generatorVersion": 4,
-  "libraries": [
-    "Motor Control Blockset HDL Support"
-  ],
-  "blockCount": 29,
-  "categoryCount": 8,
-  "libraryFingerprints": {
-    "Motor_Control_Blockset_HDL_Support": {
-      "blockCount": 29
+  "pages": [
+    {
+      "id": "control-reference",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "control-reference",
+      "hash": "dda75c1c8c395d6ff1bc654727484ee6d6a00e4d9a05eeff0767a62adbc883a6",
+      "fm": {
+        "title": "Control reference",
+        "description": "Reference generation and estimators for AC induction motor control (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "control reference",
+          "acim",
+          "dq limiter",
+          "position generator"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ACIM Control Reference",
+          "ref": "mcbhdllib/Controls/Control Reference/ACIM Control Reference",
+          "since": "R2023a+",
+          "intent": "Generate flux and torque current references for AC induction motor field-oriented control — use to set the d/q current setpoints for ACIM FOC."
+        },
+        {
+          "block": "ACIM Feed Forward Control",
+          "ref": "mcbhdllib/Controls/Control Reference/ACIM Feed Forward Control",
+          "since": "R2023a+",
+          "intent": "Compute feed-forward voltage terms for ACIM current control — use to improve current-loop dynamics and axis decoupling."
+        },
+        {
+          "block": "ACIM Slip Speed Estimator",
+          "ref": "mcbhdllib/Controls/Control Reference/ACIM Slip Speed Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate rotor slip speed for indirect field-oriented control of an induction motor — use to compute the flux angle in ACIM FOC."
+        },
+        {
+          "block": "ACIM Torque Estimator",
+          "ref": "mcbhdllib/Controls/Control Reference/ACIM Torque Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate the electromagnetic torque of an induction motor from currents and flux — use for torque monitoring or torque control."
+        },
+        {
+          "block": "DQ Limiter",
+          "ref": "mcbhdllib/Controls/Control Reference/DQ Limiter",
+          "since": "R2023a+",
+          "intent": "Limit the magnitude of the d-q current/voltage vector within a bound — use to enforce inverter and motor limits in FOC."
+        },
+        {
+          "block": "Position Generator",
+          "ref": "mcbhdllib/Controls/Control Reference/Position Generator",
+          "since": "R2023a+",
+          "intent": "Generate a ramping electrical position/angle — use to drive open-loop or test excitation of a motor model."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "controllers",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "controllers",
+      "hash": "06b0cf06868f7aceffa4da5a372b65c22867a5753407dc00921aa7d82ad6c46b",
+      "fm": {
+        "title": "Controllers",
+        "description": "Regulators and protective derating (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "controllers",
+          "pi controller",
+          "derating"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Derating Function",
+          "ref": "mcbhdllib/Controls/Controllers/Derating Function",
+          "since": "R2023a+",
+          "intent": "Reduce a torque or current reference based on temperature/voltage limits — use to protect the drive under stress."
+        },
+        {
+          "block": "PI Controller",
+          "ref": "mcbhdllib/Controls/Controllers/PI Controller",
+          "since": "R2023a+",
+          "intent": "Discrete PI controller with anti-windup — use for current, speed, or voltage regulation loops in motor control."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math-transforms",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "math-transforms",
+      "hash": "642c5836179208797be46eec1108f609ec396468b774a332a3ac5f114cbd3dff",
+      "fm": {
+        "title": "Math transforms",
+        "description": "Clarke/Park and multiphase transforms plus modulation (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "math transforms",
+          "clarke",
+          "park",
+          "vsd",
+          "pwm",
+          "atan2"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "6-Phase Inverse VSD Transform",
+          "ref": "mcbhdllib/Controls/Math Transforms/6-Phase Inverse VSD Transform",
+          "since": "R2024b+",
+          "intent": "Transform vector-space (d-q-x-y-z-0) components back to six-phase quantities — use to reconstruct phase references for a six-phase machine."
+        },
+        {
+          "block": "6-Phase VSD Transform",
+          "ref": "mcbhdllib/Controls/Math Transforms/6-Phase VSD Transform",
+          "since": "R2024b+",
+          "intent": "Decompose six-phase currents/voltages into vector-space (d-q-x-y-z-0) components — use for control of six-phase machines."
+        },
+        {
+          "block": "Clarke Transform",
+          "ref": "mcbhdllib/Controls/Math Transforms/Clarke Transform",
+          "since": "R2023a+",
+          "intent": "Transform three-phase (abc) quantities to the stationary two-axis (αβ) frame — use as the first step of field-oriented control."
+        },
+        {
+          "block": "Inverse Clarke Transform",
+          "ref": "mcbhdllib/Controls/Math Transforms/Inverse Clarke Transform",
+          "since": "R2023a+",
+          "intent": "Transform stationary two-axis (αβ) quantities back to three-phase (abc) — use to produce phase voltage references."
+        },
+        {
+          "block": "Inverse Park Transform",
+          "ref": "mcbhdllib/Controls/Math Transforms/Inverse Park Transform",
+          "since": "R2023a+",
+          "intent": "Transform rotating d-q quantities to the stationary αβ frame using the rotor angle — use to convert controller outputs back for modulation."
+        },
+        {
+          "block": "PWM Reference Generator",
+          "ref": "mcbhdllib/Controls/Math Transforms/PWM Reference Generator",
+          "since": "R2023a+",
+          "intent": "Generate PWM duty-cycle references (e.g., space-vector PWM) from voltage commands — use to drive the inverter switching stage."
+        },
+        {
+          "block": "Park Transform",
+          "ref": "mcbhdllib/Controls/Math Transforms/Park Transform",
+          "since": "R2023a+",
+          "intent": "Transform stationary two-axis (αβ) quantities to the rotating d-q frame using the rotor angle — use to obtain DC-like control variables in FOC."
+        },
+        {
+          "block": "atan2",
+          "ref": "mcbhdllib/Controls/Math Transforms/atan2",
+          "since": "R2023a+",
+          "intent": "Compute the four-quadrant arctangent — use to derive an angle from αβ components, such as a flux or position angle."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "motors",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "motors",
+      "hash": "0f9c707b831b019860ce3af2dc65f89fa523659824fe0c9d1c4a6f3abcf5486d",
+      "fm": {
+        "title": "Motors",
+        "description": "HDL-ready motor plant models and their configuration (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "motors",
+          "bldc",
+          "pmsm",
+          "induction motor",
+          "configuration"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "BLDC Configuration",
+          "ref": "mcbhdllib/Electrical Systems/Motors/BLDC Configuration",
+          "since": "R2023a+",
+          "intent": "Set the electrical and mechanical parameters of a BLDC motor for the paired plant block — use to configure a BLDC machine."
+        },
+        {
+          "block": "BLDC HDL",
+          "ref": "mcbhdllib/Electrical Systems/Motors/BLDC HDL",
+          "since": "R2023a+",
+          "intent": "HDL-ready BLDC motor plant model — use to simulate a brushless-DC machine in a hardware-targeted design."
+        },
+        {
+          "block": "Induction Motor Configuration",
+          "ref": "mcbhdllib/Electrical Systems/Motors/Induction Motor Configuration",
+          "since": "R2023a+",
+          "intent": "Set the parameters of an induction motor for the paired plant block — use to configure an ACIM machine."
+        },
+        {
+          "block": "Induction Motor HDL",
+          "ref": "mcbhdllib/Electrical Systems/Motors/Induction Motor HDL",
+          "since": "R2023a+",
+          "intent": "HDL-ready induction motor plant model — use to simulate an ACIM in a hardware-targeted design."
+        },
+        {
+          "block": "PMSM Configuration",
+          "ref": "mcbhdllib/Electrical Systems/Motors/PMSM Configuration",
+          "since": "R2023a+",
+          "intent": "Set the parameters of a PMSM for the paired plant block — use to configure a permanent-magnet synchronous machine."
+        },
+        {
+          "block": "PMSM HDL",
+          "ref": "mcbhdllib/Electrical Systems/Motors/PMSM HDL",
+          "since": "R2023a+",
+          "intent": "HDL-ready PMSM plant model — use to simulate a permanent-magnet synchronous machine in a hardware-targeted design."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "protection-diagnostics",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "protection-diagnostics",
+      "hash": "026677bc74cbeb2cb9da80290354a40834b1977c337babbb91f94f86fa982289",
+      "fm": {
+        "title": "Protection diagnostics",
+        "description": "Fault protection blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "protection",
+          "diagnostics",
+          "relay"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Protection Relay",
+          "ref": "mcbhdllib/Protection and Diagnostics/Protection Relay",
+          "since": "R2023a+",
+          "intent": "Trip and protect the drive when currents or voltages exceed limits — use for fault protection in motor control."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensor-decoders",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "sensor-decoders",
+      "hash": "1824bcbc231ce7a0ad8c74627e680699a7cd4622d2170cc088b89f44fd1ac748",
+      "fm": {
+        "title": "Sensor decoders",
+        "description": "Position and speed sensor decoding (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "sensor decoders",
+          "quadrature",
+          "speed",
+          "position"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Mechanical to Electrical Position",
+          "ref": "mcbhdllib/Sensor Decoders/Mechanical to Electrical Position",
+          "since": "R2023a+",
+          "intent": "Convert mechanical rotor angle to electrical angle using pole-pair count — use to obtain the electrical angle needed for FOC."
+        },
+        {
+          "block": "Quadrature Decoder",
+          "ref": "mcbhdllib/Sensor Decoders/Quadrature Decoder",
+          "since": "R2023a+",
+          "intent": "Decode quadrature encoder A/B/index pulses into position and direction — use to measure rotor position from an incremental encoder."
+        },
+        {
+          "block": "Speed Measurement",
+          "ref": "mcbhdllib/Sensor Decoders/Speed Measurement",
+          "since": "R2023a+",
+          "intent": "Compute rotor speed from successive position measurements — use to close the speed control loop."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensorless-estimators",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "sensorless-estimators",
+      "hash": "691f4ccb680ee053db683904084642e702866ca0a991298b0074bb1492f2f3a5",
+      "fm": {
+        "title": "Sensorless estimators",
+        "description": "Sensorless flux/position estimation (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "sensorless",
+          "flux observer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Flux Observer",
+          "ref": "mcbhdllib/Sensorless Estimators/Flux Observer",
+          "since": "R2023a+",
+          "intent": "Estimate rotor flux position and magnitude for sensorless FOC — use to run field-oriented control without a position sensor."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-management",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset HDL Support",
+      "kbFolder": "motor-control-blockset-hdl-support",
+      "category": "signal-management",
+      "hash": "e8651e5671b3034fca5ca38c0d0db606c029e4839631f800caa08f61403ce0c8",
+      "fm": {
+        "title": "Signal management",
+        "description": "Signal conditioning and compensation (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset-hdl-support",
+          "signal management",
+          "dead-time",
+          "iir filter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Dead-Time Compensator",
+          "ref": "mcbhdllib/Signal Management/Dead-Time Compensator",
+          "since": "R2024a+",
+          "intent": "Compensate inverter dead-time distortion in the voltage command — use to improve current-waveform quality."
+        },
+        {
+          "block": "IIR Filter",
+          "ref": "mcbhdllib/Signal Management/IIR Filter",
+          "since": "R2023a+",
+          "intent": "General IIR filter — use for signal conditioning such as smoothing measured feedback in motor control."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:36",
+  "generatedAtDatenum": 740309.99555660877
 }

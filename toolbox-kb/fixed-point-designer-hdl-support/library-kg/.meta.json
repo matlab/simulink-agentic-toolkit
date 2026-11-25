@@ -1,15 +1,339 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456263892,
-  "generatorVersion": 4,
-  "libraries": [
-    "Fixed-Point Designer HDL Support"
-  ],
-  "blockCount": 52,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Fixed_Point_Designer_HDL_Support": {
-      "blockCount": 52
+  "pages": [
+    {
+      "id": "linear-system-solvers",
+      "kind": "toolbox",
+      "library": "Fixed-Point Designer HDL Support",
+      "kbFolder": "fixed-point-designer-hdl-support",
+      "category": "linear-system-solvers",
+      "hash": "fd926ba2fae24900a85b7fac770487b69a7434d64019ea9230a0700579a0aaf8",
+      "fm": {
+        "title": "Linear system solvers",
+        "description": "HDL-optimized linear system solvers using QR (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "fixed-point-designer-hdl-support",
+          "solve",
+          "system",
+          "burst",
+          "partial-systolic",
+          "systolic",
+          "forgetting"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Complex Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve complex linear systems with async burst Q-less QR — use for streaming matrix problems on FPGA with variable latency"
+        },
+        {
+          "block": "Complex Burst Matrix Solve Using Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Matrix Solve Using Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve complex linear systems with burst Q-less QR — use for FPGA beamforming or channel estimation with complex matrices"
+        },
+        {
+          "block": "Complex Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "since": "R2023a+",
+          "intent": "Solve complex systems with Q-less QR and forgetting — use for adaptive filtering on FPGA with exponential weighting"
+        },
+        {
+          "block": "Complex Burst Matrix Solve Using QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Burst Matrix Solve Using QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve complex linear systems with burst QR — use for FPGA-based complex least-squares problems"
+        },
+        {
+          "block": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve complex systems with partial-systolic Q-less QR — use for area-efficient FPGA matrix solving"
+        },
+        {
+          "block": "Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "since": "R2023a+",
+          "intent": "Solve complex systems with partial-systolic Q-less QR and forgetting — use for adaptive FPGA beamforming"
+        },
+        {
+          "block": "Complex Partial-Systolic Matrix Solve Using QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Complex Partial-Systolic Matrix Solve Using QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve complex systems with partial-systolic QR — use for area-efficient FPGA least-squares solving"
+        },
+        {
+          "block": "Real Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Asynchronous Matrix Solve Using Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve real linear systems with async burst Q-less QR — use for streaming real matrix problems on FPGA"
+        },
+        {
+          "block": "Real Burst Matrix Solve Using Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Matrix Solve Using Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve real linear systems with burst Q-less QR — use for FPGA-based real least-squares with normal equations"
+        },
+        {
+          "block": "Real Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "since": "R2023a+",
+          "intent": "Solve real systems with Q-less QR and forgetting — use for real adaptive filtering on FPGA"
+        },
+        {
+          "block": "Real Burst Matrix Solve Using QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Burst Matrix Solve Using QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve real linear systems with burst QR — use for FPGA-based overdetermined system solving"
+        },
+        {
+          "block": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve real systems with partial-systolic Q-less QR — use for area-efficient FPGA real matrix solving"
+        },
+        {
+          "block": "Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Partial-Systolic Matrix Solve Using Q-less QR Decomposition with Forgetting Factor",
+          "since": "R2023a+",
+          "intent": "Solve real systems with partial-systolic Q-less QR and forgetting — use for adaptive real filtering on FPGA"
+        },
+        {
+          "block": "Real Partial-Systolic Matrix Solve Using QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Real Partial-Systolic Matrix Solve Using QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Solve real systems with partial-systolic QR — use for area-efficient FPGA real least-squares"
+        },
+        {
+          "block": "Systolic Matrix Solve Using QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Linear System Solvers/Systolic Matrix Solve Using QR Decomposition",
+          "since": "R2024a+",
+          "intent": "Solve linear systems with fully systolic QR — use for maximum-throughput FPGA matrix solving"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math-operations",
+      "kind": "toolbox",
+      "library": "Fixed-Point Designer HDL Support",
+      "kbFolder": "fixed-point-designer-hdl-support",
+      "category": "math-operations",
+      "hash": "52ed1dc41db938cca26b3de20c7dc3197264bf3875a1774408ee5147cad1b2bc",
+      "fm": {
+        "title": "Math operations",
+        "description": "HDL-optimized scalar math functions (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "fixed-point-designer-hdl-support",
+          "exp",
+          "log",
+          "sqrt",
+          "divide",
+          "cordic",
+          "sigmoid",
+          "tanh",
+          "power",
+          "reciprocal",
+          "modulo"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Euler to NED Transformation HDL Optimized",
+          "ref": "embeddedMatrixLib/Coordinate Transformations/Euler to NED Transformation HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Convert Euler angles to NED frame optimized for HDL — use for coordinate rotation in FPGA-based navigation"
+        },
+        {
+          "block": "CORDIC Sigmoid HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/CORDIC Sigmoid HDL Optimized",
+          "since": "R2024a+",
+          "intent": "Compute sigmoid activation using CORDIC for HDL — use for neural network inference on FPGA with fixed-point"
+        },
+        {
+          "block": "CORDIC Square Root HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/CORDIC Square Root HDL Optimized",
+          "since": "R2024a+",
+          "intent": "Compute square root using CORDIC for HDL — use for implementing sqrt in FPGA without multipliers"
+        },
+        {
+          "block": "Complex Divide HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/Complex Divide HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Divide complex numbers optimized for HDL — use for implementing complex division in FPGA signal processing"
+        },
+        {
+          "block": "Divide by Constant HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/Divide by Constant HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Divide by a compile-time constant optimized for HDL — use for efficient constant division without a divider circuit"
+        },
+        {
+          "block": "Hyperbolic Tangent HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/Hyperbolic Tangent HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Compute tanh optimized for HDL — use for neural network activation or nonlinear control on FPGA"
+        },
+        {
+          "block": "Modulo by Constant HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/Modulo by Constant HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Compute modulo by a constant optimized for HDL — use for efficient remainder computation without a divider"
+        },
+        {
+          "block": "Normalized Reciprocal HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/Normalized Reciprocal HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Compute normalized reciprocal optimized for HDL — use for division by normalizing the dividend first"
+        },
+        {
+          "block": "Real Divide HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/Real Divide HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Divide real numbers optimized for HDL — use for general-purpose fixed-point division on FPGA"
+        },
+        {
+          "block": "Real Reciprocal HDL Optimized",
+          "ref": "embeddedMatrixLib/Math Operations/Real Reciprocal HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Compute 1/x optimized for HDL — use for reciprocal computation in FPGA signal processing"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "matrix-factorizations",
+      "kind": "toolbox",
+      "library": "Fixed-Point Designer HDL Support",
+      "kbFolder": "fixed-point-designer-hdl-support",
+      "category": "matrix-factorizations",
+      "hash": "4d0cefca540155c70c36ae12997992e8f9453e6175226c0675e35ac5ad30c58b",
+      "fm": {
+        "title": "Matrix factorizations",
+        "description": "HDL-optimized matrix factorization blocks (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "fixed-point-designer-hdl-support",
+          "qr",
+          "svd",
+          "decomposition",
+          "factorization",
+          "jacobi"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Complex Burst Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Factorize complex matrices with burst Q-less QR — use for computing R factor of complex matrices on FPGA"
+        },
+        {
+          "block": "Complex Burst Q-less QR Decomposition Whole R Output",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst Q-less QR Decomposition Whole R Output",
+          "since": "R2023a+",
+          "intent": "Factorize complex matrices outputting full R — use for FPGA Q-less QR when the entire R matrix is needed at once"
+        },
+        {
+          "block": "Complex Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+          "since": "R2023a+",
+          "intent": "Factorize with forgetting outputting full R — use for time-weighted complex covariance on FPGA"
+        },
+        {
+          "block": "Complex Burst QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Burst QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Compute full QR decomposition of complex matrices — use for FPGA-based complex matrix factorization"
+        },
+        {
+          "block": "Complex Partial-Systolic Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Partial-Systolic Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Factorize complex matrices with partial-systolic Q-less QR — use for area-efficient FPGA complex factorization"
+        },
+        {
+          "block": "Complex Partial-Systolic Q-less QR with Forgetting Factor",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Partial-Systolic Q-less QR with Forgetting Factor",
+          "since": "R2023a+",
+          "intent": "Factorize complex matrices with forgetting — use for adaptive covariance estimation on FPGA"
+        },
+        {
+          "block": "Complex Partial-Systolic QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Complex Partial-Systolic QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Compute full QR of complex matrices with partial-systolic architecture — use for area-efficient FPGA QR"
+        },
+        {
+          "block": "Non-Square Jacobi SVD HDL Optimized",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Non-Square Jacobi SVD HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Compute SVD of non-square matrices for HDL — use for FPGA-based singular value decomposition of rectangular matrices"
+        },
+        {
+          "block": "Real Burst Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Factorize real matrices with burst Q-less QR — use for computing R factor of real matrices on FPGA"
+        },
+        {
+          "block": "Real Burst Q-less QR Decomposition Whole R Output",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst Q-less QR Decomposition Whole R Output",
+          "since": "R2023a+",
+          "intent": "Factorize real matrices outputting full R — use for FPGA Q-less QR when the entire R matrix is needed"
+        },
+        {
+          "block": "Real Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst Q-less QR Decomposition with Forgetting Factor Whole R Output",
+          "since": "R2023b+",
+          "intent": "Factorize with forgetting outputting full R — use for time-weighted real covariance on FPGA"
+        },
+        {
+          "block": "Real Burst QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Burst QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Compute full QR decomposition of real matrices — use for FPGA-based real matrix factorization"
+        },
+        {
+          "block": "Real Partial-Systolic Q-less QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Partial-Systolic Q-less QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Factorize real matrices with partial-systolic Q-less QR — use for area-efficient FPGA real factorization"
+        },
+        {
+          "block": "Real Partial-Systolic Q-less QR with Forgetting Factor",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Partial-Systolic Q-less QR with Forgetting Factor",
+          "since": "R2023a+",
+          "intent": "Factorize real matrices with forgetting — use for adaptive real covariance estimation on FPGA"
+        },
+        {
+          "block": "Real Partial-Systolic QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Real Partial-Systolic QR Decomposition",
+          "since": "R2023a+",
+          "intent": "Compute full QR of real matrices with partial-systolic architecture — use for area-efficient FPGA QR"
+        },
+        {
+          "block": "Square Jacobi SVD HDL Optimized",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Square Jacobi SVD HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Compute SVD of square matrices for HDL — use for FPGA-based singular value decomposition"
+        },
+        {
+          "block": "Systolic QR Decomposition",
+          "ref": "embeddedMatrixLib/Matrices and Linear Algebra/Matrix Factorizations/Systolic QR Decomposition",
+          "since": "R2024a+",
+          "intent": "Compute QR with fully systolic architecture — use for maximum-throughput FPGA matrix factorization"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99539207178
 }

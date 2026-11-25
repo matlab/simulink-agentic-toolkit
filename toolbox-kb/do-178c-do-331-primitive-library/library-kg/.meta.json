@@ -1,15 +1,1029 @@
 {
-  "generatedAt": "2026-09-29T16:38:07",
-  "generatedAtDatenum": 740254.69313672453,
-  "generatorVersion": 4,
-  "libraries": [
-    "DO-178C/DO-331 Primitive Library"
-  ],
-  "blockCount": 113,
-  "categoryCount": 14,
-  "libraryFingerprints": {
-    "DO_178C_DO_331_Primitive_Library": {
-      "blockCount": 113
+  "pages": [
+    {
+      "id": "discontinuities",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "discontinuities",
+      "hash": "cc211603c5c1403ae496ac5ca059ab3602bddd60c0929c8469666bcd2884e560",
+      "fm": {
+        "title": "Discontinuities",
+        "description": "Dead zone, relay, and saturation nonlinearities (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "discontinuities",
+          "dead zone",
+          "relay",
+          "saturation"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Dead Zone",
+          "ref": "do178Lib/Simulink/Discontinuities/Dead Zone",
+          "since": "R2023b+",
+          "intent": "Output zero while the input is within a dead band, then pass the offset beyond it — use to model backlash or ignore small signals."
+        },
+        {
+          "block": "Relay",
+          "ref": "do178Lib/Simulink/Discontinuities/Relay",
+          "since": "R2023b+",
+          "intent": "Switch the output between two values with hysteresis around on/off thresholds — use for bang-bang control or thermostat-like logic."
+        },
+        {
+          "block": "Saturation",
+          "ref": "do178Lib/Simulink/Discontinuities/Saturation",
+          "since": "R2023b+",
+          "intent": "Clip a signal to specified upper and lower limits — use to enforce actuator or physical bounds."
+        },
+        {
+          "block": "Dead Zone Dynamic",
+          "ref": "do178Lib/Simulink/Discontinuities/Dead Zone Dynamic",
+          "since": "R2023b+",
+          "intent": "Output zero for inputs within a dead zone. Offset input signals by either the Start or End value when outside of the dead zone."
+        },
+        {
+          "block": "Saturation Dynamic",
+          "ref": "do178Lib/Simulink/Discontinuities/Saturation Dynamic",
+          "since": "R2023a+",
+          "intent": "Bound the range of the second input by using the first input (upper limit) and the third input (lower limit)."
+        },
+        {
+          "block": "Wrap To Zero",
+          "ref": "do178Lib/Simulink/Discontinuities/Wrap To Zero",
+          "since": "R2023b+",
+          "intent": "If the input is above the threshold, the output is zero, otherwise the output equals the input."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "discrete",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "discrete",
+      "hash": "17524fc281e393a0388d89e9c4054e6702a87f67a1ba43b396d6048ccd3657df",
+      "fm": {
+        "title": "Discrete",
+        "description": "Discrete-time delays and integration (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "discrete",
+          "delay",
+          "unit delay",
+          "integrator"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Decrement Real World",
+          "ref": "do178Lib/Simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Decrement Real World",
+          "since": "R2023a+",
+          "intent": "Decrease the Real World Value of Signal by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Increment Real World",
+          "ref": "do178Lib/Simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Increment Real World",
+          "since": "R2023a+",
+          "intent": "Increase the Real World Value of Signal by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Delay",
+          "ref": "do178Lib/Simulink/Discrete/Delay",
+          "since": "R2023b+",
+          "intent": "Delay a signal by a configurable number of sample steps — use to align timing or model transport delay in discrete systems."
+        },
+        {
+          "block": "Discrete-Time Integrator",
+          "ref": "do178Lib/Simulink/Discrete/Discrete-Time Integrator",
+          "since": "R2023b+",
+          "intent": "Accumulate a signal over time in discrete steps, with optional limits and reset — use for discrete integration in controllers and estimators."
+        },
+        {
+          "block": "Unit Delay",
+          "ref": "do178Lib/Simulink/Discrete/Unit Delay",
+          "since": "R2023b+",
+          "intent": "Hold the input for one sample period (z^-1) — use to introduce a one-step delay or break an algebraic loop."
+        },
+        {
+          "block": "Difference",
+          "ref": "do178Lib/Simulink/Discrete/Difference",
+          "since": "R2023b+",
+          "intent": "Output the current input value minus the previous input value."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "logic-bit",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "logic-bit",
+      "hash": "1e846a2ceb832da533ae2b13e75936117206d436b79b8f78a9011ac34c4d6eb6",
+      "fm": {
+        "title": "Logic bit",
+        "description": "Logical, relational, and bit operations (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "logic and bit",
+          "logical",
+          "relational",
+          "combinatorial",
+          "shift"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Bitwise Operator",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Bitwise Operator",
+          "since": "R2023a+",
+          "intent": "Perform the specified bitwise operation on the inputs. The output data type should represent zero exactly."
+        },
+        {
+          "block": "Combinatorial  Logic",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Combinatorial  Logic",
+          "since": "R2023a+",
+          "intent": "Map inputs to outputs via a truth table — use to implement combinational logic or state-machine output tables."
+        },
+        {
+          "block": "Logical Operator",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Logical Operator",
+          "since": "R2023a+",
+          "intent": "Apply a logical operation (AND/OR/NOT/XOR/…) to boolean inputs — use for boolean decision logic."
+        },
+        {
+          "block": "Relational Operator",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Relational Operator",
+          "since": "R2023a+",
+          "intent": "Compare two inputs (==, <, >, …) and output a boolean — use to build conditions and thresholds."
+        },
+        {
+          "block": "Shift Arithmetic",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Shift Arithmetic",
+          "since": "R2023a+",
+          "intent": "Shift bits or the binary point of a signal — use for fast multiply/divide by powers of two or fixed-point rescaling."
+        },
+        {
+          "block": "Bit Clear",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Bit Clear",
+          "since": "R2023a+",
+          "intent": "Clear ith bit of the stored integer to 0. Scaling is ignored."
+        },
+        {
+          "block": "Bit Set",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Bit Set",
+          "since": "R2023a+",
+          "intent": "Set ith bit of the stored integer to 1. Scaling is ignored."
+        },
+        {
+          "block": "Compare To Constant",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Compare To Constant",
+          "since": "R2023a+",
+          "intent": "Determine how a signal compares to a constant."
+        },
+        {
+          "block": "Compare To Zero",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Compare To Zero",
+          "since": "R2023a+",
+          "intent": "Determine how a signal compares to zero."
+        },
+        {
+          "block": "Detect Change",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Detect Change",
+          "since": "R2023a+",
+          "intent": "If the input does not equal its previous value, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the previous input U/z."
+        },
+        {
+          "block": "Detect Decrease",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Detect Decrease",
+          "since": "R2023a+",
+          "intent": "If the input is strictly less than its previous value, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the previous input U/z."
+        },
+        {
+          "block": "Detect Fall Negative",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Detect Fall Negative",
+          "since": "R2023a+",
+          "intent": "If the input is strictly negative and its previous value was nonnegative, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z < 0)."
+        },
+        {
+          "block": "Detect Fall Nonpositive",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Detect Fall Nonpositive",
+          "since": "R2023a+",
+          "intent": "If the input is nonpositive and its previous value was strictly positive, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z <= 0)."
+        },
+        {
+          "block": "Detect Increase",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Detect Increase",
+          "since": "R2023a+",
+          "intent": "If the input is strictly greater than its previous value, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the previous input U/z."
+        },
+        {
+          "block": "Detect Rise Nonnegative",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Detect Rise Nonnegative",
+          "since": "R2023a+",
+          "intent": "If the input is nonnegative and its previous value was strictly negative, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z >= 0)."
+        },
+        {
+          "block": "Detect Rise Positive",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Detect Rise Positive",
+          "since": "R2023a+",
+          "intent": "If the input is strictly positive and its previous value was nonpositive, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z > 0)."
+        },
+        {
+          "block": "Interval Test",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Interval Test",
+          "since": "R2023a+",
+          "intent": "If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE."
+        },
+        {
+          "block": "Interval Test Dynamic",
+          "ref": "do178Lib/Simulink/Logic and Bit Operations/Interval Test Dynamic",
+          "since": "R2023a+",
+          "intent": "If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "lookup-tables",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "lookup-tables",
+      "hash": "f644da801265e646775005664b3fe13994c0965b9deee19a416dff5095a712c3",
+      "fm": {
+        "title": "Lookup tables",
+        "description": "N-D lookup tables and prelookup interpolation (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "lookup",
+          "prelookup",
+          "interpolation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "1-D Lookup Table",
+          "ref": "do178Lib/Simulink/Lookup Tables/1-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Map one input to an output by interpolating breakpoint-value pairs — use for calibration curves and nonlinear functions."
+        },
+        {
+          "block": "2-D Lookup Table",
+          "ref": "do178Lib/Simulink/Lookup Tables/2-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from two inputs over a gridded table — use for two-variable maps such as gain schedules."
+        },
+        {
+          "block": "3-D Lookup Table",
+          "ref": "do178Lib/Simulink/Lookup Tables/3-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from three inputs over a gridded table — use for three-variable characterization maps."
+        },
+        {
+          "block": "Interpolation Using Prelookup",
+          "ref": "do178Lib/Simulink/Lookup Tables/Interpolation Using Prelookup",
+          "since": "R2023a+",
+          "intent": "Interpolate table values using the index/fraction from a Prelookup block — use for efficient multi-table lookups that share breakpoints."
+        },
+        {
+          "block": "Prelookup",
+          "ref": "do178Lib/Simulink/Lookup Tables/Prelookup",
+          "since": "R2023a+",
+          "intent": "Compute the index and fraction of an input within a breakpoint set — use ahead of Interpolation Using Prelookup to share breakpoint search."
+        },
+        {
+          "block": "n-D Lookup Table",
+          "ref": "do178Lib/Simulink/Lookup Tables/n-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from N inputs over an N-dimensional table — use for multi-variable calibration maps."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "math",
+      "hash": "11ab50473e83fd1ed0d8b063326471b6f9ceb362505d1b3ef0db3d14c9c7e8ac",
+      "fm": {
+        "title": "Math",
+        "description": "Arithmetic and elementwise math functions (21 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "math operations",
+          "gain",
+          "sum",
+          "product",
+          "sqrt",
+          "trig",
+          "abs"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Abs",
+          "ref": "do178Lib/Simulink/Math Operations/Abs",
+          "since": "R2023a+",
+          "intent": "Output the absolute value (magnitude) of the input — use to remove sign or compute magnitude."
+        },
+        {
+          "block": "Add",
+          "ref": "do178Lib/Simulink/Math Operations/Add",
+          "since": "R2023a+",
+          "intent": "Sum inputs with configurable signs — use for additive combination of signals."
+        },
+        {
+          "block": "Assignment",
+          "ref": "do178Lib/Simulink/Math Operations/Assignment",
+          "since": "R2023a+",
+          "intent": "Write values into selected elements of a signal or array — use to update specific elements of a vector or matrix."
+        },
+        {
+          "block": "Bias",
+          "ref": "do178Lib/Simulink/Math Operations/Bias",
+          "since": "R2023a+",
+          "intent": "Add a constant offset to the input — use to shift a signal by a fixed amount."
+        },
+        {
+          "block": "Divide",
+          "ref": "do178Lib/Simulink/Math Operations/Divide",
+          "since": "R2023a+",
+          "intent": "Multiply and/or divide inputs — use for ratios, normalization, or scaling by another signal."
+        },
+        {
+          "block": "Dot Product",
+          "ref": "do178Lib/Simulink/Math Operations/Dot Product",
+          "since": "R2023a+",
+          "intent": "Compute the dot (inner) product of two vectors — use for projections, weighted sums, or magnitude-squared."
+        },
+        {
+          "block": "Gain",
+          "ref": "do178Lib/Simulink/Math Operations/Gain",
+          "since": "R2023a+",
+          "intent": "Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants."
+        },
+        {
+          "block": "Math Function",
+          "ref": "do178Lib/Simulink/Math Operations/Math Function",
+          "since": "R2023a+",
+          "intent": "Apply a math function (exp, log, power, mod, reciprocal, …) — use for elementwise nonlinear math."
+        },
+        {
+          "block": "MinMax",
+          "ref": "do178Lib/Simulink/Math Operations/MinMax",
+          "since": "R2023a+",
+          "intent": "Output the minimum or maximum across inputs or elements — use to select extremes or clamp between signals."
+        },
+        {
+          "block": "Polynomial",
+          "ref": "do178Lib/Simulink/Math Operations/Polynomial",
+          "since": "R2023a+",
+          "intent": "Evaluate a polynomial with given coefficients at the input — use to apply a polynomial fit or characteristic."
+        },
+        {
+          "block": "Product",
+          "ref": "do178Lib/Simulink/Math Operations/Product",
+          "since": "R2023a+",
+          "intent": "Multiply inputs elementwise or as matrices — use for scaling, modulation, or products of signals."
+        },
+        {
+          "block": "Reshape",
+          "ref": "do178Lib/Simulink/Math Operations/Reshape",
+          "since": "R2023a+",
+          "intent": "Change the dimensions of a signal without changing its data — use to convert between vector and matrix shapes."
+        },
+        {
+          "block": "Rounding Function",
+          "ref": "do178Lib/Simulink/Math Operations/Rounding Function",
+          "since": "R2023a+",
+          "intent": "Round a signal (floor, ceil, round, fix) — use to quantize to integers or control rounding behavior."
+        },
+        {
+          "block": "Sign",
+          "ref": "do178Lib/Simulink/Math Operations/Sign",
+          "since": "R2023a+",
+          "intent": "Output the sign (-1/0/+1) of the input — use for direction detection or sign extraction."
+        },
+        {
+          "block": "Signed Sqrt",
+          "ref": "do178Lib/Simulink/Math Operations/Signed Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute a sign-preserving square root, sign(u)·sqrt(|u|) — use when the input can be negative but root-like scaling is needed."
+        },
+        {
+          "block": "Sqrt",
+          "ref": "do178Lib/Simulink/Math Operations/Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute the square root of the input — use for magnitude, RMS, or geometric calculations."
+        },
+        {
+          "block": "Subtract",
+          "ref": "do178Lib/Simulink/Math Operations/Subtract",
+          "since": "R2023a+",
+          "intent": "Subtract inputs (a Sum configured for subtraction) — use to compute differences or control errors."
+        },
+        {
+          "block": "Sum",
+          "ref": "do178Lib/Simulink/Math Operations/Sum",
+          "since": "R2023a+",
+          "intent": "Add or subtract inputs per the sign list — use to combine signals, form errors, or accumulate."
+        },
+        {
+          "block": "Trigonometric Function",
+          "ref": "do178Lib/Simulink/Math Operations/Trigonometric Function",
+          "since": "R2023a+",
+          "intent": "Apply a trig function (sin, cos, tan, atan2, …) — use for angle/phase computation and coordinate transforms."
+        },
+        {
+          "block": "Unary Minus",
+          "ref": "do178Lib/Simulink/Math Operations/Unary Minus",
+          "since": "R2023a+",
+          "intent": "Negate the input (multiply by -1) — use to invert a signal's sign."
+        },
+        {
+          "block": "MinMax Running Resettable",
+          "ref": "do178Lib/Simulink/Math Operations/MinMax Running Resettable",
+          "since": "R2023a+",
+          "intent": "Output the max or min of all past inputs u. The output is reset to the initial condition when the Reset input signal R is TRUE. This reset action is vectorized and supports scalar expansion."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ports-subsystems",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "ports-subsystems",
+      "hash": "58ea1bbb7cb7148cb3a8be71e83d5e0217cb42ad5c92a756031da872d26e5886",
+      "fm": {
+        "title": "Ports subsystems",
+        "description": "Ports, subsystems, and control-flow containers (19 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "ports",
+          "subsystems",
+          "inport",
+          "outport",
+          "if",
+          "switch case",
+          "subsystem",
+          "iterator"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "In1",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        },
+        {
+          "block": "Function-Call Generator",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Function-Call Generator",
+          "since": "R2023a+",
+          "intent": "Execute function-call subsystems, models, or Stateflow charts that are connected to this block at a specified rate. To execute multiple function-call blocks in prescribed order, use this block in conjunction with a Function-Call Split block. The 'Sample time' parameter specifies the rate at which this block executes each function-call block connected to it. To iteratively execute each function-call block connected to this block multiple times at each time step, use the 'Number of iterations' parameter. If you check 'Show enable port' checkbox, block outputs function-call signal only when input signal to the enable port has positive scalar value."
+        },
+        {
+          "block": "Function-Call Split",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Function-Call Split",
+          "since": "R2023a+",
+          "intent": "Split one function-call line to trigger multiple subsystems — use to invoke several function-call subsystems from one caller."
+        },
+        {
+          "block": "If",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/If",
+          "since": "R2023a+",
+          "intent": "Evaluate if/elseif conditions and issue action outputs — use with If Action Subsystems for conditional execution."
+        },
+        {
+          "block": "Switch Case",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Switch Case",
+          "since": "R2023a+",
+          "intent": "Route control to case actions based on an integer input — use with Case Action Subsystems for multiway branching."
+        },
+        {
+          "block": "Out1",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "Atomic Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Atomic Subsystem",
+          "since": "R2023a+",
+          "intent": "Group blocks that execute atomically as a single unit — use to enforce single-unit execution and code-generation boundaries."
+        },
+        {
+          "block": "Enabled Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Enabled Subsystem",
+          "since": "R2023a+",
+          "intent": "Execute contained blocks only while an enable signal is positive — use for conditionally-run logic."
+        },
+        {
+          "block": "For Each Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/For Each Subsystem",
+          "since": "R2023a+",
+          "intent": "Run the contained logic independently on each element/slice of an input — use to vectorize per-element processing."
+        },
+        {
+          "block": "For Iterator Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/For Iterator Subsystem",
+          "since": "R2023a+",
+          "intent": "Execute the contents a fixed number of iterations per step — use for bounded loops."
+        },
+        {
+          "block": "Function-Call Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Function-Call Subsystem",
+          "since": "R2023a+",
+          "intent": "Execute the contents when invoked by a function-call — use for event- or scheduler-driven logic."
+        },
+        {
+          "block": "If Action Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/If Action Subsystem",
+          "since": "R2023a+",
+          "intent": "Contained action executed when driven by an If block branch — use as the body of a conditional branch."
+        },
+        {
+          "block": "Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Subsystem",
+          "since": "R2023a+",
+          "intent": "Group blocks into a hierarchical container — use to organize a model into reusable, readable units."
+        },
+        {
+          "block": "Triggered Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Triggered Subsystem",
+          "since": "R2023a+",
+          "intent": "Execute the contents on a trigger edge — use for edge-driven, event-based logic."
+        },
+        {
+          "block": "Variant Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/Variant Subsystem",
+          "since": "R2023a+",
+          "intent": "Contain multiple implementations and activate one by variant condition — use to switch between design alternatives."
+        },
+        {
+          "block": "While Iterator Subsystem",
+          "ref": "do178Lib/Simulink/Ports & Subsystems/While Iterator Subsystem",
+          "since": "R2023a+",
+          "intent": "Execute the contents repeatedly while a condition holds — use for condition-controlled loops."
+        },
+        {
+          "block": "Data Type Propagation",
+          "ref": "do178Lib/Simulink/Signal Attributes/Data Type Propagation",
+          "since": "R2023a+",
+          "intent": "Set the Data Type and Scaling of the propagated signal based on information from the reference signals. Notes: 1) Items closer to the top of the dialog have higher priority/precedence. a) Reference inputs of type double have priority over all others. b) Singles have priority over integer and fixed point data types. c) Multiplicative adjustments are carried out before additive adjustments. d) Number-of-Bits is determined before the precision or positive-range is inherited from the reference signals. 2) PosRange is one bit higher than the exact maximum positive range of the signal. 3) The computed Number-of-Bits is promoted to the smallest allowable value that is greater than or equal to the computation. If none exists, then the block returns an error."
+        },
+        {
+          "block": "Out1",
+          "ref": "do178Lib/Simulink/Sinks/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "In1",
+          "ref": "do178Lib/Simulink/Sources/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-attributes",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "signal-attributes",
+      "hash": "6ab146a8515ce9e0cda901467111e891ac82cf2bdfd88f683692f3ab39480a91",
+      "fm": {
+        "title": "Signal attributes",
+        "description": "Type, rate, and attribute handling (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "signal attributes",
+          "data type",
+          "rate transition",
+          "conversion",
+          "initial condition",
+          "width",
+          "unit"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Data Type Duplicate",
+          "ref": "do178Lib/Simulink/Signal Attributes/Data Type Duplicate",
+          "since": "R2023a+",
+          "intent": "Force multiple signals to share the same data type — use to keep interfaces type-consistent."
+        },
+        {
+          "block": "Data Type Conversion",
+          "ref": "do178Lib/Simulink/Signal Attributes/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set integer/fixed-point type and scaling."
+        },
+        {
+          "block": "IC",
+          "ref": "do178Lib/Simulink/Signal Attributes/IC",
+          "since": "R2023a+",
+          "intent": "Set the initial value of a signal for the first time step — use to seed states or feedback at start-up."
+        },
+        {
+          "block": "Probe",
+          "ref": "do178Lib/Simulink/Signal Attributes/Probe",
+          "since": "R2023a+",
+          "intent": "Output signal attributes such as width, sample time, complexity, and dimensions — use to inspect properties at runtime."
+        },
+        {
+          "block": "Rate Transition",
+          "ref": "do178Lib/Simulink/Signal Attributes/Rate Transition",
+          "since": "R2023a+",
+          "intent": "Safely transfer data between blocks running at different sample rates — use to handle multirate signal hand-off."
+        },
+        {
+          "block": "Signal Conversion",
+          "ref": "do178Lib/Simulink/Signal Attributes/Signal Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal's storage form (contiguous copy, bus, virtual) — use to satisfy downstream signal requirements."
+        },
+        {
+          "block": "Signal Specification",
+          "ref": "do178Lib/Simulink/Signal Attributes/Signal Specification",
+          "since": "R2023a+",
+          "intent": "Assert and enforce a signal's attributes (type, dimensions, sample time) — use to document and check interfaces."
+        },
+        {
+          "block": "Unit Conversion",
+          "ref": "do178Lib/Simulink/Signal Attributes/Unit Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal between physical units — use to reconcile unit mismatches between components."
+        },
+        {
+          "block": "Width",
+          "ref": "do178Lib/Simulink/Signal Attributes/Width",
+          "since": "R2023a+",
+          "intent": "Output the number of elements in the input signal — use to obtain vector width at runtime."
+        },
+        {
+          "block": "Data Type Conversion Inherited",
+          "ref": "do178Lib/Simulink/Signal Attributes/Data Type Conversion Inherited",
+          "since": "R2023a+",
+          "intent": "Convert the second input to the data type and scaling of the first input. The conversion has two possible goals. One goal is to have the Real World Values of the input and the output be equal. The other goal is to have the Stored Integer Values of the input and the output be equal. Overflows and quantization errors can prevent the goal from being fully achieved."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-routing",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "signal-routing",
+      "hash": "2df0795f62b689cdf18893730ba0d5eb8d1dc8a8da8549655e91a15fbba24a8e",
+      "fm": {
+        "title": "Signal routing",
+        "description": "Buses, mux/demux, switches, and data stores (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "signal routing",
+          "bus",
+          "mux",
+          "demux",
+          "goto",
+          "from",
+          "switch",
+          "merge",
+          "selector",
+          "data store"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Bus Assignment",
+          "ref": "do178Lib/Simulink/Signal Routing/Bus Assignment",
+          "since": "R2023a+",
+          "intent": "Replace selected elements of a bus with new values — use to update specific bus signals."
+        },
+        {
+          "block": "Bus Creator",
+          "ref": "do178Lib/Simulink/Signal Routing/Bus Creator",
+          "since": "R2023a+",
+          "intent": "Bundle multiple signals into a bus — use to group related signals into a single line."
+        },
+        {
+          "block": "Bus Selector",
+          "ref": "do178Lib/Simulink/Signal Routing/Bus Selector",
+          "since": "R2023a+",
+          "intent": "Extract selected signals from a bus — use to access individual members of a bus."
+        },
+        {
+          "block": "Data Store Memory",
+          "ref": "do178Lib/Simulink/Signal Routing/Data Store Memory",
+          "since": "R2023a+",
+          "intent": "Define a named shared memory region — use for data shared across subsystems without wires."
+        },
+        {
+          "block": "Data Store Read",
+          "ref": "do178Lib/Simulink/Signal Routing/Data Store Read",
+          "since": "R2023a+",
+          "intent": "Read the current value of a data store — use to consume shared data."
+        },
+        {
+          "block": "Data Store Write",
+          "ref": "do178Lib/Simulink/Signal Routing/Data Store Write",
+          "since": "R2023a+",
+          "intent": "Write a value into a data store — use to publish shared data."
+        },
+        {
+          "block": "Demux",
+          "ref": "do178Lib/Simulink/Signal Routing/Demux",
+          "since": "R2023a+",
+          "intent": "Split a vector signal into separate scalar/subvector lines — use to break out combined signals."
+        },
+        {
+          "block": "From",
+          "ref": "do178Lib/Simulink/Signal Routing/From",
+          "since": "R2023a+",
+          "intent": "Receive a signal from a matching Goto tag — use for wireless routing to reduce diagram clutter."
+        },
+        {
+          "block": "Goto",
+          "ref": "do178Lib/Simulink/Signal Routing/Goto",
+          "since": "R2023a+",
+          "intent": "Send a signal to matching From blocks via a tag — use for wireless routing to reduce diagram clutter."
+        },
+        {
+          "block": "Merge",
+          "ref": "do178Lib/Simulink/Signal Routing/Merge",
+          "since": "R2023a+",
+          "intent": "Combine multiple conditionally-executed inputs into one output — use to merge outputs of mutually-exclusive subsystems."
+        },
+        {
+          "block": "Multiport Switch",
+          "ref": "do178Lib/Simulink/Signal Routing/Multiport Switch",
+          "since": "R2023a+",
+          "intent": "Route one of several data inputs to the output based on a control index — use for index-selected multiplexing."
+        },
+        {
+          "block": "Mux",
+          "ref": "do178Lib/Simulink/Signal Routing/Mux",
+          "since": "R2023a+",
+          "intent": "Combine several signals into a single vector line — use to bundle scalars for compact routing."
+        },
+        {
+          "block": "Selector",
+          "ref": "do178Lib/Simulink/Signal Routing/Selector",
+          "since": "R2023a+",
+          "intent": "Select a subset of elements from a signal by index — use to extract specific channels or samples."
+        },
+        {
+          "block": "Switch",
+          "ref": "do178Lib/Simulink/Signal Routing/Switch",
+          "since": "R2023a+",
+          "intent": "Pass one of two inputs based on a control threshold — use for conditional signal selection."
+        },
+        {
+          "block": "Vector Concatenate",
+          "ref": "do178Lib/Simulink/Signal Routing/Vector Concatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a larger vector or matrix — use to assemble composite signals."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "simulink-model-wide-utilities",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "simulink-model-wide-utilities",
+      "hash": "b471cc099646d80b7aed3b884c1174470d17fdd4faede745c0966d9c8da3d5b6",
+      "fm": {
+        "title": "Simulink model wide utilities",
+        "description": "Blocks for Simulink model wide utilities (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "DocBlock",
+          "ref": "do178Lib/Simulink/Model-Wide Utilities/DocBlock",
+          "since": "R2023a+",
+          "intent": "Use this block to save long descriptive text with the model. Double-clicking the block will open an editor."
+        },
+        {
+          "block": "Model Info",
+          "ref": "do178Lib/Simulink/Model-Wide Utilities/Model Info",
+          "since": "R2023a+",
+          "intent": "This block allows revision control information to be displayed within the model."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sinks",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "sinks",
+      "hash": "b1932f3a2a62805aba04ef3a81687431e16cc20857b878e4327076bf40feb792",
+      "fm": {
+        "title": "Sinks",
+        "description": "Signal sinks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "sinks",
+          "terminator",
+          "outport"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Terminator",
+          "ref": "do178Lib/Simulink/Sinks/Terminator",
+          "since": "R2023a+",
+          "intent": "Cap an unused output port — use to avoid unconnected-line warnings."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "sources",
+      "hash": "54f5e333aa8cd86f8b04dd44510cf6c3c5a34089c6fb7f9b34d5e98695e54bef",
+      "fm": {
+        "title": "Sources",
+        "description": "Constant and ground sources (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "sources",
+          "constant",
+          "ground",
+          "enumerated",
+          "inport"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Constant",
+          "ref": "do178Lib/Simulink/Sources/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters, thresholds, or test inputs."
+        },
+        {
+          "block": "Enumerated Constant",
+          "ref": "do178Lib/Simulink/Sources/Enumerated Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant enumerated value — use to emit a named mode or state constant."
+        },
+        {
+          "block": "Ground",
+          "ref": "do178Lib/Simulink/Sources/Ground",
+          "since": "R2023a+",
+          "intent": "Provide a zero-valued source for an unconnected input — use to safely tie off inputs."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "stateflow",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "stateflow",
+      "hash": "3e865f348f16b40a727a764f6c62dfb683d434331dfc09380df31915150b8375",
+      "fm": {
+        "title": "Stateflow",
+        "description": "State-machine and flow-chart logic (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "stateflow",
+          "chart",
+          "simulink function"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Chart",
+          "ref": "do178Lib/Stateflow/Chart",
+          "since": "R2023b+",
+          "intent": "Model event-driven state-machine and flow-chart logic — use for modal, supervisory, or sequential control logic."
+        },
+        {
+          "block": "Simulink Function in Chart",
+          "ref": "do178Lib/Stateflow/Simulink Function in Chart",
+          "since": "R2023b+",
+          "intent": "Define a Simulink Function callable from Stateflow — use to invoke Simulink subsystem logic from chart actions."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "string",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "string",
+      "hash": "c0fecb74b298ac8a90535bafe28df5abb9d0c72f03dac10e2b3bc854964f3fad",
+      "fm": {
+        "title": "String",
+        "description": "String handling (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "string",
+          "ascii"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ASCII to String",
+          "ref": "do178Lib/Simulink/String/ASCII to String",
+          "since": "R2023b+",
+          "intent": "Convert a vector of ASCII codes to a string signal — use to build text from character codes."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "user-defined",
+      "kind": "toolbox",
+      "library": "DO-178C/DO-331 Primitive Library",
+      "kbFolder": "do-178c-do-331-primitive-library",
+      "category": "user-defined",
+      "hash": "3a39add872a9d85634e47cb577dbf22f432224186b71a185e2c979d7d266219a",
+      "fm": {
+        "title": "User defined",
+        "description": "Custom C, MATLAB, and expression blocks (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "do-178c-do-331-primitive-library",
+          "user-defined",
+          "c caller",
+          "fcn",
+          "matlab function"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "C Caller",
+          "ref": "do178Lib/Simulink/User-Defined Functions/C Caller",
+          "since": "R2023a+",
+          "intent": "Call external C code as a block — use to integrate legacy or custom C functions into the model."
+        },
+        {
+          "block": "Fcn",
+          "ref": "do178Lib/Simulink/User-Defined Functions/Fcn",
+          "since": "R2023a+",
+          "intent": "Evaluate a scalar expression of the inputs — use for simple inline arithmetic or logic expressions."
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "do178Lib/Simulink/User-Defined Functions/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Run authored MATLAB code as a block — use for custom algorithms not easily built from blocks."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:17",
+  "generatedAtDatenum": 740309.99533813656
 }

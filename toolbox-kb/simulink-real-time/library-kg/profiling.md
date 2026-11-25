@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Profiling
-description: Blocks for profiling.
+description: Blocks for Profiling (2 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Profiling
+sources:
+  - resource: matlab:slrealtimeproflib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: profiling
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Profiling
-
-Use these blocks for profiling.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Temporal patterns
-description: Temporal pattern blocks for formal verification of time-based properties
-tags: [temporal, verification, assertion, pattern, time]
+description: Temporal pattern blocks for formal verification of time-based properties (6 blocks)
+tags: [toolbox-kb, simulink-design-verifier-temporal-pattern-blocks, temporal, verification, assertion, pattern, time]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Design Verifier Temporal Pattern Blocks
-category_path: Temporal patterns
+sources:
+  - resource: matlab:sldvpatternlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Design Verifier Temporal Pattern Blocks
+kb_folder: simulink-design-verifier-temporal-pattern-blocks
+category: temporal-patterns
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Temporal patterns
-
-Use these blocks for temporal patterns.
 
 ## Recommended Blocks
 

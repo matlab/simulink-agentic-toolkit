@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74454900459,
-  "generatorVersion": 4,
-  "libraries": [
-    "Course Assessment"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Course_Assessment": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "assessment",
+      "kind": "toolbox",
+      "library": "Course Assessment",
+      "kbFolder": "course-assessment",
+      "category": "assessment",
+      "hash": "aa333dd545e0f8a6561abbd91fb212a3d1b8f9b7f14fdaa5b1f96e8ccd00c064",
+      "fm": {
+        "title": "Assessment",
+        "description": "Blocks for MATLAB Grader and courseware auto-assessment templates (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "course-assessment",
+          "grader",
+          "course",
+          "assessment",
+          "student",
+          "template"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Constant",
+          "ref": "assessmentBlocks/Constant",
+          "since": "R2023a+",
+          "intent": "Provide a constant value for course assessment grading templates — use as a placeholder signal source in auto-graded student assignment models"
+        },
+        {
+          "block": "Terminator",
+          "ref": "assessmentBlocks/Terminator",
+          "since": "R2023a+",
+          "intent": "Terminate an unconnected signal in course assessment models — use to suppress unconnected port warnings in auto-graded student assignment templates"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:16",
+  "generatedAtDatenum": 740309.995333669
 }

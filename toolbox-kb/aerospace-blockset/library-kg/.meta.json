@@ -1,15 +1,1886 @@
 {
-  "generatedAt": "2026-08-19T17:52:07",
-  "generatedAtDatenum": 740213.74453694443,
-  "generatorVersion": 4,
-  "libraries": [
-    "Aerospace Blockset"
-  ],
-  "blockCount": 226,
-  "categoryCount": 22,
-  "libraryFingerprints": {
-    "Aerospace_Blockset": {
-      "blockCount": 226
+  "pages": [
+    {
+      "id": "actuators",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "actuators",
+      "hash": "7c6caaa1ce536929a1176fb2087ec0c999846efa44cbf292d57b5e7c4570be9d",
+      "fm": {
+        "title": "Actuators",
+        "description": "Flight control actuators and servo dynamics (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "actuator",
+          "servo",
+          "deflection",
+          "rate limit",
+          "control surface"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Linear Second-Order Actuator",
+          "ref": "aerolibactuator/Linear Second-Order Actuator",
+          "since": "R2023a+",
+          "intent": "Model linear actuator dynamics as a second-order transfer function — use for control surface deflection response with natural frequency and damping"
+        },
+        {
+          "block": "Nonlinear Second-Order Actuator",
+          "ref": "aerolibactuator/Nonlinear Second-Order Actuator",
+          "since": "R2023a+",
+          "intent": "Model actuator dynamics with rate and position limits — use when control surface deflection has saturation or rate-limiting behavior"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "aerodynamics",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "aerodynamics",
+      "hash": "2dc363574ba570d8bacbffb890a3ac97485830bce74c5f5e9f8382bca170dd63",
+      "fm": {
+        "title": "Aerodynamics",
+        "description": "Aerodynamic forces, moments, and coefficients (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "aerodynamic",
+          "force",
+          "moment",
+          "DATCOM",
+          "coefficient"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Digital DATCOM Forces and Moments",
+          "ref": "aerolibadyn/Digital DATCOM Forces and Moments",
+          "since": "R2023a+",
+          "intent": "Compute aerodynamic forces and moments from Digital DATCOM stability derivatives — use when aerodynamic data comes from DATCOM analysis"
+        },
+        {
+          "block": "Aerodynamic Forces and Moments",
+          "ref": "aerolibadyn/Aerodynamic Forces and Moments",
+          "since": "R2023a+",
+          "intent": "Compute body-axis aerodynamic forces and moments from coefficients, dynamic pressure, and reference geometry — the primary aero block for any flight vehicle model"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "animation-visualization",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "animation-visualization",
+      "hash": "0037e57e58f5067b466bb3d398b7516f339787a5a52d112704e90cdb23cea89a",
+      "fm": {
+        "title": "Animation visualization",
+        "description": "3D visualization, FlightGear interface, and flight animation (33 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "animation",
+          "FlightGear",
+          "visualization",
+          "3D",
+          "Unreal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Pilot Joystick",
+          "ref": "aerolibanimutils/Pilot Joystick",
+          "since": "R2023a+",
+          "intent": "Read a single-axis hardware joystick input for pilot-in-the-loop simulation"
+        },
+        {
+          "block": "Pilot Joystick All",
+          "ref": "aerolibanimutils/Pilot Joystick All",
+          "since": "R2023a+",
+          "intent": "Read all axes and buttons from a hardware joystick simultaneously for full pilot-in-the-loop simulation"
+        },
+        {
+          "block": "Simulation Pace",
+          "ref": "aerolibanimutils/Simulation Pace",
+          "since": "R2023a+",
+          "intent": "Slow simulation to real time for interactive visualization and pilot-in-the-loop testing"
+        },
+        {
+          "block": "FlightGear Preconfigured 6DoF Animation",
+          "ref": "aerolibfltsims/FlightGear Preconfigured 6DoF Animation",
+          "since": "R2023a+",
+          "intent": "Send 6DOF vehicle state to FlightGear for real-time 3D flight visualization with minimal configuration"
+        },
+        {
+          "block": "Generate Run Script",
+          "ref": "aerolibfltsims/Generate Run Script",
+          "since": "R2023a+",
+          "intent": "Generate platform-specific script to launch FlightGear with correct network settings for co-simulation"
+        },
+        {
+          "block": "Receive net_ctrl Packet from FlightGear",
+          "ref": "aerolibfltsims/Receive net_ctrl Packet from FlightGear",
+          "since": "R2023a+",
+          "intent": "Receive pilot control inputs from FlightGear via UDP for hardware-in-the-loop scenarios"
+        },
+        {
+          "block": "Send net_fdm Packet to FlightGear",
+          "ref": "aerolibfltsims/Send net_fdm Packet to FlightGear",
+          "since": "R2023a+",
+          "intent": "Transmit vehicle state to FlightGear via UDP for real-time 3D visualization"
+        },
+        {
+          "block": "Pack net_fdm Packet for FlightGear",
+          "ref": "aerolibfltsims/Pack net_fdm Packet for FlightGear",
+          "since": "R2023a+",
+          "intent": "Serialize flight dynamics state into FlightGear's net_fdm binary protocol format"
+        },
+        {
+          "block": "Unpack net_ctrl Packet from FlightGear",
+          "ref": "aerolibfltsims/Unpack net_ctrl Packet from FlightGear",
+          "since": "R2023a+",
+          "intent": "Deserialize FlightGear's net_ctrl binary packet into individual control input signals"
+        },
+        {
+          "block": "3DoF Animation",
+          "ref": "aerolibanim/3DoF Animation",
+          "since": "R2023a+",
+          "intent": "Visualize longitudinal-plane vehicle motion in a 2D MATLAB figure with trajectory and attitude"
+        },
+        {
+          "block": "6DoF Animation",
+          "ref": "aerolibanim/6DoF Animation",
+          "since": "R2023a+",
+          "intent": "Visualize full 3D vehicle motion in a MATLAB figure with position and orientation"
+        },
+        {
+          "block": "MATLAB Animation",
+          "ref": "aerolibanim/MATLAB Animation",
+          "since": "R2023a+",
+          "intent": "Render custom 3D aircraft geometry in a MATLAB figure for flight path visualization"
+        },
+        {
+          "block": "Simulation 3D Air Transport Pack",
+          "ref": "aerolibsim3d/Simulation 3D Air Transport Pack",
+          "since": "R2023b+",
+          "intent": "Load a large commercial transport aircraft 3D mesh for Unreal Engine visualization"
+        },
+        {
+          "block": "Simulation 3D Aircraft",
+          "ref": "aerolibsim3d/Simulation 3D Aircraft",
+          "since": "R2023a+",
+          "intent": "Generic aircraft actor for Unreal Engine co-simulation — position and orient any aircraft mesh in the 3D scene"
+        },
+        {
+          "block": "Simulation 3D Airliner Pack",
+          "ref": "aerolibsim3d/Simulation 3D Airliner Pack",
+          "since": "R2023b+",
+          "intent": "Load a regional airliner 3D mesh for Unreal Engine visualization"
+        },
+        {
+          "block": "Simulation 3D CubeSat Pack",
+          "ref": "aerolibsim3d/Simulation 3D CubeSat Pack",
+          "since": "R2024a+",
+          "intent": "Load a CubeSat 3D mesh for Unreal Engine space visualization"
+        },
+        {
+          "block": "Simulation 3D Custom Pack",
+          "ref": "aerolibsim3d/Simulation 3D Custom Pack",
+          "since": "R2023b+",
+          "intent": "Load a user-supplied custom 3D mesh into the Unreal Engine scene"
+        },
+        {
+          "block": "Simulation 3D General Aviation Pack",
+          "ref": "aerolibsim3d/Simulation 3D General Aviation Pack",
+          "since": "R2023b+",
+          "intent": "Load a general aviation aircraft 3D mesh for Unreal Engine visualization"
+        },
+        {
+          "block": "Simulation 3D Helicopter Pack",
+          "ref": "aerolibsim3d/Simulation 3D Helicopter Pack",
+          "since": "R2023b+",
+          "intent": "Load a helicopter 3D mesh for Unreal Engine visualization"
+        },
+        {
+          "block": "Simulation 3D Light Helicopter Pack",
+          "ref": "aerolibsim3d/Simulation 3D Light Helicopter Pack",
+          "since": "R2023b+",
+          "intent": "Load a light helicopter 3D mesh for Unreal Engine visualization"
+        },
+        {
+          "block": "Simulation 3D Multirotor Pack",
+          "ref": "aerolibsim3d/Simulation 3D Multirotor Pack",
+          "since": "R2023b+",
+          "intent": "Load a multirotor drone 3D mesh for Unreal Engine visualization"
+        },
+        {
+          "block": "Simulation 3D Rotorcraft",
+          "ref": "aerolibsim3d/Simulation 3D Rotorcraft",
+          "since": "R2023a+",
+          "intent": "Generic rotorcraft actor for Unreal Engine co-simulation with main and tail rotor animation"
+        },
+        {
+          "block": "Simulation 3D Sky Hogg Pack",
+          "ref": "aerolibsim3d/Simulation 3D Sky Hogg Pack",
+          "since": "R2023b+",
+          "intent": "Load the Sky Hogg experimental aircraft 3D mesh for Unreal Engine visualization"
+        },
+        {
+          "block": "Simulation 3D SmallSat Pack",
+          "ref": "aerolibsim3d/Simulation 3D SmallSat Pack",
+          "since": "R2024a+",
+          "intent": "Load a small satellite 3D mesh for Unreal Engine space visualization"
+        },
+        {
+          "block": "Simulation 3D Space Environment",
+          "ref": "aerolibsim3d/Simulation 3D Space Environment",
+          "since": "R2026a+",
+          "intent": "Configure a space environment scene in Unreal Engine with Earth, Sun, and star background"
+        },
+        {
+          "block": "Simulation 3D Spacecraft",
+          "ref": "aerolibsim3d/Simulation 3D Spacecraft",
+          "since": "R2024a+",
+          "intent": "Generic spacecraft actor for Unreal Engine co-simulation — position and orient in 3D space scene"
+        },
+        {
+          "block": "Simulation 3D Actor Transform Get",
+          "ref": "aerolibsim3d/Simulation 3D Actor Transform Get",
+          "since": "R2023a+",
+          "intent": "Read position and orientation of any actor in the Unreal Engine 3D scene"
+        },
+        {
+          "block": "Simulation 3D Actor Transform Set",
+          "ref": "aerolibsim3d/Simulation 3D Actor Transform Set",
+          "since": "R2023a+",
+          "intent": "Set position and orientation of any actor in the Unreal Engine 3D scene"
+        },
+        {
+          "block": "Simulation 3D Camera Get",
+          "ref": "aerolibsim3d/Simulation 3D Camera Get",
+          "since": "R2023a+",
+          "intent": "Capture rendered camera image from the Unreal Engine scene for perception algorithm testing"
+        },
+        {
+          "block": "Simulation 3D Message Get",
+          "ref": "aerolibsim3d/Simulation 3D Message Get",
+          "since": "R2023a+",
+          "intent": "Receive custom data messages from actors in the Unreal Engine 3D simulation"
+        },
+        {
+          "block": "Simulation 3D Message Set",
+          "ref": "aerolibsim3d/Simulation 3D Message Set",
+          "since": "R2023a+",
+          "intent": "Send custom data messages to actors in the Unreal Engine 3D simulation"
+        },
+        {
+          "block": "Simulation 3D Scene Configuration",
+          "ref": "aerolibsim3d/Simulation 3D Scene Configuration",
+          "since": "R2023a+",
+          "intent": "Configure the Unreal Engine 3D scene including weather, time of day, and terrain"
+        },
+        {
+          "block": "Simulation 3D Ultrasonic Sensor",
+          "ref": "aerolibsim3d/Simulation 3D Ultrasonic Sensor",
+          "since": "R2023b+",
+          "intent": "Simulate an ultrasonic proximity sensor returning range measurements from the 3D scene"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "atmosphere",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "atmosphere",
+      "hash": "36db3f715118973d14fb457f8d5d011a30d73928c82792aaf271c509af1ff75c",
+      "fm": {
+        "title": "Atmosphere",
+        "description": "Standard and non-standard atmosphere models (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "atmosphere",
+          "density",
+          "pressure",
+          "temperature",
+          "altitude"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CIRA-86 Atmosphere Model",
+          "ref": "aerolibatmos2/CIRA-86 Atmosphere Model",
+          "since": "R2023a+",
+          "intent": "Compute temperature, pressure, and density using the COSPAR International Reference Atmosphere 1986 — use for middle atmosphere (up to 120 km) studies"
+        },
+        {
+          "block": "COESA Atmosphere Model",
+          "ref": "aerolibatmos2/COESA Atmosphere Model",
+          "since": "R2023a+",
+          "intent": "Compute atmospheric properties using the U.S. Standard Atmosphere 1976 (COESA) — the most common atmosphere model for aircraft simulation"
+        },
+        {
+          "block": "ISA Atmosphere Model",
+          "ref": "aerolibatmos2/ISA Atmosphere Model",
+          "since": "R2023a+",
+          "intent": "Compute temperature, pressure, and density using the International Standard Atmosphere with optional temperature offset — use for standard-day flight performance"
+        },
+        {
+          "block": "NRLMSISE-00 Atmosphere Model",
+          "ref": "aerolibatmos2/NRLMSISE-00 Atmosphere Model",
+          "since": "R2023a+",
+          "intent": "Compute atmospheric density and temperature using the NRL MSIS empirical model — use for spacecraft drag estimation in low Earth orbit"
+        },
+        {
+          "block": "Pressure Altitude",
+          "ref": "aerolibatmos2/Pressure Altitude",
+          "since": "R2023a+",
+          "intent": "Convert static pressure to geopotential altitude using standard atmosphere pressure-altitude relationship"
+        },
+        {
+          "block": "Lapse Rate Model",
+          "ref": "aerolibatmos2/Lapse Rate Model",
+          "since": "R2023a+",
+          "intent": "Compute atmospheric properties using a configurable temperature lapse rate — use for simplified atmosphere modeling with custom lapse rates"
+        },
+        {
+          "block": "Non-Standard Day 210C",
+          "ref": "aerolibatmos2/Non-Standard Day 210C",
+          "since": "R2023a+",
+          "intent": "Compute atmosphere for MIL-STD-210C hot/cold/tropical non-standard day profiles — use for worst-case environmental performance analysis"
+        },
+        {
+          "block": "Non-Standard Day 310",
+          "ref": "aerolibatmos2/Non-Standard Day 310",
+          "since": "R2023a+",
+          "intent": "Compute atmosphere for MIL-HDBK-310 non-standard day profiles — use for updated military environmental extremes analysis"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "body-dynamics",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "body-dynamics",
+      "hash": "7a354db79e62286c34b6d2f7d8c3c8929bb38df6617d2f27652e7bb62d5a4192",
+      "fm": {
+        "title": "Body dynamics",
+        "description": "Mass properties, inertia tensor, and CG estimation (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "inertia",
+          "CG",
+          "center of gravity",
+          "mass",
+          "moment"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Estimate Center of Gravity",
+          "ref": "aerolibbdyn/Estimate Center of Gravity",
+          "since": "R2023a+",
+          "intent": "Estimate combined CG location from multiple component masses and positions — use for mass buildup in vehicle configuration studies"
+        },
+        {
+          "block": "Moments about CG  due to Forces",
+          "ref": "aerolibbdyn/Moments about CG  due to Forces",
+          "since": "R2023a+",
+          "intent": "Compute moments about the CG caused by off-CG forces using moment arm cross products — use for engine thrust or landing gear force coupling"
+        },
+        {
+          "block": "Symmetric Inertia Tensor",
+          "ref": "aerolibbdyn/Symmetric Inertia Tensor",
+          "since": "R2023a+",
+          "intent": "Construct a symmetric 3x3 inertia tensor from moments and products of inertia for use in rotational equations of motion"
+        },
+        {
+          "block": "Estimate Inertia Tensor",
+          "ref": "aerolibbdyn/Estimate Inertia Tensor",
+          "since": "R2023a+",
+          "intent": "Estimate combined inertia tensor from multiple components using parallel axis theorem — use for composite vehicle inertia buildup"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "celestial-phenomena",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "celestial-phenomena",
+      "hash": "32c93749c0a1a825d227a59d03e3b1e3a2d403980ed443610da40c8c1cfc73bb",
+      "fm": {
+        "title": "Celestial phenomena",
+        "description": "Celestial bodies, ephemeris, eclipse, and Earth orientation (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "ephemeris",
+          "eclipse",
+          "nutation",
+          "planetary",
+          "solar flux"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Earth Nutation",
+          "ref": "aerolibcelestial/Earth Nutation",
+          "since": "R2023a+",
+          "intent": "Compute Earth nutation angles (longitude and obliquity corrections) for precise ECI-to-ECEF transformations in high-fidelity orbital simulations"
+        },
+        {
+          "block": "Moon Libration",
+          "ref": "aerolibcelestial/Moon Libration",
+          "since": "R2023a+",
+          "intent": "Compute lunar libration angles for precise Moon-relative pointing and selenocentric frame transformations"
+        },
+        {
+          "block": "Delta UT1",
+          "ref": "aerolibcelestial/Delta UT1",
+          "since": "R2023a+",
+          "intent": "Look up the difference between UTC and UT1 for precise sidereal time calculation in high-accuracy orbit propagation"
+        },
+        {
+          "block": "Earth Orientation Parameters",
+          "ref": "aerolibcelestial/Earth Orientation Parameters",
+          "since": "R2023a+",
+          "intent": "Retrieve polar motion, precession, and nutation parameters from IERS data for sub-arcsecond frame alignment"
+        },
+        {
+          "block": "Eclipse Shadow Model (Cylindrical)",
+          "ref": "aerolibcelestial/Eclipse Shadow Model (Cylindrical)",
+          "since": "R2023b+",
+          "intent": "Determine if a spacecraft is in Earth's shadow using a cylindrical approximation — use for fast solar power availability estimation"
+        },
+        {
+          "block": "Eclipse Shadow Model (Dual Cone)",
+          "ref": "aerolibcelestial/Eclipse Shadow Model (Dual Cone)",
+          "since": "R2023b+",
+          "intent": "Determine if a spacecraft is in Earth's penumbra or umbra using a dual-cone model — use when partial eclipse effects on solar arrays matter"
+        },
+        {
+          "block": "Planetary Ephemeris",
+          "ref": "aerolibcelestial/Planetary Ephemeris",
+          "since": "R2023a+",
+          "intent": "Compute position and velocity of solar system bodies from JPL ephemeris data — use for interplanetary mission design or third-body perturbation forces"
+        },
+        {
+          "block": "Solar Flux and Geomagnetic Index",
+          "ref": "aerolibcelestial/Solar Flux and Geomagnetic Index",
+          "since": "R2023a+",
+          "intent": "Look up F10.7 solar flux and Ap/Kp geomagnetic indices by date — required inputs for NRLMSISE-00 and other upper-atmosphere density models"
+        },
+        {
+          "block": "Delta UT1",
+          "ref": "aerolibtransform2/Delta UT1",
+          "since": "R2023a+",
+          "intent": "Look up the difference between UTC and UT1 for precise sidereal time calculation in high-accuracy orbit propagation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "cockpit-instruments",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "cockpit-instruments",
+      "hash": "717101ba9fc2003048c9284f6846fa84af8787890adba47790f7f179bd65a5d6",
+      "fm": {
+        "title": "Cockpit instruments",
+        "description": "Flight instrument panel displays (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "indicator",
+          "cockpit",
+          "instrument",
+          "gauge",
+          "display"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Airspeed Indicator",
+          "ref": "aerolibhmi/Airspeed Indicator",
+          "since": "R2023a+",
+          "intent": "Display indicated airspeed on a standard round-dial cockpit instrument for pilot-in-the-loop simulation"
+        },
+        {
+          "block": "Altimeter",
+          "ref": "aerolibhmi/Altimeter",
+          "since": "R2023a+",
+          "intent": "Display barometric altitude on a standard three-pointer altimeter instrument"
+        },
+        {
+          "block": "Artificial Horizon",
+          "ref": "aerolibhmi/Artificial Horizon",
+          "since": "R2023a+",
+          "intent": "Display pitch and roll attitude on a standard gyroscopic artificial horizon instrument"
+        },
+        {
+          "block": "Climb Rate Indicator",
+          "ref": "aerolibhmi/Climb Rate Indicator",
+          "since": "R2023a+",
+          "intent": "Display vertical speed on a standard variometer instrument"
+        },
+        {
+          "block": "EGT Indicator",
+          "ref": "aerolibhmi/EGT Indicator",
+          "since": "R2023a+",
+          "intent": "Display exhaust gas temperature on a standard engine gauge for powerplant monitoring"
+        },
+        {
+          "block": "Heading Indicator",
+          "ref": "aerolibhmi/Heading Indicator",
+          "since": "R2023a+",
+          "intent": "Display magnetic or true heading on a standard directional gyro instrument"
+        },
+        {
+          "block": "RPM Indicator",
+          "ref": "aerolibhmi/RPM Indicator",
+          "since": "R2023a+",
+          "intent": "Display engine or rotor RPM on a standard tachometer instrument"
+        },
+        {
+          "block": "Turn Coordinator",
+          "ref": "aerolibhmi/Turn Coordinator",
+          "since": "R2023a+",
+          "intent": "Display turn rate and slip/skid on a standard turn coordinator instrument"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "coordinate-transforms",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "coordinate-transforms",
+      "hash": "3dafc318bc0ea1a2acadcb98cdb8b3808ce6f930357bde13ef04724b146adccc",
+      "fm": {
+        "title": "Coordinate transforms",
+        "description": "Frame conversions between ECEF, ECI, NED, LLA, body, and wind axes (30 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "DCM",
+          "ECEF",
+          "ECI",
+          "LLA",
+          "NED"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Besselian Epoch to Julian Epoch",
+          "ref": "aerolibtransform2/Besselian Epoch to Julian Epoch",
+          "since": "R2023a+",
+          "intent": "Convert Besselian epoch year to Julian epoch year — use when processing legacy star catalogs or precession models"
+        },
+        {
+          "block": "Direction Cosine Matrix Body to Wind",
+          "ref": "aerolibtransform2/Direction Cosine Matrix Body to Wind",
+          "since": "R2023a+",
+          "intent": "Construct the DCM from body to wind axes using angle of attack and sideslip — use for force resolution between body and wind frames"
+        },
+        {
+          "block": "Direction Cosine Matrix Body to Wind to Alpha and Beta",
+          "ref": "aerolibtransform2/Direction Cosine Matrix Body to Wind to Alpha and Beta",
+          "since": "R2023a+",
+          "intent": "Extract angle of attack and sideslip from a body-to-wind DCM — inverse of DCM construction from aero angles"
+        },
+        {
+          "block": "Direction Cosine Matrix ECEF to NED",
+          "ref": "aerolibtransform2/Direction Cosine Matrix ECEF to NED",
+          "since": "R2023a+",
+          "intent": "Construct the DCM from ECEF to local NED frame using geodetic latitude and longitude — fundamental for local-level navigation"
+        },
+        {
+          "block": "Direction Cosine Matrix ECEF to NED to Latitude and Longitude",
+          "ref": "aerolibtransform2/Direction Cosine Matrix ECEF to NED to Latitude and Longitude",
+          "since": "R2023a+",
+          "intent": "Extract geodetic latitude and longitude from an ECEF-to-NED direction cosine matrix"
+        },
+        {
+          "block": "Direction Cosine Matrix ECI to ECEF",
+          "ref": "aerolibtransform2/Direction Cosine Matrix ECI to ECEF",
+          "since": "R2023a+",
+          "intent": "Construct the DCM from ECI to ECEF using Julian date and Earth rotation — required for satellite position in Earth-fixed coordinates"
+        },
+        {
+          "block": "Direction Cosine Matrix to Wind Angles",
+          "ref": "aerolibtransform2/Direction Cosine Matrix to Wind Angles",
+          "since": "R2023a+",
+          "intent": "Extract wind angles (flight path, heading, bank) from a direction cosine matrix"
+        },
+        {
+          "block": "ECI Position to AER",
+          "ref": "aerolibtransform2/ECI Position to AER",
+          "since": "R2023a+",
+          "intent": "Convert ECI position to azimuth, elevation, and range relative to a ground station — use for ground-to-satellite tracking"
+        },
+        {
+          "block": "ECI Position to LLA",
+          "ref": "aerolibtransform2/ECI Position to LLA",
+          "since": "R2023a+",
+          "intent": "Convert ECI position vector to geodetic latitude, longitude, and altitude — use for satellite ground-track computation"
+        },
+        {
+          "block": "Julian Epoch to Besselian Epoch",
+          "ref": "aerolibtransform2/Julian Epoch to Besselian Epoch",
+          "since": "R2023a+",
+          "intent": "Convert Julian epoch year to Besselian epoch year for compatibility with older astronomical catalogs"
+        },
+        {
+          "block": "LLA to ECI Position",
+          "ref": "aerolibtransform2/LLA to ECI Position",
+          "since": "R2023a+",
+          "intent": "Convert geodetic latitude, longitude, and altitude to ECI position vector — use for ground station position in inertial frame"
+        },
+        {
+          "block": "Wind Angles to  Direction Cosine Matrix",
+          "ref": "aerolibtransform2/Wind Angles to  Direction Cosine Matrix",
+          "since": "R2023a+",
+          "intent": "Construct a DCM from wind angles (flight path, heading, bank) — inverse of DCM-to-wind-angles extraction"
+        },
+        {
+          "block": "Direction Cosine Matrix to Rotation Angles",
+          "ref": "aerolibtransform2/Direction Cosine Matrix to Rotation Angles",
+          "since": "R2023a+",
+          "intent": "Extract Euler rotation angles from a DCM for any rotation sequence (ZYX, XYZ, etc.)"
+        },
+        {
+          "block": "Direction Cosine Matrix  to Quaternions",
+          "ref": "aerolibtransform2/Direction Cosine Matrix  to Quaternions",
+          "since": "R2023a+",
+          "intent": "Convert a direction cosine matrix to equivalent quaternion representation — use when switching between rotation representations"
+        },
+        {
+          "block": "Direction Cosine Matrix to Rodrigues",
+          "ref": "aerolibtransform2/Direction Cosine Matrix to Rodrigues",
+          "since": "R2023a+",
+          "intent": "Convert a DCM to Rodrigues (Gibbs) vector representation for small-angle applications"
+        },
+        {
+          "block": "ECEF Position to LLA",
+          "ref": "aerolibtransform2/ECEF Position to LLA",
+          "since": "R2023a+",
+          "intent": "Convert ECEF Cartesian coordinates to geodetic latitude, longitude, and altitude — standard GPS-to-map conversion"
+        },
+        {
+          "block": "Flat Earth to LLA",
+          "ref": "aerolibtransform2/Flat Earth to LLA",
+          "since": "R2023a+",
+          "intent": "Convert flat-Earth (NED) position back to geodetic coordinates — use at end of flat-Earth simulation for geo-referenced output"
+        },
+        {
+          "block": "Geocentric to  Geodetic Latitude",
+          "ref": "aerolibtransform2/Geocentric to  Geodetic Latitude",
+          "since": "R2023a+",
+          "intent": "Convert geocentric latitude to geodetic latitude accounting for Earth oblateness"
+        },
+        {
+          "block": "Geodetic to  Geocentric Latitude",
+          "ref": "aerolibtransform2/Geodetic to  Geocentric Latitude",
+          "since": "R2023a+",
+          "intent": "Convert geodetic latitude to geocentric latitude for spherical Earth calculations"
+        },
+        {
+          "block": "LLA to ECEF Position",
+          "ref": "aerolibtransform2/LLA to ECEF Position",
+          "since": "R2023a+",
+          "intent": "Convert geodetic latitude, longitude, and altitude to ECEF Cartesian coordinates — standard map-to-Cartesian conversion"
+        },
+        {
+          "block": "LLA to Flat Earth",
+          "ref": "aerolibtransform2/LLA to Flat Earth",
+          "since": "R2023a+",
+          "intent": "Convert geodetic coordinates to flat-Earth NED position relative to a reference point — use for local-area aircraft simulation"
+        },
+        {
+          "block": "Quaternions to Rodrigues",
+          "ref": "aerolibtransform2/Quaternions to Rodrigues",
+          "since": "R2023a+",
+          "intent": "Convert quaternion to Rodrigues (Gibbs) vector representation"
+        },
+        {
+          "block": "Quaternions to  Direction Cosine Matrix",
+          "ref": "aerolibtransform2/Quaternions to  Direction Cosine Matrix",
+          "since": "R2023a+",
+          "intent": "Convert quaternion to equivalent 3x3 DCM — use for applying quaternion attitude to vector rotations"
+        },
+        {
+          "block": "Quaternions to Rotation Angles",
+          "ref": "aerolibtransform2/Quaternions to Rotation Angles",
+          "since": "R2023a+",
+          "intent": "Extract Euler angles from quaternion for display or controller feedback"
+        },
+        {
+          "block": "Rodrigues to Direction Cosine Matrix",
+          "ref": "aerolibtransform2/Rodrigues to Direction Cosine Matrix",
+          "since": "R2023a+",
+          "intent": "Convert Rodrigues vector to equivalent direction cosine matrix"
+        },
+        {
+          "block": "Rodrigues to Quaternions",
+          "ref": "aerolibtransform2/Rodrigues to Quaternions",
+          "since": "R2023a+",
+          "intent": "Convert Rodrigues vector to quaternion representation for singularity-free propagation"
+        },
+        {
+          "block": "Rodrigues to Rotation Angles",
+          "ref": "aerolibtransform2/Rodrigues to Rotation Angles",
+          "since": "R2023a+",
+          "intent": "Extract Euler angles from a Rodrigues vector"
+        },
+        {
+          "block": "Rotation Angles to Direction Cosine Matrix",
+          "ref": "aerolibtransform2/Rotation Angles to Direction Cosine Matrix",
+          "since": "R2023a+",
+          "intent": "Construct a DCM from Euler rotation angles for any sequence — the standard attitude initialization method"
+        },
+        {
+          "block": "Rotation Angles to Quaternions",
+          "ref": "aerolibtransform2/Rotation Angles to Quaternions",
+          "since": "R2023a+",
+          "intent": "Convert Euler angles to quaternion — use for singularity-free attitude initialization from common angle inputs"
+        },
+        {
+          "block": "Rotation Angles to Rodrigues",
+          "ref": "aerolibtransform2/Rotation Angles to Rodrigues",
+          "since": "R2023a+",
+          "intent": "Convert Euler angles to Rodrigues vector representation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "equations-of-motion-3dof",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "equations-of-motion-3dof",
+      "hash": "082fbc9a1a3bca1c7b2805c662fc09aaba9497addc38dcb802017283355e7ed1",
+      "fm": {
+        "title": "Equations of motion 3dof",
+        "description": "Three-degree-of-freedom flight dynamics (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "3DOF",
+          "longitudinal",
+          "body axes",
+          "wind axes",
+          "variable mass"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "3DOF Acceleration",
+          "ref": "aerolib3dof2/3DOF Acceleration",
+          "since": "R2025a+",
+          "intent": "Compute translational acceleration from forces, mass, and body velocity for 3DOF longitudinal-plane motion"
+        },
+        {
+          "block": "3DOF Angular Acceleration",
+          "ref": "aerolib3dof2/3DOF Angular Acceleration",
+          "since": "R2025a+",
+          "intent": "Compute pitch angular acceleration from moments and inertia for 3DOF longitudinal-plane motion"
+        },
+        {
+          "block": "3dof (Body Axes)",
+          "ref": "aerolib3dof2/3dof (Body Axes)",
+          "since": "R2023a+",
+          "intent": "Integrate 3DOF equations of motion in body axes — use for longitudinal-plane flight simulation of fixed-wing aircraft with constant mass"
+        },
+        {
+          "block": "3dof (Wind Axes)",
+          "ref": "aerolib3dof2/3dof (Wind Axes)",
+          "since": "R2023a+",
+          "intent": "Integrate 3DOF equations of motion in wind axes — use for longitudinal-plane trajectory analysis where angle of attack is a natural state variable"
+        },
+        {
+          "block": "Custom Variable Mass 3dof (Body Axes)",
+          "ref": "aerolib3dof2/Custom Variable Mass 3dof (Body Axes)",
+          "since": "R2023a+",
+          "intent": "Integrate 3DOF body-axis equations with user-defined time-varying mass, inertia, and mass flow — use for rocket or missile longitudinal simulation"
+        },
+        {
+          "block": "Custom Variable Mass 3dof (Wind Axes)",
+          "ref": "aerolib3dof2/Custom Variable Mass 3dof (Wind Axes)",
+          "since": "R2023a+",
+          "intent": "Integrate 3DOF wind-axis equations with user-defined time-varying mass properties — use for variable-mass trajectory analysis in wind coordinates"
+        },
+        {
+          "block": "Simple Variable Mass 3dof (Body Axes)",
+          "ref": "aerolib3dof2/Simple Variable Mass 3dof (Body Axes)",
+          "since": "R2023a+",
+          "intent": "Integrate 3DOF body-axis equations with linearly decreasing mass — use for simple rocket/missile models with constant mass flow rate"
+        },
+        {
+          "block": "Simple Variable Mass 3dof (Wind Axes)",
+          "ref": "aerolib3dof2/Simple Variable Mass 3dof (Wind Axes)",
+          "since": "R2023a+",
+          "intent": "Integrate 3DOF wind-axis equations with linearly decreasing mass — use for simple variable-mass trajectory analysis"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "equations-of-motion-6dof",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "equations-of-motion-6dof",
+      "hash": "2ef0d1657104b848ae0e4b24a9bba657ccc351009d8b3b9625f93bf09cb98835",
+      "fm": {
+        "title": "Equations of motion 6dof",
+        "description": "Six-degree-of-freedom flight dynamics (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "6DOF",
+          "Euler",
+          "quaternion",
+          "ECEF",
+          "equations of motion"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "6DOF Acceleration",
+          "ref": "aerolib6dof2/6DOF Acceleration",
+          "since": "R2025a+",
+          "intent": "Compute translational acceleration from forces and body-axis velocity for full six-degree-of-freedom motion"
+        },
+        {
+          "block": "6DOF Angular Acceleration",
+          "ref": "aerolib6dof2/6DOF Angular Acceleration",
+          "since": "R2025a+",
+          "intent": "Compute angular acceleration from moments, inertia tensor, and angular velocity for full 6DOF motion"
+        },
+        {
+          "block": "6DOF ECEF (Quaternion)",
+          "ref": "aerolib6dof2/6DOF ECEF (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF equations in ECEF frame using quaternion attitude — use for long-range or orbital flight where Earth curvature and rotation matter"
+        },
+        {
+          "block": "6DOF Wind (Wind Angles)",
+          "ref": "aerolib6dof2/6DOF Wind (Wind Angles)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF equations in wind axes using alpha/beta/mu angles — use when aerodynamic angles are natural state variables"
+        },
+        {
+          "block": "6DOF (Euler Angles)",
+          "ref": "aerolib6dof2/6DOF (Euler Angles)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF body-axis equations using Euler angle attitude — the most common EoM block for conventional aircraft simulation"
+        },
+        {
+          "block": "6DOF (Quaternion)",
+          "ref": "aerolib6dof2/6DOF (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF body-axis equations using quaternion attitude — use to avoid gimbal lock in highly maneuverable vehicle or spacecraft simulation"
+        },
+        {
+          "block": "6DOF Wind (Quaternion)",
+          "ref": "aerolib6dof2/6DOF Wind (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF wind-axis equations using quaternion attitude — combine wind-axis convenience with singularity-free representation"
+        },
+        {
+          "block": "Custom Variable Mass 6DOF ECEF (Quaternion)",
+          "ref": "aerolib6dof2/Custom Variable Mass 6DOF ECEF (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF ECEF equations with user-defined time-varying mass properties — use for long-range variable-mass vehicles like launch vehicles"
+        },
+        {
+          "block": "Custom Variable Mass 6DOF (Euler Angles)",
+          "ref": "aerolib6dof2/Custom Variable Mass 6DOF (Euler Angles)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF body-axis Euler equations with user-defined time-varying mass, inertia, and mass flow"
+        },
+        {
+          "block": "Custom Variable Mass 6DOF (Quaternion)",
+          "ref": "aerolib6dof2/Custom Variable Mass 6DOF (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF body-axis quaternion equations with user-defined time-varying mass properties"
+        },
+        {
+          "block": "Custom Variable Mass 6DOF Wind (Quaternion)",
+          "ref": "aerolib6dof2/Custom Variable Mass 6DOF Wind (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF wind-axis quaternion equations with user-defined time-varying mass properties"
+        },
+        {
+          "block": "Custom Variable Mass 6DOF Wind (Wind Angles)",
+          "ref": "aerolib6dof2/Custom Variable Mass 6DOF Wind (Wind Angles)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF wind-axis wind-angle equations with user-defined time-varying mass properties"
+        },
+        {
+          "block": "Simple Variable Mass 6DOF ECEF (Quaternion)",
+          "ref": "aerolib6dof2/Simple Variable Mass 6DOF ECEF (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF ECEF quaternion equations with linearly decreasing mass — use for simplified launch vehicle or long-range missile models"
+        },
+        {
+          "block": "Simple Variable Mass 6DOF (Euler Angles)",
+          "ref": "aerolib6dof2/Simple Variable Mass 6DOF (Euler Angles)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF body-axis Euler equations with linearly decreasing mass — simple rocket or missile model"
+        },
+        {
+          "block": "Simple Variable Mass 6DOF (Quaternion)",
+          "ref": "aerolib6dof2/Simple Variable Mass 6DOF (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF body-axis quaternion equations with linearly decreasing mass"
+        },
+        {
+          "block": "Simple Variable Mass 6DOF Wind (Quaternion)",
+          "ref": "aerolib6dof2/Simple Variable Mass 6DOF Wind (Quaternion)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF wind-axis quaternion equations with linearly decreasing mass"
+        },
+        {
+          "block": "Simple Variable Mass 6DOF Wind (Wind Angles)",
+          "ref": "aerolib6dof2/Simple Variable Mass 6DOF Wind (Wind Angles)",
+          "since": "R2023a+",
+          "intent": "Integrate 6DOF wind-axis wind-angle equations with linearly decreasing mass"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "flight-parameters",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "flight-parameters",
+      "hash": "074852c2f1a91dd48edc6fe414b1fe413262b321b767ea16b2806140461b2ef2",
+      "fm": {
+        "title": "Flight parameters",
+        "description": "Airspeed, Mach, angles, and aerodynamic parameter computation (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "airspeed",
+          "Mach",
+          "dynamic pressure",
+          "incidence",
+          "sideslip"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Dynamic Pressure",
+          "ref": "aerolibasang/Dynamic Pressure",
+          "since": "R2023a+",
+          "intent": "Compute dynamic pressure (q-bar) from airspeed and density — fundamental for aerodynamic force calculation"
+        },
+        {
+          "block": "Ideal Airspeed Correction",
+          "ref": "aerolibasang/Ideal Airspeed Correction",
+          "since": "R2023a+",
+          "intent": "Correct indicated airspeed for compressibility effects to obtain calibrated or equivalent airspeed"
+        },
+        {
+          "block": "Incidence  & Airspeed",
+          "ref": "aerolibasang/Incidence  & Airspeed",
+          "since": "R2023a+",
+          "intent": "Compute angle of attack and total airspeed from body-axis velocity components (u, w) for 2D flight"
+        },
+        {
+          "block": "Incidence, Sideslip, & Airspeed",
+          "ref": "aerolibasang/Incidence, Sideslip, & Airspeed",
+          "since": "R2023a+",
+          "intent": "Compute angle of attack, sideslip angle, and total airspeed from body-axis velocity components (u, v, w)"
+        },
+        {
+          "block": "Mach Number",
+          "ref": "aerolibasang/Mach Number",
+          "since": "R2023a+",
+          "intent": "Compute Mach number from airspeed and speed of sound for compressibility-related calculations"
+        },
+        {
+          "block": "Radius at Geocentric Latitude",
+          "ref": "aerolibasang/Radius at Geocentric Latitude",
+          "since": "R2023a+",
+          "intent": "Compute Earth's radius at a given geocentric latitude accounting for oblateness — use for altitude calculations over non-spherical Earth"
+        },
+        {
+          "block": "Relative Ratio",
+          "ref": "aerolibasang/Relative Ratio",
+          "since": "R2023a+",
+          "intent": "Compute ratios of atmospheric properties relative to sea-level standard values for non-dimensional analysis"
+        },
+        {
+          "block": "Wind Angular Rates",
+          "ref": "aerolibasang/Wind Angular Rates",
+          "since": "R2023a+",
+          "intent": "Compute angular rates in wind axes from body rates and aerodynamic angles — use when wind-axis rate feedback is needed"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gain-scheduling",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "gain-scheduling",
+      "hash": "93fd67ae21a86eb8c3716e82a47a45f1f98d98ddb501cc888028a9dac8ef91a5",
+      "fm": {
+        "title": "Gain scheduling",
+        "description": "Gain-scheduled controllers and matrix interpolation (16 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "gain schedule",
+          "controller",
+          "interpolate",
+          "LPV",
+          "state-space"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "1D Controller Blend: u=(1-L).K1.y+L.K2.y",
+          "ref": "aerolibschedule/1D Controller Blend: u=(1-L).K1.y+L.K2.y",
+          "since": "R2023a+",
+          "intent": "Blend two controller outputs using a single scheduling variable — use for smooth controller transition during flight envelope changes"
+        },
+        {
+          "block": "1D Controller [A(v),B(v),C(v),D(v)]",
+          "ref": "aerolibschedule/1D Controller [A(v),B(v),C(v),D(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a gain-scheduled state-space controller interpolated over one scheduling variable — standard approach for LPV controller deployment"
+        },
+        {
+          "block": "1D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+          "ref": "aerolibschedule/1D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a gain-scheduled observer-form controller over one scheduling variable — use when the controller includes a state estimator"
+        },
+        {
+          "block": "1D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+          "ref": "aerolibschedule/1D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a self-conditioned gain-scheduled controller over one variable — prevents integrator wind-up during controller transitions"
+        },
+        {
+          "block": "2D Controller Blend",
+          "ref": "aerolibschedule/2D Controller Blend",
+          "since": "R2023a+",
+          "intent": "Blend controller outputs using two scheduling variables — use for multi-parameter operating envelope transitions"
+        },
+        {
+          "block": "2D Controller [A(v),B(v),C(v),D(v)]",
+          "ref": "aerolibschedule/2D Controller [A(v),B(v),C(v),D(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a gain-scheduled state-space controller interpolated over two scheduling variables"
+        },
+        {
+          "block": "2D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+          "ref": "aerolibschedule/2D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a gain-scheduled observer-form controller over two scheduling variables"
+        },
+        {
+          "block": "2D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+          "ref": "aerolibschedule/2D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a self-conditioned gain-scheduled controller over two scheduling variables"
+        },
+        {
+          "block": "3D Controller [A(v),B(v),C(v),D(v)]",
+          "ref": "aerolibschedule/3D Controller [A(v),B(v),C(v),D(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a gain-scheduled state-space controller interpolated over three scheduling variables"
+        },
+        {
+          "block": "3D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+          "ref": "aerolibschedule/3D Observer Form [A(v),B(v),C(v),F(v),H(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a gain-scheduled observer-form controller over three scheduling variables"
+        },
+        {
+          "block": "3D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+          "ref": "aerolibschedule/3D Self-Conditioned [A(v),B(v),C(v),D(v)]",
+          "since": "R2023a+",
+          "intent": "Implement a self-conditioned gain-scheduled controller over three scheduling variables"
+        },
+        {
+          "block": "Gain Scheduled Lead-Lag",
+          "ref": "aerolibschedule/Gain Scheduled Lead-Lag",
+          "since": "R2023a+",
+          "intent": "Implement a gain-scheduled lead-lag compensator whose time constants vary with a scheduling variable — common in flight control augmentation"
+        },
+        {
+          "block": "Interpolate Matrix(x,y,z) ",
+          "ref": "aerolibschedule/Interpolate Matrix(x,y,z) ",
+          "since": "R2023a+",
+          "intent": "Interpolate a matrix of gains over three scheduling variables — use for deploying 3D gain tables in controllers"
+        },
+        {
+          "block": "Self-Conditioned [A,B,C,D]",
+          "ref": "aerolibschedule/Self-Conditioned [A,B,C,D]",
+          "since": "R2023a+",
+          "intent": "Implement a self-conditioned state-space controller that prevents integrator wind-up when switching between manual and automatic modes"
+        },
+        {
+          "block": "Interpolate Matrix(x) ",
+          "ref": "aerolibschedule/Interpolate Matrix(x) ",
+          "since": "R2023a+",
+          "intent": "Interpolate a matrix of gains over one scheduling variable — use for 1D gain-table lookup in scheduled controllers"
+        },
+        {
+          "block": "Interpolate Matrix(x,y) ",
+          "ref": "aerolibschedule/Interpolate Matrix(x,y) ",
+          "since": "R2023a+",
+          "intent": "Interpolate a matrix of gains over two scheduling variables — use for 2D gain-table lookup in scheduled controllers"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gravity-magnetic-field",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "gravity-magnetic-field",
+      "hash": "5149c99a8b9ed85ecee694dd9cdd6c35362c11721427fe96058665ea9005fce6",
+      "fm": {
+        "title": "Gravity magnetic field",
+        "description": "Gravity and geomagnetic field models (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "gravity",
+          "magnetic",
+          "geoid",
+          "WGS84",
+          "harmonic"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Centrifugal Effect Model",
+          "ref": "aerolibgravity2/Centrifugal Effect Model",
+          "since": "R2023a+",
+          "intent": "Compute centrifugal acceleration due to Earth's rotation — add to gravity for effective weight in rotating reference frames"
+        },
+        {
+          "block": "Geoid Height",
+          "ref": "aerolibgravity2/Geoid Height",
+          "since": "R2023a+",
+          "intent": "Look up the geoid undulation (difference between geoid and WGS84 ellipsoid) at a given location for altitude reference conversion"
+        },
+        {
+          "block": "World Magnetic Model",
+          "ref": "aerolibgravity2/World Magnetic Model",
+          "since": "R2023a+",
+          "intent": "Compute Earth's magnetic field vector using the WMM — use for magnetometer simulation and compass heading correction"
+        },
+        {
+          "block": "Zonal Harmonic Gravity Model",
+          "ref": "aerolibgravity2/Zonal Harmonic Gravity Model",
+          "since": "R2023a+",
+          "intent": "Compute gravity with zonal (J2, J3, J4) harmonic corrections — use for orbit propagation when oblateness matters but full spherical harmonics are too expensive"
+        },
+        {
+          "block": "International Geomagnetic Reference Field",
+          "ref": "aerolibgravity2/International Geomagnetic Reference Field",
+          "since": "R2023a+",
+          "intent": "Compute Earth's magnetic field from the IGRF model with full spherical harmonic expansion — use for high-fidelity magnetometer simulation"
+        },
+        {
+          "block": "Spherical Harmonic Gravity Model",
+          "ref": "aerolibgravity2/Spherical Harmonic Gravity Model",
+          "since": "R2023a+",
+          "intent": "Compute gravitational acceleration using full spherical harmonic expansion (EGM96/EGM2008) — use for highest-fidelity orbit propagation"
+        },
+        {
+          "block": "WGS84 Gravity Model  ",
+          "ref": "aerolibgravity2/WGS84 Gravity Model  ",
+          "since": "R2023a+",
+          "intent": "Compute normal gravity on or near the WGS84 ellipsoid using the Somigliana formula — use for standard aircraft-level gravity modeling"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "guidance-navigation",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "guidance-navigation",
+      "hash": "9c3fa67116c4702afa367694cfc24aea03c44488ad955efbcdef43f89185e3ec",
+      "fm": {
+        "title": "Guidance navigation",
+        "description": "Guidance, range calculation, and inertial navigation sensors (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "guidance",
+          "range",
+          "accelerometer",
+          "gyroscope",
+          "IMU"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Calculate Range",
+          "ref": "aerolibguid/Calculate Range",
+          "since": "R2023a+",
+          "intent": "Compute great-circle range between two geographic positions — use for waypoint navigation, target distance, or range-to-go calculations"
+        },
+        {
+          "block": "Three-axis Accelerometer",
+          "ref": "aerolibnav/Three-axis Accelerometer",
+          "since": "R2023a+",
+          "intent": "Simulate a three-axis accelerometer with bias, scale factor error, noise, and quantization for IMU/INS modeling"
+        },
+        {
+          "block": "Three-axis Gyroscope",
+          "ref": "aerolibnav/Three-axis Gyroscope",
+          "since": "R2023a+",
+          "intent": "Simulate a three-axis rate gyroscope with bias drift, angular random walk, and scale factor error for IMU/INS modeling"
+        },
+        {
+          "block": "Three-axis Inertial Measurement Unit",
+          "ref": "aerolibnav/Three-axis Inertial Measurement Unit",
+          "since": "R2023a+",
+          "intent": "Simulate a complete IMU (accelerometers + gyroscopes) with configurable error models for navigation system development"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pilot-models",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "pilot-models",
+      "hash": "8d4d621408aa62c67b25171e98e9a39bd0184b01cf41dc6aec200c31266cbceb",
+      "fm": {
+        "title": "Pilot models",
+        "description": "Human pilot transfer function models (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "pilot",
+          "crossover",
+          "handling qualities",
+          "neuromuscular"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Crossover Pilot Model",
+          "ref": "aerolibpilot/Crossover Pilot Model",
+          "since": "R2023a+",
+          "intent": "Model human pilot as a crossover transfer function that adapts gain and lead to achieve desired crossover frequency — use for handling qualities analysis"
+        },
+        {
+          "block": "Precision Pilot Model",
+          "ref": "aerolibpilot/Precision Pilot Model",
+          "since": "R2023a+",
+          "intent": "Model human pilot with neuromuscular dynamics and remnant noise for precision tracking tasks — higher fidelity than crossover model"
+        },
+        {
+          "block": "Tustin Pilot Model",
+          "ref": "aerolibpilot/Tustin Pilot Model",
+          "since": "R2023a+",
+          "intent": "Model human pilot using Tustin's simplified transfer function (gain, lead, lag, delay) — use for classical pilot-in-the-loop stability analysis"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "point-mass-dynamics",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "point-mass-dynamics",
+      "hash": "be8a09d54bd70bdd82b7ad71b093f33c160f266b4b66b1df2cb8478a88e106ca",
+      "fm": {
+        "title": "Point mass dynamics",
+        "description": "Simplified point-mass trajectory equations (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "point mass",
+          "trajectory",
+          "coordinated flight",
+          "longitudinal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "4th Order Point Mass (Longitudinal)",
+          "ref": "aerolibptmass/4th Order Point Mass (Longitudinal)",
+          "since": "R2023a+",
+          "intent": "Integrate 4th-order longitudinal point-mass equations (V, gamma, x, h) for trajectory optimization and performance analysis"
+        },
+        {
+          "block": "4th Order Point Mass Forces (Longitudinal)",
+          "ref": "aerolibptmass/4th Order Point Mass Forces (Longitudinal)",
+          "since": "R2023a+",
+          "intent": "Compute forces for 4th-order longitudinal point mass from thrust, weight, lift, and drag coefficients"
+        },
+        {
+          "block": "6th Order Point Mass (Coordinated Flight)",
+          "ref": "aerolibptmass/6th Order Point Mass (Coordinated Flight)",
+          "since": "R2023a+",
+          "intent": "Integrate 6th-order coordinated-flight point-mass equations (V, gamma, chi, x, y, h) for 3D trajectory analysis with bank-to-turn"
+        },
+        {
+          "block": "6th Order Point Mass Forces (Coordinated Flight)",
+          "ref": "aerolibptmass/6th Order Point Mass Forces (Coordinated Flight)",
+          "since": "R2023a+",
+          "intent": "Compute forces for 6th-order coordinated point mass from aerodynamic coefficients, thrust, and bank angle"
+        },
+        {
+          "block": "Fixed-Wing Point Mass",
+          "ref": "aerolibptmass/Fixed-Wing Point Mass",
+          "since": "R2023a+",
+          "intent": "Simplified fixed-wing point mass dynamics for quick trajectory studies without full aerodynamic modeling"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "propulsion",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "propulsion",
+      "hash": "569072fab193e66564dabbce62a3e0a0ea3284916a00d4e7f267764ce4e0366f",
+      "fm": {
+        "title": "Propulsion",
+        "description": "Engine and propulsion system models (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "turbofan",
+          "engine",
+          "thrust",
+          "spool",
+          "fuel flow"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Turbofan Engine System",
+          "ref": "aerolibpropulsion2/Turbofan Engine System",
+          "since": "R2023a+",
+          "intent": "Model a turbofan engine with spool dynamics, thrust output, and fuel flow as a function of throttle and flight condition"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "quaternion-utilities",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "quaternion-utilities",
+      "hash": "8d4b4d444c8d8f1665a56553ce3c70c1c821ae768d2d6543dd7765e0e894c532",
+      "fm": {
+        "title": "Quaternion utilities",
+        "description": "Quaternion and 3x3 matrix math operations (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "quaternion",
+          "matrix",
+          "conjugate",
+          "normalize",
+          "cross product"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Adjoint of 3x3 Matrix",
+          "ref": "aerolibutil/Adjoint of 3x3 Matrix",
+          "since": "R2023a+",
+          "intent": "Compute the classical adjoint (adjugate) of a 3x3 matrix — use in matrix inversion or Cramer's rule calculations"
+        },
+        {
+          "block": "Invert  3x3 Matrix",
+          "ref": "aerolibutil/Invert  3x3 Matrix",
+          "since": "R2023a+",
+          "intent": "Compute the inverse of a 3x3 matrix — use for resolving body-axis equations or transforming between frames"
+        },
+        {
+          "block": "Quaternion Conjugate",
+          "ref": "aerolibutil/Quaternion Conjugate",
+          "since": "R2023a+",
+          "intent": "Compute the conjugate of a unit quaternion — equivalent to inverse for unit quaternions, use for reverse rotations"
+        },
+        {
+          "block": "Quaternion Division",
+          "ref": "aerolibutil/Quaternion Division",
+          "since": "R2023a+",
+          "intent": "Divide one quaternion by another — compute relative rotation between two orientations"
+        },
+        {
+          "block": "Quaternion Inverse",
+          "ref": "aerolibutil/Quaternion Inverse",
+          "since": "R2023a+",
+          "intent": "Compute the multiplicative inverse of a quaternion — use for non-unit quaternions where conjugate alone is insufficient"
+        },
+        {
+          "block": "Quaternion Multiplication",
+          "ref": "aerolibutil/Quaternion Multiplication",
+          "since": "R2023a+",
+          "intent": "Multiply two quaternions to compose sequential rotations — fundamental operation for quaternion-based attitude propagation"
+        },
+        {
+          "block": "Quaternion Rotation",
+          "ref": "aerolibutil/Quaternion Rotation",
+          "since": "R2023a+",
+          "intent": "Rotate a 3D vector by a quaternion using the sandwich product — use for transforming vectors between reference frames"
+        },
+        {
+          "block": "3x3 Cross Product",
+          "ref": "aerolibutil/3x3 Cross Product",
+          "since": "R2023a+",
+          "intent": "Compute the cross product of two 3-element vectors — use for torque, angular momentum, or Coriolis calculations"
+        },
+        {
+          "block": "Create 3x3 Matrix",
+          "ref": "aerolibutil/Create 3x3 Matrix",
+          "since": "R2023a+",
+          "intent": "Assemble a 3x3 matrix from nine scalar inputs or three row/column vectors"
+        },
+        {
+          "block": "Determinant of 3x3 Matrix",
+          "ref": "aerolibutil/Determinant of 3x3 Matrix",
+          "since": "R2023a+",
+          "intent": "Compute the determinant of a 3x3 matrix — use for checking invertibility or computing volume scaling"
+        },
+        {
+          "block": "Quaternion Interpolation",
+          "ref": "aerolibutil/Quaternion Interpolation",
+          "since": "R2023a+",
+          "intent": "Interpolate between two quaternions using SLERP — use for smooth attitude trajectory generation between waypoints"
+        },
+        {
+          "block": "Quaternion Modulus",
+          "ref": "aerolibutil/Quaternion Modulus",
+          "since": "R2023a+",
+          "intent": "Compute the magnitude (norm) of a quaternion — use for normalization checks or quaternion health monitoring"
+        },
+        {
+          "block": "Quaternion Norm",
+          "ref": "aerolibutil/Quaternion Norm",
+          "since": "R2023a+",
+          "intent": "Compute the squared norm of a quaternion — faster than modulus when only comparing magnitudes"
+        },
+        {
+          "block": "Quaternion Normalize",
+          "ref": "aerolibutil/Quaternion Normalize",
+          "since": "R2023a+",
+          "intent": "Normalize a quaternion to unit length — essential after numerical integration to prevent attitude drift"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "rotor-dynamics",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "rotor-dynamics",
+      "hash": "2c74dfd9de2886b2f19212425169d14cdd85f04d24489aa06c9a1ff63718e6c7",
+      "fm": {
+        "title": "Rotor dynamics",
+        "description": "Helicopter and multirotor rotor models (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "rotor",
+          "blade",
+          "inflow",
+          "multirotor",
+          "helicopter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Dynamic Inflow (3-State)",
+          "ref": "aerolibinflowmodels/Dynamic Inflow (3-State)",
+          "since": "R2026a+",
+          "intent": "Model rotor induced velocity using Pitt-Peters 3-state dynamic inflow — provides uniform and first-harmonic inflow for helicopter trim and stability"
+        },
+        {
+          "block": "Dynamic Inflow (Finite-State)",
+          "ref": "aerolibinflowmodels/Dynamic Inflow (Finite-State)",
+          "since": "R2026a+",
+          "intent": "Model rotor inflow using Peters-He finite-state dynamic inflow theory — higher-fidelity inflow for advanced rotorcraft analysis"
+        },
+        {
+          "block": "Multirotor",
+          "ref": "aerolibrotordyn/Multirotor",
+          "since": "R2023a+",
+          "intent": "Model a complete multirotor aircraft (quadrotor, hexarotor, etc.) with motor dynamics and thrust allocation — use for eVTOL/drone simulation"
+        },
+        {
+          "block": "Rotor",
+          "ref": "aerolibrotordyn/Rotor",
+          "since": "R2023a+",
+          "intent": "Model a complete helicopter rotor (main or tail) with collective/cyclic inputs producing thrust, torque, and hub moments"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "satellite-dynamics",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "satellite-dynamics",
+      "hash": "b459a6edcf2adaba1d8ab45fee162d05e085f2dca1eb1ab8fa7f723fc9087024",
+      "fm": {
+        "title": "Satellite dynamics",
+        "description": "Orbit propagation, spacecraft attitude, and CubeSat vehicles (13 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "orbit",
+          "satellite",
+          "spacecraft",
+          "CubeSat",
+          "attitude"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CubeSat Vehicle (Nadir Pointing)",
+          "ref": "aerolibcubesatveh/CubeSat Vehicle (Nadir Pointing)",
+          "since": "R2023a+",
+          "intent": "Pre-configured CubeSat model with nadir-pointing attitude — drag-and-drop for quick CubeSat orbit simulation"
+        },
+        {
+          "block": "CubeSat Vehicle (Custom Pointing)",
+          "ref": "aerolibcubesatveh/CubeSat Vehicle (Custom Pointing)",
+          "since": "R2023a+",
+          "intent": "CubeSat model with user-defined pointing direction — use when non-standard attitude profiles are needed"
+        },
+        {
+          "block": "CubeSat Vehicle (Sun Tracking)",
+          "ref": "aerolibcubesatveh/CubeSat Vehicle (Sun Tracking)",
+          "since": "R2023a+",
+          "intent": "CubeSat model that tracks the Sun for maximum solar panel illumination — use for power budget analysis"
+        },
+        {
+          "block": "Attitude Profile (Nadir Pointing)",
+          "ref": "aerolibsatdyn/Attitude Profile (Nadir Pointing)",
+          "since": "R2023a+",
+          "intent": "Generate quaternion commands for Earth-nadir pointing attitude — use for Earth observation satellite attitude guidance"
+        },
+        {
+          "block": "Attitude Dynamics",
+          "ref": "aerolibsatdyn/Attitude Dynamics",
+          "since": "R2023a+",
+          "intent": "Propagate spacecraft rotational dynamics (angular velocity and quaternion) from applied torques and inertia — the core spacecraft attitude block"
+        },
+        {
+          "block": "Attitude Profile (Geographic Pointing)",
+          "ref": "aerolibsatdyn/Attitude Profile (Geographic Pointing)",
+          "since": "R2023a+",
+          "intent": "Generate quaternion commands to point at a geographic location on Earth — use for targeted observation or communication pointing"
+        },
+        {
+          "block": "Attitude Profile (Sun Tracking)",
+          "ref": "aerolibsatdyn/Attitude Profile (Sun Tracking)",
+          "since": "R2023a+",
+          "intent": "Generate quaternion commands for Sun-pointing attitude — use for solar panel orientation or sun-sensor calibration"
+        },
+        {
+          "block": "Cartesian State Vectors to Keplerian Orbital Elements",
+          "ref": "aerolibsatdyn/Cartesian State Vectors to Keplerian Orbital Elements",
+          "since": "R2023a+",
+          "intent": "Convert position/velocity vectors to classical Keplerian elements (a, e, i, RAAN, omega, nu) for orbit characterization"
+        },
+        {
+          "block": "Keplerian Orbital Elements to Cartesian State Vectors",
+          "ref": "aerolibsatdyn/Keplerian Orbital Elements to Cartesian State Vectors",
+          "since": "R2023a+",
+          "intent": "Convert Keplerian orbital elements to position/velocity vectors for initializing orbit propagation"
+        },
+        {
+          "block": "Line of Sight Access",
+          "ref": "aerolibsatdyn/Line of Sight Access",
+          "since": "R2024b+",
+          "intent": "Determine if two objects have unobstructed line of sight considering Earth occultation — use for communication link and sensor coverage analysis"
+        },
+        {
+          "block": "Orbit Propagator Kepler (unperturbed)",
+          "ref": "aerolibsatdyn/Orbit Propagator Kepler (unperturbed)",
+          "since": "R2023a+",
+          "intent": "Propagate a Keplerian orbit analytically without perturbations — use for quick orbit prediction when perturbations are negligible"
+        },
+        {
+          "block": "Orbit Propagator Numerical (high precision)",
+          "ref": "aerolibsatdyn/Orbit Propagator Numerical (high precision)",
+          "since": "R2023a+",
+          "intent": "Propagate orbit numerically with drag, solar radiation pressure, third-body, and gravity perturbations — use for mission-fidelity orbit analysis"
+        },
+        {
+          "block": "Spacecraft Dynamics",
+          "ref": "aerolibsatdyn/Spacecraft Dynamics",
+          "since": "R2023a+",
+          "intent": "Integrate combined translational and rotational spacecraft equations of motion — a single block for complete 6DOF spacecraft simulation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "unit-conversion",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "unit-conversion",
+      "hash": "ae8ab6b67a658bea0477e2b22906849ffb7116b717ff5206309931f2608ef4b4",
+      "fm": {
+        "title": "Unit conversion",
+        "description": "Physical unit conversions for aerospace quantities (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "conversion",
+          "units",
+          "metric",
+          "imperial",
+          "convert"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Acceleration Conversion",
+          "ref": "aerolibconvert2/Acceleration Conversion",
+          "since": "R2023a+",
+          "intent": "Convert acceleration between units (m/s2, ft/s2, g) for interfacing between metric and imperial subsystems"
+        },
+        {
+          "block": "Angle Conversion",
+          "ref": "aerolibconvert2/Angle Conversion",
+          "since": "R2023a+",
+          "intent": "Convert angles between degrees, radians, and revolutions"
+        },
+        {
+          "block": "Angular Acceleration Conversion",
+          "ref": "aerolibconvert2/Angular Acceleration Conversion",
+          "since": "R2023a+",
+          "intent": "Convert angular acceleration between rad/s2, deg/s2, and rpm/s"
+        },
+        {
+          "block": "Angular Velocity Conversion",
+          "ref": "aerolibconvert2/Angular Velocity Conversion",
+          "since": "R2023a+",
+          "intent": "Convert angular velocity between rad/s, deg/s, and rpm"
+        },
+        {
+          "block": "Density Conversion",
+          "ref": "aerolibconvert2/Density Conversion",
+          "since": "R2023a+",
+          "intent": "Convert atmospheric density between kg/m3, slug/ft3, and lb/ft3"
+        },
+        {
+          "block": "Force Conversion",
+          "ref": "aerolibconvert2/Force Conversion",
+          "since": "R2023a+",
+          "intent": "Convert force between Newtons, pounds-force, and kiloponds"
+        },
+        {
+          "block": "Julian Date Conversion",
+          "ref": "aerolibconvert2/Julian Date Conversion",
+          "since": "R2023a+",
+          "intent": "Convert between Julian date, modified Julian date, and calendar date representations for time system interoperability"
+        },
+        {
+          "block": "Length Conversion",
+          "ref": "aerolibconvert2/Length Conversion",
+          "since": "R2023a+",
+          "intent": "Convert length between meters, feet, nautical miles, kilometers, and statute miles"
+        },
+        {
+          "block": "Mass Conversion",
+          "ref": "aerolibconvert2/Mass Conversion",
+          "since": "R2023a+",
+          "intent": "Convert mass between kilograms, slugs, and pounds-mass"
+        },
+        {
+          "block": "Pressure Conversion",
+          "ref": "aerolibconvert2/Pressure Conversion",
+          "since": "R2023a+",
+          "intent": "Convert pressure between Pascals, psi, atmospheres, inches of mercury, and millibars"
+        },
+        {
+          "block": "Temperature Conversion",
+          "ref": "aerolibconvert2/Temperature Conversion",
+          "since": "R2023a+",
+          "intent": "Convert temperature between Kelvin, Celsius, Fahrenheit, and Rankine"
+        },
+        {
+          "block": "Velocity Conversion",
+          "ref": "aerolibconvert2/Velocity Conversion",
+          "since": "R2023a+",
+          "intent": "Convert velocity between m/s, ft/s, knots, km/h, and mph"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "wind-turbulence",
+      "kind": "toolbox",
+      "library": "Aerospace Blockset",
+      "kbFolder": "aerospace-blockset",
+      "category": "wind-turbulence",
+      "hash": "db4f76975914e018c514364fe95566cd7ce81f3ad6600588c28bd1f6119ecfbb",
+      "fm": {
+        "title": "Wind turbulence",
+        "description": "Wind, turbulence, and gust disturbance models (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "aerospace-blockset",
+          "wind",
+          "turbulence",
+          "gust",
+          "Dryden",
+          "Von Karman"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Discrete Wind Gust Model",
+          "ref": "aerolibwind2/Discrete Wind Gust Model",
+          "since": "R2023a+",
+          "intent": "Generate a 1-cosine discrete gust profile per MIL-F-8785C — use for gust load analysis and control law robustness testing"
+        },
+        {
+          "block": "Dryden Wind Turbulence Model  (Continuous (+q -r))",
+          "ref": "aerolibwind2/Dryden Wind Turbulence Model  (Continuous (+q -r))",
+          "since": "R2023a+",
+          "intent": "Generate continuous stochastic turbulence per MIL-F-8785C Dryden spectra — the standard turbulence model for fixed-wing simulation (positive pitch, negative yaw convention)"
+        },
+        {
+          "block": "Horizontal Wind Model",
+          "ref": "aerolibwind2/Horizontal Wind Model",
+          "since": "R2023a+",
+          "intent": "Compute steady-state horizontal winds (eastward and northward components) as a function of altitude and location"
+        },
+        {
+          "block": "Wind Shear Model",
+          "ref": "aerolibwind2/Wind Shear Model",
+          "since": "R2023a+",
+          "intent": "Generate a vertical wind shear profile representing low-level wind shear or microburst for approach/departure safety analysis"
+        },
+        {
+          "block": "Dryden Wind Turbulence Model  (Continuous (+q +r))",
+          "ref": "aerolibwind2/Dryden Wind Turbulence Model  (Continuous (+q +r))",
+          "since": "R2023a+",
+          "intent": "Dryden continuous turbulence with positive pitch and positive yaw rate convention"
+        },
+        {
+          "block": "Dryden Wind Turbulence Model  (Continuous (-q +r))",
+          "ref": "aerolibwind2/Dryden Wind Turbulence Model  (Continuous (-q +r))",
+          "since": "R2023a+",
+          "intent": "Dryden continuous turbulence with negative pitch and positive yaw rate convention"
+        },
+        {
+          "block": "Dryden Wind Turbulence Model  (Discrete (+q +r))",
+          "ref": "aerolibwind2/Dryden Wind Turbulence Model  (Discrete (+q +r))",
+          "since": "R2023a+",
+          "intent": "Discrete-time Dryden turbulence for digital simulation with positive pitch and yaw convention"
+        },
+        {
+          "block": "Dryden Wind Turbulence Model  (Discrete (+q -r))",
+          "ref": "aerolibwind2/Dryden Wind Turbulence Model  (Discrete (+q -r))",
+          "since": "R2023a+",
+          "intent": "Discrete-time Dryden turbulence for digital simulation with positive pitch, negative yaw convention"
+        },
+        {
+          "block": "Dryden Wind Turbulence Model  (Discrete (-q +r))",
+          "ref": "aerolibwind2/Dryden Wind Turbulence Model  (Discrete (-q +r))",
+          "since": "R2023a+",
+          "intent": "Discrete-time Dryden turbulence for digital simulation with negative pitch, positive yaw convention"
+        },
+        {
+          "block": "Horizontal Wind Model 07",
+          "ref": "aerolibwind2/Horizontal Wind Model 07",
+          "since": "R2023a+",
+          "intent": "Compute quiet-time horizontal winds using the HWM07 empirical model — accounts for latitude, longitude, altitude, and solar activity"
+        },
+        {
+          "block": "Horizontal Wind Model 14",
+          "ref": "aerolibwind2/Horizontal Wind Model 14",
+          "since": "R2023a+",
+          "intent": "Compute horizontal winds using the updated HWM14 empirical model — improved accuracy over HWM07 for upper atmosphere"
+        },
+        {
+          "block": "Von Karman Wind Turbulence Model  (Continuous (+q +r))",
+          "ref": "aerolibwind2/Von Karman Wind Turbulence Model  (Continuous (+q +r))",
+          "since": "R2023a+",
+          "intent": "Generate continuous Von Karman turbulence with positive pitch and yaw — preferred for European standards and MIL-HDBK-1797B"
+        },
+        {
+          "block": "Von Karman Wind Turbulence Model  (Continuous (+q -r))",
+          "ref": "aerolibwind2/Von Karman Wind Turbulence Model  (Continuous (+q -r))",
+          "since": "R2023a+",
+          "intent": "Generate continuous Von Karman turbulence with positive pitch, negative yaw rate convention"
+        },
+        {
+          "block": "Von Karman Wind Turbulence Model  (Continuous (-q +r))",
+          "ref": "aerolibwind2/Von Karman Wind Turbulence Model  (Continuous (-q +r))",
+          "since": "R2023a+",
+          "intent": "Generate continuous Von Karman turbulence with negative pitch, positive yaw rate convention"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:13",
+  "generatedAtDatenum": 740309.99529597221
 }

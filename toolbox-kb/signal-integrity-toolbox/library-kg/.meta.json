@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74458043976,
-  "generatorVersion": 4,
-  "libraries": [
-    "Signal Integrity Toolbox"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Signal_Integrity_Toolbox": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "signal-integrity",
+      "kind": "toolbox",
+      "library": "Signal Integrity Toolbox",
+      "kbFolder": "signal-integrity-toolbox",
+      "category": "signal-integrity",
+      "hash": "e40249d70465d357832cc6f7fc4431990d66599d996d7077b668874e015289d1",
+      "fm": {
+        "title": "Signal integrity",
+        "description": "High-speed serial link signal quality measurements (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "signal-integrity-toolbox",
+          "eye",
+          "jitter",
+          "signal",
+          "integrity",
+          "measurement"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Eye Measurement",
+          "ref": "siUtilities/Eye Measurement",
+          "since": "R2025a+",
+          "intent": "Measure eye diagram parameters such as opening, height, and width — use for serial link signal quality assessment and compliance testing"
+        },
+        {
+          "block": "Jitter Measurement",
+          "ref": "siUtilities/Jitter Measurement",
+          "since": "R2026a+",
+          "intent": "Measure jitter components including deterministic and random jitter — use for serial link timing analysis and transmitter/receiver characterization"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:28",
+  "generatedAtDatenum": 740309.99546510412
 }

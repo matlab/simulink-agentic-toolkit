@@ -1,15 +1,499 @@
 {
-  "generatedAt": "2026-09-29T16:38:05",
-  "generatedAtDatenum": 740254.6931170139,
-  "generatorVersion": 4,
-  "libraries": [
-    "Audio Toolbox"
-  ],
-  "blockCount": 50,
-  "categoryCount": 8,
-  "libraryFingerprints": {
-    "Audio_Toolbox": {
-      "blockCount": 50
+  "pages": [
+    {
+      "id": "deep-learning",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "deep-learning",
+      "hash": "3ca17c5bec2c367c12dc00b3e12e1134b9b2bb1973eec1eba2862da7b8bc658a",
+      "fm": {
+        "title": "Deep learning",
+        "description": "Neural-network audio processing blocks (13 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "deep learning",
+          "crepe",
+          "vggish",
+          "yamnet"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "CREPE Postprocess",
+          "ref": "audioai/CREPE Postprocess",
+          "since": "R2023a+",
+          "intent": "Convert the raw output of the CREPE pitch network into a pitch (F0) estimate with confidence — use after CREPE inference to get usable pitch values."
+        },
+        {
+          "block": "CREPE",
+          "ref": "audioai/CREPE",
+          "since": "R2023a+",
+          "intent": "CREPE deep pitch estimation neural network."
+        },
+        {
+          "block": "CREPE Preprocess",
+          "ref": "audioai/CREPE Preprocess",
+          "since": "R2023a+",
+          "intent": "Preprocess audio for CREPE deep pitch estimation."
+        },
+        {
+          "block": "Deep Pitch Estimator",
+          "ref": "audioai/Deep Pitch Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate pitch with CREPE deep learning neural network."
+        },
+        {
+          "block": "OpenL3",
+          "ref": "audioai/OpenL3",
+          "since": "R2023a+",
+          "intent": "OpenL3 embeddings extraction network."
+        },
+        {
+          "block": "OpenL3 Embeddings",
+          "ref": "audioai/OpenL3 Embeddings",
+          "since": "R2023a+",
+          "intent": "Extract OpenL3 embeddings."
+        },
+        {
+          "block": "OpenL3 Preprocess",
+          "ref": "audioai/OpenL3 Preprocess",
+          "since": "R2023a+",
+          "intent": "Preprocess audio for OpenL3 embeddings extraction."
+        },
+        {
+          "block": "Sound Classifier",
+          "ref": "audioai/Sound Classifier",
+          "since": "R2023a+",
+          "intent": "Classify sounds in input audio signal."
+        },
+        {
+          "block": "VGGish",
+          "ref": "audioai/VGGish",
+          "since": "R2023a+",
+          "intent": "VGGish embeddings extraction network."
+        },
+        {
+          "block": "VGGish Embeddings",
+          "ref": "audioai/VGGish Embeddings",
+          "since": "R2023a+",
+          "intent": "Extract VGGish embeddings."
+        },
+        {
+          "block": "VGGish Preprocess",
+          "ref": "audioai/VGGish Preprocess",
+          "since": "R2023a+",
+          "intent": "Preprocess audio for VGGish embeddings extraction."
+        },
+        {
+          "block": "YAMNet",
+          "ref": "audioai/YAMNet",
+          "since": "R2023a+",
+          "intent": "YAMNet sound classification network."
+        },
+        {
+          "block": "YAMNet Preprocess",
+          "ref": "audioai/YAMNet Preprocess",
+          "since": "R2023a+",
+          "intent": "Preprocess audio for YAMNet classifier."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "effects-dynamics",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "effects-dynamics",
+      "hash": "cbaa7ac56bb3d6bebb9e9eef7b7c81707a2b5c70150ad0bd2c3daf1a821fa321",
+      "fm": {
+        "title": "Effects dynamics",
+        "description": "Audio effects and dynamic range control (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "effect",
+          "dynamic range",
+          "reverb",
+          "compressor"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Compressor",
+          "ref": "audiodynamicrange/Compressor",
+          "since": "R2023a+",
+          "intent": "Perform dynamic range compression independently across each input channel."
+        },
+        {
+          "block": "Expander",
+          "ref": "audiodynamicrange/Expander",
+          "since": "R2023a+",
+          "intent": "Perform dynamic range expansion independently across each input channel."
+        },
+        {
+          "block": "Limiter",
+          "ref": "audiodynamicrange/Limiter",
+          "since": "R2023a+",
+          "intent": "Perform limiting independently across each input channel."
+        },
+        {
+          "block": "Reverberator",
+          "ref": "audioeffects/Reverberator",
+          "since": "R2023a+",
+          "intent": "Add artificial reverberation to mono or stereo audio signal. The output is always a stereo signal."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "features",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "features",
+      "hash": "b5162d1ff9cf5a7e9aee9a407355df9256e0ce93cbf77606ea49581faca9958c",
+      "fm": {
+        "title": "Features",
+        "description": "Extract audio features for analysis and machine learning (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "feature",
+          "cepstral",
+          "delta",
+          "mfcc"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Audio Delta",
+          "ref": "audiofeatures/Audio Delta",
+          "since": "R2023a+",
+          "intent": "Compute delta and delta-delta coefficients (time derivatives of audio features) — use to add temporal dynamics to feature vectors for speech/audio ML."
+        },
+        {
+          "block": "Cepstral Coefficients",
+          "ref": "audiofeatures/Cepstral Coefficients",
+          "since": "R2023a+",
+          "intent": "Extract cepstral coefficients (MFCC/GTCC) from audio frames — use as compact spectral features for speech recognition and audio classification."
+        },
+        {
+          "block": "Auditory Spectrogram",
+          "ref": "audiofeatures/Auditory Spectrogram",
+          "since": "R2023a+",
+          "intent": "Extract mel, Bark, or ERB spectrogram from audio."
+        },
+        {
+          "block": "MFCC",
+          "ref": "audiofeatures/MFCC",
+          "since": "R2023a+",
+          "intent": "Extract mel-frequency cepstral coefficients from audio."
+        },
+        {
+          "block": "Mel Spectrogram",
+          "ref": "audiofeatures/Mel Spectrogram",
+          "since": "R2023a+",
+          "intent": "Extract mel spectrogram from audio."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "filters",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "filters",
+      "hash": "4d481a5d5ee616abc0ce49f7886d6315629fc0f86cc291b3fc89e32c58d30da2",
+      "fm": {
+        "title": "Filters",
+        "description": "Filter banks and equalizer designs (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "filter",
+          "eq design",
+          "octave",
+          "gammatone",
+          "shelving",
+          "parametric"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Design Auditory Filter Bank",
+          "ref": "audiofeatures/Design Auditory Filter Bank",
+          "since": "R2023a+",
+          "intent": "Design frequency-domain auditory filter bank."
+        },
+        {
+          "block": "Design Mel Filter Bank",
+          "ref": "audiofeatures/Design Mel Filter Bank",
+          "since": "R2023a+",
+          "intent": "Design frequency-domain mel filter bank."
+        },
+        {
+          "block": "Gammatone Filter Bank",
+          "ref": "audiofeatures/Gammatone Filter Bank",
+          "since": "R2023a+",
+          "intent": "Split audio into perceptually-spaced gammatone bands modeling cochlear filtering — use for auditory feature extraction and psychoacoustic analysis."
+        },
+        {
+          "block": "Crossover Filter",
+          "ref": "audiofilters/Crossover Filter",
+          "since": "R2023a+",
+          "intent": "Multiband audio crossover filter"
+        },
+        {
+          "block": "Gammatone Filter Bank",
+          "ref": "audiofilters/Gammatone Filter Bank",
+          "since": "R2023a+",
+          "intent": "Split audio into perceptually-spaced gammatone bands modeling cochlear filtering — use for auditory feature extraction and psychoacoustic analysis."
+        },
+        {
+          "block": "Graphic EQ",
+          "ref": "audiofilters/Graphic EQ",
+          "since": "R2023a+",
+          "intent": "Graphic equalizer"
+        },
+        {
+          "block": "Multiband Parametric EQ",
+          "ref": "audiofilters/Multiband Parametric EQ",
+          "since": "R2023a+",
+          "intent": "Design a multiband parametric equalizer. Lowshelf and highshelf filters can be added as well as highpass (low cut) and lowpass (high cut) filters."
+        },
+        {
+          "block": "Octave Filter",
+          "ref": "audiofilters/Octave Filter",
+          "since": "R2023a+",
+          "intent": "Design an octave-band or fractional octave-band filter."
+        },
+        {
+          "block": "Octave Filter Bank",
+          "ref": "audiofilters/Octave Filter Bank",
+          "since": "R2023a+",
+          "intent": "Split a signal into octave or fractional-octave bands — use for acoustic measurement, noise analysis, and sound-level metering."
+        },
+        {
+          "block": "Parametric EQ Design",
+          "ref": "audiofilters/Parametric EQ Design",
+          "since": "R2024a+",
+          "intent": "Design a parametric (peak/notch) equalizer from center frequency, gain, and Q — use to shape a specific frequency band in audio."
+        },
+        {
+          "block": "Shelving EQ Design",
+          "ref": "audiofilters/Shelving EQ Design",
+          "since": "R2024a+",
+          "intent": "Design a low- or high-shelving equalizer — use to boost or cut all frequencies above or below a corner frequency."
+        },
+        {
+          "block": "Shelving Filter",
+          "ref": "audiofilters/Shelving Filter",
+          "since": "R2023a+",
+          "intent": "Design a shelving filter"
+        },
+        {
+          "block": "Single-Band Parametric EQ",
+          "ref": "audiofilters/Single-Band Parametric EQ",
+          "since": "R2023a+",
+          "intent": "High order single-band parametric equalizer filter"
+        },
+        {
+          "block": "Variable Slope Filter Design",
+          "ref": "audiofilters/Variable Slope Filter Design",
+          "since": "R2024a+",
+          "intent": "Design a filter with an adjustable roll-off slope — use for tunable tone shaping in audio effects."
+        },
+        {
+          "block": "Weighting Filter",
+          "ref": "audiofilters/Weighting Filter",
+          "since": "R2023a+",
+          "intent": "Weighted frequency response filter"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "measurements",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "measurements",
+      "hash": "5dc20c43912ce452f85052b9f1e66399439fc1de41ac57d1500c7b8364c462c8",
+      "fm": {
+        "title": "Measurements",
+        "description": "Perceptual and level measurements (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "measurement",
+          "loudness",
+          "meter",
+          "lufs"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Loudness Meter",
+          "ref": "audiomeasurements/Loudness Meter",
+          "since": "R2023a+",
+          "intent": "Measure momentary, short-term, and integrated loudness (LUFS) plus true-peak per ITU-R BS.1770 — use for broadcast/streaming loudness compliance."
+        },
+        {
+          "block": "Voice Activity Detector",
+          "ref": "audiomeasurements/Voice Activity Detector",
+          "since": "R2023a+",
+          "intent": "Detect the presence of speech in an audio signal."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sinks",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "sinks",
+      "hash": "0888de54d93627838ab086d18a25cfad887ea2abdb31c5ca56f326dc237f3a32",
+      "fm": {
+        "title": "Sinks",
+        "description": "Play, record, and visualize audio (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "sink",
+          "device writer",
+          "to multimedia",
+          "spectrum analyzer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Audio Device Writer",
+          "ref": "audiosinks/Audio Device Writer",
+          "since": "R2023a+",
+          "intent": "Play an audio signal to the sound-card output in real time — use to monitor or output audio during simulation."
+        },
+        {
+          "block": "Spectrum Analyzer",
+          "ref": "audiosinks/Spectrum Analyzer",
+          "since": "R2023a+",
+          "intent": "Display the frequency spectrum of an audio signal during simulation — use to inspect spectral content."
+        },
+        {
+          "block": "To Multimedia File",
+          "ref": "audiosinks/To Multimedia File",
+          "since": "R2023a+",
+          "intent": "Write audio (and optionally video) samples to a media file — use to record processed audio to disk."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "sources",
+      "hash": "670478c7618394f3b073570f5efb0875e496756ddd3032e9c6fa9e5ce79f13ca",
+      "fm": {
+        "title": "Sources",
+        "description": "Generate or read audio signals (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "source",
+          "oscillator",
+          "noise",
+          "from multimedia",
+          "wavetable"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Noise Gate",
+          "ref": "audiodynamicrange/Noise Gate",
+          "since": "R2023a+",
+          "intent": "Perform noise gating independently across each input channel."
+        },
+        {
+          "block": "Audio Device Reader",
+          "ref": "audiosources/Audio Device Reader",
+          "since": "R2023a+",
+          "intent": "Record audio stream from your computer's audio device."
+        },
+        {
+          "block": "Audio Oscillator",
+          "ref": "audiosources/Audio Oscillator",
+          "since": "R2023a+",
+          "intent": "Generate a tunable periodic waveform (sine/square/sawtooth) with adjustable frequency and amplitude — use as a real-time tone or test-signal source."
+        },
+        {
+          "block": "Colored Noise",
+          "ref": "audiosources/Colored Noise",
+          "since": "R2023a+",
+          "intent": "Generate colored noise (pink, brown, etc.) with a specified spectral slope — use as a test stimulus or dithering source."
+        },
+        {
+          "block": "From Multimedia File",
+          "ref": "audiosources/From Multimedia File",
+          "since": "R2023a+",
+          "intent": "Read audio (and optionally video) from a media file as a source — use to feed recorded audio into a processing chain."
+        },
+        {
+          "block": "MIDI Controls",
+          "ref": "audiosources/MIDI Controls",
+          "since": "R2023a+",
+          "intent": "Output values from controls on a MIDI control surface. Use a vector of control numbers to output values for multiple controls. Use the MATLAB midiid command to discover MIDI device names or MIDI device control numbers."
+        },
+        {
+          "block": "Wavetable Synthesizer",
+          "ref": "audiosources/Wavetable Synthesizer",
+          "since": "R2023a+",
+          "intent": "Synthesize audio by looping a stored wavetable at a controllable rate — use for efficient tone or instrument generation."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "user-defined",
+      "kind": "toolbox",
+      "library": "Audio Toolbox",
+      "kbFolder": "audio-toolbox",
+      "category": "user-defined",
+      "hash": "0d9b0be88bb4f5fdab0322f58a8346800ac41252ba6a0e0de61fd707e815afdd",
+      "fm": {
+        "title": "User defined",
+        "description": "Host custom audio plugins and functions (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "audio-toolbox",
+          "user-defined",
+          "audio plugin"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Audio Plugin",
+          "ref": "audiouserdefined/Audio Plugin",
+          "since": "R2023a+",
+          "intent": "Host or prototype a custom audioPlugin System object inside the model — use to test a plugin as a Simulink block."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:14",
+  "generatedAtDatenum": 740309.99530152779
 }

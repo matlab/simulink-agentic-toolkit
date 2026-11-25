@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Automotive ethernet
-description: Automotive Ethernet communication and AUTOSAR signal packing
-tags: [ethernet, automotive, autosar, someip, vehicle]
+description: Automotive Ethernet communication and AUTOSAR signal packing (1 blocks)
+tags: [toolbox-kb, vnt-ethernet-library, ethernet, automotive, autosar, someip, vehicle]
 status: stable
-source: mathworks_toolbox
-library_root: VNT Ethernet Library
-category_path: Automotive ethernet
+sources:
+  - resource: matlab:ethernetblkslib
+source: toolbox_kb
+managed_by: satk
+library: VNT Ethernet Library
+kb_folder: vnt-ethernet-library
+category: automotive-ethernet
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Automotive ethernet
-
-Use these blocks for automotive ethernet.
 
 ## Recommended Blocks
 

@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Uncategorized
-description: Blocks for uncategorized.
+description: Blocks for Uncategorized (6 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-aurix-tc4x]
 status: draft
-source: custom_library
-library_root: Embedded Coder Support Package for AURIX TC4x
-category_path: Uncategorized
+sources:
+  - resource: matlab:aurixtc4xlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for AURIX TC4x
+kb_folder: embedded-coder-support-package-for-aurix-tc4x
+category: uncategorized
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Uncategorized
-
-Use these blocks for uncategorized.
 
 ## Recommended Blocks
 

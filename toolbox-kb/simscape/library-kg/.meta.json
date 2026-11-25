@@ -1,15 +1,2043 @@
 {
-  "generatedAt": "2026-09-29T16:38:08",
-  "generatedAtDatenum": 740254.69315841433,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simscape"
-  ],
-  "blockCount": 294,
-  "categoryCount": 13,
-  "libraryFingerprints": {
-    "Simscape": {
-      "blockCount": 294
+  "pages": [
+    {
+      "id": "electrical",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "electrical",
+      "hash": "739e7af8d382f0a46606c5814f177fb199c7818a57a47a2cc5faa06e3fb8fbfb",
+      "fm": {
+        "title": "Electrical",
+        "description": "Electrical-domain sources, sensors, elements, and references (31 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "electrical"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Capacitor",
+          "ref": "fl_lib/Electrical/Electrical Elements/Capacitor",
+          "since": "R2023a+",
+          "intent": "Models a linear capacitor. The relationship between voltage V and current I is I=C*dV/dt where C is the capacitance in farads. The Series resistance and Parallel conductance represent small parasitic effects. The parallel conductance can be used to model dielectric losses and the series resistance used to represent the effective series resistance (ESR) of the capacitor. Simulation of some circuits may require the presence of the small series resistance. Consult the documentation for further details."
+        },
+        {
+          "block": "Diode",
+          "ref": "fl_lib/Electrical/Electrical Elements/Diode",
+          "since": "R2023a+",
+          "intent": "Piece-wise linear model of a diode. If the voltage across the diode is bigger than the Forward voltage Vf, then the diode behaves like a linear resistor with low On resistance R_on plus a series voltage source. If the voltage across the diode is less than the Forward voltage, then the diode behaves like a linear resistor with low Off conductance G_off. When forward biased, the series voltage source is given by Vf(1-R_on*G_off). The R_on*G_off term ensures that the diode current is exactly zero when the voltage across it is zero."
+        },
+        {
+          "block": "Electrical Reference",
+          "ref": "fl_lib/Electrical/Electrical Elements/Electrical Reference",
+          "since": "R2023a+",
+          "intent": "Electrical reference port. A model must contain at least one electrical reference port (electrical ground)."
+        },
+        {
+          "block": "Floating Reference",
+          "ref": "fl_lib/Electrical/Electrical Elements/Floating Reference",
+          "since": "R2023b+",
+          "intent": "This block provides an electrical reference that you can use to measure the voltage of other nodes in a floating electrical network. To represent the physical capacitance between the network and the ground plane, the block implements a capacitance between the floating network and the electrical ground. This capacitance blocks the DC current instead of sinking or sourcing it as the Electrical Reference block does."
+        },
+        {
+          "block": "Gyrator",
+          "ref": "fl_lib/Electrical/Electrical Elements/Gyrator",
+          "since": "R2023a+",
+          "intent": "Models an ideal gyrator satisfying I_1 = G*V_2 and I_2 = G*V_1 where G is the gyration conductance, V_1 and V_2 are the input and output voltages, I_1 is the current flowing into the input + terminal, and I_2 is the current flowing out of the output + terminal. Note that the two electrical networks connected to the primary and secondary windings must each have their own Electrical Reference block."
+        },
+        {
+          "block": "Ideal Transformer",
+          "ref": "fl_lib/Electrical/Electrical Elements/Ideal Transformer",
+          "since": "R2023a+",
+          "intent": "Models an ideal power-conserving transformer satisfying V_1 = N*V_2 and I_2 = N*I_1 where N is the Winding ratio, V_1 and V_2 are the primary and secondary voltages, I_1 is the current flowing into the primary + terminal, and I_2 is the current flowing out of the secondary + terminal. This block can be used to represent either an AC transformer or a solid-state DC to DC converter. To model a transformer with inductance and mutual inductance terms, use the Mutual Inductor block. Note that the two electrical networks connected to the primary and secondary windings must each have their own Electrical Reference block."
+        },
+        {
+          "block": "Inductor",
+          "ref": "fl_lib/Electrical/Electrical Elements/Inductor",
+          "since": "R2023a+",
+          "intent": "Models a linear inductor. The relationship between voltage V and current I is V=L*dI/dt where L is the inductance in henries (H). The Series resistance and Parallel conductance represent small parasitic effects. The series resistance can be used to represent the DC winding resistance and/or the resistance due to the skin effect. A small parallel conductance may be required for the simulation of some circuit topologies. Consult the documentation for further details."
+        },
+        {
+          "block": "Infinite Resistance",
+          "ref": "fl_lib/Electrical/Electrical Elements/Infinite Resistance",
+          "since": "R2023a+",
+          "intent": "This component represents an infinite resistance. When connecting two electrical nodes via this component, no current flows through it. The block can be used to set the initial voltage difference between two electrical nodes without affecting model equations."
+        },
+        {
+          "block": "Memristor",
+          "ref": "fl_lib/Electrical/Electrical Elements/Memristor",
+          "since": "R2023a+",
+          "intent": "Models an ideal memristor with a nonlinear dopant drift approach. The memristance is given by M=x*Ra+(1-x)*Rb, where x is the fraction of the memristor that is in state A, and Ra and Rb are the resistances when the entire memristor is in state A or B, respectively. The memristor state is determined by dx/dt=i*F(x)/Q0, where i is the current from the positive to the negative terminal, Q0 is the total charge required for a full transition between states A and B, and F(x) is a window function designed to keep x between 0 and 1."
+        },
+        {
+          "block": "Mutual Inductor",
+          "ref": "fl_lib/Electrical/Electrical Elements/Mutual Inductor",
+          "since": "R2023a+",
+          "intent": "Models a mutual inductor. If winding 1 has voltage V1 across it and current I1 flowing into its + terminal, and winding 2 has voltage V2 across it and current I2 flowing into its + terminal, then V1 = L1*dI1/dt + M*dI2/dt V2 = L2*dI2/dt + M*dI1/dt where parameters L1 and L2 are the winding self-inductances, and M is the mutual inductance. M is defined in terms of the Coefficient of coupling k by M=k*sqrt(L1*L2). Hence the magnitude of k should be less than one. Negative k yields an inverted output. Do not use magnitudes of Kij very close to 1, such as 0.999, because these values introduce fast simulation dynamics."
+        },
+        {
+          "block": "Op-Amp",
+          "ref": "fl_lib/Electrical/Electrical Elements/Op-Amp",
+          "since": "R2023a+",
+          "intent": "Models an ideal Operational Amplifier (Op-Amp). If the voltage at the positive pin is denoted by Vp, and the voltage at the negative pin by Vm, the behavior of an ideal op-amp is characterized as Vp=Vm. In other words, the op-amp gain is assumed to be infinite. By implication, the current from the + terminal to the - terminal is zero."
+        },
+        {
+          "block": "Open Circuit",
+          "ref": "fl_lib/Electrical/Electrical Elements/Open Circuit",
+          "since": "R2023a+",
+          "intent": "This block represents an electrical open circuit. Current cannot pass through this block. This block can be used to optionally specify initial voltage."
+        },
+        {
+          "block": "Resistor",
+          "ref": "fl_lib/Electrical/Electrical Elements/Resistor",
+          "since": "R2023a+",
+          "intent": "The voltage-current (V-I) relationship for a linear resistor is V=I*R, where R is the constant resistance in ohms. The positive and negative terminals of the resistor are denoted by the + and - signs respectively. By convention, the voltage across the resistor is given by V(+)-V(-), and the sign of the current is positive when flowing through the device from the positive to the negative terminal. This convention ensures that the power absorbed by a resistor is always positive."
+        },
+        {
+          "block": "Rotational Electromechanical Converter",
+          "ref": "fl_lib/Electrical/Electrical Elements/Rotational Electromechanical Converter",
+          "since": "R2023a+",
+          "intent": "Provides an interface between the electrical and mechanical rotational domains. If the current and voltage through and across the electrical ports are I and V, and the torque and angular speed through and across the mechanical ports are T and w, then T = K*I V = K*w where parameter K is the Constant of proportionality with equivalent units of Nm/A or V/(rad/s). Both the torque and back emf equations having the same value of K represents a lossless electromechanical energy conversion. If the current I from the electrical + to - ports is positive, then the resulting torque is positive acting from the mechanical C to R ports. This direction can be altered by using a negative value for K."
+        },
+        {
+          "block": "Switch",
+          "ref": "fl_lib/Electrical/Electrical Elements/Switch",
+          "since": "R2023a+",
+          "intent": "The block represents a switch controlled by an external physical signal. If the external physical signal PS is greater than the threshold, then the switch is closed, otherwise the switch is open. The closed resistance is defined by parameter R_closed, and the open conductance is defined by parameter G_open. Both parameters must be greater than zero."
+        },
+        {
+          "block": "Thermal Resistor",
+          "ref": "fl_lib/Electrical/Electrical Elements/Thermal Resistor",
+          "since": "R2023a+",
+          "intent": "This block represents a resistor with a thermal port. The resistance at temperature T is given by R(T) = R0*(1+alpha(T-T0)) where R0 is the Nominal resistance at the Reference temperature T0, and alpha is the Temperature coefficient. The temperature T of the resistor is governed by the equation K_d*t_c*dT/dt = Q + i^2*R(T) where Q is the net heat flow into port A, i is the current, t_c is the Thermal time constant and K_d is the Dissipation factor."
+        },
+        {
+          "block": "Translational Electromechanical Converter",
+          "ref": "fl_lib/Electrical/Electrical Elements/Translational Electromechanical Converter",
+          "since": "R2023a+",
+          "intent": "Provides an interface between the electrical and mechanical translational domains. If the current and voltage through and across the electrical ports are I and V, and the force and speed through and across the mechanical ports are F and U, then F = K*I V = K*U where parameter K is the Constant of proportionality with equivalent units of N/A or V/(m/s). Both the force and back emf equations having the same value of K represents a lossless electromechanical energy conversion. If the current I from the electrical + to - ports is positive, then the resulting force is positive acting from the mechanical C to R ports. This direction can be altered by using a negative value for K."
+        },
+        {
+          "block": "Variable Resistor",
+          "ref": "fl_lib/Electrical/Electrical Elements/Variable Resistor",
+          "since": "R2023a+",
+          "intent": "Models a linear variable resistor. The relationship between voltage V and current I is V=I*R where R is the numerical value presented at the physical signal port R. The Minimum resistance parameter prevents negative resistance values. Connections + and - are conserving electrical ports corresponding to the positive and negative terminals of the resistor respectively. The current is positive if it flows from positive to negative, and the voltage across the resistor is given by V(+)-V(-)."
+        },
+        {
+          "block": "Current Sensor",
+          "ref": "fl_lib/Electrical/Electrical Sensors/Current Sensor",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal current sensor, that is, a device that converts current measured in any electrical branch into a physical signal proportional to the current. Connections + and - are conserving electrical ports through which the sensor is inserted into the circuit. Connection I is a physical signal port that outputs current value."
+        },
+        {
+          "block": "Voltage Sensor",
+          "ref": "fl_lib/Electrical/Electrical Sensors/Voltage Sensor",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal voltage sensor, that is, a device that converts voltage measured between any electrical connections into a physical signal proportional to the voltage. Connections + and - are conserving electrical ports through which the sensor is connected to the circuit. Connection V is a physical signal port that outputs voltage value."
+        },
+        {
+          "block": "AC Current Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/AC Current Source",
+          "since": "R2023a+",
+          "intent": "The ideal AC current source maintains the sinusoidal current through it, independent of the voltage across its terminals. The output current is defined by I = I0 * sin(2*pi*f*t + PHI), where I0 is the peak amplitude, f is the frequency in Hz, and PHI is the phase shift in radians."
+        },
+        {
+          "block": "AC Voltage Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/AC Voltage Source",
+          "since": "R2023a+",
+          "intent": "The ideal AC voltage source maintains the sinusoidal voltage across its output terminals, independent of the current flowing through the source. The output voltage is defined by V = V0 * sin(2*pi*f*t + PHI), where V0 is the peak amplitude, f is the frequency in Hz, and PHI is the phase shift in radians."
+        },
+        {
+          "block": "Controlled Current Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/Controlled Current Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal current source that is powerful enough to maintain the specified current through it regardless of the voltage across it. The output current is I = Is, where Is is the numerical value presented at the physical signal port."
+        },
+        {
+          "block": "Controlled Voltage Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/Controlled Voltage Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal voltage source that is powerful enough to maintain the specified voltage at its output regardless of the current passing through it. The output voltage is V = Vs, where Vs is the numerical value presented at the physical signal port."
+        },
+        {
+          "block": "Current-Controlled Current Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/Current-Controlled Current Source",
+          "since": "R2023a+",
+          "intent": "Linear Current-Controlled Current Source (CCCS). The current source output current is given by I2 = K*I1 where I1 is the current flowing from the + to the - control port. Parameter K is the current gain."
+        },
+        {
+          "block": "Current-Controlled Voltage Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/Current-Controlled Voltage Source",
+          "since": "R2023a+",
+          "intent": "Linear Current-Controlled Voltage Source (CCVS). The voltage source output voltage is given by V = K*I1 where I1 is the current flowing from the + to the - control port. Parameter K is the transresistance."
+        },
+        {
+          "block": "DC Current Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/DC Current Source",
+          "since": "R2023a+",
+          "intent": "The ideal DC current source maintains a constant current through it, independent of the voltage across its terminals. The output current is defined by the Constant current parameter, and can be any real value."
+        },
+        {
+          "block": "DC Voltage Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/DC Voltage Source",
+          "since": "R2023a+",
+          "intent": "The ideal voltage source maintains a constant voltage across its output terminals, independent of the current flowing through the source. The output voltage is defined by the Constant voltage parameter, and can be any real value."
+        },
+        {
+          "block": "Voltage-Controlled Current Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/Voltage-Controlled Current Source",
+          "since": "R2023a+",
+          "intent": "Linear Voltage-Controlled Current Source (VCCS). The current source output current is given by I = K*(V(+)-V(-)), where V(+) and V(-) are the voltages presented at the + and - control ports. Parameter K is the transconductance."
+        },
+        {
+          "block": "Voltage-Controlled Voltage Source",
+          "ref": "fl_lib/Electrical/Electrical Sources/Voltage-Controlled Voltage Source",
+          "since": "R2023a+",
+          "intent": "Linear Voltage-Controlled Voltage Source (VCVS). The voltage source output voltage is given by V = K*(V(+)-V(-)), where V(+) and V(-) are the voltages presented at the + and - control ports. Parameter K is the voltage gain."
+        },
+        {
+          "block": "Electromagnetic Converter",
+          "ref": "fl_lib/Magnetic/Magnetic Elements/Electromagnetic Converter",
+          "since": "R2023a+",
+          "intent": "Provides a generic interface between the electrical and magnetic domains. If the current and voltage through and across the electrical ports are I and V, and the flux and magnetomotive force (mmf) through and across the magnetic ports are PHI and MMF, then MMF = N * I V = - N * dPHI/dt where parameter N is the number of electrical winding turns. These equations represent lossless electromagnetic energy conversion. If the current from the electrical + to - ports is positive, then the resulting mmf is positive acting across the magnetic N to S ports. A positive rate of change of flux flowing from N to S results in a negative induced voltage across the + and - ports."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gas",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "gas",
+      "hash": "1bc8689446f2e5995f1c910dd6ffc4131abccee30c87fd8c7401ba0ae71638d8",
+      "fm": {
+        "title": "Gas",
+        "description": "Gas-domain elements for pneumatic and compressible-flow systems (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "gas"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Absolute Reference (G)",
+          "ref": "fl_lib/Gas/Elements/Absolute Reference (G)",
+          "since": "R2023a+",
+          "intent": "This block represents the absolute reference in a gas network where pressure and temperature are equal to zero."
+        },
+        {
+          "block": "Cap (G)",
+          "ref": "fl_lib/Gas/Elements/Cap (G)",
+          "since": "R2023a+",
+          "intent": "This block represents a terminus in a gas network. There is no mass or energy flow through the cap. This block can optionally be used to assign a beginning value and priority to the pressure and temperature of the connected node."
+        },
+        {
+          "block": "Constant Volume Chamber (G)",
+          "ref": "fl_lib/Gas/Elements/Constant Volume Chamber (G)",
+          "since": "R2023a+",
+          "intent": "This block models mass and energy storage in a gas network. The chamber contains a constant volume of gas. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume. Ports A, B, C, and D are the gas conserving ports associated with the chamber inlets. Port H is the thermal conserving port associated with the thermal mass of the gas volume."
+        },
+        {
+          "block": "Flow Resistance (G)",
+          "ref": "fl_lib/Gas/Elements/Flow Resistance (G)",
+          "since": "R2023a+",
+          "intent": "This block represents a generic pressure loss in a gas network. Mass flow rate is proportional to the square root of pressure drop and density. The proportionality constant is determined from the specified nominal condition. Set Nominal density to zero to omit the density dependence."
+        },
+        {
+          "block": "Infinite Flow Resistance (G)",
+          "ref": "fl_lib/Gas/Elements/Infinite Flow Resistance (G)",
+          "since": "R2023a+",
+          "intent": "This block represents a break in a gas network. There is no mass or energy flow through the break. However, the gas properties, specified by the Gas Properties (G) block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the differences in pressure and temperature of port A relative to port B."
+        },
+        {
+          "block": "Local Restriction (G)",
+          "ref": "fl_lib/Gas/Elements/Local Restriction (G)",
+          "since": "R2023a+",
+          "intent": "This block models the pressure loss due to a flow area restriction such as a valve or an orifice in a gas network. There is no heat exchange with the environment. Choking occurs when the restriction flow reaches the speed of sound. The restriction area can be optionally set by the physical signal port AR [m^2]. The input is limited by the minimum and maximum restriction area."
+        },
+        {
+          "block": "Pipe (G)",
+          "ref": "fl_lib/Gas/Elements/Pipe (G)",
+          "since": "R2023a+",
+          "intent": "This block models pipe flow dynamics in a gas network due to viscous friction losses and convective heat transfer with the pipe wall. You can optionally include the effects of dynamic compressibility and fluid inertia. The pipe contains a constant volume of gas. Temperature varies dynamically based on the net energy accumulation in the volume. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the net mass accumulation in the volume. Selecting Enable fluid inertia causes the gas to resist acceleration. The flow is choked when the outlet reaches the speed of sound. Ports A and B are the gas conserving ports associated with the pipe inlet and outlet. Port H is the thermal conserving port associated with the pipe wall."
+        },
+        {
+          "block": "Reservoir (G)",
+          "ref": "fl_lib/Gas/Elements/Reservoir (G)",
+          "since": "R2023a+",
+          "intent": "This block sets boundary conditions in a gas network. The volume of gas inside the reservoir is assumed infinite. Therefore, the flow is assumed quasi-steady. Gas leaves the reservoir at the reservoir pressure and temperature. Gas enters the reservoir at the reservoir pressure, but its temperature is determined by the gas network upstream. The reservoir pressure and temperature can be optionally set by physical signal ports P and T, respectively."
+        },
+        {
+          "block": "Flow Rate Sensor (G)",
+          "ref": "fl_lib/Gas/Sensors/Flow Rate Sensor (G)",
+          "since": "R2023a+",
+          "intent": "This block measures mass, volumetric, and energy flow rate in a gas network. The energy flow rate is the advection of total enthalpy. There is no change in pressure or temperature across the sensor. The physical signal ports M [kg/s], V [m^3/s], and φ [W] report the mass flow rate, the volumetric flow rate, and the energy flow rate, respectively, through the sensor. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Mach Number Sensor (G)",
+          "ref": "fl_lib/Gas/Sensors/Mach Number Sensor (G)",
+          "since": "R2023a+",
+          "intent": "This block measures Mach number in a gas network. There is no change in pressure or temperature across the sensor. The physical signal port Mach reports the Mach number. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Pressure & Temperature Sensor (G)",
+          "ref": "fl_lib/Gas/Sensors/Pressure & Temperature Sensor (G)",
+          "since": "R2023a+",
+          "intent": "This block measures pressure and temperature in a gas network. There is no mass or energy flow through the sensor. The physical signal ports P, Pa, and Pg [Pa] report the pressure difference across the sensor, the absolute pressure at port A, and the gauge pressure at port A, respectively. The physical signal port T [K] reports the temperature at port A or across the sensor. Difference measurements are positive when the values at port A are greater than port B."
+        },
+        {
+          "block": "Thermodynamic Properties Sensor (G)",
+          "ref": "fl_lib/Gas/Sensors/Thermodynamic Properties Sensor (G)",
+          "since": "R2023a+",
+          "intent": "This block measures thermodynamic fluid states in a gas network. There is no mass or energy flow through the sensor. The physical signal ports h [kJ/kg], ρ [kg/m^3], cp [kJ/(kg*K)] and s [kJ/(kg*K)] report the specific enthalpy, density, specific heat at constant pressure, and specific entropy, respectively, measured at port A."
+        },
+        {
+          "block": "Transport Properties Sensor (G)",
+          "ref": "fl_lib/Gas/Sensors/Transport Properties Sensor (G)",
+          "since": "R2026a+",
+          "intent": "This block measures transport properties in a gas network. There is no mass or energy flow through the sensor. The physical signal ports μ, ν, k, and Pr report the dynamic viscosity, kinematic viscosity, thermal conductivity, and Prandtl number, respectively, measured at port A."
+        },
+        {
+          "block": "Gas Properties (G)",
+          "ref": "fl_lib/Gas/Utilities/Gas Properties (G)",
+          "since": "R2023a+",
+          "intent": "This block provides gas properties to the connected gas network. The gas is modeled as perfect, semiperfect, or real. The ideal gas law applies to perfect and semiperfect gas. For semiperfect gas, caloric and transport properties are functions to temperature. They are specified as one-dimensional arrays corresponding to Temperature vector. For real gas, all properties are functions of temperature and pressure. They are specific as two-dimensional arrays in which rows correspond to Temperature vector and columns correspond to Pressure vector. The default gas is dry air."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "hydraulic",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "hydraulic",
+      "hash": "9afe340ade861d70e2b4decb7ed3f8440078a274e438d6eb7bc1312a5d98225f",
+      "fm": {
+        "title": "Hydraulic",
+        "description": "Hydraulic-domain (legacy) elements, sources, and sensors (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "hydraulic"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Constant Area Hydraulic Orifice",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Constant Area Hydraulic Orifice",
+          "since": "R2023a+",
+          "intent": "The block models a sharp-edged constant-area orifice, flow rate through which is proportional to the pressure differential across the orifice. Connections A and B are conserving hydraulic ports associated with the orifice inlet and outlet, respectively. The block positive direction is from port A to port B. This means that the flow rate is positive if fluid flows from A to B, and the pressure differential is determined as p = p_A - p_B."
+        },
+        {
+          "block": "Constant Volume Hydraulic Chamber",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Constant Volume Hydraulic Chamber",
+          "since": "R2023a+",
+          "intent": "The block represents a fixed-volume chamber with rigid or flexible walls used in hydraulic valves, pumps, manifolds, pipes, hoses, and so on. Use this block in models where you have to account for fluid compressibility. The block has one hydraulic conserving port associated with the chamber inlet. The block positive direction is from its port to the reference point. This means that the flow rate is positive if it flows into the chamber."
+        },
+        {
+          "block": "Fluid Inertia",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Fluid Inertia",
+          "since": "R2023a+",
+          "intent": "The block models pressure differential caused by change in fluid velocity across a fluid passage of constant cross-sectional area. Connections A and B are hydraulic conserving ports. The block positive direction is from port A to port B."
+        },
+        {
+          "block": "Hydraulic Cap",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Hydraulic Cap",
+          "since": "R2023a+",
+          "intent": "This block represents a closed hydraulic circuit. No flow is permitted through this component. Connect it to hydraulic ports of other blocks that should not allow flow and optionally specify initial pressure."
+        },
+        {
+          "block": "Hydraulic Reference",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Hydraulic Reference",
+          "since": "R2023a+",
+          "intent": "This block represents a connection to atmosphere. It has one hydraulic conserving port. Connect to it hydraulic ports of other blocks that are considered directly connected to atmosphere."
+        },
+        {
+          "block": "Hydraulic Resistive Tube",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Hydraulic Resistive Tube",
+          "since": "R2023a+",
+          "intent": "This block models hydraulic pipelines with circular and noncircular cross sections and accounts for resistive property only. To account for local resistances such as bends, fittings, inlet and outlet losses, and so on, all the resistances are converted into their equivalent lengths, and then the total length of all the resistances is added to the pipe geometrical length. Connections A and B are hydraulic conserving ports. The block positive direction is from port A to port B. This means that the flow rate is positive if fluid flows from A to B, and the pressure loss is determined as p = p_A - p_B."
+        },
+        {
+          "block": "Infinite Hydraulic Resistance",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Infinite Hydraulic Resistance",
+          "since": "R2023a+",
+          "intent": "This block represents a break in an hydraulic network. There is no flow through the break. However, the fluid properties, specified by the Custom Hydraulic Fluid block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the difference in pressure of port A relative to port B."
+        },
+        {
+          "block": "Linear Hydraulic Resistance",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Linear Hydraulic Resistance",
+          "since": "R2023a+",
+          "intent": "This block represents a hydraulic resistance where pressure loss is directly proportional to flow rate. Connections A and B are conserving hydraulic ports associated with the block inlet and outlet, respectively. The block positive direction is from port A to port B. This means that the flow rate is positive if fluid flows from A to B, and the pressure loss is determined as p = p_A - p_B."
+        },
+        {
+          "block": "Variable Area Hydraulic Orifice",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Variable Area Hydraulic Orifice",
+          "since": "R2023a+",
+          "intent": "The block models a variable area orifice. The area of the orifice is expected to be computed outside the block and imported via the AR physical signal connection. The flow rate through the orifice is proportional to the orifice area and pressure differential across the orifice. Connections A and B are conserving hydraulic ports associated with the orifice inlet and outlet, respectively. Connection AR is a physical signal port through which an instantaneous value of the orifice area is provided. The block positive direction is from port A to port B."
+        },
+        {
+          "block": "Variable Hydraulic Chamber",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Variable Hydraulic Chamber",
+          "since": "R2023a+",
+          "intent": "The block models fluid compressibility in variable volume chambers. The instantaneous value of the chamber volume is provided via the physical signal port V. Note that this block takes into account only the flow rate caused by fluid compressibility and is intended to be connected in parallel with the block that simulates flow consumption due to volume change. Port A is a hydraulic conserving port associated with the chamber inlet. Port V is a physical signal port that corresponds to chamber volume. The block positive direction is from port A to the reference point. This means that the flow rate is positive if it flows into the chamber."
+        },
+        {
+          "block": "Hydraulic Flow Rate Sensor",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sensors/Hydraulic Flow Rate Sensor",
+          "since": "R2023a+",
+          "intent": "The block measures the flow rate in a hydraulic network. There is no change in pressure across the sensor. Physical signal outputs Q and M report the liquid volumetric flow rate and mass flow rate, respectively, through the sensor. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Hydraulic Pressure Sensor",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sensors/Hydraulic Pressure Sensor",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal hydraulic pressure sensor, that is, a device that converts hydraulic pressure differential measured between two points into a physical control signal proportional to the pressure. Connections A and B are conserving hydraulic ports and connection P is a physical signal port. The sensor is oriented from A to B and measured pressure is P = p_A - p_B."
+        },
+        {
+          "block": "Hydraulic Constant Flow Rate Source",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sources/Hydraulic Constant Flow Rate Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of hydraulic energy that is powerful enough to maintain specified flow rate at its outlet regardless of pressure differential across the source. The flow rate through the source is specified by the block parameter. Block connections T and P are the conserving hydraulic ports associated with the source inlet and outlet respectively. The block positive direction is from port T to port P."
+        },
+        {
+          "block": "Hydraulic Constant Pressure Source",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sources/Hydraulic Constant Pressure Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of hydraulic energy that is powerful enough to maintain specified pressure difference regardless of the flow rate through the source. The pressure difference between ports P and T is specified with the block parameter. Block connections T and P correspond to the source inlet and outlet ports respectively. The block positive direction is from port P to port T."
+        },
+        {
+          "block": "Hydraulic Flow Rate Source",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sources/Hydraulic Flow Rate Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of hydraulic energy that is powerful enough to maintain specified flow rate at its outlet regardless of the pressure differential across the source. Block connections T and P correspond to the hydraulic inlet and outlet ports, respectively, and connection S represents a physical signal port. The flow rate through the source is directly proportional to the control signal. The block positive direction is from port T to port P."
+        },
+        {
+          "block": "Hydraulic Pressure Source",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sources/Hydraulic Pressure Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of hydraulic energy that is powerful enough to maintain specified pressure at its outlet regardless of the flow rate consumed by the system. Block connections T and P correspond to the hydraulic inlet and outlet ports, respectively, and connection S represents a physical signal port. The pressure differential across the source is directly proportional to the control signal. The block positive direction is from port P to port T."
+        },
+        {
+          "block": "Custom Hydraulic Fluid",
+          "ref": "fl_lib/Hydraulic/Hydraulic Utilities/Custom Hydraulic Fluid",
+          "since": "R2023a+",
+          "intent": "The block assigns fluid properties for all components assembled in a particular loop. The loop detection is performed automatically and the block is considered as part of the loop if it is hydraulically connected to at least one of the loop components. If no Hydraulic Fluid block is connected to the loop, the default properties of the Custom Hydraulic Fluid block are assigned."
+        },
+        {
+          "block": "Interface (H-IL)",
+          "ref": "fl_lib/Hydraulic/Hydraulic Utilities/Interface (H-IL)",
+          "since": "R2023a+",
+          "intent": "This block represents a flow connection between Hydraulic and Isothermal liquid networks. Pressure and mass flow rates are equal at the interface. Fluid properties of each fluid network are not shared across the interface."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "isothermal-liquid",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "isothermal-liquid",
+      "hash": "3429c704b43899798a1695caecbf6080954f7e46ac4856edf29f79136582bb1e",
+      "fm": {
+        "title": "Isothermal liquid",
+        "description": "Isothermal liquid thermal-fluid elements (constant-temperature liquid) (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "isothermal liquid"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Cap (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Cap (IL)",
+          "since": "R2025a+",
+          "intent": "This block represents a terminus in an isothermal liquid network. There is no mass flow through the cap. This block can optionally be used to assign a beginning value and priority to the pressure of the connected node."
+        },
+        {
+          "block": "Constant Volume Chamber (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Constant Volume Chamber (IL)",
+          "since": "R2023a+",
+          "intent": "This block models mass storage in an isothermal liquid network. The chamber contains a constant volume of liquid. Pressure varies dynamically based on the net mass accumulation in the volume."
+        },
+        {
+          "block": "Flow Resistance (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Flow Resistance (IL)",
+          "since": "R2023a+",
+          "intent": "This block represents a generic pressure loss in an isothermal liquid network. The drop in pressure is proportional to the square of the mass flow rate. The proportionality constant is calculated from the specified nominal condition."
+        },
+        {
+          "block": "Infinite Flow Resistance (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Infinite Flow Resistance (IL)",
+          "since": "R2023a+",
+          "intent": "This block represents a break in an isothermal liquid network. There is no mass flow through the break. However, the liquid properties, specified by the Isothermal Liquid Properties (IL) block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the difference in pressure of port A relative to port B."
+        },
+        {
+          "block": "Laminar Leakage (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Laminar Leakage (IL)",
+          "since": "R2023a+",
+          "intent": "This block models the laminar flow in an isothermal liquid network. The flow rate is calculated from the Hagen-Poiseuille equation."
+        },
+        {
+          "block": "Local Restriction (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Local Restriction (IL)",
+          "since": "R2023a+",
+          "intent": "This block models the pressure loss due to a flow area restriction such as a valve or an orifice in an isothermal liquid network. The restriction area can be optionally set by the physical signal input port AR. The input is limited by the minimum and maximum restriction area."
+        },
+        {
+          "block": "Pipe (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Pipe (IL)",
+          "since": "R2023a+",
+          "intent": "This block models pipe flow dynamics in an isothermal liquid network due to viscous friction losses. You can optionally include the effects of dynamic compressibility and fluid inertia. The pipe contains a constant volume of liquid. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the net mass accumulation in the volume. Selecting Enable fluid inertia causes the liquid to resist acceleration."
+        },
+        {
+          "block": "Reservoir (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Reservoir (IL)",
+          "since": "R2023a+",
+          "intent": "This block sets a boundary condition in an isothermal liquid network. The volume of liquid inside the reservoir is assumed infinite. Therefore, the flow is assumed quasi-steady. Liquid leaves and enters the reservoir at the reservoir pressure. The reservoir pressure can be optionally set by the physical signal port P."
+        },
+        {
+          "block": "Flow Rate Sensor (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Sensors/Flow Rate Sensor (IL)",
+          "since": "R2023a+",
+          "intent": "This block measures mass or volumetric flow rate in an isothermal liquid network. There is no change in pressure across the sensor. The physical signal ports M and V report the mass flow rate and the volumetric flow rate, respectively, through the sensor. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Liquid Properties Sensor (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Sensors/Liquid Properties Sensor (IL)",
+          "since": "R2023a+",
+          "intent": "This block measures fluid properties in an isothermal liquid network. There is no mass flow through the sensor. The physical signal ports ρ, β, θ, μ, and ν report the mixture density, isothermal bulk modulus, molar fraction of air that is entrained (nondissolved), dynamic viscosity, and kinematic viscosity, respectively, measured at port A."
+        },
+        {
+          "block": "Pressure Sensor (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Sensors/Pressure Sensor (IL)",
+          "since": "R2023a+",
+          "intent": "This block measures pressure in an isothermal liquid network. There is no mass flow through the sensor. The physical signal ports P, Pa and Pg report the pressure difference across the sensor, the absolute pressure at port A, and the gauge pressure at port A, respectively. The pressure difference measurement is positive when the pressure at port A is greater than the pressure at port B."
+        },
+        {
+          "block": "Isothermal Liquid Properties (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Utilities/Isothermal Liquid Properties (IL)",
+          "since": "R2023a+",
+          "intent": "This block provides isothermal liquid properties to the connected isothermal liquid network. The default liquid is water. Use the <b>Isothermal liquid properties</b> button in the <b>Plots</b> section to visualize isothermal liquid properties as a function of pressure for the connected isothermal liquid network."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "magnetic",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "magnetic",
+      "hash": "e9212964a0079016956a9b50844b70cb93dd41149ec38365a6fe385c2791d1f3",
+      "fm": {
+        "title": "Magnetic",
+        "description": "Magnetic-domain elements, sources, and sensors (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "magnetic"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Fundamental Reluctance",
+          "ref": "fl_lib/Magnetic/Magnetic Elements/Fundamental Reluctance",
+          "since": "R2023a+",
+          "intent": "Models a magnetic reluctance, that is a component that resists flux flow. The ratio of the magnetomotive force (mmf) across the component to the resulting flux that flows through the component is constant, and the ratio value is directly defined as the reluctance, R. The terminals of the reluctance are denoted by N and S, respectively. By convention, the mmf across the reluctance is given by mmf(N) - mmf(S), and the sign of the flux is positive when flowing through the device from the N to the S terminal."
+        },
+        {
+          "block": "Magnetic Reference",
+          "ref": "fl_lib/Magnetic/Magnetic Elements/Magnetic Reference",
+          "since": "R2023a+",
+          "intent": "Magnetic reference port. A model must contain at least one magnetic reference port."
+        },
+        {
+          "block": "Permanent Magnet",
+          "ref": "fl_lib/Magnetic/Magnetic Elements/Permanent Magnet",
+          "since": "R2023b+",
+          "intent": "Models a permanent magnet, which is a component that passively generates a magnetic field. When you subject the block to an external magnetic field, the block approximates the flux density B of the resultant magnetic field using one of these linear relationships: B = bR + muR*mu0*H = bR/hC(hC+H) = muR*mu0*(hC+H) where H is the strength of the external magnetic field, bR is the remanent flux density of the magnet, hC is the coercivity of the magnet, muR is the relative magnetic permeability of material, and mu0 is the magnetic permeability constant. N and S denote the north and south terminals of the permanent magnet, respectively. By convention, the mmf across the permanent magnet is given by mmf(N) - mmf(S). The flux is positive when the flux flows through the device from the N to the S terminal."
+        },
+        {
+          "block": "Reluctance",
+          "ref": "fl_lib/Magnetic/Magnetic Elements/Reluctance",
+          "since": "R2023a+",
+          "intent": "Models a magnetic reluctance, that is a component that resists flux flow. The ratio of the magnetomotive force (mmf) across the component to the resulting flux that flows through the component is constant, and the ratio value is defined as the reluctance, R. Reluctance depends on the geometry of the section modeled R = g/(mu0*mur*CSA) where g is the thickness of the section or air gap, mu0 is the magnetic permeability constant, mur is the relative magnetic permeability of the material, and CSA is the cross-sectional area The terminals of the reluctance are denoted by N and S, respectively. By convention, the mmf across the reluctance is given by mmf(N) - mmf(S), and the sign of the flux is positive when flowing through the device from the N to the S terminal."
+        },
+        {
+          "block": "Reluctance Force Actuator",
+          "ref": "fl_lib/Magnetic/Magnetic Elements/Reluctance Force Actuator",
+          "since": "R2023a+",
+          "intent": "Represents a generic magnetomotive device based on the reluctance force F = -0.5 * PHI^2 * dR/dx where R is the reluctance dependent on the thickness of, or length of, the air gap x, and PHI is the flux in the magnetic circuit. The magnetic force produced acts to close the air gap, i.e. the resulting force is negative acting from the mechanical C to R ports."
+        },
+        {
+          "block": "Variable Reluctance",
+          "ref": "fl_lib/Magnetic/Magnetic Elements/Variable Reluctance",
+          "since": "R2023a+",
+          "intent": "Models a variable reluctance, that is a component that resists flux flow. The ratio of the magnetomotive force (mmf) across the component to the resulting flux that flows through the component is defined as the reluctance, R, that is dependent on the physical signal port. R = X/(mu0*mur*CSA) where X is the value presented at the physical signal port, mu0 is the magnetic permeability constant, mur is the relative magnetic permeability of the material, and CSA is the cross-sectional area. Connections N and S are conserving magnetic ports. The flux is positive if it flows from N to S, and the mmf across the reluctance is given by mmf(N) - mmf(S)."
+        },
+        {
+          "block": "Flux Sensor",
+          "ref": "fl_lib/Magnetic/Magnetic Sensors/Flux Sensor",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal flux sensor, that is, a device that converts flux measured in any magnetic branch into a physical signal proportional to the flux. Connections N and S are conserving magnetic ports through which the sensor is inserted into the circuit. The physical signal port outputs the value of the flux, which is positive when the flux flows from the N to the S port."
+        },
+        {
+          "block": "MMF Sensor",
+          "ref": "fl_lib/Magnetic/Magnetic Sensors/MMF Sensor",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal magnetomotive force (mmf) sensor, that is, a device that converts the mmf measured between any magnetic connections into a physical signal proportional to the mmf. Connections N and S are conserving magnetic ports through which the sensor is connected to the circuit. The physical signal port outputs the value of the mmf."
+        },
+        {
+          "block": "Controlled Flux Source",
+          "ref": "fl_lib/Magnetic/Magnetic Sources/Controlled Flux Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal flux source that is powerful enough to maintain the specified flux through it regardless of the mmf across it. The output flux is PHI = PHIs, where PHIs is the numerical value presented at the physical signal port."
+        },
+        {
+          "block": "Controlled MMF Source",
+          "ref": "fl_lib/Magnetic/Magnetic Sources/Controlled MMF Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal magnetomotive force (mmf) source that is powerful enough to maintain the specified mmf at its output regardless of the flux passing through it. The output mmf is MMF = MMFI, where MMFI is the numerical value presented at the physical signal port."
+        },
+        {
+          "block": "Flux Source",
+          "ref": "fl_lib/Magnetic/Magnetic Sources/Flux Source",
+          "since": "R2023a+",
+          "intent": "The ideal flux source maintains a constant flux through it, independent of the mmf across its terminals. The output flux is defined by the Constant flux parameter, and can be any real value."
+        },
+        {
+          "block": "MMF Source",
+          "ref": "fl_lib/Magnetic/Magnetic Sources/MMF Source",
+          "since": "R2023a+",
+          "intent": "The ideal magnetomotive force (mmf) source maintains a constant mmf across its output terminals, independent of the flux flowing through the source. The output mmf is defined by the Constant mmf parameter, and can be any real value."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "mechanical",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "mechanical",
+      "hash": "d31086781c30bee70915ab3bfb60b5bcd138500ec7f547bd4dde6d9c0a42592d",
+      "fm": {
+        "title": "Mechanical",
+        "description": "Mechanical-domain building blocks (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "mechanical"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Flow Rate Source (G)",
+          "ref": "fl_lib/Gas/Sources/Flow Rate Source (G)",
+          "since": "R2023b+",
+          "intent": "This block represents an ideal mechanical energy source in a gas network that can maintain a constant or controlled mass flow rate or volumetric flow rate regardless of the pressure differential. There is no flow resistance and no heat exchange with the environment. A positive value causes gas to flow from port A to port B."
+        },
+        {
+          "block": "Pressure Source (G)",
+          "ref": "fl_lib/Gas/Sources/Pressure Source (G)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a gas network that can maintain a constant or controlled pressure differential regardless of the mass flow rate. There is no flow resistance and no heat exchange with the environment. The pressure differential can be optionally set by the physical signal port P. A positive pressure differential causes the pressure at port B to be greater than the pressure at port A."
+        },
+        {
+          "block": "Hydraulic Constant Mass Flow Rate Source",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sources/Hydraulic Constant Mass Flow Rate Source",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a hydraulic network that can maintain a constant mass flow rate regardless of the pressure differential. The source does not generate any losses due to friction. A positive mass flow rate causes liquid to flow from port T to port P."
+        },
+        {
+          "block": "Hydraulic Mass Flow Rate Source",
+          "ref": "fl_lib/Hydraulic/Hydraulic Sources/Hydraulic Mass Flow Rate Source",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a hydraulic network that can maintain a controlled mass flow rate regardless of the pressure differential. The source does not generate any losses due to friction. The mass flow rate is set by the physical signal port M. A positive mass flow rate causes liquid to flow from port T to port P."
+        },
+        {
+          "block": "Flow Rate Source (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Sources/Flow Rate Source (IL)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in an isothermal liquid network that can maintain a constant or controlled mass flow rate or volumetric flow rate regardless of the pressure differential. The source does not generate any losses due to friction. The mass or volume flow rate can be optionally set by physical signal port M or V, respectively. A positive value causes liquid to flow from port A to port B."
+        },
+        {
+          "block": "Pressure Source (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Sources/Pressure Source (IL)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in an isothermal liquid network that can maintain a constant or controlled pressure differential regardless of the flow rate. The source does not generate any losses due to friction. The pressure differential can be optionally set by the physical signal port P. A positive value causes the pressure at port B to be greater than port A."
+        },
+        {
+          "block": "Flow Rate Source (MA)",
+          "ref": "fl_lib/Moist Air/Sources/Flow Rate Source (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a moist air network that can maintain a constant or controlled mass flow rate or volumetric flow rate regardless of the pressure differential. There is no flow resistance and no heat exchange with the environment. The mass or volumetric flow rate can be optionally set by physical signal port M [kg/s] or V [m^3/s], respectively. A positive flow rate causes moist air to flow from port A to port B."
+        },
+        {
+          "block": "Pressure Source (MA)",
+          "ref": "fl_lib/Moist Air/Sources/Pressure Source (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a moist air network that can maintain a constant or controlled pressure differential regardless of the mass flow rate. There is no flow resistance and no heat exchange with the environment. The pressure differential can be optionally set by physical signal port P [Pa]. A positive pressure differential causes the pressure at port B to be greater than port A."
+        },
+        {
+          "block": "Flow Rate Source (TL)",
+          "ref": "fl_lib/Thermal Liquid/Sources/Flow Rate Source (TL)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a thermal liquid network that can maintain a constant or controlled mass flow rate or volumetric flow rate regardless of the pressure differential. There is no flow resistance and no heat exchange with the environment. A positive value causes liquid to flow from port A to port B."
+        },
+        {
+          "block": "Pressure Source (TL)",
+          "ref": "fl_lib/Thermal Liquid/Sources/Pressure Source (TL)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a thermal liquid network that can maintain a constant or controlled pressure differential regardless of the mass flow rate. There is no flow resistance and no heat exchange with the environment. The pressure differential can be optionally set by the physical signal port P. A positive pressure differential causes the pressure at port B to be greater than port A."
+        },
+        {
+          "block": "Flow Rate Source (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sources/Flow Rate Source (2P)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a two-phase fluid network that can maintain a constant or controlled mass flow rate or volumetric flow rate regardless of the pressure differential. There is no flow resistance and no heat exchange with the environment. A positive value causes fluid to flow from port A to port B."
+        },
+        {
+          "block": "Pressure Source (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sources/Pressure Source (2P)",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal mechanical energy source in a two-phase fluid network that can maintain a constant or controlled pressure differential regardless of the mass flow rate. There is no flow resistance and no heat exchange with the environment. The pressure differential can be optionally set by the physical signal port P. A positive pressure differential causes the pressure at port B to be greater than port A."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "moist-air",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "moist-air",
+      "hash": "34d6005c3f79cfd441aadbf1b4c05deee1575170d8561789feb92a072cd55d05",
+      "fm": {
+        "title": "Moist air",
+        "description": "Moist-air elements for HVAC and humidity modeling (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "moist air"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Absolute Reference (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Absolute Reference (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents a reference node in a moist air network where pressure and temperature are equal to absolute zero, and specific humidity, trace gas mass fraction, and mass ratio of water droplets to moist air are equal to zero."
+        },
+        {
+          "block": "Cap (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Cap (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents a terminus in a moist air network. There is no mass or energy flow through the cap. Connect the cap to any unused moist air conserving ports. This block can optionally be used to assign a beginning value and priority to the variables of the connected node."
+        },
+        {
+          "block": "Constant Volume Chamber (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Constant Volume Chamber (MA)",
+          "since": "R2023a+",
+          "intent": "This block models mass and energy storage in a moist air network. The chamber contains a constant volume of moist air. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume. Water vapor condenses when the moist air volume is saturated. A portion of the condensate can be entrained as water droplets. The rest is assumed to be drained and removed. Water droplets evaporate when the moist air volume is not saturated. A, B, C, D - Moist air conserving ports associated with the chamber inlets. H - Thermal conserving port associated with the thermal mass of the moist air volume. S - Optional moist air source conserving port for adding or removing moisture and trace gas. W [kg/s] - Physical signal port reporting the rate of condensation that is removed. F - Physical signal port reporting moist air volume measurements. Connect to a Measurement Selector (MA) block."
+        },
+        {
+          "block": "Flow Resistance (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Flow Resistance (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents a generic pressure loss in a moist air network. The drop in pressure is proportional to the square of the mass flow rate and inversely proportional to the density. The proportionality constant is determined from the specified nominal conditions. Set Nominal density to zero to omit the density dependence."
+        },
+        {
+          "block": "Infinite Flow Resistance (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Infinite Flow Resistance (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents a break in a moist air network. There is no mass or energy flow through the break. However, the moist air properties, specified by the Moist Air Properties (MA) block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the differences in pressure, temperature, specific humidity, trace gas mass fraction, and mass ratio of water droplets to moist air of port A relative to port B."
+        },
+        {
+          "block": "Local Restriction (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Local Restriction (MA)",
+          "since": "R2023a+",
+          "intent": "This block models the pressure loss due to a flow area restriction such as a valve or an orifice in a moist air network. There is no heat exchange with the environment. Choked flow occurs when the restriction reaches sonic condition. The restriction area can be optionally set by physical signal port AR [m^2]. The input is limited by the minimum and maximum restriction area."
+        },
+        {
+          "block": "Moisture Separator (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Moisture Separator (MA)",
+          "since": "R2024b+",
+          "intent": "This block removes a specified fraction of water vapor and water droplets from the flow through the block in a moist air network. There is no additional thermodynamic effect aside from the deduction of the water removed from the energy balance. The pressure drop and flow rate through the block is scaled from the specified nominal conditions. Physical signal ports W [kg/s] and D [kg/s] report the rate of water vapor and water droplets removed, respectively."
+        },
+        {
+          "block": "Pipe (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Pipe (MA)",
+          "since": "R2023a+",
+          "intent": "This block models pipe flow dynamics in a moist air network due to viscous friction losses and convective heat transfer with the pipe wall. The pipe contains a constant volume of moist air. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume. Water vapor condenses when the moist air volume is saturated and optionally when the pipe wall is below the dew point. A portion of the condensate can be entrained as water droplets. The rest is assumed to be drained and removed. Water droplets evaporate when the moist air volume is not saturated. The flow is choked when the outlet reaches the speed of sound. A, B - Moist air conserving ports associated with the pipe inlet and outlet. H - Thermal conserving port associated with the pipe wall. S - Optional moist air source conserving port for adding or removing moisture and trace gas. W [kg/s] - Physical signal port reporting the rate of condensation that is removed. F - Physical signal port reporting moist air volume measurements. Connect to a Measurement Selector (MA) block."
+        },
+        {
+          "block": "Reservoir (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Reservoir (MA)",
+          "since": "R2023a+",
+          "intent": "This block sets boundary conditions in a moist air network. The volume of moist air inside the reservoir is assumed infinite. Therefore, the flow is assumed quasi-steady. Moist air leaves the reservoir at the reservoir pressure, temperature, specific humidity, trace gas mass fraction, and mass ratio of water droplets to moist air. Moist air enters the reservoir at the reservoir pressure, but the temperature, specific humidity, trace gas mass fraction, and mass ratio of water droplets to moist air are determined by the moist air network upstream. The reservoir conditions can be optionally set by physical signal ports. Pressure and temperature are set by ports P and T, respectively. Relative humidity, specific humidity, water vapor mole fraction, or humidity ratio is set by port W. Wet-bulb temperature is set by port Tw. Trace gas mass or mole fraction is set by port G. Mass ratio of water droplets to moist air is set by port D."
+        },
+        {
+          "block": "Flow Rate Sensor (MA)",
+          "ref": "fl_lib/Moist Air/Sensors/Flow Rate Sensor (MA)",
+          "since": "R2023a+",
+          "intent": "This block measures mass, volumetric, and energy flow rates in a moist air network. There is no change in pressure, temperature, specific humidity, or trace gas mass fraction across the sensor. Physical signal ports M [kg/s], V [m^3/s], φ [W], Mw [kg/s], Mg [kg/s], and Md [kg/s] report the mass flow rate, volumetric flow rate, energy flow rate, water vapor mass flow rate, trace gas mass flow rate, and water droplets mass flow rate, respectively, through the sensor. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Measurement Selector (MA)",
+          "ref": "fl_lib/Moist Air/Sensors/Measurement Selector (MA)",
+          "since": "R2023a+",
+          "intent": "This block extracts the moist air volume measurements reported by the physical signal port F of moist air blocks. Physical signal ports P [Pa], T [K], W, G, and D report the pressure, temperature, moisture level, trace gas level, and mass ratio of water droplets to moist air, respectively, of the connected moist air volume."
+        },
+        {
+          "block": "Moisture & Trace Gas Sensor (MA)",
+          "ref": "fl_lib/Moist Air/Sensors/Moisture & Trace Gas Sensor (MA)",
+          "since": "R2024b+",
+          "intent": "This block measures the amount of water vapor, trace gas, and water droplets in a moist air network. There is no mass or energy flow through the sensor. Physical signal ports reports the measurements at port A. Port W reports the relative humidity, specific humidity, water vapor mole fraction, or humidity ratio. Port Tw [K] reports the wet-bulb temperature. Port G reports the trace gas mass or mole fraction. Port D reports the mass ratio of water droplets to moist air."
+        },
+        {
+          "block": "Pressure & Temperature Sensor (MA)",
+          "ref": "fl_lib/Moist Air/Sensors/Pressure & Temperature Sensor (MA)",
+          "since": "R2023a+",
+          "intent": "This block measures pressure and temperature in a moist air network. There is no mass or energy flow through the sensor. Physical signal ports P, Pa, and Pg [Pa] report the pressure difference across the sensor, the absolute pressure at port A, and the gauge pressure at port A, respectively. Physical signal port T [K] reports the temperature at port A or across the sensor. Difference measurements are positive when the values at port A are greater than port B."
+        },
+        {
+          "block": "Thermodynamic Properties Sensor (MA)",
+          "ref": "fl_lib/Moist Air/Sensors/Thermodynamic Properties Sensor (MA)",
+          "since": "R2023a+",
+          "intent": "This block measures thermodynamic fluid states in a moist air network. There is no mass or energy flow through the sensor. Physical signal ports h [J/kg], ρ [kg/m^3], cp [J/(kg*K)], and s [J/(kg*K)] report the specific enthalpy, density, specific heat at constant pressure, and specific entropy, respectively, measured at port A."
+        },
+        {
+          "block": "Transport Properties Sensor (MA)",
+          "ref": "fl_lib/Moist Air/Sensors/Transport Properties Sensor (MA)",
+          "since": "R2026a+",
+          "intent": "This block measures transport properties in a moist air network. There is no mass or energy flow through the sensor. The physical signal ports μ, ν, k, and Pr report the dynamic viscosity, kinematic viscosity, thermal conductivity, and Prandtl number, respectively, measured at port A."
+        },
+        {
+          "block": "Moisture Source (MA)",
+          "ref": "fl_lib/Moist Air/Sources/Moisture & Trace Gas Sources/Moisture Source (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents a constant or controlled source or sink of moisture for the connected moist air volume. The moisture can be water vapor or water droplets. Port S is a moist air source conserving port for connecting only to port S of the moist air block where moisture is added or removed. A positive or negative value causes moisture to be added or removed, respectively. The rate of moisture added or removed can be optionally set by physical signal port M [kg/s]. The temperature of any added moisture can be optionally set by physical signal port T [K]."
+        },
+        {
+          "block": "Trace Gas Source (MA)",
+          "ref": "fl_lib/Moist Air/Sources/Moisture & Trace Gas Sources/Trace Gas Source (MA)",
+          "since": "R2023a+",
+          "intent": "This block represents a constant or controlled source or sink of trace gas for the connected moist air volume. Port S is a moist air source conserving port for connecting only to port S of the moist air block where trace gas is added or removed. A positive or negative value causes trace gas to be added or removed, respectively. The rate of trace gas added or removed can be optionally set by physical signal port M [kg/s]. The temperature of any added trace gas can be optionally set by physical signal port T [K]."
+        },
+        {
+          "block": "Moist Air Properties (MA)",
+          "ref": "fl_lib/Moist Air/Utilities/Moist Air Properties (MA)",
+          "since": "R2023a+",
+          "intent": "This block provides moist air properties to the connected moist air network. Moist air is composed of dry air, water vapor, and an optional trace gas. The default trace gas is carbon dioxide. In addition, the moist air flow can optionally entrain condensed water droplets. Dry air, water vapor, and trace gas are assumed to be semiperfect gas. Pressure, temperature, and density obey the ideal gas law. Other properties are functions of temperature, specified as tabulated data corresponding to the Temperature vector. Entrained water droplets are assumed to be small particles that contribute enthalpy to the energy balance but not to any other properties."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "physical-signals",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "physical-signals",
+      "hash": "3471603952164187c7ce521083f8245618f3366384cc18e1a578c449928c232c",
+      "fm": {
+        "title": "Physical signals",
+        "description": "Physical-signal math, sources, sensors, and utilities that operate on Simscape PS signals (50 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "physical signals"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "PS Constant Delay",
+          "ref": "fl_lib/Physical Signals/Delays/PS Constant Delay",
+          "since": "R2023a+",
+          "intent": "This block returns the input signal delayed by the specified time."
+        },
+        {
+          "block": "PS Variable Delay",
+          "ref": "fl_lib/Physical Signals/Delays/PS Variable Delay",
+          "since": "R2023a+",
+          "intent": "This block delays the input signal. The delay time and input history are also specified as inputs."
+        },
+        {
+          "block": "PS Asynchronous Sample & Hold",
+          "ref": "fl_lib/Physical Signals/Discrete/PS Asynchronous Sample & Hold",
+          "since": "R2023a+",
+          "intent": "This block sets output Y equal to input U when the rising edge of the trigger input becomes greater than zero. This block can be used in conjunction with other physical signal blocks and custom blocks defined in the Simscape(TM) language to model other discrete and event-based behaviors."
+        },
+        {
+          "block": "PS Add",
+          "ref": "fl_lib/Physical Signals/Functions/PS Add",
+          "since": "R2023a+",
+          "intent": "This block adds signals of the two inputs: y = u_1 + u_2 All connections are physical signal ports."
+        },
+        {
+          "block": "PS Bias",
+          "ref": "fl_lib/Physical Signals/Functions/PS Bias",
+          "since": "R2023b+",
+          "intent": "This block adds a constant bias to the input physical signal: y = u + bias The Bias parameter value can be a scalar or a vector. The block output is a physical signal port."
+        },
+        {
+          "block": "PS Concatenate",
+          "ref": "fl_lib/Physical Signals/Functions/PS Concatenate",
+          "since": "R2023b+",
+          "intent": "Concatenates two input vectors or two-dimensional matrices into a single output. The two inputs must have commensurate units. The inputs are concatenated vertically by default. To concatenate horizontally, select the Concatenate horizontally check box."
+        },
+        {
+          "block": "PS Divide",
+          "ref": "fl_lib/Physical Signals/Functions/PS Divide",
+          "since": "R2023a+",
+          "intent": "This block divides the first input signal by the second one: y = u_1 ./ u_2 All connections are physical signal ports."
+        },
+        {
+          "block": "PS Dot Product",
+          "ref": "fl_lib/Physical Signals/Functions/PS Dot Product",
+          "since": "R2023b+",
+          "intent": "Computes the dot product of two input vectors or two-dimensional matrices: y = dot(u1,u2) For two-dimensional matrix inputs, computes the column-wise dot product."
+        },
+        {
+          "block": "PS Gain",
+          "ref": "fl_lib/Physical Signals/Functions/PS Gain",
+          "since": "R2023a+",
+          "intent": "This block multiplies the input physical signal by a constant: y = u .* gain The Gain parameter accepts both positive and negative values. All connections are physical signal ports."
+        },
+        {
+          "block": "PS Math Function",
+          "ref": "fl_lib/Physical Signals/Functions/PS Math Function",
+          "since": "R2023a+",
+          "intent": "This block applies a mathematical function to the input u: y = fcn(u) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Product",
+          "ref": "fl_lib/Physical Signals/Functions/PS Product",
+          "since": "R2023a+",
+          "intent": "This block multiplies signals of the two inputs: y = u_1 .* u_2 All connections are physical signal ports."
+        },
+        {
+          "block": "PS Subtract",
+          "ref": "fl_lib/Physical Signals/Functions/PS Subtract",
+          "since": "R2023a+",
+          "intent": "This block performs subtraction on two inputs: y = u_1 - u_2 All connections are physical signal ports."
+        },
+        {
+          "block": "PS Sum of Elements",
+          "ref": "fl_lib/Physical Signals/Functions/PS Sum of Elements",
+          "since": "R2023b+",
+          "intent": "Computes the sum of elements of the input vector or two-dimensional matrix: y = sum(u) For two-dimensional matrix inputs, computes the column-wise sum of elements. To compute the sum of all the elements of a matrix, select the Sum all elements check box."
+        },
+        {
+          "block": "PS Integrator",
+          "ref": "fl_lib/Physical Signals/Linear Operators/PS Integrator",
+          "since": "R2023a+",
+          "intent": "This block performs continuous-time integration of the input Physical Signal. The output resets to the initial condition when the optional reset signal, R, triggers. The initial condition can either be a fixed parameter or defined by a physical signal, X0. The output limits can either be fixed parameters or defined by physical signals, U and L."
+        },
+        {
+          "block": "PS State-Space",
+          "ref": "fl_lib/Physical Signals/Linear Operators/PS State-Space",
+          "since": "R2025a+",
+          "intent": "This block implements a state-space representation of the linear time-invariant system that these equations define: E*dx/dt = A*x + B*u y = C*x + D*u where x is the dimensionless state vector, u is the input vector, y is the output vector, E is the descriptor matrix, A is the state matrix, B is the input matrix, C is the output matrix, and D is the feedthrough or direct transmission matrix."
+        },
+        {
+          "block": "PS Transfer Function",
+          "ref": "fl_lib/Physical Signals/Linear Operators/PS Transfer Function",
+          "since": "R2023a+",
+          "intent": "This block implements a first-order transfer function. Select between a Lag or Lead-lag transfer function. The output resets to the initial condition when the optional reset signal, R, triggers. The initial condition can either be a fixed parameter or defined by a physical signal, Y0."
+        },
+        {
+          "block": "PS Lookup Table (1D)",
+          "ref": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (1D)",
+          "since": "R2023a+",
+          "intent": "This block represents a physical signal converter whose input-output relationship is specified by a lookup table. The table grid must be in strictly ascending or strictly descending order, but the spacing can be nonuniform. Use the <b>Table</b> button in the <b>Plots</b> section to visualize the table data based on the selected interpolation and extrapolation methods."
+        },
+        {
+          "block": "PS Lookup Table (2D)",
+          "ref": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (2D)",
+          "since": "R2023a+",
+          "intent": "This block represents a physical signal converter whose input-output relationship is specified by a two-dimensional lookup table. The two table grid vectors define a Cartesian grid in 2D space. Each of the two table grid vectors must be in strictly ascending or strictly descending order, but the spacing can be nonuniform. Use the <b>Table</b> button in the <b>Plots</b> section to visualize the table data based on the selected interpolation and extrapolation methods."
+        },
+        {
+          "block": "PS Lookup Table (3D)",
+          "ref": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (3D)",
+          "since": "R2023a+",
+          "intent": "This block represents a physical signal converter whose input-output relationship is specified by a three-dimensional lookup table. The three table grid vectors define a Cartesian grid in 3D space. Each of the three table grid vectors must be in strictly ascending or strictly descending order, but the spacing can be nonuniform."
+        },
+        {
+          "block": "PS Lookup Table (4D)",
+          "ref": "fl_lib/Physical Signals/Lookup Tables/PS Lookup Table (4D)",
+          "since": "R2023a+",
+          "intent": "This block represents a physical signal converter whose input-output relationship is specified by a four-dimensional lookup table. The four table grid vectors define a Cartesian grid in 4D space. Each of the four table grid vectors must be in strictly ascending or strictly descending order, but the spacing can be nonuniform."
+        },
+        {
+          "block": "PS Scattered Lookup Table (2D)",
+          "ref": "fl_lib/Physical Signals/Lookup Tables/PS Scattered Lookup Table (2D)",
+          "since": "R2023a+",
+          "intent": "This block represents a physical signal converter whose input-output relationship is specified by a two-dimensional scattered lookup table. The data points coordinates 1 and 2 are vectors of unstructured data points in 2D space and the function values represent the data value at each of those points. All vectors must be the same size."
+        },
+        {
+          "block": "PS Scattered Lookup Table (3D)",
+          "ref": "fl_lib/Physical Signals/Lookup Tables/PS Scattered Lookup Table (3D)",
+          "since": "R2023a+",
+          "intent": "This block represents a physical signal converter whose input-output relationship is specified by a three-dimensional scattered lookup table. The data points coordinates 1, 2 and, 3 are vectors of unstructured data points in 3D space and the function values represent the data value at each of those points. All vectors must be the same size."
+        },
+        {
+          "block": "PS Abs",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Abs",
+          "since": "R2023a+",
+          "intent": "This block returns the absolute value of its input: y = abs(u) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Ceil",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Ceil",
+          "since": "R2023a+",
+          "intent": "This block returns the smallest integer larger than or equal to the input: y = ceil(u) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Dead Zone",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Dead Zone",
+          "since": "R2023a+",
+          "intent": "This block generates zero output when input signal falls within a specified region, called a dead zone. The block parameters are the lower and upper limits of the dead zone. If the input is greater than or equal to the upper limit, the output is the input minus the upper limit. If the input is less than or equal to the lower limit, the output is the input minus the lower limit. Both the input and the output are physical signal ports."
+        },
+        {
+          "block": "PS Fix",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Fix",
+          "since": "R2023a+",
+          "intent": "This block rounds the input towards zero: y = fix(u) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Floor",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Floor",
+          "since": "R2023a+",
+          "intent": "This block returns the largest integer smaller than or equal to the input: y = floor(u) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Max",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Max",
+          "since": "R2023a+",
+          "intent": "This block returns the maximum of its two input signals: y = max(u_1,u_2) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Min",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Min",
+          "since": "R2023a+",
+          "intent": "This block returns the minimum of its two input signals: y = min(u_1,u_2) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Round",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Round",
+          "since": "R2023a+",
+          "intent": "This block returns the nearest integer of the input: y = round(u) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Saturation",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Saturation",
+          "since": "R2023a+",
+          "intent": "This block imposes upper and lower bounds on the output signal. When the input signal is within the range specified by the Lower limit and Upper limit parameters, the input signal passes through unchanged. When the input signal is outside these bounds, the signal is clipped to the upper or lower bound. Both the input and the output are physical signal ports."
+        },
+        {
+          "block": "PS Selector",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Selector",
+          "since": "R2023b+",
+          "intent": "Select one or more elements from the input vector or two-dimensional matrix. The Indices parameter can be a scalar or vector of integers ranging from 1 to the number of elements in the input. The indices can be in any order, to enable construction of permutations and repeats."
+        },
+        {
+          "block": "PS Sign",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Sign",
+          "since": "R2023a+",
+          "intent": "This block returns the sign of its input: y = sign(u) All connections are physical signal ports."
+        },
+        {
+          "block": "PS Switch",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Switch",
+          "since": "R2023a+",
+          "intent": "This block represents a switch. If the second input is greater than or equal to the threshold, then the output is connected to the first input. Otherwise, the output is connected to the third input."
+        },
+        {
+          "block": "PS Three-Element Demux",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Three-Element Demux",
+          "since": "R2023a+",
+          "intent": "Splits a PS row vector of length three into three scalar physical signals."
+        },
+        {
+          "block": "PS Vector Norm",
+          "ref": "fl_lib/Physical Signals/Nonlinear Operators/PS Vector Norm",
+          "since": "R2023b+",
+          "intent": "Computes the Euclidean norm of the input vector or two-dimensional matrix: y = sqrt(dot(u,u)) For two-dimensional matrix inputs, computes the column-wise vector norm."
+        },
+        {
+          "block": "PS Constant Offset Estimator",
+          "ref": "fl_lib/Physical Signals/Periodic Operators/PS Constant Offset Estimator",
+          "since": "R2023a+",
+          "intent": "This block measures the constant offset value of a periodic signal. This block requires a full period to provide meaningful results."
+        },
+        {
+          "block": "PS Harmonic Estimator (Amplitude, Phase)",
+          "ref": "fl_lib/Physical Signals/Periodic Operators/PS Harmonic Estimator (Amplitude, Phase)",
+          "since": "R2023a+",
+          "intent": "This block measures amplitude and phase of a single frequency component of a periodic signal. This block requires a full period to provide meaningful results."
+        },
+        {
+          "block": "PS Harmonic Estimator (Real, Imaginary)",
+          "ref": "fl_lib/Physical Signals/Periodic Operators/PS Harmonic Estimator (Real, Imaginary)",
+          "since": "R2023a+",
+          "intent": "This block measures real and imaginary parts of a single frequency component of a periodic signal. This block requires a full period to provide meaningful results."
+        },
+        {
+          "block": "PS RMS Estimator",
+          "ref": "fl_lib/Physical Signals/Periodic Operators/PS RMS Estimator",
+          "since": "R2023a+",
+          "intent": "This block measures root mean square (RMS) value of a periodic signal. This block requires a full period to provide meaningful results."
+        },
+        {
+          "block": "PS Terminator",
+          "ref": "fl_lib/Physical Signals/Sinks/PS Terminator",
+          "since": "R2023a+",
+          "intent": "Use this block to terminate physical signal outputs. Unconnected physical signal output ports do not generate warnings, but connection to a PS Terminator can be used to indicate that the signal was not inadvertently left unconnected"
+        },
+        {
+          "block": "PS Constant",
+          "ref": "fl_lib/Physical Signals/Sources/PS Constant",
+          "since": "R2023a+",
+          "intent": "This block creates a physical signal constant: y = constant The Constant parameter accepts both positive and negative values. The block output is a physical signal port."
+        },
+        {
+          "block": "PS Counter",
+          "ref": "fl_lib/Physical Signals/Sources/PS Counter",
+          "since": "R2023a+",
+          "intent": "This block counts up to the specified maximum value, then resets to the reset value. It starts counting at the initial value. Optionally the sample time parameter can be specified as a 1 by 2 row vector with the first element setting sample time, and the second setting sample time offset."
+        },
+        {
+          "block": "PS Ramp",
+          "ref": "fl_lib/Physical Signals/Sources/PS Ramp",
+          "since": "R2023a+",
+          "intent": "This block creates a physical signal ramp. The output remains at the Initial output until the Start time, then increases based on the Slope. The units of Initial output and Slope multiplied by time must be commensurate. The block output is a physical signal port."
+        },
+        {
+          "block": "PS Random Number",
+          "ref": "fl_lib/Physical Signals/Sources/PS Random Number",
+          "since": "R2023a+",
+          "intent": "This block provides a normally (Gaussian) distributed random number. The output is repeatable for a given seed. Optionally the sample time parameter can be specified as a 1 by 2 row vector with the first element setting sample time, and the second setting sample time offset."
+        },
+        {
+          "block": "PS Repeating Sequence",
+          "ref": "fl_lib/Physical Signals/Sources/PS Repeating Sequence",
+          "since": "R2023a+",
+          "intent": "This block outputs a periodic piecewise linear signal. It outputs a constant initial value until time reaches the time offset. The linear segments are specified through their durations, start values and end values, however only the start values are required in the special cases where the signal is continuous or discrete."
+        },
+        {
+          "block": "PS Sine Wave",
+          "ref": "fl_lib/Physical Signals/Sources/PS Sine Wave",
+          "since": "R2023a+",
+          "intent": "This block creates a physical signal sine wave. The output follows the formula if Frequency specification is set to Frequency (SI): O = amplitude * sin(2*pi*frequency * time + phase) + bias If Frequency specification is set to Angular frequency, the formula is: O = amplitude * sin(frequency * time + phase) + bias The units of Amplitude and Bias must be commensurate. The block output is a physical signal port."
+        },
+        {
+          "block": "PS Step",
+          "ref": "fl_lib/Physical Signals/Sources/PS Step",
+          "since": "R2023a+",
+          "intent": "This block creates a physical signal step function. The output remains constant until it steps instantaneously to a new value. The units of Initial value and Final value must be commensurate. The block output is a physical signal port."
+        },
+        {
+          "block": "PS Uniform Random Number",
+          "ref": "fl_lib/Physical Signals/Sources/PS Uniform Random Number",
+          "since": "R2023a+",
+          "intent": "This block provides a uniformly distributed random number. The output is repeatable for a given seed. Optionally the sample time parameter can be specified as a 1 by 2 row vector with the first element setting sample time, and the second setting sample time offset."
+        },
+        {
+          "block": "PS Signal Specification",
+          "ref": "fl_lib/Physical Signals/Utilities/PS Signal Specification",
+          "since": "R2023a+",
+          "intent": "This block explicitly specifies the size and unit of a physical signal. Specify the signal size as 'zeros(m, n)'. Select a unit from the drop-down list, or type a unit name or unit expression."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "rotational",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "rotational",
+      "hash": "d3a855a221136ea5a883564feb5d0c872003fb36016183ac7f8ccd5b1e09975b",
+      "fm": {
+        "title": "Rotational",
+        "description": "Mechanical rotational elements and references (38 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "rotational"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Rotational Mechanical Converter (G)",
+          "ref": "fl_lib/Gas/Elements/Rotational Mechanical Converter (G)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a gas network and a mechanical rotational network. It can be used as a building block for rotary actuators. The converter contains a variable volume of gas. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume and the change in volume. Port A is the gas conserving port associated with the converter inlet. Port H is the thermal conserving port associated with the thermal mass of the gas volume. Ports R and C are the mechanical rotational conserving ports associated with the moving interface and converter casing, respectively. The rotation of port R relative to port C can be calculated internally or be set by the physical signal input port q. The rotation is defined to be zero when the liquid volume is equal to the dead volume."
+        },
+        {
+          "block": "Rotational Hydro-Mechanical Converter",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Rotational Hydro-Mechanical Converter",
+          "since": "R2023a+",
+          "intent": "The block models an ideal transducer that converts hydraulic energy into mechanical energy in the form of rotational motion of the converter output member. Fluid compressibility can be accounted for and the pressure variation due to density fluctuations dynamically solved. This does not require the addition of a chamber block. Port A is a hydraulic conserving port associated with the converter inlet. Ports S and C are mechanical rotational conserving ports associated with the shaft and the body of the converter, respectively. When fluid compressibility is on, the shaft rotation can be calculated internally or be set by the physical signal input port q. The shaft rotation is defined to be zero when the volume is equal to the dead volume."
+        },
+        {
+          "block": "Rotational Mechanical Converter (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Rotational Mechanical Converter (IL)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between an isothermal liquid network and a mechanical rotational network. It can be used as a building block for rotary actuators. The converter contains a variable volume of liquid. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the additional mass accumulation in the volume beyond the change in volume. Port A is the isothermal liquid conserving port associated with the converter inlet. Ports R and C are the mechanical rotational conserving ports associated with the moving interface and the converter casing, respectively. The rotation of port R relative to port C can be calculated internally or be set by the physical signal input port q. The rotation is defined to be zero when the liquid volume is equal to the dead volume."
+        },
+        {
+          "block": "Ideal Rotational Motion Sensor",
+          "ref": "fl_lib/Mechanical/Mechanical Sensors/Ideal Rotational Motion Sensor",
+          "since": "R2023a+",
+          "intent": "This block measures angular velocity or angle in a mechanical rotational network. The sensor is ideal since it does not account for inertia, friction, delays, energy consumption, and so on. The physical signal ports α, W, and A report the angular acceleration, velocity and position, respectively, of port R relative to port C. The measured angular velocity is positive when the angular velocity at port R is greater than the angular velocity at port C. Optionally disable port C and measure with respect to ground."
+        },
+        {
+          "block": "Ideal Torque Sensor",
+          "ref": "fl_lib/Mechanical/Mechanical Sensors/Ideal Torque Sensor",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal torque sensor, that is, a device that converts a variable passing through the sensor into a control signal proportional to the torque with a specified coefficient of proportionality. The sensor is ideal since it does not account for inertia, friction, delays, energy consumption, and so on. Connections R and C are mechanical rotational conserving ports that connect the sensor to the line whose torque is being monitored. Connection T is a physical signal port that outputs the measurement result. The sensor positive direction is from port R to port C."
+        },
+        {
+          "block": "Ideal Angular Velocity Source",
+          "ref": "fl_lib/Mechanical/Mechanical Sources/Ideal Angular Velocity Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of angular velocity that generates a velocity differential at its terminals proportional to the physical input signal. The source is ideal in a sense that it is assumed to be powerful enough to maintain specified velocity regardless of the torque exerted on the system. Block connections R and C are mechanical rotational conserving ports. Port S is a physical signal port, through which control signal that drives the source is applied. The relative velocity is determined as W = W_R - W_C, where W_R and W_C are the absolute angular velocities of terminals R and C, respectively."
+        },
+        {
+          "block": "Ideal Torque Source",
+          "ref": "fl_lib/Mechanical/Mechanical Sources/Ideal Torque Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of torque that generates torque at its terminals proportional to the input physical signal. The source is ideal in a sense that it is assumed to be powerful enough to maintain specified torque regardless of the angular velocity at source terminals. Block connections R and C are mechanical rotational conserving ports. Port S is a physical signal port, through which control signal that drives the source is applied. Positive signal at port S generates torque acting from C to R."
+        },
+        {
+          "block": "Gear Box",
+          "ref": "fl_lib/Mechanical/Mechanisms/Gear Box",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal, non-planetary, fixed gear ratio gear box. The gear box is characterized by its only parameter, Gear ratio, which can be positive or negative. Connections S and O are mechanical rotational conserving ports associated with the box input and output shaft, respectively. The gear ratio is determined as the ratio of the input shaft angular velocity to that of the output shaft. The block generates torque in positive direction if a positive torque is applied to the input shaft and the ratio is assigned a positive value."
+        },
+        {
+          "block": "Rotational Multibody Interface",
+          "ref": "fl_lib/Mechanical/Multibody Interfaces/Rotational Multibody Interface",
+          "since": "R2023a+",
+          "intent": "This block is an interface between a Simscape Multibody joint and a Simscape mechanical rotational network. Ports R and C are mechanical rotational conserving ports that connect to the two nodes in the mechanical rotational network which share the same torque and relative angular velocity as a primitive in the Multibody joint. Ports w and t are physical signal ports that connect to the Multibody joint. Input port w accepts the relative angular velocity sensing output from the joint primitive. Output port t provides the torque actuation input to the joint primitive."
+        },
+        {
+          "block": "Inertia",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Inertia",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical rotational inertia. The block has one or two mechanical rotational conserving ports. The difference is purely graphical, as the ports are rigidly linked. The block positive direction is from its port to the reference point. This means that the inertia torque is positive if the inertia is accelerated in the positive direction."
+        },
+        {
+          "block": "Mechanical Rotational Reference",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Mechanical Rotational Reference",
+          "since": "R2023a+",
+          "intent": "This block represents a mechanical rotational reference point, that is, a frame or a ground. Use it to connect mechanical rotational ports that are rigidly affixed to the frame (ground)."
+        },
+        {
+          "block": "Rotational Damper",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Rotational Damper",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical rotational viscous damper. Connections R and C are mechanical rotational conserving ports, with R representing the damper rod, while C is associated with the damper case. The block positive direction is from port R to port C."
+        },
+        {
+          "block": "Rotational Free End",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Rotational Free End",
+          "since": "R2023a+",
+          "intent": "This block represents a mechanical rotational free end. Use it to allow a node to rotate freely without torque. This block can be used to optionally specify initial rotational velocity."
+        },
+        {
+          "block": "Rotational Friction",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Rotational Friction",
+          "since": "R2023a+",
+          "intent": "The block represents friction in the contact between rotating bodies. The friction force is simulated as a function of relative velocity and assumed to be the sum of Stribeck, Coulomb, and viscous components. The sum of the Coulomb and Stribeck frictions at zero velocity is often referred to as the breakaway friction. Connections R and C are mechanical rotational conserving ports. The block positive direction is from port R to port C. This means that if port R velocity is greater than that of port C, the block transmits torque from port R to port C."
+        },
+        {
+          "block": "Rotational Hard Stop",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Rotational Hard Stop",
+          "since": "R2023a+",
+          "intent": "The block represents a mechanical rotational hard stop that restricts motion of a body between upper and lower bounds. The stop is modeled either as a continuous spring and damper that come into contact with the slider at the bounds or as an instantaneous impulse. The spring-damper hard stop model can apply full stiffness and damping at the bounds or the force can be applied smoothly through a transition region. The instantaneous impact hard stop model lets the slider remain in contact with the upper or lower bound if the gap is closed at a velocity smaller than static contact speed threshold. The gap remains closed until torque greater than static contact release torque threshold is applied. Connections R and C are mechanical rotational conserving ports. The block is oriented from R to C. This means that the block transmits torque from port R to port C when the gap is closed in the positive direction."
+        },
+        {
+          "block": "Rotational Inerter",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Rotational Inerter",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical rotational inerter. Torque is proportional to the rate of change of the relative angular velocity across the ports. Connections R and C are mechanical rotational conserving ports, with R representing the inerter rod, while C is associated with the inerter case. The block positive direction is from port R to port C."
+        },
+        {
+          "block": "Rotational Spring",
+          "ref": "fl_lib/Mechanical/Rotational Elements/Rotational Spring",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical rotational linear spring. Connections R and C are mechanical rotational conserving ports. The block positive direction is from port R to port C. This means that the torque is positive if it acts in the direction from R to C."
+        },
+        {
+          "block": "Rotational Mechanical Converter (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Rotational Mechanical Converter (MA)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a moist air network and a mechanical rotational network. The converter contains a variable volume of moist air. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume and the change in volume. Water vapor condenses when the moist air volume is saturated. A portion of the condensate can be entrained as water droplets. The rest is assumed to be drained and removed. Water droplets evaporate when the moist air volume is not saturated. A - Moist air conserving port associated with the converter inlet. H - Thermal conserving port associated with the thermal mass of the moist air volume. R, C - Mechanical rotational conserving ports associated with the moving interface and the converter casing, respectively. The rotation of port R relative to port C can be calculated internally or be set by the physical signal input port q. q - Optional physical signal input for rotation of port R relative to port C. The rotation is defined to be zero when the liquid volume is equal to the dead volume. S - Optional moist air source conserving port for adding or removing moisture and trace gas. W [kg/s] - Physical signal port reporting the rate of condensation that is removed. F - Physical signal port reporting moist air volume measurements. Connect to a Measurement Selector (MA) block."
+        },
+        {
+          "block": "Inertia (AB)",
+          "ref": "fl_lib/Rotational/Elements/Inertia (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an inertia that rotates around an axis. Connections B and F are rigidly connected angle-based rotational conserving ports. Positive torque accelerates the inertia in the positive direction."
+        },
+        {
+          "block": "Inertia With Friction (AB)",
+          "ref": "fl_lib/Rotational/Elements/Inertia With Friction (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an inertia with friction that rotates around an axis. Connections B and F are rigidly connected angle-based rotational conserving ports. Acceleration torque is the torque proportional to acceleration. Acceleration torque is positive when the inertia accelerates in the positive direction. Disable frictional effects by setting the Breakaway friction coefficient, Coulomb friction coefficient, and Viscous friction coefficient to 0."
+        },
+        {
+          "block": "Initial Relative Angle (AB)",
+          "ref": "fl_lib/Rotational/Elements/Initial Relative Angle (AB)",
+          "since": "R2026a+",
+          "intent": "This block provides an initial relative angle between ports B and F. Port F has a more positive angle than port B for positive relative angle. The relative angle may change during simulation. Specify the initial relative angle in the Initial Targets section. Connections B and F are angle-based rotational conserving ports."
+        },
+        {
+          "block": "Rotational Damper (AB)",
+          "ref": "fl_lib/Rotational/Elements/Rotational Damper (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal rotational viscous damper. Connections B and F are angle-based rotational conserving ports. The damper torque acts from port B on port F. Positive damper torque drives port F in the positive direction. Port F has a more positive angle than port B for positive relative angle."
+        },
+        {
+          "block": "Rotational Friction (AB)",
+          "ref": "fl_lib/Rotational/Elements/Rotational Friction (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents the resistive frictional contact between surfaces. Friction is the sum of Stribeck, Coulomb, and viscous components. Breakaway and Coulomb friction scale with normal force while viscous friction does not. Connections B and F are angle-based rotational conserving ports. The friction torque acts from port B on port F. Positive friction torque drives port F in the positive direction. Port N is the optional physical signal port for specifying a variable normal force. Port F has a more positive angle than port B for positive relative angle."
+        },
+        {
+          "block": "Rotational Hard Stop (AB)",
+          "ref": "fl_lib/Rotational/Elements/Rotational Hard Stop (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents a hard stop that restricts the relative angle of two bodies to greater than or equal to 0 rad. Contact between the two bodies is modeled either as a continuous spring and damper or as an instantaneous impulse based on a coefficient of restitution. The spring-damper hard stop model can apply full stiffness and damping at the bound, or the torque can be applied smoothly through a transition region. The instantaneous impact hard stop model lets the two bodies remain in contact if contact is reached at a relative rotational velocity smaller than the static contact speed threshold. The bodies remain in contact until a torque greater than the static contact release torque threshold is applied. Connections B and F are angle-based rotational conserving ports. Relative angle, the angle of port F relative to port B, is less than or equal to zero when the hard stop is engaged. Torque acts from port B on port F. Positive torque drives port F in the positive direction and corresponds to an engaged hard stop."
+        },
+        {
+          "block": "Rotational Inerter (AB)",
+          "ref": "fl_lib/Rotational/Elements/Rotational Inerter (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal rotational inerter. Torque is proportional to the rate of change of the relative angular velocity across the ports. Connections B and F are angle-based rotational conserving ports. The inerter torque acts from port B on port F. Positive inerter torque drives port F in the positive direction. Port F has a more positive angle than port B for positive relative angle."
+        },
+        {
+          "block": "Rotational Spacer (AB)",
+          "ref": "fl_lib/Rotational/Elements/Rotational Spacer (AB)",
+          "since": "R2026a+",
+          "intent": "This block maintains a fixed relative angle between two angle-based rotational nodes. Relative angle is positive when port F has a more positive angle than port B. Connections B and F are angle-based rotational conserving ports."
+        },
+        {
+          "block": "Rotational Spring (AB)",
+          "ref": "fl_lib/Rotational/Elements/Rotational Spring (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal spring with a linear relationship between torque and angular deformation. Relative angle is the angle at port F minus the angle at port B. Deformation is defined as relative angle minus unloaded relative angle. The spring torque acts from port B on port F. Positive spring torque drives port F in the positive direction. The spring torque is positive for negative deformation. Connections B and F are angle-based rotational conserving ports. Specify two variables as high priority targets. These high priority targets can be any variable pair besides torque and deformation. If the spring is in series with a known torque, then specify only relative angle or unloaded relative angle as a high priority target. If the spring is in parallel with a known relative angle, then specify only torque, deformation, or unloaded relative angle as a high priority target."
+        },
+        {
+          "block": "Rotational World (AB)",
+          "ref": "fl_lib/Rotational/Elements/Rotational World (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents the stationary global reference frame. All angles in an angle-based rotational network are relative to this reference. All rotational ports connected to this block are stationary."
+        },
+        {
+          "block": "Rotational Motion Sensor (AB)",
+          "ref": "fl_lib/Rotational/Sensors/Rotational Motion Sensor (AB)",
+          "since": "R2026a+",
+          "intent": "This block measures absolute or relative angle, velocity, and acceleration in an angle-based rotational network. The sensor does not apply any torque on the network. Optionally wrap the measured angle over a 2π interval. Connections B and F are angle-based rotational conserving ports. The physical signal ports α, ω, and θ report the rotational acceleration, velocity, and angle, respectively, of port F relative to port B. The measurement is positive when the motion at port F is greater than at port B. Optionally disable port B and measure motion with respect to the world frame."
+        },
+        {
+          "block": "Torque Sensor (AB)",
+          "ref": "fl_lib/Rotational/Sensors/Torque Sensor (AB)",
+          "since": "R2026a+",
+          "intent": "This block measures torque in an angle-based rotational network. Connect the sensor in series with a line to monitor the torque. There is no angle or angular velocity change across the sensor. Connections B and F are angle-based rotational conserving ports. The physical signal port t reports the torque applied by the network at port B on the network at port F."
+        },
+        {
+          "block": "Angular Velocity Actuator (AB)",
+          "ref": "fl_lib/Rotational/Sources/Angular Velocity Actuator (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal actuator that maintains a specified relative angular velocity regardless of the load at the connected ports. The actuator has a relative angle between its ports. Ports B and F are angle-based rotational conserving ports. Specify the relative angular velocity at physical signal port S. A positive signal indicates that the angular velocity at port F is greater than at port B. Port F has a more positive angle than port B for positive relative angle."
+        },
+        {
+          "block": "External Angular Velocity Source (AB)",
+          "ref": "fl_lib/Rotational/Sources/External Angular Velocity Source (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal external angular velocity source that maintains a specified angular velocity at port R regardless of the load at the connected port. Port R is an angle-based rotational conserving port. Specify the angular velocity at the physical signal port S."
+        },
+        {
+          "block": "External Torque Source (AB)",
+          "ref": "fl_lib/Rotational/Sources/External Torque Source (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal external torque source that generates a specified torque regardless of the load or angular velocity at the connected port. Port R is an angle-based rotational conserving port. Specify the torque at physical signal port S. A positive signal applies a positive torque on the network at port R."
+        },
+        {
+          "block": "Relative Angle Actuator (AB)",
+          "ref": "fl_lib/Rotational/Sources/Relative Angle Actuator (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal actuator that maintains a specified angle between the connected ports regardless of the torque load at the ports. Ports B and F are angle-based rotational conserving ports. The physical signal at port S specifies the angle between the ports. A positive signal indicates that port F has a more positive angle than port B."
+        },
+        {
+          "block": "Torque Actuator (AB)",
+          "ref": "fl_lib/Rotational/Sources/Torque Actuator (AB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal torque actuator that generates a specified torque regardless of the load or angular velocities at the ports. The actuator has a relative angle between its ports. Ports B and F are angle-based rotational conserving ports. Specify the torque at physical signal port S. The torque acts from port B on port F. Positive torque drives port F in the positive direction. Port F has a more positive angle than port B for positive relative angle."
+        },
+        {
+          "block": "Interface (AB-Rotational)",
+          "ref": "fl_lib/Rotational/Utilities/Interface (AB-Rotational)",
+          "since": "R2026a+",
+          "intent": "This block represents a rigid connection between an angle-based and non-angle-based rotational network. The rotational velocities at the ports are equal. The torques exerted by the networks on each other have equal magnitudes and opposite signs. When the angle-based port is set to Bab, port Bab is an angle-based rotational port and port F is a non-angle-based rotational port. The interface torque acts from port Bab on port F. When the angle-based port is set to Fab, port B is a non-angle-based rotational port and port Fab is an angle-based rotational port. The interface torque acts from port B on port Fab."
+        },
+        {
+          "block": "Rotational Mechanical Converter (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Rotational Mechanical Converter (TL)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a thermal liquid network and a mechanical rotational network. It can be used as a building block for rotary actuators. The converter contains a variable volume of liquid. Temperature varies dynamically based on the net energy accumulation in the volume and the change in volume. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the additional mass accumulation in the volume beyond the change in volume. Port A is the thermal liquid conserving port associated with the converter inlet. Port H is the thermal conserving port associated with the thermal mass of the liquid volume. Ports R and C are the mechanical rotational conserving ports associated with the moving interface and the converter casing, respectively. The rotation of port R relative to port C can be calculated internally or be set by the physical signal input port q. The rotation is defined to be zero when the liquid volume is equal to the dead volume."
+        },
+        {
+          "block": "Rotational Mechanical Converter (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Rotational Mechanical Converter (2P)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a two-phase fluid network and a mechanical rotational network. It can be used as a building block for rotary actuators. The converter contains a variable volume of fluid. Pressure and specific internal energy vary based on the net mass and energy accumulation in the volume and the change in volume. Port A is the two-phase fluid conserving port associated with the converter inlet. Port H is the thermal conserving port associated with the thermal mass of the fluid volume. Ports R and C are the mechanical rotational conserving ports associated with the moving interface and converter casing, respectively. The rotation of port R relative to port C can be calculated internally or be set by the physical signal input port q. The rotation is defined to be zero when the liquid volume is equal to the dead volume."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "thermal",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "thermal",
+      "hash": "61e7fae6db30115fe151c4c5ad20c8e35a3035abc8f92896826c8cf822fafdd3",
+      "fm": {
+        "title": "Thermal",
+        "description": "Thermal-domain conduction, convection, and radiation elements (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "thermal"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Conductive Heat Transfer",
+          "ref": "fl_lib/Thermal/Thermal Elements/Conductive Heat Transfer",
+          "since": "R2023a+",
+          "intent": "This block models heat transfer in a thermal network by conduction through a layer of material. The rate of heat transfer is governed by Fourier's law and is proportional to the temperature difference, material thermal conductivity, area normal to the heat flow direction, and inversely proportional to the layer thickness. The thermal conductivity can be either variable or constant. If the thermal conductivity is variable, you can specify it either as a physical input signal at port K or as tabulated data versus temperature. If the thermal conductivity is specified using the physical signal, it remains at the Minimum thermal conductivity if the physical signal falls below this value."
+        },
+        {
+          "block": "Convective Heat Transfer",
+          "ref": "fl_lib/Thermal/Thermal Elements/Convective Heat Transfer",
+          "since": "R2023a+",
+          "intent": "This block models heat transfer in a thermal network by convection due to fluid motion. The rate of heat transfer is proportional to the temperature difference, heat transfer coefficient, and surface area in contact with the fluid. The heat transfer coefficient can be either constant or variable. When the heat transfer coefficient is variable, specify it using the physical input signal at port K. If the heat transfer coefficient is variable, it remains at the Minimum heat transfer coefficient if the physical signal falls below this value."
+        },
+        {
+          "block": "Infinite Thermal Resistance",
+          "ref": "fl_lib/Thermal/Thermal Elements/Infinite Thermal Resistance",
+          "since": "R2023a+",
+          "intent": "This block represents a break in a thermal network. There is no heat flow through the block regardless of the temperature difference. This block can also be used to set an initial value and priority for the temperature difference across port A and port B."
+        },
+        {
+          "block": "Perfect Insulator",
+          "ref": "fl_lib/Thermal/Thermal Elements/Perfect Insulator",
+          "since": "R2023a+",
+          "intent": "This block represents a terminus in a thermal network with no heat flow and no energy storage. Use this block as an insulation for thermal conserving ports to prevent heat exchange with the environment and to model an adiabatic process. This block can also be used to set an initial value and priority for the temperature at the connected port."
+        },
+        {
+          "block": "Radiative Heat Transfer",
+          "ref": "fl_lib/Thermal/Thermal Elements/Radiative Heat Transfer",
+          "since": "R2023a+",
+          "intent": "This block models heat transfer in a thermal network by radiation between two surfaces. The rate of heat transfer is governed by the Stefan-Boltzmann law and is proportional to the difference in the fourth power of temperature, radiation coefficient, and surface area. The radiation coefficient depends on the geometric configuration and surface emissivities of the interacting bodies."
+        },
+        {
+          "block": "Thermal Mass",
+          "ref": "fl_lib/Thermal/Thermal Elements/Thermal Mass",
+          "since": "R2023a+",
+          "intent": "This block models internal energy storage in a thermal network. The rate of temperature increase is proportional to the heat flow rate into the material and inversely proportional to the mass and specific heat of the material. The mass of the block can be constant or variable. If the mass is variable, specify the change in mass using the physical input signal at port Mdot. When using variable mass, you must also specify the temperature of incoming mass using the physical input signal at port Tin. The temperature at port Tin only affects the results if the mass is increasing. If the mass is constant or decreasing, the temperature at port Tin has no effect."
+        },
+        {
+          "block": "Thermal Reference",
+          "ref": "fl_lib/Thermal/Thermal Elements/Thermal Reference",
+          "since": "R2023a+",
+          "intent": "This block represents a reference point in a thermal network where the temperature is equal to absolute zero."
+        },
+        {
+          "block": "Thermal Resistance",
+          "ref": "fl_lib/Thermal/Thermal Elements/Thermal Resistance",
+          "since": "R2023a+",
+          "intent": "This block represents a generic resistance in a thermal network. The heat flow rate is proportional to the temperature difference and inversely proportional to the resistance."
+        },
+        {
+          "block": "Variable Thermal Resistance",
+          "ref": "fl_lib/Thermal/Thermal Elements/Variable Thermal Resistance",
+          "since": "R2023a+",
+          "intent": "This block represents a variable generic resistance in a thermal network. The heat flow rate is proportional to the temperature difference and inversely proportional to the resistance. The resistance is set by the physical signal port R. The resistance remains at the Minimum thermal resistance even if the physical signal falls below this value."
+        },
+        {
+          "block": "Heat Flow Rate Sensor",
+          "ref": "fl_lib/Thermal/Thermal Sensors/Heat Flow Rate Sensor",
+          "since": "R2023a+",
+          "intent": "This block measures heat flow rate in a thermal network. There is no change in temperature across the sensor. The physical signal port H reports the heat flow rate through the sensor. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Temperature Sensor",
+          "ref": "fl_lib/Thermal/Thermal Sensors/Temperature Sensor",
+          "since": "R2023a+",
+          "intent": "This block measures temperature in a thermal network. There is no heat flow through the sensor. The physical signal port T reports the temperature difference across the sensor. The measurement is positive when the temperature at port A is greater than the temperature at port B."
+        },
+        {
+          "block": "Controlled Temperature Source",
+          "ref": "fl_lib/Thermal/Thermal Sources/Controlled Temperature Source",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal energy source in a thermal network that can maintain a controlled temperature difference regardless of the heat flow rate. The temperature difference is set by the physical signal port S. A positive temperature difference causes the temperature at port B to be greater than the temperature at port A."
+        },
+        {
+          "block": "Controlled Heat Flow Rate Source",
+          "ref": "fl_lib/Thermal/Thermal Sources/Controlled Heat Flow Rate Source",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal energy source in a thermal network that can maintain a controlled heat flow rate regardless of the temperature difference. The heat flow rate is set by the physical signal port S. A positive heat flow rate flows from port A to port B."
+        },
+        {
+          "block": "Heat Flow Rate Source",
+          "ref": "fl_lib/Thermal/Thermal Sources/Heat Flow Rate Source",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal energy source in a thermal network that can maintain a constant heat flow rate regardless of the temperature difference. A positive heat flow rate flows from port A to port B."
+        },
+        {
+          "block": "Temperature Source",
+          "ref": "fl_lib/Thermal/Thermal Sources/Temperature Source",
+          "since": "R2023a+",
+          "intent": "This block represents an ideal energy source in a thermal network that can maintain a constant absolute temperature at the port regardless of the heat flow rate."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "thermal-liquid",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "thermal-liquid",
+      "hash": "88787bb756b60f4e6bad95f2a58f4e616a9ab21a7a9fbfe86d7a71dfe481c746",
+      "fm": {
+        "title": "Thermal liquid",
+        "description": "Thermal liquid elements accounting for heat transfer in a liquid (13 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "thermal liquid"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Absolute Reference (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Absolute Reference (TL)",
+          "since": "R2023a+",
+          "intent": "This block represents the absolute reference in a thermal liquid network where pressure and temperature are equal to zero."
+        },
+        {
+          "block": "Cap (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Cap (TL)",
+          "since": "R2023a+",
+          "intent": "This block represents a terminus in a thermal liquid network. There is no mass or energy flow through the cap. This block can optionally be used to assign a beginning value and priority to the pressure and temperature of the connected node."
+        },
+        {
+          "block": "Constant Volume Chamber (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Constant Volume Chamber (TL)",
+          "since": "R2023a+",
+          "intent": "This block models mass and energy storage in a thermal liquid network. The chamber contains a constant volume of liquid. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume. Ports A, B, C, and D are the thermal liquid conserving ports associated with the chamber inlets. Port H is the thermal conserving port associated with the thermal mass of the liquid volume."
+        },
+        {
+          "block": "Flow Resistance (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Flow Resistance (TL)",
+          "since": "R2023a+",
+          "intent": "This block represents a generic pressure loss in a thermal liquid network. The drop in pressure is proportional to the square of the mass flow rate. The proportionality constant is determined from the specified nominal condition."
+        },
+        {
+          "block": "Infinite Flow Resistance (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Infinite Flow Resistance (TL)",
+          "since": "R2023a+",
+          "intent": "This block represents a break in a thermal liquid network. There is no mass or energy flow through the break. However, the liquid properties, specified by the Thermal Liquid Settings (TL) block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the differences in pressure and temperature of port A relative to port B."
+        },
+        {
+          "block": "Local Restriction (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Local Restriction (TL)",
+          "since": "R2023a+",
+          "intent": "This block models the pressure loss due to a flow area restriction such as a valve or an orifice in a thermal liquid network. There is no heat exchange with the environment. The restriction area can be optionally set by the physical signal port AR [m^2]. The input is limited by the minimum and maximum restriction area."
+        },
+        {
+          "block": "Pipe (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Pipe (TL)",
+          "since": "R2023a+",
+          "intent": "This block models pipe flow dynamics in a thermal liquid network due to viscous friction losses and convective heat transfer with the pipe wall. You can optionally include the effects of dynamic compressibility and fluid inertia. The pipe contains a constant volume of liquid. Temperature varies dynamically based on the net energy accumulation in the volume. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the net mass accumulation in the volume. Selecting Enable fluid inertia causes the liquid to resist acceleration. Ports A and B are the thermal liquid conserving ports associated with the pipe inlet and outlet. Port H is the thermal conserving port associated with the pipe wall."
+        },
+        {
+          "block": "Reservoir (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Reservoir (TL)",
+          "since": "R2023a+",
+          "intent": "This block sets boundary conditions in a thermal liquid network. The volume of liquid inside the reservoir is assumed infinite. Therefore, the flow is assumed quasi-steady. Liquid leaves the reservoir at the reservoir pressure and temperature. Liquid enters the reservoir at the reservoir pressure, but its temperature is determined by the thermal liquid network upstream. The reservoir pressure and temperature can be optionally set by physical signal ports P and T, respectively."
+        },
+        {
+          "block": "Flow Rate Sensor (TL)",
+          "ref": "fl_lib/Thermal Liquid/Sensors/Flow Rate Sensor (TL)",
+          "since": "R2023a+",
+          "intent": "This block measures mass, volumetric, and energy flow rates in a thermal liquid network. There is no change in pressure or temperature across the sensor. The physical signal ports M [kg/s], V [m^3/s], and φ [W] report the mass flow rate, the volumetric flow rate, and the energy flow rate, respectively, through the sensor. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Pressure & Temperature Sensor (TL)",
+          "ref": "fl_lib/Thermal Liquid/Sensors/Pressure & Temperature Sensor (TL)",
+          "since": "R2023a+",
+          "intent": "This block measures pressure and temperature in a thermal liquid network. There is no mass or energy flow through the sensor. The physical signal ports P, Pa, and Pg [Pa] report the pressure difference across the sensor, the absolute pressure at port A, and the gauge pressure at port A, respectively. The physical signal port T [K] reports the temperature at port A or across the sensor. Difference measurements are positive when the values at port A are greater than port B."
+        },
+        {
+          "block": "Thermodynamic Properties Sensor (TL)",
+          "ref": "fl_lib/Thermal Liquid/Sensors/Thermodynamic Properties Sensor (TL)",
+          "since": "R2023a+",
+          "intent": "This block measures thermodynamic fluid states in a thermal liquid network. There is no mass or energy flow through the sensor. The physical signal ports u [kJ/kg], ρ [kg/m^3], and cp [kJ/(kg*K)] report the specific internal energy, density, and specific heat at constant pressure, respectively, measured at port A."
+        },
+        {
+          "block": "Transport Properties Sensor (TL)",
+          "ref": "fl_lib/Thermal Liquid/Sensors/Transport Properties Sensor (TL)",
+          "since": "R2026a+",
+          "intent": "This block measures transport properties in a thermal liquid network. There is no mass or energy flow through the sensor. The physical signal ports μ, ν, k, and Pr report the dynamic viscosity, kinematic viscosity, thermal conductivity, and prandtl number, respectively, measured at port A."
+        },
+        {
+          "block": "Thermal Liquid Settings (TL)",
+          "ref": "fl_lib/Thermal Liquid/Utilities/Thermal Liquid Settings (TL)",
+          "since": "R2023a+",
+          "intent": "This block provides liquid properties to the connected thermal liquid network. The liquid properties can be specified as two-dimensional tables or one-dimensional vectors. For the two-dimensional liquid property tables, rows correspond to Temperature vector and Columns correspond to Pressure vector. The one-dimensional liquid property vectors correspond to Temperature vector. The default liquid is water. Use the <b>Thermal liquid properties</b> button in the <b>Plots</b> section to visualize the provided liquid properties."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "translational",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "translational",
+      "hash": "1add37f5a828412932efe499f67796248b28e915d2109a28189f01a8558f4a53",
+      "fm": {
+        "title": "Translational",
+        "description": "Mechanical translational (linear-motion) elements and references (46 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "translational"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Translational Mechanical Converter (G)",
+          "ref": "fl_lib/Gas/Elements/Translational Mechanical Converter (G)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a gas network and a mechanical translational network. It can be used as a building block for linear actuators. The converter contains a variable volume of gas. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume and the change in volume. Port A is the gas conserving port associated with the converter inlet. Port H is the thermal conserving port associated with the thermal mass of the gas volume. Ports R and C are the mechanical translational conserving ports associated with the moving interface and converter casing, respectively. The displacement of port R relative to port C can be calculated internally or be set by the physical signal input port p. The displacement is defined to be zero when the liquid volume is equal to the dead volume."
+        },
+        {
+          "block": "Hydraulic Piston Chamber",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Hydraulic Piston Chamber",
+          "since": "R2023a+",
+          "intent": "The block models fluid compressibility in a chamber created by the piston in a cylinder. The block simulates only the flow rate caused by fluid compressibility, and is intended to be used as a building block together with the Translational Hydro-Mechanical Converter block to build models of a hydraulic cylinder that account for the fluid compressibility. Port A is a hydraulic conserving port associated with the chamber inlet. Port P is a physical signal port that corresponds to piston displacement. The block positive direction is from port A to the reference point. This means that the flow rate is positive if it flows into the chamber."
+        },
+        {
+          "block": "Translational Hydro-Mechanical Converter",
+          "ref": "fl_lib/Hydraulic/Hydraulic Elements/Translational Hydro-Mechanical Converter",
+          "since": "R2023a+",
+          "intent": "The block models an ideal transducer that converts hydraulic energy into mechanical energy in the form of translational motion of the converter output member. Fluid compressibility can be accounted for and the pressure variation due to density fluctuations dynamically solved. This does not require the addition of a chamber block. Port A is a hydraulic conserving port associated with the converter inlet. Ports R and C are mechanical translational conserving ports associated with the rod and the body of the converter, respectively. When fluid compressibility is on, the piston displacement can be calculated internally or be set by the physical signal input port p. The piston displacement is defined to be zero when the volume is equal to the dead volume."
+        },
+        {
+          "block": "Translational Mechanical Converter (IL)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Translational Mechanical Converter (IL)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between an isothermal liquid network and a mechanical translational network. It can be used as a building block for linear actuators. The converter contains a variable volume of liquid. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the additional mass accumulation in the volume beyond the change in volume. Port A is the isothermal liquid conserving port associated with the converter inlet. Ports R and C are the mechanical translational conserving ports associated with the moving interface and the converter casing, respectively. The displacement of port R relative to port C can be calculated internally or be set by the physical signal input port p. The displacement is defined to be zero when the liquid volume is equal to the dead volume."
+        },
+        {
+          "block": "Translational Mechanical Converter (IL-PB)",
+          "ref": "fl_lib/Isothermal Liquid/Elements/Translational Mechanical Converter (IL-PB)",
+          "since": "R2026a+",
+          "intent": "This block models an interface between an isothermal liquid network and a position-based translational network. Use this block to build linear actuators. The converter contains a variable volume of liquid. If you select Enable dynamic compressibility, the pressure evolves based on the dynamic compressibility of the liquid volume. Port Af is the isothermal liquid conserving port associated with the converter inlet. Ports F and B are position-based translational conserving ports associated with the moving mechanical interface."
+        },
+        {
+          "block": "Ideal Force Sensor",
+          "ref": "fl_lib/Mechanical/Mechanical Sensors/Ideal Force Sensor",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal force sensor, that is, a device that converts a variable passing through the sensor into a control signal proportional to the force with a specified coefficient of proportionality. The sensor is ideal since it does not account for inertia, friction, delays, energy consumption, and so on. Connections R and C are mechanical translational conserving ports that connect the sensor to the line whose force is being monitored. Connection F is a physical signal port that outputs the measurement result. The sensor positive direction is from port R to port C."
+        },
+        {
+          "block": "Ideal Translational Motion Sensor",
+          "ref": "fl_lib/Mechanical/Mechanical Sensors/Ideal Translational Motion Sensor",
+          "since": "R2023a+",
+          "intent": "This block measures acceleration, velocity, or displacement in a mechanical translational network. The sensor is ideal since it does not account for inertia, friction, delays, energy consumption, and so on. The physical signal ports A, V, and P report the acceleration, velocity, and position, respectively, of port R relative to port C. The measured velocity is positive when the velocity at port R is greater than the velocity at port C. Optionally disable port C and measure with respect to ground."
+        },
+        {
+          "block": "Ideal Force Source",
+          "ref": "fl_lib/Mechanical/Mechanical Sources/Ideal Force Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of force that generates force proportional to the input physical signal. The source is ideal in a sense that it is assumed to be powerful enough to maintain specified force regardless of the velocity at source terminals. Block connections R and C are mechanical translational conserving ports. Port S is the physical signal port, through which control signal that drives the source is applied. Positive signal at port S generates force acting from C to R."
+        },
+        {
+          "block": "Ideal Translational Velocity Source",
+          "ref": "fl_lib/Mechanical/Mechanical Sources/Ideal Translational Velocity Source",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal source of velocity that generates a velocity differential at its terminals proportional to the input physical signal. The source is ideal in a sense that it is assumed to be powerful enough to maintain specified velocity regardless of the force exerted on the system. Block connections R and C are mechanical translational conserving ports. Port S is a physical signal port, through which control signal that drives the source is applied. The relative velocity is determined as V = V_R - V_C, where V_R and V_C are the absolute velocities of terminals R and C, respectively."
+        },
+        {
+          "block": "Lever",
+          "ref": "fl_lib/Mechanical/Mechanisms/Lever",
+          "since": "R2023a+",
+          "intent": "The block represents a mechanical lever in its generic form, known as a free, or summing, lever. It has three translational conserving ports (A, B, and C) associated with lever pins. Any pin can also be connected to the reference node (ground), thus converting a 3-node lever into a lever of the first (fulcrum in the middle) or second (fulcrum at the end) class. The lever equations are derived with the assumption of small angle deviation from the initial position. As far as the block directionality is concerned, the joints' absolute displacements are positive if they are in line with the globally assigned positive direction."
+        },
+        {
+          "block": "Slider-Crank",
+          "ref": "fl_lib/Mechanical/Mechanisms/Slider-Crank",
+          "since": "R2023a+",
+          "intent": "The block represents a slider-crank mechanism as an ideal converter between mechanical rotational and mechanical translational motions. Inertia of the connecting rod is not considered. The mechanism has two connections: port C corresponds to the crank and is a mechanical rotational conserving port; port S corresponds to the slider and is a mechanical translational conserving port."
+        },
+        {
+          "block": "Wheel and Axle",
+          "ref": "fl_lib/Mechanical/Mechanisms/Wheel and Axle",
+          "since": "R2023a+",
+          "intent": "The block represents the wheel and axle mechanism as an ideal converter between mechanical rotational and mechanical translational motions. The mechanism has two connections: port A corresponds to the axle and is a mechanical rotational conserving port; port P corresponds to the wheel periphery and is a mechanical translational conserving port. The block can be used in simulation of rack-pinions, steering wheels, hoisting devices, windlasses, etc. The block positive directions are from A to the reference point and from reference point to P. The axle positive rotation causes the wheel periphery to move in positive or negative direction, depending on the \"Mechanism orientation\" parameter setting."
+        },
+        {
+          "block": "Translational Multibody Interface",
+          "ref": "fl_lib/Mechanical/Multibody Interfaces/Translational Multibody Interface",
+          "since": "R2023a+",
+          "intent": "This block is an interface between a Simscape Multibody joint and a Simscape mechanical translational network. Ports R and C are mechanical translational conserving ports that connect to the two nodes in the mechanical translational network which share the same force and relative velocity as a primitive in the Multibody joint. Ports v and f are physical signal ports that connect to the Multibody joint. Input port v accepts the relative velocity sensing output from the joint primitive. Output port f provides the force actuation input to the joint primitive."
+        },
+        {
+          "block": "Mass",
+          "ref": "fl_lib/Mechanical/Translational Elements/Mass",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical translational mass. The block has one or two mechanical translational conserving ports. The difference is purely graphical, as the ports are rigidly linked. The block positive direction is from its port to the reference point. This means that the inertia force is positive if mass is accelerated in positive direction."
+        },
+        {
+          "block": "Mechanical Translational Reference",
+          "ref": "fl_lib/Mechanical/Translational Elements/Mechanical Translational Reference",
+          "since": "R2023a+",
+          "intent": "This block represents a mechanical translational reference point, that is, a frame or a ground. Use it to connect mechanical translational ports that are rigidly affixed to the frame (ground)."
+        },
+        {
+          "block": "Translational Friction",
+          "ref": "fl_lib/Mechanical/Translational Elements/Translational Friction",
+          "since": "R2023a+",
+          "intent": "The block represents friction in the contact between moving bodies. The friction force is simulated as a function of relative velocity and assumed to be the sum of Stribeck, Coulomb, and viscous components. The sum of the Coulomb and Stribeck frictions at zero velocity is often referred to as the breakaway friction. Connections R and C are mechanical translational conserving ports. The block positive direction is from port R to port C. This means that if port R velocity is greater than that of port C, the block transmits force from port R to port C."
+        },
+        {
+          "block": "Translational Inerter",
+          "ref": "fl_lib/Mechanical/Translational Elements/Translational Inerter",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical translational inerter. Force is proportional to the rate of change of the relative velocity across the ports. Connections R and C are mechanical translational conserving ports, with R representing the inerter rod, while C is associated with the inerter case. The block positive direction is from port R to port C."
+        },
+        {
+          "block": "Translational Damper",
+          "ref": "fl_lib/Mechanical/Translational Elements/Translational Damper",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical translational viscous damper. Connections R and C are mechanical translational conserving ports, with R representing the damper rod, while C is associated with the damper case. The block positive direction is from port R to port C."
+        },
+        {
+          "block": "Translational Free End",
+          "ref": "fl_lib/Mechanical/Translational Elements/Translational Free End",
+          "since": "R2023a+",
+          "intent": "This block represents a mechanical translational free end. Use it to allow a node to translate freely without force. This block can be used to optionally specify initial velocity."
+        },
+        {
+          "block": "Translational Hard Stop",
+          "ref": "fl_lib/Mechanical/Translational Elements/Translational Hard Stop",
+          "since": "R2023a+",
+          "intent": "The block represents a mechanical translational hard stop that restricts motion of a body between upper and lower bounds. The stop is modeled either as a continuous spring and damper that come into contact with the slider at the bounds or as an instantaneous impulse. The spring-damper hard stop model can apply full stiffness and damping at the bounds or the force can be applied smoothly through a transition region. The instantaneous impact hard stop model lets the slider remain in contact with the upper or lower bound if the gap is closed at a velocity smaller than static contact speed threshold. The gap remains closed until force greater than static contact release force threshold is applied. Connections R and C are mechanical translational conserving ports. The block is oriented from R to C. This means that the block transmits force from port R to port C when the gap is closed in the positive direction."
+        },
+        {
+          "block": "Translational Spring",
+          "ref": "fl_lib/Mechanical/Translational Elements/Translational Spring",
+          "since": "R2023a+",
+          "intent": "The block represents an ideal mechanical linear spring. Connections R and C are mechanical translational conserving ports. The block positive direction is from port R to port C. This means that the force is positive if it acts in the direction from R to C."
+        },
+        {
+          "block": "Cam and Follower (AB-PB)",
+          "ref": "fl_lib/Mechanisms/Cam and Follower (AB-PB)",
+          "since": "R2026a+",
+          "intent": "This block represents a frictionless cam follower that converts between rotational and translational motion. The angled-based rotational ports Br and Fr are rigidly connected to each other and correspond to the cam axle. The position-based translational ports Bt and Ft correspond to the axle and contact point between the follower and cam. The translational port for cam follower (graphical) setting changes the icon to indicate which port corresponds to which point. Torque is the torque of the rotational system acting on the axle. Positive torque drives the cam in the positive rotational direction. Length is the separation of ports Ft and Bt along the line of transmission. Port Ft has a more positive position than port Bt for positive length. The force acts from port Bt on port Ft."
+        },
+        {
+          "block": "Wheel and Axle (AB-PB)",
+          "ref": "fl_lib/Mechanisms/Wheel and Axle (AB-PB)",
+          "since": "R2026a+",
+          "intent": "This block represents an ideal mechanism that converts between rotational and translational motion. The block can represent a rack-pinion, steering wheel, hoisting device, windlass, etc. Use the Positive rotation parameter to change whether positive wheel rotation corresponds to positive or negative axle translation. The angle-based rotational ports Br and Fr are rigidly connected to each other and represent the central axle. The position-based translational port Rt also represents the axle. Torque is torque of the rotational system acting on the axle. Positive torque drives the wheel in the positive rotational direction. Force is the force of the wheel periphery contact point acting on the axle. A positive force drives the axle in the positive direction."
+        },
+        {
+          "block": "Translational Mechanical Converter (MA)",
+          "ref": "fl_lib/Moist Air/Elements/Translational Mechanical Converter (MA)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a moist air network and a mechanical translational network. The converter contains a variable volume of moist air. Pressure and temperature vary dynamically based on the net mass and energy accumulation in the volume and the change in volume. Water vapor condenses when the moist air volume is saturated. A portion of the condensate can be entrained as water droplets. The rest is assumed to be drained and removed. Water droplets evaporate when the moist air volume is not saturated. A - Moist air conserving port associated with the converter inlet. H - Thermal conserving port associated with the thermal mass of the moist air volume. R, C - Mechanical translational conserving ports associated with the moving interface and the converter casing, respectively. The displacement of port R relative to port C can be calculated internally or be set by the physical signal input port p. p - Optional physical signal input for displacement of port R relative to port C. The displacement is defined to be zero when the liquid volume is equal to the dead volume. S - Optional moist air source conserving port for adding or removing moisture and trace gas. W [kg/s] - Physical signal port reporting the rate of condensation that is removed. F - Physical signal port reporting moist air volume measurements. Connect to a Measurement Selector (MA) block."
+        },
+        {
+          "block": "Translational Mechanical Converter (TL)",
+          "ref": "fl_lib/Thermal Liquid/Elements/Translational Mechanical Converter (TL)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a thermal liquid network and a mechanical translational network. It can be used as a building block for linear actuators. The converter contains a variable volume of liquid. Temperature varies dynamically based on the net energy accumulation in the volume and the change in volume. Selecting Enable dynamic compressibility causes pressure to vary dynamically based on the additional mass accumulation in the volume beyond the change in volume. Port A is the thermal liquid conserving port associated with the converter inlet. Port H is the thermal conserving port associated with the thermal mass of the liquid volume. Ports R and C are the mechanical translational conserving ports associated with the moving interface and the converter casing, respectively. The displacement of port R relative to port C can be calculated internally or be set by the physical signal input port p. The displacement is defined to be zero when the liquid volume is equal to the dead volume."
+        },
+        {
+          "block": "Initial Length (PB)",
+          "ref": "fl_lib/Translational/Elements/Initial Length (PB)",
+          "since": "R2026a+",
+          "intent": "This block provides an initial length between ports B and F. The length may change during simulation. Specify the initial length by setting the Length variable in the Initial Targets section. Connections B and F are position-based translational conserving ports. Port F has a more positive position than port B for positive length."
+        },
+        {
+          "block": "Mass (PB)",
+          "ref": "fl_lib/Translational/Elements/Mass (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents a point mass with gravitational effects that moves along an inclined rail. Gravity can induce motion along the rail. The Mechanical Translational Properties block specifies the gravitational acceleration and rail inclination in the network. Connection R is a position-based translational conserving port. Port force is the force exerted by other position-based translational blocks on this block. Acceleration force is positive when the mass accelerates in the positive direction."
+        },
+        {
+          "block": "Mass With Friction (PB)",
+          "ref": "fl_lib/Translational/Elements/Mass With Friction (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents a mass with friction and gravitational effects that moves along an inclined rail. Gravity can induce motion along the rail. Gravity and an optional additional normal force induce friction with the stationary rail. The Mechanical Translational Properties block specifies the gravitational acceleration and rail inclination in the network. Connection R is a position-based translational conserving port. Port force is the force exerted by other position-based translational blocks on this block. Acceleration force is positive when the mass accelerates in the positive direction. Disable frictional effects by setting the Breakaway friction coefficient, Coulomb friction coefficient, and Viscous friction coefficient to 0."
+        },
+        {
+          "block": "Mass With Length (PB)",
+          "ref": "fl_lib/Translational/Elements/Mass With Length (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents a mass with length and gravitational effects that moves along an inclined rail. Gravity can induce motion along the rail. The Mechanical Translational Properties block specifies the gravitational acceleration and rail inclination in the network. Connections B and F are position-based translational conserving ports. Port F has a more positive position than port B for positive length. Acceleration force is positive when the mass accelerates in the positive direction."
+        },
+        {
+          "block": "Mass With Length & Friction (PB)",
+          "ref": "fl_lib/Translational/Elements/Mass With Length & Friction (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents a mass with length, gravitational effects, and friction that moves along an inclined rail. Gravity can induce motion along the rail. Gravity and an optional additional normal force induce friction with the stationary rail. The Mechanical Translational Properties block specifies the gravitational acceleration and rail inclination in the network. Acceleration force is positive when the mass accelerates in the positive direction. Connections B and F are position-based translational conserving ports. Port F has a more positive position than port B for positive length. Disable frictional effects by setting the Breakaway friction coefficient, Coulomb friction coefficient, and Viscous friction coefficient to 0."
+        },
+        {
+          "block": "Translational Friction (PB)",
+          "ref": "fl_lib/Translational/Elements/Translational Friction (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents the resistive frictional contact between surfaces. Friction is the sum of Stribeck, Coulomb, and viscous components. Breakaway and Coulomb friction scale with normal force while viscous friction does not. Connections B and F are position-based translational conserving ports. Port F has a more positive position than port B for positive length. The friction force acts from port B on port F. Positive friction force drives port F in the positive direction. Port N is the optional physical signal port for specifying a variable normal force."
+        },
+        {
+          "block": "Translational Damper (PB)",
+          "ref": "fl_lib/Translational/Elements/Translational Damper (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents an ideal viscous damper. Connections B and F are position-based translational conserving ports. Port F has a more positive position than port B for positive length. The force corresponds to the damper in a state of compression when length is positive."
+        },
+        {
+          "block": "Translational Hard Stop (PB)",
+          "ref": "fl_lib/Translational/Elements/Translational Hard Stop (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents a hard stop that restricts the relative position of two bodies to greater than or equal to 0 m. Contact between the two bodies is modeled either as a continuous spring and damper or as an instantaneous impulse based on a coefficient of restitution. The spring-damper hard stop model can apply full stiffness and damping at the bound, or the force can be applied smoothly through a transition region. The instantaneous impact hard stop model lets the two bodies remain in contact if contact is reached at a velocity smaller than the static contact speed threshold. The bodies remain in contact until a force greater than the static contact release force threshold is applied. Connections B and F are position-based translational conserving ports. Port F has a more positive position than port B for positive gap length. Gap length is less than or equal to zero when the hard stop is engaged. Force acts from port B on port F. Positive force drives port F in the positive direction and corresponds to an engaged hard stop."
+        },
+        {
+          "block": "Translational Spacer (PB)",
+          "ref": "fl_lib/Translational/Elements/Translational Spacer (PB)",
+          "since": "R2024b+",
+          "intent": "This block maintains a fixed length between two position-based mechanical translational nodes. Length is positive when port F has a more positive position than port B. Connections B and F are position-based translational conserving ports. The spacer force acts from port B on port F. Positive spacer force drives port F in the positive direction. Positive spacer force corresponds to the spacer in a state of compression when length is positive."
+        },
+        {
+          "block": "Translational Spring (PB)",
+          "ref": "fl_lib/Translational/Elements/Translational Spring (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents an ideal mechanical linear spring. Deformation is defined as Length - Rest length. The spring force is positive for negative deformation. Positive spring force corresponds to the spring in a state of compression when length is positive. The spring force acts from port B on port F. Positive spring force drives port F in the positive direction. Connections B and F are position-based translational conserving ports. Port F has a more positive position than port B for positive length. Specify two variables as high priority targets. These high priority targets can be any variable pair besides force and deformation. If the spring is in series with a known force, specify only length or rest length as a high priority target. If the spring is in parallel with a known length, specify only force, deformation, or rest length as a high priority target."
+        },
+        {
+          "block": "Translational World (PB)",
+          "ref": "fl_lib/Translational/Elements/Translational World (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents the stationary global reference frame. All positions in a position-based translational network are relative to this reference. All translational ports connected to this block are stationary."
+        },
+        {
+          "block": "Force Sensor (PB)",
+          "ref": "fl_lib/Translational/Sensors/Force Sensor (PB)",
+          "since": "R2024b+",
+          "intent": "This block measures force in a position-based translational network. Connect the sensor in series with a line to monitor the force. There is no position or velocity change across the sensor. Connections B and F are position-based translational conserving ports. The physical signal port f reports the force applied by the network at port B on the network at port F."
+        },
+        {
+          "block": "Translational Motion Sensor (PB)",
+          "ref": "fl_lib/Translational/Sensors/Translational Motion Sensor (PB)",
+          "since": "R2024b+",
+          "intent": "This block measures absolute or relative position, velocity, and acceleration in a position-based translational network. The sensor does not apply any force on the network. Connections B and F are position-based translational conserving ports. The physical signal ports P, V, and A report the measured position, velocity, and acceleration, respectively, of port F relative to port B. The measurement is positive when the motion at port F is greater than at port B. Optionally disable port B and measure motion with respect to the world frame."
+        },
+        {
+          "block": "External Translational Velocity Source (PB)",
+          "ref": "fl_lib/Translational/Sources/External Translational Velocity Source (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents an ideal external velocity source that maintains a specified velocity at port R regardless of the load at the port. Port R is a position-based translational conserving port. Specify the velocity at the physical signal port S."
+        },
+        {
+          "block": "External Force Source (PB)",
+          "ref": "fl_lib/Translational/Sources/External Force Source (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents an ideal external force source that generates a specified force regardless of the load or velocity at the connected port. Port R is a position-based translational conserving port. Specify the force at physical signal port S. A positive signal applies a positive force on the network at port R."
+        },
+        {
+          "block": "Force Actuator (PB)",
+          "ref": "fl_lib/Translational/Sources/Force Actuator (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents an ideal force actuator with length that generates a specified force regardless of the load or velocities at the ports. Ports B and F are position-based translational conserving ports. Specify the force at physical signal port S. A positive signal applies a force that acts to separate the ports when length is positive. Port F has a more positive position than port B for positive length."
+        },
+        {
+          "block": "Length Actuator (PB)",
+          "ref": "fl_lib/Translational/Sources/Length Actuator (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents an ideal actuator that maintains a specified length regardless of the load at the connected ports. Ports B and F are position-based translational conserving ports. The physical signal at port S specifies the distance between the ports. A positive signal indicates that port F has a more positive position than port B."
+        },
+        {
+          "block": "Translational Velocity Actuator (PB)",
+          "ref": "fl_lib/Translational/Sources/Translational Velocity Actuator (PB)",
+          "since": "R2024b+",
+          "intent": "This block represents an ideal velocity actuator with length that maintains a specified velocity regardless of the load at the connected ports. Ports B and F are position-based translational conserving ports. Specify the relative velocity at physical signal port S. A positive signal indicates that the velocity at port F is greater than at port B. Port F has a more positive position than port B for positive length."
+        },
+        {
+          "block": "Interface (PB-Translational)",
+          "ref": "fl_lib/Translational/Utilities/Interface (PB-Translational)",
+          "since": "R2024b+",
+          "intent": "This block represents a rigid connection between a position-based and non-position-based mechanical translational network. The velocities at the ports are equal. The forces exerted by the networks on each other have equal magnitudes and opposite signs. When the Position-based port is set to Bpb, port Bpb is a position-based translational port and port F is non-position-based translational port. The interface force acts from port Bpb on port F. When the Position-based port is set to Fpb, port B is a non-position-based translational port and port Fpb is position-based translational port. The interface force acts from port B on port Fpb."
+        },
+        {
+          "block": "Mechanical Translational Properties (PB)",
+          "ref": "fl_lib/Translational/Utilities/Mechanical Translational Properties (PB)",
+          "since": "R2024b+",
+          "intent": "This block provides gravitational acceleration to the connected translational network. Gravity, g, acts downwards. Incline angle, β, is the angle of the network's positive direction relative to the horizontal. The network positive direction has an upward slope for angles between β and 180 degrees and a downward slope for angles between 0 and -180 degrees. g*sin(β) is the component of gravity acting along the network. Positive g*sin(β) corresponds to a positive incline angle that induces motion in the negative direction along the rail. g*|cos(β)| is the component of gravity acting perpendicular to the rail that induces normal force between mass and the rail."
+        },
+        {
+          "block": "Translational Mechanical Converter (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Translational Mechanical Converter (2P)",
+          "since": "R2023a+",
+          "intent": "This block models an interface between a two-phase fluid network and a mechanical translational network. It can be used as a building block for linear actuators. The converter contains a variable volume of fluid. Pressure and specific internal energy vary based on the net mass and energy accumulation in the volume and the change in volume. Port A is the two-phase fluid conserving port associated with the converter inlet. Port H is the thermal conserving port associated with the thermal mass of the fluid volume. Ports R and C are the mechanical translational conserving ports associated with the moving interface and the converter casing, respectively. The displacement of port R relative to port C can be calculated internally or be set by the physical signal input port p. The displacement is defined to be zero when the liquid volume is equal to the dead volume."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "two-phase-fluid",
+      "kind": "toolbox",
+      "library": "Simscape",
+      "kbFolder": "simscape",
+      "category": "two-phase-fluid",
+      "hash": "4190d90c64266c26b0a5c9cb9ccc5c9c6e9ff33f41b265a3a970c6e01f157b1c",
+      "fm": {
+        "title": "Two phase fluid",
+        "description": "Two-phase fluid (liquid/vapor) elements for refrigeration and phase-change systems (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape",
+          "two-phase fluid"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Absolute Reference (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Absolute Reference (2P)",
+          "since": "R2023a+",
+          "intent": "This block represents the absolute reference in a two-phase fluid network where pressure and specific internal energy are equal to zero."
+        },
+        {
+          "block": "Cap (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Cap (2P)",
+          "since": "R2023a+",
+          "intent": "This block represents a terminus in a two-phase fluid network. There is no mass or energy flow through the cap. This block can optionally be used to assign a beginning value and priority to the pressure and specific internal energy of the connected node."
+        },
+        {
+          "block": "Constant Volume Chamber (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Constant Volume Chamber (2P)",
+          "since": "R2023a+",
+          "intent": "This block models mass and energy storage in a two-phase fluid network. The chamber contains a constant volume of fluid. Pressure and specific internal energy vary dynamically based on the net mass and energy accumulation in the volume. Ports A, B, C, and D are the two-phase fluid conserving port associated with the chamber inlets. Port H is the thermal conserving port associated with the thermal mass of the fluid volume."
+        },
+        {
+          "block": "Flow Resistance (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Flow Resistance (2P)",
+          "since": "R2023a+",
+          "intent": "This block represents a generic pressure loss in a two-phase fluid network. The drop in pressure is proportional to the square of the mass flow rate and to the specific volume. The proportionality constant is determined from the specified nominal condition. Set Nominal specific volume to zero to omit the density dependence."
+        },
+        {
+          "block": "Infinite Flow Resistance (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Infinite Flow Resistance (2P)",
+          "since": "R2023a+",
+          "intent": "This block represents a break in a two-phase fluid network. There is no mass or energy flow through the break. However, the fluid properties, specified by the Two-Phase Fluid Properties (2P) block connected to the circuit, are the same on both sides of the break. This block can optionally be used to assign a beginning value and priority to the differences in pressure and specific internal energy of port A relative to port B."
+        },
+        {
+          "block": "Local Restriction (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Local Restriction (2P)",
+          "since": "R2023a+",
+          "intent": "This block models the pressure loss due to a flow area restriction such as a valve or an orifice in a two-phase fluid network. There is no heat exchange with the environment. The restriction area can be optionally set by the physical signal port AR. The input is limited by the minimum and maximum restriction area."
+        },
+        {
+          "block": "Pipe (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Pipe (2P)",
+          "since": "R2023a+",
+          "intent": "This block models pipe flow dynamics in a two-phase fluid network due to viscous friction losses and convective heat transfer with the pipe wall. You can optionally include the effects of fluid inertia. The pipe contains a constant volume of fluid. Pressure and specific internal energy vary dynamically based on the net mass and energy accumulation in the volume. Selecting Enable fluid inertia causes the fluid to resist acceleration. Ports A and B are the two-phase fluid conserving ports associated with the pipe inlet and outlet. Port H is the thermal conserving port associated with the pipe wall."
+        },
+        {
+          "block": "Reservoir (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Elements/Reservoir (2P)",
+          "since": "R2023a+",
+          "intent": "This block sets boundary conditions in a two-phase fluid network. The volume of fluid inside the reservoir is assumed infinite. Therefore, the flow is assumed quasi-steady. Fluid leaves the reservoir at the reservoir pressure and specific internal energy. Fluid enters the reservoir at the reservoir pressure, but the specific internal energy is determined by the two-phase fluid network upstream. The reservoir pressure, condensing temperature, or evaporating temperature is optionally set by the physical signal port P, Tc, or Te, respectively. The reservoir temperature, vapor quality, vapor void fraction, specific enthalpy, specific internal energy, subcooling, or superheating is optionally set by the physical signal port T, X, a, H, U, SC, or SH, respectively."
+        },
+        {
+          "block": "Flow Rate Sensor (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sensors/Flow Rate Sensor (2P)",
+          "since": "R2023a+",
+          "intent": "This block measures mass, volumetric, and energy flow rates in a two-phase fluid network. There is no change in pressure or specific internal energy across the sensor. The physical signal ports M [kg/s], V [m^3/s], and φ [kW] report the mass flow rate, the volumetric flow rate, and the energy flow rate, respectively, through the sensor. The positive flow direction is from port A to port B."
+        },
+        {
+          "block": "Pressure, Temperature & Internal Energy Sensor (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sensors/Pressure, Temperature & Internal Energy Sensor (2P)",
+          "since": "R2023a+",
+          "intent": "This block measures pressure and specific internal energy in a two-phase fluid network. There is no mass or energy flow through the sensor. The physical signal ports P, Pa, and Pg [MPa] report the pressure difference across the sensor, the absolute pressure at port A, and the gauge pressure at port A, respectively. The physical signal ports T [K] and U [kJ/kg] report the temperature and specific internal energy, respectively at port A or across the sensor. The measurements are positive when the values at port A are greater than the values at port B."
+        },
+        {
+          "block": "Saturation Properties Sensor (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sensors/Saturation Properties Sensor (2P)",
+          "since": "R2023a+",
+          "intent": "This block measures saturated thermodynamic fluid states based on the pressure or temperature in a two-phase fluid network. There is no mass or energy flow through the sensor. The physical signal ports TL and TV [K], UL and UV [kJ/kg], HL and HV [kJ/kg], VL and VV [m^3/kg], and rhoL and rhoV [kg/m^3] report the saturated liquid and saturated vapor temperature, specific internal energy, specific enthalpy, specific volume, and density, respectively, based on the pressure measured at port A. The physical signal ports PL and PV [MPa] report the saturated liquid and saturated vapor pressure, respectively, based on the temperature measured at port A."
+        },
+        {
+          "block": "Thermodynamic Properties Sensor (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sensors/Thermodynamic Properties Sensor (2P)",
+          "since": "R2023a+",
+          "intent": "This block measures thermodynamic fluid states in a two-phase fluid network. There is no mass or energy flow through the sensor. The physical signal ports T [K], h [kJ/kg], ρ [kg/m^3], v [m^3/kg], and s [kJ/(kg*K)] report the temperature, specific enthalpy, density, specific volume, and specific entropy, respectively, measured at port A."
+        },
+        {
+          "block": "Transport Properties Sensor (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sensors/Transport Properties Sensor (2P)",
+          "since": "R2026a+",
+          "intent": "This block measures transport properties in a two-phase fluid network. There is no mass or energy flow through the sensor. The physical signal ports μ, ν, k, and Pr report the dynamic viscosity, kinematic viscosity, thermal conductivity, and Prandtl number, respectively, measured at port A."
+        },
+        {
+          "block": "Vapor Quality Sensor (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Sensors/Vapor Quality Sensor (2P)",
+          "since": "R2023a+",
+          "intent": "This block measures the mixture vapor fraction in a two-phase fluid network. There is no mass or energy flow through the sensor. The physical signal port X reports the vapor quality or the vapor void fraction measured at port A. When pressure is greater than or equal to the critical pressure, vapor quality or vapor void fraction is undefined and port X reports a value of -1."
+        },
+        {
+          "block": "Two-Phase Fluid Properties (2P)",
+          "ref": "fl_lib/Two-Phase Fluid/Utilities/Two-Phase Fluid Properties (2P)",
+          "since": "R2023a+",
+          "intent": "This block provides fluid properties to the connected two-phase fluid network. The fluid property tables are two-dimensional arrays in which the rows correspond to the Normalized liquid internal energy vector or the Normalized vapor internal energy vector and the columns correspond to the Pressure vector. The Saturated liquid specific internal energy vector and the Saturated vapor specific internal energy vector are one-dimensional arrays with the same length as the Pressure vector. If the Pressure vector extends above the Critical pressure, the corresponding elements of the Saturated liquid specific internal energy vector and of the Saturated vapor specific internal energy vector can represent any curve or line extending above the critical point. Use the <b>Fluid properties</b> button in the <b>Plots</b> section to visualize the specified fluid properties as a function of pressure and specific internal energy or specific enthalpy for the connected two-phase fluid network."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:22",
+  "generatedAtDatenum": 740309.99540192133
 }

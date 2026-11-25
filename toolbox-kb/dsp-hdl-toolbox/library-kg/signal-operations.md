@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal operations
-description: HDL-optimized resampling and sample-rate operations
-tags: [signal operations, downsampler, upsampler, farrow, nco]
+description: HDL-optimized resampling and sample-rate operations (5 blocks)
+tags: [toolbox-kb, dsp-hdl-toolbox, signal operations, downsampler, upsampler, farrow, nco]
 status: stable
-source: custom_library
-library_root: DSP HDL Toolbox
-category_path: Signal operations
+sources:
+  - resource: matlab:dsphdlsigops2
+source: toolbox_kb
+managed_by: satk
+library: DSP HDL Toolbox
+kb_folder: dsp-hdl-toolbox
+category: signal-operations
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Signal operations
-
-Use these blocks for signal operations.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Guidance navigation
-description: Guidance, range calculation, and inertial navigation sensors
-tags: [guidance, range, accelerometer, gyroscope, IMU]
+description: "Guidance, range calculation, and inertial navigation sensors (4 blocks)"
+tags: [toolbox-kb, aerospace-blockset, guidance, range, accelerometer, gyroscope, IMU]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Guidance navigation
+sources:
+  - resource: matlab:aerolibguid
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: guidance-navigation
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Guidance navigation
-
-Use these blocks for guidance navigation.
 
 ## Recommended Blocks
 

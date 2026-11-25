@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Tracking and planning
-description: Object tracking and motion-planning algorithms
-tags: [tracker, detection concatenation, path smoother, velocity profiler]
+description: Object tracking and motion-planning algorithms (4 blocks)
+tags: [toolbox-kb, automated-driving-toolbox, tracker, detection concatenation, path smoother, velocity profiler]
 status: stable
-source: custom_library
-library_root: Automated Driving Toolbox
-category_path: Tracking and planning
+sources:
+  - resource: matlab:drivinglib
+source: toolbox_kb
+managed_by: satk
+library: Automated Driving Toolbox
+kb_folder: automated-driving-toolbox
+category: tracking-and-planning
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Tracking and planning
-
-Use these blocks for tracking and planning.
 
 ## Recommended Blocks
 

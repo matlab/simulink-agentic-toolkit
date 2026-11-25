@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Iot profiling
-description: IoT connectivity and execution profiling
-tags: [thingspeak, iot, execution, timestamp, profile]
+description: IoT connectivity and execution profiling (6 blocks)
+tags: [toolbox-kb, simulink-desktop-real-time, thingspeak, iot, execution, timestamp, profile]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Desktop Real-Time
-category_path: Iot profiling
+sources:
+  - resource: matlab:sldrtlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Desktop Real-Time
+kb_folder: simulink-desktop-real-time
+category: iot-profiling
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Iot profiling
-
-Use these blocks for iot profiling.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Fixed point math
-description: Optimized fixed-point arithmetic operations for efficient code generation
-tags: [fixed-point, divide, modulo, round, constant]
+description: Optimized fixed-point arithmetic operations for efficient code generation (2 blocks)
+tags: [toolbox-kb, fixed-point-designer, fixed-point, divide, modulo, round, constant]
 status: stable
-source: mathworks_toolbox
-library_root: Fixed-Point Designer
-category_path: Fixed point math
+sources:
+  - resource: matlab:embeddedMathLib
+source: toolbox_kb
+managed_by: satk
+library: Fixed-Point Designer
+kb_folder: fixed-point-designer
+category: fixed-point-math
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Fixed point math
-
-Use these blocks for fixed point math.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: Onboard and external sensor interfaces
-tags: [sensor, encoder, fxos, accelerometer, button]
+description: Onboard and external sensor interfaces (3 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-nxp-frdm-k64f-board, sensor, encoder, fxos, accelerometer, button]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for NXP FRDM-K64F Board
-category_path: Sensors
+sources:
+  - resource: matlab:frdmk64flib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for NXP FRDM-K64F Board
+kb_folder: simulink-coder-support-package-for-nxp-frdm-k64f-board
+category: sensors
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

@@ -4,7 +4,7 @@ description: Builds and edits Simulink, System Composer, Stateflow, and Simscape
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.7"
+  version: "1.8"
 ---
 
 # Building Models
@@ -52,7 +52,7 @@ No model reading, planning, or editing begins until the gate passes.
 
 
 0. **Ensure Library & Policy Prerequisites:** See BLOCKING GATE above. Do not proceed until gates pass.
-1. **Library block lookup:**  List every block type you plan to use, search `.satk/library-kg/index.md` and the relevant category pages to find each of the library blocks that match.
+1. **Library block lookup:**  List every block type you plan to use, search `.satk/library-kg/index.md`, then `custom/<lib>/index.md` or `toolboxes/<kb>/index.md`, then the relevant category pages to find each of the library blocks that match.
 2. **Read first:** Use `model_read` on the target scope to get block IDs and understand existing topology.
 3. **Plan the data flow:** For complex edits, sketch inputs → operations → outputs, then map to blocks identified in Step 1 & 2.
 4. **Edit:** Use `model_edit` with operations scoped to one subsystem level at a time.
@@ -105,12 +105,12 @@ Prefer code-generation-safe names for blocks, signals, and variables:
 
 Use the block's **display name** in the `type` field. Do not construct or guess library paths.
 
-- **Custom library blocks (from `satk-libraries.json`):** pass both `type` AND `ReferenceBlock` fields. Set `type` to the block's display name and `ReferenceBlock` to the full library path from the library KG.
+- **Custom library blocks (from `satk-libraries.json`):** pass both `type` AND `ReferenceBlock` fields. Set `type` to the block's display name and `ReferenceBlock` to the full library path from the library KB.
 
-- **Toolbox KB blocks (from `activeToolboxes`):** Use them exactly like custom library blocks — reference the `type` and `ReferenceBlock` fields from the toolbox category page in the library KG.
+- **Toolbox KB blocks (from `activeToolboxes`):** Use them exactly like custom library blocks — reference the `type` and `ReferenceBlock` fields from the toolbox category page under `toolboxes/<kb>/` in the library KB.
 
 - **Built-in Simulink blocks:** Use the BlockType directly: `Gain`, `Sum`, `Constant`, `Integrator`, `SubSystem`, `Scope`
-- **Library blocks (Simscape, Aerospace, DSP, Communications, etc.):** Use the display name as it appears in the Simulink Library Browser: `Voltage Source`, `Resistor`, `DC Motor`, `Solver Configuration`, `6DOF (Euler Angles)`
+- **Other library blocks (Simscape, Aerospace, DSP, Communications, etc.):** If you have the block's library path from the library KB, pass it as `ReferenceBlock` together with `type`. Otherwise use the display name as it appears in the Simulink Library Browser (`Voltage Source`, `Solver Configuration`).
 - **If `model_edit` returns `INVALID_TYPE`:** Fall back to the full library path from MATLAB documentation (e.g., `ee_lib/Sources/Voltage Source`)
 
 ```json

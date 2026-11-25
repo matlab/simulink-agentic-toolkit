@@ -1,31 +1,28 @@
 ---
 type: Simulink Block Category
 title: Logic bit
-description: Logical, relational, and bit-level operations
-tags: [logic, bit, relational, detect, shift, bitwise]
-status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Logic bit
+description: "Logical, relational, and bit-level operations (31 blocks)"
+tags: [toolbox-kb, hdl-coder, logic, bit, relational, detect, shift, bitwise]
+status: draft
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: logic-bit
 block_count: 31
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Logic bit
-
-Use these blocks for logic bit.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Logical
-Operator | hdlsllib/Commonly
-Used Blocks/Logical
-Operator | R2023a+ | Apply a logical operation (AND, OR, NOT, XOR, …) to boolean inputs — use for combining conditions. |
-| Relational
-Operator | hdlsllib/Commonly
-Used Blocks/Relational
-Operator | R2023a+ | Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic. |
+| Logical Operator | hdlsllib/Commonly Used Blocks/Logical Operator | R2023a+ | Apply a logical operation (AND, OR, NOT, XOR, …) to boolean inputs — use for combining conditions. |
+| Relational Operator | hdlsllib/Commonly Used Blocks/Relational Operator | R2023a+ | Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic. |
 | Relational Operator | hdlsllib/HDL Floating Point Operations/Relational Operator | R2023a+ | Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic. |
 | Bit Clear | hdlsllib/Logic and Bit Operations/Bit Clear | R2023a+ | Force a specified bit of an integer to 0 — use for bit-level masking or flag clearing. |
 | Bit Set | hdlsllib/Logic and Bit Operations/Bit Set | R2023a+ | Force a specified bit of an integer to 1 — use for bit-level flag setting. |
@@ -53,9 +50,5 @@ Operator | R2023a+ | Compare two inputs (>, <, ==, …) and output a boolean —
 | Detect Rise Positive | hdlsllib/Logic and Bit Operations/Detect Rise Positive | R2023a+ | If the input is strictly positive and its previous value was nonpositive, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z > 0). |
 | Interval Test | hdlsllib/Logic and Bit Operations/Interval Test | R2023a+ | If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE. |
 | Word to Bits | hdlsllib/Logic and Bit Operations/Word to Bits | R2023a+ | Convert input to vector of N 1-bit values, N is given by the Maximum Word Length mask parameter. |
-| Counter
-Free-Running | hdlsllib/Sources/Counter
-Free-Running | R2023a+ | This block is a free-running counter that overflows back to zero after it has reached the maximum value possible for the specified number of bits. The counter is always initialized to zero. The output is normally an unsigned integer with the specified number of bits. |
-| Counter
-Limited | hdlsllib/Sources/Counter
-Limited | R2023a+ | This block is a counter that wraps back to zero after it has output the specified upper limit. The counter is always initialized to zero. The output is normally an unsigned integer of 8, 16, or 32 bits. The smallest number of bits needed to represent the upper limit is used. |
+| Counter Free-Running | hdlsllib/Sources/Counter Free-Running | R2023a+ | This block is a free-running counter that overflows back to zero after it has reached the maximum value possible for the specified number of bits. The counter is always initialized to zero. The output is normally an unsigned integer with the specified number of bits. |
+| Counter Limited | hdlsllib/Sources/Counter Limited | R2023a+ | This block is a counter that wraps back to zero after it has output the specified upper limit. The counter is always initialized to zero. The output is normally an unsigned integer of 8, 16, or 32 bits. The smallest number of bits needed to represent the upper limit is used. |

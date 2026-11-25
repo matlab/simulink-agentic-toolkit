@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ur robot control
-description: Universal Robots UR series real-time control and monitoring
-tags: [robot, manipulator, joint, gripper, ur]
+description: Universal Robots UR series real-time control and monitoring (6 blocks)
+tags: [toolbox-kb, robotics-system-toolbox-support-package-for-universal-robots-ur-series-manipulators, robot, manipulator, joint, gripper, ur]
 status: stable
-source: mathworks_toolbox
-library_root: Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators
-category_path: Ur robot control
+sources:
+  - resource: matlab:urRTDElib
+source: toolbox_kb
+managed_by: satk
+library: Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators
+kb_folder: robotics-system-toolbox-support-package-for-universal-robots-ur-series-manipulators
+category: ur-robot-control
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Ur robot control
-
-Use these blocks for ur robot control.
 
 ## Recommended Blocks
 

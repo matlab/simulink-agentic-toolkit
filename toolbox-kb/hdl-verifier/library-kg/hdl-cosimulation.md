@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Hdl cosimulation
-description: Cosimulate Simulink with an external HDL simulator
-tags: [cosimulation, vivado, xcelium, vcs, hdl]
+description: Cosimulate Simulink with an external HDL simulator (3 blocks)
+tags: [toolbox-kb, hdl-verifier, cosimulation, vivado, xcelium, vcs, hdl]
 status: stable
-source: custom_library
-library_root: HDL Verifier
-category_path: Hdl cosimulation
+sources:
+  - resource: matlab:vivadosimlib
+source: toolbox_kb
+managed_by: satk
+library: HDL Verifier
+kb_folder: hdl-verifier
+category: hdl-cosimulation
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Hdl cosimulation
-
-Use these blocks for hdl cosimulation.
 
 ## Recommended Blocks
 

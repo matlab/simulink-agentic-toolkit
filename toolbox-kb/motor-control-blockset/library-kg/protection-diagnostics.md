@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Protection diagnostics
-description: Host-side serial communication and protection/diagnostic utilities for embedded motor-control targets
-tags: [serial, host, protection, relay, diagnostic, safety]
+description: Host-side serial communication and protection/diagnostic utilities for embedded motor-control targets (4 blocks)
+tags: [toolbox-kb, motor-control-blockset, serial, host, protection, relay, diagnostic, safety]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Protection diagnostics
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: protection-diagnostics
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Protection diagnostics
-
-Use these blocks for protection diagnostics.
 
 ## Recommended Blocks
 

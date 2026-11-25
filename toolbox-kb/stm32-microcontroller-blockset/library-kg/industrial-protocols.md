@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Industrial protocols
-description: MODBUS protocol peripherals for industrial automation over serial and RS485
-tags: [MODBUS, RS485, industrial, register, protocol]
+description: MODBUS protocol peripherals for industrial automation over serial and RS485 (18 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, MODBUS, RS485, industrial, register, protocol]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Industrial protocols
+sources:
+  - resource: matlab:stm32f7xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: industrial-protocols
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # Industrial protocols
-
-Use these blocks for industrial protocols.
 
 ## Recommended Blocks
 

@@ -1,15 +1,109 @@
 {
-  "generatedAt": "2026-09-29T16:38:07",
-  "generatedAtDatenum": 740254.69314513891,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for Renesas RH850 Microcontrollers"
-  ],
-  "blockCount": 9,
-  "categoryCount": 2,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_Renesas_RH850_Microcontrollers": {
-      "blockCount": 9
+  "pages": [
+    {
+      "id": "mcal-io",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Renesas RH850 Microcontrollers",
+      "kbFolder": "embedded-coder-support-package-for-renesas-rh850-microcontrollers",
+      "category": "mcal-io",
+      "hash": "240e616886d123386fe6efbe6023bed1a4ca9c0faba168fc98f1589b381a8412",
+      "fm": {
+        "title": "Mcal io",
+        "description": "AUTOSAR Microcontroller Abstraction Layer drivers for analog and digital I/O (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-renesas-rh850-microcontrollers",
+          "mcal",
+          "abstraction layer",
+          "dio",
+          "adc",
+          "autosar"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MCAL ADC",
+          "ref": "rh850mcallib/MCAL ADC",
+          "since": "R2026a+",
+          "intent": "Read analog-to-digital conversion results through the AUTOSAR Microcontroller Abstraction Layer (MCAL) on Renesas RH850 — use for hardware-abstracted analog input in AUTOSAR-compliant software."
+        },
+        {
+          "block": "MCAL DIO Channel Group Read",
+          "ref": "rh850mcallib/MCAL DIO Channel Group Read",
+          "since": "R2026a+",
+          "intent": "Read a group of related digital I/O channels in one call via the MCAL DIO driver — use to sample several digital inputs atomically."
+        },
+        {
+          "block": "MCAL DIO Channel Group Write",
+          "ref": "rh850mcallib/MCAL DIO Channel Group Write",
+          "since": "R2026a+",
+          "intent": "Write a group of related digital I/O channels in one call via the MCAL DIO driver — use to drive several digital outputs atomically."
+        },
+        {
+          "block": "MCAL DIO Channel Read",
+          "ref": "rh850mcallib/MCAL DIO Channel Read",
+          "since": "R2026a+",
+          "intent": "Read a single digital I/O channel via the MCAL DIO driver — use for hardware-abstracted single-bit digital input."
+        },
+        {
+          "block": "MCAL DIO Channel Write",
+          "ref": "rh850mcallib/MCAL DIO Channel Write",
+          "since": "R2026a+",
+          "intent": "Write a single digital I/O channel via the MCAL DIO driver — use for hardware-abstracted single-bit digital output."
+        },
+        {
+          "block": "MCAL DIO Port Pins Read",
+          "ref": "rh850mcallib/MCAL DIO Port Pins Read",
+          "since": "R2026a+",
+          "intent": "Read all pins of a DIO port via the MCAL driver — use for port-wide digital input."
+        },
+        {
+          "block": "MCAL DIO Port Pins Write",
+          "ref": "rh850mcallib/MCAL DIO Port Pins Write",
+          "since": "R2026a+",
+          "intent": "Write all pins of a DIO port via the MCAL driver — use for port-wide digital output."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "peripheral-io",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Renesas RH850 Microcontrollers",
+      "kbFolder": "embedded-coder-support-package-for-renesas-rh850-microcontrollers",
+      "category": "peripheral-io",
+      "hash": "80ed9444eddf65ae0d1ec76f990d4e82177d92309c54487637e11ac0dd44f8f7",
+      "fm": {
+        "title": "Peripheral io",
+        "description": "On-chip RH850 peripheral outputs (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-renesas-rh850-microcontrollers",
+          "tsg3",
+          "u2a",
+          "peripheral",
+          "output"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "TSG3 Output",
+          "ref": "rh850u2axblockslib/TSG3 Output",
+          "since": "R2026a+",
+          "intent": "Drive output through the Renesas RH850 U2A TSG3 signal-generation peripheral — use to produce hardware timing or waveform output from the deployed model."
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "rh850u2axblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger the downstream function-call subsystem from an interrupt service routine. Select the interrupt service routine with the 'Interrupt group' and the 'Interrupt name' parameters. Use the 'Simulink task priority' parameter to set the priority of the downstream function-call subsystem. Enable 'Run interrupt service routine as atomic unit' to block all other interrupts while executing the selected interrupt service routine."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99538964115
 }

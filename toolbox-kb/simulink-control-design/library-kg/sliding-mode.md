@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sliding mode
-description: Sliding mode robust controllers
-tags: [sliding, mode, reaching, state-feedback, robust]
+description: Sliding mode robust controllers (2 blocks)
+tags: [toolbox-kb, simulink-control-design, sliding, mode, reaching, state-feedback, robust]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Sliding mode
+sources:
+  - resource: matlab:slctrl_smc
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: sliding-mode
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Sliding mode
-
-Use these blocks for sliding mode.
 
 ## Recommended Blocks
 

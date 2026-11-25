@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Interprocess
-description: Shared data channels for communication between processor tasks at different rates
-tags: [interprocess, shared, channel, IPC, rate-transition]
+description: Shared data channels for communication between processor tasks at different rates (3 blocks)
+tags: [toolbox-kb, soc-blockset, interprocess, shared, channel, IPC, rate-transition]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Interprocess
+sources:
+  - resource: matlab:procinterlib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: interprocess
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Interprocess
-
-Use these blocks for interprocess.
 
 ## Recommended Blocks
 

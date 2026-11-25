@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Interpolation
-description: AUTOSAR fixed-point interpolation and lookup routines for calibration data
-tags: [interpolation, lookup, curve, map, prelookup]
+description: AUTOSAR fixed-point interpolation and lookup routines for calibration data (6 blocks)
+tags: [toolbox-kb, autosar-blockset, interpolation, lookup, curve, map, prelookup]
 status: stable
-source: custom_library
-library_root: AUTOSAR Blockset
-category_path: Interpolation
+sources:
+  - resource: matlab:autosarlibiflifx
+source: toolbox_kb
+managed_by: satk
+library: AUTOSAR Blockset
+kb_folder: autosar-blockset
+category: interpolation
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:12Z" }
 ---
 
 # Interpolation
-
-Use these blocks for interpolation.
 
 ## Recommended Blocks
 

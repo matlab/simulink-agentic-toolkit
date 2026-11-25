@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Tanks accumulators
-description: Reservoirs, accumulators, and receivers that store fluid volume or hydraulic energy
-tags: [tank, accumulator, reservoir, storage, receiver]
+description: "Reservoirs, accumulators, and receivers that store fluid volume or hydraulic energy (8 blocks)"
+tags: [toolbox-kb, simscape-fluids, tank, accumulator, reservoir, storage, receiver]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Tanks accumulators
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: tanks-accumulators
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Tanks accumulators
-
-Use these blocks for tanks accumulators.
 
 ## Recommended Blocks
 

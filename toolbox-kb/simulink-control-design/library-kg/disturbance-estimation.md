@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Disturbance estimation
-description: Disturbance observers and compensators
-tags: [disturbance, observer, extended, ultra-local, compensator]
+description: Disturbance observers and compensators (3 blocks)
+tags: [toolbox-kb, simulink-control-design, disturbance, observer, extended, ultra-local, compensator]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Disturbance estimation
+sources:
+  - resource: matlab:slctrl_disturbance
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: disturbance-estimation
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Disturbance estimation
-
-Use these blocks for disturbance estimation.
 
 ## Recommended Blocks
 

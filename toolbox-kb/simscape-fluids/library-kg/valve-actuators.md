@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Valve actuators
-description: Actuation mechanisms that position valve spools or poppets in response to control signals or pilot pressures
-tags: [actuator, solenoid, pilot, servo, proportional]
+description: Actuation mechanisms that position valve spools or poppets in response to control signals or pilot pressures (6 blocks)
+tags: [toolbox-kb, simscape-fluids, actuator, solenoid, pilot, servo, proportional]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Valve actuators
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: valve-actuators
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Valve actuators
-
-Use these blocks for valve actuators.
 
 ## Recommended Blocks
 

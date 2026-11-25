@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Scenario sensors
-description: Scenario-based sensor models (GPS, INS, barometer)
-tags: [scenario, gps, ins, barometer, sensor modeling]
-status: stable
-source: custom_library
-library_root: UAV Toolbox
-category_path: Scenario sensors
+description: "Scenario-based sensor models (GPS, INS, barometer) (7 blocks)"
+tags: [toolbox-kb, uav-toolbox, scenario, gps, ins, barometer, sensor modeling]
+status: draft
+sources:
+  - resource: matlab:uavmavlinklib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox
+kb_folder: uav-toolbox
+category: scenario-sensors
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Scenario sensors
-
-Use these blocks for scenario sensors.
 
 ## Recommended Blocks
 

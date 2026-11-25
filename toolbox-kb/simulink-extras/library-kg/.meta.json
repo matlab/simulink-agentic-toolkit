@@ -1,15 +1,335 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74459449074,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Extras"
-  ],
-  "blockCount": 35,
-  "categoryCount": 5,
-  "libraryFingerprints": {
-    "Simulink_Extras": {
-      "blockCount": 35
+  "pages": [
+    {
+      "id": "coordinate-transforms",
+      "kind": "toolbox",
+      "library": "Simulink Extras",
+      "kbFolder": "simulink-extras",
+      "category": "coordinate-transforms",
+      "hash": "7de6a4760045423d9a6400c9cc93f2850bb345e188a0a6ed90143899622f6493",
+      "fm": {
+        "title": "Coordinate transforms",
+        "description": "Coordinate system and unit conversions (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-extras",
+          "cartesian",
+          "polar",
+          "spherical",
+          "degrees",
+          "celsius"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Cartesian to Polar",
+          "ref": "simulink_extras/Transformations/Cartesian to Polar",
+          "since": "R2023a+",
+          "intent": "Convert Cartesian coordinates to polar — use for translating x,y positions to radius and angle"
+        },
+        {
+          "block": "Cartesian to Spherical",
+          "ref": "simulink_extras/Transformations/Cartesian to Spherical",
+          "since": "R2023a+",
+          "intent": "Convert Cartesian coordinates to spherical — use for translating x,y,z to radius, azimuth, and elevation"
+        },
+        {
+          "block": "Celsius to Fahrenheit",
+          "ref": "simulink_extras/Transformations/Celsius to Fahrenheit",
+          "since": "R2023a+",
+          "intent": "Convert temperature from Celsius to Fahrenheit — use for unit conversion in thermal models"
+        },
+        {
+          "block": "Degrees to Radians",
+          "ref": "simulink_extras/Transformations/Degrees to Radians",
+          "since": "R2023a+",
+          "intent": "Convert angle from degrees to radians — use for interfacing degree-based inputs with trig functions"
+        },
+        {
+          "block": "Fahrenheit to Celsius",
+          "ref": "simulink_extras/Transformations/Fahrenheit to Celsius",
+          "since": "R2023a+",
+          "intent": "Convert temperature from Fahrenheit to Celsius — use for unit conversion in thermal models"
+        },
+        {
+          "block": "Polar to Cartesian",
+          "ref": "simulink_extras/Transformations/Polar to Cartesian",
+          "since": "R2023a+",
+          "intent": "Convert polar coordinates to Cartesian — use for translating radius and angle to x,y positions"
+        },
+        {
+          "block": "Radians to Degrees",
+          "ref": "simulink_extras/Transformations/Radians to Degrees",
+          "since": "R2023a+",
+          "intent": "Convert angle from radians to degrees — use for displaying angular outputs in human-readable units"
+        },
+        {
+          "block": "Spherical to Cartesian",
+          "ref": "simulink_extras/Transformations/Spherical to Cartesian",
+          "since": "R2023a+",
+          "intent": "Convert spherical coordinates to Cartesian — use for translating radius, azimuth, elevation to x,y,z"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "digital-logic",
+      "kind": "toolbox",
+      "library": "Simulink Extras",
+      "kbFolder": "simulink-extras",
+      "category": "digital-logic",
+      "hash": "2ac1f797bfb451f9034be3ffd99d538dd1e553de19f64ee4b2a21ab322b4898b",
+      "fm": {
+        "title": "Digital logic",
+        "description": "Flip-flops, latches, and clock blocks (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-extras",
+          "flip-flop",
+          "latch",
+          "clock",
+          "digital",
+          "edge"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Clock",
+          "ref": "simulink_extras/Flip Flops/Clock",
+          "since": "R2023a+",
+          "intent": "Generate a digital clock signal — use for providing edge-triggered timing to flip-flop circuits"
+        },
+        {
+          "block": "D Flip-Flop",
+          "ref": "simulink_extras/Flip Flops/D Flip-Flop",
+          "since": "R2023a+",
+          "intent": "Edge-triggered D flip-flop — use for sampling and holding a digital signal on clock edges"
+        },
+        {
+          "block": "D Latch",
+          "ref": "simulink_extras/Flip Flops/D Latch",
+          "since": "R2023a+",
+          "intent": "Level-sensitive D latch — use for transparent data passing when enable is active"
+        },
+        {
+          "block": "J-K Flip-Flop",
+          "ref": "simulink_extras/Flip Flops/J-K Flip-Flop",
+          "since": "R2023a+",
+          "intent": "Edge-triggered J-K flip-flop — use for toggle and set/reset digital logic with clock synchronization"
+        },
+        {
+          "block": "S-R Flip-Flop",
+          "ref": "simulink_extras/Flip Flops/S-R Flip-Flop",
+          "since": "R2023a+",
+          "intent": "Set-Reset flip-flop — use for basic bistable storage with separate set and reset inputs"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "initialized-dynamics",
+      "kind": "toolbox",
+      "library": "Simulink Extras",
+      "kbFolder": "simulink-extras",
+      "category": "initialized-dynamics",
+      "hash": "67dba7109afaa44f2132830219bafaebddfe78afd11a717253467ff9a30c369a",
+      "fm": {
+        "title": "Initialized dynamics",
+        "description": "Transfer functions and state-space with initial conditions (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-extras",
+          "transfer",
+          "state-space",
+          "initial",
+          "discrete",
+          "zero-pole"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Discrete Transfer Fcn (with initial outputs)",
+          "ref": "simulink_extras/Additional Discrete/Discrete Transfer Fcn (with initial outputs)",
+          "since": "R2023a+",
+          "intent": "Discrete transfer function with specified initial output values — use when you need a known output at t=0 for bumpless transfer or initialization"
+        },
+        {
+          "block": "Discrete Transfer Fcn (with initial states)",
+          "ref": "simulink_extras/Additional Discrete/Discrete Transfer Fcn (with initial states)",
+          "since": "R2023a+",
+          "intent": "Discrete transfer function with specified initial state vector — use when internal filter states must match a known operating point"
+        },
+        {
+          "block": "Discrete Zero-Pole (with initial outputs)",
+          "ref": "simulink_extras/Additional Discrete/Discrete Zero-Pole (with initial outputs)",
+          "since": "R2023a+",
+          "intent": "Discrete zero-pole model with specified initial outputs — use for initialized discrete filters defined by zeros and poles"
+        },
+        {
+          "block": "Discrete Zero-Pole (with initial states)",
+          "ref": "simulink_extras/Additional Discrete/Discrete Zero-Pole (with initial states)",
+          "since": "R2023a+",
+          "intent": "Discrete zero-pole model with specified initial states — use when discrete filter states must be preset"
+        },
+        {
+          "block": "Idealized ADC quantizer",
+          "ref": "simulink_extras/Additional Discrete/Idealized ADC quantizer",
+          "since": "R2023a+",
+          "intent": "Quantize a signal to n-bit ADC resolution — use for modeling analog-to-digital conversion effects without timing"
+        },
+        {
+          "block": "State-Space (with initial outputs)",
+          "ref": "simulink_extras/Additional Linear/State-Space (with initial outputs)",
+          "since": "R2023a+",
+          "intent": "Continuous state-space model with specified initial outputs — use when output must start at a known value"
+        },
+        {
+          "block": "Transfer Fcn (with initial outputs)",
+          "ref": "simulink_extras/Additional Linear/Transfer Fcn (with initial outputs)",
+          "since": "R2023a+",
+          "intent": "Continuous transfer function with specified initial outputs — use for bumpless initialization of continuous filters"
+        },
+        {
+          "block": "Transfer Fcn (with initial states)",
+          "ref": "simulink_extras/Additional Linear/Transfer Fcn (with initial states)",
+          "since": "R2023a+",
+          "intent": "Continuous transfer function with specified initial state vector — use when filter states must match a trim condition"
+        },
+        {
+          "block": "Zero-Pole (with initial outputs)",
+          "ref": "simulink_extras/Additional Linear/Zero-Pole (with initial outputs)",
+          "since": "R2023a+",
+          "intent": "Continuous zero-pole model with specified initial outputs — use for initialized continuous filters defined by zeros and poles"
+        },
+        {
+          "block": "Zero-Pole (with initial states)",
+          "ref": "simulink_extras/Additional Linear/Zero-Pole (with initial states)",
+          "since": "R2023a+",
+          "intent": "Continuous zero-pole model with specified initial states — use when filter internal states must be preset"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "linearization-utilities",
+      "kind": "toolbox",
+      "library": "Simulink Extras",
+      "kbFolder": "simulink-extras",
+      "category": "linearization-utilities",
+      "hash": "a881d81ebb8b1e17410da124a380d0491a5cab91c3493a33ec75733d419abaa9",
+      "fm": {
+        "title": "Linearization utilities",
+        "description": "Blocks for linearization and steady-state detection (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-extras",
+          "linearization",
+          "derivative",
+          "transport",
+          "steady",
+          "fmu"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Switched derivative for linearization",
+          "ref": "simulink_extras/Linearization/Switched derivative for linearization",
+          "since": "R2023a+",
+          "intent": "Derivative block that switches behavior for linearization — use when standard derivative blocks cause issues during model linearization"
+        },
+        {
+          "block": "FMU",
+          "ref": "simulink_extras/FMU Import/FMU",
+          "since": "R2023a+",
+          "intent": "Import a Functional Mock-up Unit into Simulink — use for co-simulating models from other tools via the FMI standard"
+        },
+        {
+          "block": "Switched transport delay for linearization",
+          "ref": "simulink_extras/Linearization/Switched transport delay for linearization",
+          "since": "R2023a+",
+          "intent": "Transport delay that switches for linearization — use when standard transport delay causes issues during trim or linearization"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-analysis",
+      "kind": "toolbox",
+      "library": "Simulink Extras",
+      "kbFolder": "simulink-extras",
+      "category": "signal-analysis",
+      "hash": "d882af9ffa6ac46cacc4b9047b060b69dd39b57076841f0e5a083608b44f2863",
+      "fm": {
+        "title": "Signal analysis",
+        "description": "Spectrum analysis and correlation sinks (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-extras",
+          "spectrum",
+          "psd",
+          "correlator",
+          "analyzer",
+          "averaging"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Auto Correlator",
+          "ref": "simulink_extras/Additional Sinks/Auto Correlator",
+          "since": "R2023a+",
+          "intent": "Compute and display the autocorrelation of a signal — use for analyzing signal periodicity and spectral content"
+        },
+        {
+          "block": "Averaging Power Spectral Density",
+          "ref": "simulink_extras/Additional Sinks/Averaging Power Spectral Density",
+          "since": "R2023a+",
+          "intent": "Compute averaged PSD over multiple windows — use for frequency-domain power analysis with reduced variance"
+        },
+        {
+          "block": "Averaging Spectrum Analyzer",
+          "ref": "simulink_extras/Additional Sinks/Averaging Spectrum Analyzer",
+          "since": "R2023a+",
+          "intent": "Display averaged frequency spectrum — use for stable spectral visualization of noisy signals"
+        },
+        {
+          "block": "Cross Correlator",
+          "ref": "simulink_extras/Additional Sinks/Cross Correlator",
+          "since": "R2023a+",
+          "intent": "Compute and display cross-correlation between two signals — use for measuring time delay or similarity"
+        },
+        {
+          "block": "Power Spectral Density",
+          "ref": "simulink_extras/Additional Sinks/Power Spectral Density",
+          "since": "R2023a+",
+          "intent": "Compute single-window PSD of a signal — use for quick frequency-domain power distribution analysis"
+        },
+        {
+          "block": "Spectrum Analyzer",
+          "ref": "simulink_extras/Additional Sinks/Spectrum Analyzer",
+          "since": "R2023a+",
+          "intent": "Display frequency spectrum of a signal — use for real-time spectral visualization during simulation"
+        },
+        {
+          "block": "Matrix Interpolation",
+          "ref": "simulink_extras/Additional Lookup Tables/Matrix Interpolation",
+          "since": "R2023a+",
+          "intent": "Interpolate within a matrix of data — use for multi-dimensional lookup with interpolation between grid points"
+        },
+        {
+          "block": "Floating Bar Plot",
+          "ref": "simulink_extras/Additional Sinks/Floating Bar Plot",
+          "since": "R2023a+",
+          "intent": "Display signals as floating bar chart — use for visualizing ranges or intervals during simulation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:31",
+  "generatedAtDatenum": 740309.9955067361
 }

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Targets
-description: Code-generation target blocks
-tags: [s-function target, target]
+description: Code-generation target blocks (1 blocks)
+tags: [toolbox-kb, simulink-coder, s-function target, target]
 status: stable
-source: custom_library
-library_root: Simulink Coder
-category_path: Targets
+sources:
+  - resource: matlab:rtwlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder
+kb_folder: simulink-coder
+category: targets
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Targets
-
-Use these blocks for targets.
 
 ## Recommended Blocks
 

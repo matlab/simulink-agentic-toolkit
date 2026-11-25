@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456099537,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for Real-Time Linux"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_Real_Time_Linux": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "can-communication",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Real-Time Linux",
+      "kbFolder": "embedded-coder-support-package-for-real-time-linux",
+      "category": "can-communication",
+      "hash": "e3ee2f9cc5d6695626880c1bc560357587be4a27200b638fcec4ca9a56b0aa3b",
+      "fm": {
+        "title": "Can communication",
+        "description": "CAN bus communication on real-time Linux via SocketCAN (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-real-time-linux",
+          "can",
+          "socketcan",
+          "receive",
+          "transmit",
+          "linux"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CAN Receive block",
+          "ref": "slrtlinuxsocketcanlib/SocketCAN/CAN Receive block",
+          "since": "R2026a+",
+          "intent": "Receive CAN messages via SocketCAN on real-time Linux — use for reading vehicle bus data on Linux-based embedded targets"
+        },
+        {
+          "block": "CAN Transmit block",
+          "ref": "slrtlinuxsocketcanlib/SocketCAN/CAN Transmit block",
+          "since": "R2026a+",
+          "intent": "Transmit CAN messages via SocketCAN on real-time Linux — use for sending vehicle bus commands from Linux-based embedded targets"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99538708339
 }

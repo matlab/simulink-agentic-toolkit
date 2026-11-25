@@ -1,16 +1,887 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74455334491,
-  "generatorVersion": 4,
-  "libraries": [
-    "Driveline"
-  ],
-  "blockCount": 101,
-  "categoryCount": 11,
-  "libraryFingerprints": {
-    "Driveline": {
-      "cacheTimestamp": 740213.73347222223,
-      "blockCount": 101
+  "pages": [
+    {
+      "id": "brakes-and-detents",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "brakes-and-detents",
+      "hash": "0cf3c89181c26713d4107acbc9b0a3bf82e3fd51ed97e517c6d7192a77c4cd88",
+      "fm": {
+        "title": "Brakes and detents",
+        "description": "Friction brakes, drum brakes, and position detents for rotation and translation (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "brake",
+          "detent",
+          "friction",
+          "band",
+          "drum"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Band Brake",
+          "ref": "sdl_lib/Brakes & Detents/Rotational/Band Brake",
+          "since": "R2023a+",
+          "intent": "Model a band-wrapped drum brake generating friction torque from applied force — use for parking brakes, industrial machinery, or transmission holding elements"
+        },
+        {
+          "block": "Disc Brake",
+          "ref": "sdl_lib/Brakes & Detents/Rotational/Disc Brake",
+          "since": "R2023a+",
+          "intent": "Model a caliper-type disc brake generating friction torque proportional to applied pressure — use for vehicle wheel brakes, dynamometer loads, or safety stops"
+        },
+        {
+          "block": "Double-Shoe Brake",
+          "ref": "sdl_lib/Brakes & Detents/Rotational/Double-Shoe Brake",
+          "since": "R2023a+",
+          "intent": "Model a drum brake with two friction shoes — use for automotive drum brakes where leading and trailing shoe geometry affects braking torque distribution"
+        },
+        {
+          "block": "Loaded-Contact Rotational Friction",
+          "ref": "sdl_lib/Brakes & Detents/Rotational/Loaded-Contact Rotational Friction",
+          "since": "R2023a+",
+          "intent": "Apply speed-dependent rotational friction whose magnitude scales with a normal load input — use for bearing friction, loaded shaft resistance, or contact-dependent drag"
+        },
+        {
+          "block": "Rotational Detent",
+          "ref": "sdl_lib/Brakes & Detents/Rotational/Rotational Detent",
+          "since": "R2023a+",
+          "intent": "Apply a position-dependent restoring torque at discrete angular positions — use for indexing mechanisms, selector notches, or rotary switch detents"
+        },
+        {
+          "block": "Loaded-Contact Translational Friction",
+          "ref": "sdl_lib/Brakes & Detents/Translational/Loaded-Contact Translational Friction",
+          "since": "R2023a+",
+          "intent": "Apply speed-dependent translational friction whose magnitude scales with a normal load input — use for slider friction, rail guides, or loaded linear contacts"
+        },
+        {
+          "block": "Translational Detent",
+          "ref": "sdl_lib/Brakes & Detents/Translational/Translational Detent",
+          "since": "R2023a+",
+          "intent": "Apply a position-dependent restoring force at discrete linear positions — use for latch mechanisms, ball-detent selectors, or snap-fit positioning"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "clutches",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "clutches",
+      "hash": "1f406a50065f712c778ae7ec8e1d11529b0fd2e4ac3486c3c9d40a6d98354fff",
+      "fm": {
+        "title": "Clutches",
+        "description": "Friction clutches, synchronizers, dog clutches, and one-way clutches (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "clutch",
+          "synchronizer",
+          "engagement",
+          "friction",
+          "one-way"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Cone Clutch",
+          "ref": "sdl_lib/Clutches/Cone Clutch",
+          "since": "R2023a+",
+          "intent": "Model a friction clutch with a conical contact surface — use for manual transmission synchronizers or compact high-torque engagement devices"
+        },
+        {
+          "block": "Disc Friction Clutch",
+          "ref": "sdl_lib/Clutches/Disc Friction Clutch",
+          "since": "R2023a+",
+          "intent": "Model a multi-plate friction clutch with configurable engagement characteristics — use for automatic transmission clutches, launch devices, or torque-limiting couplings"
+        },
+        {
+          "block": "Dog Clutch",
+          "ref": "sdl_lib/Clutches/Dog Clutch",
+          "since": "R2023a+",
+          "intent": "Model a positive-engagement jaw clutch with no slip — use for gear selection in manual transmissions or transfer cases where synchronization is handled externally"
+        },
+        {
+          "block": "Double-Sided Synchronizer",
+          "ref": "sdl_lib/Clutches/Double-Sided Synchronizer",
+          "since": "R2023a+",
+          "intent": "Model a synchronizer that can engage either of two gears — use for manual transmission gear selection where one synchronizer hub serves two adjacent ratios"
+        },
+        {
+          "block": "Logic-Controlled Clutch",
+          "ref": "sdl_lib/Clutches/Logic-Controlled Clutch",
+          "since": "R2023a+",
+          "intent": "Model a clutch that locks or unlocks based on a Boolean control signal — use for simplified transmission modeling, mode switching, or conditional power path engagement"
+        },
+        {
+          "block": "Synchronizer",
+          "ref": "sdl_lib/Clutches/Synchronizer",
+          "since": "R2023a+",
+          "intent": "Model a single-sided cone synchronizer for gear engagement — use for manual transmission shift modeling where friction brings shafts to matched speed before dog engagement"
+        },
+        {
+          "block": "Unidirectional Clutch",
+          "ref": "sdl_lib/Clutches/Unidirectional Clutch",
+          "since": "R2023a+",
+          "intent": "Model a one-way clutch that transmits torque in only one direction — use for freewheels, overrunning clutches, or automatic transmission sprag elements"
+        },
+        {
+          "block": "Fundamental Friction Clutch",
+          "ref": "sdl_lib/Clutches/Fundamental Components/Fundamental Friction Clutch",
+          "since": "R2023a+",
+          "intent": "Model a basic friction clutch with fundamental torque-speed characteristics — use as a building block for custom clutch assemblies or for teaching friction engagement dynamics"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "couplings-and-drives",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "couplings-and-drives",
+      "hash": "a3f5fcc6142d72707a035dece1e96ed369479ca8e3186c4c48e05698dd7fa62e",
+      "fm": {
+        "title": "Couplings and drives",
+        "description": "Mechanical power transmission elements: belts, chains, cables, joints, and converters (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "belt",
+          "chain",
+          "cable",
+          "shaft",
+          "joint"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Air Spring",
+          "ref": "sdl_lib/Couplings & Drives/Air Spring",
+          "since": "R2023a+",
+          "intent": "Model a pneumatic spring with pressure-dependent stiffness — use for vehicle suspension, cab isolation, or vibration systems where air pressure sets the spring rate"
+        },
+        {
+          "block": "Bearing",
+          "ref": "sdl_lib/Couplings & Drives/Bearing",
+          "since": "R2023a+",
+          "intent": "Model a rotational bearing with speed-dependent friction and preload effects — use for shaft support losses, spindle bearings, or rolling element bearing drag"
+        },
+        {
+          "block": "Belt Drive",
+          "ref": "sdl_lib/Couplings & Drives/Belt Drive",
+          "since": "R2023a+",
+          "intent": "Model a flexible belt connecting two pulleys with slip and compliance — use for accessory drives, CVT mechanisms, or industrial belt-driven power transmission"
+        },
+        {
+          "block": "Belt Pulley",
+          "ref": "sdl_lib/Couplings & Drives/Belt Pulley",
+          "since": "R2023a+",
+          "intent": "Model a single pulley for belt routing — use as a building block in multi-pulley belt systems, tensioners, or serpentine drive layouts"
+        },
+        {
+          "block": "Cable",
+          "ref": "sdl_lib/Couplings & Drives/Cable",
+          "since": "R2023b+",
+          "intent": "Model a flexible cable transmitting tension between two points — use for throttle cables, parking brake cables, or winch systems with slack and compliance"
+        },
+        {
+          "block": "Chain Drive",
+          "ref": "sdl_lib/Couplings & Drives/Chain Drive",
+          "since": "R2023a+",
+          "intent": "Model a chain connecting two sprockets with backlash and compliance — use for motorcycle final drives, timing chains, or industrial chain-driven mechanisms"
+        },
+        {
+          "block": "Flexible Shaft",
+          "ref": "sdl_lib/Couplings & Drives/Flexible Shaft",
+          "since": "R2023a+",
+          "intent": "Model a shaft with distributed torsional compliance and damping — use for driveshafts, long coupling shafts, or studying torsional vibration and resonance"
+        },
+        {
+          "block": "Rod",
+          "ref": "sdl_lib/Couplings & Drives/Rod",
+          "since": "R2023a+",
+          "intent": "Model a rigid or compliant connecting rod converting rotational to translational motion — use for linkage mechanisms, piston connecting rods, or pushrod assemblies"
+        },
+        {
+          "block": "Rope Drum",
+          "ref": "sdl_lib/Couplings & Drives/Rope Drum",
+          "since": "R2023a+",
+          "intent": "Model a drum that winds rope converting rotation to linear displacement — use for winches, hoists, cranes, or cable-actuated mechanisms"
+        },
+        {
+          "block": "Shock Absorber",
+          "ref": "sdl_lib/Couplings & Drives/Shock Absorber",
+          "since": "R2023a+",
+          "intent": "Model a velocity-dependent translational damper with asymmetric compression and rebound characteristics — use for vehicle suspension dampers or vibration isolation systems"
+        },
+        {
+          "block": "Torque Converter",
+          "ref": "sdl_lib/Couplings & Drives/Torque Converter",
+          "since": "R2023a+",
+          "intent": "Model a hydrodynamic torque converter with torque multiplication and lockup — use for automatic transmission launch devices connecting engine to gearbox"
+        },
+        {
+          "block": "Torsional Spring-Damper",
+          "ref": "sdl_lib/Couplings & Drives/Torsional Spring-Damper",
+          "since": "R2023a+",
+          "intent": "Model a parallel rotational spring and damper between two shafts — use for coupling compliance, drivetrain flexibility, or torsional vibration damping"
+        },
+        {
+          "block": "Universal Joint",
+          "ref": "sdl_lib/Couplings & Drives/Universal Joint",
+          "since": "R2023a+",
+          "intent": "Model a Cardan-type universal joint with speed variation — use for angled driveshaft connections, steering columns, or power transmission across misaligned axes"
+        },
+        {
+          "block": "Variable Ratio Transmission",
+          "ref": "sdl_lib/Couplings & Drives/Variable Ratio Transmission",
+          "since": "R2023a+",
+          "intent": "Model a continuously variable gear ratio driven by an external signal — use for CVT powertrains, variable-speed drives, or parametric gear ratio studies"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "engines-and-motors",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "engines-and-motors",
+      "hash": "a54b2366d6a1c9f1128bfe7097b5be1def5410d2b1e2293042e7c42b6355370d",
+      "fm": {
+        "title": "Engines and motors",
+        "description": "Internal combustion engines, electric motors, propellers, and turbines (13 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "engine",
+          "motor",
+          "propeller",
+          "turbine",
+          "combustion"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Aerodynamic Propeller",
+          "ref": "sdl_lib/Engines & Motors/Aerodynamic Propeller",
+          "since": "R2023a+",
+          "intent": "Model a propeller generating thrust and drag torque from rotational speed and air conditions — use for aircraft propulsion, drone motors, or fan load modeling"
+        },
+        {
+          "block": "Generic Engine",
+          "ref": "sdl_lib/Engines & Motors/Generic Engine",
+          "since": "R2023a+",
+          "intent": "Model an engine with torque output mapped from throttle and speed — use for simplified powertrain studies where detailed combustion modeling is not required"
+        },
+        {
+          "block": "Marine Propeller",
+          "ref": "sdl_lib/Engines & Motors/Marine Propeller",
+          "since": "R2023a+",
+          "intent": "Model a marine propeller generating thrust and resistance torque in water — use for boat propulsion, ship powertrain, or marine drivetrain studies"
+        },
+        {
+          "block": "Motor & Drive",
+          "ref": "sdl_lib/Engines & Motors/Motor & Drive",
+          "since": "R2023a+",
+          "intent": "Model a generic electric motor with drive electronics as a torque source — use for electrified powertrain studies, EV drivetrain sizing, or hybrid vehicle motor modeling"
+        },
+        {
+          "block": "Piston",
+          "ref": "sdl_lib/Engines & Motors/Piston",
+          "since": "R2023a+",
+          "intent": "Model a single piston converting pressure force to linear motion — use as a subcomponent in custom engine assemblies or pneumatic/hydraulic actuator studies"
+        },
+        {
+          "block": "Piston Engine",
+          "ref": "sdl_lib/Engines & Motors/Piston Engine",
+          "since": "R2023a+",
+          "intent": "Model a multi-cylinder piston engine with torque pulsation and inertia effects — use for detailed powertrain vibration studies or engine mounting analysis"
+        },
+        {
+          "block": "Spark Ignition Engine",
+          "ref": "sdl_lib/Engines & Motors/Spark Ignition Engine",
+          "since": "R2023a+",
+          "intent": "Model a spark-ignition gasoline engine with throttle control and torque output — use for gasoline vehicle powertrain studies, fuel economy, or engine control development"
+        },
+        {
+          "block": "Wind Turbine",
+          "ref": "sdl_lib/Engines & Motors/Wind Turbine",
+          "since": "R2023a+",
+          "intent": "Model a wind turbine rotor extracting power from wind speed — use for wind energy drivetrain studies, generator sizing, or renewable energy system simulation"
+        },
+        {
+          "block": "Air Intake",
+          "ref": "sdl_lib/Engines & Motors/Engine Subcomponents/Air Intake",
+          "since": "R2023a+",
+          "intent": "Model engine air intake manifold dynamics including throttle and plenum — use as a subcomponent for detailed engine breathing and volumetric efficiency studies"
+        },
+        {
+          "block": "Crankshaft",
+          "ref": "sdl_lib/Engines & Motors/Engine Subcomponents/Crankshaft",
+          "since": "R2023a+",
+          "intent": "Model a crankshaft converting piston reciprocating motion to rotation — use as a subcomponent in detailed multi-cylinder engine assemblies"
+        },
+        {
+          "block": "Exhaust Manifold Thermal",
+          "ref": "sdl_lib/Engines & Motors/Engine Subcomponents/Exhaust Manifold Thermal",
+          "since": "R2023a+",
+          "intent": "Model thermal dynamics of an exhaust manifold — use for catalyst warm-up studies, thermal management, or aftertreatment system development"
+        },
+        {
+          "block": "Ignition Trigger",
+          "ref": "sdl_lib/Engines & Motors/Engine Subcomponents/Ignition Trigger",
+          "since": "R2023a+",
+          "intent": "Generate ignition timing signals for spark-ignition engine cylinders — use as a subcomponent to control combustion phasing in detailed engine models"
+        },
+        {
+          "block": "SI Combustion Cylinder",
+          "ref": "sdl_lib/Engines & Motors/Engine Subcomponents/SI Combustion Cylinder",
+          "since": "R2023a+",
+          "intent": "Model a single spark-ignition combustion cylinder with pressure and torque output — use as a subcomponent for building detailed multi-cylinder engine assemblies"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gears",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "gears",
+      "hash": "eef7b638a77513e37e60a28ba3b544d78d246e3f3f7c95db838a25326b52c40e",
+      "fm": {
+        "title": "Gears",
+        "description": "Gear pairs, planetary sets, differentials, and rotational-to-translational converters (19 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "gear",
+          "planetary",
+          "differential",
+          "ratio",
+          "mesh"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Compound Planetary Gear",
+          "ref": "sdl_lib/Gears/Compound Planetary Gear",
+          "since": "R2023a+",
+          "intent": "Model a compound planetary gear set with multiple planet sets on a shared carrier — use for complex automatic transmissions or multi-ratio gear trains"
+        },
+        {
+          "block": "Cycloidal Drive",
+          "ref": "sdl_lib/Gears/Cycloidal Drive",
+          "since": "R2023a+",
+          "intent": "Model a cycloidal speed reducer with high reduction ratio — use for robotics joints, precision positioning, or compact high-ratio drives"
+        },
+        {
+          "block": "Differential",
+          "ref": "sdl_lib/Gears/Differential",
+          "since": "R2023a+",
+          "intent": "Model a standard bevel-gear differential splitting torque between two outputs — use for vehicle axle differentials, allowing speed difference between driven wheels"
+        },
+        {
+          "block": "Double-Pinion Planetary Gear",
+          "ref": "sdl_lib/Gears/Double-Pinion Planetary Gear",
+          "since": "R2023a+",
+          "intent": "Model a planetary gear set with two planet meshes between sun and ring — use for compound gear trains where double planets provide specific ratio relationships"
+        },
+        {
+          "block": "Harmonic Drive",
+          "ref": "sdl_lib/Gears/Harmonic Drive",
+          "since": "R2023a+",
+          "intent": "Model a harmonic drive speed reducer with very high gear ratio in a compact form — use for robotics, aerospace actuators, or precision instruments"
+        },
+        {
+          "block": "Limited-Slip Differential",
+          "ref": "sdl_lib/Gears/Limited-Slip Differential",
+          "since": "R2023a+",
+          "intent": "Model a differential with torque-biasing capability — use for performance vehicles, off-road drivetrains, or traction control studies where wheel slip must be limited"
+        },
+        {
+          "block": "Planetary Gear",
+          "ref": "sdl_lib/Gears/Planetary Gear",
+          "since": "R2023a+",
+          "intent": "Model a simple planetary gear set with sun, planet carrier, and ring — use as the fundamental building block for automatic transmissions or compound gear trains"
+        },
+        {
+          "block": "Ravigneaux Gear",
+          "ref": "sdl_lib/Gears/Ravigneaux Gear",
+          "since": "R2023a+",
+          "intent": "Model a Ravigneaux compound planetary gear set with shared carrier — use for compact automatic transmissions providing multiple ratios from a single gear assembly"
+        },
+        {
+          "block": "Simple Gear",
+          "ref": "sdl_lib/Gears/Simple Gear",
+          "since": "R2023a+",
+          "intent": "Model a fixed-ratio gear pair with optional efficiency loss — use for any constant gear reduction, final drives, or gear meshes in a powertrain"
+        },
+        {
+          "block": "Simple Gear with Variable Efficiency",
+          "ref": "sdl_lib/Gears/Simple Gear with Variable Efficiency",
+          "since": "R2023a+",
+          "intent": "Model a fixed-ratio gear pair whose efficiency varies with operating conditions — use when gear losses depend on speed, torque, or temperature"
+        },
+        {
+          "block": "Transmission",
+          "ref": "sdl_lib/Gears/Transmission",
+          "since": "R2023a+",
+          "intent": "Model a multi-speed transmission selecting discrete gear ratios — use for simplified gearbox modeling with ratio changes driven by an external gear command"
+        },
+        {
+          "block": "Worm Gear",
+          "ref": "sdl_lib/Gears/Worm Gear",
+          "since": "R2023a+",
+          "intent": "Model a worm and wheel gear set with high reduction and potential self-locking — use for lifting mechanisms, steering gears, or applications needing irreversibility"
+        },
+        {
+          "block": "Planet-Planet",
+          "ref": "sdl_lib/Gears/Planetary Subcomponents/Planet-Planet",
+          "since": "R2023a+",
+          "intent": "Model the mesh between two planet gears on a compound planetary — use as a subcomponent when building custom compound planetary gear assemblies"
+        },
+        {
+          "block": "Ring-Planet",
+          "ref": "sdl_lib/Gears/Planetary Subcomponents/Ring-Planet",
+          "since": "R2023a+",
+          "intent": "Model the internal mesh between ring gear and planet gear — use as a subcomponent when building custom planetary gear configurations"
+        },
+        {
+          "block": "Sun-Planet",
+          "ref": "sdl_lib/Gears/Planetary Subcomponents/Sun-Planet",
+          "since": "R2023a+",
+          "intent": "Model the external mesh between sun gear and planet gear — use as a subcomponent when building custom planetary gear configurations"
+        },
+        {
+          "block": "Sun-Planet Bevel",
+          "ref": "sdl_lib/Gears/Planetary Subcomponents/Sun-Planet Bevel",
+          "since": "R2023a+",
+          "intent": "Model a bevel gear mesh between sun and planet in a differential — use as a subcomponent for custom differential or bevel gear assemblies"
+        },
+        {
+          "block": "Sun-Planet Worm Gear",
+          "ref": "sdl_lib/Gears/Planetary Subcomponents/Sun-Planet Worm Gear",
+          "since": "R2023a+",
+          "intent": "Model a worm gear mesh between sun and planet — use as a subcomponent for custom self-locking planetary configurations"
+        },
+        {
+          "block": "Leadscrew",
+          "ref": "sdl_lib/Gears/Rotational- Translational/Leadscrew",
+          "since": "R2023a+",
+          "intent": "Convert rotational motion to translational motion via a helical thread — use for linear actuators, machine tool feeds, or precision positioning mechanisms"
+        },
+        {
+          "block": "Rack & Pinion",
+          "ref": "sdl_lib/Gears/Rotational- Translational/Rack & Pinion",
+          "since": "R2023a+",
+          "intent": "Convert rotational motion to translational motion via gear teeth — use for steering systems, linear actuators, or machine tool positioning"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "inertias-and-loads",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "inertias-and-loads",
+      "hash": "2d11c969e92dfd447213330b1dd92d6e6416946614b3a90abff4ba53984546b7",
+      "fm": {
+        "title": "Inertias and loads",
+        "description": "Variable inertia, variable mass, and unbalanced rotational loads (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "inertia",
+          "mass",
+          "load",
+          "unbalanced",
+          "variable"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Unbalanced Load",
+          "ref": "sdl_lib/Inertias & Loads/Unbalanced Load",
+          "since": "R2023a+",
+          "intent": "Model a rotating mass with center-of-gravity offset generating cyclic forces — use for vibration analysis of shafts with eccentric loads or unbalanced rotors"
+        },
+        {
+          "block": "Variable Inertia",
+          "ref": "sdl_lib/Inertias & Loads/Variable Inertia",
+          "since": "R2023a+",
+          "intent": "Model a rotational inertia whose value changes via an external signal — use for systems with varying payload, fuel consumption effects, or deployable mechanisms"
+        },
+        {
+          "block": "Variable Mass",
+          "ref": "sdl_lib/Inertias & Loads/Variable Mass",
+          "since": "R2023a+",
+          "intent": "Model a translational mass whose value changes via an external signal — use for rocket propulsion, conveyor loading, or systems with mass flow"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "sensors",
+      "hash": "cd8643a36bd4defed3d96905322fe8e9f121430b64d1d1f0226b7379ebdaed42",
+      "fm": {
+        "title": "Sensors",
+        "description": "Power measurement sensors for rotational and translational domains (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "sensor",
+          "power",
+          "measurement",
+          "torque",
+          "force"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Rotational Power Sensor",
+          "ref": "sdl_lib/Sensors/Rotational Power Sensor",
+          "since": "R2023a+",
+          "intent": "Measure instantaneous rotational power as the product of torque and angular velocity — use for efficiency calculations, energy flow analysis, or power monitoring"
+        },
+        {
+          "block": "Translational Power Sensor",
+          "ref": "sdl_lib/Sensors/Translational Power Sensor",
+          "since": "R2023a+",
+          "intent": "Measure instantaneous translational power as the product of force and velocity — use for efficiency calculations, energy flow analysis, or linear power monitoring"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "sources",
+      "hash": "f67a6a59121ed5c7999bcfaa16f8de56be48eeb8dfa4fe2a71671af894f2ea81",
+      "fm": {
+        "title": "Sources",
+        "description": "Mechanical excitation sources: sinusoidal, noise, and battery (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "source",
+          "sinusoidal",
+          "noise",
+          "battery",
+          "excitation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Battery (System-Level)",
+          "ref": "sdl_lib/Sources/Battery (System-Level)",
+          "since": "R2023a+",
+          "intent": "Model a battery as a voltage source with internal resistance and state-of-charge dynamics — use for system-level EV range studies or hybrid energy management"
+        },
+        {
+          "block": "Force Noise Source",
+          "ref": "sdl_lib/Sources/Force Noise Source",
+          "since": "R2023a+",
+          "intent": "Generate random translational force excitation — use for vibration testing, NVH analysis, or stochastic load simulation in mechanical systems"
+        },
+        {
+          "block": "Rotational Velocity Noise Source",
+          "ref": "sdl_lib/Sources/Rotational Velocity Noise Source",
+          "since": "R2023a+",
+          "intent": "Generate random rotational velocity excitation — use for vibration testing of rotating machinery or stochastic disturbance injection"
+        },
+        {
+          "block": "Sinusoidal Rotational Velocity Source",
+          "ref": "sdl_lib/Sources/Sinusoidal Rotational Velocity Source",
+          "since": "R2023a+",
+          "intent": "Generate sinusoidal angular velocity — use for frequency-domain testing of rotational systems, resonance sweeps, or harmonic excitation"
+        },
+        {
+          "block": "Sinusoidal Translational Velocity Source",
+          "ref": "sdl_lib/Sources/Sinusoidal Translational Velocity Source",
+          "since": "R2023a+",
+          "intent": "Generate sinusoidal linear velocity — use for frequency-domain testing of translational systems, vibration characterization, or shake testing"
+        },
+        {
+          "block": "Sinusoidal Force Source",
+          "ref": "sdl_lib/Sources/Sinusoidal Force Source",
+          "since": "R2023a+",
+          "intent": "Generate sinusoidal force excitation — use for forced vibration analysis, frequency response testing, or harmonic load application"
+        },
+        {
+          "block": "Sinusoidal Torque Source",
+          "ref": "sdl_lib/Sources/Sinusoidal Torque Source",
+          "since": "R2023a+",
+          "intent": "Generate sinusoidal torque excitation — use for torsional vibration analysis, frequency response testing, or rotational harmonic loading"
+        },
+        {
+          "block": "Torque Noise Source",
+          "ref": "sdl_lib/Sources/Torque Noise Source",
+          "since": "R2023a+",
+          "intent": "Generate random torque excitation — use for NVH analysis, torsional vibration testing, or stochastic torque disturbance simulation"
+        },
+        {
+          "block": "Translational Velocity Noise Source",
+          "ref": "sdl_lib/Sources/Translational Velocity Noise Source",
+          "since": "R2023a+",
+          "intent": "Generate random translational velocity excitation — use for vibration testing of linear systems or stochastic velocity disturbance injection"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "springs-and-dampers",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "springs-and-dampers",
+      "hash": "8a30bedbefe6a6426d2b3a8cf9439e5ad4b008c08cd096c97c6d2526e2cad066",
+      "fm": {
+        "title": "Springs and dampers",
+        "description": "Linear and nonlinear springs and dampers for rotational and translational domains (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "spring",
+          "damper",
+          "stiffness",
+          "viscous",
+          "nonlinear"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Nonlinear Translational Damper",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Translational Damper",
+          "since": "R2023a+",
+          "intent": "Model a translational damper with nonlinear force-velocity characteristics — use for realistic shock absorbers, hydraulic dampers, or progressive damping"
+        },
+        {
+          "block": "Nonlinear Translational Spring",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Translational Spring",
+          "since": "R2023a+",
+          "intent": "Model a translational spring with nonlinear force-displacement characteristics — use for bump stops, progressive springs, or rubber mounts with hardening"
+        },
+        {
+          "block": "Nonlinear Rotational Damper",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Rotational Damper",
+          "since": "R2023a+",
+          "intent": "Model a rotational damper with nonlinear torque-speed characteristics — use for torsional vibration dampers, viscous couplings, or speed-dependent drag"
+        },
+        {
+          "block": "Nonlinear Rotational Spring",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Nonlinear Rotational Spring",
+          "since": "R2023a+",
+          "intent": "Model a rotational spring with nonlinear torque-angle characteristics — use for backlash-free couplings with progressive stiffness, or limit stops"
+        },
+        {
+          "block": "Rotational Damper",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Rotational Damper",
+          "since": "R2023a+",
+          "intent": "Model a linear rotational viscous damper — use for shaft damping, bearing friction approximation, or torsional vibration reduction between rotating bodies"
+        },
+        {
+          "block": "Translational Damper",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Translational Damper",
+          "since": "R2023a+",
+          "intent": "Model a linear translational viscous damper — use for suspension damping, vibration isolation, or energy dissipation in linear motion systems"
+        },
+        {
+          "block": "Variable Translational Damper",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Translational Damper",
+          "since": "R2023a+",
+          "intent": "Model a translational damper whose coefficient is set by an external signal — use for semi-active suspensions, adaptive damping, or magnetorheological damper control"
+        },
+        {
+          "block": "Variable Translational Spring",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Translational Spring",
+          "since": "R2023a+",
+          "intent": "Model a translational spring whose stiffness is set by an external signal — use for adaptive suspension, variable-stiffness mounts, or parametric stiffness studies"
+        },
+        {
+          "block": "Variable Rotational Damper",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Rotational Damper",
+          "since": "R2023a+",
+          "intent": "Model a rotational damper whose coefficient is set by an external signal — use for adaptive torsional damping, semi-active drivetrain vibration control, or variable viscous couplings"
+        },
+        {
+          "block": "Variable Rotational Spring",
+          "ref": "sdl_lib/Couplings & Drives/Springs & Dampers/Variable Rotational Spring",
+          "since": "R2023a+",
+          "intent": "Model a rotational spring whose stiffness is set by an external signal — use for variable-stiffness torsional couplings or adaptive mount systems"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "tires-and-vehicles",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "tires-and-vehicles",
+      "hash": "3cf8b32b525db60654a20945d4cbf1a7fdbc2dcbf7c722ff2177598dd1c3aadc",
+      "fm": {
+        "title": "Tires and vehicles",
+        "description": "Vehicle bodies, tires, and road interaction models for longitudinal dynamics (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "tire",
+          "vehicle",
+          "road",
+          "wheel",
+          "body"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Longitudinal Vehicle",
+          "ref": "sdl_lib/Tires & Vehicles/Longitudinal Vehicle",
+          "since": "R2023a+",
+          "intent": "Model vehicle longitudinal dynamics including aerodynamic drag, rolling resistance, and grade effects — use for drive cycle simulation, fuel economy, or acceleration studies"
+        },
+        {
+          "block": "Road Profile",
+          "ref": "sdl_lib/Tires & Vehicles/Road Profile",
+          "since": "R2023a+",
+          "intent": "Generate road surface elevation profile for tire and suspension excitation — use for ride comfort analysis, suspension design, or durability studies"
+        },
+        {
+          "block": "Three-Axle Vehicle Body",
+          "ref": "sdl_lib/Tires & Vehicles/Three-Axle Vehicle Body",
+          "since": "R2023a+",
+          "intent": "Model a three-axle vehicle body with load distribution and pitch dynamics — use for heavy trucks, buses, or multi-axle vehicle ride and handling studies"
+        },
+        {
+          "block": "Tire (Friction Parameterized)",
+          "ref": "sdl_lib/Tires & Vehicles/Tire (Friction Parameterized)",
+          "since": "R2023a+",
+          "intent": "Model tire longitudinal force using friction-based parameterization — use when tire data is specified as friction coefficients rather than Magic Formula parameters"
+        },
+        {
+          "block": "Tire (Magic Formula)",
+          "ref": "sdl_lib/Tires & Vehicles/Tire (Magic Formula)",
+          "since": "R2023a+",
+          "intent": "Model tire force generation using Pacejka Magic Formula — use for accurate tire-road interaction in vehicle dynamics, handling, and traction studies"
+        },
+        {
+          "block": "Tire (Simple)",
+          "ref": "sdl_lib/Tires & Vehicles/Tire (Simple)",
+          "since": "R2023a+",
+          "intent": "Model tire force with a simplified linear slip relationship — use for system-level powertrain studies where detailed tire modeling is not critical"
+        },
+        {
+          "block": "Vehicle Body",
+          "ref": "sdl_lib/Tires & Vehicles/Vehicle Body",
+          "since": "R2023a+",
+          "intent": "Model a two-axle vehicle body with longitudinal and pitch dynamics — use for passenger car or light truck drive cycle simulation, braking, and acceleration studies"
+        },
+        {
+          "block": "Rolling Resistance",
+          "ref": "sdl_lib/Tires & Vehicles/Tire Subcomponents/Rolling Resistance",
+          "since": "R2023a+",
+          "intent": "Model tire rolling resistance as a speed and load dependent force — use as a subcomponent for custom tire assemblies or to add rolling losses to simplified models"
+        },
+        {
+          "block": "Tire-Road Interaction (Magic Formula)",
+          "ref": "sdl_lib/Tires & Vehicles/Tire Subcomponents/Tire-Road Interaction (Magic Formula)",
+          "since": "R2023a+",
+          "intent": "Compute tire-road contact forces using Pacejka Magic Formula slip equations — use as a subcomponent for building custom tire models with full slip-force characteristics"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "transmissions",
+      "kind": "toolbox",
+      "library": "Driveline",
+      "kbFolder": "driveline",
+      "category": "transmissions",
+      "hash": "e2675be6bdf8e647e154522b23e34aa3141e5e73c861b9c61957534e2bdb0232",
+      "fm": {
+        "title": "Transmissions",
+        "description": "Complete automatic transmission assemblies with planetary gear sets (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "driveline",
+          "transmission",
+          "speed",
+          "planetary",
+          "lepelletier",
+          "automatic"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "10-Speed",
+          "ref": "sdl_lib/Transmissions/10-Speed",
+          "since": "R2023a+",
+          "intent": "Model a 10-speed automatic planetary transmission — use for modern passenger car or heavy-duty truck powertrain studies with wide gear ratio spread"
+        },
+        {
+          "block": "4-Speed CR-CR",
+          "ref": "sdl_lib/Transmissions/4-Speed CR-CR",
+          "since": "R2023a+",
+          "intent": "Model a 4-speed compound-ravigneaux automatic transmission — use for compact automatic gearbox architectures with coupled planetary gear sets"
+        },
+        {
+          "block": "4-Speed Ravigneaux",
+          "ref": "sdl_lib/Transmissions/4-Speed Ravigneaux",
+          "since": "R2023a+",
+          "intent": "Model a 4-speed Ravigneaux automatic transmission — use for front-wheel-drive applications with a single Ravigneaux gear set providing four ratios"
+        },
+        {
+          "block": "6-Speed Lepelletier",
+          "ref": "sdl_lib/Transmissions/6-Speed Lepelletier",
+          "since": "R2023a+",
+          "intent": "Model a 6-speed Lepelletier automatic transmission — use for modern rear-wheel-drive gearbox designs combining a simple planetary with a Ravigneaux set"
+        },
+        {
+          "block": "7-Speed Lepelletier",
+          "ref": "sdl_lib/Transmissions/7-Speed Lepelletier",
+          "since": "R2023a+",
+          "intent": "Model a 7-speed Lepelletier automatic transmission — use for premium vehicle powertrain studies needing extended ratio coverage with smooth shifts"
+        },
+        {
+          "block": "8-Speed",
+          "ref": "sdl_lib/Transmissions/8-Speed",
+          "since": "R2023a+",
+          "intent": "Model an 8-speed automatic planetary transmission — use for fuel-efficient powertrain designs common in luxury and performance vehicles"
+        },
+        {
+          "block": "9-Speed",
+          "ref": "sdl_lib/Transmissions/9-Speed",
+          "since": "R2023a+",
+          "intent": "Model a 9-speed automatic planetary transmission — use for front-wheel-drive transverse applications requiring wide ratio spread in a compact package"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:18",
+  "generatedAtDatenum": 740309.99535842589
 }

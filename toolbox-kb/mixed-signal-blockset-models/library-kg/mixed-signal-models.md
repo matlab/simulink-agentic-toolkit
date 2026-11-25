@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mixed signal models
-description: Pre-built mixed-signal circuit models
-tags: [pll, smps, power, clock, mixed-signal]
+description: Pre-built mixed-signal circuit models (2 blocks)
+tags: [toolbox-kb, mixed-signal-blockset-models, pll, smps, power, clock, mixed-signal]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset Models
-category_path: Mixed signal models
+sources:
+  - resource: matlab:mixedsignallibs
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset Models
+kb_folder: mixed-signal-blockset-models
+category: mixed-signal-models
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Mixed signal models
-
-Use these blocks for mixed signal models.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: State estimation
-description: State of charge, energy, health, and capacity estimation algorithms
-tags: [soc, soe, soh, estimator, kalman]
+description: "State of charge, energy, health, and capacity estimation algorithms (22 blocks)"
+tags: [toolbox-kb, battery, soc, soe, soh, estimator, kalman]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: State estimation
+sources:
+  - resource: matlab:batt_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: state-estimation
 block_count: 22
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # State estimation
-
-Use these blocks for state estimation.
 
 ## Recommended Blocks
 

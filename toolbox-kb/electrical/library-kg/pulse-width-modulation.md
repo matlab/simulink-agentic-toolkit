@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pulse width modulation
-description: PWM generators, gate signal generators, and thyristor pulse generators
-tags: [pwm, modulation, gate, carrier, thyristor]
+description: "PWM generators, gate signal generators, and thyristor pulse generators (17 blocks)"
+tags: [toolbox-kb, electrical, pwm, modulation, gate, carrier, thyristor]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Pulse width modulation
+sources:
+  - resource: matlab:ee_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: pulse-width-modulation
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Pulse width modulation
-
-Use these blocks for pulse width modulation.
 
 ## Recommended Blocks
 

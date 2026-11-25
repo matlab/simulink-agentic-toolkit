@@ -1,15 +1,358 @@
 {
-  "generatedAt": "2026-09-29T16:38:05",
-  "generatedAtDatenum": 740254.69311887736,
-  "generatorVersion": 4,
-  "libraries": [
-    "Automated Driving Toolbox"
-  ],
-  "blockCount": 35,
-  "categoryCount": 6,
-  "libraryFingerprints": {
-    "Automated_Driving_Toolbox": {
-      "blockCount": 35
+  "pages": [
+    {
+      "id": "demos",
+      "kind": "toolbox",
+      "library": "Automated Driving Toolbox",
+      "kbFolder": "automated-driving-toolbox",
+      "category": "demos",
+      "hash": "39374a7dcb8f35878631f7682eb27d77f6f94a35e4ee5430fd33f61e4a3839e7",
+      "fm": {
+        "title": "Demos",
+        "description": "Links to example models (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "automated-driving-toolbox",
+          "demos"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Demos",
+          "ref": "drivinglib/Demos",
+          "since": "R2023a+",
+          "intent": "Informational block linking to Automated Driving Toolbox example models — not used in production designs."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "roadrunner",
+      "kind": "toolbox",
+      "library": "Automated Driving Toolbox",
+      "kbFolder": "automated-driving-toolbox",
+      "category": "roadrunner",
+      "hash": "5cff1d16ca9f8f62e91d8209a144a263f40e9b6088814ce6923968940793df3a",
+      "fm": {
+        "title": "Roadrunner",
+        "description": "RoadRunner scenario co-simulation interface (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "automated-driving-toolbox",
+          "roadrunner"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "RoadRunner Scenario",
+          "ref": "roadrunnerscenario/RoadRunner Scenario",
+          "since": "R2023a+",
+          "intent": "Interface block that co-simulates the model with a RoadRunner scenario — use to drive Simulink from RoadRunner actors."
+        },
+        {
+          "block": "RoadRunner Scenario Reader",
+          "ref": "roadrunnerscenario/RoadRunner Scenario Reader",
+          "since": "R2023a+",
+          "intent": "Read actor and state data from a RoadRunner scenario into the model — use to consume RoadRunner data in Simulink."
+        },
+        {
+          "block": "RoadRunner Scenario Writer",
+          "ref": "roadrunnerscenario/RoadRunner Scenario Writer",
+          "since": "R2023a+",
+          "intent": "Write actor and state data from the model back to a RoadRunner scenario — use to publish Simulink results into RoadRunner."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "scenario-sensor-modeling",
+      "kind": "toolbox",
+      "library": "Automated Driving Toolbox",
+      "kbFolder": "automated-driving-toolbox",
+      "category": "scenario-sensor-modeling",
+      "hash": "386f5637a270c2d9b7215e4ce24df74adf599a4078194466830218f4f390077e",
+      "fm": {
+        "title": "Scenario sensor modeling",
+        "description": "Cuboid driving scenarios and statistical sensor models (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "automated-driving-toolbox",
+          "driving scenario and sensor modeling",
+          "detection generator",
+          "scenario reader",
+          "bicycle model",
+          "ins",
+          "vehicle to world",
+          "world to vehicle",
+          "cuboid"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Bicycle Model - Force Input",
+          "ref": "drivingscenarioandsensors/Bicycle Model - Force Input",
+          "since": "R2023b+",
+          "intent": "Simulate lateral vehicle dynamics with a 3-DOF bicycle model driven by tire forces — use for handling and controls studies with force inputs."
+        },
+        {
+          "block": "Bicycle Model - Velocity Input",
+          "ref": "drivingscenarioandsensors/Bicycle Model - Velocity Input",
+          "since": "R2023b+",
+          "intent": "Simulate lateral vehicle dynamics with a 3-DOF bicycle model driven by velocity/steering commands — use for kinematic path-tracking studies."
+        },
+        {
+          "block": "Cuboid To 3D Simulation",
+          "ref": "drivingscenarioandsensors/Cuboid To 3D Simulation",
+          "since": "R2023a+",
+          "intent": "Convert cuboid driving-scenario actors into 3D-simulation actor poses — use to bridge a cuboid scenario into the photorealistic 3D world."
+        },
+        {
+          "block": "Driving Radar Data Generator",
+          "ref": "drivingscenarioandsensors/Driving Radar Data Generator",
+          "since": "R2023a+",
+          "intent": "Generate synthetic radar detections and tracks from scenario ground truth — use to model an automotive radar for perception testing."
+        },
+        {
+          "block": "INS",
+          "ref": "drivingscenarioandsensors/INS",
+          "since": "R2023a+",
+          "intent": "Model a fused inertial navigation output (position/orientation/velocity) with error characteristics — use to simulate an INS/GNSS estimate."
+        },
+        {
+          "block": "Ideal Ground Truth Sensor",
+          "ref": "drivingscenarioandsensors/Ideal Ground Truth Sensor",
+          "since": "R2025a+",
+          "intent": "Report exact ground-truth actor poses from the scenario — use as a perfect reference for evaluating perception and tracking."
+        },
+        {
+          "block": "Radar Detection Generator",
+          "ref": "drivingscenarioandsensors/Radar Detection Generator",
+          "since": "R2023a+",
+          "intent": "Generate synthetic radar detections from scenario ground truth — use to model a radar sensor in cuboid driving scenarios."
+        },
+        {
+          "block": "Scenario Reader",
+          "ref": "drivingscenarioandsensors/Scenario Reader",
+          "since": "R2023a+",
+          "intent": "Read actors and roads from a driving-scenario file into the model — use to play back a designed scenario during simulation."
+        },
+        {
+          "block": "Ultrasonic Detection Generator",
+          "ref": "drivingscenarioandsensors/Ultrasonic Detection Generator",
+          "since": "R2023a+",
+          "intent": "Generate synthetic ultrasonic range detections from scenario ground truth — use to model parking/proximity sensors."
+        },
+        {
+          "block": "Vehicle To World",
+          "ref": "drivingscenarioandsensors/Vehicle To World",
+          "since": "R2023a+",
+          "intent": "Transform poses and positions from the ego-vehicle frame to world coordinates — use to place vehicle-relative data on the map."
+        },
+        {
+          "block": "Vision Detection Generator",
+          "ref": "drivingscenarioandsensors/Vision Detection Generator",
+          "since": "R2023a+",
+          "intent": "Generate synthetic camera-based object detections from scenario ground truth — use to model a vision sensor for perception testing."
+        },
+        {
+          "block": "World To Vehicle",
+          "ref": "drivingscenarioandsensors/World To Vehicle",
+          "since": "R2023a+",
+          "intent": "Transform poses and positions from world coordinates to the ego-vehicle frame — use to express map data relative to the vehicle."
+        },
+        {
+          "block": "Lidar Point Cloud Generator",
+          "ref": "drivingscenarioandsensors/Lidar Point Cloud Generator",
+          "since": "R2023a+",
+          "intent": "Generate a point cloud from simulated roads and actor poses in a driving scenario. The block can simulate added noise at a specified range accuracy using a statistical model. The block also provides parameters to exclude the ego vehicle and roads from the generated point cloud."
+        },
+        {
+          "block": "Simulation 3D Vision Detection Generator",
+          "ref": "drivingsim3d/Simulation 3D Vision Detection Generator",
+          "since": "R2023a+",
+          "intent": "Generates object and lane detections for actors and lanes in the 3D visualization environment. If you set the sample time to -1, the block uses the sample time specified in the Simulation 3D Scene Configuration block. To use this sensor, ensure that the Simulation 3D Scene Configuration block is in your model."
+        },
+        {
+          "block": "Lateral Controller Stanley",
+          "ref": "drivingvehiclecontroller/Lateral Controller Stanley",
+          "since": "R2023a+",
+          "intent": "Compute the steering angle command in degrees that controls the current pose of the vehicle with respect to the desired reference pose, using the Stanley method. The RefPose port accepts a 1-by-3 vector [x, y, theta] as the position of the reference point on the path and the orientation of the path at the point in degrees. In forward motion, the reference point is the nearest point on the path to the center of the front axle of the vehicle. In reverse motion, the reference point is the nearest point on the path to the center of the rear axle. The CurrPose port accepts a 1-by-3 vector [x, y, theta] as the position of the center of the rear axle and the heading angle of the vehicle in degrees. The CurrVelocity port accepts a scalar as the current longitudinal velocity of the vehicle in meters/second. The Direction port accepts a scalar representing the driving direction: 1 for forward motion and -1 for reverse motion. Setting the Vehicle model parameter to Dynamic bicycle model enables additional input ports. The Curvature port accepts a scalar representing the curvature of the path at the reference point. The CurrYawRate port accepts a scalar as the current yaw rate in degrees/second. The CurrSteer port accepts a scalar representing the current steering angle in degrees."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "simulation-3d",
+      "kind": "toolbox",
+      "library": "Automated Driving Toolbox",
+      "kbFolder": "automated-driving-toolbox",
+      "category": "simulation-3d",
+      "hash": "fd7fdd64b5af028bb7250ea0a1b4e42f1f7b6b4c836ce673820966fed85e0c34",
+      "fm": {
+        "title": "Simulation 3d",
+        "description": "Photorealistic 3D scene actors and sensors (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "automated-driving-toolbox",
+          "simulation 3d",
+          "camera",
+          "lidar",
+          "pedestrian",
+          "bicyclist",
+          "radar",
+          "ultrasonic",
+          "vehicle with ground"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Bicyclist",
+          "ref": "drivingsim3d/Simulation 3D Bicyclist",
+          "since": "R2023a+",
+          "intent": "Spawn and animate a bicyclist actor in the 3D simulation scene — use to add a vulnerable road user for perception testing."
+        },
+        {
+          "block": "Simulation 3D Camera",
+          "ref": "drivingsim3d/Simulation 3D Camera",
+          "since": "R2023a+",
+          "intent": "Model a pinhole camera in the 3D simulation environment — use to render synthetic camera imagery for perception testing."
+        },
+        {
+          "block": "Simulation 3D Fisheye Camera",
+          "ref": "drivingsim3d/Simulation 3D Fisheye Camera",
+          "since": "R2023a+",
+          "intent": "Model a fisheye camera in the 3D simulation environment — use to generate wide-FOV synthetic imagery."
+        },
+        {
+          "block": "Simulation 3D Lidar",
+          "ref": "drivingsim3d/Simulation 3D Lidar",
+          "since": "R2023a+",
+          "intent": "Model a lidar sensor in the 3D simulation environment — use to generate synthetic point clouds for perception testing."
+        },
+        {
+          "block": "Simulation 3D Pedestrian",
+          "ref": "drivingsim3d/Simulation 3D Pedestrian",
+          "since": "R2023a+",
+          "intent": "Spawn and animate a pedestrian actor in the 3D simulation scene — use to add a vulnerable road user for perception testing."
+        },
+        {
+          "block": "Simulation 3D Probabilistic Radar",
+          "ref": "drivingsim3d/Simulation 3D Probabilistic Radar",
+          "since": "R2023a+",
+          "intent": "Model a probabilistic radar sensor in the 3D simulation environment — use to generate statistically-modeled radar detections."
+        },
+        {
+          "block": "Simulation 3D Probabilistic Radar Configuration",
+          "ref": "drivingsim3d/Simulation 3D Probabilistic Radar Configuration",
+          "since": "R2023a+",
+          "intent": "Configure the shared settings of the probabilistic radar model in the 3D scene — use once to parameterize 3D radar sensing."
+        },
+        {
+          "block": "Simulation 3D Scene Configuration",
+          "ref": "drivingsim3d/Simulation 3D Scene Configuration",
+          "since": "R2023a+",
+          "intent": "Configure and connect to the 3D simulation scene (world, weather, sample time) — required once per model to drive the 3D environment."
+        },
+        {
+          "block": "Simulation 3D Ultrasonic Array",
+          "ref": "drivingsim3d/Simulation 3D Ultrasonic Array",
+          "since": "R2023a+",
+          "intent": "Model an array of ultrasonic sensors in the 3D simulation environment — use for synthetic parking/proximity sensing."
+        },
+        {
+          "block": "Simulation 3D Ultrasonic Sensor",
+          "ref": "drivingsim3d/Simulation 3D Ultrasonic Sensor",
+          "since": "R2023a+",
+          "intent": "Model an ultrasonic range sensor in the 3D simulation environment — use for synthetic proximity sensing."
+        },
+        {
+          "block": "Simulation 3D Vehicle with Ground Following",
+          "ref": "drivingsim3d/Simulation 3D Vehicle with Ground Following",
+          "since": "R2023a+",
+          "intent": "Spawn a vehicle in the 3D scene that follows terrain elevation — use to place a drivable vehicle in the photorealistic world."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "tracking-and-planning",
+      "kind": "toolbox",
+      "library": "Automated Driving Toolbox",
+      "kbFolder": "automated-driving-toolbox",
+      "category": "tracking-and-planning",
+      "hash": "797eda8ae7b96aeb05f74de30fbfa40b26730d66f1c27e34fb783f84c56a9ca6",
+      "fm": {
+        "title": "Tracking and planning",
+        "description": "Object tracking and motion-planning algorithms (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "automated-driving-toolbox",
+          "tracker",
+          "detection concatenation",
+          "path smoother",
+          "velocity profiler"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Detection Concatenation",
+          "ref": "drivinglib/Detection Concatenation",
+          "since": "R2023a+",
+          "intent": "Concatenate detections from multiple sensors into a single list — use to feed a combined detection stream to a tracker."
+        },
+        {
+          "block": "Multi-Object Tracker",
+          "ref": "drivinglib/Multi-Object Tracker",
+          "since": "R2023a+",
+          "intent": "Track multiple objects over time from sensor detections using global nearest-neighbor assignment — use for object tracking in ADAS/autonomous perception."
+        },
+        {
+          "block": "Path Smoother Spline",
+          "ref": "drivinglib/Path Smoother Spline",
+          "since": "R2023a+",
+          "intent": "Smooth a reference path into a curvature-continuous spline — use to produce drivable paths from coarse waypoints."
+        },
+        {
+          "block": "Velocity Profiler",
+          "ref": "drivinglib/Velocity Profiler",
+          "since": "R2023a+",
+          "intent": "Generate a velocity profile along a path that respects acceleration and curvature limits — use to plan feasible speeds for a planned trajectory."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "vehicle-control",
+      "kind": "toolbox",
+      "library": "Automated Driving Toolbox",
+      "kbFolder": "automated-driving-toolbox",
+      "category": "vehicle-control",
+      "hash": "0153efdc33869aeb05b1a92fe728702355be2d5fd7e07c2ffae1a1acb178f0fd",
+      "fm": {
+        "title": "Vehicle control",
+        "description": "Blocks for Vehicle control (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "automated-driving-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Longitudinal Controller Stanley",
+          "ref": "drivingvehiclecontroller/Longitudinal Controller Stanley",
+          "since": "R2023a+",
+          "intent": "Compute acceleration and deceleration commands that control the velocity of a vehicle given the reference velocity, the current velocity, and the current driving direction. The controller is implemented as a discrete Proportional-Integral (PI) controller with integral anti-windup. To reset the integral of velocity error to zero, pass a nonzero value to the Reset port. The Direction port accepts a scalar representing the driving direction with two possible values: 1 for forward motion and -1 for reverse motion. The outputs AccelCmd and DecelCmd are saturated by the maximum longitudinal acceleration and the maximum longitudinal deceleration parameters."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:14",
+  "generatedAtDatenum": 740309.99530421291
 }

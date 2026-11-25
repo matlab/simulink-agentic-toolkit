@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: Pre-integrated sensor drivers for IMU, accelerometer, environmental, and distance
-tags: [IMU, accelerometer, gyroscope, magnetometer, sensor]
+description: "Pre-integrated sensor drivers for IMU, accelerometer, environmental, and distance (19 blocks)"
+tags: [toolbox-kb, stm32-microcontroller-blockset, IMU, accelerometer, gyroscope, magnetometer, sensor]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Sensors
+sources:
+  - resource: matlab:stm32Environmentalsensorslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: sensors
 block_count: 19
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

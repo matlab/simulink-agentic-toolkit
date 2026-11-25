@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Communication
-description: Network and device-to-host data exchange on iOS
-tags: [tcp, udp, communication, network, send, receive]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Apple iOS Devices
-category_path: Communication
+description: Network and device-to-host data exchange on iOS (7 blocks)
+tags: [toolbox-kb, simulink-support-package-for-apple-ios-devices, tcp, udp, communication, network, send, receive]
+status: draft
+sources:
+  - resource: matlab:iosadvancedlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Apple iOS Devices
+kb_folder: simulink-support-package-for-apple-ios-devices
+category: communication
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Communication
-
-Use these blocks for communication.
 
 ## Recommended Blocks
 

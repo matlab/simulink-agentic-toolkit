@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Body dynamics
-description: Mass properties, inertia tensor, and CG estimation
-tags: [inertia, CG, center of gravity, mass, moment]
+description: "Mass properties, inertia tensor, and CG estimation (4 blocks)"
+tags: [toolbox-kb, aerospace-blockset, inertia, CG, center of gravity, mass, moment]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Body dynamics
+sources:
+  - resource: matlab:aerolibbdyn
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: body-dynamics
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Body dynamics
-
-Use these blocks for body dynamics.
 
 ## Recommended Blocks
 

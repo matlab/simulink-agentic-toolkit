@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Error correction
-description: Turbo and turbo-product forward error correction
-tags: [error detection and correction, tpc, turbo]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Error correction
+description: Turbo and turbo-product forward error correction (10 blocks)
+tags: [toolbox-kb, communications-toolbox, error detection and correction, tpc, turbo]
+status: draft
+sources:
+  - resource: matlab:commblkcod2
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: error-correction
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Error correction
-
-Use these blocks for error correction.
 
 ## Recommended Blocks
 

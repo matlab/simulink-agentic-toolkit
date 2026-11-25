@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Temporal operators
-description: Temporal logic operators for time-based properties
-tags: [temporal, detector, extender, within, time]
+description: Temporal logic operators for time-based properties (3 blocks)
+tags: [toolbox-kb, simulink-design-verifier, temporal, detector, extender, within, time]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Design Verifier
-category_path: Temporal operators
+sources:
+  - resource: matlab:sldvlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Design Verifier
+kb_folder: simulink-design-verifier
+category: temporal-operators
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Temporal operators
-
-Use these blocks for temporal operators.
 
 ## Recommended Blocks
 

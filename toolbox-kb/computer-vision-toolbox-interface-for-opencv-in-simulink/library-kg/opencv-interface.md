@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Opencv interface
-description: Data conversion blocks for interfacing Simulink with OpenCV C++ code
-tags: [opencv, conversion, matrix, image, interface]
+description: Data conversion blocks for interfacing Simulink with OpenCV C++ code (4 blocks)
+tags: [toolbox-kb, computer-vision-toolbox-interface-for-opencv-in-simulink, opencv, conversion, matrix, image, interface]
 status: stable
-source: mathworks_toolbox
-library_root: Computer Vision Toolbox Interface for OpenCV in Simulink
-category_path: Opencv interface
+sources:
+  - resource: matlab:opencvConverterBlockset
+source: toolbox_kb
+managed_by: satk
+library: Computer Vision Toolbox Interface for OpenCV in Simulink
+kb_folder: computer-vision-toolbox-interface-for-opencv-in-simulink
+category: opencv-interface
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Opencv interface
-
-Use these blocks for opencv interface.
 
 ## Recommended Blocks
 

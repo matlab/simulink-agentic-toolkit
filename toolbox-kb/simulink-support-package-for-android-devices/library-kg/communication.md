@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Communication
-description: Network, cloud, and serial data exchange on Android
-tags: [tcp, mqtt, http, serial, thingspeak, communication]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Android Devices
-category_path: Communication
+description: "Network, cloud, and serial data exchange on Android (15 blocks)"
+tags: [toolbox-kb, simulink-support-package-for-android-devices, tcp, mqtt, http, serial, thingspeak, communication]
+status: draft
+sources:
+  - resource: matlab:androidcommunicationlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Android Devices
+kb_folder: simulink-support-package-for-android-devices
+category: communication
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Communication
-
-Use these blocks for communication.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Audio video
-description: Audio and media I/O on Android
-tags: [audio, video, camera]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Android Devices
-category_path: Audio video
+description: Audio and media I/O on Android (6 blocks)
+tags: [toolbox-kb, simulink-support-package-for-android-devices, audio, video, camera]
+status: draft
+sources:
+  - resource: matlab:androidaudiovideolib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Android Devices
+kb_folder: simulink-support-package-for-android-devices
+category: audio-video
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Audio video
-
-Use these blocks for audio video.
 
 ## Recommended Blocks
 

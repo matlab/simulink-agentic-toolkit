@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Model verification
-description: Runtime assertion blocks
-tags: [assertion, verification, check]
+description: Runtime assertion blocks (1 blocks)
+tags: [toolbox-kb, simulink, assertion, verification, check]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Model verification
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: model-verification
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Model verification
-
-Use these blocks for model verification.
 
 ## Recommended Blocks
 

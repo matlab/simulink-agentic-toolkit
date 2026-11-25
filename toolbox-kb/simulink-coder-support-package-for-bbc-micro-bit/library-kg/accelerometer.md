@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Accelerometer
-description: On-board 3-axis accelerometers
-tags: [accelerometer, lsm303, mma8652]
-status: stable
-source: custom_library
-library_root: Simulink Coder Support Package for BBC micro:bit
-category_path: Accelerometer
+description: On-board 3-axis accelerometers (9 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-bbc-micro-bit, accelerometer, lsm303, mma8652]
+status: draft
+sources:
+  - resource: matlab:microbitaccellib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for BBC micro:bit
+kb_folder: simulink-coder-support-package-for-bbc-micro-bit
+category: accelerometer
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Accelerometer
-
-Use these blocks for accelerometer.
 
 ## Recommended Blocks
 

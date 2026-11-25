@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Equivalent baseband
-description: Equivalent-baseband RF chain components (amplifiers, mixers, filters, lines)
-tags: [equivalent baseband]
-status: stable
-source: custom_library
-library_root: RF Blockset
-category_path: Equivalent baseband
+description: "Equivalent-baseband RF chain components (amplifiers, mixers, filters, lines) (28 blocks)"
+tags: [toolbox-kb, rf-blockset, equivalent baseband]
+status: draft
+sources:
+  - resource: matlab:rfamplifiers1
+source: toolbox_kb
+managed_by: satk
+library: RF Blockset
+kb_folder: rf-blockset
+category: equivalent-baseband
 block_count: 28
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Equivalent baseband
-
-Use these blocks for equivalent baseband.
 
 ## Recommended Blocks
 

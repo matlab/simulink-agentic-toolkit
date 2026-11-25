@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Objectives constraints
-description: Formal verification objectives and input constraints
-tags: [proof, assumption, objective, constraint, test]
+description: Formal verification objectives and input constraints (4 blocks)
+tags: [toolbox-kb, simulink-design-verifier, proof, assumption, objective, constraint, test]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Design Verifier
-category_path: Objectives constraints
+sources:
+  - resource: matlab:sldvlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Design Verifier
+kb_folder: simulink-design-verifier
+category: objectives-constraints
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Objectives constraints
-
-Use these blocks for objectives constraints.
 
 ## Recommended Blocks
 

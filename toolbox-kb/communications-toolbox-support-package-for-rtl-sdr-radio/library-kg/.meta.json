@@ -1,15 +1,37 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.74454798608,
-  "generatorVersion": 4,
-  "libraries": [
-    "Communications Toolbox Support Package for RTL-SDR Radio"
-  ],
-  "blockCount": 1,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Communications_Toolbox_Support_Package_for_RTL_SDR_Radio": {
-      "blockCount": 1
+  "pages": [
+    {
+      "id": "sdr-hardware",
+      "kind": "toolbox",
+      "library": "Communications Toolbox Support Package for RTL-SDR Radio",
+      "kbFolder": "communications-toolbox-support-package-for-rtl-sdr-radio",
+      "category": "sdr-hardware",
+      "hash": "bfb886fb62b3d062ad27e74aa4073a0516dbc1e8ee35d13bf4c195772bacebd4",
+      "fm": {
+        "title": "Sdr hardware",
+        "description": "RTL-SDR receive-only software-defined radio interface (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-support-package-for-rtl-sdr-radio",
+          "rtl",
+          "sdr",
+          "radio",
+          "receiver",
+          "usb"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "RTL-SDR Receiver",
+          "ref": "sdrrlib/RTL-SDR Receiver",
+          "since": "R2023a+",
+          "intent": "Receive IQ samples from an RTL-SDR USB dongle in real time — use for low-cost spectrum monitoring, FM/ADS-B reception, or educational RF signal capture from 25 MHz to 1.75 GHz"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:16",
+  "generatedAtDatenum": 740309.99532821763
 }

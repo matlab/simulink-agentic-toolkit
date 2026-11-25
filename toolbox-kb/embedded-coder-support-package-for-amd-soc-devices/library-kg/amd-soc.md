@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Amd soc
-description: AMD/Xilinx SoC blocks for ARM-FPGA partitioning and AXI communication
-tags: [zynq, axi, fpga, soc, arm]
+description: AMD/Xilinx SoC blocks for ARM-FPGA partitioning and AXI communication (9 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-amd-soc-devices, zynq, axi, fpga, soc, arm]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for AMD SoC Devices
-category_path: Amd soc
+sources:
+  - resource: matlab:zynqlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for AMD SoC Devices
+kb_folder: embedded-coder-support-package-for-amd-soc-devices
+category: amd-soc
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Amd soc
-
-Use these blocks for amd soc.
 
 ## Recommended Blocks
 

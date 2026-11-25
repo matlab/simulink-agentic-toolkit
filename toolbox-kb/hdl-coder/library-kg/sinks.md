@@ -1,29 +1,29 @@
 ---
 type: Simulink Block Category
 title: Sinks
-description: Scopes, logging, and simulation control outputs
-tags: [scope, display, to file, to workspace, terminator, stop]
+description: "Scopes, logging, and simulation control outputs (9 blocks)"
+tags: [toolbox-kb, hdl-coder, scope, display, to file, to workspace, terminator, stop]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Sinks
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: sinks
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Sinks
-
-Use these blocks for sinks.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Scope | hdlsllib/Commonly
-Used Blocks/Scope | R2023a+ | Plot signals against time during simulation — use to view waveforms. |
+| Scope | hdlsllib/Commonly Used Blocks/Scope | R2023a+ | Plot signals against time during simulation — use to view waveforms. |
 | Display | hdlsllib/Sinks/Display | R2023a+ | Show the current numeric value of a signal — use for quick inspection. |
-| Floating
-Scope | hdlsllib/Sinks/Floating
-Scope | R2023a+ | Scope that displays whichever signals you attach without wired connections — use for flexible signal viewing. |
+| Floating Scope | hdlsllib/Sinks/Floating Scope | R2023a+ | Scope that displays whichever signals you attach without wired connections — use for flexible signal viewing. |
 | Scope | hdlsllib/Sinks/Scope | R2023a+ | Plot signals against time during simulation — use to view waveforms. |
 | Stop Simulation | hdlsllib/Sinks/Stop Simulation | R2023a+ | Stop the simulation when its input is non-zero — use to end a run on a condition. |
 | Terminator | hdlsllib/Sinks/Terminator | R2023a+ | Cap an unused output port to avoid warnings — use to terminate signals you don't need. |

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Led images
-description: Prebuilt 5x5 LED glyphs (letters, digits, faces, arrows, icons)
-tags: [led images, letter, number, face, point, heart, dice, shocked, matrix]
+description: "Prebuilt 5x5 LED glyphs (letters, digits, faces, arrows, icons) (54 blocks)"
+tags: [toolbox-kb, simulink-coder-support-package-for-bbc-micro-bit, led images, letter, number, face, point, heart, dice, shocked, matrix]
 status: stable
-source: custom_library
-library_root: Simulink Coder Support Package for BBC micro:bit
-category_path: Led images
+sources:
+  - resource: matlab:microbitledlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for BBC micro:bit
+kb_folder: simulink-coder-support-package-for-bbc-micro-bit
+category: led-images
 block_count: 54
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Led images
-
-Use these blocks for led images.
 
 ## Recommended Blocks
 

@@ -88,10 +88,10 @@ Policy must be configured before the Knowledge Index.
 
 ## Gate 3: Library Blocks Knowledge Index
 
-If libraries are declared and the Knowledge Index is empty (`.satk/library-kg/index.md` contains `populated: false`) or missing, provide the user with options to index their library blocks and wait until the user responds:
+If libraries are declared and the Knowledge Index is empty or missing, provide the user with options to index their library blocks and wait until the user responds:
 
 - **Automatic** — load the `simulink-curating-library-kg` skill. The agent reads `.satk/library-cache/*.json`, infers categories and descriptions from block metadata, saves curation to `.satk/library-curation.json`, and generates the Knowledge Graph — all without asking the user for input. Present the results to the user for review after generation.
-- **Guided setup** — load the `simulink-curating-library-kg` skill and follow its interactive workflow (common blocks, categories, descriptions). The skill collects curation data with user input at each step, saves it to `.satk/library-curation.json`, and generates the Knowledge Graph. Do NOT proceed until the curation workflow completes.
+- **Guided setup** — load the `simulink-curating-library-kg` skill and follow its interactive workflow (categories, descriptions). The skill collects curation data with user input at each step, saves it to `.satk/library-curation.json`, and generates the Knowledge Graph. Do NOT proceed until the curation workflow completes.
 
 Both paths use the `simulink-curating-library-kg` skill. The difference is whether the agent proposes and commits autonomously (automatic) or pauses for user confirmation at each step (guided).
 
@@ -99,7 +99,7 @@ Do not use `find_system`, `load_system`, or `get_param` on library `.slx` files 
 
 If the Knowledge Index generation produces zero blocks, inform the user and ask for the **folder path** containing all `.slx` sub-library files. Update `satk-libraries.json` with the discovered files and regenerate.
 
-The index is cached — it only regenerates when the library `.slx` or block policy changes. Skip this gate if `.satk/library-kg/index.md` already exists and does NOT contain the `populated: false` marker.
+The index is cached — it only regenerates when the library `.slx` or block policy changes. Skip this gate if `library.settingsLookup()` returns `gatePass: true`.
 
 ## Status Display (Management Menu)
 
@@ -118,19 +118,17 @@ policyData = satk.Configuration.getPolicy(Location=dataRoot);
 % policyData.blockSource — 'prefer_library_blocks' | 'library_blocks_only'
 % policyData.fallbackToBuiltins — logical
 
-% 3. KG block count — read index.md header
-kgIndexPath = fullfile(dataRoot, '.satk', 'library-kg', 'index.md');
-kgContent = fileread(kgIndexPath);
-% Parse block_count and category_count from YAML front-matter
+% 3. KG categories and block counts — one line per category, "(N blocks)"
+kgIndex = fileread(fullfile(dataRoot, '.satk', 'library-kg', 'custom', '<lib>', 'index.md'));
 ```
 
 ## Using Library Blocks
 
 Before your first `model_edit` call in a session, read the Knowledge Index:
 
-1. `.satk/library-kg/index.md` — library overview, policy mode, commonly used blocks
-2. `.satk/library-kg/common.md` — top blocks with intent descriptions
-3. Category pages (e.g., `.satk/library-kg/control.md`) — all blocks in a domain with intent
+1. `.satk/library-kg/index.md` — overview
+2. `custom/<lib>/index.md` or `toolboxes/<kb>/index.md` — the library's category pages
+3. Category pages (e.g., `.satk/library-kg/custom/motorlib/control.md`) — all blocks in a domain with intent
 
 Use the exact block name from the Knowledge graph in the `type` field of `add_block`. Do not invent names not listed in the Knowledge graph. If no library block fits, fall back to built-in Simulink blocks.
 

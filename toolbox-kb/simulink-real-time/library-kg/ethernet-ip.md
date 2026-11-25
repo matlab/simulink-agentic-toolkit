@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ethernet ip
-description: Raw Ethernet and IP communication on the real-time target
-tags: [ethernet, ip, udp, tcp]
-status: stable
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Ethernet ip
+description: Raw Ethernet and IP communication on the real-time target (15 blocks)
+tags: [toolbox-kb, simulink-real-time, ethernet, ip, udp, tcp]
+status: draft
+sources:
+  - resource: matlab:slrealtimeiplib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: ethernet-ip
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Ethernet ip
-
-Use these blocks for ethernet ip.
 
 ## Recommended Blocks
 

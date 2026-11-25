@@ -1,19 +1,18 @@
 ---
 name: simulink-curating-library-kg
-description: Use this skill when the user wants to curate the SATK library knowledge index for a Simulink project — mark commonly used blocks, correct auto-assigned block categories, or improve block descriptions so the model-building agent picks better blocks from custom libraries. Triggered by phrases like "mark blocks common", "improve block descriptions", "correct block category", "make the agent prefer certain blocks", and from Gate 3 of building-simulink-models.
+description: Use this skill when the user wants to curate the SATK library knowledge index for a Simulink project — correct auto-assigned block categories, or improve block descriptions so the model-building agent picks better blocks from custom libraries. Triggered by phrases like "improve block descriptions", "correct block category", "make the agent prefer certain blocks", and from Gate 3 of building-simulink-models.
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "2.2.1"
+  version: "2.3"
 ---
 
 # Curating the Library Knowledge Index
 
-Curate `.satk/library-kg/` for better agent block selection. Infer categories and descriptions from block metadata in `.satk/library-cache/*.json`, save curation to `.satk/library-curation.json`, then regenerate the KG.
+Curate `.satk/library-kg/` for better agent block selection. Infer categories and descriptions from block metadata in `.satk/library-cache/*.json`, then apply the curation through `satk.Configuration`, which saves `.satk/library-curation.json` and regenerates the KG.
 
 ## When to Use
 
-- User wants to mark blocks as commonly used or important
 - User wants to correct auto-assigned categories
 - User wants to improve block descriptions for better selection
 - User asks "how do I make the agent prefer certain blocks?"
@@ -48,13 +47,12 @@ Determine mode before starting. Do not proceed without mode selection.
 
 If `.satk/library-kg/index.md` already exists, start at step 1 (review existing state). If not, start at step 2.
 
-1. **Review** (only if KG exists) — Read `index.md` and `common.md`, summarize current state to user (libraries, block count, categories, common blocks).
+1. **Review** (only if KG exists) — Read `.satk/library-kg/custom/<lib>/index.md` and `satk.Configuration.listPages(Location=projectRoot)`, summarize current state to user (libraries, block count, categories).
 2. **Mode selection** — Determine Automatic or Guided. Do not proceed without completing this step.
-3. **Descriptions** — Ensure cache exists (see API), then read ALL `.satk/library-cache/*.json` files **in full**. If a file exceeds read limits, read it in chunks until every block has been processed. Apply Curation Rules above — write custom descriptions for blocks, prioritizing low/medium quality. Do NOT proceed to Step 4 until descriptions exist for every low/medium quality block across ALL cache files. Save to `customDescriptions`.
-4. **Common blocks** — Propose which blocks should be marked as commonly used. Consider blocks covering diverse categories and frequent modeling workflows. Save to `commonBlocks`.
-5. **Categories** — Finalize category definitions (names, descriptions, 3-5 keywords each). Allow user to correct individual block assignments via `categoryAssignments`.
-6. **Completeness check** — Before saving, count total low/medium quality blocks across ALL cache files and count how many have custom descriptions. Report coverage to the user (e.g., "275/275 low/medium blocks described, 120/285 high blocks described"). Do NOT proceed if coverage of low/medium blocks is below 100%.
-7. **Save and generate** — Save all curation data via `library.LibraryCuration.save(projectRoot, curation)`, then run `library.kg.Populate.run(projectRoot)`. Present the output summary to the user.
+3. **Descriptions** — Ensure cache exists (see API), then read ALL `.satk/library-cache/*.json` files **in full**. If a file exceeds read limits, read it in chunks until every block has been processed. Apply Curation Rules above — write custom descriptions for blocks, prioritizing low/medium quality. Do NOT proceed to Step 4 until descriptions exist for every low/medium quality block across ALL cache files. Save to `descriptions`.
+4. **Categories** — Finalize category definitions (names, descriptions). Allow user to correct individual block assignments via `categories`.
+5. **Completeness check** — Before saving, count total low/medium quality blocks across ALL cache files and count how many have custom descriptions. Report coverage to the user (e.g., "275/275 low/medium blocks described, 120/285 high blocks described"). Do NOT proceed if coverage of low/medium blocks is below 100%.
+6. **Save and generate** — Apply all curation data via `satk.Configuration.applyCuration(manifest, Location=projectRoot)` (regenerates the KG), fix any `results` rows with `action == "error"`, then run `satk.Configuration.lint(Location=projectRoot)` and fix until it reports 0 errors. Present the output summary to the user.
 
 ## API
 
@@ -91,62 +89,62 @@ Read `.satk/library-cache/*.json` directly. Each file:
 
 ```matlab
 projectRoot = prefdir();
-curation = library.LibraryCuration.load(projectRoot);
-curation.commonBlocks = {'Speed Controller', 'Torque Estimator'};
-curation.categories = struct('name', 'motors', 'description', 'Electric motors', 'keywords', {{'motor', 'drive'}});
+manifest.descriptions = [ ...
+    struct('block', 'Unit Delay', 'description', 'Delay signal by one sample period'), ...
+    struct('block', '1-D Lookup Table', 'description', 'Interpolate output from breakpoint-value pairs')];
+manifest.categories = struct('blocks', {{'DC Current Controller'}}, 'category', 'motor-control', ...
+    'description', 'Electric motor control loops');
 
-% Use containers.Map — supports any block name as key
-curation.customDescriptions = containers.Map('KeyType', 'char', 'ValueType', 'char');
-curation.customDescriptions('Unit Delay') = 'Delay signal by one sample period';
-curation.customDescriptions('1-D Lookup Table') = 'Interpolate output from breakpoint-value pairs';
-
-curation.categoryAssignments = containers.Map('KeyType', 'char', 'ValueType', 'char');
-curation.categoryAssignments('DC Current Controller') = 'motor-control';
-
-library.LibraryCuration.save(projectRoot, curation);
-library.kg.Populate.run(projectRoot);
+results = satk.Configuration.applyCuration(manifest, Location=projectRoot);  % table: block, action, message; fix action == "error" rows
+rep = satk.Configuration.lint(Location=projectRoot);                         % 0 errors when done
 ```
 
-**Important:** Use `containers.Map` (not struct) for `customDescriptions` and `categoryAssignments`. Struct field names cannot contain spaces or hyphens, which most Simulink block names have.
+Single edits: `satk.Configuration.setBlockDescription(block, description, Location=projectRoot)` and `satk.Configuration.setBlockCategory(blocks, category, Location=projectRoot)`.
 
-### JSON format on disk
+### JSON format
+
+`applyCuration` also accepts the manifest as a JSON file or JSON text:
 
 ```json
 {
-  "customDescriptions": [
-    {"block": "Unit Delay", "value": "Delay signal by one sample period"},
-    {"block": "1-D Lookup Table", "value": "Interpolate output from breakpoint-value pairs"}
+  "descriptions": [
+    {"block": "Unit Delay", "description": "Delay signal by one sample period"},
+    {"block": "1-D Lookup Table", "description": "Interpolate output from breakpoint-value pairs"}
   ],
-  "categoryAssignments": [
-    {"block": "DC Current Controller", "value": "motor-control"}
+  "categories": [
+    {"blocks": ["DC Current Controller"], "category": "motor-control", "description": "Electric motor control loops"}
   ]
 }
 ```
+
+### User pages
+
+1. Agree a page taxonomy (ids under `guides/`, types, tags) with the user.
+2. Write the pages as a manifest (`id` plus page options per entry) and call `satk.Configuration.addPages(manifest, Location=projectRoot)`.
+3. Run `satk.Configuration.lint(Location=projectRoot)` and fix until it reports 0 errors.
 
 ## Curation Fields
 
 | Field | Type | Effect |
 |-------|------|--------|
-| `commonBlocks` | cell array of strings | Always shown in `common.md` regardless of quality score |
-| `categories` | struct array with `.name`, `.description`, `.keywords` | Defines categories with keyword matching for assignment |
-| `categoryAssignments` | `containers.Map` (blockName → categoryName) | Per-block category assignment |
-| `customDescriptions` | `containers.Map` (blockName → description) | Per-block custom description (intent) |
+| `categories` | array of `{blocks, category, description?}` | Moves blocks to a category (created if new) |
+| `descriptions` | array of `{block, description}` | Per-block custom description (intent) |
 
 ## Guardrails
 
 **Always:**
 - Read block metadata only from `.satk/library-cache/*.json`.
-- Persist curation via `library.LibraryCuration.save()` and regenerate the KG via `library.kg.Populate.run()`.
+- Persist curation via `satk.Configuration.applyCuration()`, `setBlockDescription()` or `setBlockCategory()`; they regenerate the KG.
 - Use `library.kg.Query.search()` for KG lookups.
 - In user-facing output, use "custom description" or "category assignment" — never the term "override".
 
 **Ask first:**
-- Confirm the proposed curation with the user before calling `library.LibraryCuration.save()`.
+- Confirm the proposed curation with the user before calling `satk.Configuration.applyCuration()`.
 
 **Never:**
 - Never call `find_system` or `get_param` on library `.slx` files.
-- Never modify `.satk/library-cache/*.json` or `.satk/library-kg/*.md` directly — they are auto-generated.
-- Never persist curation through any path other than `library.LibraryCuration.save()`.
+- Never modify `.satk/library-cache/*.json` directly — it is auto-generated. Edit `.satk/library-kg/*.md` through page CRUD (`satk.Configuration.addPage`, `updatePage`, `removePage`, `renamePage`).
+- Never persist curation through any path other than the `satk.Configuration` methods above.
 
 ----
 

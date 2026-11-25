@@ -1,15 +1,88 @@
 {
-  "generatedAt": "2026-09-29T16:38:07",
-  "generatedAtDatenum": 740254.69314469909,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for Qualcomm Hexagon"
-  ],
-  "blockCount": 6,
-  "categoryCount": 2,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_Qualcomm_Hexagon": {
-      "blockCount": 6
+  "pages": [
+    {
+      "id": "qnn-inference",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Qualcomm Hexagon",
+      "kbFolder": "embedded-coder-support-package-for-qualcomm-hexagon",
+      "category": "qnn-inference",
+      "hash": "e5beaf1cac5fbd0111676ff0efd0b31fc7a6ba04de47405fbe3f1c56811ae549",
+      "fm": {
+        "title": "Qnn inference",
+        "description": "Run deep-learning inference on Qualcomm AI Engine Direct (QNN) backends (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-qualcomm-hexagon",
+          "qnn",
+          "predict",
+          "inference",
+          "backend"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "QNN CPU Predict",
+          "ref": "mwqnnlib/QNN CPU Predict",
+          "since": "R2025b+",
+          "intent": "Run inference of a QNN deep-learning model on the CPU backend — use as a portable fallback when NPU/GPU/DSP acceleration is unavailable."
+        },
+        {
+          "block": "QNN DSP Predict",
+          "ref": "mwqnnlib/QNN DSP Predict",
+          "since": "R2026a+",
+          "intent": "Run inference of a QNN deep-learning model on the Hexagon DSP (v66) backend — use for efficient signal-processing-style inference."
+        },
+        {
+          "block": "QNN GPU Predict",
+          "ref": "mwqnnlib/QNN GPU Predict",
+          "since": "R2026a+",
+          "intent": "Run inference of a QNN deep-learning model on the GPU backend — use for parallel workloads that map well to the GPU."
+        },
+        {
+          "block": "QNN HTP Predict",
+          "ref": "mwqnnlib/QNN HTP Predict",
+          "since": "R2025b+",
+          "intent": "Run inference of a QNN deep-learning model on the Hexagon HTP (NPU) backend — the preferred, highest-performance backend for on-device neural network execution; accepts a compiled .so or QNN context .bin."
+        },
+        {
+          "block": "QNN LPAI Predict",
+          "ref": "mwqnnlib/QNN LPAI Predict",
+          "since": "R2025b+",
+          "intent": "Run inference of a QNN deep-learning model on the LPAI (low-power AI) backend from a QNN context binary — use for always-on, low-power inference."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Qualcomm Hexagon",
+      "kbFolder": "embedded-coder-support-package-for-qualcomm-hexagon",
+      "category": "utilities",
+      "hash": "0b0fb3a500f95988b19b64e35900b6d5d4d4e21c30c8405cc0d8b1fed9d63370",
+      "fm": {
+        "title": "Utilities",
+        "description": "Hexagon support-package utilities (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-qualcomm-hexagon",
+          "hexagon",
+          "utilities"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Hexagon",
+          "ref": "hexagonlib/Hexagon",
+          "since": "R2023b+",
+          "intent": "Hexagon Utilities Blocks"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99538612273
 }

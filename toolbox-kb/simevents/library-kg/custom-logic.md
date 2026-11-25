@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Custom logic
-description: Custom logic and debugging tools
-tags: [chart, matlab, debugger, viewer, function]
+description: Custom logic and debugging tools (6 blocks)
+tags: [toolbox-kb, simevents, chart, matlab, debugger, viewer, function]
 status: stable
-source: mathworks_toolbox
-library_root: SimEvents
-category_path: Custom logic
+sources:
+  - resource: matlab:sldelib
+source: toolbox_kb
+managed_by: satk
+library: SimEvents
+kb_folder: simevents
+category: custom-logic
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Custom logic
-
-Use these blocks for custom logic.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Linear parameter varying
-description: Gain-scheduled and time-varying linear elements for LPV/LTV modeling
-tags: [linear parameter varying, varying, lpv, ltv]
+description: Gain-scheduled and time-varying linear elements for LPV/LTV modeling (18 blocks)
+tags: [toolbox-kb, control-system-toolbox, linear parameter varying, varying, lpv, ltv]
 status: stable
-source: custom_library
-library_root: Control System Toolbox
-category_path: Linear parameter varying
+sources:
+  - resource: matlab:cstblocks
+source: toolbox_kb
+managed_by: satk
+library: Control System Toolbox
+kb_folder: control-system-toolbox
+category: linear-parameter-varying
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Linear parameter varying
-
-Use these blocks for linear parameter varying.
 
 ## Recommended Blocks
 

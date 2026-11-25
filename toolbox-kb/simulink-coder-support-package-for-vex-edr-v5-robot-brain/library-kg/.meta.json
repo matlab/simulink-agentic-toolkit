@@ -1,15 +1,548 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74459165509,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Coder Support Package for VEX EDR V5 Robot Brain"
-  ],
-  "blockCount": 65,
-  "categoryCount": 6,
-  "libraryFingerprints": {
-    "Simulink_Coder_Support_Package_for_VEX_EDR_V5_Robot_Brain": {
-      "blockCount": 65
+  "pages": [
+    {
+      "id": "actuators",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+      "kbFolder": "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+      "category": "actuators",
+      "hash": "a31e6f0c49db3fb200700f027c8f9071f3b4a15c2710262fddc99f8cf5e0cc7c",
+      "fm": {
+        "title": "Actuators",
+        "description": "Motor and output blocks (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+          "motor",
+          "servo",
+          "smart",
+          "digital output"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DC Motor",
+          "ref": "vexv5lib/Actuators/DC Motor",
+          "since": "R2023a+",
+          "intent": "Drive a V5 DC motor — use for commanding legacy motor ports on V5 Robot Brain"
+        },
+        {
+          "block": "Digital Output",
+          "ref": "vexv5lib/Actuators/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set V5 digital pin — use for controlling LEDs or pneumatics on V5 3-wire ports"
+        },
+        {
+          "block": "Servo Motor",
+          "ref": "vexv5lib/Actuators/Servo Motor",
+          "since": "R2023a+",
+          "intent": "Command V5 servo position — use for controlling angular position of servo motors on V5"
+        },
+        {
+          "block": "Smart Motor Write",
+          "ref": "vexv5lib/Actuators/Smart Motor Write",
+          "since": "R2023a+",
+          "intent": "Command V5 Smart Motor — use for setting velocity, position, or torque targets on V5 Smart Motors"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "drivetrain",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+      "kbFolder": "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+      "category": "drivetrain",
+      "hash": "9fed6d7a5922d6d3d1aac07e76e5949ee9393d32483de0766c05496a43734dcc",
+      "fm": {
+        "title": "Drivetrain",
+        "description": "Drive system blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+          "differential",
+          "tank",
+          "drive"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Differential (Tank) Drive",
+          "ref": "vexv5lib/Drivetrain/Differential (Tank) Drive",
+          "since": "R2023a+",
+          "intent": "Tank-style differential drive — use for commanding left/right motors from forward and turn inputs on V5"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gamepad",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+      "kbFolder": "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+      "category": "gamepad",
+      "hash": "6ed68b5996675c8d40da8456a50740e8024d77bf385df1898e69ca2ecc0329cc",
+      "fm": {
+        "title": "Gamepad",
+        "description": "Controller input blocks (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+          "gamepad",
+          "joystick",
+          "button",
+          "competition"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Competition Switch",
+          "ref": "vexv5lib/Gamepad/Competition Switch",
+          "since": "R2023a+",
+          "intent": "Read V5 competition state — use for detecting autonomous, driver-control, or disabled mode"
+        },
+        {
+          "block": "Gamepad Button",
+          "ref": "vexv5lib/Gamepad/Gamepad Button",
+          "since": "R2023a+",
+          "intent": "Read V5 gamepad button — use for detecting button presses on V5 controller"
+        },
+        {
+          "block": "Gamepad Joystick",
+          "ref": "vexv5lib/Gamepad/Gamepad Joystick",
+          "since": "R2023a+",
+          "intent": "Read V5 gamepad joystick — use for analog stick input from V5 controller"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "logic-math",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+      "kbFolder": "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+      "category": "logic-math",
+      "hash": "1435670f6d53fd80129b849c0c737df5a6ada190b3ab5a62152321b295314ebf",
+      "fm": {
+        "title": "Logic math",
+        "description": "Logic and math operations (25 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+          "compare",
+          "logical",
+          "math",
+          "gain",
+          "add",
+          "trig"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Compare To Constant",
+          "ref": "vexv5lib/Logical Operations Library/Compare To Constant",
+          "since": "R2023a+",
+          "intent": "Compare signal to constant — use for threshold decisions in V5 robot logic"
+        },
+        {
+          "block": "Compare To Zero",
+          "ref": "vexv5lib/Logical Operations Library/Compare To Zero",
+          "since": "R2023a+",
+          "intent": "Compare signal to zero — use for zero-crossing detection in V5 programs"
+        },
+        {
+          "block": "Logical Operator",
+          "ref": "vexv5lib/Logical Operations Library/Logical Operator",
+          "since": "R2023a+",
+          "intent": "AND/OR/NOT logic gate — use for combining boolean conditions"
+        },
+        {
+          "block": "Logical Operator1",
+          "ref": "vexv5lib/Logical Operations Library/Logical Operator1",
+          "since": "R2023a+",
+          "intent": "Additional logic gate — use for OR operations in robot decision logic"
+        },
+        {
+          "block": "Relational Operator",
+          "ref": "vexv5lib/Logical Operations Library/Relational Operator",
+          "since": "R2023a+",
+          "intent": "Compare two signals — use for condition checking between V5 sensor values"
+        },
+        {
+          "block": "Abs",
+          "ref": "vexv5lib/Math Library/Abs",
+          "since": "R2023a+",
+          "intent": "Absolute value — use for magnitude regardless of sign"
+        },
+        {
+          "block": "Add",
+          "ref": "vexv5lib/Math Library/Add",
+          "since": "R2023a+",
+          "intent": "Sum signals — use for combining sensor inputs or control terms"
+        },
+        {
+          "block": "Bias",
+          "ref": "vexv5lib/Math Library/Bias",
+          "since": "R2023a+",
+          "intent": "Add constant offset — use for sensor calibration on V5"
+        },
+        {
+          "block": "Divide",
+          "ref": "vexv5lib/Math Library/Divide",
+          "since": "R2023a+",
+          "intent": "Divide signals — use for ratio computation or normalization"
+        },
+        {
+          "block": "Gain",
+          "ref": "vexv5lib/Math Library/Gain",
+          "since": "R2023a+",
+          "intent": "Multiply by constant — use for scaling V5 sensor readings or motor commands"
+        },
+        {
+          "block": "Math Function",
+          "ref": "vexv5lib/Math Library/Math Function",
+          "since": "R2023a+",
+          "intent": "Apply math function — use for exp, log, power operations on V5"
+        },
+        {
+          "block": "MinMax",
+          "ref": "vexv5lib/Math Library/MinMax",
+          "since": "R2023a+",
+          "intent": "Find min or max — use for clamping V5 motor outputs"
+        },
+        {
+          "block": "MinMax Running Resettable",
+          "ref": "vexv5lib/Math Library/MinMax Running Resettable",
+          "since": "R2023a+",
+          "intent": "Track running min/max — use for peak detection over time"
+        },
+        {
+          "block": "Polynomial",
+          "ref": "vexv5lib/Math Library/Polynomial",
+          "since": "R2023a+",
+          "intent": "Evaluate polynomial — use for nonlinear sensor calibration"
+        },
+        {
+          "block": "Product",
+          "ref": "vexv5lib/Math Library/Product",
+          "since": "R2023a+",
+          "intent": "Multiply signals — use for combining gains"
+        },
+        {
+          "block": "Reciprocal Sqrt",
+          "ref": "vexv5lib/Math Library/Reciprocal Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute 1/sqrt — use for normalization"
+        },
+        {
+          "block": "Rounding Function",
+          "ref": "vexv5lib/Math Library/Rounding Function",
+          "since": "R2023a+",
+          "intent": "Round to integer — use for discrete value conversion"
+        },
+        {
+          "block": "Sign",
+          "ref": "vexv5lib/Math Library/Sign",
+          "since": "R2023a+",
+          "intent": "Extract sign — use for direction detection"
+        },
+        {
+          "block": "Signed Sqrt",
+          "ref": "vexv5lib/Math Library/Signed Sqrt",
+          "since": "R2023a+",
+          "intent": "Sign-preserving sqrt — use for signed root computation"
+        },
+        {
+          "block": "Sine Wave Function",
+          "ref": "vexv5lib/Math Library/Sine Wave Function",
+          "since": "R2023a+",
+          "intent": "Generate sine wave — use for periodic test stimuli"
+        },
+        {
+          "block": "Slider Gain",
+          "ref": "vexv5lib/Math Library/Slider Gain",
+          "since": "R2023a+",
+          "intent": "Adjustable gain — use for tuning during V5 simulation"
+        },
+        {
+          "block": "Sqrt",
+          "ref": "vexv5lib/Math Library/Sqrt",
+          "since": "R2023a+",
+          "intent": "Square root — use for distance calculations"
+        },
+        {
+          "block": "Subtract",
+          "ref": "vexv5lib/Math Library/Subtract",
+          "since": "R2023a+",
+          "intent": "Subtract signals — use for error computation in control loops"
+        },
+        {
+          "block": "Trigonometric Function",
+          "ref": "vexv5lib/Math Library/Trigonometric Function",
+          "since": "R2023a+",
+          "intent": "Trig functions — use for angle calculations in V5 navigation"
+        },
+        {
+          "block": "Unary Minus",
+          "ref": "vexv5lib/Math Library/Unary Minus",
+          "since": "R2023a+",
+          "intent": "Negate signal — use for reversing direction"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+      "kbFolder": "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+      "category": "sensors",
+      "hash": "7cdd6182cc111e5ee4906c2af2334507a51e1e64a4bba63cc0be2b2c28db3866",
+      "fm": {
+        "title": "Sensors",
+        "description": "V5 sensor blocks (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+          "distance",
+          "inertial",
+          "optical",
+          "encoder",
+          "gyro",
+          "vision",
+          "gps",
+          "rotation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog Input",
+          "ref": "vexv5lib/Sensors/Analog Input",
+          "since": "R2023a+",
+          "intent": "Read V5 analog sensor — use for potentiometers or light sensors on 3-wire ports"
+        },
+        {
+          "block": "Digital Input",
+          "ref": "vexv5lib/Sensors/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read V5 digital sensor — use for limit switches on 3-wire ports"
+        },
+        {
+          "block": "Distance Sensor",
+          "ref": "vexv5lib/Sensors/Distance Sensor",
+          "since": "R2023a+",
+          "intent": "Read V5 Distance Sensor — use for measuring range to objects with time-of-flight"
+        },
+        {
+          "block": "Gyroscope",
+          "ref": "vexv5lib/Sensors/Gyroscope",
+          "since": "R2023a+",
+          "intent": "Read V5 gyroscope — use for measuring heading on legacy gyro sensor"
+        },
+        {
+          "block": "Inertial Sensor",
+          "ref": "vexv5lib/Sensors/Inertial Sensor",
+          "since": "R2023a+",
+          "intent": "Read V5 Inertial Sensor — use for measuring heading, pitch, roll, and acceleration"
+        },
+        {
+          "block": "Optical Sensor",
+          "ref": "vexv5lib/Sensors/Optical Sensor",
+          "since": "R2023a+",
+          "intent": "Read V5 Optical Sensor — use for detecting color and proximity of objects"
+        },
+        {
+          "block": "Optical Shaft Encoder",
+          "ref": "vexv5lib/Sensors/Optical Shaft Encoder",
+          "since": "R2023a+",
+          "intent": "Read V5 optical shaft encoder — use for measuring wheel rotation on legacy encoders"
+        },
+        {
+          "block": "Rotation Sensor",
+          "ref": "vexv5lib/Sensors/Rotation Sensor",
+          "since": "R2023a+",
+          "intent": "Read V5 Rotation Sensor — use for precise angular measurement with smart rotation sensor"
+        },
+        {
+          "block": "Smart Motor Read",
+          "ref": "vexv5lib/Sensors/Smart Motor Read",
+          "since": "R2023a+",
+          "intent": "Read V5 Smart Motor state — use for getting position, velocity, current, and temperature"
+        },
+        {
+          "block": "Ultrasonic Sensor",
+          "ref": "vexv5lib/Sensors/Ultrasonic Sensor",
+          "since": "R2023a+",
+          "intent": "Read V5 ultrasonic sensor — use for distance measurement on legacy ultrasonic"
+        },
+        {
+          "block": "V5 GPS Sensor",
+          "ref": "vexv5lib/Sensors/V5 GPS Sensor",
+          "since": "R2023a+",
+          "intent": "Read V5 GPS Sensor — use for absolute field position and heading measurement"
+        },
+        {
+          "block": "Vision Sensor",
+          "ref": "vexv5lib/Sensors/Vision Sensor",
+          "since": "R2023a+",
+          "intent": "Read V5 Vision Sensor — use for detecting colored objects and their positions"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for VEX EDR V5 Robot Brain",
+      "kbFolder": "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+      "category": "utilities",
+      "hash": "9ba318e2e4b3e930c714278bdac10b103ad65417afa4a61d989236e7b8257bfb",
+      "fm": {
+        "title": "Utilities",
+        "description": "Simulation and utility blocks (20 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-vex-edr-v5-robot-brain",
+          "scope",
+          "display",
+          "clock",
+          "switch",
+          "simulator",
+          "deadband",
+          "latch"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Chart",
+          "ref": "vexv5lib/Utilities/Chart",
+          "since": "R2023a+",
+          "intent": "Stateflow chart for V5 — use for implementing state machine logic on V5 Robot Brain"
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "vexv5lib/Utilities/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Custom MATLAB code for V5 — use for implementing algorithms not available as blocks on V5 Robot Brain"
+        },
+        {
+          "block": "Variable Input",
+          "ref": "vexv5lib/Utilities/Variable Input",
+          "since": "R2023a+",
+          "intent": "Slider-adjustable constant — use for tuning parameters during V5 robot simulation"
+        },
+        {
+          "block": "Arcade Module",
+          "ref": "vexv5lib/Utilities/Arcade Module",
+          "since": "R2023a+",
+          "intent": "Map joystick to arcade drive — use for single-stick differential motor control on V5"
+        },
+        {
+          "block": "Clock",
+          "ref": "vexv5lib/Utilities/Clock",
+          "since": "R2023a+",
+          "intent": "Output simulation time — use for time-based sequencing"
+        },
+        {
+          "block": "Constant",
+          "ref": "vexv5lib/Utilities/Constant",
+          "since": "R2023a+",
+          "intent": "Constant value output — use for fixed parameters"
+        },
+        {
+          "block": "Data Type Conversion",
+          "ref": "vexv5lib/Utilities/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert data types — use for matching signal types between blocks"
+        },
+        {
+          "block": "Deadband",
+          "ref": "vexv5lib/Utilities/Deadband",
+          "since": "R2023a+",
+          "intent": "Apply deadzone — use for ignoring small joystick movements"
+        },
+        {
+          "block": "Display",
+          "ref": "vexv5lib/Utilities/Display",
+          "since": "R2023a+",
+          "intent": "Show signal value — use for debugging during simulation"
+        },
+        {
+          "block": "Field Simulator",
+          "ref": "vexv5lib/Utilities/Field Simulator",
+          "since": "R2023a+",
+          "intent": "Simulate V5 competition field — use for testing autonomous without hardware"
+        },
+        {
+          "block": "Gamepad Simulator",
+          "ref": "vexv5lib/Utilities/Gamepad Simulator",
+          "since": "R2023a+",
+          "intent": "Simulate V5 gamepad — use for testing driver-control without physical controller"
+        },
+        {
+          "block": "Gear Transmission",
+          "ref": "vexv5lib/Utilities/Gear Transmission",
+          "since": "R2023a+",
+          "intent": "Model gear ratio — use for speed/torque conversion through gears"
+        },
+        {
+          "block": "Ground",
+          "ref": "vexv5lib/Utilities/Ground",
+          "since": "R2023a+",
+          "intent": "Zero-value signal — use for grounding unused inputs"
+        },
+        {
+          "block": "Latch",
+          "ref": "vexv5lib/Utilities/Latch",
+          "since": "R2023a+",
+          "intent": "Latch signal on trigger — use for capturing readings at events"
+        },
+        {
+          "block": "Limit Switch Control ",
+          "ref": "vexv5lib/Utilities/Limit Switch Control ",
+          "since": "R2023a+",
+          "intent": "Limit motor by switch state — use for preventing over-travel with limit switches on V5"
+        },
+        {
+          "block": "Manual Switch",
+          "ref": "vexv5lib/Utilities/Manual Switch",
+          "since": "R2023a+",
+          "intent": "Toggle between inputs — use for mode switching in simulation"
+        },
+        {
+          "block": "Scope",
+          "ref": "vexv5lib/Utilities/Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals — use for visualizing V5 robot behavior"
+        },
+        {
+          "block": "Switch",
+          "ref": "vexv5lib/Utilities/Switch",
+          "since": "R2023a+",
+          "intent": "Conditional signal selection — use for threshold-based input switching"
+        },
+        {
+          "block": "Terminator",
+          "ref": "vexv5lib/Utilities/Terminator",
+          "since": "R2023a+",
+          "intent": "Terminate unused output — use for cleanly handling unconnected ports"
+        },
+        {
+          "block": "Toggle",
+          "ref": "vexv5lib/Utilities/Toggle",
+          "since": "R2023a+",
+          "intent": "Binary toggle constant — use for mode selection"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:30",
+  "generatedAtDatenum": 740309.99549490737
 }

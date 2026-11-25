@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Orifices restrictions
-description: Fixed and variable orifices, leakage paths, and local resistances that restrict fluid flow
-tags: [orifice, restriction, leakage, metering, loss]
+description: "Fixed and variable orifices, leakage paths, and local resistances that restrict fluid flow (11 blocks)"
+tags: [toolbox-kb, simscape-fluids, orifice, restriction, leakage, metering, loss]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Orifices restrictions
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: orifices-restrictions
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Orifices restrictions
-
-Use these blocks for orifices restrictions.
 
 ## Recommended Blocks
 

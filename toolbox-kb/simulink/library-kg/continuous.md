@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Continuous
-description: Continuous-time dynamics: integrators, transfer functions, delays
-tags: [continuous, integrator, transfer function, state-space, delay, pid]
-status: stable
-source: custom_library
-library_root: Simulink
-category_path: Continuous
+description: "Continuous-time dynamics: integrators, transfer functions, delays (26 blocks)"
+tags: [toolbox-kb, simulink, continuous, integrator, transfer function, state-space, delay, pid]
+status: draft
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: continuous
 block_count: 26
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Continuous
-
-Use these blocks for continuous.
 
 ## Recommended Blocks
 
@@ -21,8 +24,7 @@ Use these blocks for continuous.
 | Fixed-Point State-Space | simulink/Additional Math & Discrete/Additional Discrete/Fixed-Point State-Space | R2023a+ | Discrete-time State-Space Realization |
 | Transfer Fcn Direct Form II | simulink/Additional Math & Discrete/Additional Discrete/Transfer Fcn Direct Form II | R2023a+ | A Direct Form II realization of the specified transfer function is used. Only single input multiple output transfer functions are supported. The data types and scalings of the output, the coefficients, and any temporary variables are automatically selected. The automatic choices will be acceptable in many situations. In situations where the automatic choices give unacceptable results, manual layout of the filter is necessary. For manual layout, it is suggested that the blocks under this mask be used as a starting point. Note 1: The full denominator should have a leading coefficient of +1.0, but this leading coefficient should be excluded when entering the parameter. For example, if the denominator is den = 1 -1.7 0.72 just enter den(2:end) = -1.7 0.72 Note 2: The numerator must be the same size as the full denominator. |
 | Transfer Fcn Direct Form II Time Varying | simulink/Additional Math & Discrete/Additional Discrete/Transfer Fcn Direct Form II Time Varying | R2023a+ | A Direct Form II realization of the specified transfer function is used. Only single input single output transfer functions are supported. The data types and scalings of the output, the coefficients, and any temporary variables are automatically selected. The automatic choices will be acceptable in many situations. In situations where the automatic choices give unacceptable results, manual layout of the filter is necessary. For manual layout, it is suggested that the blocks under this mask be used as a starting point. Note 1: The full denominator should have a leading coefficient of +1.0, but this leading coefficient should be excluded when entering the parameter. For example, if the denominator is den = 1 -1.7 0.72 just enter den(2:end) = -1.7 0.72 Note 2: The numerator must be the same size as the full denominator. |
-| Integrator | simulink/Commonly
-Used Blocks/Integrator | R2023a+ | Integrate a continuous-time signal (1/s) with optional limits and reset — use for continuous dynamics. |
+| Integrator | simulink/Commonly Used Blocks/Integrator | R2023a+ | Integrate a continuous-time signal (1/s) with optional limits and reset — use for continuous dynamics. |
 | Derivative | simulink/Continuous/Derivative | R2023a+ | Approximate the continuous-time derivative (du/dt) of the input — use to estimate rate of change. |
 | Descriptor State-Space | simulink/Continuous/Descriptor State-Space | R2023a+ | Model implicit (descriptor) continuous dynamics E·dx/dt = Ax + Bu — use for systems with a mass/descriptor matrix. |
 | Entity Transport Delay | simulink/Continuous/Entity Transport Delay | R2023a+ | Delay entities/messages by a transport time — use to model conveyance latency in event-based flows. |
@@ -43,7 +45,5 @@ Used Blocks/Integrator | R2023a+ | Integrate a continuous-time signal (1/s) with
 | Transfer Fcn First Order | simulink/Discrete/Transfer Fcn First Order | R2023a+ | Discrete-time first order transfer function. The transfer function has a unity DC gain. |
 | Transfer Fcn Real Zero | simulink/Discrete/Transfer Fcn Real Zero | R2023a+ | Discrete-time transfer function that has a real zero and (effectively) has no pole. |
 | C/C++ Code Block | simulink/Quick Insert/User-Defined Functions/C/C++ Code Block | R2023a+ | The S-Function Builder block creates a wrapper C-MEX S-function from your supplied C code with multiple input ports, output ports, and a variable number of scalar, vector, or matrix parameters. The input and output ports can propagate Simulink built-in data types, fixed-point data types, complex, 1-D, and 2-D signals. This block also supports discrete and continuous states of type real. You can optionally have the block generate a TLC file to be used for code generation. |
-| Band-Limited
-White Noise | simulink/Sources/Band-Limited
-White Noise | R2023a+ | The Band-Limited White Noise block generates normally distributed random numbers that are suitable for use in continuous or hybrid systems. |
+| Band-Limited White Noise | simulink/Sources/Band-Limited White Noise | R2023a+ | The Band-Limited White Noise block generates normally distributed random numbers that are suitable for use in continuous or hybrid systems. |
 | S-Function Builder | simulink/User-Defined Functions/S-Function Builder | R2023a+ | The S-Function Builder block creates a wrapper C-MEX S-function from your supplied C code with multiple input ports, output ports, and a variable number of scalar, vector, or matrix parameters. The input and output ports can propagate Simulink built-in data types, fixed-point data types, complex, 1-D, and 2-D signals. This block also supports discrete and continuous states of type real. You can optionally have the block generate a TLC file to be used for code generation. |

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Thermal
-description: Thermal-domain conduction, convection, and radiation elements
-tags: [thermal]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Thermal
+description: "Thermal-domain conduction, convection, and radiation elements (15 blocks)"
+tags: [toolbox-kb, simscape, thermal]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: thermal
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Thermal
-
-Use these blocks for thermal.
 
 ## Recommended Blocks
 

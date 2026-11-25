@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mcal io
-description: AUTOSAR Microcontroller Abstraction Layer drivers for analog and digital I/O
-tags: [mcal, abstraction layer, dio, adc, autosar]
+description: AUTOSAR Microcontroller Abstraction Layer drivers for analog and digital I/O (7 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-renesas-rh850-microcontrollers, mcal, abstraction layer, dio, adc, autosar]
 status: stable
-source: custom_library
-library_root: Embedded Coder Support Package for Renesas RH850 Microcontrollers
-category_path: Mcal io
+sources:
+  - resource: matlab:rh850mcallib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Renesas RH850 Microcontrollers
+kb_folder: embedded-coder-support-package-for-renesas-rh850-microcontrollers
+category: mcal-io
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Mcal io
-
-Use these blocks for mcal io.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Arduino io
-description: Arduino hardware I/O blocks for Gizmo
-tags: [analog, digital, pwm, arduino, pin]
+description: Arduino hardware I/O blocks for Gizmo (6 blocks)
+tags: [toolbox-kb, simulink-arduino-libraries-for-gizmo-hardware, analog, digital, pwm, arduino, pin]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Arduino Libraries for Gizmo Hardware
-category_path: Arduino io
+sources:
+  - resource: matlab:gizmoLibrary
+source: toolbox_kb
+managed_by: satk
+library: Simulink Arduino Libraries for Gizmo Hardware
+kb_folder: simulink-arduino-libraries-for-gizmo-hardware
+category: arduino-io
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Arduino io
-
-Use these blocks for arduino io.
 
 ## Recommended Blocks
 

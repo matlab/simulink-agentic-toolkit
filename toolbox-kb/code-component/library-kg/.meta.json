@@ -1,15 +1,37 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.744546331,
-  "generatorVersion": 4,
-  "libraries": [
-    "Code Component"
-  ],
-  "blockCount": 1,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Code_Component": {
-      "blockCount": 1
+  "pages": [
+    {
+      "id": "co-simulation",
+      "kind": "toolbox",
+      "library": "Code Component",
+      "kbFolder": "code-component",
+      "category": "co-simulation",
+      "hash": "f9c305eb6960a68751e4c29ef77da04610afc4e735621c924db002afbb64d3f3",
+      "fm": {
+        "title": "Co simulation",
+        "description": "External tool and code integration via co-simulation interfaces (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "code-component",
+          "cosimulation",
+          "fmi",
+          "fmu",
+          "sdk",
+          "interface"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Co-simulation SDK",
+          "ref": "CodeComponent/Co-simulation SDK",
+          "since": "R2025a+",
+          "intent": "Interface Simulink with external co-simulation environments via the Functional Mock-up Interface (FMI) or custom APIs — use to integrate third-party simulation tools, legacy code, or hardware models into a Simulink simulation loop"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:15",
+  "generatedAtDatenum": 740309.99531949079
 }

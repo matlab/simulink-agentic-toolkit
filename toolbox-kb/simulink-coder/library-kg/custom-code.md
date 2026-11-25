@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Custom code
-description: Inject user C code at specific points of the generated code
-tags: [custom code, model header, model source, system]
+description: Inject user C code at specific points of the generated code (11 blocks)
+tags: [toolbox-kb, simulink-coder, custom code, model header, model source, system]
 status: stable
-source: custom_library
-library_root: Simulink Coder
-category_path: Custom code
+sources:
+  - resource: matlab:custcode
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder
+kb_folder: simulink-coder
+category: custom-code
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Custom code
-
-Use these blocks for custom code.
 
 ## Recommended Blocks
 

@@ -1,15 +1,61 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.744560625,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for Intel SoC Devices"
-  ],
-  "blockCount": 5,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_Intel_SoC_Devices": {
-      "blockCount": 5
+  "pages": [
+    {
+      "id": "intel-soc",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Intel SoC Devices",
+      "kbFolder": "embedded-coder-support-package-for-intel-soc-devices",
+      "category": "intel-soc",
+      "hash": "dc35d178a25383a80cca23e8aec56e6728bf217d9f027b0dd30a782e3e09c139",
+      "fm": {
+        "title": "Intel soc",
+        "description": "Processor-FPGA communication and task management on Intel SoC (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-intel-soc-devices",
+          "intel",
+          "soc",
+          "axi4",
+          "linux",
+          "fpga"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "AXI4 Read",
+          "ref": "alterasoclib/AXI4 Read",
+          "since": "R2023a+",
+          "intent": "Read data from FPGA fabric via AXI4 interface on Intel SoC — use for processor-to-FPGA data transfer in Intel Cyclone/Arria SoC designs"
+        },
+        {
+          "block": "AXI4 Write",
+          "ref": "alterasoclib/AXI4 Write",
+          "since": "R2023a+",
+          "intent": "Write data to FPGA fabric via AXI4 interface on Intel SoC — use for processor-to-FPGA command or data passing in Intel SoC designs"
+        },
+        {
+          "block": "Linux Task",
+          "ref": "alterasoclib/Linux Task",
+          "since": "R2023a+",
+          "intent": "Configure a Linux task for execution on Intel SoC ARM core — use for scheduling generated code as a Linux process on the HPS"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "alterasoclib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets on Intel SoC Linux — use for network data input to algorithms running on Intel SoC embedded Linux"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "alterasoclib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP packets from Intel SoC Linux — use for network data output from algorithms running on Intel SoC embedded Linux"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99538489582
 }

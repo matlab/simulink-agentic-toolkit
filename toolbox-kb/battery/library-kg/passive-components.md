@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Passive components
-description: Passive electrical component models (impedance, state-space)
-tags: [impedance, state-space, passive, eis, frequency]
+description: "Passive electrical component models (impedance, state-space) (1 blocks)"
+tags: [toolbox-kb, battery, impedance, state-space, passive, eis, frequency]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Passive components
+sources:
+  - resource: matlab:batt_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: passive-components
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Passive components
-
-Use these blocks for passive components.
 
 ## Recommended Blocks
 

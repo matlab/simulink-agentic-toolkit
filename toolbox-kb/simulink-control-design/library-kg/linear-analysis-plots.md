@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Linear analysis plots
-description: Real-time linear analysis visualization
-tags: [bode, nichols, pole-zero, step, singular, plot]
+description: Real-time linear analysis visualization (7 blocks)
+tags: [toolbox-kb, simulink-control-design, bode, nichols, pole-zero, step, singular, plot]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Linear analysis plots
+sources:
+  - resource: matlab:slctrl_utilities
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: linear-analysis-plots
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Linear analysis plots
-
-Use these blocks for linear analysis plots.
 
 ## Recommended Blocks
 

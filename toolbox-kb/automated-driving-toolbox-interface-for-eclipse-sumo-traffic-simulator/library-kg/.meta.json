@@ -1,15 +1,61 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.74453879625,
-  "generatorVersion": 4,
-  "libraries": [
-    "Automated Driving Toolbox Interface for Eclipse SUMO Traffic Simulator"
-  ],
-  "blockCount": 5,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Automated_Driving_Toolbox_Interface_for_Eclipse_SUMO_Traffic_Simulator": {
-      "blockCount": 5
+  "pages": [
+    {
+      "id": "sumo-interface",
+      "kind": "toolbox",
+      "library": "Automated Driving Toolbox Interface for Eclipse SUMO Traffic Simulator",
+      "kbFolder": "automated-driving-toolbox-interface-for-eclipse-sumo-traffic-simulator",
+      "category": "sumo-interface",
+      "hash": "8d467908c5b3a3fa526b93f88c18f4904b171ee0ec86c65e20646765b3fa7ef5",
+      "fm": {
+        "title": "Sumo interface",
+        "description": "Eclipse SUMO traffic simulator co-simulation blocks for closed-loop testing with microscopic traffic (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "automated-driving-toolbox-interface-for-eclipse-sumo-traffic-simulator",
+          "sumo",
+          "traffic",
+          "traci",
+          "cosimulation",
+          "vehicle"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Actor",
+          "ref": "SumoInterfaceLibrary/Actor",
+          "since": "R2026a+",
+          "intent": "Control a specific traffic participant (vehicle, pedestrian, or cyclist) in the SUMO simulation — use to override SUMO-managed actor behavior with Simulink-computed trajectories for ego or controlled vehicles"
+        },
+        {
+          "block": "Client",
+          "ref": "SumoInterfaceLibrary/Client",
+          "since": "R2026a+",
+          "intent": "Establish and manage the TraCI connection to a running SUMO traffic simulation — use as the central communication hub that synchronizes simulation time steps between Simulink and SUMO"
+        },
+        {
+          "block": "Reader",
+          "ref": "SumoInterfaceLibrary/Reader",
+          "since": "R2026a+",
+          "intent": "Read traffic state data (vehicle positions, speeds, traffic light phases) from the SUMO simulation — use to import the current traffic environment state into Simulink for perception or planning algorithms"
+        },
+        {
+          "block": "Server",
+          "ref": "SumoInterfaceLibrary/Server",
+          "since": "R2026a+",
+          "intent": "Launch and manage a SUMO traffic simulation server instance — use to start SUMO with a specified network and route configuration, controlling its lifecycle from within Simulink"
+        },
+        {
+          "block": "Writer",
+          "ref": "SumoInterfaceLibrary/Writer",
+          "since": "R2026a+",
+          "intent": "Send commands and data to the SUMO simulation (e.g., set traffic light phases, add vehicles) — use to modify the traffic environment dynamically based on Simulink controller decisions"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:14",
+  "generatedAtDatenum": 740309.99530577543
 }

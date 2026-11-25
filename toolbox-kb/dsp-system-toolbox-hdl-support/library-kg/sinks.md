@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sinks
-description: Display and logging of signals
-tags: [sinks, scope, display, workspace, spectrum analyzer]
+description: Display and logging of signals (4 blocks)
+tags: [toolbox-kb, dsp-system-toolbox-hdl-support, sinks, scope, display, workspace, spectrum analyzer]
 status: stable
-source: custom_library
-library_root: DSP System Toolbox HDL Support
-category_path: Sinks
+sources:
+  - resource: matlab:dsphdlsupportsnks
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox HDL Support
+kb_folder: dsp-system-toolbox-hdl-support
+category: sinks
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Sinks
-
-Use these blocks for sinks.
 
 ## Recommended Blocks
 

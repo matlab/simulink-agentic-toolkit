@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Activation layers
-description: Nonlinear activation functions applied between network layers
-tags: [relu, sigmoid, tanh, activation, gelu]
+description: Nonlinear activation functions applied between network layers (9 blocks)
+tags: [toolbox-kb, deep-learning-toolbox, relu, sigmoid, tanh, activation, gelu]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Activation layers
+sources:
+  - resource: matlab:dlactivationlib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: activation-layers
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Activation layers
-
-Use these blocks for activation layers.
 
 ## Recommended Blocks
 

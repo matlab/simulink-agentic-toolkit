@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Radiation impedance
-description: Radiation coupling to free field
-tags: [radiation, impedance, piston, flanged, spherical]
+description: Radiation coupling to free field (6 blocks)
+tags: [toolbox-kb, simscape-acoustics, radiation, impedance, piston, flanged, spherical]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Acoustics
-category_path: Radiation impedance
+sources:
+  - resource: matlab:acoustic_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Acoustics
+kb_folder: simscape-acoustics
+category: radiation-impedance
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Radiation impedance
-
-Use these blocks for radiation impedance.
 
 ## Recommended Blocks
 

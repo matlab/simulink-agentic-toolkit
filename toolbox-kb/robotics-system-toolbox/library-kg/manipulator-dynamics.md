@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Manipulator dynamics
-description: Rigid body tree kinematics and dynamics
-tags: [dynamics, kinematics, jacobian, gravity, mass, inverse]
+description: Rigid body tree kinematics and dynamics (10 blocks)
+tags: [toolbox-kb, robotics-system-toolbox, dynamics, kinematics, jacobian, gravity, mass, inverse]
 status: stable
-source: mathworks_toolbox
-library_root: Robotics System Toolbox
-category_path: Manipulator dynamics
+sources:
+  - resource: matlab:robotmaniplib
+source: toolbox_kb
+managed_by: satk
+library: Robotics System Toolbox
+kb_folder: robotics-system-toolbox
+category: manipulator-dynamics
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Manipulator dynamics
-
-Use these blocks for manipulator dynamics.
 
 ## Recommended Blocks
 

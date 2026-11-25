@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: User defined
-description: Custom C, MATLAB, and expression blocks
-tags: [user-defined, c caller, fcn, matlab function]
+description: "Custom C, MATLAB, and expression blocks (3 blocks)"
+tags: [toolbox-kb, do-178c-do-331-primitive-library, user-defined, c caller, fcn, matlab function]
 status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: User defined
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: user-defined
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # User defined
-
-Use these blocks for user defined.
 
 ## Recommended Blocks
 

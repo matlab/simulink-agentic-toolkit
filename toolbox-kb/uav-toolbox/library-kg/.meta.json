@@ -1,15 +1,318 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.69317545136,
-  "generatorVersion": 4,
-  "libraries": [
-    "UAV Toolbox"
-  ],
-  "blockCount": 32,
-  "categoryCount": 5,
-  "libraryFingerprints": {
-    "UAV_Toolbox": {
-      "blockCount": 32
+  "pages": [
+    {
+      "id": "guidance-algorithms",
+      "kind": "toolbox",
+      "library": "UAV Toolbox",
+      "kbFolder": "uav-toolbox",
+      "category": "guidance-algorithms",
+      "hash": "f6b25b4b856e5370a33e2f5c3a32c3c8028a12446e7e5c4f2bf2dda5504f13a5",
+      "fm": {
+        "title": "Guidance algorithms",
+        "description": "Path following, trajectory generation, and obstacle avoidance (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox",
+          "algorithms",
+          "follower",
+          "trajectory",
+          "obstacle",
+          "point mass",
+          "polynomial"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Fixed-Wing UAV Point Mass",
+          "ref": "uavalgslib/Fixed-Wing UAV Point Mass",
+          "since": "R2023a+",
+          "intent": "Simulate fixed-wing UAV motion as a point-mass model driven by throttle and attitude commands — use for lightweight guidance and trajectory studies without full 6-DOF dynamics."
+        },
+        {
+          "block": "Minimum Jerk Polynomial Trajectory",
+          "ref": "uavalgslib/Minimum Jerk Polynomial Trajectory",
+          "since": "R2023a+",
+          "intent": "Generate a smooth minimum-jerk polynomial trajectory through waypoints — use to plan comfortable, low-acceleration UAV paths."
+        },
+        {
+          "block": "Minimum Snap Polynomial Trajectory",
+          "ref": "uavalgslib/Minimum Snap Polynomial Trajectory",
+          "since": "R2023a+",
+          "intent": "Generate a smooth minimum-snap polynomial trajectory through waypoints — use to plan aggressive but dynamically-feasible multirotor paths."
+        },
+        {
+          "block": "Obstacle Avoidance",
+          "ref": "uavalgslib/Obstacle Avoidance",
+          "since": "R2023a+",
+          "intent": "Compute a collision-free steering command from occupancy/sensor data — use to reactively avoid obstacles during flight."
+        },
+        {
+          "block": "Orbit Follower",
+          "ref": "uavalgslib/Orbit Follower",
+          "since": "R2023a+",
+          "intent": "Command a UAV to orbit a point at a set radius and direction — use for loiter and target-circling behaviors."
+        },
+        {
+          "block": "Waypoint Follower",
+          "ref": "uavalgslib/Waypoint Follower",
+          "since": "R2023a+",
+          "intent": "Produce lookahead guidance commands to follow a sequence of waypoints — use for path-following autopilots."
+        },
+        {
+          "block": "Guidance Model",
+          "ref": "uavalgslib/Guidance Model",
+          "since": "R2023a+",
+          "intent": "Reduced-order model for a closed-loop system including UAV dynamics and autopilot. The model approximates the behavior of a closed-loop system consisting of an autopilot controller and a kinematic UAV model for 3D motion. This guidance model is designed for small multirotor and fixed-wing UAVs. The block accepts control and environment inputs (bus signals) and outputs the UAV state (bus signal). Use the Model Type drop-down to switch between fixed-wing and multirotor based on the type of UAV you are trying to model. Use the Data Type combo box to change the data type used by the numeric values within the input and output bus signals. Supported data types are 'double' and 'single'. Use the Initial State tab to configure the UAV's initial state according to the selected UAV model. Use the Configuration tab to configure the UAV's autopilot control gains. Use the Input/Output Bus Names tab to configure the bus signal names used by the block."
+        },
+        {
+          "block": "Multi-Instance Guidance Model",
+          "ref": "uavalgslib/Multi-Instance Guidance Model",
+          "since": "R2025a+",
+          "intent": "Simulate multiple UAVs using reduced-order multirotor and fixed-wing UAV models. The control input port accepts a bus. For fixed-wing UAV, the bus contains Height, Airspeed, and RollAngle signals. For multirotor UAV, the bus contains Roll, Pitch, YawRate, and Thrust signals. Specify each signal as a [1xN] vector of single or double precision values, where N is the number of UAV that you want to simulate. The environment input port accepts a bus. For fixed-wing UAV, the bus contains WindNorth, WindEast, WindDown, and Gravity signals. For multirotor UAV, the bus contain only the Gravity signal. Specify each signal as a [1xN] vector of single or double precision values, where N is the number of UAV that you want to simulate. The block outputs the UAV state as a bus. For fixed-wing UAV, the bus contains North, East, Height, AirSpeed, HeadingAngle, FlightPathAngle, RollAngle, and RollAngleRate signals, where each signal is a [1xN] vector of single or double precision data. For multirotor UAV, the bus consists of WorldPosition, WorldVelocity, EulerZYX, and BodyAngularRateRPY signals as [3xN] matrix, and Thrust signal as [1xN] vector of single or double precision data. Use the Model Type parameter to select the fixed-wing or multirotor model. Use the Data Type parameter to select single or double-precision data type for the inputs and outputs. Specify the UAV's autopilot control gains in the Configuration tab."
+        },
+        {
+          "block": "Path Manager",
+          "ref": "uavalgslib/Path Manager",
+          "since": "R2023a+",
+          "intent": "Execute a UAV autonomous mission. The block switches sequentially between the mission points in the mission data. The Pose input is a 4x1 matrix containing the current [x,y,z] position and course angle of the UAV. The MissionData input accepts mission data (bus signal) representing the mission points. Use the boolean isModeDone input to switch to the next mission point. Change the block behaviour at run-time using the uint8 MissionCmd input signal. The Home input is a 3x1 matrix containing the home [x,y,z] location. Switch between a fixed-wing and multi-rotor with the UAV type drop-down. For a fixed-wing UAV, specify the Loiter radius in meters. Specify the data type using the Data type combo box to change the data type of the UAV mission bus. Specify the name of the input bus using the Mission bus name edit box."
+        },
+        {
+          "block": "UAV Scenario Configuration",
+          "ref": "uavsimlib/UAV Scenario Configuration",
+          "since": "R2023a+",
+          "intent": "Import a uavScenario object and simulate the scenario. You must have this block in models that have UAV Scenario sensor and motion blocks to test perception, control and planning algorithms with data from uavScenario environment. Sample time must be a positive value. This block only supports discrete sample time."
+        },
+        {
+          "block": "Read UAV Trajectory",
+          "ref": "uavutilslib/Read UAV Trajectory",
+          "since": "R2024b+",
+          "intent": "Generate translation and rotation samples from UAV trajectory source. The block accepts a scalar numeric value that specifies the trajectory sample time. Translation port outputs the xyz-position of UAV relative to inertial frame as a [1x3] vector of double-precision data. Rotation port outputs the Euler ZYX angle that rotates the inertial frame to the UAV body frame as a [1x3] vector of double-precision data."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "mavlink",
+      "kind": "toolbox",
+      "library": "UAV Toolbox",
+      "kbFolder": "uav-toolbox",
+      "category": "mavlink",
+      "hash": "8b9ece9c0b94860de80c8f522faccc1d48704a8e621d55385165a486eaa7447b",
+      "fm": {
+        "title": "Mavlink",
+        "description": "Blocks for Mavlink (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "MAVLink Blank Message",
+          "ref": "uavmavlinklib/MAVLink Blank Message",
+          "since": "R2023a+",
+          "intent": "The MAVLink Blank Message outputs a Simulink bus consisting of fields: Message ID, System ID, Component ID, Sequence, and Payload. The Payload is a Simulink bus representing the payload of the specified MAVLink message type."
+        },
+        {
+          "block": "MAVLink Serializer",
+          "ref": "uavmavlinklib/MAVLink Serializer",
+          "since": "R2023a+",
+          "intent": "The MAVLink Serializer accepts a Simulink bus representing a MAVLink message consisting of fields: Message ID, System ID, Component ID, Sequence, and Payload for the specified MAVLink message type. The MAVLink Serializer converts the Simulink bus to a buffer consisting of uint8 values and outputs the buffer. The length of the buffer in the Data outport is the maximum length of the MAVLink message that you select. The Length port outputs the current length of the serialized message in the Data outport."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "scenario-sensors",
+      "kind": "toolbox",
+      "library": "UAV Toolbox",
+      "kbFolder": "uav-toolbox",
+      "category": "scenario-sensors",
+      "hash": "79a271cd208202c8cdf2f2df920d8e39e416fcd30bea8089ba4621e18fb7bc75",
+      "fm": {
+        "title": "Scenario sensors",
+        "description": "Scenario-based sensor models (GPS, INS, barometer) (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox",
+          "scenario",
+          "gps",
+          "ins",
+          "barometer",
+          "sensor modeling"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "MAVLink Deserializer",
+          "ref": "uavmavlinklib/MAVLink Deserializer",
+          "since": "R2023a+",
+          "intent": "The MAVLink Deserializer accepts a MAVLink data stream consisting of uint8 values and filters the stream for the selected MAVLink message type. The block outputs a Simulink bus that contains the corresponding payload data along with System ID, Component ID, and Sequence. The IsNew output is a boolean indicating whether a new MAVLink message for the requested message ID is available. When IsNew is true, the Msg port outputs the new MAVLink message. If the deserialization is in progress or no new MAVLink message is available, IsNew is false and Msg port holds the last received MAVLink message. Select the \"Filter output MAVLink messages by System ID\" and \"Filter output MAVLink messages by Component ID\" parameters to filter the incoming MAVLink messages for a given System ID and Component ID. If more than one message for the same message ID is available, the MAVLink Deserializer outputs the latest MAVLink message. To queue the messages in the incoming buffer and output the oldest message, select the parameter \"Queue MAVLink messages in output\"."
+        },
+        {
+          "block": "Barometer",
+          "ref": "uavsimlib/Barometer",
+          "since": "R2025a+",
+          "intent": "Model a barometric pressure/altitude sensor with configurable noise — use to simulate altitude measurements for state estimation."
+        },
+        {
+          "block": "GPS",
+          "ref": "uavsimlib/GPS",
+          "since": "R2023a+",
+          "intent": "Model a GPS receiver producing position and velocity with configurable noise — use to simulate satellite navigation measurements."
+        },
+        {
+          "block": "INS",
+          "ref": "uavsimlib/INS",
+          "since": "R2023a+",
+          "intent": "Model a fused inertial navigation output (position/orientation/velocity) with error characteristics — use to simulate an INS/GNSS estimate."
+        },
+        {
+          "block": "UAV Scenario Get Transform",
+          "ref": "uavsimlib/UAV Scenario Get Transform",
+          "since": "R2023a+",
+          "intent": "Get 4x4 transform matrix that maps points in source frame to target frame in UAV Scenario. Use the Select button to choose the source frame and target frame based on the scenario currently loaded in your model. To use this block, ensure that UAV Scenario Configuration block is in your model. This block uses the sample time specified in the UAV Scenario Configuration block."
+        },
+        {
+          "block": "UAV Scenario Motion Read",
+          "ref": "uavsimlib/UAV Scenario Motion Read",
+          "since": "R2023a+",
+          "intent": "Read platform and sensor motions from UAV scenario simulation. Use the Select button to choose the platform or sensor to read from based on the scenario currently loaded in your model. To use this block, ensure that UAV Scenario Configuration block is in your model. This block uses the sample time specified in the UAV Scenario Configuration block."
+        },
+        {
+          "block": "UAV Scenario Motion Write",
+          "ref": "uavsimlib/UAV Scenario Motion Write",
+          "since": "R2023a+",
+          "intent": "Update platform motion in UAV scenario simulation. Use the Select button to choose the platform to write to based on the scenario currently loaded in your model. Position, Velocity and Acceleration are 1x3 vectors that describe the platform's linear motion in the coordinate frame of your choice. Orientation is a 1x4 quaternion that describes the frame rotation from the input coordinate frame to platform's body frame. Angular Velocity is a 1x3 vector that describes the platforms rotation rate in the input coordinate frame. To use this block, ensure that UAV Scenario Configuration block is in your model. This block uses the sample time specified in the UAV Scenario Configuration block."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "simulation-3d",
+      "kind": "toolbox",
+      "library": "UAV Toolbox",
+      "kbFolder": "uav-toolbox",
+      "category": "simulation-3d",
+      "hash": "df547a25f8017bbff13ecd01d7b01569c428f2233e718daa9f00d2e01b8a57c8",
+      "fm": {
+        "title": "Simulation 3d",
+        "description": "Photorealistic 3D scene, cameras, and sensors (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox",
+          "simulation 3d",
+          "camera",
+          "lidar",
+          "ultrasonic",
+          "scene",
+          "video send"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Camera",
+          "ref": "uavsim3dlib/Simulation 3D Camera",
+          "since": "R2023a+",
+          "intent": "Model a pinhole camera in the 3D simulation environment — use to render synthetic camera imagery for perception testing."
+        },
+        {
+          "block": "Simulation 3D Custom UAV Pack",
+          "ref": "uavsim3dlib/Simulation 3D Custom UAV Pack",
+          "since": "R2026a+",
+          "intent": "Spawn a custom UAV mesh/actor in the 3D simulation scene — use to visualize a user-defined vehicle."
+        },
+        {
+          "block": "Simulation 3D Fisheye Camera",
+          "ref": "uavsim3dlib/Simulation 3D Fisheye Camera",
+          "since": "R2023a+",
+          "intent": "Model a fisheye camera in the 3D simulation environment — use to generate wide-FOV synthetic imagery."
+        },
+        {
+          "block": "Simulation 3D Lidar",
+          "ref": "uavsim3dlib/Simulation 3D Lidar",
+          "since": "R2023a+",
+          "intent": "Model a lidar sensor in the 3D simulation environment — use to generate synthetic point clouds for perception testing."
+        },
+        {
+          "block": "Simulation 3D Scene Configuration",
+          "ref": "uavsim3dlib/Simulation 3D Scene Configuration",
+          "since": "R2023a+",
+          "intent": "Configure and connect to the 3D simulation scene (world, weather, sample time) — required once per model to drive the 3D environment."
+        },
+        {
+          "block": "Simulation 3D Ultrasonic Sensor",
+          "ref": "uavsim3dlib/Simulation 3D Ultrasonic Sensor",
+          "since": "R2023a+",
+          "intent": "Model an ultrasonic range sensor in the 3D simulation environment — use for synthetic proximity sensing."
+        },
+        {
+          "block": "Video Send",
+          "ref": "uavsim3dlib/Video Send",
+          "since": "R2023a+",
+          "intent": "Stream rendered video frames out of the 3D simulation — use to pipe synthetic imagery to a perception algorithm or display."
+        },
+        {
+          "block": "Simulation 3D UAV Vehicle",
+          "ref": "uavsim3dlib/Simulation 3D UAV Vehicle",
+          "since": "R2023a+",
+          "intent": "Place a UAV vehicle in the 3D visualization environment. Translation port accepts a [1x3] vector of double-precision values which specifies the position of the UAV body. Rotation port accepts a [1x3] vector of double-precision values which specifies the yaw, pitch, and roll angle of the UAV body in radians. If you set \"Type\" parameter to \"Custom\", the Rotation port also accepts a [17x3] matrix of double-precision values where each row specifies the rotation angles of the UAV body and its motors, and the angular velocity of its rotors, in radians and RPM, respectively. Use the Simulation 3D Custom UAV Pack block to generate translation and rotation input for a custom UAV. GeoOrigin port accepts a [1x3] vector of double-precision values. The vector specifies the latitude, longitude, and altitude of the Unreal world origin. When the \"Use geospatial coordinates for inputs and initial values\" parameter is checked, the translation input specifies the UAV's latitude, longitude, and altitude (in degrees and meters), and the rotation input is relative to the local ENU frame. If unchecked, the translation input specifies the UAV's XYZ position in the Unreal Engine world coordinate frame (in meters), with rotation relative to the Unreal Engine world coordinate frame."
+        },
+        {
+          "block": "UAV Scenario Lidar",
+          "ref": "uavsimlib/UAV Scenario Lidar",
+          "since": "R2023a+",
+          "intent": "Simulate lidar measurements based on meshes in the UAV Scenario and UAV motions. Use the Select button to choose the lidar sensor based on the scenario currently loaded in your model. To use this block, ensure that UAV Scenario Configuration block is in your model. Sample time must be a multiple of the sample time specified in the UAV Scenario Configuration block."
+        },
+        {
+          "block": "UAV Scenario Scope",
+          "ref": "uavsimlib/UAV Scenario Scope",
+          "since": "R2023a+",
+          "intent": "Visualize UAV scenario and lidar pointclouds. An input port is created for each lidar sensor checked for visualization. The input port expects a point cloud signal as an Nx3 or MxNx3 matrix. Click \"Refresh sensor table\" to update the sensor names based on the scenario loaded in the model by UAV Scenario Configuration block. Click \"Show animation\" to bring up the figure that plots the meshes in the scenario and lidar point cloud readings. To use this block, ensure that UAV Scenario Configuration block is in your model. If you set the Sample Time to -1, the block uses the sample time specified in the UAV Scenario Configuration block."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "UAV Toolbox",
+      "kbFolder": "uav-toolbox",
+      "category": "utilities",
+      "hash": "2af4e194bd3c36212db2b7bed84a26f7492f85b6cd4a155a99b45ba7ec998259",
+      "fm": {
+        "title": "Utilities",
+        "description": "Coordinate transforms and animation helpers (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox",
+          "utilities",
+          "coordinate transformation",
+          "animation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Coordinate Transformation Conversion",
+          "ref": "uavutilslib/Coordinate Transformation Conversion",
+          "since": "R2023a+",
+          "intent": "Convert between pose/rotation representations (quaternion, Euler, rotation matrix, homogeneous transform) — use to bridge differing conventions between blocks."
+        },
+        {
+          "block": "UAV Animation",
+          "ref": "uavutilslib/UAV Animation",
+          "since": "R2023a+",
+          "intent": "Animate a UAV's translation and rotation in a 3D plot during simulation — use to visualize flight without the full 3D engine."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.99552656244
 }

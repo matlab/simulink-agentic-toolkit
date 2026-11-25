@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Timer pwm
-description: Hardware timer peripherals for timing, PWM generation, input capture, and encoder decoding
-tags: [timer, PWM, encoder, capture, pulse]
+description: "Hardware timer peripherals for timing, PWM generation, input capture, and encoder decoding (61 blocks)"
+tags: [toolbox-kb, stm32-microcontroller-blockset, timer, PWM, encoder, capture, pulse]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Timer pwm
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: timer-pwm
 block_count: 61
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # Timer pwm
-
-Use these blocks for timer pwm.
 
 ## Recommended Blocks
 

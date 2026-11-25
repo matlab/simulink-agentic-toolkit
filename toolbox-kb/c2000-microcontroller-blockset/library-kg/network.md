@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Network
-description: TCP/IP and UDP networking
-tags: [tcp, udp, ethernet, network]
-status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Network
+description: TCP/IP and UDP networking (14 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, tcp, udp, ethernet, network]
+status: draft
+sources:
+  - resource: matlab:c2803xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: network
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Network
-
-Use these blocks for network.
 
 ## Recommended Blocks
 

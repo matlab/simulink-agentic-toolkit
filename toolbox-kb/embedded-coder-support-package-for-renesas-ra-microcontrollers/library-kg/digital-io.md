@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Digital io
-description: Digital GPIO and port pin access on Renesas RA
-tags: [gpio, digital, pin, read, write]
+description: Digital GPIO and port pin access on Renesas RA (2 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-renesas-ra-microcontrollers, gpio, digital, pin, read, write]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for Renesas RA Microcontrollers
-category_path: Digital io
+sources:
+  - resource: matlab:ra6basedlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Renesas RA Microcontrollers
+kb_folder: embedded-coder-support-package-for-renesas-ra-microcontrollers
+category: digital-io
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Digital io
-
-Use these blocks for digital io.
 
 ## Recommended Blocks
 

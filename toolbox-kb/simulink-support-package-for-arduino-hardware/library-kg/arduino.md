@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Arduino
-description: Arduino hardware peripheral and sensor access
-tags: [arduino, gpio, sensor, motor, shield]
+description: Arduino hardware peripheral and sensor access (8 blocks)
+tags: [toolbox-kb, simulink-support-package-for-arduino-hardware, arduino, gpio, sensor, motor, shield]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Support Package for Arduino Hardware
-category_path: Arduino
+sources:
+  - resource: matlab:arduinorootlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Arduino Hardware
+kb_folder: simulink-support-package-for-arduino-hardware
+category: arduino
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Arduino
-
-Use these blocks for arduino.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Morphology
-description: HDL-optimized morphological operations on a pixel stream
-tags: [morphological, closing, dilation, erosion, opening, grayscale]
+description: HDL-optimized morphological operations on a pixel stream (8 blocks)
+tags: [toolbox-kb, vision-hdl-toolbox, morphological, closing, dilation, erosion, opening, grayscale]
 status: stable
-source: custom_library
-library_root: Vision HDL Toolbox
-category_path: Morphology
+sources:
+  - resource: matlab:visionhdlmorphops
+source: toolbox_kb
+managed_by: satk
+library: Vision HDL Toolbox
+kb_folder: vision-hdl-toolbox
+category: morphology
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Morphology
-
-Use these blocks for morphology.
 
 ## Recommended Blocks
 

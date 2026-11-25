@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Stap
-description: Space-time adaptive processing for airborne clutter suppression
-tags: [STAP, clutter, DPCA, ADPCA, MTI, airborne]
+description: Space-time adaptive processing for airborne clutter suppression (5 blocks)
+tags: [toolbox-kb, phased-array-system-toolbox, STAP, clutter, DPCA, ADPCA, MTI, airborne]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Stap
+sources:
+  - resource: matlab:phasedstaplib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: stap
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Stap
-
-Use these blocks for stap.
 
 ## Recommended Blocks
 

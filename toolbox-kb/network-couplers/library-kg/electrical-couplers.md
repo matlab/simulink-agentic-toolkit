@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Electrical couplers
-description: Electrical network partitioning couplers
-tags: [capacitor, inductor, voltage, current, electrical]
+description: Electrical network partitioning couplers (6 blocks)
+tags: [toolbox-kb, network-couplers, capacitor, inductor, voltage, current, electrical]
 status: stable
-source: mathworks_toolbox
-library_root: Network Couplers
-category_path: Electrical couplers
+sources:
+  - resource: matlab:SimscapeNetworkCouplersLib
+source: toolbox_kb
+managed_by: satk
+library: Network Couplers
+kb_folder: network-couplers
+category: electrical-couplers
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Electrical couplers
-
-Use these blocks for electrical couplers.
 
 ## Recommended Blocks
 

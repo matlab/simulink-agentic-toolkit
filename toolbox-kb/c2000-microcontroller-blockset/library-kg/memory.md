@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Memory
-description: Memory and register access
-tags: [memory, register, allocate, copy]
+description: Memory and register access (3 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, memory, register, allocate, copy]
 status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Memory
+sources:
+  - resource: matlab:c2000lib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: memory
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Memory
-
-Use these blocks for memory.
 
 ## Recommended Blocks
 

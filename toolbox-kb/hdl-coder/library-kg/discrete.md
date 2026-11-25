@@ -1,25 +1,27 @@
 ---
 type: Simulink Block Category
 title: Discrete
-description: Discrete-time dynamics, delays, and filters
-tags: [discrete, delay, integrator, transfer function, filter, memory]
-status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Discrete
+description: "Discrete-time dynamics, delays, and filters (24 blocks)"
+tags: [toolbox-kb, hdl-coder, discrete, delay, integrator, transfer function, filter, memory]
+status: draft
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: discrete
 block_count: 24
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Discrete
-
-Use these blocks for discrete.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Delay | hdlsllib/Commonly
-Used Blocks/Delay | R2023a+ | Delay a signal by a specified number of samples — use for timing alignment or algorithmic state. |
+| Delay | hdlsllib/Commonly Used Blocks/Delay | R2023a+ | Delay a signal by a specified number of samples — use for timing alignment or algorithmic state. |
 | Delay | hdlsllib/Discrete/Delay | R2023a+ | Delay a signal by a specified number of samples — use for timing alignment or algorithmic state. |
 | Discrete Transfer Fcn | hdlsllib/Discrete/Discrete Transfer Fcn | R2023a+ | Implement a discrete transfer function from numerator/denominator coefficients — use for IIR dynamics. |
 | Discrete FIR Filter | hdlsllib/Discrete/Discrete FIR Filter | R2023a+ | Apply an FIR filter with given coefficients — use for linear-phase digital filtering. |
@@ -42,8 +44,4 @@ Used Blocks/Delay | R2023a+ | Delay a signal by a specified number of samples �
 | Discrete FIR Filter | hdlsllib/HDL Floating Point Operations/Discrete FIR Filter | R2023a+ | Apply an FIR filter with given coefficients — use for linear-phase digital filtering. |
 | Discrete PID Controller | hdlsllib/HDL Floating Point Operations/Discrete PID Controller | R2023a+ | Discrete-time PID controller with anti-windup and tuning — use for closed-loop feedback control. |
 | Discrete-Time Integrator | hdlsllib/HDL Floating Point Operations/Discrete-Time Integrator | R2023a+ | Accumulate the input over discrete time with reset/limit options — use for discrete integration. |
-| Repeating
-Sequence
-Stair | hdlsllib/Sources/Repeating
-Sequence
-Stair | R2023a+ | Discrete time sequence is output, then repeated. |
+| Repeating Sequence Stair | hdlsllib/Sources/Repeating Sequence Stair | R2023a+ | Discrete time sequence is output, then repeated. |

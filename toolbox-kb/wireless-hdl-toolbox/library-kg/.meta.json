@@ -1,15 +1,49 @@
 {
-  "generatedAt": "2026-08-19T17:52:15",
-  "generatedAtDatenum": 740213.7446182986,
-  "generatorVersion": 4,
-  "libraries": [
-    "Wireless HDL Toolbox"
-  ],
-  "blockCount": 4,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Wireless_HDL_Toolbox": {
-      "blockCount": 4
+  "pages": [
+    {
+      "id": "wireless-hdl",
+      "kind": "toolbox",
+      "library": "Wireless HDL Toolbox",
+      "kbFolder": "wireless-hdl-toolbox",
+      "category": "wireless-hdl",
+      "hash": "9d4ffb50811e1475864971d4bec43c9aa1eb2f039312d994f269fdfd82f8c53d",
+      "fm": {
+        "title": "Wireless hdl",
+        "description": "HDL-optimized wireless communication building blocks for FPGA (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "wireless-hdl-toolbox",
+          "hdl",
+          "wireless",
+          "fpga",
+          "modulation",
+          "synchronization"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Error Detection and Correction",
+          "ref": "whdllib/Error Detection and Correction",
+          "since": "R2023a+",
+          "intent": "HDL-optimized blocks for forward error correction — use for implementing channel coding in FPGA-based wireless receivers"
+        },
+        {
+          "block": "Modulation",
+          "ref": "whdllib/Modulation",
+          "since": "R2023a+",
+          "intent": "HDL-optimized modulation and demodulation blocks — use for implementing digital modulation schemes in FPGA-based wireless transceivers"
+        },
+        {
+          "block": "Utilities",
+          "ref": "whdllib/Utilities",
+          "since": "R2023a+",
+          "intent": "HDL-optimized utility blocks for wireless designs — use for signal conditioning, buffering, or format conversion in FPGA wireless implementations"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:34",
+  "generatedAtDatenum": 740309.99554207176
 }

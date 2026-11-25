@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Couplings and drives
-description: Mechanical power transmission elements: belts, chains, cables, joints, and converters
-tags: [belt, chain, cable, shaft, joint]
+description: "Mechanical power transmission elements: belts, chains, cables, joints, and converters (14 blocks)"
+tags: [toolbox-kb, driveline, belt, chain, cable, shaft, joint]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Couplings and drives
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: couplings-and-drives
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Couplings and drives
-
-Use these blocks for couplings and drives.
 
 ## Recommended Blocks
 

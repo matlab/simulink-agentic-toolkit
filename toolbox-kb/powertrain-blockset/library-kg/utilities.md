@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Power accounting and Simscape interface helpers
-tags: [utilities, power accounting, simscape, connection port, two-way]
+description: Power accounting and Simscape interface helpers (3 blocks)
+tags: [toolbox-kb, powertrain-blockset, utilities, power accounting, simscape, connection port, two-way]
 status: stable
-source: custom_library
-library_root: Powertrain Blockset
-category_path: Utilities
+sources:
+  - resource: matlab:autolibpowerinfoutils
+source: toolbox_kb
+managed_by: satk
+library: Powertrain Blockset
+kb_folder: powertrain-blockset
+category: utilities
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Discontinuities
-description: Nonlinear discontinuity blocks
-tags: [saturation, dead zone, backlash, relay, friction, hit crossing]
+description: Nonlinear discontinuity blocks (8 blocks)
+tags: [toolbox-kb, hdl-coder, saturation, dead zone, backlash, relay, friction, hit crossing]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Discontinuities
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: discontinuities
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Discontinuities
-
-Use these blocks for discontinuities.
 
 ## Recommended Blocks
 

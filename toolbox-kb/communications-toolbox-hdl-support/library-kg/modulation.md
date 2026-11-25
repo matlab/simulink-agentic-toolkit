@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Modulation
-description: Baseband digital modulators and demodulators
-tags: [modulation, qam, psk, bpsk, qpsk]
+description: Baseband digital modulators and demodulators (8 blocks)
+tags: [toolbox-kb, communications-toolbox-hdl-support, modulation, qam, psk, bpsk, qpsk]
 status: stable
-source: custom_library
-library_root: Communications Toolbox HDL Support
-category_path: Modulation
+sources:
+  - resource: matlab:commhdldigbbndam
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox HDL Support
+kb_folder: communications-toolbox-hdl-support
+category: modulation
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Modulation
-
-Use these blocks for modulation.
 
 ## Recommended Blocks
 

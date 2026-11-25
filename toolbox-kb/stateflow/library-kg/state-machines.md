@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: State machines
-description: Hierarchical and parallel finite state machines for event-driven and supervisory logic
-tags: [state, chart, transition, mode, finite state]
+description: Hierarchical and parallel finite state machines for event-driven and supervisory logic (2 blocks)
+tags: [toolbox-kb, stateflow, state, chart, transition, mode, finite state]
 status: stable
-source: custom_library
-library_root: Stateflow
-category_path: State machines
+sources:
+  - resource: matlab:sflib
+source: toolbox_kb
+managed_by: satk
+library: Stateflow
+kb_folder: stateflow
+category: state-machines
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # State machines
-
-Use these blocks for state machines.
 
 ## Recommended Blocks
 

@@ -1,15 +1,140 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.69317468745,
-  "generatorVersion": 4,
-  "libraries": [
-    "System Identification Toolbox"
-  ],
-  "blockCount": 14,
-  "categoryCount": 2,
-  "libraryFingerprints": {
-    "System_Identification_Toolbox": {
-      "blockCount": 14
+  "pages": [
+    {
+      "id": "models",
+      "kind": "toolbox",
+      "library": "System Identification Toolbox",
+      "kbFolder": "system-identification-toolbox",
+      "category": "models",
+      "hash": "8112a35567aa1e25ee54bac053da2ad9a5c912cfec0fe6c2c0367e72f59111c9",
+      "fm": {
+        "title": "Models",
+        "description": "Identified dynamic models for simulation and prediction (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "system-identification-toolbox",
+          "model",
+          "idmodel",
+          "polynomial",
+          "transfer function"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Iddata Sink",
+          "ref": "slident/Iddata Sink",
+          "since": "R2023a+",
+          "intent": "Export simulation data to workspace as IDDATA object. The object stores input and output signals sampled at the specified sample time when simulation stops. The object is created in the MATLAB base workspace when simulating from the model window or caller workspace when simulating programmatically. Specify the variable name in \"IDDATA Name\". Specify a positive number, representing the sampling interval, in \"Sample Time\"."
+        },
+        {
+          "block": "Iddata Source",
+          "ref": "slident/Iddata Source",
+          "since": "R2023a+",
+          "intent": "This block allows to import IDDATA object from the MATLAB Workspace. The first output port of the block corresponds to the input signal of the IDDATA object and the second output port corresponds to the output signal. Specify a variable representing an IDDATA object corresponding to a single-experiment, time-domain data. Start time = -1 means that the start time for the signals in the IDDATA object matches that of the Simulink model. You can change it to a specific value (such as the value of the \"Tstart\" property of the IDDATA object) by specifying a non-negative real scalar value for it."
+        },
+        {
+          "block": "Hammerstein-Wiener Model",
+          "ref": "slident/Models/Hammerstein-Wiener Model",
+          "since": "R2023a+",
+          "intent": "Simulate a Hammerstein-Wiener (idnlhw) model. Specify the name of an estimated idnlhw model for \"Model\". Specify initial conditions for simulation as one of the following: 1. String \"zero\" to use a value of zero for all initial state values. 2. Double vector representing the initial states of the linear block of the model. Click on Help button for information on how to determine initial states from various requirements."
+        },
+        {
+          "block": "Idmodel",
+          "ref": "slident/Models/Idmodel",
+          "since": "R2023a+",
+          "intent": "The Idmodel block accepts any of the linear identified models: state-space (idss), linear grey box (idgrey), polynomial (idpoly), transfer function (idtf) or process (idproc) models. Internally, models will be converted to their state-space equivalent for evaluation. Specify initial conditions as a numeric vector (idss, idgrey only) or as an initialCondition object. Use '[]' to denote zero initial condition. For simulations with noise, Seed(s) may be left empty for random restarts. To generate specific noise realizations, specify one noise seed per output."
+        },
+        {
+          "block": "Neural State Space Model",
+          "ref": "slident/Models/Neural State Space Model",
+          "since": "R2023a+",
+          "intent": "Simulate a Neural State Space model. Specify a trained \"idNeuralStateSpace\" object in the \"Model\" parameter."
+        },
+        {
+          "block": "Nonlinear ARX Model",
+          "ref": "slident/Models/Nonlinear ARX Model",
+          "since": "R2023a+",
+          "intent": "Simulate a nonlinear ARX (idnlarx) model. Specify the name of an estimated idnlarx model for \"Model\". Specify initial conditions for simulation as one of the following: 1. Steady-state (equilibrium) input and output signal levels. 2. An initial state vector. Click on Help button for information on how to determine initial states from various requirements."
+        },
+        {
+          "block": "Nonlinear Grey-Box Model",
+          "ref": "slident/Models/Nonlinear Grey-Box Model",
+          "since": "R2023a+",
+          "intent": "Enter name of an IDNLGREY object and, optionally, an initial state X0."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "state-estimators",
+      "kind": "toolbox",
+      "library": "System Identification Toolbox",
+      "kbFolder": "system-identification-toolbox",
+      "category": "state-estimators",
+      "hash": "4f28342c962d0bb2bb996c064ddaa18bda158a0829efe631ce38aa4aa3e32cdd",
+      "fm": {
+        "title": "State estimators",
+        "description": "Online recursive state and parameter estimation from noisy measurements (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "system-identification-toolbox",
+          "kalman",
+          "filter",
+          "estimator",
+          "particle",
+          "recursive least squares",
+          "estimation"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Extended Kalman Filter",
+          "ref": "slident/Estimators/Extended Kalman Filter",
+          "since": "R2023a+",
+          "intent": "Estimate states of a nonlinear system online by linearizing the dynamics about the current estimate at each step — use for state/parameter estimation when the model is differentiable and only mildly nonlinear."
+        },
+        {
+          "block": "Kalman Filter",
+          "ref": "slident/Estimators/Kalman Filter",
+          "since": "R2023a+",
+          "intent": "Optimal recursive state observer for linear (time-invariant or time-varying) systems driven by Gaussian noise — use for sensor fusion and state estimation when a linear model is adequate."
+        },
+        {
+          "block": "Particle Filter",
+          "ref": "slident/Estimators/Particle Filter",
+          "since": "R2023a+",
+          "intent": "Estimate states of a highly nonlinear or non-Gaussian system with a set of weighted sample particles — use for multimodal problems where Kalman-family filters fail."
+        },
+        {
+          "block": "Recursive Least Squares Estimator",
+          "ref": "slident/Estimators/Recursive Least Squares Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate model parameters online by recursively minimizing squared prediction error — use for adaptive parameter identification and online model tuning as data arrives."
+        },
+        {
+          "block": "Unscented Kalman Filter",
+          "ref": "slident/Estimators/Unscented Kalman Filter",
+          "since": "R2023a+",
+          "intent": "Estimate states of a nonlinear system using deterministic sigma-point sampling instead of Jacobian linearization — use when nonlinearities are strong enough that an EKF loses accuracy."
+        },
+        {
+          "block": "Model Type Converter",
+          "ref": "slident/Estimators/Model Type Converter",
+          "since": "R2023a+",
+          "intent": "Convert discrete-time polynomial model coefficients (ARX, ARMAX, OE, BJ) to state-space matrices."
+        },
+        {
+          "block": "Recursive Polynomial Model Estimator",
+          "ref": "slident/Estimators/Recursive Polynomial Model Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate discrete-time, polynomial models of AR, ARX, ARMA, ARMAX, BJ or OE structures."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.9955248842
 }

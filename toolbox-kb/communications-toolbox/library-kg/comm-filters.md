@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Comm filters
-description: Pulse-shaping, DC removal, and filter libraries
-tags: [comm filters, dc blocker, filter designs, multirate filters]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Comm filters
+description: "Pulse-shaping, DC removal, and filter libraries (9 blocks)"
+tags: [toolbox-kb, communications-toolbox, comm filters, dc blocker, filter designs, multirate filters]
+status: draft
+sources:
+  - resource: matlab:commfilt2
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: comm-filters
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Comm filters
-
-Use these blocks for comm filters.
 
 ## Recommended Blocks
 

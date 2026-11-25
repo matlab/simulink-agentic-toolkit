@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Dashboard wireless
-description: Wireless/network status icons
-tags: [dashboard, network, wireless, signal, icon]
+description: Wireless/network status icons (6 blocks)
+tags: [toolbox-kb, simulink, dashboard, network, wireless, signal, icon]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Dashboard wireless
+sources:
+  - resource: matlab:simulink_hmi_blocks
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: dashboard-wireless
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Dashboard wireless
-
-Use these blocks for dashboard wireless.
 
 ## Recommended Blocks
 

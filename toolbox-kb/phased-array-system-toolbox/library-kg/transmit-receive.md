@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Transmit receive
-description: Array transmit and receive blocks, steering vectors, and front-end components
-tags: [transmitter, receiver, array, steering, preamp]
+description: "Array transmit and receive blocks, steering vectors, and front-end components (8 blocks)"
+tags: [toolbox-kb, phased-array-system-toolbox, transmitter, receiver, array, steering, preamp]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Transmit receive
+sources:
+  - resource: matlab:phasedtxrxlib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: transmit-receive
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Transmit receive
-
-Use these blocks for transmit receive.
 
 ## Recommended Blocks
 

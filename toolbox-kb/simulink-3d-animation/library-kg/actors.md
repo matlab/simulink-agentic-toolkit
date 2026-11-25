@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Actors
-description: 3D actors and vehicles in the virtual scene
-tags: [actor, vehicle, pedestrian, bicyclist, spawn]
+description: "3D actors and vehicles in the virtual scene (4 blocks)"
+tags: [toolbox-kb, simulink-3d-animation, actor, vehicle, pedestrian, bicyclist, spawn]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink 3D Animation
-category_path: Actors
+sources:
+  - resource: matlab:sl3dlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink 3D Animation
+kb_folder: simulink-3d-animation
+category: actors
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Actors
-
-Use these blocks for actors.
 
 ## Recommended Blocks
 

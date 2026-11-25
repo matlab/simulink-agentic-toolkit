@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Direction finding
-description: Direction of arrival estimation and spatial spectrum analysis
-tags: [DOA, MUSIC, ESPRIT, monopulse, spectrum, angle]
+description: Direction of arrival estimation and spatial spectrum analysis (15 blocks)
+tags: [toolbox-kb, phased-array-system-toolbox, DOA, MUSIC, ESPRIT, monopulse, spectrum, angle]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Direction finding
+sources:
+  - resource: matlab:phaseddoalib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: direction-finding
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Direction finding
-
-Use these blocks for direction finding.
 
 ## Recommended Blocks
 

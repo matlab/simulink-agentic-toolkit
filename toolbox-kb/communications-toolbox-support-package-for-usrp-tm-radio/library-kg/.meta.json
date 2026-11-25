@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.744548206,
-  "generatorVersion": 4,
-  "libraries": [
-    "Communications Toolbox Support Package for USRP(TM) Radio"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Communications_Toolbox_Support_Package_for_USRP_TM__Radio": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "sdr-hardware",
+      "kind": "toolbox",
+      "library": "Communications Toolbox Support Package for USRP(TM) Radio",
+      "kbFolder": "communications-toolbox-support-package-for-usrp-tm-radio",
+      "category": "sdr-hardware",
+      "hash": "465d4266fd61173b12ea8294b8753203199b3f1a8ce54a0701490ceee41ec410",
+      "fm": {
+        "title": "Sdr hardware",
+        "description": "USRP software-defined radio hardware interface blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-support-package-for-usrp-tm-radio",
+          "usrp",
+          "sdr",
+          "radio",
+          "ettus",
+          "ni"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "SDRu Receiver",
+          "ref": "commsdrhw_v2/SDRu Receiver",
+          "since": "R2023a+",
+          "intent": "Receive IQ samples from a USRP software-defined radio device in real time — use for high-performance over-the-air signal acquisition in research-grade RF prototyping and wideband spectrum analysis"
+        },
+        {
+          "block": "SDRu Transmitter",
+          "ref": "commsdrhw_v2/SDRu Transmitter",
+          "since": "R2023a+",
+          "intent": "Transmit IQ samples through a USRP software-defined radio device in real time — use for high-performance over-the-air waveform generation in research-grade RF experiments and standards-compliant signal testing"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:16",
+  "generatedAtDatenum": 740309.99532902776
 }

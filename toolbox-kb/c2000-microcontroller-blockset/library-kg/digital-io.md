@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Digital io
-description: GPIO digital input/output
-tags: [digital, gpio, input, output]
-status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Digital io
+description: GPIO digital input/output (68 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, digital, gpio, input, output]
+status: draft
+sources:
+  - resource: matlab:c2802xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: digital-io
 block_count: 68
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Digital io
-
-Use these blocks for digital io.
 
 ## Recommended Blocks
 

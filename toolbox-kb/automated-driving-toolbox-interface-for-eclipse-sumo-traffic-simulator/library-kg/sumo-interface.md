@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sumo interface
-description: Eclipse SUMO traffic simulator co-simulation blocks for closed-loop testing with microscopic traffic
-tags: [sumo, traffic, traci, cosimulation, vehicle]
+description: Eclipse SUMO traffic simulator co-simulation blocks for closed-loop testing with microscopic traffic (5 blocks)
+tags: [toolbox-kb, automated-driving-toolbox-interface-for-eclipse-sumo-traffic-simulator, sumo, traffic, traci, cosimulation, vehicle]
 status: stable
-source: mathworks_toolbox
-library_root: Automated Driving Toolbox Interface for Eclipse SUMO Traffic Simulator
-category_path: Sumo interface
+sources:
+  - resource: matlab:SumoInterfaceLibrary
+source: toolbox_kb
+managed_by: satk
+library: Automated Driving Toolbox Interface for Eclipse SUMO Traffic Simulator
+kb_folder: automated-driving-toolbox-interface-for-eclipse-sumo-traffic-simulator
+category: sumo-interface
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Sumo interface
-
-Use these blocks for sumo interface.
 
 ## Recommended Blocks
 

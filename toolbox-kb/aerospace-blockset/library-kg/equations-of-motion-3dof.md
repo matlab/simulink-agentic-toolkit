@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Equations of motion 3dof
-description: Three-degree-of-freedom flight dynamics
-tags: [3DOF, longitudinal, body axes, wind axes, variable mass]
+description: Three-degree-of-freedom flight dynamics (8 blocks)
+tags: [toolbox-kb, aerospace-blockset, "3DOF", longitudinal, body axes, wind axes, variable mass]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Equations of motion 3dof
+sources:
+  - resource: matlab:aerolib3dof2
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: equations-of-motion-3dof
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Equations of motion 3dof
-
-Use these blocks for equations of motion 3dof.
 
 ## Recommended Blocks
 

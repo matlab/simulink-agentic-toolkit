@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456193286,
-  "generatorVersion": 4,
-  "libraries": [
-    "Fixed-Point Designer"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Fixed_Point_Designer": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "fixed-point-math",
+      "kind": "toolbox",
+      "library": "Fixed-Point Designer",
+      "kbFolder": "fixed-point-designer",
+      "category": "fixed-point-math",
+      "hash": "8405a5d38990c0db47f8d24202fbc7aa7700a5bfebcd1a1de400ee9fa3f60c96",
+      "fm": {
+        "title": "Fixed point math",
+        "description": "Optimized fixed-point arithmetic operations for efficient code generation (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "fixed-point-designer",
+          "fixed-point",
+          "divide",
+          "modulo",
+          "round",
+          "constant"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Divide by Constant and Round",
+          "ref": "embeddedMathLib/Divide by Constant and Round",
+          "since": "R2023a+",
+          "intent": "Divide a signal by a compile-time constant and round the result with configurable rounding mode — use to replace expensive runtime division with efficient multiply-shift operations in fixed-point code generation"
+        },
+        {
+          "block": "Modulo by Constant",
+          "ref": "embeddedMathLib/Modulo by Constant",
+          "since": "R2023a+",
+          "intent": "Compute modulo of a signal by a compile-time constant — use for efficient remainder operations in fixed-point scheduling, circular buffers, or angle wrapping without runtime division"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99539055559
 }

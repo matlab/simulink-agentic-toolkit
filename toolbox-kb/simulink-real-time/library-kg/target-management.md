@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Target management
-description: Blocks for target management.
+description: Blocks for Target management (3 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Target management
+sources:
+  - resource: matlab:slrealtimetgmanagement
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: target-management
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Target management
-
-Use these blocks for target management.
 
 ## Recommended Blocks
 

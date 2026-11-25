@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Polynomial
-description: Polynomial functions
-tags: [polynomial, stability]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Polynomial
+description: Polynomial functions (4 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, polynomial, stability]
+status: draft
+sources:
+  - resource: matlab:dspparest3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: polynomial
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Polynomial
-
-Use these blocks for polynomial.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Intel soc
-description: Processor-FPGA communication and task management on Intel SoC
-tags: [intel, soc, axi4, linux, fpga]
+description: Processor-FPGA communication and task management on Intel SoC (5 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-intel-soc-devices, intel, soc, axi4, linux, fpga]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for Intel SoC Devices
-category_path: Intel soc
+sources:
+  - resource: matlab:alterasoclib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Intel SoC Devices
+kb_folder: embedded-coder-support-package-for-intel-soc-devices
+category: intel-soc
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Intel soc
-
-Use these blocks for intel soc.
 
 ## Recommended Blocks
 

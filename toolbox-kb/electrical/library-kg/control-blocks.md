@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Control blocks
-description: Controllers for machines, converters, and power systems including exciters and governors
-tags: [controller, pi, foc, exciter, governor]
+description: "Controllers for machines, converters, and power systems including exciters and governors (95 blocks)"
+tags: [toolbox-kb, electrical, controller, pi, foc, exciter, governor]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Control blocks
+sources:
+  - resource: matlab:ee_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: control-blocks
 block_count: 95
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Control blocks
-
-Use these blocks for control blocks.
 
 ## Recommended Blocks
 

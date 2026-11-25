@@ -1,25 +1,27 @@
 ---
 type: Simulink Block Category
 title: Signal attributes
-description: Data type, rate, unit, and attribute handling
-tags: [data type, rate transition, unit, signal, probe, cast]
-status: stable
-source: custom_library
-library_root: Simulink
-category_path: Signal attributes
+description: "Data type, rate, unit, and attribute handling (31 blocks)"
+tags: [toolbox-kb, simulink, data type, rate transition, unit, signal, probe, cast]
+status: draft
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: signal-attributes
 block_count: 31
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Signal attributes
-
-Use these blocks for signal attributes.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Data Type Conversion | simulink/Commonly
-Used Blocks/Data Type Conversion | R2023a+ | Convert a signal to a specified data type — use to set integer/fixed-point type and scaling. |
+| Data Type Conversion | simulink/Commonly Used Blocks/Data Type Conversion | R2023a+ | Convert a signal to a specified data type — use to set integer/fixed-point type and scaling. |
 | Check  Dynamic Range | simulink/Model Verification/Check  Dynamic Range | R2023a+ | Assert that one signal always lies between two other signals. The first input is the upper-bound signal; the second input, the lower-bound; the third input, the test signal. |
 | Check Dynamic  Lower Bound | simulink/Model Verification/Check Dynamic  Lower Bound | R2023a+ | Assert that one signal is always less than another signal. The first input is the lower-bound signal. The second input is the test signal. |
 | Check Dynamic  Upper Bound | simulink/Model Verification/Check Dynamic  Upper Bound | R2023a+ | Assert that one signal is always greater than another signal. The first input is the upper-bound signal. The second input is the test signal. |

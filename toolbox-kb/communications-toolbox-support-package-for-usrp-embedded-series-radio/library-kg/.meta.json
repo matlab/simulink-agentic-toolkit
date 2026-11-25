@@ -1,15 +1,72 @@
 {
-  "generatedAt": "2026-09-29T16:38:06",
-  "generatedAtDatenum": 740254.69313287036,
-  "generatorVersion": 4,
-  "libraries": [
-    "Communications Toolbox Support Package for USRP Embedded Series Radio"
-  ],
-  "blockCount": 3,
-  "categoryCount": 2,
-  "libraryFingerprints": {
-    "Communications_Toolbox_Support_Package_for_USRP_Embedded_Series_Radio": {
-      "blockCount": 3
+  "pages": [
+    {
+      "id": "examples",
+      "kind": "toolbox",
+      "library": "Communications Toolbox Support Package for USRP Embedded Series Radio",
+      "kbFolder": "communications-toolbox-support-package-for-usrp-embedded-series-radio",
+      "category": "examples",
+      "hash": "0de802bb3817078b2b2fa3c1526236ab872b171b8a3c5142a66b2b234f911d5b",
+      "fm": {
+        "title": "Examples",
+        "description": "Informational and example-launcher blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-support-package-for-usrp-embedded-series-radio",
+          "example",
+          "info",
+          "examples"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Info1",
+          "ref": "usrpe3xx_lib/Info1",
+          "since": "R2023a+",
+          "intent": "Informational block that links to the shipped USRP Embedded Series Radio example models — not part of a production design."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sdr-radio-io",
+      "kind": "toolbox",
+      "library": "Communications Toolbox Support Package for USRP Embedded Series Radio",
+      "kbFolder": "communications-toolbox-support-package-for-usrp-embedded-series-radio",
+      "category": "sdr-radio-io",
+      "hash": "683bcc179378c0db92feb2c34d7bbb2b3fd9b9743efc4f596c3624558251268c",
+      "fm": {
+        "title": "Sdr radio io",
+        "description": "Transmit and receive baseband IQ through USRP E3xx software-defined radio hardware (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-support-package-for-usrp-embedded-series-radio",
+          "e3xx",
+          "receiver",
+          "transmitter",
+          "usrp",
+          "radio"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "E3xx Receiver",
+          "ref": "e3xxlib/E3xx Receiver",
+          "since": "R2023a+",
+          "intent": "Receive baseband IQ samples from a USRP E3xx-series software-defined radio deployed on the embedded target — use as the RF capture source when running or deploying SDR receive algorithms on E3xx hardware."
+        },
+        {
+          "block": "E3xx Transmitter",
+          "ref": "e3xxlib/E3xx Transmitter",
+          "since": "R2023a+",
+          "intent": "Transmit baseband IQ samples through a USRP E3xx-series software-defined radio on the embedded target — use as the RF output sink when running or deploying SDR transmit algorithms on E3xx hardware."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:35",
+  "generatedAtDatenum": 740309.99555283564
 }

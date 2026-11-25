@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Dashboard shapes
-description: Basic shape/status icon indicators
-tags: [dashboard, shape, icon, indicator, status]
+description: Basic shape/status icon indicators (25 blocks)
+tags: [toolbox-kb, simulink, dashboard, shape, icon, indicator, status]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Dashboard shapes
+sources:
+  - resource: matlab:simulink_hmi_blocks
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: dashboard-shapes
 block_count: 25
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Dashboard shapes
-
-Use these blocks for dashboard shapes.
 
 ## Recommended Blocks
 

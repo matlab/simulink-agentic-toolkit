@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Roadrunner
-description: RoadRunner scenario co-simulation interface
-tags: [roadrunner]
+description: RoadRunner scenario co-simulation interface (3 blocks)
+tags: [toolbox-kb, automated-driving-toolbox, roadrunner]
 status: stable
-source: custom_library
-library_root: Automated Driving Toolbox
-category_path: Roadrunner
+sources:
+  - resource: matlab:roadrunnerscenario
+source: toolbox_kb
+managed_by: satk
+library: Automated Driving Toolbox
+kb_folder: automated-driving-toolbox
+category: roadrunner
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Roadrunner
-
-Use these blocks for roadrunner.
 
 ## Recommended Blocks
 

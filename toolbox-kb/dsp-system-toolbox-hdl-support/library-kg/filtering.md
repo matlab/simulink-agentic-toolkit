@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Filtering
-description: HDL-optimized streaming filters and rate-change filters
-tags: [filtering, biquad, cic, fir, lms]
+description: HDL-optimized streaming filters and rate-change filters (7 blocks)
+tags: [toolbox-kb, dsp-system-toolbox-hdl-support, filtering, biquad, cic, fir, lms]
 status: stable
-source: custom_library
-library_root: DSP System Toolbox HDL Support
-category_path: Filtering
+sources:
+  - resource: matlab:dsphdlsupportfiltering
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox HDL Support
+kb_folder: dsp-system-toolbox-hdl-support
+category: filtering
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Filtering
-
-Use these blocks for filtering.
 
 ## Recommended Blocks
 

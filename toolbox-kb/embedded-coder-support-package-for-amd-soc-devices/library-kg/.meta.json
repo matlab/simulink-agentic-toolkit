@@ -1,15 +1,85 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74455849535,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for AMD SoC Devices"
-  ],
-  "blockCount": 9,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_AMD_SoC_Devices": {
-      "blockCount": 9
+  "pages": [
+    {
+      "id": "amd-soc",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for AMD SoC Devices",
+      "kbFolder": "embedded-coder-support-package-for-amd-soc-devices",
+      "category": "amd-soc",
+      "hash": "0df0bb66ce18efb221b98a50302297d95551c8c61725b4a333a97b09f1563cb2",
+      "fm": {
+        "title": "Amd soc",
+        "description": "AMD/Xilinx SoC blocks for ARM-FPGA partitioning and AXI communication (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-amd-soc-devices",
+          "zynq",
+          "axi",
+          "fpga",
+          "soc",
+          "arm"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Linux Task",
+          "ref": "zynqlib/Linux Task",
+          "since": "R2023a+",
+          "intent": "Execute a subsystem as a Linux process task on the ARM core of an AMD/Xilinx SoC — use to partition algorithms that run on the processor side of a Zynq or Versal device"
+        },
+        {
+          "block": "VxWorks Task",
+          "ref": "zynqlib/VxWorks Task",
+          "since": "R2023a+",
+          "intent": "Execute a subsystem as a VxWorks task on the processor core — use when the AMD SoC runs VxWorks RTOS instead of Linux"
+        },
+        {
+          "block": "AXI4-Interface Read",
+          "ref": "zynqlib/AXI4-Interface Read",
+          "since": "R2023a+",
+          "intent": "Read data from the FPGA fabric via an AXI4 memory-mapped interface — use to receive processed results or status registers from HDL IP running on the programmable logic"
+        },
+        {
+          "block": "AXI4-Interface Write",
+          "ref": "zynqlib/AXI4-Interface Write",
+          "since": "R2023a+",
+          "intent": "Write data to the FPGA fabric via an AXI4 memory-mapped interface — use to send parameters or commands from the processor to HDL IP running on the programmable logic"
+        },
+        {
+          "block": "AXI4-Stream IIO Read",
+          "ref": "zynqlib/AXI4-Stream IIO Read",
+          "since": "R2023a+",
+          "intent": "Read streaming data from the FPGA fabric via AXI4-Stream with Linux IIO — use for high-throughput continuous data transfer from PL to PS such as ADC sample streams"
+        },
+        {
+          "block": "AXI4-Stream IIO Write",
+          "ref": "zynqlib/AXI4-Stream IIO Write",
+          "since": "R2023a+",
+          "intent": "Write streaming data to the FPGA fabric via AXI4-Stream with Linux IIO — use for high-throughput continuous data transfer from PS to PL such as DAC output streams"
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "zynqlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Library identification label — internal library element, not used in application models"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "zynqlib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP datagrams on the SoC processor — use for network communication with a host PC or other networked devices"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "zynqlib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP datagrams from the SoC processor — use for telemetry or data transfer to a host PC over Ethernet"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:19",
+  "generatedAtDatenum": 740309.99536947918
 }

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Hdl subsystems
-description: HDL subsystem/state-control blocks
-tags: [hdl, state control, subsystem]
+description: HDL subsystem/state-control blocks (1 blocks)
+tags: [toolbox-kb, hdl-coder, hdl, state control, subsystem]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Hdl subsystems
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: hdl-subsystems
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Hdl subsystems
-
-Use these blocks for hdl subsystems.
 
 ## Recommended Blocks
 

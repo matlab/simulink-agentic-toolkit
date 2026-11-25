@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Arm cortex r
-description: Deployment blocks for ARM Cortex-R safety processors
-tags: [arm, cortex-r, rm57, digital, gpio]
+description: Deployment blocks for ARM Cortex-R safety processors (2 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-arm-cortex-r-processors, arm, cortex-r, rm57, digital, gpio]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for ARM Cortex-R Processors
-category_path: Arm cortex r
+sources:
+  - resource: matlab:tirm57lxlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for ARM Cortex-R Processors
+kb_folder: embedded-coder-support-package-for-arm-cortex-r-processors
+category: arm-cortex-r
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Arm cortex r
-
-Use these blocks for arm cortex r.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Cockpit instruments
-description: Flight instrument panel displays
-tags: [indicator, cockpit, instrument, gauge, display]
+description: Flight instrument panel displays (8 blocks)
+tags: [toolbox-kb, aerospace-blockset, indicator, cockpit, instrument, gauge, display]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Cockpit instruments
+sources:
+  - resource: matlab:aerolibhmi
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: cockpit-instruments
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Cockpit instruments
-
-Use these blocks for cockpit instruments.
 
 ## Recommended Blocks
 

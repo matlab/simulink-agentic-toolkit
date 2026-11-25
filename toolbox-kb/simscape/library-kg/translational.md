@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Translational
-description: Mechanical translational (linear-motion) elements and references
-tags: [translational]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Translational
+description: Mechanical translational (linear-motion) elements and references (46 blocks)
+tags: [toolbox-kb, simscape, translational]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: translational
 block_count: 46
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Translational
-
-Use these blocks for translational.
 
 ## Recommended Blocks
 
@@ -62,5 +65,5 @@ Use these blocks for translational.
 | Length Actuator (PB) | fl_lib/Translational/Sources/Length Actuator (PB) | R2024b+ | This block represents an ideal actuator that maintains a specified length regardless of the load at the connected ports. Ports B and F are position-based translational conserving ports. The physical signal at port S specifies the distance between the ports. A positive signal indicates that port F has a more positive position than port B. |
 | Translational Velocity Actuator (PB) | fl_lib/Translational/Sources/Translational Velocity Actuator (PB) | R2024b+ | This block represents an ideal velocity actuator with length that maintains a specified velocity regardless of the load at the connected ports. Ports B and F are position-based translational conserving ports. Specify the relative velocity at physical signal port S. A positive signal indicates that the velocity at port F is greater than at port B. Port F has a more positive position than port B for positive length. |
 | Interface (PB-Translational) | fl_lib/Translational/Utilities/Interface (PB-Translational) | R2024b+ | This block represents a rigid connection between a position-based and non-position-based mechanical translational network. The velocities at the ports are equal. The forces exerted by the networks on each other have equal magnitudes and opposite signs. When the Position-based port is set to Bpb, port Bpb is a position-based translational port and port F is non-position-based translational port. The interface force acts from port Bpb on port F. When the Position-based port is set to Fpb, port B is a non-position-based translational port and port Fpb is position-based translational port. The interface force acts from port B on port Fpb. |
-| Mechanical Translational Properties (PB) | fl_lib/Translational/Utilities/Mechanical Translational Properties (PB) | R2024b+ | This block provides gravitational acceleration to the connected translational network. Gravity, g, acts downwards. Incline angle, β, is the angle of the network's positive direction relative to the horizontal. The network positive direction has an upward slope for angles between β and 180 degrees and a downward slope for angles between 0 and -180 degrees. g*sin(β) is the component of gravity acting along the network. Positive g*sin(β) corresponds to a positive incline angle that induces motion in the negative direction along the rail. g*|cos(β)| is the component of gravity acting perpendicular to the rail that induces normal force between mass and the rail. |
+| Mechanical Translational Properties (PB) | fl_lib/Translational/Utilities/Mechanical Translational Properties (PB) | R2024b+ | This block provides gravitational acceleration to the connected translational network. Gravity, g, acts downwards. Incline angle, β, is the angle of the network's positive direction relative to the horizontal. The network positive direction has an upward slope for angles between β and 180 degrees and a downward slope for angles between 0 and -180 degrees. g*sin(β) is the component of gravity acting along the network. Positive g*sin(β) corresponds to a positive incline angle that induces motion in the negative direction along the rail. g*\|cos(β)\| is the component of gravity acting perpendicular to the rail that induces normal force between mass and the rail. |
 | Translational Mechanical Converter (2P) | fl_lib/Two-Phase Fluid/Elements/Translational Mechanical Converter (2P) | R2023a+ | This block models an interface between a two-phase fluid network and a mechanical translational network. It can be used as a building block for linear actuators. The converter contains a variable volume of fluid. Pressure and specific internal energy vary based on the net mass and energy accumulation in the volume and the change in volume. Port A is the two-phase fluid conserving port associated with the converter inlet. Port H is the thermal conserving port associated with the thermal mass of the fluid volume. Ports R and C are the mechanical translational conserving ports associated with the moving interface and the converter casing, respectively. The displacement of port R relative to port C can be calculated internally or be set by the physical signal input port p. The displacement is defined to be zero when the liquid volume is equal to the dead volume. |

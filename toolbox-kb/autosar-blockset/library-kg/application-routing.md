@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Application routing
-description: Inter-runnable communication and event-driven data exchange between AUTOSAR software components
-tags: [event, send, receive, routing, communication]
+description: Inter-runnable communication and event-driven data exchange between AUTOSAR software components (2 blocks)
+tags: [toolbox-kb, autosar-blockset, event, send, receive, routing, communication]
 status: stable
-source: custom_library
-library_root: AUTOSAR Blockset
-category_path: Application routing
+sources:
+  - resource: matlab:autosarlibaprouting
+source: toolbox_kb
+managed_by: satk
+library: AUTOSAR Blockset
+kb_folder: autosar-blockset
+category: application-routing
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:12Z" }
 ---
 
 # Application routing
-
-Use these blocks for application routing.
 
 ## Recommended Blocks
 

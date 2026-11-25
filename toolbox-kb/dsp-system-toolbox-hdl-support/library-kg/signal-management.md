@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal management
-description: Reshape, type conversion, and element selection
-tags: [signal management, convert, data type, selector, complexity]
+description: "Reshape, type conversion, and element selection (6 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox-hdl-support, signal management, convert, data type, selector, complexity]
 status: stable
-source: custom_library
-library_root: DSP System Toolbox HDL Support
-category_path: Signal management
+sources:
+  - resource: matlab:dsphdlsupportsigmgmt
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox HDL Support
+kb_folder: dsp-system-toolbox-hdl-support
+category: signal-management
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Signal management
-
-Use these blocks for signal management.
 
 ## Recommended Blocks
 

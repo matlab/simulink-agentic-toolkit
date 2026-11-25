@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Function inhibition
-description: Function Inhibition Manager (FIM) for controlled degradation and safety interlocks
-tags: [inhibition, fim, control, available, permission]
+description: Function Inhibition Manager (FIM) for controlled degradation and safety interlocks (2 blocks)
+tags: [toolbox-kb, autosar-blockset, inhibition, fim, control, available, permission]
 status: stable
-source: custom_library
-library_root: AUTOSAR Blockset
-category_path: Function inhibition
+sources:
+  - resource: matlab:autosarlibfim
+source: toolbox_kb
+managed_by: satk
+library: AUTOSAR Blockset
+kb_folder: autosar-blockset
+category: function-inhibition
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:12Z" }
 ---
 
 # Function inhibition
-
-Use these blocks for function inhibition.
 
 ## Recommended Blocks
 

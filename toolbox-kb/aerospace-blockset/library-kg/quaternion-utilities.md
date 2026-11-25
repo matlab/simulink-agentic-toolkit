@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Quaternion utilities
-description: Quaternion and 3x3 matrix math operations
-tags: [quaternion, matrix, conjugate, normalize, cross product]
+description: Quaternion and 3x3 matrix math operations (14 blocks)
+tags: [toolbox-kb, aerospace-blockset, quaternion, matrix, conjugate, normalize, cross product]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Quaternion utilities
+sources:
+  - resource: matlab:aerolibutil
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: quaternion-utilities
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Quaternion utilities
-
-Use these blocks for quaternion utilities.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Environment propagation
-description: Signal propagation, target RCS modeling, and platform motion
-tags: [free-space, propagation, target, RCS, platform, channel]
+description: "Signal propagation, target RCS modeling, and platform motion (11 blocks)"
+tags: [toolbox-kb, phased-array-system-toolbox, free-space, propagation, target, RCS, platform, channel]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Environment propagation
+sources:
+  - resource: matlab:phasedenvlib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: environment-propagation
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Environment propagation
-
-Use these blocks for environment propagation.
 
 ## Recommended Blocks
 

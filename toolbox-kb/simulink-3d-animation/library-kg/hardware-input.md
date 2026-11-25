@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Hardware input
-description: Physical input devices for interactive simulation
-tags: [joystick, spacemouse, input, interactive, manual]
+description: Physical input devices for interactive simulation (2 blocks)
+tags: [toolbox-kb, simulink-3d-animation, joystick, spacemouse, input, interactive, manual]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink 3D Animation
-category_path: Hardware input
+sources:
+  - resource: matlab:sl3dlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink 3D Animation
+kb_folder: simulink-3d-animation
+category: hardware-input
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Hardware input
-
-Use these blocks for hardware input.
 
 ## Recommended Blocks
 

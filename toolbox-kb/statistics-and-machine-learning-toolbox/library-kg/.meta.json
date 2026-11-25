@@ -1,15 +1,352 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.69317421294,
-  "generatorVersion": 4,
-  "libraries": [
-    "Statistics and Machine Learning Toolbox"
-  ],
-  "blockCount": 37,
-  "categoryCount": 5,
-  "libraryFingerprints": {
-    "Statistics_and_Machine_Learning_Toolbox": {
-      "blockCount": 37
+  "pages": [
+    {
+      "id": "anomaly-detection",
+      "kind": "toolbox",
+      "library": "Statistics and Machine Learning Toolbox",
+      "kbFolder": "statistics-and-machine-learning-toolbox",
+      "category": "anomaly-detection",
+      "hash": "3a297ebfd4de277cd76139d0cdc2fc78ab7e6d21c7b556cc01e81f00f886c17d",
+      "fm": {
+        "title": "Anomaly detection",
+        "description": "Detect outliers and novelties in streaming or batch data (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "statistics-and-machine-learning-toolbox",
+          "anomaly",
+          "isolation forest",
+          "one-class svm",
+          "outlier",
+          "novelty"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Isolation Forest Anomaly Detector",
+          "ref": "statsAnomaly/Isolation Forest Anomaly Detector",
+          "since": "R2026a+",
+          "intent": "Find anomalies in data using isolation forest"
+        },
+        {
+          "block": "One-Class SVM Anomaly Detector",
+          "ref": "statsAnomaly/One-Class SVM Anomaly Detector",
+          "since": "R2026a+",
+          "intent": "Find anomalies in data using one-class support vector machine (SVM)"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "classification",
+      "kind": "toolbox",
+      "library": "Statistics and Machine Learning Toolbox",
+      "kbFolder": "statistics-and-machine-learning-toolbox",
+      "category": "classification",
+      "hash": "12e82fa94974a2548474b798041556751f1ff904e7b698e2467757ce9b8b5b05",
+      "fm": {
+        "title": "Classification",
+        "description": "Predict discrete class labels from trained classification models (20 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "statistics-and-machine-learning-toolbox",
+          "classification",
+          "classify",
+          "svm",
+          "discriminant",
+          "naivebayes",
+          "ecoc",
+          "knn"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "ClassificationDiscriminant Predict",
+          "ref": "statsLibrary/Classification/ClassificationDiscriminant Predict",
+          "since": "R2024a+",
+          "intent": "Predict labels using discriminant analysis classification model"
+        },
+        {
+          "block": "ClassificationECOC Predict",
+          "ref": "statsLibrary/Classification/ClassificationECOC Predict",
+          "since": "R2023a+",
+          "intent": "Classify observations using error-correcting output codes (ECOC) model"
+        },
+        {
+          "block": "ClassificationEnsemble Predict",
+          "ref": "statsLibrary/Classification/ClassificationEnsemble Predict",
+          "since": "R2023a+",
+          "intent": "Classify observations using ensemble of classification models"
+        },
+        {
+          "block": "ClassificationKNN Predict",
+          "ref": "statsLibrary/Classification/ClassificationKNN Predict",
+          "since": "R2023a+",
+          "intent": "Predict labels using k-nearest neighbor classification model"
+        },
+        {
+          "block": "ClassificationKernel Predict",
+          "ref": "statsLibrary/Classification/ClassificationKernel Predict",
+          "since": "R2024b+",
+          "intent": "Predict labels for Gaussian kernel classification model"
+        },
+        {
+          "block": "ClassificationLinear Predict",
+          "ref": "statsLibrary/Classification/ClassificationLinear Predict",
+          "since": "R2023a+",
+          "intent": "Predict labels for linear classification models"
+        },
+        {
+          "block": "ClassificationNaiveBayes Predict",
+          "ref": "statsLibrary/Classification/ClassificationNaiveBayes Predict",
+          "since": "R2023b+",
+          "intent": "Classify observations using naive Bayes classifier"
+        },
+        {
+          "block": "ClassificationNeuralNetwork Predict",
+          "ref": "statsLibrary/Classification/ClassificationNeuralNetwork Predict",
+          "since": "R2023a+",
+          "intent": "Classify observations using neural network classification model"
+        },
+        {
+          "block": "ClassificationSVM Predict",
+          "ref": "statsLibrary/Classification/ClassificationSVM Predict",
+          "since": "R2023a+",
+          "intent": "Classify observations using support vector machine (SVM) classifier"
+        },
+        {
+          "block": "ClassificationTree Predict",
+          "ref": "statsLibrary/Classification/ClassificationTree Predict",
+          "since": "R2023a+",
+          "intent": "Classify observations using classification tree"
+        },
+        {
+          "block": "KNN Search",
+          "ref": "statsClustering/KNN Search",
+          "since": "R2023b+",
+          "intent": "Find k-nearest neighbors using searcher object"
+        },
+        {
+          "block": "IncrementalClassificationECOC Fit",
+          "ref": "statsIncremental/Classification/ECOC/IncrementalClassificationECOC Fit",
+          "since": "R2024a+",
+          "intent": "Train ECOC classification model for incremental learning"
+        },
+        {
+          "block": "IncrementalClassificationECOC Predict",
+          "ref": "statsIncremental/Classification/ECOC/IncrementalClassificationECOC Predict",
+          "since": "R2024a+",
+          "intent": "Predict responses for new observations from ECOC incremental learning classification model"
+        },
+        {
+          "block": "IncrementalClassificationKernel Fit",
+          "ref": "statsIncremental/Classification/Kernel/IncrementalClassificationKernel Fit",
+          "since": "R2024b+",
+          "intent": "Train kernel classification model for incremental learning"
+        },
+        {
+          "block": "IncrementalClassificationKernel Predict",
+          "ref": "statsIncremental/Classification/Kernel/IncrementalClassificationKernel Predict",
+          "since": "R2024b+",
+          "intent": "Predict labels for kernel incremental classification models"
+        },
+        {
+          "block": "IncrementalClassificationLinear Fit",
+          "ref": "statsIncremental/Classification/Linear/IncrementalClassificationLinear Fit",
+          "since": "R2023b+",
+          "intent": "Train linear classification model for incremental learning"
+        },
+        {
+          "block": "IncrementalClassificationLinear Predict",
+          "ref": "statsIncremental/Classification/Linear/IncrementalClassificationLinear Predict",
+          "since": "R2023b+",
+          "intent": "Predict labels for linear incremental classification models"
+        },
+        {
+          "block": "IncrementalClassificationNaiveBayes Fit",
+          "ref": "statsIncremental/Classification/NaiveBayes/IncrementalClassificationNaiveBayes Fit",
+          "since": "R2025a+",
+          "intent": "Train naive Bayes classification model for incremental learning"
+        },
+        {
+          "block": "IncrementalClassificationNaiveBayes Predict",
+          "ref": "statsIncremental/Classification/NaiveBayes/IncrementalClassificationNaiveBayes Predict",
+          "since": "R2025a+",
+          "intent": "Predict labels for naive Bayes incremental classification models"
+        },
+        {
+          "block": "RegressionSVM Predict",
+          "ref": "statsLibrary/Regression/RegressionSVM Predict",
+          "since": "R2023a+",
+          "intent": "Predict responses using support vector machine regression model"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "incremental-learning",
+      "kind": "toolbox",
+      "library": "Statistics and Machine Learning Toolbox",
+      "kbFolder": "statistics-and-machine-learning-toolbox",
+      "category": "incremental-learning",
+      "hash": "06b334878f966b8b86bb200e0dde1b495565a25ba986029daa35a9e8bb9d2180",
+      "fm": {
+        "title": "Incremental learning",
+        "description": "Update models online as new data streams in, with drift detection (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "statistics-and-machine-learning-toolbox",
+          "incremental",
+          "drift",
+          "kernel",
+          "linear"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Detect Drift",
+          "ref": "statsDrift/Detect Drift",
+          "since": "R2024b+",
+          "intent": "Update drift detector states and drift status with new data"
+        },
+        {
+          "block": "Per Observation Loss",
+          "ref": "statsDrift/Per Observation Loss",
+          "since": "R2025a+",
+          "intent": "Per observation loss for incremental learning model"
+        },
+        {
+          "block": "Update Metrics",
+          "ref": "statsIncremental/Update Metrics",
+          "since": "R2023b+",
+          "intent": "Update performance metrics incremental learning model given new data"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "python-models",
+      "kind": "toolbox",
+      "library": "Statistics and Machine Learning Toolbox",
+      "kbFolder": "statistics-and-machine-learning-toolbox",
+      "category": "python-models",
+      "hash": "f7600896bba604fc3370ea2e5e32527cc382770bbabc261cb4d8fd6cb9770cdc",
+      "fm": {
+        "title": "Python models",
+        "description": "Run inference from externally trained Python ML models (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "statistics-and-machine-learning-toolbox",
+          "python",
+          "custom python",
+          "onnx"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Custom Python Model Predict",
+          "ref": "statsPycoex/Custom Python Model Predict",
+          "since": "R2024a+",
+          "intent": "Run inference from a Python-based machine learning model inside Simulink — use to integrate a model trained in Python (scikit-learn, PyTorch, TensorFlow) into a Simulink prediction pipeline for code-free deployment testing."
+        },
+        {
+          "block": "Scikit-learn Model Predict",
+          "ref": "statsPycoex/Scikit-learn Model Predict",
+          "since": "R2024a+",
+          "intent": "Predict responses using a pretrained scikit-learn model running in the MATLAB Python environment. The block supports files saved in .pkl, .joblib and .skops formats. The MATLAB Python environment must have the scikit-learn module installed, and skops if it is used. For more information, click the Help button."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "regression",
+      "kind": "toolbox",
+      "library": "Statistics and Machine Learning Toolbox",
+      "kbFolder": "statistics-and-machine-learning-toolbox",
+      "category": "regression",
+      "hash": "9768559696ff125b479d44ddfff550ff410d68343c571a0ae8429881c9d8cb62",
+      "fm": {
+        "title": "Regression",
+        "description": "Predict continuous responses from trained regression models (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "statistics-and-machine-learning-toolbox",
+          "regression",
+          "regress",
+          "gpr",
+          "ensemble",
+          "tree"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "IncrementalRegressionKernel Fit",
+          "ref": "statsIncremental/Regression/Kernel/IncrementalRegressionKernel Fit",
+          "since": "R2024b+",
+          "intent": "Train kernel regression model for incremental learning"
+        },
+        {
+          "block": "IncrementalRegressionKernel Predict",
+          "ref": "statsIncremental/Regression/Kernel/IncrementalRegressionKernel Predict",
+          "since": "R2024b+",
+          "intent": "Predict response of kernel incremental regression model"
+        },
+        {
+          "block": "IncrementalRegressionLinear Fit",
+          "ref": "statsIncremental/Regression/Linear/IncrementalRegressionLinear Fit",
+          "since": "R2023b+",
+          "intent": "Train linear regression model for incremental learning"
+        },
+        {
+          "block": "IncrementalRegressionLinear Predict",
+          "ref": "statsIncremental/Regression/Linear/IncrementalRegressionLinear Predict",
+          "since": "R2023b+",
+          "intent": "Predict response of linear incremental regression model"
+        },
+        {
+          "block": "RegressionEnsemble Predict",
+          "ref": "statsLibrary/Regression/RegressionEnsemble Predict",
+          "since": "R2023a+",
+          "intent": "Fit ensemble of learners for regression"
+        },
+        {
+          "block": "RegressionGP Predict",
+          "ref": "statsLibrary/Regression/RegressionGP Predict",
+          "since": "R2023a+",
+          "intent": "Predict response of Gaussian process regression model"
+        },
+        {
+          "block": "RegressionKernel Predict",
+          "ref": "statsLibrary/Regression/RegressionKernel Predict",
+          "since": "R2024b+",
+          "intent": "Predict responses for Gaussian kernel regression model"
+        },
+        {
+          "block": "RegressionLinear Predict",
+          "ref": "statsLibrary/Regression/RegressionLinear Predict",
+          "since": "R2023a+",
+          "intent": "Predict response of linear regression model"
+        },
+        {
+          "block": "RegressionNeuralNetwork Predict",
+          "ref": "statsLibrary/Regression/RegressionNeuralNetwork Predict",
+          "since": "R2023a+",
+          "intent": "Predict responses using neural networks"
+        },
+        {
+          "block": "RegressionTree Predict",
+          "ref": "statsLibrary/Regression/RegressionTree Predict",
+          "since": "R2023a+",
+          "intent": "Predict responses using regression tree"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.99552307872
 }

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Processor io
-description: Processor-side read/write blocks for accessing hardware peripherals and network
-tags: [read, write, TCP, UDP, register, processor]
+description: Processor-side read/write blocks for accessing hardware peripherals and network (24 blocks)
+tags: [toolbox-kb, soc-blockset, read, write, TCP, UDP, register, processor]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Processor io
+sources:
+  - resource: matlab:hostiolib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: processor-io
 block_count: 24
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Processor io
-
-Use these blocks for processor io.
 
 ## Recommended Blocks
 

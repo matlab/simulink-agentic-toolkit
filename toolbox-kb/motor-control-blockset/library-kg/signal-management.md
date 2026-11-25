@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal management
-description: Signal packing, filtering, PLLs, dead-time compensation, and protocol codecs for embedded motor-control signal paths
-tags: [byte pack, IIR, PLL, dead-time, protocol, memory, filter]
+description: "Signal packing, filtering, PLLs, dead-time compensation, and protocol codecs for embedded motor-control signal paths (12 blocks)"
+tags: [toolbox-kb, motor-control-blockset, byte pack, IIR, PLL, dead-time, protocol, memory, filter]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Signal management
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: signal-management
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Signal management
-
-Use these blocks for signal management.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities interfaces
-description: Fluid property definitions, diagnostic visualizations, domain interfaces, and complete thermodynamic cycle models
-tags: [properties, interface, diagram, refrigeration, coupling]
+description: "Fluid property definitions, diagnostic visualizations, domain interfaces, and complete thermodynamic cycle models (11 blocks)"
+tags: [toolbox-kb, simscape-fluids, properties, interface, diagram, refrigeration, coupling]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Utilities interfaces
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: utilities-interfaces
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Utilities interfaces
-
-Use these blocks for utilities interfaces.
 
 ## Recommended Blocks
 

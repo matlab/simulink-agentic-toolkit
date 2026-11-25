@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Rotor dynamics
-description: Helicopter and multirotor rotor models
-tags: [rotor, blade, inflow, multirotor, helicopter]
+description: Helicopter and multirotor rotor models (4 blocks)
+tags: [toolbox-kb, aerospace-blockset, rotor, blade, inflow, multirotor, helicopter]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Rotor dynamics
+sources:
+  - resource: matlab:aerolibinflowmodels
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: rotor-dynamics
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Rotor dynamics
-
-Use these blocks for rotor dynamics.
 
 ## Recommended Blocks
 

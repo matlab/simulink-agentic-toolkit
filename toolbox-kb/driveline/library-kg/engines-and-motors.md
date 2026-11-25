@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Engines and motors
-description: Internal combustion engines, electric motors, propellers, and turbines
-tags: [engine, motor, propeller, turbine, combustion]
+description: "Internal combustion engines, electric motors, propellers, and turbines (13 blocks)"
+tags: [toolbox-kb, driveline, engine, motor, propeller, turbine, combustion]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Engines and motors
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: engines-and-motors
 block_count: 13
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Engines and motors
-
-Use these blocks for engines and motors.
 
 ## Recommended Blocks
 

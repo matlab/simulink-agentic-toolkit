@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Led
-description: 5x5 LED matrix output
-tags: [led matrix, led]
-status: stable
-source: custom_library
-library_root: Simulink Coder Support Package for BBC micro:bit
-category_path: Led
+description: "5x5 LED matrix output (17 blocks)"
+tags: [toolbox-kb, simulink-coder-support-package-for-bbc-micro-bit, led matrix, led]
+status: draft
+sources:
+  - resource: matlab:microbitledlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for BBC micro:bit
+kb_folder: simulink-coder-support-package-for-bbc-micro-bit
+category: led
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Led
-
-Use these blocks for led.
 
 ## Recommended Blocks
 

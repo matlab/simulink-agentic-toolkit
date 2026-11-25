@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Math transforms
-description: Clarke/Park and multiphase transforms plus modulation
-tags: [math transforms, clarke, park, vsd, pwm, atan2]
+description: Clarke/Park and multiphase transforms plus modulation (8 blocks)
+tags: [toolbox-kb, motor-control-blockset-hdl-support, math transforms, clarke, park, vsd, pwm, atan2]
 status: stable
-source: custom_library
-library_root: Motor Control Blockset HDL Support
-category_path: Math transforms
+sources:
+  - resource: matlab:mcbhdllib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset HDL Support
+kb_folder: motor-control-blockset-hdl-support
+category: math-transforms
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Math transforms
-
-Use these blocks for math transforms.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: User interface
-description: Interactive app UI input and display
-tags: [user interface, data input, display, button]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Android Devices
-category_path: User interface
+description: Interactive app UI input and display (4 blocks)
+tags: [toolbox-kb, simulink-support-package-for-android-devices, user interface, data input, display, button]
+status: draft
+sources:
+  - resource: matlab:androiduilib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Android Devices
+kb_folder: simulink-support-package-for-android-devices
+category: user-interface
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # User interface
-
-Use these blocks for user interface.
 
 ## Recommended Blocks
 

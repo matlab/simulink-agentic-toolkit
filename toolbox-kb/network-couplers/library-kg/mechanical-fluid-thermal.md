@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mechanical fluid thermal
-description: Mechanical, fluid, and thermal network couplers
-tags: [shaft, compressible, thermal, chamber, fluid]
+description: "Mechanical, fluid, and thermal network couplers (5 blocks)"
+tags: [toolbox-kb, network-couplers, shaft, compressible, thermal, chamber, fluid]
 status: stable
-source: mathworks_toolbox
-library_root: Network Couplers
-category_path: Mechanical fluid thermal
+sources:
+  - resource: matlab:SimscapeNetworkCouplersLib
+source: toolbox_kb
+managed_by: satk
+library: Network Couplers
+kb_folder: network-couplers
+category: mechanical-fluid-thermal
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Mechanical fluid thermal
-
-Use these blocks for mechanical fluid thermal.
 
 ## Recommended Blocks
 

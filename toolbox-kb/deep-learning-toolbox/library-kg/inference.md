@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Inference
-description: Top-level network inference blocks for classification and prediction
-tags: [predict, classify, inference, stateful, network]
+description: Top-level network inference blocks for classification and prediction (4 blocks)
+tags: [toolbox-kb, deep-learning-toolbox, predict, classify, inference, stateful, network]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Inference
+sources:
+  - resource: matlab:deeplib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: inference
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Inference
-
-Use these blocks for inference.
 
 ## Recommended Blocks
 

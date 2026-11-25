@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Io basic
-description: Digital/analog pins and serial buses on the micro:bit
-tags: [basic, digital, analog, pwm, i2c, spi, sci]
+description: Digital/analog pins and serial buses on the micro:bit (11 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-bbc-micro-bit, basic, digital, analog, pwm, i2c, spi, sci]
 status: stable
-source: custom_library
-library_root: Simulink Coder Support Package for BBC micro:bit
-category_path: Io basic
+sources:
+  - resource: matlab:microbitbasiclib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for BBC micro:bit
+kb_folder: simulink-coder-support-package-for-bbc-micro-bit
+category: io-basic
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Io basic
-
-Use these blocks for io basic.
 
 ## Recommended Blocks
 

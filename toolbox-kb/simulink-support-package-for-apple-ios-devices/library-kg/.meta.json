@@ -1,15 +1,215 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.69317136577,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Support Package for Apple iOS Devices"
-  ],
-  "blockCount": 18,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Simulink_Support_Package_for_Apple_iOS_Devices": {
-      "blockCount": 18
+  "pages": [
+    {
+      "id": "audio-video",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Apple iOS Devices",
+      "kbFolder": "simulink-support-package-for-apple-ios-devices",
+      "category": "audio-video",
+      "hash": "c3c8e01edea6cab225ae3f4bdedafeca75f4efe33660917f852d9f2cb6c81ab1",
+      "fm": {
+        "title": "Audio video",
+        "description": "Camera, microphone, and media I/O on iOS (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-apple-ios-devices",
+          "audio",
+          "video",
+          "camera",
+          "microphone",
+          "image"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Audio Capture",
+          "ref": "iosaudiovideolib/Audio Capture",
+          "since": "R2023a+",
+          "intent": "Capture audio from the device microphone. The block outputs an [Nx2] int16 matrix, where N is the number of samples per frame and the columns represent the left and right channels."
+        },
+        {
+          "block": "Audio File Read",
+          "ref": "iosaudiovideolib/Audio File Read",
+          "since": "R2023a+",
+          "intent": "Read audio frames from an audio file. The output data type is int16. The output dimension is [M N]: M is the frame size and N is the number of channels."
+        },
+        {
+          "block": "Audio Playback",
+          "ref": "iosaudiovideolib/Audio Playback",
+          "since": "R2023a+",
+          "intent": "Play audio on the device speaker. The block accepts an [Nx2] int16 matrix, where N is the number of samples per frame and the columns represent the left and right channels."
+        },
+        {
+          "block": "Camera",
+          "ref": "iosaudiovideolib/Camera",
+          "since": "R2023a+",
+          "intent": "Capture video using either the front or rear camera. Each R, G, B port outputs an image as a matrix of uint8 values."
+        },
+        {
+          "block": "Video Display",
+          "ref": "iosaudiovideolib/Video Display",
+          "since": "R2023a+",
+          "intent": "Display video on the device screen. Each R, G, B port accepts an image as a matrix of uint8 values."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "communication",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Apple iOS Devices",
+      "kbFolder": "simulink-support-package-for-apple-ios-devices",
+      "category": "communication",
+      "hash": "4799b15eb51d39397306367f0044cbdc180c431477b7bef66f021d44eebf7335",
+      "fm": {
+        "title": "Communication",
+        "description": "Network and device-to-host data exchange on iOS (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-apple-ios-devices",
+          "tcp",
+          "udp",
+          "communication",
+          "network",
+          "send",
+          "receive"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "FromApp",
+          "ref": "iosadvancedlib/FromApp",
+          "since": "R2023a+",
+          "intent": "Receive data from a method in the generated app. The block calls the specified method of the app's InfoViewController. The block outputs the values returned by the method as an [Nx1] array."
+        },
+        {
+          "block": "ToApp",
+          "ref": "iosadvancedlib/ToApp",
+          "since": "R2023a+",
+          "intent": "Send data to a method in the generated app. The block calls the specified method of the app's InfoViewController. The block accepts 1-D arrays of type uint8, int8, uint16, int16, uint32, int32, single or double."
+        },
+        {
+          "block": "TCP/IP Receive",
+          "ref": "ioscommunicationlib/TCP/IP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over a TCP/IP network connection on an Apple iOS device — use to stream sensor data, setpoints, or commands into a model deployed to iPhone/iPad."
+        },
+        {
+          "block": "TCP/IP Send",
+          "ref": "ioscommunicationlib/TCP/IP Send",
+          "since": "R2023a+",
+          "intent": "Send data over a TCP/IP network connection from an Apple iOS device — use to stream results, telemetry, or commands out of a model deployed to iPhone/iPad."
+        },
+        {
+          "block": "ThingSpeak Write",
+          "ref": "ioscommunicationlib/ThingSpeak Write",
+          "since": "R2023a+",
+          "intent": "Send data to ThingSpeak. Each input port accepts numeric scalars. Set Update interval parameter to the number of seconds to wait between two successive data send requests. The minimum update interval for a free channel is 15 seconds."
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "ioscommunicationlib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets from another UDP host on an Internet network. The block outputs the values received as an [Nx1] array. Set the Local IP port parameter to the port number used by the sending UDP host."
+        },
+        {
+          "block": "UDP Send",
+          "ref": "ioscommunicationlib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP packets to another UDP host on an Internet network. The block accepts 1-D arrays of type uint8, int8, uint16, int16, uint32, int32, single or double. Set the Remote IP address and Remote IP port parameters to the IP address and port number of the receiving UDP host, respectively."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Apple iOS Devices",
+      "kbFolder": "simulink-support-package-for-apple-ios-devices",
+      "category": "sensors",
+      "hash": "7e6d44ccd2886b42ddc95d0e563a2da4e32b0834a9b4be6ed9f55214ef7a1696",
+      "fm": {
+        "title": "Sensors",
+        "description": "On-device iOS sensors (accelerometer, gyroscope, GPS, magnetometer) (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-apple-ios-devices",
+          "sensor",
+          "accelerometer",
+          "gyroscope",
+          "gps",
+          "magnetometer"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Accelerometer",
+          "ref": "iossensorlib/Accelerometer",
+          "since": "R2023a+",
+          "intent": "Measure linear acceleration along the X, Y and Z axes in m/s^2. The block outputs acceleration as a [1x3] vector of single-precision values."
+        },
+        {
+          "block": "Gyroscope",
+          "ref": "iossensorlib/Gyroscope",
+          "since": "R2023a+",
+          "intent": "Measure rotational speed around the X, Y, and Z axes in rad/s. The block outputs rotational speed as a [1x3] vector of single-precision values."
+        },
+        {
+          "block": "Location Sensor",
+          "ref": "iossensorlib/Location Sensor",
+          "since": "R2023a+",
+          "intent": "Measure GPS latitude, longitude in decimal degrees and altitude in meters. The block outputs the latitude, longitude and altitude as a [1x3] vector of single-precision values."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "user-interface",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Apple iOS Devices",
+      "kbFolder": "simulink-support-package-for-apple-ios-devices",
+      "category": "user-interface",
+      "hash": "4bf6719fb8cbe460de344fa530bbe5152d896a03e7b2a34a5a48f38346e592c4",
+      "fm": {
+        "title": "User interface",
+        "description": "On-screen controls and display elements (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-apple-ios-devices",
+          "user interface",
+          "button",
+          "switch",
+          "label",
+          "display"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Button",
+          "ref": "iosuilib/Button",
+          "since": "R2023a+",
+          "intent": "Add a button widget to the generated app and read its state. The block outputs the state of the button as a boolean value."
+        },
+        {
+          "block": "Data Display",
+          "ref": "iosuilib/Data Display",
+          "since": "R2023a+",
+          "intent": "Numeric display of input values on device screen. The block accepts 1-D arrays of type boolean, uint8, int8, uint16, int16, uint32, int32, single, or double."
+        },
+        {
+          "block": "Slider",
+          "ref": "iosuilib/Slider",
+          "since": "R2023a+",
+          "intent": "Add a slider widget to the generated app and read its value. The block outputs the slider value as a single-precision value. The Resolution parameter controls the spacing between two adjacent slider positions."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:32",
+  "generatedAtDatenum": 740309.99551746529
 }

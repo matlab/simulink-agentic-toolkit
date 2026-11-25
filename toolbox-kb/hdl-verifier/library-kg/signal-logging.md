@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal logging
-description: Capture HDL signal activity to file
-tags: [vcd, value change dump, log]
+description: Capture HDL signal activity to file (3 blocks)
+tags: [toolbox-kb, hdl-verifier, vcd, value change dump, log]
 status: stable
-source: custom_library
-library_root: HDL Verifier
-category_path: Signal logging
+sources:
+  - resource: matlab:vivadosimlib
+source: toolbox_kb
+managed_by: satk
+library: HDL Verifier
+kb_folder: hdl-verifier
+category: signal-logging
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Signal logging
-
-Use these blocks for signal logging.
 
 ## Recommended Blocks
 

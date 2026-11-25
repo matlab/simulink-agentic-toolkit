@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Measurements
-description: Perceptual and level measurements
-tags: [measurement, loudness, meter, lufs]
-status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: Measurements
+description: Perceptual and level measurements (2 blocks)
+tags: [toolbox-kb, audio-toolbox, measurement, loudness, meter, lufs]
+status: draft
+sources:
+  - resource: matlab:audiomeasurements
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: measurements
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Measurements
-
-Use these blocks for measurements.
 
 ## Recommended Blocks
 

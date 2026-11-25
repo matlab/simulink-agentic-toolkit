@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Data packing
-description: Byte and protocol frame packing/unpacking
-tags: [byte, pack, unpack, protocol, encode, decode]
+description: Byte and protocol frame packing/unpacking (4 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, byte, pack, unpack, protocol, encode, decode]
 status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Data packing
+sources:
+  - resource: matlab:c2000lib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: data-packing
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Data packing
-
-Use these blocks for data packing.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Aerodynamics
-description: Aerodynamic forces, moments, and coefficients
-tags: [aerodynamic, force, moment, DATCOM, coefficient]
+description: "Aerodynamic forces, moments, and coefficients (2 blocks)"
+tags: [toolbox-kb, aerospace-blockset, aerodynamic, force, moment, DATCOM, coefficient]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Aerodynamics
+sources:
+  - resource: matlab:aerolibadyn
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: aerodynamics
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Aerodynamics
-
-Use these blocks for aerodynamics.
 
 ## Recommended Blocks
 

@@ -1,15 +1,485 @@
 {
-  "generatedAt": "2026-08-19T17:52:14",
-  "generatedAtDatenum": 740213.74461696763,
-  "generatorVersion": 4,
-  "libraries": [
-    "Vehicle Dynamics Blockset"
-  ],
-  "blockCount": 72,
-  "categoryCount": 5,
-  "libraryFingerprints": {
-    "Vehicle_Dynamics_Blockset": {
-      "blockCount": 72
+  "pages": [
+    {
+      "id": "3d-visualization",
+      "kind": "toolbox",
+      "library": "Vehicle Dynamics Blockset",
+      "kbFolder": "vehicle-dynamics-blockset",
+      "category": "3d-visualization",
+      "hash": "eb087d0d75a1302683110e042876435b94fb1fc211742af3bf754e4888ffab16",
+      "fm": {
+        "title": "3d visualization",
+        "description": "Unreal Engine 3D visualization scene and actor management (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-dynamics-blockset",
+          "3d",
+          "scene",
+          "unreal",
+          "visualization",
+          "actor"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Actor Transform Get",
+          "ref": "vehdynlibsim3dcore/Simulation 3D Actor Transform Get",
+          "since": "R2023a+",
+          "intent": "Read position and orientation of a 3D scene actor for closed-loop visualization"
+        },
+        {
+          "block": "Simulation 3D Actor Transform Set",
+          "ref": "vehdynlibsim3dcore/Simulation 3D Actor Transform Set",
+          "since": "R2023a+",
+          "intent": "Set position and orientation of a 3D scene actor from simulation data"
+        },
+        {
+          "block": "Simulation 3D Camera Get",
+          "ref": "vehdynlibsim3dcore/Simulation 3D Camera Get",
+          "since": "R2023a+",
+          "intent": "Capture camera images from the 3D visualization environment for perception algorithms"
+        },
+        {
+          "block": "Simulation 3D Message Get",
+          "ref": "vehdynlibsim3dcore/Simulation 3D Message Get",
+          "since": "R2023a+",
+          "intent": "Receive custom messages from the 3D visualization engine"
+        },
+        {
+          "block": "Simulation 3D Message Set",
+          "ref": "vehdynlibsim3dcore/Simulation 3D Message Set",
+          "since": "R2023a+",
+          "intent": "Send custom messages to the 3D visualization engine"
+        },
+        {
+          "block": "Simulation 3D Ray Tracer",
+          "ref": "vehdynlibsim3dcore/Simulation 3D Ray Tracer",
+          "since": "R2023a+",
+          "intent": "Cast rays in the 3D scene to detect distances and surfaces for lidar or proximity modeling"
+        },
+        {
+          "block": "Simulation 3D Scene Configuration",
+          "ref": "vehdynlibsim3dcore/Simulation 3D Scene Configuration",
+          "since": "R2023a+",
+          "intent": "Configure the Unreal Engine 3D visualization scene including map and weather settings"
+        },
+        {
+          "block": "Simulation 3D Physics Vehicle",
+          "ref": "vehdynlibsim3d/Simulation 3D Physics Vehicle",
+          "since": "R2023a+",
+          "intent": "Place a physics-enabled vehicle actor in the 3D scene that responds to applied forces"
+        },
+        {
+          "block": "Simulation 3D Dolly",
+          "ref": "vehdynlibsim3d/Simulation 3D Dolly",
+          "since": "R2023a+",
+          "intent": "Place a dolly trailer actor in the 3D visualization scene"
+        },
+        {
+          "block": "Simulation 3D Motorcycle",
+          "ref": "vehdynlibsim3d/Simulation 3D Motorcycle",
+          "since": "R2023a+",
+          "intent": "Place a motorcycle actor in the 3D visualization scene"
+        },
+        {
+          "block": "Simulation 3D Terrain Sensor",
+          "ref": "vehdynlibsim3d/Simulation 3D Terrain Sensor",
+          "since": "R2023a+",
+          "intent": "Query terrain height and surface type under a vehicle in the 3D scene"
+        },
+        {
+          "block": "Simulation 3D Three Wheeled Vehicle",
+          "ref": "vehdynlibsim3d/Simulation 3D Three Wheeled Vehicle",
+          "since": "R2023b+",
+          "intent": "Place a three-wheeled vehicle actor in the 3D visualization scene"
+        },
+        {
+          "block": "Simulation 3D Tractor",
+          "ref": "vehdynlibsim3d/Simulation 3D Tractor",
+          "since": "R2023a+",
+          "intent": "Place a tractor actor in the 3D visualization scene for articulated vehicle simulation"
+        },
+        {
+          "block": "Simulation 3D Trailer",
+          "ref": "vehdynlibsim3d/Simulation 3D Trailer",
+          "since": "R2023a+",
+          "intent": "Place a trailer actor in the 3D visualization scene"
+        },
+        {
+          "block": "Simulation 3D Vehicle",
+          "ref": "vehdynlibsim3d/Simulation 3D Vehicle",
+          "since": "R2023a+",
+          "intent": "Place a four-wheeled vehicle actor in the 3D visualization scene"
+        },
+        {
+          "block": "Simulation 3D Vehicle with Ground Following",
+          "ref": "vehdynlibsim3d/Simulation 3D Vehicle with Ground Following",
+          "since": "R2023a+",
+          "intent": "Place a vehicle in the 3D scene that automatically follows terrain elevation"
+        },
+        {
+          "block": "Vehicle Terrain Sensor",
+          "ref": "vehdynlibsim3d/Vehicle Terrain Sensor",
+          "since": "R2023a+",
+          "intent": "Measure ground height and normal vectors under each wheel for terrain-aware dynamics"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "driver-models",
+      "kind": "toolbox",
+      "library": "Vehicle Dynamics Blockset",
+      "kbFolder": "vehicle-dynamics-blockset",
+      "category": "driver-models",
+      "hash": "6288b795fd1989f418ad3dd961e5c65322d23cbd278b58747d0f0e7cd09c9175",
+      "fm": {
+        "title": "Driver models",
+        "description": "Driver behavior models for steering and longitudinal control (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-dynamics-blockset",
+          "driver",
+          "steering",
+          "throttle",
+          "path-following",
+          "longitudinal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Lateral Driver",
+          "ref": "vehdynlibdriver/Lateral Driver",
+          "since": "R2023a+",
+          "intent": "Model a driver that follows a reference path using preview-point lateral steering control"
+        },
+        {
+          "block": "Predictive Driver",
+          "ref": "vehdynlibdriver/Predictive Driver",
+          "since": "R2023a+",
+          "intent": "Model a combined longitudinal and lateral driver using predictive path-following control"
+        },
+        {
+          "block": "Longitudinal Driver",
+          "ref": "vehdynlibdriver/Longitudinal Driver",
+          "since": "R2023a+",
+          "intent": "Model a driver that tracks a target speed profile with throttle and brake commands"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "drivetrain",
+      "kind": "toolbox",
+      "library": "Vehicle Dynamics Blockset",
+      "kbFolder": "vehicle-dynamics-blockset",
+      "category": "drivetrain",
+      "hash": "607ab79d769b7f4e41726b5f8494d07bc635b514bf69117233410839f57a4c35",
+      "fm": {
+        "title": "Drivetrain",
+        "description": "Driveline couplings, differentials, and transmission components (21 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-dynamics-blockset",
+          "differential",
+          "coupling",
+          "shaft",
+          "gear",
+          "inertia"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Two-Way Connection",
+          "ref": "autolibsimscapeutils/Two-Way Connection",
+          "since": "R2023a+",
+          "intent": "Create a bidirectional physical connection between Simscape domains"
+        },
+        {
+          "block": "Connection Port",
+          "ref": "autolibsimscapeutils/Connection Port",
+          "since": "R2023a+",
+          "intent": "Expose a physical modeling port on a subsystem boundary for Simscape signals"
+        },
+        {
+          "block": "Motorcycle Chain",
+          "ref": "vdynlib/Brakes/Drivetrain/Couplings/Motorcycle Chain",
+          "since": "R2024b+",
+          "intent": "Model a chain drive coupling between sprockets with backlash and compliance"
+        },
+        {
+          "block": "Rotational Inertia",
+          "ref": "vdynlib/Brakes/Drivetrain/Couplings/Rotational Inertia",
+          "since": "R2024b+",
+          "intent": "Add a lumped rotational inertia element to a driveline shaft"
+        },
+        {
+          "block": "Split Torsional Compliance",
+          "ref": "vdynlib/Brakes/Drivetrain/Couplings/Split Torsional Compliance",
+          "since": "R2024b+",
+          "intent": "Model torsional flexibility with separate stiffness on each side of a driveline connection"
+        },
+        {
+          "block": "Torsional Compliance",
+          "ref": "vdynlib/Brakes/Drivetrain/Couplings/Torsional Compliance",
+          "since": "R2024b+",
+          "intent": "Model shaft torsional stiffness and damping between rotating components"
+        },
+        {
+          "block": "Active Differential",
+          "ref": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Active Differential",
+          "since": "R2024b+",
+          "intent": "Model a differential with active torque vectoring for enhanced cornering control"
+        },
+        {
+          "block": "Limited Slip Differential",
+          "ref": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Limited Slip Differential",
+          "since": "R2024b+",
+          "intent": "Model a differential that limits speed difference between outputs using clutch-based locking"
+        },
+        {
+          "block": "Open Differential",
+          "ref": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Open Differential",
+          "since": "R2024b+",
+          "intent": "Model a standard open differential that splits torque equally between outputs"
+        },
+        {
+          "block": "Transfer Case",
+          "ref": "vdynlib/Brakes/Drivetrain/Final Drive Unit/Transfer Case",
+          "since": "R2024b+",
+          "intent": "Model a transfer case that distributes torque between front and rear axles"
+        },
+        {
+          "block": "Ideal Fixed Gear Transmission",
+          "ref": "vdynlib/Brakes/Transmission/Ideal Fixed Gear Transmission",
+          "since": "R2024b+",
+          "intent": "Model a fixed-ratio gear reduction with no shift dynamics for simplified powertrain studies"
+        },
+        {
+          "block": "Gearbox",
+          "ref": "vdynlib/Powertrain/Drivetrain/Couplings/Gearbox",
+          "since": "R2025a+",
+          "intent": "Model a multi-speed gearbox with discrete gear ratios and shift logic"
+        },
+        {
+          "block": "Motorcycle Chain",
+          "ref": "vdynlib/Powertrain/Drivetrain/Couplings/Motorcycle Chain",
+          "since": "R2023a+",
+          "intent": "Model a chain drive coupling between sprockets with backlash and compliance"
+        },
+        {
+          "block": "Rotational Inertia",
+          "ref": "vdynlib/Powertrain/Drivetrain/Couplings/Rotational Inertia",
+          "since": "R2023a+",
+          "intent": "Add a lumped rotational inertia element to a driveline shaft"
+        },
+        {
+          "block": "Split Torsional Compliance",
+          "ref": "vdynlib/Powertrain/Drivetrain/Couplings/Split Torsional Compliance",
+          "since": "R2023a+",
+          "intent": "Model torsional flexibility with separate stiffness on each side of a driveline connection"
+        },
+        {
+          "block": "Torsional Compliance",
+          "ref": "vdynlib/Powertrain/Drivetrain/Couplings/Torsional Compliance",
+          "since": "R2023a+",
+          "intent": "Model shaft torsional stiffness and damping between rotating components"
+        },
+        {
+          "block": "Active Differential",
+          "ref": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Active Differential",
+          "since": "R2023a+",
+          "intent": "Model a differential with active torque vectoring for enhanced cornering control"
+        },
+        {
+          "block": "Limited Slip Differential",
+          "ref": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Limited Slip Differential",
+          "since": "R2023a+",
+          "intent": "Model a differential that limits speed difference between outputs using clutch-based locking"
+        },
+        {
+          "block": "Open Differential",
+          "ref": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Open Differential",
+          "since": "R2023a+",
+          "intent": "Model a standard open differential that splits torque equally between outputs"
+        },
+        {
+          "block": "Transfer Case",
+          "ref": "vdynlib/Powertrain/Drivetrain/Final Drive Unit/Transfer Case",
+          "since": "R2023a+",
+          "intent": "Model a transfer case that distributes torque between front and rear axles"
+        },
+        {
+          "block": "Ideal Fixed Gear Transmission",
+          "ref": "vdynlib/Powertrain/Transmission/Ideal Fixed Gear Transmission",
+          "since": "R2023a+",
+          "intent": "Model a fixed-ratio gear reduction with no shift dynamics for simplified powertrain studies"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "propulsion",
+      "kind": "toolbox",
+      "library": "Vehicle Dynamics Blockset",
+      "kbFolder": "vehicle-dynamics-blockset",
+      "category": "propulsion",
+      "hash": "30925d5bed78cef5fb46351c9d08293374955c11f9b607a317c812af2715e625",
+      "fm": {
+        "title": "Propulsion",
+        "description": "Engine and electric motor power source models (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-dynamics-blockset",
+          "engine",
+          "motor",
+          "propulsion",
+          "torque",
+          "mapped"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Mapped CI Engine",
+          "ref": "vdynlib/Brakes/Propulsion/Mapped CI Engine",
+          "since": "R2024b+",
+          "intent": "Model a compression-ignition engine using steady-state efficiency maps for fuel consumption studies"
+        },
+        {
+          "block": "Mapped Motor",
+          "ref": "vdynlib/Brakes/Propulsion/Mapped Motor",
+          "since": "R2024b+",
+          "intent": "Model an electric motor using efficiency and loss maps for powertrain energy analysis"
+        },
+        {
+          "block": "Mapped SI Engine",
+          "ref": "vdynlib/Brakes/Propulsion/Mapped SI Engine",
+          "since": "R2024b+",
+          "intent": "Model a spark-ignition engine using steady-state efficiency maps for fuel economy evaluation"
+        },
+        {
+          "block": "Simple Engine",
+          "ref": "vdynlib/Brakes/Propulsion/Simple Engine",
+          "since": "R2024b+",
+          "intent": "Model a basic engine with torque-speed characteristic for early powertrain sizing studies"
+        },
+        {
+          "block": "Mapped CI Engine",
+          "ref": "vdynlib/Powertrain/Propulsion/Mapped CI Engine",
+          "since": "R2023a+",
+          "intent": "Model a compression-ignition engine using steady-state efficiency maps for fuel consumption studies"
+        },
+        {
+          "block": "Mapped Motor",
+          "ref": "vdynlib/Powertrain/Propulsion/Mapped Motor",
+          "since": "R2023a+",
+          "intent": "Model an electric motor using efficiency and loss maps for powertrain energy analysis"
+        },
+        {
+          "block": "Mapped SI Engine",
+          "ref": "vdynlib/Powertrain/Propulsion/Mapped SI Engine",
+          "since": "R2023a+",
+          "intent": "Model a spark-ignition engine using steady-state efficiency maps for fuel economy evaluation"
+        },
+        {
+          "block": "Simple Engine",
+          "ref": "vdynlib/Powertrain/Propulsion/Simple Engine",
+          "since": "R2023a+",
+          "intent": "Model a basic engine with torque-speed characteristic for early powertrain sizing studies"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "test-scenarios",
+      "kind": "toolbox",
+      "library": "Vehicle Dynamics Blockset",
+      "kbFolder": "vehicle-dynamics-blockset",
+      "category": "test-scenarios",
+      "hash": "bfac2b52283cffbeaa8bcb70ece46ec6f24e54e218740785d29191fdc5d88bfa",
+      "fm": {
+        "title": "Test scenarios",
+        "description": "Standard vehicle test maneuvers and drive cycle inputs (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-dynamics-blockset",
+          "maneuver",
+          "test",
+          "drive-cycle",
+          "steer",
+          "scenario"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Acceleration and Braking",
+          "ref": "vehdynlibscenario/Acceleration and Braking",
+          "since": "R2024b+",
+          "intent": "Generate standardized acceleration-and-braking test maneuver commands for vehicle performance evaluation"
+        },
+        {
+          "block": "Constant Radius",
+          "ref": "vehdynlibscenario/Constant Radius",
+          "since": "R2024b+",
+          "intent": "Generate steering and speed commands for a constant-radius cornering test"
+        },
+        {
+          "block": "Drive Cycle Source",
+          "ref": "vehdynlibscenario/Drive Cycle Source",
+          "since": "R2023a+",
+          "intent": "Output standardized drive cycle speed profiles for fuel economy and emissions testing"
+        },
+        {
+          "block": "Fishhook",
+          "ref": "vehdynlibscenario/Fishhook",
+          "since": "R2024b+",
+          "intent": "Generate a fishhook steering maneuver for rollover propensity evaluation"
+        },
+        {
+          "block": "Lane Change",
+          "ref": "vehdynlibscenario/Lane Change",
+          "since": "R2024b+",
+          "intent": "Generate steering commands for a single or double lane-change maneuver"
+        },
+        {
+          "block": "Reference Path Generator",
+          "ref": "vehdynlibscenario/Reference Path Generator",
+          "since": "R2026a+",
+          "intent": "Produce waypoint-based reference path signals for path-following controllers"
+        },
+        {
+          "block": "Sine With Dwell",
+          "ref": "vehdynlibscenario/Sine With Dwell",
+          "since": "R2024b+",
+          "intent": "Generate a sine-with-dwell steering input for electronic stability control testing per FMVSS 126"
+        },
+        {
+          "block": "Slowly Increasing Steer",
+          "ref": "vehdynlibscenario/Slowly Increasing Steer",
+          "since": "R2024b+",
+          "intent": "Generate a slowly increasing steering angle for understeer gradient characterization"
+        },
+        {
+          "block": "Swept Sine",
+          "ref": "vehdynlibscenario/Swept Sine",
+          "since": "R2024b+",
+          "intent": "Generate a frequency-swept sinusoidal steering input for vehicle frequency response analysis"
+        },
+        {
+          "block": "Wide Open Throttle",
+          "ref": "vehdynlibscenario/Wide Open Throttle",
+          "since": "R2024b+",
+          "intent": "Generate a wide-open-throttle acceleration command for maximum performance testing"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-25T15:26:10",
+  "generatedAtDatenum": 740311.64317268517
 }

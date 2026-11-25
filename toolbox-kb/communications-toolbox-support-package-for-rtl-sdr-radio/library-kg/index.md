@@ -1,24 +1,7 @@
-# Library Reuse Index
+---
+okf_version: "0.2"
+---
 
-## Priority
+# Simulink Block Category
 
-1. Custom library blocks (highest priority)
-2. Toolbox KB blocks
-
-## Policy
-
-- Always use custom library blocks when available.
-- Never fall back to built-in primitives if the same block exists in a declared library.
-- Only use built-in blocks when NO equivalent exists in any declared library after searching this index.
-- Do not invent custom block names.
-- If uncertain, inspect the relevant category page or ask the user.
-
-## Libraries
-
-- Communications Toolbox Support Package for RTL-SDR Radio
-
-Common blocks: [common.md](common.md) (1 of 1 blocks)
-
-## Categories
-
-- [Sdr hardware](sdr-hardware.md) — 1 blocks; RTL-SDR receive-only software-defined radio interface
+* [Sdr hardware](sdr-hardware.md) - RTL-SDR receive-only software-defined radio interface (1 blocks)

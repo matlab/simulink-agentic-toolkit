@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Rate conversion
-description: Rate transition and interpolation between solver domains
-tags: [prediction, smoothing, rate, discrete, continuous]
+description: Rate transition and interpolation between solver domains (4 blocks)
+tags: [toolbox-kb, network-couplers, prediction, smoothing, rate, discrete, continuous]
 status: stable
-source: mathworks_toolbox
-library_root: Network Couplers
-category_path: Rate conversion
+sources:
+  - resource: matlab:SimscapeNetworkCouplersLib
+source: toolbox_kb
+managed_by: satk
+library: Network Couplers
+kb_folder: network-couplers
+category: rate-conversion
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Rate conversion
-
-Use these blocks for rate conversion.
 
 ## Recommended Blocks
 

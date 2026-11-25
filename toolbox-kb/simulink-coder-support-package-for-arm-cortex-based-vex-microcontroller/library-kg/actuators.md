@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Actuators
-description: Motor and digital output blocks
-tags: [motor, servo, digital output, actuator]
+description: Motor and digital output blocks (3 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller, motor, servo, digital output, actuator]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
-category_path: Actuators
+sources:
+  - resource: matlab:vexarmcortexlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
+kb_folder: simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller
+category: actuators
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Actuators
-
-Use these blocks for actuators.
 
 ## Recommended Blocks
 

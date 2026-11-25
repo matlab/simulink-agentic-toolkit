@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Data acquisition
-description: Hardware DAQ device interface blocks for analog and digital I/O
-tags: [daq, analog, digital, acquisition, hardware]
+description: Hardware DAQ device interface blocks for analog and digital I/O (6 blocks)
+tags: [toolbox-kb, data-acquisition-toolbox, daq, analog, digital, acquisition, hardware]
 status: stable
-source: mathworks_toolbox
-library_root: Data Acquisition Toolbox
-category_path: Data acquisition
+sources:
+  - resource: matlab:daqlib
+source: toolbox_kb
+managed_by: satk
+library: Data Acquisition Toolbox
+kb_folder: data-acquisition-toolbox
+category: data-acquisition
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Data acquisition
-
-Use these blocks for data acquisition.
 
 ## Recommended Blocks
 

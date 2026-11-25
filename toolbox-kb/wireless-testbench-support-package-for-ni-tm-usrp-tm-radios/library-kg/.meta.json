@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:15",
-  "generatedAtDatenum": 740213.74461851851,
-  "generatorVersion": 4,
-  "libraries": [
-    "Wireless Testbench Support Package for NI(TM) USRP(TM) Radios"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Wireless_Testbench_Support_Package_for_NI_TM__USRP_TM__Radios": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "sdr-radio",
+      "kind": "toolbox",
+      "library": "Wireless Testbench Support Package for NI(TM) USRP(TM) Radios",
+      "kbFolder": "wireless-testbench-support-package-for-ni-tm-usrp-tm-radios",
+      "category": "sdr-radio",
+      "hash": "5055ca888445816d92f76786ce94e004ab7503979224960dd8743a2c6ff498ff",
+      "fm": {
+        "title": "Sdr radio",
+        "description": "Software-defined radio transmission and reception via USRP hardware (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "wireless-testbench-support-package-for-ni-tm-usrp-tm-radios",
+          "usrp",
+          "sdr",
+          "receiver",
+          "transmitter",
+          "radio"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "SDRu Receiver",
+          "ref": "commsdrhw_v2/SDRu Receiver",
+          "since": "R2023a+",
+          "intent": "Receive RF signals from a USRP software-defined radio — use for over-the-air signal capture, spectrum monitoring, or wireless receiver prototyping"
+        },
+        {
+          "block": "SDRu Transmitter",
+          "ref": "commsdrhw_v2/SDRu Transmitter",
+          "since": "R2023a+",
+          "intent": "Transmit RF signals through a USRP software-defined radio — use for over-the-air waveform transmission, wireless testing, or transmitter prototyping"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:34",
+  "generatedAtDatenum": 740309.99554311344
 }

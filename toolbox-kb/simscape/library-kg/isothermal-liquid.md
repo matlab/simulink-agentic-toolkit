@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Isothermal liquid
-description: Isothermal liquid thermal-fluid elements (constant-temperature liquid)
-tags: [isothermal liquid]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Isothermal liquid
+description: Isothermal liquid thermal-fluid elements (constant-temperature liquid) (12 blocks)
+tags: [toolbox-kb, simscape, isothermal liquid]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: isothermal-liquid
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Isothermal liquid
-
-Use these blocks for isothermal liquid.
 
 ## Recommended Blocks
 

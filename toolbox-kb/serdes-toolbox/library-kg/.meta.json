@@ -1,15 +1,73 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74458028935,
-  "generatorVersion": 4,
-  "libraries": [
-    "SerDes Toolbox"
-  ],
-  "blockCount": 7,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "SerDes_Toolbox": {
-      "blockCount": 7
+  "pages": [
+    {
+      "id": "serdes-datapath",
+      "kind": "toolbox",
+      "library": "SerDes Toolbox",
+      "kbFolder": "serdes-toolbox",
+      "category": "serdes-datapath",
+      "hash": "f8b516773e9561c668c4537c7b168f035763fbcb8f966cee77b5a651ee4b40a8",
+      "fm": {
+        "title": "Serdes datapath",
+        "description": "High-speed serial link transmitter and receiver datapath blocks (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "serdes-toolbox",
+          "serdes",
+          "equalizer",
+          "cdr",
+          "receiver",
+          "transmitter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Automatic Gain Control",
+          "ref": "serdesTopLevel/Datapath Blocks/Automatic Gain Control",
+          "since": "R2023a+",
+          "intent": "Adaptively adjust signal amplitude in a SerDes receiver — use for maintaining consistent signal levels across varying channel loss conditions"
+        },
+        {
+          "block": "Clock Data Recovery",
+          "ref": "serdesTopLevel/Datapath Blocks/Clock Data Recovery",
+          "since": "R2023a+",
+          "intent": "Extract clock and data from an incoming serial bit stream — use for synchronizing receiver sampling to the optimal eye opening position"
+        },
+        {
+          "block": "Decision Feedback Equalizer w/ CDR",
+          "ref": "serdesTopLevel/Datapath Blocks/Decision Feedback Equalizer w/ CDR",
+          "since": "R2023a+",
+          "intent": "Equalize inter-symbol interference using post-cursor feedback with integrated clock recovery — use for high-speed serial link receivers requiring both ISI cancellation and timing recovery"
+        },
+        {
+          "block": "Feed-Forward Equalizer",
+          "ref": "serdesTopLevel/Datapath Blocks/Feed-Forward Equalizer",
+          "since": "R2023a+",
+          "intent": "Apply linear equalization using a tapped delay line — use for pre-emphasis at the transmitter or linear equalization at the receiver to compensate channel loss"
+        },
+        {
+          "block": "Saturating Amplifier",
+          "ref": "serdesTopLevel/Datapath Blocks/Saturating Amplifier",
+          "since": "R2023a+",
+          "intent": "Amplify a signal with hard saturation limits — use for modeling gain stages that clip at supply rails in SerDes analog front-ends"
+        },
+        {
+          "block": "Transparent Pass-Through",
+          "ref": "serdesTopLevel/Datapath Blocks/Transparent Pass-Through",
+          "since": "R2023a+",
+          "intent": "Pass the signal without modification — use as a placeholder in SerDes datapath when no processing is needed at a particular stage"
+        },
+        {
+          "block": "Variable Gain Amplifier",
+          "ref": "serdesTopLevel/Datapath Blocks/Variable Gain Amplifier",
+          "since": "R2023a+",
+          "intent": "Amplify a signal with programmable gain — use for modeling adjustable-gain receiver stages that adapt to different channel loss conditions"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:28",
+  "generatedAtDatenum": 740309.99546423613
 }

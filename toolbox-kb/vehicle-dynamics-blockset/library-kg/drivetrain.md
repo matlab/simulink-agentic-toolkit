@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Drivetrain
-description: Driveline couplings, differentials, and transmission components
-tags: [differential, coupling, shaft, gear, inertia]
+description: "Driveline couplings, differentials, and transmission components (21 blocks)"
+tags: [toolbox-kb, vehicle-dynamics-blockset, differential, coupling, shaft, gear, inertia]
 status: stable
-source: mathworks_toolbox
-library_root: Vehicle Dynamics Blockset
-category_path: Drivetrain
+sources:
+  - resource: matlab:autolibsimscapeutils
+source: toolbox_kb
+managed_by: satk
+library: Vehicle Dynamics Blockset
+kb_folder: vehicle-dynamics-blockset
+category: drivetrain
 block_count: 21
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:09Z" }
 ---
 
 # Drivetrain
-
-Use these blocks for drivetrain.
 
 ## Recommended Blocks
 

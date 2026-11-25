@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Beamforming
-description: Spatial filtering algorithms that combine array element signals to enhance desired direction
-tags: [beamformer, spatial, filter, steer, MVDR, LCMV]
+description: Spatial filtering algorithms that combine array element signals to enhance desired direction (9 blocks)
+tags: [toolbox-kb, phased-array-system-toolbox, beamformer, spatial, filter, steer, MVDR, LCMV]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Beamforming
+sources:
+  - resource: matlab:phasedbflib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: beamforming
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Beamforming
-
-Use these blocks for beamforming.
 
 ## Recommended Blocks
 

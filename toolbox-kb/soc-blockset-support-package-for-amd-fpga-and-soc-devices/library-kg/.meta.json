@@ -1,15 +1,518 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.6931729283,
-  "generatorVersion": 4,
-  "libraries": [
-    "SoC Blockset Support Package for AMD FPGA and SoC Devices"
-  ],
-  "blockCount": 69,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "SoC_Blockset_Support_Package_for_AMD_FPGA_and_SoC_Devices": {
-      "blockCount": 69
+  "pages": [
+    {
+      "id": "rf-data-converter",
+      "kind": "toolbox",
+      "library": "SoC Blockset Support Package for AMD FPGA and SoC Devices",
+      "kbFolder": "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+      "category": "rf-data-converter",
+      "hash": "b38871b5b41b27694114d895bac92dc594d76189bb43c0d8bd412d4165bc2c6e",
+      "fm": {
+        "title": "Rf data converter",
+        "description": "RFSoC direct-RF ADC/DAC data converter interface (22 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+          "rf data converter",
+          "adc to vector",
+          "vector to dac",
+          "rfdc",
+          "aurora",
+          "otava"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADC To Vector",
+          "ref": "rfsoczcu111lib/ADC To Vector",
+          "since": "R2023a+",
+          "intent": "Collect samples from the RFSoC data-converter ADC into a vector/frame — use to frame direct-RF receive data for processing."
+        },
+        {
+          "block": "Aurora 64B66B",
+          "ref": "rfsoczcu111lib/Aurora 64B66B",
+          "since": "R2023a+",
+          "intent": "Send and receive data over a Xilinx Aurora 64B/66B high-speed serial link — use for board-to-board or FPGA-to-FPGA transport."
+        },
+        {
+          "block": "RF Data Converter",
+          "ref": "rfsoczcu111lib/RF Data Converter",
+          "since": "R2023a+",
+          "intent": "Configure and interface the RFSoC integrated RF data converter (ADC/DAC) — use as the direct-RF sampling front end on RFSoC."
+        },
+        {
+          "block": "RFDC Bus Creator",
+          "ref": "rfsoczcu111lib/RFDC Bus Creator",
+          "since": "R2023a+",
+          "intent": "Bundle RF-data-converter control and status signals into a bus — use to organize the RFDC interface."
+        },
+        {
+          "block": "RFDC Bus Selector",
+          "ref": "rfsoczcu111lib/RFDC Bus Selector",
+          "since": "R2023a+",
+          "intent": "Select individual signals from the RF-data-converter bus — use to access specific RFDC control/status lines."
+        },
+        {
+          "block": "Vector To DAC",
+          "ref": "rfsoczcu111lib/Vector To DAC",
+          "since": "R2023a+",
+          "intent": "Stream a sample vector/frame to the RFSoC data-converter DAC — use to drive direct-RF transmit output."
+        },
+        {
+          "block": "ADC To Vector",
+          "ref": "rfsoczcu208lib/ADC To Vector",
+          "since": "R2023a+",
+          "intent": "Collect samples from the RFSoC data-converter ADC into a vector/frame — use to frame direct-RF receive data for processing."
+        },
+        {
+          "block": "OTAVA DTRX2",
+          "ref": "rfsoczcu208lib/OTAVA DTRX2",
+          "since": "R2023a+",
+          "intent": "Interface the OTAVA DTRX2 RF front-end daughtercard — use to connect that RF module to an RFSoC design."
+        },
+        {
+          "block": "RF Data Converter",
+          "ref": "rfsoczcu208lib/RF Data Converter",
+          "since": "R2023a+",
+          "intent": "Configure and interface the RFSoC integrated RF data converter (ADC/DAC) — use as the direct-RF sampling front end on RFSoC."
+        },
+        {
+          "block": "RFDC Bus Creator",
+          "ref": "rfsoczcu208lib/RFDC Bus Creator",
+          "since": "R2023a+",
+          "intent": "Bundle RF-data-converter control and status signals into a bus — use to organize the RFDC interface."
+        },
+        {
+          "block": "RFDC Bus Selector",
+          "ref": "rfsoczcu208lib/RFDC Bus Selector",
+          "since": "R2023a+",
+          "intent": "Select individual signals from the RF-data-converter bus — use to access specific RFDC control/status lines."
+        },
+        {
+          "block": "Vector To DAC",
+          "ref": "rfsoczcu208lib/Vector To DAC",
+          "since": "R2023a+",
+          "intent": "Stream a sample vector/frame to the RFSoC data-converter DAC — use to drive direct-RF transmit output."
+        },
+        {
+          "block": "ADC To Vector",
+          "ref": "rfsoczcu216lib/ADC To Vector",
+          "since": "R2023a+",
+          "intent": "Collect samples from the RFSoC data-converter ADC into a vector/frame — use to frame direct-RF receive data for processing."
+        },
+        {
+          "block": "RF Data Converter",
+          "ref": "rfsoczcu216lib/RF Data Converter",
+          "since": "R2023a+",
+          "intent": "Configure and interface the RFSoC integrated RF data converter (ADC/DAC) — use as the direct-RF sampling front end on RFSoC."
+        },
+        {
+          "block": "RFDC Bus Creator",
+          "ref": "rfsoczcu216lib/RFDC Bus Creator",
+          "since": "R2023a+",
+          "intent": "Bundle RF-data-converter control and status signals into a bus — use to organize the RFDC interface."
+        },
+        {
+          "block": "RFDC Bus Selector",
+          "ref": "rfsoczcu216lib/RFDC Bus Selector",
+          "since": "R2023a+",
+          "intent": "Select individual signals from the RF-data-converter bus — use to access specific RFDC control/status lines."
+        },
+        {
+          "block": "Vector To DAC",
+          "ref": "rfsoczcu216lib/Vector To DAC",
+          "since": "R2023a+",
+          "intent": "Stream a sample vector/frame to the RFSoC data-converter DAC — use to drive direct-RF transmit output."
+        },
+        {
+          "block": "ADC To Vector",
+          "ref": "rfsoczcu670lib/ADC To Vector",
+          "since": "R2023a+",
+          "intent": "Collect samples from the RFSoC data-converter ADC into a vector/frame — use to frame direct-RF receive data for processing."
+        },
+        {
+          "block": "RF Data Converter",
+          "ref": "rfsoczcu670lib/RF Data Converter",
+          "since": "R2023a+",
+          "intent": "Configure and interface the RFSoC integrated RF data converter (ADC/DAC) — use as the direct-RF sampling front end on RFSoC."
+        },
+        {
+          "block": "RFDC Bus Creator",
+          "ref": "rfsoczcu670lib/RFDC Bus Creator",
+          "since": "R2023a+",
+          "intent": "Bundle RF-data-converter control and status signals into a bus — use to organize the RFDC interface."
+        },
+        {
+          "block": "RFDC Bus Selector",
+          "ref": "rfsoczcu670lib/RFDC Bus Selector",
+          "since": "R2023a+",
+          "intent": "Select individual signals from the RF-data-converter bus — use to access specific RFDC control/status lines."
+        },
+        {
+          "block": "Vector To DAC",
+          "ref": "rfsoczcu670lib/Vector To DAC",
+          "since": "R2023a+",
+          "intent": "Stream a sample vector/frame to the RFSoC data-converter DAC — use to drive direct-RF transmit output."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sdr-transceiver",
+      "kind": "toolbox",
+      "library": "SoC Blockset Support Package for AMD FPGA and SoC Devices",
+      "kbFolder": "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+      "category": "sdr-transceiver",
+      "hash": "1d024c1c18e20f93bea78ef1e47482ba1de18fb390b5e8ea99e33d18e9515da9",
+      "fm": {
+        "title": "Sdr transceiver",
+        "description": "AD936x / FMCOMMS software-defined-radio front ends (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+          "ad936x",
+          "fmcomms",
+          "receiver",
+          "transmitter",
+          "data read",
+          "data write"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "AD936x Data Read",
+          "ref": "mpsoczcu102lib/AD936x Data Read",
+          "since": "R2024b+",
+          "intent": "Read baseband IQ samples captured from an AD936x RF transceiver on the FPGA — use to bring received radio data into the model."
+        },
+        {
+          "block": "AD936x Data Write",
+          "ref": "mpsoczcu102lib/AD936x Data Write",
+          "since": "R2024b+",
+          "intent": "Write baseband IQ samples to an AD936x RF transceiver for transmission — use to send radio data from the model."
+        },
+        {
+          "block": "AD936x Receiver",
+          "ref": "mpsoczcu102lib/AD936x Receiver",
+          "since": "R2024b+",
+          "intent": "Receive RF through an AD936x transceiver and stream baseband IQ into the model — use as an SDR receive front end."
+        },
+        {
+          "block": "AD936x Transmitter",
+          "ref": "mpsoczcu102lib/AD936x Transmitter",
+          "since": "R2024b+",
+          "intent": "Transmit baseband IQ through an AD936x RF transceiver — use as an SDR transmit front end."
+        },
+        {
+          "block": "AD936x Data Read",
+          "ref": "zynq7000rfsomlib/AD936x Data Read",
+          "since": "R2024b+",
+          "intent": "Read baseband IQ samples captured from an AD936x RF transceiver on the FPGA — use to bring received radio data into the model."
+        },
+        {
+          "block": "AD936x Data Write",
+          "ref": "zynq7000rfsomlib/AD936x Data Write",
+          "since": "R2024b+",
+          "intent": "Write baseband IQ samples to an AD936x RF transceiver for transmission — use to send radio data from the model."
+        },
+        {
+          "block": "AD936x Receiver",
+          "ref": "zynq7000rfsomlib/AD936x Receiver",
+          "since": "R2024b+",
+          "intent": "Receive RF through an AD936x transceiver and stream baseband IQ into the model — use as an SDR receive front end."
+        },
+        {
+          "block": "AD936x Transmitter",
+          "ref": "zynq7000rfsomlib/AD936x Transmitter",
+          "since": "R2024b+",
+          "intent": "Transmit baseband IQ through an AD936x RF transceiver — use as an SDR transmit front end."
+        },
+        {
+          "block": "AD936x Data Read",
+          "ref": "zynq7000zc706lib/AD936x Data Read",
+          "since": "R2024b+",
+          "intent": "Read baseband IQ samples captured from an AD936x RF transceiver on the FPGA — use to bring received radio data into the model."
+        },
+        {
+          "block": "AD936x Data Write",
+          "ref": "zynq7000zc706lib/AD936x Data Write",
+          "since": "R2024b+",
+          "intent": "Write baseband IQ samples to an AD936x RF transceiver for transmission — use to send radio data from the model."
+        },
+        {
+          "block": "AD936x Receiver",
+          "ref": "zynq7000zc706lib/AD936x Receiver",
+          "since": "R2024b+",
+          "intent": "Receive RF through an AD936x transceiver and stream baseband IQ into the model — use as an SDR receive front end."
+        },
+        {
+          "block": "AD936x Transmitter",
+          "ref": "zynq7000zc706lib/AD936x Transmitter",
+          "since": "R2024b+",
+          "intent": "Transmit baseband IQ through an AD936x RF transceiver — use as an SDR transmit front end."
+        },
+        {
+          "block": "FMCOMMS5 Receiver",
+          "ref": "zynq7000zc706lib/FMCOMMS5 Receiver",
+          "since": "R2023a+",
+          "intent": "Receive RF through the four-channel FMCOMMS5 (dual AD9361) front end — use for multi-channel/coherent SDR receive."
+        },
+        {
+          "block": "FMCOMMS5 Transmitter",
+          "ref": "zynq7000zc706lib/FMCOMMS5 Transmitter",
+          "since": "R2023a+",
+          "intent": "Transmit RF through the four-channel FMCOMMS5 (dual AD9361) front end — use for multi-channel SDR transmit."
+        },
+        {
+          "block": "AD936x Data Read",
+          "ref": "zynq7000zedboardlib/AD936x Data Read",
+          "since": "R2024b+",
+          "intent": "Read baseband IQ samples captured from an AD936x RF transceiver on the FPGA — use to bring received radio data into the model."
+        },
+        {
+          "block": "AD936x Data Write",
+          "ref": "zynq7000zedboardlib/AD936x Data Write",
+          "since": "R2024b+",
+          "intent": "Write baseband IQ samples to an AD936x RF transceiver for transmission — use to send radio data from the model."
+        },
+        {
+          "block": "AD936x Receiver",
+          "ref": "zynq7000zedboardlib/AD936x Receiver",
+          "since": "R2024b+",
+          "intent": "Receive RF through an AD936x transceiver and stream baseband IQ into the model — use as an SDR receive front end."
+        },
+        {
+          "block": "AD936x Transmitter",
+          "ref": "zynq7000zedboardlib/AD936x Transmitter",
+          "since": "R2024b+",
+          "intent": "Transmit baseband IQ through an AD936x RF transceiver — use as an SDR transmit front end."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-formatting",
+      "kind": "toolbox",
+      "library": "SoC Blockset Support Package for AMD FPGA and SoC Devices",
+      "kbFolder": "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+      "category": "signal-formatting",
+      "hash": "a3047e4968c82b91bb1ae464b1fec74f6f951648bfccdf73c1b52558d65b6c63",
+      "fm": {
+        "title": "Signal formatting",
+        "description": "Interleave/deinterleave stream formatting (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+          "interleave",
+          "deinterleave"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Deinterleave",
+          "ref": "mpsoczcu102lib/Deinterleave",
+          "since": "R2023a+",
+          "intent": "Split an interleaved sample stream back into separate channels — use to separate I/Q or multi-channel data on the FPGA."
+        },
+        {
+          "block": "Interleave",
+          "ref": "mpsoczcu102lib/Interleave",
+          "since": "R2023a+",
+          "intent": "Combine separate channels into a single interleaved sample stream — use to pack I/Q or multi-channel data for transport."
+        },
+        {
+          "block": "Deinterleave",
+          "ref": "mpsoczcu106lib/Deinterleave",
+          "since": "R2023a+",
+          "intent": "Split an interleaved sample stream back into separate channels — use to separate I/Q or multi-channel data on the FPGA."
+        },
+        {
+          "block": "Interleave",
+          "ref": "mpsoczcu106lib/Interleave",
+          "since": "R2023a+",
+          "intent": "Combine separate channels into a single interleaved sample stream — use to pack I/Q or multi-channel data for transport."
+        },
+        {
+          "block": "Deinterleave",
+          "ref": "zynq7000picozedlib/Deinterleave",
+          "since": "R2023a+",
+          "intent": "Split an interleaved sample stream back into separate channels — use to separate I/Q or multi-channel data on the FPGA."
+        },
+        {
+          "block": "Interleave",
+          "ref": "zynq7000picozedlib/Interleave",
+          "since": "R2023a+",
+          "intent": "Combine separate channels into a single interleaved sample stream — use to pack I/Q or multi-channel data for transport."
+        },
+        {
+          "block": "Deinterleave",
+          "ref": "zynq7000zc702lib/Deinterleave",
+          "since": "R2023a+",
+          "intent": "Split an interleaved sample stream back into separate channels — use to separate I/Q or multi-channel data on the FPGA."
+        },
+        {
+          "block": "Interleave",
+          "ref": "zynq7000zc702lib/Interleave",
+          "since": "R2023a+",
+          "intent": "Combine separate channels into a single interleaved sample stream — use to pack I/Q or multi-channel data for transport."
+        },
+        {
+          "block": "Deinterleave",
+          "ref": "zynq7000zc706lib/Deinterleave",
+          "since": "R2023a+",
+          "intent": "Split an interleaved sample stream back into separate channels — use to separate I/Q or multi-channel data on the FPGA."
+        },
+        {
+          "block": "Interleave",
+          "ref": "zynq7000zc706lib/Interleave",
+          "since": "R2023a+",
+          "intent": "Combine separate channels into a single interleaved sample stream — use to pack I/Q or multi-channel data for transport."
+        },
+        {
+          "block": "Deinterleave",
+          "ref": "zynq7000zedboardlib/Deinterleave",
+          "since": "R2023a+",
+          "intent": "Split an interleaved sample stream back into separate channels — use to separate I/Q or multi-channel data on the FPGA."
+        },
+        {
+          "block": "Interleave",
+          "ref": "zynq7000zedboardlib/Interleave",
+          "since": "R2023a+",
+          "intent": "Combine separate channels into a single interleaved sample stream — use to pack I/Q or multi-channel data for transport."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "video",
+      "kind": "toolbox",
+      "library": "SoC Blockset Support Package for AMD FPGA and SoC Devices",
+      "kbFolder": "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+      "category": "video",
+      "hash": "9e414d20cedcbfdcf598de8cdcd97f25d91dc4abf5364ef0e4d1afbb9878a9a1",
+      "fm": {
+        "title": "Video",
+        "description": "HDMI and camera video capture/output (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset-support-package-for-amd-fpga-and-soc-devices",
+          "hdmi",
+          "video capture",
+          "usb",
+          "mipi"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "HDMI Rx",
+          "ref": "mpsoczcu102lib/HDMI Rx",
+          "since": "R2023a+",
+          "intent": "Receive a video stream over HDMI on the board — use to capture external HDMI video into the design."
+        },
+        {
+          "block": "HDMI Tx",
+          "ref": "mpsoczcu102lib/HDMI Tx",
+          "since": "R2023a+",
+          "intent": "Transmit a video stream over HDMI from the board — use to output processed video to an HDMI display."
+        },
+        {
+          "block": "Video Capture HDMI",
+          "ref": "mpsoczcu102lib/Video Capture HDMI",
+          "since": "R2023a+",
+          "intent": "Capture live video from the board's HDMI input as a pixel stream — use as a hardware video source."
+        },
+        {
+          "block": "Video Capture USB",
+          "ref": "mpsoczcu102lib/Video Capture USB",
+          "since": "R2024b+",
+          "intent": "Capture live video from a USB camera on the board — use as a hardware video source."
+        },
+        {
+          "block": "HDMI Rx",
+          "ref": "mpsoczcu106lib/HDMI Rx",
+          "since": "R2023a+",
+          "intent": "Receive a video stream over HDMI on the board — use to capture external HDMI video into the design."
+        },
+        {
+          "block": "HDMI Tx",
+          "ref": "mpsoczcu106lib/HDMI Tx",
+          "since": "R2023a+",
+          "intent": "Transmit a video stream over HDMI from the board — use to output processed video to an HDMI display."
+        },
+        {
+          "block": "Video Capture HDMI",
+          "ref": "mpsoczcu106lib/Video Capture HDMI",
+          "since": "R2023a+",
+          "intent": "Capture live video from the board's HDMI input as a pixel stream — use as a hardware video source."
+        },
+        {
+          "block": "Video Capture MIPI",
+          "ref": "mpsoczcu106lib/Video Capture MIPI",
+          "since": "R2023a+",
+          "intent": "Capture live video from a MIPI-CSI camera on the board — use as a hardware camera source."
+        },
+        {
+          "block": "Video Capture USB",
+          "ref": "mpsoczcu106lib/Video Capture USB",
+          "since": "R2024b+",
+          "intent": "Capture live video from a USB camera on the board — use as a hardware video source."
+        },
+        {
+          "block": "Video Capture HDMI",
+          "ref": "zynq7000picozedlib/Video Capture HDMI",
+          "since": "R2023a+",
+          "intent": "Capture live video from the board's HDMI input as a pixel stream — use as a hardware video source."
+        },
+        {
+          "block": "Video Capture HDMI",
+          "ref": "zynq7000zc702lib/Video Capture HDMI",
+          "since": "R2023a+",
+          "intent": "Capture live video from the board's HDMI input as a pixel stream — use as a hardware video source."
+        },
+        {
+          "block": "HDMI Rx",
+          "ref": "zynq7000zc706lib/HDMI Rx",
+          "since": "R2023a+",
+          "intent": "Receive a video stream over HDMI on the board — use to capture external HDMI video into the design."
+        },
+        {
+          "block": "HDMI Tx",
+          "ref": "zynq7000zc706lib/HDMI Tx",
+          "since": "R2023a+",
+          "intent": "Transmit a video stream over HDMI from the board — use to output processed video to an HDMI display."
+        },
+        {
+          "block": "Video Capture HDMI",
+          "ref": "zynq7000zc706lib/Video Capture HDMI",
+          "since": "R2023a+",
+          "intent": "Capture live video from the board's HDMI input as a pixel stream — use as a hardware video source."
+        },
+        {
+          "block": "HDMI Rx",
+          "ref": "zynq7000zedboardlib/HDMI Rx",
+          "since": "R2023a+",
+          "intent": "Receive a video stream over HDMI on the board — use to capture external HDMI video into the design."
+        },
+        {
+          "block": "HDMI Tx",
+          "ref": "zynq7000zedboardlib/HDMI Tx",
+          "since": "R2023a+",
+          "intent": "Transmit a video stream over HDMI from the board — use to output processed video to an HDMI display."
+        },
+        {
+          "block": "Video Capture HDMI",
+          "ref": "zynq7000zedboardlib/Video Capture HDMI",
+          "since": "R2023a+",
+          "intent": "Capture live video from the board's HDMI input as a pixel stream — use as a hardware video source."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:36",
+  "generatedAtDatenum": 740309.99555986107
 }

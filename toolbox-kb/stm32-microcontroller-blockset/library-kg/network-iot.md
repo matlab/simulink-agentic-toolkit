@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Network iot
-description: Ethernet and wireless network communication using TCP, UDP, and MQTT protocols
-tags: [TCP, UDP, MQTT, Ethernet, IoT]
+description: "Ethernet and wireless network communication using TCP, UDP, and MQTT protocols (30 blocks)"
+tags: [toolbox-kb, stm32-microcontroller-blockset, TCP, UDP, MQTT, Ethernet, IoT]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Network iot
+sources:
+  - resource: matlab:stm32f2xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: network-iot
 block_count: 30
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Network iot
-
-Use these blocks for network iot.
 
 ## Recommended Blocks
 

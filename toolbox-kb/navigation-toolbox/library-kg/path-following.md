@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Path following
-description: Path tracking and obstacle avoidance algorithms
-tags: [pursuit, path, obstacle, avoidance, steering]
+description: Path tracking and obstacle avoidance algorithms (3 blocks)
+tags: [toolbox-kb, navigation-toolbox, pursuit, path, obstacle, avoidance, steering]
 status: stable
-source: mathworks_toolbox
-library_root: Navigation Toolbox
-category_path: Path following
+sources:
+  - resource: matlab:navlib
+source: toolbox_kb
+managed_by: satk
+library: Navigation Toolbox
+kb_folder: navigation-toolbox
+category: path-following
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Path following
-
-Use these blocks for path following.
 
 ## Recommended Blocks
 

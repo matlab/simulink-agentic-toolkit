@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456943292,
-  "generatorVersion": 4,
-  "libraries": [
-    "MATLAB Coder Support Package for PyTorch and LiteRT Models"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "MATLAB_Coder_Support_Package_for_PyTorch_and_LiteRT_Models": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "ml-inference",
+      "kind": "toolbox",
+      "library": "MATLAB Coder Support Package for PyTorch and LiteRT Models",
+      "kbFolder": "matlab-coder-support-package-for-pytorch-and-litert-models",
+      "category": "ml-inference",
+      "hash": "3dd0e34cfd9b8bd5bba2d434b1cf308dc609e2f67d02738f47161e8e3fb675ad",
+      "fm": {
+        "title": "Ml inference",
+        "description": "Machine learning model inference from external frameworks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "matlab-coder-support-package-for-pytorch-and-litert-models",
+          "pytorch",
+          "litert",
+          "inference",
+          "model",
+          "deep learning"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "LiteRT",
+          "ref": "dlosslib/LiteRT",
+          "since": "R2026a+",
+          "intent": "Run inference on a LiteRT model within Simulink — use for deploying TensorFlow Lite models on edge devices or mobile targets"
+        },
+        {
+          "block": "PyTorch ExportedProgram",
+          "ref": "dlosslib/PyTorch ExportedProgram",
+          "since": "R2026a+",
+          "intent": "Run inference on a PyTorch ExportedProgram within Simulink — use for integrating PyTorch-trained models into Simulink-based systems"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:23",
+  "generatedAtDatenum": 740309.99541608791
 }

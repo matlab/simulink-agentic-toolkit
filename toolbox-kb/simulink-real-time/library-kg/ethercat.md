@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ethercat
-description: Blocks for ethercat.
+description: Blocks for Ethercat (18 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Ethercat
+sources:
+  - resource: matlab:slrealtimeethercatlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: ethercat
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Ethercat
-
-Use these blocks for ethercat.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Visualization
-description: Intensity scope displays for range, Doppler, and angle versus time
-tags: [scope, intensity, display, visualization, RTI]
+description: "Intensity scope displays for range, Doppler, and angle versus time (3 blocks)"
+tags: [toolbox-kb, phased-array-system-toolbox, scope, intensity, display, visualization, RTI]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Visualization
+sources:
+  - resource: matlab:phasedsnklib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: visualization
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Visualization
-
-Use these blocks for visualization.
 
 ## Recommended Blocks
 

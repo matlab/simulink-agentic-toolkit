@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Feature extractors
-description: Blocks for feature extractors.
+description: Blocks for Feature extractors (2 blocks)
+tags: [toolbox-kb, dsp-system-toolbox]
 status: draft
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Feature extractors
+sources:
+  - resource: matlab:dspfeatures
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: feature-extractors
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Feature extractors
-
-Use these blocks for feature extractors.
 
 ## Recommended Blocks
 

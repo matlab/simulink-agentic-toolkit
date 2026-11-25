@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Geometric transformations
-description: Warp, resize, and rotate images
-tags: [geometric, warp, resize, rotate, transform]
-status: stable
-source: custom_library
-library_root: Computer Vision Toolbox
-category_path: Geometric transformations
+description: "Warp, resize, and rotate images (12 blocks)"
+tags: [toolbox-kb, computer-vision-toolbox, geometric, warp, resize, rotate, transform]
+status: draft
+sources:
+  - resource: matlab:visiongeotforms
+source: toolbox_kb
+managed_by: satk
+library: Computer Vision Toolbox
+kb_folder: computer-vision-toolbox
+category: geometric-transformations
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Geometric transformations
-
-Use these blocks for geometric transformations.
 
 ## Recommended Blocks
 

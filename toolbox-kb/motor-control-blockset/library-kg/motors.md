@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Motors
-description: Electric machine models for BLDC, induction, and PMSM motors used as plants in motor-control simulations
-tags: [motor, PMSM, BLDC, induction, machine, plant]
+description: "Electric machine models for BLDC, induction, and PMSM motors used as plants in motor-control simulations (4 blocks)"
+tags: [toolbox-kb, motor-control-blockset, motor, PMSM, BLDC, induction, machine, plant]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Motors
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: motors
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Motors
-
-Use these blocks for motors.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Automated driving
-description: Pre-built MPC-based automated driving controllers
-tags: [cruise, lane, path, vehicle, driving]
+description: Pre-built MPC-based automated driving controllers (4 blocks)
+tags: [toolbox-kb, model-predictive-control-toolbox, cruise, lane, path, vehicle, driving]
 status: stable
-source: mathworks_toolbox
-library_root: Model Predictive Control Toolbox
-category_path: Automated driving
+sources:
+  - resource: matlab:mpclib
+source: toolbox_kb
+managed_by: satk
+library: Model Predictive Control Toolbox
+kb_folder: model-predictive-control-toolbox
+category: automated-driving
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Automated driving
-
-Use these blocks for automated driving.
 
 ## Recommended Blocks
 

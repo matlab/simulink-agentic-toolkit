@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Propulsion
-description: Engine and electric motor power source models
-tags: [engine, motor, propulsion, torque, mapped]
+description: Engine and electric motor power source models (8 blocks)
+tags: [toolbox-kb, vehicle-dynamics-blockset, engine, motor, propulsion, torque, mapped]
 status: stable
-source: mathworks_toolbox
-library_root: Vehicle Dynamics Blockset
-category_path: Propulsion
+sources:
+  - resource: matlab:vdynlib
+source: toolbox_kb
+managed_by: satk
+library: Vehicle Dynamics Blockset
+kb_folder: vehicle-dynamics-blockset
+category: propulsion
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:09Z" }
 ---
 
 # Propulsion
-
-Use these blocks for propulsion.
 
 ## Recommended Blocks
 

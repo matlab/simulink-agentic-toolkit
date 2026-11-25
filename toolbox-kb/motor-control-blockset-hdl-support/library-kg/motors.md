@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Motors
-description: HDL-ready motor plant models and their configuration
-tags: [motors, bldc, pmsm, induction motor, configuration]
+description: HDL-ready motor plant models and their configuration (6 blocks)
+tags: [toolbox-kb, motor-control-blockset-hdl-support, motors, bldc, pmsm, induction motor, configuration]
 status: stable
-source: custom_library
-library_root: Motor Control Blockset HDL Support
-category_path: Motors
+sources:
+  - resource: matlab:mcbhdllib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset HDL Support
+kb_folder: motor-control-blockset-hdl-support
+category: motors
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Motors
-
-Use these blocks for motors.
 
 ## Recommended Blocks
 

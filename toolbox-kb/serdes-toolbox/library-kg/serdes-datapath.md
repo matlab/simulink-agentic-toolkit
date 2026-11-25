@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Serdes datapath
-description: High-speed serial link transmitter and receiver datapath blocks
-tags: [serdes, equalizer, cdr, receiver, transmitter]
+description: High-speed serial link transmitter and receiver datapath blocks (7 blocks)
+tags: [toolbox-kb, serdes-toolbox, serdes, equalizer, cdr, receiver, transmitter]
 status: stable
-source: mathworks_toolbox
-library_root: SerDes Toolbox
-category_path: Serdes datapath
+sources:
+  - resource: matlab:serdesTopLevel
+source: toolbox_kb
+managed_by: satk
+library: SerDes Toolbox
+kb_folder: serdes-toolbox
+category: serdes-datapath
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Serdes datapath
-
-Use these blocks for serdes datapath.
 
 ## Recommended Blocks
 

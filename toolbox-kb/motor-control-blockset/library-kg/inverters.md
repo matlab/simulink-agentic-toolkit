@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Inverters
-description: Average-value inverter models that convert DC bus voltage and modulation signals into three-phase output for simulation
-tags: [inverter, average value, DC bus, three-phase, power stage]
+description: Average-value inverter models that convert DC bus voltage and modulation signals into three-phase output for simulation (2 blocks)
+tags: [toolbox-kb, motor-control-blockset, inverter, average value, DC bus, three-phase, power stage]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Inverters
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: inverters
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Inverters
-
-Use these blocks for inverters.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Convolution layers
-description: Convolutional and fully connected layers for feature extraction
-tags: [convolution, conv2d, fully, connected, filter]
+description: Convolutional and fully connected layers for feature extraction (4 blocks)
+tags: [toolbox-kb, deep-learning-toolbox, convolution, conv2d, fully, connected, filter]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Convolution layers
+sources:
+  - resource: matlab:dlconvfclib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: convolution-layers
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Convolution layers
-
-Use these blocks for convolution layers.
 
 ## Recommended Blocks
 

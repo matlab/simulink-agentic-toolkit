@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sdr radio
-description: Software-defined radio transmission and reception via USRP hardware
-tags: [usrp, sdr, receiver, transmitter, radio]
+description: Software-defined radio transmission and reception via USRP hardware (2 blocks)
+tags: [toolbox-kb, wireless-testbench-support-package-for-ni-tm-usrp-tm-radios, usrp, sdr, receiver, transmitter, radio]
 status: stable
-source: mathworks_toolbox
-library_root: Wireless Testbench Support Package for NI(TM) USRP(TM) Radios
-category_path: Sdr radio
+sources:
+  - resource: matlab:commsdrhw_v2
+source: toolbox_kb
+managed_by: satk
+library: Wireless Testbench Support Package for NI(TM) USRP(TM) Radios
+kb_folder: wireless-testbench-support-package-for-ni-tm-usrp-tm-radios
+category: sdr-radio
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Sdr radio
-
-Use these blocks for sdr radio.
 
 ## Recommended Blocks
 

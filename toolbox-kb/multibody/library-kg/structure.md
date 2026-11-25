@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Structure
-description: Rigid body definition and spatial reference frames
-tags: [body, frame, transform, inertia, geometry]
+description: Rigid body definition and spatial reference frames (3 blocks)
+tags: [toolbox-kb, multibody, body, frame, transform, inertia, geometry]
 status: stable
-source: mathworks_toolbox
-library_root: Multibody
-category_path: Structure
+sources:
+  - resource: matlab:sm_lib
+source: toolbox_kb
+managed_by: satk
+library: Multibody
+kb_folder: multibody
+category: structure
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Structure
-
-Use these blocks for structure.
 
 ## Recommended Blocks
 

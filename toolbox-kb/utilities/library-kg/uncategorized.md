@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Uncategorized
-description: Blocks for uncategorized.
+description: Blocks for Uncategorized (3 blocks)
+tags: [toolbox-kb, utilities]
 status: draft
-source: custom_library
-library_root: Utilities
-category_path: Uncategorized
+sources:
+  - resource: matlab:nesl_utility
+source: toolbox_kb
+managed_by: satk
+library: Utilities
+kb_folder: utilities
+category: uncategorized
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Uncategorized
-
-Use these blocks for uncategorized.
 
 ## Recommended Blocks
 

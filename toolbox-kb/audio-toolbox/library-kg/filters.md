@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Filters
-description: Filter banks and equalizer designs
-tags: [filter, eq design, octave, gammatone, shelving, parametric]
-status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: Filters
+description: Filter banks and equalizer designs (15 blocks)
+tags: [toolbox-kb, audio-toolbox, filter, eq design, octave, gammatone, shelving, parametric]
+status: draft
+sources:
+  - resource: matlab:audiofeatures
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: filters
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Filters
-
-Use these blocks for filters.
 
 ## Recommended Blocks
 

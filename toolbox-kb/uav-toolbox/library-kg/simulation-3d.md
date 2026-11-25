@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Simulation 3d
-description: Photorealistic 3D scene, cameras, and sensors
-tags: [simulation 3d, camera, lidar, ultrasonic, scene, video send]
-status: stable
-source: custom_library
-library_root: UAV Toolbox
-category_path: Simulation 3d
+description: "Photorealistic 3D scene, cameras, and sensors (10 blocks)"
+tags: [toolbox-kb, uav-toolbox, simulation 3d, camera, lidar, ultrasonic, scene, video send]
+status: draft
+sources:
+  - resource: matlab:uavsim3dlib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox
+kb_folder: uav-toolbox
+category: simulation-3d
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Simulation 3d
-
-Use these blocks for simulation 3d.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Transmission
-description: Transmission system models
-tags: [transmission, clutch, cvt, fixed gear, manual]
+description: Transmission system models (4 blocks)
+tags: [toolbox-kb, powertrain-blockset, transmission, clutch, cvt, fixed gear, manual]
 status: stable
-source: custom_library
-library_root: Powertrain Blockset
-category_path: Transmission
+sources:
+  - resource: matlab:autolibtrans
+source: toolbox_kb
+managed_by: satk
+library: Powertrain Blockset
+kb_folder: powertrain-blockset
+category: transmission
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Transmission
-
-Use these blocks for transmission.
 
 ## Recommended Blocks
 

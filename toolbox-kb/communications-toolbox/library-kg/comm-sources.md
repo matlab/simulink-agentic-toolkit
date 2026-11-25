@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Comm sources
-description: Random data and spreading-sequence generators
-tags: [comm sources, generator, bernoulli, poisson, barker, hadamard, ovsf, walsh, baseband file reader]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Comm sources
+description: Random data and spreading-sequence generators (24 blocks)
+tags: [toolbox-kb, communications-toolbox, comm sources, generator, bernoulli, poisson, barker, hadamard, ovsf, walsh, baseband file reader]
+status: draft
+sources:
+  - resource: matlab:commsource2
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: comm-sources
 block_count: 24
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Comm sources
-
-Use these blocks for comm sources.
 
 ## Recommended Blocks
 

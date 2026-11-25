@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Network couplers
-description: Split a physical network into partitions coupled through an element, for solver decoupling or real-time simulation
-tags: [network coupler, coupler]
-status: stable
-source: custom_library
-library_root: Utilities
-category_path: Network couplers
+description: "Split a physical network into partitions coupled through an element, for solver decoupling or real-time simulation (14 blocks)"
+tags: [toolbox-kb, utilities, network coupler, coupler]
+status: draft
+sources:
+  - resource: matlab:SimscapeNetworkCouplersLib
+source: toolbox_kb
+managed_by: satk
+library: Utilities
+kb_folder: utilities
+category: network-couplers
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Network couplers
-
-Use these blocks for network couplers.
 
 ## Recommended Blocks
 

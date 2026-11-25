@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Services actions
-description: ROS service calls and action client/server
-tags: [service, action, goal, cancel, monitor, call]
+description: ROS service calls and action client/server (7 blocks)
+tags: [toolbox-kb, ros-toolbox, service, action, goal, cancel, monitor, call]
 status: stable
-source: mathworks_toolbox
-library_root: ROS Toolbox
-category_path: Services actions
+sources:
+  - resource: matlab:robotlib
+source: toolbox_kb
+managed_by: satk
+library: ROS Toolbox
+kb_folder: ros-toolbox
+category: services-actions
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Services actions
-
-Use these blocks for services actions.
 
 ## Recommended Blocks
 

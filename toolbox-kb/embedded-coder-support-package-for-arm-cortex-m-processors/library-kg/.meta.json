@@ -1,15 +1,37 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.744558912,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for ARM Cortex-M Processors"
-  ],
-  "blockCount": 1,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_ARM_Cortex_M_Processors": {
-      "blockCount": 1
+  "pages": [
+    {
+      "id": "arm-cortex-m",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for ARM Cortex-M Processors",
+      "kbFolder": "embedded-coder-support-package-for-arm-cortex-m-processors",
+      "category": "arm-cortex-m",
+      "hash": "29cef2546b1427871cab7538710e6d6a5ee7bc938d43e741299ae4672c3b9200",
+      "fm": {
+        "title": "Arm cortex m",
+        "description": "Deployment blocks for ARM Cortex-M microcontrollers (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-arm-cortex-m-processors",
+          "arm",
+          "cortex-m",
+          "interrupt",
+          "microcontroller",
+          "isr"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hardware Interrupt",
+          "ref": "armcortexmlib/Hardware Interrupt",
+          "since": "R2023a+",
+          "intent": "Configure a hardware interrupt on an ARM Cortex-M processor — use to trigger ISR execution from peripheral events like timers, GPIO edges, or DMA completion"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:20",
+  "generatedAtDatenum": 740309.9953712963
 }

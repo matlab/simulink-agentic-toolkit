@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Adaptive tables
-description: Self-tuning lookup tables that adapt during simulation
-tags: [adaptive, lookup, table, calibration, tune]
+description: Self-tuning lookup tables that adapt during simulation (3 blocks)
+tags: [toolbox-kb, simulink-design-optimization, adaptive, lookup, table, calibration, tune]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Design Optimization
-category_path: Adaptive tables
+sources:
+  - resource: matlab:sdolib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Design Optimization
+kb_folder: simulink-design-optimization
+category: adaptive-tables
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Adaptive tables
-
-Use these blocks for adaptive tables.
 
 ## Recommended Blocks
 

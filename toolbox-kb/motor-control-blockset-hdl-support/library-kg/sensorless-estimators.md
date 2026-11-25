@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensorless estimators
-description: Sensorless flux/position estimation
-tags: [sensorless, flux observer]
+description: Sensorless flux/position estimation (1 blocks)
+tags: [toolbox-kb, motor-control-blockset-hdl-support, sensorless, flux observer]
 status: stable
-source: custom_library
-library_root: Motor Control Blockset HDL Support
-category_path: Sensorless estimators
+sources:
+  - resource: matlab:mcbhdllib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset HDL Support
+kb_folder: motor-control-blockset-hdl-support
+category: sensorless-estimators
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Sensorless estimators
-
-Use these blocks for sensorless estimators.
 
 ## Recommended Blocks
 

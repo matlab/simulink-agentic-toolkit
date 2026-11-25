@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Reporting
-description: Automated report generation from Simulink models
-tags: [report, document, generate, launch, rptlist]
+description: Automated report generation from Simulink models (2 blocks)
+tags: [toolbox-kb, report-generator, report, document, generate, launch, rptlist]
 status: stable
-source: mathworks_toolbox
-library_root: Report Generator
-category_path: Reporting
+sources:
+  - resource: matlab:rptgenlib
+source: toolbox_kb
+managed_by: satk
+library: Report Generator
+kb_folder: report-generator
+category: reporting
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Reporting
-
-Use these blocks for reporting.
 
 ## Recommended Blocks
 

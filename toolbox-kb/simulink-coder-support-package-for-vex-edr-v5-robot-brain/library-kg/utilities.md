@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Simulation and utility blocks
-tags: [scope, display, clock, switch, simulator, deadband, latch]
+description: Simulation and utility blocks (20 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-vex-edr-v5-robot-brain, scope, display, clock, switch, simulator, deadband, latch]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for VEX EDR V5 Robot Brain
-category_path: Utilities
+sources:
+  - resource: matlab:vexv5lib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for VEX EDR V5 Robot Brain
+kb_folder: simulink-coder-support-package-for-vex-edr-v5-robot-brain
+category: utilities
 block_count: 20
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: User interface
-description: Display, audio, and user input
-tags: [display, button, speaker, led, screen]
+description: "Display, audio, and user input (4 blocks)"
+tags: [toolbox-kb, simulink-support-package-for-lego-mindstorms-ev3-hardware, display, button, speaker, led, screen]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
-category_path: User interface
+sources:
+  - resource: matlab:legoev3lib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
+kb_folder: simulink-support-package-for-lego-mindstorms-ev3-hardware
+category: user-interface
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # User interface
-
-Use these blocks for user interface.
 
 ## Recommended Blocks
 

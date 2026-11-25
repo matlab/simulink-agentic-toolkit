@@ -1,15 +1,492 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74458964122,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller"
-  ],
-  "blockCount": 60,
-  "categoryCount": 5,
-  "libraryFingerprints": {
-    "Simulink_Coder_Support_Package_for_ARM_Cortex_based_VEX_Microcontroller": {
-      "blockCount": 60
+  "pages": [
+    {
+      "id": "actuators",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller",
+      "kbFolder": "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+      "category": "actuators",
+      "hash": "711b8a1d652c54c10c5d862f5557b3d66776c763d862651a384eca5223b6b9f7",
+      "fm": {
+        "title": "Actuators",
+        "description": "Motor and digital output blocks (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+          "motor",
+          "servo",
+          "digital output",
+          "actuator"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DC Motor",
+          "ref": "vexarmcortexlib/Actuators/DC Motor",
+          "since": "R2023a+",
+          "intent": "Drive a VEX DC motor — use for commanding motor speed on VEX Cortex motor ports"
+        },
+        {
+          "block": "Digital Output",
+          "ref": "vexarmcortexlib/Actuators/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set a digital I/O pin high or low — use for controlling LEDs, relays, or pneumatics on VEX Cortex"
+        },
+        {
+          "block": "Servo Motor",
+          "ref": "vexarmcortexlib/Actuators/Servo Motor",
+          "since": "R2023a+",
+          "intent": "Command a VEX servo position — use for controlling angular position of servo motors"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gamepad",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller",
+      "kbFolder": "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+      "category": "gamepad",
+      "hash": "8654452ad98b9e419e053686fec1abe17ae9c8ce81dbadc0d486340a676d50c0",
+      "fm": {
+        "title": "Gamepad",
+        "description": "Controller input blocks (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+          "gamepad",
+          "joystick",
+          "button",
+          "competition",
+          "accelerometer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Competition Switch",
+          "ref": "vexarmcortexlib/Gamepad/Competition Switch",
+          "since": "R2023a+",
+          "intent": "Read VEX competition field state — use for detecting autonomous vs driver-control mode"
+        },
+        {
+          "block": "Gamepad Accelerometer",
+          "ref": "vexarmcortexlib/Gamepad/Gamepad Accelerometer",
+          "since": "R2023a+",
+          "intent": "Read VEX gamepad accelerometer — use for tilt-based control input from the controller"
+        },
+        {
+          "block": "Gamepad Button",
+          "ref": "vexarmcortexlib/Gamepad/Gamepad Button",
+          "since": "R2023a+",
+          "intent": "Read VEX gamepad button state — use for detecting button presses on the VEX controller"
+        },
+        {
+          "block": "Gamepad Joystick",
+          "ref": "vexarmcortexlib/Gamepad/Gamepad Joystick",
+          "since": "R2023a+",
+          "intent": "Read VEX gamepad joystick axis — use for analog joystick input from the VEX controller"
+        },
+        {
+          "block": "LCD Button",
+          "ref": "vexarmcortexlib/LCD/LCD Button",
+          "since": "R2023a+",
+          "intent": "Read VEX LCD module button — use for user input via the LCD screen buttons"
+        },
+        {
+          "block": "LCD Screen",
+          "ref": "vexarmcortexlib/LCD/LCD Screen",
+          "since": "R2023a+",
+          "intent": "Write text to VEX LCD module — use for displaying status or debug info on the robot LCD"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "logic-math",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller",
+      "kbFolder": "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+      "category": "logic-math",
+      "hash": "a53c4c3fabb2b75d6760562e226fcdf2eb819b13d5bf1775bdb360582b2b0112",
+      "fm": {
+        "title": "Logic math",
+        "description": "Logic comparison and math operations (25 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+          "compare",
+          "logical",
+          "relational",
+          "math",
+          "gain",
+          "add"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Compare To Constant",
+          "ref": "vexarmcortexlib/Logical Operations Library/Compare To Constant",
+          "since": "R2023a+",
+          "intent": "Compare signal to a constant value — use for threshold-based decisions in robot logic"
+        },
+        {
+          "block": "Compare To Zero",
+          "ref": "vexarmcortexlib/Logical Operations Library/Compare To Zero",
+          "since": "R2023a+",
+          "intent": "Compare signal to zero — use for detecting zero-crossings or sign changes"
+        },
+        {
+          "block": "Logical Operator",
+          "ref": "vexarmcortexlib/Logical Operations Library/Logical Operator",
+          "since": "R2023a+",
+          "intent": "Perform AND/OR/NOT logic — use for combining boolean conditions in robot decision logic"
+        },
+        {
+          "block": "Logical Operator1",
+          "ref": "vexarmcortexlib/Logical Operations Library/Logical Operator1",
+          "since": "R2023a+",
+          "intent": "Additional logic gate — use for OR operations in robot decision logic"
+        },
+        {
+          "block": "Relational Operator",
+          "ref": "vexarmcortexlib/Logical Operations Library/Relational Operator",
+          "since": "R2023a+",
+          "intent": "Compare two signals with relational operators — use for condition checking between sensor values"
+        },
+        {
+          "block": "Abs",
+          "ref": "vexarmcortexlib/Math Library/Abs",
+          "since": "R2023a+",
+          "intent": "Compute absolute value — use for getting magnitude regardless of sign"
+        },
+        {
+          "block": "Add",
+          "ref": "vexarmcortexlib/Math Library/Add",
+          "since": "R2023a+",
+          "intent": "Add two or more signals — use for summing sensor inputs or control terms"
+        },
+        {
+          "block": "Bias",
+          "ref": "vexarmcortexlib/Math Library/Bias",
+          "since": "R2023a+",
+          "intent": "Add a constant offset to a signal — use for calibrating sensor zero points"
+        },
+        {
+          "block": "Divide",
+          "ref": "vexarmcortexlib/Math Library/Divide",
+          "since": "R2023a+",
+          "intent": "Divide two signals — use for ratio computation or normalization"
+        },
+        {
+          "block": "Gain",
+          "ref": "vexarmcortexlib/Math Library/Gain",
+          "since": "R2023a+",
+          "intent": "Multiply signal by a constant — use for scaling sensor readings or control outputs"
+        },
+        {
+          "block": "Math Function",
+          "ref": "vexarmcortexlib/Math Library/Math Function",
+          "since": "R2023a+",
+          "intent": "Apply mathematical function — use for exp, log, power, or modulus operations"
+        },
+        {
+          "block": "MinMax",
+          "ref": "vexarmcortexlib/Math Library/MinMax",
+          "since": "R2023a+",
+          "intent": "Find minimum or maximum of inputs — use for clamping or selecting extreme values"
+        },
+        {
+          "block": "MinMax Running Resettable",
+          "ref": "vexarmcortexlib/Math Library/MinMax Running Resettable",
+          "since": "R2023a+",
+          "intent": "Track running min/max with reset — use for peak detection over time windows"
+        },
+        {
+          "block": "Polynomial",
+          "ref": "vexarmcortexlib/Math Library/Polynomial",
+          "since": "R2023a+",
+          "intent": "Evaluate polynomial — use for nonlinear sensor calibration curves"
+        },
+        {
+          "block": "Product",
+          "ref": "vexarmcortexlib/Math Library/Product",
+          "since": "R2023a+",
+          "intent": "Multiply two or more signals — use for combining gains or computing power"
+        },
+        {
+          "block": "Reciprocal Sqrt",
+          "ref": "vexarmcortexlib/Math Library/Reciprocal Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute 1/sqrt of signal — use for normalization operations"
+        },
+        {
+          "block": "Rounding Function",
+          "ref": "vexarmcortexlib/Math Library/Rounding Function",
+          "since": "R2023a+",
+          "intent": "Round signal to nearest integer — use for converting to discrete values"
+        },
+        {
+          "block": "Sign",
+          "ref": "vexarmcortexlib/Math Library/Sign",
+          "since": "R2023a+",
+          "intent": "Extract sign of signal — use for direction detection in motor control"
+        },
+        {
+          "block": "Signed Sqrt",
+          "ref": "vexarmcortexlib/Math Library/Signed Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute signed square root — use for sign-preserving root operations"
+        },
+        {
+          "block": "Sine Wave Function",
+          "ref": "vexarmcortexlib/Math Library/Sine Wave Function",
+          "since": "R2023a+",
+          "intent": "Generate sine wave signal — use for periodic test stimuli"
+        },
+        {
+          "block": "Slider Gain",
+          "ref": "vexarmcortexlib/Math Library/Slider Gain",
+          "since": "R2023a+",
+          "intent": "Interactive gain adjustment — use for tuning control parameters during simulation"
+        },
+        {
+          "block": "Sqrt",
+          "ref": "vexarmcortexlib/Math Library/Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute square root — use for distance or magnitude calculations"
+        },
+        {
+          "block": "Subtract",
+          "ref": "vexarmcortexlib/Math Library/Subtract",
+          "since": "R2023a+",
+          "intent": "Subtract signals — use for computing error signals in control loops"
+        },
+        {
+          "block": "Trigonometric Function",
+          "ref": "vexarmcortexlib/Math Library/Trigonometric Function",
+          "since": "R2023a+",
+          "intent": "Compute trig functions — use for angle calculations in robot navigation"
+        },
+        {
+          "block": "Unary Minus",
+          "ref": "vexarmcortexlib/Math Library/Unary Minus",
+          "since": "R2023a+",
+          "intent": "Negate a signal — use for reversing motor direction or sign inversion"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller",
+      "kbFolder": "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+      "category": "sensors",
+      "hash": "dddea69960e673508107dda6fbe808a94dafb99e004bd8b77dd3634bb59b98cd",
+      "fm": {
+        "title": "Sensors",
+        "description": "Analog and digital sensor blocks (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+          "analog",
+          "encoder",
+          "gyroscope",
+          "ultrasonic",
+          "digital input"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog Input",
+          "ref": "vexarmcortexlib/Sensors/Analog Input",
+          "since": "R2023a+",
+          "intent": "Read analog sensor on VEX Cortex — use for reading potentiometers, line followers, or light sensors"
+        },
+        {
+          "block": "Digital Input",
+          "ref": "vexarmcortexlib/Sensors/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read digital sensor on VEX Cortex — use for reading limit switches or bumper sensors"
+        },
+        {
+          "block": "Gyroscope",
+          "ref": "vexarmcortexlib/Sensors/Gyroscope",
+          "since": "R2023a+",
+          "intent": "Read VEX gyroscope — use for measuring robot heading and turn rate"
+        },
+        {
+          "block": "Integrated Encoder Module",
+          "ref": "vexarmcortexlib/Sensors/Integrated Encoder Module",
+          "since": "R2023a+",
+          "intent": "Read VEX integrated motor encoder — use for measuring motor shaft rotation"
+        },
+        {
+          "block": "Optical Shaft Encoder",
+          "ref": "vexarmcortexlib/Sensors/Optical Shaft Encoder",
+          "since": "R2023a+",
+          "intent": "Read VEX optical shaft encoder — use for measuring wheel rotation and distance"
+        },
+        {
+          "block": "Ultrasonic Sensor",
+          "ref": "vexarmcortexlib/Sensors/Ultrasonic Sensor",
+          "since": "R2023a+",
+          "intent": "Read VEX ultrasonic distance sensor — use for detecting obstacles and measuring range"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller",
+      "kbFolder": "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+      "category": "utilities",
+      "hash": "520b25fc1bf85dc820521d575e92bb2a3c5b75cca1e01bef4ab15738fa3d3f4c",
+      "fm": {
+        "title": "Utilities",
+        "description": "Simulation and utility blocks (20 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller",
+          "scope",
+          "display",
+          "clock",
+          "switch",
+          "simulator",
+          "deadband"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MATLAB Function",
+          "ref": "vexarmcortexlib/Utilities/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Embed custom MATLAB code on VEX Cortex — use for implementing algorithms not available as blocks"
+        },
+        {
+          "block": "Stateflow",
+          "ref": "vexarmcortexlib/Utilities/Stateflow",
+          "since": "R2023a+",
+          "intent": "Embed state machine logic on VEX Cortex — use for implementing mode-switching and sequencing logic"
+        },
+        {
+          "block": "Variable Input",
+          "ref": "vexarmcortexlib/Utilities/Variable Input",
+          "since": "R2023a+",
+          "intent": "Slider-adjustable constant input — use for tuning parameters during VEX robot simulation"
+        },
+        {
+          "block": "Arcade Module",
+          "ref": "vexarmcortexlib/Utilities/Arcade Module",
+          "since": "R2023a+",
+          "intent": "Map joystick to arcade drive — use for converting single-stick input to differential motor commands"
+        },
+        {
+          "block": "Clock",
+          "ref": "vexarmcortexlib/Utilities/Clock",
+          "since": "R2023a+",
+          "intent": "Output simulation time — use for time-based sequencing in robot programs"
+        },
+        {
+          "block": "Constant",
+          "ref": "vexarmcortexlib/Utilities/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters like speed setpoints"
+        },
+        {
+          "block": "Data Type Conversion",
+          "ref": "vexarmcortexlib/Utilities/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert between data types — use for matching signal types between blocks"
+        },
+        {
+          "block": "Deadband",
+          "ref": "vexarmcortexlib/Utilities/Deadband",
+          "since": "R2023a+",
+          "intent": "Apply deadzone to signal — use for ignoring small joystick movements near center"
+        },
+        {
+          "block": "Display",
+          "ref": "vexarmcortexlib/Utilities/Display",
+          "since": "R2023a+",
+          "intent": "Show signal value during simulation — use for debugging robot algorithms"
+        },
+        {
+          "block": "Field Simulator",
+          "ref": "vexarmcortexlib/Utilities/Field Simulator",
+          "since": "R2023a+",
+          "intent": "Simulate VEX competition field — use for testing autonomous routines without hardware"
+        },
+        {
+          "block": "Gamepad Simulator",
+          "ref": "vexarmcortexlib/Utilities/Gamepad Simulator",
+          "since": "R2023a+",
+          "intent": "Simulate VEX gamepad inputs — use for testing driver-control code without a physical controller"
+        },
+        {
+          "block": "Gear Transmission",
+          "ref": "vexarmcortexlib/Utilities/Gear Transmission",
+          "since": "R2023a+",
+          "intent": "Model gear ratio effects — use for converting motor speed/torque through gear train"
+        },
+        {
+          "block": "Ground",
+          "ref": "vexarmcortexlib/Utilities/Ground",
+          "since": "R2023a+",
+          "intent": "Provide zero-value signal — use for grounding unused input ports"
+        },
+        {
+          "block": "Latch",
+          "ref": "vexarmcortexlib/Utilities/Latch",
+          "since": "R2023a+",
+          "intent": "Latch a signal value on trigger — use for capturing sensor readings at specific events"
+        },
+        {
+          "block": "Limit Switch Control ",
+          "ref": "vexarmcortexlib/Utilities/Limit Switch Control ",
+          "since": "R2023a+",
+          "intent": "Limit motor output based on switch state — use for preventing mechanism over-travel using limit switches"
+        },
+        {
+          "block": "Manual Switch",
+          "ref": "vexarmcortexlib/Utilities/Manual Switch",
+          "since": "R2023a+",
+          "intent": "Toggle between two inputs — use for switching between autonomous and manual modes in simulation"
+        },
+        {
+          "block": "Scope",
+          "ref": "vexarmcortexlib/Utilities/Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals over time — use for visualizing robot behavior during simulation"
+        },
+        {
+          "block": "Switch",
+          "ref": "vexarmcortexlib/Utilities/Switch",
+          "since": "R2023a+",
+          "intent": "Conditional signal selection — use for choosing between inputs based on a threshold condition"
+        },
+        {
+          "block": "Terminator",
+          "ref": "vexarmcortexlib/Utilities/Terminator",
+          "since": "R2023a+",
+          "intent": "Terminate unused output — use for cleanly handling unconnected block outputs"
+        },
+        {
+          "block": "Toggle",
+          "ref": "vexarmcortexlib/Utilities/Toggle",
+          "since": "R2023a+",
+          "intent": "Toggle constant between values — use for binary mode selection during simulation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:29",
+  "generatedAtDatenum": 740309.9954851967
 }

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Controllers
-description: Closed-loop current, speed, and voltage controllers plus autotuning and gain-selection helpers
-tags: [PI, FOC, controller, autotuner, gain, I-F, V/F]
+description: "Closed-loop current, speed, and voltage controllers plus autotuning and gain-selection helpers (8 blocks)"
+tags: [toolbox-kb, motor-control-blockset, PI, FOC, controller, autotuner, gain, I-F, V/F]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Controllers
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: controllers
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Controllers
-
-Use these blocks for controllers.
 
 ## Recommended Blocks
 

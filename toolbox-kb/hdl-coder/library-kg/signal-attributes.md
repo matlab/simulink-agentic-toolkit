@@ -1,25 +1,27 @@
 ---
 type: Simulink Block Category
 title: Signal attributes
-description: Data type, rate, and signal attribute handling
-tags: [data type, rate transition, signal, probe, conversion]
+description: "Data type, rate, and signal attribute handling (10 blocks)"
+tags: [toolbox-kb, hdl-coder, data type, rate transition, signal, probe, conversion]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Signal attributes
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: signal-attributes
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Signal attributes
-
-Use these blocks for signal attributes.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Data Type Conversion | hdlsllib/Commonly
-Used Blocks/Data Type Conversion | R2023a+ | Convert a signal to a specified data type — use to set integer/fixed-point type and scaling. |
+| Data Type Conversion | hdlsllib/Commonly Used Blocks/Data Type Conversion | R2023a+ | Convert a signal to a specified data type — use to set integer/fixed-point type and scaling. |
 | Data Type Conversion | hdlsllib/HDL Floating Point Operations/Data Type Conversion | R2023a+ | Convert a signal to a specified data type — use to set integer/fixed-point type and scaling. |
 | Bus to Vector | hdlsllib/Signal Attributes/Bus to Vector | R2023a+ | Convert a bus of scalars into a single vector — use when downstream blocks need a vector instead of a bus. |
 | Data Type Duplicate | hdlsllib/Signal Attributes/Data Type Duplicate | R2023a+ | Force connected signals to share the same data type — use to enforce type consistency. |

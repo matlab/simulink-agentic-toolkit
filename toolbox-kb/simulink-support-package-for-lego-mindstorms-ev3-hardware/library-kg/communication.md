@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Communication
-description: Network data exchange
-tags: [tcp, udp, i2c, network, wifi]
+description: Network data exchange (5 blocks)
+tags: [toolbox-kb, simulink-support-package-for-lego-mindstorms-ev3-hardware, tcp, udp, i2c, network, wifi]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
-category_path: Communication
+sources:
+  - resource: matlab:legoev3lib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
+kb_folder: simulink-support-package-for-lego-mindstorms-ev3-hardware
+category: communication
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Communication
-
-Use these blocks for communication.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Rf impairments
-description: RF impairment models and their correction
-tags: [rf impairments, agc, dpd, nonlinearity, phase noise, thermal noise, imbalance, offset, coarse frequency]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Rf impairments
+description: RF impairment models and their correction (13 blocks)
+tags: [toolbox-kb, communications-toolbox, rf impairments, agc, dpd, nonlinearity, phase noise, thermal noise, imbalance, offset, coarse frequency]
+status: draft
+sources:
+  - resource: matlab:commrfcorlib
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: rf-impairments
 block_count: 13
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Rf impairments
-
-Use these blocks for rf impairments.
 
 ## Recommended Blocks
 

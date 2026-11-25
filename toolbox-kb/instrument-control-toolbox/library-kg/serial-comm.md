@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Serial comm
-description: Serial port communication with instruments and devices
-tags: [serial, uart, rs232, baud, port]
+description: Serial port communication with instruments and devices (3 blocks)
+tags: [toolbox-kb, instrument-control-toolbox, serial, uart, rs232, baud, port]
 status: stable
-source: mathworks_toolbox
-library_root: Instrument Control Toolbox
-category_path: Serial comm
+sources:
+  - resource: matlab:instrumentlib
+source: toolbox_kb
+managed_by: satk
+library: Instrument Control Toolbox
+kb_folder: instrument-control-toolbox
+category: serial-comm
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Serial comm
-
-Use these blocks for serial comm.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Classic nn controllers
-description: Classic neural network controllers for adaptive and predictive control
-tags: [controller, narma, predictive, adaptive, model]
+description: Classic neural network controllers for adaptive and predictive control (3 blocks)
+tags: [toolbox-kb, deep-learning-toolbox, controller, narma, predictive, adaptive, model]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Classic nn controllers
+sources:
+  - resource: matlab:neural
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: classic-nn-controllers
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Classic nn controllers
-
-Use these blocks for classic nn controllers.
 
 ## Recommended Blocks
 

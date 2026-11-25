@@ -1,15 +1,110 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457353,
-  "generatorVersion": 4,
-  "libraries": [
-    "Offroad Autonomy Library"
-  ],
-  "blockCount": 16,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Offroad_Autonomy_Library": {
-      "blockCount": 16
+  "pages": [
+    {
+      "id": "mppi-controllers",
+      "kind": "toolbox",
+      "library": "Offroad Autonomy Library",
+      "kbFolder": "offroad-autonomy-library",
+      "category": "mppi-controllers",
+      "hash": "762eba174fef6c6f94a8362f7da9915f1215731f6cf8eeba0a1816d4ac022670",
+      "fm": {
+        "title": "Mppi controllers",
+        "description": "Model-predictive path integral controllers for various vehicle types (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "offroad-autonomy-library",
+          "mppi",
+          "controller",
+          "trajectory",
+          "path",
+          "sampling"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Ackermann MPPI Controller",
+          "ref": "offroadcontrollerlib/Ackermann MPPI Controller",
+          "since": "R2025a+",
+          "intent": "Model-predictive path integral controller for Ackermann-steered vehicles — use for sampling-based trajectory optimization in offroad navigation"
+        },
+        {
+          "block": "Articulated Steering MPPI Controller",
+          "ref": "offroadcontrollerlib/Articulated Steering MPPI Controller",
+          "since": "R2026a+",
+          "intent": "MPPI controller for articulated-steering vehicles — use for trajectory optimization of wheel loaders or articulated dump trucks"
+        },
+        {
+          "block": "Bicycle MPPI Controller",
+          "ref": "offroadcontrollerlib/Bicycle MPPI Controller",
+          "since": "R2025a+",
+          "intent": "MPPI controller using bicycle kinematic model — use for sampling-based trajectory optimization of car-like vehicles in offroad settings"
+        },
+        {
+          "block": "Differential Drive MPPI Controller",
+          "ref": "offroadcontrollerlib/Differential Drive MPPI Controller",
+          "since": "R2025a+",
+          "intent": "MPPI controller for differential-drive vehicles — use for sampling-based trajectory optimization of skid-steer or tracked robots"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "simulation-3d",
+      "kind": "toolbox",
+      "library": "Offroad Autonomy Library",
+      "kbFolder": "offroad-autonomy-library",
+      "category": "simulation-3d",
+      "hash": "04efba50470b3a46872958cc1864f3933c04bf01192a593a7dc1661a7c0468bb",
+      "fm": {
+        "title": "Simulation 3d",
+        "description": "3D visualization and virtual sensor simulation for offroad scenarios (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "offroad-autonomy-library",
+          "3d",
+          "simulation",
+          "scene",
+          "camera",
+          "lidar"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Physics Backhoe",
+          "ref": "offroadsim3dlib/Simulation 3D Physics Backhoe",
+          "since": "R2024b+",
+          "intent": "Spawn a physics-enabled 3D backhoe in the simulation scene — use for simulating excavation operations with realistic articulated arm dynamics"
+        },
+        {
+          "block": "Simulation 3D Physics Dump Truck",
+          "ref": "offroadsim3dlib/Simulation 3D Physics Dump Truck",
+          "since": "R2024b+",
+          "intent": "Spawn a physics-enabled 3D dump truck in the simulation scene — use for simulating loading and hauling operations with bed tilt dynamics"
+        },
+        {
+          "block": "Simulation 3D Camera",
+          "ref": "offroadsim3dlib/Simulation 3D Camera",
+          "since": "R2024b+",
+          "intent": "Attach a virtual camera sensor in the 3D simulation scene — use for generating synthetic camera images for perception algorithm development"
+        },
+        {
+          "block": "Simulation 3D Lidar",
+          "ref": "offroadsim3dlib/Simulation 3D Lidar",
+          "since": "R2024b+",
+          "intent": "Attach a virtual lidar sensor in the 3D simulation scene — use for generating synthetic point clouds for offroad perception testing"
+        },
+        {
+          "block": "Simulation 3D Scene Configuration",
+          "ref": "offroadsim3dlib/Simulation 3D Scene Configuration",
+          "since": "R2024b+",
+          "intent": "Configure the 3D simulation environment and scene — use for selecting terrain, weather, and lighting conditions for offroad simulation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:25",
+  "generatedAtDatenum": 740309.99542902783
 }

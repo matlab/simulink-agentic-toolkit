@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal routing
-description: Buses, mux/demux, switches, and data stores
-tags: [signal routing, bus, mux, demux, goto, from, switch, merge, selector, data store]
+description: "Buses, mux/demux, switches, and data stores (15 blocks)"
+tags: [toolbox-kb, do-178c-do-331-primitive-library, signal routing, bus, mux, demux, goto, from, switch, merge, selector, data store]
 status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Signal routing
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: signal-routing
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Signal routing
-
-Use these blocks for signal routing.
 
 ## Recommended Blocks
 

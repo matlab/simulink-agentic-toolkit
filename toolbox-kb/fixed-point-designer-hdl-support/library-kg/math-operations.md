@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Math operations
-description: HDL-optimized scalar math functions
-tags: [exp, log, sqrt, divide, cordic, sigmoid, tanh, power, reciprocal, modulo]
+description: HDL-optimized scalar math functions (10 blocks)
+tags: [toolbox-kb, fixed-point-designer-hdl-support, exp, log, sqrt, divide, cordic, sigmoid, tanh, power, reciprocal, modulo]
 status: stable
-source: mathworks_toolbox
-library_root: Fixed-Point Designer HDL Support
-category_path: Math operations
+sources:
+  - resource: matlab:embeddedMatrixLib
+source: toolbox_kb
+managed_by: satk
+library: Fixed-Point Designer HDL Support
+kb_folder: fixed-point-designer-hdl-support
+category: math-operations
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Math operations
-
-Use these blocks for math operations.
 
 ## Recommended Blocks
 

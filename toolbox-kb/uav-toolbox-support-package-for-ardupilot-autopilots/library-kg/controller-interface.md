@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Controller interface
-description: Read vehicle state and issue setpoints when authoring custom ArduPilot controllers
-tags: [controller interface, setpoint, current, attitude, velocity, position]
-status: stable
-source: custom_library
-library_root: UAV Toolbox Support Package for ArduPilot Autopilots
-category_path: Controller interface
+description: Read vehicle state and issue setpoints when authoring custom ArduPilot controllers (10 blocks)
+tags: [toolbox-kb, uav-toolbox-support-package-for-ardupilot-autopilots, controller interface, setpoint, current, attitude, velocity, position]
+status: draft
+sources:
+  - resource: matlab:ardupilotControllerInterfacelib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox Support Package for ArduPilot Autopilots
+kb_folder: uav-toolbox-support-package-for-ardupilot-autopilots
+category: controller-interface
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Controller interface
-
-Use these blocks for controller interface.
 
 ## Recommended Blocks
 

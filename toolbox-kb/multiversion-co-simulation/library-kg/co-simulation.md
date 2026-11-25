@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Co simulation
-description: Cross-version model co-simulation
-tags: [multiversion, cosimulation, reference, version, compatibility]
+description: Cross-version model co-simulation (1 blocks)
+tags: [toolbox-kb, multiversion-co-simulation, multiversion, cosimulation, reference, version, compatibility]
 status: stable
-source: mathworks_toolbox
-library_root: Multiversion Co-simulation
-category_path: Co simulation
+sources:
+  - resource: matlab:MultiversionCoSim
+source: toolbox_kb
+managed_by: satk
+library: Multiversion Co-simulation
+kb_folder: multiversion-co-simulation
+category: co-simulation
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Co simulation
-
-Use these blocks for co simulation.
 
 ## Recommended Blocks
 

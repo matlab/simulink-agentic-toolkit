@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Magnetic
-description: Magnetic-domain elements, sources, and sensors
-tags: [magnetic]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Magnetic
+description: "Magnetic-domain elements, sources, and sensors (12 blocks)"
+tags: [toolbox-kb, simscape, magnetic]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: magnetic
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Magnetic
-
-Use these blocks for magnetic.
 
 ## Recommended Blocks
 

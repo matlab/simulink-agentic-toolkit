@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Documentation and model-wide utilities
-tags: [docblock, model info, utility, annotation]
+description: Documentation and model-wide utilities (2 blocks)
+tags: [toolbox-kb, hdl-coder, docblock, model info, utility, annotation]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Utilities
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: utilities
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

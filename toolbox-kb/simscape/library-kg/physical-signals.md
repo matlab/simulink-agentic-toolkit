@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Physical signals
-description: Physical-signal math, sources, sensors, and utilities that operate on Simscape PS signals
-tags: [physical signals]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Physical signals
+description: "Physical-signal math, sources, sensors, and utilities that operate on Simscape PS signals (50 blocks)"
+tags: [toolbox-kb, simscape, physical signals]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: physical-signals
 block_count: 50
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Physical signals
-
-Use these blocks for physical signals.
 
 ## Recommended Blocks
 

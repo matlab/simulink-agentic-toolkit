@@ -1,15 +1,1600 @@
 {
-  "generatedAt": "2026-08-21T12:37:12",
-  "generatedAtDatenum": 740215.52583443292,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simscape Fluids"
-  ],
-  "blockCount": 224,
-  "categoryCount": 10,
-  "libraryFingerprints": {
-    "Simscape_Fluids": {
-      "blockCount": 224
+  "pages": [
+    {
+      "id": "actuators",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "actuators",
+      "hash": "0556be21fc502f277cf6cab8dd2d1129d954e4bd74f5a80287d8fd57c7ffcf45",
+      "fm": {
+        "title": "Actuators",
+        "description": "Linear and rotary fluid-power cylinders and their auxiliary components for converting pressure to mechanical force (24 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "cylinder",
+          "piston",
+          "actuator",
+          "force",
+          "stroke"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Air Muscle Actuator (G)",
+          "ref": "SimscapeFluids_lib/Gas/Actuators/Air Muscle Actuator (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a pneumatic artificial muscle that contracts when pressurized, for soft robotics or compliant actuation"
+        },
+        {
+          "block": "Double-Acting Actuator (G)",
+          "ref": "SimscapeFluids_lib/Gas/Actuators/Double-Acting Actuator (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a pneumatic cylinder driven by gas pressure on both sides of the piston for bidirectional force generation"
+        },
+        {
+          "block": "Single-Acting Actuator (G)",
+          "ref": "SimscapeFluids_lib/Gas/Actuators/Single-Acting Actuator (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a pneumatic cylinder with gas pressure on one side and spring return for simple extend-retract motion"
+        },
+        {
+          "block": "Double-Acting Actuator (G-IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Actuator (G-IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic cylinder with gas on one side and isothermal liquid on the other for mixed-domain actuation"
+        },
+        {
+          "block": "Double-Acting Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a double-acting hydraulic cylinder driven by isothermal liquid pressure on both piston sides"
+        },
+        {
+          "block": "Double-Acting Actuator (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Actuator (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a double-acting hydraulic cylinder in a position-based isothermal liquid network"
+        },
+        {
+          "block": "Double-Acting Rotary Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Double-Acting Rotary Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic rotary actuator that converts fluid pressure to bidirectional shaft torque"
+        },
+        {
+          "block": "Rotating Single-Acting Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Rotating Single-Acting Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a single-acting hydraulic actuator mounted on a rotating structure with centrifugal effects"
+        },
+        {
+          "block": "Single-Acting Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Single-Acting Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a single-acting hydraulic cylinder with spring or gravity return in isothermal liquid systems"
+        },
+        {
+          "block": "Single-Acting Actuator (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Single-Acting Actuator (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a single-acting hydraulic cylinder in a position-based isothermal liquid network"
+        },
+        {
+          "block": "Single-Acting Rotary Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Single-Acting Rotary Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a single-acting hydraulic rotary actuator with spring return for limited angular motion"
+        },
+        {
+          "block": "Cylinder Cushion (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Cushion (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model end-of-stroke cushioning in a hydraulic cylinder that decelerates the piston before impact"
+        },
+        {
+          "block": "Cylinder Cushion (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Cushion (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model end-of-stroke cushioning in a position-based hydraulic cylinder network"
+        },
+        {
+          "block": "Cylinder Friction (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Friction (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model seal and piston friction in a hydraulic cylinder for accurate force and efficiency calculations"
+        },
+        {
+          "block": "Cylinder Friction (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Cylinder Friction (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model seal friction in a position-based hydraulic cylinder for efficiency analysis"
+        },
+        {
+          "block": "Rotating Channel (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Rotating Channel (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a fluid passage in a rotating body where centrifugal effects influence the pressure distribution"
+        },
+        {
+          "block": "Rotating Cylinder Force (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Actuators/Auxiliary Components/Rotating Cylinder Force (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model the centrifugal force on fluid in a rotating hydraulic cylinder for rotating machinery applications"
+        },
+        {
+          "block": "Double-Acting Actuator (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Actuators/Double-Acting Actuator (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a double-acting pneumatic cylinder operating in a moist air network with humidity tracking"
+        },
+        {
+          "block": "Single-Acting Actuator (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Actuators/Single-Acting Actuator (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a single-acting pneumatic cylinder in a moist air system with spring return"
+        },
+        {
+          "block": "Double-Acting Actuator (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Actuators/Double-Acting Actuator (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a double-acting hydraulic cylinder in a thermal liquid network with temperature-dependent fluid properties"
+        },
+        {
+          "block": "Double-Acting Actuator (TL-G)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Actuators/Double-Acting Actuator (TL-G)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic cylinder with thermal liquid on one side and gas on the other for mixed-domain actuation with thermal effects"
+        },
+        {
+          "block": "Single-Acting Actuator (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Actuators/Single-Acting Actuator (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a single-acting hydraulic cylinder in a thermal liquid system with temperature tracking"
+        },
+        {
+          "block": "Cylinder Cushion (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Actuators/Auxiliary Components/Cylinder Cushion (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model end-of-stroke cushioning in a thermal liquid hydraulic cylinder for deceleration control"
+        },
+        {
+          "block": "Cylinder Friction (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Actuators/Auxiliary Components/Cylinder Friction (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model seal and piston friction in a thermal liquid hydraulic cylinder including thermal dissipation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "heat-exchangers",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "heat-exchangers",
+      "hash": "ae680fa9fafc6ecad38e1582360f152f38553ad0f3e59d9ceae1b327289eb09a",
+      "fm": {
+        "title": "Heat exchangers",
+        "description": "Devices that transfer thermal energy between fluid streams or between a fluid and a thermal boundary (32 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "heat exchanger",
+          "condenser",
+          "evaporator",
+          "cooling",
+          "NTU"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "E-NTU Heat Transfer",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/E-NTU Heat Transfer",
+          "since": "R2023a+",
+          "intent": "Use to compute heat transfer between two fluid streams using the effectiveness-NTU method for any heat exchanger geometry"
+        },
+        {
+          "block": "Heat Exchanger Interface (G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Heat Exchanger Interface (G)",
+          "since": "R2023a+",
+          "intent": "Use as a building block to connect a gas stream to a custom heat exchanger model with E-NTU or specific dissipation"
+        },
+        {
+          "block": "Heat Exchanger Interface (TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Heat Exchanger Interface (TL)",
+          "since": "R2023a+",
+          "intent": "Use as a building block to connect a thermal liquid stream to a custom heat exchanger model"
+        },
+        {
+          "block": "Specific Dissipation Heat Exchanger Interface (G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Specific Dissipation Heat Exchanger Interface (G)",
+          "since": "R2023a+",
+          "intent": "Use as a building block for gas-side heat exchange with a known specific dissipation characteristic"
+        },
+        {
+          "block": "Specific Dissipation Heat Exchanger Interface (TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Specific Dissipation Heat Exchanger Interface (TL)",
+          "since": "R2023a+",
+          "intent": "Use as a building block for thermal-liquid-side heat exchange with a known specific dissipation characteristic"
+        },
+        {
+          "block": "Specific Dissipation Heat Transfer",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Fundamental Components/Specific Dissipation Heat Transfer",
+          "since": "R2023a+",
+          "intent": "Use to model heat transfer with a parameterized specific dissipation rate for simplified exchanger characterization"
+        },
+        {
+          "block": "Heat Exchanger (G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Gas/Heat Exchanger (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a gas-to-wall heat exchanger for single-stream gas cooling or heating against a thermal boundary"
+        },
+        {
+          "block": "Heat Exchanger (G-G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Gas/Heat Exchanger (G-G)",
+          "since": "R2023a+",
+          "intent": "Use to model heat transfer between two gas streams in a counterflow, crossflow, or parallel-flow arrangement"
+        },
+        {
+          "block": "Specific Dissipation Heat Exchanger (G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Gas/Specific Dissipation Heat Exchanger (G)",
+          "since": "R2023a+",
+          "intent": "Use to model gas-to-wall heat exchange parameterized by a specific dissipation curve for simplified analysis"
+        },
+        {
+          "block": "Specific Dissipation Heat Exchanger (G-G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Gas/Specific Dissipation Heat Exchanger (G-G)",
+          "since": "R2023a+",
+          "intent": "Use to model gas-to-gas heat exchange with specific dissipation parameterization for rapid system-level studies"
+        },
+        {
+          "block": "System-Level Heat Exchanger (G-G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Gas/System-Level Heat Exchanger (G-G)",
+          "since": "R2023a+",
+          "intent": "Use to model gas-to-gas heat exchange at the system level with lumped effectiveness for fast simulation"
+        },
+        {
+          "block": "System-Level Heat Exchanger (MA-MA)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Moist Air/System-Level Heat Exchanger (MA-MA)",
+          "since": "R2023a+",
+          "intent": "Use to model moist-air-to-moist-air heat exchange at the system level for HVAC energy recovery modeling"
+        },
+        {
+          "block": "Heat Exchanger (TL-TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Heat Exchanger (TL-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model heat transfer between two thermal liquid streams such as oil-to-coolant or water-to-glycol loops"
+        },
+        {
+          "block": "Heat Exchanger (TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Heat Exchanger (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model thermal liquid heat exchange against a wall or thermal boundary for single-stream heating or cooling"
+        },
+        {
+          "block": "Plate Heat Exchanger (TL-TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Plate Heat Exchanger (TL-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a plate-type heat exchanger between two thermal liquid streams with corrugated plate geometry"
+        },
+        {
+          "block": "Specific Dissipation Heat Exchanger (TL-TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Specific Dissipation Heat Exchanger (TL-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model thermal-liquid-to-thermal-liquid heat exchange with specific dissipation parameterization"
+        },
+        {
+          "block": "Specific Dissipation Heat Exchanger (TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/Specific Dissipation Heat Exchanger (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model thermal liquid heat exchange against a boundary using specific dissipation data"
+        },
+        {
+          "block": "System-Level Heat Exchanger (TL-TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid/System-Level Heat Exchanger (TL-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model thermal-liquid-to-thermal-liquid heat exchange at system level with lumped effectiveness"
+        },
+        {
+          "block": "Heat Exchanger (G-TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Gas/Heat Exchanger (G-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model heat transfer between a gas stream and a thermal liquid stream such as a charge air cooler"
+        },
+        {
+          "block": "Specific Dissipation Heat Exchanger (G-TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Gas/Specific Dissipation Heat Exchanger (G-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model gas-to-thermal-liquid heat exchange with specific dissipation parameterization"
+        },
+        {
+          "block": "System-Level Heat Exchanger (TL-G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Gas/System-Level Heat Exchanger (TL-G)",
+          "since": "R2023a+",
+          "intent": "Use to model thermal-liquid-to-gas heat exchange at the system level such as a vehicle radiator"
+        },
+        {
+          "block": "Cooling Tower (TL-MA)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Moist Air/Cooling Tower (TL-MA)",
+          "since": "R2023a+",
+          "intent": "Use to model an evaporative cooling tower that rejects heat from thermal liquid to moist air via evaporation"
+        },
+        {
+          "block": "Heat Exchanger (TL-MA)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Moist Air/Heat Exchanger (TL-MA)",
+          "since": "R2023a+",
+          "intent": "Use to model heat transfer between a thermal liquid loop and moist air such as a fan coil unit"
+        },
+        {
+          "block": "System-Level Heat Exchanger (TL-MA)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Thermal Liquid - Moist Air/System-Level Heat Exchanger (TL-MA)",
+          "since": "R2023a+",
+          "intent": "Use to model thermal-liquid-to-moist-air heat exchange at the system level for building HVAC models"
+        },
+        {
+          "block": "System-Level Heat Exchanger (2P-2P)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid/System-Level Heat Exchanger (2P-2P)",
+          "since": "R2023a+",
+          "intent": "Use to model two-phase-to-two-phase heat exchange at the system level for cascade refrigeration cycles"
+        },
+        {
+          "block": "Condenser Evaporator (2P-G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Gas/Condenser Evaporator (2P-G)",
+          "since": "R2023a+",
+          "intent": "Use to model a condenser or evaporator exchanging heat between a two-phase refrigerant and a gas stream"
+        },
+        {
+          "block": "System-Level Condenser Evaporator (2P-G)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Gas/System-Level Condenser Evaporator (2P-G)",
+          "since": "R2023a+",
+          "intent": "Use to model a system-level condenser or evaporator between two-phase fluid and gas for rapid cycle analysis"
+        },
+        {
+          "block": "Condenser Evaporator (2P-MA)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Moist Air/Condenser Evaporator (2P-MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a condenser or evaporator exchanging heat between a two-phase refrigerant and moist air"
+        },
+        {
+          "block": "System-Level Condenser Evaporator (2P-MA)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Moist Air/System-Level Condenser Evaporator (2P-MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a system-level condenser or evaporator between two-phase fluid and moist air for HVAC systems"
+        },
+        {
+          "block": "Condenser Evaporator (TL-2P)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Thermal Liquid/Condenser Evaporator (TL-2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a condenser or evaporator exchanging heat between thermal liquid and a two-phase refrigerant"
+        },
+        {
+          "block": "Plate Condenser Evaporator (TL-2P)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Thermal Liquid/Plate Condenser Evaporator (TL-2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a plate-type condenser or evaporator between thermal liquid and two-phase refrigerant"
+        },
+        {
+          "block": "System-Level Condenser Evaporator (2P-TL)",
+          "ref": "SimscapeFluids_lib/Heat Exchangers/Two-Phase Fluid - Thermal Liquid/System-Level Condenser Evaporator (2P-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a system-level condenser or evaporator between two-phase fluid and thermal liquid"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "hydromechanical-valves",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "hydromechanical-valves",
+      "hash": "4899999d9f4a3e0ab790917ebad0bb01e8cbdc16bda8c6018eff9706870a4fc2",
+      "fm": {
+        "title": "Hydromechanical valves",
+        "description": "Primitive building blocks for constructing custom spool and poppet valve geometries from first principles (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "spool",
+          "land",
+          "poppet",
+          "bore",
+          "hydromechanical"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hydromechanical Valve Interface (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Hydromechanical Valve Interface (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to define the boundary between a hydromechanical valve model and the external isothermal liquid circuit"
+        },
+        {
+          "block": "Poppet with Seat at B (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Poppet with Seat at B (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a poppet element seated at the back end of a hydromechanical valve bore for custom valve design"
+        },
+        {
+          "block": "Poppet with Seat at F (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Poppet with Seat at F (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a poppet element seated at the front end of a hydromechanical valve bore for custom valve design"
+        },
+        {
+          "block": "Valve Piston (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Piston (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model the moving piston element inside a custom hydromechanical valve assembly"
+        },
+        {
+          "block": "Valve Port with Land (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Port with Land (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve port with spool land coverage for building custom spool valve geometries"
+        },
+        {
+          "block": "Valve Port with Land Edge at B (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Port with Land Edge at B (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve port with the land edge at the back for asymmetric spool valve construction"
+        },
+        {
+          "block": "Valve Port with Land Edge at F (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Port with Land Edge at F (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve port with the land edge at the front for asymmetric spool valve construction"
+        },
+        {
+          "block": "Valve Section with Detached Shaft (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with Detached Shaft (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve bore section where the spool shaft is disconnected for multi-stage valve assemblies"
+        },
+        {
+          "block": "Valve Section with End Cap at B (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with End Cap at B (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve bore section capped at the back end to terminate a hydromechanical valve assembly"
+        },
+        {
+          "block": "Valve Section with End Cap at F (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with End Cap at F (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve bore section capped at the front end to terminate a hydromechanical valve assembly"
+        },
+        {
+          "block": "Valve Section with Rigid Shaft (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with Rigid Shaft (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve bore section with a rigid spool shaft connecting adjacent lands in a custom valve"
+        },
+        {
+          "block": "Valve Section with Valve Port (IL-PB)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Hydromechanical Valves/Valve Section with Valve Port (IL-PB)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve bore section containing a port opening for custom hydromechanical valve topology"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "orifices-restrictions",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "orifices-restrictions",
+      "hash": "f3dd09716da62d23a5e0fa090f6616248ccad672d99663ff7a739d3d56fd1345",
+      "fm": {
+        "title": "Orifices restrictions",
+        "description": "Fixed and variable orifices, leakage paths, and local resistances that restrict fluid flow (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "orifice",
+          "restriction",
+          "leakage",
+          "metering",
+          "loss"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Orifice (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Orifice (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a fixed flow restriction in a gas line for pressure drop or flow metering applications"
+        },
+        {
+          "block": "Local Resistance (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Local Resistance (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a generic localized pressure drop in an isothermal liquid line using a loss coefficient"
+        },
+        {
+          "block": "Annular Leakage (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Annular Leakage (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model leakage flow through an annular gap such as between a piston and cylinder bore"
+        },
+        {
+          "block": "Orifice (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Orifice (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a fixed flow restriction in an isothermal liquid line for metering or pressure drop control"
+        },
+        {
+          "block": "Spool Orifice (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Spool Orifice (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a variable orifice formed by spool displacement for directional valve metering characterization"
+        },
+        {
+          "block": "Variable Overlapping Orifice (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Orifices/Variable Overlapping Orifice (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model an orifice with overlapping spool geometry that transitions between under-lap and over-lap regions"
+        },
+        {
+          "block": "Local Resistance (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Local Resistance (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a generic localized pressure drop in a moist air duct using a loss coefficient"
+        },
+        {
+          "block": "Orifice (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Orifice (MA)",
+          "since": "R2025a+",
+          "intent": "Use to model a fixed flow restriction in a moist air duct for pressure drop or flow metering"
+        },
+        {
+          "block": "Local Resistance (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Local Resistance (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a localized pressure drop in a thermal liquid line using a loss coefficient with thermal effects"
+        },
+        {
+          "block": "Orifice (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Orifice (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a fixed flow restriction in a thermal liquid line with viscous heating effects"
+        },
+        {
+          "block": "Orifice (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Orifice (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a fixed flow restriction in a two-phase fluid line for expansion or metering purposes"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pipes-fittings",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "pipes-fittings",
+      "hash": "f89612b46f055569480a02269f1f08f7cb8fd87b06d05b57c5b4e23ac44957bd",
+      "fm": {
+        "title": "Pipes fittings",
+        "description": "Pipe segments, bends, junctions, and fittings that convey fluid between components (24 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "pipe",
+          "elbow",
+          "junction",
+          "fitting",
+          "duct"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Elbow (G)",
+          "ref": "SimscapeFluids_lib/Gas/Pipes & Fittings/Elbow (G)",
+          "since": "R2023a+",
+          "intent": "Use to model pressure loss in a gas pipe elbow fitting where the flow changes direction at a sharp angle"
+        },
+        {
+          "block": "Pipe Bend (G)",
+          "ref": "SimscapeFluids_lib/Gas/Pipes & Fittings/Pipe Bend (G)",
+          "since": "R2023a+",
+          "intent": "Use to model pressure loss in a smooth gas pipe bend with a defined radius of curvature"
+        },
+        {
+          "block": "Area Change (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Area Change (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a sudden or gradual cross-section change in an isothermal liquid pipe causing pressure loss"
+        },
+        {
+          "block": "Cross-Junction (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Cross-Junction (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a four-way pipe junction in an isothermal liquid network with mixing and splitting flow"
+        },
+        {
+          "block": "Elbow (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Elbow (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model pressure loss at a pipe elbow in an isothermal liquid line"
+        },
+        {
+          "block": "Partially Filled Pipe (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Partially Filled Pipe (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model an isothermal liquid pipe that may not be completely filled, accounting for gravity-driven flow"
+        },
+        {
+          "block": "Pipe (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Pipe (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a straight segment of isothermal liquid pipe with distributed friction and fluid inertia"
+        },
+        {
+          "block": "Pipe Bend (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Pipe Bend (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a smooth pipe bend in an isothermal liquid line with curvature-dependent pressure loss"
+        },
+        {
+          "block": "T-Junction (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/T-Junction (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a three-way T-junction in an isothermal liquid pipe network for flow splitting or merging"
+        },
+        {
+          "block": "Y-Junction (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pipes & Fittings/Y-Junction (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a Y-shaped pipe junction in an isothermal liquid network with angled branch connections"
+        },
+        {
+          "block": "Cross-Junction (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Cross-Junction (MA)",
+          "since": "R2024b+",
+          "intent": "Use to model a four-way duct junction in a moist air network for splitting or merging airflows"
+        },
+        {
+          "block": "Elbow (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Elbow (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model pressure loss at a duct elbow in a moist air system where flow changes direction"
+        },
+        {
+          "block": "Pipe Bend (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Pipe Bend (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model pressure loss in a smooth moist air duct bend with defined curvature radius"
+        },
+        {
+          "block": "T-Junction (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/T-Junction (MA)",
+          "since": "R2024b+",
+          "intent": "Use to model a T-junction in a moist air duct network for airflow splitting or merging"
+        },
+        {
+          "block": "Y-Junction (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Pipes & Fittings/Y-Junction (MA)",
+          "since": "R2024b+",
+          "intent": "Use to model a Y-junction in a moist air duct network with angled branch connections"
+        },
+        {
+          "block": "Area Change (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Area Change (TL)",
+          "since": "R2026a+",
+          "intent": "Use to model a cross-section change in a thermal liquid pipe causing pressure loss with thermal effects"
+        },
+        {
+          "block": "Cross-Junction (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Cross-Junction (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a four-way pipe junction in a thermal liquid network with mixing and splitting"
+        },
+        {
+          "block": "Elbow (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Elbow (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model pressure loss at a pipe elbow in a thermal liquid line with heat exchange to surroundings"
+        },
+        {
+          "block": "Partially Filled Pipe (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Partially Filled Pipe (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a thermal liquid pipe that may not be fully filled, for gravity-driven or open-channel scenarios"
+        },
+        {
+          "block": "Pipe (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Pipe (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a straight thermal liquid pipe segment with friction, inertia, and wall heat transfer"
+        },
+        {
+          "block": "Pipe Bend (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Pipe Bend (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a smooth pipe bend in a thermal liquid line with curvature and thermal loss effects"
+        },
+        {
+          "block": "T-Junction (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/T-Junction (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a T-junction in a thermal liquid pipe network for flow splitting or merging with mixing"
+        },
+        {
+          "block": "Y-Junction (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pipes & Fittings/Y-Junction (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a Y-junction in a thermal liquid pipe network with angled branches and thermal mixing"
+        },
+        {
+          "block": "3-Zone Pipe (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Pipes & Fittings/3-Zone Pipe (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a two-phase fluid pipe with subcooled, two-phase, and superheated zones for condenser and evaporator tubes"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pumps-compressors",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "pumps-compressors",
+      "hash": "51453aa300738e6d8ca6793cd87418cf3f3b2ba5f878a96ba755e18cc40bf0d2",
+      "fm": {
+        "title": "Pumps compressors",
+        "description": "Pumps, motors, compressors, fans, turbines, and ejectors that add or extract energy from a fluid stream (31 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "pump",
+          "compressor",
+          "turbine",
+          "fan",
+          "motor"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Compressor (G)",
+          "ref": "SimscapeFluids_lib/Gas/Turbomachinery/Compressor (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a gas compressor with performance maps for pressure ratio and efficiency as functions of speed and flow"
+        },
+        {
+          "block": "Ejector (G)",
+          "ref": "SimscapeFluids_lib/Gas/Turbomachinery/Ejector (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a gas ejector that uses a high-pressure motive stream to entrain and compress a low-pressure suction stream"
+        },
+        {
+          "block": "Fan (G)",
+          "ref": "SimscapeFluids_lib/Gas/Turbomachinery/Fan (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a fan that moves gas at low pressure ratios, typically for ventilation or cooling airflow"
+        },
+        {
+          "block": "Positive-Displacement Compressor (G)",
+          "ref": "SimscapeFluids_lib/Gas/Turbomachinery/Positive-Displacement Compressor (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a volumetric gas compressor with fixed displacement per revolution for pneumatic supply systems"
+        },
+        {
+          "block": "Turbine (G)",
+          "ref": "SimscapeFluids_lib/Gas/Turbomachinery/Turbine (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a gas turbine that extracts mechanical power from expanding gas flow using performance characteristics"
+        },
+        {
+          "block": "Centrifugal Pump (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Centrifugal Pump (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a centrifugal pump providing pressure rise in an isothermal liquid system based on head-flow curves"
+        },
+        {
+          "block": "Fixed-Displacement Motor (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Fixed-Displacement Motor (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic motor with fixed displacement converting fluid power to shaft torque and speed"
+        },
+        {
+          "block": "Fixed-Displacement Pump (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Fixed-Displacement Pump (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a positive-displacement hydraulic pump with fixed volumetric output per revolution"
+        },
+        {
+          "block": "Jet Pump (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Jet Pump (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a jet pump that uses a high-velocity isothermal liquid jet to entrain and boost a secondary stream"
+        },
+        {
+          "block": "Pressure-Compensated Pump (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Pressure-Compensated Pump (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a pump that automatically adjusts displacement to maintain a target outlet pressure"
+        },
+        {
+          "block": "Variable-Displacement Motor (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Variable-Displacement Motor (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic motor with adjustable displacement for variable-speed drive applications"
+        },
+        {
+          "block": "Variable-Displacement Pump (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Variable-Displacement Pump (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic pump with adjustable displacement for load-sensing or power-limiting control"
+        },
+        {
+          "block": "Swash Plate",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Auxiliary Components/Swash Plate",
+          "since": "R2023a+",
+          "intent": "Use to model the swash plate mechanism that converts displacement command to pump or motor stroke angle"
+        },
+        {
+          "block": "Valve Plate Orifice (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Pumps & Motors/Auxiliary Components/Valve Plate Orifice (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model the port timing orifice in a piston pump valve plate for detailed pump dynamics"
+        },
+        {
+          "block": "Compressor (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Turbomachinery/Compressor (MA)",
+          "since": "R2024a+",
+          "intent": "Use to model a moist air compressor with performance maps accounting for humidity effects on compression"
+        },
+        {
+          "block": "Ejector (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Turbomachinery/Ejector (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a moist air ejector that entrains low-pressure air using a high-pressure motive stream"
+        },
+        {
+          "block": "Fan (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Turbomachinery/Fan (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a fan moving moist air at low pressure rise for HVAC ventilation or process air handling"
+        },
+        {
+          "block": "Positive-Displacement Compressor (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Turbomachinery/Positive-Displacement Compressor (MA)",
+          "since": "R2023a+",
+          "intent": "Use to model a volumetric compressor handling moist air with fixed displacement per revolution"
+        },
+        {
+          "block": "Turbine (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Turbomachinery/Turbine (MA)",
+          "since": "R2025a+",
+          "intent": "Use to model a moist air turbine extracting mechanical power from expanding humid air flow"
+        },
+        {
+          "block": "Centrifugal Pump (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Centrifugal Pump (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a centrifugal pump in a thermal liquid system with head-flow curves and heat generation"
+        },
+        {
+          "block": "Fixed-Displacement Motor (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Fixed-Displacement Motor (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic motor with fixed displacement in a thermal liquid system tracking viscous losses and heat"
+        },
+        {
+          "block": "Fixed-Displacement Pump (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Fixed-Displacement Pump (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a positive-displacement pump with fixed output in a thermal liquid system including thermal losses"
+        },
+        {
+          "block": "Jet Pump (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Jet Pump (TL)",
+          "since": "R2025a+",
+          "intent": "Use to model a jet pump in a thermal liquid system using a high-velocity jet to entrain a secondary stream"
+        },
+        {
+          "block": "Variable-Displacement Motor (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Variable-Displacement Motor (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic motor with adjustable displacement in a thermal liquid network for variable-speed drives"
+        },
+        {
+          "block": "Variable-Displacement Pump (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Pumps & Motors/Variable-Displacement Pump (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic pump with adjustable displacement in a thermal liquid system for load-sensing control"
+        },
+        {
+          "block": "Centrifugal Pump (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Centrifugal Pump (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a centrifugal pump handling two-phase fluid for refrigerant or process liquid circulation"
+        },
+        {
+          "block": "Compressor (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Compressor (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a two-phase fluid compressor with performance maps for vapor compression cycle analysis"
+        },
+        {
+          "block": "Fixed-Displacement Pump (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Fixed-Displacement Pump (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a positive-displacement pump for two-phase fluid circulation with fixed volumetric output"
+        },
+        {
+          "block": "Positive-Displacement Compressor (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Positive-Displacement Compressor (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a volumetric compressor for two-phase refrigerant with fixed displacement per revolution"
+        },
+        {
+          "block": "Turbine (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Turbine (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a turbine expanding two-phase fluid to extract mechanical work in organic Rankine or power cycles"
+        },
+        {
+          "block": "Variable-Displacement Pump (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Fluid Machines/Variable-Displacement Pump (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a two-phase fluid pump with adjustable displacement for variable flow refrigerant circuits"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "tanks-accumulators",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "tanks-accumulators",
+      "hash": "c6fef861af1cd386e6ea70dd6379cc0bbaa4cc48f701ec6216ec669a4106063b",
+      "fm": {
+        "title": "Tanks accumulators",
+        "description": "Reservoirs, accumulators, and receivers that store fluid volume or hydraulic energy (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "tank",
+          "accumulator",
+          "reservoir",
+          "storage",
+          "receiver"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Gas-Charged Accumulator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Gas-Charged Accumulator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a gas-charged hydraulic accumulator that stores energy and damps pressure pulsations"
+        },
+        {
+          "block": "Spring-Loaded Accumulator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Spring-Loaded Accumulator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a spring-loaded hydraulic accumulator for energy storage with linear spring preload characteristics"
+        },
+        {
+          "block": "Tank (G-IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Tank (G-IL)",
+          "since": "R2023b+",
+          "intent": "Use to model a pressurized hydraulic tank with a gas blanket above the isothermal liquid for reservoir modeling"
+        },
+        {
+          "block": "Tank (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Tanks & Accumulators/Tank (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic reservoir or open tank that sets reference pressure in an isothermal liquid circuit"
+        },
+        {
+          "block": "Gas-Charged Accumulator (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Tanks & Accumulators/Gas-Charged Accumulator (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a gas-charged hydraulic accumulator in a thermal liquid system with heat exchange during compression"
+        },
+        {
+          "block": "Tank (G-TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Tanks & Accumulators/Tank (G-TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a pressurized tank with gas blanket over thermal liquid for reservoir modeling with thermal effects"
+        },
+        {
+          "block": "Tank (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Tanks & Accumulators/Tank (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a hydraulic reservoir or tank that sets reference pressure in a thermal liquid circuit"
+        },
+        {
+          "block": "Receiver Accumulator (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Tanks & Accumulators/Receiver Accumulator (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a receiver-drier or accumulator in a refrigerant circuit that separates liquid from vapor and stores excess charge"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities-interfaces",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "utilities-interfaces",
+      "hash": "5c8d5ca3199f5a6996f3d799f363c209da70b6cfa03b7a1bfc82bd6eb052e4bc",
+      "fm": {
+        "title": "Utilities interfaces",
+        "description": "Fluid property definitions, diagnostic visualizations, domain interfaces, and complete thermodynamic cycle models (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "properties",
+          "interface",
+          "diagram",
+          "refrigeration",
+          "coupling"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "P-H Diagram (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Utilities/P-H Diagram (2P)",
+          "since": "R2023a+",
+          "intent": "Use to visualize the pressure-enthalpy state of a two-phase fluid for thermodynamic cycle analysis and diagnostics"
+        },
+        {
+          "block": "Interface (2P-G)",
+          "ref": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (2P-G)",
+          "since": "R2023a+",
+          "intent": "Use to connect a two-phase fluid network to a gas network when modeling systems with phase-change boundaries"
+        },
+        {
+          "block": "Interface (2P-MA)",
+          "ref": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (2P-MA)",
+          "since": "R2023a+",
+          "intent": "Use to connect a two-phase fluid network to a moist air network for refrigeration-to-air coupling"
+        },
+        {
+          "block": "Interface (2P-TL)",
+          "ref": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (2P-TL)",
+          "since": "R2023a+",
+          "intent": "Use to connect a two-phase fluid network to a thermal liquid network for hybrid cooling systems"
+        },
+        {
+          "block": "Interface (G-MA)",
+          "ref": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (G-MA)",
+          "since": "R2023a+",
+          "intent": "Use to connect a gas network to a moist air network when dry gas flows interact with humid air streams"
+        },
+        {
+          "block": "Interface (TL-IL)",
+          "ref": "SimscapeFluids_lib/Fluid Network Interfaces/Interface (TL-IL)",
+          "since": "R2023a+",
+          "intent": "Use to connect a thermal liquid network to an isothermal liquid network when thermal effects are only needed in part of the system"
+        },
+        {
+          "block": "Isothermal Liquid Predefined Properties (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Utilities/Isothermal Liquid Predefined Properties (IL)",
+          "since": "R2023a+",
+          "intent": "Use to define fluid properties for an isothermal liquid network using predefined fluid data such as hydraulic oil or water"
+        },
+        {
+          "block": "Thermal Liquid Properties (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Utilities/Thermal Liquid Properties (TL)",
+          "since": "R2023a+",
+          "intent": "Use to define temperature-dependent fluid properties for a thermal liquid network"
+        },
+        {
+          "block": "EN14511 Heat Pump (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Thermodynamic Cycles/EN14511 Heat Pump (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a complete heat pump cycle per the EN14511 standard for system-level energy performance analysis"
+        },
+        {
+          "block": "System-Level Refrigeration Cycle (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Thermodynamic Cycles/System-Level Refrigeration Cycle (2P)",
+          "since": "R2023a+",
+          "intent": "Use to model a complete vapor-compression refrigeration cycle at the system level for rapid thermal system studies"
+        },
+        {
+          "block": "Two-Phase Fluid Predefined Properties (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Utilities/Two-Phase Fluid Predefined Properties (2P)",
+          "since": "R2023a+",
+          "intent": "Use to define refrigerant or two-phase fluid properties from predefined substances for vapor compression systems"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "valve-actuators",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "valve-actuators",
+      "hash": "d75a3597d1aa91ce4a239c25a47b7bd91a0a99f288f3d6c0c6a6a97d3e64e64d",
+      "fm": {
+        "title": "Valve actuators",
+        "description": "Actuation mechanisms that position valve spools or poppets in response to control signals or pilot pressures (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "actuator",
+          "solenoid",
+          "pilot",
+          "servo",
+          "proportional"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Cartridge Valve Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Cartridge Valve Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model the hydraulic pilot stage that drives a cartridge valve insert open or closed"
+        },
+        {
+          "block": "Double-Acting Servo Valve Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Double-Acting Servo Valve Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a double-acting hydraulic pilot stage for high-performance servo valve spool positioning"
+        },
+        {
+          "block": "Pilot Valve Actuator (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Pilot Valve Actuator (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a pilot-operated actuator that positions a main-stage valve spool using pilot pressure signals"
+        },
+        {
+          "block": "Spool Orifice Flow Force (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Valve Actuators & Forces/Spool Orifice Flow Force (IL)",
+          "since": "R2023a+",
+          "intent": "Use to compute the flow-induced force on a valve spool for accurate spool dynamics modeling"
+        },
+        {
+          "block": "Multiposition Valve Actuator",
+          "ref": "SimscapeFluids_lib/Valve Actuators/Multiposition Valve Actuator",
+          "since": "R2023a+",
+          "intent": "Use to drive a directional valve spool between discrete indexed positions based on a control signal"
+        },
+        {
+          "block": "Proportional Valve Actuator",
+          "ref": "SimscapeFluids_lib/Valve Actuators/Proportional Valve Actuator",
+          "since": "R2023a+",
+          "intent": "Use to continuously position a valve spool proportionally to an input command signal for modulated flow control"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "valves",
+      "kind": "toolbox",
+      "library": "Simscape Fluids",
+      "kbFolder": "simscape-fluids",
+      "category": "valves",
+      "hash": "dc7a79aa6f3dd715e001f60f7aa839b22c4b673ae98e243f41d93de5f95ab6db",
+      "fm": {
+        "title": "Valves",
+        "description": "Directional, flow-control, and pressure-control valves that route, throttle, or regulate fluid flow (65 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-fluids",
+          "valve",
+          "directional",
+          "check",
+          "solenoid",
+          "throttle"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "2-Way Directional Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to control on-off gas flow in a single line with a two-way pneumatic valve"
+        },
+        {
+          "block": "3-Way Directional Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to route gas flow between three ports for supply, exhaust, or divert functions in pneumatic circuits"
+        },
+        {
+          "block": "4-Way 3-Position Directional Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to control a double-acting pneumatic actuator with extend, retract, and neutral positions"
+        },
+        {
+          "block": "Check Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/Check Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to allow gas flow in one direction only, preventing backflow in pneumatic circuits"
+        },
+        {
+          "block": "Pilot-Operated Check Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to block gas backflow unless a pilot pressure signal unlocks the valve for controlled reverse flow"
+        },
+        {
+          "block": "Ball Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Ball Valve (G)",
+          "since": "R2023b+",
+          "intent": "Use to model a quarter-turn ball valve for gas flow shutoff or throttling with characterized flow area"
+        },
+        {
+          "block": "Gate Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Gate Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a gate valve for full-bore gas shutoff with minimal flow resistance when open"
+        },
+        {
+          "block": "Poppet Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Poppet Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to model a poppet-style gas valve with conical or flat seat geometry for fast-acting flow control"
+        },
+        {
+          "block": "Temperature Control Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Flow Control Valves/Temperature Control Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to regulate gas temperature by blending hot and cold streams through a thermostatic three-way valve"
+        },
+        {
+          "block": "Pressure Reducing Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Pressure Control Valves/Pressure Reducing Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to maintain a constant downstream gas pressure regardless of upstream pressure variations"
+        },
+        {
+          "block": "Pressure Relief Valve (G)",
+          "ref": "SimscapeFluids_lib/Gas/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (G)",
+          "since": "R2023a+",
+          "intent": "Use to protect a gas system from overpressure by venting flow when pressure exceeds a set threshold"
+        },
+        {
+          "block": "2-Way Directional Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to control on-off hydraulic flow in a single line with a two-way directional valve"
+        },
+        {
+          "block": "3-Way Directional Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to route isothermal liquid flow between three ports for supply, return, or bypass functions"
+        },
+        {
+          "block": "4-Way 2-Position Directional Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to control a hydraulic actuator with two discrete positions for extend and retract commands"
+        },
+        {
+          "block": "4-Way 3-Position Directional Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to control a double-acting hydraulic actuator with extend, retract, and center-neutral positions"
+        },
+        {
+          "block": "Check Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Check Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to allow isothermal liquid flow in one direction only, preventing backflow in hydraulic circuits"
+        },
+        {
+          "block": "M-Way N-Position Directional Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/M-Way N-Position Directional Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a configurable multi-way multi-position directional valve for complex hydraulic routing schemes"
+        },
+        {
+          "block": "Pilot-Operated Check Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to hold hydraulic load pressure with a check valve that can be unlocked by a pilot signal"
+        },
+        {
+          "block": "Shuttle Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Shuttle Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to automatically select the higher of two hydraulic pressures and route it to the outlet port"
+        },
+        {
+          "block": "Solenoid Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Directional Control Valves/Solenoid Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model an electrically actuated on-off hydraulic valve for automated directional control"
+        },
+        {
+          "block": "Ball Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Ball Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a quarter-turn ball valve for isothermal liquid flow shutoff or modulated throttling"
+        },
+        {
+          "block": "Cartridge Valve Insert (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Cartridge Valve Insert (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a two-way cartridge valve insert for compact manifold-mounted hydraulic flow control"
+        },
+        {
+          "block": "Gate Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Gate Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a gate valve for full-bore isothermal liquid shutoff with minimal restriction when fully open"
+        },
+        {
+          "block": "Needle Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Needle Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a needle valve for precise fine-adjustment of isothermal liquid flow rate"
+        },
+        {
+          "block": "Poppet Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Poppet Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to model a poppet-style valve in an isothermal liquid line for fast-acting flow regulation"
+        },
+        {
+          "block": "Pressure-Compensated 3-Way Flow Control Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Pressure-Compensated 3-Way Flow Control Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to maintain constant flow to an actuator regardless of load pressure using a 3-way pressure-compensated valve"
+        },
+        {
+          "block": "Pressure-Compensated Flow Control Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Flow Control Valves/Pressure-Compensated Flow Control Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to maintain constant hydraulic flow rate to a load independent of pressure variations across the valve"
+        },
+        {
+          "block": "Counterbalance Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Counterbalance Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to prevent uncontrolled lowering of a hydraulic load by requiring pilot pressure before allowing return flow"
+        },
+        {
+          "block": "Pressure Compensator Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Compensator Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to maintain a constant pressure differential across a metering orifice for load-independent flow control"
+        },
+        {
+          "block": "Pressure Relief Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to protect a hydraulic circuit from overpressure by diverting excess flow when pressure exceeds the set point"
+        },
+        {
+          "block": "Pressure-Reducing 3-Way Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure-Reducing 3-Way Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to regulate downstream pressure below supply with a 3-way valve that can both supply and exhaust fluid"
+        },
+        {
+          "block": "Pressure-Reducing Valve (IL)",
+          "ref": "SimscapeFluids_lib/Isothermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure-Reducing Valve (IL)",
+          "since": "R2023a+",
+          "intent": "Use to maintain a reduced downstream hydraulic pressure regardless of higher upstream supply pressure"
+        },
+        {
+          "block": "2-Way Directional Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to control on-off moist air flow in a single duct path with a two-way valve"
+        },
+        {
+          "block": "3-Way Directional Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to route moist air between three ports for supply, exhaust, or divert functions"
+        },
+        {
+          "block": "4-Way 2-Position Directional Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to control a moist air actuator with two discrete positions for bidirectional motion"
+        },
+        {
+          "block": "4-Way 3-Position Directional Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to control a double-acting moist air actuator with extend, retract, and neutral positions"
+        },
+        {
+          "block": "Check Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/Check Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to allow moist air flow in one direction only, preventing backflow in air distribution systems"
+        },
+        {
+          "block": "Pilot-Operated Check Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to block moist air backflow unless a pilot signal unlocks the valve for controlled reverse flow"
+        },
+        {
+          "block": "Ball Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Ball Valve (MA)",
+          "since": "R2025a+",
+          "intent": "Use to model a quarter-turn ball valve for moist air shutoff or throttling applications"
+        },
+        {
+          "block": "Gate Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Gate Valve (MA)",
+          "since": "R2025a+",
+          "intent": "Use to model a gate valve for full-bore moist air shutoff in duct networks"
+        },
+        {
+          "block": "Poppet Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Poppet Valve (MA)",
+          "since": "R2025a+",
+          "intent": "Use to model a poppet-style valve for moist air flow control with fast actuation response"
+        },
+        {
+          "block": "Temperature Control Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Flow Control Valves/Temperature Control Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to regulate moist air temperature by blending hot and cold air streams through a thermostatic valve"
+        },
+        {
+          "block": "Pressure Compensator Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Pressure Control Valves/Pressure Compensator Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to maintain constant pressure differential in a moist air system for load-independent flow metering"
+        },
+        {
+          "block": "Pressure Reducing Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Pressure Control Valves/Pressure Reducing Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to maintain reduced downstream pressure in a moist air system regardless of upstream supply pressure"
+        },
+        {
+          "block": "Pressure Relief Valve (MA)",
+          "ref": "SimscapeFluids_lib/Moist Air/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (MA)",
+          "since": "R2023a+",
+          "intent": "Use to protect a moist air system from overpressure by venting flow above the set threshold"
+        },
+        {
+          "block": "Flow Coefficient Parameterized Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Coefficient Parameterized Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a valve in a thermal liquid system parameterized by Cv or Kv flow coefficients from manufacturer data"
+        },
+        {
+          "block": "2-Way Directional Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/2-Way Directional Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to control on-off thermal liquid flow with a two-way directional valve including thermal effects"
+        },
+        {
+          "block": "3-Way Directional Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/3-Way Directional Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to route thermal liquid flow between three ports for supply, return, or bypass with temperature tracking"
+        },
+        {
+          "block": "4-Way 2-Position Directional Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to control a thermal liquid actuator with two discrete positions including fluid temperature effects"
+        },
+        {
+          "block": "4-Way 3-Position Directional Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to control a double-acting thermal liquid actuator with three positions and thermal effects"
+        },
+        {
+          "block": "Check Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/Check Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to allow thermal liquid flow in one direction only, preventing backflow with thermal property tracking"
+        },
+        {
+          "block": "Pilot-Operated Check Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Directional Control Valves/Pilot-Operated Check Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to hold thermal liquid load pressure with a pilot-unlockable check valve for load-holding applications"
+        },
+        {
+          "block": "Gate Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Control Valves/Gate Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a gate valve for full-bore thermal liquid shutoff with minimal restriction when fully open"
+        },
+        {
+          "block": "Poppet Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Control Valves/Poppet Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to model a poppet-style valve for thermal liquid flow control with fast-acting seat geometry"
+        },
+        {
+          "block": "Temperature Control Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Flow Control Valves/Temperature Control Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to regulate thermal liquid temperature by blending hot and cold streams through a thermostatic valve"
+        },
+        {
+          "block": "Counterbalance Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Counterbalance Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to prevent uncontrolled load lowering in a thermal liquid circuit by requiring pilot pressure for return flow"
+        },
+        {
+          "block": "Pressure Compensator Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Compensator Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to maintain constant pressure differential in a thermal liquid system for load-independent flow control"
+        },
+        {
+          "block": "Pressure Reducing Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Reducing Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to maintain a reduced downstream thermal liquid pressure regardless of upstream supply pressure"
+        },
+        {
+          "block": "Pressure Relief Valve (TL)",
+          "ref": "SimscapeFluids_lib/Thermal Liquid/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (TL)",
+          "since": "R2023a+",
+          "intent": "Use to protect a thermal liquid circuit from overpressure by diverting flow above the set pressure limit"
+        },
+        {
+          "block": "4-Way 2-Position Directional Valve (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Directional Control Valves/4-Way 2-Position Directional Valve (2P)",
+          "since": "R2023a+",
+          "intent": "Use to control a two-phase fluid actuator or switch refrigerant flow paths between two positions"
+        },
+        {
+          "block": "4-Way 3-Position Directional Valve (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Directional Control Valves/4-Way 3-Position Directional Valve (2P)",
+          "since": "R2023a+",
+          "intent": "Use to control two-phase fluid flow paths with three valve positions for reversible heat pump operation"
+        },
+        {
+          "block": "Check Valve (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Directional Control Valves/Check Valve (2P)",
+          "since": "R2023a+",
+          "intent": "Use to allow two-phase fluid flow in one direction only, preventing refrigerant backflow in cycle circuits"
+        },
+        {
+          "block": "Thermostatic Expansion Valve (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Flow Control Valves/Thermostatic Expansion Valve (2P)",
+          "since": "R2023a+",
+          "intent": "Use to meter refrigerant flow into an evaporator while maintaining target superheat at the evaporator outlet"
+        },
+        {
+          "block": "Pressure Relief Valve (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Pressure Control Valves/Pressure Relief Valve (2P)",
+          "since": "R2023a+",
+          "intent": "Use to protect a two-phase fluid system from overpressure by venting refrigerant above the safety limit"
+        },
+        {
+          "block": "Pressure-Reducing Valve (2P)",
+          "ref": "SimscapeFluids_lib/Two-Phase Fluid/Valves & Orifices/Pressure Control Valves/Pressure-Reducing Valve (2P)",
+          "since": "R2023a+",
+          "intent": "Use to reduce two-phase fluid pressure downstream for controlled expansion or pressure regulation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:22",
+  "generatedAtDatenum": 740309.99539571756
 }

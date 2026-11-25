@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pipes fittings
-description: Pipe segments, bends, junctions, and fittings that convey fluid between components
-tags: [pipe, elbow, junction, fitting, duct]
+description: "Pipe segments, bends, junctions, and fittings that convey fluid between components (24 blocks)"
+tags: [toolbox-kb, simscape-fluids, pipe, elbow, junction, fitting, duct]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Pipes fittings
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: pipes-fittings
 block_count: 24
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Pipes fittings
-
-Use these blocks for pipes fittings.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: User defined
-description: Custom MATLAB code blocks
-tags: [matlab function, matlab system, user-defined]
+description: Custom MATLAB code blocks (2 blocks)
+tags: [toolbox-kb, hdl-coder, matlab function, matlab system, user-defined]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: User defined
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: user-defined
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # User defined
-
-Use these blocks for user defined.
 
 ## Recommended Blocks
 

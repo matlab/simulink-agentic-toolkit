@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Comm filters
-description: Pulse-shaping and conditioning filters for HDL links
-tags: [comm filters, raised cosine, dc blocker]
+description: Pulse-shaping and conditioning filters for HDL links (3 blocks)
+tags: [toolbox-kb, communications-toolbox-hdl-support, comm filters, raised cosine, dc blocker]
 status: stable
-source: custom_library
-library_root: Communications Toolbox HDL Support
-category_path: Comm filters
+sources:
+  - resource: matlab:commhdlfilt
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox HDL Support
+kb_folder: communications-toolbox-hdl-support
+category: comm-filters
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Comm filters
-
-Use these blocks for comm filters.
 
 ## Recommended Blocks
 

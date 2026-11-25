@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Can classic
-description: Classic CAN bus communication
-tags: [can, pack, unpack, receive, transmit]
+description: Classic CAN bus communication (7 blocks)
+tags: [toolbox-kb, vehicle-network-toolbox, can, pack, unpack, receive, transmit]
 status: stable
-source: mathworks_toolbox
-library_root: Vehicle Network Toolbox
-category_path: Can classic
+sources:
+  - resource: matlab:canlib
+source: toolbox_kb
+managed_by: satk
+library: Vehicle Network Toolbox
+kb_folder: vehicle-network-toolbox
+category: can-classic
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Can classic
-
-Use these blocks for can classic.
 
 ## Recommended Blocks
 

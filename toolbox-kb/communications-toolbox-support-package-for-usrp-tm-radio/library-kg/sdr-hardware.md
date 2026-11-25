@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sdr hardware
-description: USRP software-defined radio hardware interface blocks
-tags: [usrp, sdr, radio, ettus, ni]
+description: USRP software-defined radio hardware interface blocks (2 blocks)
+tags: [toolbox-kb, communications-toolbox-support-package-for-usrp-tm-radio, usrp, sdr, radio, ettus, ni]
 status: stable
-source: mathworks_toolbox
-library_root: Communications Toolbox Support Package for USRP(TM) Radio
-category_path: Sdr hardware
+sources:
+  - resource: matlab:commsdrhw_v2
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox Support Package for USRP(TM) Radio
+kb_folder: communications-toolbox-support-package-for-usrp-tm-radio
+category: sdr-hardware
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Sdr hardware
-
-Use these blocks for sdr hardware.
 
 ## Recommended Blocks
 

@@ -124,3 +124,12 @@ skill-groups:
     requires-products:
       - Simulink
       - Aerospace Blockset
+
+  - name: rf-and-mixed-signal
+    display-name: "RF and Mixed-Signal"
+    description: "Physics-based RF system modeling and simulation in Simulink with RF Blockset Circuit Envelope and Idealized Baseband"
+    path: skills-catalog/rf-and-mixed-signal
+    requires-products:
+      - Simulink
+      - RF Blockset
+      - RF Toolbox

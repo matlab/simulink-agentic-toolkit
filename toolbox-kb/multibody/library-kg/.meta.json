@@ -1,16 +1,141 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457219907,
-  "generatorVersion": 4,
-  "libraries": [
-    "Multibody"
-  ],
-  "blockCount": 10,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Multibody": {
-      "cacheTimestamp": 740213.73348379624,
-      "blockCount": 10
+  "pages": [
+    {
+      "id": "interaction",
+      "kind": "toolbox",
+      "library": "Multibody",
+      "kbFolder": "multibody",
+      "category": "interaction",
+      "hash": "e1f439090827c06b5cd7ff378d8102ac750fd575f4f10d22706d470fc0753d1a",
+      "fm": {
+        "title": "Interaction",
+        "description": "Forces, contacts, and constraint interactions (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "multibody",
+          "force",
+          "torque",
+          "constraint",
+          "contact",
+          "spring"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Constraints",
+          "ref": "sm_lib/Constraints",
+          "since": "R2023a+",
+          "intent": "Apply kinematic constraints between bodies — use for locking degrees of freedom, enforcing geometric relationships, or creating closed-loop mechanisms"
+        },
+        {
+          "block": "Curves and Surfaces",
+          "ref": "sm_lib/Curves and Surfaces",
+          "since": "R2023a+",
+          "intent": "Define contact geometry for collision detection — use for modeling rolling, sliding, or impact interactions between curved surfaces in multibody systems"
+        },
+        {
+          "block": "Forces and Torques",
+          "ref": "sm_lib/Forces and Torques",
+          "since": "R2023a+",
+          "intent": "Apply external forces and torques to bodies — use for modeling gravity, springs, dampers, actuators, or any applied load in a multibody system"
+        },
+        {
+          "block": "Simscape Mechanical Interfaces",
+          "ref": "sm_lib/Simscape Mechanical Interfaces",
+          "since": "R2023a+",
+          "intent": "Interface Simscape Multibody with Simscape physical networks — use for connecting 3D mechanical models to 1D driveline or other Simscape domain models"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "motion",
+      "kind": "toolbox",
+      "library": "Multibody",
+      "kbFolder": "multibody",
+      "category": "motion",
+      "hash": "f06eb9f3746fb74a07ba56e55673a3d358558f2b8e044b60d0e2dc5bde91faae",
+      "fm": {
+        "title": "Motion",
+        "description": "Joints, gears, and kinematic connections between bodies (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "multibody",
+          "joint",
+          "gear",
+          "belt",
+          "coupling",
+          "revolute"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Belts and Cables",
+          "ref": "sm_lib/Belts and Cables",
+          "since": "R2023a+",
+          "intent": "Model flexible belt and cable connections between pulleys — use for power transmission systems like timing belts, V-belts, or cable-driven mechanisms"
+        },
+        {
+          "block": "Gears and Couplings",
+          "ref": "sm_lib/Gears and Couplings",
+          "since": "R2023a+",
+          "intent": "Model gear pairs and mechanical couplings — use for spur gears, bevel gears, worm drives, or other power transmission couplings between shafts"
+        },
+        {
+          "block": "Joints",
+          "ref": "sm_lib/Joints",
+          "since": "R2023a+",
+          "intent": "Connect bodies with degrees of freedom — use for revolute, prismatic, spherical, or other articulated connections in a multibody mechanism"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "structure",
+      "kind": "toolbox",
+      "library": "Multibody",
+      "kbFolder": "multibody",
+      "category": "structure",
+      "hash": "42eacdf0bd3570adaa666222a8a9c4386eed7e1455411122481282c524f83307",
+      "fm": {
+        "title": "Structure",
+        "description": "Rigid body definition and spatial reference frames (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "multibody",
+          "body",
+          "frame",
+          "transform",
+          "inertia",
+          "geometry"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Body Elements",
+          "ref": "sm_lib/Body Elements",
+          "since": "R2023a+",
+          "intent": "Define rigid body geometry, inertia, and visual properties — use for creating the physical bodies that make up a multibody mechanism"
+        },
+        {
+          "block": "Frames and Transforms",
+          "ref": "sm_lib/Frames and Transforms",
+          "since": "R2023a+",
+          "intent": "Define coordinate frames and spatial transformations — use for positioning, orienting, and relating reference frames within a multibody assembly"
+        },
+        {
+          "block": "Utilities",
+          "ref": "sm_lib/Utilities",
+          "since": "R2023a+",
+          "intent": "Utility blocks for multibody modeling — use for mechanism configuration, variable sensing, or solver settings in Simscape Multibody models"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.9954218982
 }

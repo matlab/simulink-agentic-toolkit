@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sources
-description: Signal, noise, and network input sources
-tags: [sources, constant, noise, nco, random, file reader, udp receive, multimedia, enable]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Sources
+description: "Signal, noise, and network input sources (12 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox, sources, constant, noise, nco, random, file reader, udp receive, multimedia, enable]
+status: draft
+sources:
+  - resource: matlab:dspswit3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: sources
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Sources
-
-Use these blocks for sources.
 
 ## Recommended Blocks
 

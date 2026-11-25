@@ -1,37 +1,20 @@
-# Library Reuse Index
+---
+okf_version: "0.2"
+---
 
-## Priority
+# Simulink Block Category
 
-1. Custom library blocks (highest priority)
-2. Toolbox KB blocks
-
-## Policy
-
-- Always use custom library blocks when available.
-- Never fall back to built-in primitives if the same block exists in a declared library.
-- Only use built-in blocks when NO equivalent exists in any declared library after searching this index.
-- Do not invent custom block names.
-- If uncertain, inspect the relevant category page or ask the user.
-
-## Libraries
-
-- DO-178C/DO-331 Primitive Library
-
-Common blocks: [common.md](common.md) (30 of 113 blocks)
-
-## Categories
-
-- [Discrete](discrete.md) — 6 blocks; Discrete-time delays and integration
-- [Discontinuities](discontinuities.md) — 6 blocks; Dead zone, relay, and saturation nonlinearities
-- [Logic bit](logic-bit.md) — 18 blocks; Logical, relational, and bit operations
-- [Lookup tables](lookup-tables.md) — 6 blocks; N-D lookup tables and prelookup interpolation
-- [Math](math.md) — 21 blocks; Arithmetic and elementwise math functions
-- [Simulink model wide utilities](simulink-model-wide-utilities.md) — 2 blocks
-- [Ports subsystems](ports-subsystems.md) — 19 blocks; Ports, subsystems, and control-flow containers
-- [Signal attributes](signal-attributes.md) — 10 blocks; Type, rate, and attribute handling
-- [Signal routing](signal-routing.md) — 15 blocks; Buses, mux/demux, switches, and data stores
-- [Sinks](sinks.md) — 1 blocks; Signal sinks
-- [Sources](sources.md) — 3 blocks; Constant and ground sources
-- [String](string.md) — 1 blocks; String handling
-- [User defined](user-defined.md) — 3 blocks; Custom C, MATLAB, and expression blocks
-- [Stateflow](stateflow.md) — 2 blocks; State-machine and flow-chart logic
+* [Discontinuities](discontinuities.md) - Dead zone, relay, and saturation nonlinearities (6 blocks)
+* [Discrete](discrete.md) - Discrete-time delays and integration (6 blocks)
+* [Logic bit](logic-bit.md) - Logical, relational, and bit operations (18 blocks)
+* [Lookup tables](lookup-tables.md) - N-D lookup tables and prelookup interpolation (6 blocks)
+* [Math](math.md) - Arithmetic and elementwise math functions (21 blocks)
+* [Ports subsystems](ports-subsystems.md) - Ports, subsystems, and control-flow containers (19 blocks)
+* [Signal attributes](signal-attributes.md) - Type, rate, and attribute handling (10 blocks)
+* [Signal routing](signal-routing.md) - Buses, mux/demux, switches, and data stores (15 blocks)
+* [Simulink model wide utilities](simulink-model-wide-utilities.md) - Blocks for Simulink model wide utilities (2 blocks)
+* [Sinks](sinks.md) - Signal sinks (1 blocks)
+* [Sources](sources.md) - Constant and ground sources (3 blocks)
+* [Stateflow](stateflow.md) - State-machine and flow-chart logic (2 blocks)
+* [String](string.md) - String handling (1 blocks)
+* [User defined](user-defined.md) - Custom C, MATLAB, and expression blocks (3 blocks)

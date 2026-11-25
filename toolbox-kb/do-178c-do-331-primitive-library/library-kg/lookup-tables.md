@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Lookup tables
-description: N-D lookup tables and prelookup interpolation
-tags: [lookup, prelookup, interpolation]
+description: N-D lookup tables and prelookup interpolation (6 blocks)
+tags: [toolbox-kb, do-178c-do-331-primitive-library, lookup, prelookup, interpolation]
 status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Lookup tables
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: lookup-tables
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Lookup tables
-
-Use these blocks for lookup tables.
 
 ## Recommended Blocks
 

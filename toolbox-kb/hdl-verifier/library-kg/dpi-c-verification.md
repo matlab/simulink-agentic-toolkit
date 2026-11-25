@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Dpi c verification
-description: SystemVerilog DPI-C / UVM testbench components
-tags: [dpi-c, systemverilog, assertion, uvm, scoreboard]
+description: SystemVerilog DPI-C / UVM testbench components (2 blocks)
+tags: [toolbox-kb, hdl-verifier, dpi-c, systemverilog, assertion, uvm, scoreboard]
 status: stable
-source: custom_library
-library_root: HDL Verifier
-category_path: Dpi c verification
+sources:
+  - resource: matlab:dpiblklib
+source: toolbox_kb
+managed_by: satk
+library: HDL Verifier
+kb_folder: hdl-verifier
+category: dpi-c-verification
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Dpi c verification
-
-Use these blocks for dpi c verification.
 
 ## Recommended Blocks
 

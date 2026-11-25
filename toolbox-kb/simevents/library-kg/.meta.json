@@ -1,16 +1,292 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.7445809606,
-  "generatorVersion": 4,
-  "libraries": [
-    "SimEvents"
-  ],
-  "blockCount": 31,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "SimEvents": {
-      "cacheTimestamp": 740213.73348379624,
-      "blockCount": 31
+  "pages": [
+    {
+      "id": "custom-logic",
+      "kind": "toolbox",
+      "library": "SimEvents",
+      "kbFolder": "simevents",
+      "category": "custom-logic",
+      "hash": "c4fb74eb39b155181ab55b83b844287ee864efa3dac39db49d01fb85d8027783",
+      "fm": {
+        "title": "Custom logic",
+        "description": "Custom logic and debugging tools (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simevents",
+          "chart",
+          "matlab",
+          "debugger",
+          "viewer",
+          "function"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Design Patterns",
+          "ref": "sldelib/Design Patterns",
+          "since": "R2023a+",
+          "intent": "Pre-built discrete-event design patterns — use as starting templates for common queuing and workflow configurations"
+        },
+        {
+          "block": "Discrete-Event Chart",
+          "ref": "sldelib/Discrete-Event Chart",
+          "since": "R2023a+",
+          "intent": "Model event-driven logic using Stateflow charts — use for complex state-based entity processing rules that are hard to express with standard blocks"
+        },
+        {
+          "block": "SimEvents Debugger",
+          "ref": "sldelib/SimEvents Debugger",
+          "since": "R2023a+",
+          "intent": "Debug discrete-event simulations interactively — use for stepping through entity events and inspecting queue states during development"
+        },
+        {
+          "block": "MATLAB Discrete-Event System",
+          "ref": "sldelib/MATLAB Discrete-Event System",
+          "since": "R2023a+",
+          "intent": "Implement custom discrete-event logic in MATLAB — use for modeling complex event-driven behavior not available in standard blocks"
+        },
+        {
+          "block": "Sequence Viewer",
+          "ref": "sldelib/Sequence Viewer",
+          "since": "R2023a+",
+          "intent": "Visualize entity and message event sequences — use for debugging event ordering and timing in discrete-event simulations"
+        },
+        {
+          "block": "Simulink Function",
+          "ref": "sldelib/Simulink Function",
+          "since": "R2023a+",
+          "intent": "Define a callable function within SimEvents models — use for encapsulating reusable computations called by entity events"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "entity-flow",
+      "kind": "toolbox",
+      "library": "SimEvents",
+      "kbFolder": "simevents",
+      "category": "entity-flow",
+      "hash": "91696372f103dd94335af26b9e715f08e51b074cbaa5c88c9e8be28ff351d2f8",
+      "fm": {
+        "title": "Entity flow",
+        "description": "Entity routing, switching, and transport (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simevents",
+          "switch",
+          "gate",
+          "transport",
+          "conveyor",
+          "route"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Conveyor System",
+          "ref": "sldelib/Conveyor System",
+          "since": "R2023a+",
+          "intent": "Model a physical conveyor with transport delay — use for simulating material movement on belts or rollers with spatial dynamics"
+        },
+        {
+          "block": "Entity Input Switch",
+          "ref": "sldelib/Entity Input Switch",
+          "since": "R2023a+",
+          "intent": "Route entities from multiple inputs to a single output — use for merging entity streams from parallel paths"
+        },
+        {
+          "block": "Entity Output Switch",
+          "ref": "sldelib/Entity Output Switch",
+          "since": "R2023a+",
+          "intent": "Route entities from a single input to multiple outputs — use for splitting entity flow based on conditions or round-robin logic"
+        },
+        {
+          "block": "Entity Transport Delay",
+          "ref": "sldelib/Entity Transport Delay",
+          "since": "R2023a+",
+          "intent": "Delay entity flow by a specified time — use for modeling transit time through pipes, corridors, or communication channels"
+        },
+        {
+          "block": "Entity Gate",
+          "ref": "sldelib/Entity Gate",
+          "since": "R2023a+",
+          "intent": "Open or close entity flow based on a signal — use for modeling doors, valves, or conditional access points in entity networks"
+        },
+        {
+          "block": "Entity Multicast",
+          "ref": "sldelib/Entity Multicast",
+          "since": "R2023a+",
+          "intent": "Send an entity to all connected outputs simultaneously — use for broadcasting events or duplicating items to multiple destinations"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "entity-management",
+      "kind": "toolbox",
+      "library": "SimEvents",
+      "kbFolder": "simevents",
+      "category": "entity-management",
+      "hash": "1cb2fa3b23d12fae0c0f1ce3b0844bcb49ce66eb9d144650590e235767892e93",
+      "fm": {
+        "title": "Entity management",
+        "description": "Entity creation, storage, batching, and termination (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simevents",
+          "generator",
+          "queue",
+          "server",
+          "store",
+          "batch"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Composite Entity Creator",
+          "ref": "sldelib/Composite Entity Creator",
+          "since": "R2023a+",
+          "intent": "Bundle multiple entities into a single composite entity — use for modeling assemblies, kits, or grouped items moving together"
+        },
+        {
+          "block": "Composite Entity Splitter",
+          "ref": "sldelib/Composite Entity Splitter",
+          "since": "R2023a+",
+          "intent": "Split a composite entity back into individual entities — use for disassembly or unpacking operations in manufacturing or logistics"
+        },
+        {
+          "block": "Entity Batch Creator",
+          "ref": "sldelib/Entity Batch Creator",
+          "since": "R2023a+",
+          "intent": "Collect entities into fixed-size batches — use for modeling palletizing, packaging, or batch processing operations"
+        },
+        {
+          "block": "Entity Batch Splitter",
+          "ref": "sldelib/Entity Batch Splitter",
+          "since": "R2023a+",
+          "intent": "Split a batch entity into individual entities — use for modeling depalletizing or batch unpacking operations"
+        },
+        {
+          "block": "Entity Find",
+          "ref": "sldelib/Entity Find",
+          "since": "R2023a+",
+          "intent": "Search for entities matching criteria in a store — use for locating specific items in warehouses or buffers by attribute value"
+        },
+        {
+          "block": "Entity Generator",
+          "ref": "sldelib/Entity Generator",
+          "since": "R2023a+",
+          "intent": "Create entities at specified rates or times — use for modeling arrivals of customers, parts, or packets entering a system"
+        },
+        {
+          "block": "Entity Queue",
+          "ref": "sldelib/Entity Queue",
+          "since": "R2023a+",
+          "intent": "Buffer entities in FIFO, LIFO, or priority order — use for modeling waiting lines, buffers, or inventory storage"
+        },
+        {
+          "block": "Entity Replicator",
+          "ref": "sldelib/Entity Replicator",
+          "since": "R2023a+",
+          "intent": "Create copies of an entity — use for modeling document copying, message broadcasting, or parallel processing splits"
+        },
+        {
+          "block": "Entity Selector",
+          "ref": "sldelib/Entity Selector",
+          "since": "R2023a+",
+          "intent": "Select specific entities from a set based on criteria — use for cherry-picking items from queues or stores by attribute"
+        },
+        {
+          "block": "Entity Server",
+          "ref": "sldelib/Entity Server",
+          "since": "R2023a+",
+          "intent": "Process entities with configurable service time — use for modeling workstations, processors, or service desks that hold entities during processing"
+        },
+        {
+          "block": "Entity Store",
+          "ref": "sldelib/Entity Store",
+          "since": "R2023a+",
+          "intent": "Store entities in an unordered collection — use for modeling warehouses, parking lots, or pools where order does not matter"
+        },
+        {
+          "block": "Entity Terminator",
+          "ref": "sldelib/Entity Terminator",
+          "since": "R2023a+",
+          "intent": "Remove entities from the simulation — use for modeling system exits where entities leave permanently"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "resources-messaging",
+      "kind": "toolbox",
+      "library": "SimEvents",
+      "kbFolder": "simevents",
+      "category": "resources-messaging",
+      "hash": "ae8da229e904becec3164c10e7cb79a9b98dee2bdc20be8eb65cc5422b680629",
+      "fm": {
+        "title": "Resources messaging",
+        "description": "Shared resource management and messaging (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simevents",
+          "resource",
+          "pool",
+          "acquire",
+          "message",
+          "release"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hit  Crossing",
+          "ref": "sldelib/Hit  Crossing",
+          "since": "R2023a+",
+          "intent": "Detect when a signal crosses a threshold — use for triggering discrete events based on continuous signal conditions"
+        },
+        {
+          "block": "Message Receive",
+          "ref": "sldelib/Message Receive",
+          "since": "R2023a+",
+          "intent": "Receive messages from Simulink message ports — use for interfacing discrete-event models with message-based Simulink components"
+        },
+        {
+          "block": "Message Send",
+          "ref": "sldelib/Message Send",
+          "since": "R2023a+",
+          "intent": "Send messages to Simulink message ports — use for triggering Simulink message-based components from discrete-event models"
+        },
+        {
+          "block": "Multicast Receive Queue",
+          "ref": "sldelib/Multicast Receive Queue",
+          "since": "R2023a+",
+          "intent": "Queue for receiving multicast entity copies — use for buffering broadcast entities at each receiving destination"
+        },
+        {
+          "block": "Resource Acquirer",
+          "ref": "sldelib/Resource Acquirer",
+          "since": "R2023a+",
+          "intent": "Acquire shared resources for an entity — use for modeling entities competing for limited resources like machines or operators"
+        },
+        {
+          "block": "Resource Releaser",
+          "ref": "sldelib/Resource Releaser",
+          "since": "R2023a+",
+          "intent": "Release previously acquired shared resources — use for freeing resources back to the pool after entity processing completes"
+        },
+        {
+          "block": "Resource Pool",
+          "ref": "sldelib/Resource Pool",
+          "since": "R2023a+",
+          "intent": "Define a pool of shared resources — use for configuring the total supply of machines, workers, or other limited resources"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:28",
+  "generatedAtDatenum": 740309.99546655093
 }

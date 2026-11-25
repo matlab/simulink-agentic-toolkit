@@ -1,15 +1,117 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456135416,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for Renesas RA Microcontrollers"
-  ],
-  "blockCount": 11,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_Renesas_RA_Microcontrollers": {
-      "blockCount": 11
+  "pages": [
+    {
+      "id": "analog-io",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Renesas RA Microcontrollers",
+      "kbFolder": "embedded-coder-support-package-for-renesas-ra-microcontrollers",
+      "category": "analog-io",
+      "hash": "fc9237e2957015cc3a62ba96368da41aae173e3f81e235aba4be540047015b45",
+      "fm": {
+        "title": "Analog io",
+        "description": "Analog input/output peripherals on Renesas RA (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-renesas-ra-microcontrollers",
+          "adc",
+          "dac",
+          "analog",
+          "converter",
+          "voltage"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog To Digital Converter",
+          "ref": "ra6basedlib/Analog To Digital Converter",
+          "since": "R2026a+",
+          "intent": "Read analog input channels via the ADC peripheral on Renesas RA — use for sampling sensor voltages or analog signals in embedded control applications"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "digital-io",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Renesas RA Microcontrollers",
+      "kbFolder": "embedded-coder-support-package-for-renesas-ra-microcontrollers",
+      "category": "digital-io",
+      "hash": "96280628b9f19fd019f400dc36f394881087127ca0545f49b518713cee469247",
+      "fm": {
+        "title": "Digital io",
+        "description": "Digital GPIO and port pin access on Renesas RA (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-renesas-ra-microcontrollers",
+          "gpio",
+          "digital",
+          "pin",
+          "read",
+          "write"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Digital Port Pins Read",
+          "ref": "ra6basedlib/Digital Port Pins Read",
+          "since": "R2026a+",
+          "intent": "Read digital GPIO pin states on Renesas RA — use for reading switches, encoders, or digital sensor inputs"
+        },
+        {
+          "block": "Digital Port Pins Write",
+          "ref": "ra6basedlib/Digital Port Pins Write",
+          "since": "R2026a+",
+          "intent": "Write digital GPIO pin states on Renesas RA — use for controlling LEDs, relays, or digital output signals"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "timing",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Renesas RA Microcontrollers",
+      "kbFolder": "embedded-coder-support-package-for-renesas-ra-microcontrollers",
+      "category": "timing",
+      "hash": "9f073933fd600653709771571b31a04ca7a8e933cb6d5bfbbc286ee4dd612938",
+      "fm": {
+        "title": "Timing",
+        "description": "Timer and interrupt management on Renesas RA (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-renesas-ra-microcontrollers",
+          "timer",
+          "interrupt",
+          "pwm",
+          "isr",
+          "gpt"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hardware Interrupt",
+          "ref": "ra6basedlib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Configure hardware interrupt service routines on Renesas RA MCUs — use for triggering function-call subsystems from peripheral interrupts"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "ra6basedlib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate PWM signals on Renesas RA timer outputs — use for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Three-Phase PWM",
+          "ref": "ra6basedlib/Three-Phase PWM",
+          "since": "R2026a+",
+          "intent": "Generate three-phase PWM waveforms on Renesas RA — use for driving BLDC motors or three-phase inverters in motor control applications"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99538837967
 }

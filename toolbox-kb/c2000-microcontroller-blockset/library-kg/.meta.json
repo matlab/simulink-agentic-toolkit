@@ -1,15 +1,3797 @@
 {
-  "generatedAt": "2026-09-29T16:38:06",
-  "generatedAtDatenum": 740254.69312712958,
-  "generatorVersion": 4,
-  "libraries": [
-    "C2000 Microcontroller Blockset"
-  ],
-  "blockCount": 578,
-  "categoryCount": 13,
-  "libraryFingerprints": {
-    "C2000_Microcontroller_Blockset": {
-      "blockCount": 578
+  "pages": [
+    {
+      "id": "analog-io",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "analog-io",
+      "hash": "eb8aefdd0a3d27e747636586ef80fb862f8d073feed7b2880c6e33541952e820",
+      "fm": {
+        "title": "Analog io",
+        "description": "ADC, DAC, comparator, and sigma-delta analog interfaces (65 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "adc",
+          "dac",
+          "comparator",
+          "analog",
+          "sdfm",
+          "cmpss"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADC",
+          "ref": "c2802xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "AnalogIO Input",
+          "ref": "c2802xlib/AnalogIO Input",
+          "since": "R2023a+",
+          "intent": "Read an analog input channel — use to acquire analog voltage levels."
+        },
+        {
+          "block": "AnalogIO Output",
+          "ref": "c2802xlib/AnalogIO Output",
+          "since": "R2023a+",
+          "intent": "Drive an analog output channel — use to produce analog voltage levels."
+        },
+        {
+          "block": "COMP",
+          "ref": "c2802xlib/COMP",
+          "since": "R2023a+",
+          "intent": "Configure the on-chip analog comparator — use for fast analog threshold detection such as overcurrent trip."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2803xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "AnalogIO Input",
+          "ref": "c2803xlib/AnalogIO Input",
+          "since": "R2023a+",
+          "intent": "Read an analog input channel — use to acquire analog voltage levels."
+        },
+        {
+          "block": "AnalogIO Output",
+          "ref": "c2803xlib/AnalogIO Output",
+          "since": "R2023a+",
+          "intent": "Drive an analog output channel — use to produce analog voltage levels."
+        },
+        {
+          "block": "COMP",
+          "ref": "c2803xlib/COMP",
+          "since": "R2023a+",
+          "intent": "Configure the on-chip analog comparator — use for fast analog threshold detection such as overcurrent trip."
+        },
+        {
+          "block": "ADC",
+          "ref": "c280xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "ADC",
+          "ref": "c281xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2833xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2805xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2806xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "AnalogIO Input",
+          "ref": "c2806xlib/AnalogIO Input",
+          "since": "R2023a+",
+          "intent": "Read an analog input channel — use to acquire analog voltage levels."
+        },
+        {
+          "block": "AnalogIO Output",
+          "ref": "c2806xlib/AnalogIO Output",
+          "since": "R2023a+",
+          "intent": "Drive an analog output channel — use to produce analog voltage levels."
+        },
+        {
+          "block": "COMP",
+          "ref": "c2806xlib/COMP",
+          "since": "R2023a+",
+          "intent": "Configure the on-chip analog comparator — use for fast analog threshold detection such as overcurrent trip."
+        },
+        {
+          "block": "ADC",
+          "ref": "c280013xlib/ADC",
+          "since": "R2023b+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c280013xlib/CMPSS",
+          "since": "R2023b+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "ADC",
+          "ref": "c280015xlib/ADC",
+          "since": "R2023b+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c280015xlib/CMPSS",
+          "since": "R2023b+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "ADC",
+          "ref": "c28002xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c28002xlib/CMPSS",
+          "since": "R2023a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "ADC",
+          "ref": "c28003xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c28003xlib/CMPSS",
+          "since": "R2023a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c28003xlib/DAC",
+          "since": "R2023a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c28003xlib/SDFM",
+          "since": "R2023a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        },
+        {
+          "block": "ADC",
+          "ref": "c28004xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c28004xlib/CMPSS",
+          "since": "R2023a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c28004xlib/DAC",
+          "since": "R2023a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c28004xlib/SDFM",
+          "since": "R2023a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2807xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c2807xlib/CMPSS",
+          "since": "R2023a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c2807xlib/DAC",
+          "since": "R2023a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c2807xlib/SDFM",
+          "since": "R2023a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2837xDlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c2837xDlib/CMPSS",
+          "since": "R2023a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c2837xDlib/DAC",
+          "since": "R2023a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c2837xDlib/SDFM",
+          "since": "R2023a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2837xSlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c2837xSlib/CMPSS",
+          "since": "R2023a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c2837xSlib/DAC",
+          "since": "R2023a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c2837xSlib/SDFM",
+          "since": "R2023a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        },
+        {
+          "block": "ADC",
+          "ref": "c2838xlib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c2838xlib/CMPSS",
+          "since": "R2023a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c2838xlib/DAC",
+          "since": "R2023a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c2838xlib/SDFM",
+          "since": "R2023a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        },
+        {
+          "block": "ADC",
+          "ref": "f28M35x_C28x_lib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "AnalogIO Input",
+          "ref": "f28M35x_C28x_lib/AnalogIO Input",
+          "since": "R2023a+",
+          "intent": "Read an analog input channel — use to acquire analog voltage levels."
+        },
+        {
+          "block": "AnalogIO Output",
+          "ref": "f28M35x_C28x_lib/AnalogIO Output",
+          "since": "R2023a+",
+          "intent": "Drive an analog output channel — use to produce analog voltage levels."
+        },
+        {
+          "block": "COMP",
+          "ref": "f28M35x_C28x_lib/COMP",
+          "since": "R2023a+",
+          "intent": "Configure the on-chip analog comparator — use for fast analog threshold detection such as overcurrent trip."
+        },
+        {
+          "block": "ADC",
+          "ref": "f28M36x_C28x_lib/ADC",
+          "since": "R2023a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "AnalogIO Input",
+          "ref": "f28M36x_C28x_lib/AnalogIO Input",
+          "since": "R2023a+",
+          "intent": "Read an analog input channel — use to acquire analog voltage levels."
+        },
+        {
+          "block": "AnalogIO Output",
+          "ref": "f28M36x_C28x_lib/AnalogIO Output",
+          "since": "R2023a+",
+          "intent": "Drive an analog output channel — use to produce analog voltage levels."
+        },
+        {
+          "block": "COMP",
+          "ref": "f28M36x_C28x_lib/COMP",
+          "since": "R2023a+",
+          "intent": "Configure the on-chip analog comparator — use for fast analog threshold detection such as overcurrent trip."
+        },
+        {
+          "block": "ADC",
+          "ref": "c28P55xlib/ADC",
+          "since": "R2024b+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c28P55xlib/CMPSS",
+          "since": "R2024b+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c28P55xlib/DAC",
+          "since": "R2024b+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "ADC",
+          "ref": "c28P65xlib/ADC",
+          "since": "R2024a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c28P65xlib/CMPSS",
+          "since": "R2024a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c28P65xlib/DAC",
+          "since": "R2024a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c28P65xlib/SDFM",
+          "since": "R2024a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        },
+        {
+          "block": "ADC",
+          "ref": "c29H85xlib/ADC",
+          "since": "R2025a+",
+          "intent": "Read analog inputs via the on-chip ADC — use to sample sensor voltages and analog signals."
+        },
+        {
+          "block": "CMPSS",
+          "ref": "c29H85xlib/CMPSS",
+          "since": "R2026a+",
+          "intent": "Configure the comparator subsystem (CMPSS) with DAC references — use for analog protection and windowed comparison."
+        },
+        {
+          "block": "DAC",
+          "ref": "c29H85xlib/DAC",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage via the on-chip DAC — use to generate reference or analog output signals."
+        },
+        {
+          "block": "SDFM",
+          "ref": "c29H85xlib/SDFM",
+          "since": "R2026a+",
+          "intent": "Configure the Sigma-Delta Filter Module — use to interface isolated sigma-delta modulators for current/voltage sensing."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "can-network",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "can-network",
+      "hash": "6ba320910717dba209c01471fde2124ec3d39f360789f347f70cd781009fc0f4",
+      "fm": {
+        "title": "Can network",
+        "description": "CAN and CAN FD messaging and packing (61 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "can",
+          "mcan",
+          "can fd",
+          "pack",
+          "unpack"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "CAN Receive",
+          "ref": "c2803xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2803xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c280xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c280xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c281xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c281xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2833xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2833xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2834xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2834xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2805xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2805xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2806xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2806xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c280013xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c280013xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c280015xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c280015xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "MCAN Interrupt Status",
+          "ref": "c280015xlib/MCAN Interrupt Status",
+          "since": "R2024b+",
+          "intent": "Read the interrupt status of the MCAN (CAN FD) controller — use to check CAN FD events."
+        },
+        {
+          "block": "MCAN Receive",
+          "ref": "c280015xlib/MCAN Receive",
+          "since": "R2024b+",
+          "intent": "Receive a CAN FD message via the MCAN controller — use to read incoming CAN FD frames."
+        },
+        {
+          "block": "MCAN Transmit",
+          "ref": "c280015xlib/MCAN Transmit",
+          "since": "R2024b+",
+          "intent": "Transmit a CAN FD message via the MCAN controller — use to send CAN FD frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c28002xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c28002xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c28003xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c28003xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "MCAN Interrupt Status",
+          "ref": "c28003xlib/MCAN Interrupt Status",
+          "since": "R2024b+",
+          "intent": "Read the interrupt status of the MCAN (CAN FD) controller — use to check CAN FD events."
+        },
+        {
+          "block": "MCAN Receive",
+          "ref": "c28003xlib/MCAN Receive",
+          "since": "R2024b+",
+          "intent": "Receive a CAN FD message via the MCAN controller — use to read incoming CAN FD frames."
+        },
+        {
+          "block": "MCAN Transmit",
+          "ref": "c28003xlib/MCAN Transmit",
+          "since": "R2024b+",
+          "intent": "Transmit a CAN FD message via the MCAN controller — use to send CAN FD frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c28004xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c28004xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2807xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2807xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2837xDlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2837xDlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2837xSlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2837xSlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c2838xlib/CAN Receive",
+          "since": "R2023b+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c2838xlib/CAN Transmit",
+          "since": "R2023b+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "MCAN Interrupt Status",
+          "ref": "c2838xlib/MCAN Interrupt Status",
+          "since": "R2024b+",
+          "intent": "Read the interrupt status of the MCAN (CAN FD) controller — use to check CAN FD events."
+        },
+        {
+          "block": "MCAN Receive",
+          "ref": "c2838xlib/MCAN Receive",
+          "since": "R2024b+",
+          "intent": "Receive a CAN FD message via the MCAN controller — use to read incoming CAN FD frames."
+        },
+        {
+          "block": "MCAN Transmit",
+          "ref": "c2838xlib/MCAN Transmit",
+          "since": "R2024b+",
+          "intent": "Transmit a CAN FD message via the MCAN controller — use to send CAN FD frames."
+        },
+        {
+          "block": "MCAN Interrupt Status",
+          "ref": "c2838x_M4_lib/MCAN Interrupt Status",
+          "since": "R2023a+",
+          "intent": "Read the interrupt status of the MCAN (CAN FD) controller — use to check CAN FD events."
+        },
+        {
+          "block": "MCAN Receive",
+          "ref": "c2838x_M4_lib/MCAN Receive",
+          "since": "R2023a+",
+          "intent": "Receive a CAN FD message via the MCAN controller — use to read incoming CAN FD frames."
+        },
+        {
+          "block": "MCAN Transmit",
+          "ref": "c2838x_M4_lib/MCAN Transmit",
+          "since": "R2023a+",
+          "intent": "Transmit a CAN FD message via the MCAN controller — use to send CAN FD frames."
+        },
+        {
+          "block": "MCAN Interrupt Status",
+          "ref": "c28P55xlib/MCAN Interrupt Status",
+          "since": "R2024b+",
+          "intent": "Read the interrupt status of the MCAN (CAN FD) controller — use to check CAN FD events."
+        },
+        {
+          "block": "MCAN Receive",
+          "ref": "c28P55xlib/MCAN Receive",
+          "since": "R2024b+",
+          "intent": "Receive a CAN FD message via the MCAN controller — use to read incoming CAN FD frames."
+        },
+        {
+          "block": "MCAN Transmit",
+          "ref": "c28P55xlib/MCAN Transmit",
+          "since": "R2024b+",
+          "intent": "Transmit a CAN FD message via the MCAN controller — use to send CAN FD frames."
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "c28P65xlib/CAN Receive",
+          "since": "R2024a+",
+          "intent": "Receive a CAN message from the bus — use to read incoming CAN frames."
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "c28P65xlib/CAN Transmit",
+          "since": "R2024a+",
+          "intent": "Transmit a CAN message onto the bus — use to send CAN frames."
+        },
+        {
+          "block": "MCAN Interrupt Status",
+          "ref": "c28P65xlib/MCAN Interrupt Status",
+          "since": "R2024b+",
+          "intent": "Read the interrupt status of the MCAN (CAN FD) controller — use to check CAN FD events."
+        },
+        {
+          "block": "MCAN Receive",
+          "ref": "c28P65xlib/MCAN Receive",
+          "since": "R2024b+",
+          "intent": "Receive a CAN FD message via the MCAN controller — use to read incoming CAN FD frames."
+        },
+        {
+          "block": "MCAN Transmit",
+          "ref": "c28P65xlib/MCAN Transmit",
+          "since": "R2024b+",
+          "intent": "Transmit a CAN FD message via the MCAN controller — use to send CAN FD frames."
+        },
+        {
+          "block": "MCAN Interrupt Status",
+          "ref": "c29H85xlib/MCAN Interrupt Status",
+          "since": "R2026a+",
+          "intent": "Read the interrupt status of the MCAN (CAN FD) controller — use to check CAN FD events."
+        },
+        {
+          "block": "MCAN Receive",
+          "ref": "c29H85xlib/MCAN Receive",
+          "since": "R2026a+",
+          "intent": "Receive a CAN FD message via the MCAN controller — use to read incoming CAN FD frames."
+        },
+        {
+          "block": "MCAN Transmit",
+          "ref": "c29H85xlib/MCAN Transmit",
+          "since": "R2026a+",
+          "intent": "Transmit a CAN FD message via the MCAN controller — use to send CAN FD frames."
+        },
+        {
+          "block": "IQN x IQN",
+          "ref": "tiiqmathlib/IQN x IQN",
+          "since": "R2023a+",
+          "intent": "This block multiplies two IQ numbers that are represented in same IQ format. Depending on the multiplication option selected below, the result can also be rounded or saturated. All inputs and outputs are signed 32-bit fixed-point numbers. The respective IQNmpy function is selected based on the Q value."
+        },
+        {
+          "block": "C28x Hardware Interrupt",
+          "ref": "c2000lib/Scheduling/C28x Hardware Interrupt",
+          "since": "R2023a+",
+          "intent": "Create Interrupt Service Routine which will execute the downstream subsystem. Note: The default model base sample rate priority is set to 40 with a lower priority value indicating a higher priority task. These parameters can be changed in the 'Solver' pane of the 'Configuration Parameters'. The Simulink task priority of the selected interrupt is relative to the model base rate priority settings."
+        },
+        {
+          "block": "CAN FD Pack",
+          "ref": "c2000lib/Target Communication/CAN FD Pack",
+          "since": "R2023a+",
+          "intent": "Pack signals into a CAN FD message frame per a database — use to build CAN FD payloads."
+        },
+        {
+          "block": "CAN FD Unpack",
+          "ref": "c2000lib/Target Communication/CAN FD Unpack",
+          "since": "R2023a+",
+          "intent": "Extract signals from a CAN FD message frame per a database — use to parse CAN FD payloads."
+        },
+        {
+          "block": "CAN Pack",
+          "ref": "c2000lib/Target Communication/CAN Pack",
+          "since": "R2023a+",
+          "intent": "Pack signals into a CAN message frame per a database — use to build CAN payloads."
+        },
+        {
+          "block": "CAN Unpack",
+          "ref": "c2000lib/Target Communication/CAN Unpack",
+          "since": "R2023a+",
+          "intent": "Extract signals from a CAN message frame per a database — use to parse CAN payloads."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "cla",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "cla",
+      "hash": "899567983024e0fef205b6b427bee36fc484de1f3227e40dd1ff96fe65fb0f59",
+      "fm": {
+        "title": "Cla",
+        "description": "Control Law Accelerator coprocessor blocks (33 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "cla",
+          "coprocessor",
+          "task",
+          "math"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CLA Math",
+          "ref": "c2803xlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c2803xlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c2803xlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c2805xlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c2805xlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c2805xlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c2806xlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c2806xlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c2806xlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c28003xlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c28003xlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c28003xlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c28004xlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c28004xlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c28004xlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c2807xlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c2807xlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c2807xlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c2837xDlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c2837xDlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c2837xDlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c2837xSlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c2837xSlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c2837xSlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c2838xlib/CLA Math",
+          "since": "R2023a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c2838xlib/CLA Subsystem",
+          "since": "R2023a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c2838xlib/CLA Task",
+          "since": "R2023a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c28P55xlib/CLA Math",
+          "since": "R2024b+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c28P55xlib/CLA Task",
+          "since": "R2024b+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c28P55xlib/CLA Subsystem",
+          "since": "R2024b+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        },
+        {
+          "block": "CLA Math",
+          "ref": "c28P65xlib/CLA Math",
+          "since": "R2024a+",
+          "intent": "Perform math operations on the Control Law Accelerator (CLA) — use to offload floating-point math to the CLA coprocessor."
+        },
+        {
+          "block": "CLA Task",
+          "ref": "c28P65xlib/CLA Task",
+          "since": "R2024a+",
+          "intent": "Define a task executed by the CLA coprocessor — use to run time-critical control on the CLA."
+        },
+        {
+          "block": "CLA Subsystem",
+          "ref": "c28P65xlib/CLA Subsystem",
+          "since": "R2024a+",
+          "intent": "Encapsulate logic to run on the CLA coprocessor — use to build CLA-executed algorithms."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "data-packing",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "data-packing",
+      "hash": "9ec34f4379eff4448b56cd86feee2ed40aa97b38ac108679327156f8256232f5",
+      "fm": {
+        "title": "Data packing",
+        "description": "Byte and protocol frame packing/unpacking (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "byte",
+          "pack",
+          "unpack",
+          "protocol",
+          "encode",
+          "decode"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Byte Pack",
+          "ref": "c2000lib/Target Communication/Byte Pack",
+          "since": "R2023a+",
+          "intent": "Pack multiple signals into a single byte vector — use to assemble a message payload for transmission."
+        },
+        {
+          "block": "Byte Unpack",
+          "ref": "c2000lib/Target Communication/Byte Unpack",
+          "since": "R2023a+",
+          "intent": "Unpack a byte vector into individual signals — use to parse a received message payload."
+        },
+        {
+          "block": "Protocol Decoder",
+          "ref": "c2000lib/Target Communication/Protocol Decoder",
+          "since": "R2023a+",
+          "intent": "Decode a framed communication protocol into signals — use to parse structured serial or network messages."
+        },
+        {
+          "block": "Protocol Encoder",
+          "ref": "c2000lib/Target Communication/Protocol Encoder",
+          "since": "R2023a+",
+          "intent": "Encode signals into a framed communication protocol — use to build structured serial or network messages."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "digital-io",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "digital-io",
+      "hash": "6d1f7b15cde62e1be7ac0a3e84a7f8b17f8294343dd78b1fa847fd692b438aec",
+      "fm": {
+        "title": "Digital io",
+        "description": "GPIO digital input/output (68 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "digital",
+          "gpio",
+          "input",
+          "output"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Digital Input",
+          "ref": "c2802xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2802xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2803xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2803xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c280xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c280xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c281xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c281xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "QEP",
+          "ref": "c281xlib/QEP",
+          "since": "R2023a+",
+          "intent": "Configures quadrature encoder pulse circuit associated with the selected Event Manager module to decode and count quadrature encoded pulses applied to related input pins (QEP1 and QEP2 for EVA or QEP3 and QEP4 for EVB). Depending on the selected counting mode, the output is either the pulse count or the rotor speed (when a pulse signal comes from an optical encoder mounted on a rotating machine)."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2833xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2833xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2834xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2834xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2805xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2805xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2806xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2806xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c280013xlib/Digital Input",
+          "since": "R2023b+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c280013xlib/Digital Output",
+          "since": "R2023b+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c280015xlib/Digital Input",
+          "since": "R2023b+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c280015xlib/Digital Output",
+          "since": "R2023b+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c28002xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c28002xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c28003xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c28003xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c28004xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c28004xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2807xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2807xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2837xDlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2837xDlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2837xSlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2837xSlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2838xlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2838xlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c2838x_M4_lib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c2838x_M4_lib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "f28M35x_C28x_lib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "f28M35x_C28x_lib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "f28M35x_M3_lib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "f28M35x_M3_lib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "f28M36x_C28x_lib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "f28M36x_C28x_lib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "f28M36x_M3_lib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "f28M36x_M3_lib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c28P55xlib/Digital Input",
+          "since": "R2024b+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c28P55xlib/Digital Output",
+          "since": "R2024b+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c28P65xlib/Digital Input",
+          "since": "R2024a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c28P65xlib/Digital Output",
+          "since": "R2024a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Digital Input",
+          "ref": "c29H85xlib/Digital Input",
+          "since": "R2025a+",
+          "intent": "Read the state of a digital (GPIO) input pin — use to sense external logic levels or switches."
+        },
+        {
+          "block": "Digital Output",
+          "ref": "c29H85xlib/Digital Output",
+          "since": "R2025a+",
+          "intent": "Set the state of a digital (GPIO) output pin — use to drive external logic, LEDs, or enables."
+        },
+        {
+          "block": "Absolute IQN",
+          "ref": "tiiqmathlib/Absolute IQN",
+          "since": "R2023a+",
+          "intent": "This block computes the absolute value of an IQ number. Both the input and the output are signed 32-bit fixed-point numbers. The respective IQNabs function is selected based on the Q value."
+        },
+        {
+          "block": "Arctangent IQN",
+          "ref": "tiiqmathlib/Arctangent IQN",
+          "since": "R2023a+",
+          "intent": "This block computes the 4-quadrant arctangent for two IQ numbers given in the same Q format. All inputs and outputs are signed 32-bit fixed-point numbers. Depending on the selected option, the output of the block is either in radians and varies from -pi to +pi or in per unit (PU) and varies from 0 to 1. The respective IQNatan function is selected by the input data type."
+        },
+        {
+          "block": "Float to IQN",
+          "ref": "tiiqmathlib/Float to IQN",
+          "since": "R2023a+",
+          "intent": "This block converts a floating-point input to the equivalent IQ value. The input is a single-precission floating-point number and the output is a signed 32-bit fixed-point number. The respective IQN function is selected based on the Q value specified for the output."
+        },
+        {
+          "block": "Fractional part IQN x int32",
+          "ref": "tiiqmathlib/Fractional part IQN x int32",
+          "since": "R2023a+",
+          "intent": "This block multiplies an IQ number with a long integer number and returns the fractional part of the result. First input and the output are signed 32-bit fixed-point numbers, while the second input is a long integer number. The respective IQNmpyI32frac function is selected based on the Q value of the input."
+        },
+        {
+          "block": "Fractional part IQN",
+          "ref": "tiiqmathlib/Fractional part IQN",
+          "since": "R2023a+",
+          "intent": "This block returns the fractional part of an IQ number. Both the input and output are signed 32-bit fixed-point numbers. The respective IQNfrac function is selected based on the Q value."
+        },
+        {
+          "block": "IQN / IQN",
+          "ref": "tiiqmathlib/IQN / IQN",
+          "since": "R2023a+",
+          "intent": "This block divides two IQN numbers using Newton-Raphson technique. All inputs and outputs are signed 32-bit fixed-point numbers that have the same Q value. The respective IQNdiv function is selected based on the Q value."
+        },
+        {
+          "block": "IQN to Float",
+          "ref": "tiiqmathlib/IQN to Float",
+          "since": "R2023a+",
+          "intent": "This block converts an IQ number to the equivalent floating-point value in IEEE 754 format. The input is a signed 32-bit fixed-point number and the output is a single-precission floating-point number. The respective IQNtoF function is selected based on the Q value."
+        },
+        {
+          "block": "IQN x int32",
+          "ref": "tiiqmathlib/IQN x int32",
+          "since": "R2023a+",
+          "intent": "This block multiplies an IQ number with a long integer. First input and the output are signed 32-bit fixed-point numbers, while the second input is a long integer number. The respective IQNmpyI32 function is selected based on the Q value of the first input."
+        },
+        {
+          "block": "IQN1 to IQN2",
+          "ref": "tiiqmathlib/IQN1 to IQN2",
+          "since": "R2023a+",
+          "intent": "This block converts an IQ number to a new IQ number in specified Q format. Both the input and output are signed 32-bit fixed-point numbers. The respective IQNtoIQx function is selected based on the Q value."
+        },
+        {
+          "block": "IQN1 x IQN2",
+          "ref": "tiiqmathlib/IQN1 x IQN2",
+          "since": "R2023a+",
+          "intent": "This block multiplies two IQ numbers that are represented in different IQ format. All inputs and outputs are signed 32-bit fixed-point numbers. The respective IQNmpyIQX function is selected based on the Q value specified for the output."
+        },
+        {
+          "block": "Integer part IQN x int32",
+          "ref": "tiiqmathlib/Integer part IQN x int32",
+          "since": "R2023a+",
+          "intent": "This block multiplies an IQ number with a long integer number and returns the integer part of the result. First input is a signed 32-bit fixed-point number, while the second input and the output are long integer numbers. The respective IQNmpyI32int function is selected based on the Q value of the input."
+        },
+        {
+          "block": "Integer part IQN",
+          "ref": "tiiqmathlib/Integer part IQN",
+          "since": "R2023a+",
+          "intent": "This block returns the integer part of an IQ number. The input is a signed 32-bit fixed-point number and the output is a long integer number. The respective IQNint function is selected based on the Q value."
+        },
+        {
+          "block": "Magnitude IQN",
+          "ref": "tiiqmathlib/Magnitude IQN",
+          "since": "R2023a+",
+          "intent": "This block computes the magnitude of two IQ numbers. All inputs and outputs are signed 32-bit fixed-point numbers in the same Q format. The respective IQNmag function is selected based on the Q value."
+        },
+        {
+          "block": "Saturate IQN",
+          "ref": "tiiqmathlib/Saturate IQN",
+          "since": "R2023a+",
+          "intent": "This block saturates the value of an IQ number to the given upper and lower limits. Both the input and the output are signed 32-bit fixed-point numbers. The respective IQsat function is selected based on the Q value. The upper and lower limits have to be given as real world values."
+        },
+        {
+          "block": "Square Root IQN",
+          "ref": "tiiqmathlib/Square Root IQN",
+          "since": "R2023a+",
+          "intent": "This block computes the square root and the inverse square root of an IQ number using table lookup and Newton-Raphson approximation. Both the input and the output are signed 32-bit fixed-point numbers. The respective IQNsqrt function is selected based on the Q value."
+        },
+        {
+          "block": "Trig Fcn IQN",
+          "ref": "tiiqmathlib/Trig Fcn IQN",
+          "since": "R2023a+",
+          "intent": "This block computes selected trigonometric functions of an IQ number. Both the input and the output are signed 32-bit fixed-point numbers. The respective trigonometric function is selected based on the Q value."
+        },
+        {
+          "block": "Hardware Profiler",
+          "ref": "c2000lib/Scheduling/Hardware Profiler",
+          "since": "R2024b+",
+          "intent": "Profiles functions using GPIO, ERAD or Timer measurement modes. GPIO: Selected pin is set and cleared before and after the execution of the downstream function-call subsystem. ERAD: The duration between the start and end of execution of the downstream function-call subsystem is measured. Timer: Timer 2 count is read before and after the execution of the downstream function-call subsystem. The difference between these timer reads is computed."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ipc",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "ipc",
+      "hash": "fffc470a257281ea8a2b7c9ad5a237b551871a15d65adf00f7e502e62c0c0adc",
+      "fm": {
+        "title": "Ipc",
+        "description": "Inter-processor and inter-process communication (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "ipc",
+          "interprocess",
+          "multicore",
+          "shared"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "IPC Receive",
+          "ref": "c2837xDlib/IPC Receive",
+          "since": "R2023b+",
+          "intent": "Receive data from another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "IPC Transmit",
+          "ref": "c2837xDlib/IPC Transmit",
+          "since": "R2023b+",
+          "intent": "Send data to another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "IPC Receive",
+          "ref": "c2838xlib/IPC Receive",
+          "since": "R2023b+",
+          "intent": "Receive data from another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "IPC Transmit",
+          "ref": "c2838xlib/IPC Transmit",
+          "since": "R2023b+",
+          "intent": "Send data to another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "IPC Receive",
+          "ref": "c2838x_M4_lib/IPC Receive",
+          "since": "R2023b+",
+          "intent": "Receive data from another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "IPC Transmit",
+          "ref": "c2838x_M4_lib/IPC Transmit",
+          "since": "R2023b+",
+          "intent": "Send data to another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "IPC Receive",
+          "ref": "c28P65xlib/IPC Receive",
+          "since": "R2024a+",
+          "intent": "Receive data from another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "IPC Transmit",
+          "ref": "c28P65xlib/IPC Transmit",
+          "since": "R2024a+",
+          "intent": "Send data to another CPU core via inter-processor communication — use for multicore data exchange."
+        },
+        {
+          "block": "Interprocess Data Read",
+          "ref": "c2000lib/Target Communication/Interprocess Data Read",
+          "since": "R2023a+",
+          "intent": "Read data shared from another process or core — use for inter-process data exchange."
+        },
+        {
+          "block": "Interprocess Data Write",
+          "ref": "c2000lib/Target Communication/Interprocess Data Write",
+          "since": "R2023a+",
+          "intent": "Write data to be shared with another process or core — use for inter-process data exchange."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "library",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "library",
+      "hash": "5f453c1e4140a8bcb6f111914983cac6a70c651ca62ea6f9a2065515aaca09d5",
+      "fm": {
+        "title": "Library",
+        "description": "Library entry points and device families (31 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "library",
+          "blockset",
+          "device",
+          "family"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Blockset Name2",
+          "ref": "c2000lib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2802xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2803xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c280xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c281xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2833xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2834xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2805xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2806xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c280013xlib/Blockset Name2",
+          "since": "R2023b+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c280015xlib/Blockset Name2",
+          "since": "R2023b+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c28002xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c28003xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c28004xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2807xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2837xDlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2837xSlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2838xparentlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2838xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2838x_M4_lib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "f28M35xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "f28M35x_C28x_lib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "f28M35x_M3_lib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "f28M36xlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "f28M36x_C28x_lib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "f28M36x_M3_lib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c28P55xlib/Blockset Name2",
+          "since": "R2024b+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c28P65xlib/Blockset Name2",
+          "since": "R2024a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "F29H85x",
+          "ref": "c29H85xlib/F29H85x",
+          "since": "R2025a+",
+          "intent": "Library of peripheral blocks for the F29H85x device family — browse here for that MCU's supported blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "c2000optimizedblks/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "tiiqmathlib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Top-level entry point for the C2000 Microcontroller Blockset library — browse here to find peripheral, scheduling, and communication blocks."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "memory",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "memory",
+      "hash": "549e0b1ee22b8301f391c6adb834b9daddea5cee0532ca409b513c49ef658d8a",
+      "fm": {
+        "title": "Memory",
+        "description": "Memory and register access (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "memory",
+          "register",
+          "allocate",
+          "copy"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Memory Allocate",
+          "ref": "c2000lib/Memory Operations/Memory Allocate",
+          "since": "R2023a+",
+          "intent": "Allocate a block of memory in the generated code — use to reserve buffers or place data in specific memory."
+        },
+        {
+          "block": "Memory Copy",
+          "ref": "c2000lib/Memory Operations/Memory Copy",
+          "since": "R2023a+",
+          "intent": "Copy data between memory locations — use to move buffers or access mapped registers/memory."
+        },
+        {
+          "block": "Register ReadWrite",
+          "ref": "c2000lib/Memory Operations/Register ReadWrite",
+          "since": "R2024a+",
+          "intent": "Read from or write to a hardware register directly — use for low-level peripheral register access."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "network",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "network",
+      "hash": "3460723488e16ac90b45f4bee7eb0dea26b93468091424813c5602658e962d51",
+      "fm": {
+        "title": "Network",
+        "description": "TCP/IP and UDP networking (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "tcp",
+          "udp",
+          "ethernet",
+          "network"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "LIN Receive",
+          "ref": "c2803xlib/LIN Receive",
+          "since": "R2023a+",
+          "intent": "Configures the C2803x LIN port to receive messages from the Local Interconnect Network (LIN)."
+        },
+        {
+          "block": "LIN Transmit",
+          "ref": "c2803xlib/LIN Transmit",
+          "since": "R2023a+",
+          "intent": "Configures the C2803x LIN port to transmit messages to the Local Interconnect Network (LIN)."
+        },
+        {
+          "block": "TCP Receive",
+          "ref": "c2838x_M4_lib/TCP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over a TCP/IP connection — use to read network data on the target."
+        },
+        {
+          "block": "TCP Send",
+          "ref": "c2838x_M4_lib/TCP Send",
+          "since": "R2023a+",
+          "intent": "Send data over a TCP/IP connection — use to transmit network data on the target."
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "c2838x_M4_lib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP datagrams over the network — use to read connectionless network data."
+        },
+        {
+          "block": "UDP Send",
+          "ref": "c2838x_M4_lib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP datagrams over the network — use to transmit connectionless network data."
+        },
+        {
+          "block": "TCP Receive",
+          "ref": "f28M35x_M3_lib/TCP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over a TCP/IP connection — use to read network data on the target."
+        },
+        {
+          "block": "TCP Send",
+          "ref": "f28M35x_M3_lib/TCP Send",
+          "since": "R2023a+",
+          "intent": "Send data over a TCP/IP connection — use to transmit network data on the target."
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "f28M35x_M3_lib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP datagrams over the network — use to read connectionless network data."
+        },
+        {
+          "block": "UDP Send",
+          "ref": "f28M35x_M3_lib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP datagrams over the network — use to transmit connectionless network data."
+        },
+        {
+          "block": "TCP Receive",
+          "ref": "f28M36x_M3_lib/TCP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over a TCP/IP connection — use to read network data on the target."
+        },
+        {
+          "block": "TCP Send",
+          "ref": "f28M36x_M3_lib/TCP Send",
+          "since": "R2023a+",
+          "intent": "Send data over a TCP/IP connection — use to transmit network data on the target."
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "f28M36x_M3_lib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP datagrams over the network — use to read connectionless network data."
+        },
+        {
+          "block": "UDP Send",
+          "ref": "f28M36x_M3_lib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP datagrams over the network — use to transmit connectionless network data."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pwm-capture",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "pwm-capture",
+      "hash": "c77b4d66bb04ba1289d668c8fe01615bfdaf2290c48c0d0c3c53374ef7b876c6",
+      "fm": {
+        "title": "Pwm capture",
+        "description": "PWM generation and pulse/encoder capture (66 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "pwm",
+          "epwm",
+          "ecap",
+          "eqep",
+          "capture",
+          "encoder"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "eCAP",
+          "ref": "c2802xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2802xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "HRCAP",
+          "ref": "c2803xlib/HRCAP",
+          "since": "R2023b+",
+          "intent": "Use the high-resolution capture peripheral — use for precise input pulse-timing measurement."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2803xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2803xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2803xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c280xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c280xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c280xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "CAP",
+          "ref": "c281xlib/CAP",
+          "since": "R2023a+",
+          "intent": "Configures the Event Manager of the C281x DSP for CAP (capture)."
+        },
+        {
+          "block": "PWM",
+          "ref": "c281xlib/PWM",
+          "since": "R2023a+",
+          "intent": "Configures the Event Manager of the C281x DSP to generate PWM waveforms."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2833xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2833xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2833xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2834xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2834xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2834xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2805xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2805xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2805xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "HRCAP",
+          "ref": "c2806xlib/HRCAP",
+          "since": "R2023b+",
+          "intent": "Use the high-resolution capture peripheral — use for precise input pulse-timing measurement."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2806xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2806xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2806xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c280013xlib/eCAP",
+          "since": "R2023b+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c280013xlib/ePWM",
+          "since": "R2023b+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c280013xlib/eQEP",
+          "since": "R2023b+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c280015xlib/eCAP",
+          "since": "R2023b+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c280015xlib/ePWM",
+          "since": "R2023b+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c280015xlib/eQEP",
+          "since": "R2023b+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c28002xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c28002xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c28002xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c28003xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c28003xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c28003xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c28004xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c28004xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c28004xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2807xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2807xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2807xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2837xDlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2837xDlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2837xDlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2837xSlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2837xSlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2837xSlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c2838xlib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c2838xlib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c2838xlib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "f28M35x_C28x_lib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "f28M35x_C28x_lib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "f28M35x_C28x_lib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "f28M36x_C28x_lib/eCAP",
+          "since": "R2023a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "f28M36x_C28x_lib/ePWM",
+          "since": "R2023a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "f28M36x_C28x_lib/eQEP",
+          "since": "R2023a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c28P55xlib/eCAP",
+          "since": "R2024b+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c28P55xlib/ePWM",
+          "since": "R2024b+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c28P55xlib/eQEP",
+          "since": "R2024b+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c28P65xlib/eCAP",
+          "since": "R2024a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c28P65xlib/ePWM",
+          "since": "R2024a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c28P65xlib/eQEP",
+          "since": "R2024a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        },
+        {
+          "block": "eCAP",
+          "ref": "c29H85xlib/eCAP",
+          "since": "R2026a+",
+          "intent": "Capture the timing of input pulse edges (enhanced Capture) — use to measure period, frequency, or duty cycle."
+        },
+        {
+          "block": "ePWM",
+          "ref": "c29H85xlib/ePWM",
+          "since": "R2025a+",
+          "intent": "Generate enhanced PWM waveforms — use to drive motor phases, power converters, and switching stages."
+        },
+        {
+          "block": "eQEP",
+          "ref": "c29H85xlib/eQEP",
+          "since": "R2026a+",
+          "intent": "Decode a quadrature encoder (enhanced QEP) — use to measure position and speed from an encoder."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "scheduling",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "scheduling",
+      "hash": "c1dbc5f6b24f29f69603461a807ed35b2cd7307e248d29e21f585508c9f8f965",
+      "fm": {
+        "title": "Scheduling",
+        "description": "Interrupts, tasks, watchdog, and scheduling (52 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "interrupt",
+          "task",
+          "watchdog",
+          "event",
+          "idle",
+          "scheduling"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2802xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2802xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2803xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2803xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c280xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c280xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c281xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Timer",
+          "ref": "c281xlib/Timer",
+          "since": "R2023a+",
+          "intent": "Initialize general purpose Event Manager timer. Enables one to define timer period, compare value and interrupt request for various events."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c281xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2833xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2833xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2834xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2834xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2805xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2805xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2806xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2806xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c280013xlib/Software Interrupt Trigger",
+          "since": "R2023b+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c280013xlib/Watchdog",
+          "since": "R2023b+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c280015xlib/Software Interrupt Trigger",
+          "since": "R2023b+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c280015xlib/Watchdog",
+          "since": "R2023b+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c28002xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c28002xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c28003xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c28003xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c28004xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c28004xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2807xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2807xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2837xDlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2837xDlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2837xSlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2837xSlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c2838xlib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c2838xlib/Watchdog",
+          "since": "R2023a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "c2838x_M4_lib/Hardware Interrupt",
+          "since": "R2023a+",
+          "intent": "Map a hardware interrupt to a triggered subsystem — use for event-driven ISR handling."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "f28M35x_C28x_lib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "f28M35x_M3_lib/Hardware Interrupt",
+          "since": "R2023a+",
+          "intent": "Map a hardware interrupt to a triggered subsystem — use for event-driven ISR handling."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "f28M36x_C28x_lib/Software Interrupt Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "f28M36x_M3_lib/Hardware Interrupt",
+          "since": "R2023a+",
+          "intent": "Map a hardware interrupt to a triggered subsystem — use for event-driven ISR handling."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c28P55xlib/Software Interrupt Trigger",
+          "since": "R2024b+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c28P55xlib/Watchdog",
+          "since": "R2024b+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Software Interrupt Trigger",
+          "ref": "c28P65xlib/Software Interrupt Trigger",
+          "since": "R2024a+",
+          "intent": "Trigger a software interrupt in the generated code — use to schedule a task via an ISR."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c28P65xlib/Watchdog",
+          "since": "R2024a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Watchdog",
+          "ref": "c29H85xlib/Watchdog",
+          "since": "R2025a+",
+          "intent": "Configure and service the watchdog timer — use to reset the MCU if software hangs."
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "c29H85xlib/Hardware Interrupt",
+          "since": "R2025a+",
+          "intent": "Map a hardware interrupt to a triggered subsystem — use for event-driven ISR handling."
+        },
+        {
+          "block": "CLA Task Manager",
+          "ref": "c2000lib/Scheduling/CLA Task Manager",
+          "since": "R2023a+",
+          "intent": "Schedule and manage CLA coprocessor tasks — use to coordinate CLA task execution."
+        },
+        {
+          "block": "Event Source",
+          "ref": "c2000lib/Scheduling/Event Source",
+          "since": "R2024a+",
+          "intent": "Define an event that triggers a task — use to link peripheral events to scheduled execution."
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "c2000lib/Scheduling/Hardware Interrupt",
+          "since": "R2023a+",
+          "intent": "Map a hardware interrupt to a triggered subsystem — use for event-driven ISR handling."
+        },
+        {
+          "block": "Idle Task",
+          "ref": "c2000lib/Scheduling/Idle Task",
+          "since": "R2023a+",
+          "intent": "Run low-priority code when no other task is active — use for background processing."
+        },
+        {
+          "block": "Software Trigger CPU<->CLA",
+          "ref": "c2000lib/Scheduling/Software Trigger CPU<->CLA",
+          "since": "R2023a+",
+          "intent": "Trigger a CLA task from the CPU or signal back — use to coordinate CPU/CLA execution."
+        },
+        {
+          "block": "Task Manager",
+          "ref": "c2000lib/Scheduling/Task Manager",
+          "since": "R2023a+",
+          "intent": "Configure and schedule model tasks on the target — use to define task rates and priorities."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "sensors",
+      "hash": "95e063dab185b2bb0678af0d5055ae4105b4644f363e6caff6f454a138283dc7",
+      "fm": {
+        "title": "Sensors",
+        "description": "Onboard/attached sensor driver blocks (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "sensor",
+          "accelerometer",
+          "imu",
+          "magnetometer",
+          "pressure"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADXL34x",
+          "ref": "c2000sensorslib/ADXL34x",
+          "since": "R2023a+",
+          "intent": "Read acceleration from an ADXL34x 3-axis accelerometer — use for motion or tilt sensing."
+        },
+        {
+          "block": "BME280",
+          "ref": "c2000sensorslib/BME280",
+          "since": "R2023a+",
+          "intent": "Read temperature, pressure, and humidity from a BME280 sensor — use for environmental sensing."
+        },
+        {
+          "block": "BMI160",
+          "ref": "c2000sensorslib/BMI160",
+          "since": "R2023a+",
+          "intent": "Read acceleration and angular rate from a BMI160 IMU — use for motion sensing."
+        },
+        {
+          "block": "BMM150",
+          "ref": "c2000sensorslib/BMM150",
+          "since": "R2023a+",
+          "intent": "Read magnetic field from a BMM150 magnetometer — use for heading or compass sensing."
+        },
+        {
+          "block": "BMP280",
+          "ref": "c2000sensorslib/BMP280",
+          "since": "R2023a+",
+          "intent": "Read temperature and pressure from a BMP280 sensor — use for barometric or altitude sensing."
+        },
+        {
+          "block": "LIS3DH",
+          "ref": "c2000sensorslib/LIS3DH",
+          "since": "R2023a+",
+          "intent": "Read acceleration from a LIS3DH 3-axis accelerometer — use for motion or tilt sensing."
+        },
+        {
+          "block": "sensors",
+          "ref": "c2000sensorslib/sensors",
+          "since": "R2023a+",
+          "intent": "Library of supported sensor driver blocks — browse here for accelerometer, IMU, magnetometer, and environmental sensor blocks."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "serial-comm",
+      "kind": "toolbox",
+      "library": "C2000 Microcontroller Blockset",
+      "kbFolder": "c2000-microcontroller-blockset",
+      "category": "serial-comm",
+      "hash": "dd38cf13ef5ce96170f6ee83931730fa6fc3952532ce0966b4d185e386c65d3a",
+      "fm": {
+        "title": "Serial comm",
+        "description": "SPI, I2C, SCI/UART, and host serial communication (164 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "c2000-microcontroller-blockset",
+          "spi",
+          "i2c",
+          "sci",
+          "uart",
+          "serial"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "I2C Receive",
+          "ref": "c2802xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2802xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2802xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2802xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2802xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2802xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2802xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2803xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2803xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2803xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2803xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2803xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2803xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2803xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c280xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c280xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c280xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c280xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c280xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c280xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c280xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c281xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c281xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c281xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c281xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c281xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2833xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2833xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2833xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2833xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2833xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2833xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2833xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2834xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2834xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2834xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2834xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2834xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2834xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2834xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2805xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2805xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2805xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2805xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2805xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2805xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2805xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2806xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2806xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2806xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2806xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2806xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2806xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2806xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c280013xlib/I2C Receive",
+          "since": "R2023b+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c280013xlib/I2C Transmit",
+          "since": "R2023b+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c280013xlib/SCI Receive",
+          "since": "R2023b+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c280013xlib/SCI Transmit",
+          "since": "R2023b+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c280013xlib/SPI Controller Transfer",
+          "since": "R2023b+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c280013xlib/SPI Receive",
+          "since": "R2023b+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c280013xlib/SPI Transmit",
+          "since": "R2023b+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c280015xlib/I2C Receive",
+          "since": "R2023b+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c280015xlib/I2C Transmit",
+          "since": "R2023b+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c280015xlib/SCI Receive",
+          "since": "R2023b+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c280015xlib/SCI Transmit",
+          "since": "R2023b+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c280015xlib/SPI Controller Transfer",
+          "since": "R2023b+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c280015xlib/SPI Receive",
+          "since": "R2023b+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c280015xlib/SPI Transmit",
+          "since": "R2023b+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c28002xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c28002xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c28002xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c28002xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c28002xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c28002xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c28002xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c28003xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c28003xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c28003xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c28003xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c28003xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c28003xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c28003xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c28004xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c28004xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c28004xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c28004xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c28004xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c28004xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c28004xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2807xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2807xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2807xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2807xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2807xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2807xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2807xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2837xDlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2837xDlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2837xDlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2837xDlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2837xDlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2837xDlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2837xDlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2837xSlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2837xSlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2837xSlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2837xSlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2837xSlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2837xSlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2837xSlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c2838xlib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c2838xlib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c2838xlib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c2838xlib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c2838xlib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c2838xlib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c2838xlib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "UART Receive",
+          "ref": "c2838x_M4_lib/UART Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART port — use to read data from a serial device."
+        },
+        {
+          "block": "UART Transmit",
+          "ref": "c2838x_M4_lib/UART Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over a UART port — use to transmit data to a serial device."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "f28M35x_C28x_lib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "f28M35x_C28x_lib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "f28M35x_C28x_lib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "f28M35x_C28x_lib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "f28M35x_C28x_lib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "f28M35x_C28x_lib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "f28M35x_C28x_lib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "UART Receive",
+          "ref": "f28M35x_M3_lib/UART Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART port — use to read data from a serial device."
+        },
+        {
+          "block": "UART Transmit",
+          "ref": "f28M35x_M3_lib/UART Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over a UART port — use to transmit data to a serial device."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "f28M36x_C28x_lib/I2C Receive",
+          "since": "R2023a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "f28M36x_C28x_lib/I2C Transmit",
+          "since": "R2023a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "f28M36x_C28x_lib/SCI Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "f28M36x_C28x_lib/SCI Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "f28M36x_C28x_lib/SPI Controller Transfer",
+          "since": "R2023a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "f28M36x_C28x_lib/SPI Receive",
+          "since": "R2023a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "f28M36x_C28x_lib/SPI Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "UART Receive",
+          "ref": "f28M36x_M3_lib/UART Receive",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART port — use to read data from a serial device."
+        },
+        {
+          "block": "UART Transmit",
+          "ref": "f28M36x_M3_lib/UART Transmit",
+          "since": "R2023a+",
+          "intent": "Send serial data over a UART port — use to transmit data to a serial device."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c28P55xlib/I2C Receive",
+          "since": "R2024b+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c28P55xlib/I2C Transmit",
+          "since": "R2024b+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c28P55xlib/SCI Receive",
+          "since": "R2024b+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c28P55xlib/SCI Transmit",
+          "since": "R2024b+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c28P55xlib/SPI Controller Transfer",
+          "since": "R2024b+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c28P55xlib/SPI Receive",
+          "since": "R2024b+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c28P55xlib/SPI Transmit",
+          "since": "R2024b+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c28P65xlib/I2C Receive",
+          "since": "R2024a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c28P65xlib/I2C Transmit",
+          "since": "R2024a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SCI Receive",
+          "ref": "c28P65xlib/SCI Receive",
+          "since": "R2024a+",
+          "intent": "Receive serial data over the SCI (UART) port — use to read data from a host or serial device."
+        },
+        {
+          "block": "SCI Transmit",
+          "ref": "c28P65xlib/SCI Transmit",
+          "since": "R2024a+",
+          "intent": "Send serial data over the SCI (UART) port — use to transmit data to a host or serial device."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c28P65xlib/SPI Controller Transfer",
+          "since": "R2024a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c28P65xlib/SPI Receive",
+          "since": "R2024a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "c28P65xlib/SPI Transmit",
+          "since": "R2024a+",
+          "intent": "Send data over the SPI bus — use to write to SPI peripherals."
+        },
+        {
+          "block": "I2C Receive",
+          "ref": "c29H85xlib/I2C Receive",
+          "since": "R2026a+",
+          "intent": "Read data from a device on the I2C bus — use to acquire data from I2C sensors or peripherals."
+        },
+        {
+          "block": "I2C Transmit",
+          "ref": "c29H85xlib/I2C Transmit",
+          "since": "R2026a+",
+          "intent": "Write data to a device on the I2C bus — use to configure or send data to I2C peripherals."
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "c29H85xlib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform a full-duplex SPI transfer as controller (master) — use to exchange data with an SPI peripheral in one transaction."
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "c29H85xlib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Read data received over the SPI bus — use to acquire data from SPI peripherals."
+        },
+        {
+          "block": "SPI Transmit1",
+          "ref": "c29H85xlib/SPI Transmit1",
+          "since": "R2026a+",
+          "intent": "Send data over an SPI port to a connected device — use to write to SPI peripherals."
+        },
+        {
+          "block": "UART Receive",
+          "ref": "c29H85xlib/UART Receive",
+          "since": "R2025a+",
+          "intent": "Receive serial data over a UART port — use to read data from a serial device."
+        },
+        {
+          "block": "UART Transmit",
+          "ref": "c29H85xlib/UART Transmit",
+          "since": "R2025a+",
+          "intent": "Send serial data over a UART port — use to transmit data to a serial device."
+        },
+        {
+          "block": "Serial Configuration",
+          "ref": "c2000lib/Host Communication/Serial Configuration",
+          "since": "R2023a+",
+          "intent": "Configure serial port settings (baud, parity, data bits) for host communication — use to set up a serial link before send/receive."
+        },
+        {
+          "block": "Serial Receive",
+          "ref": "c2000lib/Host Communication/Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over the host serial port — use to read data from the connected host PC."
+        },
+        {
+          "block": "Serial Send",
+          "ref": "c2000lib/Host Communication/Serial Send",
+          "since": "R2023a+",
+          "intent": "Send data over the host serial port — use to stream data to the connected host PC."
+        },
+        {
+          "block": "Serial Configuration",
+          "ref": "c2000lib/Test Bench Blocks/Serial Configuration",
+          "since": "R2023a+",
+          "intent": "Configure serial port settings (baud, parity, data bits) for host communication — use to set up a serial link before send/receive."
+        },
+        {
+          "block": "Serial Receive",
+          "ref": "c2000lib/Test Bench Blocks/Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over the host serial port — use to read data from the connected host PC."
+        },
+        {
+          "block": "Serial Send",
+          "ref": "c2000lib/Test Bench Blocks/Serial Send",
+          "since": "R2023a+",
+          "intent": "Send data over the host serial port — use to stream data to the connected host PC."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:15",
+  "generatedAtDatenum": 740309.99531620368
 }

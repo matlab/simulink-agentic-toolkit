@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Hdl rams
-description: HDL RAM memory models
-tags: [ram, memory, dual port, single port, hdl]
-status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Hdl rams
+description: HDL RAM memory models (9 blocks)
+tags: [toolbox-kb, hdl-coder, ram, memory, dual port, single port, hdl]
+status: draft
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: hdl-rams
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Hdl rams
-
-Use these blocks for hdl rams.
 
 ## Recommended Blocks
 

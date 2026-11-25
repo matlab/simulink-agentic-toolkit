@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Adc foundation
-description: ADC building blocks and modulators
-tags: [integrator, dsm, quantizer, clock, modulator]
+description: ADC building blocks and modulators (5 blocks)
+tags: [toolbox-kb, mixed-signal-blockset, integrator, dsm, quantizer, clock, modulator]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset
-category_path: Adc foundation
+sources:
+  - resource: matlab:msbAdcFoundation
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset
+kb_folder: mixed-signal-blockset
+category: adc-foundation
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Adc foundation
-
-Use these blocks for adc foundation.
 
 ## Recommended Blocks
 

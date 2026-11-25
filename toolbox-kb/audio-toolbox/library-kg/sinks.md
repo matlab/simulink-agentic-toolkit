@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sinks
-description: Play, record, and visualize audio
-tags: [sink, device writer, to multimedia, spectrum analyzer]
+description: "Play, record, and visualize audio (3 blocks)"
+tags: [toolbox-kb, audio-toolbox, sink, device writer, to multimedia, spectrum analyzer]
 status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: Sinks
+sources:
+  - resource: matlab:audiosinks
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: sinks
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Sinks
-
-Use these blocks for sinks.
 
 ## Recommended Blocks
 

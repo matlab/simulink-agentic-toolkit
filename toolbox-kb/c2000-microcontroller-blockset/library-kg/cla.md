@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Cla
-description: Control Law Accelerator coprocessor blocks
-tags: [cla, coprocessor, task, math]
+description: Control Law Accelerator coprocessor blocks (33 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, cla, coprocessor, task, math]
 status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Cla
+sources:
+  - resource: matlab:c2803xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: cla
 block_count: 33
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Cla
-
-Use these blocks for cla.
 
 ## Recommended Blocks
 

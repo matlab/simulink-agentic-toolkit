@@ -1,15 +1,724 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457440968,
-  "generatorVersion": 4,
-  "libraries": [
-    "Phased Array System Toolbox"
-  ],
-  "blockCount": 82,
-  "categoryCount": 9,
-  "libraryFingerprints": {
-    "Phased_Array_System_Toolbox": {
-      "blockCount": 82
+  "pages": [
+    {
+      "id": "beamforming",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "beamforming",
+      "hash": "9bb1ccacd7d9ecda56722af3d36191302399eb220c32507f45fe85a63b293d38",
+      "fm": {
+        "title": "Beamforming",
+        "description": "Spatial filtering algorithms that combine array element signals to enhance desired direction (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "beamformer",
+          "spatial",
+          "filter",
+          "steer",
+          "MVDR",
+          "LCMV"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Frost Beamformer",
+          "ref": "phasedbflib/Frost Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply Frost constrained adaptive beamforming to suppress interference while preserving the look direction"
+        },
+        {
+          "block": "GSC Beamformer",
+          "ref": "phasedbflib/GSC Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply generalized sidelobe canceller beamforming for robust adaptive interference rejection"
+        },
+        {
+          "block": "LCMV Beamformer",
+          "ref": "phasedbflib/LCMV Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply linearly constrained minimum variance beamforming with multiple spatial constraints"
+        },
+        {
+          "block": "MVDR Beamformer",
+          "ref": "phasedbflib/MVDR Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply minimum variance distortionless response beamforming for optimal narrowband interference suppression"
+        },
+        {
+          "block": "Phase Shift Beamformer",
+          "ref": "phasedbflib/Phase Shift Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply conventional phase-shift beamforming to steer the array toward a specified direction"
+        },
+        {
+          "block": "Subband MVDR Beamformer",
+          "ref": "phasedbflib/Subband MVDR Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply MVDR beamforming in subbands for wideband signal enhancement"
+        },
+        {
+          "block": "Subband Phase Shift Beamformer",
+          "ref": "phasedbflib/Subband Phase Shift Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply phase-shift beamforming in subbands for wideband beam steering"
+        },
+        {
+          "block": "Time Delay Beamformer",
+          "ref": "phasedbflib/Time Delay Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply true-time-delay beamforming for wideband signals without beam squinting"
+        },
+        {
+          "block": "Time Delay LCMV Beamformer",
+          "ref": "phasedbflib/Time Delay LCMV Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply time-delay LCMV beamforming for wideband constrained adaptive processing"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "detection-estimation",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "detection-estimation",
+      "hash": "f59c0629d8892db22532ea2170dc1d5ea40db858d2b4f5fa35e422b39bcaa7a8",
+      "fm": {
+        "title": "Detection estimation",
+        "description": "Target detection, matched filtering, CFAR, and range-Doppler processing (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "detection",
+          "CFAR",
+          "matched-filter",
+          "range",
+          "Doppler",
+          "SNR"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Dechirp Mixer",
+          "ref": "phaseddetectlib/Dechirp Mixer",
+          "since": "R2023a+",
+          "intent": "Mix a received chirp signal with a reference to convert range into frequency for stretch processing"
+        },
+        {
+          "block": "Pulse Integrator",
+          "ref": "phaseddetectlib/Pulse Integrator",
+          "since": "R2023a+",
+          "intent": "Coherently or noncoherently integrate multiple radar pulses to improve detection SNR"
+        },
+        {
+          "block": "Whitening Matrix",
+          "ref": "phaseddetectlib/Whitening Matrix",
+          "since": "R2026a+",
+          "intent": "Compute the whitening transformation to decorrelate noise and interference in array data"
+        },
+        {
+          "block": "2-D CFAR Detector",
+          "ref": "phaseddetectlib/2-D CFAR Detector",
+          "since": "R2023a+",
+          "intent": "Detect targets in range-Doppler or range-angle maps using 2-D constant false alarm rate processing"
+        },
+        {
+          "block": "CFAR Detector",
+          "ref": "phaseddetectlib/CFAR Detector",
+          "since": "R2023a+",
+          "intent": "Detect targets using constant false alarm rate processing with adaptive threshold estimation"
+        },
+        {
+          "block": "Doppler Estimator",
+          "ref": "phaseddetectlib/Doppler Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate target Doppler shift from detection indices in range-Doppler processing"
+        },
+        {
+          "block": "GLRT Detector",
+          "ref": "phaseddetectlib/GLRT Detector",
+          "since": "R2023b+",
+          "intent": "Detect targets using the generalized likelihood ratio test when signal parameters are unknown"
+        },
+        {
+          "block": "LRT Detector",
+          "ref": "phaseddetectlib/LRT Detector",
+          "since": "R2023b+",
+          "intent": "Detect targets using the likelihood ratio test when noise statistics are known"
+        },
+        {
+          "block": "Matched Filter",
+          "ref": "phaseddetectlib/Matched Filter",
+          "since": "R2023a+",
+          "intent": "Apply matched filtering to maximize SNR of a known radar waveform in received data"
+        },
+        {
+          "block": "Range Angle Response",
+          "ref": "phaseddetectlib/Range Angle Response",
+          "since": "R2023a+",
+          "intent": "Compute a joint range-angle map from array data for target localization"
+        },
+        {
+          "block": "Range Doppler Response",
+          "ref": "phaseddetectlib/Range Doppler Response",
+          "since": "R2023a+",
+          "intent": "Compute range-Doppler map from pulse data for simultaneous range and velocity estimation"
+        },
+        {
+          "block": "Range Estimator",
+          "ref": "phaseddetectlib/Range Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate target range from detection indices in range-processed data"
+        },
+        {
+          "block": "Range Response",
+          "ref": "phaseddetectlib/Range Response",
+          "since": "R2023a+",
+          "intent": "Compute range response from time-domain pulse data via matched filtering or dechirp"
+        },
+        {
+          "block": "Stretch Processor",
+          "ref": "phaseddetectlib/Stretch Processor",
+          "since": "R2023a+",
+          "intent": "Process dechirped wideband signals to extract range information via spectral analysis"
+        },
+        {
+          "block": "Time Varying Gain",
+          "ref": "phaseddetectlib/Time Varying Gain",
+          "since": "R2023a+",
+          "intent": "Apply range-dependent gain to compensate for propagation loss in received radar signals"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "direction-finding",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "direction-finding",
+      "hash": "fcc5546d70d6c58f45c2448bf2c65051b605a43e22fdbd674bacfa799d4a1309",
+      "fm": {
+        "title": "Direction finding",
+        "description": "Direction of arrival estimation and spatial spectrum analysis (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "DOA",
+          "MUSIC",
+          "ESPRIT",
+          "monopulse",
+          "spectrum",
+          "angle"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Beamscan Spectrum",
+          "ref": "phaseddoalib/Beamscan Spectrum",
+          "since": "R2023a+",
+          "intent": "Estimate spatial spectrum by scanning conventional beamformer across all angles"
+        },
+        {
+          "block": "Beamspace ESPRIT DOA",
+          "ref": "phaseddoalib/Beamspace ESPRIT DOA",
+          "since": "R2023a+",
+          "intent": "Estimate direction of arrival using ESPRIT in reduced beamspace for computational efficiency"
+        },
+        {
+          "block": "ESPRIT DOA",
+          "ref": "phaseddoalib/ESPRIT DOA",
+          "since": "R2023a+",
+          "intent": "Estimate direction of arrival using the ESPRIT algorithm with shift-invariant array structure"
+        },
+        {
+          "block": "GCC DOA and TOA",
+          "ref": "phaseddoalib/GCC DOA and TOA",
+          "since": "R2023a+",
+          "intent": "Estimate direction and time of arrival using generalized cross-correlation between sensor pairs"
+        },
+        {
+          "block": "MUSIC Spectrum",
+          "ref": "phaseddoalib/MUSIC Spectrum",
+          "since": "R2023a+",
+          "intent": "Estimate spatial spectrum using the MUSIC algorithm for high-resolution DOA estimation"
+        },
+        {
+          "block": "MVDR Spectrum",
+          "ref": "phaseddoalib/MVDR Spectrum",
+          "since": "R2023a+",
+          "intent": "Estimate spatial spectrum using MVDR for adaptive spatial filtering with better resolution than beamscan"
+        },
+        {
+          "block": "Monopulse Estimator",
+          "ref": "phaseddoalib/Monopulse Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate precise angular position of a target using sum and difference beam ratio"
+        },
+        {
+          "block": "Monopulse Feed",
+          "ref": "phaseddoalib/Monopulse Feed",
+          "since": "R2023a+",
+          "intent": "Generate sum and difference channel outputs from an array for monopulse angle estimation"
+        },
+        {
+          "block": "Root MUSIC DOA",
+          "ref": "phaseddoalib/Root MUSIC DOA",
+          "since": "R2023a+",
+          "intent": "Estimate DOA by polynomial rooting of the MUSIC pseudo-spectrum for ULA geometries"
+        },
+        {
+          "block": "Root WSF DOA",
+          "ref": "phaseddoalib/Root WSF DOA",
+          "since": "R2023a+",
+          "intent": "Estimate DOA using weighted subspace fitting with polynomial rooting for improved accuracy"
+        },
+        {
+          "block": "ULA Beamscan Spectrum",
+          "ref": "phaseddoalib/ULA Beamscan Spectrum",
+          "since": "R2023a+",
+          "intent": "Estimate spatial spectrum for a uniform linear array using conventional beamscan"
+        },
+        {
+          "block": "ULA MUSIC Spectrum",
+          "ref": "phaseddoalib/ULA MUSIC Spectrum",
+          "since": "R2023a+",
+          "intent": "Estimate spatial spectrum for a uniform linear array using the MUSIC algorithm"
+        },
+        {
+          "block": "ULA MVDR Spectrum",
+          "ref": "phaseddoalib/ULA MVDR Spectrum",
+          "since": "R2023a+",
+          "intent": "Estimate spatial spectrum for a uniform linear array using MVDR beamforming"
+        },
+        {
+          "block": "ULA Sum and Difference Monopulse",
+          "ref": "phaseddoalib/ULA Sum and Difference Monopulse",
+          "since": "R2023a+",
+          "intent": "Estimate azimuth angle using sum-difference monopulse with a uniform linear array"
+        },
+        {
+          "block": "URA Sum and Difference Monopulse",
+          "ref": "phaseddoalib/URA Sum and Difference Monopulse",
+          "since": "R2023a+",
+          "intent": "Estimate azimuth and elevation angles using sum-difference monopulse with a uniform rectangular array"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "environment-propagation",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "environment-propagation",
+      "hash": "1c4077630496f7698f3d07a8ea48fe3b63c58e57370d1949c17e0101fb2531d4",
+      "fm": {
+        "title": "Environment propagation",
+        "description": "Signal propagation, target RCS modeling, and platform motion (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "free-space",
+          "propagation",
+          "target",
+          "RCS",
+          "platform",
+          "channel"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Azimuth Broadside Converter",
+          "ref": "phasedenvlib/Azimuth Broadside Converter",
+          "since": "R2023a+",
+          "intent": "Convert between azimuth angle and broadside angle for linear array calculations"
+        },
+        {
+          "block": "Backscatter Radar Target",
+          "ref": "phasedenvlib/Backscatter Radar Target",
+          "since": "R2023a+",
+          "intent": "Model a narrowband radar target with angle-dependent radar cross section"
+        },
+        {
+          "block": "Free Space",
+          "ref": "phasedenvlib/Free Space",
+          "since": "R2023a+",
+          "intent": "Model narrowband signal propagation through free space with path loss and time delay"
+        },
+        {
+          "block": "LOS Channel",
+          "ref": "phasedenvlib/LOS Channel",
+          "since": "R2023a+",
+          "intent": "Model a line-of-sight propagation channel with atmospheric and weather effects"
+        },
+        {
+          "block": "Motion Platform",
+          "ref": "phasedenvlib/Motion Platform",
+          "since": "R2023a+",
+          "intent": "Model platform motion to provide position, velocity, and orientation for moving sensors or targets"
+        },
+        {
+          "block": "Radar Target",
+          "ref": "phasedenvlib/Radar Target",
+          "since": "R2023a+",
+          "intent": "Model a point radar target with specified radar cross section for reflection simulation"
+        },
+        {
+          "block": "Range Angle Calculator",
+          "ref": "phasedenvlib/Range Angle Calculator",
+          "since": "R2023a+",
+          "intent": "Compute range and angle between two platforms from their position vectors"
+        },
+        {
+          "block": "Scattering MIMO Channel",
+          "ref": "phasedenvlib/Scattering MIMO Channel",
+          "since": "R2023a+",
+          "intent": "Model a MIMO propagation channel with multiple scatterers for multipath simulation"
+        },
+        {
+          "block": "Wideband Backscatter Radar Target",
+          "ref": "phasedenvlib/Wideband Backscatter Radar Target",
+          "since": "R2023a+",
+          "intent": "Model a wideband radar target with frequency-dependent backscatter response"
+        },
+        {
+          "block": "Wideband Free Space",
+          "ref": "phasedenvlib/Wideband Free Space",
+          "since": "R2023a+",
+          "intent": "Model wideband signal propagation through free space preserving signal bandwidth"
+        },
+        {
+          "block": "Wideband LOS Channel",
+          "ref": "phasedenvlib/Wideband LOS Channel",
+          "since": "R2023a+",
+          "intent": "Model wideband line-of-sight propagation with frequency-dependent atmospheric attenuation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "localization",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "localization",
+      "hash": "522bccb3ad059fbd5b46bcdbb1bb6596cea7577b30b43123d3646978d79f044f",
+      "fm": {
+        "title": "Localization",
+        "description": "Position estimation from TOA, TDOA, and bistatic measurements (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "localization",
+          "TOA",
+          "TDOA",
+          "position",
+          "bistatic",
+          "emitter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Bistatic Position Estimator",
+          "ref": "phasedloclib/Bistatic Position Estimator",
+          "since": "R2025a+",
+          "intent": "Estimate target position from bistatic range measurements using multiple transmitter-receiver pairs"
+        },
+        {
+          "block": "Range-Angle Position Estimator",
+          "ref": "phasedloclib/Range-Angle Position Estimator",
+          "since": "R2025a+",
+          "intent": "Estimate target position from joint range and angle measurements"
+        },
+        {
+          "block": "TDOA Estimator",
+          "ref": "phasedloclib/TDOA Estimator",
+          "since": "R2024b+",
+          "intent": "Estimate time difference of arrival between sensor pairs from received signals"
+        },
+        {
+          "block": "TDOA Position Estimator",
+          "ref": "phasedloclib/TDOA Position Estimator",
+          "since": "R2024b+",
+          "intent": "Estimate emitter position from time difference of arrival measurements at multiple sensors"
+        },
+        {
+          "block": "TOA Estimator",
+          "ref": "phasedloclib/TOA Estimator",
+          "since": "R2024a+",
+          "intent": "Estimate time of arrival of a signal at each sensor"
+        },
+        {
+          "block": "TOA Position Estimator",
+          "ref": "phasedloclib/TOA Position Estimator",
+          "since": "R2024b+",
+          "intent": "Estimate emitter position from time of arrival measurements at multiple sensors"
+        },
+        {
+          "block": "TSOA Position Estimator",
+          "ref": "phasedloclib/TSOA Position Estimator",
+          "since": "R2025a+",
+          "intent": "Estimate emitter position from time sum of arrival measurements in a bistatic configuration"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "stap",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "stap",
+      "hash": "f04d6cdee6fc62d6b923cbedccc5a0829b8e6b78ff97cc0378b2da29fd6e7f12",
+      "fm": {
+        "title": "Stap",
+        "description": "Space-time adaptive processing for airborne clutter suppression (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "STAP",
+          "clutter",
+          "DPCA",
+          "ADPCA",
+          "MTI",
+          "airborne"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADPCA Canceller",
+          "ref": "phasedstaplib/ADPCA Canceller",
+          "since": "R2023a+",
+          "intent": "Suppress ground clutter using adaptive DPCA for moving target indication from airborne radar"
+        },
+        {
+          "block": "Angle Doppler Response",
+          "ref": "phasedstaplib/Angle Doppler Response",
+          "since": "R2023a+",
+          "intent": "Compute angle-Doppler map to visualize clutter ridges and target separation"
+        },
+        {
+          "block": "Cube Slicer",
+          "ref": "phasedstaplib/Cube Slicer",
+          "since": "R2023a+",
+          "intent": "Extract a slice from a space-time data cube for STAP or beamforming processing"
+        },
+        {
+          "block": "DPCA Canceller",
+          "ref": "phasedstaplib/DPCA Canceller",
+          "since": "R2023a+",
+          "intent": "Suppress ground clutter using displaced phase center antenna cancellation for airborne MTI"
+        },
+        {
+          "block": "SMI Beamformer",
+          "ref": "phasedstaplib/SMI Beamformer",
+          "since": "R2023a+",
+          "intent": "Apply sample matrix inversion space-time beamforming for joint angle-Doppler filtering"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "transmit-receive",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "transmit-receive",
+      "hash": "bb2278dd6290bdddfbf84448e020bb4a4bc67308376fbdf9caeb12bdeb5a5681",
+      "fm": {
+        "title": "Transmit receive",
+        "description": "Array transmit and receive blocks, steering vectors, and front-end components (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "transmitter",
+          "receiver",
+          "array",
+          "steering",
+          "preamp"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Narrowband Receive Array",
+          "ref": "phasedtxrxlib/Narrowband Receive Array",
+          "since": "R2023a+",
+          "intent": "Collect narrowband signals across array elements with spatial phase shifts from incident direction"
+        },
+        {
+          "block": "Narrowband Transmit Array",
+          "ref": "phasedtxrxlib/Narrowband Transmit Array",
+          "since": "R2023a+",
+          "intent": "Radiate narrowband signals from array elements with specified steering weights"
+        },
+        {
+          "block": "Receiver",
+          "ref": "phasedtxrxlib/Receiver",
+          "since": "R2024a+",
+          "intent": "Model a radar or communications receiver with gain and noise figure"
+        },
+        {
+          "block": "Receiver Preamp",
+          "ref": "phasedtxrxlib/Receiver Preamp",
+          "since": "R2023a+",
+          "intent": "Model a receiver front-end preamplifier with gain, noise figure, and dynamic range limits"
+        },
+        {
+          "block": "Steering Vector",
+          "ref": "phasedtxrxlib/Steering Vector",
+          "since": "R2023b+",
+          "intent": "Compute the array steering vector for a given direction to use in beamforming or DOA"
+        },
+        {
+          "block": "Transmitter",
+          "ref": "phasedtxrxlib/Transmitter",
+          "since": "R2023a+",
+          "intent": "Model a radar or communications transmitter with specified peak power and gain"
+        },
+        {
+          "block": "Wideband Receive Array",
+          "ref": "phasedtxrxlib/Wideband Receive Array",
+          "since": "R2023a+",
+          "intent": "Collect wideband signals across array elements preserving signal bandwidth"
+        },
+        {
+          "block": "Wideband Transmit Array",
+          "ref": "phasedtxrxlib/Wideband Transmit Array",
+          "since": "R2023a+",
+          "intent": "Radiate wideband signals from array elements with specified beamforming weights"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "visualization",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "visualization",
+      "hash": "3192f0a4ed18e817ad11788e95faa0cfdf1959a35b796259bd16ec1935b5e875",
+      "fm": {
+        "title": "Visualization",
+        "description": "Intensity scope displays for range, Doppler, and angle versus time (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "scope",
+          "intensity",
+          "display",
+          "visualization",
+          "RTI"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Angle-Time Intensity Scope",
+          "ref": "phasedsnklib/Angle-Time Intensity Scope",
+          "since": "R2023a+",
+          "intent": "Display angle-versus-time intensity plot for monitoring spatial signal dynamics"
+        },
+        {
+          "block": "Doppler-Time Intensity Scope",
+          "ref": "phasedsnklib/Doppler-Time Intensity Scope",
+          "since": "R2023a+",
+          "intent": "Display Doppler-versus-time intensity plot for monitoring velocity dynamics"
+        },
+        {
+          "block": "Range-Time Intensity Scope",
+          "ref": "phasedsnklib/Range-Time Intensity Scope",
+          "since": "R2023a+",
+          "intent": "Display range-versus-time intensity plot for monitoring target range tracks"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "waveforms",
+      "kind": "toolbox",
+      "library": "Phased Array System Toolbox",
+      "kbFolder": "phased-array-system-toolbox",
+      "category": "waveforms",
+      "hash": "0d4d74e6052e6de2c66848dd2771b9a6d25130e58a31df91e94d265881d7c034",
+      "fm": {
+        "title": "Waveforms",
+        "description": "Radar waveform generators for pulsed and continuous-wave systems (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "phased-array-system-toolbox",
+          "waveform",
+          "chirp",
+          "FMCW",
+          "LFM",
+          "pulse",
+          "FM"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Custom FM Waveform",
+          "ref": "phasedwavlib/Custom FM Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a frequency-modulated waveform with user-defined frequency sweep profile"
+        },
+        {
+          "block": "FMCW Waveform",
+          "ref": "phasedwavlib/FMCW Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a frequency-modulated continuous wave signal for automotive or short-range radar"
+        },
+        {
+          "block": "Linear FM Waveform",
+          "ref": "phasedwavlib/Linear FM Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a linear frequency-modulated chirp pulse for radar range resolution"
+        },
+        {
+          "block": "MFSK Waveform",
+          "ref": "phasedwavlib/MFSK Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a multiple frequency-shift keying waveform for simultaneous range and Doppler measurement"
+        },
+        {
+          "block": "Nonlinear FM Waveform",
+          "ref": "phasedwavlib/Nonlinear FM Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a nonlinear FM chirp with reduced range sidelobes without windowing losses"
+        },
+        {
+          "block": "Phase-Coded Waveform",
+          "ref": "phasedwavlib/Phase-Coded Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a phase-coded pulse using Barker or polyphase codes for pulse compression"
+        },
+        {
+          "block": "Rectangular Waveform",
+          "ref": "phasedwavlib/Rectangular Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a simple rectangular radar pulse for basic pulsed radar systems"
+        },
+        {
+          "block": "Stepped FM Waveform",
+          "ref": "phasedwavlib/Stepped FM Waveform",
+          "since": "R2023a+",
+          "intent": "Generate a stepped-frequency waveform for high range resolution with narrowband processing"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:25",
+  "generatedAtDatenum": 740309.99543162039
 }

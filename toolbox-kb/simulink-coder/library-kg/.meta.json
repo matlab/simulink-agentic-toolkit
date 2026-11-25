@@ -1,15 +1,153 @@
 {
-  "generatedAt": "2026-09-29T16:38:09",
-  "generatedAtDatenum": 740254.69316662033,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Coder"
-  ],
-  "blockCount": 13,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Simulink_Coder": {
-      "blockCount": 13
+  "pages": [
+    {
+      "id": "asynchronous",
+      "kind": "toolbox",
+      "library": "Simulink Coder",
+      "kbFolder": "simulink-coder",
+      "category": "asynchronous",
+      "hash": "16c36ca060751c4d19634203c4a73bea839767efac73551c3686a3ad6cb3d2d9",
+      "fm": {
+        "title": "Asynchronous",
+        "description": "Interrupt-driven and asynchronous execution modeling (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder",
+          "asynchronous",
+          "async",
+          "interrupt"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Asynchronous",
+          "ref": "rtwlib/Asynchronous",
+          "since": "R2023a+",
+          "intent": "Sublibrary of blocks for modeling asynchronous (interrupt-driven) function-call execution in generated code — open to pick Async Interrupt or Task Sync blocks."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "custom-code",
+      "kind": "toolbox",
+      "library": "Simulink Coder",
+      "kbFolder": "simulink-coder",
+      "category": "custom-code",
+      "hash": "3a55bd638a856f5f51a547ce790e230e6ca64630d133aae89b34c332a11fd470",
+      "fm": {
+        "title": "Custom code",
+        "description": "Inject user C code at specific points of the generated code (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder",
+          "custom code",
+          "model header",
+          "model source",
+          "system"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": " ",
+          "ref": "custcode/ ",
+          "since": "R2023a+",
+          "intent": "Help block for the Custom Code library explaining how to inject user-written C code into generated code."
+        },
+        {
+          "block": "Model Header",
+          "ref": "custcode/Model Header",
+          "since": "R2023a+",
+          "intent": "Inject custom C code into the generated model header file (includes, external declarations) — use to make declarations visible to all generated code."
+        },
+        {
+          "block": "Model Source",
+          "ref": "custcode/Model Source",
+          "since": "R2023a+",
+          "intent": "Inject custom C code into the generated model source file (definitions, helper functions) — use to add supporting C definitions."
+        },
+        {
+          "block": "System Derivatives",
+          "ref": "custcode/System Derivatives",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated continuous-state derivative function — use to hook target code into derivative computation."
+        },
+        {
+          "block": "System Disable",
+          "ref": "custcode/System Disable",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated subsystem-disable function — runs when an enabled subsystem is disabled."
+        },
+        {
+          "block": "System Enable",
+          "ref": "custcode/System Enable",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated subsystem-enable function — runs when an enabled subsystem becomes active."
+        },
+        {
+          "block": "System Initialize",
+          "ref": "custcode/System Initialize",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated initialization function — runs once at model start."
+        },
+        {
+          "block": "System Outputs",
+          "ref": "custcode/System Outputs",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated output-computation function — runs every step to compute outputs."
+        },
+        {
+          "block": "System Start",
+          "ref": "custcode/System Start",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated start function — runs once when the model begins executing."
+        },
+        {
+          "block": "System Terminate",
+          "ref": "custcode/System Terminate",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated terminate function — runs once at shutdown for cleanup."
+        },
+        {
+          "block": "System Update",
+          "ref": "custcode/System Update",
+          "since": "R2023a+",
+          "intent": "Insert custom C code into the generated update function — runs every step to update discrete states."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "targets",
+      "kind": "toolbox",
+      "library": "Simulink Coder",
+      "kbFolder": "simulink-coder",
+      "category": "targets",
+      "hash": "6ad9e5697b1b873820c1edf384277160c17fae3240da20834b3e0c2aa0145c85",
+      "fm": {
+        "title": "Targets",
+        "description": "Code-generation target blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder",
+          "s-function target",
+          "target"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "S-Function Target",
+          "ref": "rtwlib/S-Function Target",
+          "since": "R2023a+",
+          "intent": "Build the model or subsystem as an S-function target — use to generate a compiled, reusable (and IP-protectable) S-function from the model."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:29",
+  "generatedAtDatenum": 740309.99548315967
 }

@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Estimation parametric estimation
-description: Blocks for estimation parametric estimation.
+description: Blocks for Estimation parametric estimation (3 blocks)
+tags: [toolbox-kb, dsp-system-toolbox]
 status: draft
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Estimation parametric estimation
+sources:
+  - resource: matlab:dspparest3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: estimation-parametric-estimation
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Estimation parametric estimation
-
-Use these blocks for estimation parametric estimation.
 
 ## Recommended Blocks
 

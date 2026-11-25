@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Environment settings and fault injection for simulation configuration
-tags: [environment, fault, configuration, simulation, parameters]
+description: Environment settings and fault injection for simulation configuration (3 blocks)
+tags: [toolbox-kb, electrical, environment, fault, configuration, simulation, parameters]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Utilities
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: utilities
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

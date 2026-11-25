@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Actuators
-description: Linear and rotary fluid-power cylinders and their auxiliary components for converting pressure to mechanical force
-tags: [cylinder, piston, actuator, force, stroke]
+description: Linear and rotary fluid-power cylinders and their auxiliary components for converting pressure to mechanical force (24 blocks)
+tags: [toolbox-kb, simscape-fluids, cylinder, piston, actuator, force, stroke]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Actuators
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: actuators
 block_count: 24
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Actuators
-
-Use these blocks for actuators.
 
 ## Recommended Blocks
 

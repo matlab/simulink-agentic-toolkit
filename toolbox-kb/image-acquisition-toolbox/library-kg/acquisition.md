@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Acquisition
-description: Video and image acquisition from hardware devices
-tags: [video, camera, capture, image, device]
+description: Video and image acquisition from hardware devices (1 blocks)
+tags: [toolbox-kb, image-acquisition-toolbox, video, camera, capture, image, device]
 status: stable
-source: mathworks_toolbox
-library_root: Image Acquisition Toolbox
-category_path: Acquisition
+sources:
+  - resource: matlab:imaqlib
+source: toolbox_kb
+managed_by: satk
+library: Image Acquisition Toolbox
+kb_folder: image-acquisition-toolbox
+category: acquisition
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Acquisition
-
-Use these blocks for acquisition.
 
 ## Recommended Blocks
 

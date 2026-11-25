@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Collision checking
-description: Collision geometry and detection
-tags: [collision, box, sphere, mesh, capsule, cylinder]
+description: Collision geometry and detection (8 blocks)
+tags: [toolbox-kb, robotics-system-toolbox, collision, box, sphere, mesh, capsule, cylinder]
 status: stable
-source: mathworks_toolbox
-library_root: Robotics System Toolbox
-category_path: Collision checking
+sources:
+  - resource: matlab:robotslcollision
+source: toolbox_kb
+managed_by: satk
+library: Robotics System Toolbox
+kb_folder: robotics-system-toolbox
+category: collision-checking
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Collision checking
-
-Use these blocks for collision checking.
 
 ## Recommended Blocks
 

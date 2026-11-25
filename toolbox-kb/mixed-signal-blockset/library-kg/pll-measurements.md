@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pll measurements
-description: PLL performance measurement
-tags: [lock, phase noise, testbench, measurement]
+description: PLL performance measurement (5 blocks)
+tags: [toolbox-kb, mixed-signal-blockset, lock, phase noise, testbench, measurement]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset
-category_path: Pll measurements
+sources:
+  - resource: matlab:msbPllMeasurements
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset
+kb_folder: mixed-signal-blockset
+category: pll-measurements
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Pll measurements
-
-Use these blocks for pll measurements.
 
 ## Recommended Blocks
 

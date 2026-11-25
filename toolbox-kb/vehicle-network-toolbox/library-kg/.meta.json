@@ -1,15 +1,292 @@
 {
-  "generatedAt": "2026-08-19T17:52:14",
-  "generatedAtDatenum": 740213.7446173958,
-  "generatorVersion": 4,
-  "libraries": [
-    "Vehicle Network Toolbox"
-  ],
-  "blockCount": 31,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Vehicle_Network_Toolbox": {
-      "blockCount": 31
+  "pages": [
+    {
+      "id": "can-classic",
+      "kind": "toolbox",
+      "library": "Vehicle Network Toolbox",
+      "kbFolder": "vehicle-network-toolbox",
+      "category": "can-classic",
+      "hash": "7fac8e1f4116c80a27a1c01d42f359a64da84eb28b85acdd3df60c67c9303f6f",
+      "fm": {
+        "title": "Can classic",
+        "description": "Classic CAN bus communication (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-network-toolbox",
+          "can",
+          "pack",
+          "unpack",
+          "receive",
+          "transmit"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CAN Configuration",
+          "ref": "canlib/CAN Configuration",
+          "since": "R2023a+",
+          "intent": "Configure a CAN channel for communication — use for setting up baud rate, hardware interface, and bus parameters before sending or receiving"
+        },
+        {
+          "block": "CAN Log",
+          "ref": "canlib/CAN Log",
+          "since": "R2023a+",
+          "intent": "Log CAN bus messages to a file — use for recording raw bus traffic for offline analysis or replay"
+        },
+        {
+          "block": "CAN Pack",
+          "ref": "canlib/CAN Pack",
+          "since": "R2023a+",
+          "intent": "Pack signal values into a CAN message frame — use for encoding physical signals into the CAN data payload using a DBC definition"
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "canlib/CAN Receive",
+          "since": "R2023a+",
+          "intent": "Receive CAN messages from the bus — use for reading incoming frames from ECUs or sensors on the CAN network"
+        },
+        {
+          "block": "CAN Replay",
+          "ref": "canlib/CAN Replay",
+          "since": "R2023a+",
+          "intent": "Replay previously logged CAN messages — use for stimulating a model with recorded real-world bus data"
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "canlib/CAN Transmit",
+          "since": "R2023a+",
+          "intent": "Transmit CAN messages to the bus — use for sending frames to ECUs or actuators on the CAN network"
+        },
+        {
+          "block": "CAN Unpack",
+          "ref": "canlib/CAN Unpack",
+          "since": "R2023a+",
+          "intent": "Unpack signal values from a CAN message frame — use for decoding physical signals from received CAN data using a DBC definition"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "can-fd",
+      "kind": "toolbox",
+      "library": "Vehicle Network Toolbox",
+      "kbFolder": "vehicle-network-toolbox",
+      "category": "can-fd",
+      "hash": "252a52e5d390324cbe9398ad07a990c9fdd02f84161cef0996da7a76617883ff",
+      "fm": {
+        "title": "Can fd",
+        "description": "CAN FD high-bandwidth communication (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-network-toolbox",
+          "canfd",
+          "flexible",
+          "64byte",
+          "bandwidth",
+          "fd"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CAN FD Configuration",
+          "ref": "canfdlib/CAN FD Configuration",
+          "since": "R2023a+",
+          "intent": "Configure a CAN FD channel — use for setting up CAN FD baud rates and parameters for high-bandwidth vehicle communication"
+        },
+        {
+          "block": "CAN FD Log",
+          "ref": "canfdlib/CAN FD Log",
+          "since": "R2023a+",
+          "intent": "Log CAN FD messages to a file — use for recording high-bandwidth bus traffic for offline analysis"
+        },
+        {
+          "block": "CAN FD Pack",
+          "ref": "canfdlib/CAN FD Pack",
+          "since": "R2023a+",
+          "intent": "Pack signal values into a CAN FD message frame — use for encoding signals into CAN FD payloads up to 64 bytes"
+        },
+        {
+          "block": "CAN FD Receive",
+          "ref": "canfdlib/CAN FD Receive",
+          "since": "R2023a+",
+          "intent": "Receive CAN FD messages from the bus — use for reading high-bandwidth frames from modern vehicle networks"
+        },
+        {
+          "block": "CAN FD Replay",
+          "ref": "canfdlib/CAN FD Replay",
+          "since": "R2023a+",
+          "intent": "Replay previously logged CAN FD messages — use for stimulating models with recorded CAN FD bus data"
+        },
+        {
+          "block": "CAN FD Transmit",
+          "ref": "canfdlib/CAN FD Transmit",
+          "since": "R2023a+",
+          "intent": "Transmit CAN FD messages to the bus — use for sending high-bandwidth frames to modern vehicle ECUs"
+        },
+        {
+          "block": "CAN FD Unpack",
+          "ref": "canfdlib/CAN FD Unpack",
+          "since": "R2023a+",
+          "intent": "Unpack signal values from a CAN FD message frame — use for decoding signals from received CAN FD data"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "j1939",
+      "kind": "toolbox",
+      "library": "Vehicle Network Toolbox",
+      "kbFolder": "vehicle-network-toolbox",
+      "category": "j1939",
+      "hash": "5bc6bb13ea786bd0818e778e831c050432e9e8f6cc339afe938915e4749ec28d",
+      "fm": {
+        "title": "J1939",
+        "description": "SAE J1939 heavy-duty vehicle protocol (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-network-toolbox",
+          "j1939",
+          "truck",
+          "heavy",
+          "pgn",
+          "transport"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "J1939 CAN Transport Layer",
+          "ref": "vntj1939lib/J1939 CAN Transport Layer",
+          "since": "R2023a+",
+          "intent": "Handle J1939 multi-packet transport protocol — use for managing segmented message transfer on heavy-duty vehicle J1939 networks"
+        },
+        {
+          "block": "J1939 Network Configuration",
+          "ref": "vntj1939lib/J1939 Network Configuration",
+          "since": "R2023a+",
+          "intent": "Configure the J1939 network parameters — use for setting up address claiming and network management for heavy-duty vehicles"
+        },
+        {
+          "block": "J1939 Node Configuration",
+          "ref": "vntj1939lib/J1939 Node Configuration",
+          "since": "R2023a+",
+          "intent": "Configure a J1939 network node — use for defining ECU name, address, and capabilities on the J1939 bus"
+        },
+        {
+          "block": "J1939 Receive",
+          "ref": "vntj1939lib/J1939 Receive",
+          "since": "R2023a+",
+          "intent": "Receive J1939 parameter group messages — use for reading diagnostic or operational data from heavy-duty vehicle ECUs"
+        },
+        {
+          "block": "J1939 Transmit",
+          "ref": "vntj1939lib/J1939 Transmit",
+          "since": "R2023a+",
+          "intent": "Transmit J1939 parameter group messages — use for sending commands or data to heavy-duty vehicle ECUs"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "xcp",
+      "kind": "toolbox",
+      "library": "Vehicle Network Toolbox",
+      "kbFolder": "vehicle-network-toolbox",
+      "category": "xcp",
+      "hash": "ac1ccfe5fc9a1f6a233831698b5582dcdf2c84a3c902d6baf4ce9af5862d5389",
+      "fm": {
+        "title": "Xcp",
+        "description": "XCP measurement and calibration protocol (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vehicle-network-toolbox",
+          "xcp",
+          "calibration",
+          "measurement",
+          "acquisition",
+          "stimulation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "XCP CAN Transport Layer",
+          "ref": "vntxcplib/CAN/XCP CAN Transport Layer",
+          "since": "R2023a+",
+          "intent": "Configure XCP-on-CAN transport — use for setting up measurement and calibration communication over CAN with ECUs"
+        },
+        {
+          "block": "XCP CAN Configuration",
+          "ref": "vntxcplib/CAN/XCP CAN Configuration",
+          "since": "R2023a+",
+          "intent": "Configure XCP CAN connection parameters — use for defining slave address and timing for XCP measurement sessions"
+        },
+        {
+          "block": "XCP CAN Data Acquisition",
+          "ref": "vntxcplib/CAN/XCP CAN Data Acquisition",
+          "since": "R2023a+",
+          "intent": "Acquire measurement data from an ECU via XCP-on-CAN — use for real-time signal monitoring during calibration"
+        },
+        {
+          "block": "XCP CAN Data Stimulation",
+          "ref": "vntxcplib/CAN/XCP CAN Data Stimulation",
+          "since": "R2023a+",
+          "intent": "Stimulate ECU variables via XCP-on-CAN — use for overwriting calibration parameters in real time during testing"
+        },
+        {
+          "block": "XCP CAN FD Transport Layer",
+          "ref": "vntxcplib/CAN FD/XCP CAN FD Transport Layer",
+          "since": "R2023a+",
+          "intent": "Configure XCP-on-CAN-FD transport — use for high-bandwidth measurement and calibration over CAN FD"
+        },
+        {
+          "block": "XCP CAN FD Configuration",
+          "ref": "vntxcplib/CAN FD/XCP CAN FD Configuration",
+          "since": "R2023a+",
+          "intent": "Configure XCP CAN FD connection parameters — use for defining XCP session settings over CAN FD"
+        },
+        {
+          "block": "XCP CAN FD Data Acquisition",
+          "ref": "vntxcplib/CAN FD/XCP CAN FD Data Acquisition",
+          "since": "R2023a+",
+          "intent": "Acquire measurement data via XCP-on-CAN-FD — use for high-bandwidth real-time signal monitoring"
+        },
+        {
+          "block": "XCP CAN FD Data Stimulation",
+          "ref": "vntxcplib/CAN FD/XCP CAN FD Data Stimulation",
+          "since": "R2023a+",
+          "intent": "Stimulate ECU variables via XCP-on-CAN-FD — use for high-bandwidth calibration parameter injection"
+        },
+        {
+          "block": "XCP UDP Bypass",
+          "ref": "vntxcplib/UDP/XCP UDP Bypass",
+          "since": "R2023a+",
+          "intent": "Bypass XCP transport for direct UDP access — use for raw XCP communication over Ethernet UDP"
+        },
+        {
+          "block": "XCP UDP Configuration",
+          "ref": "vntxcplib/UDP/XCP UDP Configuration",
+          "since": "R2023a+",
+          "intent": "Configure XCP-on-UDP connection parameters — use for defining XCP session settings over Ethernet UDP"
+        },
+        {
+          "block": "XCP UDP Data Acquisition",
+          "ref": "vntxcplib/UDP/XCP UDP Data Acquisition",
+          "since": "R2023a+",
+          "intent": "Acquire measurement data via XCP-on-UDP — use for real-time ECU signal monitoring over Ethernet"
+        },
+        {
+          "block": "XCP UDP Data Stimulation",
+          "ref": "vntxcplib/UDP/XCP UDP Data Stimulation",
+          "since": "R2023a+",
+          "intent": "Stimulate ECU variables via XCP-on-UDP — use for calibration parameter injection over Ethernet"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:34",
+  "generatedAtDatenum": 740309.99553809024
 }

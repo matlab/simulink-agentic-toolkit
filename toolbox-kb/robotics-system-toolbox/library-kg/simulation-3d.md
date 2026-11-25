@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Simulation 3d
-description: 3D visualization with Unreal Engine
-tags: [simulation, 3d, camera, lidar, scene, robot]
+description: "3D visualization with Unreal Engine (4 blocks)"
+tags: [toolbox-kb, robotics-system-toolbox, simulation, "3d", camera, lidar, scene, robot]
 status: stable
-source: mathworks_toolbox
-library_root: Robotics System Toolbox
-category_path: Simulation 3d
+sources:
+  - resource: matlab:robotsim3dlib
+source: toolbox_kb
+managed_by: satk
+library: Robotics System Toolbox
+kb_folder: robotics-system-toolbox
+category: simulation-3d
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Simulation 3d
-
-Use these blocks for simulation 3d.
 
 ## Recommended Blocks
 

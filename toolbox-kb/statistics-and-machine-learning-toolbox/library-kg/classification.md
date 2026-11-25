@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Classification
-description: Predict discrete class labels from trained classification models
-tags: [classification, classify, svm, discriminant, naivebayes, ecoc, knn]
-status: stable
-source: custom_library
-library_root: Statistics and Machine Learning Toolbox
-category_path: Classification
+description: Predict discrete class labels from trained classification models (20 blocks)
+tags: [toolbox-kb, statistics-and-machine-learning-toolbox, classification, classify, svm, discriminant, naivebayes, ecoc, knn]
+status: draft
+sources:
+  - resource: matlab:statsLibrary
+source: toolbox_kb
+managed_by: satk
+library: Statistics and Machine Learning Toolbox
+kb_folder: statistics-and-machine-learning-toolbox
+category: classification
 block_count: 20
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Classification
-
-Use these blocks for classification.
 
 ## Recommended Blocks
 

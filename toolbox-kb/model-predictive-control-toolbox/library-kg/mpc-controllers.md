@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mpc controllers
-description: Model predictive control algorithms for constrained optimal control
-tags: [mpc, predictive, controller, constraint, optimization]
+description: Model predictive control algorithms for constrained optimal control (8 blocks)
+tags: [toolbox-kb, model-predictive-control-toolbox, mpc, predictive, controller, constraint, optimization]
 status: stable
-source: mathworks_toolbox
-library_root: Model Predictive Control Toolbox
-category_path: Mpc controllers
+sources:
+  - resource: matlab:mpclib
+source: toolbox_kb
+managed_by: satk
+library: Model Predictive Control Toolbox
+kb_folder: model-predictive-control-toolbox
+category: mpc-controllers
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Mpc controllers
-
-Use these blocks for mpc controllers.
 
 ## Recommended Blocks
 

@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Async
-description: Blocks for async.
+description: Blocks for Async (1 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Async
+sources:
+  - resource: matlab:slrealtimeasynclib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: async
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Async
-
-Use these blocks for async.
 
 ## Recommended Blocks
 

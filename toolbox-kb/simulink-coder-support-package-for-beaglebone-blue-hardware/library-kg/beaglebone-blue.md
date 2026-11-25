@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Beaglebone blue
-description: Hardware peripheral access for BeagleBone Blue board
-tags: [beaglebone, blue, sensor, actuator, gpio]
+description: Hardware peripheral access for BeagleBone Blue board (5 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-beaglebone-blue-hardware, beaglebone, blue, sensor, actuator, gpio]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for BeagleBone Blue Hardware
-category_path: Beaglebone blue
+sources:
+  - resource: matlab:beaglebonebluelib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for BeagleBone Blue Hardware
+kb_folder: simulink-coder-support-package-for-beaglebone-blue-hardware
+category: beaglebone-blue
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Beaglebone blue
-
-Use these blocks for beaglebone blue.
 
 ## Recommended Blocks
 

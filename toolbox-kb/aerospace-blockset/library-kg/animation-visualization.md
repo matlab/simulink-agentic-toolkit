@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Animation visualization
-description: 3D visualization, FlightGear interface, and flight animation
-tags: [animation, FlightGear, visualization, 3D, Unreal]
+description: "3D visualization, FlightGear interface, and flight animation (33 blocks)"
+tags: [toolbox-kb, aerospace-blockset, animation, FlightGear, visualization, "3D", Unreal]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Animation visualization
+sources:
+  - resource: matlab:aerolibanimutils
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: animation-visualization
 block_count: 33
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Animation visualization
-
-Use these blocks for animation visualization.
 
 ## Recommended Blocks
 

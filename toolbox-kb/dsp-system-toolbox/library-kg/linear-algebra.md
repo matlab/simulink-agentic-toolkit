@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Linear algebra
-description: Matrix factorizations, solvers, and operations
-tags: [matrices, linear algebra, qr, cholesky, svd, pseudoinverse, matrix]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Linear algebra
+description: "Matrix factorizations, solvers, and operations (35 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox, matrices, linear algebra, qr, cholesky, svd, pseudoinverse, matrix]
+status: draft
+sources:
+  - resource: matlab:dspmathops
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: linear-algebra
 block_count: 35
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Linear algebra
-
-Use these blocks for linear algebra.
 
 ## Recommended Blocks
 

@@ -1,15 +1,342 @@
 {
-  "generatedAt": "2026-09-29T16:38:09",
-  "generatedAtDatenum": 740254.69317077543,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Support Package for Android Devices"
-  ],
-  "blockCount": 36,
-  "categoryCount": 5,
-  "libraryFingerprints": {
-    "Simulink_Support_Package_for_Android_Devices": {
-      "blockCount": 36
+  "pages": [
+    {
+      "id": "advanced",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Android Devices",
+      "kbFolder": "simulink-support-package-for-android-devices",
+      "category": "advanced",
+      "hash": "2f39aeafaa056cc2e0dd871d2b0ae32776a040c778a1b24c77149295e99cf542",
+      "fm": {
+        "title": "Advanced",
+        "description": "Advanced app-integration blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-android-devices",
+          "advanced",
+          "toapp"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "ToApp",
+          "ref": "androidadvancedlib/ToApp",
+          "since": "R2023a+",
+          "intent": "Pass data from the model to the companion Android app layer — use to hand model outputs to app UI or logic."
+        },
+        {
+          "block": "FromApp",
+          "ref": "androidadvancedlib/FromApp",
+          "since": "R2023a+",
+          "intent": "Receive data from a method in the generated app. The block calls the specified method of the app's default Activity. The block outputs the values returned by the method as an [Nx1] array."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "audio-video",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Android Devices",
+      "kbFolder": "simulink-support-package-for-android-devices",
+      "category": "audio-video",
+      "hash": "97c86da0435b5ab12f0d199fda49b22266cdb8a23b3c28657914e8239311774f",
+      "fm": {
+        "title": "Audio video",
+        "description": "Audio and media I/O on Android (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-android-devices",
+          "audio",
+          "video",
+          "camera"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Audio File Read",
+          "ref": "androidaudiovideolib/Audio File Read",
+          "since": "R2023a+",
+          "intent": "Read audio samples from a file on the Android device — use as an audio source for on-device processing."
+        },
+        {
+          "block": "Audio File Write",
+          "ref": "androidaudiovideolib/Audio File Write",
+          "since": "R2023a+",
+          "intent": "Write audio samples to a file on the Android device — use to record processed audio to storage."
+        },
+        {
+          "block": "Audio Capture",
+          "ref": "androidaudiovideolib/Audio Capture",
+          "since": "R2023a+",
+          "intent": "Capture audio from the device microphone. The block outputs an [Nx2] matrix of int16 values, where N is the number of samples per frame and the colums represent the left and right channels."
+        },
+        {
+          "block": "Audio Playback",
+          "ref": "androidaudiovideolib/Audio Playback",
+          "since": "R2023a+",
+          "intent": "Play audio on the device speaker. The block accepts an [Nx2] int16 matrix, where N is the number of samples per frame and the columns represent the left and right channels."
+        },
+        {
+          "block": "Camera",
+          "ref": "androidaudiovideolib/Camera",
+          "since": "R2023a+",
+          "intent": "Capture video using either the front or rear camera. Each R, G, B port outputs an image as a matrix of uint8 values."
+        },
+        {
+          "block": "Video Display",
+          "ref": "androidaudiovideolib/Video Display",
+          "since": "R2023a+",
+          "intent": "Display video on the device screen. Each R, G, B port accepts an image as a matrix of uint8 values."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "communication",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Android Devices",
+      "kbFolder": "simulink-support-package-for-android-devices",
+      "category": "communication",
+      "hash": "75eeee7ef50f2adae4e0b133bb5c2c60b865bf89f3a3e25d32c6c79c0859dfe8",
+      "fm": {
+        "title": "Communication",
+        "description": "Network, cloud, and serial data exchange on Android (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-android-devices",
+          "tcp",
+          "mqtt",
+          "http",
+          "serial",
+          "thingspeak",
+          "communication"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "BLE Receive",
+          "ref": "androidcommunicationlib/BLE Receive",
+          "since": "R2023a+",
+          "intent": "Receive BLE characteristic data from another BLE device. The Data port outputs the received characteristic data values as an [Nx1] int8 array.The Size port outputs the received characteristic data array length. Select the Mode for your device. Device acting as Central (Client) can connect to only another device acting as Peripheral (Server). In BLECentral mode, Click Scan to find nearby BLE devices and list their supported services and characteristics. In BLEPeripheral mode, select the Service and Characteristic for your device."
+        },
+        {
+          "block": "BLE Send",
+          "ref": "androidcommunicationlib/BLE Send",
+          "since": "R2023a+",
+          "intent": "Send BLE Characteristic data to another BLE device. The block accepts a 1-D array of type uint8, int8, uint16, int16, uint32, int32, boolean, single-precision, or double-precision. Select the Mode for your device. Device acting as Central (Client) can connect to only another device acting as Peripheral (Server). In BLECentral mode, Click Scan to find nearby BLE devices and list their supported services and characteristics. In BLEPeripheral mode, select the Service and Characteristic for your device."
+        },
+        {
+          "block": "HTTP Client",
+          "ref": "androidcommunicationlib/HTTP Client",
+          "since": "R2023a+",
+          "intent": "Perform HTTP GET/POST requests from the Android device — use to call REST or web services from a deployed model."
+        },
+        {
+          "block": "MQTT Publish",
+          "ref": "androidcommunicationlib/MQTT Publish",
+          "since": "R2023a+",
+          "intent": "Publish messages to an MQTT broker from the Android device — use for IoT telemetry uplink."
+        },
+        {
+          "block": "MQTT Subscribe",
+          "ref": "androidcommunicationlib/MQTT Subscribe",
+          "since": "R2023a+",
+          "intent": "Subscribe to MQTT topics on the Android device — use to receive IoT commands or messages."
+        },
+        {
+          "block": "Serial Receive",
+          "ref": "androidcommunicationlib/Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over a serial (USB/UART) connection on Android — use to read from an attached serial peripheral."
+        },
+        {
+          "block": "Serial Transmit",
+          "ref": "androidcommunicationlib/Serial Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over a serial (USB/UART) connection on Android — use to drive an attached serial peripheral."
+        },
+        {
+          "block": "TCP/IP Receive",
+          "ref": "androidcommunicationlib/TCP/IP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over TCP/IP on the Android device — use to stream data or commands into a deployed model."
+        },
+        {
+          "block": "TCP/IP Send",
+          "ref": "androidcommunicationlib/TCP/IP Send",
+          "since": "R2023a+",
+          "intent": "Send data over TCP/IP from the Android device — use to stream results or telemetry out of a deployed model."
+        },
+        {
+          "block": "ThingSpeak Read",
+          "ref": "androidcommunicationlib/ThingSpeak Read",
+          "since": "R2023a+",
+          "intent": "Read channel data from ThingSpeak on the Android device — use to pull cloud-stored IoT data into the model."
+        },
+        {
+          "block": "ThingSpeak Write",
+          "ref": "androidcommunicationlib/ThingSpeak Write",
+          "since": "R2023a+",
+          "intent": "Send data to ThingSpeak. Each input port accepts numeric scalars. Set Update interval parameter to the number of seconds to wait between two successive data send requests. The minimum update interval for a free channel is 15 seconds."
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "androidcommunicationlib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets from another UDP host on an Internet network. The block outputs the values received as an [Nx1] array. Set the Local IP port parameter to the port number used by the sending UDP host."
+        },
+        {
+          "block": "UDP Send",
+          "ref": "androidcommunicationlib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP packets to another UDP host on an Internet network. The block accepts 1-D arrays of type uint8, int8, uint16, int16, uint32, int32, single or double. Set the Remote IP address and Remote IP port parameters to the IP address and port number of the receiving UDP host, respectively."
+        },
+        {
+          "block": "TalkBack Read",
+          "ref": "androidcommunicationlib/TalkBack Read",
+          "since": "R2023a+",
+          "intent": "Read command from TalkBack ID on ThingSpeak.com, the MathWorks IoT Analytics platform. The hardware must be connected to the internet. The block outputs the commands in the TalkBack queue as a string or an ASCII vector from a TalkBack ID on the ThingSpeak channel."
+        },
+        {
+          "block": "TalkBack Write",
+          "ref": "androidcommunicationlib/TalkBack Write",
+          "since": "R2023a+",
+          "intent": "Write command to TalkBack ID on ThingSpeak.com, the MathWorks IoT Analytics platform. The hardware must be connected to the internet. The block accepts a triggered input. For a trigger input equal to zero, the block does not execute the option set for the “TalkBack endpoint” parameter. Otherwise, the block executes this option."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Android Devices",
+      "kbFolder": "simulink-support-package-for-android-devices",
+      "category": "sensors",
+      "hash": "c16e5f25879d920a4b1d09e63899feb578629b832793e2a9370d5670d35bf7ac",
+      "fm": {
+        "title": "Sensors",
+        "description": "On-device Android sensors (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-android-devices",
+          "sensor",
+          "magnetometer",
+          "orientation",
+          "accelerometer",
+          "gyroscope"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Magnetometer",
+          "ref": "androidsensorlib/Magnetometer",
+          "since": "R2023a+",
+          "intent": "Read the Android device's magnetometer (magnetic field vector) — use for heading/compass and orientation sensing."
+        },
+        {
+          "block": "Orientation",
+          "ref": "androidsensorlib/Orientation",
+          "since": "R2023a+",
+          "intent": "Read the Android device's fused orientation (roll/pitch/yaw) — use for attitude sensing in mobile apps."
+        },
+        {
+          "block": "Accelerometer",
+          "ref": "androidsensorlib/Accelerometer",
+          "since": "R2023a+",
+          "intent": "Measure linear acceleration along the X, Y and Z axes in m/s^2. Each X, Y, Z port outputs acceleration as a single-precision scalar."
+        },
+        {
+          "block": "Ambient Temperature Sensor",
+          "ref": "androidsensorlib/Ambient Temperature Sensor",
+          "since": "R2023a+",
+          "intent": "Measure ambient temperature in degrees Celsius (C). The block outputs temperature as a single-precision value."
+        },
+        {
+          "block": "Gyroscope",
+          "ref": "androidsensorlib/Gyroscope",
+          "since": "R2023a+",
+          "intent": "Measure rate of rotation around the X, Y and Z axes in rad/s. Each X, Y, Z port outputs the rate of rotation as a single-precision scalar."
+        },
+        {
+          "block": "Humidity Sensor",
+          "ref": "androidsensorlib/Humidity Sensor",
+          "since": "R2023a+",
+          "intent": "Measure relative ambient humidity in percent (%). The block outputs humidity as a single-precision value."
+        },
+        {
+          "block": "Light Sensor",
+          "ref": "androidsensorlib/Light Sensor",
+          "since": "R2023a+",
+          "intent": "Measure ambient light level in lux (lx). The block outputs light level as a single-precision value."
+        },
+        {
+          "block": "Location Sensor",
+          "ref": "androidsensorlib/Location Sensor",
+          "since": "R2023a+",
+          "intent": "Measure GPS latitude, longitude in decimal degrees (°) and altitude in meters (m). Each Lat, Lon, Alt port outputs a double-precision scalar."
+        },
+        {
+          "block": "Pressure Sensor",
+          "ref": "androidsensorlib/Pressure Sensor",
+          "since": "R2023a+",
+          "intent": "Measure ambient air pressure in hectopascals (hPa). The block outputs pressure as a single-precision value."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "user-interface",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Android Devices",
+      "kbFolder": "simulink-support-package-for-android-devices",
+      "category": "user-interface",
+      "hash": "cef4a9a1ac4e0518e4c76b0eea3c4241b44631169a2e5a15c709ccbed60b34a9",
+      "fm": {
+        "title": "User interface",
+        "description": "Interactive app UI input and display (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-android-devices",
+          "user interface",
+          "data input",
+          "display",
+          "button"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Data Input",
+          "ref": "androiduilib/Data Input",
+          "since": "R2023a+",
+          "intent": "Read a user-entered value from the Android app UI — use to feed interactive setpoints into the model."
+        },
+        {
+          "block": "Button",
+          "ref": "androiduilib/Button",
+          "since": "R2023a+",
+          "intent": "Add a button widget to the generated app and read its state. The block outputs the state of the button as a boolean value."
+        },
+        {
+          "block": "Data Display",
+          "ref": "androiduilib/Data Display",
+          "since": "R2023a+",
+          "intent": "Numeric display of input values on device screen. The block accepts 1-D arrays of type boolean, uint8, int8, uint16, int16, uint32, int32, single or double."
+        },
+        {
+          "block": "Slider",
+          "ref": "androiduilib/Slider",
+          "since": "R2023a+",
+          "intent": "Add a slider widget to the generated app and read its value. The block outputs the slider value as a single-precision value. The Resolution parameter controls the spacing between two adjacent slider positions."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:32",
+  "generatedAtDatenum": 740309.99551549763
 }

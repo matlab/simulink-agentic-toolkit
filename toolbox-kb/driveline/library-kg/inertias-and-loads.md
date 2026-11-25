@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Inertias and loads
-description: Variable inertia, variable mass, and unbalanced rotational loads
-tags: [inertia, mass, load, unbalanced, variable]
+description: "Variable inertia, variable mass, and unbalanced rotational loads (3 blocks)"
+tags: [toolbox-kb, driveline, inertia, mass, load, unbalanced, variable]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Inertias and loads
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: inertias-and-loads
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Inertias and loads
-
-Use these blocks for inertias and loads.
 
 ## Recommended Blocks
 

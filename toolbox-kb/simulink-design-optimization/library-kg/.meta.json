@@ -1,15 +1,147 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74459305557,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Design Optimization"
-  ],
-  "blockCount": 11,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Simulink_Design_Optimization": {
-      "blockCount": 11
+  "pages": [
+    {
+      "id": "adaptive-tables",
+      "kind": "toolbox",
+      "library": "Simulink Design Optimization",
+      "kbFolder": "simulink-design-optimization",
+      "category": "adaptive-tables",
+      "hash": "ed4567834dfba9707b23af91ecf62377d8187fca6325a1555cf3a83e2cd93d6f",
+      "fm": {
+        "title": "Adaptive tables",
+        "description": "Self-tuning lookup tables that adapt during simulation (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-design-optimization",
+          "adaptive",
+          "lookup",
+          "table",
+          "calibration",
+          "tune"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Adaptive Lookup Table (1D Stair-Fit)",
+          "ref": "sdolib/Adaptive Lookup Tables/Adaptive Lookup Table (1D Stair-Fit)",
+          "since": "R2023a+",
+          "intent": "Online-adaptive 1D lookup table that updates breakpoints during simulation — use for self-tuning calibration maps that learn from measured input-output data"
+        },
+        {
+          "block": "Adaptive Lookup Table (2D Stair-Fit)",
+          "ref": "sdolib/Adaptive Lookup Tables/Adaptive Lookup Table (2D Stair-Fit)",
+          "since": "R2023a+",
+          "intent": "Online-adaptive 2D lookup table that updates breakpoints during simulation — use for self-tuning 2D calibration surfaces from measured data"
+        },
+        {
+          "block": "Adaptive Lookup Table (nD Stair-Fit)",
+          "ref": "sdolib/Adaptive Lookup Tables/Adaptive Lookup Table (nD Stair-Fit)",
+          "since": "R2023a+",
+          "intent": "Online-adaptive n-dimensional lookup table — use for self-tuning multi-dimensional calibration maps from measured data"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "model-verification",
+      "kind": "toolbox",
+      "library": "Simulink Design Optimization",
+      "kbFolder": "simulink-design-optimization",
+      "category": "model-verification",
+      "hash": "b09b51d043fd0eeaf2da864f80dc114a19e65e94ec434635008a0d7f9baeb334",
+      "fm": {
+        "title": "Model verification",
+        "description": "Automated signal verification and bounds checking (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-design-optimization",
+          "check",
+          "verify",
+          "bounds",
+          "reference",
+          "step"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Check Against Reference",
+          "ref": "sdolib/Model Verification/Check Against Reference",
+          "since": "R2023a+",
+          "intent": "Verify that a signal tracks a reference within tolerance — use for automated pass/fail testing against golden reference data during optimization or verification"
+        },
+        {
+          "block": "Check Custom Bounds",
+          "ref": "sdolib/Model Verification/Check Custom Bounds",
+          "since": "R2023a+",
+          "intent": "Verify that a signal stays within user-defined upper and lower bounds — use for automated envelope testing during parameter optimization or design verification"
+        },
+        {
+          "block": "Check Step Response  Characteristics",
+          "ref": "sdolib/Model Verification/Check Step Response  Characteristics",
+          "since": "R2023a+",
+          "intent": "Verify step response meets rise time, settling time, and overshoot specs — use for automated performance validation of control system transient response"
+        },
+        {
+          "block": "Check Against Reference",
+          "ref": "sdolib/Signal Constraints/Check Against Reference",
+          "since": "R2023a+",
+          "intent": "Verify that a signal tracks a reference within tolerance — use for automated pass/fail testing against golden reference data during optimization or verification"
+        },
+        {
+          "block": "Check Custom Bounds",
+          "ref": "sdolib/Signal Constraints/Check Custom Bounds",
+          "since": "R2023a+",
+          "intent": "Verify that a signal stays within user-defined upper and lower bounds — use for automated envelope testing during parameter optimization or design verification"
+        },
+        {
+          "block": "Check Step Response  Characteristics",
+          "ref": "sdolib/Signal Constraints/Check Step Response  Characteristics",
+          "since": "R2023a+",
+          "intent": "Verify step response meets rise time, settling time, and overshoot specs — use for automated performance validation of control system transient response"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-metrics",
+      "kind": "toolbox",
+      "library": "Simulink Design Optimization",
+      "kbFolder": "simulink-design-optimization",
+      "category": "signal-metrics",
+      "hash": "ed789da04f68c1e828f7f49e58b19e6176b221fb4cd7bc4839da2a13c92aeca5",
+      "fm": {
+        "title": "Signal metrics",
+        "description": "Signal measurement and statistics blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-design-optimization",
+          "rms",
+          "power",
+          "signal",
+          "metric",
+          "amplitude"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CRMS",
+          "ref": "sdolib/RMS Blocks/CRMS",
+          "since": "R2023a+",
+          "intent": "Compute continuous running RMS of a signal — use for measuring signal power or vibration amplitude in continuous-time systems"
+        },
+        {
+          "block": "DRMS",
+          "ref": "sdolib/RMS Blocks/DRMS",
+          "since": "R2023a+",
+          "intent": "Compute discrete running RMS of a signal — use for measuring signal power or vibration amplitude in discrete-time systems"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:31",
+  "generatedAtDatenum": 740309.99549944443
 }

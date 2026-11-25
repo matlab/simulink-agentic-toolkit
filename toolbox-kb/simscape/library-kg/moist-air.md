@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Moist air
-description: Moist-air elements for HVAC and humidity modeling
-tags: [moist air]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Moist air
+description: Moist-air elements for HVAC and humidity modeling (18 blocks)
+tags: [toolbox-kb, simscape, moist air]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: moist-air
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Moist air
-
-Use these blocks for moist air.
 
 ## Recommended Blocks
 

@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Lin
-description: Blocks for lin.
+description: Blocks for Lin (2 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Lin
+sources:
+  - resource: matlab:slrealtimelinlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: lin
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Lin
-
-Use these blocks for lin.
 
 ## Recommended Blocks
 

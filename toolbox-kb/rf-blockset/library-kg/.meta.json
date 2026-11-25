@@ -1,15 +1,603 @@
 {
-  "generatedAt": "2026-09-29T16:38:08",
-  "generatedAtDatenum": 740254.693154456,
-  "generatorVersion": 4,
-  "libraries": [
-    "RF Blockset"
-  ],
-  "blockCount": 89,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "RF_Blockset": {
-      "blockCount": 89
+  "pages": [
+    {
+      "id": "circuit-envelope",
+      "kind": "toolbox",
+      "library": "RF Blockset",
+      "kbFolder": "rf-blockset",
+      "category": "circuit-envelope",
+      "hash": "a44fc75951bf48f08a8e7c00ba58c10134e814108ca88683d637f1eb86271b7d",
+      "fm": {
+        "title": "Circuit envelope",
+        "description": "Multi-carrier circuit-envelope RF elements, sources, and utilities (51 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "rf-blockset",
+          "circuit envelope"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Gnd",
+          "ref": "simrfV2elements/Gnd",
+          "since": "R2023a+",
+          "intent": "Electrical ground reference for a circuit-envelope RF network — connect to establish the 0 V node."
+        },
+        {
+          "block": "Antenna",
+          "ref": "simrfV2elements/Antenna",
+          "since": "R2023a+",
+          "intent": "Model antenna and antenna arrays accounting for incident power wave (RX) and radiated power wave (TX)."
+        },
+        {
+          "block": "Attenuator",
+          "ref": "simrfV2elements/Attenuator",
+          "since": "R2023a+",
+          "intent": "Model an attenuator"
+        },
+        {
+          "block": "C",
+          "ref": "simrfV2elements/C",
+          "since": "R2023a+",
+          "intent": "Model a linear capacitor."
+        },
+        {
+          "block": "IMT Mixer",
+          "ref": "simrfV2elements/IMT Mixer",
+          "since": "R2023a+",
+          "intent": "Mixer model using an Intermodulation Table (IMT)"
+        },
+        {
+          "block": "Ideal Transformer",
+          "ref": "simrfV2elements/Ideal Transformer",
+          "since": "R2023a+",
+          "intent": "Model ideal transformer"
+        },
+        {
+          "block": "L",
+          "ref": "simrfV2elements/L",
+          "since": "R2023a+",
+          "intent": "Model a linear inductor."
+        },
+        {
+          "block": "LC Ladder",
+          "ref": "simrfV2elements/LC Ladder",
+          "since": "R2023a+",
+          "intent": "Model an LC ladder filter."
+        },
+        {
+          "block": "Mutual Inductor",
+          "ref": "simrfV2elements/Mutual Inductor",
+          "since": "R2023a+",
+          "intent": "Model mutual inductor:"
+        },
+        {
+          "block": "Phase Shift",
+          "ref": "simrfV2elements/Phase Shift",
+          "since": "R2023a+",
+          "intent": "Model a phase shift."
+        },
+        {
+          "block": "R",
+          "ref": "simrfV2elements/R",
+          "since": "R2023a+",
+          "intent": "Model a linear resistor."
+        },
+        {
+          "block": "S-parameters",
+          "ref": "simrfV2elements/S-parameters",
+          "since": "R2023a+",
+          "intent": "Model an RF component described by S-parameters."
+        },
+        {
+          "block": "Signal Combiner",
+          "ref": "simrfV2elements/Signal Combiner",
+          "since": "R2023a+",
+          "intent": "Combine two voltage signals together."
+        },
+        {
+          "block": "Three-Winding Transformer",
+          "ref": "simrfV2elements/Three-Winding Transformer",
+          "since": "R2023a+",
+          "intent": "Model three winding transformer."
+        },
+        {
+          "block": "Transmission Line",
+          "ref": "simrfV2elements/Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model a transmission line."
+        },
+        {
+          "block": "VGA",
+          "ref": "simrfV2elements/VGA",
+          "since": "R2023a+",
+          "intent": "Model a variable-gain amplifier. The inputs: power gain (dB), IP2 (dBm), and IP3 (dBm) are Simulink signals."
+        },
+        {
+          "block": "Variable Attenuator",
+          "ref": "simrfV2elements/Variable Attenuator",
+          "since": "R2023a+",
+          "intent": "Model a variable attenuator"
+        },
+        {
+          "block": "Variable Capacitor",
+          "ref": "simrfV2elements/Variable Capacitor",
+          "since": "R2023a+",
+          "intent": "Model a variable capacitor. The input, Capacitance, is a Simulink signal."
+        },
+        {
+          "block": "Variable Inductor",
+          "ref": "simrfV2elements/Variable Inductor",
+          "since": "R2023a+",
+          "intent": "Model a variable inductor. The input, Inductance, is a Simulink signal."
+        },
+        {
+          "block": "Variable Phase Shift",
+          "ref": "simrfV2elements/Variable Phase Shift",
+          "since": "R2023a+",
+          "intent": "Model a variable phase device. The input, Phase, is a Simulink signal."
+        },
+        {
+          "block": "Variable Resistor",
+          "ref": "simrfV2elements/Variable Resistor",
+          "since": "R2023a+",
+          "intent": "Model a variable resistor. The input, Resistance, is a Simulink signal."
+        },
+        {
+          "block": "Z",
+          "ref": "simrfV2elements/Z",
+          "since": "R2023a+",
+          "intent": "Model a complex impedance."
+        },
+        {
+          "block": "Circulator",
+          "ref": "simrfV2junction1/Circulator",
+          "since": "R2023a+",
+          "intent": "Model ideal circulators with S-parameters."
+        },
+        {
+          "block": "Coupler",
+          "ref": "simrfV2junction1/Coupler",
+          "since": "R2023a+",
+          "intent": "Model ideal couplers with S-parameters."
+        },
+        {
+          "block": "Divider",
+          "ref": "simrfV2junction1/Divider",
+          "since": "R2023a+",
+          "intent": "Model ideal dividers with S-parameters."
+        },
+        {
+          "block": "Potentiometer",
+          "ref": "simrfV2junction1/Potentiometer",
+          "since": "R2023a+",
+          "intent": "Models a Simulink controlled Potentiometer."
+        },
+        {
+          "block": "SPDT",
+          "ref": "simrfV2junction1/SPDT",
+          "since": "R2023a+",
+          "intent": "Model a Single Pole Double Throw (SPDT) switch"
+        },
+        {
+          "block": "SPST",
+          "ref": "simrfV2junction1/SPST",
+          "since": "R2023a+",
+          "intent": "Model a Single Pole Single Throw (SPST) switch"
+        },
+        {
+          "block": "SPnT",
+          "ref": "simrfV2junction1/SPnT",
+          "since": "R2023a+",
+          "intent": "Model an absorptive or reflective Single Pole Multiple Throw (SPnT) switch"
+        },
+        {
+          "block": "Switch",
+          "ref": "simrfV2junction1/Switch",
+          "since": "R2023a+",
+          "intent": "Simulink controlled two terminal switch. Allowed value ranges for Ron and Roff resistances are zero to infinity. The value of Ron can be less than or greater than Roff. When Ron is less than Roff, the switch is on for Vctl>Vthres, and for Ron greater than Roff, the switch is off for Vctl>Vthres."
+        },
+        {
+          "block": "Continuous Wave",
+          "ref": "simrfV2sources1/Continuous Wave",
+          "since": "R2023a+",
+          "intent": "Model a continuous wave source."
+        },
+        {
+          "block": "Noise",
+          "ref": "simrfV2sources1/Noise",
+          "since": "R2023a+",
+          "intent": "Model a voltage or current noise source defined by the height of power spectral density."
+        },
+        {
+          "block": "Sinusoid",
+          "ref": "simrfV2sources1/Sinusoid",
+          "since": "R2023a+",
+          "intent": "Model a sinusoidal voltage or current source."
+        },
+        {
+          "block": "Channel",
+          "ref": "simrfV2systems/Channel",
+          "since": "R2023b+",
+          "intent": "Model channel accounting for effect of antennas and RF propagation in medium"
+        },
+        {
+          "block": "Demodulator",
+          "ref": "simrfV2systems/Demodulator",
+          "since": "R2023a+",
+          "intent": "Model a Demodulator"
+        },
+        {
+          "block": "IQ Demodulator",
+          "ref": "simrfV2systems/IQ Demodulator",
+          "since": "R2023a+",
+          "intent": "Model an IQ demodulator"
+        },
+        {
+          "block": "IQ Modulator",
+          "ref": "simrfV2systems/IQ Modulator",
+          "since": "R2023a+",
+          "intent": "Model an IQ modulator"
+        },
+        {
+          "block": "Modulator",
+          "ref": "simrfV2systems/Modulator",
+          "since": "R2023a+",
+          "intent": "Model a Modulator"
+        },
+        {
+          "block": "IIP2 Testbench",
+          "ref": "simrfV2testbenches/IIP2 Testbench",
+          "since": "R2023a+",
+          "intent": "Measures the Input 2nd Intercept Point of a system."
+        },
+        {
+          "block": "IIP3 Testbench",
+          "ref": "simrfV2testbenches/IIP3 Testbench",
+          "since": "R2023a+",
+          "intent": "Measures the Input 3rd Intercept Point of a system."
+        },
+        {
+          "block": "Noise Figure Testbench",
+          "ref": "simrfV2testbenches/Noise Figure Testbench",
+          "since": "R2023a+",
+          "intent": "Measures the Noise Figure of a system."
+        },
+        {
+          "block": "OIP2 Testbench",
+          "ref": "simrfV2testbenches/OIP2 Testbench",
+          "since": "R2023a+",
+          "intent": "Measures the Output 2nd Intercept Point of a system."
+        },
+        {
+          "block": "OIP3 Testbench",
+          "ref": "simrfV2testbenches/OIP3 Testbench",
+          "since": "R2023a+",
+          "intent": "Measures the Output 3rd Intercept Point of a system."
+        },
+        {
+          "block": "S-Parameter Testbench",
+          "ref": "simrfV2testbenches/S-Parameter Testbench",
+          "since": "R2023a+",
+          "intent": "Measures the S-parameters of a system."
+        },
+        {
+          "block": "Transducer Gain Testbench",
+          "ref": "simrfV2testbenches/Transducer Gain Testbench",
+          "since": "R2023a+",
+          "intent": "Measures the Transducer Gain of a system."
+        },
+        {
+          "block": "Connection Label",
+          "ref": "simrfV2util1/Connection Label",
+          "since": "R2023a+",
+          "intent": "Create a wireless (label-based) connection between two points in a circuit-envelope network without drawing a wire — use to reduce clutter in large RF schematics."
+        },
+        {
+          "block": "Spectrum Analyzer",
+          "ref": "simrfV2util1/Spectrum Analyzer",
+          "since": "R2023a+",
+          "intent": "Display the frequency spectrum of a circuit-envelope RF signal during simulation — use to inspect power, harmonics, and spurious content."
+        },
+        {
+          "block": "Connection Port",
+          "ref": "simrfV2util1/Connection Port",
+          "since": "R2023a+",
+          "intent": "Expose a physical RF connection port on a circuit-envelope subsystem — use to create RF pins on a masked subsystem."
+        },
+        {
+          "block": "Configuration",
+          "ref": "simrfV2util1/Configuration",
+          "since": "R2023a+",
+          "intent": "Define RF Blockset Circuit Envelope system simulation settings."
+        },
+        {
+          "block": "Inport",
+          "ref": "simrfV2util1/Inport",
+          "since": "R2023a+",
+          "intent": "Convert Simulink signal to RF Blockset Circuit Envelope voltage or current."
+        },
+        {
+          "block": "Outport",
+          "ref": "simrfV2util1/Outport",
+          "since": "R2023a+",
+          "intent": "Convert RF Blockset Circuit Envelope voltage or current to Simulink signal."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "equivalent-baseband",
+      "kind": "toolbox",
+      "library": "RF Blockset",
+      "kbFolder": "rf-blockset",
+      "category": "equivalent-baseband",
+      "hash": "27fa47e4df2c5b8495e8cd25f6e0c14eb538fd43dbaaf226f95c82e030ae20e0",
+      "fm": {
+        "title": "Equivalent baseband",
+        "description": "Equivalent-baseband RF chain components (amplifiers, mixers, filters, lines) (28 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "rf-blockset",
+          "equivalent baseband"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "General Amplifier",
+          "ref": "rfamplifiers1/General Amplifier",
+          "since": "R2023a+",
+          "intent": "RF amplifier described by a data source that consists of either an RFDATA object or data from a file. When there is no noise data in the data source, use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. When there is no nonlinearity data in the data source, use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. When the data source contains operating condition information, use the Operating Conditions tab to select operating condition settings for the simulation. Data interpolation is used during simulation."
+        },
+        {
+          "block": "S-Parameters Amplifier",
+          "ref": "rfamplifiers1/S-Parameters Amplifier",
+          "since": "R2023a+",
+          "intent": "RF amplifier described by frequency-dependent S-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of S-Parameters, an M-element vector of the corresponding frequency values and a scalar or M-element vector of the corresponding reference impedance values. Use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation."
+        },
+        {
+          "block": "Y-Parameters Amplifier",
+          "ref": "rfamplifiers1/Y-Parameters Amplifier",
+          "since": "R2023a+",
+          "intent": "RF amplifier described by frequency-dependent Y-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Y-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation."
+        },
+        {
+          "block": "Z-Parameters Amplifier",
+          "ref": "rfamplifiers1/Z-Parameters Amplifier",
+          "since": "R2023a+",
+          "intent": "RF amplifier described by frequency-dependent Z-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Z-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify amplifier noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify amplifier nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation."
+        },
+        {
+          "block": "General Passive Network",
+          "ref": "rfblackbox1/General Passive Network",
+          "since": "R2023a+",
+          "intent": "Two-port passive network described by an RFDATA object or data from a file. Data interpolation is used during simulation."
+        },
+        {
+          "block": "General  Circuit Element",
+          "ref": "rfblackbox1/General  Circuit Element",
+          "since": "R2023a+",
+          "intent": "Two-port network described by an RFCKT object."
+        },
+        {
+          "block": "S-Parameters Passive Network",
+          "ref": "rfblackbox1/S-Parameters Passive Network",
+          "since": "R2023a+",
+          "intent": "Two-port passive network described by the frequency-dependent S-Parameters (2x2xM array), the Frequency (vector of length M), and the Reference impedance (scalar or vector of length M). M is the number of frequencies. Data interpolation is used during simulation."
+        },
+        {
+          "block": "Y-Parameters Passive Network",
+          "ref": "rfblackbox1/Y-Parameters Passive Network",
+          "since": "R2023a+",
+          "intent": "Two-port passive network described by the frequency-dependent Y-Parameters (2x2xM array), and the Frequency (vector of length M). M is the number of frequencies. Data interpolation is used during simulation."
+        },
+        {
+          "block": "Z-Parameters Passive Network",
+          "ref": "rfblackbox1/Z-Parameters Passive Network",
+          "since": "R2023a+",
+          "intent": "Two-port passive network described by the frequency-dependent Z-Parameters (2x2xM array), and the Frequency (vector of length M). M is the number of frequencies. Data interpolation is used during simulation."
+        },
+        {
+          "block": "LC Bandpass Pi",
+          "ref": "rfladderfilters1/LC Bandpass Pi",
+          "since": "R2023a+",
+          "intent": "Model an LC bandpass pi network."
+        },
+        {
+          "block": "LC Bandpass Tee",
+          "ref": "rfladderfilters1/LC Bandpass Tee",
+          "since": "R2023a+",
+          "intent": "Model an LC bandpass tee network."
+        },
+        {
+          "block": "LC Bandstop Pi",
+          "ref": "rfladderfilters1/LC Bandstop Pi",
+          "since": "R2023a+",
+          "intent": "Model an LC bandstop pi network."
+        },
+        {
+          "block": "LC Bandstop Tee",
+          "ref": "rfladderfilters1/LC Bandstop Tee",
+          "since": "R2023a+",
+          "intent": "Model an LC bandstop tee network."
+        },
+        {
+          "block": "LC Highpass Pi",
+          "ref": "rfladderfilters1/LC Highpass Pi",
+          "since": "R2023a+",
+          "intent": "Model an LC highpass pi network."
+        },
+        {
+          "block": "LC Highpass Tee",
+          "ref": "rfladderfilters1/LC Highpass Tee",
+          "since": "R2023a+",
+          "intent": "Model an LC highpass tee network."
+        },
+        {
+          "block": "LC Lowpass Pi",
+          "ref": "rfladderfilters1/LC Lowpass Pi",
+          "since": "R2023a+",
+          "intent": "Model an LC lowpass pi network."
+        },
+        {
+          "block": "LC Lowpass Tee",
+          "ref": "rfladderfilters1/LC Lowpass Tee",
+          "since": "R2023a+",
+          "intent": "Model an LC lowpass tee network."
+        },
+        {
+          "block": "General Mixer",
+          "ref": "rfmixers1/General Mixer",
+          "since": "R2023a+",
+          "intent": "RF mixer described by a data source that consists of either an RFDATA object or data from a file. When there is no noise data in the data source, use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. When there is no nonlinearity data in the data source, use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. When the data source contains operating condition information, use the Operating Conditions tab to select operating condition settings for the simulation. Data interpolation is used during simulation."
+        },
+        {
+          "block": "S-Parameters Mixer",
+          "ref": "rfmixers1/S-Parameters Mixer",
+          "since": "R2023a+",
+          "intent": "RF mixer described by frequency-dependent S-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of S-Parameters, an M-element vector of the corresponding frequency values and a scalar or M-element vector of the corresponding reference impedance values. Use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation."
+        },
+        {
+          "block": "Y-Parameters Mixer",
+          "ref": "rfmixers1/Y-Parameters Mixer",
+          "since": "R2023a+",
+          "intent": "RF mixer described by frequency-dependent Y-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Y-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation."
+        },
+        {
+          "block": "Z-Parameters Mixer",
+          "ref": "rfmixers1/Z-Parameters Mixer",
+          "since": "R2023a+",
+          "intent": "RF mixer described by frequency-dependent Z-Parameters, noise data, and nonlinearity data. Use the Main tab to specify a 2x2xM array of Z-Parameters and an M-element vector of the corresponding frequency values. Use the Noise Data tab to specify mixer noise information. For a frequency-dependent noise, the Noise Data tab accepts a separate N-element vector of the corresponding frequency values. Use the Nonlinearity Data tab to specify mixer nonlinearity information. For a frequency-dependent nonlinearity, the Nonlinearity Data tab accepts a separate N-element vector of the corresponding frequency values. Data interpolation is used during simulation."
+        },
+        {
+          "block": "Coaxial Transmission Line",
+          "ref": "rftxlines1/Coaxial Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model a coaxial transmission line."
+        },
+        {
+          "block": "Coplanar Waveguide Transmission Line",
+          "ref": "rftxlines1/Coplanar Waveguide Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model a coplanar waveguide transmission line."
+        },
+        {
+          "block": "Microstrip Transmission Line",
+          "ref": "rftxlines1/Microstrip Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model a microstrip transmission line."
+        },
+        {
+          "block": "Parallel-Plate Transmission Line",
+          "ref": "rftxlines1/Parallel-Plate Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model a parallel-plate transmission line."
+        },
+        {
+          "block": "RLCG Transmission Line",
+          "ref": "rftxlines1/RLCG Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model an RLCG transmission line."
+        },
+        {
+          "block": "Transmission Line",
+          "ref": "rftxlines1/Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model a transmission line."
+        },
+        {
+          "block": "Two-Wire Transmission Line",
+          "ref": "rftxlines1/Two-Wire Transmission Line",
+          "since": "R2023a+",
+          "intent": "Model a two-wire transmission line."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "idealized-baseband",
+      "kind": "toolbox",
+      "library": "RF Blockset",
+      "kbFolder": "rf-blockset",
+      "category": "idealized-baseband",
+      "hash": "242cdd743bca192b840f85b831807773f4ad15491fb3d678ce85514a39645790",
+      "fm": {
+        "title": "Idealized baseband",
+        "description": "System-level idealized baseband RF blocks with gain, noise, and nonlinearity (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "rf-blockset",
+          "idealized baseband"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Amplifier",
+          "ref": "simrfV2elements/Amplifier",
+          "since": "R2023a+",
+          "intent": "Idealized baseband amplifier with gain, noise figure, and nonlinearity — use for system-level RF gain stages without full circuit detail."
+        },
+        {
+          "block": "Filter",
+          "ref": "simrfV2elements/Filter",
+          "since": "R2023a+",
+          "intent": "Idealized baseband filter (lowpass, highpass, bandpass) — use to shape the spectrum of a baseband RF signal at system level."
+        },
+        {
+          "block": "Mixer",
+          "ref": "simrfV2elements/Mixer",
+          "since": "R2023a+",
+          "intent": "Idealized baseband mixer that frequency-translates a signal — use to model up- or down-conversion in an RF chain."
+        },
+        {
+          "block": "Power Amplifier",
+          "ref": "simrfV2elements/Power Amplifier",
+          "since": "R2023a+",
+          "intent": "Idealized baseband power amplifier with nonlinearity and memory effects — use to model PA distortion (AM/AM, AM/PM) at system level."
+        },
+        {
+          "block": "Amplifier",
+          "ref": "rfmathmodels2/Amplifier",
+          "since": "R2023a+",
+          "intent": "Idealized baseband amplifier with gain, noise figure, and nonlinearity — use for system-level RF gain stages without full circuit detail."
+        },
+        {
+          "block": "Filter",
+          "ref": "rfmathmodels2/Filter",
+          "since": "R2023a+",
+          "intent": "Idealized baseband filter (lowpass, highpass, bandpass) — use to shape the spectrum of a baseband RF signal at system level."
+        },
+        {
+          "block": "Mixer",
+          "ref": "rfmathmodels2/Mixer",
+          "since": "R2023a+",
+          "intent": "Idealized baseband mixer that frequency-translates a signal — use to model up- or down-conversion in an RF chain."
+        },
+        {
+          "block": "Power Amplifier",
+          "ref": "rfmathmodels2/Power Amplifier",
+          "since": "R2023a+",
+          "intent": "Idealized baseband power amplifier with nonlinearity and memory effects — use to model PA distortion (AM/AM, AM/PM) at system level."
+        },
+        {
+          "block": "Sparameters",
+          "ref": "rfmathmodels2/Sparameters",
+          "since": "R2023a+",
+          "intent": "Model a component from its S-parameter data in idealized baseband — use to insert measured or simulated frequency-domain behavior into an RF chain."
+        },
+        {
+          "block": "RF Budget",
+          "ref": "rfmathmodels2/RF Budget",
+          "since": "R2025a+",
+          "intent": "Compute RF budget results for A chain of 2-port elements."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:25",
+  "generatedAtDatenum": 740309.99543907412
 }

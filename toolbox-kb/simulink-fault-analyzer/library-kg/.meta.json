@@ -1,15 +1,86 @@
 {
-  "generatedAt": "2026-09-27T06:56:47",
-  "generatedAtDatenum": 740252.28944430558,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Fault Analyzer"
-  ],
-  "blockCount": 5,
-  "categoryCount": 2,
-  "libraryFingerprints": {
-    "Simulink_Fault_Analyzer": {
-      "blockCount": 5
+  "pages": [
+    {
+      "id": "fault-data-ports",
+      "kind": "toolbox",
+      "library": "Simulink Fault Analyzer",
+      "kbFolder": "simulink-fault-analyzer",
+      "category": "fault-data-ports",
+      "hash": "661fd8c055fc975f88c08e2dd7aeae3b44dcd08d3663513b3e2ca1976c59cd77",
+      "fm": {
+        "title": "Fault data ports",
+        "description": "Ports that feed external data or parameters used to drive fault behavior (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-fault-analyzer",
+          "fault",
+          "data",
+          "parameter",
+          "inport",
+          "injection"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Fault Data Inport",
+          "ref": "mwfaultblocklib/Fault Port Blocks/Fault Data Inport",
+          "since": "R2024b+",
+          "intent": "Brings external fault data or parameters into a fault subsystem. Use it when fault behavior must depend on recorded data, scenario values, or tunable parameters rather than only on the incoming signal, so the same fault model can be reparameterized across analyses."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "fault-signal-ports",
+      "kind": "toolbox",
+      "library": "Simulink Fault Analyzer",
+      "kbFolder": "simulink-fault-analyzer",
+      "category": "fault-signal-ports",
+      "hash": "5fef67b65286a895f9999855c22596430621e813419e288adfa3dc71d6fc0d16",
+      "fm": {
+        "title": "Fault signal ports",
+        "description": "Ports that route the modeled signal into and out of a fault subsystem's injection logic (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-fault-analyzer",
+          "fault",
+          "signal",
+          "inport",
+          "outport",
+          "subsystem"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Fault Inport",
+          "ref": "mwfaultblocklib/Fault Port Blocks/Fault Inport",
+          "since": "R2023a+",
+          "intent": "Marks where the original, un-faulted signal enters a fault subsystem. Use it inside fault-modeling logic to reference the healthy signal that the fault will corrupt, override, or degrade before it flows back to the model."
+        },
+        {
+          "block": "Fault Outport",
+          "ref": "mwfaultblocklib/Fault Port Blocks/Fault Outport",
+          "since": "R2023a+",
+          "intent": "Sends the modified value out of a fault subsystem and back onto the modeled signal. Use it as the endpoint of fault-injection logic so that the faulted signal, rather than the original, drives downstream blocks during analysis."
+        },
+        {
+          "block": "Fault Inport",
+          "ref": "mwfaultblocklib/Fault Subsystem/Fault Inport",
+          "since": "R2023a+",
+          "intent": "Marks where the original, un-faulted signal enters a fault subsystem. Use it inside fault-modeling logic to reference the healthy signal that the fault will corrupt, override, or degrade before it flows back to the model."
+        },
+        {
+          "block": "Fault Outport",
+          "ref": "mwfaultblocklib/Fault Subsystem/Fault Outport",
+          "since": "R2023a+",
+          "intent": "Sends the modified value out of a fault subsystem and back onto the modeled signal. Use it as the endpoint of fault-injection logic so that the faulted signal, rather than the original, drives downstream blocks during analysis."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:36",
+  "generatedAtDatenum": 740309.99556421291
 }

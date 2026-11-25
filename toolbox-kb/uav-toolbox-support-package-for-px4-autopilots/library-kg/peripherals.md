@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Peripherals
-description: Communication and I/O peripherals
-tags: [serial, i2c, can, pwm, analog]
+description: Communication and I/O peripherals (8 blocks)
+tags: [toolbox-kb, uav-toolbox-support-package-for-px4-autopilots, serial, i2c, can, pwm, analog]
 status: stable
-source: mathworks_toolbox
-library_root: UAV Toolbox Support Package for PX4 Autopilots
-category_path: Peripherals
+sources:
+  - resource: matlab:px4Peripheralslib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox Support Package for PX4 Autopilots
+kb_folder: uav-toolbox-support-package-for-px4-autopilots
+category: peripherals
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Peripherals
-
-Use these blocks for peripherals.
 
 ## Recommended Blocks
 

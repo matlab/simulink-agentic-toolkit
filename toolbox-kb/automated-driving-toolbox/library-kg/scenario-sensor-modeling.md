@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Scenario sensor modeling
-description: Cuboid driving scenarios and statistical sensor models
-tags: [driving scenario and sensor modeling, detection generator, scenario reader, bicycle model, ins, vehicle to world, world to vehicle, cuboid]
-status: stable
-source: custom_library
-library_root: Automated Driving Toolbox
-category_path: Scenario sensor modeling
+description: Cuboid driving scenarios and statistical sensor models (15 blocks)
+tags: [toolbox-kb, automated-driving-toolbox, driving scenario and sensor modeling, detection generator, scenario reader, bicycle model, ins, vehicle to world, world to vehicle, cuboid]
+status: draft
+sources:
+  - resource: matlab:drivingscenarioandsensors
+source: toolbox_kb
+managed_by: satk
+library: Automated Driving Toolbox
+kb_folder: automated-driving-toolbox
+category: scenario-sensor-modeling
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Scenario sensor modeling
-
-Use these blocks for scenario sensor modeling.
 
 ## Recommended Blocks
 

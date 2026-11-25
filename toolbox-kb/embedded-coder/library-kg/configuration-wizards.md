@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Configuration wizards
-description: Code generation configuration wizards for different target types and optimization goals
-tags: [ert, grt, configuration, wizard, codegen]
+description: Code generation configuration wizards for different target types and optimization goals (7 blocks)
+tags: [toolbox-kb, embedded-coder, ert, grt, configuration, wizard, codegen]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder
-category_path: Configuration wizards
+sources:
+  - resource: matlab:rtweclib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder
+kb_folder: embedded-coder
+category: configuration-wizards
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Configuration wizards
-
-Use these blocks for configuration wizards.
 
 ## Recommended Blocks
 

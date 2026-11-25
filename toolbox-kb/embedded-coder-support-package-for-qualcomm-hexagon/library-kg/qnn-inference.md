@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Qnn inference
-description: Run deep-learning inference on Qualcomm AI Engine Direct (QNN) backends
-tags: [qnn, predict, inference, backend]
+description: Run deep-learning inference on Qualcomm AI Engine Direct (QNN) backends (5 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-qualcomm-hexagon, qnn, predict, inference, backend]
 status: stable
-source: custom_library
-library_root: Embedded Coder Support Package for Qualcomm Hexagon
-category_path: Qnn inference
+sources:
+  - resource: matlab:mwqnnlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Qualcomm Hexagon
+kb_folder: embedded-coder-support-package-for-qualcomm-hexagon
+category: qnn-inference
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Qnn inference
-
-Use these blocks for qnn inference.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Coordinate transforms
-description: Coordinate system and unit conversions
-tags: [cartesian, polar, spherical, degrees, celsius]
+description: Coordinate system and unit conversions (8 blocks)
+tags: [toolbox-kb, simulink-extras, cartesian, polar, spherical, degrees, celsius]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Extras
-category_path: Coordinate transforms
+sources:
+  - resource: matlab:simulink_extras
+source: toolbox_kb
+managed_by: satk
+library: Simulink Extras
+kb_folder: simulink-extras
+category: coordinate-transforms
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Coordinate transforms
-
-Use these blocks for coordinate transforms.
 
 ## Recommended Blocks
 

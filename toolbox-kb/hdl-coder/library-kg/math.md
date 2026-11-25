@@ -1,29 +1,29 @@
 ---
 type: Simulink Block Category
 title: Math
-description: Arithmetic, trigonometric, and matrix math operations
-tags: [math, arithmetic, trigonometry, gain, product, sum, matrix]
-status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Math
+description: "Arithmetic, trigonometric, and matrix math operations (90 blocks)"
+tags: [toolbox-kb, hdl-coder, math, arithmetic, trigonometry, gain, product, sum, matrix]
+status: draft
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: math
 block_count: 90
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Math
-
-Use these blocks for math.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Gain | hdlsllib/Commonly
-Used Blocks/Gain | R2023a+ | Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants. |
-| Product | hdlsllib/Commonly
-Used Blocks/Product | R2023a+ | Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication. |
-| Sum | hdlsllib/Commonly
-Used Blocks/Sum | R2023a+ | Add or subtract inputs — use for summing signals and forming error terms. |
+| Gain | hdlsllib/Commonly Used Blocks/Gain | R2023a+ | Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants. |
+| Product | hdlsllib/Commonly Used Blocks/Product | R2023a+ | Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication. |
+| Sum | hdlsllib/Commonly Used Blocks/Sum | R2023a+ | Add or subtract inputs — use for summing signals and forming error terms. |
 | ACosh | hdlsllib/HDL Floating Point Operations/ACosh | R2023a+ | Compute the inverse hyperbolic cosine — use in HDL-targeted math needing acosh. |
 | ASinh | hdlsllib/HDL Floating Point Operations/ASinh | R2023a+ | Compute the inverse hyperbolic sine — use in HDL-targeted math needing asinh. |
 | ATanh | hdlsllib/HDL Floating Point Operations/ATanh | R2023a+ | Compute the inverse hyperbolic tangent — use in HDL-targeted math needing atanh. |
@@ -48,7 +48,7 @@ Used Blocks/Sum | R2023a+ | Add or subtract inputs — use for summing signals a
 | Hypot | hdlsllib/HDL Floating Point Operations/Hypot | R2023a+ | Compute sqrt(u1^2 + u2^2) robustly — use for magnitude/hypotenuse without overflow. |
 | Log | hdlsllib/HDL Floating Point Operations/Log | R2023a+ | Compute the natural logarithm of the input. |
 | Log10 | hdlsllib/HDL Floating Point Operations/Log10 | R2023a+ | Compute the base-10 logarithm of the input. |
-| Magnitude Square | hdlsllib/HDL Floating Point Operations/Magnitude Square | R2023a+ | Compute |u|^2 of a possibly complex input — use for power/energy without a square root. |
+| Magnitude Square | hdlsllib/HDL Floating Point Operations/Magnitude Square | R2023a+ | Compute \|u\|^2 of a possibly complex input — use for power/energy without a square root. |
 | Magnitude-Angle to Complex | hdlsllib/HDL Floating Point Operations/Magnitude-Angle to Complex | R2023a+ | Build a complex signal from magnitude and angle — use to convert polar to complex. |
 | Math Reciprocal | hdlsllib/HDL Floating Point Operations/Math Reciprocal | R2023a+ | Compute 1/u — use for reciprocal or division-by-input. |
 | Max | hdlsllib/HDL Floating Point Operations/Max | R2023a+ | Output the maximum of the inputs — use for element-wise or port-wise max selection. |
@@ -63,7 +63,7 @@ Used Blocks/Sum | R2023a+ | Add or subtract inputs — use for summing signals a
 | Rem | hdlsllib/HDL Floating Point Operations/Rem | R2023a+ | Compute the remainder after division (sign of the dividend) — use for remainder arithmetic. |
 | Round | hdlsllib/HDL Floating Point Operations/Round | R2023a+ | Round to the nearest integer — use for standard rounding. |
 | Sign | hdlsllib/HDL Floating Point Operations/Sign | R2023a+ | Output the sign (-1, 0, +1) of the input — use for sign extraction or direction. |
-| SignedSqrt | hdlsllib/HDL Floating Point Operations/SignedSqrt | R2023a+ | Compute sign(u)*sqrt(|u|) — use for signed square-root scaling. |
+| SignedSqrt | hdlsllib/HDL Floating Point Operations/SignedSqrt | R2023a+ | Compute sign(u)*sqrt(\|u\|) — use for signed square-root scaling. |
 | Sin | hdlsllib/HDL Floating Point Operations/Sin | R2023a+ | Compute the sine of the input (radians) — use for trig and waveform generation. |
 | Sincos | hdlsllib/HDL Floating Point Operations/Sincos | R2023a+ | Compute sine and cosine of the input together — use for efficient combined trig. |
 | Sinh | hdlsllib/HDL Floating Point Operations/Sinh | R2023a+ | Compute the hyperbolic sine of the input. |
@@ -110,7 +110,4 @@ Used Blocks/Sum | R2023a+ | Add or subtract inputs — use for summing signals a
 | Decrement Stored Integer | hdlsllib/Math Operations/Decrement Stored Integer | R2023a+ | Decrease the Stored Value of Signal by 1 Floating Point signals are decreased by 1.0 Overflows will always wrap. |
 | Increment Real World | hdlsllib/Math Operations/Increment Real World | R2023a+ | Increase the Real World Value of Signal by 1.0 Overflows will always wrap. |
 | Increment Stored Integer | hdlsllib/Math Operations/Increment Stored Integer | R2023a+ | Increase the Stored Value of Signal by 1 Floating Point signals are increased by 1.0 Overflows will always wrap. |
-| Vector
-Concatenate | hdlsllib/Signal
-Routing/Vector
-Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combine signals along one dimension. |
+| Vector Concatenate | hdlsllib/Signal Routing/Vector Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combine signals along one dimension. |

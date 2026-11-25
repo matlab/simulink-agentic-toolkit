@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Control references
-description: Torque/current/speed reference generators and feed-forward blocks that produce commands for FOC and vector control loops
-tags: [reference, control reference, feed forward, MTPA, torque estimator, commutation]
+description: Torque/current/speed reference generators and feed-forward blocks that produce commands for FOC and vector control loops (17 blocks)
+tags: [toolbox-kb, motor-control-blockset, reference, control reference, feed forward, MTPA, torque estimator, commutation]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Control references
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: control-references
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Control references
-
-Use these blocks for control references.
 
 ## Recommended Blocks
 

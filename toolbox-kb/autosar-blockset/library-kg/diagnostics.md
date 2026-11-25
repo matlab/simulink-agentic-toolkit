@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Diagnostics
-description: Diagnostic Event Manager (DEM) services for fault monitoring, debouncing, and reporting
-tags: [diagnostic, dem, fault, monitor, dtc]
+description: "Diagnostic Event Manager (DEM) services for fault monitoring, debouncing, and reporting (7 blocks)"
+tags: [toolbox-kb, autosar-blockset, diagnostic, dem, fault, monitor, dtc]
 status: stable
-source: custom_library
-library_root: AUTOSAR Blockset
-category_path: Diagnostics
+sources:
+  - resource: matlab:autosarlibdem
+source: toolbox_kb
+managed_by: satk
+library: AUTOSAR Blockset
+kb_folder: autosar-blockset
+category: diagnostics
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:12Z" }
 ---
 
 # Diagnostics
-
-Use these blocks for diagnostics.
 
 ## Recommended Blocks
 

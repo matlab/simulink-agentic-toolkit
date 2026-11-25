@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Adaptive filters
-description: Adaptive filtering structures and updates
-tags: [adaptive, lms, frequency-domain adaptive]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Adaptive filters
+description: Adaptive filtering structures and updates (7 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, adaptive, lms, frequency-domain adaptive]
+status: draft
+sources:
+  - resource: matlab:dspadpt3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: adaptive-filters
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Adaptive filters
-
-Use these blocks for adaptive filters.
 
 ## Recommended Blocks
 

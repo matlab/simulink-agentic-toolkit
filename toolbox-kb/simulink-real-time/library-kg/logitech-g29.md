@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Logitech g29
-description: Blocks for logitech g29.
+description: Blocks for Logitech g29 (1 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Logitech g29
+sources:
+  - resource: matlab:slrealtimeG29lib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: logitech-g29
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Logitech g29
-
-Use these blocks for logitech g29.
 
 ## Recommended Blocks
 

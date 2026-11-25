@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sources
-description: Generate or read audio signals
-tags: [source, oscillator, noise, from multimedia, wavetable]
-status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: Sources
+description: Generate or read audio signals (7 blocks)
+tags: [toolbox-kb, audio-toolbox, source, oscillator, noise, from multimedia, wavetable]
+status: draft
+sources:
+  - resource: matlab:audiodynamicrange
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: sources
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Sources
-
-Use these blocks for sources.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Springs and dampers
-description: Linear and nonlinear springs and dampers for rotational and translational domains
-tags: [spring, damper, stiffness, viscous, nonlinear]
+description: Linear and nonlinear springs and dampers for rotational and translational domains (10 blocks)
+tags: [toolbox-kb, driveline, spring, damper, stiffness, viscous, nonlinear]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Springs and dampers
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: springs-and-dampers
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Springs and dampers
-
-Use these blocks for springs and dampers.
 
 ## Recommended Blocks
 

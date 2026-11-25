@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal management
-description: Signal quality, invalidation, and communication status handling
-tags: [invalidation, signal, quality, status, communication]
+description: "Signal quality, invalidation, and communication status handling (1 blocks)"
+tags: [toolbox-kb, autosar-blockset, invalidation, signal, quality, status, communication]
 status: stable
-source: custom_library
-library_root: AUTOSAR Blockset
-category_path: Signal management
+sources:
+  - resource: matlab:autosarlibcprouting
+source: toolbox_kb
+managed_by: satk
+library: AUTOSAR Blockset
+kb_folder: autosar-blockset
+category: signal-management
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:12Z" }
 ---
 
 # Signal management
-
-Use these blocks for signal management.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Analysis enhancement
-description: HDL-optimized feature detection and image enhancement on a pixel stream
-tags: [analysis, enhancement, corner, edge detector]
+description: HDL-optimized feature detection and image enhancement on a pixel stream (3 blocks)
+tags: [toolbox-kb, vision-hdl-toolbox, analysis, enhancement, corner, edge detector]
 status: stable
-source: custom_library
-library_root: Vision HDL Toolbox
-category_path: Analysis enhancement
+sources:
+  - resource: matlab:visionhdlanalysis
+source: toolbox_kb
+managed_by: satk
+library: Vision HDL Toolbox
+kb_folder: vision-hdl-toolbox
+category: analysis-enhancement
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Analysis enhancement
-
-Use these blocks for analysis enhancement.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Test infrastructure
-description: Testbench source and sink blocks for verifying hardware interfaces in simulation
-tags: [test, sink, source, verify, testbench, stimulus]
+description: Testbench source and sink blocks for verifying hardware interfaces in simulation (6 blocks)
+tags: [toolbox-kb, soc-blockset, test, sink, source, verify, testbench, stimulus]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Test infrastructure
+sources:
+  - resource: matlab:hwlogictestlib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: test-infrastructure
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Test infrastructure
-
-Use these blocks for test infrastructure.
 
 ## Recommended Blocks
 

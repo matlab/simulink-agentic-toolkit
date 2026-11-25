@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Wind turbulence
-description: Wind, turbulence, and gust disturbance models
-tags: [wind, turbulence, gust, Dryden, Von Karman]
+description: "Wind, turbulence, and gust disturbance models (14 blocks)"
+tags: [toolbox-kb, aerospace-blockset, wind, turbulence, gust, Dryden, Von Karman]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Wind turbulence
+sources:
+  - resource: matlab:aerolibwind2
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: wind-turbulence
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Wind turbulence
-
-Use these blocks for wind turbulence.
 
 ## Recommended Blocks
 

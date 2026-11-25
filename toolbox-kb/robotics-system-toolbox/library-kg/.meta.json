@@ -1,15 +1,405 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457859958,
-  "generatorVersion": 4,
-  "libraries": [
-    "Robotics System Toolbox"
-  ],
-  "blockCount": 44,
-  "categoryCount": 6,
-  "libraryFingerprints": {
-    "Robotics_System_Toolbox": {
-      "blockCount": 44
+  "pages": [
+    {
+      "id": "collision-checking",
+      "kind": "toolbox",
+      "library": "Robotics System Toolbox",
+      "kbFolder": "robotics-system-toolbox",
+      "category": "collision-checking",
+      "hash": "e446cc7465179f3b5b95d0bd57cb1ae6ac28e9f5a2edd13fd89997f4a351e5c2",
+      "fm": {
+        "title": "Collision checking",
+        "description": "Collision geometry and detection (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robotics-system-toolbox",
+          "collision",
+          "box",
+          "sphere",
+          "mesh",
+          "capsule",
+          "cylinder"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Check Collision",
+          "ref": "robotslcollision/Check Collision",
+          "since": "R2025a+",
+          "intent": "Detect collisions between geometric primitives — use for verifying robot configurations are collision-free"
+        },
+        {
+          "block": "Collision Box",
+          "ref": "robotslcollision/Collision Box",
+          "since": "R2025a+",
+          "intent": "Define a box collision geometry — use for representing rectangular obstacles or link bounding volumes"
+        },
+        {
+          "block": "Collision Capsule",
+          "ref": "robotslcollision/Collision Capsule",
+          "since": "R2025a+",
+          "intent": "Define a capsule collision geometry — use for representing cylindrical shapes with rounded ends"
+        },
+        {
+          "block": "Collision Cylinder",
+          "ref": "robotslcollision/Collision Cylinder",
+          "since": "R2025a+",
+          "intent": "Define a cylinder collision geometry — use for representing round obstacles or link volumes"
+        },
+        {
+          "block": "Collision Mesh",
+          "ref": "robotslcollision/Collision Mesh",
+          "since": "R2025a+",
+          "intent": "Define a mesh collision geometry — use for representing complex-shaped obstacles from triangulated surfaces"
+        },
+        {
+          "block": "Collision Sphere",
+          "ref": "robotslcollision/Collision Sphere",
+          "since": "R2025a+",
+          "intent": "Define a sphere collision geometry — use for representing spherical obstacles or conservative bounding volumes"
+        },
+        {
+          "block": "Rigid Body Tree",
+          "ref": "robotslcollision/Rigid Body Tree",
+          "since": "R2026a+",
+          "intent": "Create a rigid body tree robot model — use for defining robot kinematics and dynamics from DH or URDF data"
+        },
+        {
+          "block": "Rigid Body Tree Check Collision",
+          "ref": "robotslcollision/Rigid Body Tree Check Collision",
+          "since": "R2026a+",
+          "intent": "Check collision for all links of a rigid body tree — use for whole-robot collision checking against environment"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gazebo",
+      "kind": "toolbox",
+      "library": "Robotics System Toolbox",
+      "kbFolder": "robotics-system-toolbox",
+      "category": "gazebo",
+      "hash": "2e47d55cb5970638175561a64a6b03c64487f1733a4dc37b8b132a00a4babdbf",
+      "fm": {
+        "title": "Gazebo",
+        "description": "Gazebo co-simulation interface (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robotics-system-toolbox",
+          "gazebo",
+          "pacer",
+          "entity",
+          "command"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Gazebo Apply Command",
+          "ref": "robotgazebolib/Gazebo Apply Command",
+          "since": "R2023a+",
+          "intent": "Send a command to a Gazebo simulation entity — use for applying forces, torques, or joint commands in Gazebo"
+        },
+        {
+          "block": "Gazebo Blank Message",
+          "ref": "robotgazebolib/Gazebo Blank Message",
+          "since": "R2023a+",
+          "intent": "Create an empty Gazebo message — use for initializing Gazebo communication structures"
+        },
+        {
+          "block": "Gazebo Pacer",
+          "ref": "robotgazebolib/Gazebo Pacer",
+          "since": "R2023a+",
+          "intent": "Synchronize Simulink and Gazebo simulation rates — use for ensuring lockstep co-simulation timing"
+        },
+        {
+          "block": "Gazebo Publish",
+          "ref": "robotgazebolib/Gazebo Publish",
+          "since": "R2023a+",
+          "intent": "Publish data to Gazebo — use for sending commands or signals from Simulink to the Gazebo simulator"
+        },
+        {
+          "block": "Gazebo Read",
+          "ref": "robotgazebolib/Gazebo Read",
+          "since": "R2023a+",
+          "intent": "Read state data from Gazebo — use for getting joint positions, velocities, or link poses from the simulator"
+        },
+        {
+          "block": "Gazebo Select Entity",
+          "ref": "robotgazebolib/Gazebo Select Entity",
+          "since": "R2023a+",
+          "intent": "Select a Gazebo model or link — use for specifying which simulation entity to interact with"
+        },
+        {
+          "block": "Gazebo Subscribe",
+          "ref": "robotgazebolib/Gazebo Subscribe",
+          "since": "R2023a+",
+          "intent": "Subscribe to Gazebo data — use for receiving sensor or state updates from the Gazebo simulator"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "manipulator-dynamics",
+      "kind": "toolbox",
+      "library": "Robotics System Toolbox",
+      "kbFolder": "robotics-system-toolbox",
+      "category": "manipulator-dynamics",
+      "hash": "c256c1cfd4abb6a8718e241089e89341aa9046c2a639a8d6c61a32d40bd48d6a",
+      "fm": {
+        "title": "Manipulator dynamics",
+        "description": "Rigid body tree kinematics and dynamics (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robotics-system-toolbox",
+          "dynamics",
+          "kinematics",
+          "jacobian",
+          "gravity",
+          "mass",
+          "inverse"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Forward Dynamics",
+          "ref": "robotmaniplib/Forward Dynamics",
+          "since": "R2023a+",
+          "intent": "Compute joint accelerations from applied torques — use for simulating robot motion given joint forces"
+        },
+        {
+          "block": "Get Jacobian",
+          "ref": "robotmaniplib/Get Jacobian",
+          "since": "R2023a+",
+          "intent": "Compute geometric Jacobian of a robot — use for mapping joint velocities to end-effector velocity"
+        },
+        {
+          "block": "Get Transform",
+          "ref": "robotmaniplib/Get Transform",
+          "since": "R2023a+",
+          "intent": "Compute forward kinematics transform — use for finding end-effector or frame pose given joint angles"
+        },
+        {
+          "block": "Gravity Torque",
+          "ref": "robotmaniplib/Gravity Torque",
+          "since": "R2023a+",
+          "intent": "Compute gravity compensation torques — use for calculating joint torques needed to counteract gravity"
+        },
+        {
+          "block": "Inverse Dynamics",
+          "ref": "robotmaniplib/Inverse Dynamics",
+          "since": "R2023a+",
+          "intent": "Compute required joint torques for desired motion — use for feedforward torque computation in robot control"
+        },
+        {
+          "block": "Inverse Kinematics",
+          "ref": "robotmaniplib/Inverse Kinematics",
+          "since": "R2023a+",
+          "intent": "Solve for joint angles given desired end-effector pose — use for computing joint configurations that achieve a target pose"
+        },
+        {
+          "block": "Joint Space Mass Matrix",
+          "ref": "robotmaniplib/Joint Space Mass Matrix",
+          "since": "R2023a+",
+          "intent": "Compute the joint-space inertia matrix — use for dynamic control algorithms that require the mass matrix"
+        },
+        {
+          "block": "Joint Space Motion Model",
+          "ref": "robotmaniplib/Joint Space Motion Model",
+          "since": "R2023a+",
+          "intent": "Simulate robot motion in joint space — use for modeling manipulator dynamics with joint torque inputs"
+        },
+        {
+          "block": "Task Space Motion Model",
+          "ref": "robotmaniplib/Task Space Motion Model",
+          "since": "R2023a+",
+          "intent": "Simulate robot motion in task space — use for modeling end-effector dynamics with Cartesian force inputs"
+        },
+        {
+          "block": "Velocity Product Torque",
+          "ref": "robotmaniplib/Velocity Product Torque",
+          "since": "R2023a+",
+          "intent": "Compute Coriolis and centrifugal torques — use for velocity-dependent torque compensation in dynamic control"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "mobile-robots",
+      "kind": "toolbox",
+      "library": "Robotics System Toolbox",
+      "kbFolder": "robotics-system-toolbox",
+      "category": "mobile-robots",
+      "hash": "b49644b9eb8f6b6e66629ca22be61024bffba2068003add7bf073127aa0831e4",
+      "fm": {
+        "title": "Mobile robots",
+        "description": "Mobile robot kinematic models and path following (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robotics-system-toolbox",
+          "ackermann",
+          "bicycle",
+          "differential",
+          "unicycle",
+          "pursuit"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Ackermann Kinematic Model",
+          "ref": "robotmobilelib/Ackermann Kinematic Model",
+          "since": "R2023a+",
+          "intent": "Simulate Ackermann-steered vehicle kinematics — use for modeling car-like robots with front-wheel steering"
+        },
+        {
+          "block": "Bicycle Kinematic Model",
+          "ref": "robotmobilelib/Bicycle Kinematic Model",
+          "since": "R2023a+",
+          "intent": "Simulate bicycle kinematic model — use for simplified car-like vehicle motion with single front and rear wheel"
+        },
+        {
+          "block": "Differential Drive Kinematic Model",
+          "ref": "robotmobilelib/Differential Drive Kinematic Model",
+          "since": "R2023a+",
+          "intent": "Simulate differential-drive robot kinematics — use for two-wheeled robots steered by wheel speed difference"
+        },
+        {
+          "block": "Unicycle Kinematic Model",
+          "ref": "robotmobilelib/Unicycle Kinematic Model",
+          "since": "R2023a+",
+          "intent": "Simulate unicycle kinematic model — use for simple point-robot motion with speed and turn rate inputs"
+        },
+        {
+          "block": "Pure Pursuit",
+          "ref": "robotmobilelib/Pure Pursuit",
+          "since": "R2023a+",
+          "intent": "Track a path using pure pursuit — use for steering a mobile robot along a reference path with lookahead"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "simulation-3d",
+      "kind": "toolbox",
+      "library": "Robotics System Toolbox",
+      "kbFolder": "robotics-system-toolbox",
+      "category": "simulation-3d",
+      "hash": "e26d23539075a45763035fc16315308bdd4d6bc83f4eafbed8ba26b1076d41d5",
+      "fm": {
+        "title": "Simulation 3d",
+        "description": "3D visualization with Unreal Engine (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robotics-system-toolbox",
+          "simulation",
+          "3d",
+          "camera",
+          "lidar",
+          "scene",
+          "robot"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Simulation 3D Robot",
+          "ref": "robotsim3dlib/Simulation 3D Robot",
+          "since": "R2024a+",
+          "intent": "Spawn a robot in the 3D simulation scene — use for visualizing robot motion in an Unreal Engine environment"
+        },
+        {
+          "block": "Simulation 3D Camera",
+          "ref": "robotsim3dlib/Simulation 3D Camera",
+          "since": "R2024a+",
+          "intent": "Attach a virtual camera in the 3D scene — use for generating synthetic images from the robot perspective"
+        },
+        {
+          "block": "Simulation 3D Lidar",
+          "ref": "robotsim3dlib/Simulation 3D Lidar",
+          "since": "R2024a+",
+          "intent": "Attach a virtual lidar in the 3D scene — use for generating synthetic point clouds in simulation"
+        },
+        {
+          "block": "Simulation 3D Scene Configuration",
+          "ref": "robotsim3dlib/Simulation 3D Scene Configuration",
+          "since": "R2024a+",
+          "intent": "Configure the 3D simulation environment — use for selecting scene, lighting, and rendering options"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "trajectory-utilities",
+      "kind": "toolbox",
+      "library": "Robotics System Toolbox",
+      "kbFolder": "robotics-system-toolbox",
+      "category": "trajectory-utilities",
+      "hash": "c2541cb13f0cac0ff093fbc83ae805e22db9f13d804c9a3044f970db282b6816",
+      "fm": {
+        "title": "Trajectory utilities",
+        "description": "Trajectory generation and coordinate utilities (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robotics-system-toolbox",
+          "trajectory",
+          "jerk",
+          "snap",
+          "polynomial",
+          "rotation",
+          "transform"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Coordinate Transformation Conversion",
+          "ref": "robotutilslib/Coordinate Transformation Conversion",
+          "since": "R2023a+",
+          "intent": "Convert between rotation representations — use for translating quaternions, Euler angles, and rotation matrices"
+        },
+        {
+          "block": "Minimum Jerk Polynomial Trajectory",
+          "ref": "robotutilslib/Minimum Jerk Polynomial Trajectory",
+          "since": "R2023a+",
+          "intent": "Generate smooth trajectory minimizing jerk — use for planning comfortable robot paths with continuous acceleration"
+        },
+        {
+          "block": "Minimum Snap Polynomial Trajectory",
+          "ref": "robotutilslib/Minimum Snap Polynomial Trajectory",
+          "since": "R2023a+",
+          "intent": "Generate smooth trajectory minimizing snap — use for planning aggressive robot paths minimizing control effort"
+        },
+        {
+          "block": "Polynomial Trajectory",
+          "ref": "robotutilslib/Polynomial Trajectory",
+          "since": "R2023a+",
+          "intent": "Generate trajectory from polynomial coefficients — use for executing pre-computed polynomial motion profiles"
+        },
+        {
+          "block": "Rotation Trajectory",
+          "ref": "robotutilslib/Rotation Trajectory",
+          "since": "R2023a+",
+          "intent": "Interpolate between rotation orientations — use for generating smooth rotational motion between poses"
+        },
+        {
+          "block": "Transform Trajectory",
+          "ref": "robotutilslib/Transform Trajectory",
+          "since": "R2023a+",
+          "intent": "Interpolate between homogeneous transforms — use for generating smooth 6-DOF motion between poses"
+        },
+        {
+          "block": "Trapezoidal Velocity Profile Trajectory",
+          "ref": "robotutilslib/Trapezoidal Velocity Profile Trajectory",
+          "since": "R2023a+",
+          "intent": "Generate trajectory with trapezoidal velocity — use for time-optimal point-to-point motion with acceleration limits"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:27",
+  "generatedAtDatenum": 740309.99545228
 }

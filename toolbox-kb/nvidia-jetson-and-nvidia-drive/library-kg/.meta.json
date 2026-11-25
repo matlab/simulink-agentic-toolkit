@@ -1,15 +1,67 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457315973,
-  "generatorVersion": 4,
-  "libraries": [
-    "NVIDIA Jetson and NVIDIA DRIVE"
-  ],
-  "blockCount": 6,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "NVIDIA_Jetson_and_NVIDIA_DRIVE": {
-      "blockCount": 6
+  "pages": [
+    {
+      "id": "nvidia-peripherals",
+      "kind": "toolbox",
+      "library": "NVIDIA Jetson and NVIDIA DRIVE",
+      "kbFolder": "nvidia-jetson-and-nvidia-drive",
+      "category": "nvidia-peripherals",
+      "hash": "a03f64a483badca05a9ea53f9a83683abd9c854958f9dbb56fa01f3ce6a4a1b7",
+      "fm": {
+        "title": "Nvidia peripherals",
+        "description": "NVIDIA Jetson and DRIVE hardware peripheral access (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "nvidia-jetson-and-nvidia-drive",
+          "nvidia",
+          "jetson",
+          "drive",
+          "gpu",
+          "embedded"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Audio and Video",
+          "ref": "nvidialib/Audio and Video",
+          "since": "R2023a+",
+          "intent": "Access camera and audio peripherals on NVIDIA Jetson/DRIVE platforms — use for video capture, image processing, or audio I/O in GPU-accelerated applications"
+        },
+        {
+          "block": "GPIO Read",
+          "ref": "nvidiaBasiclib/GPIO Read",
+          "since": "R2023a+",
+          "intent": "Read GPIO pin state on NVIDIA Jetson — use for reading digital input signals from buttons, switches, or external sensors"
+        },
+        {
+          "block": "GPIO Write",
+          "ref": "nvidiaBasiclib/GPIO Write",
+          "since": "R2023a+",
+          "intent": "Write GPIO pin state on NVIDIA Jetson — use for controlling LEDs, relays, or other digital output peripherals"
+        },
+        {
+          "block": "Communication",
+          "ref": "nvidialib/Communication",
+          "since": "R2023a+",
+          "intent": "Access communication interfaces on NVIDIA Jetson/DRIVE — use for I2C, SPI, UART, or CAN bus communication with external devices"
+        },
+        {
+          "block": "Internet Of Things",
+          "ref": "nvidialib/Internet Of Things",
+          "since": "R2023a+",
+          "intent": "Access IoT connectivity on NVIDIA Jetson — use for MQTT, ThingSpeak, or cloud data exchange in edge computing applications"
+        },
+        {
+          "block": "Network ",
+          "ref": "nvidialib/Network ",
+          "since": "R2023a+",
+          "intent": "Access network interfaces on NVIDIA Jetson/DRIVE — use for TCP/IP, UDP, or Ethernet communication in distributed computing systems"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.99542506947
 }

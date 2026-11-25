@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.74454777781,
-  "generatorVersion": 4,
-  "libraries": [
-    "Communications Toolbox Support Package for ADALM-PLUTO Radio"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Communications_Toolbox_Support_Package_for_ADALM_PLUTO_Radio": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "sdr-hardware",
+      "kind": "toolbox",
+      "library": "Communications Toolbox Support Package for ADALM-PLUTO Radio",
+      "kbFolder": "communications-toolbox-support-package-for-adalm-pluto-radio",
+      "category": "sdr-hardware",
+      "hash": "142d95aa5f5bee618a9bb234eb29775d03ce629f7c2c2e9071833d30deb5f7b9",
+      "fm": {
+        "title": "Sdr hardware",
+        "description": "ADALM-PLUTO software-defined radio hardware interface blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-support-package-for-adalm-pluto-radio",
+          "pluto",
+          "sdr",
+          "radio",
+          "receiver",
+          "transmitter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADALM-Pluto Radio Receiver",
+          "ref": "plutoradiolib/ADALM-Pluto Radio Receiver",
+          "since": "R2023a+",
+          "intent": "Receive IQ samples from an ADALM-PLUTO SDR device in real time — use for over-the-air signal acquisition in RF prototyping, spectrum monitoring, or receiver algorithm validation"
+        },
+        {
+          "block": "ADALM-Pluto Radio Transmitter",
+          "ref": "plutoradiolib/ADALM-Pluto Radio Transmitter",
+          "since": "R2023a+",
+          "intent": "Transmit IQ samples through an ADALM-PLUTO SDR device in real time — use for over-the-air waveform transmission in RF prototyping, interference testing, or transmitter algorithm validation"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:16",
+  "generatedAtDatenum": 740309.99532726849
 }

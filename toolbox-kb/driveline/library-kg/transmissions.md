@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Transmissions
-description: Complete automatic transmission assemblies with planetary gear sets
-tags: [transmission, speed, planetary, lepelletier, automatic]
+description: Complete automatic transmission assemblies with planetary gear sets (7 blocks)
+tags: [toolbox-kb, driveline, transmission, speed, planetary, lepelletier, automatic]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Transmissions
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: transmissions
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Transmissions
-
-Use these blocks for transmissions.
 
 ## Recommended Blocks
 

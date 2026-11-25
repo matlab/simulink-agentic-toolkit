@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Digital io
-description: Digital, counter, and encoder I/O
-tags: [digital, counter, encoder, frequency, servo]
+description: "Digital, counter, and encoder I/O (6 blocks)"
+tags: [toolbox-kb, simulink-desktop-real-time, digital, counter, encoder, frequency, servo]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Desktop Real-Time
-category_path: Digital io
+sources:
+  - resource: matlab:sldrtlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Desktop Real-Time
+kb_folder: simulink-desktop-real-time
+category: digital-io
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Digital io
-
-Use these blocks for digital io.
 
 ## Recommended Blocks
 

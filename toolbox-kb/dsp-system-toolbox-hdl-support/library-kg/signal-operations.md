@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal operations
-description: Sample-rate change, delays, and holds
-tags: [signal operations, delay, downsample, upsample, repeat, sample and hold, dc blocker]
+description: "Sample-rate change, delays, and holds (6 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox-hdl-support, signal operations, delay, downsample, upsample, repeat, sample and hold, dc blocker]
 status: stable
-source: custom_library
-library_root: DSP System Toolbox HDL Support
-category_path: Signal operations
+sources:
+  - resource: matlab:dsphdlsupportsigops
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox HDL Support
+kb_folder: dsp-system-toolbox-hdl-support
+category: signal-operations
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Signal operations
-
-Use these blocks for signal operations.
 
 ## Recommended Blocks
 

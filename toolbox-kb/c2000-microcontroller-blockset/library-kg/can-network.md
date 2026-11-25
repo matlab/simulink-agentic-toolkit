@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Can network
-description: CAN and CAN FD messaging and packing
-tags: [can, mcan, can fd, pack, unpack]
-status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Can network
+description: CAN and CAN FD messaging and packing (61 blocks)
+tags: [toolbox-kb, c2000-microcontroller-blockset, can, mcan, can fd, pack, unpack]
+status: draft
+sources:
+  - resource: matlab:c2803xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: can-network
 block_count: 61
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Can network
-
-Use these blocks for can network.
 
 ## Recommended Blocks
 

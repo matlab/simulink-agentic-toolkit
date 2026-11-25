@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Actuators
-description: Flight control actuators and servo dynamics
-tags: [actuator, servo, deflection, rate limit, control surface]
+description: Flight control actuators and servo dynamics (2 blocks)
+tags: [toolbox-kb, aerospace-blockset, actuator, servo, deflection, rate limit, control surface]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Actuators
+sources:
+  - resource: matlab:aerolibactuator
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: actuators
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Actuators
-
-Use these blocks for actuators.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Dashboard lamps
-description: Automotive indicator lamp icons
-tags: [dashboard, lamp, indicator, automotive, warning]
+description: Automotive indicator lamp icons (34 blocks)
+tags: [toolbox-kb, simulink, dashboard, lamp, indicator, automotive, warning]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Dashboard lamps
+sources:
+  - resource: matlab:simulink_hmi_blocks
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: dashboard-lamps
 block_count: 34
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Dashboard lamps
-
-Use these blocks for dashboard lamps.
 
 ## Recommended Blocks
 

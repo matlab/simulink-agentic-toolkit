@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Math functions math operations
-description: Blocks for math functions math operations.
+description: Blocks for Math functions math operations (3 blocks)
+tags: [toolbox-kb, dsp-system-toolbox]
 status: draft
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Math functions math operations
+sources:
+  - resource: matlab:dspmathops
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: math-functions-math-operations
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Math functions math operations
-
-Use these blocks for math functions math operations.
 
 ## Recommended Blocks
 

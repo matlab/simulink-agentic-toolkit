@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Error correction
-description: HDL-optimized forward error correction and error detection
-tags: [error detection and correction, rs, crc, convolutional encoder, viterbi]
+description: HDL-optimized forward error correction and error detection (6 blocks)
+tags: [toolbox-kb, communications-toolbox-hdl-support, error detection and correction, rs, crc, convolutional encoder, viterbi]
 status: stable
-source: custom_library
-library_root: Communications Toolbox HDL Support
-category_path: Error correction
+sources:
+  - resource: matlab:commhdlblkcod
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox HDL Support
+kb_folder: communications-toolbox-hdl-support
+category: error-correction
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Error correction
-
-Use these blocks for error correction.
 
 ## Recommended Blocks
 

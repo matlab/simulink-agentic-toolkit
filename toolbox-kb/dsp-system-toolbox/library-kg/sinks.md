@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sinks
-description: Visualization, logging, and network output
-tags: [sinks, scope, array plot, display, workspace, spectrum, file writer, udp send, multimedia]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Sinks
+description: "Visualization, logging, and network output (19 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox, sinks, scope, array plot, display, workspace, spectrum, file writer, udp send, multimedia]
+status: draft
+sources:
+  - resource: matlab:dspspect3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: sinks
 block_count: 19
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Sinks
-
-Use these blocks for sinks.
 
 ## Recommended Blocks
 

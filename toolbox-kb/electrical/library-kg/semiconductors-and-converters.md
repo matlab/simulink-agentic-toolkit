@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Semiconductors and converters
-description: Diodes, transistors, power converters, and switching devices
-tags: [diode, mosfet, igbt, converter, rectifier]
+description: "Diodes, transistors, power converters, and switching devices (52 blocks)"
+tags: [toolbox-kb, electrical, diode, mosfet, igbt, converter, rectifier]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Semiconductors and converters
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: semiconductors-and-converters
 block_count: 52
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Semiconductors and converters
-
-Use these blocks for semiconductors and converters.
 
 ## Recommended Blocks
 

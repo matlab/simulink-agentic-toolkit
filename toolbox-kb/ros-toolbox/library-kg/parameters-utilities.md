@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Parameters utilities
-description: Parameter server access and coordinate utilities
-tags: [parameter, transform, time, coordinate, can]
+description: Parameter server access and coordinate utilities (12 blocks)
+tags: [toolbox-kb, ros-toolbox, parameter, transform, time, coordinate, can]
 status: stable
-source: mathworks_toolbox
-library_root: ROS Toolbox
-category_path: Parameters utilities
+sources:
+  - resource: matlab:robotlib
+source: toolbox_kb
+managed_by: satk
+library: ROS Toolbox
+kb_folder: ros-toolbox
+category: parameters-utilities
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Parameters utilities
-
-Use these blocks for parameters utilities.
 
 ## Recommended Blocks
 

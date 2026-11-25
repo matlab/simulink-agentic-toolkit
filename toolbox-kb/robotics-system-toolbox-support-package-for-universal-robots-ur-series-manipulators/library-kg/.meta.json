@@ -1,15 +1,67 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457881949,
-  "generatorVersion": 4,
-  "libraries": [
-    "Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators"
-  ],
-  "blockCount": 6,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Robotics_System_Toolbox_Support_Package_for_Universal_Robots_UR_Series_Manipulators": {
-      "blockCount": 6
+  "pages": [
+    {
+      "id": "ur-robot-control",
+      "kind": "toolbox",
+      "library": "Robotics System Toolbox Support Package for Universal Robots UR Series Manipulators",
+      "kbFolder": "robotics-system-toolbox-support-package-for-universal-robots-ur-series-manipulators",
+      "category": "ur-robot-control",
+      "hash": "cfe2979fc8135e3798f37aa268b0d9c3c039dd04d7f88712405ef696c89748d6",
+      "fm": {
+        "title": "Ur robot control",
+        "description": "Universal Robots UR series real-time control and monitoring (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robotics-system-toolbox-support-package-for-universal-robots-ur-series-manipulators",
+          "robot",
+          "manipulator",
+          "joint",
+          "gripper",
+          "ur"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Actuate Gripper",
+          "ref": "urRTDElib/Actuate Gripper",
+          "since": "R2025a+",
+          "intent": "Open or close a gripper attached to a Universal Robots arm — use for pick-and-place operations or object manipulation tasks"
+        },
+        {
+          "block": "Follow Joint Waypoints",
+          "ref": "urRTDElib/Follow Joint Waypoints",
+          "since": "R2025a+",
+          "intent": "Command a UR robot to move through a sequence of joint configurations — use for executing pre-planned multi-point trajectories"
+        },
+        {
+          "block": "Read Controller Output",
+          "ref": "urRTDElib/Read Controller Output",
+          "since": "R2025a+",
+          "intent": "Read the current controller output signals from a UR robot — use for monitoring torque commands or control effort in real time"
+        },
+        {
+          "block": "Read Joint Configuration",
+          "ref": "urRTDElib/Read Joint Configuration",
+          "since": "R2025a+",
+          "intent": "Read current joint angles and velocities from a UR robot — use for feedback in closed-loop control or state monitoring"
+        },
+        {
+          "block": "Read Motion Status",
+          "ref": "urRTDElib/Read Motion Status",
+          "since": "R2025a+",
+          "intent": "Read the motion state of a UR robot — use for detecting motion completion, checking if the robot is moving, or triggering sequenced operations"
+        },
+        {
+          "block": "Send Joint Configuration",
+          "ref": "urRTDElib/Send Joint Configuration",
+          "since": "R2025a+",
+          "intent": "Send a target joint configuration to a UR robot — use for commanding the robot to move to a specific joint pose"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:27",
+  "generatedAtDatenum": 740309.99545359949
 }

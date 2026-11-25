@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Test scenarios
-description: Standard vehicle test maneuvers and drive cycle inputs
-tags: [maneuver, test, drive-cycle, steer, scenario]
+description: Standard vehicle test maneuvers and drive cycle inputs (10 blocks)
+tags: [toolbox-kb, vehicle-dynamics-blockset, maneuver, test, drive-cycle, steer, scenario]
 status: stable
-source: mathworks_toolbox
-library_root: Vehicle Dynamics Blockset
-category_path: Test scenarios
+sources:
+  - resource: matlab:vehdynlibscenario
+source: toolbox_kb
+managed_by: satk
+library: Vehicle Dynamics Blockset
+kb_folder: vehicle-dynamics-blockset
+category: test-scenarios
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Test scenarios
-
-Use these blocks for test scenarios.
 
 ## Recommended Blocks
 

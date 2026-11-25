@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gpio analog
-description: Digital and analog I/O peripherals
-tags: [gpio, analog, pwm, led, pin]
+description: Digital and analog I/O peripherals (5 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-beaglebone-black-hardware, gpio, analog, pwm, led, pin]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for BeagleBone Black Hardware
-category_path: Gpio analog
+sources:
+  - resource: matlab:beaglebonelib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for BeagleBone Black Hardware
+kb_folder: embedded-coder-support-package-for-beaglebone-black-hardware
+category: gpio-analog
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Gpio analog
-
-Use these blocks for gpio analog.
 
 ## Recommended Blocks
 

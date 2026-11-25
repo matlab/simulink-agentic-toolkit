@@ -1,15 +1,79 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457579863,
-  "generatorVersion": 4,
-  "libraries": [
-    "Raspberry Pi Blockset"
-  ],
-  "blockCount": 8,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Raspberry_Pi_Blockset": {
-      "blockCount": 8
+  "pages": [
+    {
+      "id": "raspberry-pi",
+      "kind": "toolbox",
+      "library": "Raspberry Pi Blockset",
+      "kbFolder": "raspberry-pi-blockset",
+      "category": "raspberry-pi",
+      "hash": "9df0e59ad711fefb3f41b177c7c9c35b2ea32117790edbb606aa4cf740d7cb76",
+      "fm": {
+        "title": "Raspberry pi",
+        "description": "Raspberry Pi hardware peripheral and sensor access (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "raspberry-pi-blockset",
+          "raspberry",
+          "pi",
+          "gpio",
+          "sensor",
+          "iot"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Audio and Video",
+          "ref": "raspberrypilib/Audio and Video",
+          "since": "R2023a+",
+          "intent": "Access camera and audio peripherals on Raspberry Pi — use for video capture, image processing, or audio recording/playback on Pi hardware"
+        },
+        {
+          "block": "Basic",
+          "ref": "raspberrypilib/Basic",
+          "since": "R2023a+",
+          "intent": "Access basic I/O on Raspberry Pi — use for GPIO read/write, PWM output, or general-purpose digital interfacing on Pi boards"
+        },
+        {
+          "block": "Communication",
+          "ref": "raspberrypilib/Communication",
+          "since": "R2023a+",
+          "intent": "Access communication interfaces on Raspberry Pi — use for I2C, SPI, UART, or serial communication with external devices"
+        },
+        {
+          "block": "Internet Of Things",
+          "ref": "raspberrypilib/Internet Of Things",
+          "since": "R2023a+",
+          "intent": "Access IoT connectivity on Raspberry Pi — use for MQTT, ThingSpeak, or cloud-based data exchange in IoT applications"
+        },
+        {
+          "block": "Network ",
+          "ref": "raspberrypilib/Network ",
+          "since": "R2023a+",
+          "intent": "Access network interfaces on Raspberry Pi — use for TCP/IP, UDP, or Ethernet communication in networked embedded systems"
+        },
+        {
+          "block": "Sense HAT",
+          "ref": "raspberrypilib/Sense HAT",
+          "since": "R2023a+",
+          "intent": "Access the Raspberry Pi Sense HAT add-on board — use for reading environmental sensors, IMU data, or controlling the 8x8 LED matrix"
+        },
+        {
+          "block": "Sensors",
+          "ref": "raspberrypilib/Sensors",
+          "since": "R2023a+",
+          "intent": "Access external sensor modules on Raspberry Pi — use for reading temperature, humidity, distance, or other sensor data from connected peripherals"
+        },
+        {
+          "block": "Utilities",
+          "ref": "raspberrypilib/Utilities",
+          "since": "R2023a+",
+          "intent": "Access utility functions on Raspberry Pi — use for system control, timing, file operations, or shell command execution on the Pi"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:26",
+  "generatedAtDatenum": 740309.99544621527
 }

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Spi interface
-description: SPI bus peripherals for high-speed synchronous communication with sensors and memory
-tags: [SPI, MOSI, MISO, clock, register]
+description: SPI bus peripherals for high-speed synchronous communication with sensors and memory (57 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, SPI, MOSI, MISO, clock, register]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Spi interface
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: spi-interface
 block_count: 57
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # Spi interface
-
-Use these blocks for spi interface.
 
 ## Recommended Blocks
 

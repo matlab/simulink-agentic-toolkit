@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Vehicle control
-description: Blocks for vehicle control.
+description: Blocks for Vehicle control (1 blocks)
+tags: [toolbox-kb, automated-driving-toolbox]
 status: draft
-source: custom_library
-library_root: Automated Driving Toolbox
-category_path: Vehicle control
+sources:
+  - resource: matlab:drivingvehiclecontroller
+source: toolbox_kb
+managed_by: satk
+library: Automated Driving Toolbox
+kb_folder: automated-driving-toolbox
+category: vehicle-control
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Vehicle control
-
-Use these blocks for vehicle control.
 
 ## Recommended Blocks
 

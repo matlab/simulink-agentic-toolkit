@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74457037041,
-  "generatorVersion": 4,
-  "libraries": [
-    "Mixed-Signal Blockset Models"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Mixed_Signal_Blockset_Models": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "mixed-signal-models",
+      "kind": "toolbox",
+      "library": "Mixed-Signal Blockset Models",
+      "kbFolder": "mixed-signal-blockset-models",
+      "category": "mixed-signal-models",
+      "hash": "a23ffab6b70254b7c4948cce35f791d27ca28e096dbc3296e6148968c0d919c0",
+      "fm": {
+        "title": "Mixed signal models",
+        "description": "Pre-built mixed-signal circuit models (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "mixed-signal-blockset-models",
+          "pll",
+          "smps",
+          "power",
+          "clock",
+          "mixed-signal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "PLL",
+          "ref": "mixedsignallibs/PLL",
+          "since": "R2023a+",
+          "intent": "Model a phase-locked loop circuit — use for clock recovery, frequency synthesis, or jitter analysis in mixed-signal designs"
+        },
+        {
+          "block": "SMPS",
+          "ref": "mixedsignallibs/SMPS",
+          "since": "R2023a+",
+          "intent": "Model a switched-mode power supply — use for power converter design, regulation analysis, or EMI studies in mixed-signal systems"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.99541947921
 }

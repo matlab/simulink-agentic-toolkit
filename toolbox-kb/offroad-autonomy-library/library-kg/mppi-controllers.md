@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mppi controllers
-description: Model-predictive path integral controllers for various vehicle types
-tags: [mppi, controller, trajectory, path, sampling]
+description: Model-predictive path integral controllers for various vehicle types (4 blocks)
+tags: [toolbox-kb, offroad-autonomy-library, mppi, controller, trajectory, path, sampling]
 status: stable
-source: mathworks_toolbox
-library_root: Offroad Autonomy Library
-category_path: Mppi controllers
+sources:
+  - resource: matlab:offroadcontrollerlib
+source: toolbox_kb
+managed_by: satk
+library: Offroad Autonomy Library
+kb_folder: offroad-autonomy-library
+category: mppi-controllers
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Mppi controllers
-
-Use these blocks for mppi controllers.
 
 ## Recommended Blocks
 

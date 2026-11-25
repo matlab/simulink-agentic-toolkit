@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensor decoders
-description: Position/speed decoders for Hall, quadrature encoder, and resolver sensors, plus watchdog and speed-measurement helpers
-tags: [hall, encoder, resolver, quadrature, position, speed, watchdog]
+description: "Position/speed decoders for Hall, quadrature encoder, and resolver sensors, plus watchdog and speed-measurement helpers (7 blocks)"
+tags: [toolbox-kb, motor-control-blockset, hall, encoder, resolver, quadrature, position, speed, watchdog]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Sensor decoders
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: sensor-decoders
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Sensor decoders
-
-Use these blocks for sensor decoders.
 
 ## Recommended Blocks
 

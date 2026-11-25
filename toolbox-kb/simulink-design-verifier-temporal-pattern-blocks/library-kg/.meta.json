@@ -1,15 +1,67 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74459356477,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Design Verifier Temporal Pattern Blocks"
-  ],
-  "blockCount": 6,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Simulink_Design_Verifier_Temporal_Pattern_Blocks": {
-      "blockCount": 6
+  "pages": [
+    {
+      "id": "temporal-patterns",
+      "kind": "toolbox",
+      "library": "Simulink Design Verifier Temporal Pattern Blocks",
+      "kbFolder": "simulink-design-verifier-temporal-pattern-blocks",
+      "category": "temporal-patterns",
+      "hash": "a36591be9f19213f9591fdd296983c0a17631a45c09f3a15417adf4f36a3666c",
+      "fm": {
+        "title": "Temporal patterns",
+        "description": "Temporal pattern blocks for formal verification of time-based properties (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-design-verifier-temporal-pattern-blocks",
+          "temporal",
+          "verification",
+          "assertion",
+          "pattern",
+          "time"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "atleast_n",
+          "ref": "sldvpatternlib/atleast_n",
+          "since": "R2023a+",
+          "intent": "Assert that a condition holds for at least N consecutive time steps — use for specifying minimum duration requirements in temporal verification"
+        },
+        {
+          "block": "atmost_n",
+          "ref": "sldvpatternlib/atmost_n",
+          "since": "R2023a+",
+          "intent": "Assert that a condition holds for at most N consecutive time steps — use for specifying maximum duration constraints in temporal verification"
+        },
+        {
+          "block": "check_at_n",
+          "ref": "sldvpatternlib/check_at_n",
+          "since": "R2023a+",
+          "intent": "Check whether a condition holds at exactly the Nth time step — use for verifying properties at specific points in a simulation timeline"
+        },
+        {
+          "block": "p_until_q",
+          "ref": "sldvpatternlib/p_until_q",
+          "since": "R2023a+",
+          "intent": "Assert that condition P remains true until condition Q becomes true — use for specifying precedence or ordering requirements between events"
+        },
+        {
+          "block": "time_elapse",
+          "ref": "sldvpatternlib/time_elapse",
+          "since": "R2023a+",
+          "intent": "Measure elapsed time in simulation steps — use for creating time-based triggers or delays in temporal property specifications"
+        },
+        {
+          "block": "within_n",
+          "ref": "sldvpatternlib/within_n",
+          "since": "R2023a+",
+          "intent": "Assert that a condition becomes true within N time steps — use for specifying bounded response time requirements in temporal verification"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:31",
+  "generatedAtDatenum": 740309.99550309032
 }

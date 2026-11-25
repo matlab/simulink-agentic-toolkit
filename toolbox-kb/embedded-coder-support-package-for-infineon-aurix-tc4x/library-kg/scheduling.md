@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Scheduling
-description: Map model rates to OS tasks on the multicore target
-tags: [task, scheduling, rate, core]
+description: Map model rates to OS tasks on the multicore target (1 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-infineon-aurix-tc4x, task, scheduling, rate, core]
 status: stable
-source: custom_library
-library_root: Embedded Coder Support Package for Infineon AURIX TC4x
-category_path: Scheduling
+sources:
+  - resource: matlab:aurixtc4xlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Infineon AURIX TC4x
+kb_folder: embedded-coder-support-package-for-infineon-aurix-tc4x
+category: scheduling
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Scheduling
-
-Use these blocks for scheduling.
 
 ## Recommended Blocks
 

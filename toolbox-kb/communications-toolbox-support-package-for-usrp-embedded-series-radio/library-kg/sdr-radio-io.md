@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sdr radio io
-description: Transmit and receive baseband IQ through USRP E3xx software-defined radio hardware
-tags: [e3xx, receiver, transmitter, usrp, radio]
+description: Transmit and receive baseband IQ through USRP E3xx software-defined radio hardware (2 blocks)
+tags: [toolbox-kb, communications-toolbox-support-package-for-usrp-embedded-series-radio, e3xx, receiver, transmitter, usrp, radio]
 status: stable
-source: custom_library
-library_root: Communications Toolbox Support Package for USRP Embedded Series Radio
-category_path: Sdr radio io
+sources:
+  - resource: matlab:e3xxlib
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox Support Package for USRP Embedded Series Radio
+kb_folder: communications-toolbox-support-package-for-usrp-embedded-series-radio
+category: sdr-radio-io
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Sdr radio io
-
-Use these blocks for sdr radio io.
 
 ## Recommended Blocks
 

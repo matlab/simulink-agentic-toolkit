@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Equalizers
-description: Adaptive and OFDM equalizers
-tags: [equalizers, equalizer, decision feedback]
+description: Adaptive and OFDM equalizers (3 blocks)
+tags: [toolbox-kb, communications-toolbox, equalizers, equalizer, decision feedback]
 status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Equalizers
+sources:
+  - resource: matlab:commeq3
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: equalizers
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Equalizers
-
-Use these blocks for equalizers.
 
 ## Recommended Blocks
 

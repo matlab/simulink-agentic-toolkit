@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Peripheral io
-description: On-chip RH850 peripheral outputs
-tags: [tsg3, u2a, peripheral, output]
-status: stable
-source: custom_library
-library_root: Embedded Coder Support Package for Renesas RH850 Microcontrollers
-category_path: Peripheral io
+description: On-chip RH850 peripheral outputs (2 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-renesas-rh850-microcontrollers, tsg3, u2a, peripheral, output]
+status: draft
+sources:
+  - resource: matlab:rh850u2axblockslib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Renesas RH850 Microcontrollers
+kb_folder: embedded-coder-support-package-for-renesas-rh850-microcontrollers
+category: peripheral-io
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Peripheral io
-
-Use these blocks for peripheral io.
 
 ## Recommended Blocks
 

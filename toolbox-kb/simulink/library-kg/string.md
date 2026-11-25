@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: String
-description: String creation, parsing, and conversion
-tags: [string, ascii, compose, scan, substring, convert]
+description: "String creation, parsing, and conversion (18 blocks)"
+tags: [toolbox-kb, simulink, string, ascii, compose, scan, substring, convert]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: String
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: string
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # String
-
-Use these blocks for string.
 
 ## Recommended Blocks
 

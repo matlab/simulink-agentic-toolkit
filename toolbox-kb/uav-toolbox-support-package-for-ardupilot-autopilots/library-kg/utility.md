@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utility
-description: Timing and helper blocks
-tags: [utility, timestamp, time]
+description: Timing and helper blocks (1 blocks)
+tags: [toolbox-kb, uav-toolbox-support-package-for-ardupilot-autopilots, utility, timestamp, time]
 status: stable
-source: custom_library
-library_root: UAV Toolbox Support Package for ArduPilot Autopilots
-category_path: Utility
+sources:
+  - resource: matlab:ardupilotUtilslib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox Support Package for ArduPilot Autopilots
+kb_folder: uav-toolbox-support-package-for-ardupilot-autopilots
+category: utility
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Utility
-
-Use these blocks for utility.
 
 ## Recommended Blocks
 

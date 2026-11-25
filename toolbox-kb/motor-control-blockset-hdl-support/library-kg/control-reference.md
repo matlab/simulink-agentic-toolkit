@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Control reference
-description: Reference generation and estimators for AC induction motor control
-tags: [control reference, acim, dq limiter, position generator]
+description: Reference generation and estimators for AC induction motor control (6 blocks)
+tags: [toolbox-kb, motor-control-blockset-hdl-support, control reference, acim, dq limiter, position generator]
 status: stable
-source: custom_library
-library_root: Motor Control Blockset HDL Support
-category_path: Control reference
+sources:
+  - resource: matlab:mcbhdllib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset HDL Support
+kb_folder: motor-control-blockset-hdl-support
+category: control-reference
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Control reference
-
-Use these blocks for control reference.
 
 ## Recommended Blocks
 

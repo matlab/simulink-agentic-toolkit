@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Host communication
-description: Host-target communication blocks for serial, CAN, and UDP data exchange
-tags: [serial, udp, can, byte, communication]
+description: "Host-target communication blocks for serial, CAN, and UDP data exchange (10 blocks)"
+tags: [toolbox-kb, embedded-coder, serial, udp, can, byte, communication]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder
-category_path: Host communication
+sources:
+  - resource: matlab:embeddedtargetslib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder
+kb_folder: embedded-coder
+category: host-communication
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Host communication
-
-Use these blocks for host communication.
 
 ## Recommended Blocks
 

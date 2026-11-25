@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Combustion engines
-description: Map-based and simple internal-combustion engine models
-tags: [combustion, engine, si, ci, core engine]
-status: stable
-source: custom_library
-library_root: Powertrain Blockset
-category_path: Combustion engines
+description: Map-based and simple internal-combustion engine models (29 blocks)
+tags: [toolbox-kb, powertrain-blockset, combustion, engine, si, ci, core engine]
+status: draft
+sources:
+  - resource: matlab:autolibalternator
+source: toolbox_kb
+managed_by: satk
+library: Powertrain Blockset
+kb_folder: powertrain-blockset
+category: combustion-engines
 block_count: 29
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Combustion engines
-
-Use these blocks for combustion engines.
 
 ## Recommended Blocks
 

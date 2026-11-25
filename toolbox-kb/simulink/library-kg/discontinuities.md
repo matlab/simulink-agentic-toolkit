@@ -1,25 +1,27 @@
 ---
 type: Simulink Block Category
 title: Discontinuities
-description: Nonlinear discontinuity blocks
-tags: [saturation, dead zone, rate limiter, backlash, relay, quantizer]
+description: Nonlinear discontinuity blocks (15 blocks)
+tags: [toolbox-kb, simulink, saturation, dead zone, rate limiter, backlash, relay, quantizer]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Discontinuities
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: discontinuities
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Discontinuities
-
-Use these blocks for discontinuities.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Saturation | simulink/Commonly
-Used Blocks/Saturation | R2023a+ | Clip a signal to fixed lower/upper limits — use to enforce actuator or safety limits. |
+| Saturation | simulink/Commonly Used Blocks/Saturation | R2023a+ | Clip a signal to fixed lower/upper limits — use to enforce actuator or safety limits. |
 | Backlash | simulink/Discontinuities/Backlash | R2023a+ | Model mechanical play/hysteresis where output lags input within a dead band — use for gear backlash effects. |
 | Coulomb & Viscous Friction | simulink/Discontinuities/Coulomb & Viscous Friction | R2023a+ | Model friction as a Coulomb offset plus a velocity-proportional viscous term — use for mechanical friction. |
 | Dead Zone | simulink/Discontinuities/Dead Zone | R2023a+ | Output zero within a fixed dead band and offset outside it — use to model insensitivity or thresholds. |

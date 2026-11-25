@@ -1,15 +1,1909 @@
 {
-  "generatedAt": "2026-09-29T16:38:07",
-  "generatedAtDatenum": 740254.6931420255,
-  "generatorVersion": 4,
-  "libraries": [
-    "DSP System Toolbox"
-  ],
-  "blockCount": 240,
-  "categoryCount": 19,
-  "libraryFingerprints": {
-    "DSP_System_Toolbox": {
-      "blockCount": 240
+  "pages": [
+    {
+      "id": "adaptive-filters",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "adaptive-filters",
+      "hash": "df6f87049b0cc864f9e815d81e013747cb37a147b5f1ac42f5ce4571bf1e8ea9",
+      "fm": {
+        "title": "Adaptive filters",
+        "description": "Adaptive filtering structures and updates (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "adaptive",
+          "lms",
+          "frequency-domain adaptive"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Block LMS Filter",
+          "ref": "dspadpt3/Block LMS Filter",
+          "since": "R2023a+",
+          "intent": "Computes filter weights based on the Block LMS algorithm for filtering of the input signal. The filter weights are updated once for every block of data that is processed. Select the Adapt port check box to create an Adapt port on the block. When the input to this port is nonzero, the block continuously updates the filter weights. When the input to this port is zero, the filter weights remain constant. If the Reset port is enabled and a reset event occurs, the block resets the filter weights to their initial values."
+        },
+        {
+          "block": "Frequency-Domain Adaptive Filter",
+          "ref": "dspadpt3/Frequency-Domain Adaptive Filter",
+          "since": "R2023a+",
+          "intent": "Adaptive FIR filter that updates its coefficients in the frequency domain — use for efficient adaptation of long filters such as echo cancellers."
+        },
+        {
+          "block": "LMS Filter",
+          "ref": "dspadpt3/LMS Filter",
+          "since": "R2023a+",
+          "intent": "Adapts the filter weights based on the chosen algorithm for filtering of the input signal. Select the Adapt port check box to create an Adapt port on the block. When the input to this port is nonzero, the block continuously updates the filter weights. When the input to this port is zero, the filter weights remain constant. If the Reset port is enabled and a reset event occurs, the block resets the filter weights to their initial values."
+        },
+        {
+          "block": "LMS Update",
+          "ref": "dspadpt3/LMS Update",
+          "since": "R2023a+",
+          "intent": "Compute the LMS/normalized-LMS coefficient update for an adaptive filter — use to build custom adaptive-filter structures."
+        },
+        {
+          "block": "Fast Block LMS Filter",
+          "ref": "dspadpt3/Fast Block LMS Filter",
+          "since": "R2023a+",
+          "intent": "Computes filter weights based on the Fast Block LMS algorithm for filtering of the input signal. The filter weights are updated once for every block of data that is processed. This block uses FFT for fast convolution. Select the Adapt port check box to create an Adapt port on the block. When the input to this port is nonzero, the block continuously updates the filter weights. When the input to this port is zero, the filter weights remain constant. If the Reset port is enabled and a reset event occurs, the block resets the filter weights to their initial values."
+        },
+        {
+          "block": "Kalman Filter",
+          "ref": "dspadpt3/Kalman Filter",
+          "since": "R2023a+",
+          "intent": "Estimate the state of a dynamic system from a series of incomplete and/or noisy measurements. This block can use the previously estimated state to predict the current state. It can also use the current measurement and the predicted state to estimate the current state value. All filters have the same state transition matrix, measurement matrix, initial conditions, and noise covariance, but their state, measurement, enable, and MSE signals are unique. Within the state, measurement, enable, and MSE signals, each column corresponds to a filter."
+        },
+        {
+          "block": "RLS Filter",
+          "ref": "dspadpt3/RLS Filter",
+          "since": "R2023a+",
+          "intent": "Computes filter weights based on the exponentially weighted recursive least-squares (RLS) algorithm for adaptive filtering of the input signal. Select the Adapt port check box to create an Adapt port on the block. When the input to this port is nonzero, the block continuously updates the filter weights. When the input to this port is zero, the filter weights remain constant. If the Reset port is enabled and a reset event occurs, the block resets the filter weights to their initial values."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ai",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "ai",
+      "hash": "0f32ffeb4eec6b475e9fa0da9e2c88686bd8493f787768c0661665ff09bc10a5",
+      "fm": {
+        "title": "Ai",
+        "description": "Blocks for Ai (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Deep Signal Anomaly Detector",
+          "ref": "dspai/Deep Signal Anomaly Detector",
+          "since": "R2024a+",
+          "intent": "Detect signal anomalies using a trained deepSignalAnomalyDetectorLSTM or deepSignalAnomalyDetectorLSTMForecaster object. A Deep Learning Toolbox license is required."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "dataflow",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "dataflow",
+      "hash": "c25231e05a0cd7fec13994e4ae4fb4b6d360fa11215a7e1a419d0fabc1615b01",
+      "fm": {
+        "title": "Dataflow",
+        "description": "Blocks for Dataflow (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Dataflow Subsystem",
+          "ref": "dspdataflow/Dataflow Subsystem",
+          "since": "R2023a+",
+          "intent": "A template Dataflow subsystem."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "estimation-parametric-estimation",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "estimation-parametric-estimation",
+      "hash": "66c28392940eb7d76eea8aed94bf9e7591abfcedbb763ade17dd75045fb56c0b",
+      "fm": {
+        "title": "Estimation parametric estimation",
+        "description": "Blocks for Estimation parametric estimation (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Burg AR Estimator",
+          "ref": "dspparest3/Burg AR Estimator",
+          "since": "R2023a+",
+          "intent": "Frame-based parametric AR estimation using the Burg maximum entropy method. Outputs AR model coefficients A and/or reflection coefficients K, plus the model gain, G."
+        },
+        {
+          "block": "Covariance AR Estimator",
+          "ref": "dspparest3/Covariance AR Estimator",
+          "since": "R2023a+",
+          "intent": "Frame-based parametric AR estimation using the Covariance method. The AR model coefficients are given in A and the gain is given in G."
+        },
+        {
+          "block": "Modified Covariance AR Estimator",
+          "ref": "dspparest3/Modified Covariance AR Estimator",
+          "since": "R2023a+",
+          "intent": "Frame-based parametric AR estimation using the Modified Covariance method. The AR model coefficients are given in A and the gain is given in G."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "feature-extractors",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "feature-extractors",
+      "hash": "2b0df99afbb0988d4ccb41f908ecfb7592766bfde0000b561397689680118b1a",
+      "fm": {
+        "title": "Feature extractors",
+        "description": "Blocks for Feature extractors (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Frequency Feature Extractor",
+          "ref": "dspfeatures/Frequency Feature Extractor",
+          "since": "R2026a+",
+          "intent": "Extract frequency-domain features from signal"
+        },
+        {
+          "block": "Time Feature Extractor",
+          "ref": "dspfeatures/Time Feature Extractor",
+          "since": "R2025a+",
+          "intent": "Extract time-domain features from signal"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "filter-design",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "filter-design",
+      "hash": "8c1e1a1e018e6ead73fcdec030e7c44ba493f54064f721a7f6cb324cc5aadd71",
+      "fm": {
+        "title": "Filter design",
+        "description": "Design-and-apply and tunable filter blocks (32 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "filter design",
+          "lowpass",
+          "highpass",
+          "bandpass",
+          "bandstop",
+          "notch",
+          "differentiator",
+          "hampel",
+          "median",
+          "variable bandwidth"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Analog Filter Design",
+          "ref": "dspfdesign/Analog Filter Design",
+          "since": "R2023a+",
+          "intent": "Design one of several standard analog filters, implemented in state-space form."
+        },
+        {
+          "block": "Bandpass FIR Filter Design",
+          "ref": "dspfdesign/Bandpass FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandpass FIR filter from specifications — use to pass a frequency band with linear phase."
+        },
+        {
+          "block": "Bandpass IIR Filter Design",
+          "ref": "dspfdesign/Bandpass IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandpass IIR filter from specifications — use to pass a frequency band at low filter order."
+        },
+        {
+          "block": "Bandstop FIR Filter Design",
+          "ref": "dspfdesign/Bandstop FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandstop (band-reject) FIR filter — use to reject a frequency band with linear phase."
+        },
+        {
+          "block": "Bandstop IIR Filter Design",
+          "ref": "dspfdesign/Bandstop IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandstop (band-reject) IIR filter — use to reject a frequency band at low order."
+        },
+        {
+          "block": "Differentiator Filter",
+          "ref": "dspfdesign/Differentiator Filter",
+          "since": "R2023a+",
+          "intent": "Apply an FIR differentiator that approximates the derivative — use to estimate a signal's slope or rate of change."
+        },
+        {
+          "block": "Hampel Filter",
+          "ref": "dspfdesign/Hampel Filter",
+          "since": "R2023a+",
+          "intent": "Remove outliers using a Hampel identifier over a sliding window — use for robust spike/outlier removal."
+        },
+        {
+          "block": "Highpass FIR Filter Design",
+          "ref": "dspfdesign/Highpass FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a highpass FIR filter from specifications — use to remove low-frequency content with linear phase."
+        },
+        {
+          "block": "Highpass Filter",
+          "ref": "dspfdesign/Highpass Filter",
+          "since": "R2023a+",
+          "intent": "Apply a tunable highpass filter specified by cutoff frequency — use to remove low-frequency content or DC drift."
+        },
+        {
+          "block": "Highpass IIR Filter Design",
+          "ref": "dspfdesign/Highpass IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a highpass IIR filter from specifications — use to remove low-frequency content at low order."
+        },
+        {
+          "block": "Lowpass FIR Filter Design",
+          "ref": "dspfdesign/Lowpass FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a lowpass FIR filter from specifications — use for anti-aliasing or smoothing with linear phase."
+        },
+        {
+          "block": "Lowpass Filter",
+          "ref": "dspfdesign/Lowpass Filter",
+          "since": "R2023a+",
+          "intent": "Apply a tunable lowpass filter specified by cutoff frequency — use for smoothing or anti-aliasing."
+        },
+        {
+          "block": "Lowpass IIR Filter Design",
+          "ref": "dspfdesign/Lowpass IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a lowpass IIR filter from specifications — use for smoothing/anti-aliasing at low order."
+        },
+        {
+          "block": "Median Filter",
+          "ref": "dspfdesign/Median Filter",
+          "since": "R2023a+",
+          "intent": "Apply a sliding-window median filter — use to remove impulse noise while preserving edges."
+        },
+        {
+          "block": "Notch-Peak Filter",
+          "ref": "dspfdesign/Notch-Peak Filter",
+          "since": "R2023a+",
+          "intent": "Apply a tunable second-order notch or peak filter — use to reject or emphasize a specific frequency."
+        },
+        {
+          "block": "Variable Bandwidth FIR Filter",
+          "ref": "dspfdesign/Variable Bandwidth FIR Filter",
+          "since": "R2023a+",
+          "intent": "FIR filter whose bandwidth/cutoff is tunable at runtime — use for adjustable filtering with linear phase."
+        },
+        {
+          "block": "Variable Bandwidth IIR Filter",
+          "ref": "dspfdesign/Variable Bandwidth IIR Filter",
+          "since": "R2023a+",
+          "intent": "IIR filter whose bandwidth/cutoff is tunable at runtime — use for low-order adjustable filtering."
+        },
+        {
+          "block": "Digital Filter Design",
+          "ref": "dspfdesign/Digital Filter Design",
+          "since": "R2023a+",
+          "intent": "Launches FDATool to design and implement single-rate filters using the Digital Filter block."
+        },
+        {
+          "block": "Bandpass FIR Filter Design",
+          "ref": "dspfiltersrcs/Bandpass FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandpass FIR filter from specifications — use to pass a frequency band with linear phase."
+        },
+        {
+          "block": "Bandpass IIR Filter Design",
+          "ref": "dspfiltersrcs/Bandpass IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandpass IIR filter from specifications — use to pass a frequency band at low filter order."
+        },
+        {
+          "block": "Bandstop FIR Filter Design",
+          "ref": "dspfiltersrcs/Bandstop FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandstop (band-reject) FIR filter — use to reject a frequency band with linear phase."
+        },
+        {
+          "block": "Bandstop IIR Filter Design",
+          "ref": "dspfiltersrcs/Bandstop IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a bandstop (band-reject) IIR filter — use to reject a frequency band at low order."
+        },
+        {
+          "block": "Highpass FIR Filter Design",
+          "ref": "dspfiltersrcs/Highpass FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a highpass FIR filter from specifications — use to remove low-frequency content with linear phase."
+        },
+        {
+          "block": "Highpass IIR Filter Design",
+          "ref": "dspfiltersrcs/Highpass IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a highpass IIR filter from specifications — use to remove low-frequency content at low order."
+        },
+        {
+          "block": "Lowpass FIR Filter Design",
+          "ref": "dspfiltersrcs/Lowpass FIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a lowpass FIR filter from specifications — use for anti-aliasing or smoothing with linear phase."
+        },
+        {
+          "block": "Lowpass IIR Filter Design",
+          "ref": "dspfiltersrcs/Lowpass IIR Filter Design",
+          "since": "R2024a+",
+          "intent": "Design and apply a lowpass IIR filter from specifications — use for smoothing/anti-aliasing at low order."
+        },
+        {
+          "block": "Dyadic Analysis Filter Bank",
+          "ref": "dspmlti4/Dyadic Analysis Filter Bank",
+          "since": "R2023a+",
+          "intent": "Compute the Discrete Wavelet Transform or decompose a signal into subbands with smaller bandwidths and slower sample rates. This block uses a filter bank with lowpass and highpass FIR filters that you specify either directly on the block mask, or using wavelets from the Wavelet Toolbox. The lowpass and highpass filters are usually half-band filters designed to complement each other. Inputs are always interpreted as frames. The frame size must be a multiple of 2^n, where you specify n in the 'Number of levels' parameter. When the 'Output' parameter is set to 'Multiple ports', the block outputs each subband from a different port as a vector or matrix. The topmost port outputs the subband with the highest frequency band. When the 'Output' parameter is set to 'Single port', the block outputs one vector or matrix of concatenated subbands."
+        },
+        {
+          "block": "Dyadic Synthesis Filter Bank",
+          "ref": "dspmlti4/Dyadic Synthesis Filter Bank",
+          "since": "R2023a+",
+          "intent": "Compute the Inverse Discrete Wavelet Transform or reconstruct a signal from subbands with smaller bandwidths and slower sample rates. This block uses a filter bank with lowpass and highpass FIR filters that you specify either directly on the block mask, or using wavelets from the Wavelet Toolbox. The lowpass and highpass filters are usually half-band filters designed to complement each other. When 'Input' is set to 'Multiple ports', you must provide each subband to the block through a different input port as a vector or matrix. You should input the highest frequency band through the topmost port. When 'Input' is set to 'Single port', the block input must be a vector or matrix of concatenated subbands."
+        },
+        {
+          "block": "Two-Channel Analysis Subband Filter",
+          "ref": "dspmlti4/Two-Channel Analysis Subband Filter",
+          "since": "R2023a+",
+          "intent": "Decompose a signal into a high-frequency subband (Hi band) and a low-frequency subband (Lo band) using the specified highpass and lowpass FIR filters. Each subband has half the bandwidth and half the sample rate of the original signal. Usually, the highpass and lowpass filters should be half-band filters designed to complement each other."
+        },
+        {
+          "block": "Two-Channel Synthesis Subband Filter",
+          "ref": "dspmlti4/Two-Channel Synthesis Subband Filter",
+          "since": "R2023a+",
+          "intent": "Reconstruct a signal from a high-frequency subband (Hi band) and a low-frequency subband (Lo band) using the specified highpass and lowpass FIR filters. The input subbands should have the same bandwidths and sample rates. Usually, the highpass and lowpass filters should be half-band filters designed to complement each other."
+        },
+        {
+          "block": "Median",
+          "ref": "dspstat3/Median",
+          "since": "R2023a+",
+          "intent": "Compute the median value along the specified dimension of the input. The 'Product output' and 'Accumulator' parameters apply only for complex fixed-point inputs."
+        },
+        {
+          "block": "Median Filter",
+          "ref": "dspstat3/Median Filter",
+          "since": "R2023a+",
+          "intent": "Apply a sliding-window median filter — use to remove impulse noise while preserving edges."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "filter-implementations",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "filter-implementations",
+      "hash": "da67789a466f83cd2d7977e352ea2f07dbbc6320bf189879eca0ca778a11b243",
+      "fm": {
+        "title": "Filter implementations",
+        "description": "Direct filter realizations (FIR/IIR/SOS/allpass) (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "filter implementations",
+          "fir filter",
+          "discrete filter",
+          "allpass",
+          "allpole",
+          "section filter",
+          "mimo fir"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Allpass Filter",
+          "ref": "dsparch4/Allpass Filter",
+          "since": "R2023a+",
+          "intent": "Apply an allpass filter that shapes phase without changing magnitude — use for phase equalization and fractional delay."
+        },
+        {
+          "block": "Allpole Filter",
+          "ref": "dsparch4/Allpole Filter",
+          "since": "R2023a+",
+          "intent": "Apply an all-pole (recursive) filter — use to implement AR or synthesis filters."
+        },
+        {
+          "block": "Biquad Filter",
+          "ref": "dsparch4/Biquad Filter",
+          "since": "R2023a+",
+          "intent": "Implement a general IIR filter using biquad structures. Biquad implementations of general IIR filters are often preferred due to their desirable numeric properties."
+        },
+        {
+          "block": "Discrete FIR Filter",
+          "ref": "dsparch4/Discrete FIR Filter",
+          "since": "R2023a+",
+          "intent": "Apply an FIR filter with given coefficients — use for general linear-phase filtering."
+        },
+        {
+          "block": "Discrete Filter",
+          "ref": "dsparch4/Discrete Filter",
+          "since": "R2023a+",
+          "intent": "Apply an IIR filter given numerator and denominator coefficients — use for general recursive filtering."
+        },
+        {
+          "block": "Fourth Order Section Filter",
+          "ref": "dsparch4/Fourth Order Section Filter",
+          "since": "R2023a+",
+          "intent": "Implement a filter as cascaded fourth-order sections — use for numerically-robust high-order filtering."
+        },
+        {
+          "block": "Frequency-Domain FIR Filter",
+          "ref": "dsparch4/Frequency-Domain FIR Filter",
+          "since": "R2023a+",
+          "intent": "Apply an FIR filter via overlap-add/save in the frequency domain — use for efficient long-FIR filtering."
+        },
+        {
+          "block": "MIMO FIR Filter",
+          "ref": "dsparch4/MIMO FIR Filter",
+          "since": "R2025a+",
+          "intent": "Apply a multi-input multi-output FIR filter (filter matrix) — use for multichannel filtering such as beamforming."
+        },
+        {
+          "block": "Second-Order Section Filter",
+          "ref": "dsparch4/Second-Order Section Filter",
+          "since": "R2023a+",
+          "intent": "Implement a filter as cascaded biquad (second-order) sections — use for numerically-robust IIR filtering."
+        },
+        {
+          "block": "FIR Decimation",
+          "ref": "dspmlti4/FIR Decimation",
+          "since": "R2023a+",
+          "intent": "Apply an FIR filter to the input signal, then downsample the signal by an integer-valued factor. The block implements the FIR filter using a polyphase filter structure."
+        },
+        {
+          "block": "FIR Interpolation",
+          "ref": "dspmlti4/FIR Interpolation",
+          "since": "R2023a+",
+          "intent": "Upsample the input signal by an integer-valued factor, then apply an FIR filter. The block scales the filter coefficients by the interpolation factor and implements the FIR filter using a polyphase structure."
+        },
+        {
+          "block": "FIR Rate Conversion",
+          "ref": "dspmlti4/FIR Rate Conversion",
+          "since": "R2023a+",
+          "intent": "Upsample the input signal by an integer-valued factor, apply an FIR filter, and downsample the input signal by another integer-valued factor. The block implements the FIR filter using a polyphase structure."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "linear-algebra",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "linear-algebra",
+      "hash": "8bd2186d1d3f397a51f232e68d095337e79694717bed71caac3be3ed68ea144f",
+      "fm": {
+        "title": "Linear algebra",
+        "description": "Matrix factorizations, solvers, and operations (35 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "matrices",
+          "linear algebra",
+          "qr",
+          "cholesky",
+          "svd",
+          "pseudoinverse",
+          "matrix"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Cumulative Product",
+          "ref": "dspmathops/Cumulative Product",
+          "since": "R2023a+",
+          "intent": "Cumulative product of input matrix or input vector elements along the specified dimension: rows, columns, or channels."
+        },
+        {
+          "block": "Cumulative Sum",
+          "ref": "dspmathops/Cumulative Sum",
+          "since": "R2023a+",
+          "intent": "Cumulative sum of input matrix or input vector elements along the specified dimension: rows, columns, or channels."
+        },
+        {
+          "block": "Normalization",
+          "ref": "dspmathops/Normalization",
+          "since": "R2023a+",
+          "intent": "Normalize the input over the specified dimension by the vector 2-norm, sqrt(u'u)+b, or by the squared 2-norm, u'u+b, where b is a bias used to protect against divide-by-zero. Normalization is performed over rows, columns, or the dimension of the input signal specified in the 'Dimension' parameter."
+        },
+        {
+          "block": "Backward Substitution",
+          "ref": "dspsolvers/Backward Substitution",
+          "since": "R2023a+",
+          "intent": "Solve UX=B where U is an upper (or unit-upper) triangular matrix. U must be square. B must have the same number of rows as U."
+        },
+        {
+          "block": "Forward Substitution",
+          "ref": "dspsolvers/Forward Substitution",
+          "since": "R2023a+",
+          "intent": "Solve LX=B where L is a lower (or unit-lower) triangular matrix. L must be square. B must have the same number of rows as L."
+        },
+        {
+          "block": "QR Solver",
+          "ref": "dspsolvers/QR Solver",
+          "since": "R2023a+",
+          "intent": "Solve a (least-squares) linear system using QR factorization — use for robust solutions of overdetermined systems."
+        },
+        {
+          "block": "Cholesky Solver",
+          "ref": "dspsolvers/Cholesky Solver",
+          "since": "R2023a+",
+          "intent": "Solve SX=B using Cholesky factorization. S must be a square, symmetric (Hermitian) positive definite matrix. B must have the same number of rows as S."
+        },
+        {
+          "block": "LDL Solver",
+          "ref": "dspsolvers/LDL Solver",
+          "since": "R2023a+",
+          "intent": "Solve SX=B using LDL' factorization. Only for use with a symmetric (Hermitian) positive definite input matrix S. S must be square. B must have the same number of rows as S."
+        },
+        {
+          "block": "LU Solver",
+          "ref": "dspsolvers/LU Solver",
+          "since": "R2023a+",
+          "intent": "Solve AX=B using LU decomposition. A must be square. B must have the same number of rows as A."
+        },
+        {
+          "block": "SVD Solver",
+          "ref": "dspsolvers/SVD Solver",
+          "since": "R2023a+",
+          "intent": "Solve AX=B using Singular Value Decomposition. B must have the same number of rows as A. If A is not square, the output is a least squares solution. Select the 'Show error status port (E)' check box to send the SVD convergence error status to an output port."
+        },
+        {
+          "block": "Cholesky Factorization",
+          "ref": "dspfactors/Cholesky Factorization",
+          "since": "R2023a+",
+          "intent": "Factor a symmetric positive-definite matrix as R'R — use for efficient solves and covariance factorization."
+        },
+        {
+          "block": "LDL Factorization",
+          "ref": "dspfactors/LDL Factorization",
+          "since": "R2023a+",
+          "intent": "Computes unit lower triangular L and diagonal D such that S=LDL' for square, symmetric/Hermitian, positive definite input matrix S. Uses only the lower triangle of S."
+        },
+        {
+          "block": "LU Factorization",
+          "ref": "dspfactors/LU Factorization",
+          "since": "R2023a+",
+          "intent": "LU factorization with row pivoting. Only for use with a square input matrix A. Stores L (a unit-lower triangular matrix) in the lower triangle and U in the upper triangle of the output matrix. Permutation vector P is output separately. Optionally, the block signals the singularity status of the input matrix."
+        },
+        {
+          "block": "QR Factorization",
+          "ref": "dspfactors/QR Factorization",
+          "since": "R2023a+",
+          "intent": "Factor a matrix into orthogonal Q and upper-triangular R — use for least-squares and numerically-stable solves."
+        },
+        {
+          "block": "Singular Value Decomposition",
+          "ref": "dspfactors/Singular Value Decomposition",
+          "since": "R2023a+",
+          "intent": "Compute the SVD of a matrix — use for rank, conditioning, pseudoinverse, and subspace analysis."
+        },
+        {
+          "block": "Pseudoinverse",
+          "ref": "dspinverses/Pseudoinverse",
+          "since": "R2023a+",
+          "intent": "Compute the Moore-Penrose pseudoinverse — use for least-squares solutions of rank-deficient systems."
+        },
+        {
+          "block": " LU Inverse",
+          "ref": "dspinverses/ LU Inverse",
+          "since": "R2023a+",
+          "intent": "Matrix inverse using LU factorization."
+        },
+        {
+          "block": "Cholesky Inverse",
+          "ref": "dspinverses/Cholesky Inverse",
+          "since": "R2023a+",
+          "intent": "Matrix inverse using Cholesky factorization."
+        },
+        {
+          "block": "LDL Inverse",
+          "ref": "dspinverses/LDL Inverse",
+          "since": "R2023a+",
+          "intent": "Matrix inverse using LDL factorization."
+        },
+        {
+          "block": "Array-Vector Add",
+          "ref": "dspmtrx3/Array-Vector Add",
+          "since": "R2023a+",
+          "intent": "Add the elements of vector V to the input array A along the specified dimension. Note that unoriented input signals are treated as oriented column vectors. The output of this block is always oriented."
+        },
+        {
+          "block": "Array-Vector Divide",
+          "ref": "dspmtrx3/Array-Vector Divide",
+          "since": "R2023a+",
+          "intent": "Divide the input array A by the elements of vector V along the specified dimension. In the two-dimensional case, this is equivalent to dividing a full matrix (A) by a diagonal (V). Note that unoriented input signals are treated as oriented column vectors. The output of this block is always oriented."
+        },
+        {
+          "block": "Array-Vector Multiply",
+          "ref": "dspmtrx3/Array-Vector Multiply",
+          "since": "R2023a+",
+          "intent": "Multiply the input array A by the elements of vector V along the specified dimension. In the two-dimensional case, this is equivalent to multiplying a full matrix (A) by a diagonal (V). Note that unoriented input signals are treated as oriented column vectors. The output of this block is always oriented."
+        },
+        {
+          "block": "Array-Vector Subtract",
+          "ref": "dspmtrx3/Array-Vector Subtract",
+          "since": "R2023a+",
+          "intent": "Subtract the elements of vector V from the input array A along the specified dimension. Note that unoriented input signals are treated as oriented column vectors. The output of this block is always oriented."
+        },
+        {
+          "block": "Extract Triangular Matrix",
+          "ref": "dspmtrx3/Extract Triangular Matrix",
+          "since": "R2023a+",
+          "intent": "Extract the upper or lower triangular part of a matrix — use to isolate a triangular factor."
+        },
+        {
+          "block": "Matrix Concatenate",
+          "ref": "dspmtrx3/Matrix Concatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a larger matrix along a dimension — use to assemble block matrices."
+        },
+        {
+          "block": "Matrix Product",
+          "ref": "dspmtrx3/Matrix Product",
+          "since": "R2023a+",
+          "intent": "Multiply the elements of a matrix along its rows, its columns, or over all its elements. Note that 1-D input signals produce a single scalar output equal to the product of the individual elements."
+        },
+        {
+          "block": "Matrix Sum",
+          "ref": "dspmtrx3/Matrix Sum",
+          "since": "R2023a+",
+          "intent": "Sum matrix elements along a dimension or add matrices — use for row/column sums or matrix addition."
+        },
+        {
+          "block": "Matrix  1-Norm",
+          "ref": "dspmtrx3/Matrix  1-Norm",
+          "since": "R2023a+",
+          "intent": "Compute the matrix 1-norm, which is the largest column sum of absolute values. Note that unoriented input signals are treated as oriented column vectors. The output of this block is always oriented."
+        },
+        {
+          "block": "Matrix Multiply",
+          "ref": "dspmtrx3/Matrix Multiply",
+          "since": "R2023a+",
+          "intent": "Multiply matrices (or matrix-vector) — use for linear transforms and weighted combinations."
+        },
+        {
+          "block": "Toeplitz",
+          "ref": "dspmtrx3/Toeplitz",
+          "since": "R2023a+",
+          "intent": "Generate a symmetric or asymmetric Toeplitz matrix. If Symmetric is selected, a symmetric (or Hermitian) Toeplitz matrix is generated. If Symmetric is not selected, an asymmetric Toeplitz matrix is generated. The columns and rows are specified by the first and second inputs, respectively. The first matrix element is inherited from the column."
+        },
+        {
+          "block": "Matrix Exponential",
+          "ref": "dspmtrx3/Matrix Exponential",
+          "since": "R2023a+",
+          "intent": "Compute the matrix exponential, using a scaling and squaring algorithm with a Pade approximation. Matrix must be square."
+        },
+        {
+          "block": "Reciprocal Condition",
+          "ref": "dspmtrx3/Reciprocal Condition",
+          "since": "R2023a+",
+          "intent": "Estimates the reciprocal of the condition of a square input matrix in the 1-norm. If input is well conditioned, the output is near 1.0. If input is badly conditioned, output is near 0.0."
+        },
+        {
+          "block": "Triggered Signal From Workspace",
+          "ref": "dspsigops/Triggered Signal From Workspace",
+          "since": "R2023a+",
+          "intent": "Output successive signal samples obtained from the MATLAB workspace when a trigger event occurs. A signal matrix is interpreted as having one channel per column. Signal columns may be buffered into frames by specifying a number of samples per frame greater than 1. An M x N x P signal array outputs M x N matrices when a trigger event occurs. The samples per frame must be equal to 1 for 3 dimensional signal arrays."
+        },
+        {
+          "block": "Signal From Workspace",
+          "ref": "dspsrcs4/Signal From Workspace",
+          "since": "R2023a+",
+          "intent": "Output signal samples obtained from the MATLAB workspace at successive sample times. A signal matrix is interpreted as having one channel per column. Signal columns may be buffered into frames by specifying a number of samples per frame greater than 1. An M x N x P signal array outputs M x N matrices at successive sample times. The samples per frame must be equal to 1 for three-dimensional signal arrays."
+        },
+        {
+          "block": "Sort",
+          "ref": "dspstat3/Sort",
+          "since": "R2023a+",
+          "intent": "Value and/or index of sorted elements in vector or matrix. For matrix inputs, the elements are sorted columnwise. The 'Product output' and 'Accumulator' parameters apply only for complex fixed-point inputs."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "linear-prediction",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "linear-prediction",
+      "hash": "a406c47c8a489f322dde18ae454486c46a83e5a2f0bd2178fece0d38f377f71f",
+      "fm": {
+        "title": "Linear prediction",
+        "description": "Linear-prediction / AR coefficient estimation (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "linear prediction",
+          "levinson"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "LPC to LSF/LSP Conversion",
+          "ref": "dsplp/LPC to LSF/LSP Conversion",
+          "since": "R2023a+",
+          "intent": "Convert linear prediction coefficients (LPCs) to line spectral pairs (LSPs) or line spectral frequencies (LSFs). An optional output indicates the validity of the current output. Outputs can be invalid due to unstable inputs, or failure to find all LSF/LSPs. The first input coefficient must be 1. If it is not, the block normalizes the input by default, and optionally gives a warning."
+        },
+        {
+          "block": "LPC to/from Cepstral Coefficients ",
+          "ref": "dsplp/LPC to/from Cepstral Coefficients ",
+          "since": "R2023a+",
+          "intent": "Converts linear prediction coefficients (LPCs) to/from cepstral coefficients (CCs). When converting from LPCs to CCs, you can assume the prediction error power is 1, or specify a different value using input port P. The size of the output vector of cepstral coefficients can be the same length as the input LPC vector, or you can define a nonzero length. The first input coefficient must be 1. If it is not, you can replace it with 1, normalize the input with the non-unity first coefficient, normalize and warn, or error out. When converting from CCs to LPCs, you can output the prediction error power at port P."
+        },
+        {
+          "block": "LPC to/from RC",
+          "ref": "dsplp/LPC to/from RC",
+          "since": "R2023a+",
+          "intent": "Converts Linear Prediction polynomial coefficients (A) to/from Reflection coefficients (K). The normalized prediction error power of the linear prediction filter is given in the optional P output. The stability of the prediction coefficients is given in the optional S output. In the LPC to RC conversion, the first input coefficient must be 1. If it is not, you can optionally replace it with 1, or normalize the input with the non-unity 1st coefficient and warn, or error out."
+        },
+        {
+          "block": "LPC/RC to Autocorrelation",
+          "ref": "dsplp/LPC/RC to Autocorrelation",
+          "since": "R2023a+",
+          "intent": "Converts Linear Prediction Coefficients (A) or Reflection Coefficients (K) into Autocorrelation coefficients (AC). We can have an optional prediction error power (P) input port which expects a scalar value, in the absence of which P is assumed to be 1. In the LPC to Autocorrelation coefficient conversion, the first input coefficient is expected to be 1. If it is not, user can select one of 4 options, like replace the first coefficient with 1, or normalize the input vector with first coefficient, or normalize and warn, or just error out."
+        },
+        {
+          "block": "LSF/LSP to LPC Conversion",
+          "ref": "dsplp/LSF/LSP to LPC Conversion",
+          "since": "R2023a+",
+          "intent": "Convert line spectral frequencies (LSFs) or line spectral pairs (LSPs) to linear prediction coefficients (LPCs). The LSF inputs can be in the range (0 pi), or normalized to be in the range (0 0.5)."
+        },
+        {
+          "block": "Levinson-Durbin",
+          "ref": "dsplp/Levinson-Durbin",
+          "since": "R2023a+",
+          "intent": "Solve for LPC/AR coefficients from an autocorrelation sequence via the Levinson-Durbin recursion — use for linear prediction, speech coding, and AR modeling."
+        },
+        {
+          "block": "Autocorrelation LPC",
+          "ref": "dsplp/Autocorrelation LPC",
+          "since": "R2023a+",
+          "intent": "Output the coefficients of an Nth order forward linear predictor such that the sum of the squares of the errors is minimized (using the autocorrelation LPC method). The prediction coefficients are given in A (polynomial coefficients) and/or K (reflection coefficients). The prediction error power is given in the optional P output."
+        },
+        {
+          "block": "Levinson-Durbin",
+          "ref": "dspsolvers/Levinson-Durbin",
+          "since": "R2023a+",
+          "intent": "Solve for LPC/AR coefficients from an autocorrelation sequence via the Levinson-Durbin recursion — use for linear prediction, speech coding, and AR modeling."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math-functions-math-operations",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "math-functions-math-operations",
+      "hash": "1258ddc9095ceaa6c9c30d236c53f9d452d4244791f738f8e9ef1ed062025be7",
+      "fm": {
+        "title": "Math functions math operations",
+        "description": "Blocks for Math functions math operations (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Difference",
+          "ref": "dspmathops/Difference",
+          "since": "R2023a+",
+          "intent": "Difference between adjacent input elements. Running difference is always performed along the column dimension. Otherwise the difference is performed along the specified dimension."
+        },
+        {
+          "block": "dB Conversion",
+          "ref": "dspmathops/dB Conversion",
+          "since": "R2023a+",
+          "intent": "Convert input of watts or volts to decibels. Voltage inputs are first converted to power relative to the specified load resistance, where P = (V^2)/R. When converting to dB, the reference power is 1 W. When converting to dBm, the reference power is 1 mW."
+        },
+        {
+          "block": "dB Gain",
+          "ref": "dspmathops/dB Gain",
+          "since": "R2023a+",
+          "intent": "Apply a gain specified in dB."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "multirate-filters",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "multirate-filters",
+      "hash": "6c5779a2326b168bb443eed9312bec2ca68409fe09af45c7c0fb4672de340ace",
+      "fm": {
+        "title": "Multirate filters",
+        "description": "Decimators, interpolators, and rate converters (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "multirate",
+          "decimator",
+          "interpolator",
+          "channelizer",
+          "halfband",
+          "rate converter",
+          "cic compensation"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "CIC Decimation",
+          "ref": "dspmlti4/CIC Decimation",
+          "since": "R2023a+",
+          "intent": "Apply a Cascaded Integrator-Comb Decimator filter to the input signal. The inputs and outputs of this block have a signed fixed-point data type with zero bias. You must have a Fixed-Point Designer license to use this block."
+        },
+        {
+          "block": "CIC Interpolation",
+          "ref": "dspmlti4/CIC Interpolation",
+          "since": "R2023a+",
+          "intent": "Apply a Cascaded Integrator-Comb Interpolator filter to the input signal. The inputs and outputs of this block have a signed fixed-point data type with zero bias. You must have a Fixed-Point Designer license to use this block."
+        },
+        {
+          "block": "CIC Compensation Decimator",
+          "ref": "dspmlti4/CIC Compensation Decimator",
+          "since": "R2023a+",
+          "intent": "Decimate while compensating CIC passband droop with an FIR — use after a CIC stage to flatten the response."
+        },
+        {
+          "block": "CIC Compensation Interpolator",
+          "ref": "dspmlti4/CIC Compensation Interpolator",
+          "since": "R2023a+",
+          "intent": "Interpolate while compensating CIC passband droop with an FIR — use before a CIC stage to flatten the response."
+        },
+        {
+          "block": "Channel Synthesizer",
+          "ref": "dspmlti4/Channel Synthesizer",
+          "since": "R2023a+",
+          "intent": "Combine multiple baseband channels into one wideband signal via a polyphase filter bank — use for channel multiplexing."
+        },
+        {
+          "block": "Channelizer",
+          "ref": "dspmlti4/Channelizer",
+          "since": "R2023a+",
+          "intent": "Split a wideband signal into multiple frequency channels via a polyphase filter bank — use for channel demultiplexing."
+        },
+        {
+          "block": "Complex Bandpass Decimator",
+          "ref": "dspmlti4/Complex Bandpass Decimator",
+          "since": "R2023a+",
+          "intent": "Frequency-shift and decimate to extract a complex bandpass channel — use to down-select a band of interest."
+        },
+        {
+          "block": "FIR Halfband Decimator",
+          "ref": "dspmlti4/FIR Halfband Decimator",
+          "since": "R2023a+",
+          "intent": "Decimate by two with an efficient FIR halfband filter — use for low-cost 2× downsampling."
+        },
+        {
+          "block": "FIR Halfband Interpolator",
+          "ref": "dspmlti4/FIR Halfband Interpolator",
+          "since": "R2023a+",
+          "intent": "Interpolate by two with an efficient FIR halfband filter — use for low-cost 2× upsampling."
+        },
+        {
+          "block": "Farrow Rate Converter",
+          "ref": "dspmlti4/Farrow Rate Converter",
+          "since": "R2023a+",
+          "intent": "Resample by an arbitrary/fractional ratio using a Farrow structure — use for continuously-variable sample-rate conversion."
+        },
+        {
+          "block": "IIR Halfband Decimator",
+          "ref": "dspmlti4/IIR Halfband Decimator",
+          "since": "R2023a+",
+          "intent": "Decimate by two with a low-cost IIR halfband filter — use for efficient 2× downsampling."
+        },
+        {
+          "block": "IIR Halfband Interpolator",
+          "ref": "dspmlti4/IIR Halfband Interpolator",
+          "since": "R2023a+",
+          "intent": "Interpolate by two with a low-cost IIR halfband filter — use for efficient 2× upsampling."
+        },
+        {
+          "block": "Sample-Rate Converter",
+          "ref": "dspmlti4/Sample-Rate Converter",
+          "since": "R2023a+",
+          "intent": "Convert between arbitrary sample rates with an automatically-designed multistage filter chain — use for high-quality rate conversion."
+        },
+        {
+          "block": "Variable FIR Decimation",
+          "ref": "dspmlti4/Variable FIR Decimation",
+          "since": "R2023a+",
+          "intent": "Decimate by a runtime-variable integer factor with an FIR — use for adjustable downsampling."
+        },
+        {
+          "block": "Variable FIR Interpolation",
+          "ref": "dspmlti4/Variable FIR Interpolation",
+          "since": "R2023a+",
+          "intent": "Interpolate by a runtime-variable integer factor with an FIR — use for adjustable upsampling."
+        },
+        {
+          "block": "Farrow Rate Converter",
+          "ref": "dspsigops/Farrow Rate Converter",
+          "since": "R2023a+",
+          "intent": "Resample by an arbitrary/fractional ratio using a Farrow structure — use for continuously-variable sample-rate conversion."
+        },
+        {
+          "block": "Sample-Rate Converter",
+          "ref": "dspsigops/Sample-Rate Converter",
+          "since": "R2023a+",
+          "intent": "Convert between arbitrary sample rates with an automatically-designed multistage filter chain — use for high-quality rate conversion."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "polynomial",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "polynomial",
+      "hash": "17f5a260693883a2bebfbc11caa401f088c6d0eb163658d9fc2165600aeefaa1",
+      "fm": {
+        "title": "Polynomial",
+        "description": "Polynomial functions (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "polynomial",
+          "stability"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Yule-Walker AR Estimator",
+          "ref": "dspparest3/Yule-Walker AR Estimator",
+          "since": "R2023a+",
+          "intent": "Frame-based parametric AR estimation using the Yule-Walker method. The AR model coefficients are given in A (polynomial coefficients) and/or K (reflection coefficients). The square of the model gain is given in G."
+        },
+        {
+          "block": "Polynomial Evaluation",
+          "ref": "dsppolyfun/Polynomial Evaluation",
+          "since": "R2023a+",
+          "intent": "Apply specified polynomial function to input. Example: [1 3 5] represents u^2 + 3u + 5."
+        },
+        {
+          "block": "Polynomial Stability Test",
+          "ref": "dsppolyfun/Polynomial Stability Test",
+          "since": "R2023a+",
+          "intent": "Test whether a polynomial's roots lie inside the unit circle — use to check discrete filter/system stability."
+        },
+        {
+          "block": "Least Squares Polynomial Fit",
+          "ref": "dsppolyfun/Least Squares Polynomial Fit",
+          "since": "R2023a+",
+          "intent": "Find the coefficients of a polynomial P(X) of order N that fits the input data U, such that P(X) best approximates U in a least-squares sense. The input vector U must have the same length as X."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "quantizers",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "quantizers",
+      "hash": "23695bf8145198ae203f89ab543d4eba22dc46feffca5d993d1e114e49f88e8f",
+      "fm": {
+        "title": "Quantizers",
+        "description": "Amplitude quantization (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "quantizer",
+          "quantizers"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "G.711 Codec",
+          "ref": "dspquant2/G.711 Codec",
+          "since": "R2023a+",
+          "intent": "Implements the ITU-T G.711 recommendation for encoding, decoding, or converting speech signals. The block encodes int16 PCM signals using A-law or mu-law into uint8 codewords. The input is assumed to be a 13-bit (A-law) or 14-bit (mu-law) PCM signal. The block decodes uint8 codewords into 13-bit (A-law) or 14-bit (mu-law) PCM signals of type int16. The block converts between A-law and mu-law uint8 codewords."
+        },
+        {
+          "block": "Quantizer",
+          "ref": "dspquant2/Quantizer",
+          "since": "R2023a+",
+          "intent": "Quantize a signal to discrete amplitude levels — use to model ADC quantization or reduce precision."
+        },
+        {
+          "block": "Scalar Quantizer Decoder",
+          "ref": "dspquant2/Scalar Quantizer Decoder",
+          "since": "R2023a+",
+          "intent": "For each input index value, the block outputs the corresponding codeword. Each element of the Codebook parameter represents a codeword. The output values have the same data type as the codebook values."
+        },
+        {
+          "block": "Scalar Quantizer Encoder",
+          "ref": "dspquant2/Scalar Quantizer Encoder",
+          "since": "R2023a+",
+          "intent": "The block maps each input value to a quantization region by comparing the input value to the user-specified boundary points. Then, the block outputs the index of the associated region. If you want the block to output the quantized value or the associated quantization error, you must provide the codebook. If the Codebook parameter is defined as [c1 c2 c3 ... cN] and the Boundary points parameter is denoted by [p0 p1 p2 p3 ... pN], then p0 must be less than c1 which must be less than p1 which must be less than c2 and etc. through pN for a regular quantizer. If your quantizer is bounded, you need to specify [p0 p1 p2 p3 ... pN]. For any input less than p0 or greater than pN, you can optionally output the clipping status. If your quantizer is unbounded, you need to specify [p1 p2 p3 ... p(N-1)] and the block sets p0=-Inf and pN = +Inf. You must enter the boundary points in ascending order."
+        },
+        {
+          "block": "Uniform Decoder",
+          "ref": "dspquant2/Uniform Decoder",
+          "since": "R2023a+",
+          "intent": "Uniformly decode the input with positive and negative Peak value. Saturate or wrap the input in overflow. The output datatype is double or single."
+        },
+        {
+          "block": "Uniform Encoder",
+          "ref": "dspquant2/Uniform Encoder",
+          "since": "R2023a+",
+          "intent": "Uniformly quantize and encode the input into specified number of bits. The input is saturated at positive and negative Peak value. Output datatype is either 8, 16, or 32-bit signed or unsigned integer, based on the least number of bits needed."
+        },
+        {
+          "block": "Vector Quantizer Decoder",
+          "ref": "dspquant2/Vector Quantizer Decoder",
+          "since": "R2023a+",
+          "intent": "For each input index value, the block outputs the corresponding codeword. Each column of the Codebook parameter represents a codeword. The output values have the same data type as the codebook values."
+        },
+        {
+          "block": "Vector Quantizer Encoder",
+          "ref": "dspquant2/Vector Quantizer Encoder",
+          "since": "R2023a+",
+          "intent": "For each input column vector, the block outputs a zero-based index value of the nearest codeword. You can choose to output the nearest codeword and corresponding quantization error for each input column vector. Each column of the Codebook parameter represents a codeword. If you choose to specify a weighting factor, it must be a vector having length equal to the number of rows of your input. The block applies the same codebook and weighting factor to each input column vector. All the inputs to the block must be the same data type. The output index values can be signed or unsigned integers. All other outputs have the same data type as the inputs."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-management",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "signal-management",
+      "hash": "03d129ed57944b3c7bd4242642991ae6342c1d4dee562d067dbc252936baeffa",
+      "fm": {
+        "title": "Signal management",
+        "description": "Buffering, indexing, and attribute handling (23 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "signal management",
+          "buffer",
+          "unbuffer",
+          "flip",
+          "selector",
+          "overwrite",
+          "data type",
+          "clock"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Overwrite Values",
+          "ref": "dspmtrx3/Overwrite Values",
+          "since": "R2023a+",
+          "intent": "Overwrite selected elements of a signal with new values — use to patch specific samples or regions."
+        },
+        {
+          "block": "Buffer",
+          "ref": "dspbuff3/Buffer",
+          "since": "R2023a+",
+          "intent": "Collect scalar samples into frames with optional overlap — use to convert sample-based to frame-based processing."
+        },
+        {
+          "block": "Delay Line",
+          "ref": "dspbuff3/Delay Line",
+          "since": "R2023a+",
+          "intent": "Shift out delay line contents and store input data into start of delay line."
+        },
+        {
+          "block": "N-Ratio Buffer",
+          "ref": "dspbuff3/N-Ratio Buffer",
+          "since": "R2026a+",
+          "intent": "Buffer samples into frames using an N:M rate ratio — use for rate-changing framing."
+        },
+        {
+          "block": "N-Ratio Unbuffer",
+          "ref": "dspbuff3/N-Ratio Unbuffer",
+          "since": "R2026a+",
+          "intent": "Convert frames back to samples using an N:M rate ratio — use for rate-changing unframing."
+        },
+        {
+          "block": "Queue",
+          "ref": "dspbuff3/Queue",
+          "since": "R2023a+",
+          "intent": "Implements a queue, or \"First In, First Out\" (FIFO) register."
+        },
+        {
+          "block": "Stack",
+          "ref": "dspbuff3/Stack",
+          "since": "R2023a+",
+          "intent": "Implements a stack, or \"Last In, First Out\" (LIFO) register."
+        },
+        {
+          "block": "Unbuffer",
+          "ref": "dspbuff3/Unbuffer",
+          "since": "R2023a+",
+          "intent": "Convert frames back into a scalar sample stream — use to move from frame-based to sample-based processing."
+        },
+        {
+          "block": "Flip",
+          "ref": "dspindex/Flip",
+          "since": "R2023a+",
+          "intent": "Reverse the order of elements along a dimension — use to flip a vector/matrix or reverse time within a frame."
+        },
+        {
+          "block": "Multiport Selector",
+          "ref": "dspindex/Multiport Selector",
+          "since": "R2023a+",
+          "intent": "Output specified rows or columns to one or more output ports. The number of output ports is determined by the number of index vectors, each specified as a separate vector entry in a cell array. Indices are 1-based and need not be unique."
+        },
+        {
+          "block": "Overwrite Values",
+          "ref": "dspindex/Overwrite Values",
+          "since": "R2023a+",
+          "intent": "Overwrite selected elements of a signal with new values — use to patch specific samples or regions."
+        },
+        {
+          "block": "Selector",
+          "ref": "dspindex/Selector",
+          "since": "R2023a+",
+          "intent": "Select a subset of elements from a signal by index — use to extract specific channels or samples."
+        },
+        {
+          "block": "Variable Selector",
+          "ref": "dspindex/Variable Selector",
+          "since": "R2023a+",
+          "intent": "Selects and/or reorders the rows or columns of the input according to a specified vector of indices (the indices need not be unique). The 'Selector mode' parameter determines whether the block uses the same indices for every input ('Fixed'), or uses different indices for every input ('Variable'). When set to 'Variable', you provide the vector of indices through an input port. When the indices are of Boolean data type the block performs logical indexing."
+        },
+        {
+          "block": "Data Type  Conversion",
+          "ref": "dspsigattribs/Data Type  Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set integer/fixed-point type and scaling."
+        },
+        {
+          "block": "Inherit Complexity",
+          "ref": "dspsigattribs/Inherit Complexity",
+          "since": "R2023a+",
+          "intent": "Copy data from the Data input with the complexity of the reference signal. If the data is real and the reference is complex, an all zero imaginary part is created. If the data is complex and the reference is real, the imaginary part of the input is removed."
+        },
+        {
+          "block": "Check Signal Attributes",
+          "ref": "dspsigattribs/Check Signal Attributes",
+          "since": "R2023a+",
+          "intent": "Generate an error when the input signal does or does not match selected attributes exactly."
+        },
+        {
+          "block": "Counter",
+          "ref": "dspswit3/Counter",
+          "since": "R2023a+",
+          "intent": "Count up or down through a specified range of numbers. If you set the 'Count event' parameter to 'Free running', the block counts at a constant time interval. Otherwise, the block increments or decrements the counter each time a trigger event occurs at the Inc/Dec input port."
+        },
+        {
+          "block": "Multiphase Clock",
+          "ref": "dspswit3/Multiphase Clock",
+          "since": "R2023a+",
+          "intent": "Generate multiple phase-shifted clock/enable signals — use to sequence multirate or multiphase logic."
+        },
+        {
+          "block": "Edge Detector",
+          "ref": "dspswit3/Edge Detector",
+          "since": "R2023a+",
+          "intent": "Output a unity amplitude pulse for one sample period in response to a transition from zero to a nonzero value."
+        },
+        {
+          "block": "Event-Count Comparator",
+          "ref": "dspswit3/Event-Count Comparator",
+          "since": "R2023a+",
+          "intent": "Output is true if the number of nonzero inputs over time equals or exceeds the 'Event threshold' during the enable interval. A nonzero input on the interval port (Int) enables the block to begin counting and resets the output. Inputs must be discrete-time scalars."
+        },
+        {
+          "block": "N-Sample Switch",
+          "ref": "dspswit3/N-Sample Switch",
+          "since": "R2023a+",
+          "intent": "Output N samples from the top port. Thereafter, output samples from the bottom port."
+        },
+        {
+          "block": "Sample and Hold",
+          "ref": "dspsigops/Sample and Hold",
+          "since": "R2023a+",
+          "intent": "Sample and hold the input signal. If Latch (buffer) input is selected, then this block produces the value of the input from the previous time step."
+        },
+        {
+          "block": "Multiphase Clock",
+          "ref": "dspsrcs4/Multiphase Clock",
+          "since": "R2023a+",
+          "intent": "Generate multiple phase-shifted clock/enable signals — use to sequence multirate or multiphase logic."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-operations",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "signal-operations",
+      "hash": "412266654ae92b683773c8fbf7d2852ac70ebc72291e9acf62f05d2695c52a2e",
+      "fm": {
+        "title": "Signal operations",
+        "description": "Delays, resampling, and up/down-conversion (21 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "signal operations",
+          "delay",
+          "downsample",
+          "down-converter",
+          "up-converter",
+          "dc blocker",
+          "phase extractor",
+          "smoother"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Constant Ramp",
+          "ref": "dspsigops/Constant Ramp",
+          "since": "R2023a+",
+          "intent": "Generate a ramp of length L, where L is the length of the input signal in the dimension specified by the 'Ramp length equals number of' parameter. The output of this block is calculated using output = [0:L-1] * slope + offset"
+        },
+        {
+          "block": "Convolution",
+          "ref": "dspsigops/Convolution",
+          "since": "R2023a+",
+          "intent": "Convolve two inputs in the time or frequency domain. To allow the block to compute the convolution in the domain that minimizes the number of computations, set the 'Computation domain' parameter to 'Fastest'. To minimize memory usage, set the 'Computation domain' parameter to 'Time'."
+        },
+        {
+          "block": "DC Blocker",
+          "ref": "dspsigops/DC Blocker",
+          "since": "R2023a+",
+          "intent": "Remove the DC component of a signal with a high-pass filter — use to eliminate DC offset."
+        },
+        {
+          "block": "Delay",
+          "ref": "dspsigops/Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a fixed number of samples — use for timing alignment or transport delay."
+        },
+        {
+          "block": "Digital Down-Converter",
+          "ref": "dspsigops/Digital Down-Converter",
+          "since": "R2023a+",
+          "intent": "Mix to baseband, filter, and decimate a passband signal — use to extract a channel to complex baseband."
+        },
+        {
+          "block": "Digital Up-Converter",
+          "ref": "dspsigops/Digital Up-Converter",
+          "since": "R2023a+",
+          "intent": "Interpolate, filter, and mix a baseband signal up to a carrier — use to place a channel at a target frequency."
+        },
+        {
+          "block": "Downsample",
+          "ref": "dspsigops/Downsample",
+          "since": "R2023a+",
+          "intent": "Keep every Nth sample to reduce the sample rate — use for decimation without filtering."
+        },
+        {
+          "block": "Interpolation",
+          "ref": "dspsigops/Interpolation",
+          "since": "R2023a+",
+          "intent": "Interpolate values between real-valued samples in one or more input vectors using linear or FIR interpolation."
+        },
+        {
+          "block": "Pad",
+          "ref": "dspsigops/Pad",
+          "since": "R2023a+",
+          "intent": "Append or prepend a constant value to the input along the specified dimensions. Truncation occurs when the specified output dimensions are shorter than the corresponding input dimensions."
+        },
+        {
+          "block": "Parameter Smoother",
+          "ref": "dspsigops/Parameter Smoother",
+          "since": "R2024a+",
+          "intent": "Smooth abrupt parameter changes with a one-pole ramp — use to avoid clicks or discontinuities when tuning parameters."
+        },
+        {
+          "block": "Peak Finder",
+          "ref": "dspsigops/Peak Finder",
+          "since": "R2023a+",
+          "intent": "Output the number of extrema (maxima and minima) in an input signal."
+        },
+        {
+          "block": "Phase Extractor",
+          "ref": "dspsigops/Phase Extractor",
+          "since": "R2023a+",
+          "intent": "Extract the unwrapped phase of a complex signal — use for phase or instantaneous-frequency analysis."
+        },
+        {
+          "block": "Repeat",
+          "ref": "dspsigops/Repeat",
+          "since": "R2023a+",
+          "intent": "Repeat input samples L times."
+        },
+        {
+          "block": "Truncate",
+          "ref": "dspsigops/Truncate",
+          "since": "R2026a+",
+          "intent": "Truncates input vectors by removing or keeping beginning or ending values. The resulting vectors are either truncated again or zero-padded to the specified output length."
+        },
+        {
+          "block": "Unwrap",
+          "ref": "dspsigops/Unwrap",
+          "since": "R2023a+",
+          "intent": "Add or subtract multiples of 2pi to each input element to remove phase discontinuities (unwrap). The input units are radians."
+        },
+        {
+          "block": "Upsample",
+          "ref": "dspsigops/Upsample",
+          "since": "R2023a+",
+          "intent": "Upsample by inserting L-1 zeros between input samples."
+        },
+        {
+          "block": "Variable Fractional Delay",
+          "ref": "dspsigops/Variable Fractional Delay",
+          "since": "R2023a+",
+          "intent": "Delay discrete-time input by the time-varying fractional number of sample periods specified by the 'Delay' input. The input delay is clipped to a valid range (Dmin to Dmax) that is determined by the parameter settings. The block provides Linear, FIR, and Farrow interpolation modes. In FIR mode, the filter is designed using the 'firnyquist' function when Bandwidth value is 1, and 'intfilt' function from the Signal Processing Toolbox when Bandwidth is smaller than 1."
+        },
+        {
+          "block": "Variable Integer Delay",
+          "ref": "dspsigops/Variable Integer Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a runtime-variable integer number of samples — use for adjustable time alignment."
+        },
+        {
+          "block": "Window Function",
+          "ref": "dspsigops/Window Function",
+          "since": "R2023a+",
+          "intent": "Generate a window function and/or apply a window function to an input signal."
+        },
+        {
+          "block": "Zero Crossing",
+          "ref": "dspsigops/Zero Crossing",
+          "since": "R2023a+",
+          "intent": "Counts the number of zero crossings in a signal."
+        },
+        {
+          "block": "Discrete  Impulse",
+          "ref": "dspsrcs4/Discrete  Impulse",
+          "since": "R2023a+",
+          "intent": "Output a discrete unit impulse. The impulse will be offset by the number of samples in the Delay parameter."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sinks",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "sinks",
+      "hash": "e8193ee80b4c66ebb7aeb6c9f37cb129c7e9af741d08ad01e0a01aaf4f304467",
+      "fm": {
+        "title": "Sinks",
+        "description": "Visualization, logging, and network output (19 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "sinks",
+          "scope",
+          "array plot",
+          "display",
+          "workspace",
+          "spectrum",
+          "file writer",
+          "udp send",
+          "multimedia"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Burg Method",
+          "ref": "dspspect3/Burg Method",
+          "since": "R2023a+",
+          "intent": "Power spectral density estimation via Burg's method."
+        },
+        {
+          "block": "Covariance Method",
+          "ref": "dspspect3/Covariance Method",
+          "since": "R2023a+",
+          "intent": "Power spectral density estimation via the covariance method."
+        },
+        {
+          "block": "Cross-Spectrum Estimator",
+          "ref": "dspspect3/Cross-Spectrum Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate cross-power spectrum density."
+        },
+        {
+          "block": "Discrete Transfer Function Estimator",
+          "ref": "dspspect3/Discrete Transfer Function Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate frequency-domain transfer function."
+        },
+        {
+          "block": "Modified Covariance Method",
+          "ref": "dspspect3/Modified Covariance Method",
+          "since": "R2023a+",
+          "intent": "Power spectral density estimation via the modified covariance method."
+        },
+        {
+          "block": "Periodogram",
+          "ref": "dspspect3/Periodogram",
+          "since": "R2023a+",
+          "intent": "Power spectral density and mean-square power spectrum estimation via the periodogram method and Welch's averaged, modified periodogram method."
+        },
+        {
+          "block": "Spectrum Estimator",
+          "ref": "dspspect3/Spectrum Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate power spectrum"
+        },
+        {
+          "block": "Yule-Walker Method",
+          "ref": "dspspect3/Yule-Walker Method",
+          "since": "R2023a+",
+          "intent": "Power spectral density estimation via Yule-Walker's method."
+        },
+        {
+          "block": "Array Plot",
+          "ref": "dspsnks4/Array Plot",
+          "since": "R2023a+",
+          "intent": "Plot vector/array data such as spectra during simulation — use to visualize frame-based data."
+        },
+        {
+          "block": "Audio Device Writer",
+          "ref": "dspsnks4/Audio Device Writer",
+          "since": "R2023a+",
+          "intent": "Play audio stream from your computer's audio device."
+        },
+        {
+          "block": "Binary File Writer",
+          "ref": "dspsnks4/Binary File Writer",
+          "since": "R2023a+",
+          "intent": "Write signal samples to a raw binary file — use to record data for offline use."
+        },
+        {
+          "block": "Display",
+          "ref": "dspsnks4/Display",
+          "since": "R2023a+",
+          "intent": "Show the current numeric value of a signal — use for quick inspection."
+        },
+        {
+          "block": "Spectrum Analyzer",
+          "ref": "dspsnks4/Spectrum Analyzer",
+          "since": "R2023a+",
+          "intent": "Display the frequency spectrum of a signal during simulation — use to inspect spectral content."
+        },
+        {
+          "block": "Time Scope",
+          "ref": "dspsnks4/Time Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals against time during simulation — use to view waveforms."
+        },
+        {
+          "block": "To Multimedia File",
+          "ref": "dspsnks4/To Multimedia File",
+          "since": "R2023a+",
+          "intent": "Write audio and/or video samples to a media file — use to record processed media."
+        },
+        {
+          "block": "To Workspace",
+          "ref": "dspsnks4/To Workspace",
+          "since": "R2023a+",
+          "intent": "Log a signal to a MATLAB workspace variable — use to capture results for post-processing."
+        },
+        {
+          "block": "UDP Send",
+          "ref": "dspsnks4/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send signal data over UDP to a network host — use to stream data to another application."
+        },
+        {
+          "block": "Filter Visualizer",
+          "ref": "dspsnks4/Filter Visualizer",
+          "since": "R2023a+",
+          "intent": "Display magnitude and phase response of FIR and IIR Filters."
+        },
+        {
+          "block": "Triggered To Workspace",
+          "ref": "dspsnks4/Triggered To Workspace",
+          "since": "R2023a+",
+          "intent": "Write input to specified variable in the workspace when trigger is received."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "sources",
+      "hash": "3f384ab4ea228a6b8780a8e6fae92858b122dc4fc793d6c217b7f35a105c416d",
+      "fm": {
+        "title": "Sources",
+        "description": "Signal, noise, and network input sources (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "sources",
+          "constant",
+          "noise",
+          "nco",
+          "random",
+          "file reader",
+          "udp receive",
+          "multimedia",
+          "enable"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "N-Sample Enable",
+          "ref": "dspswit3/N-Sample Enable",
+          "since": "R2023a+",
+          "intent": "Emit an enable that becomes true after N samples — use to trigger logic after a startup delay."
+        },
+        {
+          "block": "NCO",
+          "ref": "dspsigops/NCO",
+          "since": "R2023a+",
+          "intent": "Numerically controlled oscillator generating sine/cosine from a phase accumulator — use as a tunable carrier or tone source."
+        },
+        {
+          "block": "Binary File Reader",
+          "ref": "dspsrcs4/Binary File Reader",
+          "since": "R2023a+",
+          "intent": "Read samples from a raw binary file as a source — use to play back recorded data."
+        },
+        {
+          "block": "Chirp",
+          "ref": "dspsrcs4/Chirp",
+          "since": "R2023a+",
+          "intent": "Linear, Logarithmic, and Quadratic modes generate a swept-frequency cosine with instantaneous frequency values specified by the frequency and time parameters. The Swept cosine mode generates a swept-frequency cosine with a linear instantaneous output frequency that may differ from the one specified by the frequency and time parameters."
+        },
+        {
+          "block": "Colored Noise",
+          "ref": "dspsrcs4/Colored Noise",
+          "since": "R2023a+",
+          "intent": "Generate colored noise (pink, brown, …) with a specified spectral slope — use as a test stimulus."
+        },
+        {
+          "block": "Constant",
+          "ref": "dspsrcs4/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters, thresholds, or test inputs."
+        },
+        {
+          "block": "From Multimedia File",
+          "ref": "dspsrcs4/From Multimedia File",
+          "since": "R2023a+",
+          "intent": "Read audio and/or video from a media file as a source — use to feed recorded media into a processing chain."
+        },
+        {
+          "block": "N-Sample Enable",
+          "ref": "dspsrcs4/N-Sample Enable",
+          "since": "R2023a+",
+          "intent": "Emit an enable that becomes true after N samples — use to trigger logic after a startup delay."
+        },
+        {
+          "block": "NCO",
+          "ref": "dspsrcs4/NCO",
+          "since": "R2023a+",
+          "intent": "Numerically controlled oscillator generating sine/cosine from a phase accumulator — use as a tunable carrier or tone source."
+        },
+        {
+          "block": "Random Source",
+          "ref": "dspsrcs4/Random Source",
+          "since": "R2023a+",
+          "intent": "Generate random samples (uniform or Gaussian) with set statistics — use as a noise or test source."
+        },
+        {
+          "block": "Sine Wave",
+          "ref": "dspsrcs4/Sine Wave",
+          "since": "R2023a+",
+          "intent": "Output samples of a sinusoid. To generate more than one sinusoid simultaneously, enter a vector of values for the Amplitude, Frequency, and Phase offset parameters."
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "dspsrcs4/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive signal data over UDP from the network — use to stream data in from another application."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "statistics",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "statistics",
+      "hash": "302e891cf2cf7161aa224e310413bc4da18ffe9e37de5c6d61e534f3c3fc6b49",
+      "fm": {
+        "title": "Statistics",
+        "description": "Moving statistics and power measurement (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "statistics",
+          "moving",
+          "power meter",
+          "median"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Autocorrelation",
+          "ref": "dspstat3/Autocorrelation",
+          "since": "R2023a+",
+          "intent": "Compute the autocorrelation along the first dimension of an N-D input array."
+        },
+        {
+          "block": "Correlation",
+          "ref": "dspstat3/Correlation",
+          "since": "R2023a+",
+          "intent": "Correlate two inputs in the time or frequency domain. To allow the block to compute the correlation in the domain that minimizes the number of computations, set the 'Computation domain' parameter to 'Fastest'. To minimize memory usage, set the 'Computation domain' parameter to 'Time'."
+        },
+        {
+          "block": "Histogram",
+          "ref": "dspstat3/Histogram",
+          "since": "R2023a+",
+          "intent": "Generate a histogram of the elements in the specified dimension of the input or across time (running histogram)."
+        },
+        {
+          "block": "Maximum",
+          "ref": "dspstat3/Maximum",
+          "since": "R2023a+",
+          "intent": "Compute the maximum value along the specified dimension of the input or across time (running maximum)."
+        },
+        {
+          "block": "Mean",
+          "ref": "dspstat3/Mean",
+          "since": "R2023a+",
+          "intent": "Compute the mean value along the specified dimension of the input or across time (running mean)."
+        },
+        {
+          "block": "Minimum",
+          "ref": "dspstat3/Minimum",
+          "since": "R2023a+",
+          "intent": "Compute the minimum value along the specified dimension of the input or across time (running minimum)."
+        },
+        {
+          "block": "Moving Average",
+          "ref": "dspstat3/Moving Average",
+          "since": "R2023a+",
+          "intent": "Compute a moving (sliding-window or exponential) average — use for smoothing or trend extraction."
+        },
+        {
+          "block": "Moving Maximum",
+          "ref": "dspstat3/Moving Maximum",
+          "since": "R2023a+",
+          "intent": "Compute the moving maximum over a sliding window — use for peak tracking."
+        },
+        {
+          "block": "Moving Minimum",
+          "ref": "dspstat3/Moving Minimum",
+          "since": "R2023a+",
+          "intent": "Compute the moving minimum over a sliding window — use for trough tracking."
+        },
+        {
+          "block": "Moving RMS",
+          "ref": "dspstat3/Moving RMS",
+          "since": "R2023a+",
+          "intent": "Compute the moving root-mean-square over a window — use to track signal energy or level."
+        },
+        {
+          "block": "Moving Standard Deviation",
+          "ref": "dspstat3/Moving Standard Deviation",
+          "since": "R2023a+",
+          "intent": "Compute the moving standard deviation over a window — use to track signal variability."
+        },
+        {
+          "block": "Moving Variance",
+          "ref": "dspstat3/Moving Variance",
+          "since": "R2023a+",
+          "intent": "Compute the moving variance over a window — use to track signal spread."
+        },
+        {
+          "block": "Power Meter",
+          "ref": "dspstat3/Power Meter",
+          "since": "R2023a+",
+          "intent": "Measure the average and peak power of a signal — use to monitor signal levels."
+        },
+        {
+          "block": "RMS",
+          "ref": "dspstat3/RMS",
+          "since": "R2023a+",
+          "intent": "Compute the root-mean-square (RMS) along the specified dimension of the input or across time (running RMS)."
+        },
+        {
+          "block": "Standard Deviation",
+          "ref": "dspstat3/Standard Deviation",
+          "since": "R2023a+",
+          "intent": "Compute the standard deviation along the specified dimension of the input or across time (running standard deviation)."
+        },
+        {
+          "block": "Variance",
+          "ref": "dspstat3/Variance",
+          "since": "R2023a+",
+          "intent": "Compute the variance along the specified dimension of the input or across time (running variance)."
+        },
+        {
+          "block": "Detrend",
+          "ref": "dspstat3/Detrend",
+          "since": "R2023a+",
+          "intent": "Remove linear trend from vector input."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "transforms",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox",
+      "kbFolder": "dsp-system-toolbox",
+      "category": "transforms",
+      "hash": "adb98cd770374b368a952da3d469253cec0aa702afe743fa136314374ab1fdfd",
+      "fm": {
+        "title": "Transforms",
+        "description": "FFT and wavelet transforms (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox",
+          "transforms",
+          "fft",
+          "dwt",
+          "idwt",
+          "wavelet"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Magnitude FFT",
+          "ref": "dspspect3/Magnitude FFT",
+          "since": "R2023a+",
+          "intent": "Compute the magnitude (or magnitude-squared) FFT of a frame — use for spectrum or periodogram estimation."
+        },
+        {
+          "block": "Wavelet Scattering",
+          "ref": "dspfeatures/Wavelet Scattering",
+          "since": "R2023a+",
+          "intent": "Perform wavelet scattering. A Wavelet Toolbox license is required."
+        },
+        {
+          "block": "DCT",
+          "ref": "dspxfrm3/DCT",
+          "since": "R2023a+",
+          "intent": "Compute the discrete cosine transform (DCT) across the first dimension of the input. The first dimension of the input must have a power-of-two length."
+        },
+        {
+          "block": "DWT",
+          "ref": "dspxfrm3/DWT",
+          "since": "R2023a+",
+          "intent": "Compute the discrete wavelet transform via a dyadic analysis filter bank — use for multiresolution/wavelet analysis."
+        },
+        {
+          "block": "FFT",
+          "ref": "dspxfrm3/FFT",
+          "since": "R2023a+",
+          "intent": "Compute the fast Fourier transform (FFT) across the first dimension of the input. When you set the 'FFT implementation' parameter to 'Radix-2', the FFT length must be a power of two."
+        },
+        {
+          "block": "IDCT",
+          "ref": "dspxfrm3/IDCT",
+          "since": "R2023a+",
+          "intent": "Compute the inverse discrete cosine transform (IDCT) across the first dimension of the input. The first dimension of the input must have a power-of-two length."
+        },
+        {
+          "block": "IDWT",
+          "ref": "dspxfrm3/IDWT",
+          "since": "R2023a+",
+          "intent": "Reconstruct a signal from wavelet coefficients via a synthesis filter bank — use to invert the DWT."
+        },
+        {
+          "block": "IFFT",
+          "ref": "dspxfrm3/IFFT",
+          "since": "R2023a+",
+          "intent": "Compute the inverse fast Fourier transform (IFFT) across the first dimension of the input. When you set the 'FFT implementation' parameter to 'Radix-2', the FFT length must be a power of two."
+        },
+        {
+          "block": "Magnitude FFT",
+          "ref": "dspxfrm3/Magnitude FFT",
+          "since": "R2023a+",
+          "intent": "Compute the magnitude (or magnitude-squared) FFT of a frame — use for spectrum or periodogram estimation."
+        },
+        {
+          "block": "Zoom FFT",
+          "ref": "dspxfrm3/Zoom FFT",
+          "since": "R2023a+",
+          "intent": "Compute a high-resolution FFT over a narrow band — use to zoom into a frequency region of interest."
+        },
+        {
+          "block": "Analytic Signal",
+          "ref": "dspxfrm3/Analytic Signal",
+          "since": "R2023a+",
+          "intent": "Complex analytic signal of input."
+        },
+        {
+          "block": "Complex Cepstrum",
+          "ref": "dspxfrm3/Complex Cepstrum",
+          "since": "R2023a+",
+          "intent": "Complex cepstrum of input signal. Input is modified to remove possible phase discontinuity at +/- pi radians."
+        },
+        {
+          "block": "Inverse  Short-Time FFT",
+          "ref": "dspxfrm3/Inverse  Short-Time FFT",
+          "since": "R2023a+",
+          "intent": "Reconstructs a signal from its Short-Time FFT (STFFT) by using the OLA method. The block takes as an input the analysis window w[n] used in the generation of the STFFT to normalize the output signal. Optionally, the block asserts if the analysis window does not satisfy constraints that permit perfect reconstruction of the signal."
+        },
+        {
+          "block": "Real Cepstrum",
+          "ref": "dspxfrm3/Real Cepstrum",
+          "since": "R2023a+",
+          "intent": "Real cepstrum of input signal."
+        },
+        {
+          "block": "Short-Time FFT",
+          "ref": "dspxfrm3/Short-Time FFT",
+          "since": "R2023a+",
+          "intent": "Output the Short-Time FFT of the input signal x[n]. Uses an externally specified analysis window w[n]."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:17",
+  "generatedAtDatenum": 740309.99534585653
 }

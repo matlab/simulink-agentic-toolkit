@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Memory interfaces
-description: Shared memory, DMA, registers, and interrupt channels between FPGA and processor
-tags: [memory, DDR, DMA, register, interrupt, AXI4]
+description: "Shared memory, DMA, registers, and interrupt channels between FPGA and processor (8 blocks)"
+tags: [toolbox-kb, soc-blockset, memory, DDR, DMA, register, interrupt, AXI4]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Memory interfaces
+sources:
+  - resource: matlab:socmemlib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: memory-interfaces
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Memory interfaces
-
-Use these blocks for memory interfaces.
 
 ## Recommended Blocks
 

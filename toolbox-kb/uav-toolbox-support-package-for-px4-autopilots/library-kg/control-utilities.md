@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Control utilities
-description: Control commands, parameters, and logging
-tags: [thrust, torque, parameter, log, timestamp]
+description: "Control commands, parameters, and logging (7 blocks)"
+tags: [toolbox-kb, uav-toolbox-support-package-for-px4-autopilots, thrust, torque, parameter, log, timestamp]
 status: stable
-source: mathworks_toolbox
-library_root: UAV Toolbox Support Package for PX4 Autopilots
-category_path: Control utilities
+sources:
+  - resource: matlab:px4Peripheralslib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox Support Package for PX4 Autopilots
+kb_folder: uav-toolbox-support-package-for-px4-autopilots
+category: control-utilities
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Control utilities
-
-Use these blocks for control utilities.
 
 ## Recommended Blocks
 

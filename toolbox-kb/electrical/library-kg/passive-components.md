@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Passive components
-description: Resistors, capacitors, inductors, transformers, cables, and loads
-tags: [resistor, capacitor, inductor, transformer, cable]
+description: "Resistors, capacitors, inductors, transformers, cables, and loads (54 blocks)"
+tags: [toolbox-kb, electrical, resistor, capacitor, inductor, transformer, cable]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Passive components
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: passive-components
 block_count: 54
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Passive components
-
-Use these blocks for passive components.
 
 ## Recommended Blocks
 

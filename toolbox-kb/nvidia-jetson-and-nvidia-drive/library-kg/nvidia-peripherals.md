@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Nvidia peripherals
-description: NVIDIA Jetson and DRIVE hardware peripheral access
-tags: [nvidia, jetson, drive, gpu, embedded]
+description: NVIDIA Jetson and DRIVE hardware peripheral access (6 blocks)
+tags: [toolbox-kb, nvidia-jetson-and-nvidia-drive, nvidia, jetson, drive, gpu, embedded]
 status: stable
-source: mathworks_toolbox
-library_root: NVIDIA Jetson and NVIDIA DRIVE
-category_path: Nvidia peripherals
+sources:
+  - resource: matlab:nvidialib
+source: toolbox_kb
+managed_by: satk
+library: NVIDIA Jetson and NVIDIA DRIVE
+kb_folder: nvidia-jetson-and-nvidia-drive
+category: nvidia-peripherals
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Nvidia peripherals
-
-Use these blocks for nvidia peripherals.
 
 ## Recommended Blocks
 

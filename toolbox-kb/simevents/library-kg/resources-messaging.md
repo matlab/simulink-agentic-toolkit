@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Resources messaging
-description: Shared resource management and messaging
-tags: [resource, pool, acquire, message, release]
+description: Shared resource management and messaging (7 blocks)
+tags: [toolbox-kb, simevents, resource, pool, acquire, message, release]
 status: stable
-source: mathworks_toolbox
-library_root: SimEvents
-category_path: Resources messaging
+sources:
+  - resource: matlab:sldelib
+source: toolbox_kb
+managed_by: satk
+library: SimEvents
+kb_folder: simevents
+category: resources-messaging
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Resources messaging
-
-Use these blocks for resources messaging.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Coordinate transforms and animation helpers
-tags: [utilities, coordinate transformation, animation]
+description: Coordinate transforms and animation helpers (2 blocks)
+tags: [toolbox-kb, uav-toolbox, utilities, coordinate transformation, animation]
 status: stable
-source: custom_library
-library_root: UAV Toolbox
-category_path: Utilities
+sources:
+  - resource: matlab:uavutilslib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox
+kb_folder: uav-toolbox
+category: utilities
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

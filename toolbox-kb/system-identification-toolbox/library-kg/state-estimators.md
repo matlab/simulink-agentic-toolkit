@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: State estimators
-description: Online recursive state and parameter estimation from noisy measurements
-tags: [kalman, filter, estimator, particle, recursive least squares, estimation]
-status: stable
-source: custom_library
-library_root: System Identification Toolbox
-category_path: State estimators
+description: Online recursive state and parameter estimation from noisy measurements (7 blocks)
+tags: [toolbox-kb, system-identification-toolbox, kalman, filter, estimator, particle, recursive least squares, estimation]
+status: draft
+sources:
+  - resource: matlab:slident
+source: toolbox_kb
+managed_by: satk
+library: System Identification Toolbox
+kb_folder: system-identification-toolbox
+category: state-estimators
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # State estimators
-
-Use these blocks for state estimators.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Xcp
-description: XCP measurement and calibration protocol
-tags: [xcp, calibration, measurement, acquisition, stimulation]
+description: XCP measurement and calibration protocol (12 blocks)
+tags: [toolbox-kb, vehicle-network-toolbox, xcp, calibration, measurement, acquisition, stimulation]
 status: stable
-source: mathworks_toolbox
-library_root: Vehicle Network Toolbox
-category_path: Xcp
+sources:
+  - resource: matlab:vntxcplib
+source: toolbox_kb
+managed_by: satk
+library: Vehicle Network Toolbox
+kb_folder: vehicle-network-toolbox
+category: xcp
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Xcp
-
-Use these blocks for xcp.
 
 ## Recommended Blocks
 

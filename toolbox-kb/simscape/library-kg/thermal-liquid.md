@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Thermal liquid
-description: Thermal liquid elements accounting for heat transfer in a liquid
-tags: [thermal liquid]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Thermal liquid
+description: Thermal liquid elements accounting for heat transfer in a liquid (13 blocks)
+tags: [toolbox-kb, simscape, thermal liquid]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: thermal-liquid
 block_count: 13
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Thermal liquid
-
-Use these blocks for thermal liquid.
 
 ## Recommended Blocks
 

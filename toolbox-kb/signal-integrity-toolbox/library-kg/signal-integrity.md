@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal integrity
-description: High-speed serial link signal quality measurements
-tags: [eye, jitter, signal, integrity, measurement]
+description: High-speed serial link signal quality measurements (2 blocks)
+tags: [toolbox-kb, signal-integrity-toolbox, eye, jitter, signal, integrity, measurement]
 status: stable
-source: mathworks_toolbox
-library_root: Signal Integrity Toolbox
-category_path: Signal integrity
+sources:
+  - resource: matlab:siUtilities
+source: toolbox_kb
+managed_by: satk
+library: Signal Integrity Toolbox
+kb_folder: signal-integrity-toolbox
+category: signal-integrity
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Signal integrity
-
-Use these blocks for signal integrity.
 
 ## Recommended Blocks
 

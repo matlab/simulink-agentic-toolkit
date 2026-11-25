@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Can fd
-description: CAN FD high-bandwidth communication
-tags: [canfd, flexible, 64byte, bandwidth, fd]
+description: CAN FD high-bandwidth communication (7 blocks)
+tags: [toolbox-kb, vehicle-network-toolbox, canfd, flexible, "64byte", bandwidth, fd]
 status: stable
-source: mathworks_toolbox
-library_root: Vehicle Network Toolbox
-category_path: Can fd
+sources:
+  - resource: matlab:canfdlib
+source: toolbox_kb
+managed_by: satk
+library: Vehicle Network Toolbox
+kb_folder: vehicle-network-toolbox
+category: can-fd
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Can fd
-
-Use these blocks for can fd.
 
 ## Recommended Blocks
 

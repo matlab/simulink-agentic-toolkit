@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Normalization layers
-description: Batch, instance, and layer normalization for training stability
-tags: [normalization, batch, instance, layer, norm]
+description: "Batch, instance, and layer normalization for training stability (3 blocks)"
+tags: [toolbox-kb, deep-learning-toolbox, normalization, batch, instance, layer, norm]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Normalization layers
+sources:
+  - resource: matlab:dlnormalizationlib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: normalization-layers
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Normalization layers
-
-Use these blocks for normalization layers.
 
 ## Recommended Blocks
 

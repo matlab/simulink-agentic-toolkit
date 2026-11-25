@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Linear system solvers
-description: HDL-optimized linear system solvers using QR
-tags: [solve, system, burst, partial-systolic, systolic, forgetting]
+description: HDL-optimized linear system solvers using QR (15 blocks)
+tags: [toolbox-kb, fixed-point-designer-hdl-support, solve, system, burst, partial-systolic, systolic, forgetting]
 status: stable
-source: mathworks_toolbox
-library_root: Fixed-Point Designer HDL Support
-category_path: Linear system solvers
+sources:
+  - resource: matlab:embeddedMatrixLib
+source: toolbox_kb
+managed_by: satk
+library: Fixed-Point Designer HDL Support
+kb_folder: fixed-point-designer-hdl-support
+category: linear-system-solvers
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Linear system solvers
-
-Use these blocks for linear system solvers.
 
 ## Recommended Blocks
 

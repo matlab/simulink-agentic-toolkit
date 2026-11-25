@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Filtering
-description: Spatial filtering and noise reduction on images
-tags: [filter, median, blur, smoothing]
-status: stable
-source: custom_library
-library_root: Computer Vision Toolbox
-category_path: Filtering
+description: Spatial filtering and noise reduction on images (9 blocks)
+tags: [toolbox-kb, computer-vision-toolbox, filter, median, blur, smoothing]
+status: draft
+sources:
+  - resource: matlab:visionanalysis
+source: toolbox_kb
+managed_by: satk
+library: Computer Vision Toolbox
+kb_folder: computer-vision-toolbox
+category: filtering
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Filtering
-
-Use these blocks for filtering.
 
 ## Recommended Blocks
 

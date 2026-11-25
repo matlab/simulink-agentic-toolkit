@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensor target models
-description: Sensor and target specification models
-tags: [birth, clutter, measurement, survival, detectability]
+description: Sensor and target specification models (8 blocks)
+tags: [toolbox-kb, sensor-fusion-and-tracking-toolbox, birth, clutter, measurement, survival, detectability]
 status: stable
-source: mathworks_toolbox
-library_root: Sensor Fusion and Tracking Toolbox
-category_path: Sensor target models
+sources:
+  - resource: matlab:sensorspecslib
+source: toolbox_kb
+managed_by: satk
+library: Sensor Fusion and Tracking Toolbox
+kb_folder: sensor-fusion-and-tracking-toolbox
+category: sensor-target-models
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Sensor target models
-
-Use these blocks for sensor target models.
 
 ## Recommended Blocks
 

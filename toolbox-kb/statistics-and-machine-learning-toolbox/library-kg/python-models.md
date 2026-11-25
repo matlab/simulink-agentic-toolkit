@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Python models
-description: Run inference from externally trained Python ML models
-tags: [python, custom python, onnx]
-status: stable
-source: custom_library
-library_root: Statistics and Machine Learning Toolbox
-category_path: Python models
+description: Run inference from externally trained Python ML models (2 blocks)
+tags: [toolbox-kb, statistics-and-machine-learning-toolbox, python, custom python, onnx]
+status: draft
+sources:
+  - resource: matlab:statsPycoex
+source: toolbox_kb
+managed_by: satk
+library: Statistics and Machine Learning Toolbox
+kb_folder: statistics-and-machine-learning-toolbox
+category: python-models
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Python models
-
-Use these blocks for python models.
 
 ## Recommended Blocks
 

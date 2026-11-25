@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Test harness internals
-description: Primitive elements that implement the Test Sequence and Test Assessment blocks; not normally placed on their own.
-tags: [test-sequence, test-assessment, stimulus, assessment, internal]
+description: Primitive elements that implement the Test Sequence and Test Assessment blocks; not normally placed on their own (8 blocks)
+tags: [toolbox-kb, simulink-test, test-sequence, test-assessment, stimulus, assessment, internal]
 status: stable
-source: custom_library
-library_root: Simulink Test
-category_path: Test harness internals
+sources:
+  - resource: matlab:sltestlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Test
+kb_folder: simulink-test
+category: test-harness-internals
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Test harness internals
-
-Use these blocks for test harness internals.
 
 ## Recommended Blocks
 

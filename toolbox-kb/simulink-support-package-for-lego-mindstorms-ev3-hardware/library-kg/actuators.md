@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Actuators
-description: Motor and mechanical output control
-tags: [motor, encoder, actuator, speed, position]
+description: Motor and mechanical output control (2 blocks)
+tags: [toolbox-kb, simulink-support-package-for-lego-mindstorms-ev3-hardware, motor, encoder, actuator, speed, position]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
-category_path: Actuators
+sources:
+  - resource: matlab:legoev3lib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
+kb_folder: simulink-support-package-for-lego-mindstorms-ev3-hardware
+category: actuators
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Actuators
-
-Use these blocks for actuators.
 
 ## Recommended Blocks
 

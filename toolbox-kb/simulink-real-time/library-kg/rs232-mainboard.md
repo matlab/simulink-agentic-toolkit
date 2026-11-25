@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Rs232 mainboard
-description: Blocks for rs232 mainboard.
+description: Blocks for Rs232 mainboard (7 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Rs232 mainboard
+sources:
+  - resource: matlab:slrealtimeseriallib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: rs232-mainboard
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Rs232 mainboard
-
-Use these blocks for rs232 mainboard.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Entity management
-description: Entity creation, storage, batching, and termination
-tags: [generator, queue, server, store, batch]
+description: "Entity creation, storage, batching, and termination (12 blocks)"
+tags: [toolbox-kb, simevents, generator, queue, server, store, batch]
 status: stable
-source: mathworks_toolbox
-library_root: SimEvents
-category_path: Entity management
+sources:
+  - resource: matlab:sldelib
+source: toolbox_kb
+managed_by: satk
+library: SimEvents
+kb_folder: simevents
+category: entity-management
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Entity management
-
-Use these blocks for entity management.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Deep learning
-description: Neural-network audio processing blocks
-tags: [deep learning, crepe, vggish, yamnet]
-status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: Deep learning
+description: Neural-network audio processing blocks (13 blocks)
+tags: [toolbox-kb, audio-toolbox, deep learning, crepe, vggish, yamnet]
+status: draft
+sources:
+  - resource: matlab:audioai
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: deep-learning
 block_count: 13
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Deep learning
-
-Use these blocks for deep learning.
 
 ## Recommended Blocks
 

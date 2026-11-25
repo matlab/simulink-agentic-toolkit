@@ -1,15 +1,1355 @@
 {
-  "generatedAt": "2026-09-29T16:38:06",
-  "generatedAtDatenum": 740254.6931310764,
-  "generatorVersion": 4,
-  "libraries": [
-    "Communications Toolbox"
-  ],
-  "blockCount": 172,
-  "categoryCount": 13,
-  "libraryFingerprints": {
-    "Communications_Toolbox": {
-      "blockCount": 172
+  "pages": [
+    {
+      "id": "channels",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "channels",
+      "hash": "60f0d8c84b1902d041c40daee2ce6656f12d0d20f2c15c8d44cbff72b35523b7",
+      "fm": {
+        "title": "Channels",
+        "description": "Channel models: noise, fading, and channel response (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "channels",
+          "awgn",
+          "fading",
+          "symmetric channel",
+          "channel response"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "AWGN Channel",
+          "ref": "commchan3/AWGN Channel",
+          "since": "R2023a+",
+          "intent": "Add additive white Gaussian noise at a specified SNR/Eb-No to a baseband signal — use to model a noisy channel for BER testing."
+        },
+        {
+          "block": "Binary Symmetric Channel",
+          "ref": "commchan3/Binary Symmetric Channel",
+          "since": "R2023a+",
+          "intent": "Flip input bits with a specified probability — use to model a simple binary channel for coding studies."
+        },
+        {
+          "block": "MIMO Fading Channel",
+          "ref": "commchan3/MIMO Fading Channel",
+          "since": "R2023a+",
+          "intent": "Model a multi-antenna (MIMO) fading channel with spatial correlation and Doppler — use to test spatial-multiplexing and diversity links."
+        },
+        {
+          "block": "OFDM Channel Response",
+          "ref": "commchan3/OFDM Channel Response",
+          "since": "R2023a+",
+          "intent": "Compute the frequency response of a channel across OFDM subcarriers — use to visualize or equalize per-subcarrier channel effects."
+        },
+        {
+          "block": "SISO Fading Channel",
+          "ref": "commchan3/SISO Fading Channel",
+          "since": "R2023a+",
+          "intent": "Model a single-antenna Rayleigh/Rician fading channel with Doppler — use to test link robustness to multipath fading."
+        },
+        {
+          "block": "MIMO Fading Channel",
+          "ref": "commmimo/MIMO Fading Channel",
+          "since": "R2023a+",
+          "intent": "Model a multi-antenna (MIMO) fading channel with spatial correlation and Doppler — use to test spatial-multiplexing and diversity links."
+        },
+        {
+          "block": "Differential Decoder",
+          "ref": "commsrccod2/Differential Decoder",
+          "since": "R2023a+",
+          "intent": "Differentially decode the input data. This block treats columns as channels. The output of this block is the logical difference between the consecutive input elements."
+        },
+        {
+          "block": "Differential Encoder",
+          "ref": "commsrccod2/Differential Encoder",
+          "since": "R2023a+",
+          "intent": "Differentially encode the input data. This block treats columns as channels. The output of this block is the logical difference between the current input element and the previous output element."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "comm-filters",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "comm-filters",
+      "hash": "0a3f4e0656390936f300c34250bbe7f811911bef9db22d09f5f48a3ed93be82d",
+      "fm": {
+        "title": "Comm filters",
+        "description": "Pulse-shaping, DC removal, and filter libraries (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "comm filters",
+          "dc blocker",
+          "filter designs",
+          "multirate filters"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "DC Blocker",
+          "ref": "commfilt2/DC Blocker",
+          "since": "R2023a+",
+          "intent": "Remove the DC (zero-frequency) component of a signal with a high-pass filter — use to eliminate DC offset before demodulation."
+        },
+        {
+          "block": "Ideal Rectangular Pulse Filter",
+          "ref": "commfilt2/Ideal Rectangular Pulse Filter",
+          "since": "R2023a+",
+          "intent": "Upsample the input signal using ideal rectangular pulses."
+        },
+        {
+          "block": "Integrate and Dump",
+          "ref": "commfilt2/Integrate and Dump",
+          "since": "R2023a+",
+          "intent": "Integrate over the number of samples in the integration period and reset at the end of the integration. Offset samples are ignored during the first integration period."
+        },
+        {
+          "block": "Filter Designs Library Link",
+          "ref": "commfilt2/Filter Designs Library Link",
+          "since": "R2023a+",
+          "intent": "Link to the library of prebuilt communications filter designs — use to browse and insert standard comm filters."
+        },
+        {
+          "block": "Multirate Filters Library Link",
+          "ref": "commfilt2/Multirate Filters Library Link",
+          "since": "R2023a+",
+          "intent": "Link to the library of prebuilt multirate filter designs — use to browse and insert interpolation/decimation filters."
+        },
+        {
+          "block": "Raised Cosine Receive Filter",
+          "ref": "commfilt2/Raised Cosine Receive Filter",
+          "since": "R2023a+",
+          "intent": "Filter the input, and, if selected, downsample, using a normal or square root raised cosine FIR filter."
+        },
+        {
+          "block": "Raised Cosine Transmit Filter",
+          "ref": "commfilt2/Raised Cosine Transmit Filter",
+          "since": "R2023a+",
+          "intent": "Upsample and filter the input signal using a normal or square root raised cosine FIR filter."
+        },
+        {
+          "block": "Windowed Integrator",
+          "ref": "commfilt2/Windowed Integrator",
+          "since": "R2023a+",
+          "intent": "Integrate a discrete input signal over the sliding window of size equal to the integration period."
+        },
+        {
+          "block": "DC Blocker",
+          "ref": "commrfcorlib/DC Blocker",
+          "since": "R2023a+",
+          "intent": "Remove the DC (zero-frequency) component of a signal with a high-pass filter — use to eliminate DC offset before demodulation."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "comm-sinks",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "comm-sinks",
+      "hash": "5ada60f1e6ba807c71ca75f666970987afdb2ae6b277d3e19d122ae63f71577b",
+      "fm": {
+        "title": "Comm sinks",
+        "description": "Visualization and IQ capture (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "comm sinks",
+          "constellation",
+          "eye diagram",
+          "baseband file writer"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Baseband File Writer",
+          "ref": "commsink2/Baseband File Writer",
+          "since": "R2023a+",
+          "intent": "Write complex baseband (IQ) samples with metadata to a file — use to capture recordings for later playback or analysis."
+        },
+        {
+          "block": "Constellation Diagram",
+          "ref": "commsink2/Constellation Diagram",
+          "since": "R2023a+",
+          "intent": "Plot received symbols on an IQ constellation — use to visualize modulation quality and channel impairments."
+        },
+        {
+          "block": "Error Rate Calculation",
+          "ref": "commsink2/Error Rate Calculation",
+          "since": "R2023a+",
+          "intent": "Compute the error rate of the received data by comparing it to a delayed version of the transmitted data. The block output is a three-element vector consisting of the error rate, followed by the number of errors detected and the total number of symbols compared. This vector can be sent to either the workspace or an output port. The delays are specified in number of samples, regardless of whether the input is a scalar or a vector. The inputs to the 'Tx' and 'Rx' ports must be scalars or column vectors. The 'Stop simulation' option stops the simulation upon detecting a target number of errors or a maximum number of symbols, whichever comes first."
+        },
+        {
+          "block": "Eye Diagram",
+          "ref": "commsink2/Eye Diagram",
+          "since": "R2023a+",
+          "intent": "Overlay signal traces into an eye diagram — use to assess inter-symbol interference, jitter, and timing margin."
+        },
+        {
+          "block": "MLSE Equalizer",
+          "ref": "commeq3/MLSE Equalizer",
+          "since": "R2023a+",
+          "intent": "Equalize a linearly modulated signal through a dispersive channel using the Viterbi algorithm. The block estimates the transmitted sequence from the received signal and the channel estimates, and then outputs complex constellation points at the symbol rate."
+        },
+        {
+          "block": "General TCM Decoder",
+          "ref": "commdigbbndtcm2/General TCM Decoder",
+          "since": "R2023a+",
+          "intent": "Use the Viterbi algorithm to decode trellis-coded modulation data, mapped using the Signal constellation parameter that expects complex constellation points in the set-partitioned order. The Trellis structure parameter must be a valid MATLAB trellis structure. To check if a structure is a valid trellis structure, use the istrellis function in MATLAB."
+        },
+        {
+          "block": "General TCM Encoder",
+          "ref": "commdigbbndtcm2/General TCM Encoder",
+          "since": "R2023a+",
+          "intent": "Convolutionally encode binary data and perform signal mapping using the Signal constellation parameter, which expects complex constellation points in the set-partitioned order. The Trellis structure parameter must be a valid MATLAB trellis structure. To check if a structure is a valid trellis structure, use the istrellis function in MATLAB."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "comm-sources",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "comm-sources",
+      "hash": "e138ef574349b840b184c39dfb32edc58a1820fa65cb30e18a878484de0be971",
+      "fm": {
+        "title": "Comm sources",
+        "description": "Random data and spreading-sequence generators (24 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "comm sources",
+          "generator",
+          "bernoulli",
+          "poisson",
+          "barker",
+          "hadamard",
+          "ovsf",
+          "walsh",
+          "baseband file reader"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Baseband File Reader",
+          "ref": "commsource2/Baseband File Reader",
+          "since": "R2023a+",
+          "intent": "Read complex baseband (IQ) samples from a file as a source — use to play back recorded data into a receiver chain."
+        },
+        {
+          "block": "Bernoulli Binary Generator",
+          "ref": "commrandsrc3/Bernoulli Binary Generator",
+          "since": "R2023a+",
+          "intent": "Generate random binary data with a Bernoulli distribution — use as a test bit source for links."
+        },
+        {
+          "block": "Poisson Integer Generator",
+          "ref": "commrandsrc3/Poisson Integer Generator",
+          "since": "R2023a+",
+          "intent": "Generate random integers with a Poisson distribution — use as a stochastic integer source for traffic/arrival models."
+        },
+        {
+          "block": "Random Integer Generator",
+          "ref": "commrandsrc3/Random Integer Generator",
+          "since": "R2023a+",
+          "intent": "Generate uniformly-distributed random integers in a range — use as a symbol or test source."
+        },
+        {
+          "block": "Barker Code Generator",
+          "ref": "commseqgen3/Barker Code Generator",
+          "since": "R2023a+",
+          "intent": "Generate a Barker sequence with low autocorrelation sidelobes — use for frame synchronization and preambles."
+        },
+        {
+          "block": "Hadamard Code Generator",
+          "ref": "commseqgen3/Hadamard Code Generator",
+          "since": "R2023a+",
+          "intent": "Generate a row of a Hadamard matrix as an orthogonal spreading code — use for CDMA channelization."
+        },
+        {
+          "block": "Kasami Sequence Generator",
+          "ref": "commseqgen3/Kasami Sequence Generator",
+          "since": "R2023a+",
+          "intent": "Generate a Kasami sequence from the set of Kasami sequences by specifying the generator polynomial. The generator polynomial parameter value represents the shift register connections. Enter these values as either a polynomial string, a binary vector or a descending ordered polynomial to indicate the connection points. The sequence index parameter denotes the single sequence outputted from the set of Kasami sequences. Specify it as a 2-element integer vector for the Large set of sequences or as a scalar integer for the Small set of sequences. For variable-size output signals, the current output size is either specified from the 'oSiz' input or inherited from the 'Ref' input."
+        },
+        {
+          "block": "OVSF Code Generator",
+          "ref": "commseqgen3/OVSF Code Generator",
+          "since": "R2023a+",
+          "intent": "Generate an orthogonal variable-spreading-factor code — use for CDMA channelization with mixed data rates."
+        },
+        {
+          "block": "PN Sequence Generator",
+          "ref": "commseqgen3/PN Sequence Generator",
+          "since": "R2023a+",
+          "intent": "Generate a pseudorandom noise (PN) sequence using a linear feedback shift register (LFSR). The LFSR is implemented using a simple shift register generator (SSRG, or Fibonacci) configuration. The 'Generator polynomial' parameter values specify the shift register connections. Enter these values as either a polynomial string, a binary vector, or a descending-ordered polynomial. For the binary vector representation, the first and last elements of the vector must be 1. For the descending-ordered polynomial representation, the last element of the vector must be 0. The 'Output mask source' may be from a dialog parameter or an input port. The 'Output mask vector' is a binary vector corresponding to the shift register states that are to be XORed to produce the output sequence values. Alternatively, you may enter an integer 'scalar shift value' to produce an equivalent advance or delay in the output sequence. For variable-size output signals, the current output size is either specified from the 'oSiz' input or inherited from the 'Ref' input."
+        },
+        {
+          "block": "Walsh Code Generator",
+          "ref": "commseqgen3/Walsh Code Generator",
+          "since": "R2023a+",
+          "intent": "Generate a Walsh code (ordered Hadamard row) — use as an orthogonal spreading/channelization code."
+        },
+        {
+          "block": "Gold Sequence Generator",
+          "ref": "commseqgen3/Gold Sequence Generator",
+          "since": "R2023a+",
+          "intent": "Generate a Gold sequence from a set of sequences by specifying a preferred pair of polynomials. The polynomial parameter values represent the shift register connections. Enter these values as either a polynomial string, a binary vector or a descending ordered polynomial to indicate the connection points. The sequence index parameter denotes the single sequence outputted from the set of Gold sequences. Specify it as a scalar integer in the range [-2, 2^n-2] where n is the degree of the generator polynomial. The index values -2 and -1 correspond to the first and second PN sequences as generated by the preferred polynomials (1) and (2), respectively. For variable-size output signals, the current output size is either specified from the 'oSiz' input or inherited from the 'Ref' input."
+        },
+        {
+          "block": "BCH Decoder",
+          "ref": "commblkcod2/BCH Decoder",
+          "since": "R2023a+",
+          "intent": "Decode the message in the input vector using an (N,K) BCH decoder with the narrow-sense generator polynomial. This block accepts a column vector input signal with an integer multiple of N elements. Each group of N input elements represents one codeword to be decoded. The values of N and K must produce a valid narrow-sense BCH code. Shorten the code by setting the shortened message length parameter S. In this case, use full length N and K values to specify the (N, K) code that is shortened to an (N - K + S, S) code."
+        },
+        {
+          "block": "BCH Encoder",
+          "ref": "commblkcod2/BCH Encoder",
+          "since": "R2023a+",
+          "intent": "Encode the message in the input vector using an (N,K) BCH encoder with the narrow-sense generator polynomial. This block accepts a column vector input signal with an integer multiple of K elements. Each group of K input elements represents one message word to be encoded. The values of N and K must produce a valid narrow-sense BCH code. Shorten the code by setting the shortened message length parameter S. In this case, use full length N and K values to specify the (N, K) code that is shortened to an (N - K + S, S) code."
+        },
+        {
+          "block": "Integer-Input RS Encoder",
+          "ref": "commblkcod2/Integer-Input RS Encoder",
+          "since": "R2023a+",
+          "intent": "Encode the message in the input vector using an (N,K) Reed-Solomon encoder with the narrow-sense generator polynomial. This block accepts a column vector input signal with an integer multiple of K elements. Each group of K input elements represents one message word to be encoded. Each symbol must have ceil(log2(N+1)) bits. Shorten the code by setting the shortened message length parameter S. In this case, use full length N and K values to specify the (N, K) code that is shortened to an (N - K + S, S) code."
+        },
+        {
+          "block": "Integer-Output RS Decoder",
+          "ref": "commblkcod2/Integer-Output RS Decoder",
+          "since": "R2023a+",
+          "intent": "Attempt to decode the input received signal using an (N,K) Reed-Solomon decoder with the narrow-sense generator polynomial. This block accepts a column vector input signal with an integer multiple of N elements. Each group of N input elements represents one received word to be decoded. Each symbol must have ceil(log2(N+1)) bits. Shorten the code by setting the shortened message length parameter S. In this case, use full length N and K values to specify the (N, K) code that is shortened to an (N - K + S, S) code."
+        },
+        {
+          "block": "Binary Linear Decoder",
+          "ref": "commblkcod2/Binary Linear Decoder",
+          "since": "R2023a+",
+          "intent": "Recover a binary message vector from a binary codeword vector of a linear block code. The message is of length K and the codeword is of length N, where K and N are the number of rows and columns of the generator matrix respectively. The decoder assumes that the encoder's generator matrix has the standard systematic form [P I]. In other words, the input codewords must contain parity-check bits followed by message bits. The input must contain exactly N elements."
+        },
+        {
+          "block": "Binary Linear Encoder",
+          "ref": "commblkcod2/Binary Linear Encoder",
+          "since": "R2023a+",
+          "intent": "Create a binary linear block code with message length K and codeword length N, where K and N are the number of rows and columns of the generator matrix respectively. To use the Binary Linear Decoder block at the decoder side, provide a generator matrix in the standard systematic form [P I]. The input must contain exactly K elements."
+        },
+        {
+          "block": "Binary-Input RS Encoder",
+          "ref": "commblkcod2/Binary-Input RS Encoder",
+          "since": "R2023a+",
+          "intent": "Encode the message in the input vector using an (N,K) Reed-Solomon encoder with the narrow-sense generator polynomial. This block accepts a column vector input signal with an integer multiple of K*ceil(log2(N+1)) bits. Each group of K*ceil(log2(N+1)) input bits represents one message word to be encoded. Shorten the code by setting the shortened message length parameter S. In this case, use full length N and K values to specify the (N, K) code that is shortened to an (N - K + S, S) code."
+        },
+        {
+          "block": "Binary-Output RS Decoder",
+          "ref": "commblkcod2/Binary-Output RS Decoder",
+          "since": "R2023a+",
+          "intent": "Attempt to decode the input received signal using an (N,K) Reed-Solomon decoder with the narrow-sense generator polynomial. This block accepts a column vector input signal with an integer multiple of N*ceil(log2(N+1)) bits. Each group of N*ceil(log2(N+1)) input bits represents one received word to be decoded. Shorten the code by setting the shortened message length parameter S. In this case, use full length N and K values to specify the (N, K) code that is shortened to an (N - K + S, S) code."
+        },
+        {
+          "block": "General CRC Generator",
+          "ref": "commcrc2/General CRC Generator",
+          "since": "R2023a+",
+          "intent": "Generate CRC bits according to the generator polynomial parameter and append them to the input data frames. Specify the generator polynomial as either a string expressing the polynomial in algebraic form, a hexadecimal string, or as a binary or integer row vector with coefficients in descending order of powers. This block accepts a binary column vector input signal."
+        },
+        {
+          "block": "General CRC Syndrome Detector",
+          "ref": "commcrc2/General CRC Syndrome Detector",
+          "since": "R2023a+",
+          "intent": "Detect errors in the input data frames according to the generator polynomial parameter. Specify the generator polynomial as either a string expressing the polynomial in algebraic form, a hexadecimal string, or as a binary or integer row vector with coefficients in descending order of powers. The first output is the data frame with the CRC bits removed and the second output indicates if an error was detected in the data frame. This block accepts a binary column vector input signal."
+        },
+        {
+          "block": "APP Decoder",
+          "ref": "commcnvcod2/APP Decoder",
+          "since": "R2023a+",
+          "intent": "A posteriori probability (APP) decoder. Use the poly2trellis function to create a trellis using the constraint length, code generator (octal), and feedback connection (octal)."
+        },
+        {
+          "block": "Convolutional Encoder",
+          "ref": "commcnvcod2/Convolutional Encoder",
+          "since": "R2023a+",
+          "intent": "Convolutionally encode binary data. Use the poly2trellis function to create a trellis using the constraint length, code generator (octal) and feedback connection (octal). Select the \"Terminate trellis by appending bits\" operation mode to terminate the trellis at the all-zero state by appending tail bits at the end of each input frame. Check the Puncture code checkbox to puncture the encoded data for all other operation modes. Use the istrellis function in MATLAB to check if a structure is a valid trellis structure."
+        },
+        {
+          "block": "Viterbi Decoder",
+          "ref": "commcnvcod2/Viterbi Decoder",
+          "since": "R2023a+",
+          "intent": "Use the Viterbi algorithm to decode convolutionally encoded input data. Use the poly2trellis function to create a trellis using the constraint length, code generator (octal) and feedback connection (octal)."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "equalizers",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "equalizers",
+      "hash": "503f93d9fd2ffd178821fba8e77707272c037efe237a3378829eb1dc05adfb00",
+      "fm": {
+        "title": "Equalizers",
+        "description": "Adaptive and OFDM equalizers (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "equalizers",
+          "equalizer",
+          "decision feedback"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Decision Feedback Equalizer",
+          "ref": "commeq3/Decision Feedback Equalizer",
+          "since": "R2023a+",
+          "intent": "Equalize a dispersive channel using feedforward and decision-feedback taps — use to cancel post-cursor inter-symbol interference."
+        },
+        {
+          "block": "Linear Equalizer",
+          "ref": "commeq3/Linear Equalizer",
+          "since": "R2023a+",
+          "intent": "Equalize a channel with an adaptive linear FIR filter (LMS/RLS) — use to mitigate inter-symbol interference at the receiver."
+        },
+        {
+          "block": "OFDM Equalizer",
+          "ref": "commeq3/OFDM Equalizer",
+          "since": "R2023a+",
+          "intent": "Equalize per-subcarrier channel effects in an OFDM system — use after OFDM demodulation to correct channel distortion."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "error-correction",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "error-correction",
+      "hash": "d3371df633551990e6b9c544402f79ac68adde29c489cfe00521dc09d8cafcf2",
+      "fm": {
+        "title": "Error correction",
+        "description": "Turbo and turbo-product forward error correction (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "error detection and correction",
+          "tpc",
+          "turbo"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "LDPC Decoder",
+          "ref": "commblkcod2/LDPC Decoder",
+          "since": "R2023a+",
+          "intent": "Decode a binary low-density parity-check code using the message-passing algorithm. The parity-check matrix specifies the code. (N-K) and N are the number of rows and columns in the parity-check matrix. This block accepts a column vector input signal with N elements. Each element is the log-likelihood ratio for a received bit (more likely to be '0' if the log-likelihood ratio is positive). The first K elements correspond to the information part of a codeword."
+        },
+        {
+          "block": "TPC Decoder",
+          "ref": "commblkcod2/TPC Decoder",
+          "since": "R2023a+",
+          "intent": "Decode a turbo product code — use to correct errors on TPC-encoded blocks."
+        },
+        {
+          "block": "TPC Encoder",
+          "ref": "commblkcod2/TPC Encoder",
+          "since": "R2023a+",
+          "intent": "Encode data with a turbo product code — use to add strong block forward error correction."
+        },
+        {
+          "block": "Binary Cyclic Decoder",
+          "ref": "commblkcod2/Binary Cyclic Decoder",
+          "since": "R2023a+",
+          "intent": "Recover a message vector from a codeword vector of a binary systematic cyclic code. The message is of length K and the codeword is of length N. The input must contain exactly N elements."
+        },
+        {
+          "block": "Binary Cyclic Encoder",
+          "ref": "commblkcod2/Binary Cyclic Encoder",
+          "since": "R2023a+",
+          "intent": "Create a systematic cyclic code with message length K and codeword length N. The input must contain exactly K elements."
+        },
+        {
+          "block": "Hamming Decoder",
+          "ref": "commblkcod2/Hamming Decoder",
+          "since": "R2023a+",
+          "intent": "Recover a binary message vector from a binary Hamming codeword vector. The message is of length K and the codeword is of length N, where N has the form 2^M-1, for some integer M greater than or equal to 3. K must equal N-M. The input must contain exactly N elements."
+        },
+        {
+          "block": "Hamming Encoder",
+          "ref": "commblkcod2/Hamming Encoder",
+          "since": "R2023a+",
+          "intent": "Create a Hamming code with message length K and codeword length N. The number N must have the form 2^M-1, where M is an integer greater than or equal to 3. K must equal N-M. The input must contain exactly K elements."
+        },
+        {
+          "block": "LDPC Encoder",
+          "ref": "commblkcod2/LDPC Encoder",
+          "since": "R2023a+",
+          "intent": "Encode a message using a binary low-density parity-check code. The parity-check matrix specifies the code. (N-K) and N are the number of rows and columns in the parity-check matrix. This block accepts a column vector input signal with K elements. The output is a binary column vector with N elements. It is a solution to the parity-check equation, with the first K bits equal to the input. The last (N-K) columns of the parity-check matrix must form an invertible matrix in GF(2). If they form a triangular matrix, the parity-check equation will be solved by forward or backward substitution; otherwise, matrix inverse will be used (which may cause delays when updating or starting the model)."
+        },
+        {
+          "block": "Turbo Decoder",
+          "ref": "commcnvcod2/Turbo Decoder",
+          "since": "R2023a+",
+          "intent": "Iteratively decode a turbo (parallel-concatenated convolutional) code — use for near-capacity error correction at the receiver."
+        },
+        {
+          "block": "Turbo Encoder",
+          "ref": "commcnvcod2/Turbo Encoder",
+          "since": "R2023a+",
+          "intent": "Encode data with a turbo (parallel-concatenated convolutional) code — use for near-capacity forward error correction."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "interleaving-block",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "interleaving-block",
+      "hash": "e0d8e6fe3cef93dfcd977db971f9b5eff1dbb609a6a09e90590b0b6e6f33e6a2",
+      "fm": {
+        "title": "Interleaving block",
+        "description": "Blocks for Interleaving block (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "General Block Deinterleaver",
+          "ref": "commblkintrlv2/General Block Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Reorder the elements of the input vector. y(k) = u. The length of the permutation vector must match the input signal width."
+        },
+        {
+          "block": "General Block Interleaver",
+          "ref": "commblkintrlv2/General Block Interleaver",
+          "since": "R2023a+",
+          "intent": "Reorder the elements of the input vector. y = u(k). The length of the permutation vector must match the input signal width."
+        },
+        {
+          "block": "Algebraic Deinterleaver",
+          "ref": "commblkintrlv2/Algebraic Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Deinterleave the elements of the input vector using an algebraically derived permutation table. For the Takeshita-Costello type interleaver, the Number of elements N must be a power of 2, the Multiplicative factor must be an odd integer less than N, and the Cyclic shift must be a nonnegative integer less than N. For the Welch-Costas type interleaver, the Number of elements N must be specified such that N+1 is prime and the Primitive element must be a primitive element from GF(N+1). In each case, the Number of elements must match the input signal width."
+        },
+        {
+          "block": "Algebraic Interleaver",
+          "ref": "commblkintrlv2/Algebraic Interleaver",
+          "since": "R2023a+",
+          "intent": "Interleave the elements of the input vector using an algebraically derived permutation table. For the Takeshita-Costello type interleaver, the Number of elements N must be a power of 2, the Multiplicative factor must be an odd integer less than N, and the Cyclic shift must be a nonnegative integer less than N. For the Welch-Costas type interleaver, the Number of elements N must be specified such that N+1 is prime and the Primitive element must be a primitive element from GF(N+1). In each case, the Number of elements must match the input signal width."
+        },
+        {
+          "block": "Matrix Deinterleaver",
+          "ref": "commblkintrlv2/Matrix Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Deinterleave the input vector by writing the elements into a matrix column-by-column and reading them out row-by-row. The product of Number of rows and Number of columns must match the input signal width."
+        },
+        {
+          "block": "Matrix Helical Scan Deinterleaver",
+          "ref": "commblkintrlv2/Matrix Helical Scan Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Restore the ordering of symbols permuted by a matching helical scan interleaver. The helical scan interleaver writes input elements row-by-row into an array with a specified number of rows and columns. The interleaver output is then read by scanning along diagonals of this array. The pitch of the diagonal scans is determined by the array step size. The array step size must be a nonnegative integer less than the specified number of rows. An array step size of zero indicates no interleaving. The product of Number of rows and Number of columns must match the input signal width."
+        },
+        {
+          "block": "Matrix Helical Scan Interleaver",
+          "ref": "commblkintrlv2/Matrix Helical Scan Interleaver",
+          "since": "R2023a+",
+          "intent": "Interleave input vector by writing elements row-by-row into an array with a specified number of rows and columns and then reading them out by scanning along diagonals of this array. The pitch of the diagonal scans is determined by the array step size. The array step size must be a nonnegative integer less than the specified number of rows. An array step size of zero indicates no interleaving. The product of Number of rows and Number of columns must match the input signal width."
+        },
+        {
+          "block": "Matrix Interleaver",
+          "ref": "commblkintrlv2/Matrix Interleaver",
+          "since": "R2023a+",
+          "intent": "Interleave the input vector by writing the elements into a matrix row-by-row and reading them out column-by-column. The product of Number of rows and Number of columns must match the input signal width."
+        },
+        {
+          "block": "Random Deinterleaver",
+          "ref": "commblkintrlv2/Random Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Deinterleave the elements of the input vector using a random permutation. The Number of elements must match the input signal width."
+        },
+        {
+          "block": "Random Interleaver",
+          "ref": "commblkintrlv2/Random Interleaver",
+          "since": "R2023a+",
+          "intent": "Interleave the elements of the input vector using a random permutation. The Number of elements must match the input signal width."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "interleaving-convolutional",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "interleaving-convolutional",
+      "hash": "b453465638a51b813982dc55e31bf845fba4764cc41614f69d3fac79f3257f19",
+      "fm": {
+        "title": "Interleaving convolutional",
+        "description": "Blocks for Interleaving convolutional (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "General Multiplexed Deinterleaver",
+          "ref": "commcnvintrlv2/General Multiplexed Deinterleaver",
+          "since": "R2023a+",
+          "intent": "A general multiplexed deinterleaver consists of N registers. With each new input symbol, a commutator switches to a new register and the new symbol is shifted in while the oldest symbol in that register is shifted out. When the commutator reaches the Nth register, upon the next new input, it returns to the first register. The multiplexed deinterleaver associated with a general multiplexed interleaver has the same number of registers as the interleaver. The delay in a particular deinterleaver register depends on the largest interleaver delay minus the interleaver delay for the given register."
+        },
+        {
+          "block": "General Multiplexed Interleaver",
+          "ref": "commcnvintrlv2/General Multiplexed Interleaver",
+          "since": "R2023a+",
+          "intent": "A general multiplexed interleaver consists of N registers, each with a specified delay. With each new input symbol, a commutator switches to a new register and the new symbol is shifted in while the oldest symbol in that register is shifted out. When the commutator reaches the Nth register, upon the next new input, it returns to the first register."
+        },
+        {
+          "block": "Convolutional Deinterleaver",
+          "ref": "commcnvintrlv2/Convolutional Deinterleaver",
+          "since": "R2023a+",
+          "intent": "A convolutional deinterleaver consists of N shift registers. The ith register has delay (N-i)*B where B is a specified register length step. With each new input symbol, a commutator switches to a new register and the new symbol is shifted in while the oldest symbol in that register is shifted out. When the commutator reaches the Nth register, upon the next new input, it returns to the first register."
+        },
+        {
+          "block": "Convolutional Interleaver",
+          "ref": "commcnvintrlv2/Convolutional Interleaver",
+          "since": "R2023a+",
+          "intent": "A convolutional interleaver consists of N shift registers. The ith register has delay (i-1)*B where B is a specified register length step. With each new input symbol, a commutator switches to a new register and the new symbol is shifted in while the oldest symbol in that register is shifted out. When the commutator reaches the Nth register, upon the next new input, it returns to the first register."
+        },
+        {
+          "block": "Helical Deinterleaver",
+          "ref": "commcnvintrlv2/Helical Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Restore the ordering of symbols input to a matching helical interleaver. The operation of a helical deinterleaver is defined by a helical array with C columns. The input to the helical deinterleaver must have width C*N. Received symbols are entered row-by-row into the helical array. The block processes the symbols in the helical array in groups of size N and assigns an index k to each group, beginning with k=1 at the start of the simulation. After a delay, the kth output group is read sequentially down column k mod C of the helical array and beginning in row 1+(k-1)*s, where s is the helical array step size. The helical array step size must be a nonnegative integer and the initial condition must be a scalar."
+        },
+        {
+          "block": "Helical Interleaver",
+          "ref": "commcnvintrlv2/Helical Interleaver",
+          "since": "R2023a+",
+          "intent": "Permute input vector using a helical array with C columns. The input to the helical interleaver must have width C*N. The block processes the input in groups of size N and assigns an index to each group, beginning with k=1 at the start of the simulation. The kth group of N symbols is entered sequentially down column k mod C of the helical array and beginning in row 1+(k-1)*s, where s is the helical array step size. The helical interleaver output is then read row-by-row from the helical array. The helical array step size must be a nonnegative integer and the initial condition must be a scalar."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "mimo",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "mimo",
+      "hash": "205ceba7e9d6363a652e1960c93ad549e60ba46ffc8e637faf88d27c4cf62ad5",
+      "fm": {
+        "title": "Mimo",
+        "description": "Multi-antenna detection (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "mimo",
+          "sphere decoder"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "OSTBC Combiner",
+          "ref": "commmimo/OSTBC Combiner",
+          "since": "R2023a+",
+          "intent": "Combine the received signal and channel estimate inputs in accordance with the structure of the orthogonal space-time block code (OSTBC). The OSTBC can be rate 1 for 2 transmit antennas, rate 1/2 or 3/4 for 3 and 4 transmit antennas. For one receive antenna, the received signal input must be a column vector or a full 2-D matrix. Correspondingly, the channel estimate input must be a full 2-D matrix or 3-D array. For more than one receive antenna, the received signal input must be a full 2-D matrix or 3-D array. Correspondingly, the channel estimate input must be a 3-D or 4-D array."
+        },
+        {
+          "block": "OSTBC Encoder",
+          "ref": "commmimo/OSTBC Encoder",
+          "since": "R2023a+",
+          "intent": "Encode the input message using an orthogonal space-time block code (OSTBC). The OSTBC can be rate 1 for 2 transmit antennas, rate 1/2 or 3/4 for 3 and 4 transmit antennas. The input must be a column vector of length N or a full 2-D matrix with N columns. For a full matrix input, the rows are encoded independently by the encoder. N must be a multiple of 2 if the OSTBC is for 2 transmit antennas or has rate 1/2, and a multiple of 3 if the OSTBC has rate 3/4."
+        },
+        {
+          "block": "Sphere Decoder",
+          "ref": "commmimo/Sphere Decoder",
+          "since": "R2023a+",
+          "intent": "Perform maximum-likelihood MIMO detection via sphere decoding — use to recover spatially-multiplexed symbols with near-ML performance."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "modulation",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "modulation",
+      "hash": "f35f051ca610321718ccbcfa4189e88c81665c20a9bd2a6f52e805df48e8728f",
+      "fm": {
+        "title": "Modulation",
+        "description": "Analog and digital baseband modulators/demodulators (48 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "modulation",
+          "fm",
+          "apsk",
+          "ofdm",
+          "qam",
+          "psk",
+          "dbpsk"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "FM Demodulator Baseband ",
+          "ref": "commanabbnd3/FM Demodulator Baseband ",
+          "since": "R2023a+",
+          "intent": "Demodulate an FM baseband signal back to the message — use in analog FM receivers."
+        },
+        {
+          "block": "FM Modulator Baseband",
+          "ref": "commanabbnd3/FM Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Frequency-modulate a message onto a baseband carrier — use in analog FM transmitters."
+        },
+        {
+          "block": "FM Broadcast Demodulator Baseband",
+          "ref": "commanabbnd3/FM Broadcast Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate a broadcast-FM (stereo/RDS-capable) baseband signal — use for FM radio receiver models."
+        },
+        {
+          "block": "FM Broadcast Modulator Baseband",
+          "ref": "commanabbnd3/FM Broadcast Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate audio into a broadcast-FM baseband signal with stereo multiplexing — use for FM radio transmitter models."
+        },
+        {
+          "block": "DSB AM Demodulator Passband",
+          "ref": "commanapbnd3/DSB AM Demodulator Passband",
+          "since": "R2023a+",
+          "intent": "Demodulate a double-sideband amplitude modulated signal. The input signal must be a scalar."
+        },
+        {
+          "block": "DSB AM Modulator Passband",
+          "ref": "commanapbnd3/DSB AM Modulator Passband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the double-sideband amplitude modulation method. The input signal must be a scalar."
+        },
+        {
+          "block": "DSBSC AM Demodulator Passband",
+          "ref": "commanapbnd3/DSBSC AM Demodulator Passband",
+          "since": "R2023a+",
+          "intent": "Demodulate a double-sideband suppressed carrier amplitude modulated signal. The input signal must be a scalar."
+        },
+        {
+          "block": "DSBSC AM Modulator Passband",
+          "ref": "commanapbnd3/DSBSC AM Modulator Passband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the double-sideband suppressed carrier amplitude modulation method. The input signal must be a scalar."
+        },
+        {
+          "block": "FM Demodulator Passband",
+          "ref": "commanapbnd3/FM Demodulator Passband",
+          "since": "R2023a+",
+          "intent": "Demodulate a frequency modulated signal with a discriminator. The input signal must be a scalar."
+        },
+        {
+          "block": "FM Modulator Passband",
+          "ref": "commanapbnd3/FM Modulator Passband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the frequency modulation method. The input signal must be a scalar."
+        },
+        {
+          "block": "PM Demodulator Passband",
+          "ref": "commanapbnd3/PM Demodulator Passband",
+          "since": "R2023a+",
+          "intent": "Demodulate a phase modulated signal. The input signal must be a scalar."
+        },
+        {
+          "block": "PM Modulator Passband",
+          "ref": "commanapbnd3/PM Modulator Passband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the phase modulation method. The input signal must be a scalar."
+        },
+        {
+          "block": "SSB AM Demodulator Passband",
+          "ref": "commanapbnd3/SSB AM Demodulator Passband",
+          "since": "R2023a+",
+          "intent": "Demodulate a single-sideband amplitude modulated signal. The input signal must be a scalar."
+        },
+        {
+          "block": "SSB AM Modulator Passband",
+          "ref": "commanapbnd3/SSB AM Modulator Passband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the single-sideband amplitude modulation method with Hilbert transform filter. The input signal must be a scalar."
+        },
+        {
+          "block": "M-APSK Demodulator Baseband",
+          "ref": "commdigbbndapm/M-APSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate an M-ary amplitude-phase-shift-keying signal — use for APSK receivers such as DVB-S2."
+        },
+        {
+          "block": "M-APSK Modulator Baseband",
+          "ref": "commdigbbndapm/M-APSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Map bits to an M-ary amplitude-phase-shift-keying constellation — use for APSK transmitters such as DVB-S2."
+        },
+        {
+          "block": "CPM Demodulator Baseband",
+          "ref": "commdigbbndcpm2/CPM Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the CPM modulated input signal using the Viterbi algorithm. For the multirate processing option, this block accepts a scalar input signal. For the single-rate processing option, this block accepts a column vector input signal whose width is an integer multiple of the Samples per symbol parameter. The output signal can be either bits or integers. When you set the 'Output type' parameter to 'Bit', the output width is an integer multiple of the number of bits per symbol."
+        },
+        {
+          "block": "CPM Modulator Baseband",
+          "ref": "commdigbbndcpm2/CPM Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Output the complex envelope representation of the selected continuous phase modulation. The input signal can be either bits or integers. For the single-rate processing option with bit inputs, the input width must be an integer multiple of the number of bits per symbol. For the multirate processing option with bit inputs, the input width must equal the number of bits per symbol. For the single-rate processing option with integer inputs, this block accepts a scalar or column vector input signal. For the multirate processing option with integer inputs, this block accepts a scalar input signal."
+        },
+        {
+          "block": "CPFSK Demodulator Baseband",
+          "ref": "commdigbbndcpm2/CPFSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the CPFSK modulated input signal using the Viterbi algorithm."
+        },
+        {
+          "block": "CPFSK Modulator Baseband",
+          "ref": "commdigbbndcpm2/CPFSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the continuous phase frequency shift keying method."
+        },
+        {
+          "block": "GMSK Demodulator Baseband",
+          "ref": "commdigbbndcpm2/GMSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the GMSK modulated input signal using the Viterbi algorithm."
+        },
+        {
+          "block": "GMSK Modulator Baseband",
+          "ref": "commdigbbndcpm2/GMSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the Gaussian minimum shift keying method."
+        },
+        {
+          "block": "MSK Demodulator Baseband",
+          "ref": "commdigbbndcpm2/MSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the MSK modulated input signal using the Viterbi algorithm."
+        },
+        {
+          "block": "MSK Modulator Baseband",
+          "ref": "commdigbbndcpm2/MSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the minimum shift keying method."
+        },
+        {
+          "block": "M-FSK Demodulator Baseband",
+          "ref": "commdigbbndfm2/M-FSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the input signal using the frequency shift keying method. For the multirate processing option, this block accepts a scalar input signal. For the single-rate processing option, this block accepts a column vector input signal whose width is an integer multiple of the Samples per symbol parameter. The output signal can be either bits or integers. When you set the 'Output type' parameter to 'Bit', the output width is an integer multiple of the number of bits per symbol."
+        },
+        {
+          "block": "M-FSK Modulator Baseband",
+          "ref": "commdigbbndfm2/M-FSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the frequency shift keying method. The input signal can be either bits or integers. For the single-rate processing option with bit inputs, the input width must be an integer multiple of the number of bits per symbol. For the multirate processing option with bit inputs, the input width must equal the number of bits per symbol. For the single-rate processing option with integer inputs, this block accepts a scalar or column vector input signal. For the multirate processing option with integer inputs, this block accepts a scalar input signal."
+        },
+        {
+          "block": "OFDM Demodulator",
+          "ref": "commofdm/OFDM Demodulator",
+          "since": "R2023a+",
+          "intent": "Demodulate an OFDM signal back to subcarrier symbols (cyclic-prefix removal and FFT) — use in OFDM receivers."
+        },
+        {
+          "block": "OFDM Modulator",
+          "ref": "commofdm/OFDM Modulator",
+          "since": "R2023a+",
+          "intent": "Modulate subcarrier symbols into an OFDM waveform (IFFT and cyclic prefix) — use in OFDM transmitters."
+        },
+        {
+          "block": "BPSK Demodulator Baseband",
+          "ref": "commdigbbndpm3/BPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the input signal using the binary phase shift keying method."
+        },
+        {
+          "block": "BPSK Modulator Baseband",
+          "ref": "commdigbbndpm3/BPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the binary phase shift keying method."
+        },
+        {
+          "block": "DBPSK Demodulator Baseband",
+          "ref": "commdigbbndpm3/DBPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate a differential BPSK baseband signal — use when a carrier phase reference is unavailable."
+        },
+        {
+          "block": "M-DPSK Demodulator Baseband",
+          "ref": "commdigbbndpm3/M-DPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the input signal using the differential phase shift keying method. This block accepts a scalar or column vector input signal. When you set the 'Output type' parameter to 'Bit', the output width is an integer multiple of the number of bits per symbol."
+        },
+        {
+          "block": "M-DPSK Modulator Baseband",
+          "ref": "commdigbbndpm3/M-DPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the differential phase shift keying method. This block accepts a scalar or column vector input signal. The input signal can be either bits or integers. When you set the 'Input type' parameter to 'Bit', the input width must be an integer multiple of the number of bits per symbol."
+        },
+        {
+          "block": "M-PSK Demodulator Baseband",
+          "ref": "commdigbbndpm3/M-PSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the input signal using the phase shift keying method. This block accepts a scalar or column vector input signal. When you set the 'Output type' parameter to 'Integer', the block always performs Hard decision demodulation. When you set the 'Output type' parameter to 'Bit', the output width is an integer multiple of the number of bits per symbol. In this case, the 'Decision type' parameter allows you to select 'Hard decision' demodulation, 'Log-likelihood ratio' or 'Approximate log-likelihood ratio'. The output values for Log-likelihood ratio and Approximate log-likelihood ratio decision types are of the same data type as the input values."
+        },
+        {
+          "block": "M-PSK Modulator Baseband",
+          "ref": "commdigbbndpm3/M-PSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the phase shift keying method. This block accepts a scalar or column vector input signal. The input signal can be either bits or integers. When you set the 'Input type' parameter to 'Bit', the input width must be an integer multiple of the number of bits per symbol."
+        },
+        {
+          "block": "QPSK Demodulator Baseband",
+          "ref": "commdigbbndpm3/QPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the input signal using the quaternary phase shift keying method."
+        },
+        {
+          "block": "QPSK Modulator Baseband",
+          "ref": "commdigbbndpm3/QPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the quaternary phase shift keying method."
+        },
+        {
+          "block": "DBPSK Modulator Baseband",
+          "ref": "commdigbbndpm3/DBPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the differential binary phase shift keying method."
+        },
+        {
+          "block": "DQPSK Demodulator Baseband",
+          "ref": "commdigbbndpm3/DQPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate the input signal using the differential quaternary phase shift keying method."
+        },
+        {
+          "block": "DQPSK Modulator Baseband",
+          "ref": "commdigbbndpm3/DQPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Modulate the input signal using the differential quaternary phase shift keying method."
+        },
+        {
+          "block": "OQPSK Demodulator Baseband",
+          "ref": "commdigbbndpm3/OQPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Jointly match filter and demodulate signals using the offset quadrature shift keying (OQPSK) method. Pulse shape options for the filter are: half sine, normal raised cosine, root raised cosine and custom. Specify the symbol mapping as Gray, Binary or as a custom value. Specify the output type as bit or integer. Also, a custom phase offset can be specified."
+        },
+        {
+          "block": "OQPSK Modulator Baseband",
+          "ref": "commdigbbndpm3/OQPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Jointly modulate and pulse shape signals using the offset quadrature shift keying (OQPSK) method and customizable filtering. Pulse shape options are: half sine, normal raised cosine, root raised cosine and custom. Specify the symbol mapping as Gray, Binary or as a custom value. Specify the input type as bit or integer. Also, a custom phase offset can be specified."
+        },
+        {
+          "block": "MIL-188 QAM Demodulator Baseband",
+          "ref": "commdigbbndstd/MIL-188 QAM Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate a MIL-STD-188-110 compliant QAM signal — use for military HF modem receivers."
+        },
+        {
+          "block": "MIL-188 QAM Modulator Baseband",
+          "ref": "commdigbbndstd/MIL-188 QAM Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Map bits to a MIL-STD-188-110 compliant QAM constellation — use for military HF modem transmitters."
+        },
+        {
+          "block": "M-PSK TCM Decoder",
+          "ref": "commdigbbndtcm2/M-PSK TCM Decoder",
+          "since": "R2023a+",
+          "intent": "Use the Viterbi algorithm to decode trellis-coded modulation data, modulated using the phase shift keying modulation method. The Trellis structure parameter must be a valid MATLAB trellis structure. To check if a structure is a valid trellis structure, use the istrellis function in MATLAB."
+        },
+        {
+          "block": "Rectangular QAM TCM Decoder",
+          "ref": "commdigbbndtcm2/Rectangular QAM TCM Decoder",
+          "since": "R2023a+",
+          "intent": "Use the Viterbi algorithm to decode trellis-coded modulation data, modulated using the quadrature amplitude modulation method. The Trellis structure parameter must be a valid MATLAB trellis structure. To check if a structure is a valid trellis structure, use the istrellis function in MATLAB."
+        },
+        {
+          "block": "M-PSK TCM Encoder",
+          "ref": "commdigbbndtcm2/M-PSK TCM Encoder",
+          "since": "R2023a+",
+          "intent": "Convolutionally encode binary data and modulate using the phase shift keying method. The Trellis structure parameter must be a valid MATLAB trellis structure. To check if a structure is a valid trellis structure, use the istrellis function in MATLAB."
+        },
+        {
+          "block": "Rectangular QAM TCM Encoder",
+          "ref": "commdigbbndtcm2/Rectangular QAM TCM Encoder",
+          "since": "R2023a+",
+          "intent": "Convolutionally encode binary data and modulate using the quadrature amplitude modulation method. The Trellis structure parameter must be a valid MATLAB trellis structure. To check if a structure is a valid trellis structure, use the istrellis function in MATLAB."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "rf-impairments",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "rf-impairments",
+      "hash": "abd65fd74466d75730a67599ee2bf48f4c801b72f7b90fa4a8e6a23c7f9591af",
+      "fm": {
+        "title": "Rf impairments",
+        "description": "RF impairment models and their correction (13 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "rf impairments",
+          "agc",
+          "dpd",
+          "nonlinearity",
+          "phase noise",
+          "thermal noise",
+          "imbalance",
+          "offset",
+          "coarse frequency"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "AGC",
+          "ref": "commrfcorlib/AGC",
+          "since": "R2023a+",
+          "intent": "Automatic gain control that normalizes signal amplitude — use to stabilize level before demodulation or synchronization."
+        },
+        {
+          "block": "DPD",
+          "ref": "commrfcorlib/DPD",
+          "since": "R2023a+",
+          "intent": "Apply digital predistortion to linearize a power amplifier — use to compensate PA nonlinearity in the transmitter."
+        },
+        {
+          "block": "DPD Coefficient Estimator",
+          "ref": "commrfcorlib/DPD Coefficient Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate digital-predistortion coefficients from PA input/output data — use to train the DPD block."
+        },
+        {
+          "block": "I/Q Imbalance Compensator",
+          "ref": "commrfcorlib/I/Q Imbalance Compensator",
+          "since": "R2023a+",
+          "intent": "Correct amplitude and phase imbalance between the I and Q branches — use to fix receiver IQ impairments."
+        },
+        {
+          "block": "Phase/ Frequency Offset",
+          "ref": "commrfcorlib/Phase/ Frequency Offset",
+          "since": "R2023a+",
+          "intent": "Apply or model a phase and/or frequency offset on a signal — use to inject or correct carrier offsets."
+        },
+        {
+          "block": "Memoryless Nonlinearity",
+          "ref": "commrflib2/Memoryless Nonlinearity",
+          "since": "R2023a+",
+          "intent": "Model a memoryless RF nonlinearity (AM/AM, AM/PM, compression) — use to distort a signal like a nonlinear power amplifier."
+        },
+        {
+          "block": "Phase Noise",
+          "ref": "commrflib2/Phase Noise",
+          "since": "R2023a+",
+          "intent": "Add phase noise with a specified spectral profile — use to model oscillator/local-oscillator impairments."
+        },
+        {
+          "block": "Phase/ Frequency Offset",
+          "ref": "commrflib2/Phase/ Frequency Offset",
+          "since": "R2023a+",
+          "intent": "Apply or model a phase and/or frequency offset on a signal — use to inject or correct carrier offsets."
+        },
+        {
+          "block": "Receiver Thermal Noise",
+          "ref": "commrflib2/Receiver Thermal Noise",
+          "since": "R2023a+",
+          "intent": "Add thermal noise based on noise figure or temperature — use to model receiver front-end noise."
+        },
+        {
+          "block": "Sample Rate Offset",
+          "ref": "commrflib2/Sample Rate Offset",
+          "since": "R2023a+",
+          "intent": "Apply a small sampling-clock rate offset — use to model timing-clock mismatch between transmitter and receiver."
+        },
+        {
+          "block": "Free Space Path Loss",
+          "ref": "commrflib2/Free Space Path Loss",
+          "since": "R2023a+",
+          "intent": "Reduce the amplitude of the input signal by the amount specified. You specify the loss directly using the 'Decibels' mode or indirectly using the 'Distance and Frequency' mode. The reciprocal of the loss is applied as a gain, e.g., a loss of +20 dB, which reduces the signal by a factor of 10, corresponds to a gain value of 0.1. This block accepts a scalar or column vector input signal."
+        },
+        {
+          "block": "Multiband Combiner",
+          "ref": "commrflib2/Multiband Combiner",
+          "since": "R2023a+",
+          "intent": "Combine baseband signals after shifting them to the desired frequency bands. Input signals are interpolated, if needed, to avoid distortion before shifting them per the frequency offsets parameter values. The interpolation factor is determined automatically or per the ratio of output sample rate to input sample rate."
+        },
+        {
+          "block": "Sample-Rate Match",
+          "ref": "commrflib2/Sample-Rate Match",
+          "since": "R2023a+",
+          "intent": "Upsample the input signals with different sample rates to a common output sample rate."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "synchronization",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "synchronization",
+      "hash": "7ce71b8635fbc9062cbe49837281ff25381ec413c45cb719b159b0521b6ce5c5",
+      "fm": {
+        "title": "Synchronization",
+        "description": "Carrier, symbol, and frame synchronization (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "synchronization",
+          "carrier synchronizer",
+          "symbol synchronizer",
+          "preamble"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Coarse Frequency Compensator",
+          "ref": "commrfcorlib/Coarse Frequency Compensator",
+          "since": "R2023a+",
+          "intent": "Estimate and remove a large carrier frequency offset — use as the first stage of carrier recovery."
+        },
+        {
+          "block": "Carrier Synchronizer",
+          "ref": "commsync2/Carrier Synchronizer",
+          "since": "R2023a+",
+          "intent": "Recover carrier phase and residual frequency offset — use to lock onto the carrier before symbol decisions."
+        },
+        {
+          "block": "Coarse Frequency Compensator",
+          "ref": "commsync2/Coarse Frequency Compensator",
+          "since": "R2023a+",
+          "intent": "Estimate and remove a large carrier frequency offset — use as the first stage of carrier recovery."
+        },
+        {
+          "block": "Preamble Detector",
+          "ref": "commsync2/Preamble Detector",
+          "since": "R2023a+",
+          "intent": "Detect a known preamble in a received stream and report its timing — use for frame synchronization."
+        },
+        {
+          "block": "Symbol Synchronizer",
+          "ref": "commsync2/Symbol Synchronizer",
+          "since": "R2023a+",
+          "intent": "Recover symbol timing and produce one sample per symbol — use for timing recovery at the receiver."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utility",
+      "kind": "toolbox",
+      "library": "Communications Toolbox",
+      "kbFolder": "communications-toolbox",
+      "category": "utility",
+      "hash": "390d954740843c59192367615b8567686a252ff38de8589d8b68e2880584c3e3",
+      "fm": {
+        "title": "Utility",
+        "description": "Conversions and measurement blocks (26 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox",
+          "utility blocks",
+          "converter",
+          "measurement",
+          "power meter",
+          "db conversion",
+          "sequence operations",
+          "source coding"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Deinterlacer",
+          "ref": "commsequence2/Deinterlacer",
+          "since": "R2023a+",
+          "intent": "Separate the elements of the input signal to generate the output signals. The odd-numbered elements of the input signal become the first output signal, while the even-numbered elements of the input signal become the second output signal. This block accepts an even length column vector input signal."
+        },
+        {
+          "block": "Derepeat",
+          "ref": "commsequence2/Derepeat",
+          "since": "R2023a+",
+          "intent": "Derepeat by an integer factor. The value of each output sample is the mean value of N consecutive input samples."
+        },
+        {
+          "block": "Descrambler",
+          "ref": "commsequence2/Descrambler",
+          "since": "R2023a+",
+          "intent": "Descramble the input data using a linear feedback shift register whose configuration you specify using the 'Scramble polynomial' parameter. This block accepts a scalar or column vector input signal."
+        },
+        {
+          "block": "Interlacer",
+          "ref": "commsequence2/Interlacer",
+          "since": "R2023a+",
+          "intent": "Combine the elements of the input signals to generate the output signal. The elements of the first input signal become the odd-numbered elements of the output signal, while the elements of the second input signal become the even-numbered elements of the output signal. Both input ports accept scalars or column vectors with the same number of elements."
+        },
+        {
+          "block": "Puncture",
+          "ref": "commsequence2/Puncture",
+          "since": "R2023a+",
+          "intent": "Output the elements which correspond to 1s in the binary Puncture vector. The length of the input must be an integer multiple of the length of the Puncture vector parameter. The block repeats the Puncture vector, when necessary, to output all input elements."
+        },
+        {
+          "block": "Repeat",
+          "ref": "commsequence2/Repeat",
+          "since": "R2023a+",
+          "intent": "Repeat each sample N times to increase the sample rate — use for zero-order-hold upsampling."
+        },
+        {
+          "block": "Scrambler",
+          "ref": "commsequence2/Scrambler",
+          "since": "R2023a+",
+          "intent": "Scramble the input data using a linear feedback shift register whose configuration you specify using the 'Scramble polynomial' parameter. This block accepts a scalar or column vector input signal."
+        },
+        {
+          "block": "A-Law Compressor",
+          "ref": "commsrccod2/A-Law Compressor",
+          "since": "R2023a+",
+          "intent": "Compress the input signal using A-law compression. This block processes each element independently."
+        },
+        {
+          "block": "A-Law Expander",
+          "ref": "commsrccod2/A-Law Expander",
+          "since": "R2023a+",
+          "intent": "Expand the signal using inverse A-law compression. This block processes each element independently."
+        },
+        {
+          "block": "Mu-Law Compressor",
+          "ref": "commsrccod2/Mu-Law Compressor",
+          "since": "R2023a+",
+          "intent": "Compress the input signal using mu-law compression. This block processes each element independently."
+        },
+        {
+          "block": "Mu-Law Expander",
+          "ref": "commsrccod2/Mu-Law Expander",
+          "since": "R2023a+",
+          "intent": "Expand the signal using inverse mu-law compression. This block processes each element independently."
+        },
+        {
+          "block": "Quantizers Library Link",
+          "ref": "commsrccod2/Quantizers Library Link",
+          "since": "R2023a+",
+          "intent": "Link to the library of source-coding quantizer blocks — use to browse and insert scalar/vector quantizers."
+        },
+        {
+          "block": "Quantizing Decoder",
+          "ref": "commsrccod2/Quantizing Decoder",
+          "since": "R2023a+",
+          "intent": "Decode the quantizer encoded index using a codebook. The input signal is the index from the Quantization codebook vector. The output signal is the quantized signal. The values for the quantized signal are taken from the Quantization codebook vector."
+        },
+        {
+          "block": "Quantizing Encoder",
+          "ref": "commsrccod2/Quantizing Encoder",
+          "since": "R2023a+",
+          "intent": "Quantize the input signal using a partition and a codebook. The input signal is quantized according to the Quantization partition vector and encoded according to the Quantization codebook vector. The first output is the index from the Quantization codebook vector. The second output is the quantized signal. The values for the quantized signal are taken from the Quantization codebook vector."
+        },
+        {
+          "block": "Bit to Integer Converter",
+          "ref": "commutil2/Bit to Integer Converter",
+          "since": "R2023a+",
+          "intent": "Group bits into integers of a specified word size — use to pack bits into symbols."
+        },
+        {
+          "block": "EVM Measurement",
+          "ref": "commutil2/EVM Measurement",
+          "since": "R2023a+",
+          "intent": "Measure error vector magnitude between received and reference symbols — use to quantify modulation accuracy."
+        },
+        {
+          "block": "Integer to Bit Converter",
+          "ref": "commutil2/Integer to Bit Converter",
+          "since": "R2023a+",
+          "intent": "Expand integers into their constituent bits — use to unpack symbols into a bit stream."
+        },
+        {
+          "block": "MER Measurement",
+          "ref": "commutil2/MER Measurement",
+          "since": "R2023a+",
+          "intent": "Measure the modulation error ratio of received symbols — use to assess signal quality (common in digital TV)."
+        },
+        {
+          "block": "Power Meter",
+          "ref": "commutil2/Power Meter",
+          "since": "R2023a+",
+          "intent": "Measure the average and peak power of a signal — use to monitor signal levels in a chain."
+        },
+        {
+          "block": "dB Conversion",
+          "ref": "commutil2/dB Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a linear quantity to decibels (or dBm) — use to express power or amplitude on a logarithmic scale."
+        },
+        {
+          "block": "Bipolar to Unipolar Converter",
+          "ref": "commutil2/Bipolar to Unipolar Converter",
+          "since": "R2023a+",
+          "intent": "Convert a bipolar signal into a unipolar signal in the range [0, M-1], where M is the M-ary number."
+        },
+        {
+          "block": "Complex Phase Difference",
+          "ref": "commutil2/Complex Phase Difference",
+          "since": "R2023a+",
+          "intent": "Output the phase difference between the two complex input signals. The range of the phase difference is from -pi to pi."
+        },
+        {
+          "block": "Complex Phase Shift",
+          "ref": "commutil2/Complex Phase Shift",
+          "since": "R2023a+",
+          "intent": "Shift the phase of the complex input signal by the \"Ph\" input value."
+        },
+        {
+          "block": "Data Mapper",
+          "ref": "commutil2/Data Mapper",
+          "since": "R2023a+",
+          "intent": "Map integer symbols from one coding scheme to another."
+        },
+        {
+          "block": "Find Delay",
+          "ref": "commutil2/Find Delay",
+          "since": "R2023a+",
+          "intent": "Find the delay between two signals sRef and sDel by finding the maximum of the cross-correlation function between them. The signal sDel should be delayed relative to sRef, or else the computed delay will be incorrect. The optional \"change signal\" output port emits an impulse at the time instant when the current computed delay changes from the previous computed delay."
+        },
+        {
+          "block": "Unipolar to Bipolar Converter",
+          "ref": "commutil2/Unipolar to Bipolar Converter",
+          "since": "R2023a+",
+          "intent": "Convert a unipolar signal in the range [0, M-1], where M is the M-ary number, into a bipolar signal."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:15",
+  "generatedAtDatenum": 740309.99532310187
 }

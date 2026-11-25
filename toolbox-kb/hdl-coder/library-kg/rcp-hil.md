@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Rcp hil
-description: State-space, PWM, and hardware-oriented blocks
-tags: [state-space, pwm, hil, sparse, combinatorial]
+description: "State-space, PWM, and hardware-oriented blocks (5 blocks)"
+tags: [toolbox-kb, hdl-coder, state-space, pwm, hil, sparse, combinatorial]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Rcp hil
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: rcp-hil
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Rcp hil
-
-Use these blocks for rcp hil.
 
 ## Recommended Blocks
 

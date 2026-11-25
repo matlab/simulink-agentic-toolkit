@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Hil
-description: Hardware-in-the-loop interfaces for BMS testing
-tags: [hil, interface, emulation, hardware, realtime]
+description: Hardware-in-the-loop interfaces for BMS testing (3 blocks)
+tags: [toolbox-kb, battery, hil, interface, emulation, hardware, realtime]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Hil
+sources:
+  - resource: matlab:batt_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: hil
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Hil
-
-Use these blocks for hil.
 
 ## Recommended Blocks
 

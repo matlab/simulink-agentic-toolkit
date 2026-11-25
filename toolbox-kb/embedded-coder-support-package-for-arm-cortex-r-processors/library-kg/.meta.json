@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74455912039,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for ARM Cortex-R Processors"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_ARM_Cortex_R_Processors": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "arm-cortex-r",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for ARM Cortex-R Processors",
+      "kbFolder": "embedded-coder-support-package-for-arm-cortex-r-processors",
+      "category": "arm-cortex-r",
+      "hash": "a20fc385291cd3102a6ba91a24cf0b9de5bed1a1455d5d5d1dde752c846474a7",
+      "fm": {
+        "title": "Arm cortex r",
+        "description": "Deployment blocks for ARM Cortex-R safety processors (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-arm-cortex-r-processors",
+          "arm",
+          "cortex-r",
+          "rm57",
+          "digital",
+          "gpio"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Digital Read",
+          "ref": "tirm57lxlib/Digital Read",
+          "since": "R2023a+",
+          "intent": "Read the state of a digital input pin on a TI RM57Lx ARM Cortex-R processor — use to sample GPIO pin state for discrete input signals"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "tirm57lxlib/Digital Write",
+          "since": "R2023a+",
+          "intent": "Set the state of a digital output pin on a TI RM57Lx ARM Cortex-R processor — use to control GPIO outputs for actuators or indicators"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:20",
+  "generatedAtDatenum": 740309.99537218746
 }

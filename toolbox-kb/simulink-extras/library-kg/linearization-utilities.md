@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Linearization utilities
-description: Blocks for linearization and steady-state detection
-tags: [linearization, derivative, transport, steady, fmu]
+description: Blocks for linearization and steady-state detection (3 blocks)
+tags: [toolbox-kb, simulink-extras, linearization, derivative, transport, steady, fmu]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Extras
-category_path: Linearization utilities
+sources:
+  - resource: matlab:simulink_extras
+source: toolbox_kb
+managed_by: satk
+library: Simulink Extras
+kb_folder: simulink-extras
+category: linearization-utilities
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Linearization utilities
-
-Use these blocks for linearization utilities.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Interrupts system
-description: Interrupt management, math co-processors, and system-level utilities
-tags: [interrupt, NVIC, CORDIC, system, event]
+description: "Interrupt management, math co-processors, and system-level utilities (22 blocks)"
+tags: [toolbox-kb, stm32-microcontroller-blockset, interrupt, NVIC, CORDIC, system, event]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Interrupts system
-block_count: 21
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: interrupts-system
+block_count: 22
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:57:31Z" }
 ---
 
 # Interrupts system
-
-Use these blocks for interrupts system.
 
 ## Recommended Blocks
 
@@ -34,6 +37,7 @@ Use these blocks for interrupts system.
 | Hardware Interrupt | stm32u5xxblockslib/Hardware Interrupt | R2026a+ | Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion |
 | CORDIC co-processor | stm32u5xxblockslib/CORDIC co-processor | R2026a+ | Accelerate trigonometric or hyperbolic math computations using dedicated hardware for real-time signal processing |
 | Hardware Interrupt | stm32wbxxblockslib/Hardware Interrupt | R2026a+ | Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion |
+|  Utilities | stm32lib/ Utilities | R2026a+ | Access utility functions and helper blocks for STM32 Discovery board configuration |
 | External Interrupt | stm32f7lib/External Interrupt | R2026a+ | Trigger execution based on an external GPIO pin edge event on an mbed-based STM32 board |
 | External Interrupt | stm32f769ilib/External Interrupt | R2026a+ | Trigger execution based on an external GPIO pin edge event on an mbed-based STM32 board |
 | STM32L475VG-Discovery (B-L475E-IOT01A) | stm32nucleodiscoboardslib/STM32L475VG-Discovery (B-L475E-IOT01A) | R2026a+ | Access onboard sensors and peripherals specific to the STM32L475VG IoT Discovery board |

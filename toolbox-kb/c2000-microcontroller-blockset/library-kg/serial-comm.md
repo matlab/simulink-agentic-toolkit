@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Serial comm
-description: SPI, I2C, SCI/UART, and host serial communication
-tags: [spi, i2c, sci, uart, serial]
+description: "SPI, I2C, SCI/UART, and host serial communication (164 blocks)"
+tags: [toolbox-kb, c2000-microcontroller-blockset, spi, i2c, sci, uart, serial]
 status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Serial comm
+sources:
+  - resource: matlab:c2802xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: serial-comm
 block_count: 164
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Serial comm
-
-Use these blocks for serial comm.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensorless estimators
-description: Rotor position and speed observers that eliminate the need for a physical position sensor
-tags: [sensorless, observer, flux, sliding mode, EMF, high frequency]
+description: Rotor position and speed observers that eliminate the need for a physical position sensor (4 blocks)
+tags: [toolbox-kb, motor-control-blockset, sensorless, observer, flux, sliding mode, EMF, high frequency]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Sensorless estimators
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: sensorless-estimators
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Sensorless estimators
-
-Use these blocks for sensorless estimators.
 
 ## Recommended Blocks
 

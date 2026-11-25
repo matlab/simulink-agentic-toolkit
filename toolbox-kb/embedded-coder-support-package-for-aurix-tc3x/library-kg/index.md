@@ -1,24 +1,7 @@
-# Library Reuse Index
+---
+okf_version: "0.2"
+---
 
-## Priority
+# Simulink Block Category
 
-1. Custom library blocks (highest priority)
-2. Toolbox KB blocks
-
-## Policy
-
-- Always use custom library blocks when available.
-- Never fall back to built-in primitives if the same block exists in a declared library.
-- Only use built-in blocks when NO equivalent exists in any declared library after searching this index.
-- Do not invent custom block names.
-- If uncertain, inspect the relevant category page or ask the user.
-
-## Libraries
-
-- Embedded Coder Support Package for AURIX TC3x
-
-Common blocks: [common.md](common.md) (5 of 10 blocks)
-
-## Categories
-
-- [Aurix tc3x](aurix-tc3x.md) — 10 blocks; Infineon AURIX TC3x multicore ECU deployment and test bench blocks
+* [Aurix tc3x](aurix-tc3x.md) - Infineon AURIX TC3x multicore ECU deployment and test bench blocks (10 blocks)

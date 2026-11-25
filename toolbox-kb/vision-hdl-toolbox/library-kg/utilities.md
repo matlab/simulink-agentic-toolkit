@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Pixel-stream control, buffering, and timing helpers
-tags: [utilities, line buffer, counter, control bus, aligner, roi, timing]
-status: stable
-source: custom_library
-library_root: Vision HDL Toolbox
-category_path: Utilities
+description: "Pixel-stream control, buffering, and timing helpers (8 blocks)"
+tags: [toolbox-kb, vision-hdl-toolbox, utilities, line buffer, counter, control bus, aligner, roi, timing]
+status: draft
+sources:
+  - resource: matlab:visionhdlutilities
+source: toolbox_kb
+managed_by: satk
+library: Vision HDL Toolbox
+kb_folder: vision-hdl-toolbox
+category: utilities
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

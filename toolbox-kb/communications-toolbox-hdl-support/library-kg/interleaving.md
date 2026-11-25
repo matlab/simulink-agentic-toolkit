@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Interleaving
-description: Interleavers/deinterleavers that spread burst errors
-tags: [interleaving, interleaver, deinterleaver]
+description: Interleavers/deinterleavers that spread burst errors (4 blocks)
+tags: [toolbox-kb, communications-toolbox-hdl-support, interleaving, interleaver, deinterleaver]
 status: stable
-source: custom_library
-library_root: Communications Toolbox HDL Support
-category_path: Interleaving
+sources:
+  - resource: matlab:commhdlinterleave
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox HDL Support
+kb_folder: communications-toolbox-hdl-support
+category: interleaving
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Interleaving
-
-Use these blocks for interleaving.
 
 ## Recommended Blocks
 

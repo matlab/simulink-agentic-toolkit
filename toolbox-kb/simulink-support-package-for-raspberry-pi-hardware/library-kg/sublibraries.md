@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sublibraries
-description: Domain sublibraries of Raspberry Pi hardware blocks
-tags: [library, raspberry pi, sublibrary]
+description: Domain sublibraries of Raspberry Pi hardware blocks (8 blocks)
+tags: [toolbox-kb, simulink-support-package-for-raspberry-pi-hardware, library, raspberry pi, sublibrary]
 status: stable
-source: custom_library
-library_root: Simulink Support Package for Raspberry Pi Hardware
-category_path: Sublibraries
+sources:
+  - resource: matlab:raspberrypilib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Raspberry Pi Hardware
+kb_folder: simulink-support-package-for-raspberry-pi-hardware
+category: sublibraries
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Sublibraries
-
-Use these blocks for sublibraries.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Drivetrain
-description: Couplings, differentials, transfer cases, and wheels
-tags: [drivetrain, gearbox, differential, transfer case, wheel, compliance, inertia, chain]
-status: stable
-source: custom_library
-library_root: Powertrain Blockset
-category_path: Drivetrain
+description: "Couplings, differentials, transfer cases, and wheels (14 blocks)"
+tags: [toolbox-kb, powertrain-blockset, drivetrain, gearbox, differential, transfer case, wheel, compliance, inertia, chain]
+status: draft
+sources:
+  - resource: matlab:autolibcoupling
+source: toolbox_kb
+managed_by: satk
+library: Powertrain Blockset
+kb_folder: powertrain-blockset
+category: drivetrain
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Drivetrain
-
-Use these blocks for drivetrain.
 
 ## Recommended Blocks
 

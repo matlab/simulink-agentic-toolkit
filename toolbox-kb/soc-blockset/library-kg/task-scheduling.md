@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Task scheduling
-description: Task management, scheduling, triggering, and interrupt-driven execution
-tags: [task, scheduler, trigger, interrupt, priority, manager]
+description: "Task management, scheduling, triggering, and interrupt-driven execution (5 blocks)"
+tags: [toolbox-kb, soc-blockset, task, scheduler, trigger, interrupt, priority, manager]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Task scheduling
+sources:
+  - resource: matlab:proctasklib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: task-scheduling
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Task scheduling
-
-Use these blocks for task scheduling.
 
 ## Recommended Blocks
 

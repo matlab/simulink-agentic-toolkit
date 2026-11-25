@@ -1,15 +1,177 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.7445903935,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Coder Support Package for NXP FRDM-K64F Board"
-  ],
-  "blockCount": 16,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Simulink_Coder_Support_Package_for_NXP_FRDM_K64F_Board": {
-      "blockCount": 16
+  "pages": [
+    {
+      "id": "analog-digital",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for NXP FRDM-K64F Board",
+      "kbFolder": "simulink-coder-support-package-for-nxp-frdm-k64f-board",
+      "category": "analog-digital",
+      "hash": "ff8a01432e2f5cfcce42641af2890388f677b3ce75a0bed0363f53135a823657",
+      "fm": {
+        "title": "Analog digital",
+        "description": "Analog and digital I/O peripherals on FRDM-K64F (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-nxp-frdm-k64f-board",
+          "analog",
+          "digital",
+          "gpio",
+          "pwm",
+          "dac"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog Input",
+          "ref": "frdmk64flib/Analog Input",
+          "since": "R2023a+",
+          "intent": "Read analog voltage from ADC channels on NXP FRDM-K64F — use for sampling sensor signals in embedded applications"
+        },
+        {
+          "block": "Analog Output",
+          "ref": "frdmk64flib/Analog Output",
+          "since": "R2023a+",
+          "intent": "Output analog voltage via DAC on NXP FRDM-K64F — use for generating reference voltages or analog control signals"
+        },
+        {
+          "block": "Digital Read",
+          "ref": "frdmk64flib/Digital Read",
+          "since": "R2023a+",
+          "intent": "Read digital GPIO pin state on NXP FRDM-K64F — use for reading buttons, switches, or digital sensor inputs"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "frdmk64flib/Digital Write",
+          "since": "R2023a+",
+          "intent": "Write digital GPIO pin state on NXP FRDM-K64F — use for controlling LEDs, relays, or digital outputs"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "frdmk64flib/PWM Output",
+          "since": "R2023a+",
+          "intent": "Generate PWM signals on FRDM-K64F timer channels — use for motor control, LED dimming, or servo positioning"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "communication",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for NXP FRDM-K64F Board",
+      "kbFolder": "simulink-coder-support-package-for-nxp-frdm-k64f-board",
+      "category": "communication",
+      "hash": "a56c338c5f6960aed45b81d293e791e637ebf8a92a28161a3456f4122073cc4c",
+      "fm": {
+        "title": "Communication",
+        "description": "Serial, I2C, and network communication (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-nxp-frdm-k64f-board",
+          "serial",
+          "i2c",
+          "tcp",
+          "udp",
+          "uart"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "I2C Controller Read",
+          "ref": "frdmk64flib/I2C Controller Read",
+          "since": "R2023a+",
+          "intent": "Read data from an I2C peripheral on FRDM-K64F — use for communicating with external I2C sensors or EEPROMs"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "frdmk64flib/I2C Controller Write",
+          "since": "R2023a+",
+          "intent": "Write data to an I2C peripheral on FRDM-K64F — use for configuring or commanding external I2C devices"
+        },
+        {
+          "block": "Serial Receive",
+          "ref": "frdmk64flib/Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over UART on FRDM-K64F — use for reading data from serial-connected devices or sensors"
+        },
+        {
+          "block": "Serial Transmit",
+          "ref": "frdmk64flib/Serial Transmit",
+          "since": "R2023a+",
+          "intent": "Transmit data over UART on FRDM-K64F — use for sending data to serial-connected displays or host computers"
+        },
+        {
+          "block": "TCP Receive",
+          "ref": "frdmk64flib/TCP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over TCP/IP on FRDM-K64F — use for network data reception via the Ethernet interface"
+        },
+        {
+          "block": "TCP Send",
+          "ref": "frdmk64flib/TCP Send",
+          "since": "R2023a+",
+          "intent": "Send data over TCP/IP on FRDM-K64F — use for network data transmission via the Ethernet interface"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "frdmk64flib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets on FRDM-K64F — use for low-latency network data reception"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "frdmk64flib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP packets from FRDM-K64F — use for low-latency network data transmission"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for NXP FRDM-K64F Board",
+      "kbFolder": "simulink-coder-support-package-for-nxp-frdm-k64f-board",
+      "category": "sensors",
+      "hash": "0fac34c1bccb3d04621d54a7512ef9608e51fdc57953ef5ebbafa86528195983",
+      "fm": {
+        "title": "Sensors",
+        "description": "Onboard and external sensor interfaces (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-nxp-frdm-k64f-board",
+          "sensor",
+          "encoder",
+          "fxos",
+          "accelerometer",
+          "button"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "FXOS8700 6-Axes Sensor",
+          "ref": "frdmk64flib/FXOS8700 6-Axes Sensor",
+          "since": "R2023a+",
+          "intent": "Read the onboard FXOS8700 accelerometer/magnetometer — use for tilt, orientation, or compass heading measurements on FRDM-K64F"
+        },
+        {
+          "block": "Push Button",
+          "ref": "frdmk64flib/Push Button",
+          "since": "R2023a+",
+          "intent": "Read onboard push button state on FRDM-K64F — use for detecting user input from the board buttons"
+        },
+        {
+          "block": "Quadrature Encoder",
+          "ref": "frdmk64flib/Quadrature Encoder",
+          "since": "R2023a+",
+          "intent": "Read quadrature encoder signals on FRDM-K64F — use for measuring motor shaft position and speed"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:30",
+  "generatedAtDatenum": 740309.99549163191
 }

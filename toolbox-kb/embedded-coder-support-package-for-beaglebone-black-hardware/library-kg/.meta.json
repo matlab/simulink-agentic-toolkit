@@ -1,15 +1,153 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.744560081,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for BeagleBone Black Hardware"
-  ],
-  "blockCount": 12,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_BeagleBone_Black_Hardware": {
-      "blockCount": 12
+  "pages": [
+    {
+      "id": "gpio-analog",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for BeagleBone Black Hardware",
+      "kbFolder": "embedded-coder-support-package-for-beaglebone-black-hardware",
+      "category": "gpio-analog",
+      "hash": "2475d375c2592f2805f7e3be9cdb41f99f3896f91a393425dbc49350058aaae3",
+      "fm": {
+        "title": "Gpio analog",
+        "description": "Digital and analog I/O peripherals (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-beaglebone-black-hardware",
+          "gpio",
+          "analog",
+          "pwm",
+          "led",
+          "pin"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog Input",
+          "ref": "beaglebonelib/Analog Input",
+          "since": "R2023a+",
+          "intent": "Read analog voltage from ADC inputs on BeagleBone Black — use for sampling sensor signals like temperature, light, or force"
+        },
+        {
+          "block": "GPIO Read",
+          "ref": "beaglebonelib/GPIO Read",
+          "since": "R2023a+",
+          "intent": "Read digital GPIO pin state on BeagleBone Black — use for reading buttons, switches, or digital sensor inputs"
+        },
+        {
+          "block": "GPIO Write",
+          "ref": "beaglebonelib/GPIO Write",
+          "since": "R2023a+",
+          "intent": "Write digital GPIO pin state on BeagleBone Black — use for controlling LEDs, relays, or digital outputs"
+        },
+        {
+          "block": "LED",
+          "ref": "beaglebonelib/LED",
+          "since": "R2023a+",
+          "intent": "Control onboard user LEDs on BeagleBone Black — use for status indication or visual debugging on the board"
+        },
+        {
+          "block": "PWM",
+          "ref": "beaglebonelib/PWM",
+          "since": "R2023a+",
+          "intent": "Generate PWM output on BeagleBone Black — use for motor speed control, servo positioning, or LED brightness dimming"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "media",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for BeagleBone Black Hardware",
+      "kbFolder": "embedded-coder-support-package-for-beaglebone-black-hardware",
+      "category": "media",
+      "hash": "cde551f2fa45a3b3828680c708326040fd16da86d2b159678bc75a4095adc6c7",
+      "fm": {
+        "title": "Media",
+        "description": "Audio and video capture/playback (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-beaglebone-black-hardware",
+          "audio",
+          "video",
+          "capture",
+          "display",
+          "camera"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "SDL Video Display",
+          "ref": "beaglebonelib/SDL Video Display",
+          "since": "R2023a+",
+          "intent": "Display video output on a connected screen via SDL — use for rendering processed images or UI on BeagleBone Black HDMI output"
+        },
+        {
+          "block": "ALSA Audio Capture",
+          "ref": "beaglebonelib/ALSA Audio Capture",
+          "since": "R2023a+",
+          "intent": "Capture audio from a microphone via ALSA on BeagleBone Black — use for audio signal acquisition in embedded DSP or voice processing"
+        },
+        {
+          "block": "ALSA Audio Playback",
+          "ref": "beaglebonelib/ALSA Audio Playback",
+          "since": "R2023a+",
+          "intent": "Play audio through speakers via ALSA on BeagleBone Black — use for audio output, alert tones, or real-time sound generation"
+        },
+        {
+          "block": "V4L2 Video Capture",
+          "ref": "beaglebonelib/V4L2 Video Capture",
+          "since": "R2023a+",
+          "intent": "Capture video frames from a USB camera via V4L2 — use for image acquisition in computer vision applications on BeagleBone Black"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "network",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for BeagleBone Black Hardware",
+      "kbFolder": "embedded-coder-support-package-for-beaglebone-black-hardware",
+      "category": "network",
+      "hash": "c347a9626a18ec14d9eadf07173aecc443053b75bd2d710188778531ef820a94",
+      "fm": {
+        "title": "Network",
+        "description": "Network communication and IoT connectivity (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-beaglebone-black-hardware",
+          "udp",
+          "thingspeak",
+          "network",
+          "iot",
+          "send"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ThingSpeak Write",
+          "ref": "beaglebonelib/ThingSpeak Write",
+          "since": "R2023a+",
+          "intent": "Upload data to ThingSpeak IoT platform — use for cloud logging of sensor data or remote monitoring from the BeagleBone Black"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "beaglebonelib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets on BeagleBone Black — use for real-time data reception from other devices on the network"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "beaglebonelib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP packets from BeagleBone Black — use for transmitting sensor data or status to other devices on the network"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99538202549
 }

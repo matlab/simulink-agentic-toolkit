@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Dataflow
-description: Blocks for dataflow.
+description: Blocks for Dataflow (1 blocks)
+tags: [toolbox-kb, dsp-system-toolbox]
 status: draft
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Dataflow
+sources:
+  - resource: matlab:dspdataflow
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: dataflow
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Dataflow
-
-Use these blocks for dataflow.
 
 ## Recommended Blocks
 

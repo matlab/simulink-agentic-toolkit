@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Requirements authoring
-description: Author, organize, and trace formal requirements inside a model
-tags: [requirement, requirements table, precondition, postcondition, traceability]
+description: "Author, organize, and trace formal requirements inside a model (2 blocks)"
+tags: [toolbox-kb, requirements-toolbox, requirement, requirements table, precondition, postcondition, traceability]
 status: stable
-source: custom_library
-library_root: Requirements Toolbox
-category_path: Requirements authoring
+sources:
+  - resource: matlab:reqmanage
+source: toolbox_kb
+managed_by: satk
+library: Requirements Toolbox
+kb_folder: requirements-toolbox
+category: requirements-authoring
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Requirements authoring
-
-Use these blocks for requirements authoring.
 
 ## Recommended Blocks
 

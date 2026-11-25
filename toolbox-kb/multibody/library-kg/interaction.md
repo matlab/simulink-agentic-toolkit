@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Interaction
-description: Forces, contacts, and constraint interactions
-tags: [force, torque, constraint, contact, spring]
+description: "Forces, contacts, and constraint interactions (4 blocks)"
+tags: [toolbox-kb, multibody, force, torque, constraint, contact, spring]
 status: stable
-source: mathworks_toolbox
-library_root: Multibody
-category_path: Interaction
+sources:
+  - resource: matlab:sm_lib
+source: toolbox_kb
+managed_by: satk
+library: Multibody
+kb_folder: multibody
+category: interaction
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Interaction
-
-Use these blocks for interaction.
 
 ## Recommended Blocks
 

@@ -14,7 +14,7 @@ Core Model-Based Design (MBD) skills for building, testing, and specifying Simul
 |-------|---------------------------|
 | `arranging-simulink-layouts` | Fix, tidy, or rearrange block diagram layouts — reposition selected blocks without moving the rest, and group or expand subsystems |
 | `building-simulink-models` | Best practices for structural model changes, for example, adding blocks, wiring, layout |
-| `simulink-curating-library-kg` | Curate the library knowledge index — mark common blocks, define categories, and improve descriptions for better agent block selection |
+| `simulink-curating-library-kg` | Curate the library knowledge index — define categories and improve descriptions for better agent block selection |
 | `filing-bug-reports` | Generate standalone bug reports for reproducing, investigating, and fixing issues |
 | `generate-requirement-drafts` | Generate requirements. This needs Requirements Toolbox (.slreqx) with traceability links when available, falls back to structured YAML |
 | `managing-simulink-projects` | Manage MATLAB projects for Simulink workflows — path management, file registration, labels, and source control configuration |
@@ -148,6 +148,14 @@ Aerospace skills for Simulink models using Aerospace Blockset
 | Skill | Description |
 |-------|---------------------------|
 | `simulink-compose-multi-vehicle-system` | Create multi-vehicle aerospace simulations from actor models, trajectories, and coordination (requires Aerospace Blockset R2026b) |
+
+### [RF and Mixed-Signal](rf-and-mixed-signal/)
+
+Physics-based RF system modeling and simulation in Simulink with RF Blockset Circuit Envelope and Idealized Baseband
+
+| Skill | Description |
+|-------|---------------------------|
+| `simulink-model-rf-system` | Build, measure, and simulate RF systems in Simulink with RF Blockset Circuit Envelope and Idealized Baseband, from rfbudget specs or measured S-parameter data through system-level EVM/ACLR/BER (requires RF Blockset and RF Toolbox) |
 
 ## Adding Skills
 

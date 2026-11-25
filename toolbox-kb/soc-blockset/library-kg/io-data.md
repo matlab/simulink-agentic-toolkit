@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Io data
-description: I/O data injection and capture for testbench-driven SoC verification
-tags: [event, IO, data, inject, capture, boundary]
+description: I/O data injection and capture for testbench-driven SoC verification (8 blocks)
+tags: [toolbox-kb, soc-blockset, event, IO, data, inject, capture, boundary]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Io data
+sources:
+  - resource: matlab:socmemlib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: io-data
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Io data
-
-Use these blocks for io data.
 
 ## Recommended Blocks
 

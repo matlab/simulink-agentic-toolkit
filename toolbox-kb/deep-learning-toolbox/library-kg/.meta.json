@@ -1,15 +1,949 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.7445505556,
-  "generatorVersion": 4,
-  "libraries": [
-    "Deep Learning Toolbox"
-  ],
-  "blockCount": 109,
-  "categoryCount": 13,
-  "libraryFingerprints": {
-    "Deep_Learning_Toolbox": {
-      "blockCount": 109
+  "pages": [
+    {
+      "id": "activation-layers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "activation-layers",
+      "hash": "fdf4bbe03eebfa2beec8a72f34ba8bc034bd88175cc1ede6b494095887b6ff53",
+      "fm": {
+        "title": "Activation layers",
+        "description": "Nonlinear activation functions applied between network layers (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "relu",
+          "sigmoid",
+          "tanh",
+          "activation",
+          "gelu"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Clipped ReLU Layer",
+          "ref": "dlactivationlib/Clipped ReLU Layer",
+          "since": "R2024b+",
+          "intent": "Apply clipped rectified linear activation with a configurable ceiling — use to bound layer outputs between 0 and a maximum value for numerically stable deployments"
+        },
+        {
+          "block": "GELU Layer",
+          "ref": "dlactivationlib/GELU Layer",
+          "since": "R2024b+",
+          "intent": "Apply Gaussian Error Linear Unit activation — use as a smooth alternative to ReLU in transformer architectures and NLP-inspired signal processing networks"
+        },
+        {
+          "block": "Leaky ReLU Layer",
+          "ref": "dlactivationlib/Leaky ReLU Layer",
+          "since": "R2024b+",
+          "intent": "Apply leaky rectified linear activation with a small negative slope — use to avoid dead neurons by allowing a small gradient for negative inputs"
+        },
+        {
+          "block": "PReLU Layer",
+          "ref": "dlactivationlib/PReLU Layer",
+          "since": "R2026a+",
+          "intent": "Apply parametric ReLU with a learnable negative slope — use when the optimal negative-region slope varies by channel and should be learned during training"
+        },
+        {
+          "block": "ReLU Layer",
+          "ref": "dlactivationlib/ReLU Layer",
+          "since": "R2024b+",
+          "intent": "Apply rectified linear unit activation (max of 0 and input) — use as the default nonlinearity in convolutional and fully connected networks for fast training convergence"
+        },
+        {
+          "block": "Sigmoid Layer",
+          "ref": "dlactivationlib/Sigmoid Layer",
+          "since": "R2024b+",
+          "intent": "Apply sigmoid activation squashing outputs to the 0-1 range — use for binary classification output layers or gating mechanisms in recurrent networks"
+        },
+        {
+          "block": "Softmax Layer",
+          "ref": "dlactivationlib/Softmax Layer",
+          "since": "R2024b+",
+          "intent": "Apply softmax normalization producing a probability distribution over classes — use as the final activation in multi-class classification networks"
+        },
+        {
+          "block": "Swish Layer",
+          "ref": "dlactivationlib/Swish Layer",
+          "since": "R2026a+",
+          "intent": "Apply Swish activation (x times sigmoid) — use as a self-gated nonlinearity that often outperforms ReLU in deep architectures with many layers"
+        },
+        {
+          "block": "Tanh Layer",
+          "ref": "dlactivationlib/Tanh Layer",
+          "since": "R2024b+",
+          "intent": "Apply hyperbolic tangent activation squashing outputs to -1 to 1 — use in recurrent network gates or when centered (zero-mean) activations are beneficial"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "classic-nn-controllers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "classic-nn-controllers",
+      "hash": "35f5b6d4ac8b7917a3cc04ce8b521aa0b8841356f610f4e1a86ad55c62d77ac8",
+      "fm": {
+        "title": "Classic nn controllers",
+        "description": "Classic neural network controllers for adaptive and predictive control (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "controller",
+          "narma",
+          "predictive",
+          "adaptive",
+          "model"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Model Reference Controller",
+          "ref": "neural/Control Systems/Model Reference Controller",
+          "since": "R2023a+",
+          "intent": "Implement a model reference adaptive controller using a neural network — use for adaptive control where the plant model is approximated by a trained network"
+        },
+        {
+          "block": "NARMA-L2 Controller",
+          "ref": "neural/Control Systems/NARMA-L2 Controller",
+          "since": "R2023a+",
+          "intent": "Implement a NARMA-L2 (feedback linearization) neural network controller — use for nonlinear plant control where the network inverts the plant dynamics"
+        },
+        {
+          "block": "NN Predictive Controller",
+          "ref": "neural/Control Systems/NN Predictive Controller",
+          "since": "R2023a+",
+          "intent": "Implement a neural network predictive controller using receding-horizon optimization — use for model-predictive control where the plant model is a trained network"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "classic-nn-functions",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "classic-nn-functions",
+      "hash": "cce5980189a70bc51a2170ad22b78ce3b134b8d197a76622742af9b333462e09",
+      "fm": {
+        "title": "Classic nn functions",
+        "description": "Transfer functions, weight functions, and net input functions for classic networks (22 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "tansig",
+          "logsig",
+          "purelin",
+          "dotprod",
+          "transfer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "compet",
+          "ref": "neural/Transfer Functions/compet",
+          "since": "R2023a+",
+          "intent": "Competitive transfer function that outputs 1 for the neuron with the largest input — use in competitive learning and self-organizing map networks"
+        },
+        {
+          "block": "elliot2sig",
+          "ref": "neural/Transfer Functions/elliot2sig",
+          "since": "R2023a+",
+          "intent": "Apply Elliot symmetric sigmoid (fast approximation to tanh) — use when sigmoid-like activation is needed with lower computational cost than standard tanh"
+        },
+        {
+          "block": "elliotsig",
+          "ref": "neural/Transfer Functions/elliotsig",
+          "since": "R2023a+",
+          "intent": "Apply Elliot sigmoid (fast approximation to logistic sigmoid) — use for computationally efficient sigmoid activation in resource-constrained deployments"
+        },
+        {
+          "block": "hardlim",
+          "ref": "neural/Transfer Functions/hardlim",
+          "since": "R2023a+",
+          "intent": "Hard-limit transfer function (outputs 0 or 1) — use for binary threshold activation in perceptrons or pattern classification networks"
+        },
+        {
+          "block": "hardlims",
+          "ref": "neural/Transfer Functions/hardlims",
+          "since": "R2023a+",
+          "intent": "Symmetric hard-limit transfer function (outputs -1 or 1) — use for bipolar threshold activation in symmetric perceptron networks"
+        },
+        {
+          "block": "logsig",
+          "ref": "neural/Transfer Functions/logsig",
+          "since": "R2023a+",
+          "intent": "Log-sigmoid transfer function mapping inputs to 0-1 range — use as the classic sigmoid activation for binary outputs in legacy neural network architectures"
+        },
+        {
+          "block": "netinv",
+          "ref": "neural/Transfer Functions/netinv",
+          "since": "R2023a+",
+          "intent": "Inverse transfer function (1/x) — use in radial basis or specialized network architectures requiring reciprocal activation"
+        },
+        {
+          "block": "poslin",
+          "ref": "neural/Transfer Functions/poslin",
+          "since": "R2023a+",
+          "intent": "Positive linear transfer function (equivalent to ReLU) — use as rectified linear activation in classic Neural Network Toolbox architectures"
+        },
+        {
+          "block": "purelin",
+          "ref": "neural/Transfer Functions/purelin",
+          "since": "R2023a+",
+          "intent": "Linear transfer function (identity) — use for output layers in regression networks where no nonlinear squashing is desired"
+        },
+        {
+          "block": "radbas",
+          "ref": "neural/Transfer Functions/radbas",
+          "since": "R2023a+",
+          "intent": "Radial basis transfer function (Gaussian) — use as the activation in radial basis function network hidden layers for function approximation"
+        },
+        {
+          "block": "radbasn",
+          "ref": "neural/Transfer Functions/radbasn",
+          "since": "R2023a+",
+          "intent": "Normalized radial basis transfer function — use in normalized RBF networks where basis function outputs are divided by their sum"
+        },
+        {
+          "block": "satlin",
+          "ref": "neural/Transfer Functions/satlin",
+          "since": "R2023a+",
+          "intent": "Saturating linear transfer function (clipped to 0-1) — use when linear response is needed within bounds and saturation outside"
+        },
+        {
+          "block": "satlins",
+          "ref": "neural/Transfer Functions/satlins",
+          "since": "R2023a+",
+          "intent": "Symmetric saturating linear transfer function (clipped to -1 to 1) — use for bounded linear activation with symmetric saturation limits"
+        },
+        {
+          "block": "softmax",
+          "ref": "neural/Transfer Functions/softmax",
+          "since": "R2023a+",
+          "intent": "Softmax transfer function producing probability distribution — use as the output activation for multi-class classification in classic NN Toolbox networks"
+        },
+        {
+          "block": "tansig",
+          "ref": "neural/Transfer Functions/tansig",
+          "since": "R2023a+",
+          "intent": "Hyperbolic tangent sigmoid transfer function — use as the standard bipolar sigmoid activation in classic feedforward and recurrent networks"
+        },
+        {
+          "block": "tribas",
+          "ref": "neural/Transfer Functions/tribas",
+          "since": "R2023a+",
+          "intent": "Triangular basis transfer function — use in specialized interpolation or local-response networks as a piecewise-linear basis function"
+        },
+        {
+          "block": "dist",
+          "ref": "neural/Weight Functions/dist",
+          "since": "R2023a+",
+          "intent": "Euclidean distance weight function — use in radial basis and competitive networks to compute distance between input vectors and weight vectors"
+        },
+        {
+          "block": "dotprod",
+          "ref": "neural/Weight Functions/dotprod",
+          "since": "R2023a+",
+          "intent": "Dot product weight function — use as the standard weight application method in feedforward layers computing weighted sums of inputs"
+        },
+        {
+          "block": "negdist",
+          "ref": "neural/Weight Functions/negdist",
+          "since": "R2023a+",
+          "intent": "Negative Euclidean distance weight function — use in competitive layers where closer vectors should produce larger (less negative) net inputs"
+        },
+        {
+          "block": "normprod",
+          "ref": "neural/Weight Functions/normprod",
+          "since": "R2023a+",
+          "intent": "Normalized dot product weight function — use when weight application should be invariant to input vector magnitude"
+        },
+        {
+          "block": "netprod",
+          "ref": "neural/Net Input Functions/netprod",
+          "since": "R2023a+",
+          "intent": "Product net input function — use in pi-sigma or product-unit networks where net input is the product rather than sum of weighted inputs"
+        },
+        {
+          "block": "netsum",
+          "ref": "neural/Net Input Functions/netsum",
+          "since": "R2023a+",
+          "intent": "Summation net input function — use as the standard net input computation that sums all weighted inputs plus bias in feedforward networks"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "classic-nn-preprocessing",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "classic-nn-preprocessing",
+      "hash": "b54b5099f7807d440f12be3172ea942b01af6a179b0ac2718429e2bbc4cb3d74",
+      "fm": {
+        "title": "Classic nn preprocessing",
+        "description": "Data preprocessing and postprocessing functions for classic NN workflows (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "mapminmax",
+          "mapstd",
+          "pca",
+          "preprocessing",
+          "fixunknowns"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "X(2Y)  Graph",
+          "ref": "neural/Control Systems/X(2Y)  Graph",
+          "since": "R2023a+",
+          "intent": "Legacy neural network plotting block — internal visualization utility for classic Neural Network Toolbox"
+        },
+        {
+          "block": "fixunknowns",
+          "ref": "neural/Processing Functions/fixunknowns",
+          "since": "R2023a+",
+          "intent": "Encode unknown or missing values in input data using indicator variables — use as a preprocessing step for networks that must handle incomplete input data"
+        },
+        {
+          "block": "fixunknowns_reverse",
+          "ref": "neural/Processing Functions/fixunknowns_reverse",
+          "since": "R2023a+",
+          "intent": "Reverse the fixunknowns encoding — use to restore original data format after network processing"
+        },
+        {
+          "block": "lvqoutputs",
+          "ref": "neural/Processing Functions/lvqoutputs",
+          "since": "R2023a+",
+          "intent": "Transform network outputs for Learning Vector Quantization — use as output processing for LVQ classification networks"
+        },
+        {
+          "block": "lvqoutputs_reverse",
+          "ref": "neural/Processing Functions/lvqoutputs_reverse",
+          "since": "R2023a+",
+          "intent": "Reverse LVQ output transformation — use to convert LVQ network outputs back to class indices"
+        },
+        {
+          "block": "mapminmax",
+          "ref": "neural/Processing Functions/mapminmax",
+          "since": "R2023a+",
+          "intent": "Scale inputs to the [-1, 1] range using training min/max statistics — use as input preprocessing for classic neural networks trained with normalized data"
+        },
+        {
+          "block": "mapminmax_reverse",
+          "ref": "neural/Processing Functions/mapminmax_reverse",
+          "since": "R2023a+",
+          "intent": "Reverse min-max scaling to recover original data range — use to denormalize network outputs back to physical units"
+        },
+        {
+          "block": "mapstd",
+          "ref": "neural/Processing Functions/mapstd",
+          "since": "R2023a+",
+          "intent": "Standardize inputs to zero mean and unit standard deviation — use as input preprocessing for classic neural networks trained with standardized data"
+        },
+        {
+          "block": "mapstd_reverse",
+          "ref": "neural/Processing Functions/mapstd_reverse",
+          "since": "R2023a+",
+          "intent": "Reverse standardization to recover original data scale — use to denormalize network outputs back to physical units"
+        },
+        {
+          "block": "processpca",
+          "ref": "neural/Processing Functions/processpca",
+          "since": "R2023a+",
+          "intent": "Apply PCA dimensionality reduction using training-time principal components — use as input preprocessing to reduce input dimensionality while preserving variance"
+        },
+        {
+          "block": "processpca_reverse",
+          "ref": "neural/Processing Functions/processpca_reverse",
+          "since": "R2023a+",
+          "intent": "Reverse PCA transformation to reconstruct the full-dimensional signal — use to map reduced outputs back to original feature space"
+        },
+        {
+          "block": "removeconstantrows",
+          "ref": "neural/Processing Functions/removeconstantrows",
+          "since": "R2023a+",
+          "intent": "Remove rows that were constant in the training data — use to eliminate uninformative input features before network inference"
+        },
+        {
+          "block": "removeconstantrows_reverse",
+          "ref": "neural/Processing Functions/removeconstantrows_reverse",
+          "since": "R2023a+",
+          "intent": "Reinsert constant rows removed during preprocessing — use to restore original data dimensions after network processing"
+        },
+        {
+          "block": "removerows",
+          "ref": "neural/Processing Functions/removerows",
+          "since": "R2023a+",
+          "intent": "Remove specified rows from input data — use to exclude unwanted features identified during training data analysis"
+        },
+        {
+          "block": "removerows_reverse",
+          "ref": "neural/Processing Functions/removerows_reverse",
+          "since": "R2023a+",
+          "intent": "Reinsert removed rows into output data — use to restore original data dimensions after network processing"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "combination-layers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "combination-layers",
+      "hash": "8b3c5168abdce82ad9e63ac72d4ffaa788bc9e1ad629a6c2908d356b9f652e23",
+      "fm": {
+        "title": "Combination layers",
+        "description": "Addition, concatenation, and multiplication for merging network branches (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "addition",
+          "concatenation",
+          "multiplication",
+          "merge",
+          "skip"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Addition Layer",
+          "ref": "dlcombinationlib/Addition Layer",
+          "since": "R2024b+",
+          "intent": "Element-wise add multiple input tensors — use for residual (skip) connections that sum the shortcut path with the main path in ResNet-style architectures"
+        },
+        {
+          "block": "Concatenation Layer",
+          "ref": "dlcombinationlib/Concatenation Layer",
+          "since": "R2024b+",
+          "intent": "Concatenate inputs along a specified dimension — use to merge features from parallel branches or combine multi-scale representations"
+        },
+        {
+          "block": "Depth Concatenation Layer",
+          "ref": "dlcombinationlib/Depth Concatenation Layer",
+          "since": "R2024b+",
+          "intent": "Concatenate inputs along the channel (depth) dimension — use in inception modules or U-Net skip connections that stack feature maps from different paths"
+        },
+        {
+          "block": "Multiplication Layer",
+          "ref": "dlcombinationlib/Multiplication Layer",
+          "since": "R2024b+",
+          "intent": "Element-wise multiply input tensors — use for attention mechanisms, feature gating, or multiplicative interactions between network branches"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "convolution-layers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "convolution-layers",
+      "hash": "518db7398d42eecc7db877aeb39ee09d7bd0d1c6e7b8803a296309f04c2dc1eb",
+      "fm": {
+        "title": "Convolution layers",
+        "description": "Convolutional and fully connected layers for feature extraction (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "convolution",
+          "conv2d",
+          "fully",
+          "connected",
+          "filter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Convolution 1D Layer",
+          "ref": "dlconvfclib/Convolution 1D Layer",
+          "since": "R2024b+",
+          "intent": "Apply learned 1-D convolutional filters to sequential data — use for temporal pattern detection in time-series, audio, or sensor signal classification networks"
+        },
+        {
+          "block": "Convolution 2D Layer",
+          "ref": "dlconvfclib/Convolution 2D Layer",
+          "since": "R2024b+",
+          "intent": "Apply learned 2-D convolutional filters to image or spatial data — use as the core feature extraction layer in image classification, detection, and segmentation networks"
+        },
+        {
+          "block": "Convolution 3D Layer",
+          "ref": "dlconvfclib/Convolution 3D Layer",
+          "since": "R2024b+",
+          "intent": "Apply learned 3-D convolutional filters to volumetric or video data — use for spatiotemporal feature extraction in video analysis or 3-D medical imaging networks"
+        },
+        {
+          "block": "Fully Connected Layer",
+          "ref": "dlconvfclib/Fully Connected Layer",
+          "since": "R2024b+",
+          "intent": "Apply a learned linear transformation (matrix multiply plus bias) — use as a dense layer for classification heads or regression outputs after feature extraction"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "external-frameworks",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "external-frameworks",
+      "hash": "31f99a7ddd58eff9e684c9a7e1ad7432c56cb2427a2ef4fbf53222ab2a5951e7",
+      "fm": {
+        "title": "External frameworks",
+        "description": "Run inference from external frameworks: ONNX, PyTorch, TensorFlow, Python (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "onnx",
+          "pytorch",
+          "tensorflow",
+          "python",
+          "external"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ONNX Model Predict",
+          "ref": "pycoexlib/ONNX Model Predict",
+          "since": "R2024a+",
+          "intent": "Run inference using an imported ONNX model — use to deploy models trained in any ONNX-compatible framework into Simulink without manual reimplementation"
+        },
+        {
+          "block": "PyTorch Model Predict",
+          "ref": "pycoexlib/PyTorch Model Predict",
+          "since": "R2024a+",
+          "intent": "Run inference using a PyTorch model via Python co-execution — use to integrate PyTorch-trained networks into Simulink when ONNX export is not available or loses fidelity"
+        },
+        {
+          "block": "TensorFlow Model Predict",
+          "ref": "pycoexlib/TensorFlow Model Predict",
+          "since": "R2024a+",
+          "intent": "Run inference using a TensorFlow/Keras model via Python co-execution — use to integrate TensorFlow-trained networks into Simulink without manual conversion"
+        },
+        {
+          "block": "Custom Python Model Predict",
+          "ref": "pycoexlib/Custom Python Model Predict",
+          "since": "R2024a+",
+          "intent": "Run inference using a custom Python function — use to integrate arbitrary Python ML frameworks or custom preprocessing into Simulink inference pipelines"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "inference",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "inference",
+      "hash": "57ed0f71aff6ee3b15245fee9d91aa145158e59166bf5c7f84921cbd4204a845",
+      "fm": {
+        "title": "Inference",
+        "description": "Top-level network inference blocks for classification and prediction (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "predict",
+          "classify",
+          "inference",
+          "stateful",
+          "network"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Classify",
+          "ref": "deeplib/Classify",
+          "since": "R2026a+",
+          "intent": "Run inference on a trained deep learning network and return class labels — use for image classification, signal categorization, or any trained network that outputs discrete categories"
+        },
+        {
+          "block": "Predict",
+          "ref": "deeplib/Predict",
+          "since": "R2023a+",
+          "intent": "Run inference on a trained deep learning network and return numeric outputs — use for regression, feature extraction, or networks that output continuous values rather than class labels"
+        },
+        {
+          "block": "Stateful Classify",
+          "ref": "deeplib/Stateful Classify",
+          "since": "R2023a+",
+          "intent": "Run inference with internal state on recurrent networks and return class labels — use for sequence classification tasks where LSTM/GRU hidden states persist across time steps"
+        },
+        {
+          "block": "Stateful Predict",
+          "ref": "deeplib/Stateful Predict",
+          "since": "R2023a+",
+          "intent": "Run inference with internal state on recurrent networks and return numeric outputs — use for time-series prediction where LSTM/GRU hidden states carry temporal context between samples"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "input-normalization",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "input-normalization",
+      "hash": "f54d5d230ad821ef96515a2a0f72a9eb3335f96229f44847dac6c194f0f5f7bf",
+      "fm": {
+        "title": "Input normalization",
+        "description": "Input data normalization and inverse denormalization for inference (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "rescale",
+          "zscore",
+          "zerocenter",
+          "normalize",
+          "inverse"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Inverse Zerocenter",
+          "ref": "dlinputlayernormlib/Inverse Zerocenter",
+          "since": "R2026a+",
+          "intent": "Reverse zero-centering normalization on network outputs — use to add back the training mean to denormalize predictions"
+        },
+        {
+          "block": "Inverse Zscore",
+          "ref": "dlinputlayernormlib/Inverse Zscore",
+          "since": "R2026a+",
+          "intent": "Reverse z-score normalization on network outputs — use to convert standardized predictions back to original scale using training mean and standard deviation"
+        },
+        {
+          "block": "Rescale-Symmetric 1D",
+          "ref": "dlinputlayernormlib/Rescale-Symmetric 1D",
+          "since": "R2024b+",
+          "intent": "Rescale 1-D input data to the symmetric range [-1, 1] — use to normalize time-series or sensor signals before feeding into a trained network"
+        },
+        {
+          "block": "Rescale-Symmetric 2D",
+          "ref": "dlinputlayernormlib/Rescale-Symmetric 2D",
+          "since": "R2024b+",
+          "intent": "Rescale 2-D input data to the symmetric range [-1, 1] — use to normalize images before feeding into a network trained with symmetric rescaling"
+        },
+        {
+          "block": "Rescale-Symmetric 3D",
+          "ref": "dlinputlayernormlib/Rescale-Symmetric 3D",
+          "since": "R2024b+",
+          "intent": "Rescale 3-D input data to the symmetric range [-1, 1] — use to normalize volumetric data before network inference"
+        },
+        {
+          "block": "Rescale-Zero-One 1D",
+          "ref": "dlinputlayernormlib/Rescale-Zero-One 1D",
+          "since": "R2024b+",
+          "intent": "Rescale 1-D input data to the [0, 1] range — use to normalize time-series signals to match the training normalization"
+        },
+        {
+          "block": "Rescale-Zero-One 2D",
+          "ref": "dlinputlayernormlib/Rescale-Zero-One 2D",
+          "since": "R2024b+",
+          "intent": "Rescale 2-D input data to the [0, 1] range — use to normalize images to match the training normalization"
+        },
+        {
+          "block": "Rescale-Zero-One 3D",
+          "ref": "dlinputlayernormlib/Rescale-Zero-One 3D",
+          "since": "R2024b+",
+          "intent": "Rescale 3-D input data to the [0, 1] range — use to normalize volumetric inputs to match training normalization"
+        },
+        {
+          "block": "Zerocenter 1D",
+          "ref": "dlinputlayernormlib/Zerocenter 1D",
+          "since": "R2024b+",
+          "intent": "Subtract the training mean from 1-D input data — use to zero-center time-series signals before network inference using the stored training statistics"
+        },
+        {
+          "block": "Zerocenter 2D",
+          "ref": "dlinputlayernormlib/Zerocenter 2D",
+          "since": "R2024b+",
+          "intent": "Subtract the training mean from 2-D input data — use to zero-center images before inference using per-channel training means"
+        },
+        {
+          "block": "Zerocenter 3D",
+          "ref": "dlinputlayernormlib/Zerocenter 3D",
+          "since": "R2024b+",
+          "intent": "Subtract the training mean from 3-D input data — use to zero-center volumetric inputs before inference"
+        },
+        {
+          "block": "Zscore 1D",
+          "ref": "dlinputlayernormlib/Zscore 1D",
+          "since": "R2024b+",
+          "intent": "Apply z-score normalization to 1-D input data using training statistics — use to standardize time-series signals to zero mean and unit variance before network inference"
+        },
+        {
+          "block": "Zscore 2D",
+          "ref": "dlinputlayernormlib/Zscore 2D",
+          "since": "R2024b+",
+          "intent": "Apply z-score normalization to 2-D input data using training statistics — use to standardize images to zero mean and unit variance before network inference"
+        },
+        {
+          "block": "Zscore 3D",
+          "ref": "dlinputlayernormlib/Zscore 3D",
+          "since": "R2024b+",
+          "intent": "Apply z-score normalization to 3-D input data using training statistics — use to standardize volumetric data before network inference"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "normalization-layers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "normalization-layers",
+      "hash": "48674ed34b750302436a2e71228efd7d7c9d732be4b13a679e7c9b469ceda7c0",
+      "fm": {
+        "title": "Normalization layers",
+        "description": "Batch, instance, and layer normalization for training stability (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "normalization",
+          "batch",
+          "instance",
+          "layer",
+          "norm"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Batch Normalization Layer",
+          "ref": "dlnormalizationlib/Batch Normalization Layer",
+          "since": "R2024b+",
+          "intent": "Normalize activations across the batch using learned scale and offset — use between convolution and activation to stabilize training and accelerate convergence"
+        },
+        {
+          "block": "Instance Normalization Layer",
+          "ref": "dlnormalizationlib/Instance Normalization Layer",
+          "since": "R2026a+",
+          "intent": "Normalize each sample independently across spatial dimensions — use in style transfer or generative networks where batch statistics are inappropriate"
+        },
+        {
+          "block": "Layer Normalization Layer",
+          "ref": "dlnormalizationlib/Layer Normalization Layer",
+          "since": "R2024b+",
+          "intent": "Normalize activations across features within each sample — use in transformer architectures or recurrent networks where batch normalization is unsuitable"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "pooling-layers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "pooling-layers",
+      "hash": "096e07c9c38682e694404f96e0cb626717bf08c86e468d3bb34448c1b6ce37bf",
+      "fm": {
+        "title": "Pooling layers",
+        "description": "Spatial and temporal pooling layers for dimensionality reduction (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "pooling",
+          "max",
+          "average",
+          "global",
+          "downsample"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Average Pooling 1D Layer",
+          "ref": "dlpoolinglib/Average Pooling 1D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce temporal resolution by averaging over sliding windows — use to downsample 1-D feature maps while preserving smooth signal characteristics"
+        },
+        {
+          "block": "Average Pooling 2D Layer",
+          "ref": "dlpoolinglib/Average Pooling 2D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce spatial resolution by averaging over 2-D sliding windows — use to downsample feature maps while preserving average activation patterns"
+        },
+        {
+          "block": "Average Pooling 3D Layer",
+          "ref": "dlpoolinglib/Average Pooling 3D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce volumetric resolution by averaging over 3-D sliding windows — use to downsample 3-D feature maps in video or medical imaging networks"
+        },
+        {
+          "block": "Global Average Pooling 1D Layer",
+          "ref": "dlpoolinglib/Global Average Pooling 1D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce each 1-D feature channel to a single value by global averaging — use before the classification head to make the network input-length invariant"
+        },
+        {
+          "block": "Global Average Pooling 2D Layer",
+          "ref": "dlpoolinglib/Global Average Pooling 2D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce each 2-D feature map to a single value by global averaging — use before the classification head to replace fully connected layers with spatial invariance"
+        },
+        {
+          "block": "Global Average Pooling 3D Layer",
+          "ref": "dlpoolinglib/Global Average Pooling 3D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce each 3-D feature volume to a single value by global averaging — use before classification to achieve spatial invariance in volumetric networks"
+        },
+        {
+          "block": "Global Max Pooling 1D Layer",
+          "ref": "dlpoolinglib/Global Max Pooling 1D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce each 1-D feature channel to its maximum value — use to capture the strongest activation regardless of temporal position"
+        },
+        {
+          "block": "Global Max Pooling 2D Layer",
+          "ref": "dlpoolinglib/Global Max Pooling 2D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce each 2-D feature map to its maximum value — use to capture the strongest spatial activation for position-invariant feature extraction"
+        },
+        {
+          "block": "Global Max Pooling 3D Layer",
+          "ref": "dlpoolinglib/Global Max Pooling 3D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce each 3-D feature volume to its maximum value — use for position-invariant feature extraction from volumetric data"
+        },
+        {
+          "block": "Max Pooling 1D Layer",
+          "ref": "dlpoolinglib/Max Pooling 1D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce temporal resolution by taking the maximum over sliding windows — use to downsample 1-D feature maps while retaining the strongest activations"
+        },
+        {
+          "block": "Max Pooling 2D Layer",
+          "ref": "dlpoolinglib/Max Pooling 2D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce spatial resolution by taking the maximum over 2-D sliding windows — use to downsample feature maps while preserving dominant features and adding translation invariance"
+        },
+        {
+          "block": "Max Pooling 3D Layer",
+          "ref": "dlpoolinglib/Max Pooling 3D Layer",
+          "since": "R2024b+",
+          "intent": "Reduce volumetric resolution by taking the maximum over 3-D sliding windows — use to downsample 3-D feature maps in video or medical imaging networks"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sequence-layers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "sequence-layers",
+      "hash": "3a33c4cf33b5aff874b732cdac300dbaf871e2a7b5c75d7b4ccd7f1177592578",
+      "fm": {
+        "title": "Sequence layers",
+        "description": "Recurrent layers (LSTM, GRU) and reshaping for sequence processing (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "lstm",
+          "gru",
+          "sequence",
+          "recurrent",
+          "flatten"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Flatten Layer",
+          "ref": "dlsequencelib/Flatten Layer",
+          "since": "R2024b+",
+          "intent": "Reshape a multi-dimensional input into a 1-D vector — use to transition from convolutional feature maps to fully connected layers or sequence inputs"
+        },
+        {
+          "block": "GRU Layer",
+          "ref": "dlsequencelib/GRU Layer",
+          "since": "R2025a+",
+          "intent": "Apply a Gated Recurrent Unit for sequence modeling — use for temporal pattern recognition in time-series data with lower computational cost than LSTM"
+        },
+        {
+          "block": "GRU Projected Layer",
+          "ref": "dlsequencelib/GRU Projected Layer",
+          "since": "R2025a+",
+          "intent": "Apply a GRU with projection to reduce output dimensionality — use for sequence tasks where a lower-dimensional hidden state reduces computation without losing accuracy"
+        },
+        {
+          "block": "LSTM Layer",
+          "ref": "dlsequencelib/LSTM Layer",
+          "since": "R2024b+",
+          "intent": "Apply a Long Short-Term Memory layer for sequence modeling — use for temporal dependencies in time-series prediction, speech, or sequential signal processing"
+        },
+        {
+          "block": "LSTM Projected Layer",
+          "ref": "dlsequencelib/LSTM Projected Layer",
+          "since": "R2024b+",
+          "intent": "Apply an LSTM with projection to reduce hidden state size — use when the full LSTM hidden dimension is larger than needed for the downstream task"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utility-layers",
+      "kind": "toolbox",
+      "library": "Deep Learning Toolbox",
+      "kbFolder": "deep-learning-toolbox",
+      "category": "utility-layers",
+      "hash": "7882332bfe377ffa33094d1dc5875e2488f18d580db6ad49b4e418a6a66cdb0d",
+      "fm": {
+        "title": "Utility layers",
+        "description": "Dropout, reshape, permute, and other structural utility layers (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "deep-learning-toolbox",
+          "dropout",
+          "reshape",
+          "permute",
+          "slice",
+          "identity"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Dropout Layer",
+          "ref": "dlutilitylib/Dropout Layer",
+          "since": "R2024b+",
+          "intent": "Randomly zero activations during training for regularization — use to prevent overfitting by forcing the network to learn redundant representations"
+        },
+        {
+          "block": "Identity Layer",
+          "ref": "dlutilitylib/Identity Layer",
+          "since": "R2026a+",
+          "intent": "Pass input through unchanged — use as a placeholder or naming point in complex architectures for clarity or to mark branch points"
+        },
+        {
+          "block": "Scaling Layer",
+          "ref": "dlutilitylib/Scaling Layer",
+          "since": "R2026a+",
+          "intent": "Multiply input by a constant factor — use to apply fixed gain to activations for calibration or to match output ranges to downstream requirements"
+        },
+        {
+          "block": "Spatial Dropout Layer",
+          "ref": "dlutilitylib/Spatial Dropout Layer",
+          "since": "R2026a+",
+          "intent": "Drop entire feature channels rather than individual elements during training — use for spatial regularization in convolutional networks where adjacent activations are correlated"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:18",
+  "generatedAtDatenum": 740309.99535436346
 }

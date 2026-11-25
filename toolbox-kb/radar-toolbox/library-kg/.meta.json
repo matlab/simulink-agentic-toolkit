@@ -1,15 +1,153 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457549769,
-  "generatorVersion": 4,
-  "libraries": [
-    "Radar Toolbox"
-  ],
-  "blockCount": 12,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Radar_Toolbox": {
-      "blockCount": 12
+  "pages": [
+    {
+      "id": "channel-propagation",
+      "kind": "toolbox",
+      "library": "Radar Toolbox",
+      "kbFolder": "radar-toolbox",
+      "category": "channel-propagation",
+      "hash": "3c12c54a4f87e9332e38c94431ad333986ffbde84cf81603dd6d4006b59a7a55",
+      "fm": {
+        "title": "Channel propagation",
+        "description": "Propagation channel models and interference (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "radar-toolbox",
+          "channel",
+          "propagation",
+          "multipath",
+          "jammer",
+          "tworay"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Barrage Jammer",
+          "ref": "radarlib/Barrage Jammer",
+          "since": "R2023a+",
+          "intent": "Generate broadband jamming interference — use for modeling electronic warfare scenarios or testing radar performance under intentional interference"
+        },
+        {
+          "block": "Two-Ray Channel",
+          "ref": "radarlib/Two-Ray Channel",
+          "since": "R2023a+",
+          "intent": "Model narrowband two-ray propagation with ground reflection — use for simulating multipath fading in automotive or low-altitude radar scenarios"
+        },
+        {
+          "block": "Wideband Two-Ray Channel",
+          "ref": "radarlib/Wideband Two-Ray Channel",
+          "since": "R2023a+",
+          "intent": "Model wideband two-ray propagation with ground reflection — use for simulating frequency-selective multipath in wideband radar systems"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "targets-clutter",
+      "kind": "toolbox",
+      "library": "Radar Toolbox",
+      "kbFolder": "radar-toolbox",
+      "category": "targets-clutter",
+      "hash": "cd6e67a151ec74bfa21730d6f01aac4cad944c6aabefe0237b706c8cbbaa1607",
+      "fm": {
+        "title": "Targets clutter",
+        "description": "Radar target models and environmental clutter (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "radar-toolbox",
+          "backscatter",
+          "clutter",
+          "pedestrian",
+          "target",
+          "rcs"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Backscatter Bicyclist",
+          "ref": "radarlib/Backscatter Bicyclist",
+          "since": "R2023a+",
+          "intent": "Simulate radar backscatter from a moving bicyclist — use for generating realistic micro-Doppler signatures in automotive radar scenarios"
+        },
+        {
+          "block": "Backscatter Pedestrian",
+          "ref": "radarlib/Backscatter Pedestrian",
+          "since": "R2023a+",
+          "intent": "Simulate radar backscatter from a walking pedestrian — use for generating realistic micro-Doppler signatures for vulnerable road user detection"
+        },
+        {
+          "block": "Constant Gamma Clutter",
+          "ref": "radarlib/Constant Gamma Clutter",
+          "since": "R2023a+",
+          "intent": "Generate surface clutter returns with constant gamma reflectivity — use for simulating ground or sea clutter in radar system performance evaluation"
+        },
+        {
+          "block": "GPU Constant Gamma Clutter",
+          "ref": "radarlib/GPU Constant Gamma Clutter",
+          "since": "R2023a+",
+          "intent": "GPU-accelerated surface clutter generation — use for high-fidelity clutter simulation when processing speed is critical in large radar scenarios"
+        },
+        {
+          "block": "Radar Data Generator",
+          "ref": "radarlib/Radar Data Generator",
+          "since": "R2023a+",
+          "intent": "Generate synthetic radar detections from scenario objects — use for rapid prototyping of radar processing algorithms without full signal-level simulation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "waveforms-processing",
+      "kind": "toolbox",
+      "library": "Radar Toolbox",
+      "kbFolder": "radar-toolbox",
+      "category": "waveforms-processing",
+      "hash": "f4c05d174c7be854fc39107621e22819f129d929d2135d5d1e2e964d1b759152",
+      "fm": {
+        "title": "Waveforms processing",
+        "description": "Waveform generation and signal processing (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "radar-toolbox",
+          "pulse",
+          "waveform",
+          "compression",
+          "detection",
+          "clustering"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DBSCAN Clustering",
+          "ref": "radarlib/DBSCAN Clustering",
+          "since": "R2023a+",
+          "intent": "Cluster radar detections using density-based spatial clustering — use for grouping point detections into distinct objects without knowing object count"
+        },
+        {
+          "block": "Detection Concatenation",
+          "ref": "radarlib/Detection Concatenation",
+          "since": "R2023a+",
+          "intent": "Merge detection lists from multiple sensors or frames — use for combining radar detections before tracking or fusion processing"
+        },
+        {
+          "block": "Pulse Compression Library",
+          "ref": "radarlib/Pulse Compression Library",
+          "since": "R2023a+",
+          "intent": "Apply matched filtering to compress radar pulses — use for improving range resolution and SNR in pulsed radar receivers"
+        },
+        {
+          "block": "Pulse Waveform Library",
+          "ref": "radarlib/Pulse Waveform Library",
+          "since": "R2023a+",
+          "intent": "Generate configurable radar transmit waveforms — use for creating LFM chirps, phase-coded pulses, or custom waveforms for radar transmitters"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:26",
+  "generatedAtDatenum": 740309.99544409721
 }

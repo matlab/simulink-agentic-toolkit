@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Magnetometer
-description: On-board 3-axis magnetometers
-tags: [magnetometer, magetometer, lsm303, mag3110]
-status: stable
-source: custom_library
-library_root: Simulink Coder Support Package for BBC micro:bit
-category_path: Magnetometer
+description: On-board 3-axis magnetometers (4 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-bbc-micro-bit, magnetometer, magetometer, lsm303, mag3110]
+status: draft
+sources:
+  - resource: matlab:microbitmagnetlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for BBC micro:bit
+kb_folder: simulink-coder-support-package-for-bbc-micro-bit
+category: magnetometer
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Magnetometer
-
-Use these blocks for magnetometer.
 
 ## Recommended Blocks
 

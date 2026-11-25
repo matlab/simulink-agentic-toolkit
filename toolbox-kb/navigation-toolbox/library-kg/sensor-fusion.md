@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensor fusion
-description: Orientation and position estimation from sensor data
-tags: [ahrs, filter, orientation, fusion, imu]
+description: Orientation and position estimation from sensor data (5 blocks)
+tags: [toolbox-kb, navigation-toolbox, ahrs, filter, orientation, fusion, imu]
 status: stable
-source: mathworks_toolbox
-library_root: Navigation Toolbox
-category_path: Sensor fusion
+sources:
+  - resource: matlab:mspfiltlib
+source: toolbox_kb
+managed_by: satk
+library: Navigation Toolbox
+kb_folder: navigation-toolbox
+category: sensor-fusion
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Sensor fusion
-
-Use these blocks for sensor fusion.
 
 ## Recommended Blocks
 

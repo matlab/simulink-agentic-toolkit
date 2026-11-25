@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Reinforcement learning
-description: Reinforcement learning agents and policies for Simulink
-tags: [rl, agent, policy, training, reward]
+description: Reinforcement learning agents and policies for Simulink (2 blocks)
+tags: [toolbox-kb, reinforcement-learning, rl, agent, policy, training, reward]
 status: stable
-source: mathworks_toolbox
-library_root: Reinforcement Learning
-category_path: Reinforcement learning
+sources:
+  - resource: matlab:rllib
+source: toolbox_kb
+managed_by: satk
+library: Reinforcement Learning
+kb_folder: reinforcement-learning
+category: reinforcement-learning
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Reinforcement learning
-
-Use these blocks for reinforcement learning.
 
 ## Recommended Blocks
 

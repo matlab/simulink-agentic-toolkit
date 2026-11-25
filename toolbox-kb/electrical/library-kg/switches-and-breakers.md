@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Switches and breakers
-description: Circuit breakers, relays, switches, and fuses for protection and switching
-tags: [breaker, switch, relay, fuse, protection]
+description: "Circuit breakers, relays, switches, and fuses for protection and switching (13 blocks)"
+tags: [toolbox-kb, electrical, breaker, switch, relay, fuse, protection]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Switches and breakers
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: switches-and-breakers
 block_count: 13
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Switches and breakers
-
-Use these blocks for switches and breakers.
 
 ## Recommended Blocks
 

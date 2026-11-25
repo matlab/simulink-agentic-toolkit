@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Lidar sensing
-description: Lidar sensor simulation and point cloud generation
-tags: [lidar, pointcloud, sensor, 3d, perception]
+description: Lidar sensor simulation and point cloud generation (1 blocks)
+tags: [toolbox-kb, lidar-toolbox, lidar, pointcloud, sensor, "3d", perception]
 status: stable
-source: mathworks_toolbox
-library_root: Lidar Toolbox
-category_path: Lidar sensing
+sources:
+  - resource: matlab:lidarlib
+source: toolbox_kb
+managed_by: satk
+library: Lidar Toolbox
+kb_folder: lidar-toolbox
+category: lidar-sensing
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Lidar sensing
-
-Use these blocks for lidar sensing.
 
 ## Recommended Blocks
 

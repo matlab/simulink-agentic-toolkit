@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pilot models
-description: Human pilot transfer function models
-tags: [pilot, crossover, handling qualities, neuromuscular]
+description: Human pilot transfer function models (3 blocks)
+tags: [toolbox-kb, aerospace-blockset, pilot, crossover, handling qualities, neuromuscular]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Pilot models
+sources:
+  - resource: matlab:aerolibpilot
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: pilot-models
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Pilot models
-
-Use these blocks for pilot models.
 
 ## Recommended Blocks
 

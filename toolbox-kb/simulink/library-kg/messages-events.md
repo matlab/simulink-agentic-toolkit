@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Messages events
-description: Message passing, queues, and event scheduling
-tags: [message, queue, send, receive, event, hit crossing]
+description: "Message passing, queues, and event scheduling (7 blocks)"
+tags: [toolbox-kb, simulink, message, queue, send, receive, event, hit crossing]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: Messages events
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: messages-events
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Messages events
-
-Use these blocks for messages events.
 
 ## Recommended Blocks
 

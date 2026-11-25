@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Simscape utilities
-description: Core Simscape connection, probing, and component-authoring utilities
-tags: [connection, probe, simscape component, simscape bus, variant connector, array connection, spectrum analyzer]
+description: "Core Simscape connection, probing, and component-authoring utilities (8 blocks)"
+tags: [toolbox-kb, utilities, connection, probe, simscape component, simscape bus, variant connector, array connection, spectrum analyzer]
 status: stable
-source: custom_library
-library_root: Utilities
-category_path: Simscape utilities
+sources:
+  - resource: matlab:nesl_utility
+source: toolbox_kb
+managed_by: satk
+library: Utilities
+kb_folder: utilities
+category: simscape-utilities
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Simscape utilities
-
-Use these blocks for simscape utilities.
 
 ## Recommended Blocks
 

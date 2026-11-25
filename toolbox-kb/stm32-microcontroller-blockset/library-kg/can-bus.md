@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Can bus
-description: Controller Area Network peripherals for automotive and industrial communication
-tags: [CAN, FDCAN, automotive, message, bus]
+description: Controller Area Network peripherals for automotive and industrial communication (24 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, CAN, FDCAN, automotive, message, bus]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Can bus
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: can-bus
 block_count: 24
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # Can bus
-
-Use these blocks for can bus.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Driver models
-description: Driver behavior models for steering and longitudinal control
-tags: [driver, steering, throttle, path-following, longitudinal]
+description: Driver behavior models for steering and longitudinal control (3 blocks)
+tags: [toolbox-kb, vehicle-dynamics-blockset, driver, steering, throttle, path-following, longitudinal]
 status: stable
-source: mathworks_toolbox
-library_root: Vehicle Dynamics Blockset
-category_path: Driver models
+sources:
+  - resource: matlab:vehdynlibdriver
+source: toolbox_kb
+managed_by: satk
+library: Vehicle Dynamics Blockset
+kb_folder: vehicle-dynamics-blockset
+category: driver-models
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Driver models
-
-Use these blocks for driver models.
 
 ## Recommended Blocks
 

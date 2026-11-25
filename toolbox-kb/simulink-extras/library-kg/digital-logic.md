@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Digital logic
-description: Flip-flops, latches, and clock blocks
-tags: [flip-flop, latch, clock, digital, edge]
+description: "Flip-flops, latches, and clock blocks (5 blocks)"
+tags: [toolbox-kb, simulink-extras, flip-flop, latch, clock, digital, edge]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Extras
-category_path: Digital logic
+sources:
+  - resource: matlab:simulink_extras
+source: toolbox_kb
+managed_by: satk
+library: Simulink Extras
+kb_folder: simulink-extras
+category: digital-logic
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Digital logic
-
-Use these blocks for digital logic.
 
 ## Recommended Blocks
 

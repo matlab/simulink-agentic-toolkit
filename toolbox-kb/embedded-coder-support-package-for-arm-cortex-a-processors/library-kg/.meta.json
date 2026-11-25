@@ -1,15 +1,55 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74455871526,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for ARM Cortex-A Processors"
-  ],
-  "blockCount": 4,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_ARM_Cortex_A_Processors": {
-      "blockCount": 4
+  "pages": [
+    {
+      "id": "arm-cortex-a",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for ARM Cortex-A Processors",
+      "kbFolder": "embedded-coder-support-package-for-arm-cortex-a-processors",
+      "category": "arm-cortex-a",
+      "hash": "43f010712f2142fcf9ab29e2c8bded9600354d1e9c46cd26d958b1f4e26f5535",
+      "fm": {
+        "title": "Arm cortex a",
+        "description": "Deployment blocks for ARM Cortex-A application processors running Linux or VxWorks (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-arm-cortex-a-processors",
+          "arm",
+          "cortex-a",
+          "linux",
+          "vxworks",
+          "task"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Linux Task",
+          "ref": "arm_cortex_a_lib/Linux Task",
+          "since": "R2023a+",
+          "intent": "Execute a subsystem as a Linux process task on an ARM Cortex-A processor — use to deploy algorithms as real-time Linux tasks on application processors"
+        },
+        {
+          "block": "VxWorks Task",
+          "ref": "arm_cortex_a_lib/VxWorks Task",
+          "since": "R2023a+",
+          "intent": "Execute a subsystem as a VxWorks task on an ARM Cortex-A processor — use when deploying to Cortex-A boards running VxWorks RTOS"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "arm_cortex_a_lib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP datagrams on the ARM Cortex-A target — use for host-target communication over Ethernet during deployment"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "arm_cortex_a_lib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP datagrams from the ARM Cortex-A target — use for telemetry or parameter exchange with a host PC"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:20",
+  "generatedAtDatenum": 740309.9953703935
 }

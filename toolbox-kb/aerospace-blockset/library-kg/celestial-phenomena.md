@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Celestial phenomena
-description: Celestial bodies, ephemeris, eclipse, and Earth orientation
-tags: [ephemeris, eclipse, nutation, planetary, solar flux]
+description: "Celestial bodies, ephemeris, eclipse, and Earth orientation (9 blocks)"
+tags: [toolbox-kb, aerospace-blockset, ephemeris, eclipse, nutation, planetary, solar flux]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Celestial phenomena
+sources:
+  - resource: matlab:aerolibcelestial
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: celestial-phenomena
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Celestial phenomena
-
-Use these blocks for celestial phenomena.
 
 ## Recommended Blocks
 

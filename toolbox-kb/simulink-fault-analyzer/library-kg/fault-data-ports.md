@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Fault data ports
-description: Ports that feed external data or parameters used to drive fault behavior
-tags: [fault, data, parameter, inport, injection]
+description: Ports that feed external data or parameters used to drive fault behavior (1 blocks)
+tags: [toolbox-kb, simulink-fault-analyzer, fault, data, parameter, inport, injection]
 status: stable
-source: custom_library
-library_root: Simulink Fault Analyzer
-category_path: Fault data ports
+sources:
+  - resource: matlab:mwfaultblocklib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Fault Analyzer
+kb_folder: simulink-fault-analyzer
+category: fault-data-ports
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Fault data ports
-
-Use these blocks for fault data ports.
 
 ## Recommended Blocks
 

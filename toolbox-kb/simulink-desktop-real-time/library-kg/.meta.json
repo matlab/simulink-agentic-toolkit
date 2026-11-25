@@ -1,15 +1,232 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74459398154,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Desktop Real-Time"
-  ],
-  "blockCount": 21,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Simulink_Desktop_Real_Time": {
-      "blockCount": 21
+  "pages": [
+    {
+      "id": "analog-io",
+      "kind": "toolbox",
+      "library": "Simulink Desktop Real-Time",
+      "kbFolder": "simulink-desktop-real-time",
+      "category": "analog-io",
+      "hash": "17f68229cb28cc28a3ce800bd29813625aeff98dae99b2c47055db7d9e280350",
+      "fm": {
+        "title": "Analog io",
+        "description": "Analog input/output via DAQ hardware (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-desktop-real-time",
+          "analog",
+          "voltage",
+          "dac",
+          "adc",
+          "sample"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog Input",
+          "ref": "sldrtlib/Analog Input",
+          "since": "R2023a+",
+          "intent": "Read analog voltage from DAQ hardware in real time — use for acquiring sensor signals at deterministic sample rates on the desktop"
+        },
+        {
+          "block": "Analog Output",
+          "ref": "sldrtlib/Analog Output",
+          "since": "R2023a+",
+          "intent": "Write analog voltage to DAQ hardware in real time — use for generating control signals to actuators at deterministic sample rates"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "digital-io",
+      "kind": "toolbox",
+      "library": "Simulink Desktop Real-Time",
+      "kbFolder": "simulink-desktop-real-time",
+      "category": "digital-io",
+      "hash": "3dc7b882a6524dc344401b7ed03a6bd826f60c8999681a23e6b1bcbb498d9f51",
+      "fm": {
+        "title": "Digital io",
+        "description": "Digital, counter, and encoder I/O (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-desktop-real-time",
+          "digital",
+          "counter",
+          "encoder",
+          "frequency",
+          "servo"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Servo Output",
+          "ref": "sldrtlib/Servo Output",
+          "since": "R2023a+",
+          "intent": "Generate servo control signals via real-time hardware — use for driving RC servos or positioning actuators from desktop real-time models"
+        },
+        {
+          "block": "Counter Input",
+          "ref": "sldrtlib/Counter Input",
+          "since": "R2023a+",
+          "intent": "Read hardware counter values in real time — use for measuring encoder counts, pulse frequencies, or event timing"
+        },
+        {
+          "block": "Digital Input",
+          "ref": "sldrtlib/Digital Input",
+          "since": "R2023a+",
+          "intent": "Read digital channels from DAQ hardware in real time — use for acquiring switch states or digital sensor signals"
+        },
+        {
+          "block": "Digital Output",
+          "ref": "sldrtlib/Digital Output",
+          "since": "R2023a+",
+          "intent": "Write digital channels to DAQ hardware in real time — use for controlling relays, indicators, or digital actuators"
+        },
+        {
+          "block": "Encoder Input",
+          "ref": "sldrtlib/Encoder Input",
+          "since": "R2023a+",
+          "intent": "Read quadrature encoder position in real time — use for measuring motor shaft angle or linear position with hardware decoding"
+        },
+        {
+          "block": "Frequency Output",
+          "ref": "sldrtlib/Frequency Output",
+          "since": "R2023a+",
+          "intent": "Generate a frequency signal via DAQ hardware — use for producing clock outputs or variable-frequency drive signals"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "iot-profiling",
+      "kind": "toolbox",
+      "library": "Simulink Desktop Real-Time",
+      "kbFolder": "simulink-desktop-real-time",
+      "category": "iot-profiling",
+      "hash": "3b307ba6b5d8f5d45d7d946a10c6c9b7f0fb35ef7472220c4a7eeb3b06992289",
+      "fm": {
+        "title": "Iot profiling",
+        "description": "IoT connectivity and execution profiling (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-desktop-real-time",
+          "thingspeak",
+          "iot",
+          "execution",
+          "timestamp",
+          "profile"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Examples",
+          "ref": "sldrtlib/Examples",
+          "since": "R2023a+",
+          "intent": "Example models for Simulink Desktop Real-Time — use as reference for setting up real-time I/O configurations"
+        },
+        {
+          "block": "Real-Time Synchronization",
+          "ref": "sldrtlib/Real-Time Synchronization",
+          "since": "R2023a+",
+          "intent": "Synchronize model execution to real-time clock — use as the essential block that enables desktop real-time mode for any model"
+        },
+        {
+          "block": "ThingSpeak Input",
+          "ref": "sldrtlib/Internet of Things/ThingSpeak Input",
+          "since": "R2023a+",
+          "intent": "Read data from ThingSpeak IoT platform in real time — use for incorporating cloud sensor data into real-time desktop simulations"
+        },
+        {
+          "block": "ThingSpeak Output",
+          "ref": "sldrtlib/Internet of Things/ThingSpeak Output",
+          "since": "R2023a+",
+          "intent": "Write data to ThingSpeak IoT platform in real time — use for uploading measurement data to the cloud during real-time operation"
+        },
+        {
+          "block": "Execution Time",
+          "ref": "sldrtlib/Target Profiling/Execution Time",
+          "since": "R2023a+",
+          "intent": "Measure task execution time of the real-time model — use for profiling computational load and detecting timing overruns"
+        },
+        {
+          "block": "Timestamp",
+          "ref": "sldrtlib/Target Profiling/Timestamp",
+          "since": "R2023a+",
+          "intent": "Read the real-time clock timestamp — use for precise time-stamping of events or measuring actual execution timing"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "streaming",
+      "kind": "toolbox",
+      "library": "Simulink Desktop Real-Time",
+      "kbFolder": "simulink-desktop-real-time",
+      "category": "streaming",
+      "hash": "6ab7d25ebc1be39bde5d95062fab3b4bf3a14d19ca550e739616f2de4237a28d",
+      "fm": {
+        "title": "Streaming",
+        "description": "Packet and stream-based data exchange (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-desktop-real-time",
+          "packet",
+          "stream",
+          "video",
+          "raw",
+          "binary"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Other Input",
+          "ref": "sldrtlib/Other Input",
+          "since": "R2023a+",
+          "intent": "Read vendor-specific input channels — use for accessing custom or non-standard DAQ hardware inputs"
+        },
+        {
+          "block": "Other Output",
+          "ref": "sldrtlib/Other Output",
+          "since": "R2023a+",
+          "intent": "Write vendor-specific output channels — use for accessing custom or non-standard DAQ hardware outputs"
+        },
+        {
+          "block": "Packet Input",
+          "ref": "sldrtlib/Packet Input",
+          "since": "R2023a+",
+          "intent": "Receive raw data packets from hardware — use for reading structured binary data from custom I/O devices in real time"
+        },
+        {
+          "block": "Packet Output",
+          "ref": "sldrtlib/Packet Output",
+          "since": "R2023a+",
+          "intent": "Send raw data packets to hardware — use for transmitting structured binary commands to custom I/O devices in real time"
+        },
+        {
+          "block": "Stream Input",
+          "ref": "sldrtlib/Stream Input",
+          "since": "R2023a+",
+          "intent": "Receive streaming data from hardware — use for continuous data acquisition from serial or network devices in real time"
+        },
+        {
+          "block": "Stream Output",
+          "ref": "sldrtlib/Stream Output",
+          "since": "R2023a+",
+          "intent": "Send streaming data to hardware — use for continuous data output to serial or network devices in real time"
+        },
+        {
+          "block": "Video Input",
+          "ref": "sldrtlib/Video Input",
+          "since": "R2023a+",
+          "intent": "Capture video frames from hardware in real time — use for real-time image acquisition from cameras or frame grabbers"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:31",
+  "generatedAtDatenum": 740309.9955044908
 }

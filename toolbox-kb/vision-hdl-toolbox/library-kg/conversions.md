@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Conversions
-description: HDL-optimized color, gamma, and format conversions
-tags: [conversions, chroma, color space, demosaic, gamma, lookup table]
+description: "HDL-optimized color, gamma, and format conversions (5 blocks)"
+tags: [toolbox-kb, vision-hdl-toolbox, conversions, chroma, color space, demosaic, gamma, lookup table]
 status: stable
-source: custom_library
-library_root: Vision HDL Toolbox
-category_path: Conversions
+sources:
+  - resource: matlab:visionhdlconversions
+source: toolbox_kb
+managed_by: satk
+library: Vision HDL Toolbox
+kb_folder: vision-hdl-toolbox
+category: conversions
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Conversions
-
-Use these blocks for conversions.
 
 ## Recommended Blocks
 

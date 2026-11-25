@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Input normalization
-description: Input data normalization and inverse denormalization for inference
-tags: [rescale, zscore, zerocenter, normalize, inverse]
+description: Input data normalization and inverse denormalization for inference (14 blocks)
+tags: [toolbox-kb, deep-learning-toolbox, rescale, zscore, zerocenter, normalize, inverse]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Input normalization
+sources:
+  - resource: matlab:dlinputlayernormlib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: input-normalization
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Input normalization
-
-Use these blocks for input normalization.
 
 ## Recommended Blocks
 

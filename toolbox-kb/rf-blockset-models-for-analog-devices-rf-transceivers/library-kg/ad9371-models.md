@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ad9371 models
-description: AD9371 transceiver signal chain models
-tags: [ad9371, rx, tx, orx, snf]
+description: AD9371 transceiver signal chain models (4 blocks)
+tags: [toolbox-kb, rf-blockset-models-for-analog-devices-rf-transceivers, ad9371, rx, tx, orx, snf]
 status: stable
-source: mathworks_toolbox
-library_root: RF Blockset Models for Analog Devices RF Transceivers
-category_path: Ad9371 models
+sources:
+  - resource: matlab:ad9371_models
+source: toolbox_kb
+managed_by: satk
+library: RF Blockset Models for Analog Devices RF Transceivers
+kb_folder: rf-blockset-models-for-analog-devices-rf-transceivers
+category: ad9371-models
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Ad9371 models
-
-Use these blocks for ad9371 models.
 
 ## Recommended Blocks
 

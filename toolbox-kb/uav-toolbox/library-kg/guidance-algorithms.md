@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Guidance algorithms
-description: Path following, trajectory generation, and obstacle avoidance
-tags: [algorithms, follower, trajectory, obstacle, point mass, polynomial]
-status: stable
-source: custom_library
-library_root: UAV Toolbox
-category_path: Guidance algorithms
+description: "Path following, trajectory generation, and obstacle avoidance (11 blocks)"
+tags: [toolbox-kb, uav-toolbox, algorithms, follower, trajectory, obstacle, point mass, polynomial]
+status: draft
+sources:
+  - resource: matlab:uavalgslib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox
+kb_folder: uav-toolbox
+category: guidance-algorithms
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Guidance algorithms
-
-Use these blocks for guidance algorithms.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gears
-description: Gear pairs, planetary sets, differentials, and rotational-to-translational converters
-tags: [gear, planetary, differential, ratio, mesh]
+description: "Gear pairs, planetary sets, differentials, and rotational-to-translational converters (19 blocks)"
+tags: [toolbox-kb, driveline, gear, planetary, differential, ratio, mesh]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Gears
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: gears
 block_count: 19
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Gears
-
-Use these blocks for gears.
 
 ## Recommended Blocks
 

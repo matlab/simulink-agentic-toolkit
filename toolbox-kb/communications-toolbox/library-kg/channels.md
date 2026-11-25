@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Channels
-description: Channel models: noise, fading, and channel response
-tags: [channels, awgn, fading, symmetric channel, channel response]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Channels
+description: "Channel models: noise, fading, and channel response (8 blocks)"
+tags: [toolbox-kb, communications-toolbox, channels, awgn, fading, symmetric channel, channel response]
+status: draft
+sources:
+  - resource: matlab:commchan3
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: channels
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Channels
-
-Use these blocks for channels.
 
 ## Recommended Blocks
 

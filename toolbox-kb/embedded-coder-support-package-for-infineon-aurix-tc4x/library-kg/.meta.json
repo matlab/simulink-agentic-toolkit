@@ -1,15 +1,182 @@
 {
-  "generatedAt": "2026-09-29T16:38:07",
-  "generatedAtDatenum": 740254.69314424763,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder Support Package for Infineon AURIX TC4x"
-  ],
-  "blockCount": 14,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Embedded_Coder_Support_Package_for_Infineon_AURIX_TC4x": {
-      "blockCount": 14
+  "pages": [
+    {
+      "id": "scheduling",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Infineon AURIX TC4x",
+      "kbFolder": "embedded-coder-support-package-for-infineon-aurix-tc4x",
+      "category": "scheduling",
+      "hash": "733a829a1f31c5250e553e5323f594d54f818ff71cce0d3311a80fd17495b6f5",
+      "fm": {
+        "title": "Scheduling",
+        "description": "Map model rates to OS tasks on the multicore target (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-infineon-aurix-tc4x",
+          "task",
+          "scheduling",
+          "rate",
+          "core"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Task Manager",
+          "ref": "aurixtc4xlib/Scheduling/Task Manager",
+          "since": "R2024b+",
+          "intent": "Define and schedule the tasks (rates, cores, priorities) that generated code runs on the AURIX TC4x multicore target — use to map model rates to OS tasks for deployment."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "target-communication",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Infineon AURIX TC4x",
+      "kbFolder": "embedded-coder-support-package-for-infineon-aurix-tc4x",
+      "category": "target-communication",
+      "hash": "360c75ac8d7d5c295decd78c4889b9fbfd62dffa372b450bb6473c5179aaf88c",
+      "fm": {
+        "title": "Target communication",
+        "description": "Data exchange between processes and cores (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-infineon-aurix-tc4x",
+          "interprocess",
+          "target communication",
+          "shared",
+          "channel"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Interprocess Data Read",
+          "ref": "aurixtc4xlib/Target Communication/Interprocess Data Read",
+          "since": "R2024b+",
+          "intent": "Read data shared between processes or cores on the AURIX TC4x — use to consume values produced by another task or core in a multicore design."
+        },
+        {
+          "block": "Interprocess Data Write",
+          "ref": "aurixtc4xlib/Target Communication/Interprocess Data Write",
+          "since": "R2024b+",
+          "intent": "Write data to be shared between processes or cores on the AURIX TC4x — use to publish values for another task or core in a multicore design."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "test-bench",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Infineon AURIX TC4x",
+      "kbFolder": "embedded-coder-support-package-for-infineon-aurix-tc4x",
+      "category": "test-bench",
+      "hash": "f594ec77a44a0305e5821145075c9b9e3fcd1e26c5d90c92286667bb1e2d6a44",
+      "fm": {
+        "title": "Test bench",
+        "description": "Harness stand-ins for target peripherals used in SIL/PIL testing (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-infineon-aurix-tc4x",
+          "test bench",
+          "interface",
+          "event source",
+          "harness"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADC Interface",
+          "ref": "aurixtc4xlib/Test Bench Blocks/ADC Interface",
+          "since": "R2024b+",
+          "intent": "Test-bench stand-in for the target ADC — use in a SIL/PIL harness to inject analog readings without the physical peripheral."
+        },
+        {
+          "block": "Digital IO Interface",
+          "ref": "aurixtc4xlib/Test Bench Blocks/Digital IO Interface",
+          "since": "R2024b+",
+          "intent": "Test-bench stand-in for target digital I/O — use in a harness to drive and observe digital pins without hardware."
+        },
+        {
+          "block": "Event Source",
+          "ref": "aurixtc4xlib/Test Bench Blocks/Event Source",
+          "since": "R2024b+",
+          "intent": "Test-bench block that generates trigger events — use to stimulate event-driven tasks in a harness."
+        },
+        {
+          "block": "Interprocess Data Channel",
+          "ref": "aurixtc4xlib/Test Bench Blocks/Interprocess Data Channel",
+          "since": "R2024b+",
+          "intent": "Test-bench model of an interprocess data channel — use to wire Interprocess Data Read/Write pairs together in a harness."
+        },
+        {
+          "block": "PWM Interface",
+          "ref": "aurixtc4xlib/Test Bench Blocks/PWM Interface",
+          "since": "R2024b+",
+          "intent": "Test-bench stand-in for the target PWM peripheral — use in a harness to observe PWM commands without hardware."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "uncategorized",
+      "kind": "toolbox",
+      "library": "Embedded Coder Support Package for Infineon AURIX TC4x",
+      "kbFolder": "embedded-coder-support-package-for-infineon-aurix-tc4x",
+      "category": "uncategorized",
+      "hash": "325a6e77d6a89939e1cd5dc041aaaf4f5b76619ed40cd92140ab65e7ea50e930",
+      "fm": {
+        "title": "Uncategorized",
+        "description": "Blocks for Uncategorized (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder-support-package-for-infineon-aurix-tc4x"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "AURIX TC46x",
+          "ref": "aurixtc4xlib/AURIX TC46x",
+          "since": "R2026a+",
+          "intent": "Aurix Utilities Blocks"
+        },
+        {
+          "block": "AURIX TC48x",
+          "ref": "aurixtc4xlib/AURIX TC48x",
+          "since": "R2026a+",
+          "intent": "Aurix Utilities Blocks"
+        },
+        {
+          "block": "AURIX TC49x",
+          "ref": "aurixtc4xlib/AURIX TC49x",
+          "since": "R2025a+",
+          "intent": "Aurix Utilities Blocks"
+        },
+        {
+          "block": "AURIX TC49xN",
+          "ref": "aurixtc4xlib/AURIX TC49xN",
+          "since": "R2026a+",
+          "intent": "Aurix Utilities Blocks"
+        },
+        {
+          "block": "AURIX TC4Dx",
+          "ref": "aurixtc4xlib/AURIX TC4Dx",
+          "since": "R2025a+",
+          "intent": "Aurix Utilities Blocks"
+        },
+        {
+          "block": "Utilities",
+          "ref": "aurixtc4xlib/Utilities",
+          "since": "R2023b+",
+          "intent": "Aurix Utilities Blocks"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:21",
+  "generatedAtDatenum": 740309.99538366892
 }

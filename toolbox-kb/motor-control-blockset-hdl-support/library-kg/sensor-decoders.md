@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensor decoders
-description: Position and speed sensor decoding
-tags: [sensor decoders, quadrature, speed, position]
+description: Position and speed sensor decoding (3 blocks)
+tags: [toolbox-kb, motor-control-blockset-hdl-support, sensor decoders, quadrature, speed, position]
 status: stable
-source: custom_library
-library_root: Motor Control Blockset HDL Support
-category_path: Sensor decoders
+sources:
+  - resource: matlab:mcbhdllib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset HDL Support
+kb_folder: motor-control-blockset-hdl-support
+category: sensor-decoders
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Sensor decoders
-
-Use these blocks for sensor decoders.
 
 ## Recommended Blocks
 

@@ -1,15 +1,151 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.69317596068,
-  "generatorVersion": 4,
-  "libraries": [
-    "UAV Toolbox Support Package for ArduPilot Autopilots"
-  ],
-  "blockCount": 12,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "UAV_Toolbox_Support_Package_for_ArduPilot_Autopilots": {
-      "blockCount": 12
+  "pages": [
+    {
+      "id": "controller-interface",
+      "kind": "toolbox",
+      "library": "UAV Toolbox Support Package for ArduPilot Autopilots",
+      "kbFolder": "uav-toolbox-support-package-for-ardupilot-autopilots",
+      "category": "controller-interface",
+      "hash": "5a7e09706cfa3a2c713f72b338ab725429d12cc9a009f7fac71913d12677b081",
+      "fm": {
+        "title": "Controller interface",
+        "description": "Read vehicle state and issue setpoints when authoring custom ArduPilot controllers (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox-support-package-for-ardupilot-autopilots",
+          "controller interface",
+          "setpoint",
+          "current",
+          "attitude",
+          "velocity",
+          "position"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Ang Velocity Setpoint",
+          "ref": "ardupilotControllerInterfacelib/Ang Velocity Setpoint",
+          "since": "R2026a+",
+          "intent": "Send the commanded angular-velocity (body-rate) setpoint to the ArduPilot controller interface — use when authoring a custom rate controller for an ArduPilot vehicle."
+        },
+        {
+          "block": "Attitude Setpoint",
+          "ref": "ardupilotControllerInterfacelib/Attitude Setpoint",
+          "since": "R2026a+",
+          "intent": "Send the commanded attitude (orientation) setpoint to the ArduPilot controller — use when authoring a custom attitude controller."
+        },
+        {
+          "block": "Current Ang Velocity",
+          "ref": "ardupilotControllerInterfacelib/Current Ang Velocity",
+          "since": "R2026a+",
+          "intent": "Read the vehicle's current angular velocity from ArduPilot — use as feedback in a custom rate controller."
+        },
+        {
+          "block": "Current Attitude",
+          "ref": "ardupilotControllerInterfacelib/Current Attitude",
+          "since": "R2026a+",
+          "intent": "Read the vehicle's current attitude estimate from ArduPilot — use as feedback in a custom attitude controller."
+        },
+        {
+          "block": "Current Position",
+          "ref": "ardupilotControllerInterfacelib/Current Position",
+          "since": "R2026a+",
+          "intent": "Read the vehicle's current position estimate from ArduPilot — use as feedback for guidance or position control."
+        },
+        {
+          "block": "Current Velocity",
+          "ref": "ardupilotControllerInterfacelib/Current Velocity",
+          "since": "R2026a+",
+          "intent": "Read the vehicle's current velocity estimate from ArduPilot — use as feedback for velocity control."
+        },
+        {
+          "block": "Position Setpoint",
+          "ref": "ardupilotControllerInterfacelib/Position Setpoint",
+          "since": "R2025b+",
+          "intent": "Send the commanded position setpoint to the ArduPilot controller — use when authoring a custom position/guidance controller."
+        },
+        {
+          "block": "Velocity Setpoint",
+          "ref": "ardupilotControllerInterfacelib/Velocity Setpoint",
+          "since": "R2026a+",
+          "intent": "Send the commanded velocity setpoint to the ArduPilot controller — use when authoring a custom velocity controller."
+        },
+        {
+          "block": "ArduPlane Actuator Write",
+          "ref": "ardupilotControllerInterfacelib/ArduPlane Actuator Write",
+          "since": "R2025b+",
+          "intent": "Set actuator values for Motors and Servos. The block accepts single scalar values between -1 to 1 as input and writes those values to the selected Motors/Servos. An input value of 1 indicates maximum output, 0 indicates centered servos or minimum motor thrust, and -1 indicates maximum output in the opposite direction (if supported). Configure the Actuators in Mission Planner. For more information, click 'Help'."
+        },
+        {
+          "block": "Write Torque & Thrust",
+          "ref": "ardupilotControllerInterfacelib/Write Torque & Thrust",
+          "since": "R2025b+",
+          "intent": "Write the normalized torque and thrust command in the range of [-1, 1] for roll, pitch, and yaw and [0, 1] for throttle to the ArduPilot Mixer. A custom mixer matrix can be defined in this block for custom airframe."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "peripherals",
+      "kind": "toolbox",
+      "library": "UAV Toolbox Support Package for ArduPilot Autopilots",
+      "kbFolder": "uav-toolbox-support-package-for-ardupilot-autopilots",
+      "category": "peripherals",
+      "hash": "54896faf4a87e1147e496a8b38b9189c359e7c7db22299c230b0db8a28f72618",
+      "fm": {
+        "title": "Peripherals",
+        "description": "Access ArduPilot hardware peripherals (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox-support-package-for-ardupilot-autopilots",
+          "peripheral",
+          "sensor",
+          "serial",
+          "pwm"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "RC Receive",
+          "ref": "ardupilotPeripheralslib/RC Receive",
+          "since": "R2025b+",
+          "intent": "RC Receive block fetches raw channel data, with optional trim and deadzone adjustments from RC transmitter signals for the selected channels."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utility",
+      "kind": "toolbox",
+      "library": "UAV Toolbox Support Package for ArduPilot Autopilots",
+      "kbFolder": "uav-toolbox-support-package-for-ardupilot-autopilots",
+      "category": "utility",
+      "hash": "22d0c2a82aa0e9ee43da57dd13cc75296222f65b71d52f6ea185e5572825159a",
+      "fm": {
+        "title": "Utility",
+        "description": "Timing and helper blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "uav-toolbox-support-package-for-ardupilot-autopilots",
+          "utility",
+          "timestamp",
+          "time"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Timestamp",
+          "ref": "ardupilotUtilslib/Timestamp",
+          "since": "R2025a+",
+          "intent": "Read the current ArduPilot system timestamp — use to time-stamp data or compute time deltas in deployed control code."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.99552807875
 }

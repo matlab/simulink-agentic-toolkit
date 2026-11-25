@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Model verification
-description: Runtime assertion and range-check blocks
-tags: [check, assertion, verification, bound, range]
+description: Runtime assertion and range-check blocks (11 blocks)
+tags: [toolbox-kb, hdl-coder, check, assertion, verification, bound, range]
 status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Model verification
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: model-verification
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Model verification
-
-Use these blocks for model verification.
 
 ## Recommended Blocks
 

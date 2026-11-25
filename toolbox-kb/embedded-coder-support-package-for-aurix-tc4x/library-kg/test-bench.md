@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Test bench
-description: Harness stand-ins for target peripherals used in SIL/PIL testing
-tags: [test bench, interface, event source, harness]
+description: Harness stand-ins for target peripherals used in SIL/PIL testing (5 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-aurix-tc4x, test bench, interface, event source, harness]
 status: stable
-source: custom_library
-library_root: Embedded Coder Support Package for AURIX TC4x
-category_path: Test bench
+sources:
+  - resource: matlab:aurixtc4xlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for AURIX TC4x
+kb_folder: embedded-coder-support-package-for-aurix-tc4x
+category: test-bench
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Test bench
-
-Use these blocks for test bench.
 
 ## Recommended Blocks
 

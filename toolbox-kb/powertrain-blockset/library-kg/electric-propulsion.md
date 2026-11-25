@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Electric propulsion
-description: Electric motors, inverters, and motor controllers
-tags: [electric motors, motor controllers, pmsm, induction motor, inverter, mapped motor]
+description: "Electric motors, inverters, and motor controllers (7 blocks)"
+tags: [toolbox-kb, powertrain-blockset, electric motors, motor controllers, pmsm, induction motor, inverter, mapped motor]
 status: stable
-source: custom_library
-library_root: Powertrain Blockset
-category_path: Electric propulsion
+sources:
+  - resource: matlab:autolibmotorctrlr
+source: toolbox_kb
+managed_by: satk
+library: Powertrain Blockset
+kb_folder: powertrain-blockset
+category: electric-propulsion
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Electric propulsion
-
-Use these blocks for electric propulsion.
 
 ## Recommended Blocks
 

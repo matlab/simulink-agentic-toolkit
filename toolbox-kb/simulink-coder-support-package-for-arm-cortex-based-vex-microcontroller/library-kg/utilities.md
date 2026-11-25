@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Simulation and utility blocks
-tags: [scope, display, clock, switch, simulator, deadband]
+description: Simulation and utility blocks (20 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller, scope, display, clock, switch, simulator, deadband]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
-category_path: Utilities
+sources:
+  - resource: matlab:vexarmcortexlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
+kb_folder: simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller
+category: utilities
 block_count: 20
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

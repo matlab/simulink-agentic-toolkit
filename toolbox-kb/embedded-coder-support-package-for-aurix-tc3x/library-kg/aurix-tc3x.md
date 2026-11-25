@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Aurix tc3x
-description: Infineon AURIX TC3x multicore ECU deployment and test bench blocks
-tags: [aurix, tc3x, infineon, multicore, automotive]
+description: Infineon AURIX TC3x multicore ECU deployment and test bench blocks (10 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-aurix-tc3x, aurix, tc3x, infineon, multicore, automotive]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for AURIX TC3x
-category_path: Aurix tc3x
+sources:
+  - resource: matlab:aurixtc3xlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for AURIX TC3x
+kb_folder: embedded-coder-support-package-for-aurix-tc3x
+category: aurix-tc3x
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Aurix tc3x
-
-Use these blocks for aurix tc3x.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Adaptive control
-description: Adaptive and learning-based controllers
-tags: [adaptive, adrc, notch, extremum, iterative, mrac]
+description: Adaptive and learning-based controllers (5 blocks)
+tags: [toolbox-kb, simulink-control-design, adaptive, adrc, notch, extremum, iterative, mrac]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Adaptive control
+sources:
+  - resource: matlab:slctrl_adaptive
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: adaptive-control
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Adaptive control
-
-Use these blocks for adaptive control.
 
 ## Recommended Blocks
 

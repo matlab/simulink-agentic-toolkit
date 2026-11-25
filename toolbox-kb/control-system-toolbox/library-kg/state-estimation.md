@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: State estimation
-description: Kalman-family and particle filters for online state estimation
-tags: [state estimation, kalman, particle filter]
+description: Kalman-family and particle filters for online state estimation (4 blocks)
+tags: [toolbox-kb, control-system-toolbox, state estimation, kalman, particle filter]
 status: stable
-source: custom_library
-library_root: Control System Toolbox
-category_path: State estimation
+sources:
+  - resource: matlab:cstblocks
+source: toolbox_kb
+managed_by: satk
+library: Control System Toolbox
+kb_folder: control-system-toolbox
+category: state-estimation
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # State estimation
-
-Use these blocks for state estimation.
 
 ## Recommended Blocks
 

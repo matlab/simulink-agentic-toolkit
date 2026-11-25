@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Logic bit
-description: Logical, relational, and bit operations
-tags: [logic and bit, logical, relational, combinatorial, shift]
-status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Logic bit
+description: "Logical, relational, and bit operations (18 blocks)"
+tags: [toolbox-kb, do-178c-do-331-primitive-library, logic and bit, logical, relational, combinatorial, shift]
+status: draft
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: logic-bit
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Logic bit
-
-Use these blocks for logic bit.
 
 ## Recommended Blocks
 

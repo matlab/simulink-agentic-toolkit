@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457614578,
-  "generatorVersion": 4,
-  "libraries": [
-    "Report Generator"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Report_Generator": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "reporting",
+      "kind": "toolbox",
+      "library": "Report Generator",
+      "kbFolder": "report-generator",
+      "category": "reporting",
+      "hash": "e2cd22a5974104cc17e4ca28e4b40c6fa9b42c436e3bb7dc1987590f95656072",
+      "fm": {
+        "title": "Reporting",
+        "description": "Automated report generation from Simulink models (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "report-generator",
+          "report",
+          "document",
+          "generate",
+          "launch",
+          "rptlist"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Launch Report",
+          "ref": "rptgenlib/Launch Report",
+          "since": "R2023a+",
+          "intent": "Trigger report generation during simulation — use for automatically creating documentation or test reports at specific simulation events"
+        },
+        {
+          "block": "Launch Rptlist",
+          "ref": "rptgenlib/Launch Rptlist",
+          "since": "R2023a+",
+          "intent": "Launch a report generation list during simulation — use for executing a predefined sequence of report generation tasks from a running model"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:26",
+  "generatedAtDatenum": 740309.9954496643
 }

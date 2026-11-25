@@ -1,15 +1,141 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456901615,
-  "generatorVersion": 4,
-  "libraries": [
-    "Instrument Control Toolbox"
-  ],
-  "blockCount": 10,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Instrument_Control_Toolbox": {
-      "blockCount": 10
+  "pages": [
+    {
+      "id": "instrument-io",
+      "kind": "toolbox",
+      "library": "Instrument Control Toolbox",
+      "kbFolder": "instrument-control-toolbox",
+      "category": "instrument-io",
+      "hash": "7b149157876146fb341e34458a0e66961c07f37d8ba7df07cfb3750eb738255b",
+      "fm": {
+        "title": "Instrument io",
+        "description": "Direct instrument query and command via SCPI/VISA (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "instrument-control-toolbox",
+          "visa",
+          "gpib",
+          "scpi",
+          "instrument",
+          "query"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Query Instrument",
+          "ref": "instrumentlib/Query Instrument",
+          "since": "R2023a+",
+          "intent": "Send a command and read the response from a SCPI/GPIB instrument — use for interactive measurement acquisition from test equipment"
+        },
+        {
+          "block": "To Instrument",
+          "ref": "instrumentlib/To Instrument",
+          "since": "R2023a+",
+          "intent": "Send a command string to an instrument without reading a response — use for one-way configuration commands to SCPI/GPIB instruments"
+        },
+        {
+          "block": "VISA",
+          "ref": "instrumentlib/VISA",
+          "since": "R2023b+",
+          "intent": "Communicate with instruments via the VISA standard — use for vendor-neutral access to GPIB, USB, TCP/IP, or serial instruments"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "network-comm",
+      "kind": "toolbox",
+      "library": "Instrument Control Toolbox",
+      "kbFolder": "instrument-control-toolbox",
+      "category": "network-comm",
+      "hash": "381876edda14b39a80a178d918eb99a6569fa94dc60f755b0531cdfa12eb3336",
+      "fm": {
+        "title": "Network comm",
+        "description": "Network-based data exchange over TCP/IP and UDP (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "instrument-control-toolbox",
+          "tcp",
+          "udp",
+          "network",
+          "ethernet",
+          "socket"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "TCP/IP Receive",
+          "ref": "instrumentlib/TCP/IP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over a TCP/IP network connection — use for acquiring data from networked instruments, remote systems, or lab equipment"
+        },
+        {
+          "block": "TCP/IP Send",
+          "ref": "instrumentlib/TCP/IP Send",
+          "since": "R2023a+",
+          "intent": "Send data over a TCP/IP network connection — use for transmitting commands or data to networked instruments or remote systems"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "instrumentlib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over UDP — use for low-latency acquisition from instruments or systems that broadcast measurement data"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "instrumentlib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send data over UDP — use for low-latency command transmission to instruments or systems that accept UDP messages"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "serial-comm",
+      "kind": "toolbox",
+      "library": "Instrument Control Toolbox",
+      "kbFolder": "instrument-control-toolbox",
+      "category": "serial-comm",
+      "hash": "97d2cd1ae10d3ac5af6daa0e8207138ed9a3dea0948f27ab8fd5346e9269d68a",
+      "fm": {
+        "title": "Serial comm",
+        "description": "Serial port communication with instruments and devices (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "instrument-control-toolbox",
+          "serial",
+          "uart",
+          "rs232",
+          "baud",
+          "port"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Serial Configuration",
+          "ref": "instrumentlib/Serial Configuration",
+          "since": "R2023a+",
+          "intent": "Configure serial port parameters like baud rate and parity — use for setting up RS-232/RS-485 communication before send/receive operations"
+        },
+        {
+          "block": "Serial Receive",
+          "ref": "instrumentlib/Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive data from a serial port — use for reading measurement data or responses from serial-connected instruments or microcontrollers"
+        },
+        {
+          "block": "Serial Send",
+          "ref": "instrumentlib/Serial Send",
+          "since": "R2023a+",
+          "intent": "Send data through a serial port — use for transmitting commands or data to serial-connected instruments or microcontrollers"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:23",
+  "generatedAtDatenum": 740309.99541509256
 }

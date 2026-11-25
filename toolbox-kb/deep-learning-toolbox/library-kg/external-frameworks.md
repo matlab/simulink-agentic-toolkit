@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: External frameworks
-description: Run inference from external frameworks: ONNX, PyTorch, TensorFlow, Python
-tags: [onnx, pytorch, tensorflow, python, external]
+description: "Run inference from external frameworks: ONNX, PyTorch, TensorFlow, Python (4 blocks)"
+tags: [toolbox-kb, deep-learning-toolbox, onnx, pytorch, tensorflow, python, external]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: External frameworks
+sources:
+  - resource: matlab:pycoexlib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: external-frameworks
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # External frameworks
-
-Use these blocks for external frameworks.
 
 ## Recommended Blocks
 

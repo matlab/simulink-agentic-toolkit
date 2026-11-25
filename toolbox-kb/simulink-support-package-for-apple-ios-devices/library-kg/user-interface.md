@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: User interface
-description: On-screen controls and display elements
-tags: [user interface, button, switch, label, display]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Apple iOS Devices
-category_path: User interface
+description: On-screen controls and display elements (3 blocks)
+tags: [toolbox-kb, simulink-support-package-for-apple-ios-devices, user interface, button, switch, label, display]
+status: draft
+sources:
+  - resource: matlab:iosuilib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Apple iOS Devices
+kb_folder: simulink-support-package-for-apple-ios-devices
+category: user-interface
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # User interface
-
-Use these blocks for user interface.
 
 ## Recommended Blocks
 

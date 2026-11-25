@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Co simulation
-description: External tool and code integration via co-simulation interfaces
-tags: [cosimulation, fmi, fmu, sdk, interface]
+description: External tool and code integration via co-simulation interfaces (1 blocks)
+tags: [toolbox-kb, code-component, cosimulation, fmi, fmu, sdk, interface]
 status: stable
-source: mathworks_toolbox
-library_root: Code Component
-category_path: Co simulation
+sources:
+  - resource: matlab:CodeComponent
+source: toolbox_kb
+managed_by: satk
+library: Code Component
+kb_folder: code-component
+category: co-simulation
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Co simulation
-
-Use these blocks for co simulation.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Audio interface
-description: Digital audio streaming interfaces using I2S protocol and board audio drivers
-tags: [I2S, audio, microphone, codec, streaming]
+description: Digital audio streaming interfaces using I2S protocol and board audio drivers (18 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, I2S, audio, microphone, codec, streaming]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Audio interface
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: audio-interface
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # Audio interface
-
-Use these blocks for audio interface.
 
 ## Recommended Blocks
 

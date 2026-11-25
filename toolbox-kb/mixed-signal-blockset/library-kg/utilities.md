@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: General mixed-signal utilities and measurements
-tags: [eye, clock, slew, op-amp, binary, timing]
+description: General mixed-signal utilities and measurements (14 blocks)
+tags: [toolbox-kb, mixed-signal-blockset, eye, clock, slew, op-amp, binary, timing]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset
-category_path: Utilities
+sources:
+  - resource: matlab:msbUtilities
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset
+kb_folder: mixed-signal-blockset
+category: utilities
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

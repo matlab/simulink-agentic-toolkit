@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ml inference
-description: Machine learning model inference from external frameworks
-tags: [pytorch, litert, inference, model, deep learning]
+description: Machine learning model inference from external frameworks (2 blocks)
+tags: [toolbox-kb, matlab-coder-support-package-for-pytorch-and-litert-models, pytorch, litert, inference, model, deep learning]
 status: stable
-source: mathworks_toolbox
-library_root: MATLAB Coder Support Package for PyTorch and LiteRT Models
-category_path: Ml inference
+sources:
+  - resource: matlab:dlosslib
+source: toolbox_kb
+managed_by: satk
+library: MATLAB Coder Support Package for PyTorch and LiteRT Models
+kb_folder: matlab-coder-support-package-for-pytorch-and-litert-models
+category: ml-inference
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Ml inference
-
-Use these blocks for ml inference.
 
 ## Recommended Blocks
 

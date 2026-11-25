@@ -1,15 +1,213 @@
 {
-  "generatedAt": "2026-09-29T16:38:07",
-  "generatedAtDatenum": 740254.69313744211,
-  "generatorVersion": 4,
-  "libraries": [
-    "DSP HDL Toolbox"
-  ],
-  "blockCount": 18,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "DSP_HDL_Toolbox": {
-      "blockCount": 18
+  "pages": [
+    {
+      "id": "filtering",
+      "kind": "toolbox",
+      "library": "DSP HDL Toolbox",
+      "kbFolder": "dsp-hdl-toolbox",
+      "category": "filtering",
+      "hash": "a519f8a8bfbc9abfa251fac57ccb0b6c05c54ea07d8ad9808bf1565e3002aee4",
+      "fm": {
+        "title": "Filtering",
+        "description": "HDL-optimized streaming filters and rate-change filters (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-hdl-toolbox",
+          "filtering",
+          "filter",
+          "cic",
+          "fir",
+          "biquad",
+          "lms",
+          "channelizer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Biquad Filter",
+          "ref": "dsphdlfiltering2/Biquad Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized cascaded biquad (second-order-section) IIR filter — use for hardware-efficient IIR filtering of a streaming sample input on FPGA/ASIC."
+        },
+        {
+          "block": "CIC Decimator",
+          "ref": "dsphdlfiltering2/CIC Decimator",
+          "since": "R2023a+",
+          "intent": "HDL-optimized CIC (cascaded integrator-comb) decimation filter — use for multiplier-free high-ratio downsampling in hardware."
+        },
+        {
+          "block": "CIC Interpolator",
+          "ref": "dsphdlfiltering2/CIC Interpolator",
+          "since": "R2023a+",
+          "intent": "HDL-optimized CIC interpolation filter — use for multiplier-free high-ratio upsampling in hardware."
+        },
+        {
+          "block": "Channel Synthesizer",
+          "ref": "dsphdlfiltering2/Channel Synthesizer",
+          "since": "R2023a+",
+          "intent": "HDL-optimized polyphase channel synthesizer — use to combine multiple baseband channels into one wideband stream in hardware."
+        },
+        {
+          "block": "Channelizer",
+          "ref": "dsphdlfiltering2/Channelizer",
+          "since": "R2023a+",
+          "intent": "HDL-optimized polyphase channelizer — use to split a wideband signal into multiple frequency channels in hardware."
+        },
+        {
+          "block": "Discrete FIR Filter",
+          "ref": "dsphdlfiltering2/Discrete FIR Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized FIR filter on a streaming input — use for hardware-efficient linear-phase filtering on FPGA/ASIC."
+        },
+        {
+          "block": "FIR Decimator",
+          "ref": "dsphdlfiltering2/FIR Decimator",
+          "since": "R2023a+",
+          "intent": "HDL-optimized polyphase FIR decimation filter — use to filter and downsample in one hardware block."
+        },
+        {
+          "block": "FIR Interpolator",
+          "ref": "dsphdlfiltering2/FIR Interpolator",
+          "since": "R2023a+",
+          "intent": "HDL-optimized polyphase FIR interpolation filter — use to filter and upsample in one hardware block."
+        },
+        {
+          "block": "FIR Rate Converter",
+          "ref": "dsphdlfiltering2/FIR Rate Converter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized FIR rational-rate (L/M) converter — use for combined interpolation and decimation in hardware."
+        },
+        {
+          "block": "LMS Filter",
+          "ref": "dsphdlfiltering2/LMS Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized adaptive LMS filter — use for hardware adaptive filtering such as noise/echo cancellation and equalization."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math-functions",
+      "kind": "toolbox",
+      "library": "DSP HDL Toolbox",
+      "kbFolder": "dsp-hdl-toolbox",
+      "category": "math-functions",
+      "hash": "91bd8284dc2decd24a9bcfee07897b838747cd7779b32d9792988bc5d14347c8",
+      "fm": {
+        "title": "Math functions",
+        "description": "HDL-optimized math on streaming samples (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-hdl-toolbox",
+          "math functions",
+          "magnitude",
+          "angle",
+          "cordic"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Complex to Magnitude-Angle",
+          "ref": "dsphdlmathfun2/Complex to Magnitude-Angle",
+          "since": "R2023a+",
+          "intent": "HDL-optimized CORDIC conversion of a complex sample to magnitude and phase angle — use for hardware envelope/phase computation."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-operations",
+      "kind": "toolbox",
+      "library": "DSP HDL Toolbox",
+      "kbFolder": "dsp-hdl-toolbox",
+      "category": "signal-operations",
+      "hash": "b0e6c03ecf44316c97f50e5c9c8d49abee70924162f116a40ea4ee01c5f0fb11",
+      "fm": {
+        "title": "Signal operations",
+        "description": "HDL-optimized resampling and sample-rate operations (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-hdl-toolbox",
+          "signal operations",
+          "downsampler",
+          "upsampler",
+          "farrow",
+          "nco"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Downsampler",
+          "ref": "dsphdlsigops2/Downsampler",
+          "since": "R2023a+",
+          "intent": "HDL-optimized downsampler that keeps every Nth streaming sample — use to reduce sample rate in hardware."
+        },
+        {
+          "block": "Farrow Rate Converter",
+          "ref": "dsphdlsigops2/Farrow Rate Converter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized Farrow fractional-delay rate converter — use for arbitrary/fractional resampling in hardware."
+        },
+        {
+          "block": "NCO",
+          "ref": "dsphdlsigops2/NCO",
+          "since": "R2023a+",
+          "intent": "HDL-optimized numerically controlled oscillator generating sine/cosine from a phase accumulator — use as a hardware carrier or local-oscillator source."
+        },
+        {
+          "block": "Upsampler",
+          "ref": "dsphdlsigops2/Upsampler",
+          "since": "R2023a+",
+          "intent": "HDL-optimized upsampler that inserts zeros between streaming samples — use to increase sample rate in hardware."
+        },
+        {
+          "block": "NCO",
+          "ref": "dsphdlsrcs2/NCO",
+          "since": "R2023a+",
+          "intent": "HDL-optimized numerically controlled oscillator generating sine/cosine from a phase accumulator — use as a hardware carrier or local-oscillator source."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "transforms",
+      "kind": "toolbox",
+      "library": "DSP HDL Toolbox",
+      "kbFolder": "dsp-hdl-toolbox",
+      "category": "transforms",
+      "hash": "d0d0cd9eb4d43b66e27a528f7d89b193e5fd588f66e10f81f4aa617616bdfb49",
+      "fm": {
+        "title": "Transforms",
+        "description": "HDL-optimized FFT/IFFT transforms (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-hdl-toolbox",
+          "transforms",
+          "fft",
+          "ifft"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "FFT",
+          "ref": "dsphdlxfrm2/FFT",
+          "since": "R2023a+",
+          "intent": "HDL-optimized streaming FFT — use for hardware frequency-domain transforms on FPGA/ASIC."
+        },
+        {
+          "block": "IFFT",
+          "ref": "dsphdlxfrm2/IFFT",
+          "since": "R2023a+",
+          "intent": "HDL-optimized streaming inverse FFT — use for hardware time-domain reconstruction on FPGA/ASIC."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:17",
+  "generatedAtDatenum": 740309.99534085649
 }

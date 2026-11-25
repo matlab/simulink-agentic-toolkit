@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Clutches
-description: Friction clutches, synchronizers, dog clutches, and one-way clutches
-tags: [clutch, synchronizer, engagement, friction, one-way]
+description: "Friction clutches, synchronizers, dog clutches, and one-way clutches (8 blocks)"
+tags: [toolbox-kb, driveline, clutch, synchronizer, engagement, friction, one-way]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Clutches
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: clutches
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Clutches
-
-Use these blocks for clutches.
 
 ## Recommended Blocks
 

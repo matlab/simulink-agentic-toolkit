@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Math transforms
-description: Clarke/Park and multi-phase transforms, PWM math, and trig utilities used inside FOC and vector-control math paths
-tags: [Clarke, Park, transform, PWM, sine, atan2, VSD]
+description: "Clarke/Park and multi-phase transforms, PWM math, and trig utilities used inside FOC and vector-control math paths (12 blocks)"
+tags: [toolbox-kb, motor-control-blockset, Clarke, Park, transform, PWM, sine, atan2, VSD]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Math transforms
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: math-transforms
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Math transforms
-
-Use these blocks for math transforms.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Model verification
-description: Automated signal verification and bounds checking
-tags: [check, verify, bounds, reference, step]
+description: Automated signal verification and bounds checking (6 blocks)
+tags: [toolbox-kb, simulink-design-optimization, check, verify, bounds, reference, step]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Design Optimization
-category_path: Model verification
+sources:
+  - resource: matlab:sdolib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Design Optimization
+kb_folder: simulink-design-optimization
+category: model-verification
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Model verification
-
-Use these blocks for model verification.
 
 ## Recommended Blocks
 

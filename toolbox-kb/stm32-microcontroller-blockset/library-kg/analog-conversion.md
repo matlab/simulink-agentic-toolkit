@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Analog conversion
-description: Analog-to-digital and digital-to-analog conversion peripherals including comparators
-tags: [ADC, DAC, comparator, analog, voltage]
+description: Analog-to-digital and digital-to-analog conversion peripherals including comparators (41 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, ADC, DAC, comparator, analog, voltage]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Analog conversion
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: analog-conversion
 block_count: 41
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # Analog conversion
-
-Use these blocks for analog conversion.
 
 ## Recommended Blocks
 

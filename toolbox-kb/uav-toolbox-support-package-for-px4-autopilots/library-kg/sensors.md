@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: Onboard sensor data access
-tags: [accelerometer, gyroscope, gps, magnetometer, battery]
+description: Onboard sensor data access (7 blocks)
+tags: [toolbox-kb, uav-toolbox-support-package-for-px4-autopilots, accelerometer, gyroscope, gps, magnetometer, battery]
 status: stable
-source: mathworks_toolbox
-library_root: UAV Toolbox Support Package for PX4 Autopilots
-category_path: Sensors
+sources:
+  - resource: matlab:px4Sensorslib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox Support Package for PX4 Autopilots
+kb_folder: uav-toolbox-support-package-for-px4-autopilots
+category: sensors
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

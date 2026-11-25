@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mathematical transforms
-description: Clarke, Park, and sequence transforms for AC machine and power system control
-tags: [clarke, park, transform, dq, sequence]
+description: "Clarke, Park, and sequence transforms for AC machine and power system control (14 blocks)"
+tags: [toolbox-kb, electrical, clarke, park, transform, dq, sequence]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Mathematical transforms
+sources:
+  - resource: matlab:ee_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: mathematical-transforms
 block_count: 14
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Mathematical transforms
-
-Use these blocks for mathematical transforms.
 
 ## Recommended Blocks
 

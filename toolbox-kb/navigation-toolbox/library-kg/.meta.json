@@ -1,15 +1,147 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457268522,
-  "generatorVersion": 4,
-  "libraries": [
-    "Navigation Toolbox"
-  ],
-  "blockCount": 11,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Navigation_Toolbox": {
-      "blockCount": 11
+  "pages": [
+    {
+      "id": "path-following",
+      "kind": "toolbox",
+      "library": "Navigation Toolbox",
+      "kbFolder": "navigation-toolbox",
+      "category": "path-following",
+      "hash": "f1645b92a671c072021b6a2f41726906c4fbbb66c6452deb571989434033396f",
+      "fm": {
+        "title": "Path following",
+        "description": "Path tracking and obstacle avoidance algorithms (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "navigation-toolbox",
+          "pursuit",
+          "path",
+          "obstacle",
+          "avoidance",
+          "steering"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Pure Pursuit",
+          "ref": "navlib/Control Algorithms/Pure Pursuit",
+          "since": "R2023a+",
+          "intent": "Follow a path using the pure pursuit steering algorithm — use for autonomous vehicle or robot lateral control to track waypoint-based reference paths"
+        },
+        {
+          "block": "Timed Elastic Band (TEB)",
+          "ref": "navlib/Control Algorithms/Timed Elastic Band (TEB)",
+          "since": "R2025a+",
+          "intent": "Plan time-optimal trajectories while avoiding obstacles — use for generating smooth, collision-free paths that respect kinematic constraints in real time"
+        },
+        {
+          "block": "Vector Field Histogram",
+          "ref": "navlib/Control Algorithms/Vector Field Histogram",
+          "since": "R2023a+",
+          "intent": "Compute obstacle-free steering direction using sensor data — use for reactive obstacle avoidance in mobile robots using range sensor measurements"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensor-fusion",
+      "kind": "toolbox",
+      "library": "Navigation Toolbox",
+      "kbFolder": "navigation-toolbox",
+      "category": "sensor-fusion",
+      "hash": "23f564957c707959560dbad38f7be14c16ecfa03502960156f8c67119368a067",
+      "fm": {
+        "title": "Sensor fusion",
+        "description": "Orientation and position estimation from sensor data (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "navigation-toolbox",
+          "ahrs",
+          "filter",
+          "orientation",
+          "fusion",
+          "imu"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "AHRS",
+          "ref": "mspfiltlib/AHRS",
+          "since": "R2023a+",
+          "intent": "Estimate orientation using an Attitude and Heading Reference System filter — use for fusing accelerometer, gyroscope, and magnetometer data into robust orientation estimates"
+        },
+        {
+          "block": "Complementary Filter",
+          "ref": "mspfiltlib/Complementary Filter",
+          "since": "R2023a+",
+          "intent": "Estimate orientation using a complementary filter — use for lightweight sensor fusion of accelerometer and gyroscope with tunable trust between sensors"
+        },
+        {
+          "block": "IMU Filter",
+          "ref": "mspfiltlib/IMU Filter",
+          "since": "R2023b+",
+          "intent": "Estimate orientation from IMU data using a Kalman-based filter — use for accurate attitude estimation from noisy accelerometer and gyroscope measurements"
+        },
+        {
+          "block": "ecompass",
+          "ref": "mspfiltlib/ecompass",
+          "since": "R2024a+",
+          "intent": "Compute heading from accelerometer and magnetometer readings — use for determining magnetic north direction in tilt-compensated compass applications"
+        },
+        {
+          "block": "Coordinate Transformation Conversion",
+          "ref": "navlib/Utilities/Coordinate Transformation Conversion",
+          "since": "R2023a+",
+          "intent": "Convert between rotation representations — use for converting quaternions, Euler angles, rotation matrices, or axis-angle representations"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensor-simulation",
+      "kind": "toolbox",
+      "library": "Navigation Toolbox",
+      "kbFolder": "navigation-toolbox",
+      "category": "sensor-simulation",
+      "hash": "e1d63683d0e3ec7aa7e060e3ce882a12f17269c2688f4c3562d7f58ef41fca12",
+      "fm": {
+        "title": "Sensor simulation",
+        "description": "Simulated navigation sensor models (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "navigation-toolbox",
+          "gps",
+          "imu",
+          "ins",
+          "sensor",
+          "simulate"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "GPS",
+          "ref": "mspsensorlib/GPS",
+          "since": "R2023a+",
+          "intent": "Simulate GPS receiver measurements — use for generating realistic position and velocity readings with configurable noise and satellite geometry"
+        },
+        {
+          "block": "IMU",
+          "ref": "mspsensorlib/IMU",
+          "since": "R2023a+",
+          "intent": "Simulate inertial measurement unit sensor readings — use for generating realistic accelerometer and gyroscope measurements with configurable noise models"
+        },
+        {
+          "block": "INS",
+          "ref": "mspsensorlib/INS",
+          "since": "R2023a+",
+          "intent": "Simulate integrated navigation system measurements — use for generating fused position, velocity, and orientation data from a combined GPS/IMU system"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.99542636576
 }

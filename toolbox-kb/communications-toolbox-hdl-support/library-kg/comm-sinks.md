@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Comm sinks
-description: Visualization and measurement of received signals
-tags: [comm sinks, constellation, eye diagram, error rate]
+description: Visualization and measurement of received signals (3 blocks)
+tags: [toolbox-kb, communications-toolbox-hdl-support, comm sinks, constellation, eye diagram, error rate]
 status: stable
-source: custom_library
-library_root: Communications Toolbox HDL Support
-category_path: Comm sinks
+sources:
+  - resource: matlab:commhdlsink
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox HDL Support
+kb_folder: communications-toolbox-hdl-support
+category: comm-sinks
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Comm sinks
-
-Use these blocks for comm sinks.
 
 ## Recommended Blocks
 

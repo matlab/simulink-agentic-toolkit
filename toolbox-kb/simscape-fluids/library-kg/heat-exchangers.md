@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Heat exchangers
-description: Devices that transfer thermal energy between fluid streams or between a fluid and a thermal boundary
-tags: [heat exchanger, condenser, evaporator, cooling, NTU]
+description: Devices that transfer thermal energy between fluid streams or between a fluid and a thermal boundary (32 blocks)
+tags: [toolbox-kb, simscape-fluids, heat exchanger, condenser, evaporator, cooling, NTU]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Heat exchangers
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: heat-exchangers
 block_count: 32
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Heat exchangers
-
-Use these blocks for heat exchangers.
 
 ## Recommended Blocks
 

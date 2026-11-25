@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Regression
-description: Predict continuous responses from trained regression models
-tags: [regression, regress, gpr, ensemble, tree]
-status: stable
-source: custom_library
-library_root: Statistics and Machine Learning Toolbox
-category_path: Regression
+description: Predict continuous responses from trained regression models (10 blocks)
+tags: [toolbox-kb, statistics-and-machine-learning-toolbox, regression, regress, gpr, ensemble, tree]
+status: draft
+sources:
+  - resource: matlab:statsIncremental
+source: toolbox_kb
+managed_by: satk
+library: Statistics and Machine Learning Toolbox
+kb_folder: statistics-and-machine-learning-toolbox
+category: regression
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Regression
-
-Use these blocks for regression.
 
 ## Recommended Blocks
 

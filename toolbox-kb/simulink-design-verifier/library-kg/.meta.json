@@ -1,15 +1,147 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74459334486,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Design Verifier"
-  ],
-  "blockCount": 11,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Simulink_Design_Verifier": {
-      "blockCount": 11
+  "pages": [
+    {
+      "id": "objectives-constraints",
+      "kind": "toolbox",
+      "library": "Simulink Design Verifier",
+      "kbFolder": "simulink-design-verifier",
+      "category": "objectives-constraints",
+      "hash": "149c110b0eeea516f96c599bb739ea87ba1d51f6e927082770d755aaece3eb51",
+      "fm": {
+        "title": "Objectives constraints",
+        "description": "Formal verification objectives and input constraints (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-design-verifier",
+          "proof",
+          "assumption",
+          "objective",
+          "constraint",
+          "test"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Assumption",
+          "ref": "sldvlib/Objectives and Constraints/Assumption",
+          "since": "R2023a+",
+          "intent": "Constrain input ranges for formal verification — use for defining valid operating conditions that the design verifier assumes hold during analysis"
+        },
+        {
+          "block": "Proof Objective",
+          "ref": "sldvlib/Objectives and Constraints/Proof Objective",
+          "since": "R2023a+",
+          "intent": "Specify a property to be formally proven — use for defining safety or correctness assertions that must hold under all valid input conditions"
+        },
+        {
+          "block": "Test Condition",
+          "ref": "sldvlib/Objectives and Constraints/Test Condition",
+          "since": "R2023a+",
+          "intent": "Constrain signals during test generation — use for guiding automatic test vector generation to focus on specific operating regions"
+        },
+        {
+          "block": "Test Objective",
+          "ref": "sldvlib/Objectives and Constraints/Test Objective",
+          "since": "R2023a+",
+          "intent": "Specify a coverage target for test generation — use for directing automatic test generation to achieve specific signal conditions or code paths"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "temporal-operators",
+      "kind": "toolbox",
+      "library": "Simulink Design Verifier",
+      "kbFolder": "simulink-design-verifier",
+      "category": "temporal-operators",
+      "hash": "a3faadae633253796127e01ae38d21bdc7d7756a17b782faa4d1b8c363f88bc2",
+      "fm": {
+        "title": "Temporal operators",
+        "description": "Temporal logic operators for time-based properties (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-design-verifier",
+          "temporal",
+          "detector",
+          "extender",
+          "within",
+          "time"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Detector",
+          "ref": "sldvlib/Temporal Operators/Detector",
+          "since": "R2023a+",
+          "intent": "Detect when a Boolean condition has been true for N consecutive steps — use for building temporal assertions that require sustained conditions"
+        },
+        {
+          "block": "Extender",
+          "ref": "sldvlib/Temporal Operators/Extender",
+          "since": "R2023a+",
+          "intent": "Extend a Boolean pulse by N time steps — use for holding a trigger active longer when building temporal verification logic"
+        },
+        {
+          "block": "Within Implies",
+          "ref": "sldvlib/Temporal Operators/Within Implies",
+          "since": "R2023a+",
+          "intent": "Assert that if P occurs, then Q must follow within N steps — use for bounded response time verification in safety-critical temporal properties"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "verification-utils",
+      "kind": "toolbox",
+      "library": "Simulink Design Verifier",
+      "kbFolder": "simulink-design-verifier",
+      "category": "verification-utils",
+      "hash": "fb31981b637502b797bb2922169506a508d4d9afc1fe47c8a24bd1683e1fb008",
+      "fm": {
+        "title": "Verification utils",
+        "description": "Verification infrastructure and utilities (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-design-verifier",
+          "verification",
+          "implies",
+          "subsystem",
+          "property",
+          "example"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Property Examples",
+          "ref": "sldvlib/Examples/Property Examples",
+          "since": "R2023a+",
+          "intent": "Example models demonstrating property specifications — use as reference for learning how to write formal verification properties"
+        },
+        {
+          "block": "Temporal Property Examples",
+          "ref": "sldvlib/Examples/Temporal Property Examples",
+          "since": "R2023a+",
+          "intent": "Example models demonstrating temporal property specifications — use as reference for writing time-based formal verification properties"
+        },
+        {
+          "block": "Implies",
+          "ref": "sldvlib/Verification Utilities/Implies",
+          "since": "R2023a+",
+          "intent": "Logical implication operator for verification — use for specifying if-then relationships between conditions in formal property definitions"
+        },
+        {
+          "block": "Verification Subsystem",
+          "ref": "sldvlib/Verification Utilities/Verification Subsystem",
+          "since": "R2023a+",
+          "intent": "Container for verification logic excluded from code generation — use for grouping assertions and proof objectives without affecting production code"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:31",
+  "generatedAtDatenum": 740309.99550097226
 }

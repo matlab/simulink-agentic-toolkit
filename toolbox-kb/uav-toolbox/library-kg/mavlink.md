@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mavlink
-description: Blocks for mavlink.
+description: Blocks for Mavlink (2 blocks)
+tags: [toolbox-kb, uav-toolbox]
 status: draft
-source: custom_library
-library_root: UAV Toolbox
-category_path: Mavlink
+sources:
+  - resource: matlab:uavmavlinklib
+source: toolbox_kb
+managed_by: satk
+library: UAV Toolbox
+kb_folder: uav-toolbox
+category: mavlink
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Mavlink
-
-Use these blocks for mavlink.
 
 ## Recommended Blocks
 

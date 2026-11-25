@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Valves
-description: Directional, flow-control, and pressure-control valves that route, throttle, or regulate fluid flow
-tags: [valve, directional, check, solenoid, throttle]
+description: "Directional, flow-control, and pressure-control valves that route, throttle, or regulate fluid flow (65 blocks)"
+tags: [toolbox-kb, simscape-fluids, valve, directional, check, solenoid, throttle]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Valves
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: valves
 block_count: 65
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Valves
-
-Use these blocks for valves.
 
 ## Recommended Blocks
 

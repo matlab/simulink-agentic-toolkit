@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Interleaving convolutional
-description: Blocks for interleaving convolutional.
+description: Blocks for Interleaving convolutional (6 blocks)
+tags: [toolbox-kb, communications-toolbox]
 status: draft
-source: custom_library
-library_root: Communications Toolbox
-category_path: Interleaving convolutional
+sources:
+  - resource: matlab:commcnvintrlv2
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: interleaving-convolutional
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Interleaving convolutional
-
-Use these blocks for interleaving convolutional.
 
 ## Recommended Blocks
 

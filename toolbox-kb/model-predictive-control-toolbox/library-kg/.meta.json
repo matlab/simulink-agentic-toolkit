@@ -1,15 +1,128 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74457061337,
-  "generatorVersion": 4,
-  "libraries": [
-    "Model Predictive Control Toolbox"
-  ],
-  "blockCount": 12,
-  "categoryCount": 2,
-  "libraryFingerprints": {
-    "Model_Predictive_Control_Toolbox": {
-      "blockCount": 12
+  "pages": [
+    {
+      "id": "automated-driving",
+      "kind": "toolbox",
+      "library": "Model Predictive Control Toolbox",
+      "kbFolder": "model-predictive-control-toolbox",
+      "category": "automated-driving",
+      "hash": "628f6dfc79aaaaefa55552fd90c59b0b1cd20086d24efb75f37874930755a8c3",
+      "fm": {
+        "title": "Automated driving",
+        "description": "Pre-built MPC-based automated driving controllers (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "model-predictive-control-toolbox",
+          "cruise",
+          "lane",
+          "path",
+          "vehicle",
+          "driving"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Adaptive Cruise Control System",
+          "ref": "mpclib/Automated Driving/Adaptive Cruise Control System",
+          "since": "R2023a+",
+          "intent": "Pre-built adaptive cruise control using MPC — use for maintaining desired speed while keeping safe following distance from a lead vehicle"
+        },
+        {
+          "block": "Lane Keeping Assist System",
+          "ref": "mpclib/Automated Driving/Lane Keeping Assist System",
+          "since": "R2023a+",
+          "intent": "Pre-built lane keeping assist using MPC — use for automatic steering to keep a vehicle centered within lane markings"
+        },
+        {
+          "block": "Path Following Control System",
+          "ref": "mpclib/Automated Driving/Path Following Control System",
+          "since": "R2023a+",
+          "intent": "Pre-built path following controller using MPC — use for tracking a reference path with combined lateral and longitudinal vehicle control"
+        },
+        {
+          "block": "Vehicle Path Planner System",
+          "ref": "mpclib/Automated Driving/Vehicle Path Planner System",
+          "since": "R2023a+",
+          "intent": "Pre-built vehicle path planner using MPC — use for generating collision-free trajectories that satisfy vehicle dynamics constraints"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "mpc-controllers",
+      "kind": "toolbox",
+      "library": "Model Predictive Control Toolbox",
+      "kbFolder": "model-predictive-control-toolbox",
+      "category": "mpc-controllers",
+      "hash": "038800afd36a63045a5ab90e3e3d68bf83bc34fe089532e7a4674b31a6d3ae7e",
+      "fm": {
+        "title": "Mpc controllers",
+        "description": "Model predictive control algorithms for constrained optimal control (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "model-predictive-control-toolbox",
+          "mpc",
+          "predictive",
+          "controller",
+          "constraint",
+          "optimization"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Adaptive MPC Controller",
+          "ref": "mpclib/Adaptive MPC Controller",
+          "since": "R2023a+",
+          "intent": "MPC controller that updates its internal plant model online — use for controlling systems whose dynamics change over time or operating conditions"
+        },
+        {
+          "block": "Data-Driven MPC",
+          "ref": "mpclib/Data-Driven MPC",
+          "since": "R2026a+",
+          "intent": "MPC controller that operates directly from input-output data without an explicit model — use when a first-principles model is unavailable"
+        },
+        {
+          "block": "Explicit MPC Controller",
+          "ref": "mpclib/Explicit MPC Controller",
+          "since": "R2023a+",
+          "intent": "Pre-computed piecewise-affine MPC controller — use for real-time control on resource-constrained hardware where online optimization is too slow"
+        },
+        {
+          "block": "MPC Controller",
+          "ref": "mpclib/MPC Controller",
+          "since": "R2023a+",
+          "intent": "Standard linear MPC controller with constraint handling — use for multivariable constrained control with output tracking and disturbance rejection"
+        },
+        {
+          "block": "Multiple Explicit MPC Controllers",
+          "ref": "mpclib/Multiple Explicit MPC Controllers",
+          "since": "R2023a+",
+          "intent": "Switch between multiple pre-computed explicit MPC controllers — use for gain-scheduled control across operating regions on embedded targets"
+        },
+        {
+          "block": "Multiple MPC Controllers",
+          "ref": "mpclib/Multiple MPC Controllers",
+          "since": "R2023a+",
+          "intent": "Switch between multiple MPC controllers at runtime — use for gain-scheduled control that adapts to different plant operating modes"
+        },
+        {
+          "block": "Multistage Nonlinear MPC",
+          "ref": "mpclib/Multistage Nonlinear MPC",
+          "since": "R2023a+",
+          "intent": "Nonlinear MPC with stage-varying costs and constraints — use for trajectory optimization with time-varying objectives or obstacle avoidance"
+        },
+        {
+          "block": "Nonlinear MPC Controller",
+          "ref": "mpclib/Nonlinear MPC Controller",
+          "since": "R2023a+",
+          "intent": "General nonlinear MPC with custom cost and constraints — use for controlling highly nonlinear systems where linear MPC provides insufficient performance"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.9954206018
 }

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Geometric transforms
-description: HDL-optimized geometric warps and resizing
-tags: [geometric, birds-eye, resizer]
+description: HDL-optimized geometric warps and resizing (2 blocks)
+tags: [toolbox-kb, vision-hdl-toolbox, geometric, birds-eye, resizer]
 status: stable
-source: custom_library
-library_root: Vision HDL Toolbox
-category_path: Geometric transforms
+sources:
+  - resource: matlab:visionhdlgeotforms
+source: toolbox_kb
+managed_by: satk
+library: Vision HDL Toolbox
+kb_folder: vision-hdl-toolbox
+category: geometric-transforms
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Geometric transforms
-
-Use these blocks for geometric transforms.
 
 ## Recommended Blocks
 

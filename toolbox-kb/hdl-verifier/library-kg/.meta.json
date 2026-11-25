@@ -1,15 +1,127 @@
 {
-  "generatedAt": "2026-09-29T16:38:08",
-  "generatedAtDatenum": 740254.69314887736,
-  "generatorVersion": 4,
-  "libraries": [
-    "HDL Verifier"
-  ],
-  "blockCount": 8,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "HDL_Verifier": {
-      "blockCount": 8
+  "pages": [
+    {
+      "id": "dpi-c-verification",
+      "kind": "toolbox",
+      "library": "HDL Verifier",
+      "kbFolder": "hdl-verifier",
+      "category": "dpi-c-verification",
+      "hash": "68e7e2f09a7214a13b6bbf07d08e68a82245cb3c5e4516f5360df75510964db1",
+      "fm": {
+        "title": "Dpi c verification",
+        "description": "SystemVerilog DPI-C / UVM testbench components (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-verifier",
+          "dpi-c",
+          "systemverilog",
+          "assertion",
+          "uvm",
+          "scoreboard"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Assertion",
+          "ref": "dpiblklib/Assertion",
+          "since": "R2023a+",
+          "intent": "Assert that the input signal is non-zero, erroring when it fails — becomes a native SystemVerilog assertion when generating a DPI-C component, for property checking in UVM testbenches."
+        },
+        {
+          "block": "Sequence Feedback",
+          "ref": "dpiblklib/Sequence Feedback",
+          "since": "R2023a+",
+          "intent": "Unit-delay feedback (initial condition 0) from the scoreboard back to the sequence in a UVM testbench — use to close the loop in DPI-C generated verification environments."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "hdl-cosimulation",
+      "kind": "toolbox",
+      "library": "HDL Verifier",
+      "kbFolder": "hdl-verifier",
+      "category": "hdl-cosimulation",
+      "hash": "0c1907c3926264ada7dc6ed677f3d1355cfab7539b67172115e7686c82109f17",
+      "fm": {
+        "title": "Hdl cosimulation",
+        "description": "Cosimulate Simulink with an external HDL simulator (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-verifier",
+          "cosimulation",
+          "vivado",
+          "xcelium",
+          "vcs",
+          "hdl"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "HDL Cosimulation",
+          "ref": "vivadosimlib/HDL Cosimulation",
+          "since": "R2023a+",
+          "intent": "Cosimulate an HDL component in an external simulator (Vivado, Xcelium, or VCS) with the Simulink model — Simulink inputs drive the HDL signals and HDL outputs drive the block, for verifying RTL against a reference algorithm."
+        },
+        {
+          "block": "HDL Cosimulation",
+          "ref": "lfilinklib/HDL Cosimulation",
+          "since": "R2023a+",
+          "intent": "Cosimulate an HDL component in an external simulator (Vivado, Xcelium, or VCS) with the Simulink model — Simulink inputs drive the HDL signals and HDL outputs drive the block, for verifying RTL against a reference algorithm."
+        },
+        {
+          "block": "HDL Cosimulation",
+          "ref": "vcslib/HDL Cosimulation",
+          "since": "R2023a+",
+          "intent": "Cosimulate an HDL component in an external simulator (Vivado, Xcelium, or VCS) with the Simulink model — Simulink inputs drive the HDL signals and HDL outputs drive the block, for verifying RTL against a reference algorithm."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-logging",
+      "kind": "toolbox",
+      "library": "HDL Verifier",
+      "kbFolder": "hdl-verifier",
+      "category": "signal-logging",
+      "hash": "63ce944bf9df7796a53f625d16b19e35b143acd5270b2b09589b05b5ff6a5b29",
+      "fm": {
+        "title": "Signal logging",
+        "description": "Capture HDL signal activity to file (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-verifier",
+          "vcd",
+          "value change dump",
+          "log"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "To VCD File",
+          "ref": "vivadosimlib/To VCD File",
+          "since": "R2023a+",
+          "intent": "Write a Value Change Dump (VCD) file recording changes on the connected input signals — use to export waveforms for viewing in an HDL waveform tool."
+        },
+        {
+          "block": "To VCD File",
+          "ref": "lfilinklib/To VCD File",
+          "since": "R2023a+",
+          "intent": "Write a Value Change Dump (VCD) file recording changes on the connected input signals — use to export waveforms for viewing in an HDL waveform tool."
+        },
+        {
+          "block": "To VCD File",
+          "ref": "vcslib/To VCD File",
+          "since": "R2023a+",
+          "intent": "Write a Value Change Dump (VCD) file recording changes on the connected input signals — use to export waveforms for viewing in an HDL waveform tool."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:23",
+  "generatedAtDatenum": 740309.99541210651
 }

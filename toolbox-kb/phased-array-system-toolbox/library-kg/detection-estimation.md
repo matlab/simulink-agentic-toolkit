@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Detection estimation
-description: Target detection, matched filtering, CFAR, and range-Doppler processing
-tags: [detection, CFAR, matched-filter, range, Doppler, SNR]
+description: "Target detection, matched filtering, CFAR, and range-Doppler processing (15 blocks)"
+tags: [toolbox-kb, phased-array-system-toolbox, detection, CFAR, matched-filter, range, Doppler, SNR]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Detection estimation
+sources:
+  - resource: matlab:phaseddetectlib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: detection-estimation
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Detection estimation
-
-Use these blocks for detection estimation.
 
 ## Recommended Blocks
 

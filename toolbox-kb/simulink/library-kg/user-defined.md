@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: User defined
-description: Custom MATLAB, C, Python, and S-function blocks
-tags: [matlab function, c caller, s-function, python, custom]
+description: "Custom MATLAB, C, Python, and S-function blocks (10 blocks)"
+tags: [toolbox-kb, simulink, matlab function, c caller, s-function, python, custom]
 status: stable
-source: custom_library
-library_root: Simulink
-category_path: User defined
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: user-defined
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # User defined
-
-Use these blocks for user defined.
 
 ## Recommended Blocks
 

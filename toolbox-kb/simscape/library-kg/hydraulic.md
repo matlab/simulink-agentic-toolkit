@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Hydraulic
-description: Hydraulic-domain (legacy) elements, sources, and sensors
-tags: [hydraulic]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Hydraulic
+description: "Hydraulic-domain (legacy) elements, sources, and sensors (18 blocks)"
+tags: [toolbox-kb, simscape, hydraulic]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: hydraulic
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Hydraulic
-
-Use these blocks for hydraulic.
 
 ## Recommended Blocks
 

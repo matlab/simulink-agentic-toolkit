@@ -4,7 +4,7 @@ description: Register, add, or update existing custom Simulink block libraries a
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 metadata:
   author: MathWorks
-  version: "1.2.2"
+  version: "1.2.3"
 ---
 
 # Setup Custom Libraries
@@ -50,7 +50,7 @@ Follow `references/library-setup.md` for all gate API details — it is the sing
 
 **Gate 2 — Block policy:** If `.satk/block-policy.json` is missing, STOP and ask the user about policy setup by following `references/library-setup.md`. Do not proceed until policy is resolved.
 
-**Gate 3 — Library blocks knowledge index:** If the KB is empty (index.md contains `populated: false`) or missing, STOP and ask the user whether to index their library blocks so the agent knows which blocks are available during model building. Offer two options: **Automatic** (agent infers categories/descriptions autonomously) or **Guided setup** (interactive curation). Both invoke the `simulink-curating-library-kg` skill. Follow `references/library-setup.md` for details. Do not proceed until KG generation completes.
+**Gate 3 — Library blocks knowledge index:** If the KB is empty or missing, STOP and ask the user whether to index their library blocks so the agent knows which blocks are available during model building. Offer two options: **Automatic** (agent infers categories/descriptions autonomously) or **Guided setup** (interactive curation). Both invoke the `simulink-curating-library-kg` skill. Follow `references/library-setup.md` for details. Do not proceed until KG generation completes.
 
 ### Management menu (config already complete)
 

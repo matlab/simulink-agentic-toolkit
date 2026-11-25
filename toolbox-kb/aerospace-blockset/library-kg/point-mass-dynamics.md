@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Point mass dynamics
-description: Simplified point-mass trajectory equations
-tags: [point mass, trajectory, coordinated flight, longitudinal]
+description: Simplified point-mass trajectory equations (5 blocks)
+tags: [toolbox-kb, aerospace-blockset, point mass, trajectory, coordinated flight, longitudinal]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Point mass dynamics
+sources:
+  - resource: matlab:aerolibptmass
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: point-mass-dynamics
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Point mass dynamics
-
-Use these blocks for point mass dynamics.
 
 ## Recommended Blocks
 

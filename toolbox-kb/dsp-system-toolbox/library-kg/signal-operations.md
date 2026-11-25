@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal operations
-description: Delays, resampling, and up/down-conversion
-tags: [signal operations, delay, downsample, down-converter, up-converter, dc blocker, phase extractor, smoother]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Signal operations
+description: "Delays, resampling, and up/down-conversion (21 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox, signal operations, delay, downsample, down-converter, up-converter, dc blocker, phase extractor, smoother]
+status: draft
+sources:
+  - resource: matlab:dspsigops
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: signal-operations
 block_count: 21
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Signal operations
-
-Use these blocks for signal operations.
 
 ## Recommended Blocks
 

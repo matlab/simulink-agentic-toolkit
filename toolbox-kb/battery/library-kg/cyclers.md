@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Cyclers
-description: Battery test equipment models (chargers, dischargers, cyclers)
-tags: [charger, discharger, cycler, test, profile]
+description: "Battery test equipment models (chargers, dischargers, cyclers) (3 blocks)"
+tags: [toolbox-kb, battery, charger, discharger, cycler, test, profile]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Cyclers
+sources:
+  - resource: matlab:batt_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: cyclers
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Cyclers
-
-Use these blocks for cyclers.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mimo
-description: Multi-antenna detection
-tags: [mimo, sphere decoder]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Mimo
+description: Multi-antenna detection (3 blocks)
+tags: [toolbox-kb, communications-toolbox, mimo, sphere decoder]
+status: draft
+sources:
+  - resource: matlab:commmimo
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: mimo
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Mimo
-
-Use these blocks for mimo.
 
 ## Recommended Blocks
 

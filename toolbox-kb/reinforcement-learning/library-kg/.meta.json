@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457596068,
-  "generatorVersion": 4,
-  "libraries": [
-    "Reinforcement Learning"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Reinforcement_Learning": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "reinforcement-learning",
+      "kind": "toolbox",
+      "library": "Reinforcement Learning",
+      "kbFolder": "reinforcement-learning",
+      "category": "reinforcement-learning",
+      "hash": "dc891b8e9e17aa978a18702fc3827ff7d787260c2d7a9f51f650892326cb670a",
+      "fm": {
+        "title": "Reinforcement learning",
+        "description": "Reinforcement learning agents and policies for Simulink (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "reinforcement-learning",
+          "rl",
+          "agent",
+          "policy",
+          "training",
+          "reward"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Policy",
+          "ref": "rllib/Policy",
+          "since": "R2023a+",
+          "intent": "Execute a trained reinforcement learning policy during simulation — use for deploying RL-trained controllers in Simulink for inference without further training"
+        },
+        {
+          "block": "RL Agent",
+          "ref": "rllib/RL Agent",
+          "since": "R2023a+",
+          "intent": "Train or execute a reinforcement learning agent interacting with a Simulink environment — use for learning optimal control policies through simulation-based training"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:26",
+  "generatedAtDatenum": 740309.99544879631
 }

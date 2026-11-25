@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74454936339,
-  "generatorVersion": 4,
-  "libraries": [
-    "DDS Blockset"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "DDS_Blockset": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "dds-middleware",
+      "kind": "toolbox",
+      "library": "DDS Blockset",
+      "kbFolder": "dds-blockset",
+      "category": "dds-middleware",
+      "hash": "93a2f67047b9b426bb7ca820e260651634ee7b829df70464f67ba64e53c1879f",
+      "fm": {
+        "title": "Dds middleware",
+        "description": "OMG Data Distribution Service (DDS) publish-subscribe middleware blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dds-blockset",
+          "dds",
+          "topic",
+          "publish",
+          "subscribe",
+          "middleware"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Take DDS Sample",
+          "ref": "ddslib/Take DDS Sample",
+          "since": "R2023a+",
+          "intent": "Read a data sample from a DDS (Data Distribution Service) topic — use to subscribe to real-time distributed data in systems that communicate over OMG DDS middleware"
+        },
+        {
+          "block": "Write DDS Sample",
+          "ref": "ddslib/Write DDS Sample",
+          "since": "R2023a+",
+          "intent": "Publish a data sample to a DDS (Data Distribution Service) topic — use to broadcast real-time data from Simulink to other DDS participants in a distributed system"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:16",
+  "generatedAtDatenum": 740309.99533473374
 }

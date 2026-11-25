@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Transforms
-description: HDL-optimized FFT/IFFT transforms
-tags: [transforms, fft, ifft]
+description: HDL-optimized FFT/IFFT transforms (2 blocks)
+tags: [toolbox-kb, dsp-hdl-toolbox, transforms, fft, ifft]
 status: stable
-source: custom_library
-library_root: DSP HDL Toolbox
-category_path: Transforms
+sources:
+  - resource: matlab:dsphdlxfrm2
+source: toolbox_kb
+managed_by: satk
+library: DSP HDL Toolbox
+kb_folder: dsp-hdl-toolbox
+category: transforms
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Transforms
-
-Use these blocks for transforms.
 
 ## Recommended Blocks
 

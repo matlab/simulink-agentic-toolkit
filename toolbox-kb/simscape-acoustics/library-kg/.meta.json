@@ -1,15 +1,311 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74458387727,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simscape Acoustics"
-  ],
-  "blockCount": 39,
-  "categoryCount": 5,
-  "libraryFingerprints": {
-    "Simscape_Acoustics": {
-      "blockCount": 39
+  "pages": [
+    {
+      "id": "acoustic-elements",
+      "kind": "toolbox",
+      "library": "Simscape Acoustics",
+      "kbFolder": "simscape-acoustics",
+      "category": "acoustic-elements",
+      "hash": "fde1e37d6c8dc2058ca1cd6b761afab40321a98dde09ca3615e4ec524194f325",
+      "fm": {
+        "title": "Acoustic elements",
+        "description": "Fundamental acoustic lumped elements (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-acoustics",
+          "compliance",
+          "inertance",
+          "resistance",
+          "switch",
+          "element"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Variable Acoustic Resistance",
+          "ref": "acoustic_lib/Acoustic Elements/Variable Acoustic Resistance",
+          "since": "R2023a+",
+          "intent": "Acoustic resistance with variable value — use for modeling adjustable damping or flow-dependent losses"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "applications",
+      "kind": "toolbox",
+      "library": "Simscape Acoustics",
+      "kbFolder": "simscape-acoustics",
+      "category": "applications",
+      "hash": "4a01aa29194b01d783b07996a858a8b45ef023208b01c320a1b5e67679f0f49a",
+      "fm": {
+        "title": "Applications",
+        "description": "Complete acoustic application subsystems (16 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-acoustics",
+          "speaker",
+          "enclosure",
+          "microphone",
+          "earbud",
+          "ear"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Ported Speaker Enclosure",
+          "ref": "acoustic_lib/Applications/Cavities and Enclosures/Ported Speaker Enclosure",
+          "since": "R2023a+",
+          "intent": "Bass-reflex speaker cabinet with port — use for modeling vented loudspeaker enclosures with Helmholtz resonance"
+        },
+        {
+          "block": "Simple Acoustic Enclosure",
+          "ref": "acoustic_lib/Applications/Cavities and Enclosures/Simple Acoustic Enclosure",
+          "since": "R2023a+",
+          "intent": "Sealed speaker cabinet — use for modeling closed-box loudspeaker enclosures"
+        },
+        {
+          "block": "Speaker Enclosure with Mounting Holes",
+          "ref": "acoustic_lib/Applications/Cavities and Enclosures/Speaker Enclosure with Mounting Holes",
+          "since": "R2023a+",
+          "intent": "Speaker cabinet with additional openings — use for modeling enclosures where mounting holes affect acoustic behavior"
+        },
+        {
+          "block": "Earbud",
+          "ref": "acoustic_lib/Applications/Headphones/Earbud",
+          "since": "R2026a+",
+          "intent": "In-ear headphone acoustic model — use for simulating the acoustic response of earbud-type transducers in the ear canal"
+        },
+        {
+          "block": "Ear Canal with Ear Drum",
+          "ref": "acoustic_lib/Applications/Human Ear/Ear Canal with Ear Drum",
+          "since": "R2023a+",
+          "intent": "Human ear canal terminated by the eardrum — use for modeling sound propagation to the tympanic membrane"
+        },
+        {
+          "block": "Ear Drum Impedance",
+          "ref": "acoustic_lib/Applications/Human Ear/Ear Drum Impedance",
+          "since": "R2026a+",
+          "intent": "Acoustic impedance of the human eardrum — use for terminating ear canal models with realistic load"
+        },
+        {
+          "block": "Condenser Microphone",
+          "ref": "acoustic_lib/Applications/Microphones/Condenser Microphone",
+          "since": "R2026a+",
+          "intent": "Electrostatic condenser microphone model — use for simulating capacitive microphone transduction with bias voltage"
+        },
+        {
+          "block": "Microspeaker",
+          "ref": "acoustic_lib/Applications/Moving Coil Speakers/Microspeaker",
+          "since": "R2026a+",
+          "intent": "Miniature loudspeaker model — use for simulating small moving-coil speakers in portable devices"
+        },
+        {
+          "block": "Moving Coil Speaker",
+          "ref": "acoustic_lib/Applications/Moving Coil Speakers/Moving Coil Speaker",
+          "since": "R2026a+",
+          "intent": "Electrodynamic loudspeaker model — use for simulating standard moving-coil speaker transduction and response"
+        },
+        {
+          "block": "Passive Radiator",
+          "ref": "acoustic_lib/Applications/Moving Coil Speakers/Passive Radiator",
+          "since": "R2026a+",
+          "intent": "Undriven diaphragm for bass reinforcement — use for modeling passive bass radiators that replace ports in sealed enclosures"
+        },
+        {
+          "block": "Cone",
+          "ref": "acoustic_lib/Applications/Tubes and Horns/Cone",
+          "since": "R2026a+",
+          "intent": "Conical horn or waveguide section — use for modeling acoustic impedance transformation through expanding cones"
+        },
+        {
+          "block": "Cylindrical Tube With N Segments",
+          "ref": "acoustic_lib/Applications/Tubes and Horns/Cylindrical Tube With N Segments",
+          "since": "R2023a+",
+          "intent": "Multi-segment cylindrical tube — use for modeling wave propagation with distributed losses in long tubes"
+        },
+        {
+          "block": "Cylindrical Tube With Thermoviscous Losses Using Foster Network",
+          "ref": "acoustic_lib/Applications/Tubes and Horns/Cylindrical Tube With Thermoviscous Losses Using Foster Network",
+          "since": "R2023a+",
+          "intent": "Cylindrical tube with frequency-dependent losses — use for accurate modeling of thermal and viscous boundary layer effects"
+        },
+        {
+          "block": "Small Cylindrical Orifice or Tube",
+          "ref": "acoustic_lib/Applications/Tubes and Horns/Small Cylindrical Orifice or Tube",
+          "since": "R2023a+",
+          "intent": "Narrow cylindrical passage — use for modeling acoustic resistance and inertance of small holes and tubes"
+        },
+        {
+          "block": "Small Rectangular Slot",
+          "ref": "acoustic_lib/Applications/Tubes and Horns/Small Rectangular Slot",
+          "since": "R2023a+",
+          "intent": "Narrow rectangular passage — use for modeling acoustic impedance of thin slots and gaps"
+        },
+        {
+          "block": "Thin Rectangular Tube With Thermoviscous Losses",
+          "ref": "acoustic_lib/Applications/Tubes and Horns/Thin Rectangular Tube With Thermoviscous Losses",
+          "since": "R2023a+",
+          "intent": "Thin rectangular tube with boundary layer losses — use for modeling frequency-dependent losses in flat acoustic channels"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "radiation-impedance",
+      "kind": "toolbox",
+      "library": "Simscape Acoustics",
+      "kbFolder": "simscape-acoustics",
+      "category": "radiation-impedance",
+      "hash": "938e97bad3d1d681ab00e1b6475a1aa5a94d44726f4549a5d861fb9b105764a2",
+      "fm": {
+        "title": "Radiation impedance",
+        "description": "Radiation coupling to free field (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-acoustics",
+          "radiation",
+          "impedance",
+          "piston",
+          "flanged",
+          "spherical"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Circular Piston Radiation Impedance",
+          "ref": "acoustic_lib/Radiation Impedance/Circular Piston Radiation Impedance",
+          "since": "R2023a+",
+          "intent": "Radiation load of a circular piston — use for modeling how a speaker cone couples acoustic energy to free air"
+        },
+        {
+          "block": "Radiation Impedance - Circular Flanged Opening",
+          "ref": "acoustic_lib/Radiation Impedance/Radiation Impedance - Circular Flanged Opening",
+          "since": "R2023a+",
+          "intent": "Radiation load at a flanged circular opening — use for terminating tubes or ports mounted in a baffle"
+        },
+        {
+          "block": "Radiation Impedance - Circular Unflanged Opening",
+          "ref": "acoustic_lib/Radiation Impedance/Radiation Impedance - Circular Unflanged Opening",
+          "since": "R2023a+",
+          "intent": "Radiation load at an unflanged circular opening — use for terminating tubes or ports radiating without a baffle"
+        },
+        {
+          "block": "Radiation Impedance - Element In Array On Pulsing Sphere",
+          "ref": "acoustic_lib/Radiation Impedance/Radiation Impedance - Element In Array On Pulsing Sphere",
+          "since": "R2023a+",
+          "intent": "Radiation impedance for array elements on a sphere — use for modeling mutual coupling in spherical transducer arrays"
+        },
+        {
+          "block": "Spherical Cap Radiation Impedance",
+          "ref": "acoustic_lib/Radiation Impedance/Spherical Cap Radiation Impedance",
+          "since": "R2023a+",
+          "intent": "Radiation load of a spherical cap — use for modeling dome tweeter or curved diaphragm radiation"
+        },
+        {
+          "block": "Spherical Source Radiation Impedance",
+          "ref": "acoustic_lib/Radiation Impedance/Spherical Source Radiation Impedance",
+          "since": "R2023a+",
+          "intent": "Radiation load of a pulsating sphere — use for modeling omnidirectional point source radiation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors-sources",
+      "kind": "toolbox",
+      "library": "Simscape Acoustics",
+      "kbFolder": "simscape-acoustics",
+      "category": "sensors-sources",
+      "hash": "f539a6230e250e6337612f2eedbe631587076c2a87c6fdcbedf0b9e620da8b9a",
+      "fm": {
+        "title": "Sensors sources",
+        "description": "Acoustic measurement and excitation blocks (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-acoustics",
+          "sensor",
+          "source",
+          "pressure",
+          "velocity",
+          "controlled"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Far-Field Pressure Sensor",
+          "ref": "acoustic_lib/Acoustic Sensors/Far-Field Pressure Sensor",
+          "since": "R2023a+",
+          "intent": "Measure acoustic pressure at a distance from the source — use for predicting sound pressure levels in the far field"
+        },
+        {
+          "block": "Volume Velocity Sensor",
+          "ref": "acoustic_lib/Acoustic Sensors/Volume Velocity Sensor",
+          "since": "R2023a+",
+          "intent": "Measure acoustic volume velocity through a branch — use for monitoring airflow in acoustic elements"
+        },
+        {
+          "block": "Controlled Pressure Source",
+          "ref": "acoustic_lib/Acoustic Sources/Controlled Pressure Source",
+          "since": "R2023a+",
+          "intent": "Signal-controlled acoustic pressure source — use for driving acoustic networks with time-varying pressure from Simulink"
+        },
+        {
+          "block": "Controlled Volume Velocity Source",
+          "ref": "acoustic_lib/Acoustic Sources/Controlled Volume Velocity Source",
+          "since": "R2023a+",
+          "intent": "Signal-controlled volume velocity source — use for injecting time-varying airflow into acoustic networks"
+        },
+        {
+          "block": "Volume Velocity Source",
+          "ref": "acoustic_lib/Acoustic Sources/Volume Velocity Source",
+          "since": "R2023a+",
+          "intent": "Constant volume velocity source — use for providing fixed airflow excitation in acoustic circuits"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "transformers-utilities",
+      "kind": "toolbox",
+      "library": "Simscape Acoustics",
+      "kbFolder": "simscape-acoustics",
+      "category": "transformers-utilities",
+      "hash": "d5ef5394cc494b7beebbd6a05bcf23b8a2a9f3d6798c5db5514eef71d4753a0b",
+      "fm": {
+        "title": "Transformers utilities",
+        "description": "Domain converters and configuration blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simscape-acoustics",
+          "transformer",
+          "converter",
+          "mems",
+          "mechanical",
+          "properties"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MEMS Speaker Electromechanical Converter",
+          "ref": "acoustic_lib/Transformers/MEMS Speaker Electromechanical Converter",
+          "since": "R2023a+",
+          "intent": "MEMS speaker transduction model — use for simulating piezoelectric or electrostatic MEMS speaker conversion"
+        },
+        {
+          "block": "Mechanical to Acoustic Converter",
+          "ref": "acoustic_lib/Transformers/Mechanical to Acoustic Converter",
+          "since": "R2023a+",
+          "intent": "Convert between mechanical and acoustic domains — use for coupling vibrating structures to acoustic networks"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:28",
+  "generatedAtDatenum": 740309.99546844908
 }

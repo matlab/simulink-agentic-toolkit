@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: I2c interface
-description: I2C bus peripherals for multi-device communication with sensors and EEPROMs
-tags: [I2C, TWI, address, sensor, bus]
+description: I2C bus peripherals for multi-device communication with sensors and EEPROMs (38 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, I2C, TWI, address, sensor, bus]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: I2c interface
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: i2c-interface
 block_count: 38
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # I2c interface
-
-Use these blocks for i2c interface.
 
 ## Recommended Blocks
 

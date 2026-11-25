@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Protection
-description: Battery protection monitoring for voltage, current, temperature, and contacts
-tags: [monitoring, protection, fault, voltage, overcurrent]
+description: "Battery protection monitoring for voltage, current, temperature, and contacts (5 blocks)"
+tags: [toolbox-kb, battery, monitoring, protection, fault, voltage, overcurrent]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Protection
+sources:
+  - resource: matlab:batt_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: protection
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Protection
-
-Use these blocks for protection.
 
 ## Recommended Blocks
 

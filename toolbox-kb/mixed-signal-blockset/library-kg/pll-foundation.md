@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pll foundation
-description: PLL building blocks
-tags: [vco, pfd, charge, filter, divider, prescaler]
+description: PLL building blocks (9 blocks)
+tags: [toolbox-kb, mixed-signal-blockset, vco, pfd, charge, filter, divider, prescaler]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset
-category_path: Pll foundation
+sources:
+  - resource: matlab:msbPllFoundation
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset
+kb_folder: mixed-signal-blockset
+category: pll-foundation
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Pll foundation
-
-Use these blocks for pll foundation.
 
 ## Recommended Blocks
 

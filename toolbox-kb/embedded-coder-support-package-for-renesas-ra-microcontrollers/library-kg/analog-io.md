@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Analog io
-description: Analog input/output peripherals on Renesas RA
-tags: [adc, dac, analog, converter, voltage]
+description: Analog input/output peripherals on Renesas RA (1 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-renesas-ra-microcontrollers, adc, dac, analog, converter, voltage]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for Renesas RA Microcontrollers
-category_path: Analog io
+sources:
+  - resource: matlab:ra6basedlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Renesas RA Microcontrollers
+kb_folder: embedded-coder-support-package-for-renesas-ra-microcontrollers
+category: analog-io
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Analog io
-
-Use these blocks for analog io.
 
 ## Recommended Blocks
 

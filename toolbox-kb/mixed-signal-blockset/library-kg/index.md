@@ -1,30 +1,13 @@
-# Library Reuse Index
+---
+okf_version: "0.2"
+---
 
-## Priority
+# Simulink Block Category
 
-1. Custom library blocks (highest priority)
-2. Toolbox KB blocks
-
-## Policy
-
-- Always use custom library blocks when available.
-- Never fall back to built-in primitives if the same block exists in a declared library.
-- Only use built-in blocks when NO equivalent exists in any declared library after searching this index.
-- Do not invent custom block names.
-- If uncertain, inspect the relevant category page or ask the user.
-
-## Libraries
-
-- Mixed-Signal Blockset
-
-Common blocks: [common.md](common.md) (8 of 47 blocks)
-
-## Categories
-
-- [Adc architectures](adc-architectures.md) — 3 blocks; Complete ADC architecture models
-- [Adc foundation](adc-foundation.md) — 7 blocks; ADC building blocks and modulators
-- [Adc measurements](adc-measurements.md) — 4 blocks; ADC performance measurement
-- [Pll architectures](pll-architectures.md) — 5 blocks; Complete PLL architecture models
-- [Pll foundation](pll-foundation.md) — 9 blocks; PLL building blocks
-- [Pll measurements](pll-measurements.md) — 5 blocks; PLL performance measurement
-- [Utilities](utilities.md) — 14 blocks; General mixed-signal utilities and measurements
+* [Adc architectures](adc-architectures.md) - Complete ADC architecture models (3 blocks)
+* [Adc foundation](adc-foundation.md) - ADC building blocks and modulators (5 blocks)
+* [Adc measurements](adc-measurements.md) - ADC performance measurement (4 blocks)
+* [Pll architectures](pll-architectures.md) - Complete PLL architecture models (5 blocks)
+* [Pll foundation](pll-foundation.md) - PLL building blocks (9 blocks)
+* [Pll measurements](pll-measurements.md) - PLL performance measurement (5 blocks)
+* [Utilities](utilities.md) - General mixed-signal utilities and measurements (14 blocks)

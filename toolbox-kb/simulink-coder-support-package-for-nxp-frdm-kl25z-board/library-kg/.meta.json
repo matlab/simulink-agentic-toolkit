@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74459069443,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Coder Support Package for NXP FRDM-KL25Z Board"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Simulink_Coder_Support_Package_for_NXP_FRDM_KL25Z_Board": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "nxp-peripherals",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for NXP FRDM-KL25Z Board",
+      "kbFolder": "simulink-coder-support-package-for-nxp-frdm-kl25z-board",
+      "category": "nxp-peripherals",
+      "hash": "185ae3f8f6ee13db784baa2d6f8b61b1364af7fffd116ecafd5d4e7de284a106",
+      "fm": {
+        "title": "Nxp peripherals",
+        "description": "Hardware peripheral access for NXP FRDM-KL25Z board (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-nxp-frdm-kl25z-board",
+          "frdm",
+          "kl25z",
+          "nxp",
+          "arm",
+          "cortex"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "FRDM-KL25Z",
+          "ref": "freedomboardrootlib/FRDM-KL25Z",
+          "since": "R2023a+",
+          "intent": "Access peripheral blocks for the NXP FRDM-KL25Z development board — use for deploying Simulink algorithms to the ARM Cortex-M0+ based KL25Z microcontroller"
+        },
+        {
+          "block": "FRDM-TFC Shield",
+          "ref": "freedomboardrootlib/FRDM-TFC Shield",
+          "since": "R2023a+",
+          "intent": "Access peripheral blocks for the FRDM-TFC shield — use for line-following robot or motor control applications on the FRDM-KL25Z with TFC hardware"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:30",
+  "generatedAtDatenum": 740309.99549291667
 }

@@ -1,15 +1,393 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.69317745371,
-  "generatorVersion": 4,
-  "libraries": [
-    "Vision HDL Toolbox"
-  ],
-  "blockCount": 32,
-  "categoryCount": 8,
-  "libraryFingerprints": {
-    "Vision_HDL_Toolbox": {
-      "blockCount": 32
+  "pages": [
+    {
+      "id": "analysis-enhancement",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "analysis-enhancement",
+      "hash": "4431573c8a9c6964b206a491c11ef17552acb74e3e5d83bd9c348d9a64b69d9e",
+      "fm": {
+        "title": "Analysis enhancement",
+        "description": "HDL-optimized feature detection and image enhancement on a pixel stream (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "analysis",
+          "enhancement",
+          "corner",
+          "edge detector"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Corner Detector",
+          "ref": "visionhdlanalysis/Corner Detector",
+          "since": "R2023a+",
+          "intent": "HDL-optimized corner detector on a pixel stream — use for hardware feature/interest-point detection (Harris/FAST-style)."
+        },
+        {
+          "block": "Edge Detector",
+          "ref": "visionhdlanalysis/Edge Detector",
+          "since": "R2023a+",
+          "intent": "HDL-optimized edge detector on a pixel stream — use for hardware edge extraction (Sobel/Prewitt/Roberts)."
+        },
+        {
+          "block": "Median Filter",
+          "ref": "visionhdlanalysis/Median Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized median filter on a pixel stream — use for hardware impulse-noise (salt-and-pepper) removal that preserves edges."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "conversions",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "conversions",
+      "hash": "4884672b1df86b3c08adc7444c8981e2f0623e680bbb056691d23da0cf489b92",
+      "fm": {
+        "title": "Conversions",
+        "description": "HDL-optimized color, gamma, and format conversions (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "conversions",
+          "chroma",
+          "color space",
+          "demosaic",
+          "gamma",
+          "lookup table"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Chroma Resampler",
+          "ref": "visionhdlconversions/Chroma Resampler",
+          "since": "R2023a+",
+          "intent": "HDL-optimized chroma resampler that converts between chroma-subsampling formats (4:4:4/4:2:2/4:2:0) — use in hardware video pipelines."
+        },
+        {
+          "block": "Color Space Converter",
+          "ref": "visionhdlconversions/Color Space Converter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized color space conversion (e.g., RGB↔YCbCr) on a pixel stream — use in hardware video pipelines."
+        },
+        {
+          "block": "Demosaic Interpolator",
+          "ref": "visionhdlconversions/Demosaic Interpolator",
+          "since": "R2023a+",
+          "intent": "HDL-optimized demosaic that reconstructs full RGB from a Bayer sensor pattern — use as the first stage of a hardware camera pipeline."
+        },
+        {
+          "block": "Gamma Corrector",
+          "ref": "visionhdlconversions/Gamma Corrector",
+          "since": "R2023a+",
+          "intent": "HDL-optimized gamma correction on a pixel stream — use for hardware tone/gamma adjustment."
+        },
+        {
+          "block": "Lookup Table",
+          "ref": "visionhdlconversions/Lookup Table",
+          "since": "R2023a+",
+          "intent": "HDL-optimized per-pixel lookup table — use for hardware intensity remapping and point operations on a pixel stream."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "examples",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "examples",
+      "hash": "450e71983f711730b67c4948a413b33f309c8b4ae12f891bb2cc6ae835d9a2ca",
+      "fm": {
+        "title": "Examples",
+        "description": "Links to example models (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "demos",
+          "examples"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Examples",
+          "ref": "visionhdllib/Examples",
+          "since": "R2023a+",
+          "intent": "Informational block linking to Vision HDL Toolbox example models — not used in production designs."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "filtering",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "filtering",
+      "hash": "5b70640665799193f0c43a2da6c4d9bf60731e4bd270b4e48d2b2c129b755e17",
+      "fm": {
+        "title": "Filtering",
+        "description": "HDL-optimized spatial filters on a pixel stream (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "filtering",
+          "bilateral",
+          "image filter",
+          "median"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Bilateral Filter",
+          "ref": "visionhdlfilter/Bilateral Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized edge-preserving bilateral filter on a pixel stream — use for hardware noise reduction that keeps edges sharp."
+        },
+        {
+          "block": "Image Filter",
+          "ref": "visionhdlfilter/Image Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized general 2-D FIR image filter with a user kernel on a pixel stream — use for hardware convolution such as blur, sharpen, or emboss."
+        },
+        {
+          "block": "Median Filter",
+          "ref": "visionhdlfilter/Median Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized median filter on a pixel stream — use for hardware impulse-noise (salt-and-pepper) removal that preserves edges."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "geometric-transforms",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "geometric-transforms",
+      "hash": "6e3c63dbfdae435a9d144da6b2e3a556486512af17bc06a1004953dd82bb4980",
+      "fm": {
+        "title": "Geometric transforms",
+        "description": "HDL-optimized geometric warps and resizing (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "geometric",
+          "birds-eye",
+          "resizer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Birds-Eye View",
+          "ref": "visionhdlgeotforms/Birds-Eye View",
+          "since": "R2023a+",
+          "intent": "HDL-optimized bird's-eye (inverse-perspective) transform on a pixel stream — use to generate a top-down view in hardware."
+        },
+        {
+          "block": "Image Resizer",
+          "ref": "visionhdlgeotforms/Image Resizer",
+          "since": "R2023a+",
+          "intent": "HDL-optimized image resizer (scaling) on a pixel stream — use for hardware up/downscaling of video."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "morphology",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "morphology",
+      "hash": "6b2b895cf8b8f86b5d287b5d231430bf5d00c2b406d17ef72b72b9cf4be78798",
+      "fm": {
+        "title": "Morphology",
+        "description": "HDL-optimized morphological operations on a pixel stream (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "morphological",
+          "closing",
+          "dilation",
+          "erosion",
+          "opening",
+          "grayscale"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Closing",
+          "ref": "visionhdlmorphops/Closing",
+          "since": "R2023a+",
+          "intent": "HDL-optimized binary morphological closing on a pixel stream — use to fill small holes and gaps in hardware."
+        },
+        {
+          "block": "Dilation",
+          "ref": "visionhdlmorphops/Dilation",
+          "since": "R2023a+",
+          "intent": "HDL-optimized binary morphological dilation on a pixel stream — use to grow foreground regions in hardware."
+        },
+        {
+          "block": "Erosion",
+          "ref": "visionhdlmorphops/Erosion",
+          "since": "R2023a+",
+          "intent": "HDL-optimized binary morphological erosion on a pixel stream — use to shrink foreground regions and remove speckle in hardware."
+        },
+        {
+          "block": "Grayscale Closing",
+          "ref": "visionhdlmorphops/Grayscale Closing",
+          "since": "R2023a+",
+          "intent": "HDL-optimized grayscale morphological closing on a pixel stream — use to remove small dark features while preserving intensity."
+        },
+        {
+          "block": "Grayscale Dilation",
+          "ref": "visionhdlmorphops/Grayscale Dilation",
+          "since": "R2023a+",
+          "intent": "HDL-optimized grayscale morphological dilation on a pixel stream — use to expand bright regions in hardware."
+        },
+        {
+          "block": "Grayscale Erosion",
+          "ref": "visionhdlmorphops/Grayscale Erosion",
+          "since": "R2023a+",
+          "intent": "HDL-optimized grayscale morphological erosion on a pixel stream — use to shrink bright regions in hardware."
+        },
+        {
+          "block": "Grayscale Opening",
+          "ref": "visionhdlmorphops/Grayscale Opening",
+          "since": "R2023a+",
+          "intent": "HDL-optimized grayscale morphological opening on a pixel stream — use to remove small bright features while preserving intensity."
+        },
+        {
+          "block": "Opening",
+          "ref": "visionhdlmorphops/Opening",
+          "since": "R2023a+",
+          "intent": "HDL-optimized binary morphological opening on a pixel stream — use to remove small bright specks in hardware."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "statistics",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "statistics",
+      "hash": "c2e86ba096ce38a1f3a99ab176e9623b6f11cdab32f83e704799f1999320a08c",
+      "fm": {
+        "title": "Statistics",
+        "description": "HDL-optimized image statistics on a pixel stream (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "statistics",
+          "histogram",
+          "image statistics"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Histogram",
+          "ref": "visionhdlstatistics/Histogram",
+          "since": "R2023a+",
+          "intent": "HDL-optimized image histogram on a pixel stream — use for hardware intensity-distribution analysis and equalization."
+        },
+        {
+          "block": "Image Statistics",
+          "ref": "visionhdlstatistics/Image Statistics",
+          "since": "R2023a+",
+          "intent": "HDL-optimized running image statistics (mean/variance) on a pixel stream — use for hardware exposure control and frame analysis."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Vision HDL Toolbox",
+      "kbFolder": "vision-hdl-toolbox",
+      "category": "utilities",
+      "hash": "ed0ad2be226f32e3747f27707fa7d999f0d1bb7cf970a68bd4997acb63a222a1",
+      "fm": {
+        "title": "Utilities",
+        "description": "Pixel-stream control, buffering, and timing helpers (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vision-hdl-toolbox",
+          "utilities",
+          "line buffer",
+          "counter",
+          "control bus",
+          "aligner",
+          "roi",
+          "timing"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "HV Counter",
+          "ref": "visionhdlutilities/HV Counter",
+          "since": "R2023a+",
+          "intent": "Track the horizontal and vertical pixel coordinates within a video frame — use to locate the current pixel in a hardware stream."
+        },
+        {
+          "block": "Line Buffer",
+          "ref": "visionhdlutilities/Line Buffer",
+          "since": "R2023a+",
+          "intent": "Buffer lines of a pixel stream to form pixel neighborhoods — use as the building block for hardware kernel/window operations."
+        },
+        {
+          "block": "Measure Timing",
+          "ref": "visionhdlutilities/Measure Timing",
+          "since": "R2023a+",
+          "intent": "Measure the timing of a pixel-control stream (active/blanking region and frame size) — use to validate video timing in hardware."
+        },
+        {
+          "block": "Pixel Control Bus Selector",
+          "ref": "visionhdlutilities/Pixel Control Bus Selector",
+          "since": "R2023a+",
+          "intent": "Select individual signals (hStart, vStart, valid, hEnd, vEnd) from the pixel-control bus — use to access streaming control flags."
+        },
+        {
+          "block": "Pixel Stream Aligner",
+          "ref": "visionhdlutilities/Pixel Stream Aligner",
+          "since": "R2023a+",
+          "intent": "Align two pixel streams so their control signals coincide — use to synchronize streams before combining them in hardware."
+        },
+        {
+          "block": "ROI Selector",
+          "ref": "visionhdlutilities/ROI Selector",
+          "since": "R2023a+",
+          "intent": "Extract one or more rectangular regions of interest from a pixel stream — use to process only part of a frame in hardware."
+        },
+        {
+          "block": "Pixel Control Bus Creator",
+          "ref": "visionhdlutilities/Pixel Control Bus Creator",
+          "since": "R2023a+",
+          "intent": "Creates a pixelcontrol bus. The block has 5 input ports: hStart - First pixel in a horizontal line of a frame hEnd - Last pixel in a horizontal line of a frame vStart - First pixel in the first (top) line of a frame vEnd - Last pixel in the last (bottom) line of a frame valid - Valid pixel indicator"
+        },
+        {
+          "block": "Pixel Stream FIFO",
+          "ref": "visionhdlutilities/Pixel Stream FIFO",
+          "since": "R2023a+",
+          "intent": "Buffer bursts of pixels into a contiguous stream"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:34",
+  "generatedAtDatenum": 740309.99554056709
 }

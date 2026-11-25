@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Thermal management
-description: Thermal management control algorithms for cooling and heating
-tags: [coolant, heater, thermal, temperature, control]
+description: Thermal management control algorithms for cooling and heating (2 blocks)
+tags: [toolbox-kb, battery, coolant, heater, thermal, temperature, control]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Thermal management
+sources:
+  - resource: matlab:batt_sl_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: thermal-management
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Thermal management
-
-Use these blocks for thermal management.
 
 ## Recommended Blocks
 

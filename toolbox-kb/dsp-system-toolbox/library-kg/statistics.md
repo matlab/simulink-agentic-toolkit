@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Statistics
-description: Moving statistics and power measurement
-tags: [statistics, moving, power meter, median]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Statistics
+description: Moving statistics and power measurement (17 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, statistics, moving, power meter, median]
+status: draft
+sources:
+  - resource: matlab:dspstat3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: statistics
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Statistics
-
-Use these blocks for statistics.
 
 ## Recommended Blocks
 

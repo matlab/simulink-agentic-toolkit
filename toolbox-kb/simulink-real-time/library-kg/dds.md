@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Dds
-description: Blocks for dds.
+description: Blocks for Dds (2 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Dds
+sources:
+  - resource: matlab:slrealtimeddslib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: dds
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Dds
-
-Use these blocks for dds.
 
 ## Recommended Blocks
 

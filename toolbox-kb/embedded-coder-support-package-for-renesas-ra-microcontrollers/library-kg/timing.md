@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Timing
-description: Timer and interrupt management on Renesas RA
-tags: [timer, interrupt, pwm, isr, gpt]
+description: Timer and interrupt management on Renesas RA (3 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-renesas-ra-microcontrollers, timer, interrupt, pwm, isr, gpt]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for Renesas RA Microcontrollers
-category_path: Timing
+sources:
+  - resource: matlab:ra6basedlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Renesas RA Microcontrollers
+kb_folder: embedded-coder-support-package-for-renesas-ra-microcontrollers
+category: timing
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Timing
-
-Use these blocks for timing.
 
 ## Recommended Blocks
 

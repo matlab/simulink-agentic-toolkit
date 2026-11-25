@@ -1,15 +1,67 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456875,
-  "generatorVersion": 4,
-  "libraries": [
-    "Industrial Communication Toolbox"
-  ],
-  "blockCount": 6,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Industrial_Communication_Toolbox": {
-      "blockCount": 6
+  "pages": [
+    {
+      "id": "industrial-protocols",
+      "kind": "toolbox",
+      "library": "Industrial Communication Toolbox",
+      "kbFolder": "industrial-communication-toolbox",
+      "category": "industrial-protocols",
+      "hash": "6b70448578a58568e1f127fbbe10482f2cb294dc371eec6b54fce21a8b05019c",
+      "fm": {
+        "title": "Industrial protocols",
+        "description": "Industrial communication protocols for automation and IoT (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "industrial-communication-toolbox",
+          "mqtt",
+          "modbus",
+          "opcua",
+          "industrial",
+          "iot"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MQTT Client Publish",
+          "ref": "mqttlib/MQTT Client Publish",
+          "since": "R2025a+",
+          "intent": "Publish messages to an MQTT broker — use for IoT telemetry, cloud data upload, or machine-to-cloud communication in industrial systems"
+        },
+        {
+          "block": "MQTT Client Subscribe",
+          "ref": "mqttlib/MQTT Client Subscribe",
+          "since": "R2025a+",
+          "intent": "Subscribe to MQTT topics and receive messages — use for receiving cloud commands, IoT control signals, or inter-device messaging"
+        },
+        {
+          "block": "Modbus Client Read",
+          "ref": "modbuslib/Modbus Client Read",
+          "since": "R2024b+",
+          "intent": "Read registers from a Modbus server — use for acquiring data from PLCs, sensors, or industrial equipment via Modbus TCP/RTU"
+        },
+        {
+          "block": "Modbus Client Write",
+          "ref": "modbuslib/Modbus Client Write",
+          "since": "R2024b+",
+          "intent": "Write registers to a Modbus server — use for sending commands to PLCs, actuators, or industrial equipment via Modbus TCP/RTU"
+        },
+        {
+          "block": "OPC UA Read",
+          "ref": "opcualib/OPC UA Read",
+          "since": "R2024a+",
+          "intent": "Read variables from an OPC UA server — use for acquiring process data from industrial automation systems using OPC Unified Architecture"
+        },
+        {
+          "block": "OPC UA Write",
+          "ref": "opcualib/OPC UA Write",
+          "since": "R2024a+",
+          "intent": "Write variables to an OPC UA server — use for sending setpoints or commands to industrial automation systems via OPC UA"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:23",
+  "generatedAtDatenum": 740309.995413912
 }

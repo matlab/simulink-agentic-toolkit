@@ -1,15 +1,158 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74455818289,
-  "generatorVersion": 4,
-  "libraries": [
-    "Embedded Coder"
-  ],
-  "blockCount": 17,
-  "categoryCount": 2,
-  "libraryFingerprints": {
-    "Embedded_Coder": {
-      "blockCount": 17
+  "pages": [
+    {
+      "id": "configuration-wizards",
+      "kind": "toolbox",
+      "library": "Embedded Coder",
+      "kbFolder": "embedded-coder",
+      "category": "configuration-wizards",
+      "hash": "4477e8ef7ca20717870b50b95bb15ed19247a93995ee3e0418e774e3cc684995",
+      "fm": {
+        "title": "Configuration wizards",
+        "description": "Code generation configuration wizards for different target types and optimization goals (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder",
+          "ert",
+          "grt",
+          "configuration",
+          "wizard",
+          "codegen"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ERT (optimized for fixed-point)",
+          "ref": "rtweclib/Configuration Wizards/ERT (optimized for fixed-point)",
+          "since": "R2023a+",
+          "intent": "Configuration wizard that sets model parameters for optimized Embedded Real-Time code generation targeting fixed-point processors — use to quickly configure a model for production-quality fixed-point C code"
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "embeddedtargetslib/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Library identification label — internal library element, not used in application models"
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "embeddedtargetslib/Host Communication/Blockset Name2",
+          "since": "R2023a+",
+          "intent": "Library identification label — internal library element, not used in application models"
+        },
+        {
+          "block": "Custom MATLAB file",
+          "ref": "rtweclib/Configuration Wizards/Custom MATLAB file",
+          "since": "R2023a+",
+          "intent": "Configuration wizard using a custom MATLAB script to set model parameters — use when standard wizards do not match your target and you need full control over code generation settings"
+        },
+        {
+          "block": "ERT (optimized for floating-point)",
+          "ref": "rtweclib/Configuration Wizards/ERT (optimized for floating-point)",
+          "since": "R2023a+",
+          "intent": "Configuration wizard that sets model parameters for optimized Embedded Real-Time code generation targeting floating-point processors — use to quickly configure a model for efficient floating-point embedded C code"
+        },
+        {
+          "block": "GRT (debug for fixed/floating-point)",
+          "ref": "rtweclib/Configuration Wizards/GRT (debug for fixed/floating-point)",
+          "since": "R2023a+",
+          "intent": "Configuration wizard for Generic Real-Time target with debugging enabled — use during development when code traceability and debugging are more important than code size optimization"
+        },
+        {
+          "block": "GRT (optimized for fixed/floating-point)",
+          "ref": "rtweclib/Configuration Wizards/GRT (optimized for fixed/floating-point)",
+          "since": "R2023a+",
+          "intent": "Configuration wizard for Generic Real-Time target with optimizations enabled — use for rapid prototyping on generic targets with reasonable code efficiency"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "host-communication",
+      "kind": "toolbox",
+      "library": "Embedded Coder",
+      "kbFolder": "embedded-coder",
+      "category": "host-communication",
+      "hash": "196760335b97d7e659e2b51a7b8c18a8bf44d0cfa8fa23ef4a1a8c9c4110451a",
+      "fm": {
+        "title": "Host communication",
+        "description": "Host-target communication blocks for serial, CAN, and UDP data exchange (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "embedded-coder",
+          "serial",
+          "udp",
+          "can",
+          "byte",
+          "communication"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Byte Pack",
+          "ref": "embeddedtargetslib/Host Communication/Byte Pack",
+          "since": "R2023a+",
+          "intent": "Pack multiple signals into a byte array for serial or network transmission — use to construct communication payloads with specified byte order and alignment for host-target data exchange"
+        },
+        {
+          "block": "Byte Reversal",
+          "ref": "embeddedtargetslib/Host Communication/Byte Reversal",
+          "since": "R2023a+",
+          "intent": "Reverse byte order of a multi-byte value between big-endian and little-endian — use when communicating between processors with different endianness"
+        },
+        {
+          "block": "Byte Unpack",
+          "ref": "embeddedtargetslib/Host Communication/Byte Unpack",
+          "since": "R2023a+",
+          "intent": "Extract signals from a byte array received via serial or network — use to parse communication payloads back into individual signal values with correct data type interpretation"
+        },
+        {
+          "block": "CAN Pack",
+          "ref": "embeddedtargetslib/Host Communication/CAN Pack",
+          "since": "R2023a+",
+          "intent": "Pack signal values into a CAN message data field — use to encode multiple signals into 8-byte CAN payloads for transmission from the embedded target"
+        },
+        {
+          "block": "CAN Unpack",
+          "ref": "embeddedtargetslib/Host Communication/CAN Unpack",
+          "since": "R2023a+",
+          "intent": "Extract signal values from a received CAN message data field — use to decode individual signals from CAN payloads received on the embedded target"
+        },
+        {
+          "block": "Serial Configuration",
+          "ref": "embeddedtargetslib/Host Communication/Serial Configuration",
+          "since": "R2023a+",
+          "intent": "Configure serial port parameters on the embedded target — use to set baud rate, parity, and framing before using Serial Receive/Send blocks for host communication"
+        },
+        {
+          "block": "Serial Receive",
+          "ref": "embeddedtargetslib/Host Communication/Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive data bytes from the serial port on the embedded target — use for host-target communication during rapid prototyping or external mode data logging"
+        },
+        {
+          "block": "Serial Send",
+          "ref": "embeddedtargetslib/Host Communication/Serial Send",
+          "since": "R2023a+",
+          "intent": "Send data bytes through the serial port on the embedded target — use for host-target communication during rapid prototyping or parameter tuning"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "embeddedtargetslib/Host Communication/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP datagrams on the embedded target — use for network-based host-target communication or inter-processor data exchange over Ethernet"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "embeddedtargetslib/Host Communication/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP datagrams from the embedded target — use for network-based telemetry, logging, or inter-processor communication over Ethernet"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:19",
+  "generatedAtDatenum": 740309.99536747683
 }

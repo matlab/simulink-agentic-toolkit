@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Connectors
-description: Multi-cell electrical and thermal array connectors
-tags: [connector, array, nodes, electrical, thermal]
+description: Multi-cell electrical and thermal array connectors (1 blocks)
+tags: [toolbox-kb, battery, connector, array, nodes, electrical, thermal]
 status: stable
-source: mathworks_toolbox
-library_root: Battery
-category_path: Connectors
+sources:
+  - resource: matlab:batt_lib
+source: toolbox_kb
+managed_by: satk
+library: Battery
+kb_folder: battery
+category: connectors
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Connectors
-
-Use these blocks for connectors.
 
 ## Recommended Blocks
 

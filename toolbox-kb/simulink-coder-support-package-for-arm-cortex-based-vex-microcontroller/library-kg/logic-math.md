@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Logic math
-description: Logic comparison and math operations
-tags: [compare, logical, relational, math, gain, add]
+description: Logic comparison and math operations (25 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller, compare, logical, relational, math, gain, add]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
-category_path: Logic math
+sources:
+  - resource: matlab:vexarmcortexlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
+kb_folder: simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller
+category: logic-math
 block_count: 25
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Logic math
-
-Use these blocks for logic math.
 
 ## Recommended Blocks
 

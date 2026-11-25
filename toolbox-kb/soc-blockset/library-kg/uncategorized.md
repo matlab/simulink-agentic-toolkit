@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Uncategorized
-description: Blocks for uncategorized.
-status: draft
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Uncategorized
+description: Blocks for Uncategorized (40 blocks)
+tags: [toolbox-kb, soc-blockset]
+status: stable
+sources:
+  - resource: matlab:socmemlib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: uncategorized
 block_count: 40
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Uncategorized
-
-Use these blocks for uncategorized.
 
 ## Recommended Blocks
 

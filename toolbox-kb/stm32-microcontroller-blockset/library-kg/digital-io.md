@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Digital io
-description: General-purpose digital input and output pin control for GPIO
-tags: [GPIO, pin, digital, input, output]
+description: General-purpose digital input and output pin control for GPIO (38 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, GPIO, pin, digital, input, output]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Digital io
+sources:
+  - resource: matlab:stm32f1xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: digital-io
 block_count: 38
+generated: { by: satk-toolbox-build/1, at: "2026-11-25T09:56:08Z" }
 ---
 
 # Digital io
-
-Use these blocks for digital io.
 
 ## Recommended Blocks
 

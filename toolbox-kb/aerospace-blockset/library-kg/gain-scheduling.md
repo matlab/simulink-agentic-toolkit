@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gain scheduling
-description: Gain-scheduled controllers and matrix interpolation
-tags: [gain schedule, controller, interpolate, LPV, state-space]
+description: Gain-scheduled controllers and matrix interpolation (16 blocks)
+tags: [toolbox-kb, aerospace-blockset, gain schedule, controller, interpolate, LPV, state-space]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Gain scheduling
+sources:
+  - resource: matlab:aerolibschedule
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: gain-scheduling
 block_count: 16
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Gain scheduling
-
-Use these blocks for gain scheduling.
 
 ## Recommended Blocks
 

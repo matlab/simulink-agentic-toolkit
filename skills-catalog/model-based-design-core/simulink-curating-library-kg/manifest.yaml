@@ -3,7 +3,7 @@
 schema-version: 1
 license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
 scope: cross-product
-version: "2.2.1"
+version: "2.3"
 human-description: "Curate the SATK library knowledge index so the model-building agent picks better blocks from custom libraries."
 matlab-release: ">=R2023a"
 required-tools:

@@ -1,15 +1,1984 @@
 {
-  "generatedAt": "2026-09-29T16:38:08",
-  "generatedAtDatenum": 740254.69314829865,
-  "generatorVersion": 4,
-  "libraries": [
-    "HDL Coder"
-  ],
-  "blockCount": 262,
-  "categoryCount": 16,
-  "libraryFingerprints": {
-    "HDL_Coder": {
-      "blockCount": 262
+  "pages": [
+    {
+      "id": "discontinuities",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "discontinuities",
+      "hash": "65d01962ccb4f9bf7ed6459c967463a44c49d1465c7170b4bb04cb9ad35429a9",
+      "fm": {
+        "title": "Discontinuities",
+        "description": "Nonlinear discontinuity blocks (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "saturation",
+          "dead zone",
+          "backlash",
+          "relay",
+          "friction",
+          "hit crossing"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Backlash",
+          "ref": "hdlsllib/Discontinuities/Backlash",
+          "since": "R2023a+",
+          "intent": "Model mechanical play/hysteresis where output lags input within a dead band — use for gear backlash effects."
+        },
+        {
+          "block": "Coulomb & Viscous Friction",
+          "ref": "hdlsllib/Discontinuities/Coulomb & Viscous Friction",
+          "since": "R2023a+",
+          "intent": "Model friction as a Coulomb offset plus a velocity-proportional viscous term — use for mechanical friction."
+        },
+        {
+          "block": "Dead Zone",
+          "ref": "hdlsllib/Discontinuities/Dead Zone",
+          "since": "R2023a+",
+          "intent": "Output zero within a fixed dead band and offset outside it — use to model insensitivity or thresholds."
+        },
+        {
+          "block": "Dead Zone Dynamic",
+          "ref": "hdlsllib/Discontinuities/Dead Zone Dynamic",
+          "since": "R2023a+",
+          "intent": "Dead zone with runtime-variable band limits — use for adjustable insensitivity thresholds."
+        },
+        {
+          "block": "Hit  Crossing",
+          "ref": "hdlsllib/Discontinuities/Hit  Crossing",
+          "since": "R2023a+",
+          "intent": "Detect when a signal crosses a specified value — use to flag threshold-crossing events."
+        },
+        {
+          "block": "Relay",
+          "ref": "hdlsllib/Discontinuities/Relay",
+          "since": "R2023a+",
+          "intent": "Switch output between two values with hysteresis around on/off thresholds — use for bang-bang control."
+        },
+        {
+          "block": "Saturation",
+          "ref": "hdlsllib/Discontinuities/Saturation",
+          "since": "R2023a+",
+          "intent": "Clip a signal to fixed lower/upper limits — use to enforce actuator or safety limits."
+        },
+        {
+          "block": "Saturation Dynamic",
+          "ref": "hdlsllib/Discontinuities/Saturation Dynamic",
+          "since": "R2023a+",
+          "intent": "Clip a signal to runtime-variable limits — use for adjustable saturation bounds."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "discrete",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "discrete",
+      "hash": "e6ad8a4719b1a815afdf329f2711e773e05c2f5e7d307d650960db5525afc548",
+      "fm": {
+        "title": "Discrete",
+        "description": "Discrete-time dynamics, delays, and filters (24 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "discrete",
+          "delay",
+          "integrator",
+          "transfer function",
+          "filter",
+          "memory"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Delay",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a specified number of samples — use for timing alignment or algorithmic state."
+        },
+        {
+          "block": "Delay",
+          "ref": "hdlsllib/Discrete/Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a specified number of samples — use for timing alignment or algorithmic state."
+        },
+        {
+          "block": "Discrete Transfer Fcn",
+          "ref": "hdlsllib/Discrete/Discrete Transfer Fcn",
+          "since": "R2023a+",
+          "intent": "Implement a discrete transfer function from numerator/denominator coefficients — use for IIR dynamics."
+        },
+        {
+          "block": "Discrete FIR Filter",
+          "ref": "hdlsllib/Discrete/Discrete FIR Filter",
+          "since": "R2023a+",
+          "intent": "Apply an FIR filter with given coefficients — use for linear-phase digital filtering."
+        },
+        {
+          "block": "Discrete PID Controller",
+          "ref": "hdlsllib/Discrete/Discrete PID Controller",
+          "since": "R2023a+",
+          "intent": "Discrete-time PID controller with anti-windup and tuning — use for closed-loop feedback control."
+        },
+        {
+          "block": "Discrete-Time Integrator",
+          "ref": "hdlsllib/Discrete/Discrete-Time Integrator",
+          "since": "R2023a+",
+          "intent": "Accumulate the input over discrete time with reset/limit options — use for discrete integration."
+        },
+        {
+          "block": "Enabled Delay",
+          "ref": "hdlsllib/Discrete/Enabled Delay",
+          "since": "R2023a+",
+          "intent": "Delay that updates only while enabled — use for gated or state-held delays."
+        },
+        {
+          "block": "Enabled Resettable Delay",
+          "ref": "hdlsllib/Discrete/Enabled Resettable Delay",
+          "since": "R2023a+",
+          "intent": "Delay that updates while enabled and clears on reset — use for gated delays with reset."
+        },
+        {
+          "block": "Memory",
+          "ref": "hdlsllib/Discrete/Memory",
+          "since": "R2023a+",
+          "intent": "Hold the input from the previous major time step — use to break algebraic loops or store one-step state."
+        },
+        {
+          "block": "Resettable Delay",
+          "ref": "hdlsllib/Discrete/Resettable Delay",
+          "since": "R2023a+",
+          "intent": "Delay that clears its state on a reset signal — use for restartable delays."
+        },
+        {
+          "block": "Tapped Delay",
+          "ref": "hdlsllib/Discrete/Tapped Delay",
+          "since": "R2023a+",
+          "intent": "Output a vector of successively delayed samples — use to form delay lines for filters."
+        },
+        {
+          "block": "Unit Delay",
+          "ref": "hdlsllib/Discrete/Unit Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by one sample period — use to introduce one-step state or break algebraic loops."
+        },
+        {
+          "block": "Zero-Order Hold",
+          "ref": "hdlsllib/Discrete/Zero-Order Hold",
+          "since": "R2023a+",
+          "intent": "Hold each sample constant over the sample period — use to convert continuous to discrete or set a sample rate."
+        },
+        {
+          "block": "Tapped Delay Enabled Resettable Synchronous",
+          "ref": "hdlsllib/Discrete/Tapped Delay Enabled Resettable Synchronous",
+          "since": "R2023a+",
+          "intent": "Normally, Delay scalar signal multiple sample periods and output all delayed versions. When the enable signal is false, the block is disabled, and the state and output values do not change. When the reset signal R is true, the state and the output are always set equal to the initial condition parameter. This block exhibits hardware-friendly reset behavior."
+        },
+        {
+          "block": "Tapped Delay Enabled Synchronous",
+          "ref": "hdlsllib/Discrete/Tapped Delay Enabled Synchronous",
+          "since": "R2023a+",
+          "intent": "Normally, Delay scalar signal multiple sample periods and output all delayed versions. When the enable signal is false, the block is disabled, and the state and output values do not change."
+        },
+        {
+          "block": "Tapped Delay Resettable Synchronous",
+          "ref": "hdlsllib/Discrete/Tapped Delay Resettable Synchronous",
+          "since": "R2023a+",
+          "intent": "Normally, Delay scalar signal multiple sample periods and output all delayed versions. When the reset signal R is true, the state and the output are always set equal to the initial condition parameter. This block exhibits hardware-friendly reset behavior."
+        },
+        {
+          "block": "Unit Delay Enabled Resettable Synchronous",
+          "ref": "hdlsllib/Discrete/Unit Delay Enabled Resettable Synchronous",
+          "since": "R2023a+",
+          "intent": "Normally, the output is the signal u delayed by one sample period. When the enable signal is false, the block is disabled, and the state and output values do not change. The enable action only supports scalar inputs. Scalar expansion is used for the enable action when the signal u is a vector. When the reset signal R is true, the state and the output are always set equal to the initial condition parameter. This block exhibits hardware-friendly reset behavior. This reset action only supports scalar inputs. Scalar expansion is used for this reset action when the signal u is a vector."
+        },
+        {
+          "block": "Unit Delay Enabled Synchronous",
+          "ref": "hdlsllib/Discrete/Unit Delay Enabled Synchronous",
+          "since": "R2023a+",
+          "intent": "Normally, the output is the signal u delayed by one sample period. When the enable signal is false, the block is disabled, and the state and output values do not change. The enable action only supports scalar inputs. Scalar expansion is used for the enable action when the signal u is a vector."
+        },
+        {
+          "block": "Unit Delay Resettable Synchronous",
+          "ref": "hdlsllib/Discrete/Unit Delay Resettable Synchronous",
+          "since": "R2023a+",
+          "intent": "Normally, the output is the signal u delayed by one sample period. When the reset signal R is true, the state and the output are always set equal to the initial condition parameter. This block exhibits hardware-friendly reset behavior. This reset action only supports scalar inputs. Scalar expansion is used for this reset action when the signal u is a vector."
+        },
+        {
+          "block": "Discrete Transfer Fcn",
+          "ref": "hdlsllib/HDL Floating Point Operations/Discrete Transfer Fcn",
+          "since": "R2023a+",
+          "intent": "Implement a discrete transfer function from numerator/denominator coefficients — use for IIR dynamics."
+        },
+        {
+          "block": "Discrete FIR Filter",
+          "ref": "hdlsllib/HDL Floating Point Operations/Discrete FIR Filter",
+          "since": "R2023a+",
+          "intent": "Apply an FIR filter with given coefficients — use for linear-phase digital filtering."
+        },
+        {
+          "block": "Discrete PID Controller",
+          "ref": "hdlsllib/HDL Floating Point Operations/Discrete PID Controller",
+          "since": "R2023a+",
+          "intent": "Discrete-time PID controller with anti-windup and tuning — use for closed-loop feedback control."
+        },
+        {
+          "block": "Discrete-Time Integrator",
+          "ref": "hdlsllib/HDL Floating Point Operations/Discrete-Time Integrator",
+          "since": "R2023a+",
+          "intent": "Accumulate the input over discrete time with reset/limit options — use for discrete integration."
+        },
+        {
+          "block": "Repeating\nSequence\nStair",
+          "ref": "hdlsllib/Sources/Repeating\nSequence\nStair",
+          "since": "R2023a+",
+          "intent": "Discrete time sequence is output, then repeated."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "hdl-rams",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "hdl-rams",
+      "hash": "3ed8252c7397d471a6a7579585d7ee697688db71380e7dbe026aea2d3bdb3475",
+      "fm": {
+        "title": "Hdl rams",
+        "description": "HDL RAM memory models (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "ram",
+          "memory",
+          "dual port",
+          "single port",
+          "hdl"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Dual Port RAM System",
+          "ref": "hdlsllib/HDL RAMs/Dual Port RAM System",
+          "since": "R2023a+",
+          "intent": "Model a dual-port RAM with independent read/write ports for HDL — use for on-chip memory with concurrent access."
+        },
+        {
+          "block": "Simple Dual Port RAM System",
+          "ref": "hdlsllib/HDL RAMs/Simple Dual Port RAM System",
+          "since": "R2023a+",
+          "intent": "Model a simple dual-port RAM (one read, one write port) for HDL — use for streaming buffers."
+        },
+        {
+          "block": "Simple Tri Port RAM System",
+          "ref": "hdlsllib/HDL RAMs/Simple Tri Port RAM System",
+          "since": "R2023a+",
+          "intent": "Model a three-port RAM for HDL — use for memories needing extra concurrent access."
+        },
+        {
+          "block": "Single Port RAM System",
+          "ref": "hdlsllib/HDL RAMs/Single Port RAM System",
+          "since": "R2023a+",
+          "intent": "Model a single-port RAM (shared read/write) for HDL — use for compact on-chip memory."
+        },
+        {
+          "block": "True Dual Port RAM System",
+          "ref": "hdlsllib/HDL RAMs/True Dual Port RAM System",
+          "since": "R2023a+",
+          "intent": "Model a true dual-port RAM (both ports read and write) for HDL — use for fully concurrent memory access."
+        },
+        {
+          "block": "Dual Port RAM",
+          "ref": "hdlsllib/HDL RAMs/Dual Port RAM",
+          "since": "R2023a+",
+          "intent": "This block simulates a dual-port RAM with two data output ports."
+        },
+        {
+          "block": "Dual Rate Dual Port RAM",
+          "ref": "hdlsllib/HDL RAMs/Dual Rate Dual Port RAM",
+          "since": "R2023a+",
+          "intent": "This block simulates a dual-clock dual-port RAM with two data output ports."
+        },
+        {
+          "block": "Simple Dual Port RAM",
+          "ref": "hdlsllib/HDL RAMs/Simple Dual Port RAM",
+          "since": "R2023a+",
+          "intent": "This block simulates a simple dual-port RAM with one data output port."
+        },
+        {
+          "block": "Single Port RAM",
+          "ref": "hdlsllib/HDL RAMs/Single Port RAM",
+          "since": "R2023a+",
+          "intent": "This block simulates a single-port RAM."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "hdl-subsystems",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "hdl-subsystems",
+      "hash": "b6b468992e0082588c586a5e12ee68a8e723c4cc4edf26adeb6aaad098b17d33",
+      "fm": {
+        "title": "Hdl subsystems",
+        "description": "HDL subsystem/state-control blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "hdl",
+          "state control",
+          "subsystem"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "State Control",
+          "ref": "hdlsllib/HDL Subsystems/State Control",
+          "since": "R2023a+",
+          "intent": "Set a subsystem to synchronous or classic HDL state behavior — use to control state-element semantics for code generation."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "logic-bit",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "logic-bit",
+      "hash": "779ad24a28673f6055de98820761b3f8e945195c28107e6255585dd7539a93af",
+      "fm": {
+        "title": "Logic bit",
+        "description": "Logical, relational, and bit-level operations (31 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "logic",
+          "bit",
+          "relational",
+          "detect",
+          "shift",
+          "bitwise"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Logical\nOperator",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Logical\nOperator",
+          "since": "R2023a+",
+          "intent": "Apply a logical operation (AND, OR, NOT, XOR, …) to boolean inputs — use for combining conditions."
+        },
+        {
+          "block": "Relational\nOperator",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Relational\nOperator",
+          "since": "R2023a+",
+          "intent": "Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic."
+        },
+        {
+          "block": "Relational Operator",
+          "ref": "hdlsllib/HDL Floating Point Operations/Relational Operator",
+          "since": "R2023a+",
+          "intent": "Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic."
+        },
+        {
+          "block": "Bit Clear",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit Clear",
+          "since": "R2023a+",
+          "intent": "Force a specified bit of an integer to 0 — use for bit-level masking or flag clearing."
+        },
+        {
+          "block": "Bit Set",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit Set",
+          "since": "R2023a+",
+          "intent": "Force a specified bit of an integer to 1 — use for bit-level flag setting."
+        },
+        {
+          "block": "Bit to Integer Converter",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit to Integer Converter",
+          "since": "R2024b+",
+          "intent": "Pack a group of bits into an integer — use to assemble bit streams into words."
+        },
+        {
+          "block": "Bitwise Operator",
+          "ref": "hdlsllib/Logic and Bit Operations/Bitwise Operator",
+          "since": "R2023a+",
+          "intent": "Apply a bitwise AND/OR/XOR/NOT with optional mask — use for bit manipulation of integer signals."
+        },
+        {
+          "block": "Detect Change",
+          "ref": "hdlsllib/Logic and Bit Operations/Detect Change",
+          "since": "R2023a+",
+          "intent": "Output true when the input value changes between samples — use for change/edge detection."
+        },
+        {
+          "block": "Detect Decrease",
+          "ref": "hdlsllib/Logic and Bit Operations/Detect Decrease",
+          "since": "R2023a+",
+          "intent": "Output true when the input decreases from the previous sample — use for falling-value detection."
+        },
+        {
+          "block": "Detect Increase",
+          "ref": "hdlsllib/Logic and Bit Operations/Detect Increase",
+          "since": "R2023a+",
+          "intent": "Output true when the input increases from the previous sample — use for rising-value detection."
+        },
+        {
+          "block": "Extract Bits",
+          "ref": "hdlsllib/Logic and Bit Operations/Extract Bits",
+          "since": "R2023a+",
+          "intent": "Extract a contiguous range of bits from an integer — use to isolate a bit field."
+        },
+        {
+          "block": "Integer to Bit Converter",
+          "ref": "hdlsllib/Logic and Bit Operations/Integer to Bit Converter",
+          "since": "R2024b+",
+          "intent": "Unpack an integer into its constituent bits — use to expand words into bit streams."
+        },
+        {
+          "block": "Interval Test Dynamic",
+          "ref": "hdlsllib/Logic and Bit Operations/Interval Test Dynamic",
+          "since": "R2023a+",
+          "intent": "Output true when the input lies within runtime lower/upper limits — use for adjustable range testing."
+        },
+        {
+          "block": "Logical Operator",
+          "ref": "hdlsllib/Logic and Bit Operations/Logical Operator",
+          "since": "R2023a+",
+          "intent": "Apply a logical operation (AND, OR, NOT, XOR, …) to boolean inputs — use for combining conditions."
+        },
+        {
+          "block": "Relational Operator",
+          "ref": "hdlsllib/Logic and Bit Operations/Relational Operator",
+          "since": "R2023a+",
+          "intent": "Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic."
+        },
+        {
+          "block": "Shift Arithmetic",
+          "ref": "hdlsllib/Logic and Bit Operations/Shift Arithmetic",
+          "since": "R2023a+",
+          "intent": "Arithmetic/logical shift of bits or the binary point — use for scaling by powers of two or bit shifts."
+        },
+        {
+          "block": "Bit Concat",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit Concat",
+          "since": "R2023a+",
+          "intent": "Concatenate the input words. For scalar inputs, two or more input signals should be connected to the block. For vector inputs, at least one input should be connected to the block. The left-right ordering of words in the output follows the ordering of input signals. The L input is the lowest-order word and the H input is the highest order word."
+        },
+        {
+          "block": "Bit Reduce",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit Reduce",
+          "since": "R2023a+",
+          "intent": "Perform a bitwise AND, OR, or XOR reduction of the input signal, as specified by the Reduction Mode parameter."
+        },
+        {
+          "block": "Bit Rotate",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit Rotate",
+          "since": "R2023a+",
+          "intent": "Rotate the input signal left or right as specified by the Rotate Mode parameter. The Rotate Length specifies the number of bits to be rotated."
+        },
+        {
+          "block": "Bit Slice",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit Slice",
+          "since": "R2023a+",
+          "intent": "Return a consecutive field of bits from the input signal. The field is indexed (0-based relative to LSB) by the LSB Position and MSB Position."
+        },
+        {
+          "block": "Bits to Word",
+          "ref": "hdlsllib/Logic and Bit Operations/Bits to Word",
+          "since": "R2023a+",
+          "intent": "Convert input vector of N 1-bit values to N-bit integer."
+        },
+        {
+          "block": "Compare To Constant",
+          "ref": "hdlsllib/Logic and Bit Operations/Compare To Constant",
+          "since": "R2023a+",
+          "intent": "Determine how a signal compares to a constant."
+        },
+        {
+          "block": "Compare To Zero",
+          "ref": "hdlsllib/Logic and Bit Operations/Compare To Zero",
+          "since": "R2023a+",
+          "intent": "Determine how a signal compares to zero."
+        },
+        {
+          "block": "Detect Fall Negative",
+          "ref": "hdlsllib/Logic and Bit Operations/Detect Fall Negative",
+          "since": "R2023a+",
+          "intent": "If the input is strictly negative and its previous value was nonnegative, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z < 0)."
+        },
+        {
+          "block": "Detect Fall Nonpositive",
+          "ref": "hdlsllib/Logic and Bit Operations/Detect Fall Nonpositive",
+          "since": "R2023a+",
+          "intent": "If the input is nonpositive and its previous value was strictly positive, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z <= 0)."
+        },
+        {
+          "block": "Detect Rise Nonnegative",
+          "ref": "hdlsllib/Logic and Bit Operations/Detect Rise Nonnegative",
+          "since": "R2023a+",
+          "intent": "If the input is nonnegative and its previous value was strictly negative, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z >= 0)."
+        },
+        {
+          "block": "Detect Rise Positive",
+          "ref": "hdlsllib/Logic and Bit Operations/Detect Rise Positive",
+          "since": "R2023a+",
+          "intent": "If the input is strictly positive and its previous value was nonpositive, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z > 0)."
+        },
+        {
+          "block": "Interval Test",
+          "ref": "hdlsllib/Logic and Bit Operations/Interval Test",
+          "since": "R2023a+",
+          "intent": "If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE."
+        },
+        {
+          "block": "Word to Bits",
+          "ref": "hdlsllib/Logic and Bit Operations/Word to Bits",
+          "since": "R2023a+",
+          "intent": "Convert input to vector of N 1-bit values, N is given by the Maximum Word Length mask parameter."
+        },
+        {
+          "block": "Counter\nFree-Running",
+          "ref": "hdlsllib/Sources/Counter\nFree-Running",
+          "since": "R2023a+",
+          "intent": "This block is a free-running counter that overflows back to zero after it has reached the maximum value possible for the specified number of bits. The counter is always initialized to zero. The output is normally an unsigned integer with the specified number of bits."
+        },
+        {
+          "block": "Counter\nLimited",
+          "ref": "hdlsllib/Sources/Counter\nLimited",
+          "since": "R2023a+",
+          "intent": "This block is a counter that wraps back to zero after it has output the specified upper limit. The counter is always initialized to zero. The output is normally an unsigned integer of 8, 16, or 32 bits. The smallest number of bits needed to represent the upper limit is used."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "lookup-tables",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "lookup-tables",
+      "hash": "cab36a031b33455044f5d065e8750e3651abf38c59d4647a13f545b65988d055",
+      "fm": {
+        "title": "Lookup tables",
+        "description": "Lookup tables and prelookup (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "lookup",
+          "table",
+          "prelookup",
+          "interpolation",
+          "breakpoint"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Resettable Synchronous Subsystem",
+          "ref": "hdlsllib/HDL Subsystems/Resettable Synchronous Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a reset port, state control, inport, and outport block."
+        },
+        {
+          "block": "1-D Lookup Table",
+          "ref": "hdlsllib/Lookup Tables/1-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Map an input to an output by interpolating a table of breakpoint-value pairs — use to implement nonlinear functions or calibration curves."
+        },
+        {
+          "block": "2-D Lookup Table",
+          "ref": "hdlsllib/Lookup Tables/2-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from a 2-D table indexed by two inputs — use for surface maps such as engine or gain schedules."
+        },
+        {
+          "block": "Direct Lookup Table (n-D)",
+          "ref": "hdlsllib/Lookup Tables/Direct Lookup Table (n-D)",
+          "since": "R2023a+",
+          "intent": "Return stored table elements directly by integer index with no interpolation — use for indexed selection of vectors/matrices."
+        },
+        {
+          "block": "Prelookup",
+          "ref": "hdlsllib/Lookup Tables/Prelookup",
+          "since": "R2023a+",
+          "intent": "Compute the index and fraction of an input within a breakpoint set — use ahead of an Interpolation block for efficient table lookup."
+        },
+        {
+          "block": "Sine HDL Optimized",
+          "ref": "hdlsllib/Lookup Tables/Sine HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Generate sine/cosine using an HDL-efficient lookup implementation — use for tone generation targeting hardware."
+        },
+        {
+          "block": "n-D Lookup Table",
+          "ref": "hdlsllib/Lookup Tables/n-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from an n-dimensional breakpoint table — use for multi-input calibration maps."
+        },
+        {
+          "block": "Cosine HDL Optimized",
+          "ref": "hdlsllib/Lookup Tables/Cosine HDL Optimized",
+          "since": "R2023a+",
+          "intent": "Sine and Cosine HDL optimized block using quarter wave symmetry, and HDL friendly settings."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "math",
+      "hash": "888e4b2604f7b8e153d30e234d73d059951b8693c48640baa1d538951a3cb2ac",
+      "fm": {
+        "title": "Math",
+        "description": "Arithmetic, trigonometric, and matrix math operations (90 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "math",
+          "arithmetic",
+          "trigonometry",
+          "gain",
+          "product",
+          "sum",
+          "matrix"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Gain",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Gain",
+          "since": "R2023a+",
+          "intent": "Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants."
+        },
+        {
+          "block": "Product",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Product",
+          "since": "R2023a+",
+          "intent": "Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication."
+        },
+        {
+          "block": "Sum",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Sum",
+          "since": "R2023a+",
+          "intent": "Add or subtract inputs — use for summing signals and forming error terms."
+        },
+        {
+          "block": "ACosh",
+          "ref": "hdlsllib/HDL Floating Point Operations/ACosh",
+          "since": "R2023a+",
+          "intent": "Compute the inverse hyperbolic cosine — use in HDL-targeted math needing acosh."
+        },
+        {
+          "block": "ASinh",
+          "ref": "hdlsllib/HDL Floating Point Operations/ASinh",
+          "since": "R2023a+",
+          "intent": "Compute the inverse hyperbolic sine — use in HDL-targeted math needing asinh."
+        },
+        {
+          "block": "ATanh",
+          "ref": "hdlsllib/HDL Floating Point Operations/ATanh",
+          "since": "R2023a+",
+          "intent": "Compute the inverse hyperbolic tangent — use in HDL-targeted math needing atanh."
+        },
+        {
+          "block": "Abs",
+          "ref": "hdlsllib/HDL Floating Point Operations/Abs",
+          "since": "R2023a+",
+          "intent": "Output the absolute value (or complex magnitude) of the input — use to remove sign or get magnitude."
+        },
+        {
+          "block": "Acos",
+          "ref": "hdlsllib/HDL Floating Point Operations/Acos",
+          "since": "R2023a+",
+          "intent": "Compute the arccosine of the input — use for inverse-trig angle recovery."
+        },
+        {
+          "block": "Add",
+          "ref": "hdlsllib/HDL Floating Point Operations/Add",
+          "since": "R2023a+",
+          "intent": "Add and optionally subtract inputs — use for summing signals with per-port sign control."
+        },
+        {
+          "block": "Asin",
+          "ref": "hdlsllib/HDL Floating Point Operations/Asin",
+          "since": "R2023a+",
+          "intent": "Compute the arcsine of the input — use for inverse-trig angle recovery."
+        },
+        {
+          "block": "Atan",
+          "ref": "hdlsllib/HDL Floating Point Operations/Atan",
+          "since": "R2023a+",
+          "intent": "Compute the arctangent of the input — use for single-argument angle recovery."
+        },
+        {
+          "block": "Atan2",
+          "ref": "hdlsllib/HDL Floating Point Operations/Atan2",
+          "since": "R2023a+",
+          "intent": "Compute the four-quadrant arctangent of y and x — use to get a full-range angle from Cartesian components."
+        },
+        {
+          "block": "Bias",
+          "ref": "hdlsllib/HDL Floating Point Operations/Bias",
+          "since": "R2023a+",
+          "intent": "Add a constant offset to the input — use to shift a signal by a fixed amount."
+        },
+        {
+          "block": "Ceil",
+          "ref": "hdlsllib/HDL Floating Point Operations/Ceil",
+          "since": "R2023a+",
+          "intent": "Round toward positive infinity — use for ceiling rounding."
+        },
+        {
+          "block": "Conjugate",
+          "ref": "hdlsllib/HDL Floating Point Operations/Conjugate",
+          "since": "R2023a+",
+          "intent": "Compute the complex conjugate — use in signal-processing math needing conjugation."
+        },
+        {
+          "block": "Cos",
+          "ref": "hdlsllib/HDL Floating Point Operations/Cos",
+          "since": "R2023a+",
+          "intent": "Compute the cosine of the input (radians) — use for trig and waveform generation."
+        },
+        {
+          "block": "Cosh",
+          "ref": "hdlsllib/HDL Floating Point Operations/Cosh",
+          "since": "R2023a+",
+          "intent": "Compute the hyperbolic cosine of the input."
+        },
+        {
+          "block": "Divide",
+          "ref": "hdlsllib/HDL Floating Point Operations/Divide",
+          "since": "R2023a+",
+          "intent": "Multiply and/or divide inputs — use for ratios and element-wise division."
+        },
+        {
+          "block": "Exp",
+          "ref": "hdlsllib/HDL Floating Point Operations/Exp",
+          "since": "R2023a+",
+          "intent": "Compute the exponential e^u of the input."
+        },
+        {
+          "block": "Fix",
+          "ref": "hdlsllib/HDL Floating Point Operations/Fix",
+          "since": "R2023a+",
+          "intent": "Round toward zero (truncate) — use for truncating rounding."
+        },
+        {
+          "block": "Float Typecast",
+          "ref": "hdlsllib/HDL Floating Point Operations/Float Typecast",
+          "since": "R2023a+",
+          "intent": "Reinterpret the bits of a float as an integer or vice versa — use for bit-level float manipulation in HDL."
+        },
+        {
+          "block": "Floor",
+          "ref": "hdlsllib/HDL Floating Point Operations/Floor",
+          "since": "R2023a+",
+          "intent": "Round toward negative infinity — use for floor rounding."
+        },
+        {
+          "block": "Gain",
+          "ref": "hdlsllib/HDL Floating Point Operations/Gain",
+          "since": "R2023a+",
+          "intent": "Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants."
+        },
+        {
+          "block": "Hermitian",
+          "ref": "hdlsllib/HDL Floating Point Operations/Hermitian",
+          "since": "R2023a+",
+          "intent": "Compute the complex-conjugate transpose of a matrix — use in linear-algebra signal processing."
+        },
+        {
+          "block": "Hypot",
+          "ref": "hdlsllib/HDL Floating Point Operations/Hypot",
+          "since": "R2023a+",
+          "intent": "Compute sqrt(u1^2 + u2^2) robustly — use for magnitude/hypotenuse without overflow."
+        },
+        {
+          "block": "Log",
+          "ref": "hdlsllib/HDL Floating Point Operations/Log",
+          "since": "R2023a+",
+          "intent": "Compute the natural logarithm of the input."
+        },
+        {
+          "block": "Log10",
+          "ref": "hdlsllib/HDL Floating Point Operations/Log10",
+          "since": "R2023a+",
+          "intent": "Compute the base-10 logarithm of the input."
+        },
+        {
+          "block": "Magnitude Square",
+          "ref": "hdlsllib/HDL Floating Point Operations/Magnitude Square",
+          "since": "R2023a+",
+          "intent": "Compute |u|^2 of a possibly complex input — use for power/energy without a square root."
+        },
+        {
+          "block": "Magnitude-Angle to Complex",
+          "ref": "hdlsllib/HDL Floating Point Operations/Magnitude-Angle to Complex",
+          "since": "R2023a+",
+          "intent": "Build a complex signal from magnitude and angle — use to convert polar to complex."
+        },
+        {
+          "block": "Math Reciprocal",
+          "ref": "hdlsllib/HDL Floating Point Operations/Math Reciprocal",
+          "since": "R2023a+",
+          "intent": "Compute 1/u — use for reciprocal or division-by-input."
+        },
+        {
+          "block": "Max",
+          "ref": "hdlsllib/HDL Floating Point Operations/Max",
+          "since": "R2023a+",
+          "intent": "Output the maximum of the inputs — use for element-wise or port-wise max selection."
+        },
+        {
+          "block": "Min",
+          "ref": "hdlsllib/HDL Floating Point Operations/Min",
+          "since": "R2023a+",
+          "intent": "Output the minimum of the inputs — use for element-wise or port-wise min selection."
+        },
+        {
+          "block": "Mod",
+          "ref": "hdlsllib/HDL Floating Point Operations/Mod",
+          "since": "R2023a+",
+          "intent": "Compute the modulus/remainder after division — use for wrapping or periodic indexing."
+        },
+        {
+          "block": "Pow",
+          "ref": "hdlsllib/HDL Floating Point Operations/Pow",
+          "since": "R2023a+",
+          "intent": "Raise the base input to the power of the exponent input — use for u1^u2."
+        },
+        {
+          "block": "Pow10",
+          "ref": "hdlsllib/HDL Floating Point Operations/Pow10",
+          "since": "R2023a+",
+          "intent": "Compute 10^u — use for decade scaling."
+        },
+        {
+          "block": "Product",
+          "ref": "hdlsllib/HDL Floating Point Operations/Product",
+          "since": "R2023a+",
+          "intent": "Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication."
+        },
+        {
+          "block": "Product of Elements",
+          "ref": "hdlsllib/HDL Floating Point Operations/Product of Elements",
+          "since": "R2023a+",
+          "intent": "Multiply all elements of a vector together — use for cumulative products."
+        },
+        {
+          "block": "Reciprocal",
+          "ref": "hdlsllib/HDL Floating Point Operations/Reciprocal",
+          "since": "R2023a+",
+          "intent": "Compute 1/u — use for inversion or division-by-input."
+        },
+        {
+          "block": "Reciprocal Sqrt",
+          "ref": "hdlsllib/HDL Floating Point Operations/Reciprocal Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute 1/sqrt(u) — use for normalization such as inverse magnitude."
+        },
+        {
+          "block": "Rem",
+          "ref": "hdlsllib/HDL Floating Point Operations/Rem",
+          "since": "R2023a+",
+          "intent": "Compute the remainder after division (sign of the dividend) — use for remainder arithmetic."
+        },
+        {
+          "block": "Round",
+          "ref": "hdlsllib/HDL Floating Point Operations/Round",
+          "since": "R2023a+",
+          "intent": "Round to the nearest integer — use for standard rounding."
+        },
+        {
+          "block": "Sign",
+          "ref": "hdlsllib/HDL Floating Point Operations/Sign",
+          "since": "R2023a+",
+          "intent": "Output the sign (-1, 0, +1) of the input — use for sign extraction or direction."
+        },
+        {
+          "block": "SignedSqrt",
+          "ref": "hdlsllib/HDL Floating Point Operations/SignedSqrt",
+          "since": "R2023a+",
+          "intent": "Compute sign(u)*sqrt(|u|) — use for signed square-root scaling."
+        },
+        {
+          "block": "Sin",
+          "ref": "hdlsllib/HDL Floating Point Operations/Sin",
+          "since": "R2023a+",
+          "intent": "Compute the sine of the input (radians) — use for trig and waveform generation."
+        },
+        {
+          "block": "Sincos",
+          "ref": "hdlsllib/HDL Floating Point Operations/Sincos",
+          "since": "R2023a+",
+          "intent": "Compute sine and cosine of the input together — use for efficient combined trig."
+        },
+        {
+          "block": "Sinh",
+          "ref": "hdlsllib/HDL Floating Point Operations/Sinh",
+          "since": "R2023a+",
+          "intent": "Compute the hyperbolic sine of the input."
+        },
+        {
+          "block": "Sqrt",
+          "ref": "hdlsllib/HDL Floating Point Operations/Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute the square root of the input — use for magnitude or RMS-type math."
+        },
+        {
+          "block": "Square",
+          "ref": "hdlsllib/HDL Floating Point Operations/Square",
+          "since": "R2023a+",
+          "intent": "Compute u^2 — use for squaring or power calculations."
+        },
+        {
+          "block": "Subtract",
+          "ref": "hdlsllib/HDL Floating Point Operations/Subtract",
+          "since": "R2023a+",
+          "intent": "Subtract inputs with per-port sign — use for differences and error signals."
+        },
+        {
+          "block": "Sum of Elements",
+          "ref": "hdlsllib/HDL Floating Point Operations/Sum of Elements",
+          "since": "R2023a+",
+          "intent": "Add all elements of a vector — use for cumulative sums or totals."
+        },
+        {
+          "block": "Tan",
+          "ref": "hdlsllib/HDL Floating Point Operations/Tan",
+          "since": "R2023a+",
+          "intent": "Compute the tangent of the input (radians)."
+        },
+        {
+          "block": "Tanh",
+          "ref": "hdlsllib/HDL Floating Point Operations/Tanh",
+          "since": "R2023a+",
+          "intent": "Compute the hyperbolic tangent — use for smooth saturating nonlinearities."
+        },
+        {
+          "block": "Transpose",
+          "ref": "hdlsllib/HDL Floating Point Operations/Transpose",
+          "since": "R2023a+",
+          "intent": "Transpose a matrix signal — use to swap rows and columns."
+        },
+        {
+          "block": "Unary Minus",
+          "ref": "hdlsllib/HDL Floating Point Operations/Unary Minus",
+          "since": "R2023a+",
+          "intent": "Negate the input — use to flip sign."
+        },
+        {
+          "block": "cos + jsin",
+          "ref": "hdlsllib/HDL Floating Point Operations/cos + jsin",
+          "since": "R2023a+",
+          "intent": "Generate the complex exponential cos(u)+j·sin(u) — use for complex tone or carrier generation."
+        },
+        {
+          "block": "Multiply-Accumulate",
+          "ref": "hdlsllib/HDL Operations/Multiply-Accumulate",
+          "since": "R2023a+",
+          "intent": "Operation Mode: Vector dataOut= sum(a.*b) + c Operation Mode: Streaming- using Start and End ports dataOut(t+1)= dataOut(t) + sum(a(t)*b(t)) + c where c=bias when start and valid=high, else c=0 Operation Mode: Streaming- using number of Samples dataOut(t+1)= dataOut(t) + sum(a(t)*b(t)) + c where c=bias when t=0 else c=0 This block is designed for efficient mapping to DSP slices on FPGAs."
+        },
+        {
+          "block": "Bit Shift",
+          "ref": "hdlsllib/Logic and Bit Operations/Bit Shift",
+          "since": "R2023a+",
+          "intent": "Perform a logical or arithmetic shift on the input signal, as specified by the Shift Mode parameter. The Shift Length specifies the number of bits shifted."
+        },
+        {
+          "block": "Abs",
+          "ref": "hdlsllib/Math Operations/Abs",
+          "since": "R2023a+",
+          "intent": "Output the absolute value (or complex magnitude) of the input — use to remove sign or get magnitude."
+        },
+        {
+          "block": "Add",
+          "ref": "hdlsllib/Math Operations/Add",
+          "since": "R2023a+",
+          "intent": "Add and optionally subtract inputs — use for summing signals with per-port sign control."
+        },
+        {
+          "block": "Assignment",
+          "ref": "hdlsllib/Math Operations/Assignment",
+          "since": "R2023a+",
+          "intent": "Write input values into selected elements of a signal or array — use to build or update array elements by index."
+        },
+        {
+          "block": "Bias",
+          "ref": "hdlsllib/Math Operations/Bias",
+          "since": "R2023a+",
+          "intent": "Add a constant offset to the input — use to shift a signal by a fixed amount."
+        },
+        {
+          "block": "Complex to Magnitude-Angle",
+          "ref": "hdlsllib/Math Operations/Complex to Magnitude-Angle",
+          "since": "R2026a+",
+          "intent": "Split a complex signal into magnitude and phase angle — use for polar analysis."
+        },
+        {
+          "block": "Complex to Real-Imag",
+          "ref": "hdlsllib/Math Operations/Complex to Real-Imag",
+          "since": "R2023a+",
+          "intent": "Split a complex signal into real and imaginary parts — use to access rectangular components."
+        },
+        {
+          "block": "Divide",
+          "ref": "hdlsllib/Math Operations/Divide",
+          "since": "R2023a+",
+          "intent": "Multiply and/or divide inputs — use for ratios and element-wise division."
+        },
+        {
+          "block": "Dot Product",
+          "ref": "hdlsllib/Math Operations/Dot Product",
+          "since": "R2023a+",
+          "intent": "Compute the dot product of two vectors — use for projections and weighted sums."
+        },
+        {
+          "block": "Gain",
+          "ref": "hdlsllib/Math Operations/Gain",
+          "since": "R2023a+",
+          "intent": "Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants."
+        },
+        {
+          "block": "Magnitude-Angle to Complex",
+          "ref": "hdlsllib/Math Operations/Magnitude-Angle to Complex",
+          "since": "R2023a+",
+          "intent": "Build a complex signal from magnitude and angle — use to convert polar to complex."
+        },
+        {
+          "block": "Math Function",
+          "ref": "hdlsllib/Math Operations/Math Function",
+          "since": "R2023a+",
+          "intent": "Apply a selectable math function (exp, log, square, reciprocal, mod, …) — use for common scalar math."
+        },
+        {
+          "block": "Matrix Concatenate",
+          "ref": "hdlsllib/Math Operations/Matrix Concatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a larger matrix along a dimension — use to assemble matrices."
+        },
+        {
+          "block": "MatrixMultiply",
+          "ref": "hdlsllib/Math Operations/MatrixMultiply",
+          "since": "R2023a+",
+          "intent": "Multiply matrices or matrix-vector products — use for linear transforms."
+        },
+        {
+          "block": "MinMax",
+          "ref": "hdlsllib/Math Operations/MinMax",
+          "since": "R2023a+",
+          "intent": "Output the minimum or maximum across inputs — use for extreme-value selection."
+        },
+        {
+          "block": "Product",
+          "ref": "hdlsllib/Math Operations/Product",
+          "since": "R2023a+",
+          "intent": "Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication."
+        },
+        {
+          "block": "Product of Elements",
+          "ref": "hdlsllib/Math Operations/Product of Elements",
+          "since": "R2023a+",
+          "intent": "Multiply all elements of a vector together — use for cumulative products."
+        },
+        {
+          "block": "Real-Imag to Complex",
+          "ref": "hdlsllib/Math Operations/Real-Imag to Complex",
+          "since": "R2023a+",
+          "intent": "Build a complex signal from real and imaginary parts — use to convert rectangular to complex."
+        },
+        {
+          "block": "Reciprocal",
+          "ref": "hdlsllib/Math Operations/Reciprocal",
+          "since": "R2023a+",
+          "intent": "Compute 1/u — use for inversion or division-by-input."
+        },
+        {
+          "block": "Reciprocal Sqrt",
+          "ref": "hdlsllib/Math Operations/Reciprocal Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute 1/sqrt(u) — use for normalization such as inverse magnitude."
+        },
+        {
+          "block": "Reshape",
+          "ref": "hdlsllib/Math Operations/Reshape",
+          "since": "R2023a+",
+          "intent": "Change the dimensions of a signal without changing its data — use to reshape vectors and matrices."
+        },
+        {
+          "block": "Sign",
+          "ref": "hdlsllib/Math Operations/Sign",
+          "since": "R2023a+",
+          "intent": "Output the sign (-1, 0, +1) of the input — use for sign extraction or direction."
+        },
+        {
+          "block": "Sqrt",
+          "ref": "hdlsllib/Math Operations/Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute the square root of the input — use for magnitude or RMS-type math."
+        },
+        {
+          "block": "Subtract",
+          "ref": "hdlsllib/Math Operations/Subtract",
+          "since": "R2023a+",
+          "intent": "Subtract inputs with per-port sign — use for differences and error signals."
+        },
+        {
+          "block": "Sum",
+          "ref": "hdlsllib/Math Operations/Sum",
+          "since": "R2023a+",
+          "intent": "Add or subtract inputs — use for summing signals and forming error terms."
+        },
+        {
+          "block": "Sum of Elements",
+          "ref": "hdlsllib/Math Operations/Sum of Elements",
+          "since": "R2023a+",
+          "intent": "Add all elements of a vector — use for cumulative sums or totals."
+        },
+        {
+          "block": "Trigonometric Function",
+          "ref": "hdlsllib/Math Operations/Trigonometric Function",
+          "since": "R2023a+",
+          "intent": "Apply a selectable trig or hyperbolic function (sin, cos, atan2, …) — use for angle and waveform math."
+        },
+        {
+          "block": "Unary Minus",
+          "ref": "hdlsllib/Math Operations/Unary Minus",
+          "since": "R2023a+",
+          "intent": "Negate the input — use to flip sign."
+        },
+        {
+          "block": "Vector Concatenate",
+          "ref": "hdlsllib/Math Operations/Vector Concatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a single vector — use to combine signals along one dimension."
+        },
+        {
+          "block": "Decrement Real World",
+          "ref": "hdlsllib/Math Operations/Decrement Real World",
+          "since": "R2023a+",
+          "intent": "Decrease the Real World Value of Signal by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Decrement Stored Integer",
+          "ref": "hdlsllib/Math Operations/Decrement Stored Integer",
+          "since": "R2023a+",
+          "intent": "Decrease the Stored Value of Signal by 1 Floating Point signals are decreased by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Increment Real World",
+          "ref": "hdlsllib/Math Operations/Increment Real World",
+          "since": "R2023a+",
+          "intent": "Increase the Real World Value of Signal by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Increment Stored Integer",
+          "ref": "hdlsllib/Math Operations/Increment Stored Integer",
+          "since": "R2023a+",
+          "intent": "Increase the Stored Value of Signal by 1 Floating Point signals are increased by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Vector\nConcatenate",
+          "ref": "hdlsllib/Signal\nRouting/Vector\nConcatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a single vector — use to combine signals along one dimension."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "model-verification",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "model-verification",
+      "hash": "63fc2a2cddca9d226832ad474e66f3106550f46e82c7686cb36adc2437a33b3e",
+      "fm": {
+        "title": "Model verification",
+        "description": "Runtime assertion and range-check blocks (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "check",
+          "assertion",
+          "verification",
+          "bound",
+          "range"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Assertion",
+          "ref": "hdlsllib/Model Verification/Assertion",
+          "since": "R2023a+",
+          "intent": "Check that an input is non-zero (true) during simulation and error/warn otherwise — use to verify runtime assumptions."
+        },
+        {
+          "block": "Check Discrete Gradient",
+          "ref": "hdlsllib/Model Verification/Check Discrete Gradient",
+          "since": "R2023a+",
+          "intent": "Assert the sample-to-sample change stays below a limit — use to verify rate/slope bounds."
+        },
+        {
+          "block": "Check  Dynamic Gap",
+          "ref": "hdlsllib/Model Verification/Check  Dynamic Gap",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays outside a runtime lower/upper gap band — use for runtime range verification."
+        },
+        {
+          "block": "Check  Dynamic Range",
+          "ref": "hdlsllib/Model Verification/Check  Dynamic Range",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays within runtime lower/upper bounds — use for runtime range verification."
+        },
+        {
+          "block": "Check  Static Gap",
+          "ref": "hdlsllib/Model Verification/Check  Static Gap",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays outside a fixed gap band — use for range verification against constants."
+        },
+        {
+          "block": "Check  Static Range",
+          "ref": "hdlsllib/Model Verification/Check  Static Range",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays within fixed lower/upper bounds — use for range verification against constants."
+        },
+        {
+          "block": "Check Dynamic  Lower Bound",
+          "ref": "hdlsllib/Model Verification/Check Dynamic  Lower Bound",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays above a runtime lower bound — use for runtime minimum checks."
+        },
+        {
+          "block": "Check Dynamic  Upper Bound",
+          "ref": "hdlsllib/Model Verification/Check Dynamic  Upper Bound",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays below a runtime upper bound — use for runtime maximum checks."
+        },
+        {
+          "block": "Check Input  Resolution",
+          "ref": "hdlsllib/Model Verification/Check Input  Resolution",
+          "since": "R2023a+",
+          "intent": "Assert the input matches a specified resolution/quantization — use to verify signal granularity."
+        },
+        {
+          "block": "Check Static  Lower Bound",
+          "ref": "hdlsllib/Model Verification/Check Static  Lower Bound",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays above a fixed lower bound — use for constant minimum checks."
+        },
+        {
+          "block": "Check Static  Upper Bound",
+          "ref": "hdlsllib/Model Verification/Check Static  Upper Bound",
+          "since": "R2023a+",
+          "intent": "Assert the signal stays below a fixed upper bound — use for constant maximum checks."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ports-subsystems",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "ports-subsystems",
+      "hash": "111e371697b6f21265e3f331b9d1d84dcc1a6ed91c69399aefcc39c9452cf3b3",
+      "fm": {
+        "title": "Ports subsystems",
+        "description": "Ports, subsystems, and control-flow blocks (27 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "inport",
+          "outport",
+          "subsystem",
+          "enable",
+          "trigger",
+          "if",
+          "switch case",
+          "model"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "In1",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        },
+        {
+          "block": "Out1",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "Wrap To Zero",
+          "ref": "hdlsllib/Discontinuities/Wrap To Zero",
+          "since": "R2023a+",
+          "intent": "If the input is above the threshold, the output is zero, otherwise the output equals the input."
+        },
+        {
+          "block": "HDL FIFO",
+          "ref": "hdlsllib/HDL RAMs/HDL FIFO",
+          "since": "R2023a+",
+          "intent": "Implements a synchronous \"First In,First Out\" (FIFO) register."
+        },
+        {
+          "block": "Enabled Synchronous Subsystem",
+          "ref": "hdlsllib/HDL Subsystems/Enabled Synchronous Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an enable port, state control, inport, and outport block."
+        },
+        {
+          "block": "Synchronous Subsystem",
+          "ref": "hdlsllib/HDL Subsystems/Synchronous Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a state control, inport, and outport block."
+        },
+        {
+          "block": "In1",
+          "ref": "hdlsllib/Ports &\nSubsystems/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        },
+        {
+          "block": "In Bus Element",
+          "ref": "hdlsllib/Ports &\nSubsystems/In Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem input port that selects a bus element — use for bus-based subsystem interfaces."
+        },
+        {
+          "block": "Enable",
+          "ref": "hdlsllib/Ports &\nSubsystems/Enable",
+          "since": "R2023a+",
+          "intent": "Enable-port block that makes a subsystem run only while its enable signal is true — use for conditional execution."
+        },
+        {
+          "block": "Trigger",
+          "ref": "hdlsllib/Ports &\nSubsystems/Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger-port block that makes a subsystem run on an edge or function call — use for event-driven execution."
+        },
+        {
+          "block": "Atomic Subsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/Atomic Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an inport and outport block."
+        },
+        {
+          "block": "Enabled\nSubsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/Enabled\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an enable port, inport and outport block."
+        },
+        {
+          "block": "For Each\nSubsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/For Each\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a for each, inport and outport block."
+        },
+        {
+          "block": "If",
+          "ref": "hdlsllib/Ports &\nSubsystems/If",
+          "since": "R2023a+",
+          "intent": "Route execution to If-Action subsystems based on conditions — use for if/else control flow."
+        },
+        {
+          "block": "If Action\nSubsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/If Action\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an action port, inport and outport block."
+        },
+        {
+          "block": "Merge",
+          "ref": "hdlsllib/Ports &\nSubsystems/Merge",
+          "since": "R2023a+",
+          "intent": "Combine multiple conditionally-executed inputs into one output — use to merge outputs of enabled subsystems."
+        },
+        {
+          "block": "Model",
+          "ref": "hdlsllib/Ports &\nSubsystems/Model",
+          "since": "R2023a+",
+          "intent": "Reference another Simulink model as a component — use for modular, reusable model composition."
+        },
+        {
+          "block": "Subsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/Subsystem",
+          "since": "R2023a+",
+          "intent": "Group blocks into a hierarchical subsystem — use to encapsulate and reuse logic."
+        },
+        {
+          "block": "Switch Case",
+          "ref": "hdlsllib/Ports &\nSubsystems/Switch Case",
+          "since": "R2023a+",
+          "intent": "Route execution to Case-Action subsystems based on an input value — use for switch/case control flow."
+        },
+        {
+          "block": "Triggered\nSubsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/Triggered\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a trigger port, inport and outport block."
+        },
+        {
+          "block": "Variant Subsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/Variant Subsystem",
+          "since": "R2023a+",
+          "intent": "A Variant Subsystem template containing Subsystem blocks as variant choices."
+        },
+        {
+          "block": "Out1",
+          "ref": "hdlsllib/Ports &\nSubsystems/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "Out Bus Element",
+          "ref": "hdlsllib/Ports &\nSubsystems/Out Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem output port that contributes a bus element — use for bus-based subsystem interfaces."
+        },
+        {
+          "block": "Out1",
+          "ref": "hdlsllib/Sinks/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "Out Bus Element",
+          "ref": "hdlsllib/Sinks/Out Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem output port that contributes a bus element — use for bus-based subsystem interfaces."
+        },
+        {
+          "block": "In1",
+          "ref": "hdlsllib/Sources/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        },
+        {
+          "block": "In Bus Element",
+          "ref": "hdlsllib/Sources/In Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem input port that selects a bus element — use for bus-based subsystem interfaces."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "rcp-hil",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "rcp-hil",
+      "hash": "f4509d8ca8fa7e0213503a6d1dd1fc2f3ed2f0720f4c83a461bb970dd9a1c72a",
+      "fm": {
+        "title": "Rcp hil",
+        "description": "State-space, PWM, and hardware-oriented blocks (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "state-space",
+          "pwm",
+          "hil",
+          "sparse",
+          "combinatorial"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Discrete State-Space",
+          "ref": "hdlsllib/RCP and HIL/Discrete State-Space",
+          "since": "R2024b+",
+          "intent": "Implement a discrete-time state-space model (A, B, C, D) — use for MIMO linear dynamics."
+        },
+        {
+          "block": "Fixed-Point State-Space",
+          "ref": "hdlsllib/RCP and HIL/Fixed-Point State-Space",
+          "since": "R2024b+",
+          "intent": "Fixed-point discrete state-space model — use for MIMO dynamics on fixed-point/HDL targets."
+        },
+        {
+          "block": "HDL Combinatorial Logic",
+          "ref": "hdlsllib/RCP and HIL/HDL Combinatorial Logic",
+          "since": "R2024b+",
+          "intent": "Implement truth-table-based combinatorial logic for HDL — use for lookup-defined logic."
+        },
+        {
+          "block": "PWM",
+          "ref": "hdlsllib/RCP and HIL/PWM",
+          "since": "R2024b+",
+          "intent": "Generate a pulse-width-modulated signal from a duty-cycle input — use to drive motor or power stages on hardware."
+        },
+        {
+          "block": "Sparse Matrix-Vector Product",
+          "ref": "hdlsllib/RCP and HIL/Sparse Matrix-Vector Product",
+          "since": "R2024b+",
+          "intent": "Multiply a sparse matrix by a vector — use for efficient large sparse linear operations."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-attributes",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "signal-attributes",
+      "hash": "acb899ef5d2efbd889d5529f8adcb80df87b51c48b9e485bcac7e804ecd6db7b",
+      "fm": {
+        "title": "Signal attributes",
+        "description": "Data type, rate, and signal attribute handling (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "data type",
+          "rate transition",
+          "signal",
+          "probe",
+          "conversion"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Data Type Conversion",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set integer/fixed-point type and scaling."
+        },
+        {
+          "block": "Data Type Conversion",
+          "ref": "hdlsllib/HDL Floating Point Operations/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set integer/fixed-point type and scaling."
+        },
+        {
+          "block": "Bus to Vector",
+          "ref": "hdlsllib/Signal Attributes/Bus to Vector",
+          "since": "R2023a+",
+          "intent": "Convert a bus of scalars into a single vector — use when downstream blocks need a vector instead of a bus."
+        },
+        {
+          "block": "Data Type Duplicate",
+          "ref": "hdlsllib/Signal Attributes/Data Type Duplicate",
+          "since": "R2023a+",
+          "intent": "Force connected signals to share the same data type — use to enforce type consistency."
+        },
+        {
+          "block": "Data Type Propagation",
+          "ref": "hdlsllib/Signal Attributes/Data Type Propagation",
+          "since": "R2023a+",
+          "intent": "Propagate a reference signal's data type to another — use to drive types from a template signal."
+        },
+        {
+          "block": "Data Type Conversion",
+          "ref": "hdlsllib/Signal Attributes/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set integer/fixed-point type and scaling."
+        },
+        {
+          "block": "Probe",
+          "ref": "hdlsllib/Signal Attributes/Probe",
+          "since": "R2023a+",
+          "intent": "Report signal attributes such as width, sample time, and complexity at runtime — use to inspect signal properties."
+        },
+        {
+          "block": "Rate Transition",
+          "ref": "hdlsllib/Signal Attributes/Rate Transition",
+          "since": "R2023a+",
+          "intent": "Transfer data safely between blocks running at different sample rates — use to handle multirate boundaries."
+        },
+        {
+          "block": "Signal Conversion",
+          "ref": "hdlsllib/Signal Attributes/Signal Conversion",
+          "since": "R2023a+",
+          "intent": "Convert signal storage (contiguous copy, virtual/nonvirtual bus) — use to satisfy downstream signal requirements."
+        },
+        {
+          "block": "Signal Specification",
+          "ref": "hdlsllib/Signal Attributes/Signal Specification",
+          "since": "R2023a+",
+          "intent": "Assert or specify a signal's attributes (dimensions, type, sample time) — use to enforce an interface contract."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-routing",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "signal-routing",
+      "hash": "c4c9b807071fe84277c4ebc9d390e66230c12793cd6131cf8d7a554b038fe399",
+      "fm": {
+        "title": "Signal routing",
+        "description": "Buses, mux/demux, switches, and tagged routing (20 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "bus",
+          "mux",
+          "demux",
+          "goto",
+          "from",
+          "selector",
+          "switch",
+          "concatenate"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Demux",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Demux",
+          "since": "R2023a+",
+          "intent": "Split a vector signal into separate scalar or subvector outputs — use to break out combined signals."
+        },
+        {
+          "block": "Mux",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Mux",
+          "since": "R2023a+",
+          "intent": "Combine separate signals into a single vector — use to bundle signals for compact routing."
+        },
+        {
+          "block": "Switch",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Switch",
+          "since": "R2023a+",
+          "intent": "Pass one of two inputs based on a control condition — use for conditional signal selection."
+        },
+        {
+          "block": "Deserializer1D",
+          "ref": "hdlsllib/HDL Operations/Deserializer1D",
+          "since": "R2023a+",
+          "intent": "Convert from scalar to vector, or from smaller-size vector to larger-size vector. The output rate is S / (Ratio + Idle Cycles), where S is the input rate."
+        },
+        {
+          "block": "Multiply-Add",
+          "ref": "hdlsllib/HDL Operations/Multiply-Add",
+          "since": "R2023a+",
+          "intent": "Multiply first two inputs and add result to third input or subtract result from third input. The function option defines the mode of operation. This block is designed for efficient mapping to DSP slices on FPGAs."
+        },
+        {
+          "block": "Serializer1D",
+          "ref": "hdlsllib/HDL Operations/Serializer1D",
+          "since": "R2023a+",
+          "intent": "Convert from vector to scalar, or to smaller-size vector. The output rate is V * (Ratio + Idle Cycles), where V is the input rate."
+        },
+        {
+          "block": "Switch Case Action\nSubsystem",
+          "ref": "hdlsllib/Ports &\nSubsystems/Switch Case Action\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an action port, inport and outport block."
+        },
+        {
+          "block": "Bus Element In",
+          "ref": "hdlsllib/Signal\nRouting/Bus Element In",
+          "since": "R2023a+",
+          "intent": "Inport that receives a selected element of a bus at a subsystem boundary — use for cleaner bus-based interfaces."
+        },
+        {
+          "block": "Bus\nAssignment",
+          "ref": "hdlsllib/Signal\nRouting/Bus\nAssignment",
+          "since": "R2023a+",
+          "intent": "Replace selected elements of a bus with new signals — use to update specific bus members."
+        },
+        {
+          "block": "Bus\nCreator",
+          "ref": "hdlsllib/Signal\nRouting/Bus\nCreator",
+          "since": "R2023a+",
+          "intent": "Combine multiple signals into a bus — use to bundle related signals for routing."
+        },
+        {
+          "block": "Bus\nSelector",
+          "ref": "hdlsllib/Signal\nRouting/Bus\nSelector",
+          "since": "R2023a+",
+          "intent": "Extract selected signals from a bus — use to access individual bus members."
+        },
+        {
+          "block": "Demux",
+          "ref": "hdlsllib/Signal\nRouting/Demux",
+          "since": "R2023a+",
+          "intent": "Split a vector signal into separate scalar or subvector outputs — use to break out combined signals."
+        },
+        {
+          "block": "From",
+          "ref": "hdlsllib/Signal\nRouting/From",
+          "since": "R2023a+",
+          "intent": "Receive a signal by tag from a matching Goto — use for wireless signal routing."
+        },
+        {
+          "block": "Goto",
+          "ref": "hdlsllib/Signal\nRouting/Goto",
+          "since": "R2023a+",
+          "intent": "Send a signal by tag to matching From blocks — use for wireless routing to reduce line clutter."
+        },
+        {
+          "block": "Index\nVector",
+          "ref": "hdlsllib/Signal\nRouting/Index\nVector",
+          "since": "R2023a+",
+          "intent": "Select one of several inputs using an index signal — use as a data-driven selector."
+        },
+        {
+          "block": "Multiport\nSwitch",
+          "ref": "hdlsllib/Signal\nRouting/Multiport\nSwitch",
+          "since": "R2023a+",
+          "intent": "Select one of several data inputs using a control index — use for index-driven routing."
+        },
+        {
+          "block": "Mux",
+          "ref": "hdlsllib/Signal\nRouting/Mux",
+          "since": "R2023a+",
+          "intent": "Combine separate signals into a single vector — use to bundle signals for compact routing."
+        },
+        {
+          "block": "Selector",
+          "ref": "hdlsllib/Signal\nRouting/Selector",
+          "since": "R2023a+",
+          "intent": "Select a subset of elements from a signal by index — use to extract specific channels or samples."
+        },
+        {
+          "block": "Switch",
+          "ref": "hdlsllib/Signal\nRouting/Switch",
+          "since": "R2023a+",
+          "intent": "Pass one of two inputs based on a control condition — use for conditional signal selection."
+        },
+        {
+          "block": "Bus Element Out",
+          "ref": "hdlsllib/Signal\nRouting/Bus Element Out",
+          "since": "R2023a+",
+          "intent": "Outport that contributes a signal to a bus at a subsystem boundary — use for cleaner bus-based interfaces."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sinks",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "sinks",
+      "hash": "956022c10426863b6ec303b52fbdb61fd09013d6e8299b81c3fac238899152ba",
+      "fm": {
+        "title": "Sinks",
+        "description": "Scopes, logging, and simulation control outputs (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "scope",
+          "display",
+          "to file",
+          "to workspace",
+          "terminator",
+          "stop"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Scope",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals against time during simulation — use to view waveforms."
+        },
+        {
+          "block": "Display",
+          "ref": "hdlsllib/Sinks/Display",
+          "since": "R2023a+",
+          "intent": "Show the current numeric value of a signal — use for quick inspection."
+        },
+        {
+          "block": "Floating\nScope",
+          "ref": "hdlsllib/Sinks/Floating\nScope",
+          "since": "R2023a+",
+          "intent": "Scope that displays whichever signals you attach without wired connections — use for flexible signal viewing."
+        },
+        {
+          "block": "Scope",
+          "ref": "hdlsllib/Sinks/Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals against time during simulation — use to view waveforms."
+        },
+        {
+          "block": "Stop Simulation",
+          "ref": "hdlsllib/Sinks/Stop Simulation",
+          "since": "R2023a+",
+          "intent": "Stop the simulation when its input is non-zero — use to end a run on a condition."
+        },
+        {
+          "block": "Terminator",
+          "ref": "hdlsllib/Sinks/Terminator",
+          "since": "R2023a+",
+          "intent": "Cap an unused output port to avoid warnings — use to terminate signals you don't need."
+        },
+        {
+          "block": "To File",
+          "ref": "hdlsllib/Sinks/To File",
+          "since": "R2023a+",
+          "intent": "Log a signal to a MAT-file during simulation — use to record data to disk."
+        },
+        {
+          "block": "To Workspace",
+          "ref": "hdlsllib/Sinks/To Workspace",
+          "since": "R2023a+",
+          "intent": "Log a signal to a MATLAB workspace variable — use to capture results for post-processing."
+        },
+        {
+          "block": "XY Graph",
+          "ref": "hdlsllib/Sinks/XY Graph",
+          "since": "R2023a+",
+          "intent": "Plot one signal against another (X-Y) during simulation — use to view trajectories or phase plots."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "sources",
+      "hash": "c66073f581d0bb8828711220812f80b0580e9638f9fab9fd04003855004748e2",
+      "fm": {
+        "title": "Sources",
+        "description": "Constant and ground signal sources (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "constant",
+          "ground",
+          "source",
+          "enumerated"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Constant",
+          "ref": "hdlsllib/Commonly\nUsed Blocks/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters, thresholds, or test inputs."
+        },
+        {
+          "block": "Constant",
+          "ref": "hdlsllib/Sources/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters, thresholds, or test inputs."
+        },
+        {
+          "block": "Enumerated\nConstant",
+          "ref": "hdlsllib/Sources/Enumerated\nConstant",
+          "since": "R2023a+",
+          "intent": "Output a constant enumerated value — use to emit a fixed enum literal."
+        },
+        {
+          "block": "Ground",
+          "ref": "hdlsllib/Sources/Ground",
+          "since": "R2023a+",
+          "intent": "Terminate an unconnected input with a zero value — use to ground unused inputs cleanly."
+        },
+        {
+          "block": "HDL Counter",
+          "ref": "hdlsllib/Sources/HDL Counter",
+          "since": "R2023a+",
+          "intent": "Counter for HDL code generation."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "user-defined",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "user-defined",
+      "hash": "9eb6ab009c4cfa506614c57869c8bece994cd40bcc3ef1da8dc6da263fbe8f3d",
+      "fm": {
+        "title": "User defined",
+        "description": "Custom MATLAB code blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "matlab function",
+          "matlab system",
+          "user-defined"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MATLAB System",
+          "ref": "hdlsllib/User-Defined Functions/MATLAB System",
+          "since": "R2023a+",
+          "intent": "Deploy a System object as a block — use to reuse object-based algorithms in a model."
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "hdlsllib/User-Defined Functions/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Run custom MATLAB code as a block — use for algorithms not easily built from blocks."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "HDL Coder",
+      "kbFolder": "hdl-coder",
+      "category": "utilities",
+      "hash": "aa90de94b4987828f1827ec3a74a3e7464a490fa7af87a7c62229d2a7bc60d0f",
+      "fm": {
+        "title": "Utilities",
+        "description": "Documentation and model-wide utilities (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "hdl-coder",
+          "docblock",
+          "model info",
+          "utility",
+          "annotation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DocBlock",
+          "ref": "hdlsllib/Model-Wide Utilities/DocBlock",
+          "since": "R2023a+",
+          "intent": "Attach free-form documentation text to the model — use to embed notes or specs in the diagram."
+        },
+        {
+          "block": "Model Info",
+          "ref": "hdlsllib/Model-Wide Utilities/Model Info",
+          "since": "R2023a+",
+          "intent": "Display model and revision information on the diagram — use to annotate version metadata."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:23",
+  "generatedAtDatenum": 740309.99540901615
 }

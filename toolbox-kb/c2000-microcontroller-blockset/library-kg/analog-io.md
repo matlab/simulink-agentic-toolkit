@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Analog io
-description: ADC, DAC, comparator, and sigma-delta analog interfaces
-tags: [adc, dac, comparator, analog, sdfm, cmpss]
+description: "ADC, DAC, comparator, and sigma-delta analog interfaces (65 blocks)"
+tags: [toolbox-kb, c2000-microcontroller-blockset, adc, dac, comparator, analog, sdfm, cmpss]
 status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Analog io
+sources:
+  - resource: matlab:c2802xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: analog-io
 block_count: 65
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Analog io
-
-Use these blocks for analog io.
 
 ## Recommended Blocks
 

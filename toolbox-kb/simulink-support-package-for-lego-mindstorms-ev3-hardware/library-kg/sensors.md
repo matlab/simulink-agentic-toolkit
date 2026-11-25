@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: Environmental and motion sensors
-tags: [color, gyro, ultrasonic, infrared, touch]
+description: Environmental and motion sensors (9 blocks)
+tags: [toolbox-kb, simulink-support-package-for-lego-mindstorms-ev3-hardware, color, gyro, ultrasonic, infrared, touch]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
-category_path: Sensors
+sources:
+  - resource: matlab:legoev3lib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for LEGO MINDSTORMS EV3 Hardware
+kb_folder: simulink-support-package-for-lego-mindstorms-ev3-hardware
+category: sensors
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

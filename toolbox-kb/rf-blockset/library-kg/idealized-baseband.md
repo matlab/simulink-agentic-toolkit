@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Idealized baseband
-description: System-level idealized baseband RF blocks with gain, noise, and nonlinearity
-tags: [idealized baseband]
-status: stable
-source: custom_library
-library_root: RF Blockset
-category_path: Idealized baseband
+description: "System-level idealized baseband RF blocks with gain, noise, and nonlinearity (10 blocks)"
+tags: [toolbox-kb, rf-blockset, idealized baseband]
+status: draft
+sources:
+  - resource: matlab:simrfV2elements
+source: toolbox_kb
+managed_by: satk
+library: RF Blockset
+kb_folder: rf-blockset
+category: idealized-baseband
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Idealized baseband
-
-Use these blocks for idealized baseband.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sinks
-description: Display, record, and export images and video
-tags: [sink, viewer, to multimedia, display, point cloud]
-status: stable
-source: custom_library
-library_root: Computer Vision Toolbox
-category_path: Sinks
+description: "Display, record, and export images and video (8 blocks)"
+tags: [toolbox-kb, computer-vision-toolbox, sink, viewer, to multimedia, display, point cloud]
+status: draft
+sources:
+  - resource: matlab:visionsinks
+source: toolbox_kb
+managed_by: satk
+library: Computer Vision Toolbox
+kb_folder: computer-vision-toolbox
+category: sinks
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Sinks
-
-Use these blocks for sinks.
 
 ## Recommended Blocks
 

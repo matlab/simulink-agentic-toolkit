@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Electromechanical machines
-description: Electric motors, generators, actuators, and machine subcomponents
-tags: [motor, generator, pmsm, induction, actuator]
+description: "Electric motors, generators, actuators, and machine subcomponents (61 blocks)"
+tags: [toolbox-kb, electrical, motor, generator, pmsm, induction, actuator]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Electromechanical machines
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: electromechanical-machines
 block_count: 61
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Electromechanical machines
-
-Use these blocks for electromechanical machines.
 
 ## Recommended Blocks
 

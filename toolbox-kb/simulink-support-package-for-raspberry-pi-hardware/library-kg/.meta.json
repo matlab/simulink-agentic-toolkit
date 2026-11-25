@@ -1,15 +1,77 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.693171875,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Support Package for Raspberry Pi Hardware"
-  ],
-  "blockCount": 8,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Simulink_Support_Package_for_Raspberry_Pi_Hardware": {
-      "blockCount": 8
+  "pages": [
+    {
+      "id": "sublibraries",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Raspberry Pi Hardware",
+      "kbFolder": "simulink-support-package-for-raspberry-pi-hardware",
+      "category": "sublibraries",
+      "hash": "c277208b4338b0201a3a650e774d0cbdd68e6ed43ac01f35b4fe671f5758ce5a",
+      "fm": {
+        "title": "Sublibraries",
+        "description": "Domain sublibraries of Raspberry Pi hardware blocks (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-raspberry-pi-hardware",
+          "library",
+          "raspberry pi",
+          "sublibrary"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Audio and Video",
+          "ref": "raspberrypilib/Audio and Video",
+          "since": "R2023a+",
+          "intent": "Sublibrary of Raspberry Pi audio and video I/O blocks (ALSA audio, camera capture, display) — open to pick a specific media block."
+        },
+        {
+          "block": "Basic",
+          "ref": "raspberrypilib/Basic",
+          "since": "R2023a+",
+          "intent": "Sublibrary of core Raspberry Pi hardware blocks (digital I/O, LED, GPIO) — open to pick a specific device block."
+        },
+        {
+          "block": "Communication",
+          "ref": "raspberrypilib/Communication",
+          "since": "R2023a+",
+          "intent": "Sublibrary of Raspberry Pi serial/bus communication blocks (I2C, SPI, UART, CAN) — open to pick a specific interface block."
+        },
+        {
+          "block": "Internet Of Things",
+          "ref": "raspberrypilib/Internet Of Things",
+          "since": "R2023a+",
+          "intent": "Sublibrary of Raspberry Pi IoT connectivity blocks (MQTT, ThingSpeak) — open to pick a specific cloud/messaging block."
+        },
+        {
+          "block": "Network ",
+          "ref": "raspberrypilib/Network ",
+          "since": "R2023a+",
+          "intent": "Sublibrary of Raspberry Pi network communication blocks (TCP/IP, UDP) — open to pick a specific networking block."
+        },
+        {
+          "block": "Sense HAT",
+          "ref": "raspberrypilib/Sense HAT",
+          "since": "R2023a+",
+          "intent": "Sublibrary of blocks for the Sense HAT add-on board (LED matrix, joystick, environmental sensors)."
+        },
+        {
+          "block": "Sensors",
+          "ref": "raspberrypilib/Sensors",
+          "since": "R2023a+",
+          "intent": "Sublibrary of Raspberry Pi sensor blocks — open to pick a specific sensor input block."
+        },
+        {
+          "block": "Utilities",
+          "ref": "raspberrypilib/Utilities",
+          "since": "R2023a+",
+          "intent": "Sublibrary of Raspberry Pi helper and utility blocks."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:36",
+  "generatedAtDatenum": 740309.995558287
 }

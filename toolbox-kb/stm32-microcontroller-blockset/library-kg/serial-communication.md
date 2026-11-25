@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Serial communication
-description: Asynchronous serial communication interfaces for point-to-point data exchange
-tags: [UART, USART, serial, SCI, RS232]
+description: Asynchronous serial communication interfaces for point-to-point data exchange (48 blocks)
+tags: [toolbox-kb, stm32-microcontroller-blockset, UART, USART, serial, SCI, RS232]
 status: stable
-source: mathworks_toolbox
-library_root: STM32 Microcontroller Blockset
-category_path: Serial communication
+sources:
+  - resource: matlab:stm32c0xxblockslib
+source: toolbox_kb
+managed_by: satk
+library: STM32 Microcontroller Blockset
+kb_folder: stm32-microcontroller-blockset
+category: serial-communication
 block_count: 48
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Serial communication
-
-Use these blocks for serial communication.
 
 ## Recommended Blocks
 

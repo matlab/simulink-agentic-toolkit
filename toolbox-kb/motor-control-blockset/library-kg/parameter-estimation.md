@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Parameter estimation
-description: Blocks that identify motor electrical and mechanical parameters (Rs, Ld, Lq, Rr, inertia, friction) from measured data
-tags: [estimator, parameter identification, Rs, Ld, Lq, inertia, commissioning]
+description: "Blocks that identify motor electrical and mechanical parameters (Rs, Ld, Lq, Rr, inertia, friction) from measured data (10 blocks)"
+tags: [toolbox-kb, motor-control-blockset, estimator, parameter identification, Rs, Ld, Lq, inertia, commissioning]
 status: stable
-source: mathworks_toolbox
-library_root: Motor Control Blockset
-category_path: Parameter estimation
+sources:
+  - resource: matlab:mcblib
+source: toolbox_kb
+managed_by: satk
+library: Motor Control Blockset
+kb_folder: motor-control-blockset
+category: parameter-estimation
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Parameter estimation
-
-Use these blocks for parameter estimation.
 
 ## Recommended Blocks
 

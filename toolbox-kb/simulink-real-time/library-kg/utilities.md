@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Data-format and helper blocks
-tags: [utilities, byte reversal, endian]
-status: stable
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Utilities
+description: Data-format and helper blocks (6 blocks)
+tags: [toolbox-kb, simulink-real-time, utilities, byte reversal, endian]
+status: draft
+sources:
+  - resource: matlab:slrealtimesharedmemorylib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: utilities
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

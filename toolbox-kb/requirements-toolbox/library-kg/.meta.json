@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-09-29T16:38:08",
-  "generatedAtDatenum": 740254.69315283559,
-  "generatorVersion": 4,
-  "libraries": [
-    "Requirements Toolbox"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Requirements_Toolbox": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "requirements-authoring",
+      "kind": "toolbox",
+      "library": "Requirements Toolbox",
+      "kbFolder": "requirements-toolbox",
+      "category": "requirements-authoring",
+      "hash": "5001c54ed2dffc076e1238e8308b1877ae2cbe3b88a284811095c6806a4a29ac",
+      "fm": {
+        "title": "Requirements authoring",
+        "description": "Author, organize, and trace formal requirements inside a model (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "requirements-toolbox",
+          "requirement",
+          "requirements table",
+          "precondition",
+          "postcondition",
+          "traceability"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Requirements Table",
+          "ref": "reqmanage/Requirements Table",
+          "since": "R2023a+",
+          "intent": "Author and manage formal requirements directly in the model as a table of preconditions, postconditions, and assumptions — use to capture logical/textual requirements, generate test assessments, and link requirements to design for verification."
+        },
+        {
+          "block": "System Requirements",
+          "ref": "reqmanage/System Requirements",
+          "since": "R2023a+",
+          "intent": "Display the requirements linked to the current model or subsystem inside the diagram — use to surface traceability information where the design lives."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:26",
+  "generatedAtDatenum": 740309.99545045139
 }

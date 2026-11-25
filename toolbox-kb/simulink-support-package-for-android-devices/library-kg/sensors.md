@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: On-device Android sensors
-tags: [sensor, magnetometer, orientation, accelerometer, gyroscope]
-status: stable
-source: custom_library
-library_root: Simulink Support Package for Android Devices
-category_path: Sensors
+description: On-device Android sensors (9 blocks)
+tags: [toolbox-kb, simulink-support-package-for-android-devices, sensor, magnetometer, orientation, accelerometer, gyroscope]
+status: draft
+sources:
+  - resource: matlab:androidsensorlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Android Devices
+kb_folder: simulink-support-package-for-android-devices
+category: sensors
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:32Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

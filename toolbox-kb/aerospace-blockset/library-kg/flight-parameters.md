@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Flight parameters
-description: Airspeed, Mach, angles, and aerodynamic parameter computation
-tags: [airspeed, Mach, dynamic pressure, incidence, sideslip]
+description: "Airspeed, Mach, angles, and aerodynamic parameter computation (8 blocks)"
+tags: [toolbox-kb, aerospace-blockset, airspeed, Mach, dynamic pressure, incidence, sideslip]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Flight parameters
+sources:
+  - resource: matlab:aerolibasang
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: flight-parameters
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Flight parameters
-
-Use these blocks for flight parameters.
 
 ## Recommended Blocks
 

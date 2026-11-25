@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Modulation
-description: Analog and digital baseband modulators/demodulators
-tags: [modulation, fm, apsk, ofdm, qam, psk, dbpsk]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Modulation
+description: Analog and digital baseband modulators/demodulators (48 blocks)
+tags: [toolbox-kb, communications-toolbox, modulation, fm, apsk, ofdm, qam, psk, dbpsk]
+status: draft
+sources:
+  - resource: matlab:commanabbnd3
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: modulation
 block_count: 48
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Modulation
-
-Use these blocks for modulation.
 
 ## Recommended Blocks
 

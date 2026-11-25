@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gravity magnetic field
-description: Gravity and geomagnetic field models
-tags: [gravity, magnetic, geoid, WGS84, harmonic]
+description: Gravity and geomagnetic field models (7 blocks)
+tags: [toolbox-kb, aerospace-blockset, gravity, magnetic, geoid, WGS84, harmonic]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Gravity magnetic field
+sources:
+  - resource: matlab:aerolibgravity2
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: gravity-magnetic-field
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Gravity magnetic field
-
-Use these blocks for gravity magnetic field.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Analog digital
-description: Analog and digital I/O peripherals on FRDM-K64F
-tags: [analog, digital, gpio, pwm, dac]
+description: Analog and digital I/O peripherals on FRDM-K64F (5 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-nxp-frdm-k64f-board, analog, digital, gpio, pwm, dac]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for NXP FRDM-K64F Board
-category_path: Analog digital
+sources:
+  - resource: matlab:frdmk64flib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for NXP FRDM-K64F Board
+kb_folder: simulink-coder-support-package-for-nxp-frdm-k64f-board
+category: analog-digital
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Analog digital
-
-Use these blocks for analog digital.
 
 ## Recommended Blocks
 

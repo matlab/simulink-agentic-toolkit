@@ -1,15 +1,43 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457898154,
-  "generatorVersion": 4,
-  "libraries": [
-    "Robust Control Toolbox"
-  ],
-  "blockCount": 2,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Robust_Control_Toolbox": {
-      "blockCount": 2
+  "pages": [
+    {
+      "id": "robust-control",
+      "kind": "toolbox",
+      "library": "Robust Control Toolbox",
+      "kbFolder": "robust-control-toolbox",
+      "category": "robust-control",
+      "hash": "19aed13dd192d64ba0c7efc7ee1fbc882708d78355e59d9da7b6ab198641d15b",
+      "fm": {
+        "title": "Robust control",
+        "description": "Uncertain system modeling and robust control visualization (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "robust-control-toolbox",
+          "uncertain",
+          "robust",
+          "state space",
+          "multiplot",
+          "parametric"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MultiPlot Graph",
+          "ref": "RCTblocks/MultiPlot Graph",
+          "since": "R2023a+",
+          "intent": "Display multiple signals on a single graph with configurable axes — use for visualizing robust control performance metrics or comparing multiple response channels"
+        },
+        {
+          "block": "Uncertain State Space",
+          "ref": "RCTblocks/Uncertain State Space",
+          "since": "R2023a+",
+          "intent": "Model a state-space system with parametric uncertainty — use for simulating plants with uncertain parameters to test robust controller performance"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:27",
+  "generatedAtDatenum": 740309.9954544676
 }

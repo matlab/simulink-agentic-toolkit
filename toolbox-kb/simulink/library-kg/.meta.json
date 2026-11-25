@@ -1,15 +1,3964 @@
 {
-  "generatedAt": "2026-09-29T16:38:09",
-  "generatedAtDatenum": 740254.69316590275,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink"
-  ],
-  "blockCount": 573,
-  "categoryCount": 20,
-  "libraryFingerprints": {
-    "Simulink": {
-      "blockCount": 573
+  "pages": [
+    {
+      "id": "continuous",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "continuous",
+      "hash": "f1adb5ec360ea4f947eb069329ba2efcc29991472d05e2501dad07b059ff3569",
+      "fm": {
+        "title": "Continuous",
+        "description": "Continuous-time dynamics: integrators, transfer functions, delays (26 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "continuous",
+          "integrator",
+          "transfer function",
+          "state-space",
+          "delay",
+          "pid"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Fixed-Point State-Space",
+          "ref": "simulink/Additional Math & Discrete/Additional Discrete/Fixed-Point State-Space",
+          "since": "R2023a+",
+          "intent": "Discrete-time State-Space Realization"
+        },
+        {
+          "block": "Transfer Fcn Direct Form II",
+          "ref": "simulink/Additional Math & Discrete/Additional Discrete/Transfer Fcn Direct Form II",
+          "since": "R2023a+",
+          "intent": "A Direct Form II realization of the specified transfer function is used. Only single input multiple output transfer functions are supported. The data types and scalings of the output, the coefficients, and any temporary variables are automatically selected. The automatic choices will be acceptable in many situations. In situations where the automatic choices give unacceptable results, manual layout of the filter is necessary. For manual layout, it is suggested that the blocks under this mask be used as a starting point. Note 1: The full denominator should have a leading coefficient of +1.0, but this leading coefficient should be excluded when entering the parameter. For example, if the denominator is den = 1 -1.7 0.72 just enter den(2:end) = -1.7 0.72 Note 2: The numerator must be the same size as the full denominator."
+        },
+        {
+          "block": "Transfer Fcn Direct Form II Time Varying",
+          "ref": "simulink/Additional Math & Discrete/Additional Discrete/Transfer Fcn Direct Form II Time Varying",
+          "since": "R2023a+",
+          "intent": "A Direct Form II realization of the specified transfer function is used. Only single input single output transfer functions are supported. The data types and scalings of the output, the coefficients, and any temporary variables are automatically selected. The automatic choices will be acceptable in many situations. In situations where the automatic choices give unacceptable results, manual layout of the filter is necessary. For manual layout, it is suggested that the blocks under this mask be used as a starting point. Note 1: The full denominator should have a leading coefficient of +1.0, but this leading coefficient should be excluded when entering the parameter. For example, if the denominator is den = 1 -1.7 0.72 just enter den(2:end) = -1.7 0.72 Note 2: The numerator must be the same size as the full denominator."
+        },
+        {
+          "block": "Integrator",
+          "ref": "simulink/Commonly\nUsed Blocks/Integrator",
+          "since": "R2023a+",
+          "intent": "Integrate a continuous-time signal (1/s) with optional limits and reset — use for continuous dynamics."
+        },
+        {
+          "block": "Derivative",
+          "ref": "simulink/Continuous/Derivative",
+          "since": "R2023a+",
+          "intent": "Approximate the continuous-time derivative (du/dt) of the input — use to estimate rate of change."
+        },
+        {
+          "block": "Descriptor State-Space",
+          "ref": "simulink/Continuous/Descriptor State-Space",
+          "since": "R2023a+",
+          "intent": "Model implicit (descriptor) continuous dynamics E·dx/dt = Ax + Bu — use for systems with a mass/descriptor matrix."
+        },
+        {
+          "block": "Entity Transport Delay",
+          "ref": "simulink/Continuous/Entity Transport Delay",
+          "since": "R2023a+",
+          "intent": "Delay entities/messages by a transport time — use to model conveyance latency in event-based flows."
+        },
+        {
+          "block": "First Order Hold",
+          "ref": "simulink/Continuous/First Order Hold",
+          "since": "R2023a+",
+          "intent": "Reconstruct a continuous signal from samples using first-order (ramp) hold — use for smoother sample reconstruction."
+        },
+        {
+          "block": "Integrator",
+          "ref": "simulink/Continuous/Integrator",
+          "since": "R2023a+",
+          "intent": "Integrate a continuous-time signal (1/s) with optional limits and reset — use for continuous dynamics."
+        },
+        {
+          "block": "Integrator Limited",
+          "ref": "simulink/Continuous/Integrator Limited",
+          "since": "R2023a+",
+          "intent": "Continuous integrator with saturation limits on the output — use to integrate with bounded state."
+        },
+        {
+          "block": "Integrator, Second-Order",
+          "ref": "simulink/Continuous/Integrator, Second-Order",
+          "since": "R2023a+",
+          "intent": "Integrate acceleration to velocity and position in one block — use for second-order mechanical dynamics."
+        },
+        {
+          "block": "Integrator, Second-Order Limited",
+          "ref": "simulink/Continuous/Integrator, Second-Order Limited",
+          "since": "R2023a+",
+          "intent": "Second-order integrator with limits on velocity and position states — use for bounded second-order dynamics."
+        },
+        {
+          "block": "PID Controller",
+          "ref": "simulink/Continuous/PID Controller",
+          "since": "R2023a+",
+          "intent": "Continuous or discrete PID controller with tuning and anti-windup — use for single-loop feedback control."
+        },
+        {
+          "block": "PID Controller (2DOF)",
+          "ref": "simulink/Continuous/PID Controller (2DOF)",
+          "since": "R2023a+",
+          "intent": "Two-degree-of-freedom PID with separate setpoint weighting — use to tune tracking and disturbance rejection independently."
+        },
+        {
+          "block": "State-Space",
+          "ref": "simulink/Continuous/State-Space",
+          "since": "R2023a+",
+          "intent": "Model continuous linear dynamics with matrices A, B, C, D — use for MIMO linear systems."
+        },
+        {
+          "block": "Transfer Fcn",
+          "ref": "simulink/Continuous/Transfer Fcn",
+          "since": "R2023a+",
+          "intent": "Model a continuous transfer function from numerator/denominator coefficients — use for linear s-domain dynamics."
+        },
+        {
+          "block": "Transport Delay",
+          "ref": "simulink/Continuous/Transport Delay",
+          "since": "R2023a+",
+          "intent": "Delay the input by a fixed continuous time — use to model pure transport/dead time."
+        },
+        {
+          "block": "Variable Time Delay",
+          "ref": "simulink/Continuous/Variable Time Delay",
+          "since": "R2023a+",
+          "intent": "Delay the input by a runtime-variable time — use for adjustable continuous delay."
+        },
+        {
+          "block": "Variable Transport Delay",
+          "ref": "simulink/Continuous/Variable Transport Delay",
+          "since": "R2023a+",
+          "intent": "Delay the input by a runtime-variable transport time — use to model variable dead time such as flow through a pipe."
+        },
+        {
+          "block": "Zero-Pole",
+          "ref": "simulink/Continuous/Zero-Pole",
+          "since": "R2023a+",
+          "intent": "Model a continuous transfer function specified by zeros, poles, and gain — use for pole-zero linear dynamics."
+        },
+        {
+          "block": "Tapped Delay",
+          "ref": "simulink/Discrete/Tapped Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal N sample periods and output all the delay versions."
+        },
+        {
+          "block": "Transfer Fcn First Order",
+          "ref": "simulink/Discrete/Transfer Fcn First Order",
+          "since": "R2023a+",
+          "intent": "Discrete-time first order transfer function. The transfer function has a unity DC gain."
+        },
+        {
+          "block": "Transfer Fcn Real Zero",
+          "ref": "simulink/Discrete/Transfer Fcn Real Zero",
+          "since": "R2023a+",
+          "intent": "Discrete-time transfer function that has a real zero and (effectively) has no pole."
+        },
+        {
+          "block": "C/C++ Code Block",
+          "ref": "simulink/Quick Insert/User-Defined Functions/C/C++ Code Block",
+          "since": "R2023a+",
+          "intent": "The S-Function Builder block creates a wrapper C-MEX S-function from your supplied C code with multiple input ports, output ports, and a variable number of scalar, vector, or matrix parameters. The input and output ports can propagate Simulink built-in data types, fixed-point data types, complex, 1-D, and 2-D signals. This block also supports discrete and continuous states of type real. You can optionally have the block generate a TLC file to be used for code generation."
+        },
+        {
+          "block": "Band-Limited\nWhite Noise",
+          "ref": "simulink/Sources/Band-Limited\nWhite Noise",
+          "since": "R2023a+",
+          "intent": "The Band-Limited White Noise block generates normally distributed random numbers that are suitable for use in continuous or hybrid systems."
+        },
+        {
+          "block": "S-Function Builder",
+          "ref": "simulink/User-Defined Functions/S-Function Builder",
+          "since": "R2023a+",
+          "intent": "The S-Function Builder block creates a wrapper C-MEX S-function from your supplied C code with multiple input ports, output ports, and a variable number of scalar, vector, or matrix parameters. The input and output ports can propagate Simulink built-in data types, fixed-point data types, complex, 1-D, and 2-D signals. This block also supports discrete and continuous states of type real. You can optionally have the block generate a TLC file to be used for code generation."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "dashboard",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "dashboard",
+      "hash": "363c64f668020104ea8e6d68501633429821591ddb2e77dfac0d4adddffa276e",
+      "fm": {
+        "title": "Dashboard",
+        "description": "Interactive dashboard controls and displays (41 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "dashboard",
+          "gauge",
+          "knob",
+          "switch",
+          "button",
+          "slider"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Callback Button",
+          "ref": "simulink_hmi_blocks/Callback Button",
+          "since": "R2023a+",
+          "intent": "Dashboard button that runs a callback command when pressed — use to trigger actions from the dashboard."
+        },
+        {
+          "block": "Check Box",
+          "ref": "simulink_hmi_blocks/Check Box",
+          "since": "R2023a+",
+          "intent": "Dashboard check box that sets a parameter/signal on or off — use for boolean control during simulation."
+        },
+        {
+          "block": "Combo Box",
+          "ref": "simulink_hmi_blocks/Combo Box",
+          "since": "R2023a+",
+          "intent": "Dashboard drop-down that selects among preset values — use to pick discrete settings interactively."
+        },
+        {
+          "block": "Dashboard Scope",
+          "ref": "simulink_hmi_blocks/Dashboard Scope",
+          "since": "R2023a+",
+          "intent": "Dashboard scope that plots signals within the diagram — use for inline signal visualization."
+        },
+        {
+          "block": "Display",
+          "ref": "simulink_hmi_blocks/Display",
+          "since": "R2023a+",
+          "intent": "Dashboard display that shows the numeric value of a connected signal — use for live readouts."
+        },
+        {
+          "block": "Edit",
+          "ref": "simulink_hmi_blocks/Edit",
+          "since": "R2023a+",
+          "intent": "Dashboard edit field for entering a numeric value — use to set a parameter interactively."
+        },
+        {
+          "block": "Gauge",
+          "ref": "simulink_hmi_blocks/Gauge",
+          "since": "R2023a+",
+          "intent": "Dashboard circular gauge showing a signal's value on a dial — use for analog-style readouts."
+        },
+        {
+          "block": "Half Gauge",
+          "ref": "simulink_hmi_blocks/Half Gauge",
+          "since": "R2023a+",
+          "intent": "Dashboard half-circle gauge showing a signal value — use for compact dial readouts."
+        },
+        {
+          "block": "Knob",
+          "ref": "simulink_hmi_blocks/Knob",
+          "since": "R2023a+",
+          "intent": "Dashboard rotary knob that adjusts a parameter — use to tune values interactively."
+        },
+        {
+          "block": "Lamp",
+          "ref": "simulink_hmi_blocks/Lamp",
+          "since": "R2023a+",
+          "intent": "Dashboard lamp that changes color with a signal value — use as a status indicator."
+        },
+        {
+          "block": "Linear Gauge",
+          "ref": "simulink_hmi_blocks/Linear Gauge",
+          "since": "R2023a+",
+          "intent": "Dashboard linear (bar) gauge showing a signal value — use for level-style readouts."
+        },
+        {
+          "block": "MultiStateImage",
+          "ref": "simulink_hmi_blocks/MultiStateImage",
+          "since": "R2023a+",
+          "intent": "Dashboard image that switches among images based on a signal value — use for multi-state visual status."
+        },
+        {
+          "block": "Push Button",
+          "ref": "simulink_hmi_blocks/Push Button",
+          "since": "R2023a+",
+          "intent": "Dashboard momentary push button that sets a value while pressed — use for transient control input."
+        },
+        {
+          "block": "Quarter Gauge",
+          "ref": "simulink_hmi_blocks/Quarter Gauge",
+          "since": "R2023a+",
+          "intent": "Dashboard quarter-circle gauge showing a signal value — use for compact dial readouts."
+        },
+        {
+          "block": "Radio Button",
+          "ref": "simulink_hmi_blocks/Radio Button",
+          "since": "R2023a+",
+          "intent": "Dashboard radio-button group selecting one value — use for mutually-exclusive settings."
+        },
+        {
+          "block": "Rocker Switch",
+          "ref": "simulink_hmi_blocks/Rocker Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard rocker switch toggling between two values — use for on/off control."
+        },
+        {
+          "block": "Rotary Switch",
+          "ref": "simulink_hmi_blocks/Rotary Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard rotary switch selecting among several values — use for multi-position control."
+        },
+        {
+          "block": "Slider",
+          "ref": "simulink_hmi_blocks/Slider",
+          "since": "R2023a+",
+          "intent": "Dashboard slider that adjusts a parameter over a range — use to tune values interactively."
+        },
+        {
+          "block": "Slider Switch",
+          "ref": "simulink_hmi_blocks/Slider Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard sliding switch toggling between two values — use for on/off control."
+        },
+        {
+          "block": "Toggle Switch",
+          "ref": "simulink_hmi_blocks/Toggle Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard toggle switch between two values — use for on/off control."
+        },
+        {
+          "block": "Callback Button",
+          "ref": "simulink_hmi_customizable_blocks/Callback Button",
+          "since": "R2023a+",
+          "intent": "Dashboard button that runs a callback command when pressed — use to trigger actions from the dashboard."
+        },
+        {
+          "block": "Check Box",
+          "ref": "simulink_hmi_customizable_blocks/Check Box",
+          "since": "R2023a+",
+          "intent": "Dashboard check box that sets a parameter/signal on or off — use for boolean control during simulation."
+        },
+        {
+          "block": "Circular Gauge",
+          "ref": "simulink_hmi_customizable_blocks/Circular Gauge",
+          "since": "R2023a+",
+          "intent": "Customizable dashboard circular gauge with configurable scale and appearance — use for tailored dial readouts."
+        },
+        {
+          "block": "Combo Box",
+          "ref": "simulink_hmi_customizable_blocks/Combo Box",
+          "since": "R2023a+",
+          "intent": "Dashboard drop-down that selects among preset values — use to pick discrete settings interactively."
+        },
+        {
+          "block": "Display",
+          "ref": "simulink_hmi_customizable_blocks/Display",
+          "since": "R2023a+",
+          "intent": "Dashboard display that shows the numeric value of a connected signal — use for live readouts."
+        },
+        {
+          "block": "Edit",
+          "ref": "simulink_hmi_customizable_blocks/Edit",
+          "since": "R2023a+",
+          "intent": "Dashboard edit field for entering a numeric value — use to set a parameter interactively."
+        },
+        {
+          "block": "Half Gauge",
+          "ref": "simulink_hmi_customizable_blocks/Half Gauge",
+          "since": "R2023a+",
+          "intent": "Dashboard half-circle gauge showing a signal value — use for compact dial readouts."
+        },
+        {
+          "block": "Horizontal Gauge",
+          "ref": "simulink_hmi_customizable_blocks/Horizontal Gauge",
+          "since": "R2023a+",
+          "intent": "Customizable dashboard horizontal bar gauge — use for tailored level readouts."
+        },
+        {
+          "block": "Horizontal Slider",
+          "ref": "simulink_hmi_customizable_blocks/Horizontal Slider",
+          "since": "R2023a+",
+          "intent": "Customizable dashboard horizontal slider control — use to tune a parameter interactively."
+        },
+        {
+          "block": "Knob",
+          "ref": "simulink_hmi_customizable_blocks/Knob",
+          "since": "R2023a+",
+          "intent": "Dashboard rotary knob that adjusts a parameter — use to tune values interactively."
+        },
+        {
+          "block": "Lamp",
+          "ref": "simulink_hmi_customizable_blocks/Lamp",
+          "since": "R2023a+",
+          "intent": "Dashboard lamp that changes color with a signal value — use as a status indicator."
+        },
+        {
+          "block": "Push Button",
+          "ref": "simulink_hmi_customizable_blocks/Push Button",
+          "since": "R2023a+",
+          "intent": "Dashboard momentary push button that sets a value while pressed — use for transient control input."
+        },
+        {
+          "block": "Quarter Gauge",
+          "ref": "simulink_hmi_customizable_blocks/Quarter Gauge",
+          "since": "R2023a+",
+          "intent": "Dashboard quarter-circle gauge showing a signal value — use for compact dial readouts."
+        },
+        {
+          "block": "Radio Button",
+          "ref": "simulink_hmi_customizable_blocks/Radio Button",
+          "since": "R2023a+",
+          "intent": "Dashboard radio-button group selecting one value — use for mutually-exclusive settings."
+        },
+        {
+          "block": "Rocker Switch",
+          "ref": "simulink_hmi_customizable_blocks/Rocker Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard rocker switch toggling between two values — use for on/off control."
+        },
+        {
+          "block": "Rotary Switch",
+          "ref": "simulink_hmi_customizable_blocks/Rotary Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard rotary switch selecting among several values — use for multi-position control."
+        },
+        {
+          "block": "Slider Switch",
+          "ref": "simulink_hmi_customizable_blocks/Slider Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard sliding switch toggling between two values — use for on/off control."
+        },
+        {
+          "block": "Toggle Switch",
+          "ref": "simulink_hmi_customizable_blocks/Toggle Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard toggle switch between two values — use for on/off control."
+        },
+        {
+          "block": "Vertical Gauge",
+          "ref": "simulink_hmi_customizable_blocks/Vertical Gauge",
+          "since": "R2023a+",
+          "intent": "Customizable dashboard vertical bar gauge — use for tailored level readouts."
+        },
+        {
+          "block": "Vertical Slider",
+          "ref": "simulink_hmi_customizable_blocks/Vertical Slider",
+          "since": "R2023a+",
+          "intent": "Customizable dashboard vertical slider control — use to tune a parameter interactively."
+        },
+        {
+          "block": "Display",
+          "ref": "simulink/Sinks/Display",
+          "since": "R2023a+",
+          "intent": "Dashboard display that shows the numeric value of a connected signal — use for live readouts."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "dashboard-lamps",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "dashboard-lamps",
+      "hash": "132eed7cf21aac05b092719fb128b5157bdf3801472070c01021129da0e64971",
+      "fm": {
+        "title": "Dashboard lamps",
+        "description": "Automotive indicator lamp icons (34 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "dashboard",
+          "lamp",
+          "indicator",
+          "automotive",
+          "warning"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Adaptive Cruise Control",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Adaptive Cruise Control",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for adaptive cruise control status — use to show when ACC is active."
+        },
+        {
+          "block": "Adaptive Cruise Control Failure",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Adaptive Cruise Control Failure",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for adaptive cruise control fault — use to warn of an ACC failure."
+        },
+        {
+          "block": "Antilock Brake System",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Antilock Brake System",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for ABS status — use to show ABS activity or fault."
+        },
+        {
+          "block": "Battery",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Battery",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for battery/charging status — use to warn of low battery or charging faults."
+        },
+        {
+          "block": "Check Engine",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Check Engine",
+          "since": "R2023a+",
+          "intent": "Dashboard check-engine indicator lamp — use to signal an engine/emissions fault."
+        },
+        {
+          "block": "Check Engine2",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Check Engine2",
+          "since": "R2023a+",
+          "intent": "Alternate check-engine indicator lamp variant — use to signal an engine fault with a different icon."
+        },
+        {
+          "block": "Cruise Control",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Cruise Control",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for cruise control status — use to show when cruise control is active."
+        },
+        {
+          "block": "Eco Mode",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Eco Mode",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for economy driving mode — use to show eco mode is engaged."
+        },
+        {
+          "block": "Electronic Stability",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Electronic Stability",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for electronic stability control — use to show ESC activity."
+        },
+        {
+          "block": "Engine",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Engine",
+          "since": "R2023a+",
+          "intent": "Dashboard engine indicator lamp — use to show engine status or warnings."
+        },
+        {
+          "block": "Engine Coolant Temp",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Engine Coolant Temp",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for coolant temperature — use to warn of engine overheating."
+        },
+        {
+          "block": "Engine Failure",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Engine Failure",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for engine failure — use to warn of a serious engine fault."
+        },
+        {
+          "block": "Engine Heating",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Engine Heating",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for engine/glow-plug heating — use to show preheat status."
+        },
+        {
+          "block": "Engine Oil",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Engine Oil",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for engine oil pressure/level — use to warn of low oil."
+        },
+        {
+          "block": "Exterior Bulb Failure",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Exterior Bulb Failure",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for an exterior bulb failure — use to warn of a burned-out light."
+        },
+        {
+          "block": "Front Fog Light",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Front Fog Light",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for front fog lights — use to show front fog lights are on."
+        },
+        {
+          "block": "Fuel",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Fuel",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for fuel level — use to warn of low fuel."
+        },
+        {
+          "block": "Hazards",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Hazards",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for hazard lights — use to show hazard flashers are active."
+        },
+        {
+          "block": "Headlamp Leveling",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Headlamp Leveling",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for headlamp leveling — use to show leveling status or fault."
+        },
+        {
+          "block": "High Beams",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/High Beams",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for high-beam headlights — use to show high beams are on."
+        },
+        {
+          "block": "Hill Descent Control",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Hill Descent Control",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for hill descent control — use to show HDC is active."
+        },
+        {
+          "block": "Lighting Switch",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Lighting Switch",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for the lighting switch state — use to show which lights are selected."
+        },
+        {
+          "block": "Low Beams",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Low Beams",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for low-beam headlights — use to show low beams are on."
+        },
+        {
+          "block": "Parking Assistance",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Parking Assistance",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for parking assistance — use to show park-assist activity."
+        },
+        {
+          "block": "Rear Fog Light",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Rear Fog Light",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for rear fog lights — use to show rear fog lights are on."
+        },
+        {
+          "block": "Side Lights",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Side Lights",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for side/parking lights — use to show side lights are on."
+        },
+        {
+          "block": "Stability Control",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Stability Control",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for stability control — use to show stability control activity."
+        },
+        {
+          "block": "Stability Control Off",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Stability Control Off",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp showing stability control is disabled — use to warn ESC is off."
+        },
+        {
+          "block": "Tire Monitor",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Tire Monitor",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for tire-pressure monitoring — use to warn of low tire pressure."
+        },
+        {
+          "block": "Traction Control",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Traction Control",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for traction control — use to show traction control activity."
+        },
+        {
+          "block": "Traction Control Failure",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Traction Control Failure",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for traction control fault — use to warn of a TCS failure."
+        },
+        {
+          "block": "Traction Control Off",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Traction Control Off",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp showing traction control is disabled — use to warn TCS is off."
+        },
+        {
+          "block": "Turn Signal Left",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Turn Signal Left",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for the left turn signal — use to show the left indicator is active."
+        },
+        {
+          "block": "Turn Signal Right",
+          "ref": "simulink_hmi_blocks/Automotive Indicator Lamps/Turn Signal Right",
+          "since": "R2023a+",
+          "intent": "Dashboard indicator lamp for the right turn signal — use to show the right indicator is active."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "dashboard-shapes",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "dashboard-shapes",
+      "hash": "fc0d2d66fe0f928acfa591ce4060a6ae72c308b03e9eaff4e4847246a5df84db",
+      "fm": {
+        "title": "Dashboard shapes",
+        "description": "Basic shape/status icon indicators (25 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "dashboard",
+          "shape",
+          "icon",
+          "indicator",
+          "status"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Check1",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Check1",
+          "since": "R2023a+",
+          "intent": "Dashboard checkmark icon that appears/changes with a signal value — use as a pass/OK status indicator."
+        },
+        {
+          "block": "Check2",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Check2",
+          "since": "R2023a+",
+          "intent": "Dashboard checkmark icon variant that changes with a signal value — use as a pass/OK status indicator."
+        },
+        {
+          "block": "Check3",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Check3",
+          "since": "R2023a+",
+          "intent": "Dashboard checkmark icon variant that changes with a signal value — use as a pass/OK status indicator."
+        },
+        {
+          "block": "Check4",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Check4",
+          "since": "R2023a+",
+          "intent": "Dashboard checkmark icon variant that changes with a signal value — use as a pass/OK status indicator."
+        },
+        {
+          "block": "Circle",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Circle",
+          "since": "R2023a+",
+          "intent": "Dashboard circle shape icon that changes appearance with a signal value — use as a status indicator."
+        },
+        {
+          "block": "Ex1",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Ex1",
+          "since": "R2023a+",
+          "intent": "Dashboard X-mark icon that changes with a signal value — use as a fail/error status indicator."
+        },
+        {
+          "block": "Ex2",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Ex2",
+          "since": "R2023a+",
+          "intent": "Dashboard X-mark icon variant that changes with a signal value — use as a fail/error status indicator."
+        },
+        {
+          "block": "Ex3",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Ex3",
+          "since": "R2023a+",
+          "intent": "Dashboard X-mark icon variant that changes with a signal value — use as a fail/error status indicator."
+        },
+        {
+          "block": "Ex4",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Ex4",
+          "since": "R2023a+",
+          "intent": "Dashboard X-mark icon variant that changes with a signal value — use as a fail/error status indicator."
+        },
+        {
+          "block": "Face",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Face",
+          "since": "R2023a+",
+          "intent": "Dashboard face-outline icon that changes with a signal value — use as a mood/status indicator."
+        },
+        {
+          "block": "Frown1",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Frown1",
+          "since": "R2023a+",
+          "intent": "Dashboard frown-face icon that changes with a signal value — use to indicate a bad/negative status."
+        },
+        {
+          "block": "Frown2",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Frown2",
+          "since": "R2023a+",
+          "intent": "Dashboard frown-face icon variant that changes with a signal value — use to indicate a bad/negative status."
+        },
+        {
+          "block": "Hexagon",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Hexagon",
+          "since": "R2023a+",
+          "intent": "Dashboard hexagon shape icon that changes appearance with a signal value — use as a status indicator."
+        },
+        {
+          "block": "Pentagon",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Pentagon",
+          "since": "R2023a+",
+          "intent": "Dashboard pentagon shape icon that changes appearance with a signal value — use as a status indicator."
+        },
+        {
+          "block": "Rectangle",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Rectangle",
+          "since": "R2023a+",
+          "intent": "Dashboard rectangle shape icon that changes appearance with a signal value — use as a status indicator."
+        },
+        {
+          "block": "Smile1",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Smile1",
+          "since": "R2023a+",
+          "intent": "Dashboard smiley-face icon that changes with a signal value — use to indicate a good/positive status."
+        },
+        {
+          "block": "Smile2",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Smile2",
+          "since": "R2023a+",
+          "intent": "Dashboard smiley-face icon variant that changes with a signal value — use to indicate a good/positive status."
+        },
+        {
+          "block": "Solid Face",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Solid Face",
+          "since": "R2023a+",
+          "intent": "Dashboard filled face icon that changes with a signal value — use as a mood/status indicator."
+        },
+        {
+          "block": "Solid Frown1",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Solid Frown1",
+          "since": "R2023a+",
+          "intent": "Dashboard filled frown-face icon that changes with a signal value — use to indicate a bad/negative status."
+        },
+        {
+          "block": "Solid Frown2",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Solid Frown2",
+          "since": "R2023a+",
+          "intent": "Dashboard filled frown-face icon variant that changes with a signal value — use to indicate a bad/negative status."
+        },
+        {
+          "block": "Solid Smile1",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Solid Smile1",
+          "since": "R2023a+",
+          "intent": "Dashboard filled smiley-face icon that changes with a signal value — use to indicate a good/positive status."
+        },
+        {
+          "block": "Solid Smile2",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Solid Smile2",
+          "since": "R2023a+",
+          "intent": "Dashboard filled smiley-face icon variant that changes with a signal value — use to indicate a good/positive status."
+        },
+        {
+          "block": "Square",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Square",
+          "since": "R2023a+",
+          "intent": "Dashboard square shape icon that changes appearance with a signal value — use as a status indicator."
+        },
+        {
+          "block": "Triangle",
+          "ref": "simulink_hmi_blocks/Basic Shape Icons/Triangle",
+          "since": "R2023a+",
+          "intent": "Dashboard triangle shape icon that changes appearance with a signal value — use as a warning/status indicator."
+        },
+        {
+          "block": "Square",
+          "ref": "simulink/Quick Insert/Math Operations/Square",
+          "since": "R2023a+",
+          "intent": "Dashboard square shape icon that changes appearance with a signal value — use as a status indicator."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "dashboard-wireless",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "dashboard-wireless",
+      "hash": "5967995efabdd3ee3fc8da816825713ec1ac3e1fb92a514de9495c8ca5cb5695",
+      "fm": {
+        "title": "Dashboard wireless",
+        "description": "Wireless/network status icons (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "dashboard",
+          "network",
+          "wireless",
+          "signal",
+          "icon"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Network",
+          "ref": "simulink_hmi_blocks/Wireless Icons/Network",
+          "since": "R2023a+",
+          "intent": "Dashboard network icon showing connectivity — use to indicate network presence."
+        },
+        {
+          "block": "Network No Signal",
+          "ref": "simulink_hmi_blocks/Wireless Icons/Network No Signal",
+          "since": "R2023a+",
+          "intent": "Dashboard network icon showing no signal — use to indicate loss of connectivity."
+        },
+        {
+          "block": "Network Transmission",
+          "ref": "simulink_hmi_blocks/Wireless Icons/Network Transmission",
+          "since": "R2023a+",
+          "intent": "Dashboard network icon showing active transmission — use to indicate data transfer."
+        },
+        {
+          "block": "Network3G",
+          "ref": "simulink_hmi_blocks/Wireless Icons/Network3G",
+          "since": "R2023a+",
+          "intent": "Dashboard network icon for 3G connectivity — use to indicate a 3G link."
+        },
+        {
+          "block": "Network4G",
+          "ref": "simulink_hmi_blocks/Wireless Icons/Network4G",
+          "since": "R2023a+",
+          "intent": "Dashboard network icon for 4G connectivity — use to indicate a 4G link."
+        },
+        {
+          "block": "Network5G",
+          "ref": "simulink_hmi_blocks/Wireless Icons/Network5G",
+          "since": "R2023a+",
+          "intent": "Dashboard network icon for 5G connectivity — use to indicate a 5G link."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "discontinuities",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "discontinuities",
+      "hash": "ceffe049e853ab5591c6e6d751ad505846d35cfdaec60b1c842696d324cd6a31",
+      "fm": {
+        "title": "Discontinuities",
+        "description": "Nonlinear discontinuity blocks (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "saturation",
+          "dead zone",
+          "rate limiter",
+          "backlash",
+          "relay",
+          "quantizer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Saturation",
+          "ref": "simulink/Commonly\nUsed Blocks/Saturation",
+          "since": "R2023a+",
+          "intent": "Clip a signal to fixed lower/upper limits — use to enforce actuator or safety limits."
+        },
+        {
+          "block": "Backlash",
+          "ref": "simulink/Discontinuities/Backlash",
+          "since": "R2023a+",
+          "intent": "Model mechanical play/hysteresis where output lags input within a dead band — use for gear backlash effects."
+        },
+        {
+          "block": "Coulomb & Viscous Friction",
+          "ref": "simulink/Discontinuities/Coulomb & Viscous Friction",
+          "since": "R2023a+",
+          "intent": "Model friction as a Coulomb offset plus a velocity-proportional viscous term — use for mechanical friction."
+        },
+        {
+          "block": "Dead Zone",
+          "ref": "simulink/Discontinuities/Dead Zone",
+          "since": "R2023a+",
+          "intent": "Output zero within a fixed dead band and offset outside it — use to model insensitivity or thresholds."
+        },
+        {
+          "block": "Dead Zone Dynamic",
+          "ref": "simulink/Discontinuities/Dead Zone Dynamic",
+          "since": "R2023a+",
+          "intent": "Dead zone with runtime-variable band limits — use for adjustable insensitivity thresholds."
+        },
+        {
+          "block": "Hit  Crossing",
+          "ref": "simulink/Discontinuities/Hit  Crossing",
+          "since": "R2023a+",
+          "intent": "Detect when a signal crosses a specified value — use to flag threshold-crossing events."
+        },
+        {
+          "block": "PWM",
+          "ref": "simulink/Discontinuities/PWM",
+          "since": "R2023a+",
+          "intent": "Generate a pulse-width-modulated waveform from a duty-cycle input — use to model switching/PWM drive signals."
+        },
+        {
+          "block": "Quantizer",
+          "ref": "simulink/Discontinuities/Quantizer",
+          "since": "R2023a+",
+          "intent": "Quantize a signal to discrete amplitude levels — use to model ADC quantization or reduce precision."
+        },
+        {
+          "block": "Rate Limiter",
+          "ref": "simulink/Discontinuities/Rate Limiter",
+          "since": "R2023a+",
+          "intent": "Limit the rate of change of a signal to fixed rise/fall slopes — use to smooth abrupt changes."
+        },
+        {
+          "block": "Rate Limiter Dynamic",
+          "ref": "simulink/Discontinuities/Rate Limiter Dynamic",
+          "since": "R2023a+",
+          "intent": "Limit the rate of change using runtime-variable slope limits — use for adjustable slew limiting."
+        },
+        {
+          "block": "Relay",
+          "ref": "simulink/Discontinuities/Relay",
+          "since": "R2023a+",
+          "intent": "Switch output between two values with hysteresis around on/off thresholds — use for bang-bang control."
+        },
+        {
+          "block": "Saturation",
+          "ref": "simulink/Discontinuities/Saturation",
+          "since": "R2023a+",
+          "intent": "Clip a signal to fixed lower/upper limits — use to enforce actuator or safety limits."
+        },
+        {
+          "block": "Saturation Dynamic",
+          "ref": "simulink/Discontinuities/Saturation Dynamic",
+          "since": "R2023a+",
+          "intent": "Clip a signal to runtime-variable limits — use for adjustable saturation bounds."
+        },
+        {
+          "block": "Variable Pulse Generator",
+          "ref": "simulink/Discontinuities/Variable Pulse Generator",
+          "since": "R2023a+",
+          "intent": "Generate pulses with runtime-variable period/width — use for adjustable pulse timing."
+        },
+        {
+          "block": "Wrap To Zero",
+          "ref": "simulink/Discontinuities/Wrap To Zero",
+          "since": "R2023a+",
+          "intent": "Reset the output to zero when the input exceeds a threshold — use for wrap-around/rollover behavior."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "discrete",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "discrete",
+      "hash": "29039ea07eb3c9def7870fcbd4309fe1de10cc9c441f87c322d2798f134a0a3a",
+      "fm": {
+        "title": "Discrete",
+        "description": "Discrete-time dynamics, delays, and filters (38 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "discrete",
+          "delay",
+          "integrator",
+          "filter",
+          "memory",
+          "zero-order hold"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Decrement Real World",
+          "ref": "simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Decrement Real World",
+          "since": "R2023a+",
+          "intent": "Decrease the Real World Value of Signal by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Decrement Stored Integer",
+          "ref": "simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Decrement Stored Integer",
+          "since": "R2023a+",
+          "intent": "Decrease the Stored Value of Signal by 1 Floating Point signals are decreased by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Decrement Time To Zero",
+          "ref": "simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Decrement Time To Zero",
+          "since": "R2023a+",
+          "intent": "Decrease the Real World Value of Signal by the Sample Time Ts, but never go below zero. This block only works with fixed sample rates, so it will not work inside a triggered subsystem."
+        },
+        {
+          "block": "Decrement To Zero",
+          "ref": "simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Decrement To Zero",
+          "since": "R2023a+",
+          "intent": "Decrease the Real World Value of Signal by 1.0, but never go below zero."
+        },
+        {
+          "block": "Increment Real World",
+          "ref": "simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Increment Real World",
+          "since": "R2023a+",
+          "intent": "Increase the Real World Value of Signal by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Increment Stored Integer",
+          "ref": "simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Increment Stored Integer",
+          "since": "R2023a+",
+          "intent": "Increase the Stored Value of Signal by 1 Floating Point signals are increased by 1.0 Overflows will always wrap."
+        },
+        {
+          "block": "Delay",
+          "ref": "simulink/Commonly\nUsed Blocks/Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a specified number of samples — use for timing alignment or algorithmic state."
+        },
+        {
+          "block": "Discrete-Time\nIntegrator",
+          "ref": "simulink/Commonly\nUsed Blocks/Discrete-Time\nIntegrator",
+          "since": "R2023a+",
+          "intent": "Accumulate the input over discrete time with reset/limit options — use for discrete integration."
+        },
+        {
+          "block": "Delay",
+          "ref": "simulink/Discrete/Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a specified number of samples — use for timing alignment or algorithmic state."
+        },
+        {
+          "block": "Discrete Transfer Fcn",
+          "ref": "simulink/Discrete/Discrete Transfer Fcn",
+          "since": "R2023a+",
+          "intent": "Implement a discrete transfer function from numerator/denominator coefficients — use for IIR dynamics."
+        },
+        {
+          "block": "Discrete Zero-Pole",
+          "ref": "simulink/Discrete/Discrete Zero-Pole",
+          "since": "R2023a+",
+          "intent": "Implement a discrete transfer function specified by zeros, poles, and gain — use for pole-zero discrete dynamics."
+        },
+        {
+          "block": "Discrete FIR Filter",
+          "ref": "simulink/Discrete/Discrete FIR Filter",
+          "since": "R2023a+",
+          "intent": "Apply an FIR filter with given coefficients — use for linear-phase digital filtering."
+        },
+        {
+          "block": "Discrete Filter",
+          "ref": "simulink/Discrete/Discrete Filter",
+          "since": "R2023a+",
+          "intent": "Apply an IIR filter given numerator and denominator coefficients — use for general recursive filtering."
+        },
+        {
+          "block": "Discrete PID Controller",
+          "ref": "simulink/Discrete/Discrete PID Controller",
+          "since": "R2023a+",
+          "intent": "Discrete-time PID controller with anti-windup and tuning — use for closed-loop feedback control."
+        },
+        {
+          "block": "Discrete PID Controller (2DOF)",
+          "ref": "simulink/Discrete/Discrete PID Controller (2DOF)",
+          "since": "R2023a+",
+          "intent": "Discrete two-degree-of-freedom PID with setpoint weighting — use to tune tracking and rejection independently."
+        },
+        {
+          "block": "Discrete State-Space",
+          "ref": "simulink/Discrete/Discrete State-Space",
+          "since": "R2023a+",
+          "intent": "Implement a discrete-time state-space model (A, B, C, D) — use for MIMO linear dynamics."
+        },
+        {
+          "block": "Discrete-Time Integrator",
+          "ref": "simulink/Discrete/Discrete-Time Integrator",
+          "since": "R2023a+",
+          "intent": "Accumulate the input over discrete time with reset/limit options — use for discrete integration."
+        },
+        {
+          "block": "Enabled Delay",
+          "ref": "simulink/Discrete/Enabled Delay",
+          "since": "R2023a+",
+          "intent": "Delay that updates only while enabled — use for gated or state-held delays."
+        },
+        {
+          "block": "Memory",
+          "ref": "simulink/Discrete/Memory",
+          "since": "R2023a+",
+          "intent": "Hold the input from the previous major time step — use to break algebraic loops or store one-step state."
+        },
+        {
+          "block": "Propagation Delay",
+          "ref": "simulink/Discrete/Propagation Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal to model propagation latency — use to represent signal travel time."
+        },
+        {
+          "block": "Resettable Delay",
+          "ref": "simulink/Discrete/Resettable Delay",
+          "since": "R2023a+",
+          "intent": "Delay that clears its state on a reset signal — use for restartable delays."
+        },
+        {
+          "block": "Unit Delay",
+          "ref": "simulink/Discrete/Unit Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by one sample period — use to introduce one-step state or break algebraic loops."
+        },
+        {
+          "block": "Variable Integer Delay",
+          "ref": "simulink/Discrete/Variable Integer Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a runtime-variable integer number of samples — use for adjustable time alignment."
+        },
+        {
+          "block": "Zero-Order Hold",
+          "ref": "simulink/Discrete/Zero-Order Hold",
+          "since": "R2023a+",
+          "intent": "Hold each sample constant over the sample period — use to convert continuous to discrete or set a sample rate."
+        },
+        {
+          "block": "Difference",
+          "ref": "simulink/Discrete/Difference",
+          "since": "R2023a+",
+          "intent": "Output the current input value minus the previous input value."
+        },
+        {
+          "block": "Discrete Derivative",
+          "ref": "simulink/Discrete/Discrete Derivative",
+          "since": "R2023a+",
+          "intent": "Discrete-time derivative of the input. This block only works with fixed sample rates. Do not use this block in subsystems with a non-periodic trigger."
+        },
+        {
+          "block": "Transfer Fcn Lead or Lag",
+          "ref": "simulink/Discrete/Transfer Fcn Lead or Lag",
+          "since": "R2023a+",
+          "intent": "Discrete-time lead or lag compensator. The compensator has a unity instantaneous gain, the DC gain equals (1-Zero)/(1-Pole). Lead compensation is obtained when 0 < Pole < Zero < 1. Lag compensation is obtained when 0 < Zero < Pole < 1."
+        },
+        {
+          "block": "Check Discrete Gradient",
+          "ref": "simulink/Model Verification/Check Discrete Gradient",
+          "since": "R2023a+",
+          "intent": "Assert that the absolute value of the difference between successive samples of a discrete signal is less than an upper bound."
+        },
+        {
+          "block": "Accumulator",
+          "ref": "simulink/Quick Insert/Discrete/Accumulator",
+          "since": "R2023a+",
+          "intent": "Accumulate (sum) the input across time steps — use for running totals with reset."
+        },
+        {
+          "block": "Delay One Step",
+          "ref": "simulink/Quick Insert/Discrete/Delay One Step",
+          "since": "R2023a+",
+          "intent": "Delay a signal by exactly one time step — use as a quick one-step unit delay."
+        },
+        {
+          "block": "Discrete Transfer Fcn",
+          "ref": "simulink/Quick Insert/Discrete/Discrete Transfer Fcn",
+          "since": "R2023a+",
+          "intent": "Implement a discrete transfer function from numerator/denominator coefficients — use for IIR dynamics."
+        },
+        {
+          "block": "Discrete Zero-Pole",
+          "ref": "simulink/Quick Insert/Discrete/Discrete Zero-Pole",
+          "since": "R2023a+",
+          "intent": "Implement a discrete transfer function specified by zeros, poles, and gain — use for pole-zero discrete dynamics."
+        },
+        {
+          "block": "Discrete Filter",
+          "ref": "simulink/Quick Insert/Discrete/Discrete Filter",
+          "since": "R2023a+",
+          "intent": "Apply an IIR filter given numerator and denominator coefficients — use for general recursive filtering."
+        },
+        {
+          "block": "Discrete State-Space",
+          "ref": "simulink/Quick Insert/Discrete/Discrete State-Space",
+          "since": "R2023a+",
+          "intent": "Implement a discrete-time state-space model (A, B, C, D) — use for MIMO linear dynamics."
+        },
+        {
+          "block": "Difference",
+          "ref": "simulink/Quick Insert/Discrete/Difference",
+          "since": "R2023a+",
+          "intent": "Output the current input value minus the previous input value."
+        },
+        {
+          "block": "Discrete Derivative",
+          "ref": "simulink/Quick Insert/Discrete/Discrete Derivative",
+          "since": "R2023a+",
+          "intent": "Discrete-time derivative of the input. This block only works with fixed sample rates. Do not use this block in subsystems with a non-periodic trigger."
+        },
+        {
+          "block": "Repeating\nSequence\nInterpolated",
+          "ref": "simulink/Sources/Repeating\nSequence\nInterpolated",
+          "since": "R2023a+",
+          "intent": "Discrete time sequence is output, then repeated. Between data points, the specified lookup method is used to determine the output."
+        },
+        {
+          "block": "Repeating\nSequence\nStair",
+          "ref": "simulink/Sources/Repeating\nSequence\nStair",
+          "since": "R2023a+",
+          "intent": "Discrete time sequence is output, then repeated."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "logic-bit",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "logic-bit",
+      "hash": "3b9620ef049c3fbbb5e06c4c7f76a30a10048dcd09fe051f009a7b67d9d043b3",
+      "fm": {
+        "title": "Logic bit",
+        "description": "Logical, relational, and bit operations (97 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "logic",
+          "relational",
+          "bit",
+          "and",
+          "or",
+          "compare"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Logical\nOperator",
+          "ref": "simulink/Commonly\nUsed Blocks/Logical\nOperator",
+          "since": "R2023a+",
+          "intent": "Apply a logical operation (AND, OR, NOT, XOR, …) to boolean inputs — use for combining conditions."
+        },
+        {
+          "block": "Relational\nOperator",
+          "ref": "simulink/Commonly\nUsed Blocks/Relational\nOperator",
+          "since": "R2023a+",
+          "intent": "Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic."
+        },
+        {
+          "block": "Bit to Integer Converter",
+          "ref": "simulink/Logic and Bit Operations/Bit to Integer Converter",
+          "since": "R2023a+",
+          "intent": "Map a vector of bits to a corresponding vector of integer values. M defines how many bits are mapped for each output integer. The input length must be an integer multiple of M."
+        },
+        {
+          "block": "Bitwise Operator",
+          "ref": "simulink/Logic and Bit Operations/Bitwise Operator",
+          "since": "R2023a+",
+          "intent": "Perform the specified bitwise operation on the inputs. The output data type should represent zero exactly."
+        },
+        {
+          "block": "Combinatorial  Logic",
+          "ref": "simulink/Logic and Bit Operations/Combinatorial  Logic",
+          "since": "R2023a+",
+          "intent": "Map inputs to outputs via a truth table — use to implement combinational logic from a lookup of bit patterns."
+        },
+        {
+          "block": "Float Extract Bits",
+          "ref": "simulink/Logic and Bit Operations/Float Extract Bits",
+          "since": "R2023a+",
+          "intent": "Extract the sign, exponent, or mantissa bits of a floating-point number — use for low-level float inspection."
+        },
+        {
+          "block": "Integer to Bit Converter",
+          "ref": "simulink/Logic and Bit Operations/Integer to Bit Converter",
+          "since": "R2023a+",
+          "intent": "Map a vector of integer-values inputs to a vector of bits. Block inputs must be integer values in the range [-2^(M-1), 2^(M-1)-1] when they are treated as signed and [0, 2^M-1] when they are treated as unsigned. For fixed-point inputs, the stored integer value is used."
+        },
+        {
+          "block": "Logical Operator",
+          "ref": "simulink/Logic and Bit Operations/Logical Operator",
+          "since": "R2023a+",
+          "intent": "Apply a logical operation (AND, OR, NOT, XOR, …) to boolean inputs — use for combining conditions."
+        },
+        {
+          "block": "Relational Operator",
+          "ref": "simulink/Logic and Bit Operations/Relational Operator",
+          "since": "R2023a+",
+          "intent": "Compare two inputs (>, <, ==, …) and output a boolean — use for threshold and comparison logic."
+        },
+        {
+          "block": "Shift Arithmetic",
+          "ref": "simulink/Logic and Bit Operations/Shift Arithmetic",
+          "since": "R2023a+",
+          "intent": "Arithmetic/logical shift of bits or the binary point — use for scaling by powers of two or bit shifts."
+        },
+        {
+          "block": "Bit Clear",
+          "ref": "simulink/Logic and Bit Operations/Bit Clear",
+          "since": "R2023a+",
+          "intent": "Clear ith bit of the stored integer to 0. Scaling is ignored."
+        },
+        {
+          "block": "Bit Set",
+          "ref": "simulink/Logic and Bit Operations/Bit Set",
+          "since": "R2023a+",
+          "intent": "Set ith bit of the stored integer to 1. Scaling is ignored."
+        },
+        {
+          "block": "Compare To Constant",
+          "ref": "simulink/Logic and Bit Operations/Compare To Constant",
+          "since": "R2023a+",
+          "intent": "Determine how a signal compares to a constant."
+        },
+        {
+          "block": "Compare To Zero",
+          "ref": "simulink/Logic and Bit Operations/Compare To Zero",
+          "since": "R2023a+",
+          "intent": "Determine how a signal compares to zero."
+        },
+        {
+          "block": "Detect Change",
+          "ref": "simulink/Logic and Bit Operations/Detect Change",
+          "since": "R2023a+",
+          "intent": "If the input does not equal its previous value, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the previous input U/z."
+        },
+        {
+          "block": "Detect Decrease",
+          "ref": "simulink/Logic and Bit Operations/Detect Decrease",
+          "since": "R2023a+",
+          "intent": "If the input is strictly less than its previous value, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the previous input U/z."
+        },
+        {
+          "block": "Detect Fall Negative",
+          "ref": "simulink/Logic and Bit Operations/Detect Fall Negative",
+          "since": "R2023a+",
+          "intent": "If the input is strictly negative and its previous value was nonnegative, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z < 0)."
+        },
+        {
+          "block": "Detect Fall Nonpositive",
+          "ref": "simulink/Logic and Bit Operations/Detect Fall Nonpositive",
+          "since": "R2023a+",
+          "intent": "If the input is nonpositive and its previous value was strictly positive, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z <= 0)."
+        },
+        {
+          "block": "Detect Increase",
+          "ref": "simulink/Logic and Bit Operations/Detect Increase",
+          "since": "R2023a+",
+          "intent": "If the input is strictly greater than its previous value, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the previous input U/z."
+        },
+        {
+          "block": "Detect Rise Nonnegative",
+          "ref": "simulink/Logic and Bit Operations/Detect Rise Nonnegative",
+          "since": "R2023a+",
+          "intent": "If the input is nonnegative and its previous value was strictly negative, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z >= 0)."
+        },
+        {
+          "block": "Detect Rise Positive",
+          "ref": "simulink/Logic and Bit Operations/Detect Rise Positive",
+          "since": "R2023a+",
+          "intent": "If the input is strictly positive and its previous value was nonpositive, then output TRUE, otherwise output FALSE. The initial condition determines the initial value of the boolean expression (U/z > 0)."
+        },
+        {
+          "block": "Extract Bits",
+          "ref": "simulink/Logic and Bit Operations/Extract Bits",
+          "since": "R2023a+",
+          "intent": "Output selection of contiguous bits from input signal. Use the \"Bits to extract\" parameter to select the bits to output."
+        },
+        {
+          "block": "Interval Test",
+          "ref": "simulink/Logic and Bit Operations/Interval Test",
+          "since": "R2023a+",
+          "intent": "If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE."
+        },
+        {
+          "block": "Interval Test Dynamic",
+          "ref": "simulink/Logic and Bit Operations/Interval Test Dynamic",
+          "since": "R2023a+",
+          "intent": "If the input is in the interval between the lower limit and the upper limit, then the output is TRUE, otherwise it is FALSE."
+        },
+        {
+          "block": "Cosine",
+          "ref": "simulink/Lookup Tables/Cosine",
+          "since": "R2023a+",
+          "intent": "Implement sine and cosine functions in fixed point using a lookup table approach that exploits quarter wave symmetry. The output fraction length equals the output word length minus 2. The most efficient implementation is obtained when the number of data points is (2^n)+1 where n is an integer."
+        },
+        {
+          "block": "Sine",
+          "ref": "simulink/Lookup Tables/Sine",
+          "since": "R2023a+",
+          "intent": "Implement sine and cosine functions in fixed point using a lookup table approach that exploits quarter wave symmetry. The output fraction length equals the output word length minus 2. The most efficient implementation is obtained when the number of data points is (2^n)+1 where n is an integer."
+        },
+        {
+          "block": "Message Polling Subsystem",
+          "ref": "simulink/Messages & Events/Message Polling Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a trigger port and outport block."
+        },
+        {
+          "block": "Message Triggered Subsystem",
+          "ref": "simulink/Messages & Events/Message Triggered Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a trigger port and outport block."
+        },
+        {
+          "block": "Check  Dynamic Gap",
+          "ref": "simulink/Model Verification/Check  Dynamic Gap",
+          "since": "R2023a+",
+          "intent": "Assert that the input signal 'u' is always less than the lower bound 'min' or greater than the upper bound 'max'. The first input is the upper-bound of the gap; the second input, the lower-bound; the third input, the test signal."
+        },
+        {
+          "block": "Check  Static Gap",
+          "ref": "simulink/Model Verification/Check  Static Gap",
+          "since": "R2023a+",
+          "intent": "Assert that the input signal is less than (or optionally equal to) a static lower bound or greater than (or optionally equal to) a static upper bound."
+        },
+        {
+          "block": "Check  Static Range",
+          "ref": "simulink/Model Verification/Check  Static Range",
+          "since": "R2023a+",
+          "intent": "Assert that the input signal lies between a static lower and upper bound or optionally equals either bound."
+        },
+        {
+          "block": "Check Input  Resolution",
+          "ref": "simulink/Model Verification/Check Input  Resolution",
+          "since": "R2023a+",
+          "intent": "Assert that the input signal has a specified resolution. If the resolution is a scalar, the input signal must be a multiple of the resolution within a 10e-3 tolerance. If the resolution is a vector, the input signal must equal an element of the resolution vector."
+        },
+        {
+          "block": "Check Static  Lower Bound",
+          "ref": "simulink/Model Verification/Check Static  Lower Bound",
+          "since": "R2023a+",
+          "intent": "Assert that the input signal is greater than (or optionally equal to) a static lower bound."
+        },
+        {
+          "block": "Check Static  Upper Bound",
+          "ref": "simulink/Model Verification/Check Static  Upper Bound",
+          "since": "R2023a+",
+          "intent": "Assert that the input signal is less than (or optionally equal to) a static upper bound."
+        },
+        {
+          "block": "Block Support Table",
+          "ref": "simulink/Model-Wide Utilities/Block Support Table",
+          "since": "R2023a+",
+          "intent": "Double-clicking the block will launch the Simulink Block Data Type Support Table."
+        },
+        {
+          "block": "DocBlock",
+          "ref": "simulink/Model-Wide Utilities/DocBlock",
+          "since": "R2023a+",
+          "intent": "Use this block to save long descriptive text with the model. Double-clicking the block will open an editor."
+        },
+        {
+          "block": "Model Info",
+          "ref": "simulink/Model-Wide Utilities/Model Info",
+          "since": "R2023a+",
+          "intent": "This block allows revision control information to be displayed within the model."
+        },
+        {
+          "block": "Timed-Based Linearization",
+          "ref": "simulink/Model-Wide Utilities/Timed-Based Linearization",
+          "since": "R2023a+",
+          "intent": "Generate linear models in the base workspace at specific times."
+        },
+        {
+          "block": "Trigger-Based Linearization",
+          "ref": "simulink/Model-Wide Utilities/Trigger-Based Linearization",
+          "since": "R2023a+",
+          "intent": "Generates linear models in the base workspace when triggered."
+        },
+        {
+          "block": "Atomic Subsystem",
+          "ref": "simulink/Ports &\nSubsystems/Atomic Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an inport and outport block."
+        },
+        {
+          "block": "CodeReuseSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/CodeReuseSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an inport and outport block."
+        },
+        {
+          "block": "Enabled\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/Enabled\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an enable port, inport and outport block."
+        },
+        {
+          "block": "Enabled and\nTriggered Subsystem",
+          "ref": "simulink/Ports &\nSubsystems/Enabled and\nTriggered Subsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an enable port, trigger port, inport and outport block."
+        },
+        {
+          "block": "For Each\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/For Each\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a for each, inport and outport block."
+        },
+        {
+          "block": "For Iterator\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/For Iterator\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a for iterator, inport and outport block."
+        },
+        {
+          "block": "Function-Call\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/Function-Call\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a function-call trigger port, inport and outport block."
+        },
+        {
+          "block": "If Action\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/If Action\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an action port, inport and outport block."
+        },
+        {
+          "block": "Resettable\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/Resettable\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a reset port, inport and outport block."
+        },
+        {
+          "block": "Subsystem Examples",
+          "ref": "simulink/Ports &\nSubsystems/Subsystem Examples",
+          "since": "R2023a+",
+          "intent": "These are examples of how to use the different types of subsystems."
+        },
+        {
+          "block": "Switch Case Action\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/Switch Case Action\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an action port, inport and outport block."
+        },
+        {
+          "block": "Triggered\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/Triggered\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a trigger port, inport and outport block."
+        },
+        {
+          "block": "Variant Assembly Subsystem",
+          "ref": "simulink/Ports &\nSubsystems/Variant Assembly Subsystem",
+          "since": "R2023a+",
+          "intent": "A Variant Subsystem template in Variant Assembly mode."
+        },
+        {
+          "block": "Variant Model",
+          "ref": "simulink/Ports &\nSubsystems/Variant Model",
+          "since": "R2023a+",
+          "intent": "A Variant Subsystem template containing Model blocks as variant choices."
+        },
+        {
+          "block": "Variant Subsystem",
+          "ref": "simulink/Ports &\nSubsystems/Variant Subsystem",
+          "since": "R2023a+",
+          "intent": "A Variant Subsystem template containing Subsystem blocks as variant choices."
+        },
+        {
+          "block": "While Iterator\nSubsystem",
+          "ref": "simulink/Ports &\nSubsystems/While Iterator\nSubsystem",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing a while iterator, inport and outport block."
+        },
+        {
+          "block": "AND",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/AND",
+          "since": "R2023a+",
+          "intent": "Logical AND of the inputs — use to require all conditions to be true."
+        },
+        {
+          "block": "Bitwise AND",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Bitwise AND",
+          "since": "R2023a+",
+          "intent": "Bitwise AND of integer inputs (with optional mask) — use for bit masking."
+        },
+        {
+          "block": "Bitwise NAND",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Bitwise NAND",
+          "since": "R2023a+",
+          "intent": "Bitwise NAND of integer inputs — use for inverted bit masking."
+        },
+        {
+          "block": "Bitwise NOR",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Bitwise NOR",
+          "since": "R2023a+",
+          "intent": "Bitwise NOR of integer inputs — use for inverted bit combination."
+        },
+        {
+          "block": "Bitwise NOT",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Bitwise NOT",
+          "since": "R2023a+",
+          "intent": "Bitwise complement of an integer input — use to invert all bits."
+        },
+        {
+          "block": "Bitwise OR",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Bitwise OR",
+          "since": "R2023a+",
+          "intent": "Bitwise OR of integer inputs — use for setting/combining bits."
+        },
+        {
+          "block": "Bitwise XOR",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Bitwise XOR",
+          "since": "R2023a+",
+          "intent": "Bitwise exclusive-OR of integer inputs — use for toggling bits or parity."
+        },
+        {
+          "block": "Equal",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Equal",
+          "since": "R2023a+",
+          "intent": "Output true when inputs are equal — use for equality comparison."
+        },
+        {
+          "block": "GT",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/GT",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is greater than the second — use for greater-than comparison."
+        },
+        {
+          "block": "GTE",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/GTE",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is greater than or equal to the second — use for greater-or-equal comparison."
+        },
+        {
+          "block": "GreaterThan",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/GreaterThan",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is greater than the second — use for greater-than comparison."
+        },
+        {
+          "block": "GreaterThanOrEqual",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/GreaterThanOrEqual",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is greater than or equal to the second — use for greater-or-equal comparison."
+        },
+        {
+          "block": "IsFinite",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsFinite",
+          "since": "R2023a+",
+          "intent": "Output true when the input is finite (not Inf or NaN) — use to validate numeric signals."
+        },
+        {
+          "block": "IsInf",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsInf",
+          "since": "R2023a+",
+          "intent": "Output true when the input is infinite — use to detect overflow/divide-by-zero results."
+        },
+        {
+          "block": "IsNaN",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsNaN",
+          "since": "R2023a+",
+          "intent": "Output true when the input is NaN — use to detect invalid numeric results."
+        },
+        {
+          "block": "IsNegative",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsNegative",
+          "since": "R2023a+",
+          "intent": "Output true when the input is negative — use for sign testing."
+        },
+        {
+          "block": "IsNonNegative",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsNonNegative",
+          "since": "R2023a+",
+          "intent": "Output true when the input is zero or positive — use for sign testing."
+        },
+        {
+          "block": "IsNonPositive",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsNonPositive",
+          "since": "R2023a+",
+          "intent": "Output true when the input is zero or negative — use for sign testing."
+        },
+        {
+          "block": "IsNonZero",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsNonZero",
+          "since": "R2023a+",
+          "intent": "Output true when the input is not zero — use to detect nonzero values."
+        },
+        {
+          "block": "IsPositive",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsPositive",
+          "since": "R2023a+",
+          "intent": "Output true when the input is positive — use for sign testing."
+        },
+        {
+          "block": "IsZero",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/IsZero",
+          "since": "R2023a+",
+          "intent": "Output true when the input equals zero — use to detect zero values."
+        },
+        {
+          "block": "LT",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/LT",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is less than the second — use for less-than comparison."
+        },
+        {
+          "block": "LTE",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/LTE",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is less than or equal to the second — use for less-or-equal comparison."
+        },
+        {
+          "block": "Less Than",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/Less Than",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is less than the second — use for less-than comparison."
+        },
+        {
+          "block": "LessThanOrEqual",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/LessThanOrEqual",
+          "since": "R2023a+",
+          "intent": "Output true when the first input is less than or equal to the second — use for less-or-equal comparison."
+        },
+        {
+          "block": "NAND",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/NAND",
+          "since": "R2023a+",
+          "intent": "Logical NAND of the inputs — use for negated-AND logic."
+        },
+        {
+          "block": "NOR",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/NOR",
+          "since": "R2023a+",
+          "intent": "Logical NOR of the inputs — use for negated-OR logic."
+        },
+        {
+          "block": "NOT",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/NOT",
+          "since": "R2023a+",
+          "intent": "Logical negation of the input — use to invert a boolean."
+        },
+        {
+          "block": "NXOR",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/NXOR",
+          "since": "R2023a+",
+          "intent": "Logical exclusive-NOR of the inputs — use to test equality of booleans."
+        },
+        {
+          "block": "NotEqual",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/NotEqual",
+          "since": "R2023a+",
+          "intent": "Output true when inputs are not equal — use for inequality comparison."
+        },
+        {
+          "block": "OR",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/OR",
+          "since": "R2023a+",
+          "intent": "Logical OR of the inputs — use to require any condition to be true."
+        },
+        {
+          "block": "XOR",
+          "ref": "simulink/Quick Insert/Logic and Bit Operations/XOR",
+          "since": "R2023a+",
+          "intent": "Logical exclusive-OR of the inputs — use to detect differing booleans."
+        },
+        {
+          "block": "Manual\nVariant Sink",
+          "ref": "simulink/Signal\nRouting/Manual\nVariant Sink",
+          "since": "R2023a+",
+          "intent": "The Manual Variant Sink provides variation on the sink (destination) of a signal. Blocks connected to the output ports define variant choices and one output port is active during simulation. Blocks connected to the inactive ports will be removed from the simulation. Double-clicking the block icon selects the active choice which is shown with a line connecting the input to output."
+        },
+        {
+          "block": "Manual\nVariant Source",
+          "ref": "simulink/Signal\nRouting/Manual\nVariant Source",
+          "since": "R2023a+",
+          "intent": "The Manual Variant Source provides variation on the source of a signal. Blocks connected to the input ports define variant choices and one input port is active during simulation. Blocks connected to the inactive ports will be removed from the simulation. Double-clicking the block icon selects the active choice which is shown with a line connecting the input to output."
+        },
+        {
+          "block": "Counter\nFree-Running",
+          "ref": "simulink/Sources/Counter\nFree-Running",
+          "since": "R2023a+",
+          "intent": "This block is a free-running counter that overflows back to zero after it has reached the maximum value possible for the specified number of bits. The counter is always initialized to zero. The output is normally an unsigned integer with the specified number of bits."
+        },
+        {
+          "block": "Counter\nLimited",
+          "ref": "simulink/Sources/Counter\nLimited",
+          "since": "R2023a+",
+          "intent": "This block is a counter that wraps back to zero after it has output the specified upper limit. The counter is always initialized to zero. The output is normally an unsigned integer of 8, 16, or 32 bits. The smallest number of bits needed to represent the upper limit is used."
+        },
+        {
+          "block": "Signal Editor",
+          "ref": "simulink/Sources/Signal Editor",
+          "since": "R2023a+",
+          "intent": "Display, create, edit, and switch interchangeable scenarios."
+        },
+        {
+          "block": "Initialize Function",
+          "ref": "simulink/User-Defined Functions/Initialize Function",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an event-listener block set to 'Initialize' Event, a constant block and a state writer block."
+        },
+        {
+          "block": "Reinitialize Function",
+          "ref": "simulink/User-Defined Functions/Reinitialize Function",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an event-listener block set to 'Reinitialize' Event with the 'Event name' parameter set to 'reinit', a constant block and a state writer block."
+        },
+        {
+          "block": "Reset Function",
+          "ref": "simulink/User-Defined Functions/Reset Function",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an event-listener block set to 'Reset' Event with the 'Event name' parameter set to 'reset', a constant block and a state writer block."
+        },
+        {
+          "block": "Simulink Function",
+          "ref": "simulink/User-Defined Functions/Simulink Function",
+          "since": "R2023a+",
+          "intent": "A subsystem block template configured as a Simulink Function containing a function-call trigger port, input and output argument blocks."
+        },
+        {
+          "block": "Terminate Function",
+          "ref": "simulink/User-Defined Functions/Terminate Function",
+          "since": "R2023a+",
+          "intent": "A subsystem block template containing an event-listener block set to 'Terminate' Event, a state reader and terminator blocks."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "lookup-tables",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "lookup-tables",
+      "hash": "c01068639a50688fccad4678e5fab35659be74f53e23c9aa228568b5f82b75fc",
+      "fm": {
+        "title": "Lookup tables",
+        "description": "Lookup tables, prelookup, and interpolation (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "lookup",
+          "table",
+          "prelookup",
+          "interpolation",
+          "cosine",
+          "sine"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "1-D Lookup Table",
+          "ref": "simulink/Lookup Tables/1-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Map an input to an output by interpolating a table of breakpoint-value pairs — use for nonlinear functions or calibration curves."
+        },
+        {
+          "block": "2-D Lookup Table",
+          "ref": "simulink/Lookup Tables/2-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from a 2-D table indexed by two inputs — use for surface maps such as engine or gain schedules."
+        },
+        {
+          "block": "Direct Lookup Table (n-D)",
+          "ref": "simulink/Lookup Tables/Direct Lookup Table (n-D)",
+          "since": "R2023a+",
+          "intent": "Return stored table elements directly by integer index with no interpolation — use for indexed selection of vectors/matrices."
+        },
+        {
+          "block": "Interpolation Using Prelookup",
+          "ref": "simulink/Lookup Tables/Interpolation Using Prelookup",
+          "since": "R2023a+",
+          "intent": "Interpolate table values using precomputed index/fraction from Prelookup — use for efficient multi-table lookup sharing breakpoints."
+        },
+        {
+          "block": "Lookup Table Dynamic",
+          "ref": "simulink/Lookup Tables/Lookup Table Dynamic",
+          "since": "R2023a+",
+          "intent": "Approximate a one-dimensional function using a selected lookup method."
+        },
+        {
+          "block": "Prelookup",
+          "ref": "simulink/Lookup Tables/Prelookup",
+          "since": "R2023a+",
+          "intent": "Compute the index and fraction of an input within a breakpoint set — use ahead of an Interpolation block for efficient lookup."
+        },
+        {
+          "block": "n-D Lookup Table",
+          "ref": "simulink/Lookup Tables/n-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from an n-dimensional breakpoint table — use for multi-input calibration maps."
+        },
+        {
+          "block": "3-D Lookup Table",
+          "ref": "simulink/Quick Insert/Lookup Tables/3-D Lookup Table",
+          "since": "R2023a+",
+          "intent": "Interpolate an output from a 3-D breakpoint table indexed by three inputs — use for three-input maps."
+        },
+        {
+          "block": "Cosine Lookup",
+          "ref": "simulink/Quick Insert/Lookup Tables/Cosine Lookup",
+          "since": "R2023a+",
+          "intent": "Approximate cosine using a lookup table — use for efficient cos evaluation on fixed-point/embedded targets."
+        },
+        {
+          "block": "Exponential Lookup",
+          "ref": "simulink/Quick Insert/Lookup Tables/Exponential Lookup",
+          "since": "R2023a+",
+          "intent": "Approximate the exponential using a lookup table — use for efficient exp evaluation."
+        },
+        {
+          "block": "Index Search",
+          "ref": "simulink/Quick Insert/Lookup Tables/Index Search",
+          "since": "R2023a+",
+          "intent": "Find the breakpoint interval index for an input — use as a standalone prelookup index search."
+        },
+        {
+          "block": "Lookup with Akima spline Interpolation",
+          "ref": "simulink/Quick Insert/Lookup Tables/Lookup with Akima spline Interpolation",
+          "since": "R2023a+",
+          "intent": "Table lookup using Akima spline interpolation — use for smooth interpolation without overshoot."
+        },
+        {
+          "block": "Lookup with Linear Lagrange Interpolation",
+          "ref": "simulink/Quick Insert/Lookup Tables/Lookup with Linear Lagrange Interpolation",
+          "since": "R2023a+",
+          "intent": "Table lookup using linear Lagrange interpolation — use for straightforward linear table interpolation."
+        },
+        {
+          "block": "Lookup with Linear Point-slope Interpolation",
+          "ref": "simulink/Quick Insert/Lookup Tables/Lookup with Linear Point-slope Interpolation",
+          "since": "R2023a+",
+          "intent": "Table lookup using linear point-slope interpolation — use for efficient linear interpolation on embedded targets."
+        },
+        {
+          "block": "SinCos Lookup",
+          "ref": "simulink/Quick Insert/Lookup Tables/SinCos Lookup",
+          "since": "R2023a+",
+          "intent": "Approximate sine and cosine together using a lookup table — use for efficient combined trig on embedded targets."
+        },
+        {
+          "block": "Sine Lookup",
+          "ref": "simulink/Quick Insert/Lookup Tables/Sine Lookup",
+          "since": "R2023a+",
+          "intent": "Approximate sine using a lookup table — use for efficient sin evaluation on fixed-point/embedded targets."
+        },
+        {
+          "block": "Chirp Signal",
+          "ref": "simulink/Sources/Chirp Signal",
+          "since": "R2023a+",
+          "intent": "Output a linear chirp signal (sine wave whose frequency varies linearly with time)."
+        },
+        {
+          "block": "Repeating\nSequence",
+          "ref": "simulink/Sources/Repeating\nSequence",
+          "since": "R2023a+",
+          "intent": "Output a repeating sequence of numbers specified in a table of time-value pairs. Values of time should be monotonically increasing."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "math",
+      "hash": "527aa17199684ac226ddadd4aede63d5ea93e43957144bdf979ea4c785dee32d",
+      "fm": {
+        "title": "Math",
+        "description": "Arithmetic, trigonometric, and scalar math (91 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "math",
+          "arithmetic",
+          "trigonometry",
+          "gain",
+          "sum",
+          "product",
+          "sqrt"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Gain",
+          "ref": "simulink/Commonly\nUsed Blocks/Gain",
+          "since": "R2023a+",
+          "intent": "Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants."
+        },
+        {
+          "block": "Product",
+          "ref": "simulink/Commonly\nUsed Blocks/Product",
+          "since": "R2023a+",
+          "intent": "Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication."
+        },
+        {
+          "block": "Sum",
+          "ref": "simulink/Commonly\nUsed Blocks/Sum",
+          "since": "R2023a+",
+          "intent": "Add or subtract inputs — use for summing signals and forming error terms."
+        },
+        {
+          "block": "Vector\nConcatenate",
+          "ref": "simulink/Commonly\nUsed Blocks/Vector\nConcatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a single vector — use to combine signals along one dimension."
+        },
+        {
+          "block": "Abs",
+          "ref": "simulink/Math Operations/Abs",
+          "since": "R2023a+",
+          "intent": "Output the absolute value (or complex magnitude) of the input — use to remove sign or get magnitude."
+        },
+        {
+          "block": "Add",
+          "ref": "simulink/Math Operations/Add",
+          "since": "R2023a+",
+          "intent": "Add and optionally subtract inputs — use for summing signals with per-port sign control."
+        },
+        {
+          "block": "Algebraic Constraint",
+          "ref": "simulink/Math Operations/Algebraic Constraint",
+          "since": "R2023a+",
+          "intent": "Force an input expression to zero by solving for a constrained output — use to model implicit algebraic equations."
+        },
+        {
+          "block": "Assignment",
+          "ref": "simulink/Math Operations/Assignment",
+          "since": "R2023a+",
+          "intent": "Write input values into selected elements of a signal or array — use to build or update array elements by index."
+        },
+        {
+          "block": "Bias",
+          "ref": "simulink/Math Operations/Bias",
+          "since": "R2023a+",
+          "intent": "Add a constant offset to the input — use to shift a signal by a fixed amount."
+        },
+        {
+          "block": "Complex to Magnitude-Angle",
+          "ref": "simulink/Math Operations/Complex to Magnitude-Angle",
+          "since": "R2023a+",
+          "intent": "Split a complex signal into magnitude and phase angle — use for polar analysis."
+        },
+        {
+          "block": "Complex to Real-Imag",
+          "ref": "simulink/Math Operations/Complex to Real-Imag",
+          "since": "R2023a+",
+          "intent": "Split a complex signal into real and imaginary parts — use to access rectangular components."
+        },
+        {
+          "block": "Divide",
+          "ref": "simulink/Math Operations/Divide",
+          "since": "R2023a+",
+          "intent": "Multiply and/or divide inputs — use for ratios and element-wise division."
+        },
+        {
+          "block": "Dot Product",
+          "ref": "simulink/Math Operations/Dot Product",
+          "since": "R2023a+",
+          "intent": "Compute the dot product of two vectors — use for projections and weighted sums."
+        },
+        {
+          "block": "Find Nonzero Elements",
+          "ref": "simulink/Math Operations/Find Nonzero Elements",
+          "since": "R2023a+",
+          "intent": "Return indices and values of nonzero elements — use to locate active entries in a signal/array."
+        },
+        {
+          "block": "Gain",
+          "ref": "simulink/Math Operations/Gain",
+          "since": "R2023a+",
+          "intent": "Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants."
+        },
+        {
+          "block": "Magnitude-Angle to Complex",
+          "ref": "simulink/Math Operations/Magnitude-Angle to Complex",
+          "since": "R2023a+",
+          "intent": "Build a complex signal from magnitude and angle — use to convert polar to complex."
+        },
+        {
+          "block": "Math Function",
+          "ref": "simulink/Math Operations/Math Function",
+          "since": "R2023a+",
+          "intent": "Apply a selectable math function (exp, log, square, reciprocal, mod, …) — use for common scalar math."
+        },
+        {
+          "block": "Matrix Concatenate",
+          "ref": "simulink/Math Operations/Matrix Concatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a larger matrix along a dimension — use to assemble matrices."
+        },
+        {
+          "block": "MinMax",
+          "ref": "simulink/Math Operations/MinMax",
+          "since": "R2023a+",
+          "intent": "Output the minimum or maximum across inputs — use for extreme-value selection."
+        },
+        {
+          "block": "Permute Dimensions",
+          "ref": "simulink/Math Operations/Permute Dimensions",
+          "since": "R2023a+",
+          "intent": "Reorder the dimensions of a multidimensional signal — use to rearrange array axes."
+        },
+        {
+          "block": "Polynomial",
+          "ref": "simulink/Math Operations/Polynomial",
+          "since": "R2023a+",
+          "intent": "Evaluate a polynomial with given coefficients at the input — use for polynomial curve evaluation."
+        },
+        {
+          "block": "Product",
+          "ref": "simulink/Math Operations/Product",
+          "since": "R2023a+",
+          "intent": "Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication."
+        },
+        {
+          "block": "Product of Elements",
+          "ref": "simulink/Math Operations/Product of Elements",
+          "since": "R2023a+",
+          "intent": "Multiply all elements of a vector together — use for cumulative products."
+        },
+        {
+          "block": "Real-Imag to Complex",
+          "ref": "simulink/Math Operations/Real-Imag to Complex",
+          "since": "R2023a+",
+          "intent": "Build a complex signal from real and imaginary parts — use to convert rectangular to complex."
+        },
+        {
+          "block": "Reciprocal Sqrt",
+          "ref": "simulink/Math Operations/Reciprocal Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute 1/sqrt(u) — use for normalization such as inverse magnitude."
+        },
+        {
+          "block": "Reshape",
+          "ref": "simulink/Math Operations/Reshape",
+          "since": "R2023a+",
+          "intent": "Change the dimensions of a signal without changing its data — use to reshape vectors and matrices."
+        },
+        {
+          "block": "Rounding Function",
+          "ref": "simulink/Math Operations/Rounding Function",
+          "since": "R2023a+",
+          "intent": "Apply a selectable rounding function (floor, ceil, round, fix) — use to round to integers."
+        },
+        {
+          "block": "Sign",
+          "ref": "simulink/Math Operations/Sign",
+          "since": "R2023a+",
+          "intent": "Output the sign (-1, 0, +1) of the input — use for sign extraction or direction."
+        },
+        {
+          "block": "Signed Sqrt",
+          "ref": "simulink/Math Operations/Signed Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute sign(u)*sqrt(|u|) — use for signed square-root scaling."
+        },
+        {
+          "block": "Sine Wave Function",
+          "ref": "simulink/Math Operations/Sine Wave Function",
+          "since": "R2023a+",
+          "intent": "Generate a sine of the input signal (function form) — use to compute sin of a time or phase input."
+        },
+        {
+          "block": "Sqrt",
+          "ref": "simulink/Math Operations/Sqrt",
+          "since": "R2023a+",
+          "intent": "Compute the square root of the input — use for magnitude or RMS-type math."
+        },
+        {
+          "block": "Squeeze",
+          "ref": "simulink/Math Operations/Squeeze",
+          "since": "R2023a+",
+          "intent": "Remove singleton dimensions from a signal — use to drop length-1 array dimensions."
+        },
+        {
+          "block": "Subtract",
+          "ref": "simulink/Math Operations/Subtract",
+          "since": "R2023a+",
+          "intent": "Subtract inputs with per-port sign — use for differences and error signals."
+        },
+        {
+          "block": "Sum",
+          "ref": "simulink/Math Operations/Sum",
+          "since": "R2023a+",
+          "intent": "Add or subtract inputs — use for summing signals and forming error terms."
+        },
+        {
+          "block": "Sum of Elements",
+          "ref": "simulink/Math Operations/Sum of Elements",
+          "since": "R2023a+",
+          "intent": "Add all elements of a vector — use for cumulative sums or totals."
+        },
+        {
+          "block": "Trigonometric Function",
+          "ref": "simulink/Math Operations/Trigonometric Function",
+          "since": "R2023a+",
+          "intent": "Apply a selectable trig or hyperbolic function (sin, cos, atan2, …) — use for angle and waveform math."
+        },
+        {
+          "block": "Unary Minus",
+          "ref": "simulink/Math Operations/Unary Minus",
+          "since": "R2023a+",
+          "intent": "Negate the input — use to flip sign."
+        },
+        {
+          "block": "Vector Concatenate",
+          "ref": "simulink/Math Operations/Vector Concatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a single vector — use to combine signals along one dimension."
+        },
+        {
+          "block": "Weighted Sample Time Math",
+          "ref": "simulink/Math Operations/Weighted Sample Time Math",
+          "since": "R2023a+",
+          "intent": "Perform arithmetic that scales by the sample time (Ts) — use in discretization math involving the step size."
+        },
+        {
+          "block": "MinMax Running Resettable",
+          "ref": "simulink/Math Operations/MinMax Running Resettable",
+          "since": "R2023a+",
+          "intent": "Output the max or min of all past inputs u. The output is reset to the initial condition when the Reset input signal R is TRUE. This reset action is vectorized and supports scalar expansion."
+        },
+        {
+          "block": "Slider Gain",
+          "ref": "simulink/Math Operations/Slider Gain",
+          "since": "R2023a+",
+          "intent": "Move the slider to modify the scalar gain."
+        },
+        {
+          "block": "Matrix Concatenate",
+          "ref": "simulink/Matrix Operations/Matrix Concatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a larger matrix along a dimension — use to assemble matrices."
+        },
+        {
+          "block": "Acos",
+          "ref": "simulink/Quick Insert/Math Operations/Acos",
+          "since": "R2023a+",
+          "intent": "Compute the arccosine of the input — use for inverse-trig angle recovery."
+        },
+        {
+          "block": "Acosh",
+          "ref": "simulink/Quick Insert/Math Operations/Acosh",
+          "since": "R2023a+",
+          "intent": "Compute the inverse hyperbolic cosine of the input."
+        },
+        {
+          "block": "Add Constant",
+          "ref": "simulink/Quick Insert/Math Operations/Add Constant",
+          "since": "R2023a+",
+          "intent": "Add a fixed constant to the input — use to apply a constant offset."
+        },
+        {
+          "block": "Asin",
+          "ref": "simulink/Quick Insert/Math Operations/Asin",
+          "since": "R2023a+",
+          "intent": "Compute the arcsine of the input — use for inverse-trig angle recovery."
+        },
+        {
+          "block": "Asinh",
+          "ref": "simulink/Quick Insert/Math Operations/Asinh",
+          "since": "R2023a+",
+          "intent": "Compute the inverse hyperbolic sine of the input."
+        },
+        {
+          "block": "Atan",
+          "ref": "simulink/Quick Insert/Math Operations/Atan",
+          "since": "R2023a+",
+          "intent": "Compute the arctangent of the input — use for single-argument angle recovery."
+        },
+        {
+          "block": "Atan2",
+          "ref": "simulink/Quick Insert/Math Operations/Atan2",
+          "since": "R2023a+",
+          "intent": "Compute the four-quadrant arctangent of y and x — use to get a full-range angle from Cartesian components."
+        },
+        {
+          "block": "Atan2 Cordic",
+          "ref": "simulink/Quick Insert/Math Operations/Atan2 Cordic",
+          "since": "R2023a+",
+          "intent": "Compute four-quadrant arctangent using a CORDIC algorithm — use for efficient atan2 on fixed-point/embedded targets."
+        },
+        {
+          "block": "Atanh",
+          "ref": "simulink/Quick Insert/Math Operations/Atanh",
+          "since": "R2023a+",
+          "intent": "Compute the inverse hyperbolic tangent of the input."
+        },
+        {
+          "block": "Ceil",
+          "ref": "simulink/Quick Insert/Math Operations/Ceil",
+          "since": "R2023a+",
+          "intent": "Round toward positive infinity — use for ceiling rounding."
+        },
+        {
+          "block": "Conj",
+          "ref": "simulink/Quick Insert/Math Operations/Conj",
+          "since": "R2023a+",
+          "intent": "Compute the complex conjugate of the input — use in complex-signal math."
+        },
+        {
+          "block": "Cos",
+          "ref": "simulink/Quick Insert/Math Operations/Cos",
+          "since": "R2023a+",
+          "intent": "Compute the cosine of the input (radians) — use for trig and waveform generation."
+        },
+        {
+          "block": "Cos Cordic",
+          "ref": "simulink/Quick Insert/Math Operations/Cos Cordic",
+          "since": "R2023a+",
+          "intent": "Compute cosine using a CORDIC algorithm — use for efficient cos on fixed-point/embedded targets."
+        },
+        {
+          "block": "Cos+jSin",
+          "ref": "simulink/Quick Insert/Math Operations/Cos+jSin",
+          "since": "R2023a+",
+          "intent": "Generate the complex exponential cos(u)+j·sin(u) — use for complex tone or carrier generation."
+        },
+        {
+          "block": "Cosh",
+          "ref": "simulink/Quick Insert/Math Operations/Cosh",
+          "since": "R2023a+",
+          "intent": "Compute the hyperbolic cosine of the input."
+        },
+        {
+          "block": "Exp",
+          "ref": "simulink/Quick Insert/Math Operations/Exp",
+          "since": "R2023a+",
+          "intent": "Compute the exponential e^u of the input."
+        },
+        {
+          "block": "Fix",
+          "ref": "simulink/Quick Insert/Math Operations/Fix",
+          "since": "R2023a+",
+          "intent": "Round toward zero (truncate) — use for truncating rounding."
+        },
+        {
+          "block": "Floor",
+          "ref": "simulink/Quick Insert/Math Operations/Floor",
+          "since": "R2023a+",
+          "intent": "Round toward negative infinity — use for floor rounding."
+        },
+        {
+          "block": "Hermitian",
+          "ref": "simulink/Quick Insert/Math Operations/Hermitian",
+          "since": "R2023a+",
+          "intent": "Compute the complex-conjugate transpose of a matrix — use in linear-algebra signal processing."
+        },
+        {
+          "block": "Hypot",
+          "ref": "simulink/Quick Insert/Math Operations/Hypot",
+          "since": "R2023a+",
+          "intent": "Compute sqrt(u1^2 + u2^2) robustly — use for magnitude/hypotenuse without overflow."
+        },
+        {
+          "block": "Log",
+          "ref": "simulink/Quick Insert/Math Operations/Log",
+          "since": "R2023a+",
+          "intent": "Compute the natural logarithm of the input."
+        },
+        {
+          "block": "Log10",
+          "ref": "simulink/Quick Insert/Math Operations/Log10",
+          "since": "R2023a+",
+          "intent": "Compute the base-10 logarithm of the input."
+        },
+        {
+          "block": "Magnitude Squared",
+          "ref": "simulink/Quick Insert/Math Operations/Magnitude Squared",
+          "since": "R2023a+",
+          "intent": "Compute |u|^2 of a possibly complex input — use for power/energy without a square root."
+        },
+        {
+          "block": "Matrix Divide",
+          "ref": "simulink/Quick Insert/Math Operations/Matrix Divide",
+          "since": "R2023a+",
+          "intent": "Solve a matrix equation (left/right matrix division) — use for linear-system solves."
+        },
+        {
+          "block": "Max",
+          "ref": "simulink/Quick Insert/Math Operations/Max",
+          "since": "R2023a+",
+          "intent": "Output the maximum of the inputs — use for element-wise or port-wise max selection."
+        },
+        {
+          "block": "Max of Elements",
+          "ref": "simulink/Quick Insert/Math Operations/Max of Elements",
+          "since": "R2023a+",
+          "intent": "Output the maximum element of a vector/array — use to find the largest value in a signal."
+        },
+        {
+          "block": "Min",
+          "ref": "simulink/Quick Insert/Math Operations/Min",
+          "since": "R2023a+",
+          "intent": "Output the minimum of the inputs — use for element-wise or port-wise min selection."
+        },
+        {
+          "block": "Min of Elements",
+          "ref": "simulink/Quick Insert/Math Operations/Min of Elements",
+          "since": "R2023a+",
+          "intent": "Output the minimum element of a vector/array — use to find the smallest value in a signal."
+        },
+        {
+          "block": "Minus",
+          "ref": "simulink/Quick Insert/Math Operations/Minus",
+          "since": "R2023a+",
+          "intent": "Subtract the second input from the first — use for differences."
+        },
+        {
+          "block": "Mod",
+          "ref": "simulink/Quick Insert/Math Operations/Mod",
+          "since": "R2023a+",
+          "intent": "Compute the modulus/remainder after division — use for wrapping or periodic indexing."
+        },
+        {
+          "block": "Multiply",
+          "ref": "simulink/Quick Insert/Math Operations/Multiply",
+          "since": "R2023a+",
+          "intent": "Multiply the inputs — use for products and scaling."
+        },
+        {
+          "block": "Plus",
+          "ref": "simulink/Quick Insert/Math Operations/Plus",
+          "since": "R2023a+",
+          "intent": "Add the inputs — use for summing signals."
+        },
+        {
+          "block": "Power",
+          "ref": "simulink/Quick Insert/Math Operations/Power",
+          "since": "R2023a+",
+          "intent": "Raise the base input to a power — use for exponentiation u^n."
+        },
+        {
+          "block": "Power of 10",
+          "ref": "simulink/Quick Insert/Math Operations/Power of 10",
+          "since": "R2023a+",
+          "intent": "Compute 10^u — use for decade scaling."
+        },
+        {
+          "block": "Reciprocal",
+          "ref": "simulink/Quick Insert/Math Operations/Reciprocal",
+          "since": "R2023a+",
+          "intent": "Compute 1/u — use for inversion or division-by-input."
+        },
+        {
+          "block": "Reciprocal Square Root",
+          "ref": "simulink/Quick Insert/Math Operations/Reciprocal Square Root",
+          "since": "R2023a+",
+          "intent": "Compute 1/sqrt(u) — use for normalization such as inverse magnitude."
+        },
+        {
+          "block": "Rem",
+          "ref": "simulink/Quick Insert/Math Operations/Rem",
+          "since": "R2023a+",
+          "intent": "Compute the remainder after division (sign of the dividend) — use for remainder arithmetic."
+        },
+        {
+          "block": "Round",
+          "ref": "simulink/Quick Insert/Math Operations/Round",
+          "since": "R2023a+",
+          "intent": "Round to the nearest integer — use for standard rounding."
+        },
+        {
+          "block": "Signed Square Root",
+          "ref": "simulink/Quick Insert/Math Operations/Signed Square Root",
+          "since": "R2023a+",
+          "intent": "Compute sign(u)*sqrt(|u|) — use for signed square-root scaling."
+        },
+        {
+          "block": "Sin",
+          "ref": "simulink/Quick Insert/Math Operations/Sin",
+          "since": "R2023a+",
+          "intent": "Compute the sine of the input (radians) — use for trig and waveform generation."
+        },
+        {
+          "block": "Sin Cordic",
+          "ref": "simulink/Quick Insert/Math Operations/Sin Cordic",
+          "since": "R2023a+",
+          "intent": "Compute sine using a CORDIC algorithm — use for efficient sin on fixed-point/embedded targets."
+        },
+        {
+          "block": "SinCos",
+          "ref": "simulink/Quick Insert/Math Operations/SinCos",
+          "since": "R2023a+",
+          "intent": "Compute sine and cosine of the input together — use for efficient combined trig."
+        },
+        {
+          "block": "SinCos Cordic",
+          "ref": "simulink/Quick Insert/Math Operations/SinCos Cordic",
+          "since": "R2023a+",
+          "intent": "Compute sine and cosine using a CORDIC algorithm — use for efficient combined trig on embedded targets."
+        },
+        {
+          "block": "Sinh",
+          "ref": "simulink/Quick Insert/Math Operations/Sinh",
+          "since": "R2023a+",
+          "intent": "Compute the hyperbolic sine of the input."
+        },
+        {
+          "block": "Square Root",
+          "ref": "simulink/Quick Insert/Math Operations/Square Root",
+          "since": "R2023a+",
+          "intent": "Compute the square root of the input — use for magnitude or RMS-type math."
+        },
+        {
+          "block": "Tan",
+          "ref": "simulink/Quick Insert/Math Operations/Tan",
+          "since": "R2023a+",
+          "intent": "Compute the tangent of the input (radians)."
+        },
+        {
+          "block": "Tanh",
+          "ref": "simulink/Quick Insert/Math Operations/Tanh",
+          "since": "R2023a+",
+          "intent": "Compute the hyperbolic tangent — use for smooth saturating nonlinearities."
+        },
+        {
+          "block": "ln",
+          "ref": "simulink/Quick Insert/Math Operations/ln",
+          "since": "R2023a+",
+          "intent": "Compute the natural logarithm of the input."
+        },
+        {
+          "block": "Vector\nConcatenate",
+          "ref": "simulink/Signal\nRouting/Vector\nConcatenate",
+          "since": "R2023a+",
+          "intent": "Concatenate inputs into a single vector — use to combine signals along one dimension."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "matrix",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "matrix",
+      "hash": "2d9c24ed92e2a767996cbc78e550185d5d51ea28593876f3ed325d831ccd5b6d",
+      "fm": {
+        "title": "Matrix",
+        "description": "Matrix and array operations (19 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "matrix",
+          "array",
+          "transpose",
+          "diagonal",
+          "multiply",
+          "submatrix"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Array Processing Subsystem",
+          "ref": "simulink/Matrix Operations/Array Processing Subsystem",
+          "since": "R2024a+",
+          "intent": "Subsystem that processes each element of an array through the same logic — use for element-wise array algorithms."
+        },
+        {
+          "block": "Create Diagonal Matrix",
+          "ref": "simulink/Matrix Operations/Create Diagonal Matrix",
+          "since": "R2023a+",
+          "intent": "Build a diagonal matrix from a vector — use to place a vector on a matrix diagonal."
+        },
+        {
+          "block": "Cross Product",
+          "ref": "simulink/Matrix Operations/Cross Product",
+          "since": "R2023a+",
+          "intent": "Compute the cross product of two 3-element vectors — use for vector geometry and torque/moment calculations."
+        },
+        {
+          "block": "Expand Scalar",
+          "ref": "simulink/Matrix Operations/Expand Scalar",
+          "since": "R2024a+",
+          "intent": "Expand a scalar into an array of a given size — use to broadcast a scalar to matrix dimensions."
+        },
+        {
+          "block": "Extract Diagonal",
+          "ref": "simulink/Matrix Operations/Extract Diagonal",
+          "since": "R2023a+",
+          "intent": "Extract the main diagonal of a matrix as a vector — use to read diagonal elements."
+        },
+        {
+          "block": "Hermitian Transpose",
+          "ref": "simulink/Matrix Operations/Hermitian Transpose",
+          "since": "R2023a+",
+          "intent": "Compute the complex-conjugate transpose of a matrix — use in linear-algebra signal processing."
+        },
+        {
+          "block": "IdentityMatrix",
+          "ref": "simulink/Matrix Operations/IdentityMatrix",
+          "since": "R2023a+",
+          "intent": "Generate an identity matrix of a given size — use to initialize matrix computations."
+        },
+        {
+          "block": "IsHermitian",
+          "ref": "simulink/Matrix Operations/IsHermitian",
+          "since": "R2023a+",
+          "intent": "Test whether a matrix equals its conjugate transpose — use to check the Hermitian property."
+        },
+        {
+          "block": "IsSymmetric",
+          "ref": "simulink/Matrix Operations/IsSymmetric",
+          "since": "R2023a+",
+          "intent": "Test whether a matrix equals its transpose — use to check symmetry."
+        },
+        {
+          "block": "IsTriangular",
+          "ref": "simulink/Matrix Operations/IsTriangular",
+          "since": "R2023a+",
+          "intent": "Test whether a matrix is upper or lower triangular — use to check triangular structure."
+        },
+        {
+          "block": "Matrix Square",
+          "ref": "simulink/Matrix Operations/Matrix Square",
+          "since": "R2023a+",
+          "intent": "Compute the matrix square (A*A or A*A') — use for matrix power/Gram computations."
+        },
+        {
+          "block": "Matrix Multiply",
+          "ref": "simulink/Matrix Operations/Matrix Multiply",
+          "since": "R2023a+",
+          "intent": "Multiply matrices or matrix-vector products — use for linear transforms."
+        },
+        {
+          "block": "Neighborhood Processing Subsystem",
+          "ref": "simulink/Matrix Operations/Neighborhood Processing Subsystem",
+          "since": "R2023a+",
+          "intent": "Apply a subsystem over a sliding neighborhood of an array — use for windowed/stencil operations such as image filtering."
+        },
+        {
+          "block": "Permute Matrix",
+          "ref": "simulink/Matrix Operations/Permute Matrix",
+          "since": "R2023a+",
+          "intent": "Reorder the rows or columns of a matrix — use to rearrange matrix structure."
+        },
+        {
+          "block": "Pixel Processing Subsystem",
+          "ref": "simulink/Matrix Operations/Pixel Processing Subsystem",
+          "since": "R2024a+",
+          "intent": "Process an image pixel-by-pixel through a subsystem — use for streaming pixel-based algorithms."
+        },
+        {
+          "block": "Submatrix",
+          "ref": "simulink/Matrix Operations/Submatrix",
+          "since": "R2023a+",
+          "intent": "Extract a rectangular submatrix by row/column range — use to select a block of a matrix."
+        },
+        {
+          "block": "Transpose",
+          "ref": "simulink/Matrix Operations/Transpose",
+          "since": "R2023a+",
+          "intent": "Transpose a matrix signal — use to swap rows and columns."
+        },
+        {
+          "block": "Matrix Multiply",
+          "ref": "simulink/Quick Insert/Math Operations/Matrix Multiply",
+          "since": "R2023a+",
+          "intent": "Multiply matrices or matrix-vector products — use for linear transforms."
+        },
+        {
+          "block": "Transpose",
+          "ref": "simulink/Quick Insert/Math Operations/Transpose",
+          "since": "R2023a+",
+          "intent": "Transpose a matrix signal — use to swap rows and columns."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "messages-events",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "messages-events",
+      "hash": "b552f7680d60803bf8da14d3ec16a42750c24959c351842469674c98354e192c",
+      "fm": {
+        "title": "Messages events",
+        "description": "Message passing, queues, and event scheduling (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "message",
+          "queue",
+          "send",
+          "receive",
+          "event",
+          "hit crossing"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hit Crossing Probe",
+          "ref": "simulink/Messages & Events/Hit Crossing Probe",
+          "since": "R2023a+",
+          "intent": "Report when a signal crosses a value as an event/probe — use to observe zero/level crossings."
+        },
+        {
+          "block": "Hit Scheduler",
+          "ref": "simulink/Messages & Events/Hit Scheduler",
+          "since": "R2023a+",
+          "intent": "Schedule solver hits at specified times — use to force sample points for events."
+        },
+        {
+          "block": "Message Merge",
+          "ref": "simulink/Messages & Events/Message Merge",
+          "since": "R2023a+",
+          "intent": "Merge multiple message paths into one — use to combine message streams."
+        },
+        {
+          "block": "Queue",
+          "ref": "simulink/Messages & Events/Queue",
+          "since": "R2023a+",
+          "intent": "Buffer messages/entities in a FIFO (or priority) queue — use to model waiting lines or decouple producers/consumers."
+        },
+        {
+          "block": "Receive",
+          "ref": "simulink/Messages & Events/Receive",
+          "since": "R2023a+",
+          "intent": "Receive a message from a queue/message line — use to consume messages in event-driven models."
+        },
+        {
+          "block": "Send",
+          "ref": "simulink/Messages & Events/Send",
+          "since": "R2023a+",
+          "intent": "Send a message onto a message line — use to produce messages in event-driven models."
+        },
+        {
+          "block": "Sequence Viewer",
+          "ref": "simulink/Messages & Events/Sequence Viewer",
+          "since": "R2023a+",
+          "intent": "Visualize message/event and function-call activity over time — use to debug event sequencing."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "model-verification",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "model-verification",
+      "hash": "b21277229f2ab18fae14468a8c63ee27982944afac31e2baeb74fd78bf0ef0f6",
+      "fm": {
+        "title": "Model verification",
+        "description": "Runtime assertion blocks (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "assertion",
+          "verification",
+          "check"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Assertion",
+          "ref": "simulink/Model Verification/Assertion",
+          "since": "R2023a+",
+          "intent": "Check that an input is non-zero (true) during simulation and error/warn otherwise — use to verify runtime assumptions."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ports-subsystems",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "ports-subsystems",
+      "hash": "25cd9dacf0003298a809e667375bcb979d3e68ea6cc8b558c5d3de1c2c3c08ce",
+      "fm": {
+        "title": "Ports subsystems",
+        "description": "Ports, subsystems, and control-flow blocks (24 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "inport",
+          "outport",
+          "subsystem",
+          "enable",
+          "trigger",
+          "if",
+          "function-call",
+          "model"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "In1",
+          "ref": "simulink/Commonly\nUsed Blocks/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        },
+        {
+          "block": "Subsystem",
+          "ref": "simulink/Commonly\nUsed Blocks/Subsystem",
+          "since": "R2023a+",
+          "intent": "Group blocks into a hierarchical subsystem — use to encapsulate and reuse logic."
+        },
+        {
+          "block": "Out1",
+          "ref": "simulink/Commonly\nUsed Blocks/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "In1",
+          "ref": "simulink/Ports &\nSubsystems/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        },
+        {
+          "block": "In Bus Element",
+          "ref": "simulink/Ports &\nSubsystems/In Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem input port that selects a bus element — use for bus-based subsystem interfaces."
+        },
+        {
+          "block": "Function Element Call",
+          "ref": "simulink/Ports &\nSubsystems/Function Element Call",
+          "since": "R2023a+",
+          "intent": "Invoke a function element defined on a bus interface — use to call a server function."
+        },
+        {
+          "block": "Enable",
+          "ref": "simulink/Ports &\nSubsystems/Enable",
+          "since": "R2023a+",
+          "intent": "Enable-port block that makes a subsystem run only while its enable signal is true — use for conditional execution."
+        },
+        {
+          "block": "Trigger",
+          "ref": "simulink/Ports &\nSubsystems/Trigger",
+          "since": "R2023a+",
+          "intent": "Trigger-port block that makes a subsystem run on an edge or function call — use for event-driven execution."
+        },
+        {
+          "block": "Function-Call\nFeedback Latch",
+          "ref": "simulink/Ports &\nSubsystems/Function-Call\nFeedback Latch",
+          "since": "R2023a+",
+          "intent": "Latch a signal in a function-call feedback loop to break direct feedthrough — use to resolve function-call loop timing."
+        },
+        {
+          "block": "Function-Call\nGenerator",
+          "ref": "simulink/Ports &\nSubsystems/Function-Call\nGenerator",
+          "since": "R2023a+",
+          "intent": "Generate function-call events at a specified rate — use to invoke function-call subsystems programmatically."
+        },
+        {
+          "block": "Function-Call\nSplit",
+          "ref": "simulink/Ports &\nSubsystems/Function-Call\nSplit",
+          "since": "R2023a+",
+          "intent": "Split one function-call signal to invoke multiple subsystems in order — use to fan out a function call."
+        },
+        {
+          "block": "If",
+          "ref": "simulink/Ports &\nSubsystems/If",
+          "since": "R2023a+",
+          "intent": "Route execution to If-Action subsystems based on conditions — use for if/else control flow."
+        },
+        {
+          "block": "Model",
+          "ref": "simulink/Ports &\nSubsystems/Model",
+          "since": "R2023a+",
+          "intent": "Reference another Simulink model as a component — use for modular, reusable model composition."
+        },
+        {
+          "block": "Subsystem",
+          "ref": "simulink/Ports &\nSubsystems/Subsystem",
+          "since": "R2023a+",
+          "intent": "Group blocks into a hierarchical subsystem — use to encapsulate and reuse logic."
+        },
+        {
+          "block": "Switch Case",
+          "ref": "simulink/Ports &\nSubsystems/Switch Case",
+          "since": "R2023a+",
+          "intent": "Route execution to Case-Action subsystems based on an input value — use for switch/case control flow."
+        },
+        {
+          "block": "Unit System Configuration",
+          "ref": "simulink/Ports &\nSubsystems/Unit System Configuration",
+          "since": "R2023a+",
+          "intent": "Restrict a subsystem to an allowed unit system — use to enforce consistent physical units."
+        },
+        {
+          "block": "Out1",
+          "ref": "simulink/Ports &\nSubsystems/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "Out Bus Element",
+          "ref": "simulink/Ports &\nSubsystems/Out Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem output port that contributes a bus element — use for bus-based subsystem interfaces."
+        },
+        {
+          "block": "Function Element",
+          "ref": "simulink/Ports &\nSubsystems/Function Element",
+          "since": "R2023a+",
+          "intent": "Declare a function element on a bus interface — use to define client/server functions in a bus."
+        },
+        {
+          "block": "Out1",
+          "ref": "simulink/Sinks/Out1",
+          "since": "R2023a+",
+          "intent": "Outport that sends a signal out of a subsystem or model — use to define an output interface."
+        },
+        {
+          "block": "Out Bus Element",
+          "ref": "simulink/Sinks/Out Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem output port that contributes a bus element — use for bus-based subsystem interfaces."
+        },
+        {
+          "block": "In1",
+          "ref": "simulink/Sources/In1",
+          "since": "R2023a+",
+          "intent": "Inport that brings a signal into a subsystem or model — use to define an input interface."
+        },
+        {
+          "block": "In Bus Element",
+          "ref": "simulink/Sources/In Bus Element",
+          "since": "R2023a+",
+          "intent": "Subsystem input port that selects a bus element — use for bus-based subsystem interfaces."
+        },
+        {
+          "block": "S-Function Examples",
+          "ref": "simulink/User-Defined Functions/S-Function Examples",
+          "since": "R2023a+",
+          "intent": "These are examples of how to use the different types of S-Functions."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-attributes",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "signal-attributes",
+      "hash": "3ea45290609e257e8c043b0df7121fdfac771490937a7cf62ad32918c7494ae8",
+      "fm": {
+        "title": "Signal attributes",
+        "description": "Data type, rate, unit, and attribute handling (31 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "data type",
+          "rate transition",
+          "unit",
+          "signal",
+          "probe",
+          "cast"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Data Type Conversion",
+          "ref": "simulink/Commonly\nUsed Blocks/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set integer/fixed-point type and scaling."
+        },
+        {
+          "block": "Check  Dynamic Range",
+          "ref": "simulink/Model Verification/Check  Dynamic Range",
+          "since": "R2023a+",
+          "intent": "Assert that one signal always lies between two other signals. The first input is the upper-bound signal; the second input, the lower-bound; the third input, the test signal."
+        },
+        {
+          "block": "Check Dynamic  Lower Bound",
+          "ref": "simulink/Model Verification/Check Dynamic  Lower Bound",
+          "since": "R2023a+",
+          "intent": "Assert that one signal is always less than another signal. The first input is the lower-bound signal. The second input is the test signal."
+        },
+        {
+          "block": "Check Dynamic  Upper Bound",
+          "ref": "simulink/Model Verification/Check Dynamic  Upper Bound",
+          "since": "R2023a+",
+          "intent": "Assert that one signal is always greater than another signal. The first input is the upper-bound signal. The second input is the test signal."
+        },
+        {
+          "block": "Cast",
+          "ref": "simulink/Quick Insert/Signal Attributes/Cast",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set type and scaling explicitly."
+        },
+        {
+          "block": "Cast To Boolean",
+          "ref": "simulink/Quick Insert/Signal Attributes/Cast To Boolean",
+          "since": "R2023a+",
+          "intent": "Convert the input to the boolean data type — use to force a logical-typed signal."
+        },
+        {
+          "block": "Cast To Double",
+          "ref": "simulink/Quick Insert/Signal Attributes/Cast To Double",
+          "since": "R2023a+",
+          "intent": "Convert the input to the double data type — use to promote a signal to double precision."
+        },
+        {
+          "block": "Cast To Single",
+          "ref": "simulink/Quick Insert/Signal Attributes/Cast To Single",
+          "since": "R2023a+",
+          "intent": "Convert the input to the single data type — use to reduce a signal to single precision."
+        },
+        {
+          "block": "Probe Complexity",
+          "ref": "simulink/Quick Insert/Signal Attributes/Probe Complexity",
+          "since": "R2023a+",
+          "intent": "Report whether a signal is real or complex at runtime — use to inspect signal complexity."
+        },
+        {
+          "block": "Probe Dimension",
+          "ref": "simulink/Quick Insert/Signal Attributes/Probe Dimension",
+          "since": "R2023a+",
+          "intent": "Report the dimensions of a signal at runtime — use to inspect signal size."
+        },
+        {
+          "block": "Probe Sample Time",
+          "ref": "simulink/Quick Insert/Signal Attributes/Probe Sample Time",
+          "since": "R2023a+",
+          "intent": "Report the sample time of a signal at runtime — use to inspect signal rate."
+        },
+        {
+          "block": "Probe Width",
+          "ref": "simulink/Quick Insert/Signal Attributes/Probe Width",
+          "since": "R2023a+",
+          "intent": "Report the width (number of elements) of a signal at runtime — use to inspect signal width."
+        },
+        {
+          "block": "Signal Copy",
+          "ref": "simulink/Quick Insert/Signal Attributes/Signal Copy",
+          "since": "R2023a+",
+          "intent": "Pass a signal through as an explicit copy — use to force a distinct signal buffer/attributes."
+        },
+        {
+          "block": "To Nonvirtual Bus",
+          "ref": "simulink/Quick Insert/Signal Attributes/To Nonvirtual Bus",
+          "since": "R2023a+",
+          "intent": "Convert a virtual bus to a nonvirtual bus — use when a contiguous bus structure is required."
+        },
+        {
+          "block": "To Virtual Bus",
+          "ref": "simulink/Quick Insert/Signal Attributes/To Virtual Bus",
+          "since": "R2023a+",
+          "intent": "Convert a nonvirtual bus to a virtual bus — use to reduce a bus to a routing-only grouping."
+        },
+        {
+          "block": "Bus to Vector",
+          "ref": "simulink/Signal Attributes/Bus to Vector",
+          "since": "R2023a+",
+          "intent": "Convert a bus of scalars into a single vector — use when downstream blocks need a vector instead of a bus."
+        },
+        {
+          "block": "Data Type Conversion Inherited",
+          "ref": "simulink/Signal Attributes/Data Type Conversion Inherited",
+          "since": "R2023a+",
+          "intent": "Convert a signal to the data type inherited from a reference input — use to match another signal's type."
+        },
+        {
+          "block": "Data Type Duplicate",
+          "ref": "simulink/Signal Attributes/Data Type Duplicate",
+          "since": "R2023a+",
+          "intent": "Force connected signals to share the same data type — use to enforce type consistency."
+        },
+        {
+          "block": "Data Type Propagation",
+          "ref": "simulink/Signal Attributes/Data Type Propagation",
+          "since": "R2023a+",
+          "intent": "Propagate a reference signal's data type to another — use to drive types from a template signal."
+        },
+        {
+          "block": "Data Type Scaling Strip",
+          "ref": "simulink/Signal Attributes/Data Type Scaling Strip",
+          "since": "R2023a+",
+          "intent": "Remove fixed-point scaling, keeping the stored integer — use to strip scaling for raw-value processing."
+        },
+        {
+          "block": "Data Type Conversion",
+          "ref": "simulink/Signal Attributes/Data Type Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set integer/fixed-point type and scaling."
+        },
+        {
+          "block": "IC",
+          "ref": "simulink/Signal Attributes/IC",
+          "since": "R2023a+",
+          "intent": "Set the initial condition of a signal for the first time step — use to seed a signal's starting value."
+        },
+        {
+          "block": "Probe",
+          "ref": "simulink/Signal Attributes/Probe",
+          "since": "R2023a+",
+          "intent": "Report signal attributes such as width, sample time, and complexity at runtime — use to inspect signal properties."
+        },
+        {
+          "block": "Rate Transition",
+          "ref": "simulink/Signal Attributes/Rate Transition",
+          "since": "R2023a+",
+          "intent": "Transfer data safely between blocks running at different sample rates — use to handle multirate boundaries."
+        },
+        {
+          "block": "Signal Conversion",
+          "ref": "simulink/Signal Attributes/Signal Conversion",
+          "since": "R2023a+",
+          "intent": "Convert signal storage (contiguous copy, virtual/nonvirtual bus) — use to satisfy downstream signal requirements."
+        },
+        {
+          "block": "Signal Specification",
+          "ref": "simulink/Signal Attributes/Signal Specification",
+          "since": "R2023a+",
+          "intent": "Assert or specify a signal's attributes (dimensions, type, sample time) — use to enforce an interface contract."
+        },
+        {
+          "block": "Unit Conversion",
+          "ref": "simulink/Signal Attributes/Unit Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal between physical units — use to reconcile unit mismatches between components."
+        },
+        {
+          "block": "Weighted Sample Time",
+          "ref": "simulink/Signal Attributes/Weighted Sample Time",
+          "since": "R2023a+",
+          "intent": "Output the sample time scaled by a weight — use in discretization math that needs Ts."
+        },
+        {
+          "block": "Width",
+          "ref": "simulink/Signal Attributes/Width",
+          "since": "R2023a+",
+          "intent": "Output the width (number of elements) of the input signal — use to read signal size at runtime."
+        },
+        {
+          "block": "Data Type Propagation Examples",
+          "ref": "simulink/Signal Attributes/Data Type Propagation Examples",
+          "since": "R2023a+",
+          "intent": "Opens a model containing data type propagation examples."
+        },
+        {
+          "block": "Ramp",
+          "ref": "simulink/Sources/Ramp",
+          "since": "R2023a+",
+          "intent": "Output a ramp signal starting at the specified time."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-routing",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "signal-routing",
+      "hash": "f02d7525368abe36637cebb32fc9b49cf5198662163f017adbe46d22d56fe16b",
+      "fm": {
+        "title": "Signal routing",
+        "description": "Buses, switches, data stores, and variants (33 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "bus",
+          "mux",
+          "goto",
+          "from",
+          "data store",
+          "variant",
+          "switch",
+          "selector"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Bus\nCreator",
+          "ref": "simulink/Commonly\nUsed Blocks/Bus\nCreator",
+          "since": "R2023a+",
+          "intent": "Combine multiple signals into a bus — use to bundle related signals for routing."
+        },
+        {
+          "block": "Bus\nSelector",
+          "ref": "simulink/Commonly\nUsed Blocks/Bus\nSelector",
+          "since": "R2023a+",
+          "intent": "Extract selected signals from a bus — use to access individual bus members."
+        },
+        {
+          "block": "Demux",
+          "ref": "simulink/Commonly\nUsed Blocks/Demux",
+          "since": "R2023a+",
+          "intent": "Split a vector signal into separate scalar or subvector outputs — use to break out combined signals."
+        },
+        {
+          "block": "Mux",
+          "ref": "simulink/Commonly\nUsed Blocks/Mux",
+          "since": "R2023a+",
+          "intent": "Combine separate signals into a single vector — use to bundle signals for compact routing."
+        },
+        {
+          "block": "Switch",
+          "ref": "simulink/Commonly\nUsed Blocks/Switch",
+          "since": "R2023a+",
+          "intent": "Pass one of two inputs based on a control condition — use for conditional signal selection."
+        },
+        {
+          "block": "Bus Element In",
+          "ref": "simulink/Signal\nRouting/Bus Element In",
+          "since": "R2023a+",
+          "intent": "Inport that receives a selected element of a bus at a subsystem boundary — use for cleaner bus-based interfaces."
+        },
+        {
+          "block": "Bus\nAssignment",
+          "ref": "simulink/Signal\nRouting/Bus\nAssignment",
+          "since": "R2023a+",
+          "intent": "Replace selected elements of a bus with new signals — use to update specific bus members."
+        },
+        {
+          "block": "Bus\nCreator",
+          "ref": "simulink/Signal\nRouting/Bus\nCreator",
+          "since": "R2023a+",
+          "intent": "Combine multiple signals into a bus — use to bundle related signals for routing."
+        },
+        {
+          "block": "Bus\nSelector",
+          "ref": "simulink/Signal\nRouting/Bus\nSelector",
+          "since": "R2023a+",
+          "intent": "Extract selected signals from a bus — use to access individual bus members."
+        },
+        {
+          "block": "Data Store\nMemory",
+          "ref": "simulink/Signal\nRouting/Data Store\nMemory",
+          "since": "R2023a+",
+          "intent": "Define a named data store shared across the model — use for global-like state accessed by Read/Write blocks."
+        },
+        {
+          "block": "Data Store\nRead",
+          "ref": "simulink/Signal\nRouting/Data Store\nRead",
+          "since": "R2023a+",
+          "intent": "Read the value of a named data store — use to access shared model state."
+        },
+        {
+          "block": "Data Store\nWrite",
+          "ref": "simulink/Signal\nRouting/Data Store\nWrite",
+          "since": "R2023a+",
+          "intent": "Write a value to a named data store — use to update shared model state."
+        },
+        {
+          "block": "Demux",
+          "ref": "simulink/Signal\nRouting/Demux",
+          "since": "R2023a+",
+          "intent": "Split a vector signal into separate scalar or subvector outputs — use to break out combined signals."
+        },
+        {
+          "block": "From",
+          "ref": "simulink/Signal\nRouting/From",
+          "since": "R2023a+",
+          "intent": "Receive a signal by tag from a matching Goto — use for wireless signal routing."
+        },
+        {
+          "block": "Goto",
+          "ref": "simulink/Signal\nRouting/Goto",
+          "since": "R2023a+",
+          "intent": "Send a signal by tag to matching From blocks — use for wireless routing to reduce line clutter."
+        },
+        {
+          "block": "Goto Tag\nVisibility",
+          "ref": "simulink/Signal\nRouting/Goto Tag\nVisibility",
+          "since": "R2023a+",
+          "intent": "Define the visibility scope of a Goto tag — use to control where a tagged signal is accessible."
+        },
+        {
+          "block": "Index\nVector",
+          "ref": "simulink/Signal\nRouting/Index\nVector",
+          "since": "R2023a+",
+          "intent": "Select one of several inputs using an index signal — use as a data-driven selector."
+        },
+        {
+          "block": "Manual Switch",
+          "ref": "simulink/Signal\nRouting/Manual Switch",
+          "since": "R2023a+",
+          "intent": "Toggle between two inputs by clicking during simulation — use for interactive signal selection."
+        },
+        {
+          "block": "Merge",
+          "ref": "simulink/Signal\nRouting/Merge",
+          "since": "R2023a+",
+          "intent": "Combine multiple conditionally-executed inputs into one output — use to merge outputs of enabled subsystems."
+        },
+        {
+          "block": "Multiport\nSwitch",
+          "ref": "simulink/Signal\nRouting/Multiport\nSwitch",
+          "since": "R2023a+",
+          "intent": "Select one of several data inputs using a control index — use for index-driven routing."
+        },
+        {
+          "block": "Mux",
+          "ref": "simulink/Signal\nRouting/Mux",
+          "since": "R2023a+",
+          "intent": "Combine separate signals into a single vector — use to bundle signals for compact routing."
+        },
+        {
+          "block": "Parameter Writer",
+          "ref": "simulink/Signal\nRouting/Parameter Writer",
+          "since": "R2023a+",
+          "intent": "Write a value to a block parameter at runtime — use to change parameters programmatically during simulation."
+        },
+        {
+          "block": "Selector",
+          "ref": "simulink/Signal\nRouting/Selector",
+          "since": "R2023a+",
+          "intent": "Select a subset of elements from a signal by index — use to extract specific channels or samples."
+        },
+        {
+          "block": "State Reader",
+          "ref": "simulink/Signal\nRouting/State Reader",
+          "since": "R2023a+",
+          "intent": "Read the internal state of another block at runtime — use to observe or reuse block state."
+        },
+        {
+          "block": "State Writer",
+          "ref": "simulink/Signal\nRouting/State Writer",
+          "since": "R2023a+",
+          "intent": "Write the internal state of another block at runtime — use to reset or set block state."
+        },
+        {
+          "block": "Switch",
+          "ref": "simulink/Signal\nRouting/Switch",
+          "since": "R2023a+",
+          "intent": "Pass one of two inputs based on a control condition — use for conditional signal selection."
+        },
+        {
+          "block": "Two-Way\nConnection",
+          "ref": "simulink/Signal\nRouting/Two-Way\nConnection",
+          "since": "R2023a+",
+          "intent": "Establish a bidirectional connection between components — use for two-way signal/data exchange."
+        },
+        {
+          "block": "Variant End",
+          "ref": "simulink/Signal\nRouting/Variant End",
+          "since": "R2024a+",
+          "intent": "Mark the end of a variant region in the diagram — use to close a Variant Start region."
+        },
+        {
+          "block": "Variant Sink",
+          "ref": "simulink/Signal\nRouting/Variant Sink",
+          "since": "R2023a+",
+          "intent": "Select among alternative downstream paths based on variant conditions — use to switch outputs by variant."
+        },
+        {
+          "block": "Variant Source",
+          "ref": "simulink/Signal\nRouting/Variant Source",
+          "since": "R2023a+",
+          "intent": "Select among alternative upstream sources based on variant conditions — use to switch inputs by variant."
+        },
+        {
+          "block": "Variant Start",
+          "ref": "simulink/Signal\nRouting/Variant Start",
+          "since": "R2024a+",
+          "intent": "Mark the start of a variant region in the diagram — use to bound a set of variant choices."
+        },
+        {
+          "block": "Connection Port",
+          "ref": "simulink/Signal\nRouting/Connection Port",
+          "since": "R2023a+",
+          "intent": "Physical (Simscape) connection port on a subsystem boundary — use to expose a physical connection."
+        },
+        {
+          "block": "Bus Element Out",
+          "ref": "simulink/Signal\nRouting/Bus Element Out",
+          "since": "R2023a+",
+          "intent": "Outport that contributes a signal to a bus at a subsystem boundary — use for cleaner bus-based interfaces."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sinks",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "sinks",
+      "hash": "a232698932fbbc8586f99d37e9174c9b087899c7ddc62ba898fbdfe8799e11ab",
+      "fm": {
+        "title": "Sinks",
+        "description": "Scopes, logging, and simulation control (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "scope",
+          "to file",
+          "to workspace",
+          "record",
+          "stop",
+          "xy graph"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Scope",
+          "ref": "simulink/Commonly\nUsed Blocks/Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals against time during simulation — use to view waveforms."
+        },
+        {
+          "block": "Terminator",
+          "ref": "simulink/Commonly\nUsed Blocks/Terminator",
+          "since": "R2023a+",
+          "intent": "Cap an unused output port to avoid warnings — use to terminate signals you don't need."
+        },
+        {
+          "block": "Floating\nScope",
+          "ref": "simulink/Sinks/Floating\nScope",
+          "since": "R2023a+",
+          "intent": "Scope that displays whichever signals you attach without wired connections — use for flexible signal viewing."
+        },
+        {
+          "block": "Record",
+          "ref": "simulink/Sinks/Record",
+          "since": "R2023a+",
+          "intent": "Log signals to the Simulation Data Inspector and/or workspace — use to record data for review and comparison."
+        },
+        {
+          "block": "Scope",
+          "ref": "simulink/Sinks/Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals against time during simulation — use to view waveforms."
+        },
+        {
+          "block": "Stop Simulation",
+          "ref": "simulink/Sinks/Stop Simulation",
+          "since": "R2023a+",
+          "intent": "Stop the simulation when its input is non-zero — use to end a run on a condition."
+        },
+        {
+          "block": "Terminator",
+          "ref": "simulink/Sinks/Terminator",
+          "since": "R2023a+",
+          "intent": "Cap an unused output port to avoid warnings — use to terminate signals you don't need."
+        },
+        {
+          "block": "To File",
+          "ref": "simulink/Sinks/To File",
+          "since": "R2023a+",
+          "intent": "Log a signal to a MAT-file during simulation — use to record data to disk."
+        },
+        {
+          "block": "To Workspace",
+          "ref": "simulink/Sinks/To Workspace",
+          "since": "R2023a+",
+          "intent": "Log a signal to a MATLAB workspace variable — use to capture results for post-processing."
+        },
+        {
+          "block": "XY Graph",
+          "ref": "simulink/Sinks/XY Graph",
+          "since": "R2023a+",
+          "intent": "Plot one signal against another (X-Y) during simulation — use to view trajectories or phase plots."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "sources",
+      "hash": "d0e90eb918c1d2eeb937ea6b47069496d07aeb07081961655bc2ab4be9689140",
+      "fm": {
+        "title": "Sources",
+        "description": "Signal generators, clocks, and constant sources (29 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "source",
+          "constant",
+          "sine",
+          "pulse",
+          "clock",
+          "random",
+          "step",
+          "from file"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Constant",
+          "ref": "simulink/Commonly\nUsed Blocks/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters, thresholds, or test inputs."
+        },
+        {
+          "block": "Ground",
+          "ref": "simulink/Commonly\nUsed Blocks/Ground",
+          "since": "R2023a+",
+          "intent": "Terminate an unconnected input with a zero value — use to ground unused inputs cleanly."
+        },
+        {
+          "block": "Continuous Pulse Generator",
+          "ref": "simulink/Quick Insert/Sources/Continuous Pulse Generator",
+          "since": "R2023a+",
+          "intent": "Generate a periodic pulse train in continuous time — use as a continuous-time pulse stimulus."
+        },
+        {
+          "block": "Discrete Pulse Generator",
+          "ref": "simulink/Quick Insert/Sources/Discrete Pulse Generator",
+          "since": "R2023a+",
+          "intent": "Generate a periodic pulse train at a sample rate — use as a discrete pulse stimulus."
+        },
+        {
+          "block": "Eulers Number",
+          "ref": "simulink/Quick Insert/Sources/Eulers Number",
+          "since": "R2023a+",
+          "intent": "Output the constant e (Euler's number) — use as a math constant source."
+        },
+        {
+          "block": "Inf",
+          "ref": "simulink/Quick Insert/Sources/Inf",
+          "since": "R2023a+",
+          "intent": "Output positive infinity — use as an unbounded limit constant."
+        },
+        {
+          "block": "NaN",
+          "ref": "simulink/Quick Insert/Sources/NaN",
+          "since": "R2023a+",
+          "intent": "Output NaN (not-a-number) — use to represent an undefined/invalid constant."
+        },
+        {
+          "block": "Negative Inf",
+          "ref": "simulink/Quick Insert/Sources/Negative Inf",
+          "since": "R2023a+",
+          "intent": "Output negative infinity — use as an unbounded lower-limit constant."
+        },
+        {
+          "block": "One",
+          "ref": "simulink/Quick Insert/Sources/One",
+          "since": "R2023a+",
+          "intent": "Output the constant 1 — use as a unit constant source."
+        },
+        {
+          "block": "Pi",
+          "ref": "simulink/Quick Insert/Sources/Pi",
+          "since": "R2023a+",
+          "intent": "Output the constant pi — use as a math constant source."
+        },
+        {
+          "block": "Sawtooth Generator",
+          "ref": "simulink/Quick Insert/Sources/Sawtooth Generator",
+          "since": "R2023a+",
+          "intent": "Generate a sawtooth waveform — use as a ramp/sweep stimulus."
+        },
+        {
+          "block": "Square Wave Generator",
+          "ref": "simulink/Quick Insert/Sources/Square Wave Generator",
+          "since": "R2023a+",
+          "intent": "Generate a square waveform — use as a square-wave stimulus."
+        },
+        {
+          "block": "Zero",
+          "ref": "simulink/Quick Insert/Sources/Zero",
+          "since": "R2023a+",
+          "intent": "Output the constant 0 — use as a zero constant source."
+        },
+        {
+          "block": "Clock",
+          "ref": "simulink/Sources/Clock",
+          "since": "R2023a+",
+          "intent": "Output the current continuous simulation time — use to drive time-dependent behavior."
+        },
+        {
+          "block": "Constant",
+          "ref": "simulink/Sources/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters, thresholds, or test inputs."
+        },
+        {
+          "block": "Digital Clock",
+          "ref": "simulink/Sources/Digital Clock",
+          "since": "R2023a+",
+          "intent": "Output the simulation time sampled at a fixed rate — use as a discrete time source."
+        },
+        {
+          "block": "Enumerated\nConstant",
+          "ref": "simulink/Sources/Enumerated\nConstant",
+          "since": "R2023a+",
+          "intent": "Output a constant enumerated value — use to emit a fixed enum literal."
+        },
+        {
+          "block": "From\nWorkspace",
+          "ref": "simulink/Sources/From\nWorkspace",
+          "since": "R2023a+",
+          "intent": "Read time-series data from a workspace variable as a source — use to replay recorded/base-workspace data."
+        },
+        {
+          "block": "From File",
+          "ref": "simulink/Sources/From File",
+          "since": "R2023a+",
+          "intent": "Read time-series data from a MAT-file as a source — use to replay logged data from disk."
+        },
+        {
+          "block": "From Spreadsheet",
+          "ref": "simulink/Sources/From Spreadsheet",
+          "since": "R2023a+",
+          "intent": "Read signal data from a spreadsheet file as a source — use to feed tabular data into a model."
+        },
+        {
+          "block": "Ground",
+          "ref": "simulink/Sources/Ground",
+          "since": "R2023a+",
+          "intent": "Terminate an unconnected input with a zero value — use to ground unused inputs cleanly."
+        },
+        {
+          "block": "Playback",
+          "ref": "simulink/Sources/Playback",
+          "since": "R2023a+",
+          "intent": "Play back recorded data (e.g., from the Simulation Data Inspector) as a source — use to replay captured signals."
+        },
+        {
+          "block": "Pulse\nGenerator",
+          "ref": "simulink/Sources/Pulse\nGenerator",
+          "since": "R2023a+",
+          "intent": "Generate a periodic pulse train — use as a clock, trigger, or on/off stimulus."
+        },
+        {
+          "block": "Random\nNumber",
+          "ref": "simulink/Sources/Random\nNumber",
+          "since": "R2023a+",
+          "intent": "Generate normally-distributed random numbers — use as Gaussian noise or a random stimulus."
+        },
+        {
+          "block": "Signal\nGenerator",
+          "ref": "simulink/Sources/Signal\nGenerator",
+          "since": "R2023a+",
+          "intent": "Generate a selectable waveform (sine, square, sawtooth, random) — use as an adjustable test stimulus."
+        },
+        {
+          "block": "Sine Wave",
+          "ref": "simulink/Sources/Sine Wave",
+          "since": "R2023a+",
+          "intent": "Generate a sine waveform with set amplitude, frequency, and phase — use as a periodic test stimulus."
+        },
+        {
+          "block": "Step",
+          "ref": "simulink/Sources/Step",
+          "since": "R2023a+",
+          "intent": "Generate a step change at a specified time — use to test step response."
+        },
+        {
+          "block": "Uniform Random\nNumber",
+          "ref": "simulink/Sources/Uniform Random\nNumber",
+          "since": "R2023a+",
+          "intent": "Generate uniformly-distributed random numbers — use as uniform noise or a random stimulus."
+        },
+        {
+          "block": "Waveform\nGenerator",
+          "ref": "simulink/Sources/Waveform\nGenerator",
+          "since": "R2023a+",
+          "intent": "Generate arbitrary waveforms from equations/keywords — use for flexible custom test signals."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "string",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "string",
+      "hash": "5816cde49f9c156ce52b2414f31ed5ed87142e74e53aea58667394a50dca8fee",
+      "fm": {
+        "title": "String",
+        "description": "String creation, parsing, and conversion (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "string",
+          "ascii",
+          "compose",
+          "scan",
+          "substring",
+          "convert"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ASCII to String",
+          "ref": "simulink/String/ASCII to String",
+          "since": "R2023a+",
+          "intent": "Convert a vector of ASCII codes into a string — use to build strings from byte/char codes."
+        },
+        {
+          "block": "Compose String",
+          "ref": "simulink/String/Compose String",
+          "since": "R2023a+",
+          "intent": "Build a formatted string from inputs using a format spec — use to assemble text with embedded values."
+        },
+        {
+          "block": "Scan String",
+          "ref": "simulink/String/Scan String",
+          "since": "R2023a+",
+          "intent": "Parse values from a string using a format spec — use to extract numbers/fields from text."
+        },
+        {
+          "block": "String Compare",
+          "ref": "simulink/String/String Compare",
+          "since": "R2023a+",
+          "intent": "Compare two strings for equality/ordering — use for text matching."
+        },
+        {
+          "block": "String Concatenate",
+          "ref": "simulink/String/String Concatenate",
+          "since": "R2023a+",
+          "intent": "Join multiple strings into one — use to build combined text."
+        },
+        {
+          "block": "String Constant",
+          "ref": "simulink/String/String Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant string value — use as a fixed text source."
+        },
+        {
+          "block": "String Contains",
+          "ref": "simulink/String/String Contains",
+          "since": "R2023a+",
+          "intent": "Test whether a string contains a substring — use for text search."
+        },
+        {
+          "block": "String Count",
+          "ref": "simulink/String/String Count",
+          "since": "R2023a+",
+          "intent": "Count occurrences of a pattern within a string — use to tally substring matches."
+        },
+        {
+          "block": "String Ends With",
+          "ref": "simulink/String/String Ends With",
+          "since": "R2023a+",
+          "intent": "Test whether a string ends with a given suffix — use for text matching."
+        },
+        {
+          "block": "String Find",
+          "ref": "simulink/String/String Find",
+          "since": "R2023a+",
+          "intent": "Find the position of a substring within a string — use to locate text."
+        },
+        {
+          "block": "String Length",
+          "ref": "simulink/String/String Length",
+          "since": "R2023a+",
+          "intent": "Output the number of characters in a string — use to measure text length."
+        },
+        {
+          "block": "String Starts With",
+          "ref": "simulink/String/String Starts With",
+          "since": "R2023a+",
+          "intent": "Test whether a string starts with a given prefix — use for text matching."
+        },
+        {
+          "block": "String to ASCII",
+          "ref": "simulink/String/String to ASCII",
+          "since": "R2023a+",
+          "intent": "Convert a string into a vector of ASCII codes — use to get byte/char codes from text."
+        },
+        {
+          "block": "String to Double",
+          "ref": "simulink/String/String to Double",
+          "since": "R2023a+",
+          "intent": "Convert a numeric string to a double — use to parse text into a double value."
+        },
+        {
+          "block": "String to Enum",
+          "ref": "simulink/String/String to Enum",
+          "since": "R2023a+",
+          "intent": "Convert a string to an enumerated value — use to map text to an enum."
+        },
+        {
+          "block": "String to Single",
+          "ref": "simulink/String/String to Single",
+          "since": "R2023a+",
+          "intent": "Convert a numeric string to a single — use to parse text into a single value."
+        },
+        {
+          "block": "Substring",
+          "ref": "simulink/String/Substring",
+          "since": "R2023a+",
+          "intent": "Extract a substring by position and length — use to slice part of a string."
+        },
+        {
+          "block": "To String",
+          "ref": "simulink/String/To String",
+          "since": "R2023a+",
+          "intent": "Convert a numeric or other value into a string — use to produce text from data."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "user-defined",
+      "kind": "toolbox",
+      "library": "Simulink",
+      "kbFolder": "simulink",
+      "category": "user-defined",
+      "hash": "035005248f711ec62ce64be95840012906109e16fa6dfccdd54a8de9df3b4b06",
+      "fm": {
+        "title": "User defined",
+        "description": "Custom MATLAB, C, Python, and S-function blocks (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink",
+          "matlab function",
+          "c caller",
+          "s-function",
+          "python",
+          "custom"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "C Caller",
+          "ref": "simulink/User-Defined Functions/C Caller",
+          "since": "R2023a+",
+          "intent": "Call external C code (functions) from the model — use to integrate existing C algorithms."
+        },
+        {
+          "block": "C Function",
+          "ref": "simulink/User-Defined Functions/C Function",
+          "since": "R2023a+",
+          "intent": "Author and call inline C code within a block — use for custom C logic in the model."
+        },
+        {
+          "block": "Fcn",
+          "ref": "simulink/User-Defined Functions/Fcn",
+          "since": "R2023a+",
+          "intent": "Evaluate a scalar arithmetic/logical expression of the input — use for simple inline math formulas."
+        },
+        {
+          "block": "Function Caller",
+          "ref": "simulink/User-Defined Functions/Function Caller",
+          "since": "R2023a+",
+          "intent": "Call a Simulink Function defined elsewhere — use to invoke shared function definitions."
+        },
+        {
+          "block": "Interpreted MATLAB Function",
+          "ref": "simulink/User-Defined Functions/Interpreted MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Apply an interpreted MATLAB function to the input — use for quick MATLAB math (not for code generation)."
+        },
+        {
+          "block": "Level-2 MATLAB S-Function",
+          "ref": "simulink/User-Defined Functions/Level-2 MATLAB S-Function",
+          "since": "R2023a+",
+          "intent": "Implement a custom block using a Level-2 MATLAB S-function API — use for advanced custom block behavior in MATLAB."
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "simulink/User-Defined Functions/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Run custom MATLAB code as a block — use for algorithms not easily built from blocks."
+        },
+        {
+          "block": "MATLAB System",
+          "ref": "simulink/User-Defined Functions/MATLAB System",
+          "since": "R2023a+",
+          "intent": "Deploy a System object as a block — use to reuse object-based algorithms in a model."
+        },
+        {
+          "block": "Python Code",
+          "ref": "simulink/User-Defined Functions/Python Code",
+          "since": "R2025a+",
+          "intent": "Run Python code within the model — use to integrate Python algorithms."
+        },
+        {
+          "block": "S-Function",
+          "ref": "simulink/User-Defined Functions/S-Function",
+          "since": "R2023a+",
+          "intent": "Incorporate a compiled C/C++ or MATLAB S-function as a block — use to add custom or legacy code to the model."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:29",
+  "generatedAtDatenum": 740309.99547468754
 }

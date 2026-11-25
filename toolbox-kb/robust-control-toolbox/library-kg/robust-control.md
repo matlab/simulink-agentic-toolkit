@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Robust control
-description: Uncertain system modeling and robust control visualization
-tags: [uncertain, robust, state space, multiplot, parametric]
+description: Uncertain system modeling and robust control visualization (2 blocks)
+tags: [toolbox-kb, robust-control-toolbox, uncertain, robust, state space, multiplot, parametric]
 status: stable
-source: mathworks_toolbox
-library_root: Robust Control Toolbox
-category_path: Robust control
+sources:
+  - resource: matlab:RCTblocks
+source: toolbox_kb
+managed_by: satk
+library: Robust Control Toolbox
+kb_folder: robust-control-toolbox
+category: robust-control
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Robust control
-
-Use these blocks for robust control.
 
 ## Recommended Blocks
 

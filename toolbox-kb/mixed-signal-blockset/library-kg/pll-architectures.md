@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pll architectures
-description: Complete PLL architecture models
-tags: [fractional, integer, baseband, pll]
+description: Complete PLL architecture models (5 blocks)
+tags: [toolbox-kb, mixed-signal-blockset, fractional, integer, baseband, pll]
 status: stable
-source: mathworks_toolbox
-library_root: Mixed-Signal Blockset
-category_path: Pll architectures
+sources:
+  - resource: matlab:msbPllArchitectures
+source: toolbox_kb
+managed_by: satk
+library: Mixed-Signal Blockset
+kb_folder: mixed-signal-blockset
+category: pll-architectures
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Pll architectures
-
-Use these blocks for pll architectures.
 
 ## Recommended Blocks
 

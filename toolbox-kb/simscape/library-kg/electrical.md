@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Electrical
-description: Electrical-domain sources, sensors, elements, and references
-tags: [electrical]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Electrical
+description: "Electrical-domain sources, sensors, elements, and references (31 blocks)"
+tags: [toolbox-kb, simscape, electrical]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: electrical
 block_count: 31
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Electrical
-
-Use these blocks for electrical.
 
 ## Recommended Blocks
 

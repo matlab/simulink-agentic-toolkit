@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Satellite modulation
-description: DVB-S satellite communication modulation and demodulation
-tags: [dvbs, apsk, satellite, modulator, demodulator]
+description: DVB-S satellite communication modulation and demodulation (2 blocks)
+tags: [toolbox-kb, satellite-communications-toolbox, dvbs, apsk, satellite, modulator, demodulator]
 status: stable
-source: mathworks_toolbox
-library_root: Satellite Communications Toolbox
-category_path: Satellite modulation
+sources:
+  - resource: matlab:satcomdigbbnd
+source: toolbox_kb
+managed_by: satk
+library: Satellite Communications Toolbox
+kb_folder: satellite-communications-toolbox
+category: satellite-modulation
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Satellite modulation
-
-Use these blocks for satellite modulation.
 
 ## Recommended Blocks
 

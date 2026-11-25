@@ -1,15 +1,931 @@
 {
-  "generatedAt": "2026-08-19T17:52:13",
-  "generatedAtDatenum": 740213.74459795142,
-  "generatorVersion": 4,
-  "libraries": [
-    "SoC Blockset"
-  ],
-  "blockCount": 112,
-  "categoryCount": 10,
-  "libraryFingerprints": {
-    "SoC_Blockset": {
-      "blockCount": 112
+  "pages": [
+    {
+      "id": "board-io",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "board-io",
+      "hash": "674c13991d2dc75f0a0873a270fd75fa3a8ce3601a692d32191cc1cf7e518852",
+      "fm": {
+        "title": "Board io",
+        "description": "Physical board I/O blocks for switches, buttons, LEDs, and GPIO pins (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "DIP",
+          "switch",
+          "LED",
+          "button",
+          "GPIO",
+          "pin"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DIP Switch",
+          "ref": "hwlogiciolib/DIP Switch",
+          "since": "R2023a+",
+          "intent": "Read DIP switch positions from the development board for configuration input"
+        },
+        {
+          "block": "IO Pin",
+          "ref": "hwlogiciolib/IO Pin",
+          "since": "R2026a+",
+          "intent": "Access a general-purpose I/O pin on the SoC development board"
+        },
+        {
+          "block": "LED",
+          "ref": "hwlogiciolib/LED",
+          "since": "R2023a+",
+          "intent": "Drive an LED on the development board for visual status indication"
+        },
+        {
+          "block": "Push Button",
+          "ref": "hwlogiciolib/Push Button",
+          "since": "R2023a+",
+          "intent": "Read push button state from the development board for user interaction"
+        },
+        {
+          "block": "Switch",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Switch",
+          "since": "R2023a+",
+          "intent": "Route entity inputs to the appropriate processing path"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "fpga-connectivity",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "fpga-connectivity",
+      "hash": "04fd37bbd907a8ef9d059b850d451a6e25de38008a5412eac69156329491c0e1",
+      "fm": {
+        "title": "Fpga connectivity",
+        "description": "AXI4-Stream and bus connectivity between FPGA and processor domains (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "AXI4",
+          "stream",
+          "bus",
+          "FIFO",
+          "connector",
+          "video-stream"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "SoC Bus Creator",
+          "ref": "hwlogicconnlib/SoC Bus Creator",
+          "since": "R2023a+",
+          "intent": "Bundle multiple signals into a single SoC bus for hardware-software interface modeling"
+        },
+        {
+          "block": "SoC Bus Selector",
+          "ref": "hwlogicconnlib/SoC Bus Selector",
+          "since": "R2023a+",
+          "intent": "Extract individual signals from an SoC bus for downstream processing"
+        },
+        {
+          "block": "Stream Connector",
+          "ref": "hwlogicconnlib/Stream Connector",
+          "since": "R2023a+",
+          "intent": "Connect AXI4-Stream interfaces between FPGA logic and processor subsystems"
+        },
+        {
+          "block": "Stream FIFO",
+          "ref": "hwlogicconnlib/Stream FIFO",
+          "since": "R2023a+",
+          "intent": "Buffer streaming data between clock domains or processing stages on the SoC"
+        },
+        {
+          "block": "Video Stream Connector",
+          "ref": "hwlogicconnlib/Video Stream Connector",
+          "since": "R2023a+",
+          "intent": "Connect video streaming interfaces between FPGA logic and processor subsystems"
+        },
+        {
+          "block": "Video Stream FIFO",
+          "ref": "hwlogicconnlib/Video Stream FIFO",
+          "since": "R2023a+",
+          "intent": "Buffer video stream data between clock domains with frame-aware flow control"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "interprocess",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "interprocess",
+      "hash": "c5dab443bd77f9820b0c058454cd23b74aa3d18557b46566b59e315f395070e6",
+      "fm": {
+        "title": "Interprocess",
+        "description": "Shared data channels for communication between processor tasks at different rates (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "interprocess",
+          "shared",
+          "channel",
+          "IPC",
+          "rate-transition"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Interprocess Data Channel",
+          "ref": "procinterlib/Interprocess Data Channel",
+          "since": "R2023a+",
+          "intent": "Model a shared data channel between processor tasks running at different rates"
+        },
+        {
+          "block": "Interprocess Data Read",
+          "ref": "procinterlib/Interprocess Data Read",
+          "since": "R2023a+",
+          "intent": "Read shared data from another processor task via the interprocess channel"
+        },
+        {
+          "block": "Interprocess Data Write",
+          "ref": "procinterlib/Interprocess Data Write",
+          "since": "R2023a+",
+          "intent": "Write shared data for another processor task via the interprocess channel"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "io-data",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "io-data",
+      "hash": "2ff0f8cf8e3b80000395483a31eb98847addb2b44be9d02f9ab40edc1da00841",
+      "fm": {
+        "title": "Io data",
+        "description": "I/O data injection and capture for testbench-driven SoC verification (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "event",
+          "IO",
+          "data",
+          "inject",
+          "capture",
+          "boundary"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "event",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/event",
+          "since": "R2023a+",
+          "intent": "Input argument for event type in logging functions"
+        },
+        {
+          "block": "event",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/event",
+          "since": "R2023a+",
+          "intent": "Input argument for event type in logging functions"
+        },
+        {
+          "block": "event",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/event",
+          "since": "R2023a+",
+          "intent": "Input argument for event type in logging functions"
+        },
+        {
+          "block": "event",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/event",
+          "since": "R2023a+",
+          "intent": "Input argument for event type in logging functions"
+        },
+        {
+          "block": "Event Source",
+          "ref": "prociodatalib/Event Source",
+          "since": "R2023a+",
+          "intent": "Generate timed events for driving testbench scenarios in SoC simulation"
+        },
+        {
+          "block": "IO Data Sink",
+          "ref": "prociodatalib/IO Data Sink",
+          "since": "R2023a+",
+          "intent": "Capture I/O data at task boundaries for verification in SoC simulation"
+        },
+        {
+          "block": "IO Data Source",
+          "ref": "prociodatalib/IO Data Source",
+          "since": "R2023a+",
+          "intent": "Inject I/O test data at task boundaries for stimulating SoC simulation"
+        },
+        {
+          "block": "Testbench Task",
+          "ref": "prociodatalib/Testbench Task",
+          "since": "R2023a+",
+          "intent": "Define a testbench task that runs alongside the design tasks for verification"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "memory-interfaces",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "memory-interfaces",
+      "hash": "4aa1d169b3479701d77eefde7e71d0134ad3e0cc262cfd0e7a0222588b4d3add",
+      "fm": {
+        "title": "Memory interfaces",
+        "description": "Shared memory, DMA, registers, and interrupt channels between FPGA and processor (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "memory",
+          "DDR",
+          "DMA",
+          "register",
+          "interrupt",
+          "AXI4"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "AXI4 Random Access Memory",
+          "ref": "socmemlib/AXI4 Random Access Memory",
+          "since": "R2023a+",
+          "intent": "Model shared DDR memory accessible by FPGA logic and processor via AXI4 interface"
+        },
+        {
+          "block": "AXI4 Video Frame Buffer",
+          "ref": "socmemlib/AXI4 Video Frame Buffer",
+          "since": "R2023a+",
+          "intent": "Model a video frame buffer in shared memory for FPGA-to-processor video transfer"
+        },
+        {
+          "block": "AXI4-Stream to Software",
+          "ref": "socmemlib/AXI4-Stream to Software",
+          "since": "R2023a+",
+          "intent": "Transfer streaming data from FPGA logic to processor software via DMA"
+        },
+        {
+          "block": "IP Core Register Read",
+          "ref": "socmemlib/IP Core Register Read",
+          "since": "R2023a+",
+          "intent": "Read a memory-mapped register exposed by an FPGA IP core from processor software"
+        },
+        {
+          "block": "Interrupt Channel",
+          "ref": "socmemlib/Interrupt Channel",
+          "since": "R2023a+",
+          "intent": "Model a hardware interrupt line from FPGA logic to the processor"
+        },
+        {
+          "block": "Memory Traffic Generator",
+          "ref": "socmemlib/Memory Traffic Generator",
+          "since": "R2023a+",
+          "intent": "Simulate background memory traffic to model realistic DDR bandwidth contention"
+        },
+        {
+          "block": "Register Channel",
+          "ref": "socmemlib/Register Channel",
+          "since": "R2023a+",
+          "intent": "Model a memory-mapped register channel between FPGA logic and processor software"
+        },
+        {
+          "block": "Software to AXI4-Stream",
+          "ref": "socmemlib/Software to AXI4-Stream",
+          "since": "R2023a+",
+          "intent": "Transfer data from processor software to FPGA logic via DMA streaming"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "peripherals",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "peripherals",
+      "hash": "d2ddec8bfc2936ea21a4fa8967ee5e382e9d6cdc3dc34ed6813166d12c42fa6a",
+      "fm": {
+        "title": "Peripherals",
+        "description": "Peripheral device interface models for ADC, audio, video, PWM, and digital I/O (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "ADC",
+          "audio",
+          "video",
+          "PWM",
+          "peripheral",
+          "capture"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ADC Interface",
+          "ref": "peripheralslib/ADC Interface",
+          "since": "R2023a+",
+          "intent": "Model an analog-to-digital converter peripheral on the SoC development board"
+        },
+        {
+          "block": "Audio Capture Interface",
+          "ref": "peripheralslib/Audio Capture Interface",
+          "since": "R2023a+",
+          "intent": "Model an audio input peripheral for capturing audio samples on the SoC"
+        },
+        {
+          "block": "Audio Playback Interface",
+          "ref": "peripheralslib/Audio Playback Interface",
+          "since": "R2023a+",
+          "intent": "Model an audio output peripheral for playing audio samples on the SoC"
+        },
+        {
+          "block": "Digital IO Interface",
+          "ref": "peripheralslib/Digital IO Interface",
+          "since": "R2023a+",
+          "intent": "Model digital I/O peripheral pins on the SoC development board"
+        },
+        {
+          "block": "PWM Interface",
+          "ref": "peripheralslib/PWM Interface",
+          "since": "R2023a+",
+          "intent": "Model a PWM output peripheral on the SoC for motor or LED control"
+        },
+        {
+          "block": "Video Capture Interface",
+          "ref": "peripheralslib/Video Capture Interface",
+          "since": "R2023a+",
+          "intent": "Model a camera or video input peripheral on the SoC development board"
+        },
+        {
+          "block": "Video Display Interface",
+          "ref": "peripheralslib/Video Display Interface",
+          "since": "R2023a+",
+          "intent": "Model a video output peripheral for driving a display from the SoC"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "processor-io",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "processor-io",
+      "hash": "c88f8d15553cc083d5c26091b2ab3b1ed04d69b5c5b6d1badf5b95860a956d07",
+      "fm": {
+        "title": "Processor io",
+        "description": "Processor-side read/write blocks for accessing hardware peripherals and network (24 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "read",
+          "write",
+          "TCP",
+          "UDP",
+          "register",
+          "processor"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "UDP Read",
+          "ref": "hostiolib/UDP Read",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets from the network for host-processor or inter-device communication"
+        },
+        {
+          "block": "UDP Write",
+          "ref": "hostiolib/UDP Write",
+          "since": "R2023a+",
+          "intent": "Send UDP packets over the network from the processor or host"
+        },
+        {
+          "block": "Reader",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Reader",
+          "since": "R2023a+",
+          "intent": "Read data from a memory or buffer subsystem"
+        },
+        {
+          "block": "Writer",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Writer",
+          "since": "R2023a+",
+          "intent": "Write data to a memory or buffer subsystem"
+        },
+        {
+          "block": "Reader",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Reader",
+          "since": "R2023a+",
+          "intent": "Read data from a memory or buffer subsystem"
+        },
+        {
+          "block": "Writer",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Writer",
+          "since": "R2023a+",
+          "intent": "Write data to a memory or buffer subsystem"
+        },
+        {
+          "block": "Reader",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Reader",
+          "since": "R2023a+",
+          "intent": "Read data from a memory or buffer subsystem"
+        },
+        {
+          "block": "Writer",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Writer",
+          "since": "R2023a+",
+          "intent": "Write data to a memory or buffer subsystem"
+        },
+        {
+          "block": "Reader",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Reader",
+          "since": "R2023a+",
+          "intent": "Read data from a memory or buffer subsystem"
+        },
+        {
+          "block": "Writer",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Writer",
+          "since": "R2023a+",
+          "intent": "Write data to a memory or buffer subsystem"
+        },
+        {
+          "block": "ADC Read",
+          "ref": "prociolib/ADC Read",
+          "since": "R2023a+",
+          "intent": "Read samples from the ADC peripheral in processor software"
+        },
+        {
+          "block": "Audio Capture",
+          "ref": "prociolib/Audio Capture",
+          "since": "R2023a+",
+          "intent": "Capture audio samples from the audio input peripheral in processor software"
+        },
+        {
+          "block": "Audio Playback",
+          "ref": "prociolib/Audio Playback",
+          "since": "R2023a+",
+          "intent": "Play audio samples through the audio output peripheral from processor software"
+        },
+        {
+          "block": "PWM Write",
+          "ref": "prociolib/PWM Write",
+          "since": "R2023a+",
+          "intent": "Write duty cycle values to the PWM peripheral from processor software"
+        },
+        {
+          "block": "Register Read",
+          "ref": "prociolib/Register Read",
+          "since": "R2023a+",
+          "intent": "Read a value from a memory-mapped hardware register in processor software"
+        },
+        {
+          "block": "Register Write",
+          "ref": "prociolib/Register Write",
+          "since": "R2023a+",
+          "intent": "Write a value to a memory-mapped hardware register from processor software"
+        },
+        {
+          "block": "Stream Read",
+          "ref": "prociolib/Stream Read",
+          "since": "R2023a+",
+          "intent": "Read streaming data from FPGA logic via DMA in processor software"
+        },
+        {
+          "block": "Stream Write",
+          "ref": "prociolib/Stream Write",
+          "since": "R2023a+",
+          "intent": "Write streaming data to FPGA logic via DMA from processor software"
+        },
+        {
+          "block": "TCP Read",
+          "ref": "prociolib/TCP Read",
+          "since": "R2023a+",
+          "intent": "Receive data over a TCP connection in processor software"
+        },
+        {
+          "block": "TCP Write",
+          "ref": "prociolib/TCP Write",
+          "since": "R2023a+",
+          "intent": "Send data over a TCP connection from processor software"
+        },
+        {
+          "block": "UDP Read",
+          "ref": "prociolib/UDP Read",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets from the network for host-processor or inter-device communication"
+        },
+        {
+          "block": "UDP Write",
+          "ref": "prociolib/UDP Write",
+          "since": "R2023a+",
+          "intent": "Send UDP packets over the network from the processor or host"
+        },
+        {
+          "block": "Video Capture",
+          "ref": "prociolib/Video Capture",
+          "since": "R2023a+",
+          "intent": "Capture video frames from the camera peripheral in processor software"
+        },
+        {
+          "block": "Video Display",
+          "ref": "prociolib/Video Display",
+          "since": "R2023a+",
+          "intent": "Display video frames on the output peripheral from processor software"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "task-scheduling",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "task-scheduling",
+      "hash": "12d1ca0886e7834b064dd199eb5173379730eeca17a1e031b2d96b6c39dee08a",
+      "fm": {
+        "title": "Task scheduling",
+        "description": "Task management, scheduling, triggering, and interrupt-driven execution (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "task",
+          "scheduler",
+          "trigger",
+          "interrupt",
+          "priority",
+          "manager"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hardware Interrupt",
+          "ref": "proctasklib/Hardware Interrupt",
+          "since": "R2024b+",
+          "intent": "Trigger a processor task from a hardware interrupt event"
+        },
+        {
+          "block": "Proxy Task",
+          "ref": "proctasklib/Proxy Task",
+          "since": "R2023a+",
+          "intent": "Represent an external task that interacts with the modeled SoC tasks"
+        },
+        {
+          "block": "Task Manager",
+          "ref": "proctasklib/Task Manager",
+          "since": "R2023a+",
+          "intent": "Schedule and manage multiple processor tasks with priorities and timing"
+        },
+        {
+          "block": "Task Trigger",
+          "ref": "proctasklib/Task Trigger",
+          "since": "R2023b+",
+          "intent": "Trigger execution of a processor task based on a timer or event"
+        },
+        {
+          "block": "Task Trigger Merge",
+          "ref": "proctasklib/Task Trigger Merge",
+          "since": "R2023b+",
+          "intent": "Combine multiple trigger sources into a single task activation signal"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "test-infrastructure",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "test-infrastructure",
+      "hash": "58fce3e8b341fe56626ecc39449785f474d674501246db99af7ab11ae000ad43",
+      "fm": {
+        "title": "Test infrastructure",
+        "description": "Testbench source and sink blocks for verifying hardware interfaces in simulation (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset",
+          "test",
+          "sink",
+          "source",
+          "verify",
+          "testbench",
+          "stimulus"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "AXI4 Master Sink",
+          "ref": "hwlogictestlib/AXI4 Master Sink",
+          "since": "R2023a+",
+          "intent": "Verify AXI4 master write transactions by capturing and checking output data"
+        },
+        {
+          "block": "AXI4 Master Source",
+          "ref": "hwlogictestlib/AXI4 Master Source",
+          "since": "R2023a+",
+          "intent": "Generate AXI4 master read/write transactions for testing memory-mapped interfaces"
+        },
+        {
+          "block": "Stream Data Sink",
+          "ref": "hwlogictestlib/Stream Data Sink",
+          "since": "R2023a+",
+          "intent": "Capture and verify AXI4-Stream output data in simulation testbenches"
+        },
+        {
+          "block": "Stream Data Source",
+          "ref": "hwlogictestlib/Stream Data Source",
+          "since": "R2023a+",
+          "intent": "Generate AXI4-Stream test input data for simulation testbenches"
+        },
+        {
+          "block": "Video Test Sink",
+          "ref": "hwlogictestlib/Video Test Sink",
+          "since": "R2023a+",
+          "intent": "Capture and verify video stream output in simulation testbenches"
+        },
+        {
+          "block": "Video Test Source",
+          "ref": "hwlogictestlib/Video Test Source",
+          "since": "R2023a+",
+          "intent": "Generate video stream test patterns for simulation testbenches"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "uncategorized",
+      "kind": "toolbox",
+      "library": "SoC Blockset",
+      "kbFolder": "soc-blockset",
+      "category": "uncategorized",
+      "hash": "97fec26da272ed1d940e8dfced342a6ceece71c5892c242b3a35689ad75d1e02",
+      "fm": {
+        "title": "Uncategorized",
+        "description": "Blocks for Uncategorized (40 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "soc-blockset"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MATLAB Function",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Execute custom MATLAB code within a Simulink model for algorithmic computation"
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Execute custom MATLAB code within a Simulink model for algorithmic computation"
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Execute custom MATLAB code within a Simulink model for algorithmic computation"
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Execute custom MATLAB code within a Simulink model for algorithmic computation"
+        },
+        {
+          "block": "ddlogger",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/ddlogger",
+          "since": "R2023a+",
+          "intent": "Trigger port for data dictionary logging subsystem"
+        },
+        {
+          "block": "Constant",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "Constant1",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/Constant1",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "mid",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/mid",
+          "since": "R2023a+",
+          "intent": "Input argument for memory identifier in logging functions"
+        },
+        {
+          "block": "info",
+          "ref": "socmemlib/AXI4 Random Access Memory/SimVariant/Accurate/log/info",
+          "since": "R2023a+",
+          "intent": "Input argument for additional information in logging functions"
+        },
+        {
+          "block": "ddlogger",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/ddlogger",
+          "since": "R2023a+",
+          "intent": "Trigger port for data dictionary logging subsystem"
+        },
+        {
+          "block": "Constant",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "Constant1",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/Constant1",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "mid",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/mid",
+          "since": "R2023a+",
+          "intent": "Input argument for memory identifier in logging functions"
+        },
+        {
+          "block": "info",
+          "ref": "socmemlib/AXI4 Video Frame Buffer/SimVariant/Accurate/log/info",
+          "since": "R2023a+",
+          "intent": "Input argument for additional information in logging functions"
+        },
+        {
+          "block": "ddlogger",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/ddlogger",
+          "since": "R2023a+",
+          "intent": "Trigger port for data dictionary logging subsystem"
+        },
+        {
+          "block": "Constant",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "Constant1",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/Constant1",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "mid",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/mid",
+          "since": "R2023a+",
+          "intent": "Input argument for memory identifier in logging functions"
+        },
+        {
+          "block": "info",
+          "ref": "socmemlib/AXI4-Stream to Software/SimVariant/Accurate/log/info",
+          "since": "R2023a+",
+          "intent": "Input argument for additional information in logging functions"
+        },
+        {
+          "block": "ddlogger",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/ddlogger",
+          "since": "R2023a+",
+          "intent": "Trigger port for data dictionary logging subsystem"
+        },
+        {
+          "block": "Constant",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "Constant1",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/Constant1",
+          "since": "R2023a+",
+          "intent": "Output a constant value signal"
+        },
+        {
+          "block": "mid",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/mid",
+          "since": "R2023a+",
+          "intent": "Input argument for memory identifier in logging functions"
+        },
+        {
+          "block": "info",
+          "ref": "socmemlib/Software to AXI4-Stream/SimVariant/Accurate/log/info",
+          "since": "R2023a+",
+          "intent": "Input argument for additional information in logging functions"
+        },
+        {
+          "block": "Logger",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Logger",
+          "since": "R2023a+",
+          "intent": "Log simulation events for debugging and performance analysis"
+        },
+        {
+          "block": "ToFcns",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns",
+          "since": "R2023a+",
+          "intent": "Route calls to Simulink function implementations within the task manager"
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Execute custom MATLAB code within a Simulink model for algorithmic computation"
+        },
+        {
+          "block": "MATLAB Function",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/MATLAB Function",
+          "since": "R2023a+",
+          "intent": "Execute custom MATLAB code within a Simulink model for algorithmic computation"
+        },
+        {
+          "block": "Power ON",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/Power ON",
+          "since": "R2023a+",
+          "intent": "Generate the initial power-on event to start task manager execution"
+        },
+        {
+          "block": "RTE",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/RTE",
+          "since": "R2023a+",
+          "intent": "Runtime environment discrete-event engine for task scheduling simulation"
+        },
+        {
+          "block": "rteDispatchRunnable",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/rteDispatchRunnable",
+          "since": "R2023a+",
+          "intent": "Trigger port for dispatching runnable functions in the runtime environment"
+        },
+        {
+          "block": "Assertion",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/Assertion",
+          "since": "R2023a+",
+          "intent": "Verify that a signal meets expected conditions during simulation"
+        },
+        {
+          "block": "Terminator",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/Terminator",
+          "since": "R2023a+",
+          "intent": "Terminate an unconnected output port to avoid warnings"
+        },
+        {
+          "block": "isWireless",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/isWireless",
+          "since": "R2023a+",
+          "intent": "Input argument indicating wireless communication mode"
+        },
+        {
+          "block": "fcnIdx",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function1/fcnIdx",
+          "since": "R2023a+",
+          "intent": "Input argument specifying the function index to dispatch"
+        },
+        {
+          "block": "rteDispatchRT",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/rteDispatchRT",
+          "since": "R2023a+",
+          "intent": "Trigger port for dispatching real-time tasks in the runtime environment"
+        },
+        {
+          "block": "Assertion",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/Assertion",
+          "since": "R2023a+",
+          "intent": "Verify that a signal meets expected conditions during simulation"
+        },
+        {
+          "block": "Terminator",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/Terminator",
+          "since": "R2023a+",
+          "intent": "Terminate an unconnected output port to avoid warnings"
+        },
+        {
+          "block": "isWireless",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/isWireless",
+          "since": "R2023a+",
+          "intent": "Input argument indicating wireless communication mode"
+        },
+        {
+          "block": "fcnIdx",
+          "ref": "proctasklib/Task Manager/Core Task Manager/Variant Subsystem/HSBON/Task Manager/Task Manager/ToFcns/Simulink Function2/fcnIdx",
+          "since": "R2023a+",
+          "intent": "Input argument specifying the function index to dispatch"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:35",
+  "generatedAtDatenum": 740309.99555076391
 }

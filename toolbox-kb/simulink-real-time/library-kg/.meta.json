@@ -1,15 +1,871 @@
 {
-  "generatedAt": "2026-09-29T16:38:09",
-  "generatedAtDatenum": 740254.693169919,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Real-Time"
-  ],
-  "blockCount": 86,
-  "categoryCount": 17,
-  "libraryFingerprints": {
-    "Simulink_Real_Time": {
-      "blockCount": 86
+  "pages": [
+    {
+      "id": "async",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "async",
+      "hash": "57baece038d2426cece9f5ad00057f9ade868c35097e0327012b0fa507b201b2",
+      "fm": {
+        "title": "Async",
+        "description": "Blocks for Async (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Thread Trigger",
+          "ref": "slrealtimeasynclib/Thread Trigger",
+          "since": "R2024a+",
+          "intent": "Call the downstream function-call subsystem when the chosen input edge transition is seen"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "can-can-fd-msg-blocks",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "can-can-fd-msg-blocks",
+      "hash": "caaf9648d9632c1814bd0e1ebdfd0d20aada361c77cf2eff7b10aad576a360cf",
+      "fm": {
+        "title": "Can can fd msg blocks",
+        "description": "Blocks for Can can fd msg blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "CAN FD Pack",
+          "ref": "canfdmsglib/CAN FD Pack",
+          "since": "R2023a+",
+          "intent": "Pack data into CAN and CAN FD messages. Specify signals manually, or using definitions from DBC and ARXML files."
+        },
+        {
+          "block": "CAN FD Unpack",
+          "ref": "canfdmsglib/CAN FD Unpack",
+          "since": "R2023a+",
+          "intent": "Unpack data from CAN and CAN FD messages. Specify signals manually, or using definitions from DBC and ARXML files."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "can-can-msg-blocks",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "can-can-msg-blocks",
+      "hash": "756e0a4cf2451e457b010ae7515567d006a7612c522bc0f44b9410e229e0a431",
+      "fm": {
+        "title": "Can can msg blocks",
+        "description": "Blocks for Can can msg blocks (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "CAN Pack",
+          "ref": "canmsglib/CAN Pack",
+          "since": "R2023a+",
+          "intent": "Pack data into a CAN message. Specify signals manually, or using definitions from DBC and ARXML files."
+        },
+        {
+          "block": "CAN Unpack",
+          "ref": "canmsglib/CAN Unpack",
+          "since": "R2023a+",
+          "intent": "Unpack data from a CAN message. Specify signals manually, or using definitions from DBC and ARXML files."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "dds",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "dds",
+      "hash": "e5a7e9c024793c9cea3e05debe54b869334e2804a596f5e9ae1b829099c5f52f",
+      "fm": {
+        "title": "Dds",
+        "description": "Blocks for Dds (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "DDS Receive",
+          "ref": "slrealtimeddslib/DDS Receive",
+          "since": "R2024a+",
+          "intent": "Receives a DDS message on a selected DDS topic. This block allows to attach a Simulink Data Dictionary containing DDS definitions with the model. Choose a DDS topic, DataReader, and QoS from the available options in the Data Dictionary."
+        },
+        {
+          "block": "DDS Send",
+          "ref": "slrealtimeddslib/DDS Send",
+          "since": "R2024a+",
+          "intent": "Sends a DDS message for a selected topic. This block allows to attach a Simulink Data Dictionary containing DDS definitions with the model. Choose a DDS topic, DataWriter, and QoS from the available options in the Data Dictionary."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ethercat",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "ethercat",
+      "hash": "9a07e90b561a63d09184e2a7c13e41d61be00c3df7891e19c13c87904e590e68",
+      "fm": {
+        "title": "Ethercat",
+        "description": "Blocks for Ethercat (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "EtherCAT Async SDO Download",
+          "ref": "slrealtimeethercatlib/EtherCAT Async SDO Download",
+          "since": "R2024a+",
+          "intent": "Write parameters to an EtherCAT subdevice asynchronously via SDO protocol"
+        },
+        {
+          "block": "EtherCAT Async SDO Upload",
+          "ref": "slrealtimeethercatlib/EtherCAT Async SDO Upload",
+          "since": "R2024a+",
+          "intent": "Read parameters from an EtherCAT subdevice asynchronously via SDO protocol"
+        },
+        {
+          "block": "EtherCAT Async SSC/SoE Download",
+          "ref": "slrealtimeethercatlib/EtherCAT Async SSC/SoE Download",
+          "since": "R2023a+",
+          "intent": "Write parameters to a SERCOS-over-EtherCAT subdevice asynchronously"
+        },
+        {
+          "block": "EtherCAT Async SSC/SoE Upload",
+          "ref": "slrealtimeethercatlib/EtherCAT Async SSC/SoE Upload",
+          "since": "R2023a+",
+          "intent": "Read parameters from a SERCOS-over-EtherCAT subdevice asynchronously"
+        },
+        {
+          "block": "EtherCAT Get Emergency",
+          "ref": "slrealtimeethercatlib/EtherCAT Get Emergency",
+          "since": "R2024a+",
+          "intent": "EtherCAT Get Emergency Message"
+        },
+        {
+          "block": "EtherCAT Get Notifications",
+          "ref": "slrealtimeethercatlib/EtherCAT Get Notifications",
+          "since": "R2024a+",
+          "intent": "Read EtherCAT master notifications for network health monitoring"
+        },
+        {
+          "block": "EtherCAT Get Scanbus Error Data",
+          "ref": "slrealtimeethercatlib/EtherCAT Get Scanbus Error Data",
+          "since": "R2024a+",
+          "intent": "Retrieve bus scan error information for EtherCAT network diagnostics"
+        },
+        {
+          "block": "EtherCAT Get State",
+          "ref": "slrealtimeethercatlib/EtherCAT Get State",
+          "since": "R2024a+",
+          "intent": "Read the current state machine state of the EtherCAT master"
+        },
+        {
+          "block": "EtherCAT Init",
+          "ref": "slrealtimeethercatlib/EtherCAT Init",
+          "since": "R2024a+",
+          "intent": "This block is used to initialize the EtherCAT Main device based on the information in the configuration file (EtherCAT Network Information, ENI)."
+        },
+        {
+          "block": "EtherCAT PDO Receive",
+          "ref": "slrealtimeethercatlib/EtherCAT PDO Receive",
+          "since": "R2024a+",
+          "intent": "EtherCAT Rx Variable"
+        },
+        {
+          "block": "EtherCAT PDO Transmit",
+          "ref": "slrealtimeethercatlib/EtherCAT PDO Transmit",
+          "since": "R2024a+",
+          "intent": "EtherCAT Tx Variable"
+        },
+        {
+          "block": "EtherCAT Set State",
+          "ref": "slrealtimeethercatlib/EtherCAT Set State",
+          "since": "R2024a+",
+          "intent": "Command the EtherCAT master to transition to a specified state"
+        },
+        {
+          "block": "EtherCAT Sync SDO Download",
+          "ref": "slrealtimeethercatlib/EtherCAT Sync SDO Download",
+          "since": "R2024a+",
+          "intent": "EtherCAT SDO (CoE) Write"
+        },
+        {
+          "block": "EtherCAT Sync SDO Upload",
+          "ref": "slrealtimeethercatlib/EtherCAT Sync SDO Upload",
+          "since": "R2024a+",
+          "intent": "EtherCAT SDO (CoE) Read"
+        },
+        {
+          "block": "EtherCAT Sync SSC/SoE Download",
+          "ref": "slrealtimeethercatlib/EtherCAT Sync SSC/SoE Download",
+          "since": "R2023a+",
+          "intent": "Write parameters to a SERCOS-over-EtherCAT subdevice synchronously"
+        },
+        {
+          "block": "EtherCAT Sync SSC/SoE Upload",
+          "ref": "slrealtimeethercatlib/EtherCAT Sync SSC/SoE Upload",
+          "since": "R2023a+",
+          "intent": "Read parameters from a SERCOS-over-EtherCAT subdevice synchronously"
+        },
+        {
+          "block": "Get SubDevice State",
+          "ref": "slrealtimeethercatlib/Get SubDevice State",
+          "since": "R2024a+",
+          "intent": "EtherCAT Get Device State"
+        },
+        {
+          "block": "Set SubDevice State",
+          "ref": "slrealtimeethercatlib/Set SubDevice State",
+          "since": "R2024a+",
+          "intent": "EtherCAT Set Device State"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ethernet-ip",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "ethernet-ip",
+      "hash": "fd5eed4611c554bd39d916309180840a2b246a8d00b617509381914dfe54166c",
+      "fm": {
+        "title": "Ethernet ip",
+        "description": "Raw Ethernet and IP communication on the real-time target (15 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time",
+          "ethernet",
+          "ip",
+          "udp",
+          "tcp"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "TCP Client",
+          "ref": "slrealtimeiplib/TCP Client",
+          "since": "R2024a+",
+          "intent": "Configure TCP Client"
+        },
+        {
+          "block": "TCP Receive",
+          "ref": "slrealtimeiplib/TCP Receive",
+          "since": "R2024a+",
+          "intent": "Receive data over TCP network from a remote device."
+        },
+        {
+          "block": "TCP Send",
+          "ref": "slrealtimeiplib/TCP Send",
+          "since": "R2024a+",
+          "intent": "Send data over TCP network to a remote device."
+        },
+        {
+          "block": "TCP Server",
+          "ref": "slrealtimeiplib/TCP Server",
+          "since": "R2024a+",
+          "intent": "Configure TCP Server"
+        },
+        {
+          "block": "UDP Multicast Receive",
+          "ref": "slrealtimeiplib/UDP Multicast Receive",
+          "since": "R2024a+",
+          "intent": "Receive multicast data over UDP network from a remote device. Bind to either 0.0.0.0 or a multicast address."
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "slrealtimeiplib/UDP Receive",
+          "since": "R2024a+",
+          "intent": "Receive data over UDP network from a remote device."
+        },
+        {
+          "block": "UDP Send",
+          "ref": "slrealtimeiplib/UDP Send",
+          "since": "R2024a+",
+          "intent": "Send data over UDP network to a remote device. Send to 255.255.255.255 for broadcast."
+        },
+        {
+          "block": "Ethernet Receive",
+          "ref": "slrealtimeiplib/Ethernet/Ethernet Receive",
+          "since": "R2024a+",
+          "intent": "Receive raw Ethernet frames on the real-time target — use for low-level custom-protocol input."
+        },
+        {
+          "block": "Ethernet Send",
+          "ref": "slrealtimeiplib/Ethernet/Ethernet Send",
+          "since": "R2024a+",
+          "intent": "Send raw Ethernet frames from the real-time target — use for low-level custom-protocol output."
+        },
+        {
+          "block": "FIFO ASCII read",
+          "ref": "slrealtimeseriallib/FIFO ASCII read",
+          "since": "R2024a+",
+          "intent": "FIFO Read using multiple starting ASCII string identifiers"
+        },
+        {
+          "block": "FIFO bin read",
+          "ref": "slrealtimeseriallib/FIFO bin read",
+          "since": "R2024a+",
+          "intent": "FIFO Read using multiple starting byte numeric value identifiers"
+        },
+        {
+          "block": "Shared Memory Pack",
+          "ref": "slrealtimesharedmemorylib/Shared Memory Pack",
+          "since": "R2024a+",
+          "intent": "Assembles multiple data elements into a contiguous array of 32-bit words (pack partition data). For use with a shared memory write block."
+        },
+        {
+          "block": "Shared Memory Unpack",
+          "ref": "slrealtimesharedmemorylib/Shared Memory Unpack",
+          "since": "R2024a+",
+          "intent": "Extracts multiple data elements from a contiguous array of 32-bit words (unpack partition data). For use with a shared memory read block."
+        },
+        {
+          "block": "Byte Packing",
+          "ref": "slrealtimeutilitieslib/Byte Packing",
+          "since": "R2024a+",
+          "intent": "Pack bytes from multiple input vectors into a single output vector."
+        },
+        {
+          "block": "Byte Unpacking",
+          "ref": "slrealtimeutilitieslib/Byte Unpacking",
+          "since": "R2024a+",
+          "intent": "Unpack bytes from a single input vector into multiple output vectors."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "j1939",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "j1939",
+      "hash": "ca5365432688bbe5c4ed0d3bd225c94ba648365e3622d50a6b503a6959a879ca",
+      "fm": {
+        "title": "J1939",
+        "description": "SAE J1939 higher-layer CAN protocol messaging (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time",
+          "j1939"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "J1939 CAN Transport Layer",
+          "ref": "slrtj1939lib/J1939 CAN Transport Layer",
+          "since": "R2024a+",
+          "intent": "Implement the J1939 transport protocol over CAN for multi-packet messages — use to send/receive J1939 PGNs larger than 8 bytes."
+        },
+        {
+          "block": "J1939 Network Configuration",
+          "ref": "slrtj1939lib/J1939 Network Configuration",
+          "since": "R2023a+",
+          "intent": "Configure the J1939 network (database, baud rate) for the target — required once to set up J1939 messaging."
+        },
+        {
+          "block": "J1939 Node Configuration",
+          "ref": "slrtj1939lib/J1939 Node Configuration",
+          "since": "R2023a+",
+          "intent": "Define a J1939 node (address, name) on the network — use to establish this ECU's identity for J1939 traffic."
+        },
+        {
+          "block": "J1939 Receive",
+          "ref": "slrtj1939lib/J1939 Receive",
+          "since": "R2024a+",
+          "intent": "Receive a J1939 parameter group (PGN) message on the target — use to read decoded J1939 signals."
+        },
+        {
+          "block": "J1939 Transmit",
+          "ref": "slrtj1939lib/J1939 Transmit",
+          "since": "R2024a+",
+          "intent": "Transmit a J1939 parameter group (PGN) message from the target — use to publish J1939 signals."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "lin",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "lin",
+      "hash": "8c852d5355e3ccf068843e225fec393ba51451df0ac4e4e5c804f8b78c8364d1",
+      "fm": {
+        "title": "Lin",
+        "description": "Blocks for Lin (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "LIN Pack",
+          "ref": "slrealtimelinlib/LIN Pack",
+          "since": "R2024a+",
+          "intent": "Pack signals as a selected LIN data frame"
+        },
+        {
+          "block": "LIN Unpack",
+          "ref": "slrealtimelinlib/LIN Unpack",
+          "since": "R2024a+",
+          "intent": "Unpack a LIN data frame into signals"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "logging",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "logging",
+      "hash": "cbddfbaf36997959588784a635d94d8bd694b66fedeefaac99eb070557bd234f",
+      "fm": {
+        "title": "Logging",
+        "description": "Blocks for Logging (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Enable File Log",
+          "ref": "slrealtimeloglib/Enable File Log",
+          "since": "R2024a+",
+          "intent": "Enable or disable the file logging service. When the input port value is true, the block enables the file logging service on the target computer, and the File Log blocks record data. When the input port value is false, the block disables file logging on the target computer, and the File Log blocks do not record data."
+        },
+        {
+          "block": "File Log",
+          "ref": "slrealtimeloglib/File Log",
+          "since": "R2024a+",
+          "intent": "Log signal to file on the target computer. While the logging service is enabled, the block logs the input signal to the target computer file system. The logging service is enabled by default for a model containing this block. After the simulation run ends, the target computer uploads the File Log data to the Simulation Data Inspector on the development computer. If the target computer is not connected to the development computer, you can upload the file log data when the computers are connected."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "logitech-g29",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "logitech-g29",
+      "hash": "3d11e3dc92a548dc1cbb177a68782c952c83c59c9c96f37c71cd29ec64412b8c",
+      "fm": {
+        "title": "Logitech g29",
+        "description": "Blocks for Logitech g29 (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Steering Wheel Read",
+          "ref": "slrealtimeG29lib/Steering Wheel Read",
+          "since": "R2024a+",
+          "intent": "Block to read data from Logitech G29 Steering Wheel (PS3 only). Block does not support Stick Shift module. OUTPUT PORTS: BUTTONS: Vector of booleans that reflect status of buttons on steering wheel. 1 = pressed, 0 = unpressed. Order: 1: Square, 2: X, 3: Circle, 4: Triangle, 5: LPaddle, 6: RPaddle, 7: L2, 8: R2, 9: L3, 10: R3, 11: Share, 12: Option, 13: PS STEERING: uint16 type value for position of steering wheel. 0: left most, 65535: right most. PEDALS: uint8 vector of length 3, throttle, brake, and clutch. DIRECTION: uint8 output of directional pad on the steering wheel. UNPRESSED: 8 UP: 0 RIGHT: 2 DOWN: 4 LEFT: 6 Intermediate values when pressed in between. STATUS: int32 type indicates status of communication with steering wheel. Default value: 0 Error state value: less than 0"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "profiling",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "profiling",
+      "hash": "e4178a92847e8019a354b7eb4aea94dc6d099826f38c32299b1630834f3806bb",
+      "fm": {
+        "title": "Profiling",
+        "description": "Blocks for Profiling (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Enable Profiler",
+          "ref": "slrealtimeproflib/Enable Profiler",
+          "since": "R2024a+",
+          "intent": "Start and stop profiler on target computer Input port Start: Rising edge triggered - use to start the profiler. Input port Stop: Rising edge triggered - use to stop the profiler."
+        },
+        {
+          "block": "Log Event",
+          "ref": "slrealtimeproflib/Log Event",
+          "since": "R2024a+",
+          "intent": "Log a profiling event"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "ptp",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "ptp",
+      "hash": "26d9086fdea62c3840b729bf97f602bed2e72d9bcdac4fb466463bdc02255541",
+      "fm": {
+        "title": "Ptp",
+        "description": "Blocks for Ptp (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "IEEE 1588 Read Parameter",
+          "ref": "slrealtimeptplib/IEEE 1588 Read Parameter",
+          "since": "R2023a+",
+          "intent": "Output Precision Time Protocol status parameter value. Read the selected parameter and send its value to the block output."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "rs232",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "rs232",
+      "hash": "db7c4af110a83e19242e6500e0dbe5c5b1ff60c6beec1e414d379baeb3295205",
+      "fm": {
+        "title": "Rs232",
+        "description": "Blocks for Rs232 (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "ASCII Decode",
+          "ref": "slrealtimeseriallib/ASCII Decode",
+          "since": "R2024a+",
+          "intent": "ASCII decode -- Decode input string to output variables"
+        },
+        {
+          "block": "ASCII Encode",
+          "ref": "slrealtimeseriallib/ASCII Encode",
+          "since": "R2024a+",
+          "intent": "ASCII Encode -- encode input variables as ascii for RS232."
+        },
+        {
+          "block": "FIFO read",
+          "ref": "slrealtimeseriallib/FIFO read",
+          "since": "R2024a+",
+          "intent": "Read raw bytes from a serial FIFO buffer on the real-time target"
+        },
+        {
+          "block": "FIFO write",
+          "ref": "slrealtimeseriallib/FIFO write",
+          "since": "R2024a+",
+          "intent": "Write raw bytes to a serial FIFO buffer on the real-time target"
+        },
+        {
+          "block": "V2 Ascii Decode",
+          "ref": "slrealtimeseriallib/V2 Ascii Decode",
+          "since": "R2024a+",
+          "intent": "ASCII decode -- Decode input string to output variables"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "rs232-mainboard",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "rs232-mainboard",
+      "hash": "d8657342f18fcd068da4e13e9fdf839d7236a287a0cbc1d8bb74c8f9ae9ef205",
+      "fm": {
+        "title": "Rs232 mainboard",
+        "description": "Blocks for Rs232 mainboard (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Legacy Serial Read",
+          "ref": "slrealtimeseriallib/Mainboard/Legacy Serial Read",
+          "since": "R2024a+",
+          "intent": "Read from a serial port"
+        },
+        {
+          "block": "Legacy Serial Write",
+          "ref": "slrealtimeseriallib/Mainboard/Legacy Serial Write",
+          "since": "R2024a+",
+          "intent": "Write to a serial port"
+        },
+        {
+          "block": "Modem Control",
+          "ref": "slrealtimeseriallib/Mainboard/Modem Control",
+          "since": "R2024a+",
+          "intent": "Modem Control - Control RTS and DTR outputs from the UART"
+        },
+        {
+          "block": "Modem Status",
+          "ref": "slrealtimeseriallib/Mainboard/Modem Status",
+          "since": "R2024a+",
+          "intent": "Modem Status - Read CTS, DST and DCD inputs from the UART"
+        },
+        {
+          "block": "Setup",
+          "ref": "slrealtimeseriallib/Mainboard/Setup",
+          "since": "R2024a+",
+          "intent": "Configure a serial port"
+        },
+        {
+          "block": "Legacy Serial",
+          "ref": "slrealtimeseriallib/Mainboard/Legacy Serial",
+          "since": "R2024a+",
+          "intent": "Serial port - encapsulates setup, read to character array out, write from character array"
+        },
+        {
+          "block": "Legacy Serial F",
+          "ref": "slrealtimeseriallib/Mainboard/Legacy Serial F",
+          "since": "R2024a+",
+          "intent": "FIFO out Serial port - encapsulates setup, read to FIFO output, write from character array"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "target-management",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "target-management",
+      "hash": "81e8b5a4559a06491425b824d1a7115b555609054042bbcfd849e58d4dbaeb61",
+      "fm": {
+        "title": "Target management",
+        "description": "Blocks for Target management (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Persistent Variable Read",
+          "ref": "slrealtimetgmanagement/Persistent Variable Read",
+          "since": "R2023a+",
+          "intent": "Read the specified persistent variable from the target computer when loading the real-time application. If the specified variable does not exist, the block outputs the value specified by the 'Default value' parameter. The data type and dimensions of the block output port are set by the 'Default value' parameter."
+        },
+        {
+          "block": "Persistent Variable Write",
+          "ref": "slrealtimetgmanagement/Persistent Variable Write",
+          "since": "R2023a+",
+          "intent": "Write the variable with the specified name to the target computer"
+        },
+        {
+          "block": "Overload Options",
+          "ref": "slrealtimetgmanagement/Overload Options",
+          "since": "R2024a+",
+          "intent": "Configure CPU overload options for the rate identified through the TID port. Connect the TID port to any signal in the desired rate. This block will output the current overload count for the identified task."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "utilities",
+      "hash": "2533eb2e8840f64301840fef03b5de3af6d948fb1d08e852f107f5d0758e8d86",
+      "fm": {
+        "title": "Utilities",
+        "description": "Data-format and helper blocks (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time",
+          "utilities",
+          "byte reversal",
+          "endian"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Change endianess",
+          "ref": "slrealtimesharedmemorylib/Change endianess",
+          "since": "R2024a+",
+          "intent": "Machine word length:"
+        },
+        {
+          "block": "Bit Packing",
+          "ref": "slrealtimeutilitieslib/Bit Packing",
+          "since": "R2024a+",
+          "intent": "Bit-Packing"
+        },
+        {
+          "block": "Bit Unpacking",
+          "ref": "slrealtimeutilitieslib/Bit Unpacking",
+          "since": "R2024a+",
+          "intent": "Bit-Unpacking"
+        },
+        {
+          "block": "Byte Reversal",
+          "ref": "slrealtimeutilitieslib/Byte Reversal",
+          "since": "R2024a+",
+          "intent": "Reverse the byte order (endianness) of a signal — use to match big/little-endian conventions across communication interfaces."
+        },
+        {
+          "block": "Protocol Decoder",
+          "ref": "slrealtimeutilitieslib/Protocol Decoder",
+          "since": "R2024a+",
+          "intent": "Decode a uint8 byte stream by specifying the packet structure. The block outputs signals corresponding to specified packet fields, and also allows you to specify packet header and terminator values. IsNew is an additional output (boolean) to check if a new set of decoded fields are available. Select 'Specify logic for checksum validation' to obtain the IsValid output (boolean) to check if the packet is valid or not."
+        },
+        {
+          "block": "Protocol Encoder",
+          "ref": "slrealtimeutilitieslib/Protocol Encoder",
+          "since": "R2024a+",
+          "intent": "Encode input data into a uint8 byte stream by specifying the packet structure. The block outputs a byte stream whose size depends on the packet fields and packet header and terminator values. Select 'Specify logic to generate checksum for validation' to include checksum bytes in the output stream."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "xcp",
+      "kind": "toolbox",
+      "library": "Simulink Real-Time",
+      "kbFolder": "simulink-real-time",
+      "category": "xcp",
+      "hash": "a0b43c85ef2d35e163105df7bbeb823ed7bc553c693b61b5718b97da8682a4c4",
+      "fm": {
+        "title": "Xcp",
+        "description": "XCP measurement and calibration over CAN, CAN FD, and UDP (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-real-time",
+          "xcp"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "XCP CAN Configuration",
+          "ref": "xcprtlib/CAN/XCP CAN Configuration",
+          "since": "R2024a+",
+          "intent": "Configure an XCP-over-CAN session on the target — required to set up XCP measurement and calibration over CAN."
+        },
+        {
+          "block": "XCP CAN Data Acquisition",
+          "ref": "xcprtlib/CAN/XCP CAN Data Acquisition",
+          "since": "R2024a+",
+          "intent": "Acquire (measure) signals from an XCP slave over CAN — use to read measurement/calibration variables during real-time runs."
+        },
+        {
+          "block": "XCP CAN Data Stimulation",
+          "ref": "xcprtlib/CAN/XCP CAN Data Stimulation",
+          "since": "R2024a+",
+          "intent": "Stimulate (write) signals to an XCP slave over CAN — use to inject values into an ECU under test."
+        },
+        {
+          "block": "XCP CAN Transport Layer",
+          "ref": "xcprtlib/CAN/XCP CAN Transport Layer",
+          "since": "R2023a+",
+          "intent": "Generate and consume XCP messages that are transported by CAN hardware."
+        },
+        {
+          "block": "XCP CAN FD Configuration",
+          "ref": "xcprtlib/CAN FD/XCP CAN FD Configuration",
+          "since": "R2024a+",
+          "intent": "Configure an XCP-over-CAN FD session on the target — required to set up XCP over CAN FD."
+        },
+        {
+          "block": "XCP CAN FD Data Acquisition",
+          "ref": "xcprtlib/CAN FD/XCP CAN FD Data Acquisition",
+          "since": "R2024a+",
+          "intent": "Acquire signals from an XCP slave over CAN FD — use for higher-bandwidth XCP measurement."
+        },
+        {
+          "block": "XCP CAN FD Data Stimulation",
+          "ref": "xcprtlib/CAN FD/XCP CAN FD Data Stimulation",
+          "since": "R2024a+",
+          "intent": "Stimulate signals to an XCP slave over CAN FD — use to inject values into an ECU over CAN FD."
+        },
+        {
+          "block": "XCP CAN FD Transport Layer",
+          "ref": "xcprtlib/CAN FD/XCP CAN FD Transport Layer",
+          "since": "R2023a+",
+          "intent": "Generate and consume XCP messages that are transported by CAN FD hardware."
+        },
+        {
+          "block": "XCP UDP Bypass",
+          "ref": "xcprtlib/UDP/XCP UDP Bypass",
+          "since": "R2024a+",
+          "intent": "Perform ECU function bypassing over XCP-on-UDP — use to replace an ECU function with a model running on the target."
+        },
+        {
+          "block": "XCP UDP Configuration",
+          "ref": "xcprtlib/UDP/XCP UDP Configuration",
+          "since": "R2024a+",
+          "intent": "Configure an XCP-over-UDP/Ethernet session on the target — required to set up XCP over Ethernet."
+        },
+        {
+          "block": "XCP UDP Data Acquisition",
+          "ref": "xcprtlib/UDP/XCP UDP Data Acquisition",
+          "since": "R2024a+",
+          "intent": "Acquire signals from an XCP slave over UDP/Ethernet — use for high-rate XCP measurement over Ethernet."
+        },
+        {
+          "block": "XCP UDP Data Stimulation",
+          "ref": "xcprtlib/UDP/XCP UDP Data Stimulation",
+          "since": "R2024a+",
+          "intent": "Stimulate signals to an XCP slave over UDP/Ethernet — use to inject values into an ECU over Ethernet."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:32",
+  "generatedAtDatenum": 740309.99551190971
 }

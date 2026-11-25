@@ -1,15 +1,37 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456856481,
-  "generatorVersion": 4,
-  "libraries": [
-    "Image Acquisition Toolbox"
-  ],
-  "blockCount": 1,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Image_Acquisition_Toolbox": {
-      "blockCount": 1
+  "pages": [
+    {
+      "id": "acquisition",
+      "kind": "toolbox",
+      "library": "Image Acquisition Toolbox",
+      "kbFolder": "image-acquisition-toolbox",
+      "category": "acquisition",
+      "hash": "834809ef80cf101610855c49a23c4c58b1410b86337d3bcba7dd33d2cb9f7d25",
+      "fm": {
+        "title": "Acquisition",
+        "description": "Video and image acquisition from hardware devices (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "image-acquisition-toolbox",
+          "video",
+          "camera",
+          "capture",
+          "image",
+          "device"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "From Video Device",
+          "ref": "imaqlib/From Video Device",
+          "since": "R2023a+",
+          "intent": "Acquire live video frames from a camera or capture device — use for real-time image processing, computer vision, or video-based control in Simulink"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:23",
+  "generatedAtDatenum": 740309.99541306717
 }

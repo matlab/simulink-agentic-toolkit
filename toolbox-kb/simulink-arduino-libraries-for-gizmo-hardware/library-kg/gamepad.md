@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gamepad
-description: Gamepad input for teleoperation
-tags: [gamepad, joystick, axis, button, controller]
+description: Gamepad input for teleoperation (3 blocks)
+tags: [toolbox-kb, simulink-arduino-libraries-for-gizmo-hardware, gamepad, joystick, axis, button, controller]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Arduino Libraries for Gizmo Hardware
-category_path: Gamepad
+sources:
+  - resource: matlab:gizmoLibrary
+source: toolbox_kb
+managed_by: satk
+library: Simulink Arduino Libraries for Gizmo Hardware
+kb_folder: simulink-arduino-libraries-for-gizmo-hardware
+category: gamepad
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Gamepad
-
-Use these blocks for gamepad.
 
 ## Recommended Blocks
 

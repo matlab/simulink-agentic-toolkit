@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sdr transceiver
-description: AD936x / FMCOMMS software-defined-radio front ends
-tags: [ad936x, fmcomms, receiver, transmitter, data read, data write]
+description: AD936x / FMCOMMS software-defined-radio front ends (18 blocks)
+tags: [toolbox-kb, soc-blockset-support-package-for-amd-fpga-and-soc-devices, ad936x, fmcomms, receiver, transmitter, data read, data write]
 status: stable
-source: custom_library
-library_root: SoC Blockset Support Package for AMD FPGA and SoC Devices
-category_path: Sdr transceiver
+sources:
+  - resource: matlab:mpsoczcu102lib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset Support Package for AMD FPGA and SoC Devices
+kb_folder: soc-blockset-support-package-for-amd-fpga-and-soc-devices
+category: sdr-transceiver
 block_count: 18
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Sdr transceiver
-
-Use these blocks for sdr transceiver.
 
 ## Recommended Blocks
 

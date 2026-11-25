@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Waveforms processing
-description: Waveform generation and signal processing
-tags: [pulse, waveform, compression, detection, clustering]
+description: Waveform generation and signal processing (4 blocks)
+tags: [toolbox-kb, radar-toolbox, pulse, waveform, compression, detection, clustering]
 status: stable
-source: mathworks_toolbox
-library_root: Radar Toolbox
-category_path: Waveforms processing
+sources:
+  - resource: matlab:radarlib
+source: toolbox_kb
+managed_by: satk
+library: Radar Toolbox
+kb_folder: radar-toolbox
+category: waveforms-processing
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Waveforms processing
-
-Use these blocks for waveforms processing.
 
 ## Recommended Blocks
 

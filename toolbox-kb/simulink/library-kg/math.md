@@ -1,33 +1,30 @@
 ---
 type: Simulink Block Category
 title: Math
-description: Arithmetic, trigonometric, and scalar math
-tags: [math, arithmetic, trigonometry, gain, sum, product, sqrt]
-status: stable
-source: custom_library
-library_root: Simulink
-category_path: Math
+description: "Arithmetic, trigonometric, and scalar math (91 blocks)"
+tags: [toolbox-kb, simulink, math, arithmetic, trigonometry, gain, sum, product, sqrt]
+status: draft
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: math
 block_count: 91
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Math
-
-Use these blocks for math.
 
 ## Recommended Blocks
 
 | Block | ReferenceBlock | Since | Intent |
 |---|---|---|---|
-| Gain | simulink/Commonly
-Used Blocks/Gain | R2023a+ | Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants. |
-| Product | simulink/Commonly
-Used Blocks/Product | R2023a+ | Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication. |
-| Sum | simulink/Commonly
-Used Blocks/Sum | R2023a+ | Add or subtract inputs — use for summing signals and forming error terms. |
-| Vector
-Concatenate | simulink/Commonly
-Used Blocks/Vector
-Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combine signals along one dimension. |
+| Gain | simulink/Commonly Used Blocks/Gain | R2023a+ | Scale a signal by a constant factor — use for unit conversion, controller gains, or applying physical constants. |
+| Product | simulink/Commonly Used Blocks/Product | R2023a+ | Multiply and optionally divide inputs — use for scaling, products, and element-wise multiplication. |
+| Sum | simulink/Commonly Used Blocks/Sum | R2023a+ | Add or subtract inputs — use for summing signals and forming error terms. |
+| Vector Concatenate | simulink/Commonly Used Blocks/Vector Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combine signals along one dimension. |
 | Abs | simulink/Math Operations/Abs | R2023a+ | Output the absolute value (or complex magnitude) of the input — use to remove sign or get magnitude. |
 | Add | simulink/Math Operations/Add | R2023a+ | Add and optionally subtract inputs — use for summing signals with per-port sign control. |
 | Algebraic Constraint | simulink/Math Operations/Algebraic Constraint | R2023a+ | Force an input expression to zero by solving for a constrained output — use to model implicit algebraic equations. |
@@ -52,7 +49,7 @@ Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combi
 | Reshape | simulink/Math Operations/Reshape | R2023a+ | Change the dimensions of a signal without changing its data — use to reshape vectors and matrices. |
 | Rounding Function | simulink/Math Operations/Rounding Function | R2023a+ | Apply a selectable rounding function (floor, ceil, round, fix) — use to round to integers. |
 | Sign | simulink/Math Operations/Sign | R2023a+ | Output the sign (-1, 0, +1) of the input — use for sign extraction or direction. |
-| Signed Sqrt | simulink/Math Operations/Signed Sqrt | R2023a+ | Compute sign(u)*sqrt(|u|) — use for signed square-root scaling. |
+| Signed Sqrt | simulink/Math Operations/Signed Sqrt | R2023a+ | Compute sign(u)*sqrt(\|u\|) — use for signed square-root scaling. |
 | Sine Wave Function | simulink/Math Operations/Sine Wave Function | R2023a+ | Generate a sine of the input signal (function form) — use to compute sin of a time or phase input. |
 | Sqrt | simulink/Math Operations/Sqrt | R2023a+ | Compute the square root of the input — use for magnitude or RMS-type math. |
 | Squeeze | simulink/Math Operations/Squeeze | R2023a+ | Remove singleton dimensions from a signal — use to drop length-1 array dimensions. |
@@ -88,7 +85,7 @@ Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combi
 | Hypot | simulink/Quick Insert/Math Operations/Hypot | R2023a+ | Compute sqrt(u1^2 + u2^2) robustly — use for magnitude/hypotenuse without overflow. |
 | Log | simulink/Quick Insert/Math Operations/Log | R2023a+ | Compute the natural logarithm of the input. |
 | Log10 | simulink/Quick Insert/Math Operations/Log10 | R2023a+ | Compute the base-10 logarithm of the input. |
-| Magnitude Squared | simulink/Quick Insert/Math Operations/Magnitude Squared | R2023a+ | Compute |u|^2 of a possibly complex input — use for power/energy without a square root. |
+| Magnitude Squared | simulink/Quick Insert/Math Operations/Magnitude Squared | R2023a+ | Compute \|u\|^2 of a possibly complex input — use for power/energy without a square root. |
 | Matrix Divide | simulink/Quick Insert/Math Operations/Matrix Divide | R2023a+ | Solve a matrix equation (left/right matrix division) — use for linear-system solves. |
 | Max | simulink/Quick Insert/Math Operations/Max | R2023a+ | Output the maximum of the inputs — use for element-wise or port-wise max selection. |
 | Max of Elements | simulink/Quick Insert/Math Operations/Max of Elements | R2023a+ | Output the maximum element of a vector/array — use to find the largest value in a signal. |
@@ -104,7 +101,7 @@ Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combi
 | Reciprocal Square Root | simulink/Quick Insert/Math Operations/Reciprocal Square Root | R2023a+ | Compute 1/sqrt(u) — use for normalization such as inverse magnitude. |
 | Rem | simulink/Quick Insert/Math Operations/Rem | R2023a+ | Compute the remainder after division (sign of the dividend) — use for remainder arithmetic. |
 | Round | simulink/Quick Insert/Math Operations/Round | R2023a+ | Round to the nearest integer — use for standard rounding. |
-| Signed Square Root | simulink/Quick Insert/Math Operations/Signed Square Root | R2023a+ | Compute sign(u)*sqrt(|u|) — use for signed square-root scaling. |
+| Signed Square Root | simulink/Quick Insert/Math Operations/Signed Square Root | R2023a+ | Compute sign(u)*sqrt(\|u\|) — use for signed square-root scaling. |
 | Sin | simulink/Quick Insert/Math Operations/Sin | R2023a+ | Compute the sine of the input (radians) — use for trig and waveform generation. |
 | Sin Cordic | simulink/Quick Insert/Math Operations/Sin Cordic | R2023a+ | Compute sine using a CORDIC algorithm — use for efficient sin on fixed-point/embedded targets. |
 | SinCos | simulink/Quick Insert/Math Operations/SinCos | R2023a+ | Compute sine and cosine of the input together — use for efficient combined trig. |
@@ -114,7 +111,4 @@ Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combi
 | Tan | simulink/Quick Insert/Math Operations/Tan | R2023a+ | Compute the tangent of the input (radians). |
 | Tanh | simulink/Quick Insert/Math Operations/Tanh | R2023a+ | Compute the hyperbolic tangent — use for smooth saturating nonlinearities. |
 | ln | simulink/Quick Insert/Math Operations/ln | R2023a+ | Compute the natural logarithm of the input. |
-| Vector
-Concatenate | simulink/Signal
-Routing/Vector
-Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combine signals along one dimension. |
+| Vector Concatenate | simulink/Signal Routing/Vector Concatenate | R2023a+ | Concatenate inputs into a single vector — use to combine signals along one dimension. |

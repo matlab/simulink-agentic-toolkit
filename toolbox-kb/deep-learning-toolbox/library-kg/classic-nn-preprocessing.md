@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Classic nn preprocessing
-description: Data preprocessing and postprocessing functions for classic NN workflows
-tags: [mapminmax, mapstd, pca, preprocessing, fixunknowns]
+description: Data preprocessing and postprocessing functions for classic NN workflows (15 blocks)
+tags: [toolbox-kb, deep-learning-toolbox, mapminmax, mapstd, pca, preprocessing, fixunknowns]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Classic nn preprocessing
+sources:
+  - resource: matlab:neural
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: classic-nn-preprocessing
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Classic nn preprocessing
-
-Use these blocks for classic nn preprocessing.
 
 ## Recommended Blocks
 

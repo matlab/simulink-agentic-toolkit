@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sdr hardware
-description: RTL-SDR receive-only software-defined radio interface
-tags: [rtl, sdr, radio, receiver, usb]
+description: RTL-SDR receive-only software-defined radio interface (1 blocks)
+tags: [toolbox-kb, communications-toolbox-support-package-for-rtl-sdr-radio, rtl, sdr, radio, receiver, usb]
 status: stable
-source: mathworks_toolbox
-library_root: Communications Toolbox Support Package for RTL-SDR Radio
-category_path: Sdr hardware
+sources:
+  - resource: matlab:sdrrlib
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox Support Package for RTL-SDR Radio
+kb_folder: communications-toolbox-support-package-for-rtl-sdr-radio
+category: sdr-hardware
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Sdr hardware
-
-Use these blocks for sdr hardware.
 
 ## Recommended Blocks
 

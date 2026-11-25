@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Two phase fluid
-description: Two-phase fluid (liquid/vapor) elements for refrigeration and phase-change systems
-tags: [two-phase fluid]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Two phase fluid
+description: Two-phase fluid (liquid/vapor) elements for refrigeration and phase-change systems (15 blocks)
+tags: [toolbox-kb, simscape, two-phase fluid]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: two-phase-fluid
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Two phase fluid
-
-Use these blocks for two phase fluid.
 
 ## Recommended Blocks
 

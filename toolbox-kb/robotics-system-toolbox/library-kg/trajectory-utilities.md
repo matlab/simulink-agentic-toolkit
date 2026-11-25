@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Trajectory utilities
-description: Trajectory generation and coordinate utilities
-tags: [trajectory, jerk, snap, polynomial, rotation, transform]
+description: Trajectory generation and coordinate utilities (7 blocks)
+tags: [toolbox-kb, robotics-system-toolbox, trajectory, jerk, snap, polynomial, rotation, transform]
 status: stable
-source: mathworks_toolbox
-library_root: Robotics System Toolbox
-category_path: Trajectory utilities
+sources:
+  - resource: matlab:robotutilslib
+source: toolbox_kb
+managed_by: satk
+library: Robotics System Toolbox
+kb_folder: robotics-system-toolbox
+category: trajectory-utilities
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Trajectory utilities
-
-Use these blocks for trajectory utilities.
 
 ## Recommended Blocks
 

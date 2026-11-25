@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal management
-description: Buffering, indexing, and attribute handling
-tags: [signal management, buffer, unbuffer, flip, selector, overwrite, data type, clock]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Signal management
+description: "Buffering, indexing, and attribute handling (23 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox, signal management, buffer, unbuffer, flip, selector, overwrite, data type, clock]
+status: draft
+sources:
+  - resource: matlab:dspmtrx3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: signal-management
 block_count: 23
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Signal management
-
-Use these blocks for signal management.
 
 ## Recommended Blocks
 

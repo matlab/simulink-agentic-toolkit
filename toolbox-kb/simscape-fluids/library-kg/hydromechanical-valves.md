@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Hydromechanical valves
-description: Primitive building blocks for constructing custom spool and poppet valve geometries from first principles
-tags: [spool, land, poppet, bore, hydromechanical]
+description: Primitive building blocks for constructing custom spool and poppet valve geometries from first principles (12 blocks)
+tags: [toolbox-kb, simscape-fluids, spool, land, poppet, bore, hydromechanical]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Fluids
-category_path: Hydromechanical valves
+sources:
+  - resource: matlab:SimscapeFluids_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Fluids
+kb_folder: simscape-fluids
+category: hydromechanical-valves
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Hydromechanical valves
-
-Use these blocks for hydromechanical valves.
 
 ## Recommended Blocks
 

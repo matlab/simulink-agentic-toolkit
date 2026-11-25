@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Board io
-description: Physical board I/O blocks for switches, buttons, LEDs, and GPIO pins
-tags: [DIP, switch, LED, button, GPIO, pin]
+description: "Physical board I/O blocks for switches, buttons, LEDs, and GPIO pins (5 blocks)"
+tags: [toolbox-kb, soc-blockset, DIP, switch, LED, button, GPIO, pin]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Board io
+sources:
+  - resource: matlab:hwlogiciolib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: board-io
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Board io
-
-Use these blocks for board io.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Statistics
-description: HDL-optimized image statistics on a pixel stream
-tags: [statistics, histogram, image statistics]
+description: HDL-optimized image statistics on a pixel stream (2 blocks)
+tags: [toolbox-kb, vision-hdl-toolbox, statistics, histogram, image statistics]
 status: stable
-source: custom_library
-library_root: Vision HDL Toolbox
-category_path: Statistics
+sources:
+  - resource: matlab:visionhdlstatistics
+source: toolbox_kb
+managed_by: satk
+library: Vision HDL Toolbox
+kb_folder: vision-hdl-toolbox
+category: statistics
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Statistics
-
-Use these blocks for statistics.
 
 ## Recommended Blocks
 

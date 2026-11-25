@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Gamepad
-description: Controller input blocks
-tags: [gamepad, joystick, button, competition, accelerometer]
+description: Controller input blocks (6 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller, gamepad, joystick, button, competition, accelerometer]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
-category_path: Gamepad
+sources:
+  - resource: matlab:vexarmcortexlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for ARM Cortex-based VEX Microcontroller
+kb_folder: simulink-coder-support-package-for-arm-cortex-based-vex-microcontroller
+category: gamepad
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Gamepad
-
-Use these blocks for gamepad.
 
 ## Recommended Blocks
 

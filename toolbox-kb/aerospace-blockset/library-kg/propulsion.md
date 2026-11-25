@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Propulsion
-description: Engine and propulsion system models
-tags: [turbofan, engine, thrust, spool, fuel flow]
+description: Engine and propulsion system models (1 blocks)
+tags: [toolbox-kb, aerospace-blockset, turbofan, engine, thrust, spool, fuel flow]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Propulsion
+sources:
+  - resource: matlab:aerolibpropulsion2
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: propulsion
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Propulsion
-
-Use these blocks for propulsion.
 
 ## Recommended Blocks
 

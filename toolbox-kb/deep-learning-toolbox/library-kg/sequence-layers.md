@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sequence layers
-description: Recurrent layers (LSTM, GRU) and reshaping for sequence processing
-tags: [lstm, gru, sequence, recurrent, flatten]
+description: "Recurrent layers (LSTM, GRU) and reshaping for sequence processing (5 blocks)"
+tags: [toolbox-kb, deep-learning-toolbox, lstm, gru, sequence, recurrent, flatten]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Sequence layers
+sources:
+  - resource: matlab:dlsequencelib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: sequence-layers
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Sequence layers
-
-Use these blocks for sequence layers.
 
 ## Recommended Blocks
 

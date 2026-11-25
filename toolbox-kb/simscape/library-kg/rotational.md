@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Rotational
-description: Mechanical rotational elements and references
-tags: [rotational]
-status: stable
-source: custom_library
-library_root: Simscape
-category_path: Rotational
+description: Mechanical rotational elements and references (38 blocks)
+tags: [toolbox-kb, simscape, rotational]
+status: draft
+sources:
+  - resource: matlab:fl_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape
+kb_folder: simscape
+category: rotational
 block_count: 38
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Rotational
-
-Use these blocks for rotational.
 
 ## Recommended Blocks
 

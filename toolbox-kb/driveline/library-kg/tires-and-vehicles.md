@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Tires and vehicles
-description: Vehicle bodies, tires, and road interaction models for longitudinal dynamics
-tags: [tire, vehicle, road, wheel, body]
+description: "Vehicle bodies, tires, and road interaction models for longitudinal dynamics (9 blocks)"
+tags: [toolbox-kb, driveline, tire, vehicle, road, wheel, body]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Tires and vehicles
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: tires-and-vehicles
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Tires and vehicles
-
-Use these blocks for tires and vehicles.
 
 ## Recommended Blocks
 

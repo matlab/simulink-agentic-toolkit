@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Linear models
-description: Simulate imported LTI/second-order model objects
-tags: [lti system, sparse second order]
+description: Simulate imported LTI/second-order model objects (2 blocks)
+tags: [toolbox-kb, control-system-toolbox, lti system, sparse second order]
 status: stable
-source: custom_library
-library_root: Control System Toolbox
-category_path: Linear models
+sources:
+  - resource: matlab:cstblocks
+source: toolbox_kb
+managed_by: satk
+library: Control System Toolbox
+kb_folder: control-system-toolbox
+category: linear-models
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Linear models
-
-Use these blocks for linear models.
 
 ## Recommended Blocks
 

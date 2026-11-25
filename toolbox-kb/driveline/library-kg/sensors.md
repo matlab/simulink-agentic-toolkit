@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors
-description: Power measurement sensors for rotational and translational domains
-tags: [sensor, power, measurement, torque, force]
+description: Power measurement sensors for rotational and translational domains (2 blocks)
+tags: [toolbox-kb, driveline, sensor, power, measurement, torque, force]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Sensors
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: sensors
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Sensors
-
-Use these blocks for sensors.
 
 ## Recommended Blocks
 

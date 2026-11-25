@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Effects dynamics
-description: Audio effects and dynamic range control
-tags: [effect, dynamic range, reverb, compressor]
-status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: Effects dynamics
+description: Audio effects and dynamic range control (4 blocks)
+tags: [toolbox-kb, audio-toolbox, effect, dynamic range, reverb, compressor]
+status: draft
+sources:
+  - resource: matlab:audiodynamicrange
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: effects-dynamics
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Effects dynamics
-
-Use these blocks for effects dynamics.
 
 ## Recommended Blocks
 

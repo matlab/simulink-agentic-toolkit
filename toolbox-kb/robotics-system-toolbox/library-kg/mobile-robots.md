@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Mobile robots
-description: Mobile robot kinematic models and path following
-tags: [ackermann, bicycle, differential, unicycle, pursuit]
+description: Mobile robot kinematic models and path following (5 blocks)
+tags: [toolbox-kb, robotics-system-toolbox, ackermann, bicycle, differential, unicycle, pursuit]
 status: stable
-source: mathworks_toolbox
-library_root: Robotics System Toolbox
-category_path: Mobile robots
+sources:
+  - resource: matlab:robotmobilelib
+source: toolbox_kb
+managed_by: satk
+library: Robotics System Toolbox
+kb_folder: robotics-system-toolbox
+category: mobile-robots
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:27Z" }
 ---
 
 # Mobile robots
-
-Use these blocks for mobile robots.
 
 ## Recommended Blocks
 

@@ -1,15 +1,67 @@
 {
-  "generatedAt": "2026-08-19T17:52:09",
-  "generatedAtDatenum": 740213.74454920134,
-  "generatorVersion": 4,
-  "libraries": [
-    "Data Acquisition Toolbox"
-  ],
-  "blockCount": 6,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Data_Acquisition_Toolbox": {
-      "blockCount": 6
+  "pages": [
+    {
+      "id": "data-acquisition",
+      "kind": "toolbox",
+      "library": "Data Acquisition Toolbox",
+      "kbFolder": "data-acquisition-toolbox",
+      "category": "data-acquisition",
+      "hash": "9040c7c111a813055e34cd88b117e90998c50e30545e774b08c751381bc7231a",
+      "fm": {
+        "title": "Data acquisition",
+        "description": "Hardware DAQ device interface blocks for analog and digital I/O (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "data-acquisition-toolbox",
+          "daq",
+          "analog",
+          "digital",
+          "acquisition",
+          "hardware"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog Input",
+          "ref": "daqlib/Analog Input",
+          "since": "R2023a+",
+          "intent": "Acquire buffered analog voltage data from a DAQ device — use to stream multi-sample analog measurements from physical sensors into Simulink at hardware-timed rates"
+        },
+        {
+          "block": "Analog Input (Single Sample)",
+          "ref": "daqlib/Analog Input (Single Sample)",
+          "since": "R2023a+",
+          "intent": "Read a single analog voltage sample from a DAQ device each time step — use for slow-rate measurements where one sample per Simulink step is sufficient"
+        },
+        {
+          "block": "Analog Output",
+          "ref": "daqlib/Analog Output",
+          "since": "R2023a+",
+          "intent": "Output buffered analog voltage waveforms to a DAQ device — use to generate continuous analog signals for actuator control or stimulus generation from Simulink"
+        },
+        {
+          "block": "Analog Output (Single Sample)",
+          "ref": "daqlib/Analog Output (Single Sample)",
+          "since": "R2023a+",
+          "intent": "Write a single analog voltage value to a DAQ device each time step — use for setpoint-style analog outputs where one value per step drives the hardware"
+        },
+        {
+          "block": "Digital Input (Single Sample)",
+          "ref": "daqlib/Digital Input (Single Sample)",
+          "since": "R2023a+",
+          "intent": "Read the state of digital input lines from a DAQ device — use to acquire discrete switch states, trigger signals, or digital sensor outputs"
+        },
+        {
+          "block": "Digital Output (Single Sample)",
+          "ref": "daqlib/Digital Output (Single Sample)",
+          "since": "R2023a+",
+          "intent": "Set the state of digital output lines on a DAQ device — use to control relays, indicator LEDs, or digital enable signals from Simulink"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:18",
+  "generatedAtDatenum": 740309.99535096064
 }

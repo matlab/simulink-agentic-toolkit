@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Vehicle dynamics
-description: Longitudinal vehicle body and road-load dynamics
-tags: [vehicle dynamics, vehicle body, road load, motorcycle body]
+description: Longitudinal vehicle body and road-load dynamics (4 blocks)
+tags: [toolbox-kb, powertrain-blockset, vehicle dynamics, vehicle body, road load, motorcycle body]
 status: stable
-source: custom_library
-library_root: Powertrain Blockset
-category_path: Vehicle dynamics
+sources:
+  - resource: matlab:autolibvehdynlong
+source: toolbox_kb
+managed_by: satk
+library: Powertrain Blockset
+kb_folder: powertrain-blockset
+category: vehicle-dynamics
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Vehicle dynamics
-
-Use these blocks for vehicle dynamics.
 
 ## Recommended Blocks
 

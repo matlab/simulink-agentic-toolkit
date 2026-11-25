@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ad9371 testbenches
-description: AD9371 verification testbenches
-tags: [testbench, dpd, loopback, characterize]
+description: AD9371 verification testbenches (7 blocks)
+tags: [toolbox-kb, rf-blockset-models-for-analog-devices-rf-transceivers, testbench, dpd, loopback, characterize]
 status: stable
-source: mathworks_toolbox
-library_root: RF Blockset Models for Analog Devices RF Transceivers
-category_path: Ad9371 testbenches
+sources:
+  - resource: matlab:ad9371_testbenches
+source: toolbox_kb
+managed_by: satk
+library: RF Blockset Models for Analog Devices RF Transceivers
+kb_folder: rf-blockset-models-for-analog-devices-rf-transceivers
+category: ad9371-testbenches
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Ad9371 testbenches
-
-Use these blocks for ad9371 testbenches.
 
 ## Recommended Blocks
 

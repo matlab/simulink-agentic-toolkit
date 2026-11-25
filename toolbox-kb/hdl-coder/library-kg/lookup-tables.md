@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Lookup tables
-description: Lookup tables and prelookup
-tags: [lookup, table, prelookup, interpolation, breakpoint]
-status: stable
-source: custom_library
-library_root: HDL Coder
-category_path: Lookup tables
+description: Lookup tables and prelookup (8 blocks)
+tags: [toolbox-kb, hdl-coder, lookup, table, prelookup, interpolation, breakpoint]
+status: draft
+sources:
+  - resource: matlab:hdlsllib
+source: toolbox_kb
+managed_by: satk
+library: HDL Coder
+kb_folder: hdl-coder
+category: lookup-tables
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Lookup tables
-
-Use these blocks for lookup tables.
 
 ## Recommended Blocks
 

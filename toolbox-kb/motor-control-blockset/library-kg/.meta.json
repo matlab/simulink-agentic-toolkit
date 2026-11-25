@@ -1,15 +1,750 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457189813,
-  "generatorVersion": 4,
-  "libraries": [
-    "Motor Control Blockset"
-  ],
-  "blockCount": 80,
-  "categoryCount": 10,
-  "libraryFingerprints": {
-    "Motor_Control_Blockset": {
-      "blockCount": 80
+  "pages": [
+    {
+      "id": "control-references",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "control-references",
+      "hash": "03ada866637945ad62ac125e8889daac2aafa6398ff875d86b449ea2a730414a",
+      "fm": {
+        "title": "Control references",
+        "description": "Torque/current/speed reference generators and feed-forward blocks that produce commands for FOC and vector control loops (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "reference",
+          "control reference",
+          "feed forward",
+          "MTPA",
+          "torque estimator",
+          "commutation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "ACIM Control Reference",
+          "ref": "mcblib/Controls/Control Reference/ACIM Control Reference",
+          "since": "R2023a+",
+          "intent": "Compute id/iq current references for an induction motor from a torque or speed command — use as the outer setpoint block inside an ACIM field-oriented control loop"
+        },
+        {
+          "block": "ACIM Feed Forward Control",
+          "ref": "mcblib/Controls/Control Reference/ACIM Feed Forward Control",
+          "since": "R2023a+",
+          "intent": "Add decoupling voltage feed-forward terms for an induction motor FOC loop — use to cancel cross-coupling between d and q axes and improve current-loop bandwidth"
+        },
+        {
+          "block": "ACIM Slip Speed Estimator",
+          "ref": "mcblib/Controls/Control Reference/ACIM Slip Speed Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate rotor slip frequency from stator current references and rotor time constant — use in indirect field-oriented control of induction motors to orient the reference frame"
+        },
+        {
+          "block": "ACIM Torque Estimator",
+          "ref": "mcblib/Controls/Control Reference/ACIM Torque Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate electromagnetic torque of an induction motor from d/q currents and magnetizing inductance — use for torque monitoring, feedback, or diagnostics without a torque sensor"
+        },
+        {
+          "block": "DQ Limiter",
+          "ref": "mcblib/Controls/Control Reference/DQ Limiter",
+          "since": "R2023a+",
+          "intent": "Saturate d and q current or voltage vectors while preserving their angle — use to enforce inverter voltage limits or maximum current envelopes without distorting the commanded direction"
+        },
+        {
+          "block": "LUT based ACIM Control Reference",
+          "ref": "mcblib/Controls/Control Reference/LUT based ACIM Control Reference",
+          "since": "R2026a+",
+          "intent": "Look up id/iq current references for an induction motor from precomputed tables indexed by torque and speed — use when torque linearity across the operating envelope matters more than analytical simplicity"
+        },
+        {
+          "block": "LUT based PMSM Control Reference",
+          "ref": "mcblib/Controls/Control Reference/LUT based PMSM Control Reference",
+          "since": "R2023a+",
+          "intent": "Look up id/iq current references for a PMSM from precomputed torque/speed tables — use for MTPA and field-weakening operation of interior PMSMs where closed-form solutions are inaccurate"
+        },
+        {
+          "block": "LUT based SynRM Control Reference",
+          "ref": "mcblib/Controls/Control Reference/LUT based SynRM Control Reference",
+          "since": "R2024a+",
+          "intent": "Look up id/iq current references for a synchronous reluctance motor from precomputed tables — use to achieve optimal torque-per-ampere operation across the full SynRM operating map"
+        },
+        {
+          "block": "MTPA Control Reference",
+          "ref": "mcblib/Controls/Control Reference/MTPA Control Reference",
+          "since": "R2023a+",
+          "intent": "Compute maximum torque per ampere (MTPA) d/q current references analytically from motor parameters — use for interior PMSMs to minimize copper losses at a given torque command"
+        },
+        {
+          "block": "PMSM FeedForward Control",
+          "ref": "mcblib/Controls/Control Reference/PMSM FeedForward Control",
+          "since": "R2023a+",
+          "intent": "Add decoupling voltage feed-forward terms for PMSM FOC — use to cancel back-EMF and cross-axis coupling and improve current-loop transient response"
+        },
+        {
+          "block": "PMSM Torque Estimator",
+          "ref": "mcblib/Controls/Control Reference/PMSM Torque Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate PMSM electromagnetic torque from measured d/q currents and machine parameters — use for torque feedback, monitoring, or verification without a torque sensor"
+        },
+        {
+          "block": "Position Generator",
+          "ref": "mcblib/Controls/Control Reference/Position Generator",
+          "since": "R2023a+",
+          "intent": "Generate a synthetic electrical position ramp from a speed reference — use for open-loop rotor position during I-F startup or when a real sensor is unavailable"
+        },
+        {
+          "block": "SRM Commutation",
+          "ref": "mcblib/Controls/Control Reference/SRM Commutation",
+          "since": "R2023a+",
+          "intent": "Sequence phase excitation for a switched reluctance motor based on rotor position — use as the electrical commutation logic for SRM drives"
+        },
+        {
+          "block": "Six Step Commutation",
+          "ref": "mcblib/Controls/Control Reference/Six Step Commutation",
+          "since": "R2023a+",
+          "intent": "Drive a BLDC motor in six-step (trapezoidal) commutation based on Hall sensor states — use for simple, robust BLDC control without full field-oriented control"
+        },
+        {
+          "block": "SynRM FeedForward Control",
+          "ref": "mcblib/Controls/Control Reference/SynRM FeedForward Control",
+          "since": "R2024a+",
+          "intent": "Add voltage feed-forward decoupling for a synchronous reluctance motor FOC loop — use to compensate cross-axis coupling and improve dynamic response"
+        },
+        {
+          "block": "SynRM Torque Estimator",
+          "ref": "mcblib/Controls/Control Reference/SynRM Torque Estimator",
+          "since": "R2024a+",
+          "intent": "Estimate synchronous reluctance motor torque from d/q currents and saturated inductance data — use for torque feedback or monitoring in SynRM drives"
+        },
+        {
+          "block": "Vector Control Reference",
+          "ref": "mcblib/Controls/Control Reference/Vector Control Reference",
+          "since": "R2023a+",
+          "intent": "Generate d/q current references for a generic three-phase vector-controlled machine — use as the outer-loop reference block when detailed motor-type-specific logic is not required"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "controllers",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "controllers",
+      "hash": "a30422ae313b425a8a6495b901c76192ecc732d48495f58d00db6be80b8f0ea9",
+      "fm": {
+        "title": "Controllers",
+        "description": "Closed-loop current, speed, and voltage controllers plus autotuning and gain-selection helpers (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "PI",
+          "FOC",
+          "controller",
+          "autotuner",
+          "gain",
+          "I-F",
+          "V/F"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Derating Function",
+          "ref": "mcblib/Controls/Controllers/Derating Function",
+          "since": "R2023a+",
+          "intent": "Reduce a torque or current command based on temperature, DC bus voltage, or other limits — use to keep the drive within safe operating limits without abrupt shutoff"
+        },
+        {
+          "block": "FOC Default Controller Gains",
+          "ref": "mcblib/Controls/Controllers/FOC Default Controller Gains",
+          "since": "R2023b+",
+          "intent": "Compute default PI gains for current, speed, and flux loops from motor parameters and bandwidth targets — use as a starting point before autotuning or hand tuning"
+        },
+        {
+          "block": "Field Oriented Control Autotuner",
+          "ref": "mcblib/Controls/Controllers/Field Oriented Control Autotuner",
+          "since": "R2023a+",
+          "intent": "Run a closed-loop system-identification and gain-tuning routine on a live FOC drive — use to derive current, speed, and field-weakening PI gains automatically on target hardware"
+        },
+        {
+          "block": "Field-Oriented Current Controller",
+          "ref": "mcblib/Controls/Controllers/Field-Oriented Current Controller",
+          "since": "R2023b+",
+          "intent": "Regulate d and q axis currents to their references with decoupled PI loops and voltage limiting — use as the inner current loop of any FOC-based motor drive"
+        },
+        {
+          "block": "I-F Controller",
+          "ref": "mcblib/Controls/Controllers/I-F Controller",
+          "since": "R2024a+",
+          "intent": "Drive a PMSM in open-loop current mode with a rotating angle ramp — use during sensorless startup before the position observer converges"
+        },
+        {
+          "block": "PI Controller",
+          "ref": "mcblib/Controls/Controllers/PI Controller",
+          "since": "R2023a+",
+          "intent": "Discrete PI controller with anti-windup and output saturation tailored for motor-control loops — use to build custom current, speed, position, or flux regulators"
+        },
+        {
+          "block": "Sensorless Six-Step Commutation",
+          "ref": "mcblib/Controls/Controllers/Sensorless Six-Step Commutation",
+          "since": "R2025a+",
+          "intent": "Perform BLDC six-step commutation using back-EMF zero-crossing detection instead of Hall sensors — use for low-cost BLDC drives without position feedback"
+        },
+        {
+          "block": "VbyF Controller",
+          "ref": "mcblib/Controls/Controllers/VbyF Controller",
+          "since": "R2023b+",
+          "intent": "Produce a stator voltage reference proportional to frequency for scalar V/F control of induction motors — use when full-vector control is unnecessary, e.g. fans and pumps"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "inverters",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "inverters",
+      "hash": "c3ed0bb3b1ca0a1c6f89d1095890ed6127c2bb0a1f94f12c041f47a6a91f6a5c",
+      "fm": {
+        "title": "Inverters",
+        "description": "Average-value inverter models that convert DC bus voltage and modulation signals into three-phase output for simulation (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "inverter",
+          "average value",
+          "DC bus",
+          "three-phase",
+          "power stage"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Average-Value Inverter",
+          "ref": "mcblib/Electrical Systems/Inverters/Average-Value Inverter",
+          "since": "R2023a+",
+          "intent": "Model a three-phase inverter as an ideal voltage source proportional to duty cycle — use for fast, non-switching plant simulations of FOC loops when switching harmonics are not of interest"
+        },
+        {
+          "block": "BLDC Average-Value Inverter",
+          "ref": "mcblib/Electrical Systems/Inverters/BLDC Average-Value Inverter",
+          "since": "R2023a+",
+          "intent": "Average-value inverter model tailored for six-step BLDC commutation — use in trapezoidal-drive simulations where individual switching events can be abstracted away"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "math-transforms",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "math-transforms",
+      "hash": "e2d94667fe77350ef4651c45171745efd11babbd6646ef1c6ca6b8295163db0f",
+      "fm": {
+        "title": "Math transforms",
+        "description": "Clarke/Park and multi-phase transforms, PWM math, and trig utilities used inside FOC and vector-control math paths (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "Clarke",
+          "Park",
+          "transform",
+          "PWM",
+          "sine",
+          "atan2",
+          "VSD"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "3-Phase Sine Voltage Generator",
+          "ref": "mcblib/Controls/Math Transforms/3-Phase Sine Voltage Generator",
+          "since": "R2023a+",
+          "intent": "Generate a balanced three-phase sinusoidal voltage set from a magnitude and frequency command — use to drive AC motor models open-loop or synthesize test stimuli"
+        },
+        {
+          "block": "6-Phase Inverse VSD Transform",
+          "ref": "mcblib/Controls/Math Transforms/6-Phase Inverse VSD Transform",
+          "since": "R2024b+",
+          "intent": "Convert alpha/beta reference voltages back to six-phase (dual three-phase) output — use to drive six-phase inverters after control computations are done in the reduced frame"
+        },
+        {
+          "block": "6-Phase VSD Transform",
+          "ref": "mcblib/Controls/Math Transforms/6-Phase VSD Transform",
+          "since": "R2024b+",
+          "intent": "Apply the Vector Space Decomposition transform to convert six measured phase currents into two orthogonal subspaces — use for control of six-phase motors and to isolate harmonic content"
+        },
+        {
+          "block": "Clarke Transform",
+          "ref": "mcblib/Controls/Math Transforms/Clarke Transform",
+          "since": "R2023a+",
+          "intent": "Convert three-phase stationary quantities (ia, ib, ic) into two-axis alpha/beta stationary components — use as the first math step of any FOC current or voltage transformation"
+        },
+        {
+          "block": "Inverse Clarke Transform",
+          "ref": "mcblib/Controls/Math Transforms/Inverse Clarke Transform",
+          "since": "R2023a+",
+          "intent": "Convert alpha/beta stationary components back into three-phase voltage or current commands — use as the final math step before driving PWM in an FOC controller"
+        },
+        {
+          "block": "Inverse Park Transform",
+          "ref": "mcblib/Controls/Math Transforms/Inverse Park Transform",
+          "since": "R2023a+",
+          "intent": "Rotate d/q axis quantities back to the stationary alpha/beta frame using the electrical angle — use to convert voltage commands from the rotor-oriented frame before PWM generation"
+        },
+        {
+          "block": "PWM Phase Shift for Single Shunt FOC",
+          "ref": "mcblib/Controls/Math Transforms/PWM Phase Shift for Single Shunt FOC",
+          "since": "R2026a+",
+          "intent": "Offset PWM edges so that two distinct phase currents can be sampled on a single DC-bus shunt within one PWM period — use for cost-optimized drives with only one current sensor"
+        },
+        {
+          "block": "PWM Reference Generator",
+          "ref": "mcblib/Controls/Math Transforms/PWM Reference Generator",
+          "since": "R2023a+",
+          "intent": "Generate space-vector or sine-triangle PWM duty cycles from three-phase voltage references — use to drive a three-phase inverter from an FOC or vector controller"
+        },
+        {
+          "block": "Park Transform",
+          "ref": "mcblib/Controls/Math Transforms/Park Transform",
+          "since": "R2023a+",
+          "intent": "Rotate alpha/beta stationary quantities into the d/q rotor-oriented frame using the electrical angle — use to move currents and voltages into the rotating frame for FOC math"
+        },
+        {
+          "block": "Phase Current Extractor for Single Shunt FOC",
+          "ref": "mcblib/Controls/Math Transforms/Phase Current Extractor for Single Shunt FOC",
+          "since": "R2026a+",
+          "intent": "Reconstruct two phase currents from single-shunt DC-bus samples using PWM state timing — use to enable FOC on drives with only one current sensor"
+        },
+        {
+          "block": "SinCos Embedded Optimized",
+          "ref": "mcblib/Controls/Math Transforms/SinCos Embedded Optimized",
+          "since": "R2024b+",
+          "intent": "Compute sine and cosine of an electrical angle using a lookup-based implementation optimized for fixed-point/embedded targets — use inside Park/inverse-Park math on resource-constrained MCUs"
+        },
+        {
+          "block": "atan2",
+          "ref": "mcblib/Controls/Math Transforms/atan2",
+          "since": "R2023a+",
+          "intent": "Compute the four-quadrant arctangent using an embedded-optimized implementation — use to recover electrical angles from alpha/beta components on fixed-point targets"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "motors",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "motors",
+      "hash": "9cef12d1e33f0a7109cc05f97443b22a922cb227fb231dc8a498ddd4f86e509f",
+      "fm": {
+        "title": "Motors",
+        "description": "Electric machine models for BLDC, induction, and PMSM motors used as plants in motor-control simulations (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "motor",
+          "PMSM",
+          "BLDC",
+          "induction",
+          "machine",
+          "plant"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "BLDC",
+          "ref": "mcblib/Electrical Systems/Motors/BLDC",
+          "since": "R2023a+",
+          "intent": "Trapezoidal back-EMF permanent-magnet motor model — use as the plant in six-step commutated BLDC drive simulations"
+        },
+        {
+          "block": "Induction Motor",
+          "ref": "mcblib/Electrical Systems/Motors/Induction Motor",
+          "since": "R2023a+",
+          "intent": "Squirrel-cage induction machine model with configurable equivalent-circuit parameters — use as the plant for scalar V/F, direct torque, or vector-control simulations"
+        },
+        {
+          "block": "Interior PMSM",
+          "ref": "mcblib/Electrical Systems/Motors/Interior PMSM",
+          "since": "R2023a+",
+          "intent": "Interior permanent-magnet synchronous machine model with saliency (Ld ≠ Lq) — use as the plant for MTPA, field-weakening, and reluctance-torque studies"
+        },
+        {
+          "block": "Surface Mount PMSM",
+          "ref": "mcblib/Electrical Systems/Motors/Surface Mount PMSM",
+          "since": "R2023a+",
+          "intent": "Surface-mount permanent-magnet synchronous machine model with symmetric d/q inductance — use as the plant for FOC studies on non-salient PMSMs"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "parameter-estimation",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "parameter-estimation",
+      "hash": "3602c1835b4c1e659f42350379a0c63b4ae04085956b97a75d66aa9eb19b1fdd",
+      "fm": {
+        "title": "Parameter estimation",
+        "description": "Blocks that identify motor electrical and mechanical parameters (Rs, Ld, Lq, Rr, inertia, friction) from measured data (10 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "estimator",
+          "parameter identification",
+          "Rs",
+          "Ld",
+          "Lq",
+          "inertia",
+          "commissioning"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Id0 Estimator",
+          "ref": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Id0 Estimator",
+          "since": "R2023a+",
+          "intent": "Identify the zero-current bias of the d-axis in an induction motor during commissioning — use as one step of the ACIM parameter identification workflow"
+        },
+        {
+          "block": "Mechanical Parameter Estimator",
+          "ref": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Mechanical Parameter Estimator",
+          "since": "R2023a+",
+          "intent": "Identify motor inertia and viscous friction from a spin-down or acceleration test — use to obtain mechanical plant parameters for speed-loop tuning"
+        },
+        {
+          "block": "Parameter Estimation Configurator",
+          "ref": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Parameter Estimation Configurator",
+          "since": "R2023a+",
+          "intent": "Sequence and configure the motor parameter identification tests (signal injection, dwell times, ramps) — use as the top-level orchestrator of the commissioning workflow"
+        },
+        {
+          "block": "Rr L Estimator",
+          "ref": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Rr L Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate the rotor resistance and rotor inductance of an induction motor from injected test signals — use during ACIM commissioning to obtain rotor-side equivalent-circuit values"
+        },
+        {
+          "block": "Rs Estimator",
+          "ref": "mcblib/Parameter Estimation/ACIM Parameter Estimation/Rs Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate stator resistance by injecting a DC current and measuring the resulting voltage — use during commissioning of PMSM, induction, or SynRM drives"
+        },
+        {
+          "block": "Ld Estimator",
+          "ref": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Ld Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate the d-axis inductance of a PMSM from high-frequency current injection — use during commissioning to obtain the inductance needed for accurate current-loop tuning and MTPA lookups"
+        },
+        {
+          "block": "Lq Estimator",
+          "ref": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Lq Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate the q-axis inductance of a PMSM from high-frequency current injection — use during commissioning to characterize saliency and populate MTPA tables"
+        },
+        {
+          "block": "Mechanical Parameter Estimator",
+          "ref": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Mechanical Parameter Estimator",
+          "since": "R2023a+",
+          "intent": "Identify motor inertia and viscous friction from a spin-down or acceleration test — use to obtain mechanical plant parameters for speed-loop tuning"
+        },
+        {
+          "block": "Parameter Estimation Configurator",
+          "ref": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Parameter Estimation Configurator",
+          "since": "R2023a+",
+          "intent": "Sequence and configure the motor parameter identification tests (signal injection, dwell times, ramps) — use as the top-level orchestrator of the commissioning workflow"
+        },
+        {
+          "block": "Rs Estimator",
+          "ref": "mcblib/Parameter Estimation/PMSM Parameter Estimation/Rs Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate stator resistance by injecting a DC current and measuring the resulting voltage — use during commissioning of PMSM, induction, or SynRM drives"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "protection-diagnostics",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "protection-diagnostics",
+      "hash": "5f7a0281ced053b7afc0a8003e0a4a9fdbffcf70b00e03cb83068d1a93bc2c62",
+      "fm": {
+        "title": "Protection diagnostics",
+        "description": "Host-side serial communication and protection/diagnostic utilities for embedded motor-control targets (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "serial",
+          "host",
+          "protection",
+          "relay",
+          "diagnostic",
+          "safety"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Host Serial Receive",
+          "ref": "mcblib/Protection and Diagnostics/Host Serial Receive",
+          "since": "R2023a+",
+          "intent": "Receive framed serial data on the host PC from a target motor-control MCU — use to bring live measurement, telemetry, or debug data back into Simulink for monitoring"
+        },
+        {
+          "block": "Host Serial Setup",
+          "ref": "mcblib/Protection and Diagnostics/Host Serial Setup",
+          "since": "R2023a+",
+          "intent": "Configure the host-side serial port (COM port, baud rate, parity) used to talk to a target MCU — use once at the top of a host monitoring model"
+        },
+        {
+          "block": "Host Serial Transmit",
+          "ref": "mcblib/Protection and Diagnostics/Host Serial Transmit",
+          "since": "R2023a+",
+          "intent": "Send framed serial data from the host PC to a target motor-control MCU — use to command setpoints, gains, or test triggers from a live monitoring model"
+        },
+        {
+          "block": "Protection Relay",
+          "ref": "mcblib/Protection and Diagnostics/Protection Relay",
+          "since": "R2023a+",
+          "intent": "Latch a fault condition (over-current, over-temperature, over-voltage) and hold the drive disabled until reset — use to implement safe shutdown of a motor-control system"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensor-decoders",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "sensor-decoders",
+      "hash": "4e0c563efae565800dd69723c4e859eca2213867f72d718d679bd749316854cb",
+      "fm": {
+        "title": "Sensor decoders",
+        "description": "Position/speed decoders for Hall, quadrature encoder, and resolver sensors, plus watchdog and speed-measurement helpers (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "hall",
+          "encoder",
+          "resolver",
+          "quadrature",
+          "position",
+          "speed",
+          "watchdog"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hall Speed and Position",
+          "ref": "mcblib/Sensor Decoders/Hall Speed and Position",
+          "since": "R2023a+",
+          "intent": "Decode Hall-sensor A/B/C states into electrical angle and rotor speed — use to obtain position/speed feedback for BLDC drives and low-resolution PMSM applications"
+        },
+        {
+          "block": "Hall Validity",
+          "ref": "mcblib/Sensor Decoders/Hall Validity",
+          "since": "R2023a+",
+          "intent": "Detect illegal Hall-sensor state transitions such as all-high or all-low patterns — use to flag broken Hall sensors or wiring errors so the drive can go into a safe state"
+        },
+        {
+          "block": "Mechanical to Electrical Position",
+          "ref": "mcblib/Sensor Decoders/Mechanical to Electrical Position",
+          "since": "R2023a+",
+          "intent": "Convert mechanical shaft angle to electrical angle using the pole-pair count and apply modulo wrapping — use anywhere a mechanical sensor feeds an electrical control loop"
+        },
+        {
+          "block": "Quadrature Decoder",
+          "ref": "mcblib/Sensor Decoders/Quadrature Decoder",
+          "since": "R2023a+",
+          "intent": "Decode A/B encoder pulses into an accumulated count, direction, and index reset — use to convert incremental encoder feedback into position and speed for high-resolution servos"
+        },
+        {
+          "block": "Resolver Decoder",
+          "ref": "mcblib/Sensor Decoders/Resolver Decoder",
+          "since": "R2023a+",
+          "intent": "Demodulate resolver sine/cosine channels and excitation to recover rotor angle — use for motor-control feedback in high-vibration or high-temperature environments where encoders are unsuitable"
+        },
+        {
+          "block": "Software Watchdog Timer",
+          "ref": "mcblib/Sensor Decoders/Software Watchdog Timer",
+          "since": "R2023a+",
+          "intent": "Software watchdog that trips if a periodic kick signal is missed — use to detect task overruns or firmware hangs and force the drive into a safe state"
+        },
+        {
+          "block": "Speed Measurement",
+          "ref": "mcblib/Sensor Decoders/Speed Measurement",
+          "since": "R2023a+",
+          "intent": "Differentiate an accumulated position with configurable filtering to produce a low-noise speed estimate — use to close speed loops from encoder or resolver feedback"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensorless-estimators",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "sensorless-estimators",
+      "hash": "e55aa1c24b99fd52541bfbed35e105112036275f57b951b31721a59ca241bc3d",
+      "fm": {
+        "title": "Sensorless estimators",
+        "description": "Rotor position and speed observers that eliminate the need for a physical position sensor (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "sensorless",
+          "observer",
+          "flux",
+          "sliding mode",
+          "EMF",
+          "high frequency"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Extended EMF Observer",
+          "ref": "mcblib/Sensorless Estimators/Extended EMF Observer",
+          "since": "R2023a+",
+          "intent": "Estimate rotor position of a salient PMSM from extended back-EMF at medium-to-high speed — use for sensorless FOC of interior PMSMs above the low-speed region"
+        },
+        {
+          "block": "Flux Observer",
+          "ref": "mcblib/Sensorless Estimators/Flux Observer",
+          "since": "R2023a+",
+          "intent": "Estimate stator flux and rotor angle by integrating the voltage equation with drift compensation — use as the position observer for medium- to high-speed sensorless FOC"
+        },
+        {
+          "block": "Pulsating High Freq Observer",
+          "ref": "mcblib/Sensorless Estimators/Pulsating High Freq Observer",
+          "since": "R2023a+",
+          "intent": "Inject a high-frequency voltage signal on the d-axis and demodulate the resulting current ripple to extract rotor position — use for sensorless PMSM control at zero and low speed where back-EMF is too small"
+        },
+        {
+          "block": "Sliding Mode Observer",
+          "ref": "mcblib/Sensorless Estimators/Sliding Mode Observer",
+          "since": "R2023a+",
+          "intent": "Estimate back-EMF and rotor angle using a sliding-mode current observer — use for robust sensorless PMSM position estimation in the presence of parameter variation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-management",
+      "kind": "toolbox",
+      "library": "Motor Control Blockset",
+      "kbFolder": "motor-control-blockset",
+      "category": "signal-management",
+      "hash": "05754ef3db398e47968f33b7a37132831a90a623bcb6c8f8a77b9b888dc69515",
+      "fm": {
+        "title": "Signal management",
+        "description": "Signal packing, filtering, PLLs, dead-time compensation, and protocol codecs for embedded motor-control signal paths (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "motor-control-blockset",
+          "byte pack",
+          "IIR",
+          "PLL",
+          "dead-time",
+          "protocol",
+          "memory",
+          "filter"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Byte Pack",
+          "ref": "mcblib/Signal Management/Byte Pack",
+          "since": "R2024a+",
+          "intent": "Pack heterogeneous scalar signals into a single byte buffer using a specified layout — use to build serial or CAN telemetry frames from Simulink signals"
+        },
+        {
+          "block": "Byte Reversal",
+          "ref": "mcblib/Signal Management/Byte Reversal",
+          "since": "R2024a+",
+          "intent": "Reverse the byte order of a value or vector — use to convert between little-endian and big-endian representations when talking to external hardware"
+        },
+        {
+          "block": "Byte Unpack",
+          "ref": "mcblib/Signal Management/Byte Unpack",
+          "since": "R2024a+",
+          "intent": "Unpack a byte buffer into heterogeneous scalar signals using a specified layout — use to parse incoming serial or CAN telemetry frames"
+        },
+        {
+          "block": "Compute Parameter",
+          "ref": "mcblib/Signal Management/Compute Parameter",
+          "since": "R2024a+",
+          "intent": "Perform a one-time computation at model start based on workspace parameters and expose the result on an outport — use to derive constants (e.g., inverse Rs) that would otherwise recur every step"
+        },
+        {
+          "block": "Dead-Time Compensator",
+          "ref": "mcblib/Signal Management/Dead-Time Compensator",
+          "since": "R2024a+",
+          "intent": "Compensate inverter dead-time distortion by adding a current-sign-dependent voltage offset — use to restore output-voltage linearity in FOC drives at low modulation index"
+        },
+        {
+          "block": "IIR Filter",
+          "ref": "mcblib/Signal Management/IIR Filter",
+          "since": "R2023a+",
+          "intent": "Second-order IIR filter with fixed-point-friendly implementation — use for anti-aliasing sensor measurements, smoothing speed feedback, or shaping references in motor-control loops"
+        },
+        {
+          "block": "Memory Copy",
+          "ref": "mcblib/Signal Management/Memory Copy",
+          "since": "R2024a+",
+          "intent": "Copy a block of data between arrays or buffers in generated code — use to move telemetry or parameter blocks efficiently without loop constructs"
+        },
+        {
+          "block": "PLL with Feed Forward",
+          "ref": "mcblib/Signal Management/PLL with Feed Forward",
+          "since": "R2023b+",
+          "intent": "Track the phase and frequency of a sinusoidal signal or estimated back-EMF using a PLL with feed-forward speed input — use to smooth rotor angle estimates from noisy observers"
+        },
+        {
+          "block": "Position Compensation",
+          "ref": "mcblib/Signal Management/Position Compensation",
+          "since": "R2023a+",
+          "intent": "Compensate rotor angle for the one-sample delay between current sample time and the next PWM update — use to sharpen FOC current tracking at high electrical frequencies"
+        },
+        {
+          "block": "Protocol Decoder",
+          "ref": "mcblib/Signal Management/Protocol Decoder",
+          "since": "R2024a+",
+          "intent": "Decode framed messages according to a user-defined protocol (headers, checksum, payload) — use to parse serial or embedded communication streams inside the target model"
+        },
+        {
+          "block": "Protocol Encoder",
+          "ref": "mcblib/Signal Management/Protocol Encoder",
+          "since": "R2024a+",
+          "intent": "Encode framed messages according to a user-defined protocol — use to construct serial or embedded communication streams from Simulink signals"
+        },
+        {
+          "block": "Vector plot",
+          "ref": "mcblib/Signal Management/Vector plot",
+          "since": "R2023a+",
+          "intent": "Visualize two-dimensional vector quantities (e.g. alpha/beta or d/q) as an animated diagram during simulation — use to inspect FOC transforms and current-vector trajectories"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:35",
+  "generatedAtDatenum": 740309.99554697913
 }

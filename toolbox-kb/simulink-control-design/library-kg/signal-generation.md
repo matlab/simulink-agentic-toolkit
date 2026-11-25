@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal generation
-description: Test signal generators for identification
-tags: [prbs, sinestream, superposition, start-stop, signal]
+description: Test signal generators for identification (5 blocks)
+tags: [toolbox-kb, simulink-control-design, prbs, sinestream, superposition, start-stop, signal]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Signal generation
+sources:
+  - resource: matlab:slctrl_fre
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: signal-generation
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Signal generation
-
-Use these blocks for signal generation.
 
 ## Recommended Blocks
 

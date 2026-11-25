@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Applications
-description: Complete acoustic application subsystems
-tags: [speaker, enclosure, microphone, earbud, ear]
+description: Complete acoustic application subsystems (16 blocks)
+tags: [toolbox-kb, simscape-acoustics, speaker, enclosure, microphone, earbud, ear]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Acoustics
-category_path: Applications
+sources:
+  - resource: matlab:acoustic_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Acoustics
+kb_folder: simscape-acoustics
+category: applications
 block_count: 16
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Applications
-
-Use these blocks for applications.
 
 ## Recommended Blocks
 

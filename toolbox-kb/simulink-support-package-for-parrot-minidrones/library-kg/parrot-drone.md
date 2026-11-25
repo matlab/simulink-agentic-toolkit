@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Parrot drone
-description: Parrot minidrone communication and accessory control
-tags: [parrot, drone, udp, camera, flight]
+description: Parrot minidrone communication and accessory control (8 blocks)
+tags: [toolbox-kb, simulink-support-package-for-parrot-minidrones, parrot, drone, udp, camera, flight]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Support Package for Parrot Minidrones
-category_path: Parrot drone
+sources:
+  - resource: matlab:parrotlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Support Package for Parrot Minidrones
+kb_folder: simulink-support-package-for-parrot-minidrones
+category: parrot-drone
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Parrot drone
-
-Use these blocks for parrot drone.
 
 ## Recommended Blocks
 

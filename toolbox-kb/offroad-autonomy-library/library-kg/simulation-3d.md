@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Simulation 3d
-description: 3D visualization and virtual sensor simulation for offroad scenarios
-tags: [3d, simulation, scene, camera, lidar]
+description: "3D visualization and virtual sensor simulation for offroad scenarios (5 blocks)"
+tags: [toolbox-kb, offroad-autonomy-library, "3d", simulation, scene, camera, lidar]
 status: stable
-source: mathworks_toolbox
-library_root: Offroad Autonomy Library
-category_path: Simulation 3d
+sources:
+  - resource: matlab:offroadsim3dlib
+source: toolbox_kb
+managed_by: satk
+library: Offroad Autonomy Library
+kb_folder: offroad-autonomy-library
+category: simulation-3d
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Simulation 3d
-
-Use these blocks for simulation 3d.
 
 ## Recommended Blocks
 

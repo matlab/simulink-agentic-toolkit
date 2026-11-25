@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Incremental learning
-description: Update models online as new data streams in, with drift detection
-tags: [incremental, drift, kernel, linear]
-status: stable
-source: custom_library
-library_root: Statistics and Machine Learning Toolbox
-category_path: Incremental learning
+description: "Update models online as new data streams in, with drift detection (3 blocks)"
+tags: [toolbox-kb, statistics-and-machine-learning-toolbox, incremental, drift, kernel, linear]
+status: draft
+sources:
+  - resource: matlab:statsDrift
+source: toolbox_kb
+managed_by: satk
+library: Statistics and Machine Learning Toolbox
+kb_folder: statistics-and-machine-learning-toolbox
+category: incremental-learning
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:33Z" }
 ---
 
 # Incremental learning
-
-Use these blocks for incremental learning.
 
 ## Recommended Blocks
 

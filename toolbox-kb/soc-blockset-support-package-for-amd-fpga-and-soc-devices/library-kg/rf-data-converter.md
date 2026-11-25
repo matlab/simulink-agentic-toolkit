@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Rf data converter
-description: RFSoC direct-RF ADC/DAC data converter interface
-tags: [rf data converter, adc to vector, vector to dac, rfdc, aurora, otava]
+description: RFSoC direct-RF ADC/DAC data converter interface (22 blocks)
+tags: [toolbox-kb, soc-blockset-support-package-for-amd-fpga-and-soc-devices, rf data converter, adc to vector, vector to dac, rfdc, aurora, otava]
 status: stable
-source: custom_library
-library_root: SoC Blockset Support Package for AMD FPGA and SoC Devices
-category_path: Rf data converter
+sources:
+  - resource: matlab:rfsoczcu111lib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset Support Package for AMD FPGA and SoC Devices
+kb_folder: soc-blockset-support-package-for-amd-fpga-and-soc-devices
+category: rf-data-converter
 block_count: 22
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Rf data converter
-
-Use these blocks for rf data converter.
 
 ## Recommended Blocks
 

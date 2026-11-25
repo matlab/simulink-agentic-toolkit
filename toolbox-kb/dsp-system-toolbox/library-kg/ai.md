@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ai
-description: Blocks for ai.
+description: Blocks for Ai (1 blocks)
+tags: [toolbox-kb, dsp-system-toolbox]
 status: draft
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Ai
+sources:
+  - resource: matlab:dspai
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: ai
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Ai
-
-Use these blocks for ai.
 
 ## Recommended Blocks
 

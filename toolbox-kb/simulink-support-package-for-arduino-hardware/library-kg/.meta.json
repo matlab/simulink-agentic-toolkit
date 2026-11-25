@@ -1,15 +1,79 @@
 {
-  "generatedAt": "2026-08-19T17:52:13",
-  "generatedAtDatenum": 740213.74459599541,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Support Package for Arduino Hardware"
-  ],
-  "blockCount": 8,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Simulink_Support_Package_for_Arduino_Hardware": {
-      "blockCount": 8
+  "pages": [
+    {
+      "id": "arduino",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Arduino Hardware",
+      "kbFolder": "simulink-support-package-for-arduino-hardware",
+      "category": "arduino",
+      "hash": "b216bb9c37ebb325377f67458cc0c6220f6b516aa7e1030bc97bdd47cd4bab8b",
+      "fm": {
+        "title": "Arduino",
+        "description": "Arduino hardware peripheral and sensor access (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-arduino-hardware",
+          "arduino",
+          "gpio",
+          "sensor",
+          "motor",
+          "shield"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Advanced",
+          "ref": "arduinorootlib/Advanced",
+          "since": "R2023b+",
+          "intent": "Access advanced Arduino features — use for interrupts, timers, or low-level hardware control beyond basic I/O on Arduino boards"
+        },
+        {
+          "block": "Arduino Motor Carrier",
+          "ref": "arduinorootlib/Arduino Motor Carrier",
+          "since": "R2023a+",
+          "intent": "Interface with the Arduino MKR Motor Carrier board — use for controlling DC motors, servos, and encoders via the dedicated motor shield"
+        },
+        {
+          "block": "Common",
+          "ref": "arduinorootlib/Common",
+          "since": "R2023a+",
+          "intent": "Access common Arduino I/O blocks — use for digital/analog read/write, PWM output, and basic pin control on any Arduino board"
+        },
+        {
+          "block": "Communication",
+          "ref": "arduinorootlib/Communication",
+          "since": "R2024b+",
+          "intent": "Access communication interfaces on Arduino — use for I2C, SPI, or serial communication with external sensors and devices"
+        },
+        {
+          "block": "Ethernet Shield",
+          "ref": "arduinorootlib/Ethernet Shield",
+          "since": "R2023a+",
+          "intent": "Access Ethernet connectivity via Arduino Ethernet Shield — use for TCP/IP or UDP network communication in Arduino-based projects"
+        },
+        {
+          "block": "Sensors",
+          "ref": "arduinorootlib/Sensors",
+          "since": "R2023a+",
+          "intent": "Access sensor modules for Arduino — use for reading data from common sensors like IMU, temperature, ultrasonic distance, or GPS"
+        },
+        {
+          "block": "Utilities",
+          "ref": "arduinorootlib/Utilities",
+          "since": "R2023a+",
+          "intent": "Access Arduino utility functions — use for timing, system reset, or board-specific configuration on Arduino hardware"
+        },
+        {
+          "block": "WiFi",
+          "ref": "arduinorootlib/WiFi",
+          "since": "R2023a+",
+          "intent": "Access WiFi connectivity on Arduino WiFi-capable boards — use for wireless TCP/IP or UDP communication in IoT applications"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:32",
+  "generatedAtDatenum": 740309.99551870371
 }

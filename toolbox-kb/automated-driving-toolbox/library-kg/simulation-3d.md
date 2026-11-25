@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Simulation 3d
-description: Photorealistic 3D scene actors and sensors
-tags: [simulation 3d, camera, lidar, pedestrian, bicyclist, radar, ultrasonic, vehicle with ground]
+description: Photorealistic 3D scene actors and sensors (11 blocks)
+tags: [toolbox-kb, automated-driving-toolbox, simulation 3d, camera, lidar, pedestrian, bicyclist, radar, ultrasonic, vehicle with ground]
 status: stable
-source: custom_library
-library_root: Automated Driving Toolbox
-category_path: Simulation 3d
+sources:
+  - resource: matlab:drivingsim3d
+source: toolbox_kb
+managed_by: satk
+library: Automated Driving Toolbox
+kb_folder: automated-driving-toolbox
+category: simulation-3d
 block_count: 11
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:14Z" }
 ---
 
 # Simulation 3d
-
-Use these blocks for simulation 3d.
 
 ## Recommended Blocks
 

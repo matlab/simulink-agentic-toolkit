@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Multirate filters
-description: Decimators, interpolators, and rate converters
-tags: [multirate, decimator, interpolator, channelizer, halfband, rate converter, cic compensation]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Multirate filters
+description: "Decimators, interpolators, and rate converters (17 blocks)"
+tags: [toolbox-kb, dsp-system-toolbox, multirate, decimator, interpolator, channelizer, halfband, rate converter, cic compensation]
+status: draft
+sources:
+  - resource: matlab:dspmlti4
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: multirate-filters
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Multirate filters
-
-Use these blocks for multirate filters.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Scheduling
-description: Interrupts, tasks, watchdog, and scheduling
-tags: [interrupt, task, watchdog, event, idle, scheduling]
-status: stable
-source: custom_library
-library_root: C2000 Microcontroller Blockset
-category_path: Scheduling
+description: "Interrupts, tasks, watchdog, and scheduling (52 blocks)"
+tags: [toolbox-kb, c2000-microcontroller-blockset, interrupt, task, watchdog, event, idle, scheduling]
+status: draft
+sources:
+  - resource: matlab:c2802xlib
+source: toolbox_kb
+managed_by: satk
+library: C2000 Microcontroller Blockset
+kb_folder: c2000-microcontroller-blockset
+category: scheduling
 block_count: 52
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Scheduling
-
-Use these blocks for scheduling.
 
 ## Recommended Blocks
 

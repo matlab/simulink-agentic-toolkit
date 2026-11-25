@@ -1,15 +1,105 @@
 {
-  "generatedAt": "2026-09-29T16:38:10",
-  "generatedAtDatenum": 740254.6931734028,
-  "generatorVersion": 4,
-  "libraries": [
-    "Stateflow"
-  ],
-  "blockCount": 4,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Stateflow": {
-      "blockCount": 4
+  "pages": [
+    {
+      "id": "decision-logic",
+      "kind": "toolbox",
+      "library": "Stateflow",
+      "kbFolder": "stateflow",
+      "category": "decision-logic",
+      "hash": "f7854015bad01d994d4452aba9d29b3c2ed7360bcb6e94d43230a2944ddcafdf",
+      "fm": {
+        "title": "Decision logic",
+        "description": "Tabular combinational logic mapping input conditions to actions (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stateflow",
+          "truth table",
+          "decision",
+          "boolean",
+          "condition",
+          "logic"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Truth Table",
+          "ref": "sflib/Truth Table",
+          "since": "R2023a+",
+          "intent": "Specify combinational decision logic as condition/action rows mapping input combinations to outputs — use for rule-based arbitration and requirements-style boolean tables that are clearer than nested if/else logic."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "diagnostics-visualization",
+      "kind": "toolbox",
+      "library": "Stateflow",
+      "kbFolder": "stateflow",
+      "category": "diagnostics-visualization",
+      "hash": "857e47f5381409e3297b78a8da8cf6b0813c5c8256c6628f65b4596707cb5dfe",
+      "fm": {
+        "title": "Diagnostics visualization",
+        "description": "Runtime inspection of messages and event flow during simulation (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stateflow",
+          "sequence",
+          "message",
+          "viewer",
+          "event trace",
+          "debug"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Sequence Viewer",
+          "ref": "sflib/Sequence Viewer",
+          "since": "R2023a+",
+          "intent": "Visualize message, event, and function-call interactions between Stateflow charts and model components over simulation time — use to debug interaction ordering and message passing in event-driven designs."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "state-machines",
+      "kind": "toolbox",
+      "library": "Stateflow",
+      "kbFolder": "stateflow",
+      "category": "state-machines",
+      "hash": "20ced4264ad638df6694a1504c6e3f87621330c6b4b87afaf9ee25cd5c2a227e",
+      "fm": {
+        "title": "State machines",
+        "description": "Hierarchical and parallel finite state machines for event-driven and supervisory logic (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stateflow",
+          "state",
+          "chart",
+          "transition",
+          "mode",
+          "finite state"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Chart",
+          "ref": "sflib/Chart",
+          "since": "R2023a+",
+          "intent": "Model event-driven, reactive behavior as a hierarchical, parallel state machine with states, transitions, and flow logic — use for mode logic, supervisory/mission control, fault handling, and any system whose behavior depends on discrete modes and history."
+        },
+        {
+          "block": "State Transition Table",
+          "ref": "sflib/State Transition Table",
+          "since": "R2023a+",
+          "intent": "Define a finite state machine in tabular form (states as rows, transitions as columns) instead of a graphical chart — use when the state/transition structure is regular and easier to review, diff, and maintain as a table."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:36",
+  "generatedAtDatenum": 740309.995561551
 }

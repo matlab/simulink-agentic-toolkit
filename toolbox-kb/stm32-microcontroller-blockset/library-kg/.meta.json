@@ -1,15 +1,2790 @@
 {
-  "generatedAt": "2026-08-19T17:52:14",
-  "generatedAtDatenum": 740213.744613669,
-  "generatorVersion": 4,
-  "libraries": [
-    "STM32 Microcontroller Blockset"
-  ],
-  "blockCount": 512,
-  "categoryCount": 13,
-  "libraryFingerprints": {
-    "STM32_Microcontroller_Blockset": {
-      "blockCount": 512
+  "pages": [
+    {
+      "id": "analog-conversion",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "analog-conversion",
+      "hash": "2aa8930da7fafc79f27228e301e7cc50aaef8d8a589c36b64b548a6280f40490",
+      "fm": {
+        "title": "Analog conversion",
+        "description": "Analog-to-digital and digital-to-analog conversion peripherals including comparators (41 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "ADC",
+          "DAC",
+          "comparator",
+          "analog",
+          "voltage"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32f1xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32f1xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32f2xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32f2xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32f3xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32f3xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32f3xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32f4xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32f4xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32f7xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32f7xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32g0xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32g0xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32g0xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32g4xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32g4xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32g4xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32h5xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32h5xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32h5xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32h7xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32h7xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32h7xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32l4xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32l4xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32l4xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32l5xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32l5xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32l5xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32u5xxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32u5xxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Digital to Analog Converter",
+          "ref": "stm32u5xxblockslib/Digital to Analog Converter",
+          "since": "R2026a+",
+          "intent": "Output an analog voltage from a computed digital value for driving analog actuators or generating reference signals"
+        },
+        {
+          "block": "Analog to Digital Converter",
+          "ref": "stm32wbxxblockslib/Analog to Digital Converter",
+          "since": "R2026a+",
+          "intent": "Sample analog sensor voltages and convert them to digital values for processing on the STM32"
+        },
+        {
+          "block": "Comparator",
+          "ref": "stm32wbxxblockslib/Comparator",
+          "since": "R2026a+",
+          "intent": "Compare an analog input against a threshold voltage and generate a digital output indicating which is larger"
+        },
+        {
+          "block": "Analog Input",
+          "ref": "stm32f7lib/Analog Input",
+          "since": "R2026a+",
+          "intent": "Read an analog voltage on a board-level pin using the mbed-based peripheral driver"
+        },
+        {
+          "block": "Analog Input",
+          "ref": "stm32f769ilib/Analog Input",
+          "since": "R2026a+",
+          "intent": "Read an analog voltage on a board-level pin using the mbed-based peripheral driver"
+        },
+        {
+          "block": "Analog Input",
+          "ref": "stm32nucleodiscoboardslib/Common/Analog Input",
+          "since": "R2026a+",
+          "intent": "Read an analog voltage on a board-level pin using the mbed-based peripheral driver"
+        },
+        {
+          "block": "Analog Output",
+          "ref": "stm32nucleodiscoboardslib/Common/Analog Output",
+          "since": "R2026a+",
+          "intent": "Write an analog voltage on a board-level DAC pin using the mbed-based peripheral driver"
+        },
+        {
+          "block": "Analog Input",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/Analog Input",
+          "since": "R2026a+",
+          "intent": "Read an analog voltage on a board-level pin using the mbed-based peripheral driver"
+        },
+        {
+          "block": "Analog Input",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/Analog Input",
+          "since": "R2026a+",
+          "intent": "Read an analog voltage on a board-level pin using the mbed-based peripheral driver"
+        },
+        {
+          "block": "Analog Input",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/Analog Input",
+          "since": "R2026a+",
+          "intent": "Read an analog voltage on a board-level pin using the mbed-based peripheral driver"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "audio-interface",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "audio-interface",
+      "hash": "9d2810f899bc3977aaa2e06c085b11b524ec5dd7296adb89d663569541ea801e",
+      "fm": {
+        "title": "Audio interface",
+        "description": "Digital audio streaming interfaces using I2S protocol and board audio drivers (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "I2S",
+          "audio",
+          "microphone",
+          "codec",
+          "streaming"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "I2S Audio Out",
+          "ref": "stm32f1xxblockslib/I2S Audio Out",
+          "since": "R2026a+",
+          "intent": "Stream digital audio data to an external DAC or codec over the I2S interface"
+        },
+        {
+          "block": "I2S Mic In",
+          "ref": "stm32f1xxblockslib/I2S Mic In",
+          "since": "R2026a+",
+          "intent": "Capture digital audio data from a microphone or ADC over the I2S interface"
+        },
+        {
+          "block": "I2S Audio Out",
+          "ref": "stm32f2xxblockslib/I2S Audio Out",
+          "since": "R2026a+",
+          "intent": "Stream digital audio data to an external DAC or codec over the I2S interface"
+        },
+        {
+          "block": "I2S Mic In",
+          "ref": "stm32f2xxblockslib/I2S Mic In",
+          "since": "R2026a+",
+          "intent": "Capture digital audio data from a microphone or ADC over the I2S interface"
+        },
+        {
+          "block": "I2S Audio Out",
+          "ref": "stm32f3xxblockslib/I2S Audio Out",
+          "since": "R2026a+",
+          "intent": "Stream digital audio data to an external DAC or codec over the I2S interface"
+        },
+        {
+          "block": "I2S Mic In",
+          "ref": "stm32f3xxblockslib/I2S Mic In",
+          "since": "R2026a+",
+          "intent": "Capture digital audio data from a microphone or ADC over the I2S interface"
+        },
+        {
+          "block": "I2S Audio Out",
+          "ref": "stm32f4xxblockslib/I2S Audio Out",
+          "since": "R2026a+",
+          "intent": "Stream digital audio data to an external DAC or codec over the I2S interface"
+        },
+        {
+          "block": "I2S Mic In",
+          "ref": "stm32f4xxblockslib/I2S Mic In",
+          "since": "R2026a+",
+          "intent": "Capture digital audio data from a microphone or ADC over the I2S interface"
+        },
+        {
+          "block": "I2S Audio Out",
+          "ref": "stm32f7xxblockslib/I2S Audio Out",
+          "since": "R2026a+",
+          "intent": "Stream digital audio data to an external DAC or codec over the I2S interface"
+        },
+        {
+          "block": "I2S Mic In",
+          "ref": "stm32f7xxblockslib/I2S Mic In",
+          "since": "R2026a+",
+          "intent": "Capture digital audio data from a microphone or ADC over the I2S interface"
+        },
+        {
+          "block": "I2S Audio Out",
+          "ref": "stm32g4xxblockslib/I2S Audio Out",
+          "since": "R2026a+",
+          "intent": "Stream digital audio data to an external DAC or codec over the I2S interface"
+        },
+        {
+          "block": "I2S Mic In",
+          "ref": "stm32g4xxblockslib/I2S Mic In",
+          "since": "R2026a+",
+          "intent": "Capture digital audio data from a microphone or ADC over the I2S interface"
+        },
+        {
+          "block": "I2S Audio Out",
+          "ref": "stm32h5xxblockslib/I2S Audio Out",
+          "since": "R2026a+",
+          "intent": "Stream digital audio data to an external DAC or codec over the I2S interface"
+        },
+        {
+          "block": "I2S Mic In",
+          "ref": "stm32h5xxblockslib/I2S Mic In",
+          "since": "R2026a+",
+          "intent": "Capture digital audio data from a microphone or ADC over the I2S interface"
+        },
+        {
+          "block": "Audio Input",
+          "ref": "stm32f7lib/Audio Input",
+          "since": "R2026a+",
+          "intent": "Capture audio samples from the onboard microphone on an STM32 Discovery board"
+        },
+        {
+          "block": "Audio Output",
+          "ref": "stm32f7lib/Audio Output",
+          "since": "R2026a+",
+          "intent": "Play audio samples through the onboard audio codec on an STM32 Discovery board"
+        },
+        {
+          "block": "Audio Input",
+          "ref": "stm32f769ilib/Audio Input",
+          "since": "R2026a+",
+          "intent": "Capture audio samples from the onboard microphone on an STM32 Discovery board"
+        },
+        {
+          "block": "Audio Output",
+          "ref": "stm32f769ilib/Audio Output",
+          "since": "R2026a+",
+          "intent": "Play audio samples through the onboard audio codec on an STM32 Discovery board"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "can-bus",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "can-bus",
+      "hash": "8002c108fc818bcb1ad0e4ee6d0f8a389b2f7c0c7a2586a0fb4bca45b72a9cc3",
+      "fm": {
+        "title": "Can bus",
+        "description": "Controller Area Network peripherals for automotive and industrial communication (24 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "CAN",
+          "FDCAN",
+          "automotive",
+          "message",
+          "bus"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CAN Read",
+          "ref": "stm32f1xxblockslib/CAN Read",
+          "since": "R2026a+",
+          "intent": "Receive CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Write",
+          "ref": "stm32f1xxblockslib/CAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Read",
+          "ref": "stm32f2xxblockslib/CAN Read",
+          "since": "R2026a+",
+          "intent": "Receive CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Write",
+          "ref": "stm32f2xxblockslib/CAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Read",
+          "ref": "stm32f3xxblockslib/CAN Read",
+          "since": "R2026a+",
+          "intent": "Receive CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Write",
+          "ref": "stm32f3xxblockslib/CAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Read",
+          "ref": "stm32f4xxblockslib/CAN Read",
+          "since": "R2026a+",
+          "intent": "Receive CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Write",
+          "ref": "stm32f4xxblockslib/CAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Read",
+          "ref": "stm32f7xxblockslib/CAN Read",
+          "since": "R2026a+",
+          "intent": "Receive CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Write",
+          "ref": "stm32f7xxblockslib/CAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "FDCAN Read",
+          "ref": "stm32g0xxblockslib/FDCAN Read",
+          "since": "R2026a+",
+          "intent": "Receive messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Write",
+          "ref": "stm32g0xxblockslib/FDCAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Read",
+          "ref": "stm32g4xxblockslib/FDCAN Read",
+          "since": "R2026a+",
+          "intent": "Receive messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Write",
+          "ref": "stm32g4xxblockslib/FDCAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Read",
+          "ref": "stm32h5xxblockslib/FDCAN Read",
+          "since": "R2026a+",
+          "intent": "Receive messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Write",
+          "ref": "stm32h5xxblockslib/FDCAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Read",
+          "ref": "stm32h7xxblockslib/FDCAN Read",
+          "since": "R2026a+",
+          "intent": "Receive messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Write",
+          "ref": "stm32h7xxblockslib/FDCAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "CAN Read",
+          "ref": "stm32l4xxblockslib/CAN Read",
+          "since": "R2026a+",
+          "intent": "Receive CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "CAN Write",
+          "ref": "stm32l4xxblockslib/CAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit CAN bus messages for automotive or industrial communication"
+        },
+        {
+          "block": "FDCAN Read",
+          "ref": "stm32l5xxblockslib/FDCAN Read",
+          "since": "R2026a+",
+          "intent": "Receive messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Write",
+          "ref": "stm32l5xxblockslib/FDCAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Read",
+          "ref": "stm32u5xxblockslib/FDCAN Read",
+          "since": "R2026a+",
+          "intent": "Receive messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        },
+        {
+          "block": "FDCAN Write",
+          "ref": "stm32u5xxblockslib/FDCAN Write",
+          "since": "R2026a+",
+          "intent": "Transmit messages on a Flexible Data-rate CAN bus supporting higher bandwidth"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "digital-io",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "digital-io",
+      "hash": "d358dea0c6cfecd111dd66e96ad6de2b7b19f98607245fb4a4a03a8d0991d99e",
+      "fm": {
+        "title": "Digital io",
+        "description": "General-purpose digital input and output pin control for GPIO (38 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "GPIO",
+          "pin",
+          "digital",
+          "input",
+          "output"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32f1xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32f1xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32f2xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32f2xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32f3xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32f3xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32f4xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32f4xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32f7xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32f7xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32g0xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32g0xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32g4xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32g4xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32h5xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32h5xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32h7xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32h7xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32l4xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32l4xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32l5xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32l5xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32u5xxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32u5xxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Port Read",
+          "ref": "stm32wbxxblockslib/Digital Port Read",
+          "since": "R2026a+",
+          "intent": "Read the state of one or more GPIO pins configured as digital inputs on the STM32"
+        },
+        {
+          "block": "Digital Port Write",
+          "ref": "stm32wbxxblockslib/Digital Port Write",
+          "since": "R2026a+",
+          "intent": "Set the state of one or more GPIO pins configured as digital outputs on the STM32"
+        },
+        {
+          "block": "Digital Read",
+          "ref": "stm32f7lib/Digital Read",
+          "since": "R2026a+",
+          "intent": "Read a single digital input pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "stm32f7lib/Digital Write",
+          "since": "R2026a+",
+          "intent": "Set a single digital output pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Read",
+          "ref": "stm32f769ilib/Digital Read",
+          "since": "R2026a+",
+          "intent": "Read a single digital input pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "stm32f769ilib/Digital Write",
+          "since": "R2026a+",
+          "intent": "Set a single digital output pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Read",
+          "ref": "stm32nucleodiscoboardslib/Common/Digital Read",
+          "since": "R2026a+",
+          "intent": "Read a single digital input pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "stm32nucleodiscoboardslib/Common/Digital Write",
+          "since": "R2026a+",
+          "intent": "Set a single digital output pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Read",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/Digital Read",
+          "since": "R2026a+",
+          "intent": "Read a single digital input pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/Digital Write",
+          "since": "R2026a+",
+          "intent": "Set a single digital output pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Read",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/Digital Read",
+          "since": "R2026a+",
+          "intent": "Read a single digital input pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/Digital Write",
+          "since": "R2026a+",
+          "intent": "Set a single digital output pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Read",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/Digital Read",
+          "since": "R2026a+",
+          "intent": "Read a single digital input pin on an mbed-based STM32 board"
+        },
+        {
+          "block": "Digital Write",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/Digital Write",
+          "since": "R2026a+",
+          "intent": "Set a single digital output pin on an mbed-based STM32 board"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "i2c-interface",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "i2c-interface",
+      "hash": "466bbf403adf8fbf7ed3039e3abb7ef8b39baa5930b20db7ba0666b03a0e0c8a",
+      "fm": {
+        "title": "I2c interface",
+        "description": "I2C bus peripherals for multi-device communication with sensors and EEPROMs (38 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "I2C",
+          "TWI",
+          "address",
+          "sensor",
+          "bus"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32f1xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32f1xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32f2xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32f2xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32f3xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32f3xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32f4xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32f4xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32f7xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32f7xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32g0xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32g0xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32g4xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32g4xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32h5xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32h5xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32h7xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32h7xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32l4xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32l4xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32l5xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32l5xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32u5xxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32u5xxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32wbxxblockslib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32wbxxblockslib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32f7lib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32f7lib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32f769ilib/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32f769ilib/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Controller Read",
+          "ref": "stm32nucleodiscoboardslib/Common/I2C Controller Read",
+          "since": "R2026a+",
+          "intent": "Read data from a peripheral device connected to the I2C bus at a specified address"
+        },
+        {
+          "block": "I2C Controller Write",
+          "ref": "stm32nucleodiscoboardslib/Common/I2C Controller Write",
+          "since": "R2026a+",
+          "intent": "Write data or commands to a peripheral device connected to the I2C bus"
+        },
+        {
+          "block": "I2C Master Read",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/I2C Master Read",
+          "since": "R2026a+",
+          "intent": "Read from an I2C peripheral on an mbed-based STM32 board"
+        },
+        {
+          "block": "I2C Master Write",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/I2C Master Write",
+          "since": "R2026a+",
+          "intent": "Write to an I2C peripheral on an mbed-based STM32 board"
+        },
+        {
+          "block": "I2C Master Read",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/I2C Master Read",
+          "since": "R2026a+",
+          "intent": "Read from an I2C peripheral on an mbed-based STM32 board"
+        },
+        {
+          "block": "I2C Master Write",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/I2C Master Write",
+          "since": "R2026a+",
+          "intent": "Write to an I2C peripheral on an mbed-based STM32 board"
+        },
+        {
+          "block": "I2C Master Read",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/I2C Master Read",
+          "since": "R2026a+",
+          "intent": "Read from an I2C peripheral on an mbed-based STM32 board"
+        },
+        {
+          "block": "I2C Master Write",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/I2C Master Write",
+          "since": "R2026a+",
+          "intent": "Write to an I2C peripheral on an mbed-based STM32 board"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "industrial-protocols",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "industrial-protocols",
+      "hash": "69b26c0ccf22a27215edc26663a00dfd4e1c18e3a1d8d7f4574c4a1af45152cb",
+      "fm": {
+        "title": "Industrial protocols",
+        "description": "MODBUS protocol peripherals for industrial automation over serial and RS485 (18 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "MODBUS",
+          "RS485",
+          "industrial",
+          "register",
+          "protocol"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MODBUS Read",
+          "ref": "stm32f7xxblockslib/MODBUS Read",
+          "since": "R2026a+",
+          "intent": "Read registers from a MODBUS device for industrial automation and process control"
+        },
+        {
+          "block": "MODBUS Write",
+          "ref": "stm32f7xxblockslib/MODBUS Write",
+          "since": "R2026a+",
+          "intent": "Write registers to a MODBUS device for industrial automation and process control"
+        },
+        {
+          "block": "MODBUS Read",
+          "ref": "stm32g4xxblockslib/MODBUS Read",
+          "since": "R2026a+",
+          "intent": "Read registers from a MODBUS device for industrial automation and process control"
+        },
+        {
+          "block": "MODBUS Write",
+          "ref": "stm32g4xxblockslib/MODBUS Write",
+          "since": "R2026a+",
+          "intent": "Write registers to a MODBUS device for industrial automation and process control"
+        },
+        {
+          "block": "MODBUS Read",
+          "ref": "stm32h7xxblockslib/MODBUS Read",
+          "since": "R2026a+",
+          "intent": "Read registers from a MODBUS device for industrial automation and process control"
+        },
+        {
+          "block": "MODBUS Write",
+          "ref": "stm32h7xxblockslib/MODBUS Write",
+          "since": "R2026a+",
+          "intent": "Write registers to a MODBUS device for industrial automation and process control"
+        },
+        {
+          "block": "Modbus RS485 Client Read",
+          "ref": "stm32f7lib/Modbus RS485 Client Read",
+          "since": "R2026a+",
+          "intent": "Read data from a MODBUS server device over an RS485 physical link"
+        },
+        {
+          "block": "Modbus RS485 Client Write",
+          "ref": "stm32f7lib/Modbus RS485 Client Write",
+          "since": "R2026a+",
+          "intent": "Write data to a MODBUS server device over an RS485 physical link"
+        },
+        {
+          "block": "Modbus RS485 Server Read",
+          "ref": "stm32f7lib/Modbus RS485 Server Read",
+          "since": "R2026a+",
+          "intent": "Read incoming MODBUS requests from a client over RS485 when acting as server"
+        },
+        {
+          "block": "Modbus RS485 Server Write",
+          "ref": "stm32f7lib/Modbus RS485 Server Write",
+          "since": "R2026a+",
+          "intent": "Send MODBUS responses to a client over RS485 when acting as server"
+        },
+        {
+          "block": "Modbus RS485 Client Read",
+          "ref": "stm32f769ilib/Modbus RS485 Client Read",
+          "since": "R2026a+",
+          "intent": "Read data from a MODBUS server device over an RS485 physical link"
+        },
+        {
+          "block": "Modbus RS485 Client Write",
+          "ref": "stm32f769ilib/Modbus RS485 Client Write",
+          "since": "R2026a+",
+          "intent": "Write data to a MODBUS server device over an RS485 physical link"
+        },
+        {
+          "block": "Modbus RS485 Server Read",
+          "ref": "stm32f769ilib/Modbus RS485 Server Read",
+          "since": "R2026a+",
+          "intent": "Read incoming MODBUS requests from a client over RS485 when acting as server"
+        },
+        {
+          "block": "Modbus RS485 Server Write",
+          "ref": "stm32f769ilib/Modbus RS485 Server Write",
+          "since": "R2026a+",
+          "intent": "Send MODBUS responses to a client over RS485 when acting as server"
+        },
+        {
+          "block": "Modbus RS485 Client Read",
+          "ref": "stm32nucleodiscoboardslib/Common/Modbus RS485 Client Read",
+          "since": "R2026a+",
+          "intent": "Read data from a MODBUS server device over an RS485 physical link"
+        },
+        {
+          "block": "Modbus RS485 Client Write",
+          "ref": "stm32nucleodiscoboardslib/Common/Modbus RS485 Client Write",
+          "since": "R2026a+",
+          "intent": "Write data to a MODBUS server device over an RS485 physical link"
+        },
+        {
+          "block": "Modbus RS485 Server Read",
+          "ref": "stm32nucleodiscoboardslib/Common/Modbus RS485 Server Read",
+          "since": "R2026a+",
+          "intent": "Read incoming MODBUS requests from a client over RS485 when acting as server"
+        },
+        {
+          "block": "Modbus RS485 Server Write",
+          "ref": "stm32nucleodiscoboardslib/Common/Modbus RS485 Server Write",
+          "since": "R2026a+",
+          "intent": "Send MODBUS responses to a client over RS485 when acting as server"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "interrupts-system",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "interrupts-system",
+      "hash": "5e39400b1ceb305dc71ae968765f934d7b73b27b0086715c7865ec6819b64c22",
+      "fm": {
+        "title": "Interrupts system",
+        "description": "Interrupt management, math co-processors, and system-level utilities (22 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "interrupt",
+          "NVIC",
+          "CORDIC",
+          "system",
+          "event"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32f1xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32f2xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32f3xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32f4xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32f7xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32g0xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32g4xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "CORDIC co-processor",
+          "ref": "stm32g4xxblockslib/CORDIC co-processor",
+          "since": "R2026a+",
+          "intent": "Accelerate trigonometric or hyperbolic math computations using dedicated hardware for real-time signal processing"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32h5xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32h7xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "CORDIC co-processor",
+          "ref": "stm32h7xxblockslib/CORDIC co-processor",
+          "since": "R2026a+",
+          "intent": "Accelerate trigonometric or hyperbolic math computations using dedicated hardware for real-time signal processing"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32l4xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32l5xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32u5xxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": "CORDIC co-processor",
+          "ref": "stm32u5xxblockslib/CORDIC co-processor",
+          "since": "R2026a+",
+          "intent": "Accelerate trigonometric or hyperbolic math computations using dedicated hardware for real-time signal processing"
+        },
+        {
+          "block": "Hardware Interrupt",
+          "ref": "stm32wbxxblockslib/Hardware Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger model execution from a hardware peripheral interrupt such as a timer or ADC completion"
+        },
+        {
+          "block": " Utilities",
+          "ref": "stm32lib/ Utilities",
+          "since": "R2026a+",
+          "intent": "Access utility functions and helper blocks for STM32 Discovery board configuration"
+        },
+        {
+          "block": "External Interrupt",
+          "ref": "stm32f7lib/External Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger execution based on an external GPIO pin edge event on an mbed-based STM32 board"
+        },
+        {
+          "block": "External Interrupt",
+          "ref": "stm32f769ilib/External Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger execution based on an external GPIO pin edge event on an mbed-based STM32 board"
+        },
+        {
+          "block": "STM32L475VG-Discovery (B-L475E-IOT01A)",
+          "ref": "stm32nucleodiscoboardslib/STM32L475VG-Discovery (B-L475E-IOT01A)",
+          "since": "R2026a+",
+          "intent": "Access onboard sensors and peripherals specific to the STM32L475VG IoT Discovery board"
+        },
+        {
+          "block": "External Interrupt",
+          "ref": "stm32nucleodiscoboardslib/Common/External Interrupt",
+          "since": "R2026a+",
+          "intent": "Trigger execution based on an external GPIO pin edge event on an mbed-based STM32 board"
+        },
+        {
+          "block": "Blockset Name2",
+          "ref": "stm32lib/Blockset Name2",
+          "since": "R2026a+",
+          "intent": "Library identification marker that displays the blockset name in the Simulink library browser"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "network-iot",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "network-iot",
+      "hash": "22754a11132f3372c6e39183a24f19c97d4975ad61bd84c392bf41215925dd52",
+      "fm": {
+        "title": "Network iot",
+        "description": "Ethernet and wireless network communication using TCP, UDP, and MQTT protocols (30 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "TCP",
+          "UDP",
+          "MQTT",
+          "Ethernet",
+          "IoT"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Tcp Receive",
+          "ref": "stm32f2xxblockslib/Tcp Receive",
+          "since": "R2026a+",
+          "intent": "Receive data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Tcp Send",
+          "ref": "stm32f2xxblockslib/Tcp Send",
+          "since": "R2026a+",
+          "intent": "Send data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Receive",
+          "ref": "stm32f2xxblockslib/Udp Receive",
+          "since": "R2026a+",
+          "intent": "Receive UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Send",
+          "ref": "stm32f2xxblockslib/Udp Send",
+          "since": "R2026a+",
+          "intent": "Send UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "MQTT Publish",
+          "ref": "stm32f4xxblockslib/MQTT Publish",
+          "since": "R2026a+",
+          "intent": "Publish sensor data or status messages to an MQTT broker for IoT cloud connectivity"
+        },
+        {
+          "block": "MQTT Subscribe",
+          "ref": "stm32f4xxblockslib/MQTT Subscribe",
+          "since": "R2026a+",
+          "intent": "Receive commands or configuration updates from an MQTT broker for IoT cloud connectivity"
+        },
+        {
+          "block": "Tcp Receive",
+          "ref": "stm32f4xxblockslib/Tcp Receive",
+          "since": "R2026a+",
+          "intent": "Receive data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Tcp Send",
+          "ref": "stm32f4xxblockslib/Tcp Send",
+          "since": "R2026a+",
+          "intent": "Send data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Receive",
+          "ref": "stm32f4xxblockslib/Udp Receive",
+          "since": "R2026a+",
+          "intent": "Receive UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Send",
+          "ref": "stm32f4xxblockslib/Udp Send",
+          "since": "R2026a+",
+          "intent": "Send UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "MQTT Publish",
+          "ref": "stm32f7xxblockslib/MQTT Publish",
+          "since": "R2026a+",
+          "intent": "Publish sensor data or status messages to an MQTT broker for IoT cloud connectivity"
+        },
+        {
+          "block": "MQTT Subscribe",
+          "ref": "stm32f7xxblockslib/MQTT Subscribe",
+          "since": "R2026a+",
+          "intent": "Receive commands or configuration updates from an MQTT broker for IoT cloud connectivity"
+        },
+        {
+          "block": "Tcp Receive",
+          "ref": "stm32f7xxblockslib/Tcp Receive",
+          "since": "R2026a+",
+          "intent": "Receive data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Tcp Send",
+          "ref": "stm32f7xxblockslib/Tcp Send",
+          "since": "R2026a+",
+          "intent": "Send data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Receive",
+          "ref": "stm32f7xxblockslib/Udp Receive",
+          "since": "R2026a+",
+          "intent": "Receive UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Send",
+          "ref": "stm32f7xxblockslib/Udp Send",
+          "since": "R2026a+",
+          "intent": "Send UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "MQTT Publish",
+          "ref": "stm32h7xxblockslib/MQTT Publish",
+          "since": "R2026a+",
+          "intent": "Publish sensor data or status messages to an MQTT broker for IoT cloud connectivity"
+        },
+        {
+          "block": "MQTT Subscribe",
+          "ref": "stm32h7xxblockslib/MQTT Subscribe",
+          "since": "R2026a+",
+          "intent": "Receive commands or configuration updates from an MQTT broker for IoT cloud connectivity"
+        },
+        {
+          "block": "Tcp Receive",
+          "ref": "stm32h7xxblockslib/Tcp Receive",
+          "since": "R2026a+",
+          "intent": "Receive data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Tcp Send",
+          "ref": "stm32h7xxblockslib/Tcp Send",
+          "since": "R2026a+",
+          "intent": "Send data over a TCP network connection using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Receive",
+          "ref": "stm32h7xxblockslib/Udp Receive",
+          "since": "R2026a+",
+          "intent": "Receive UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "Udp Send",
+          "ref": "stm32h7xxblockslib/Udp Send",
+          "since": "R2026a+",
+          "intent": "Send UDP datagrams for low-latency network communication using the STM32Cube driver"
+        },
+        {
+          "block": "TCP Receive",
+          "ref": "stm32f7lib/TCP Receive",
+          "since": "R2026a+",
+          "intent": "Receive data over a TCP network connection on an mbed-based STM32 board"
+        },
+        {
+          "block": "TCP Send",
+          "ref": "stm32f7lib/TCP Send",
+          "since": "R2026a+",
+          "intent": "Send data over a TCP network connection on an mbed-based STM32 board"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "stm32f7lib/UDP Receive",
+          "since": "R2026a+",
+          "intent": "Receive UDP datagrams on an mbed-based STM32 board"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "stm32f7lib/UDP Send",
+          "since": "R2026a+",
+          "intent": "Send UDP datagrams on an mbed-based STM32 board"
+        },
+        {
+          "block": "TCP Receive",
+          "ref": "stm32f769ilib/TCP Receive",
+          "since": "R2026a+",
+          "intent": "Receive data over a TCP network connection on an mbed-based STM32 board"
+        },
+        {
+          "block": "TCP Send",
+          "ref": "stm32f769ilib/TCP Send",
+          "since": "R2026a+",
+          "intent": "Send data over a TCP network connection on an mbed-based STM32 board"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "stm32f769ilib/UDP Receive",
+          "since": "R2026a+",
+          "intent": "Receive UDP datagrams on an mbed-based STM32 board"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "stm32f769ilib/UDP Send",
+          "since": "R2026a+",
+          "intent": "Send UDP datagrams on an mbed-based STM32 board"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "sensors",
+      "hash": "d24f855d63b3f074f48ab5ea5c027f070cd5dcac11e394a5252b9cd8e134b6d7",
+      "fm": {
+        "title": "Sensors",
+        "description": "Pre-integrated sensor drivers for IMU, accelerometer, environmental, and distance (19 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "IMU",
+          "accelerometer",
+          "gyroscope",
+          "magnetometer",
+          "sensor"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "CCS811 Air Quality Sensor",
+          "ref": "stm32Environmentalsensorslib/CCS811 Air Quality Sensor",
+          "since": "R2026a+",
+          "intent": "Measure equivalent CO2 and volatile organic compound levels for indoor air quality monitoring"
+        },
+        {
+          "block": "HTS221 Humidity Sensor",
+          "ref": "stm32Environmentalsensorslib/HTS221 Humidity Sensor",
+          "since": "R2026a+",
+          "intent": "Measure relative humidity and temperature for environmental monitoring"
+        },
+        {
+          "block": "LPS22HB Pressure Sensor",
+          "ref": "stm32Environmentalsensorslib/LPS22HB Pressure Sensor",
+          "since": "R2026a+",
+          "intent": "Measure barometric pressure for altitude estimation or weather monitoring"
+        },
+        {
+          "block": "ADXL34x Accelerometer",
+          "ref": "stm32IMUsensorslib/ADXL34x Accelerometer",
+          "since": "R2026a+",
+          "intent": "Measure three-axis acceleration using an ADXL34x sensor for vibration or tilt detection"
+        },
+        {
+          "block": "BMI160 IMU Sensor",
+          "ref": "stm32IMUsensorslib/BMI160 IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Measure three-axis acceleration and angular rate using a Bosch BMI160 inertial measurement unit"
+        },
+        {
+          "block": "BNO055 IMU Sensor",
+          "ref": "stm32IMUsensorslib/BNO055 IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get orientation estimation with onboard sensor fusion from a Bosch BNO055 absolute orientation sensor"
+        },
+        {
+          "block": "ICM20948 IMU Sensor",
+          "ref": "stm32IMUsensorslib/ICM20948 IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Track nine-axis motion combining accelerometer, gyroscope, and magnetometer from an ICM20948"
+        },
+        {
+          "block": "LIS3DH Accelerometer Sensor  ",
+          "ref": "stm32IMUsensorslib/LIS3DH Accelerometer Sensor  ",
+          "since": "R2026a+",
+          "intent": "Measure three-axis acceleration using an ST LIS3DH sensor for motion detection or inclination"
+        },
+        {
+          "block": "LIS3MDL Magnetometer",
+          "ref": "stm32IMUsensorslib/LIS3MDL Magnetometer",
+          "since": "R2026a+",
+          "intent": "Measure the three-axis magnetic field for compass heading or magnetic anomaly detection"
+        },
+        {
+          "block": "LSM303C IMU Sensor",
+          "ref": "stm32IMUsensorslib/LSM303C IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get combined accelerometer and magnetometer data from an ST LSM303C for tilt-compensated heading"
+        },
+        {
+          "block": "LSM6DS3 IMU Sensor",
+          "ref": "stm32IMUsensorslib/LSM6DS3 IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get three-axis accelerometer and gyroscope data from an ST LSM6DS3 for motion tracking"
+        },
+        {
+          "block": "LSM6DS3H IMU Sensor",
+          "ref": "stm32IMUsensorslib/LSM6DS3H IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get three-axis accelerometer and gyroscope data from an ST LSM6DS3H for high-performance motion sensing"
+        },
+        {
+          "block": "LSM6DSL IMU Sensor",
+          "ref": "stm32IMUsensorslib/LSM6DSL IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get low-power three-axis accelerometer and gyroscope data from an ST LSM6DSL inertial sensor"
+        },
+        {
+          "block": "LSM6DSM IMU Sensor",
+          "ref": "stm32IMUsensorslib/LSM6DSM IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get three-axis accelerometer and gyroscope data from an ST LSM6DSM with OIS interface support"
+        },
+        {
+          "block": "LSM6DSO IMU Sensor",
+          "ref": "stm32IMUsensorslib/LSM6DSO IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get three-axis accelerometer and gyroscope data from an ST LSM6DSO with machine learning core"
+        },
+        {
+          "block": "LSM6DSR IMU Sensor",
+          "ref": "stm32IMUsensorslib/LSM6DSR IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Get high-accuracy three-axis accelerometer and gyroscope data from an ST LSM6DSR inertial sensor"
+        },
+        {
+          "block": "MPU6050 IMU Sensor",
+          "ref": "stm32IMUsensorslib/MPU6050 IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Track six-axis motion combining accelerometer and gyroscope from an InvenSense MPU6050"
+        },
+        {
+          "block": "MPU9250 IMU Sensor",
+          "ref": "stm32IMUsensorslib/MPU9250 IMU Sensor",
+          "since": "R2026a+",
+          "intent": "Track nine-axis motion with accelerometer, gyroscope, and magnetometer from an InvenSense MPU9250"
+        },
+        {
+          "block": "VL53L0X Time Of Flight Sensor",
+          "ref": "stm32IMUsensorslib/VL53L0X Time Of Flight Sensor",
+          "since": "R2026a+",
+          "intent": "Measure distance using a laser time-of-flight sensor for ranging up to two meters"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "serial-communication",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "serial-communication",
+      "hash": "8650c8526bf9eff00553ef4e78e9aa6176afb0cab89305c11ccdfe184d3ac2b5",
+      "fm": {
+        "title": "Serial communication",
+        "description": "Asynchronous serial communication interfaces for point-to-point data exchange (48 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "UART",
+          "USART",
+          "serial",
+          "SCI",
+          "RS232"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32c0xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32c0xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32f1xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32f1xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32f2xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32f2xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32f3xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32f3xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32f4xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32f4xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32f7xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32f7xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32g0xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32g0xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32g4xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32g4xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32h5xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32h5xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32h7rsxxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32h7rsxxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32h7xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32h7xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32l4xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32l4xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32l5xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32l5xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32n6xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32n6xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32u0xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32u0xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32u3xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32u3xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32u5xxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32u5xxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "UART/USART Read",
+          "ref": "stm32wbxxblockslib/UART/USART Read",
+          "since": "R2023a+",
+          "intent": "Receive serial data over a UART or USART interface from external devices or host systems"
+        },
+        {
+          "block": "UART/USART Write",
+          "ref": "stm32wbxxblockslib/UART/USART Write",
+          "since": "R2023a+",
+          "intent": "Transmit serial data over a UART or USART interface to external devices or host systems"
+        },
+        {
+          "block": "SCI Read",
+          "ref": "stm32f7lib/SCI Read",
+          "since": "R2026a+",
+          "intent": "Receive serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Write",
+          "ref": "stm32f7lib/SCI Write",
+          "since": "R2026a+",
+          "intent": "Transmit serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Read",
+          "ref": "stm32f769ilib/SCI Read",
+          "since": "R2026a+",
+          "intent": "Receive serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Write",
+          "ref": "stm32f769ilib/SCI Write",
+          "since": "R2026a+",
+          "intent": "Transmit serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Read",
+          "ref": "stm32nucleodiscoboardslib/Common/SCI Read",
+          "since": "R2026a+",
+          "intent": "Receive serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Write",
+          "ref": "stm32nucleodiscoboardslib/Common/SCI Write",
+          "since": "R2026a+",
+          "intent": "Transmit serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Read",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/SCI Read",
+          "since": "R2026a+",
+          "intent": "Receive serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Write",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/SCI Write",
+          "since": "R2026a+",
+          "intent": "Transmit serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Read",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/SCI Read",
+          "since": "R2026a+",
+          "intent": "Receive serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Write",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/SCI Write",
+          "since": "R2026a+",
+          "intent": "Transmit serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Read",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/SCI Read",
+          "since": "R2026a+",
+          "intent": "Receive serial communication data on an mbed-based STM32 board"
+        },
+        {
+          "block": "SCI Write",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/SCI Write",
+          "since": "R2026a+",
+          "intent": "Transmit serial communication data on an mbed-based STM32 board"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "spi-interface",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "spi-interface",
+      "hash": "70762517f8be51fe45b5db70ac6091b1bc289face2871aa963be741b72c02bd3",
+      "fm": {
+        "title": "Spi interface",
+        "description": "SPI bus peripherals for high-speed synchronous communication with sensors and memory (57 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "SPI",
+          "MOSI",
+          "MISO",
+          "clock",
+          "register"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32f1xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32f1xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32f1xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32f2xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32f2xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32f2xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32f3xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32f3xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32f3xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32f4xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32f4xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32f4xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32f7xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32f7xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32f7xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32g0xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32g0xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32g0xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32g4xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32g4xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32g4xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32h5xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32h5xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32h5xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32h7xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32h7xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32h7xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32l4xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32l4xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32l4xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32l5xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32l5xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32l5xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32u5xxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32u5xxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32u5xxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32wbxxblockslib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Receive",
+          "ref": "stm32wbxxblockslib/SPI Receive",
+          "since": "R2026a+",
+          "intent": "Receive data from an SPI peripheral device"
+        },
+        {
+          "block": "SPI Transmit",
+          "ref": "stm32wbxxblockslib/SPI Transmit",
+          "since": "R2026a+",
+          "intent": "Send data to an SPI peripheral device"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32f7lib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Register Read",
+          "ref": "stm32f7lib/SPI Register Read",
+          "since": "R2026a+",
+          "intent": "Read a specific register address on an SPI peripheral such as a sensor or memory chip"
+        },
+        {
+          "block": "SPI Register Write",
+          "ref": "stm32f7lib/SPI Register Write",
+          "since": "R2026a+",
+          "intent": "Write to a specific register address on an SPI peripheral for configuration or control"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32f769ilib/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Register Read",
+          "ref": "stm32f769ilib/SPI Register Read",
+          "since": "R2026a+",
+          "intent": "Read a specific register address on an SPI peripheral such as a sensor or memory chip"
+        },
+        {
+          "block": "SPI Register Write",
+          "ref": "stm32f769ilib/SPI Register Write",
+          "since": "R2026a+",
+          "intent": "Write to a specific register address on an SPI peripheral for configuration or control"
+        },
+        {
+          "block": "SPI Controller Transfer",
+          "ref": "stm32nucleodiscoboardslib/Common/SPI Controller Transfer",
+          "since": "R2026a+",
+          "intent": "Perform simultaneous read-write data exchange with a peripheral device over the SPI bus"
+        },
+        {
+          "block": "SPI Register Read",
+          "ref": "stm32nucleodiscoboardslib/Common/SPI Register Read",
+          "since": "R2026a+",
+          "intent": "Read a specific register address on an SPI peripheral such as a sensor or memory chip"
+        },
+        {
+          "block": "SPI Register Write",
+          "ref": "stm32nucleodiscoboardslib/Common/SPI Register Write",
+          "since": "R2026a+",
+          "intent": "Write to a specific register address on an SPI peripheral for configuration or control"
+        },
+        {
+          "block": "SPI Master Transfer",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/SPI Master Transfer",
+          "since": "R2026a+",
+          "intent": "Perform full-duplex SPI data exchange on an mbed-based STM32 board"
+        },
+        {
+          "block": "SPI Register Read",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/SPI Register Read",
+          "since": "R2026a+",
+          "intent": "Read a specific register address on an SPI peripheral such as a sensor or memory chip"
+        },
+        {
+          "block": "SPI Register Write",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/SPI Register Write",
+          "since": "R2026a+",
+          "intent": "Write to a specific register address on an SPI peripheral for configuration or control"
+        },
+        {
+          "block": "SPI Master Transfer",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/SPI Master Transfer",
+          "since": "R2026a+",
+          "intent": "Perform full-duplex SPI data exchange on an mbed-based STM32 board"
+        },
+        {
+          "block": "SPI Register Read",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/SPI Register Read",
+          "since": "R2026a+",
+          "intent": "Read a specific register address on an SPI peripheral such as a sensor or memory chip"
+        },
+        {
+          "block": "SPI Register Write",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/SPI Register Write",
+          "since": "R2026a+",
+          "intent": "Write to a specific register address on an SPI peripheral for configuration or control"
+        },
+        {
+          "block": "SPI Master Transfer",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/SPI Master Transfer",
+          "since": "R2026a+",
+          "intent": "Perform full-duplex SPI data exchange on an mbed-based STM32 board"
+        },
+        {
+          "block": "SPI Register Read",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/SPI Register Read",
+          "since": "R2026a+",
+          "intent": "Read a specific register address on an SPI peripheral such as a sensor or memory chip"
+        },
+        {
+          "block": "SPI Register Write",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/SPI Register Write",
+          "since": "R2026a+",
+          "intent": "Write to a specific register address on an SPI peripheral for configuration or control"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "timer-pwm",
+      "kind": "toolbox",
+      "library": "STM32 Microcontroller Blockset",
+      "kbFolder": "stm32-microcontroller-blockset",
+      "category": "timer-pwm",
+      "hash": "dabc9c061fb4582862005864f02d6d8519423485c1683a4fcd39559de88bb61b",
+      "fm": {
+        "title": "Timer pwm",
+        "description": "Hardware timer peripherals for timing, PWM generation, input capture, and encoder decoding (61 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "stm32-microcontroller-blockset",
+          "timer",
+          "PWM",
+          "encoder",
+          "capture",
+          "pulse"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Encoder",
+          "ref": "stm32f1xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32f1xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32f1xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32f1xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32f2xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32f2xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32f2xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32f2xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32f3xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "High Resolution Timer",
+          "ref": "stm32f3xxblockslib/High Resolution Timer",
+          "since": "R2026a+",
+          "intent": "Generate sub-nanosecond resolution PWM for advanced power conversion or motor control"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32f3xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32f3xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32f3xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32f4xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32f4xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32f4xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32f4xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32f7xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32f7xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32f7xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32f7xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32g0xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32g0xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32g0xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32g0xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32g4xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "High Resolution Timer",
+          "ref": "stm32g4xxblockslib/High Resolution Timer",
+          "since": "R2026a+",
+          "intent": "Generate sub-nanosecond resolution PWM for advanced power conversion or motor control"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32g4xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32g4xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32g4xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32h5xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32h5xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32h5xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32h5xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32h7xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "High Resolution Timer",
+          "ref": "stm32h7xxblockslib/High Resolution Timer",
+          "since": "R2026a+",
+          "intent": "Generate sub-nanosecond resolution PWM for advanced power conversion or motor control"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32h7xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32h7xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32h7xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32l4xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32l4xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32l4xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32l4xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32l5xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32l5xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32l5xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32l5xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32u5xxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32u5xxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32u5xxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32u5xxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "Encoder",
+          "ref": "stm32wbxxblockslib/Encoder",
+          "since": "R2026a+",
+          "intent": "Read quadrature encoder signals to track rotational position and speed of a motor shaft"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32wbxxblockslib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Timer",
+          "ref": "stm32wbxxblockslib/Timer",
+          "since": "R2026a+",
+          "intent": "Generate precise time delays or trigger periodic events using a hardware timer on the STM32"
+        },
+        {
+          "block": "Timer Capture",
+          "ref": "stm32wbxxblockslib/Timer Capture",
+          "since": "R2026a+",
+          "intent": "Measure the timing of external signal edges for pulse width or frequency measurement"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32f7lib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32f769ilib/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32nucleodiscoboardslib/Common/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32nucleodiscoboardslib/MBED Based Sensors/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32nucleodiscoboardslib/STM32F7/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "PWM Output",
+          "ref": "stm32nucleodiscoboardslib/STM32H7/PWM Output",
+          "since": "R2026a+",
+          "intent": "Generate a pulse-width modulated signal for motor control, LED dimming, or servo positioning"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-25T15:27:31",
+  "generatedAtDatenum": 740311.64411599538
 }

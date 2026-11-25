@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Wireless hdl
-description: HDL-optimized wireless communication building blocks for FPGA
-tags: [hdl, wireless, fpga, modulation, synchronization]
+description: HDL-optimized wireless communication building blocks for FPGA (3 blocks)
+tags: [toolbox-kb, wireless-hdl-toolbox, hdl, wireless, fpga, modulation, synchronization]
 status: stable
-source: mathworks_toolbox
-library_root: Wireless HDL Toolbox
-category_path: Wireless hdl
+sources:
+  - resource: matlab:whdllib
+source: toolbox_kb
+managed_by: satk
+library: Wireless HDL Toolbox
+kb_folder: wireless-hdl-toolbox
+category: wireless-hdl
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:34Z" }
 ---
 
 # Wireless hdl
-
-Use these blocks for wireless hdl.
 
 ## Recommended Blocks
 

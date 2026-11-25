@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Fpga connectivity
-description: AXI4-Stream and bus connectivity between FPGA and processor domains
-tags: [AXI4, stream, bus, FIFO, connector, video-stream]
+description: AXI4-Stream and bus connectivity between FPGA and processor domains (6 blocks)
+tags: [toolbox-kb, soc-blockset, AXI4, stream, bus, FIFO, connector, video-stream]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Fpga connectivity
+sources:
+  - resource: matlab:hwlogicconnlib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: fpga-connectivity
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Fpga connectivity
-
-Use these blocks for fpga connectivity.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Math functions
-description: AUTOSAR Math Function Library (MFL) building blocks for signal generation
-tags: [ramp, math, mfl, signal, generator]
+description: AUTOSAR Math Function Library (MFL) building blocks for signal generation (1 blocks)
+tags: [toolbox-kb, autosar-blockset, ramp, math, mfl, signal, generator]
 status: stable
-source: custom_library
-library_root: AUTOSAR Blockset
-category_path: Math functions
+sources:
+  - resource: matlab:autosarlibefxmfl
+source: toolbox_kb
+managed_by: satk
+library: AUTOSAR Blockset
+kb_folder: autosar-blockset
+category: math-functions
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:12Z" }
 ---
 
 # Math functions
-
-Use these blocks for math functions.
 
 ## Recommended Blocks
 

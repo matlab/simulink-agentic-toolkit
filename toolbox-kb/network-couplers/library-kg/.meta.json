@@ -1,15 +1,171 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457298615,
-  "generatorVersion": 4,
-  "libraries": [
-    "Network Couplers"
-  ],
-  "blockCount": 15,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Network_Couplers": {
-      "blockCount": 15
+  "pages": [
+    {
+      "id": "electrical-couplers",
+      "kind": "toolbox",
+      "library": "Network Couplers",
+      "kbFolder": "network-couplers",
+      "category": "electrical-couplers",
+      "hash": "670a0a78d37fc76d628a5e512b64d7211278c04baa77c58aa943daf40ece5ac0",
+      "fm": {
+        "title": "Electrical couplers",
+        "description": "Electrical network partitioning couplers (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "network-couplers",
+          "capacitor",
+          "inductor",
+          "voltage",
+          "current",
+          "electrical"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Network Coupler (Capacitor)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Capacitor)",
+          "since": "R2023a+",
+          "intent": "Couple two electrical networks via a virtual capacitor — use for partitioning large electrical circuits into separately-solved networks at a capacitive interface"
+        },
+        {
+          "block": "Network Coupler (Current-Voltage)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Current-Voltage)",
+          "since": "R2023a+",
+          "intent": "Couple electrical networks with current on one side and voltage on the other — use for interfacing current-source and voltage-source network partitions"
+        },
+        {
+          "block": "Network Coupler (Inductor)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Inductor)",
+          "since": "R2023a+",
+          "intent": "Couple two electrical networks via a virtual inductor — use for partitioning electrical circuits at an inductive interface element"
+        },
+        {
+          "block": "Network Coupler (Transmission Line)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Transmission Line)",
+          "since": "R2023a+",
+          "intent": "Couple two electrical networks via a transmission line delay — use for naturally decoupling electrical networks separated by propagation delay"
+        },
+        {
+          "block": "Network Coupler (Voltage-Current)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Voltage-Current)",
+          "since": "R2023a+",
+          "intent": "Couple electrical networks with voltage on one side and current on the other — use for interfacing voltage-source and current-source network partitions"
+        },
+        {
+          "block": "Network Coupler (Voltage-Voltage)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Voltage-Voltage)",
+          "since": "R2023a+",
+          "intent": "Couple two electrical networks via voltage-voltage interface — use for partitioning electrical circuits at a voltage-type coupling point"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "mechanical-fluid-thermal",
+      "kind": "toolbox",
+      "library": "Network Couplers",
+      "kbFolder": "network-couplers",
+      "category": "mechanical-fluid-thermal",
+      "hash": "fd45e71d7b81287fb2d0fba7d4c00bebffc1aaeaf36c972625060b23bb6ccc16",
+      "fm": {
+        "title": "Mechanical fluid thermal",
+        "description": "Mechanical, fluid, and thermal network couplers (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "network-couplers",
+          "shaft",
+          "compressible",
+          "thermal",
+          "chamber",
+          "fluid"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Network Coupler (Compressible Link)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Compressible Link)",
+          "since": "R2023a+",
+          "intent": "Couple two hydraulic networks via a compressible fluid link — use for partitioning hydraulic systems at a compliance element for co-simulation"
+        },
+        {
+          "block": "Network Coupler (Constant Volume Chamber (IL))",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Constant Volume Chamber (IL))",
+          "since": "R2023a+",
+          "intent": "Couple isothermal liquid networks via a constant volume chamber — use for partitioning isothermal liquid circuits at a compliance element"
+        },
+        {
+          "block": "Network Coupler (Constant Volume Chamber (TL))",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Constant Volume Chamber (TL))",
+          "since": "R2023a+",
+          "intent": "Couple two-phase liquid networks via a constant volume chamber — use for partitioning thermal-liquid circuits at a compliance element"
+        },
+        {
+          "block": "Network Coupler (Flexible Shaft)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Flexible Shaft)",
+          "since": "R2023a+",
+          "intent": "Couple two mechanical rotational networks via a flexible shaft — use for partitioning driveline models at a compliant shaft element"
+        },
+        {
+          "block": "Network Coupler (Thermal Mass)",
+          "ref": "SimscapeNetworkCouplersLib/Network Coupler (Thermal Mass)",
+          "since": "R2023a+",
+          "intent": "Couple two thermal networks via a thermal mass — use for partitioning thermal systems at a heat capacity element"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "rate-conversion",
+      "kind": "toolbox",
+      "library": "Network Couplers",
+      "kbFolder": "network-couplers",
+      "category": "rate-conversion",
+      "hash": "6364543ceaa106ffaf0747aa9d5369584546419219143b6a22b64d98454140ef",
+      "fm": {
+        "title": "Rate conversion",
+        "description": "Rate transition and interpolation between solver domains (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "network-couplers",
+          "prediction",
+          "smoothing",
+          "rate",
+          "discrete",
+          "continuous"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Prediction (discrete->continuous)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Prediction (discrete->continuous)",
+          "since": "R2023a+",
+          "intent": "Predict continuous-time values from discrete-time samples — use at the boundary where a discrete solver feeds into a continuous Simscape network"
+        },
+        {
+          "block": "Prediction (slow->fast)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Prediction (slow->fast)",
+          "since": "R2023a+",
+          "intent": "Predict fast-rate values from slow-rate samples — use at multi-rate boundaries where a slow subsystem drives a faster Simscape network"
+        },
+        {
+          "block": "Smoothing (continuous->discrete)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Smoothing (continuous->discrete)",
+          "since": "R2023a+",
+          "intent": "Smooth continuous-time signals for discrete sampling — use at the boundary where a continuous Simscape network feeds into a discrete solver"
+        },
+        {
+          "block": "Smoothing (fast->slow)",
+          "ref": "SimscapeNetworkCouplersLib/Fundamental Components/Smoothing (fast->slow)",
+          "since": "R2023a+",
+          "intent": "Smooth fast-rate signals for slow-rate consumption — use at multi-rate boundaries where a fast Simscape network feeds a slower subsystem"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.99542784726
 }

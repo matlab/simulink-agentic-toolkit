@@ -1,15 +1,79 @@
 {
-  "generatedAt": "2026-08-19T17:52:13",
-  "generatedAtDatenum": 740213.74459662032,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Support Package for Parrot Minidrones"
-  ],
-  "blockCount": 8,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Simulink_Support_Package_for_Parrot_Minidrones": {
-      "blockCount": 8
+  "pages": [
+    {
+      "id": "parrot-drone",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for Parrot Minidrones",
+      "kbFolder": "simulink-support-package-for-parrot-minidrones",
+      "category": "parrot-drone",
+      "hash": "3a1ee8ba6fe1070ecd522ed6b56303171df7a8f25602c11492943d973e6057b3",
+      "fm": {
+        "title": "Parrot drone",
+        "description": "Parrot minidrone communication and accessory control (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-parrot-minidrones",
+          "parrot",
+          "drone",
+          "udp",
+          "camera",
+          "flight"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Keyboard Read",
+          "ref": "parrotlib/Keyboard Read",
+          "since": "R2023a+",
+          "intent": "Read keyboard input during simulation — use for manual pilot control or interactive testing of drone flight algorithms"
+        },
+        {
+          "block": "Cannon",
+          "ref": "parrotlib/Cannon",
+          "since": "R2023a+",
+          "intent": "Fire the cannon accessory on a Parrot minidrone — use for triggering the ball launcher in drone competition or gamification scenarios"
+        },
+        {
+          "block": "Grabber",
+          "ref": "parrotlib/Grabber",
+          "since": "R2023a+",
+          "intent": "Control the grabber accessory on a Parrot minidrone — use for picking up and releasing objects in autonomous retrieval missions"
+        },
+        {
+          "block": "PARROT Image Conversion",
+          "ref": "parrotlib/PARROT Image Conversion",
+          "since": "R2023a+",
+          "intent": "Convert raw camera images from Parrot drone format — use for preprocessing onboard camera data before computer vision algorithms"
+        },
+        {
+          "block": "TCP/IP Receive",
+          "ref": "parrotlib/TCP/IP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over TCP/IP from a Parrot drone — use for receiving telemetry, status, or sensor data from the drone during flight"
+        },
+        {
+          "block": "TCP/IP Send",
+          "ref": "parrotlib/TCP/IP Send",
+          "since": "R2023a+",
+          "intent": "Send data over TCP/IP to a Parrot drone — use for transmitting commands or configuration to the drone during operation"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "parrotlib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over UDP from a Parrot drone — use for low-latency reception of video, sensor, or navigation data from the drone"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "parrotlib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send data over UDP to a Parrot drone — use for low-latency command transmission to the drone flight controller"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.99552144681
 }

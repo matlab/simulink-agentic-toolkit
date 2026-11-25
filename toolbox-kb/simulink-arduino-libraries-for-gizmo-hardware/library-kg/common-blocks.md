@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Common blocks
-description: Standard Simulink utility blocks for Gizmo projects
-tags: [gain, constant, switch, scope, math]
+description: Standard Simulink utility blocks for Gizmo projects (19 blocks)
+tags: [toolbox-kb, simulink-arduino-libraries-for-gizmo-hardware, gain, constant, switch, scope, math]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Arduino Libraries for Gizmo Hardware
-category_path: Common blocks
+sources:
+  - resource: matlab:gizmoLibrary
+source: toolbox_kb
+managed_by: satk
+library: Simulink Arduino Libraries for Gizmo Hardware
+kb_folder: simulink-arduino-libraries-for-gizmo-hardware
+category: common-blocks
 block_count: 19
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Common blocks
-
-Use these blocks for common blocks.
 
 ## Recommended Blocks
 

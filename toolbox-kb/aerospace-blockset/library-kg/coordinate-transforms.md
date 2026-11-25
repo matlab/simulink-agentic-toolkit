@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Coordinate transforms
-description: Frame conversions between ECEF, ECI, NED, LLA, body, and wind axes
-tags: [DCM, ECEF, ECI, LLA, NED]
+description: "Frame conversions between ECEF, ECI, NED, LLA, body, and wind axes (30 blocks)"
+tags: [toolbox-kb, aerospace-blockset, DCM, ECEF, ECI, LLA, NED]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Coordinate transforms
+sources:
+  - resource: matlab:aerolibtransform2
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: coordinate-transforms
 block_count: 30
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Coordinate transforms
-
-Use these blocks for coordinate transforms.
 
 ## Recommended Blocks
 

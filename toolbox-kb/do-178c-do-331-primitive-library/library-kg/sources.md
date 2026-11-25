@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sources
-description: Constant and ground sources
-tags: [sources, constant, ground, enumerated, inport]
+description: Constant and ground sources (3 blocks)
+tags: [toolbox-kb, do-178c-do-331-primitive-library, sources, constant, ground, enumerated, inport]
 status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Sources
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: sources
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Sources
-
-Use these blocks for sources.
 
 ## Recommended Blocks
 

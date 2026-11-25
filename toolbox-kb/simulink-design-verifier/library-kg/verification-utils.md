@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Verification utils
-description: Verification infrastructure and utilities
-tags: [verification, implies, subsystem, property, example]
+description: Verification infrastructure and utilities (4 blocks)
+tags: [toolbox-kb, simulink-design-verifier, verification, implies, subsystem, property, example]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Design Verifier
-category_path: Verification utils
+sources:
+  - resource: matlab:sldvlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Design Verifier
+kb_folder: simulink-design-verifier
+category: verification-utils
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Verification utils
-
-Use these blocks for verification utils.
 
 ## Recommended Blocks
 

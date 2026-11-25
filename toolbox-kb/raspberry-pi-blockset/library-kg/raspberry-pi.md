@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Raspberry pi
-description: Raspberry Pi hardware peripheral and sensor access
-tags: [raspberry, pi, gpio, sensor, iot]
+description: Raspberry Pi hardware peripheral and sensor access (8 blocks)
+tags: [toolbox-kb, raspberry-pi-blockset, raspberry, pi, gpio, sensor, iot]
 status: stable
-source: mathworks_toolbox
-library_root: Raspberry Pi Blockset
-category_path: Raspberry pi
+sources:
+  - resource: matlab:raspberrypilib
+source: toolbox_kb
+managed_by: satk
+library: Raspberry Pi Blockset
+kb_folder: raspberry-pi-blockset
+category: raspberry-pi
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Raspberry pi
-
-Use these blocks for raspberry pi.
 
 ## Recommended Blocks
 

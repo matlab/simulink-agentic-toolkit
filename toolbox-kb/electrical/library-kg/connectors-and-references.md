@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Connectors and references
-description: Electrical references, busbars, connectors, and phase management
-tags: [reference, ground, busbar, neutral, phase]
+description: "Electrical references, busbars, connectors, and phase management (15 blocks)"
+tags: [toolbox-kb, electrical, reference, ground, busbar, neutral, phase]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Connectors and references
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: connectors-and-references
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Connectors and references
-
-Use these blocks for connectors and references.
 
 ## Recommended Blocks
 

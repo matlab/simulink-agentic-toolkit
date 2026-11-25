@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Filter design
-description: Design-and-apply and tunable filter blocks
-tags: [filter design, lowpass, highpass, bandpass, bandstop, notch, differentiator, hampel, median, variable bandwidth]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Filter design
+description: Design-and-apply and tunable filter blocks (32 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, filter design, lowpass, highpass, bandpass, bandstop, notch, differentiator, hampel, median, variable bandwidth]
+status: draft
+sources:
+  - resource: matlab:dspfdesign
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: filter-design
 block_count: 32
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Filter design
-
-Use these blocks for filter design.
 
 ## Recommended Blocks
 

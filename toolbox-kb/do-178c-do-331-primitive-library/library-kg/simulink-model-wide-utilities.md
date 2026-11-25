@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Simulink model wide utilities
-description: Blocks for simulink model wide utilities.
+description: Blocks for Simulink model wide utilities (2 blocks)
+tags: [toolbox-kb, do-178c-do-331-primitive-library]
 status: draft
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Simulink model wide utilities
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: simulink-model-wide-utilities
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Simulink model wide utilities
-
-Use these blocks for simulink model wide utilities.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Channel propagation
-description: Propagation channel models and interference
-tags: [channel, propagation, multipath, jammer, tworay]
+description: Propagation channel models and interference (3 blocks)
+tags: [toolbox-kb, radar-toolbox, channel, propagation, multipath, jammer, tworay]
 status: stable
-source: mathworks_toolbox
-library_root: Radar Toolbox
-category_path: Channel propagation
+sources:
+  - resource: matlab:radarlib
+source: toolbox_kb
+managed_by: satk
+library: Radar Toolbox
+kb_folder: radar-toolbox
+category: channel-propagation
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Channel propagation
-
-Use these blocks for channel propagation.
 
 ## Recommended Blocks
 

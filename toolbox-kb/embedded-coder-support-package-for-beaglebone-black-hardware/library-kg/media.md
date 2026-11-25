@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Media
-description: Audio and video capture/playback
-tags: [audio, video, capture, display, camera]
+description: Audio and video capture/playback (4 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-beaglebone-black-hardware, audio, video, capture, display, camera]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for BeagleBone Black Hardware
-category_path: Media
+sources:
+  - resource: matlab:beaglebonelib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for BeagleBone Black Hardware
+kb_folder: embedded-coder-support-package-for-beaglebone-black-hardware
+category: media
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Media
-
-Use these blocks for media.
 
 ## Recommended Blocks
 

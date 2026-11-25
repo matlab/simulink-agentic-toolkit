@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sources
-description: Voltage and current sources, batteries, fuel cells, and supply rails
-tags: [source, battery, solar, fuel, supply]
+description: "Voltage and current sources, batteries, fuel cells, and supply rails (16 blocks)"
+tags: [toolbox-kb, electrical, source, battery, solar, fuel, supply]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Sources
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: sources
 block_count: 16
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Sources
-
-Use these blocks for sources.
 
 ## Recommended Blocks
 

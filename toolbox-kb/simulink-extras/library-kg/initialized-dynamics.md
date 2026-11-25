@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Initialized dynamics
-description: Transfer functions and state-space with initial conditions
-tags: [transfer, state-space, initial, discrete, zero-pole]
+description: Transfer functions and state-space with initial conditions (10 blocks)
+tags: [toolbox-kb, simulink-extras, transfer, state-space, initial, discrete, zero-pole]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Extras
-category_path: Initialized dynamics
+sources:
+  - resource: matlab:simulink_extras
+source: toolbox_kb
+managed_by: satk
+library: Simulink Extras
+kb_folder: simulink-extras
+category: initialized-dynamics
 block_count: 10
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Initialized dynamics
-
-Use these blocks for initialized dynamics.
 
 ## Recommended Blocks
 

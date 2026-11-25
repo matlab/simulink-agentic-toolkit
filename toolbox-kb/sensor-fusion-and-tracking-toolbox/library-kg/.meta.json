@@ -1,15 +1,268 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74458006944,
-  "generatorVersion": 4,
-  "libraries": [
-    "Sensor Fusion and Tracking Toolbox"
-  ],
-  "blockCount": 29,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Sensor_Fusion_and_Tracking_Toolbox": {
-      "blockCount": 29
+  "pages": [
+    {
+      "id": "jipda-components",
+      "kind": "toolbox",
+      "library": "Sensor Fusion and Tracking Toolbox",
+      "kbFolder": "sensor-fusion-and-tracking-toolbox",
+      "category": "jipda-components",
+      "hash": "adba0a960f55ea9630407a090e2b0c3cbddd470a131eb8e904b9d6c3ef48facc",
+      "fm": {
+        "title": "Jipda components",
+        "description": "Modular JIPDA tracker building blocks (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "sensor-fusion-and-tracking-toolbox",
+          "jipda",
+          "assigner",
+          "initiator",
+          "predictor",
+          "updater"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "JIPDA Track Assigner",
+          "ref": "jipdatrackercomponentslib/JIPDA Track Assigner",
+          "since": "R2023a+",
+          "intent": "Assign detections to tracks using JIPDA probabilities — use as a modular component in custom JIPDA tracker pipelines"
+        },
+        {
+          "block": "JIPDA Track Initiator",
+          "ref": "jipdatrackercomponentslib/JIPDA Track Initiator",
+          "since": "R2023a+",
+          "intent": "Initiate new tracks from unassigned detections — use as a modular component for track birth in JIPDA tracker designs"
+        },
+        {
+          "block": "JIPDA Track Maintainer",
+          "ref": "jipdatrackercomponentslib/JIPDA Track Maintainer",
+          "since": "R2023a+",
+          "intent": "Manage track lifecycle based on existence probability — use for confirming or deleting tracks in modular JIPDA pipelines"
+        },
+        {
+          "block": "JIPDA Track Outputter",
+          "ref": "jipdatrackercomponentslib/JIPDA Track Outputter",
+          "since": "R2023a+",
+          "intent": "Output confirmed tracks from the JIPDA tracker — use for extracting finalized track estimates from modular JIPDA designs"
+        },
+        {
+          "block": "JIPDA Track Predictor",
+          "ref": "jipdatrackercomponentslib/JIPDA Track Predictor",
+          "since": "R2023a+",
+          "intent": "Predict track states forward in time — use for the prediction step in modular JIPDA tracker pipelines"
+        },
+        {
+          "block": "JIPDA Track Updater",
+          "ref": "jipdatrackercomponentslib/JIPDA Track Updater",
+          "since": "R2023a+",
+          "intent": "Update track states with new measurements — use for the measurement update step in modular JIPDA tracker pipelines"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "multi-object-trackers",
+      "kind": "toolbox",
+      "library": "Sensor Fusion and Tracking Toolbox",
+      "kbFolder": "sensor-fusion-and-tracking-toolbox",
+      "category": "multi-object-trackers",
+      "hash": "e08a19de49f2d296ce979365e4ddc671d067d736f8ebafe3ba07e491c6a9650c",
+      "fm": {
+        "title": "Multi object trackers",
+        "description": "Complete multi-object tracking algorithms (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "sensor-fusion-and-tracking-toolbox",
+          "tracker",
+          "gnn",
+          "jpda",
+          "phd",
+          "mht"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Global Nearest Neighbor Multi Object Tracker",
+          "ref": "motalgorithmslib/Global Nearest Neighbor Multi Object Tracker",
+          "since": "R2023a+",
+          "intent": "Track multiple objects using GNN data association — use for simple multi-target tracking when targets are well-separated"
+        },
+        {
+          "block": "Grid-Based Multi Object Tracker",
+          "ref": "motalgorithmslib/Grid-Based Multi Object Tracker",
+          "since": "R2023a+",
+          "intent": "Track objects on a spatial occupancy grid — use for tracking extended targets or dense environments with grid-based representations"
+        },
+        {
+          "block": "Joint Probabilistic Data Association Multi Object Tracker",
+          "ref": "motalgorithmslib/Joint Probabilistic Data Association Multi Object Tracker",
+          "since": "R2023a+",
+          "intent": "Track multiple objects using JPDA soft association — use for cluttered environments where detections may originate from multiple targets"
+        },
+        {
+          "block": "Probability Hypothesis Density Tracker",
+          "ref": "motalgorithmslib/Probability Hypothesis Density Tracker",
+          "since": "R2023a+",
+          "intent": "Track unknown number of objects using PHD filter — use when target count varies and explicit track management is impractical"
+        },
+        {
+          "block": "Track-Oriented Multi-Hypothesis Tracker",
+          "ref": "motalgorithmslib/Track-Oriented Multi-Hypothesis Tracker",
+          "since": "R2023a+",
+          "intent": "Track objects using multiple hypothesis trees — use for high-accuracy tracking in dense clutter with deferred association decisions"
+        },
+        {
+          "block": "Track-To-Track Fuser",
+          "ref": "motalgorithmslib/Track-To-Track Fuser",
+          "since": "R2023a+",
+          "intent": "Fuse tracks from multiple trackers into a unified track set — use for combining outputs from distributed sensors or tracking nodes"
+        },
+        {
+          "block": "Generalized Optimal Subpattern Assignment Metric",
+          "ref": "trackmetricslib/Generalized Optimal Subpattern Assignment Metric",
+          "since": "R2023a+",
+          "intent": "Evaluate tracker performance using GOSPA metric — use for quantifying tracking accuracy including missed and false tracks"
+        },
+        {
+          "block": "Optimal Subpattern Assignment Metric",
+          "ref": "trackmetricslib/Optimal Subpattern Assignment Metric",
+          "since": "R2023a+",
+          "intent": "Evaluate tracker performance using OSPA metric — use for measuring the overall distance between estimated and ground-truth track sets"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "scenario-utilities",
+      "kind": "toolbox",
+      "library": "Sensor Fusion and Tracking Toolbox",
+      "kbFolder": "sensor-fusion-and-tracking-toolbox",
+      "category": "scenario-utilities",
+      "hash": "2aded52183f9bd1bc0c679d44db7354da0423f08596ab8d2964569338cd3d82f",
+      "fm": {
+        "title": "Scenario utilities",
+        "description": "Scenario readers, sensors, and data utilities (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "sensor-fusion-and-tracking-toolbox",
+          "scenario",
+          "radar",
+          "gps",
+          "detection",
+          "concatenation"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Fusion Radar Sensor",
+          "ref": "trackingscenarioandsensormodelslib/Fusion Radar Sensor",
+          "since": "R2023a+",
+          "intent": "Simulate a radar sensor generating detections from a scenario — use for creating synthetic radar measurements for tracker testing"
+        },
+        {
+          "block": "Scenario To Platform",
+          "ref": "trackingscenarioandsensormodelslib/Scenario To Platform",
+          "since": "R2023a+",
+          "intent": "Extract platform poses from a tracking scenario — use for feeding ground-truth platform positions into sensor models"
+        },
+        {
+          "block": "Tracking Scenario Reader",
+          "ref": "trackingscenarioandsensormodelslib/Tracking Scenario Reader",
+          "since": "R2023a+",
+          "intent": "Read and replay a saved tracking scenario — use for loading pre-configured multi-platform scenarios into Simulink for testing"
+        },
+        {
+          "block": "Detection Concatenation",
+          "ref": "trackingutilitieslib/Detection Concatenation",
+          "since": "R2023a+",
+          "intent": "Merge detection lists from multiple sensors — use for combining detections before feeding into a centralized tracker"
+        },
+        {
+          "block": "Track Concatenation",
+          "ref": "trackingutilitieslib/Track Concatenation",
+          "since": "R2023a+",
+          "intent": "Merge track lists from multiple trackers — use for combining tracks before feeding into a track-to-track fuser"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensor-target-models",
+      "kind": "toolbox",
+      "library": "Sensor Fusion and Tracking Toolbox",
+      "kbFolder": "sensor-fusion-and-tracking-toolbox",
+      "category": "sensor-target-models",
+      "hash": "884bb5022d2cfdc8531269b081e666aaaac8f1ef7c0da626b6fefb81aa4198ef",
+      "fm": {
+        "title": "Sensor target models",
+        "description": "Sensor and target specification models (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "sensor-fusion-and-tracking-toolbox",
+          "birth",
+          "clutter",
+          "measurement",
+          "survival",
+          "detectability"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Birth Model",
+          "ref": "sensorspecslib/Birth Model",
+          "since": "R2023a+",
+          "intent": "Define where new targets can appear in the surveillance volume — use for configuring target birth distributions in PHD trackers"
+        },
+        {
+          "block": "Clutter Model",
+          "ref": "sensorspecslib/Clutter Model",
+          "since": "R2023a+",
+          "intent": "Define the false alarm distribution and density — use for characterizing spurious detections in the sensor field of view"
+        },
+        {
+          "block": "Detectability Model",
+          "ref": "sensorspecslib/Detectability Model",
+          "since": "R2023a+",
+          "intent": "Define sensor detection probability as a function of target state — use for modeling range-dependent or aspect-dependent detection likelihood"
+        },
+        {
+          "block": "Measurement Model",
+          "ref": "sensorspecslib/Measurement Model",
+          "since": "R2023a+",
+          "intent": "Define the sensor measurement function — use for mapping target state to expected sensor observations in tracking filters"
+        },
+        {
+          "block": "Sensor Specification",
+          "ref": "sensorspecslib/Sensor Specification",
+          "since": "R2023a+",
+          "intent": "Bundle sensor models into a complete specification — use for combining measurement, clutter, and detectability models for a sensor"
+        },
+        {
+          "block": "State Transition Model",
+          "ref": "targetspecslib/State Transition Model",
+          "since": "R2023a+",
+          "intent": "Define target dynamics and motion model — use for specifying how targets move between time steps in tracking filters"
+        },
+        {
+          "block": "Survival Model",
+          "ref": "targetspecslib/Survival Model",
+          "since": "R2023a+",
+          "intent": "Define target survival probability over time — use for modeling how likely targets persist between frames in PHD trackers"
+        },
+        {
+          "block": "Target Specification",
+          "ref": "targetspecslib/Target Specification",
+          "since": "R2023a+",
+          "intent": "Bundle target models into a complete specification — use for combining state transition, survival, and birth models for targets"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:28",
+  "generatedAtDatenum": 740309.995463044
 }

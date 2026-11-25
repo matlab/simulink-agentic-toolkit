@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Stateflow
-description: State-machine and flow-chart logic
-tags: [stateflow, chart, simulink function]
+description: State-machine and flow-chart logic (2 blocks)
+tags: [toolbox-kb, do-178c-do-331-primitive-library, stateflow, chart, simulink function]
 status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Stateflow
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: stateflow
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Stateflow
-
-Use these blocks for stateflow.
 
 ## Recommended Blocks
 

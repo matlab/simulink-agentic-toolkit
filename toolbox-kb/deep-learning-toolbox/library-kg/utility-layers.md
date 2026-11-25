@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utility layers
-description: Dropout, reshape, permute, and other structural utility layers
-tags: [dropout, reshape, permute, slice, identity]
+description: "Dropout, reshape, permute, and other structural utility layers (4 blocks)"
+tags: [toolbox-kb, deep-learning-toolbox, dropout, reshape, permute, slice, identity]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Utility layers
+sources:
+  - resource: matlab:dlutilitylib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: utility-layers
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Utility layers
-
-Use these blocks for utility layers.
 
 ## Recommended Blocks
 

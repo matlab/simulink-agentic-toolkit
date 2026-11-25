@@ -1,15 +1,560 @@
 {
-  "generatedAt": "2026-09-29T16:38:08",
-  "generatedAtDatenum": 740254.69315103011,
-  "generatorVersion": 4,
-  "libraries": [
-    "Powertrain Blockset"
-  ],
-  "blockCount": 63,
-  "categoryCount": 7,
-  "libraryFingerprints": {
-    "Powertrain_Blockset": {
-      "blockCount": 63
+  "pages": [
+    {
+      "id": "combustion-engines",
+      "kind": "toolbox",
+      "library": "Powertrain Blockset",
+      "kbFolder": "powertrain-blockset",
+      "category": "combustion-engines",
+      "hash": "de17097d6d3307088dc000ae59f49eca19a9c15483330f1c3acbef11354902b9",
+      "fm": {
+        "title": "Combustion engines",
+        "description": "Map-based and simple internal-combustion engine models (29 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "powertrain-blockset",
+          "combustion",
+          "engine",
+          "si",
+          "ci",
+          "core engine"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Reduced Lundell Alternator",
+          "ref": "autolibalternator/Reduced Lundell Alternator",
+          "since": "R2023a+",
+          "intent": "Implements a reduced Lundell (claw-pole) alternator and voltage regulator. The back-EMF is proportional to the input speed and field current. The machine operates as a torque source to the combustion engine."
+        },
+        {
+          "block": "Bidirectional DC-DC",
+          "ref": "autolibdcdc/Bidirectional DC-DC",
+          "since": "R2023a+",
+          "intent": "Implements a DC to DC converter supporting bidirectional boost and buck operation. Specify the DC to DC transient response, power limit, and losses. Output voltage tracks the voltage command unless the DC to DC converter is power limiting. Specify electrical losses using measured losses or measured efficiency."
+        },
+        {
+          "block": "Datasheet Battery",
+          "ref": "autolibdatasheetbattery/Datasheet Battery",
+          "since": "R2023a+",
+          "intent": "Implements a model for a lithium ion, lithium polymer, or lead acid battery based off of discharge characteristics taken at different temperatures. The model can be parameterized using a typical battery datasheet or through experimental measurement."
+        },
+        {
+          "block": "Equivalent Circuit Battery",
+          "ref": "autolibrcnetworksystem/Equivalent Circuit Battery",
+          "since": "R2023a+",
+          "intent": "Implements a resistor-capacitor (RC) circuit battery that you can parameterize using equivalent circuit modeling (ECM). To simulate the state-of-charge (SOC) and terminal voltage, the block uses load current and internal core temperature. Calculates the combined network battery voltage using lookup tables that are functions of the SOC and battery temperature. Use the Estimation Equivalent Circuit Battery block to help create the lookup tables."
+        },
+        {
+          "block": "Estimation Equivalent Circuit Battery",
+          "ref": "autolibrcnetworksystem/Estimation Equivalent Circuit Battery",
+          "since": "R2023a+",
+          "intent": "Implements a resistor-capacitor (RC) circuit battery model that determines the combined voltage of a network battery using parameter lookup tables that are functions of the state-of-charge (SOC). Recommend using the block for estimating battery voltage and SOC, not in system-level models."
+        },
+        {
+          "block": "Starter",
+          "ref": "autolibstarter/Starter",
+          "since": "R2023a+",
+          "intent": "Implements an automotive starter as a separately excited DC motor permanent magnet DC motor, or series connection DC motor. The motor operates as a torque source to the combustion engine."
+        },
+        {
+          "block": "Boost Drive Shaft",
+          "ref": "autolibboost/Boost Drive Shaft",
+          "since": "R2023a+",
+          "intent": "Implements a rotating shaft connected to engine boost components. Uses compressor, turbine, and external torques to calculate the drive shaft speed. Specify one of the following configurations: - Turbocharger: Connect compressor to turbine (external torque optional) - Compressor only: Connect to compressor and provide external torque - Turbine only: Connect to turbine and provide external load torque"
+        },
+        {
+          "block": "Compressor",
+          "ref": "autolibboost/Compressor",
+          "since": "R2023a+",
+          "intent": "Implements a turbocharger or supercharger compressor. Connects to inlet volume, outlet volume, and boost drive shaft. Determines mass and heat flow rates between the volumes and required shaft torque."
+        },
+        {
+          "block": "Turbine",
+          "ref": "autolibboost/Turbine",
+          "since": "R2023a+",
+          "intent": "Implements a fixed or variable geometry turbine (exhaust side of turbocharger) with a wastegate. Connects to inlet volume, outlet volume, and boost drive shaft. Determines mass and heat flow rates between the volumes and output shaft torque."
+        },
+        {
+          "block": "Mapped Core Engine",
+          "ref": "autolibcoreeng/Mapped Core Engine",
+          "since": "R2023a+",
+          "intent": "Model core engine torque, fuel, and exhaust from lookup maps — use as the map-based heart of a combustion-engine model."
+        },
+        {
+          "block": "CI Core Engine",
+          "ref": "autolibcoreeng/CI Core Engine",
+          "since": "R2023a+",
+          "intent": "Implements a compression-ignition (CI) engine from intake to exhaust port. Use the block for hardware-in-the-loop (HIL) engine control design, or vehicle-level fuel economy and performance simulations. The CI Core Engine block calculates: - Brake torque, using either the torque structure or simple torque model - Fuel flow - Air mass flow, including exhaust gas recirculation (EGR), using a speed-density model - Air-fuel ratio (AFR) - Exhaust temperature and exhaust mass flow rate"
+        },
+        {
+          "block": "SI Core Engine",
+          "ref": "autolibcoreeng/SI Core Engine",
+          "since": "R2023a+",
+          "intent": "Implements a spark-ignition (SI) engine from intake to exhaust port. Use the block in larger vehicle models, hardware-in-the-loop (HIL) engine control design, or vehicle-level fuel economy and performance simulations. The SI Core Engine block calculates: - Brake torque, using either the torque structure or simple torque model - Fuel flow - Air mass flow, using either the speed-density or dual-independent cam phasing models - Air-fuel ratio (AFR) - Exhaust temperature and exhaust mass flow rate"
+        },
+        {
+          "block": "Control Volume System",
+          "ref": "autolibfundflw/Control Volume System",
+          "since": "R2023a+",
+          "intent": "Implements a constant volume open thermodynamic system with heat transfer. Uses conservation of mass and energy, assuming an ideal gas, to determine the pressure and temperature."
+        },
+        {
+          "block": "Flow Boundary",
+          "ref": "autolibfundflw/Flow Boundary",
+          "since": "R2023a+",
+          "intent": "Implements flow boundary conditions. Set pressure and temperature as constants or external inputs."
+        },
+        {
+          "block": "Flow Restriction",
+          "ref": "autolibfundflw/Flow Restriction",
+          "since": "R2023a+",
+          "intent": "Implements isentropic ideal gas flow through an orifice. Uses conservation of mass and energy to determine the mass and heat flow rates. Flow velocity is limited by the local acoustic velocity (choked flow). You can specify a constant, external input, or throttle body geometry orifice area model."
+        },
+        {
+          "block": "Heat Exchanger",
+          "ref": "autolibfundflw/Heat Exchanger",
+          "since": "R2023a+",
+          "intent": "Implements heat exchanger (e.g. intercooler or EGR cooler). Inlet connects to an engine flow component (flow restriction, compressor, turbine, or engine) and outlet connects to a volume (control volume or environment). Model determines heat transfer rate and downstream temperature based on the upstream temperature, effectiveness, and temperature of the cooling medium. Model assumes no pressure drop. Pressure losses can be modeled by the connected flow component."
+        },
+        {
+          "block": "CI Controller",
+          "ref": "autolibengctrlr/CI Controller",
+          "since": "R2023a+",
+          "intent": "Implements a compression-ignition (CI) controller that uses the driver torque request to calculate the open-loop commands for injector pulse-width, VGT rack position, and EGR valve area percent required to meet the driver demand. The CI Core Engine block requires the open-loop control commands from the CI Controller block. The block has two subsystems: - Controller: Determines the open-loop CI engine actuator commands based on the torque request and measured engine speed. - Estimator: Determines the torque, estimated air mass flow, exhaust gas recirculation mass flow, exhaust back pressure, and exhaust gas temperature from intake manifold gas pressure, intake manifold gas temperature, engine speed, exhaust gas recirculation valve area percent, variable geometry turbocharger rack position, and variable geometry turbocharger speed. You can specify the torque estimation model."
+        },
+        {
+          "block": "SI Controller",
+          "ref": "autolibengctrlr/SI Controller",
+          "since": "R2023a+",
+          "intent": "Implements a spark-ignition (SI) controller that uses the driver torque request in conjunction with measured engine speed to calculate the open-loop air, fuel, spark, and cam-phaser actuator commands required to meet the driver torque demand. The SI Core Engine block requires the actuator commands from the SI Controller block outputs. The block has two subsystems: - Controller: Determines the open-loop commands based on the commanded torque, measured engine speed, and estimated cylinder air mass. - Estimator: Determines the estimated air mass flow, torque, and exhaust gas temperature. You can specify the air mass flow and torque estimation models."
+        },
+        {
+          "block": "Mapped CI Engine",
+          "ref": "autolibenginesystems/Mapped CI Engine",
+          "since": "R2023a+",
+          "intent": "Model a compression-ignition (diesel) engine from lookup maps — use for map-based diesel powertrain simulation."
+        },
+        {
+          "block": "Mapped SI Engine",
+          "ref": "autolibenginesystems/Mapped SI Engine",
+          "since": "R2023a+",
+          "intent": "Model a spark-ignition (gasoline) engine from lookup maps — use for map-based gasoline powertrain simulation."
+        },
+        {
+          "block": "Simple Engine",
+          "ref": "autolibenginesystems/Simple Engine",
+          "since": "R2023a+",
+          "intent": "Model an engine with a simple torque-speed characteristic — use for lightweight powertrain studies without detailed maps."
+        },
+        {
+          "block": "IM Controller",
+          "ref": "autolibmotorctrlr/IM Controller",
+          "since": "R2023a+",
+          "intent": "Implements an internal torque-based, field-oriented controller for an induction motor (IM) with an optional outer-loop speed controller. The torque control implements a strategy for weakening the magnetic flux."
+        },
+        {
+          "block": "Interior PM Controller",
+          "ref": "autolibmotorctrlr/Interior PM Controller",
+          "since": "R2023a+",
+          "intent": "Implements a torque-based, field-oriented controller for an internal permanent magnet synchronous machine (PMSM) with an optional outer-loop speed controller. The torque control implements strategies for maximizing the torque per amp (MTPA) and weakening the magnetic flux."
+        },
+        {
+          "block": "Surface Mount PM Controller",
+          "ref": "autolibmotorctrlr/Surface Mount PM Controller",
+          "since": "R2023a+",
+          "intent": "Implements a torque-based, field-oriented controller for an surface mount permanent magnet synchronous motor (PMSM) with an optional outer-loop speed controller. The torque control utilizes quadrature current and does not weaken the magnetic flux."
+        },
+        {
+          "block": "Equivalent Consumption Minimization Strategy",
+          "ref": "autolibhevctrlr/Equivalent Consumption Minimization Strategy",
+          "since": "R2023a+",
+          "intent": "Implements an equivalent consumption minimization strategy (ECMS) for hybrid electric vehicle control. ECMS optimizes the torque split between the engine and motor to minimize the energy consumption while maintaining the battery state of charge (SOC). Configure the block for different motor locations, adaptive or non-adaptive control, and gear optimization."
+        },
+        {
+          "block": "Torque Converter",
+          "ref": "autolibtrqconv/Torque Converter",
+          "since": "R2023a+",
+          "intent": "Implements a three-part torque converter consisting of an impeller, turbine, and stator with an optional clutch lock-up capability. You can specify the torque converter characteristics and clutch lock-up configurations."
+        },
+        {
+          "block": "AMT Controller",
+          "ref": "autolibtranscontrols/AMT Controller",
+          "since": "R2023a+",
+          "intent": "Automated manual transmission (AMT) controller, which generates an open loop clutch command based on a requested gear number."
+        },
+        {
+          "block": "CVT Controller",
+          "ref": "autolibtranscontrols/CVT Controller",
+          "since": "R2023a+",
+          "intent": "Implements a pushbelt continuously variable transmission (CVT) controller. The block uses standard pulley and geometric equations to calculate primary and secondary variator positions."
+        },
+        {
+          "block": "DCT Controller",
+          "ref": "autolibtranscontrols/DCT Controller",
+          "since": "R2023a+",
+          "intent": "Dual Clutch Transmission (DCT) controller, which generates open loop clutch commands based on a requested gear number."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "drivetrain",
+      "kind": "toolbox",
+      "library": "Powertrain Blockset",
+      "kbFolder": "powertrain-blockset",
+      "category": "drivetrain",
+      "hash": "818d675bb4f2179fee7bc10a8233a395cb59a7ebcf8009235df3834557da207e",
+      "fm": {
+        "title": "Drivetrain",
+        "description": "Couplings, differentials, transfer cases, and wheels (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "powertrain-blockset",
+          "drivetrain",
+          "gearbox",
+          "differential",
+          "transfer case",
+          "wheel",
+          "compliance",
+          "inertia",
+          "chain"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Gearbox",
+          "ref": "autolibcoupling/Gearbox",
+          "since": "R2023a+",
+          "intent": "Model a fixed-ratio gearbox with inertia and efficiency losses — use to represent a gear reduction in a driveline."
+        },
+        {
+          "block": "Motorcycle Chain",
+          "ref": "autolibcoupling/Motorcycle Chain",
+          "since": "R2023a+",
+          "intent": "Model a motorcycle final-drive chain with ratio and compliance — use to couple the transmission to the rear wheel."
+        },
+        {
+          "block": "Rotational Inertia",
+          "ref": "autolibcoupling/Rotational Inertia",
+          "since": "R2023a+",
+          "intent": "Add lumped rotational inertia (with optional damping) to a driveline shaft — use to represent spinning mass."
+        },
+        {
+          "block": "Split Torsional Compliance",
+          "ref": "autolibcoupling/Split Torsional Compliance",
+          "since": "R2023a+",
+          "intent": "Model a torsionally-compliant coupling that splits torque between two paths — use for driveline branching with shaft flexibility."
+        },
+        {
+          "block": "Torsional Compliance",
+          "ref": "autolibcoupling/Torsional Compliance",
+          "since": "R2023a+",
+          "intent": "Model shaft torsional compliance (spring/damper) between two rotational ports — use to capture driveline flexibility and resonance."
+        },
+        {
+          "block": "Disc Clutch",
+          "ref": "autolibcoupling/Disc Clutch",
+          "since": "R2023a+",
+          "intent": "Implements an idealized dry friction clutch."
+        },
+        {
+          "block": "Planetary Gear",
+          "ref": "autolibcoupling/Planetary Gear",
+          "since": "R2023a+",
+          "intent": "Implements an ideal planetary gear coupling consisting of a rigidly coupled sun, ring and carrier. Torque inputs are provided in order to produce the corresponding velocity response."
+        },
+        {
+          "block": "Limited Slip Differential",
+          "ref": "autolibdiff/Limited Slip Differential",
+          "since": "R2023a+",
+          "intent": "Model a limited-slip differential that biases torque toward the higher-traction wheel — use for driveline traction studies."
+        },
+        {
+          "block": "Open Differential",
+          "ref": "autolibdiff/Open Differential",
+          "since": "R2023a+",
+          "intent": "Model an open differential splitting torque equally to two outputs — use as a standard axle differential in a driveline."
+        },
+        {
+          "block": "Transfer Case",
+          "ref": "autolibdiff/Transfer Case",
+          "since": "R2023a+",
+          "intent": "Split driveline torque between front and rear axles — use to model 4WD/AWD power distribution."
+        },
+        {
+          "block": "Longitudinal Wheel - Disc Brake",
+          "ref": "autolibwheelslong/Longitudinal Wheel - Disc Brake",
+          "since": "R2024b+",
+          "intent": "Model a longitudinal wheel with tire-slip dynamics and a disc brake — use for braking and traction studies with disc braking."
+        },
+        {
+          "block": "Longitudinal Wheel - Drum Brake",
+          "ref": "autolibwheelslong/Longitudinal Wheel - Drum Brake",
+          "since": "R2023a+",
+          "intent": "Model a longitudinal wheel with tire-slip dynamics and a drum brake — use for braking and traction studies with drum braking."
+        },
+        {
+          "block": "Longitudinal Wheel - Mapped Brake",
+          "ref": "autolibwheelslong/Longitudinal Wheel - Mapped Brake",
+          "since": "R2023a+",
+          "intent": "Model a longitudinal wheel with tire-slip dynamics and a table-mapped brake — use when brake torque is characterized by data."
+        },
+        {
+          "block": "Longitudinal Wheel - No Brake",
+          "ref": "autolibwheelslong/Longitudinal Wheel - No Brake",
+          "since": "R2023a+",
+          "intent": "Model a longitudinal wheel with tire-slip dynamics and no brake — use for driven or rolling wheels without braking."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "electric-propulsion",
+      "kind": "toolbox",
+      "library": "Powertrain Blockset",
+      "kbFolder": "powertrain-blockset",
+      "category": "electric-propulsion",
+      "hash": "ebd1d101f2f7f90a58b9e99ea3bdffe311949bb9506712a25cd3043f552921f3",
+      "fm": {
+        "title": "Electric propulsion",
+        "description": "Electric motors, inverters, and motor controllers (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "powertrain-blockset",
+          "electric motors",
+          "motor controllers",
+          "pmsm",
+          "induction motor",
+          "inverter",
+          "mapped motor"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Flux-Based PM Controller",
+          "ref": "autolibmotorctrlr/Flux-Based PM Controller",
+          "since": "R2023a+",
+          "intent": "Field-oriented controller for a flux-based permanent-magnet motor — use to command torque/current in a flux-based PMSM drive."
+        },
+        {
+          "block": "Flux-Based PMSM",
+          "ref": "autolibemachines/Flux-Based PMSM",
+          "since": "R2023a+",
+          "intent": "Model a permanent-magnet synchronous motor from flux-linkage maps — use for high-fidelity PMSM simulation that captures saturation."
+        },
+        {
+          "block": "Induction Motor",
+          "ref": "autolibemachines/Induction Motor",
+          "since": "R2023a+",
+          "intent": "Model a three-phase induction machine with electrical and mechanical dynamics — use as an ACIM traction motor."
+        },
+        {
+          "block": "Interior PMSM",
+          "ref": "autolibemachines/Interior PMSM",
+          "since": "R2023a+",
+          "intent": "Model an interior-permanent-magnet synchronous motor with saliency and reluctance torque — use for IPMSM traction drives."
+        },
+        {
+          "block": "Mapped Motor",
+          "ref": "autolibemachines/Mapped Motor",
+          "since": "R2023a+",
+          "intent": "Model an electric motor and inverter from efficiency/torque maps — use for fast system-level EV powertrain studies."
+        },
+        {
+          "block": "Surface Mount PMSM",
+          "ref": "autolibemachines/Surface Mount PMSM",
+          "since": "R2023a+",
+          "intent": "Model a surface-mount permanent-magnet synchronous motor — use for SPMSM traction and drive simulation."
+        },
+        {
+          "block": "Three-Phase Voltage Source Inverter",
+          "ref": "autolibemachines/Three-Phase Voltage Source Inverter",
+          "since": "R2023a+",
+          "intent": "Model a three-phase voltage-source inverter driving a motor — use to convert DC-bus voltage to AC phase voltages."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "scenario",
+      "kind": "toolbox",
+      "library": "Powertrain Blockset",
+      "kbFolder": "powertrain-blockset",
+      "category": "scenario",
+      "hash": "bbe42b364f7fdf6787d0281a425675070a51aa24a7267b7145708d522a055442",
+      "fm": {
+        "title": "Scenario",
+        "description": "Drive-cycle and driver models for closed-loop runs (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "powertrain-blockset",
+          "vehicle scenario builder",
+          "drive cycle",
+          "longitudinal driver"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Drive Cycle Source",
+          "ref": "autolibscenario/Drive Cycle Source",
+          "since": "R2023a+",
+          "intent": "Output a standard or custom drive-cycle speed reference versus time — use to drive powertrain and fuel-economy simulations."
+        },
+        {
+          "block": "Longitudinal Driver",
+          "ref": "autolibscenario/Longitudinal Driver",
+          "since": "R2023a+",
+          "intent": "Model a driver that produces accelerator and brake commands to track a speed reference — use to close the loop on a drive cycle."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "transmission",
+      "kind": "toolbox",
+      "library": "Powertrain Blockset",
+      "kbFolder": "powertrain-blockset",
+      "category": "transmission",
+      "hash": "cbd92c0e19b5af599a078fc95b467037a0b1ca3181d62d49e81539c017b29a1e",
+      "fm": {
+        "title": "Transmission",
+        "description": "Transmission system models (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "powertrain-blockset",
+          "transmission",
+          "clutch",
+          "cvt",
+          "fixed gear",
+          "manual"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Automated Manual Transmission",
+          "ref": "autolibtrans/Automated Manual Transmission",
+          "since": "R2023a+",
+          "intent": "Model an automated manual transmission with clutch and gear-shift logic — use for AMT driveline studies."
+        },
+        {
+          "block": "Continuously Variable Transmission",
+          "ref": "autolibtrans/Continuously Variable Transmission",
+          "since": "R2023a+",
+          "intent": "Model a CVT with a continuously variable gear ratio — use for CVT powertrain simulation."
+        },
+        {
+          "block": "Dual Clutch Transmission",
+          "ref": "autolibtrans/Dual Clutch Transmission",
+          "since": "R2023a+",
+          "intent": "Model a dual-clutch transmission with two clutches for seamless shifts — use for DCT driveline studies."
+        },
+        {
+          "block": "Ideal Fixed Gear Transmission",
+          "ref": "autolibtrans/Ideal Fixed Gear Transmission",
+          "since": "R2023a+",
+          "intent": "Model an idealized multi-speed transmission with instantaneous gear selection — use for lightweight transmission studies."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "utilities",
+      "kind": "toolbox",
+      "library": "Powertrain Blockset",
+      "kbFolder": "powertrain-blockset",
+      "category": "utilities",
+      "hash": "9458c4ac74d98114729a83dba3f9bc46daaefa1ca06f73a1558284fd9af822a1",
+      "fm": {
+        "title": "Utilities",
+        "description": "Power accounting and Simscape interface helpers (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "powertrain-blockset",
+          "utilities",
+          "power accounting",
+          "simscape",
+          "connection port",
+          "two-way"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Power Accounting Bus Creator",
+          "ref": "autolibpowerinfoutils/Power Accounting Bus Creator",
+          "since": "R2023a+",
+          "intent": "Bundle component power and energy signals into a power-accounting bus — use to track energy flow for efficiency analysis."
+        },
+        {
+          "block": "Two-Way Connection",
+          "ref": "autolibsimscapeutils/Two-Way Connection",
+          "since": "R2023a+",
+          "intent": "Bridge a Simscape physical two-way connection into a Powertrain Blockset signal interface — use to link physical and signal domains."
+        },
+        {
+          "block": "Connection Port",
+          "ref": "autolibsimscapeutils/Connection Port",
+          "since": "R2023a+",
+          "intent": "Expose a physical connection port on a Powertrain subsystem — use to create a physical pin on a masked subsystem."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "vehicle-dynamics",
+      "kind": "toolbox",
+      "library": "Powertrain Blockset",
+      "kbFolder": "powertrain-blockset",
+      "category": "vehicle-dynamics",
+      "hash": "4584796c3de6b7acedbe28b56014084b2e5fba3fb687d43508a24ad6f9e5dd67",
+      "fm": {
+        "title": "Vehicle dynamics",
+        "description": "Longitudinal vehicle body and road-load dynamics (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "powertrain-blockset",
+          "vehicle dynamics",
+          "vehicle body",
+          "road load",
+          "motorcycle body"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Motorcycle Body Longitudinal In-Plane",
+          "ref": "autolibvehdynlong/Motorcycle Body Longitudinal In-Plane",
+          "since": "R2023a+",
+          "intent": "Model in-plane longitudinal motorcycle body dynamics — use for motorcycle acceleration and braking studies."
+        },
+        {
+          "block": "Vehicle Body 1DOF Longitudinal",
+          "ref": "autolibvehdynlong/Vehicle Body 1DOF Longitudinal",
+          "since": "R2023a+",
+          "intent": "Model longitudinal vehicle motion with a single degree of freedom — use for simple straight-line acceleration/braking studies."
+        },
+        {
+          "block": "Vehicle Body 3DOF Longitudinal",
+          "ref": "autolibvehdynlong/Vehicle Body 3DOF Longitudinal",
+          "since": "R2023a+",
+          "intent": "Model vehicle longitudinal, vertical, and pitch dynamics (3 DOF) — use for ride and load-transfer studies in the longitudinal plane."
+        },
+        {
+          "block": "Vehicle Body Total Road Load",
+          "ref": "autolibvehdynlong/Vehicle Body Total Road Load",
+          "since": "R2023a+",
+          "intent": "Compute total road load (aerodynamic drag, rolling resistance, grade) opposing motion — use to apply resistive forces in a longitudinal model."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:25",
+  "generatedAtDatenum": 740309.99543695606
 }

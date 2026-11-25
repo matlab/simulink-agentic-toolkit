@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Analog io
-description: Analog input/output via DAQ hardware
-tags: [analog, voltage, dac, adc, sample]
+description: Analog input/output via DAQ hardware (2 blocks)
+tags: [toolbox-kb, simulink-desktop-real-time, analog, voltage, dac, adc, sample]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Desktop Real-Time
-category_path: Analog io
+sources:
+  - resource: matlab:sldrtlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Desktop Real-Time
+kb_folder: simulink-desktop-real-time
+category: analog-io
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Analog io
-
-Use these blocks for analog io.
 
 ## Recommended Blocks
 

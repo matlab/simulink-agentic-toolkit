@@ -1,15 +1,37 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457240745,
-  "generatorVersion": 4,
-  "libraries": [
-    "Multiversion Co-simulation"
-  ],
-  "blockCount": 1,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Multiversion_Co_simulation": {
-      "blockCount": 1
+  "pages": [
+    {
+      "id": "co-simulation",
+      "kind": "toolbox",
+      "library": "Multiversion Co-simulation",
+      "kbFolder": "multiversion-co-simulation",
+      "category": "co-simulation",
+      "hash": "2fcfc1b75b6c4325487b672d69921f003983ef9a2b570808c9d90f24ca3dde7d",
+      "fm": {
+        "title": "Co simulation",
+        "description": "Cross-version model co-simulation (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "multiversion-co-simulation",
+          "multiversion",
+          "cosimulation",
+          "reference",
+          "version",
+          "compatibility"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Multiversion Co-simulation",
+          "ref": "MultiversionCoSim/Multiversion Co-simulation",
+          "since": "R2023a+",
+          "intent": "Run a referenced model in a different MATLAB version within the same simulation — use when subsystems require specific MATLAB versions or toolbox combinations"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:24",
+  "generatedAtDatenum": 740309.99542407412
 }

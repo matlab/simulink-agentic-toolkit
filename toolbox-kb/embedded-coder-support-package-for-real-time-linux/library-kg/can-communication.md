@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Can communication
-description: CAN bus communication on real-time Linux via SocketCAN
-tags: [can, socketcan, receive, transmit, linux]
+description: CAN bus communication on real-time Linux via SocketCAN (2 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-real-time-linux, can, socketcan, receive, transmit, linux]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for Real-Time Linux
-category_path: Can communication
+sources:
+  - resource: matlab:slrtlinuxsocketcanlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for Real-Time Linux
+kb_folder: embedded-coder-support-package-for-real-time-linux
+category: can-communication
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Can communication
-
-Use these blocks for can communication.
 
 ## Recommended Blocks
 

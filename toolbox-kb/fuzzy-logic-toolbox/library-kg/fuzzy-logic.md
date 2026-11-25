@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Fuzzy logic
-description: Fuzzy inference systems and fuzzy control blocks
-tags: [fuzzy, fis, membership, rules, inference]
+description: Fuzzy inference systems and fuzzy control blocks (5 blocks)
+tags: [toolbox-kb, fuzzy-logic-toolbox, fuzzy, fis, membership, rules, inference]
 status: stable
-source: mathworks_toolbox
-library_root: Fuzzy Logic Toolbox
-category_path: Fuzzy logic
+sources:
+  - resource: matlab:fuzblock
+source: toolbox_kb
+managed_by: satk
+library: Fuzzy Logic Toolbox
+kb_folder: fuzzy-logic-toolbox
+category: fuzzy-logic
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:22Z" }
 ---
 
 # Fuzzy logic
-
-Use these blocks for fuzzy logic.
 
 ## Recommended Blocks
 

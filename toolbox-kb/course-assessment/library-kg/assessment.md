@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Assessment
-description: Blocks for MATLAB Grader and courseware auto-assessment templates
-tags: [grader, course, assessment, student, template]
+description: Blocks for MATLAB Grader and courseware auto-assessment templates (2 blocks)
+tags: [toolbox-kb, course-assessment, grader, course, assessment, student, template]
 status: stable
-source: mathworks_toolbox
-library_root: Course Assessment
-category_path: Assessment
+sources:
+  - resource: matlab:assessmentBlocks
+source: toolbox_kb
+managed_by: satk
+library: Course Assessment
+kb_folder: course-assessment
+category: assessment
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Assessment
-
-Use these blocks for assessment.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Analysis statistics
-description: Measure and analyze image content
-tags: [analysis, enhancement, statistics, morphological, transforms, text, graphics]
-status: stable
-source: custom_library
-library_root: Computer Vision Toolbox
-category_path: Analysis statistics
+description: Measure and analyze image content (27 blocks)
+tags: [toolbox-kb, computer-vision-toolbox, analysis, enhancement, statistics, morphological, transforms, text, graphics]
+status: draft
+sources:
+  - resource: matlab:visionanalysis
+source: toolbox_kb
+managed_by: satk
+library: Computer Vision Toolbox
+kb_folder: computer-vision-toolbox
+category: analysis-statistics
 block_count: 27
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:16Z" }
 ---
 
 # Analysis statistics
-
-Use these blocks for analysis statistics.
 
 ## Recommended Blocks
 

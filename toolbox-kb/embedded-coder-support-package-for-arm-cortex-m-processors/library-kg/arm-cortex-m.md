@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Arm cortex m
-description: Deployment blocks for ARM Cortex-M microcontrollers
-tags: [arm, cortex-m, interrupt, microcontroller, isr]
+description: Deployment blocks for ARM Cortex-M microcontrollers (1 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-arm-cortex-m-processors, arm, cortex-m, interrupt, microcontroller, isr]
 status: stable
-source: mathworks_toolbox
-library_root: Embedded Coder Support Package for ARM Cortex-M Processors
-category_path: Arm cortex m
+sources:
+  - resource: matlab:armcortexmlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for ARM Cortex-M Processors
+kb_folder: embedded-coder-support-package-for-arm-cortex-m-processors
+category: arm-cortex-m
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Arm cortex m
-
-Use these blocks for arm cortex m.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Synchronization
-description: Carrier, symbol, and frame synchronization
-tags: [synchronization, carrier synchronizer, symbol synchronizer, preamble]
+description: "Carrier, symbol, and frame synchronization (5 blocks)"
+tags: [toolbox-kb, communications-toolbox, synchronization, carrier synchronizer, symbol synchronizer, preamble]
 status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Synchronization
+sources:
+  - resource: matlab:commrfcorlib
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: synchronization
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Synchronization
-
-Use these blocks for synchronization.
 
 ## Recommended Blocks
 

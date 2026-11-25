@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Brakes and detents
-description: Friction brakes, drum brakes, and position detents for rotation and translation
-tags: [brake, detent, friction, band, drum]
+description: "Friction brakes, drum brakes, and position detents for rotation and translation (7 blocks)"
+tags: [toolbox-kb, driveline, brake, detent, friction, band, drum]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Brakes and detents
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: brakes-and-detents
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Brakes and detents
-
-Use these blocks for brakes and detents.
 
 ## Recommended Blocks
 

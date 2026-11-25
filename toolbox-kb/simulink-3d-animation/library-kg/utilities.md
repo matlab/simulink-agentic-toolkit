@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utilities
-description: Scene utilities and data exchange
-tags: [transform, message, video, configuration, scene]
+description: Scene utilities and data exchange (7 blocks)
+tags: [toolbox-kb, simulink-3d-animation, transform, message, video, configuration, scene]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink 3D Animation
-category_path: Utilities
+sources:
+  - resource: matlab:sl3dlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink 3D Animation
+kb_folder: simulink-3d-animation
+category: utilities
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:29Z" }
 ---
 
 # Utilities
-
-Use these blocks for utilities.
 
 ## Recommended Blocks
 

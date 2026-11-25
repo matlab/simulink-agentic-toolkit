@@ -1,15 +1,298 @@
 {
-  "generatedAt": "2026-09-29T16:38:06",
-  "generatedAtDatenum": 740254.69313246524,
-  "generatorVersion": 4,
-  "libraries": [
-    "Communications Toolbox HDL Support"
-  ],
-  "blockCount": 25,
-  "categoryCount": 6,
-  "libraryFingerprints": {
-    "Communications_Toolbox_HDL_Support": {
-      "blockCount": 25
+  "pages": [
+    {
+      "id": "comm-filters",
+      "kind": "toolbox",
+      "library": "Communications Toolbox HDL Support",
+      "kbFolder": "communications-toolbox-hdl-support",
+      "category": "comm-filters",
+      "hash": "d91e8f891bd0bb37796f88558d899bda1b15b7b52f2c578122fa6437fbed4456",
+      "fm": {
+        "title": "Comm filters",
+        "description": "Pulse-shaping and conditioning filters for HDL links (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-hdl-support",
+          "comm filters",
+          "raised cosine",
+          "dc blocker"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DC Blocker",
+          "ref": "commhdlfilt/DC Blocker",
+          "since": "R2023a+",
+          "intent": "Remove the DC (zero-frequency) component of a signal with a high-pass filter — use to eliminate DC offset before demodulation."
+        },
+        {
+          "block": "Raised Cosine Receive Filter",
+          "ref": "commhdlfilt/Raised Cosine Receive Filter",
+          "since": "R2023a+",
+          "intent": "Matched raised-cosine receive filter with optional decimation — use for matched filtering at the receiver to limit inter-symbol interference."
+        },
+        {
+          "block": "Raised Cosine Transmit Filter",
+          "ref": "commhdlfilt/Raised Cosine Transmit Filter",
+          "since": "R2023a+",
+          "intent": "Raised-cosine transmit pulse-shaping filter with upsampling — use to band-limit transmitted symbols and control inter-symbol interference."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "comm-sinks",
+      "kind": "toolbox",
+      "library": "Communications Toolbox HDL Support",
+      "kbFolder": "communications-toolbox-hdl-support",
+      "category": "comm-sinks",
+      "hash": "d95694f4746e2bb7dcd41e06626fe57329f3b5eb877b971710b8513fa79331a3",
+      "fm": {
+        "title": "Comm sinks",
+        "description": "Visualization and measurement of received signals (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-hdl-support",
+          "comm sinks",
+          "constellation",
+          "eye diagram",
+          "error rate"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Constellation Diagram",
+          "ref": "commhdlsink/Constellation Diagram",
+          "since": "R2023a+",
+          "intent": "Plot received symbols on an IQ constellation — use to visualize modulation quality and channel impairments."
+        },
+        {
+          "block": "Error Rate Calculation",
+          "ref": "commhdlsink/Error Rate Calculation",
+          "since": "R2023a+",
+          "intent": "Compare transmitted and received bits/symbols to compute bit- or symbol-error rate — use to measure link performance."
+        },
+        {
+          "block": "Eye Diagram",
+          "ref": "commhdlsink/Eye Diagram",
+          "since": "R2023a+",
+          "intent": "Overlay signal traces into an eye diagram — use to assess inter-symbol interference, jitter, and timing margin."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "comm-sources",
+      "kind": "toolbox",
+      "library": "Communications Toolbox HDL Support",
+      "kbFolder": "communications-toolbox-hdl-support",
+      "category": "comm-sources",
+      "hash": "4664a70ebd99321569b896be943b4413438bf55dfc65326b496c465b2baa1ea6",
+      "fm": {
+        "title": "Comm sources",
+        "description": "Sequence and test sources (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-hdl-support",
+          "comm sources",
+          "pn sequence"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "PN Sequence Generator",
+          "ref": "commhdlsource/PN Sequence Generator",
+          "since": "R2023a+",
+          "intent": "Generate a pseudonoise (maximal-length LFSR) sequence — use for spreading, scrambling, or as a repeatable test bit source."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "error-correction",
+      "kind": "toolbox",
+      "library": "Communications Toolbox HDL Support",
+      "kbFolder": "communications-toolbox-hdl-support",
+      "category": "error-correction",
+      "hash": "7d3f018d0f78741c73b3acc441a16cbf2f87298d31c7336fbe95730a53b12282",
+      "fm": {
+        "title": "Error correction",
+        "description": "HDL-optimized forward error correction and error detection (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-hdl-support",
+          "error detection and correction",
+          "rs",
+          "crc",
+          "convolutional encoder",
+          "viterbi"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Integer-Input RS Encoder HDL Optimized",
+          "ref": "commhdlblkcod/Integer-Input RS Encoder HDL Optimized",
+          "since": "R2023a+",
+          "intent": "HDL-optimized Reed-Solomon encoder taking integer symbols — use to add RS forward error correction in hardware."
+        },
+        {
+          "block": "Integer-Output RS Decoder HDL Optimized",
+          "ref": "commhdlblkcod/Integer-Output RS Decoder HDL Optimized",
+          "since": "R2023a+",
+          "intent": "HDL-optimized Reed-Solomon decoder producing integer symbols — use to correct symbol errors with RS FEC in hardware."
+        },
+        {
+          "block": "General CRC Generator HDL Optimized",
+          "ref": "commhdlcrc/General CRC Generator HDL Optimized",
+          "since": "R2023a+",
+          "intent": "HDL-optimized CRC generator that appends a checksum to a frame — use for hardware error detection at the transmitter."
+        },
+        {
+          "block": "General CRC Syndrome Detector HDL Optimized",
+          "ref": "commhdlcrc/General CRC Syndrome Detector HDL Optimized",
+          "since": "R2023a+",
+          "intent": "HDL-optimized CRC checker that flags frames failing the checksum — use for hardware error detection at the receiver."
+        },
+        {
+          "block": "Convolutional Encoder",
+          "ref": "commhdlcnvcod/Convolutional Encoder",
+          "since": "R2023a+",
+          "intent": "Encode a bit stream with a convolutional code — use ahead of a Viterbi decoder for forward error correction in hardware links."
+        },
+        {
+          "block": "Viterbi Decoder",
+          "ref": "commhdlcnvcod/Viterbi Decoder",
+          "since": "R2023a+",
+          "intent": "Decode a convolutionally-encoded stream with the Viterbi algorithm — use to correct errors in hardware receivers."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "interleaving",
+      "kind": "toolbox",
+      "library": "Communications Toolbox HDL Support",
+      "kbFolder": "communications-toolbox-hdl-support",
+      "category": "interleaving",
+      "hash": "d3ec92e5985841de7b2cd3d342329070660247026ef085578082ceb0655438b1",
+      "fm": {
+        "title": "Interleaving",
+        "description": "Interleavers/deinterleavers that spread burst errors (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-hdl-support",
+          "interleaving",
+          "interleaver",
+          "deinterleaver"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Convolutional Deinterleaver",
+          "ref": "commhdlinterleave/Convolutional Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Restore original symbol order after convolutional interleaving — use at the receiver to undo burst-error spreading."
+        },
+        {
+          "block": "Convolutional Interleaver",
+          "ref": "commhdlinterleave/Convolutional Interleaver",
+          "since": "R2023a+",
+          "intent": "Permute symbols with a convolutional interleaver to spread burst errors — use at the transmitter to strengthen FEC against bursts."
+        },
+        {
+          "block": "General Multiplexed Deinterleaver",
+          "ref": "commhdlinterleave/General Multiplexed Deinterleaver",
+          "since": "R2023a+",
+          "intent": "Undo a general multiplexed interleaver using per-branch delays — use to restore symbol order at the receiver."
+        },
+        {
+          "block": "General Multiplexed Interleaver",
+          "ref": "commhdlinterleave/General Multiplexed Interleaver",
+          "since": "R2023a+",
+          "intent": "Interleave symbols across branches with configurable delays — use to protect a stream against burst errors."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "modulation",
+      "kind": "toolbox",
+      "library": "Communications Toolbox HDL Support",
+      "kbFolder": "communications-toolbox-hdl-support",
+      "category": "modulation",
+      "hash": "dfd8176dfc1a31c88bba2aecd16f643f3145aadbffed2ab29d09db0342a1a54b",
+      "fm": {
+        "title": "Modulation",
+        "description": "Baseband digital modulators and demodulators (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "communications-toolbox-hdl-support",
+          "modulation",
+          "qam",
+          "psk",
+          "bpsk",
+          "qpsk"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Rectangular QAM Demodulator Baseband",
+          "ref": "commhdldigbbndam/Rectangular QAM Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate a rectangular-QAM baseband signal to bits/symbols — use in hardware QAM receivers."
+        },
+        {
+          "block": "Rectangular QAM Modulator Baseband",
+          "ref": "commhdldigbbndam/Rectangular QAM Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Map bits/symbols to a rectangular-QAM baseband constellation — use in hardware QAM transmitters."
+        },
+        {
+          "block": "BPSK Demodulator Baseband",
+          "ref": "commhdldigbbndpm/BPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate a BPSK baseband signal to bits — use in hardware BPSK receivers."
+        },
+        {
+          "block": "BPSK Modulator Baseband",
+          "ref": "commhdldigbbndpm/BPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Map bits to a BPSK baseband constellation — use in hardware BPSK transmitters."
+        },
+        {
+          "block": "M-PSK Demodulator Baseband",
+          "ref": "commhdldigbbndpm/M-PSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate an M-ary PSK baseband signal to bits/symbols — use in hardware PSK receivers."
+        },
+        {
+          "block": "M-PSK Modulator Baseband",
+          "ref": "commhdldigbbndpm/M-PSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Map bits/symbols to an M-ary PSK baseband constellation — use in hardware PSK transmitters."
+        },
+        {
+          "block": "QPSK Demodulator Baseband",
+          "ref": "commhdldigbbndpm/QPSK Demodulator Baseband",
+          "since": "R2023a+",
+          "intent": "Demodulate a QPSK baseband signal to bits — use in hardware QPSK receivers."
+        },
+        {
+          "block": "QPSK Modulator Baseband",
+          "ref": "commhdldigbbndpm/QPSK Modulator Baseband",
+          "since": "R2023a+",
+          "intent": "Map bits to a QPSK baseband constellation — use in hardware QPSK transmitters."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:16",
+  "generatedAtDatenum": 740309.99532606476
 }

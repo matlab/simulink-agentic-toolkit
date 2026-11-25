@@ -1,15 +1,824 @@
 {
-  "generatedAt": "2026-09-29T16:38:09",
-  "generatedAtDatenum": 740254.69316802081,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Coder Support Package for BBC micro:bit"
-  ],
-  "blockCount": 105,
-  "categoryCount": 8,
-  "libraryFingerprints": {
-    "Simulink_Coder_Support_Package_for_BBC_micro_bit": {
-      "blockCount": 105
+  "pages": [
+    {
+      "id": "accelerometer",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "accelerometer",
+      "hash": "aab5c57852237e2aa2fac20a70a61b8559e567addce48a8452cc3281a5500950",
+      "fm": {
+        "title": "Accelerometer",
+        "description": "On-board 3-axis accelerometers (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit",
+          "accelerometer",
+          "lsm303",
+          "mma8652"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "LSM303 3-Axis Accelerometer",
+          "ref": "microbitaccellib/LSM303 3-Axis Accelerometer",
+          "since": "R2023a+",
+          "intent": "Read 3-axis acceleration from the on-board LSM303 sensor — use for motion, tilt, and gesture detection."
+        },
+        {
+          "block": "MMA8652FC 3-Axis Accelerometer",
+          "ref": "microbitaccellib/MMA8652FC 3-Axis Accelerometer",
+          "since": "R2023a+",
+          "intent": "Read 3-axis acceleration from the on-board MMA8652FC sensor — use for motion, tilt, and gesture detection on boards with that part."
+        },
+        {
+          "block": "Accelerometer X-Y-Z",
+          "ref": "microbitaccellib/Accelerometer X-Y-Z",
+          "since": "R2023a+",
+          "intent": "Output the X, Y and Z value in g (9.8 m/s^2) to different output ports."
+        },
+        {
+          "block": "LSM 303 Accelerometer X-Y-Z",
+          "ref": "microbitaccellib/LSM 303 Accelerometer X-Y-Z",
+          "since": "R2023a+",
+          "intent": "Output the X, Y and Z value in g (9.8 m/s^2) to different output ports."
+        },
+        {
+          "block": "Shake detection",
+          "ref": "microbitaccellib/Shake detection",
+          "since": "R2023a+",
+          "intent": "Detect shake, return \"1\" or \"true\" when it is higher than the value determined by sensitivity in g (9.8 m/s^2)."
+        },
+        {
+          "block": "Tilt down",
+          "ref": "microbitaccellib/Tilt down",
+          "since": "R2023a+",
+          "intent": "Detect the microbit tilted downward by sensitivity in g (9.8 m/s^2)."
+        },
+        {
+          "block": "Tilt left",
+          "ref": "microbitaccellib/Tilt left",
+          "since": "R2023a+",
+          "intent": "Detect the microbit tilted to the left by sensitivity in g (9.8 m/s^2)."
+        },
+        {
+          "block": "Tilt right",
+          "ref": "microbitaccellib/Tilt right",
+          "since": "R2023a+",
+          "intent": "Detect the microbit tilted to the right by sensitivity in g (9.8 m/s^2)."
+        },
+        {
+          "block": "Tilt up",
+          "ref": "microbitaccellib/Tilt up",
+          "since": "R2023a+",
+          "intent": "Detect the microbit tilted upward by sensitivity in g (9.8 m/s^2)."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "audio",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "audio",
+      "hash": "9155e51558083290a65e3c4b86e558856d7cc78cf74f0f2ff2cf728b146f15a5",
+      "fm": {
+        "title": "Audio",
+        "description": "Blocks for Audio (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Note Generator",
+          "ref": "microbitaudiolib/Note Generator",
+          "since": "R2023a+",
+          "intent": "Generates a musical note at specified scale. The scale can be selected as 'High' 'Mid' or 'Low' and the Note can be selected from A to G#. The block outputs the frequency of the particular note chosen."
+        },
+        {
+          "block": "Play Note",
+          "ref": "microbitaudiolib/Play Note",
+          "since": "R2023a+",
+          "intent": "Plays a musical note or a variable frequecy signal on the specified pin. Use the Pin parameter to select the pin on which the sound needs to be produced. Connect a speaker on the specified pin to hear the audio. The block accepts frequency as the input. A Note Generator block can be connected to this block to generate various notes."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "button",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "button",
+      "hash": "458c3a4d0e7630182b93a012bb3b1cee210bb91a1626e05d68046d9508f6c82e",
+      "fm": {
+        "title": "Button",
+        "description": "Blocks for Button (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "Button A Hold",
+          "ref": "microbitbuttonlib/Button A Hold",
+          "since": "R2023a+",
+          "intent": "When button A is held for more than 0.5s send a momentary \"1\" or \"true\" - commonly used as a trigger to another system."
+        },
+        {
+          "block": "Button A Pressed",
+          "ref": "microbitbuttonlib/Button A Pressed",
+          "since": "R2023a+",
+          "intent": "When button A is pressed, send a momentary \"1\" or \"true\" - commonly used as a trigger to another system."
+        },
+        {
+          "block": "Button A Released",
+          "ref": "microbitbuttonlib/Button A Released",
+          "since": "R2023a+",
+          "intent": "When button A is released send a momentary \"1\" or \"true\" - commonly used as a trigger to another system."
+        },
+        {
+          "block": "Button B Hold",
+          "ref": "microbitbuttonlib/Button B Hold",
+          "since": "R2023a+",
+          "intent": "When button B is held for more than 0.5s send a momentary \"1\" or \"true\" - commonly used as a trigger to another system."
+        },
+        {
+          "block": "Button B Pressed",
+          "ref": "microbitbuttonlib/Button B Pressed",
+          "since": "R2023a+",
+          "intent": "When button B is pressed, send a momentary \"1\" or \"true\" - commonly used as a trigger to another system."
+        },
+        {
+          "block": "Button B Released",
+          "ref": "microbitbuttonlib/Button B Released",
+          "since": "R2023a+",
+          "intent": "When button B is released send a momentary \"1\" or \"true\" - commonly used as a trigger to another system."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "io-basic",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "io-basic",
+      "hash": "8493abe070ef4cf18c6dfacc6d211272129e2d814e6b596fc21a039fae3ae698",
+      "fm": {
+        "title": "Io basic",
+        "description": "Digital/analog pins and serial buses on the micro:bit (11 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit",
+          "basic",
+          "digital",
+          "analog",
+          "pwm",
+          "i2c",
+          "spi",
+          "sci"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Analog Input",
+          "ref": "microbitbasiclib/Analog Input",
+          "since": "R2023a+",
+          "intent": "Read an analog voltage from a micro:bit pin (ADC) — use to sense analog inputs like light level or a potentiometer."
+        },
+        {
+          "block": "Digital Read",
+          "ref": "microbitbasiclib/Digital Read",
+          "since": "R2023a+",
+          "intent": "Read the digital state (0/1) of a micro:bit pin — use to sense buttons or digital sensors."
+        },
+        {
+          "block": "Digital Write",
+          "ref": "microbitbasiclib/Digital Write",
+          "since": "R2023a+",
+          "intent": "Set a micro:bit pin high or low — use to drive LEDs, relays, or other digital outputs."
+        },
+        {
+          "block": "I2C Master Read",
+          "ref": "microbitbasiclib/I2C Master Read",
+          "since": "R2023a+",
+          "intent": "Read bytes from an I2C peripheral as bus master — use to get data from I2C sensors or devices."
+        },
+        {
+          "block": "I2C Master Write",
+          "ref": "microbitbasiclib/I2C Master Write",
+          "since": "R2023a+",
+          "intent": "Write bytes to an I2C peripheral as bus master — use to configure or command I2C devices."
+        },
+        {
+          "block": "PWM Output",
+          "ref": "microbitbasiclib/PWM Output",
+          "since": "R2023a+",
+          "intent": "Generate a PWM signal on a micro:bit pin — use for dimming LEDs, driving servos, or tone generation."
+        },
+        {
+          "block": "SCI Read",
+          "ref": "microbitbasiclib/SCI Read",
+          "since": "R2023a+",
+          "intent": "Read bytes from the serial (UART) port — use to receive data from a host or serial device."
+        },
+        {
+          "block": "SCI Write",
+          "ref": "microbitbasiclib/SCI Write",
+          "since": "R2023a+",
+          "intent": "Write bytes to the serial (UART) port — use to send data or logging to a host or serial device."
+        },
+        {
+          "block": "SPI Master Transfer",
+          "ref": "microbitbasiclib/SPI Master Transfer",
+          "since": "R2023a+",
+          "intent": "Exchange bytes with an SPI peripheral as bus master — use for full-duplex SPI communication."
+        },
+        {
+          "block": "SPI Register Read",
+          "ref": "microbitbasiclib/SPI Register Read",
+          "since": "R2023a+",
+          "intent": "Read a register from an SPI peripheral — use to query SPI sensor/device registers."
+        },
+        {
+          "block": "SPI Register Write",
+          "ref": "microbitbasiclib/SPI Register Write",
+          "since": "R2023a+",
+          "intent": "Write a register on an SPI peripheral — use to configure SPI sensor/device registers."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "led",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "led",
+      "hash": "acb8625ea6aa42ddbfe91f8ff0e2fdadd9b5e0ac945bf16a9303599ea7c3b9b4",
+      "fm": {
+        "title": "Led",
+        "description": "5x5 LED matrix output (17 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit",
+          "led matrix",
+          "led"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "5x5 LED Matrix",
+          "ref": "microbitledlib/5x5 LED Matrix",
+          "since": "R2023a+",
+          "intent": "Outputs a 5x5 LED image on the Micro:bit board based on the 5x5 matrix specified at the input port."
+        },
+        {
+          "block": "Scroll down",
+          "ref": "microbitledlib/Image scrolling/Scroll down",
+          "since": "R2023a+",
+          "intent": "Take an input of min 5x5 matrix, shift it by one down every timestep and output a 5x5 matrix."
+        },
+        {
+          "block": "Scroll left",
+          "ref": "microbitledlib/Image scrolling/Scroll left",
+          "since": "R2023a+",
+          "intent": "Take an input of min 5x5 matrix, shift it by one to the left every timestep and output a 5x5 matrix."
+        },
+        {
+          "block": "Scroll right ",
+          "ref": "microbitledlib/Image scrolling/Scroll right ",
+          "since": "R2023a+",
+          "intent": "Take an input of min 5x5 matrix, shift it by one to the right every timestep and output a 5x5 matrix."
+        },
+        {
+          "block": "Scroll up",
+          "ref": "microbitledlib/Image scrolling/Scroll up",
+          "since": "R2023a+",
+          "intent": "Take an input of min 5x5 matrix, shift it by one up every timestep and output a 5x5 matrix."
+        },
+        {
+          "block": "Blink",
+          "ref": "microbitledlib/LED Brightness Effect/Blink",
+          "since": "R2023a+",
+          "intent": "Output brightness (int) that alternate between zero brightness (0) and maximum brightness (10)."
+        },
+        {
+          "block": "Fade in",
+          "ref": "microbitledlib/LED Brightness Effect/Fade in",
+          "since": "R2023a+",
+          "intent": "Output a repeated sequence of brightness that goes from minimum brightness (0) to maximum brightness (10)."
+        },
+        {
+          "block": "Fade out",
+          "ref": "microbitledlib/LED Brightness Effect/Fade out",
+          "since": "R2023a+",
+          "intent": "Output a repeated brightness that starts from maximum brightness (10) down to zero brightness (0)."
+        },
+        {
+          "block": "Flicker",
+          "ref": "microbitledlib/LED Brightness Effect/Flicker",
+          "since": "R2023a+",
+          "intent": "Output brightness (int) that changes randomly according to the step size parameter."
+        },
+        {
+          "block": "Pulse",
+          "ref": "microbitledlib/LED Brightness Effect/Pulse",
+          "since": "R2023a+",
+          "intent": "Output brightness (int) that repeatedly fades in and then fades out."
+        },
+        {
+          "block": "Four on Dice",
+          "ref": "microbitledlib/LED Images/Four on Dice",
+          "since": "R2023a+",
+          "intent": "Output a 5x5 Matrix"
+        },
+        {
+          "block": "One on Dice",
+          "ref": "microbitledlib/LED Images/One on Dice",
+          "since": "R2023a+",
+          "intent": "Output a 5x5 Matrix"
+        },
+        {
+          "block": "Three on Dice",
+          "ref": "microbitledlib/LED Images/Three on Dice",
+          "since": "R2023a+",
+          "intent": "Output a 5x5 Matrix"
+        },
+        {
+          "block": "Two on Dice",
+          "ref": "microbitledlib/LED Images/Two on Dice",
+          "since": "R2023a+",
+          "intent": "Output a 5x5 Matrix"
+        },
+        {
+          "block": "LED Matrix output",
+          "ref": "microbitledlib/LED Matrix output",
+          "since": "R2023a+",
+          "intent": "Drive the full 5×5 LED display from a matrix input — use to show custom patterns or animations."
+        },
+        {
+          "block": "LED Text Scroll",
+          "ref": "microbitledlib/LED Text Scroll",
+          "since": "R2023a+",
+          "intent": "Scroll the input text on the 5x5 LED matrix. The Scroll speed represents the speed at which the characters move on the display. The slowest speed is 1 and the fastest is 10. The block accepts characters from A to Z, numbers from 0 to 9, and spaces in the input. If any other character is specified in the input, a minus sign is displayed."
+        },
+        {
+          "block": "Text Message",
+          "ref": "microbitledlib/Text Message",
+          "since": "R2023a+",
+          "intent": "Outputs the string specified by the Message parameter."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "led-images",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "led-images",
+      "hash": "ebbdb20d0f3384dbca37f95c743f197b9a190bf6731967b9bec953173fb7e281",
+      "fm": {
+        "title": "Led images",
+        "description": "Prebuilt 5x5 LED glyphs (letters, digits, faces, arrows, icons) (54 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit",
+          "led images",
+          "letter",
+          "number",
+          "face",
+          "point",
+          "heart",
+          "dice",
+          "shocked",
+          "matrix"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Empty matrix",
+          "ref": "microbitledlib/LED Images/Empty matrix",
+          "since": "R2023a+",
+          "intent": "Output an all-off 5×5 pattern — use to clear the LED display."
+        },
+        {
+          "block": "Filled heart",
+          "ref": "microbitledlib/LED Images/Filled heart",
+          "since": "R2023a+",
+          "intent": "Show a filled heart on the LED matrix — use for affirmative or 'like' feedback."
+        },
+        {
+          "block": "Five on Dice",
+          "ref": "microbitledlib/LED Images/Five on Dice",
+          "since": "R2023a+",
+          "intent": "Show the five-pip dice face on the LED matrix — use for dice or game displays."
+        },
+        {
+          "block": "Happy face",
+          "ref": "microbitledlib/LED Images/Happy face",
+          "since": "R2023a+",
+          "intent": "Show a smiling face on the LED matrix — use for positive status feedback."
+        },
+        {
+          "block": "Heart",
+          "ref": "microbitledlib/LED Images/Heart",
+          "since": "R2023a+",
+          "intent": "Show a heart outline on the LED matrix — use for affection or 'like' feedback."
+        },
+        {
+          "block": "Letter-A",
+          "ref": "microbitledlib/LED Images/Letter-A",
+          "since": "R2023a+",
+          "intent": "Show the character 'A' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-B",
+          "ref": "microbitledlib/LED Images/Letter-B",
+          "since": "R2023a+",
+          "intent": "Show the character 'B' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-C",
+          "ref": "microbitledlib/LED Images/Letter-C",
+          "since": "R2023a+",
+          "intent": "Show the character 'C' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-D",
+          "ref": "microbitledlib/LED Images/Letter-D",
+          "since": "R2023a+",
+          "intent": "Show the character 'D' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-E",
+          "ref": "microbitledlib/LED Images/Letter-E",
+          "since": "R2023a+",
+          "intent": "Show the character 'E' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-F",
+          "ref": "microbitledlib/LED Images/Letter-F",
+          "since": "R2023a+",
+          "intent": "Show the character 'F' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-G",
+          "ref": "microbitledlib/LED Images/Letter-G",
+          "since": "R2023a+",
+          "intent": "Show the character 'G' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-H",
+          "ref": "microbitledlib/LED Images/Letter-H",
+          "since": "R2023a+",
+          "intent": "Show the character 'H' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-I",
+          "ref": "microbitledlib/LED Images/Letter-I",
+          "since": "R2023a+",
+          "intent": "Show the character 'I' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-J",
+          "ref": "microbitledlib/LED Images/Letter-J",
+          "since": "R2023a+",
+          "intent": "Show the character 'J' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-K",
+          "ref": "microbitledlib/LED Images/Letter-K",
+          "since": "R2023a+",
+          "intent": "Show the character 'K' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-L",
+          "ref": "microbitledlib/LED Images/Letter-L",
+          "since": "R2023a+",
+          "intent": "Show the character 'L' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-M",
+          "ref": "microbitledlib/LED Images/Letter-M",
+          "since": "R2023a+",
+          "intent": "Show the character 'M' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-N",
+          "ref": "microbitledlib/LED Images/Letter-N",
+          "since": "R2023a+",
+          "intent": "Show the character 'N' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-O",
+          "ref": "microbitledlib/LED Images/Letter-O",
+          "since": "R2023a+",
+          "intent": "Show the character 'O' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-P",
+          "ref": "microbitledlib/LED Images/Letter-P",
+          "since": "R2023a+",
+          "intent": "Show the character 'P' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-Q",
+          "ref": "microbitledlib/LED Images/Letter-Q",
+          "since": "R2023a+",
+          "intent": "Show the character 'Q' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-R",
+          "ref": "microbitledlib/LED Images/Letter-R",
+          "since": "R2023a+",
+          "intent": "Show the character 'R' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-S",
+          "ref": "microbitledlib/LED Images/Letter-S",
+          "since": "R2023a+",
+          "intent": "Show the character 'S' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-T",
+          "ref": "microbitledlib/LED Images/Letter-T",
+          "since": "R2023a+",
+          "intent": "Show the character 'T' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-U",
+          "ref": "microbitledlib/LED Images/Letter-U",
+          "since": "R2023a+",
+          "intent": "Show the character 'U' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-V",
+          "ref": "microbitledlib/LED Images/Letter-V",
+          "since": "R2023a+",
+          "intent": "Show the character 'V' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-W",
+          "ref": "microbitledlib/LED Images/Letter-W",
+          "since": "R2023a+",
+          "intent": "Show the character 'W' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-X",
+          "ref": "microbitledlib/LED Images/Letter-X",
+          "since": "R2023a+",
+          "intent": "Show the character 'X' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-Y",
+          "ref": "microbitledlib/LED Images/Letter-Y",
+          "since": "R2023a+",
+          "intent": "Show the character 'Y' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Letter-Z",
+          "ref": "microbitledlib/LED Images/Letter-Z",
+          "since": "R2023a+",
+          "intent": "Show the character 'Z' on the 5×5 LED matrix — use to display or scroll text one glyph at a time."
+        },
+        {
+          "block": "Neutral face",
+          "ref": "microbitledlib/LED Images/Neutral face",
+          "since": "R2023a+",
+          "intent": "Show a neutral face on the LED matrix — use for idle or in-between status feedback."
+        },
+        {
+          "block": "Number-0",
+          "ref": "microbitledlib/LED Images/Number-0",
+          "since": "R2023a+",
+          "intent": "Show the digit '0' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-1",
+          "ref": "microbitledlib/LED Images/Number-1",
+          "since": "R2023a+",
+          "intent": "Show the digit '1' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-2",
+          "ref": "microbitledlib/LED Images/Number-2",
+          "since": "R2023a+",
+          "intent": "Show the digit '2' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-3",
+          "ref": "microbitledlib/LED Images/Number-3",
+          "since": "R2023a+",
+          "intent": "Show the digit '3' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-4",
+          "ref": "microbitledlib/LED Images/Number-4",
+          "since": "R2023a+",
+          "intent": "Show the digit '4' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-5",
+          "ref": "microbitledlib/LED Images/Number-5",
+          "since": "R2023a+",
+          "intent": "Show the digit '5' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-6",
+          "ref": "microbitledlib/LED Images/Number-6",
+          "since": "R2023a+",
+          "intent": "Show the digit '6' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-7",
+          "ref": "microbitledlib/LED Images/Number-7",
+          "since": "R2023a+",
+          "intent": "Show the digit '7' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-8",
+          "ref": "microbitledlib/LED Images/Number-8",
+          "since": "R2023a+",
+          "intent": "Show the digit '8' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Number-9",
+          "ref": "microbitledlib/LED Images/Number-9",
+          "since": "R2023a+",
+          "intent": "Show the digit '9' on the 5×5 LED matrix — use to display counts or numeric readouts."
+        },
+        {
+          "block": "Point Left",
+          "ref": "microbitledlib/LED Images/Point Left",
+          "since": "R2023a+",
+          "intent": "Show a left-pointing arrow on the LED matrix — use to indicate direction such as compass or navigation."
+        },
+        {
+          "block": "Point NE",
+          "ref": "microbitledlib/LED Images/Point NE",
+          "since": "R2023a+",
+          "intent": "Show a north-east arrow on the LED matrix — use to indicate a diagonal direction."
+        },
+        {
+          "block": "Point NW",
+          "ref": "microbitledlib/LED Images/Point NW",
+          "since": "R2023a+",
+          "intent": "Show a north-west arrow on the LED matrix — use to indicate a diagonal direction."
+        },
+        {
+          "block": "Point Right",
+          "ref": "microbitledlib/LED Images/Point Right",
+          "since": "R2023a+",
+          "intent": "Show a right-pointing arrow on the LED matrix — use to indicate direction such as compass or navigation."
+        },
+        {
+          "block": "Point SE",
+          "ref": "microbitledlib/LED Images/Point SE",
+          "since": "R2023a+",
+          "intent": "Show a south-east arrow on the LED matrix — use to indicate a diagonal direction."
+        },
+        {
+          "block": "Point SW",
+          "ref": "microbitledlib/LED Images/Point SW",
+          "since": "R2023a+",
+          "intent": "Show a south-west arrow on the LED matrix — use to indicate a diagonal direction."
+        },
+        {
+          "block": "Point Up",
+          "ref": "microbitledlib/LED Images/Point Up",
+          "since": "R2023a+",
+          "intent": "Show an up-pointing arrow on the LED matrix — use to indicate direction such as compass or navigation."
+        },
+        {
+          "block": "Point down",
+          "ref": "microbitledlib/LED Images/Point down",
+          "since": "R2023a+",
+          "intent": "Show a down-pointing arrow on the LED matrix — use to indicate direction such as compass or navigation."
+        },
+        {
+          "block": "Sad face",
+          "ref": "microbitledlib/LED Images/Sad face",
+          "since": "R2023a+",
+          "intent": "Show a frowning face on the LED matrix — use for negative status feedback."
+        },
+        {
+          "block": "Shocked",
+          "ref": "microbitledlib/LED Images/Shocked",
+          "since": "R2023a+",
+          "intent": "Show a shocked face on the LED matrix — use for alarm or surprise feedback."
+        },
+        {
+          "block": "Six on Dice",
+          "ref": "microbitledlib/LED Images/Six on Dice",
+          "since": "R2023a+",
+          "intent": "Show the six-pip dice face on the LED matrix — use for dice or game displays."
+        },
+        {
+          "block": "Surprised face",
+          "ref": "microbitledlib/LED Images/Surprised face",
+          "since": "R2023a+",
+          "intent": "Show a surprised face on the LED matrix — use for alert or surprise feedback."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "magnetometer",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "magnetometer",
+      "hash": "7bb7ce600da3d645095e13520146afcd210cedc57fb13b5fb67920ff5a8c5f06",
+      "fm": {
+        "title": "Magnetometer",
+        "description": "On-board 3-axis magnetometers (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit",
+          "magnetometer",
+          "magetometer",
+          "lsm303",
+          "mag3110"
+        ],
+        "status": "draft"
+      },
+      "rows": [
+        {
+          "block": "LSM-303 Magetometer X-Y-Z",
+          "ref": "microbitmagnetlib/LSM-303 Magetometer X-Y-Z",
+          "since": "R2023a+",
+          "intent": "Read the X/Y/Z magnetic field from the LSM303 magnetometer — use for compass heading or magnetic-field sensing."
+        },
+        {
+          "block": "LSM303 3-Axis Magnetometer",
+          "ref": "microbitmagnetlib/LSM303 3-Axis Magnetometer",
+          "since": "R2023a+",
+          "intent": "Read 3-axis magnetic field from the on-board LSM303 magnetometer — use for compass heading or magnetic sensing."
+        },
+        {
+          "block": "MAG3110 3-Axis Magnetometer",
+          "ref": "microbitmagnetlib/MAG3110 3-Axis Magnetometer",
+          "since": "R2023a+",
+          "intent": "Read 3-axis magnetic field from the on-board MAG3110 magnetometer — use for compass heading on boards with that part."
+        },
+        {
+          "block": "Magnetometer X-Y-Z",
+          "ref": "microbitmagnetlib/Magnetometer X-Y-Z",
+          "since": "R2023a+",
+          "intent": "Measure linear acceleration and magnetic field along the X, Y and Z axes. The block outputs magnetic field as a [1x3] vector of double values in uT."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "radio",
+      "kind": "toolbox",
+      "library": "Simulink Coder Support Package for BBC micro:bit",
+      "kbFolder": "simulink-coder-support-package-for-bbc-micro-bit",
+      "category": "radio",
+      "hash": "fad1451c3b88943a261729a320c53c48b6fe364a88b0753d90875c0d69a70ca9",
+      "fm": {
+        "title": "Radio",
+        "description": "2.4 GHz radio communication (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-coder-support-package-for-bbc-micro-bit",
+          "radio",
+          "receive",
+          "transmit"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Radio Receive",
+          "ref": "microbitradiolib/Radio Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over the micro:bit 2.4 GHz radio — use for wireless communication between micro:bits."
+        },
+        {
+          "block": "Radio Transmit",
+          "ref": "microbitradiolib/Radio Transmit",
+          "since": "R2023a+",
+          "intent": "Send data over the micro:bit 2.4 GHz radio — use for wireless communication between micro:bits."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:30",
+  "generatedAtDatenum": 740309.99548809032
 }

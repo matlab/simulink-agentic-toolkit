@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Transforms
-description: FFT and wavelet transforms
-tags: [transforms, fft, dwt, idwt, wavelet]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Transforms
+description: FFT and wavelet transforms (15 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, transforms, fft, dwt, idwt, wavelet]
+status: draft
+sources:
+  - resource: matlab:dspspect3
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: transforms
 block_count: 15
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Transforms
-
-Use these blocks for transforms.
 
 ## Recommended Blocks
 

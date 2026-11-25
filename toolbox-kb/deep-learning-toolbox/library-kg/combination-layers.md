@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Combination layers
-description: Addition, concatenation, and multiplication for merging network branches
-tags: [addition, concatenation, multiplication, merge, skip]
+description: "Addition, concatenation, and multiplication for merging network branches (4 blocks)"
+tags: [toolbox-kb, deep-learning-toolbox, addition, concatenation, multiplication, merge, skip]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Combination layers
+sources:
+  - resource: matlab:dlcombinationlib
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: combination-layers
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Combination layers
-
-Use these blocks for combination layers.
 
 ## Recommended Blocks
 

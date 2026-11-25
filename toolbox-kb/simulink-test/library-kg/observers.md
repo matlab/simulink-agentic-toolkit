@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Observers
-description: Non-intrusive monitoring and verification of a system under test through a separate observer model.
-tags: [observer, monitor, verify, signal-access, non-intrusive]
+description: Non-intrusive monitoring and verification of a system under test through a separate observer model (2 blocks)
+tags: [toolbox-kb, simulink-test, observer, monitor, verify, signal-access, non-intrusive]
 status: stable
-source: custom_library
-library_root: Simulink Test
-category_path: Observers
+sources:
+  - resource: matlab:sltestlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Test
+kb_folder: simulink-test
+category: observers
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Observers
-
-Use these blocks for observers.
 
 ## Recommended Blocks
 

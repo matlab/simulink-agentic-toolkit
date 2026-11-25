@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal formatting
-description: Interleave/deinterleave stream formatting
-tags: [interleave, deinterleave]
+description: Interleave/deinterleave stream formatting (12 blocks)
+tags: [toolbox-kb, soc-blockset-support-package-for-amd-fpga-and-soc-devices, interleave, deinterleave]
 status: stable
-source: custom_library
-library_root: SoC Blockset Support Package for AMD FPGA and SoC Devices
-category_path: Signal formatting
+sources:
+  - resource: matlab:mpsoczcu102lib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset Support Package for AMD FPGA and SoC Devices
+kb_folder: soc-blockset-support-package-for-amd-fpga-and-soc-devices
+category: signal-formatting
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Signal formatting
-
-Use these blocks for signal formatting.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Entity flow
-description: Entity routing, switching, and transport
-tags: [switch, gate, transport, conveyor, route]
+description: "Entity routing, switching, and transport (6 blocks)"
+tags: [toolbox-kb, simevents, switch, gate, transport, conveyor, route]
 status: stable
-source: mathworks_toolbox
-library_root: SimEvents
-category_path: Entity flow
+sources:
+  - resource: matlab:sldelib
+source: toolbox_kb
+managed_by: satk
+library: SimEvents
+kb_folder: simevents
+category: entity-flow
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Entity flow
-
-Use these blocks for entity flow.
 
 ## Recommended Blocks
 

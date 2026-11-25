@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensors sources
-description: Acoustic measurement and excitation blocks
-tags: [sensor, source, pressure, velocity, controlled]
+description: Acoustic measurement and excitation blocks (5 blocks)
+tags: [toolbox-kb, simscape-acoustics, sensor, source, pressure, velocity, controlled]
 status: stable
-source: mathworks_toolbox
-library_root: Simscape Acoustics
-category_path: Sensors sources
+sources:
+  - resource: matlab:acoustic_lib
+source: toolbox_kb
+managed_by: satk
+library: Simscape Acoustics
+kb_folder: simscape-acoustics
+category: sensors-sources
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Sensors sources
-
-Use these blocks for sensors sources.
 
 ## Recommended Blocks
 

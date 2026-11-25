@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Classic nn functions
-description: Transfer functions, weight functions, and net input functions for classic networks
-tags: [tansig, logsig, purelin, dotprod, transfer]
+description: "Transfer functions, weight functions, and net input functions for classic networks (22 blocks)"
+tags: [toolbox-kb, deep-learning-toolbox, tansig, logsig, purelin, dotprod, transfer]
 status: stable
-source: mathworks_toolbox
-library_root: Deep Learning Toolbox
-category_path: Classic nn functions
+sources:
+  - resource: matlab:neural
+source: toolbox_kb
+managed_by: satk
+library: Deep Learning Toolbox
+kb_folder: deep-learning-toolbox
+category: classic-nn-functions
 block_count: 22
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Classic nn functions
-
-Use these blocks for classic nn functions.
 
 ## Recommended Blocks
 

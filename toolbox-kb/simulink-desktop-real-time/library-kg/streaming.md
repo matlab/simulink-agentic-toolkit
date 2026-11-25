@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Streaming
-description: Packet and stream-based data exchange
-tags: [packet, stream, video, raw, binary]
+description: Packet and stream-based data exchange (7 blocks)
+tags: [toolbox-kb, simulink-desktop-real-time, packet, stream, video, raw, binary]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Desktop Real-Time
-category_path: Streaming
+sources:
+  - resource: matlab:sldrtlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Desktop Real-Time
+kb_folder: simulink-desktop-real-time
+category: streaming
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Streaming
-
-Use these blocks for streaming.
 
 ## Recommended Blocks
 

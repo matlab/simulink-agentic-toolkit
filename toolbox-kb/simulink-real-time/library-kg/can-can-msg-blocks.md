@@ -1,17 +1,21 @@
 ---
 type: Simulink Block Category
 title: Can can msg blocks
-description: Blocks for can can msg blocks.
+description: Blocks for Can can msg blocks (2 blocks)
+tags: [toolbox-kb, simulink-real-time]
 status: draft
-source: custom_library
-library_root: Simulink Real-Time
-category_path: Can can msg blocks
+sources:
+  - resource: matlab:canmsglib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Real-Time
+kb_folder: simulink-real-time
+category: can-can-msg-blocks
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Can can msg blocks
-
-Use these blocks for can can msg blocks.
 
 ## Recommended Blocks
 

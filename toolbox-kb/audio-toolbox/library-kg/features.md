@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Features
-description: Extract audio features for analysis and machine learning
-tags: [feature, cepstral, delta, mfcc]
-status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: Features
+description: Extract audio features for analysis and machine learning (5 blocks)
+tags: [toolbox-kb, audio-toolbox, feature, cepstral, delta, mfcc]
+status: draft
+sources:
+  - resource: matlab:audiofeatures
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: features
 block_count: 5
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Features
-
-Use these blocks for features.
 
 ## Recommended Blocks
 

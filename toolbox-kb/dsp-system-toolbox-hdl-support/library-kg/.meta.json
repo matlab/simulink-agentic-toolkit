@@ -1,15 +1,316 @@
 {
-  "generatedAt": "2026-09-29T16:38:07",
-  "generatedAtDatenum": 740254.69314283563,
-  "generatorVersion": 4,
-  "libraries": [
-    "DSP System Toolbox HDL Support"
-  ],
-  "blockCount": 27,
-  "categoryCount": 6,
-  "libraryFingerprints": {
-    "DSP_System_Toolbox_HDL_Support": {
-      "blockCount": 27
+  "pages": [
+    {
+      "id": "filtering",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox HDL Support",
+      "kbFolder": "dsp-system-toolbox-hdl-support",
+      "category": "filtering",
+      "hash": "08a16d2d5976e231add385a32ae2f720c22d6e38f5244937e46ba1f149a2e6bb",
+      "fm": {
+        "title": "Filtering",
+        "description": "HDL-optimized streaming filters and rate-change filters (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox-hdl-support",
+          "filtering",
+          "biquad",
+          "cic",
+          "fir",
+          "lms"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Biquad Filter",
+          "ref": "dsphdlsupportfiltering/Biquad Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized cascaded biquad (second-order-section) IIR filter — use for hardware-efficient IIR filtering of a streaming input."
+        },
+        {
+          "block": "CIC Decimation",
+          "ref": "dsphdlsupportfiltering/CIC Decimation",
+          "since": "R2023a+",
+          "intent": "HDL-optimized CIC decimation filter — use for multiplier-free high-ratio downsampling in hardware."
+        },
+        {
+          "block": "CIC Interpolation",
+          "ref": "dsphdlsupportfiltering/CIC Interpolation",
+          "since": "R2023a+",
+          "intent": "HDL-optimized CIC interpolation filter — use for multiplier-free high-ratio upsampling in hardware."
+        },
+        {
+          "block": "Discrete FIR Filter",
+          "ref": "dsphdlsupportfiltering/Discrete FIR Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized FIR filter on a streaming input — use for hardware-efficient linear-phase filtering on FPGA/ASIC."
+        },
+        {
+          "block": "FIR Decimation",
+          "ref": "dsphdlsupportfiltering/FIR Decimation",
+          "since": "R2023a+",
+          "intent": "HDL-optimized polyphase FIR decimation filter — use to filter and downsample in one hardware block."
+        },
+        {
+          "block": "FIR Interpolation",
+          "ref": "dsphdlsupportfiltering/FIR Interpolation",
+          "since": "R2023a+",
+          "intent": "HDL-optimized polyphase FIR interpolation filter — use to filter and upsample in one hardware block."
+        },
+        {
+          "block": "LMS Filter",
+          "ref": "dsphdlsupportfiltering/LMS Filter",
+          "since": "R2023a+",
+          "intent": "HDL-optimized adaptive LMS filter — use for hardware adaptive filtering such as noise/echo cancellation and equalization."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-management",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox HDL Support",
+      "kbFolder": "dsp-system-toolbox-hdl-support",
+      "category": "signal-management",
+      "hash": "b8063f6514a75f24b2116c9d320656ca1dc7a5d06d99a4ca8ca4c8f0f281d57a",
+      "fm": {
+        "title": "Signal management",
+        "description": "Reshape, type conversion, and element selection (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox-hdl-support",
+          "signal management",
+          "convert",
+          "data type",
+          "selector",
+          "complexity"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Convert 1-D to 2-D",
+          "ref": "dsphdlsupportsigmgmt/Convert 1-D to 2-D",
+          "since": "R2023a+",
+          "intent": "Reshape a 1-D signal into a 2-D matrix of specified dimensions — use to form frames or images from a sample stream."
+        },
+        {
+          "block": "Data Type  Conversion",
+          "ref": "dsphdlsupportsigmgmt/Data Type  Conversion",
+          "since": "R2023a+",
+          "intent": "Convert a signal to a specified data type — use to set fixed-point word length and scaling for HDL-friendly arithmetic."
+        },
+        {
+          "block": "Inherit Complexity",
+          "ref": "dsphdlsupportsigmgmt/Inherit Complexity",
+          "since": "R2023a+",
+          "intent": "Force a signal's complexity (real/complex) to match a reference input — use to resolve complexity mismatches in a model."
+        },
+        {
+          "block": "Multiport Selector",
+          "ref": "dsphdlsupportsigmgmt/Multiport Selector",
+          "since": "R2023a+",
+          "intent": "Split an input into several outputs by selecting specified rows/columns — use to route subsets of a vector or matrix signal."
+        },
+        {
+          "block": "Selector",
+          "ref": "dsphdlsupportsigmgmt/Selector",
+          "since": "R2023a+",
+          "intent": "Select a subset of elements from a signal by index — use to extract specific channels or samples."
+        },
+        {
+          "block": "Variable Selector",
+          "ref": "dsphdlsupportsigmgmt/Variable Selector",
+          "since": "R2023a+",
+          "intent": "Select rows/columns from a signal using a runtime index input — use for dynamic element selection."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "signal-operations",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox HDL Support",
+      "kbFolder": "dsp-system-toolbox-hdl-support",
+      "category": "signal-operations",
+      "hash": "9001e08c03e625364e27e738235c60e43cd687a4ee0e94aad52d6bf1ac1e9768",
+      "fm": {
+        "title": "Signal operations",
+        "description": "Sample-rate change, delays, and holds (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox-hdl-support",
+          "signal operations",
+          "delay",
+          "downsample",
+          "upsample",
+          "repeat",
+          "sample and hold",
+          "dc blocker"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "DC Blocker",
+          "ref": "dsphdlsupportsigops/DC Blocker",
+          "since": "R2023a+",
+          "intent": "Remove the DC (zero-frequency) component of a signal with a high-pass filter — use to eliminate DC offset."
+        },
+        {
+          "block": "Delay",
+          "ref": "dsphdlsupportsigops/Delay",
+          "since": "R2023a+",
+          "intent": "Delay a signal by a fixed number of samples — use for pipeline alignment in hardware datapaths."
+        },
+        {
+          "block": "Downsample",
+          "ref": "dsphdlsupportsigops/Downsample",
+          "since": "R2023a+",
+          "intent": "Keep every Nth sample to reduce the sample rate — use for decimation without filtering."
+        },
+        {
+          "block": "Repeat",
+          "ref": "dsphdlsupportsigops/Repeat",
+          "since": "R2023a+",
+          "intent": "Repeat each sample N times to increase the sample rate — use for zero-order-hold upsampling."
+        },
+        {
+          "block": "Sample and Hold",
+          "ref": "dsphdlsupportsigops/Sample and Hold",
+          "since": "R2023a+",
+          "intent": "Latch the input value on a trigger and hold it until the next trigger — use to sample a signal at events."
+        },
+        {
+          "block": "Upsample",
+          "ref": "dsphdlsupportsigops/Upsample",
+          "since": "R2023a+",
+          "intent": "Insert zeros between samples to increase the sample rate — use ahead of an interpolation filter."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sinks",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox HDL Support",
+      "kbFolder": "dsp-system-toolbox-hdl-support",
+      "category": "sinks",
+      "hash": "456667c5c5d4140f809f2d8bd202679a307dadc6eae27592203f6fae8e45ef54",
+      "fm": {
+        "title": "Sinks",
+        "description": "Display and logging of signals (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox-hdl-support",
+          "sinks",
+          "scope",
+          "display",
+          "workspace",
+          "spectrum analyzer"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Display",
+          "ref": "dsphdlsupportsnks/Display",
+          "since": "R2023a+",
+          "intent": "Show the current numeric value of a signal during simulation — use for quick inspection."
+        },
+        {
+          "block": "Spectrum Analyzer",
+          "ref": "dsphdlsupportsnks/Spectrum Analyzer",
+          "since": "R2023a+",
+          "intent": "Display the frequency spectrum of a signal during simulation — use to inspect spectral content."
+        },
+        {
+          "block": "Time Scope",
+          "ref": "dsphdlsupportsnks/Time Scope",
+          "since": "R2023a+",
+          "intent": "Plot signals against time during simulation — use to view waveforms."
+        },
+        {
+          "block": "To Workspace",
+          "ref": "dsphdlsupportsnks/To Workspace",
+          "since": "R2023a+",
+          "intent": "Log a signal to a MATLAB workspace variable — use to capture results for post-processing."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sources",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox HDL Support",
+      "kbFolder": "dsp-system-toolbox-hdl-support",
+      "category": "sources",
+      "hash": "2f1afaa93c7bdf0a4fcd772bf448f1c94938e0a03d0dc868d2739ccad7f8c1f2",
+      "fm": {
+        "title": "Sources",
+        "description": "Signal sources (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox-hdl-support",
+          "sources",
+          "constant",
+          "sine wave"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Constant",
+          "ref": "dsphdlsupportsrcs/Constant",
+          "since": "R2023a+",
+          "intent": "Output a constant value — use for fixed parameters, thresholds, or test inputs."
+        },
+        {
+          "block": "Sine Wave",
+          "ref": "dsphdlsupportsrcs/Sine Wave",
+          "since": "R2023a+",
+          "intent": "Generate a sinusoidal signal — use as a test tone or reference input."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "statistics",
+      "kind": "toolbox",
+      "library": "DSP System Toolbox HDL Support",
+      "kbFolder": "dsp-system-toolbox-hdl-support",
+      "category": "statistics",
+      "hash": "cbf8e228e696fca4cad76f9a0bd3579ddbf77ee20db6fbdd84cb787205ab9463",
+      "fm": {
+        "title": "Statistics",
+        "description": "Running statistical measures (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "dsp-system-toolbox-hdl-support",
+          "statistics",
+          "maximum",
+          "minimum"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Maximum",
+          "ref": "dsphdlsupportstat/Maximum",
+          "since": "R2023a+",
+          "intent": "Compute the running or windowed maximum of a signal — use for peak detection or statistics."
+        },
+        {
+          "block": "Minimum",
+          "ref": "dsphdlsupportstat/Minimum",
+          "since": "R2023a+",
+          "intent": "Compute the running or windowed minimum of a signal — use for trough detection or statistics."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:18",
+  "generatedAtDatenum": 740309.995349699
 }

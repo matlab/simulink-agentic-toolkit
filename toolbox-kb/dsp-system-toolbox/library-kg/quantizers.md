@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Quantizers
-description: Amplitude quantization
-tags: [quantizer, quantizers]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Quantizers
+description: Amplitude quantization (8 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, quantizer, quantizers]
+status: draft
+sources:
+  - resource: matlab:dspquant2
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: quantizers
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Quantizers
-
-Use these blocks for quantizers.
 
 ## Recommended Blocks
 

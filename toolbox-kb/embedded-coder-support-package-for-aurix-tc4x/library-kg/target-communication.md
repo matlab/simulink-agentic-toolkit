@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Target communication
-description: Data exchange between processes and cores
-tags: [interprocess, target communication, shared, channel]
+description: Data exchange between processes and cores (2 blocks)
+tags: [toolbox-kb, embedded-coder-support-package-for-aurix-tc4x, interprocess, target communication, shared, channel]
 status: stable
-source: custom_library
-library_root: Embedded Coder Support Package for AURIX TC4x
-category_path: Target communication
+sources:
+  - resource: matlab:aurixtc4xlib
+source: toolbox_kb
+managed_by: satk
+library: Embedded Coder Support Package for AURIX TC4x
+kb_folder: embedded-coder-support-package-for-aurix-tc4x
+category: target-communication
 block_count: 2
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:20Z" }
 ---
 
 # Target communication
-
-Use these blocks for target communication.
 
 ## Recommended Blocks
 

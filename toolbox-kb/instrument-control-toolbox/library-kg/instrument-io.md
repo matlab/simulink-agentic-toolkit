@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Instrument io
-description: Direct instrument query and command via SCPI/VISA
-tags: [visa, gpib, scpi, instrument, query]
+description: Direct instrument query and command via SCPI/VISA (3 blocks)
+tags: [toolbox-kb, instrument-control-toolbox, visa, gpib, scpi, instrument, query]
 status: stable
-source: mathworks_toolbox
-library_root: Instrument Control Toolbox
-category_path: Instrument io
+sources:
+  - resource: matlab:instrumentlib
+source: toolbox_kb
+managed_by: satk
+library: Instrument Control Toolbox
+kb_folder: instrument-control-toolbox
+category: instrument-io
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Instrument io
-
-Use these blocks for instrument io.
 
 ## Recommended Blocks
 

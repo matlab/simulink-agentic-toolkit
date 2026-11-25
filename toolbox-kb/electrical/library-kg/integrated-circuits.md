@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Integrated circuits
-description: Op-amps, logic gates, flip-flops, comparators, and IC building blocks
-tags: [opamp, cmos, gate, flip-flop, comparator]
+description: "Op-amps, logic gates, flip-flops, comparators, and IC building blocks (21 blocks)"
+tags: [toolbox-kb, electrical, opamp, cmos, gate, flip-flop, comparator]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Integrated circuits
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: integrated-circuits
 block_count: 21
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Integrated circuits
-
-Use these blocks for integrated circuits.
 
 ## Recommended Blocks
 

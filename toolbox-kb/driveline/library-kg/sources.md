@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sources
-description: Mechanical excitation sources: sinusoidal, noise, and battery
-tags: [source, sinusoidal, noise, battery, excitation]
+description: "Mechanical excitation sources: sinusoidal, noise, and battery (9 blocks)"
+tags: [toolbox-kb, driveline, source, sinusoidal, noise, battery, excitation]
 status: stable
-source: mathworks_toolbox
-library_root: Driveline
-category_path: Sources
+sources:
+  - resource: matlab:sdl_lib
+source: toolbox_kb
+managed_by: satk
+library: Driveline
+kb_folder: driveline
+category: sources
 block_count: 9
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:18Z" }
 ---
 
 # Sources
-
-Use these blocks for sources.
 
 ## Recommended Blocks
 

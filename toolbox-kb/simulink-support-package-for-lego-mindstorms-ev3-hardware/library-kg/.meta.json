@@ -1,15 +1,226 @@
 {
-  "generatedAt": "2026-08-19T17:52:13",
-  "generatedAtDatenum": 740213.74459636572,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Support Package for LEGO MINDSTORMS EV3 Hardware"
-  ],
-  "blockCount": 20,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "Simulink_Support_Package_for_LEGO_MINDSTORMS_EV3_Hardware": {
-      "blockCount": 20
+  "pages": [
+    {
+      "id": "actuators",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for LEGO MINDSTORMS EV3 Hardware",
+      "kbFolder": "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+      "category": "actuators",
+      "hash": "2c47eb05929710c186cca3c7b54185ffa7dc30dd27145c3cae46887641cfda2b",
+      "fm": {
+        "title": "Actuators",
+        "description": "Motor and mechanical output control (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+          "motor",
+          "encoder",
+          "actuator",
+          "speed",
+          "position"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Motor",
+          "ref": "legoev3lib/Motor",
+          "since": "R2023a+",
+          "intent": "Control EV3 motors with speed or position commands — use for driving wheels, arms, or other actuated mechanisms"
+        },
+        {
+          "block": "Encoder",
+          "ref": "legoev3lib/Encoder",
+          "since": "R2023a+",
+          "intent": "Read motor encoder position and speed — use for closed-loop motor control or odometry in navigation tasks"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "communication",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for LEGO MINDSTORMS EV3 Hardware",
+      "kbFolder": "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+      "category": "communication",
+      "hash": "9936faee592a63fa5aa636008df3422d6f3c42a56b5e20753d0796ac975e2bb7",
+      "fm": {
+        "title": "Communication",
+        "description": "Network data exchange (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+          "tcp",
+          "udp",
+          "i2c",
+          "network",
+          "wifi"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "I2C Register Read",
+          "ref": "legoev3lib/I2C Register Read",
+          "since": "R2023a+",
+          "intent": "Read data from I2C devices connected to EV3 ports — use for interfacing with third-party I2C sensors or devices"
+        },
+        {
+          "block": "TCP/IP Receive",
+          "ref": "legoev3lib/TCP/IP Receive",
+          "since": "R2023a+",
+          "intent": "Receive data over TCP/IP on EV3 — use for remote monitoring or receiving commands from a host computer over WiFi"
+        },
+        {
+          "block": "TCP/IP Send",
+          "ref": "legoev3lib/TCP/IP Send",
+          "since": "R2023a+",
+          "intent": "Send data over TCP/IP from EV3 — use for transmitting sensor data or status to a host computer over WiFi"
+        },
+        {
+          "block": "UDP Receive",
+          "ref": "legoev3lib/UDP Receive",
+          "since": "R2023a+",
+          "intent": "Receive UDP packets on EV3 — use for low-latency data reception from a host computer"
+        },
+        {
+          "block": "UDP Send",
+          "ref": "legoev3lib/UDP Send",
+          "since": "R2023a+",
+          "intent": "Send UDP packets from EV3 — use for low-latency data transmission to a host computer"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensors",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for LEGO MINDSTORMS EV3 Hardware",
+      "kbFolder": "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+      "category": "sensors",
+      "hash": "a2e74576f6680717456a1bd0bb91586e6f29ed9bb8febae8f441e908269fc3f3",
+      "fm": {
+        "title": "Sensors",
+        "description": "Environmental and motion sensors (9 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+          "color",
+          "gyro",
+          "ultrasonic",
+          "infrared",
+          "touch"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "NXT Sensors",
+          "ref": "legoev3lib/NXT Sensors",
+          "since": "R2023a+",
+          "intent": "Interface with legacy NXT sensors on EV3 — use for reading older NXT-compatible sensors connected to EV3 ports"
+        },
+        {
+          "block": "Battery",
+          "ref": "legoev3lib/Battery",
+          "since": "R2023a+",
+          "intent": "Read EV3 battery voltage level — use for monitoring remaining battery life and triggering low-power behaviors"
+        },
+        {
+          "block": "Color Sensor",
+          "ref": "legoev3lib/Color Sensor",
+          "since": "R2023a+",
+          "intent": "Read color or light intensity from the EV3 color sensor — use for line following, color sorting, or ambient light detection"
+        },
+        {
+          "block": "Gyro Sensor",
+          "ref": "legoev3lib/Gyro Sensor",
+          "since": "R2023a+",
+          "intent": "Read angular rate and heading from the EV3 gyro sensor — use for rotation measurement, balancing, or heading control"
+        },
+        {
+          "block": "Infrared Sensor",
+          "ref": "legoev3lib/Infrared Sensor",
+          "since": "R2023a+",
+          "intent": "Read proximity or IR beacon data from the EV3 infrared sensor — use for obstacle detection or remote control reception"
+        },
+        {
+          "block": "Pixy2 Vision Sensor",
+          "ref": "legoev3lib/Pixy2 Vision Sensor",
+          "since": "R2023a+",
+          "intent": "Read object detection data from a Pixy2 camera on EV3 — use for color blob tracking or line following with vision"
+        },
+        {
+          "block": "Timer",
+          "ref": "legoev3lib/Timer",
+          "since": "R2023a+",
+          "intent": "Read elapsed time on EV3 — use for timing operations, creating delays, or measuring event durations"
+        },
+        {
+          "block": "Touch Sensor",
+          "ref": "legoev3lib/Touch Sensor",
+          "since": "R2023a+",
+          "intent": "Read the EV3 touch sensor press state — use for detecting physical contact, bumper hits, or limit switches"
+        },
+        {
+          "block": "Ultrasonic Sensor",
+          "ref": "legoev3lib/Ultrasonic Sensor",
+          "since": "R2023a+",
+          "intent": "Measure distance using the EV3 ultrasonic sensor — use for obstacle detection and distance measurement in navigation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "user-interface",
+      "kind": "toolbox",
+      "library": "Simulink Support Package for LEGO MINDSTORMS EV3 Hardware",
+      "kbFolder": "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+      "category": "user-interface",
+      "hash": "14663aca2327124b6dbe91eb61ff90447e429c45ecf9178035b39e78da6b3778",
+      "fm": {
+        "title": "User interface",
+        "description": "Display, audio, and user input (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-support-package-for-lego-mindstorms-ev3-hardware",
+          "display",
+          "button",
+          "speaker",
+          "led",
+          "screen"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Display",
+          "ref": "legoev3lib/Display",
+          "since": "R2023a+",
+          "intent": "Show text or images on the EV3 LCD screen — use for displaying status, sensor values, or debug info on the robot"
+        },
+        {
+          "block": "Speaker",
+          "ref": "legoev3lib/Speaker",
+          "since": "R2023a+",
+          "intent": "Play tones or audio files on the EV3 speaker — use for audio feedback, alerts, or musical output from the robot"
+        },
+        {
+          "block": "Status Light",
+          "ref": "legoev3lib/Status Light",
+          "since": "R2023a+",
+          "intent": "Control the EV3 brick status LEDs — use for visual status indication with configurable color and flash patterns"
+        },
+        {
+          "block": "Button",
+          "ref": "legoev3lib/Button",
+          "since": "R2023a+",
+          "intent": "Read EV3 brick button presses — use for detecting user input from the navigation buttons on the brick"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:32",
+  "generatedAtDatenum": 740309.99552031246
 }

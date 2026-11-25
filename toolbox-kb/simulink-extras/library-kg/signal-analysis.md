@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Signal analysis
-description: Spectrum analysis and correlation sinks
-tags: [spectrum, psd, correlator, analyzer, averaging]
+description: Spectrum analysis and correlation sinks (8 blocks)
+tags: [toolbox-kb, simulink-extras, spectrum, psd, correlator, analyzer, averaging]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Extras
-category_path: Signal analysis
+sources:
+  - resource: matlab:simulink_extras
+source: toolbox_kb
+managed_by: satk
+library: Simulink Extras
+kb_folder: simulink-extras
+category: signal-analysis
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:31Z" }
 ---
 
 # Signal analysis
-
-Use these blocks for signal analysis.
 
 ## Recommended Blocks
 

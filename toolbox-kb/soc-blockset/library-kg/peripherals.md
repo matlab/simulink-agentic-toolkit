@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Peripherals
-description: Peripheral device interface models for ADC, audio, video, PWM, and digital I/O
-tags: [ADC, audio, video, PWM, peripheral, capture]
+description: "Peripheral device interface models for ADC, audio, video, PWM, and digital I/O (7 blocks)"
+tags: [toolbox-kb, soc-blockset, ADC, audio, video, PWM, peripheral, capture]
 status: stable
-source: mathworks_toolbox
-library_root: SoC Blockset
-category_path: Peripherals
+sources:
+  - resource: matlab:peripheralslib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset
+kb_folder: soc-blockset
+category: peripherals
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:35Z" }
 ---
 
 # Peripherals
-
-Use these blocks for peripherals.
 
 ## Recommended Blocks
 

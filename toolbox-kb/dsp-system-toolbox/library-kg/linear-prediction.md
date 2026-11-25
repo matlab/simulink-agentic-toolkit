@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Linear prediction
-description: Linear-prediction / AR coefficient estimation
-tags: [linear prediction, levinson]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Linear prediction
+description: Linear-prediction / AR coefficient estimation (8 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, linear prediction, levinson]
+status: draft
+sources:
+  - resource: matlab:dsplp
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: linear-prediction
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Linear prediction
-
-Use these blocks for linear prediction.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Sensor simulation
-description: Simulated navigation sensor models
-tags: [gps, imu, ins, sensor, simulate]
+description: Simulated navigation sensor models (3 blocks)
+tags: [toolbox-kb, navigation-toolbox, gps, imu, ins, sensor, simulate]
 status: stable
-source: mathworks_toolbox
-library_root: Navigation Toolbox
-category_path: Sensor simulation
+sources:
+  - resource: matlab:mspsensorlib
+source: toolbox_kb
+managed_by: satk
+library: Navigation Toolbox
+kb_folder: navigation-toolbox
+category: sensor-simulation
 block_count: 3
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:24Z" }
 ---
 
 # Sensor simulation
-
-Use these blocks for sensor simulation.
 
 ## Recommended Blocks
 

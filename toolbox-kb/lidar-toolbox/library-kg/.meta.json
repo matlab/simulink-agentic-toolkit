@@ -1,15 +1,37 @@
 {
-  "generatedAt": "2026-08-19T17:52:10",
-  "generatedAtDatenum": 740213.74456922454,
-  "generatorVersion": 4,
-  "libraries": [
-    "Lidar Toolbox"
-  ],
-  "blockCount": 1,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "Lidar_Toolbox": {
-      "blockCount": 1
+  "pages": [
+    {
+      "id": "lidar-sensing",
+      "kind": "toolbox",
+      "library": "Lidar Toolbox",
+      "kbFolder": "lidar-toolbox",
+      "category": "lidar-sensing",
+      "hash": "f115b6fc40447620e05a46020470eaca0335934224223c53b85dc5aab7a47b1c",
+      "fm": {
+        "title": "Lidar sensing",
+        "description": "Lidar sensor simulation and point cloud generation (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "lidar-toolbox",
+          "lidar",
+          "pointcloud",
+          "sensor",
+          "3d",
+          "perception"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Lidar Sensor",
+          "ref": "lidarlib/Lidar Sensor",
+          "since": "R2023a+",
+          "intent": "Simulate a lidar sensor generating 3D point cloud data — use for modeling lidar perception in autonomous driving, robotics, or environment mapping applications"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:35",
+  "generatedAtDatenum": 740309.99554414349
 }

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Actuators
-description: Motor and output blocks
-tags: [motor, servo, smart, digital output]
+description: Motor and output blocks (4 blocks)
+tags: [toolbox-kb, simulink-coder-support-package-for-vex-edr-v5-robot-brain, motor, servo, smart, digital output]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Coder Support Package for VEX EDR V5 Robot Brain
-category_path: Actuators
+sources:
+  - resource: matlab:vexv5lib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Coder Support Package for VEX EDR V5 Robot Brain
+kb_folder: simulink-coder-support-package-for-vex-edr-v5-robot-brain
+category: actuators
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Actuators
-
-Use these blocks for actuators.
 
 ## Recommended Blocks
 

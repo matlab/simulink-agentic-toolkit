@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Video
-description: HDMI and camera video capture/output
-tags: [hdmi, video capture, usb, mipi]
+description: HDMI and camera video capture/output (17 blocks)
+tags: [toolbox-kb, soc-blockset-support-package-for-amd-fpga-and-soc-devices, hdmi, video capture, usb, mipi]
 status: stable
-source: custom_library
-library_root: SoC Blockset Support Package for AMD FPGA and SoC Devices
-category_path: Video
+sources:
+  - resource: matlab:mpsoczcu102lib
+source: toolbox_kb
+managed_by: satk
+library: SoC Blockset Support Package for AMD FPGA and SoC Devices
+kb_folder: soc-blockset-support-package-for-amd-fpga-and-soc-devices
+category: video
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Video
-
-Use these blocks for video.
 
 ## Recommended Blocks
 

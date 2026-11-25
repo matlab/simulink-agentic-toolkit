@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Messaging
-description: Topic publish/subscribe and message creation
-tags: [publish, subscribe, blank, message, topic, header]
+description: Topic publish/subscribe and message creation (8 blocks)
+tags: [toolbox-kb, ros-toolbox, publish, subscribe, blank, message, topic, header]
 status: stable
-source: mathworks_toolbox
-library_root: ROS Toolbox
-category_path: Messaging
+sources:
+  - resource: matlab:robotlib
+source: toolbox_kb
+managed_by: satk
+library: ROS Toolbox
+kb_folder: ros-toolbox
+category: messaging
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Messaging
-
-Use these blocks for messaging.
 
 ## Recommended Blocks
 

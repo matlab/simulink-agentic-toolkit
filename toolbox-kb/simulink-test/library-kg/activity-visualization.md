@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Activity visualization
-description: Visualize the order and timing of messages, events, function calls, and state transitions during simulation.
-tags: [sequence, messages, events, timing, visualization]
+description: "Visualize the order and timing of messages, events, function calls, and state transitions during simulation (1 blocks)"
+tags: [toolbox-kb, simulink-test, sequence, messages, events, timing, visualization]
 status: stable
-source: custom_library
-library_root: Simulink Test
-category_path: Activity visualization
+sources:
+  - resource: matlab:sltestlib
+source: toolbox_kb
+managed_by: satk
+library: Simulink Test
+kb_folder: simulink-test
+category: activity-visualization
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:36Z" }
 ---
 
 # Activity visualization
-
-Use these blocks for activity visualization.
 
 ## Recommended Blocks
 

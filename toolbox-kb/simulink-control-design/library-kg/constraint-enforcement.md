@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Constraint enforcement
-description: Safety constraint and passivity enforcement
-tags: [barrier, constraint, lyapunov, passivity, safety]
+description: Safety constraint and passivity enforcement (4 blocks)
+tags: [toolbox-kb, simulink-control-design, barrier, constraint, lyapunov, passivity, safety]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Constraint enforcement
+sources:
+  - resource: matlab:slctrl_constraint
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: constraint-enforcement
 block_count: 4
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Constraint enforcement
-
-Use these blocks for constraint enforcement.
 
 ## Recommended Blocks
 

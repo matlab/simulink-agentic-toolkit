@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Math
-description: Arithmetic and elementwise math functions
-tags: [math operations, gain, sum, product, sqrt, trig, abs]
-status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Math
+description: Arithmetic and elementwise math functions (21 blocks)
+tags: [toolbox-kb, do-178c-do-331-primitive-library, math operations, gain, sum, product, sqrt, trig, abs]
+status: draft
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: math
 block_count: 21
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Math
-
-Use these blocks for math.
 
 ## Recommended Blocks
 
@@ -32,7 +35,7 @@ Use these blocks for math.
 | Reshape | do178Lib/Simulink/Math Operations/Reshape | R2023a+ | Change the dimensions of a signal without changing its data — use to convert between vector and matrix shapes. |
 | Rounding Function | do178Lib/Simulink/Math Operations/Rounding Function | R2023a+ | Round a signal (floor, ceil, round, fix) — use to quantize to integers or control rounding behavior. |
 | Sign | do178Lib/Simulink/Math Operations/Sign | R2023a+ | Output the sign (-1/0/+1) of the input — use for direction detection or sign extraction. |
-| Signed Sqrt | do178Lib/Simulink/Math Operations/Signed Sqrt | R2023a+ | Compute a sign-preserving square root, sign(u)·sqrt(|u|) — use when the input can be negative but root-like scaling is needed. |
+| Signed Sqrt | do178Lib/Simulink/Math Operations/Signed Sqrt | R2023a+ | Compute a sign-preserving square root, sign(u)·sqrt(\|u\|) — use when the input can be negative but root-like scaling is needed. |
 | Sqrt | do178Lib/Simulink/Math Operations/Sqrt | R2023a+ | Compute the square root of the input — use for magnitude, RMS, or geometric calculations. |
 | Subtract | do178Lib/Simulink/Math Operations/Subtract | R2023a+ | Subtract inputs (a Sum configured for subtraction) — use to compute differences or control errors. |
 | Sum | do178Lib/Simulink/Math Operations/Sum | R2023a+ | Add or subtract inputs per the sign list — use to combine signals, form errors, or accumulate. |

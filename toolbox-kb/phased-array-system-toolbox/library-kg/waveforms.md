@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Waveforms
-description: Radar waveform generators for pulsed and continuous-wave systems
-tags: [waveform, chirp, FMCW, LFM, pulse, FM]
+description: Radar waveform generators for pulsed and continuous-wave systems (8 blocks)
+tags: [toolbox-kb, phased-array-system-toolbox, waveform, chirp, FMCW, LFM, pulse, FM]
 status: stable
-source: mathworks_toolbox
-library_root: Phased Array System Toolbox
-category_path: Waveforms
+sources:
+  - resource: matlab:phasedwavlib
+source: toolbox_kb
+managed_by: satk
+library: Phased Array System Toolbox
+kb_folder: phased-array-system-toolbox
+category: waveforms
 block_count: 8
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:25Z" }
 ---
 
 # Waveforms
-
-Use these blocks for waveforms.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Pid autotuning
-description: Online PID tuning and gain scheduling
-tags: [pid, autotuner, gain-schedule, vrft, tuning]
+description: Online PID tuning and gain scheduling (7 blocks)
+tags: [toolbox-kb, simulink-control-design, pid, autotuner, gain-schedule, vrft, tuning]
 status: stable
-source: mathworks_toolbox
-library_root: Simulink Control Design
-category_path: Pid autotuning
+sources:
+  - resource: matlab:slctrl_autotuning
+source: toolbox_kb
+managed_by: satk
+library: Simulink Control Design
+kb_folder: simulink-control-design
+category: pid-autotuning
 block_count: 7
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:30Z" }
 ---
 
 # Pid autotuning
-
-Use these blocks for pid autotuning.
 
 ## Recommended Blocks
 

@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Discrete
-description: Discrete-time dynamics, delays, and filters
-tags: [discrete, delay, integrator, filter, memory, zero-order hold]
-status: stable
-source: custom_library
-library_root: Simulink
-category_path: Discrete
+description: "Discrete-time dynamics, delays, and filters (38 blocks)"
+tags: [toolbox-kb, simulink, discrete, delay, integrator, filter, memory, zero-order hold]
+status: draft
+sources:
+  - resource: matlab:simulink
+source: toolbox_kb
+managed_by: satk
+library: Simulink
+kb_folder: simulink
+category: discrete
 block_count: 38
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:28Z" }
 ---
 
 # Discrete
-
-Use these blocks for discrete.
 
 ## Recommended Blocks
 
@@ -24,12 +27,8 @@ Use these blocks for discrete.
 | Decrement To Zero | simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Decrement To Zero | R2023a+ | Decrease the Real World Value of Signal by 1.0, but never go below zero. |
 | Increment Real World | simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Increment Real World | R2023a+ | Increase the Real World Value of Signal by 1.0 Overflows will always wrap. |
 | Increment Stored Integer | simulink/Additional Math & Discrete/Additional Math: Increment - Decrement/Increment Stored Integer | R2023a+ | Increase the Stored Value of Signal by 1 Floating Point signals are increased by 1.0 Overflows will always wrap. |
-| Delay | simulink/Commonly
-Used Blocks/Delay | R2023a+ | Delay a signal by a specified number of samples — use for timing alignment or algorithmic state. |
-| Discrete-Time
-Integrator | simulink/Commonly
-Used Blocks/Discrete-Time
-Integrator | R2023a+ | Accumulate the input over discrete time with reset/limit options — use for discrete integration. |
+| Delay | simulink/Commonly Used Blocks/Delay | R2023a+ | Delay a signal by a specified number of samples — use for timing alignment or algorithmic state. |
+| Discrete-Time Integrator | simulink/Commonly Used Blocks/Discrete-Time Integrator | R2023a+ | Accumulate the input over discrete time with reset/limit options — use for discrete integration. |
 | Delay | simulink/Discrete/Delay | R2023a+ | Delay a signal by a specified number of samples — use for timing alignment or algorithmic state. |
 | Discrete Transfer Fcn | simulink/Discrete/Discrete Transfer Fcn | R2023a+ | Implement a discrete transfer function from numerator/denominator coefficients — use for IIR dynamics. |
 | Discrete Zero-Pole | simulink/Discrete/Discrete Zero-Pole | R2023a+ | Implement a discrete transfer function specified by zeros, poles, and gain — use for pole-zero discrete dynamics. |
@@ -58,13 +57,5 @@ Integrator | R2023a+ | Accumulate the input over discrete time with reset/limit 
 | Discrete State-Space | simulink/Quick Insert/Discrete/Discrete State-Space | R2023a+ | Implement a discrete-time state-space model (A, B, C, D) — use for MIMO linear dynamics. |
 | Difference | simulink/Quick Insert/Discrete/Difference | R2023a+ | Output the current input value minus the previous input value. |
 | Discrete Derivative | simulink/Quick Insert/Discrete/Discrete Derivative | R2023a+ | Discrete-time derivative of the input. This block only works with fixed sample rates. Do not use this block in subsystems with a non-periodic trigger. |
-| Repeating
-Sequence
-Interpolated | simulink/Sources/Repeating
-Sequence
-Interpolated | R2023a+ | Discrete time sequence is output, then repeated. Between data points, the specified lookup method is used to determine the output. |
-| Repeating
-Sequence
-Stair | simulink/Sources/Repeating
-Sequence
-Stair | R2023a+ | Discrete time sequence is output, then repeated. |
+| Repeating Sequence Interpolated | simulink/Sources/Repeating Sequence Interpolated | R2023a+ | Discrete time sequence is output, then repeated. Between data points, the specified lookup method is used to determine the output. |
+| Repeating Sequence Stair | simulink/Sources/Repeating Sequence Stair | R2023a+ | Discrete time sequence is output, then repeated. |

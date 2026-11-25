@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Spice components
-description: SPICE-compatible components and dependent sources for netlist import
-tags: [spice, pcccs, pvcvs, netlist, polynomial]
+description: SPICE-compatible components and dependent sources for netlist import (36 blocks)
+tags: [toolbox-kb, electrical, spice, pcccs, pvcvs, netlist, polynomial]
 status: stable
-source: mathworks_toolbox
-library_root: Electrical
-category_path: Spice components
+sources:
+  - resource: matlab:ee_lib
+source: toolbox_kb
+managed_by: satk
+library: Electrical
+kb_folder: electrical
+category: spice-components
 block_count: 36
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:19Z" }
 ---
 
 # Spice components
-
-Use these blocks for spice components.
 
 ## Recommended Blocks
 

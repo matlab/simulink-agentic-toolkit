@@ -1,15 +1,37 @@
 {
-  "generatedAt": "2026-08-19T17:52:14",
-  "generatedAtDatenum": 740213.74461800931,
-  "generatorVersion": 4,
-  "libraries": [
-    "VNT Ethernet Library"
-  ],
-  "blockCount": 7,
-  "categoryCount": 1,
-  "libraryFingerprints": {
-    "VNT_Ethernet_Library": {
-      "blockCount": 7
+  "pages": [
+    {
+      "id": "automotive-ethernet",
+      "kind": "toolbox",
+      "library": "VNT Ethernet Library",
+      "kbFolder": "vnt-ethernet-library",
+      "category": "automotive-ethernet",
+      "hash": "d84301788898b25c54e73b1cf1b6a0eb1326884837c4fbdad0cde7714a26adff",
+      "fm": {
+        "title": "Automotive ethernet",
+        "description": "Automotive Ethernet communication and AUTOSAR signal packing (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "vnt-ethernet-library",
+          "ethernet",
+          "automotive",
+          "autosar",
+          "someip",
+          "vehicle"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Automotive Ethernet ECU Interface",
+          "ref": "ethernetblkslib/Automotive Ethernet ECU Interface",
+          "since": "R2023a+",
+          "intent": "Interface a Simulink model as an automotive Ethernet ECU — use for simulating SOME/IP or DoIP communication endpoints in vehicle network models"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:33",
+  "generatedAtDatenum": 740309.995532199
 }

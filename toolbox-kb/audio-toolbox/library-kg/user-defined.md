@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: User defined
-description: Host custom audio plugins and functions
-tags: [user-defined, audio plugin]
+description: Host custom audio plugins and functions (1 blocks)
+tags: [toolbox-kb, audio-toolbox, user-defined, audio plugin]
 status: stable
-source: custom_library
-library_root: Audio Toolbox
-category_path: User defined
+sources:
+  - resource: matlab:audiouserdefined
+source: toolbox_kb
+managed_by: satk
+library: Audio Toolbox
+kb_folder: audio-toolbox
+category: user-defined
 block_count: 1
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # User defined
-
-Use these blocks for user defined.
 
 ## Recommended Blocks
 

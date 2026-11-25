@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ports subsystems
-description: Ports, subsystems, and control-flow containers
-tags: [ports, subsystems, inport, outport, if, switch case, subsystem, iterator]
-status: stable
-source: custom_library
-library_root: DO-178C/DO-331 Primitive Library
-category_path: Ports subsystems
+description: "Ports, subsystems, and control-flow containers (19 blocks)"
+tags: [toolbox-kb, do-178c-do-331-primitive-library, ports, subsystems, inport, outport, if, switch case, subsystem, iterator]
+status: draft
+sources:
+  - resource: matlab:do178Lib
+source: toolbox_kb
+managed_by: satk
+library: DO-178C/DO-331 Primitive Library
+kb_folder: do-178c-do-331-primitive-library
+category: ports-subsystems
 block_count: 19
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Ports subsystems
-
-Use these blocks for ports subsystems.
 
 ## Recommended Blocks
 

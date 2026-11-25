@@ -1,15 +1,355 @@
 {
-  "generatedAt": "2026-08-19T17:52:11",
-  "generatedAtDatenum": 740213.74457950226,
-  "generatorVersion": 4,
-  "libraries": [
-    "ROS Toolbox"
-  ],
-  "blockCount": 41,
-  "categoryCount": 4,
-  "libraryFingerprints": {
-    "ROS_Toolbox": {
-      "blockCount": 41
+  "pages": [
+    {
+      "id": "messaging",
+      "kind": "toolbox",
+      "library": "ROS Toolbox",
+      "kbFolder": "ros-toolbox",
+      "category": "messaging",
+      "hash": "894a5b0a5373d28b4450857a8c74bd7509446cf55e90ea19037fff976f48f057",
+      "fm": {
+        "title": "Messaging",
+        "description": "Topic publish/subscribe and message creation (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "ros-toolbox",
+          "publish",
+          "subscribe",
+          "blank",
+          "message",
+          "topic",
+          "header"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Blank Message",
+          "ref": "robotlib/Blank Message",
+          "since": "R2023a+",
+          "intent": "Create an empty ROS message structure — use for initializing message fields before populating and publishing"
+        },
+        {
+          "block": "Header Assignment",
+          "ref": "robotlib/Header Assignment",
+          "since": "R2023a+",
+          "intent": "Assign timestamp and frame ID to a message header — use for stamping messages with timing and coordinate frame info"
+        },
+        {
+          "block": "Publish",
+          "ref": "robotlib/Publish",
+          "since": "R2023a+",
+          "intent": "Publish a ROS message to a topic — use for sending data from Simulink to other ROS nodes"
+        },
+        {
+          "block": "Subscribe",
+          "ref": "robotlib/Subscribe",
+          "since": "R2023a+",
+          "intent": "Subscribe to a ROS topic and receive messages — use for bringing external ROS data into your Simulink model"
+        },
+        {
+          "block": "Blank Message",
+          "ref": "ros2lib/Blank Message",
+          "since": "R2023a+",
+          "intent": "Create an empty ROS message structure — use for initializing message fields before populating and publishing"
+        },
+        {
+          "block": "Header Assignment",
+          "ref": "ros2lib/Header Assignment",
+          "since": "R2023a+",
+          "intent": "Assign timestamp and frame ID to a message header — use for stamping messages with timing and coordinate frame info"
+        },
+        {
+          "block": "Publish",
+          "ref": "ros2lib/Publish",
+          "since": "R2023a+",
+          "intent": "Publish a ROS message to a topic — use for sending data from Simulink to other ROS nodes"
+        },
+        {
+          "block": "Subscribe",
+          "ref": "ros2lib/Subscribe",
+          "since": "R2023a+",
+          "intent": "Subscribe to a ROS topic and receive messages — use for bringing external ROS data into your Simulink model"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "parameters-utilities",
+      "kind": "toolbox",
+      "library": "ROS Toolbox",
+      "kbFolder": "ros-toolbox",
+      "category": "parameters-utilities",
+      "hash": "108d4155e039c83ece84ed40d96c1e4c2a0593d222fa5810593e6ca79811a89c",
+      "fm": {
+        "title": "Parameters utilities",
+        "description": "Parameter server access and coordinate utilities (12 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "ros-toolbox",
+          "parameter",
+          "transform",
+          "time",
+          "coordinate",
+          "can"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Apply Transform",
+          "ref": "robotlib/Apply Transform",
+          "since": "R2023b+",
+          "intent": "Apply a coordinate transform to a message — use for converting sensor data between reference frames via the TF tree"
+        },
+        {
+          "block": "Get Transform",
+          "ref": "robotlib/Get Transform",
+          "since": "R2023b+",
+          "intent": "Query the TF tree for a transform between frames — use for looking up spatial relationships between coordinate frames"
+        },
+        {
+          "block": "Current Time",
+          "ref": "robotlib/Current Time",
+          "since": "R2023a+",
+          "intent": "Get the current ROS network time — use for synchronizing Simulink with the ROS time server"
+        },
+        {
+          "block": "Get Parameter",
+          "ref": "robotlib/Get Parameter",
+          "since": "R2023a+",
+          "intent": "Read a parameter from the ROS parameter server — use for retrieving configuration values shared across nodes"
+        },
+        {
+          "block": "Set Parameter",
+          "ref": "robotlib/Set Parameter",
+          "since": "R2023a+",
+          "intent": "Write a parameter to the ROS parameter server — use for sharing configuration from Simulink to other nodes"
+        },
+        {
+          "block": "Apply Transform",
+          "ref": "ros2lib/Apply Transform",
+          "since": "R2023b+",
+          "intent": "Apply a coordinate transform to a message — use for converting sensor data between reference frames via the TF tree"
+        },
+        {
+          "block": "Get Transform",
+          "ref": "ros2lib/Get Transform",
+          "since": "R2023b+",
+          "intent": "Query the TF tree for a transform between frames — use for looking up spatial relationships between coordinate frames"
+        },
+        {
+          "block": "CAN Receive",
+          "ref": "ros2lib/CAN Receive",
+          "since": "R2026a+",
+          "intent": "Receive CAN messages via ROS 2 — use for reading vehicle bus data through the ROS 2 CAN interface"
+        },
+        {
+          "block": "CAN Transmit",
+          "ref": "ros2lib/CAN Transmit",
+          "since": "R2026a+",
+          "intent": "Transmit CAN messages via ROS 2 — use for sending vehicle bus commands through the ROS 2 CAN interface"
+        },
+        {
+          "block": "Current Time",
+          "ref": "ros2lib/Current Time",
+          "since": "R2023a+",
+          "intent": "Get the current ROS network time — use for synchronizing Simulink with the ROS time server"
+        },
+        {
+          "block": "Get Parameter",
+          "ref": "ros2lib/Get Parameter",
+          "since": "R2023a+",
+          "intent": "Read a parameter from the ROS parameter server — use for retrieving configuration values shared across nodes"
+        },
+        {
+          "block": "Coordinate Transformation Conversion",
+          "ref": "roslib/Utilities/Coordinate Transformation Conversion",
+          "since": "R2023a+",
+          "intent": "Convert between rotation representations — use for translating quaternions, Euler angles, and rotation matrices"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "sensor-data",
+      "kind": "toolbox",
+      "library": "ROS Toolbox",
+      "kbFolder": "ros-toolbox",
+      "category": "sensor-data",
+      "hash": "598d1109317737b173f979db221b92eea7fc2295bb8484de4af2a3b3b0d424c1",
+      "fm": {
+        "title": "Sensor data",
+        "description": "Sensor data encoding and decoding (14 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "ros-toolbox",
+          "image",
+          "point cloud",
+          "scan",
+          "occupancy",
+          "write",
+          "read"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Read Data",
+          "ref": "robotlib/Read Data",
+          "since": "R2023a+",
+          "intent": "Read messages from a ROS bag file — use for replaying recorded sensor data into your model"
+        },
+        {
+          "block": "Write Image",
+          "ref": "robotlib/Write Image",
+          "since": "R2023a+",
+          "intent": "Convert a Simulink image matrix to a ROS image message — use for publishing camera frames to ROS"
+        },
+        {
+          "block": "Write Point Cloud",
+          "ref": "robotlib/Write Point Cloud",
+          "since": "R2023a+",
+          "intent": "Convert point cloud data to a ROS message — use for publishing 3D lidar or depth data to ROS"
+        },
+        {
+          "block": "Read Image",
+          "ref": "robotlib/Read Image",
+          "since": "R2023a+",
+          "intent": "Extract image matrix from a ROS image message — use for processing camera data received from ROS topics"
+        },
+        {
+          "block": "Read Occupancy Grid",
+          "ref": "robotlib/Read Occupancy Grid",
+          "since": "R2026a+",
+          "intent": "Extract grid data from a ROS occupancy grid message — use for processing map data from SLAM or navigation nodes"
+        },
+        {
+          "block": "Read Point Cloud",
+          "ref": "robotlib/Read Point Cloud",
+          "since": "R2023a+",
+          "intent": "Extract XYZ data from a ROS point cloud message — use for processing 3D sensor data received from ROS"
+        },
+        {
+          "block": "Read Scan",
+          "ref": "robotlib/Read Scan",
+          "since": "R2023a+",
+          "intent": "Extract range data from a ROS laser scan message — use for processing 2D lidar data from ROS"
+        },
+        {
+          "block": "Read Data",
+          "ref": "ros2lib/Read Data",
+          "since": "R2023a+",
+          "intent": "Read messages from a ROS bag file — use for replaying recorded sensor data into your model"
+        },
+        {
+          "block": "Write Image",
+          "ref": "ros2lib/Write Image",
+          "since": "R2023a+",
+          "intent": "Convert a Simulink image matrix to a ROS image message — use for publishing camera frames to ROS"
+        },
+        {
+          "block": "Write Point Cloud",
+          "ref": "ros2lib/Write Point Cloud",
+          "since": "R2023a+",
+          "intent": "Convert point cloud data to a ROS message — use for publishing 3D lidar or depth data to ROS"
+        },
+        {
+          "block": "Read Image",
+          "ref": "ros2lib/Read Image",
+          "since": "R2023a+",
+          "intent": "Extract image matrix from a ROS image message — use for processing camera data received from ROS topics"
+        },
+        {
+          "block": "Read Occupancy Grid",
+          "ref": "ros2lib/Read Occupancy Grid",
+          "since": "R2026a+",
+          "intent": "Extract grid data from a ROS occupancy grid message — use for processing map data from SLAM or navigation nodes"
+        },
+        {
+          "block": "Read Point Cloud",
+          "ref": "ros2lib/Read Point Cloud",
+          "since": "R2023a+",
+          "intent": "Extract XYZ data from a ROS point cloud message — use for processing 3D sensor data received from ROS"
+        },
+        {
+          "block": "Read Scan",
+          "ref": "ros2lib/Read Scan",
+          "since": "R2023a+",
+          "intent": "Extract range data from a ROS laser scan message — use for processing 2D lidar data from ROS"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "services-actions",
+      "kind": "toolbox",
+      "library": "ROS Toolbox",
+      "kbFolder": "ros-toolbox",
+      "category": "services-actions",
+      "hash": "7e8228f736ed6fbe64b0b6d22e5b8a8f210d2969b48d4879e85411b6e28b9d7b",
+      "fm": {
+        "title": "Services actions",
+        "description": "ROS service calls and action client/server (7 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "ros-toolbox",
+          "service",
+          "action",
+          "goal",
+          "cancel",
+          "monitor",
+          "call"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Call Service",
+          "ref": "robotlib/Call Service",
+          "since": "R2023a+",
+          "intent": "Call a ROS service and receive its response — use for requesting actions from ROS nodes that provide services"
+        },
+        {
+          "block": "Call Service",
+          "ref": "ros2lib/Call Service",
+          "since": "R2023a+",
+          "intent": "Call a ROS service and receive its response — use for requesting actions from ROS nodes that provide services"
+        },
+        {
+          "block": "Cancel Action Goal",
+          "ref": "ros2lib/Cancel Action Goal",
+          "since": "R2024a+",
+          "intent": "Cancel a pending ROS 2 action goal — use for aborting long-running action requests"
+        },
+        {
+          "block": "Monitor Action Goal",
+          "ref": "ros2lib/Monitor Action Goal",
+          "since": "R2024a+",
+          "intent": "Monitor the status of a ROS 2 action goal — use for tracking progress and receiving feedback from action servers"
+        },
+        {
+          "block": "Receive Service Request",
+          "ref": "ros2lib/Receive Service Request",
+          "since": "R2024a+",
+          "intent": "Receive incoming ROS 2 service requests — use for implementing a service server in Simulink"
+        },
+        {
+          "block": "Send Action Goal",
+          "ref": "ros2lib/Send Action Goal",
+          "since": "R2024a+",
+          "intent": "Send a goal to a ROS 2 action server — use for initiating long-running tasks on action servers"
+        },
+        {
+          "block": "Send Service Response",
+          "ref": "ros2lib/Send Service Response",
+          "since": "R2024a+",
+          "intent": "Send a response to a ROS 2 service request — use for completing service handling in a Simulink-based server"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:26",
+  "generatedAtDatenum": 740309.99544265051
 }

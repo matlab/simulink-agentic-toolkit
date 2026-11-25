@@ -1,15 +1,147 @@
 {
-  "generatedAt": "2026-09-27T06:53:17",
-  "generatedAtDatenum": 740252.28701307869,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Test"
-  ],
-  "blockCount": 11,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Simulink_Test": {
-      "blockCount": 11
+  "pages": [
+    {
+      "id": "activity-visualization",
+      "kind": "toolbox",
+      "library": "Simulink Test",
+      "kbFolder": "simulink-test",
+      "category": "activity-visualization",
+      "hash": "45381cac3e5c872bfff160d5a4f85f8bf234aa7bb1003e9abca6897a7c673ef9",
+      "fm": {
+        "title": "Activity visualization",
+        "description": "Visualize the order and timing of messages, events, function calls, and state transitions during simulation (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-test",
+          "sequence",
+          "messages",
+          "events",
+          "timing",
+          "visualization"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Sequence Viewer",
+          "ref": "sltestlib/Sequence Viewer",
+          "since": "R2023a+",
+          "intent": "Visualize the order and timing of messages, events, function calls, and state transitions exchanged during simulation — use to debug interaction and sequencing behavior in message-based, Stateflow, or test-sequence models."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "observers",
+      "kind": "toolbox",
+      "library": "Simulink Test",
+      "kbFolder": "simulink-test",
+      "category": "observers",
+      "hash": "df6eb594587e723128c13652b9d58523f5047adb9ed4a6a4a9058731c5ea4d9d",
+      "fm": {
+        "title": "Observers",
+        "description": "Non-intrusive monitoring and verification of a system under test through a separate observer model (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-test",
+          "observer",
+          "monitor",
+          "verify",
+          "signal-access",
+          "non-intrusive"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Observer",
+          "ref": "sltestlib/Observer",
+          "since": "R2023a+",
+          "intent": "Reference a separate observer model to monitor and verify signals inside a system under test without editing the design — use when you want verification logic kept isolated from the model under test and reusable across harnesses."
+        },
+        {
+          "block": "ObserverPort",
+          "ref": "sltestlib/ObserverPort",
+          "since": "R2023a+",
+          "intent": "Tap a signal from the system under test by its path and bring it into an observer for assessment — use inside an observer to pick exactly which internal signals to watch without adding ports to the design model."
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "test-harness-internals",
+      "kind": "toolbox",
+      "library": "Simulink Test",
+      "kbFolder": "simulink-test",
+      "category": "test-harness-internals",
+      "hash": "efb563c2c3a9e18a2e0dd340bc7ad6672cf8cb167f35b62807296b0c29347b2a",
+      "fm": {
+        "title": "Test harness internals",
+        "description": "Primitive elements that implement the Test Sequence and Test Assessment blocks; not normally placed on their own (8 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-test",
+          "test-sequence",
+          "test-assessment",
+          "stimulus",
+          "assessment",
+          "internal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": " Demux ",
+          "ref": "sltestlib/Test Assessment/ Demux ",
+          "since": "R2023a+",
+          "intent": "Split a combined signal into its component lines — an internal routing primitive inside the Test Sequence and Test Assessment blocks; add the parent Test Sequence or Test Assessment block rather than placing this element directly."
+        },
+        {
+          "block": " Ground ",
+          "ref": "sltestlib/Test Assessment/ Ground ",
+          "since": "R2023a+",
+          "intent": "Provide a grounded zero-valued input to leave a port intentionally undriven — an internal primitive inside the Test Sequence and Test Assessment blocks; not placed on its own in normal workflows."
+        },
+        {
+          "block": " SFunction ",
+          "ref": "sltestlib/Test Assessment/ SFunction ",
+          "since": "R2023a+",
+          "intent": "The core S-Function engine inside the Test Sequence and Test Assessment blocks that executes the authored step-and-transition table to drive time- and state-based test stimulus and evaluate verify/assessment statements — use it by adding a Test Sequence or Test Assessment block, not this element directly."
+        },
+        {
+          "block": " Terminator ",
+          "ref": "sltestlib/Test Assessment/ Terminator ",
+          "since": "R2023a+",
+          "intent": "Cap an unused output so it raises no unconnected-line warning — an internal primitive inside the Test Sequence and Test Assessment blocks; not placed independently in normal workflows."
+        },
+        {
+          "block": " Demux ",
+          "ref": "sltestlib/Test Sequence/ Demux ",
+          "since": "R2023a+",
+          "intent": "Split a combined signal into its component lines — an internal routing primitive inside the Test Sequence and Test Assessment blocks; add the parent Test Sequence or Test Assessment block rather than placing this element directly."
+        },
+        {
+          "block": " Ground ",
+          "ref": "sltestlib/Test Sequence/ Ground ",
+          "since": "R2023a+",
+          "intent": "Provide a grounded zero-valued input to leave a port intentionally undriven — an internal primitive inside the Test Sequence and Test Assessment blocks; not placed on its own in normal workflows."
+        },
+        {
+          "block": " SFunction ",
+          "ref": "sltestlib/Test Sequence/ SFunction ",
+          "since": "R2023a+",
+          "intent": "The core S-Function engine inside the Test Sequence and Test Assessment blocks that executes the authored step-and-transition table to drive time- and state-based test stimulus and evaluate verify/assessment statements — use it by adding a Test Sequence or Test Assessment block, not this element directly."
+        },
+        {
+          "block": " Terminator ",
+          "ref": "sltestlib/Test Sequence/ Terminator ",
+          "since": "R2023a+",
+          "intent": "Cap an unused output so it raises no unconnected-line warning — an internal primitive inside the Test Sequence and Test Assessment blocks; not placed independently in normal workflows."
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:36",
+  "generatedAtDatenum": 740309.9955628356
 }

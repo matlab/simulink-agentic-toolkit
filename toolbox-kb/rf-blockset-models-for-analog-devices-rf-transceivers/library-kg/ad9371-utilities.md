@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Ad9371 utilities
-description: AD9371 digital filter and utility blocks
-tags: [filter, decimation, interpolation, lo, signal]
+description: AD9371 digital filter and utility blocks (16 blocks)
+tags: [toolbox-kb, rf-blockset-models-for-analog-devices-rf-transceivers, filter, decimation, interpolation, lo, signal]
 status: stable
-source: mathworks_toolbox
-library_root: RF Blockset Models for Analog Devices RF Transceivers
-category_path: Ad9371 utilities
+sources:
+  - resource: matlab:ad9371_utilities
+source: toolbox_kb
+managed_by: satk
+library: RF Blockset Models for Analog Devices RF Transceivers
+kb_folder: rf-blockset-models-for-analog-devices-rf-transceivers
+category: ad9371-utilities
 block_count: 16
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:26Z" }
 ---
 
 # Ad9371 utilities
-
-Use these blocks for ad9371 utilities.
 
 ## Recommended Blocks
 

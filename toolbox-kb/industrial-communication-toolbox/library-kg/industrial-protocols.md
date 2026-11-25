@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Industrial protocols
-description: Industrial communication protocols for automation and IoT
-tags: [mqtt, modbus, opcua, industrial, iot]
+description: Industrial communication protocols for automation and IoT (6 blocks)
+tags: [toolbox-kb, industrial-communication-toolbox, mqtt, modbus, opcua, industrial, iot]
 status: stable
-source: mathworks_toolbox
-library_root: Industrial Communication Toolbox
-category_path: Industrial protocols
+sources:
+  - resource: matlab:mqttlib
+source: toolbox_kb
+managed_by: satk
+library: Industrial Communication Toolbox
+kb_folder: industrial-communication-toolbox
+category: industrial-protocols
 block_count: 6
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:23Z" }
 ---
 
 # Industrial protocols
-
-Use these blocks for industrial protocols.
 
 ## Recommended Blocks
 

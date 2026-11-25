@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Unit conversion
-description: Physical unit conversions for aerospace quantities
-tags: [conversion, units, metric, imperial, convert]
+description: Physical unit conversions for aerospace quantities (12 blocks)
+tags: [toolbox-kb, aerospace-blockset, conversion, units, metric, imperial, convert]
 status: stable
-source: mathworks_toolbox
-library_root: Aerospace Blockset
-category_path: Unit conversion
+sources:
+  - resource: matlab:aerolibconvert2
+source: toolbox_kb
+managed_by: satk
+library: Aerospace Blockset
+kb_folder: aerospace-blockset
+category: unit-conversion
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:13Z" }
 ---
 
 # Unit conversion
-
-Use these blocks for unit conversion.
 
 ## Recommended Blocks
 

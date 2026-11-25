@@ -1,15 +1,249 @@
 {
-  "generatedAt": "2026-08-19T17:52:12",
-  "generatedAtDatenum": 740213.74458880792,
-  "generatorVersion": 4,
-  "libraries": [
-    "Simulink Arduino Libraries for Gizmo Hardware"
-  ],
-  "blockCount": 28,
-  "categoryCount": 3,
-  "libraryFingerprints": {
-    "Simulink_Arduino_Libraries_for_Gizmo_Hardware": {
-      "blockCount": 28
+  "pages": [
+    {
+      "id": "arduino-io",
+      "kind": "toolbox",
+      "library": "Simulink Arduino Libraries for Gizmo Hardware",
+      "kbFolder": "simulink-arduino-libraries-for-gizmo-hardware",
+      "category": "arduino-io",
+      "hash": "95ea57214022bf811c43421e45520af7358f13c1851c4226e35074a5c77ceaaf",
+      "fm": {
+        "title": "Arduino io",
+        "description": "Arduino hardware I/O blocks for Gizmo (6 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-arduino-libraries-for-gizmo-hardware",
+          "analog",
+          "digital",
+          "pwm",
+          "arduino",
+          "pin"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "AngleToDutyCycle",
+          "ref": "gizmoLibrary/Arduino Utilities/AngleToDutyCycle",
+          "since": "R2025a+",
+          "intent": "Convert servo angle to PWM duty cycle — use for translating angular position commands into PWM signals for Gizmo servos"
+        },
+        {
+          "block": "Analog Input",
+          "ref": "gizmoLibrary/Arduino Utilities/Analog Input",
+          "since": "R2025a+",
+          "intent": "Read analog voltage on Gizmo Arduino pins — use for sampling sensor signals like potentiometers or light sensors"
+        },
+        {
+          "block": "Digital Input",
+          "ref": "gizmoLibrary/Arduino Utilities/Digital Input",
+          "since": "R2025a+",
+          "intent": "Read digital pin state on Gizmo Arduino — use for reading buttons, limit switches, or digital sensors"
+        },
+        {
+          "block": "Digital Output",
+          "ref": "gizmoLibrary/Arduino Utilities/Digital Output",
+          "since": "R2025a+",
+          "intent": "Write digital pin state on Gizmo Arduino — use for controlling LEDs, relays, or other digital outputs"
+        },
+        {
+          "block": "PWM",
+          "ref": "gizmoLibrary/Arduino Utilities/PWM",
+          "since": "R2025a+",
+          "intent": "Generate PWM output on Gizmo Arduino pins — use for motor speed control, LED dimming, or servo positioning"
+        },
+        {
+          "block": "Gizmo Initialization",
+          "ref": "gizmoLibrary/Gizmo Blocks/Gizmo Initialization",
+          "since": "R2025a+",
+          "intent": "Initialize the Gizmo hardware configuration — use at the start of every Gizmo model to set up board communication"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "common-blocks",
+      "kind": "toolbox",
+      "library": "Simulink Arduino Libraries for Gizmo Hardware",
+      "kbFolder": "simulink-arduino-libraries-for-gizmo-hardware",
+      "category": "common-blocks",
+      "hash": "a29a334f4d51bcdb46f5a79917bdeb3221d3ced0ea56015472a35599e35fbcfc",
+      "fm": {
+        "title": "Common blocks",
+        "description": "Standard Simulink utility blocks for Gizmo projects (19 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-arduino-libraries-for-gizmo-hardware",
+          "gain",
+          "constant",
+          "switch",
+          "scope",
+          "math"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "MATLAB Function",
+          "ref": "gizmoLibrary/Gizmo Blocks/MATLAB Function",
+          "since": "R2025a+",
+          "intent": "Execute custom MATLAB code in the Gizmo model — use for implementing custom algorithms not covered by standard blocks"
+        },
+        {
+          "block": "Constant",
+          "ref": "gizmoLibrary/Common Blocks/Constant",
+          "since": "R2025a+",
+          "intent": "Output a constant value — use for providing fixed setpoints or parameters in Gizmo models"
+        },
+        {
+          "block": "Logical Operator",
+          "ref": "gizmoLibrary/Common Blocks/Logical Operator",
+          "since": "R2023a+",
+          "intent": "Perform Boolean logic operations — use for AND, OR, NOT logic in decision-making within Gizmo control"
+        },
+        {
+          "block": "Relational Operator",
+          "ref": "gizmoLibrary/Common Blocks/Relational Operator",
+          "since": "R2023a+",
+          "intent": "Compare two signals — use for threshold detection or conditional logic in Gizmo control algorithms"
+        },
+        {
+          "block": "Slider Gain",
+          "ref": "gizmoLibrary/Common Blocks/Slider Gain",
+          "since": "R2023a+",
+          "intent": "Adjustable gain with interactive slider — use for real-time tuning of controller gains during Gizmo operation"
+        },
+        {
+          "block": "Abs",
+          "ref": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Abs",
+          "since": "R2025a+",
+          "intent": "Compute absolute value of a signal — use for magnitude calculations in Gizmo control or sensing"
+        },
+        {
+          "block": "Add",
+          "ref": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Add",
+          "since": "R2025a+",
+          "intent": "Sum input signals — use for combining sensor readings or computing error signals in Gizmo control"
+        },
+        {
+          "block": "Divide",
+          "ref": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Divide",
+          "since": "R2025a+",
+          "intent": "Divide one signal by another — use for ratio calculations or normalization in Gizmo algorithms"
+        },
+        {
+          "block": "Gain",
+          "ref": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Gain",
+          "since": "R2025a+",
+          "intent": "Multiply signal by a constant — use for scaling sensor values or applying controller gains in Gizmo models"
+        },
+        {
+          "block": "MinMax",
+          "ref": "gizmoLibrary/Common Blocks/Arithmetic Blocks/MinMax",
+          "since": "R2025a+",
+          "intent": "Output minimum or maximum of inputs — use for signal limiting or selecting extremes in Gizmo control"
+        },
+        {
+          "block": "Product",
+          "ref": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Product",
+          "since": "R2025a+",
+          "intent": "Multiply input signals element-wise — use for modulation or scaling operations in Gizmo models"
+        },
+        {
+          "block": "Saturation",
+          "ref": "gizmoLibrary/Common Blocks/Arithmetic Blocks/Saturation",
+          "since": "R2025a+",
+          "intent": "Limit signal to upper and lower bounds — use for clamping actuator commands to safe operating ranges"
+        },
+        {
+          "block": "Data Type Conversion",
+          "ref": "gizmoLibrary/Gizmo Blocks/Data Type Conversion",
+          "since": "R2025a+",
+          "intent": "Convert signal data type — use for matching data types between blocks in Gizmo Arduino-targeted models"
+        },
+        {
+          "block": "Dead Zone",
+          "ref": "gizmoLibrary/Gizmo Blocks/Dead Zone",
+          "since": "R2025a+",
+          "intent": "Zero the output within a specified band — use for eliminating joystick deadband or sensor noise near zero"
+        },
+        {
+          "block": "Display",
+          "ref": "gizmoLibrary/Gizmo Blocks/Display",
+          "since": "R2025a+",
+          "intent": "Show signal value during simulation — use for monitoring variables during Gizmo model development"
+        },
+        {
+          "block": "Ground",
+          "ref": "gizmoLibrary/Gizmo Blocks/Ground",
+          "since": "R2025a+",
+          "intent": "Provide a zero-valued signal — use for terminating unused input ports cleanly in Gizmo models"
+        },
+        {
+          "block": "Scope",
+          "ref": "gizmoLibrary/Gizmo Blocks/Scope",
+          "since": "R2025a+",
+          "intent": "Visualize signals over time — use for debugging and monitoring signal behavior in Gizmo models"
+        },
+        {
+          "block": "Switch",
+          "ref": "gizmoLibrary/Gizmo Blocks/Switch",
+          "since": "R2025a+",
+          "intent": "Select between inputs based on a condition — use for mode switching or conditional routing in Gizmo control"
+        },
+        {
+          "block": "Terminator",
+          "ref": "gizmoLibrary/Gizmo Blocks/Terminator",
+          "since": "R2025a+",
+          "intent": "Terminate an unconnected output — use for suppressing warnings on unused block outputs in Gizmo models"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "gamepad",
+      "kind": "toolbox",
+      "library": "Simulink Arduino Libraries for Gizmo Hardware",
+      "kbFolder": "simulink-arduino-libraries-for-gizmo-hardware",
+      "category": "gamepad",
+      "hash": "9d5efc2b772275df5a827fbb21fc9dc2e354cbcbfe4124da7a43bbebb7cc49d5",
+      "fm": {
+        "title": "Gamepad",
+        "description": "Gamepad input for teleoperation (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "simulink-arduino-libraries-for-gizmo-hardware",
+          "gamepad",
+          "joystick",
+          "axis",
+          "button",
+          "controller"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Gamepad Select Axis",
+          "ref": "gizmoLibrary/Gizmo Blocks/Gamepad Select Axis",
+          "since": "R2025a+",
+          "intent": "Select a specific axis from the gamepad — use for mapping joystick axes to motor or servo commands"
+        },
+        {
+          "block": "Gamepad Select Button",
+          "ref": "gizmoLibrary/Gizmo Blocks/Gamepad Select Button",
+          "since": "R2025a+",
+          "intent": "Select a specific button from the gamepad — use for mapping gamepad buttons to Gizmo actions or mode switches"
+        },
+        {
+          "block": "Gizmo Gamepad",
+          "ref": "gizmoLibrary/Gizmo Blocks/Gizmo Gamepad",
+          "since": "R2025a+",
+          "intent": "Read all axes and buttons from a connected gamepad — use as the primary input device for teleoperating Gizmo robots"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:29",
+  "generatedAtDatenum": 740309.995481632
 }

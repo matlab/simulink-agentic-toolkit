@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Filter implementations
-description: Direct filter realizations (FIR/IIR/SOS/allpass)
-tags: [filter implementations, fir filter, discrete filter, allpass, allpole, section filter, mimo fir]
-status: stable
-source: custom_library
-library_root: DSP System Toolbox
-category_path: Filter implementations
+description: Direct filter realizations (FIR/IIR/SOS/allpass) (12 blocks)
+tags: [toolbox-kb, dsp-system-toolbox, filter implementations, fir filter, discrete filter, allpass, allpole, section filter, mimo fir]
+status: draft
+sources:
+  - resource: matlab:dsparch4
+source: toolbox_kb
+managed_by: satk
+library: DSP System Toolbox
+kb_folder: dsp-system-toolbox
+category: filter-implementations
 block_count: 12
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:17Z" }
 ---
 
 # Filter implementations
-
-Use these blocks for filter implementations.
 
 ## Recommended Blocks
 

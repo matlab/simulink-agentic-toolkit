@@ -1,16 +1,629 @@
 {
-  "generatedAt": "2026-08-19T17:52:08",
-  "generatedAtDatenum": 740213.74454012734,
-  "generatorVersion": 4,
-  "libraries": [
-    "Battery"
-  ],
-  "blockCount": 55,
-  "categoryCount": 12,
-  "libraryFingerprints": {
-    "Battery": {
-      "cacheTimestamp": 740213.73347222223,
-      "blockCount": 55
+  "pages": [
+    {
+      "id": "cell-balancing",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "cell-balancing",
+      "hash": "76bacbcda091c48c46055603f267d6bec8108942f067d0906070812eb6544f82",
+      "fm": {
+        "title": "Cell balancing",
+        "description": "Cell balancing algorithms for equalizing SOC across series cells (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "balancing",
+          "passive",
+          "cell",
+          "equalize",
+          "bleed"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Passive Cell Balancing",
+          "ref": "batt_sl_lib/Cell Balancing/Passive Cell Balancing",
+          "since": "R2023a+",
+          "intent": "Equalize cell voltages in a series-connected pack by dissipating excess energy through bleed resistors — use to implement BMS balancing logic that reduces cell-to-cell SOC variation during charging"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "cell-models",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "cell-models",
+      "hash": "91d572a8865fcdf983014cade636f60fb87986815cf52109ba5dcf76c029d6b8",
+      "fm": {
+        "title": "Cell models",
+        "description": "Simscape physical battery and supercapacitor cell models (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "cell",
+          "equivalent",
+          "circuit",
+          "simscape"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Battery",
+          "ref": "batt_lib/Cells/Battery",
+          "since": "R2023a+",
+          "intent": "Model a battery cell or module as a Simscape physical component with equivalent circuit dynamics — use for system-level electrical simulation with current, voltage, and thermal ports"
+        },
+        {
+          "block": "Battery (Table-Based)",
+          "ref": "batt_lib/Cells/Battery (Table-Based)",
+          "since": "R2023a+",
+          "intent": "Model a battery cell using table-based parameterization of OCV, resistance, and time constants vs. SOC and temperature — use when cell characterization data is available from HPPC or EIS testing"
+        },
+        {
+          "block": "Battery Equivalent Circuit",
+          "ref": "batt_lib/Cells/Battery Equivalent Circuit",
+          "since": "R2023a+",
+          "intent": "Model a battery using a configurable equivalent circuit (R, RC, or multi-RC) in Simscape — use for detailed electrical dynamics simulation including transient voltage response under pulsed loads"
+        },
+        {
+          "block": "Supercapacitor Equivalent Circuit",
+          "ref": "batt_lib/Cells/Supercapacitor Equivalent Circuit",
+          "since": "R2023a+",
+          "intent": "Model a supercapacitor using an equivalent circuit in Simscape — use for hybrid energy storage systems combining batteries with supercapacitors for peak power buffering"
+        },
+        {
+          "block": "Battery Single Particle",
+          "ref": "batt_lib/Cells/Electrochemical/Battery Single Particle",
+          "since": "R2023a+",
+          "intent": "Model a battery cell using single-particle electrochemical physics — use when equivalent circuits lack fidelity and internal states like lithium concentration gradients are needed for advanced BMS development"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "connectors",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "connectors",
+      "hash": "230cb066d620f47590b5dfb81548f129c576a1289fe256e23f5b97196899e563",
+      "fm": {
+        "title": "Connectors",
+        "description": "Multi-cell electrical and thermal array connectors (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "connector",
+          "array",
+          "nodes",
+          "electrical",
+          "thermal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Array of Electrical Nodes Connector",
+          "ref": "batt_lib/Connectors/Array of Electrical Nodes Connector",
+          "since": "R2023a+",
+          "intent": "Connect arrays of electrical nodes between battery modules in Simscape — use to wire series or parallel cell configurations without manually connecting each cell port"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "current-management",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "current-management",
+      "hash": "4699b0e24edebe31a89da146c389fbdc9544e1bce7d07f61bc1bfc2a4a0196c8",
+      "fm": {
+        "title": "Current management",
+        "description": "Charging and discharging current control and limiting algorithms (4 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "charging",
+          "discharging",
+          "current",
+          "limit",
+          "cc-cv"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Battery CC-CV",
+          "ref": "batt_sl_lib/Current Management/Battery CC-CV",
+          "since": "R2023a+",
+          "intent": "Implement constant-current constant-voltage charging protocol — use to generate charge current commands that transition from CC to CV phase at the voltage setpoint for safe Li-ion charging"
+        },
+        {
+          "block": "Battery Charging Current Limit",
+          "ref": "batt_sl_lib/Current Management/Battery Charging Current Limit",
+          "since": "R2023a+",
+          "intent": "Compute the maximum allowable charging current based on cell voltage, temperature, and SOC — use in BMS to protect cells from overcharge by dynamically limiting charger current demand"
+        },
+        {
+          "block": "Battery Discharging Current Limit",
+          "ref": "batt_sl_lib/Current Management/Battery Discharging Current Limit",
+          "since": "R2023a+",
+          "intent": "Compute the maximum allowable discharging current based on cell voltage, temperature, and SOC — use in BMS to prevent over-discharge and protect cells under high-load conditions"
+        },
+        {
+          "block": "CC-CV Charging (Proportional Control)",
+          "ref": "batt_sl_lib/Current Management/CC-CV Charging (Proportional Control)",
+          "since": "R2025a+",
+          "intent": "Implement CC-CV charging with a proportional controller for smooth phase transition — use when a simple feedback controller is preferred over open-loop current reference generation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "cyclers",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "cyclers",
+      "hash": "dfc208f78ca4457b5bcbb1fb8e3491061107ae3dae105176bac5f1aaa48f8d00",
+      "fm": {
+        "title": "Cyclers",
+        "description": "Battery test equipment models (chargers, dischargers, cyclers) (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "charger",
+          "discharger",
+          "cycler",
+          "test",
+          "profile"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Charger",
+          "ref": "batt_lib/Cyclers/Charger",
+          "since": "R2023a+",
+          "intent": "Model a battery charger as a controlled current/voltage source in Simscape — use to simulate charging profiles (CC-CV, pulse, multi-stage) applied to physical battery models"
+        },
+        {
+          "block": "Cycler",
+          "ref": "batt_lib/Cyclers/Cycler",
+          "since": "R2023a+",
+          "intent": "Model a battery test cycler that applies charge/discharge profiles in Simscape — use to simulate standard test procedures (capacity tests, HPPC, drive cycles) on physical battery models"
+        },
+        {
+          "block": "Discharger",
+          "ref": "batt_lib/Cyclers/Discharger",
+          "since": "R2023a+",
+          "intent": "Model a battery discharger as a controlled load in Simscape — use to simulate constant-current, constant-power, or profile-based discharge testing on physical battery models"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "fuel-cell",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "fuel-cell",
+      "hash": "4084eb7f06c151d25d530f0a3c6672aeba9df7ce7007ef1232778e72c8ad9668",
+      "fm": {
+        "title": "Fuel cell",
+        "description": "Fuel cell stack models for hydrogen powertrain simulation (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "fuel",
+          "cell",
+          "hydrogen",
+          "stack",
+          "pem"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Fuel Cell (Table-Based)",
+          "ref": "batt_lib/Fuel Cell/Fuel Cell (Table-Based)",
+          "since": "R2023a+",
+          "intent": "Model a fuel cell stack using table-based V-I characteristics in Simscape — use for system-level simulation of hydrogen fuel cell powertrains with electrical and thermal coupling"
+        },
+        {
+          "block": "Fuel Cell Equivalent Circuit",
+          "ref": "batt_lib/Fuel Cell/Fuel Cell Equivalent Circuit",
+          "since": "R2023a+",
+          "intent": "Model a fuel cell using an equivalent circuit with activation, ohmic, and concentration losses — use for dynamic fuel cell simulation capturing transient voltage response to load steps"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "hil",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "hil",
+      "hash": "00bb20a72812c5f29217d10b139b2ec07311df7a06bcbcd941a907bd714515b5",
+      "fm": {
+        "title": "Hil",
+        "description": "Hardware-in-the-loop interfaces for BMS testing (3 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "hil",
+          "interface",
+          "emulation",
+          "hardware",
+          "realtime"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Active Interface",
+          "ref": "batt_lib/HIL/Active Interface",
+          "since": "R2023a+",
+          "intent": "Provide a hardware-in-the-loop interface for active battery emulation — use to connect a real-time battery model to physical BMS hardware for closed-loop HIL testing"
+        },
+        {
+          "block": "Passive Balancing Interface",
+          "ref": "batt_lib/HIL/Passive Balancing Interface",
+          "since": "R2023a+",
+          "intent": "Interface a physical passive balancing circuit with a real-time battery model — use for HIL testing where real balancing FETs interact with simulated cell voltages"
+        },
+        {
+          "block": "Passive Interface",
+          "ref": "batt_lib/HIL/Passive Interface",
+          "since": "R2023a+",
+          "intent": "Provide a hardware-in-the-loop interface for passive battery emulation — use to output simulated cell voltages to physical BMS sense wires for HIL validation"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "passive-components",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "passive-components",
+      "hash": "7415b1e5ca750848919943d082630d4354299af8d7c3bd89069c525e6d9e068c",
+      "fm": {
+        "title": "Passive components",
+        "description": "Passive electrical component models (impedance, state-space) (1 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "impedance",
+          "state-space",
+          "passive",
+          "eis",
+          "frequency"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Impedance (State-Space)",
+          "ref": "batt_lib/Passive/Impedance (State-Space)",
+          "since": "R2023a+",
+          "intent": "Model a frequency-dependent impedance using state-space representation in Simscape — use to capture complex EIS-measured impedance spectra for high-fidelity battery or fuel cell models"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "protection",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "protection",
+      "hash": "27ca980d3afff11ad17ec8e1d6face71d23951776f0ed47f5c03e34df80d3319",
+      "fm": {
+        "title": "Protection",
+        "description": "Battery protection monitoring for voltage, current, temperature, and contacts (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "monitoring",
+          "protection",
+          "fault",
+          "voltage",
+          "overcurrent"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Battery Cell Contact Monitoring",
+          "ref": "batt_sl_lib/Protection/Battery Cell Contact Monitoring",
+          "since": "R2023a+",
+          "intent": "Detect cell contact failures (open connections) by monitoring voltage and temperature anomalies — use in BMS safety logic to identify loose or corroded cell tabs before thermal events"
+        },
+        {
+          "block": "Battery Current Monitoring",
+          "ref": "batt_sl_lib/Protection/Battery Current Monitoring",
+          "since": "R2023a+",
+          "intent": "Monitor pack current against overcurrent and short-circuit thresholds with time-based qualification — use to trigger contactor opening or current derating when sustained overcurrent is detected"
+        },
+        {
+          "block": "Battery Temperature Monitoring",
+          "ref": "batt_sl_lib/Protection/Battery Temperature Monitoring",
+          "since": "R2023a+",
+          "intent": "Monitor cell temperatures against over-temperature and under-temperature thresholds — use to trigger thermal protection actions like derating, heating, or emergency shutdown"
+        },
+        {
+          "block": "Battery Voltage Monitoring",
+          "ref": "batt_sl_lib/Protection/Battery Voltage Monitoring",
+          "since": "R2023a+",
+          "intent": "Monitor cell voltages against overvoltage and undervoltage thresholds — use to trigger charging cutoff, load disconnect, or cell balancing when limits are approached"
+        },
+        {
+          "block": "Fault Qualification",
+          "ref": "batt_sl_lib/Protection/Fault Qualification",
+          "since": "R2023a+",
+          "intent": "Apply debouncing and time-based qualification to raw fault signals — use to prevent nuisance trips from transient sensor noise while ensuring genuine faults are confirmed within response time requirements"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "state-estimation",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "state-estimation",
+      "hash": "593777f02a344c9a9a745ea68362c9b082a8596a34f3ccc8e47b52314cd188c6",
+      "fm": {
+        "title": "State estimation",
+        "description": "State of charge, energy, health, and capacity estimation algorithms (22 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "soc",
+          "soe",
+          "soh",
+          "estimator",
+          "kalman"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Battery Capacity Estimator (Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/Battery Capacity Estimator (Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate total battery capacity online using a Kalman filter — use to track capacity fade over the battery lifetime for accurate SOC scaling and end-of-life prediction"
+        },
+        {
+          "block": "Battery Capacity Estimator (Least Squares)",
+          "ref": "batt_sl_lib/Estimators/Battery Capacity Estimator (Least Squares)",
+          "since": "R2023a+",
+          "intent": "Estimate total battery capacity online using recursive least squares — use when a computationally lighter alternative to Kalman filtering is needed for capacity tracking"
+        },
+        {
+          "block": "Battery Capacity Estimator (Least Squares, Variable Weights)",
+          "ref": "batt_sl_lib/Estimators/Battery Capacity Estimator (Least Squares, Variable Weights)",
+          "since": "R2023a+",
+          "intent": "Estimate battery capacity using weighted recursive least squares — use when measurement quality varies and recent data should be weighted more heavily for faster adaptation"
+        },
+        {
+          "block": "Battery Power Estimator",
+          "ref": "batt_sl_lib/Estimators/Battery Power Estimator",
+          "since": "R2024b+",
+          "intent": "Estimate the maximum available charge and discharge power over a prediction horizon — use for power management in hybrid/electric powertrains to enforce safe operating limits on motor torque requests"
+        },
+        {
+          "block": "Cell Delta SOC Estimator (Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/Cell Delta SOC Estimator (Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate SOC differences between individual cells using a Kalman filter — use to monitor cell imbalance in a pack and trigger balancing when delta SOC exceeds thresholds"
+        },
+        {
+          "block": "Cell Delta SOC Estimator (Kalman Filter, Variable Resistance)",
+          "ref": "batt_sl_lib/Estimators/Cell Delta SOC Estimator (Kalman Filter, Variable Resistance)",
+          "since": "R2023a+",
+          "intent": "Estimate cell SOC differences with online resistance adaptation — use when cell aging causes resistance divergence that biases fixed-model delta SOC estimates"
+        },
+        {
+          "block": "Pack Bar SOC Estimator (Adaptive Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/Pack Bar SOC Estimator (Adaptive Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate average pack-level SOC using an adaptive Kalman filter that tunes noise covariances online — use for robust pack SOC display that adapts to changing sensor noise or model uncertainty"
+        },
+        {
+          "block": "Pack Bar SOC Estimator (Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/Pack Bar SOC Estimator (Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate average pack-level SOC using a standard Kalman filter — use as the primary gauge algorithm for displaying remaining energy in a battery pack"
+        },
+        {
+          "block": "SOC Estimator (Adaptive Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/SOC Estimator (Adaptive Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate cell-level state of charge using an adaptive Kalman filter — use when operating conditions change significantly and fixed filter tuning produces drift"
+        },
+        {
+          "block": "SOC Estimator (Adaptive Kalman Filter, Variable Capacity)",
+          "ref": "batt_sl_lib/Estimators/SOC Estimator (Adaptive Kalman Filter, Variable Capacity)",
+          "since": "R2023a+",
+          "intent": "Estimate SOC with adaptive Kalman filtering and online capacity tracking — use for aged batteries where nominal capacity no longer reflects actual usable energy"
+        },
+        {
+          "block": "SOC Estimator (Coulomb Counting)",
+          "ref": "batt_sl_lib/Estimators/SOC Estimator (Coulomb Counting)",
+          "since": "R2023a+",
+          "intent": "Estimate SOC by integrating measured current over time — use as a simple baseline estimator or as a complement to model-based methods for short-term SOC tracking"
+        },
+        {
+          "block": "SOC Estimator (Coulomb Counting, Variable Capacity)",
+          "ref": "batt_sl_lib/Estimators/SOC Estimator (Coulomb Counting, Variable Capacity)",
+          "since": "R2023a+",
+          "intent": "Estimate SOC via coulomb counting with time-varying capacity — use when capacity fade is significant and a fixed Ah reference would cause cumulative SOC error"
+        },
+        {
+          "block": "SOC Estimator (Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/SOC Estimator (Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate cell-level state of charge using an extended Kalman filter with an equivalent circuit model — use as the standard model-based SOC estimation algorithm for BMS applications"
+        },
+        {
+          "block": "SOC Estimator (Kalman Filter, Variable Capacity)",
+          "ref": "batt_sl_lib/Estimators/SOC Estimator (Kalman Filter, Variable Capacity)",
+          "since": "R2023a+",
+          "intent": "Estimate SOC using a Kalman filter with online capacity parameter — use to maintain accurate SOC estimates as the battery ages and total capacity decreases"
+        },
+        {
+          "block": "SOE Estimator (Adaptive Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/SOE Estimator (Adaptive Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate state of energy using an adaptive Kalman filter — use when energy-based range prediction is needed and operating conditions vary widely"
+        },
+        {
+          "block": "SOE Estimator (Energy Counting)",
+          "ref": "batt_sl_lib/Estimators/SOE Estimator (Energy Counting)",
+          "since": "R2023a+",
+          "intent": "Estimate state of energy by integrating power over time — use as a simple energy accounting method for applications where voltage variation is small"
+        },
+        {
+          "block": "SOE Estimator (Kalman Filter)",
+          "ref": "batt_sl_lib/Estimators/SOE Estimator (Kalman Filter)",
+          "since": "R2023a+",
+          "intent": "Estimate state of energy using a Kalman filter — use for model-based remaining energy prediction that accounts for voltage-dependent available energy"
+        },
+        {
+          "block": "SOE Estimator (Adaptive Kalman Filter, Variable Energy Capacity)",
+          "ref": "batt_sl_lib/Estimators/SOE Estimator (Adaptive Kalman Filter, Variable Energy Capacity)",
+          "since": "R2023a+",
+          "intent": "Estimate SOE with adaptive filtering and online energy capacity tracking — use for aged packs where total energy capacity has degraded from nominal"
+        },
+        {
+          "block": "SOE Estimator (Energy Counting, Variable Energy Capacity)",
+          "ref": "batt_sl_lib/Estimators/SOE Estimator (Energy Counting, Variable Energy Capacity)",
+          "since": "R2023a+",
+          "intent": "Estimate SOE via energy integration with time-varying energy capacity — use when simple energy counting is sufficient but capacity fade must be accounted for"
+        },
+        {
+          "block": "SOE Estimator (Kalman Filter, Variable Energy Capacity)",
+          "ref": "batt_sl_lib/Estimators/SOE Estimator (Kalman Filter, Variable Energy Capacity)",
+          "since": "R2023a+",
+          "intent": "Estimate SOE using a Kalman filter with online energy capacity tracking — use for accurate remaining range estimation in aged batteries"
+        },
+        {
+          "block": "SOH Estimator",
+          "ref": "batt_sl_lib/Estimators/SOH Estimator",
+          "since": "R2023a+",
+          "intent": "Estimate state of health based on internal resistance growth — use to track battery degradation over lifetime and predict maintenance or replacement timing"
+        },
+        {
+          "block": "SOH Estimator (Capacity-Based)",
+          "ref": "batt_sl_lib/Estimators/SOH Estimator (Capacity-Based)",
+          "since": "R2023b+",
+          "intent": "Estimate state of health based on capacity fade relative to nominal — use to quantify usable capacity loss for warranty tracking or second-life battery grading"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "thermal-components",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "thermal-components",
+      "hash": "65942e30383e12e17021c6789de7adeb4fa7e0cc852acf9b8c3e3a2f3fa41abb",
+      "fm": {
+        "title": "Thermal components",
+        "description": "Simscape thermal components for pack cooling simulation (5 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "cooling",
+          "rom",
+          "channel",
+          "edge",
+          "thermal"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Array of Thermal Nodes Connector",
+          "ref": "batt_lib/Thermal/Array of Thermal Nodes Connector",
+          "since": "R2023a+",
+          "intent": "Connect arrays of thermal nodes between battery modules in Simscape — use to wire thermal ports of series/parallel cell configurations for pack-level thermal simulation"
+        },
+        {
+          "block": "Edge Cooling",
+          "ref": "batt_lib/Thermal/Edge Cooling",
+          "since": "R2023a+",
+          "intent": "Model edge cooling of prismatic or pouch cells in Simscape — use to simulate heat extraction through cell edges via cold plates in pack thermal design"
+        },
+        {
+          "block": "Multi-Cell Thermal ROM",
+          "ref": "batt_lib/Thermal/Multi-Cell Thermal ROM",
+          "since": "R2023a+",
+          "intent": "Reduced-order thermal model for multiple cells capturing spatial temperature distribution — use for computationally efficient pack thermal simulation that resolves cell-to-cell temperature gradients"
+        },
+        {
+          "block": "Parallel Channels",
+          "ref": "batt_lib/Thermal/Parallel Channels",
+          "since": "R2023a+",
+          "intent": "Model parallel coolant flow channels for battery thermal management in Simscape — use to simulate flow distribution and thermal performance of manifolded cooling plates"
+        },
+        {
+          "block": "U-shaped Channels",
+          "ref": "batt_lib/Thermal/U-shaped Channels",
+          "since": "R2023a+",
+          "intent": "Model U-shaped coolant flow channels in Simscape — use to simulate serpentine or U-turn cooling plate geometries and their effect on temperature uniformity"
+        }
+      ],
+      "conflict": []
+    },
+    {
+      "id": "thermal-management",
+      "kind": "toolbox",
+      "library": "Battery",
+      "kbFolder": "battery",
+      "category": "thermal-management",
+      "hash": "eeeb0b4b1a5dd14574e2c750ee6b21ef57609f75a1152a717aca6eca343e76f3",
+      "fm": {
+        "title": "Thermal management",
+        "description": "Thermal management control algorithms for cooling and heating (2 blocks)",
+        "tags": [
+          "toolbox-kb",
+          "battery",
+          "coolant",
+          "heater",
+          "thermal",
+          "temperature",
+          "control"
+        ],
+        "status": "stable"
+      },
+      "rows": [
+        {
+          "block": "Battery Coolant Control",
+          "ref": "batt_sl_lib/Thermal Management/Battery Coolant Control",
+          "since": "R2023a+",
+          "intent": "Control coolant flow rate and pump speed to regulate battery temperature — use to implement thermal management logic that maintains optimal cell temperature during charging and driving"
+        },
+        {
+          "block": "Battery Heater Control",
+          "ref": "batt_sl_lib/Thermal Management/Battery Heater Control",
+          "since": "R2023a+",
+          "intent": "Control heater activation to bring battery temperature into operating range — use in cold-climate BMS to pre-condition cells before charging or high-power discharge"
+        }
+      ],
+      "conflict": []
     }
-  }
+  ],
+  "generatedAt": "2026-11-23T23:53:14",
+  "generatedAtDatenum": 740309.99530903937
 }

@@ -1,0 +1,54 @@
+# Copyright 2026 The MathWorks, Inc.
+# manifest.yaml — Tooling metadata for simulink-model-rf-system
+schema-version: 1
+license: https://www.mathworks.com/content/dam/mathworks/license/pmrl/license.md
+scope: cross-product
+version: "1.0"
+human-description: "Build, measure, and simulate RF systems in Simulink with RF Blockset."
+matlab-release: ">=R2024b"
+toolkit: simulink-agentic-toolkit
+required-products:
+  - Simulink
+  - RF Blockset
+  - RF Toolbox
+  - Communications Toolbox
+  - DSP System Toolbox
+  - Signal Processing Toolbox
+  - 5G Toolbox
+  - LTE Toolbox
+  - WLAN Toolbox
+  - Antenna Toolbox
+  - Phased Array System Toolbox
+optional-products: []
+required-tools:
+  - evaluate_matlab_code
+  - run_matlab_file
+  - model_edit
+  - model_read
+required-skills: []
+reference-files:
+  - references/antenna-channel-upgrade.md
+  - references/antenna-wave-ports.md
+  - references/build-from-budget.md
+  - references/build-from-data.md
+  - references/ce-block-parameters.md
+  - references/ce-block-plot-functions.md
+  - references/ce-vs-idealized.md
+  - references/common-failure-modes.md
+  - references/configuration-block-tools.md
+  - references/configuration-block.md
+  - references/delivery-pattern.md
+  - references/edit-system-decomposition.md
+  - references/filter-visualization.md
+  - references/impairment-catalog.md
+  - references/library-catalog.md
+  - references/measure-power-tap.md
+  - references/measure-testbench.md
+  - references/model-edit-operations.md
+  - references/multi-port-models.md
+  - references/outport-extraction.md
+  - references/post-processing.md
+  - references/simulate-with-signals.md
+  - references/tr-module-recipe.md
+  - references/waveform-generation.md
+  - scripts/verifyRfPowerTapConfiguration.m

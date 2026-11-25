@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Matrix factorizations
-description: HDL-optimized matrix factorization blocks
-tags: [qr, svd, decomposition, factorization, jacobi]
+description: HDL-optimized matrix factorization blocks (17 blocks)
+tags: [toolbox-kb, fixed-point-designer-hdl-support, qr, svd, decomposition, factorization, jacobi]
 status: stable
-source: mathworks_toolbox
-library_root: Fixed-Point Designer HDL Support
-category_path: Matrix factorizations
+sources:
+  - resource: matlab:embeddedMatrixLib
+source: toolbox_kb
+managed_by: satk
+library: Fixed-Point Designer HDL Support
+kb_folder: fixed-point-designer-hdl-support
+category: matrix-factorizations
 block_count: 17
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:21Z" }
 ---
 
 # Matrix factorizations
-
-Use these blocks for matrix factorizations.
 
 ## Recommended Blocks
 

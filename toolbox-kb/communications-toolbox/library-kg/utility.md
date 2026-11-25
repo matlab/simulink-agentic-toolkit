@@ -1,18 +1,21 @@
 ---
 type: Simulink Block Category
 title: Utility
-description: Conversions and measurement blocks
-tags: [utility blocks, converter, measurement, power meter, db conversion, sequence operations, source coding]
-status: stable
-source: custom_library
-library_root: Communications Toolbox
-category_path: Utility
+description: Conversions and measurement blocks (26 blocks)
+tags: [toolbox-kb, communications-toolbox, utility blocks, converter, measurement, power meter, db conversion, sequence operations, source coding]
+status: draft
+sources:
+  - resource: matlab:commsequence2
+source: toolbox_kb
+managed_by: satk
+library: Communications Toolbox
+kb_folder: communications-toolbox
+category: utility
 block_count: 26
+generated: { by: satk-toolbox-build/1, at: "2026-11-23T18:23:15Z" }
 ---
 
 # Utility
-
-Use these blocks for utility.
 
 ## Recommended Blocks
 
